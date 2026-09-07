@@ -1,0 +1,33 @@
+{
+    "name": "advertising-skills",
+    "version": "0.1.0",
+    "description": "Skills for paid advertising — channel selection, budget policy, audience design, creative development, and measurement across search, paid social, video, native, and AI-answer surfaces.",
+    "author": {
+        "name": "Maya-Beth Finotti",
+        "email": "mbfinotti@gmail.com"
+    },
+    "homepage": "https://github.com/mbfinotti/advertising-skills",
+    "repository": "https://github.com/mbfinotti/advertising-skills",
+    "license": "MIT",
+    "keywords": [
+        "advertising",
+        "paid-media",
+        "media-buying",
+        "performance-marketing",
+        "ad-creative",
+        "campaign-performance",
+        "audience-targeting",
+        "ai-agent-skills",
+        "agentic",
+        "skills"
+    ],
+    "skills": "./skills/",
+    "interface": {
+        "displayName": "Advertising Skills",
+        "shortDescription": "AI agent skills for paid advertising",
+        "developerName": "Maya-Beth Finotti",
+        "category": "Marketing",
+        "capabilities": ["Read"],
+        "websiteURL": "https://github.com/mbfinotti/advertising-skills"
+    }
+}
