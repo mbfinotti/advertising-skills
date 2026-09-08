@@ -272,7 +272,7 @@ Anchor any board- or executive-facing number on the finance-grade source of trut
 
 ## Failure modes
 
-- Comparing before normalizing - the most common false alarm. A click-date total next to an event-date total differs by definition, not by defect.
+- Comparing before normalizing - the most common false alarm. A click-date total compared to an event-date total differs by definition, not by defect.
 - Summing conversions across ad platforms, or summing platforms with different windows into one total.
 - Driving the residual to zero. A perfect tie-out is evidence of fabrication, not rigor.
 - Treating the 10–30% folklore band as a standard, or quoting any tolerance without labeling its source status.
