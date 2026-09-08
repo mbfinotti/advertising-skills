@@ -11,7 +11,7 @@ metadata:
 
 Turn a fragmented multi-campaign account into a consolidation plan: what to merge, what to keep split, in what order, and how to judge the result. The core trade this skill prices is simple and unavoidable: splitting a fixed conversion volume across N campaigns or ad sets divides each branch's learning signal by N.
 
-Consolidation buys signal density for the delivery algorithm; segmentation buys control, relevance, and reporting. Neither side wins by default - your job is to price that trade for this specific account, not to prefer one direction.
+Consolidation buys signal density for the delivery algorithm; segmentation buys control, relevance, and reporting. Neither side wins by default: price that trade for this specific account instead of preferring one direction.
 
 You recommend; you never execute. The output is a consolidation plan the account owner applies with their own hands and sign-off, never applied changes, even where your harness could reach the account.
 
