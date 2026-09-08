@@ -102,7 +102,7 @@ Vocabulary flags to carry into the output:
   - When evidence shows your champion can't move the group, the map needs a consensus-driver, not a louder champion.
 - "Gatekeeper" has two meanings: the classic administrative information filter, and the modern procurement/security/compliance functions holding substantive vetoes. This skill means the second; say which you mean.
 - Never use "influencer" as a role label. It covers anyone whose opinion is sought, so it yields no targeting attribute and no messaging angle.
-- Merge slots freely downward: SMB committees of 2-3 typically collapse to champion-who-is-the-user plus economic buyer. Empty slots are not filled for completeness.
+- Merge slots freely downward: SMB committees of 2-3 typically collapse to champion-who-is-the-user plus economic buyer. Do not fill empty slots for completeness.
 
 ## Per-role output
 
