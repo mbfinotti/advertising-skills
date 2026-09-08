@@ -295,7 +295,7 @@ Prefer the smallest reversible change: one variable, a modest step, never a rest
 
 ## Failure modes
 
-- **End-of-period spend dumps** - rushing the last days to hit the figure buys the worst inventory at the worst prices; daily recomputation of `adjust_spend_by` against a weighted curve is the prevention.
+- **End-of-period spend dumps** - rushing the last days to hit the figure buys the worst inventory at the worst prices; daily recomputation of `adjust_spend_by` against a weighted curve prevents it.
 - **Chasing pacing at the expense of efficiency** - raising bids and budgets to hit a spend target is the standard way to hit spend and miss CPA. Reallocate before inflating.
 - **Over-reacting to a single lumpy day** - single-day overdelivery is designed platform behaviour; only cumulative deviation counts (gate check 1).
 - **Alerting on a first/last partial day or a trivial denominator** - gate checks 2 and 3 exist for these.
