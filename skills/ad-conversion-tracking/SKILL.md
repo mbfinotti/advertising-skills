@@ -11,7 +11,7 @@ metadata:
 
 Verify that conversion tracking actually measures reality before a single dollar of campaign budget spends.
 
-- **The anti-pattern this skill exists to prevent:** teams treat tracking as a launch-checklist checkbox, tick it off a settings screenshot, and discover it was broken only after the spend report makes no sense. 70-80% of B2B SaaS search accounts audited by GrowthSpree carry at least one significant conversion tracking issue.
+- **The anti-pattern this skill exists to prevent:** teams treat tracking as a launch-checklist checkbox, tick it off from a settings screenshot, and discover it was broken only once the spend report stops making sense. 70-80% of B2B SaaS search accounts audited by GrowthSpree carry at least one significant conversion tracking issue.
 - **The governing principle:** bad conversion data does not merely misreport, it actively trains the bidding algorithm to find the wrong people - "if your tracking is inaccurate, every optimisation decision made by the platform will be based on incorrect data" (PPC Hero).
 
 The output is a verification report with per-check evidence, ending in an explicit GO / NO-GO decision with a named approver.
