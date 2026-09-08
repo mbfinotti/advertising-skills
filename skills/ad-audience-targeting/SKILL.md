@@ -125,7 +125,7 @@ Where the evidence sits:
 
 - Never flip an account wholesale on general advice; the parallel test is the only honest way to change rungs, and it keeps the layered control running while it decides.
 - Broad hides who the buyer is. Keep at least one manually-defined tier alive as a research instrument even when broad wins on cost.
-- Over-narrowing is the named failure mode of the layered camp: stacking many interests plus demographic filters produces a small, expensive audience seeing an unchanged ad. If the ICP knowledge is rich, spend it on creative variants per segment, not on more filters.
+- Over-narrowing is the named failure mode of the layered camp: stacking many interests plus demographic filters produces a small, expensive audience that sees an unchanged ad. If the ICP knowledge is rich, spend it on creative variants per segment, not on more filters.
 
 ## Sizing and funding floors
 
