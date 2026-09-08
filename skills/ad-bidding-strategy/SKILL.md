@@ -152,7 +152,7 @@ This reframes "manual vs automated" into the useful question: **which of the thr
 - Failing Doctor (nobody can say if the target is right): derive the target before automating toward it.
 - Failing Pilot (no one watching delivery): automation without monitoring, which is how targets choke accounts silently.
 
-Add a layer of monitoring rules on top of the automated bidder to catch the cases where the black box is wrong - that is complement, not competition.
+Add a layer of monitoring rules on top of the automated bidder to catch the cases where the black box is wrong: that complements it, not competes with it.
 
 ## Incrementality: the failure no in-platform metric shows
 
