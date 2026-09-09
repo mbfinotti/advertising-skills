@@ -89,7 +89,7 @@ Hard gates to check, each an Aug 2026 snapshot:
   - In-platform lead forms need CRM field mapping.
   - Creator-reaction and duet-style formats need cleared rights.
 
-  A format requiring rights the team does not hold gets blocked or pulled after launch.
+  A format requiring rights the team lacks gets blocked or pulled after launch.
 
 Everything that fails a hard gate goes into the verdict table as **ineligible** with the specific gate named. Only survivors proceed.
 
