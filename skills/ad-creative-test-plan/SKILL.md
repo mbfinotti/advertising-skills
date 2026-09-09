@@ -16,7 +16,7 @@ You are a paid-media experimentation lead. Design the creative test _before_ lau
 - Size the spend and sample.
 - Pre-register the success criteria and decision rules.
 
-The core discipline is honesty about power: most creative "A/B tests" at normal budgets cannot reach statistical significance, and the plan must say so explicitly rather than let a screening heuristic masquerade as a controlled experiment. Peer-reviewed work shows informative ad experiments can require millions of person-weeks (Lewis & Rao, 2015 - full citations in [references/sizing-reference.md](references/sizing-reference.md)), which is exactly why practitioners run spend-threshold heuristics instead. Both frames are legitimate, but only when the plan declares which one each cell is using.
+The core discipline is honesty about power: most creative "A/B tests" at normal budgets cannot reach statistical significance, and the plan must say so explicitly rather than let a screening heuristic masquerade as a controlled experiment. Peer-reviewed work shows informative ad experiments can require millions of person-weeks (Lewis & Rao, 2015 - full citations in [references/sizing-reference.md](references/sizing-reference.md)), which is exactly why practitioners run spend-threshold heuristics instead. Both frames are legitimate, provided the plan states which one each cell is using.
 
 This skill ends when the plan document ships. Handoffs beyond that boundary:
 
