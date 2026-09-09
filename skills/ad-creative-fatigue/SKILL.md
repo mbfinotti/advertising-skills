@@ -9,7 +9,7 @@ metadata:
 
 # Creative Fatigue
 
-Read a creative's performance-over-time data and decide whether it is genuinely wearing out, how confident that call is, and what to do about it. The core discipline is refusal: a declining metric has many causes, and creative wear-out is only one of them. Most refresh decisions are made too early, off one metric, against no baseline.
+Read a creative's performance-over-time data and decide whether it is genuinely wearing out, how confident that call is, and what to do about it. The core discipline is refusal: many things can cause a declining metric, and creative wear-out is only one of them. Most refresh decisions are made too early, off one metric, against no baseline.
 
 This skill runs a differential diagnosis in a fixed order, confounder screen before the fatigue call, never after:
 
