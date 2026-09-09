@@ -14,7 +14,7 @@ which ones are worth spending test budget on. The output is a relative ranking w
 
 - a shortlisting device.
 
-The market is the judge; this skill only decides what gets to face it.
+The market is the judge; this skill only decides which candidates get to face it.
 
 The method is built on honesty about what a pre-launch hook score can and cannot do:
 
