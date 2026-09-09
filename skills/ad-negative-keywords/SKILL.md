@@ -22,7 +22,7 @@ The mechanics - match types, exclusion levels, thresholds, cadence - are identic
 - Missing report → request an export, explain the overblocking review below, and name zero candidate negatives in the meantime.
 - Exception: a brand-new campaign with no history may get a starter exclusion list - label it "pre-launch starter, review against real queries after 7-14 days".
 
-A list invented from imagination has no evidence of what actually matches, and its cost - blocked converting queries - is invisible.
+A list invented from imagination has no evidence of what actually matches, and its cost, blocked converting queries, stays invisible.
 
 ## Clarifying questions
 
