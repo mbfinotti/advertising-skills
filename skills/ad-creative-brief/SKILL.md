@@ -9,7 +9,7 @@ metadata:
 
 # Creative Brief
 
-Write a performance-marketing creative brief: a per-concept test specification, not a brand brief with metrics bolted on. The classic agency brief is built around a single-minded proposition, written once per campaign, and deliberately loose so it can inspire. The performance brief replaces that proposition with a **falsifiable creative hypothesis**, is written per concept per sprint, and is prescriptive about hooks, specs and decision thresholds because dozens of variants ship each cycle.
+Write a performance-marketing creative brief: a per-concept test specification, not a brand brief with metrics bolted on. The classic agency brief centers on a single-minded proposition, is written once per campaign, and stays deliberately loose so it can inspire. The performance brief replaces that proposition with a **falsifiable creative hypothesis**, is written per concept per sprint, and is prescriptive about hooks, specs and decision thresholds because dozens of variants ship each cycle.
 
 The stakes are documented. The BetterBriefs Project (IPA, 1,700+ marketers and agency staff, 70+ countries) found respondents estimate ~33% of marketing budget is wasted through poor briefing, and that 80% of marketers think they write good briefs while only 10% of agencies agree. Agencies name the gaps as focus (83%), clarity (79%) and inspiration (65%).
 
