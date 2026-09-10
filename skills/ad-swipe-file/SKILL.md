@@ -105,7 +105,7 @@ Answers 8-10 re-order every ranked menu below, so ask them before collecting any
    - Never save an entry with missing mandatory fields.
    - Mark anything unverifiable **unknown** instead of guessing.
    - Deduplicate on concept: a cosmetic resize or recrop is not a new entry.
-   - Store a paraphrase or one short attributed quote of the message, never full transcriptions or bulk copies of the creative assets.
+   - Store a paraphrase or one short attributed quote of the ad's message, never a full transcription or bulk copy of the creative assets.
 
 5. **Separate observation from inference, always.**
 
