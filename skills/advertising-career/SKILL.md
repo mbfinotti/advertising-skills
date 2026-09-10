@@ -350,7 +350,7 @@ What durably reduced signal is Apple's ATT (2021), which drove the over-attribut
 
 - Leaning on certifications instead of results - cert-only resumes are a documented rejection pattern.
 - Reading a tool-generated audit aloud in a live-audit round - interviewers screen for exactly this.
-- Vanity metrics over business outcomes - CTR and CPC talk without CPA, ROAS, MER, or pipeline reads as mid-level regardless of years served; senior conversations run on MER, contribution margin, and CAC payback.
+- Vanity metrics over business outcomes - talking CTR and CPC without CPA, ROAS, MER, or pipeline reads as mid-level regardless of years served; senior conversations run on MER, contribution margin, and CAC payback.
 - Sinking 12-30+ unpaid hours into a take-home briefed as "a few hours" - time-box to 2-4 hours, state assumptions.
 - Over-sharing confidential client data in a portfolio or interview - read as a preview of how the candidate treats data.
 - Missing incrementality and attribution at senior level - the clearest ceiling signal.
