@@ -33,7 +33,7 @@ Out of scope - hand off to the sibling skill instead of covering it here:
 - Tracking verification: mbfinotti/advertising-skills@ad-conversion-tracking
 - Landing page review: mbfinotti/advertising-skills@paid-landing-page-audit
 
-This skill uses allowable CAC and payback as gates; it takes those targets as input and does not set them.
+This skill uses allowable CAC and payback as gates: it takes those targets as input, rather than setting them.
 
 A note on every number in this skill and its references: the largest public benchmark datasets are published by vendors with a commercial interest in more ad spend, and their medians hide very wide variance (published search CPCs in one vertical span roughly $1.50 to $50+). Treat all figures as directional ranges, never as targets. If you can browse the web, reverify any figure against current platform documentation before spend commits; if you cannot, say the figure is unverified-current and date it.
 
