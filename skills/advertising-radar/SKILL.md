@@ -95,7 +95,7 @@ Every tie above is decided, not deferred:
 
 The axes disagree exactly where the choice is hard, and a minutes-per-week budget makes that disagreement structural rather than incidental: attention cost is the denominator, so every long-form source loses every round however much durable understanding it carries.
 
-The event is the most valuable single entry and the least efficient one. The podcast and the conference talk on video sit in the same trap. Nothing that takes an hour survives a cut run in minutes.
+The event is the most valuable single entry and the least efficient one. The podcast and the conference talk on video sit in the same trap. Nothing that takes an hour survives a cut measured in minutes.
 
 Promote long-form against the ratio on purpose, never by waiting for the ratio to pick it:
 
