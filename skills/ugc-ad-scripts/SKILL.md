@@ -11,7 +11,7 @@ metadata:
 
 Turn a product brief and target audience into UGC-style short-form video ad scripts a creator can film: hook, body, CTA, 3-5 hook variants per concept, and the delivery notes needed to shoot.
 
-The strategist writes the script, the creator performs it, the editor assembles it - "You're not paying the creator to be the creative strategist" (Savannah Sanchez, The Social Savannah). Roles stay separate; combining them is the most-cited cause of mediocre output.
+The strategist writes the script; the creator performs it; the editor assembles it - "You're not paying the creator to be the creative strategist" (Savannah Sanchez, The Social Savannah). Roles stay separate; combining them is the most-cited cause of mediocre output.
 
 ## Scope
 
