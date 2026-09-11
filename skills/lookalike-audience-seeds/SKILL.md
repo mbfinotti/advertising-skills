@@ -15,7 +15,7 @@ Select, size, and validate the seed customer list that a lookalike, similar, or 
 - **Homogeneity and value concentration beat size** - Meta's own guidance holds that a seed's homogeneity affects audience effectiveness more than its size. Practitioner consensus (Stackmatix, Grow With Sakib - directional, not audited) is that a few hundred high-value customers outperform thousands of undifferentiated subscribers.
 - **Inclusion is a suggestion, exclusion is a rule** - on Meta (Advantage+) and Google (Demand Gen, where lookalike reach tiers now function as signals rather than hard segments), the delivery algorithm may override an inclusion audience. Only exclusion/suppression audiences remain hard rules.
 
-The seed's job is feeding the algorithm the cleanest signal, not fencing an audience - which raises the quality bar, it does not remove it.
+The seed's job is feeding the algorithm the cleanest signal, not fencing an audience - which raises the quality bar rather than removing it.
 
 This skill ends at a specified, validated seed definition plus its export/handoff spec. It never walks through creating or uploading the audience inside any ad platform's interface.
 
