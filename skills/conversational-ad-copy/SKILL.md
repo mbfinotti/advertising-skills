@@ -89,7 +89,7 @@ Answers 11-13 re-rank both ordered menus below; the package states which answer 
 
 The copy's job changes here, not just its length. "Traditional PPC copy is built to interrupt. In ChatGPT, interruption loses" (Demand Curve). A second, independent practitioner source states the same principle from the opposite direction: a conversational ad should contribute to the answer rather than change the subject, since copy that reads as salesy or overtly promotional creates a jarring context switch that damages both user experience and advertiser performance (Ryze AI).
 
-The reader is mid-deliberation with an assistant they already trust; an ad behaving like a banner reads as an intruder in the thread. Treat the surface as a recommendation layer, not search - "the ad that wins is the one that feels like it belongs in that conversation."
+The reader is mid-deliberation with an assistant they already trust. An ad behaving like a banner reads as an intruder in the thread. Treat the surface as a recommendation layer, not search - "the ad that wins is the one that feels like it belongs in that conversation."
 
 Strong conversational creative does four things (Demand Curve):
 
