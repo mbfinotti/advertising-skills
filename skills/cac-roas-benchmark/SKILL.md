@@ -101,7 +101,7 @@ A worked example in circulation (Eightx): $84K spend, 2,000 new customers of whi
 - **Efficiency/value tie (blended == MER):** they are one metric with two denominators, and the tie holds only while agency, tooling and creative spend are small next to media. Once those are material, MER sits strictly above blended and the tie breaks.
 - **Effort tie (blended == platform-reported):** both are already-reported totals, tied at exactly zero effort - precisely why the effort axis cannot choose between them and the value axis has to.
 
-The axes disagree here, and the disagreement is the finding: platform-reported ROAS is the cheapest number in the building and the least worth acting on, while POAS is the most expensive and the only one that is actual profit. Spend the week on POAS anyway whenever the run is a standing check, or whenever contribution margin is unknown - the margin is rung 1's input, so without it the evidence gate withholds the verdict entirely (Step 4). That week buys the verdict itself, not a nicer number.
+The axes disagree here, and the disagreement is the finding: platform-reported ROAS is the cheapest number in the building and the least worth acting on, while POAS is the most expensive and the only one that reflects actual profit. Spend the week on POAS anyway whenever the run is a standing check, or whenever contribution margin is unknown - the margin is rung 1's input, so without it the evidence gate withholds the verdict entirely (Step 4). That week buys the verdict itself, not a nicer number.
 
 **Every ordering in this skill is a default, not a law.** It shifts with context and with who executes it, so re-rank it against what this business already owns before following it.
 
