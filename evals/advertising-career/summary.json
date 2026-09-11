@@ -1,0 +1,467 @@
+{
+  "repo": "advertising-skills",
+  "skill": "advertising-career",
+  "scenarios": 12,
+  "expectations_total": 143,
+  "expectations_subjective": 3,
+  "expectations_objective": 140,
+  "pass_rate_with_skill_pct": 88.1,
+  "pass_rate_without_skill_pct": 37.8,
+  "delta_pp": 50.3,
+  "uplift_multiplier": 2.33,
+  "trigger_accuracy_pct": 85.8,
+  "trigger_queries": 134,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Notes the autobidder optimises toward the conversions it can see, which is exactly the number the OS-level privacy change broke"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Explains why listings demand certifications anyway: individual certifications roll up into an agency's partner-program status (badge, beta access, rep support), not because they predict candidate quality"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends running self-funded spend alongside applications, noting no credible-minimum budget exists because the full loop matters, not the size"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Warns against modelling the plan on inflated self-taught success stories such as '20x ROAS' claims; a small honest documented project beats an inflated one"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends a public written teardown of a brand's ads as a lead or companion piece because it carries zero confidentiality risk"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes the teardown doubles as rehearsal for the live-audit interview format"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that the process section carries the hiring signal: it shows judgment, not access to budget"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Frames the take-home as the one interview format whose effort the candidate controls, with the freed hours redirected to higher-value rehearsal such as the live audit"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Attribution or tracking accuracy comes last, with the note that a reporting artefact is not a performance drop"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Cites the survey evidence that remit growth without matching pay is widespread (51.2%, Marketing Week 2026 survey), making it a lever rather than a grievance"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Re-ranks on what the user is short of: short of money points to in-house early, short of autonomy is the case that takes freelance early despite the order"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Treats agency and freelance effort as a tie in size only, costing different things: hours and burnout risk versus income stability and a standing sales job"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "States that no credible-minimum budget exists for self-funded spend: the full loop matters, not the size"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Warns of the self-funded path's risks: unmentored bad habits, and no title conferred on its own"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Expresses effort in hours, years committed, and reversibility, never in money"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Names what changes on the DTC side: channel families (paid social, short-form video, shopping/feed formats) and core metrics (ROAS, MER, contribution margin, CPA rather than pipeline and MQL/SQL)"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Positions the user's seven years of watching automated systems as progress toward system judgment, the appreciating skill built from exactly that experience"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Warns that quoting a 2025 figure overstates the current market because the strongest UK survey shows marketing pay declining year-on-year"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Cites the Marketing Week 2026 Career & Salary Survey as the survey-grade UK benchmark"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States the 2026 senior manager figure of \u00a360,577"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Contrasts the 2026 figure with the 2025 senior manager figure of \u00a372,434 to show the decline"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Names the survey's respondent count (2,350) or its April 2026 date when grading the source"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Labels every quoted pay figure with currency, source, date, and grade"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Distinguishes survey-grade sources from aggregate or job-board estimates, treating aggregates as wide ranges"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Offers the 3Search Performance Marketing Salary Guide 2025 (1,300+ responses, \u00a350,000-\u00a370,000 for PPC Managers) as an additional survey-grade anchor"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Warns that an undated or last-year figure quoted in a negotiation damages the candidate's credibility"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Cites the April 2025 confirmation that Chrome would not add a user-choice prompt"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States that cookies remain enabled by default in Chrome while other browsers already block them"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Redirects the answer to Apple's ATT (2021) as the change that durably reduced signal"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Explains that ATT drove the over-attribution problem and the industry move to blended metrics and incrementality"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Includes the senior-level framing: being able to explain why platform-reported ROAS diverges from blended MER"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Notes the autobidder optimises toward the conversions it can see, which is exactly the number the OS-level privacy change broke"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that the whole certification menu ranks below one published teardown or equivalent demonstrable result"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Identifies Skillshop, LinkedIn Marketing Labs, TikTok Academy, and Amazon Ads as free"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Gives Skillshop specifics: open-book exam of about 75 minutes and a 12-month expiry with the renewal diarised"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Explains why listings demand certifications anyway: individual certifications roll up into an agency's partner-program status (badge, beta access, rep support), not because they predict candidate quality"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Warns that a certification-only CV is a documented rejection pattern"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends chasing an agency junior seat as the default entry path"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends running self-funded spend alongside applications, noting no credible-minimum budget exists because the full loop matters, not the size"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Warns against modelling the plan on inflated self-taught success stories such as '20x ROAS' claims; a small honest documented project beats an inflated one"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Sets the dated benchmark-to-change-course: no interviews after roughly 6 months of applications means the gap is demonstrable results, not more certifications"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Breaks the TikTok Academy versus Amazon Ads priority by the user's channel interest (short-form video versus retail media) or asks which channel they target"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Converts the absolute figures ($62K/month spend, real ROAS values) into percentage change, indexed values (baseline = 100), or aggregated ranges, never absolutes"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Advises re-reading the NDA or client contract before publishing anything client-derived, because a breach cannot be undone"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends a public written teardown of a brand's ads as a lead or companion piece because it carries zero confidentiality risk"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes the teardown doubles as rehearsal for the live-audit interview format"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Structures the case study as problem, process, solution, indexed results, learnings"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Includes a learnings element naming something that did not work"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Includes an explicit statement in the deliverable that details are anonymised and figures indexed"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Challenges the 20-hour plan instead of sequencing it"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends time-boxing the take-home to 2-4 hours"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Cites the documented pattern: companies brief 'a few hours' while candidates report 12-30+ hours"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Offers a scoped alternative (e.g. focus the hours on the channel and measurement plan and name what a full plan would additionally need)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Advises stating the time-box explicitly in the deliverable"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Advises leading with reasoning rather than production polish, deprioritising the 12-slide deck"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Mentions the documented idea-theft risk around unpaid take-home work"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Frames the take-home as the one interview format whose effort the candidate controls, with the freed hours redirected to higher-value rehearsal such as the live audit"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Does not produce or outline a full go-to-market plan sized to the user's 20-hour scope"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Puts money first: where spend concentrates, whether the top spenders hit target CPA or ROAS, and the single biggest waste line"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Attaches to each recommended change the metric that would prove it worked"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The ROAS-drop answer opens by scoping the comparison window, noting a drop measured over a week or less is often noise"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Creative health comes first, citing fatigue as the cause roughly 60-70% of the time, checked via frequency and the age of the top-spending creatives"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Audience saturation comes second, identified by rising CPM against flat reach"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Site-side conversion comes third: landing page, offer, price, or checkout changes the ad account cannot fix"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Attribution or tracking accuracy comes last, with the note that a reporting artefact is not a performance drop"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States the ordering's rationale: hit rate per minute of checking, not likelihood alone (in-account checks take minutes; site-side is a cross-team ask)"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Closes the diagnosis with the business metric that decides it: blended MER or contribution, not the platform dashboard alone"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that naming the threshold as something that should have been agreed before the test reads as senior"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Rejects the tenure, campaign-count, reliability, and peer-comparison framing rather than tightening it, because cases citing years served, hours, campaign counts, or effort fail"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Cites the survey evidence that remit growth without matching pay is widespread (51.2%, Marketing Week 2026 survey), making it a lever rather than a grievance"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Maps the evidence to what the senior rung is screened for: forecasts and budgets, multi-account portfolio economics, C-level narrative, QA of juniors"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Names budget and forecast responsibility as the senior-track signal to demonstrate or explicitly request"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Uses the one-pager structure: what I own now, what the owned number did, evidence against the next rung's screen, market anchor, the ask"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The ask names title, band, and timing in one sentence"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Includes a market anchor carrying currency, source, date, and grade, with the grade stated out loud"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Warns that an undated or last-year anchor damages credibility while the surveyed market is declining"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Sets a benchmark-to-change-course: budget or forecast responsibility not granted within an agreed window means the senior track is blocked there and the plan moves to changing seats"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Advises citing the internal ladder or a real job description for the target title when mapping evidence to the next rung's screen"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "States that the seat ranking flips at mid-level: from mid onward in-house ranks above freelance, which ranks above agency"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "States that staying agency past mid-level fights the compensation curve (agency pay lowest at junior and capped at mid)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Corrects the \u00a370K+ arithmetic: the \u00a3300 median PPC day rate (itjobswatch, 2025) is down roughly 15% year-on-year and freelance income is volatile"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Re-ranks on what the user is short of: short of money points to in-house early, short of autonomy is the case that takes freelance early despite the order"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Uses the burnout evidence as survey-grade context for the agency exit (Marketing Week 2026 survey figures such as 65.3% overwhelmed or 55.1% emotionally exhausted)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Treats agency and freelance effort as a tie in size only, costing different things: hours and burnout risk versus income stability and a standing sales job"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Quotes pay figures with source, date, and grade, and treats the \u00a348K offer against dated ranges rather than points"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "States the ordering out loud as a default rather than a law, and names which of the user's circumstances moved which option"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Asks clarifying questions or explicitly conditions the recommendation on the unanswered constraints (deadline, one-off versus compounding goal, effort ceiling and reversibility)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Rejects the study-only plan: from cross-channel allocation downward the roadmap step is negotiating access (budget, a second channel, enough spend to hold a geo out), not studying"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Builds the roadmap by diffing the user's current evidence against what the rung above is screened for, not as a generic curriculum"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Sequences unit economics first on efficiency, because a week of study changes how every answer is read at any employer"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Names incrementality as the option the efficiency order starves (first on value and on effort) and promotes it deliberately because the user targets head of growth and sits on real spend"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Names budget and forecast responsibility as the senior-track signal: if the employer is not handing it over, the user is not on the senior track there whatever the title says"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Names at least one completed incrementality test (geo holdout or conversion lift) as the lead or head-of-growth signal, expected above roughly $10M in spend"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Distinguishes what remains genuinely study-able (e.g. unit economics) from what requires negotiated access (incrementality, forecasting, cross-channel allocation)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Ties the head-of-growth target to its screen: P&L ownership or accountability for the revenue number, cross-channel allocation, hiring, incrementality"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "States deleted options as off the menu rather than ranked last, so they do not return as scope later"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "States that no credible-minimum budget exists for self-funded spend: the full loop matters, not the size"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Warns of the self-funded path's risks: unmentored bad habits, and no title conferred on its own"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Expresses effort in hours, years committed, and reversibility, never in money"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Explains why the agency junior default is displaced here, referencing its pay level (UK postings clustering \u00a324,000-\u00a330,000) against the no-pay-cut constraint or the adjacent-seat promotion rule"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Refuses to rank B2B against B2C, framing them as two markets a buyer moves between rather than options competing for the same hours"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Notes the practitioner consensus that creative roadmapping has no AI replacement yet"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "States the deliberate contradiction: the cheapest area to pick up (AI-creative workflows, an evening) is also the one commoditising fastest, so it wins an interview this quarter and expires by the next rung"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Conditions the lead choice: AI-creative workflows on a hard deadline, creative strategy and testing on a compounding mandate, and never the cheap end as a career case on its own"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Positions the user's seven years of watching automated systems as progress toward system judgment, the appreciating skill built from exactly that experience"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Expresses the effort axis in time units (an evening, a week, a quarter, years), never in money"
+      }
+    ]
+  }
+}

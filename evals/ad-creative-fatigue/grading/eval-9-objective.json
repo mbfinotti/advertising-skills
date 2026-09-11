@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the campaign-level average as the unit of analysis",
+        "evidence": "\"Wrong unit of analysis. You have 6 concepts, not 28 independent assets. Campaign-average CPA hides which concepts are healthy\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires analysis at creative and concept level, grouping the 28 ads under their six concepts",
+        "evidence": "\"Roll the 28 assets up to their 6 parent concepts.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that one or a few fatigued ads can drag the campaign average while most creatives stay healthy",
+        "evidence": "\"whether 1 of 6 concepts is dying and dragging the average\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes Advantage+ automated rotation silently shifts budget away from fatigued assets, masking per-asset decay, so asset-level breakdowns must be read",
+        "evidence": "\"Advantage+ shopping auto-rotates and silently shifts budget away from decaying assets. Reading campaign CPA instead of the per-asset breakdown is exactly the trap\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags a creative silently losing budget share with no manual change as itself a decay signal to check per creative",
+        "evidence": "\"the platform is already reallocating spend away from anything it's deprioritizing, which is itself a leading signal (spend-share loss) you'd otherwise miss\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adopts the offered per-creative per-day export as the working data granularity",
+        "evidence": "\"Pull the per-creative-per-day export (you already have this granularity \u2014 it's the best case the method assumes).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses the blanket refresh of all 28 ads",
+        "evidence": "\"don't replace all 28 next month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds each creative's own trailing baseline before judging any of them",
+        "evidence": "\"Compute each concept's own baseline: 3-day moving average vs its trailing 14-day baseline\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs the confounder screen on the CPA rise before attributing anything to fatigue",
+        "evidence": "\"Phase 0 \u2014 Confounder screen at campaign level (this week, Sep 12\u201316). Run before touching any creative.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defers any fatigue verdict until the per-creative read is complete, or issues insufficient data at campaign grain",
+        "evidence": "No campaign-level fatigue verdict is issued; instead a phased roadmap defers to per-concept verdicts.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats CPA as a lagging signal and requires leading signals per creative before any call",
+        "evidence": "verdict template lists \"CPA : ... [lagging]\" and instructs pulling link CTR, hook rate etc. first, requiring \"\u22652 signals, \u22651 leading\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the campaign-level average as the unit of analysis",
+        "evidence": "\"'Replace all 28 next month' treats symptom (visible ad count) as if it were the diagnosis\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires analysis at creative and concept level, grouping the 28 ads under their six concepts",
+        "evidence": "'Pull the per-creative-per-day export and roll it up to the 6 concepts (spend-weighted)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that one or a few fatigued ads can drag the campaign average while most creatives stay healthy",
+        "evidence": "Implied via the tiering table (\ud83d\udfe2/\ud83d\udfe0/\ud83d\udd34) separating a healthy control from fatigued and dead-weight concepts",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes Advantage+ automated rotation silently shifts budget away from fatigued assets, masking per-asset decay, so asset-level breakdowns must be read",
+        "evidence": "'Advantage+ often concentrates >70% of budget on 1\u20132 winners \u2014 check if the CPA rise is driven by those winners fatiguing, or by budget spilling into weak ads'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags a creative silently losing budget share with no manual change as itself a decay signal to check per creative",
+        "evidence": "Spend share is checked as part of tiering but never explicitly framed as a standalone decay signal in itself",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adopts the offered per-creative per-day export as the working data granularity",
+        "evidence": "'Pull the per-creative-per-day export and roll it up to the 6 concepts'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses the blanket refresh of all 28 ads",
+        "evidence": "Still plans to replace all 28: '\ud83c\udfaf Recommendation: refresh all 28, but in waves... Week 4 \u2014 Full coverage... All 28 replaced'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Builds each creative's own trailing baseline before judging any of them",
+        "evidence": "Uses current-period tiering thresholds rather than each creative's own historical trailing baseline",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the confounder screen on the CPA rise before attributing anything to fatigue",
+        "evidence": "'CPM (rules out \"it's just gotten more expensive to buy this audience\")' checked as part of the diagnostic pull",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defers any fatigue verdict until the per-creative read is complete, or issues insufficient data at campaign grain",
+        "evidence": "'Diagnose before building (Days 1\u20133)... Classify each of the 6 concepts' precedes any action plan",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats CPA as a lagging signal and requires leading signals per creative before any call",
+        "evidence": "'Frequency (fatigue proxy #1 \u2014 rising frequency + falling CTR = real fatigue)... CTR / outbound CTR... Hook rate' listed as things to check before classifying",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Deletes the first-party custom tier (CRM list upload) entirely because no privacy review exists - not an option, not merely ranked last",
+        "evidence": "\"First-party custom (CRM upload as identifiable audience) | 3,100 people's names/emails uploaded to an ad platform with nobody to review the data-handling question. This is the one place \\\"just be careful\\\" isn't a substitute for review.\" listed under \"Deleted, not demoted\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes any customer-seeded lookalike tier for the same reason",
+        "evidence": "\"Lookalike seeded from CRM customers | Same reason \u2014 it's built from the same identifiable list.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names each deleted tier in the plan with the constraint that killed it and what would bring it back (privacy/legal review becoming available)",
+        "evidence": "The 'Deleted, not demoted' table has columns 'Tier | Why deleted | What would bring it back', e.g. for the CRM upload tier: 'What would bring it back' = 'Legal/privacy support, even part-time or fractional.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes deletion from demotion: a low effort ceiling alone would only demote those tiers; the absent privacy review is what deletes them",
+        "evidence": "\"Zero privacy review, ever deletes any tier needing identifiable data uploaded to an ad platform. That's not a demotion, it's a removal \u2014 nobody exists to sign off on a DPA or a consent question, so those tiers aren't options for this account.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes retargeting to run first: pixel-based, no data upload needed, returns readable evidence within days, fitting the 5-week hard date",
+        "evidence": "\"Retargeting pool, today \u2014 it's already live via your existing pixel, needs zero new assets, and needs the lead time to fill.\" and table entry: 'Fastest CPA read; lowest cost-per-meeting.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Demotes or excludes cold broad from the 5-week window because it needs a full learning cycle before it says anything",
+        "evidence": "\"Cold broad/algorithmic | Addressable universe (mid-size grocery chains) is a few thousand accounts worldwide \u2014 too small to ever clear a learning threshold; the algorithm would spend your budget finding irrelevant reach.\" listed as deleted, and the intro notes the hard date 'kills anything needing a full learning cycle.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the 4-6-month-old funding/acquisition list as context, never a trigger (signal older than ~90 days)",
+        "evidence": "\"\u26a0\ufe0f Stale as a signal, still valid as an attribute. Past ~90 days it no longer tells you who to reach first \u2014 it tells you who can afford to buy. Use it to qualify, not to prioritize. Don't message these 45 as 'we saw your raise'; that window closed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the 3-week-old hiring-signal list as the priority prospecting signal (fresh signal sets tier priority)",
+        "evidence": "\"28 chains posting supply-chain analyst roles | <3 weeks | \ud83c\udfaf Real signal... active hiring for the exact function that buys this software is a genuine 'reach first' trigger\" and Company-List tier is called \"your only evidence-backed 'why now' tier\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States which answer moved which tier (hard date, missing privacy review, effort ceiling each attributed to a specific re-rank or deletion)",
+        "evidence": "\"Zero privacy review, ever deletes any tier needing identifiable data uploaded to an ad platform... Hard 5-week date promotes tiers that read fast (retargeting, evidence-backed lists) and kills anything needing a full learning cycle.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes platform-native behavioral/in-market targeting as a viable prospecting tier requiring nothing to build or upload, fitting the 4-hour-a-week effort ceiling",
+        "evidence": "\"Behavioral / in-market | Platform-native industry (grocery/retail) + function targeting, nothing uploaded | Broad enough to clear floor on its own | $2,800/mo (20%) | Refill layer...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies signal expiry going forward: the hiring list is refreshed and entries age out at ~90 days",
+        "evidence": "\"Refresh the 28-company hiring list every 2-3 weeks \u2014 postings 'in the last 3 weeks' age out of freshness fast.\" combined with the earlier ~90-day expiry threshold established for the same signal ('Inside the ~90-day window' / 'Past ~90 days it no longer tells you who to reach first').",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records evidence source and date next to each tier in the plan",
+        "evidence": "Only the ICP/Signals section (section 1) ties evidence source and age to the underlying lists (e.g. 'Evidence source: your product description + CRM' and the Age column). The funded-tier table (section 2) gives a 'Defining signal / evidence' column but does not attach explicit dates/ages to each tier individually (e.g. Retargeting's '25k site visits/mo' and Behavioral's 'nothing uploaded' carry no date), so evidence+date is not consistently recorded per tier.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States promote/hold/kill decision rules in the plan before launch",
+        "evidence": "\"Promote/hold/kill, decided per tier at week 5: promote if it beats your (still-to-be-set) target CPA \u2014 scale ~20%; hold if within \u00b120% or still learning; kill if it's spent 2\u00d7 target with results 50%+ worse than your best tier, or stalled below floor.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Deletes the first-party custom tier (CRM list upload) entirely because no privacy review exists - not an option, not merely ranked last",
+        "evidence": "The plan keeps and heavily uses the CRM list throughout: 'Tier 0 \u2014 CRM \u2229 Signal lists (runs first)' and 'Tier 1 \u2014 CRM reactivation (rest of the list)... Remaining ~3,065 CRM contacts.' No privacy review is cited as a reason to remove CRM usage; it is instead the primary, first-run tier.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes any customer-seeded lookalike tier for the same reason",
+        "evidence": "No lookalike-audience tier appears anywhere in the tier plan (Tiers 0-4 cover CRM overlap, CRM reactivation, signal-list ABM, site-traffic retargeting, and cut broad paid demand gen) \u2014 there is nothing to delete or comment on.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names each deleted tier in the plan with the constraint that killed it and what would bring it back (privacy/legal review becoming available)",
+        "evidence": "The only tier explicitly killed is Tier 4: 'Broad paid demand gen: cut for this sprint... Not enough runway for cold paid awareness to mature into board-visible pipeline in 5 weeks with a niche ICP. Revisit after the funding announcement.' The killing constraint given is runway/timing, not a missing privacy/legal review, and no CRM or lookalike tier is named as deleted.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes deletion from demotion: a low effort ceiling alone would only demote those tiers; the absent privacy review is what deletes them",
+        "evidence": "There is no discussion of privacy review at all in the transcript, and no CRM/lookalike tier is deleted, so no such distinction is drawn anywhere in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes retargeting to run first: pixel-based, no data upload needed, returns readable evidence within days, fitting the 5-week hard date",
+        "evidence": "Retargeting (Tier 3) is scheduled in Week 2 ('set up Tier 3 visitor-ID tool + pixel') and ads launch in Week 3, not first. The plan explicitly states Tier 0 CRM-overlap outreach runs first: 'Send those first, this week, before anything else \u2014 including before setting up the visitor-ID tool.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Demotes or excludes cold broad from the 5-week window because it needs a full learning cycle before it says anything",
+        "evidence": "'Tier 4 \u2014 Broad paid demand gen: cut for this sprint. Not enough runway for cold paid awareness to mature into board-visible pipeline in 5 weeks with a niche ICP.' This excludes cold broad demand gen from the 5-week window for a maturation-time reason.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the 4-6-month-old funding/acquisition list as context, never a trigger (signal older than ~90 days)",
+        "evidence": "No age is ever attached to the funding/M&A list; it is instead treated as an active trigger \u2014 Tier 0 outreach references 'saw the Series B' and Tier 2 explicitly favors it: 'favor the M&A/funding list \u2014 cash in hand beats a single job req as a buying signal.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the 3-week-old hiring-signal list as the priority prospecting signal (fresh signal sets tier priority)",
+        "evidence": "No ages are given for either signal list, and the plan explicitly ranks the funding/M&A list above the hiring-signal list: 'favor the M&A/funding list \u2014 cash in hand beats a single job req as a buying signal.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States which answer moved which tier (hard date, missing privacy review, effort ceiling each attributed to a specific re-rank or deletion)",
+        "evidence": "The plan attributes ranking to warmth/relationship/cost/effort (e.g. 'Known relationship + live buying trigger = warmest combination') but never attributes any re-rank or deletion to a missing privacy review, and the hard date is only used for scheduling, not as a stated cause for demoting/deleting a tier.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes platform-native behavioral/in-market targeting as a viable prospecting tier requiring nothing to build or upload, fitting the 4-hour-a-week effort ceiling",
+        "evidence": "The closest tier, Tier 3, requires setup work ('A company-level... visitor-ID tool \u2192 filtered account list \u2192 LinkedIn/programmatic ABM retargeting ads' and 'set up Tier 3 visitor-ID tool + pixel'), not a no-build/no-upload platform-native option; no such tier is described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies signal expiry going forward: the hiring list is refreshed and entries age out at ~90 days",
+        "evidence": "No mention of signal expiry, refresh cadence, or a 90-day aging rule for the hiring-signal list anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records evidence source and date next to each tier in the plan",
+        "evidence": "Tiers list audience, channel, effort, cost, and board metric, but no evidence source or date fields appear next to any tier.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States promote/hold/kill decision rules in the plan before launch",
+        "evidence": "The plan contains tiering, budget, a week-by-week schedule, and compliance guardrails, but no explicit promote/hold/kill decision-rule framework is stated anywhere before execution begins.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

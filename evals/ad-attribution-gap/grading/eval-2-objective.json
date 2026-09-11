@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects summing 640 + 510 + 210 into a 1,360 paid total as invalid.",
+        "evidence": "\"Ad platforms never get summed against an anchor: each one claims credit for conversions it influenced, and those claims overlap heavily with each other.\" and in the variance table: \"Google + Meta + TikTok (1,360) vs. orders (780) ... Bucket: Not a valid comparison ... Status: Retracted from report\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the true conversion count is 780 (the order system's number) with overlapping platform claims on it, not 1,360 conversions.",
+        "evidence": "\"Anchor: order system. Anchor count: 780 paid-attributed orders.\" and \"1,360 isn't '1,360 orders the platforms saw that the order system missed' \u2014 it's three overlapping claims on a pool of 780 real orders.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to report a '74% over-count' as the user computed it.",
+        "evidence": "\"'1,360 vs. 780 = 74% over-reporting': invalid comparison. Platforms summed against a deduplicated anchor. Retract this number from the report; it doesn't describe anything real.\" and \"Don't lead with a percentage.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains cross-platform self-crediting (several platforms each claiming the same conversion) as a definitional cause to quantify, not a defect to fix.",
+        "evidence": "Variance table row: \"Cause: Cross-platform self-crediting overlap \u2014 several platforms claim the same conversion\" under a row explicitly marked 'Not a valid comparison', and the client-facing framing: \"which is expected and not evidence of a problem on its own.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags Google's 640 claimed vs roughly 330 anchor-credited (about 1.9x) as exceeding the roughly 1.5x ratio that suggests double-counting.",
+        "evidence": "\"640 claimed vs. 330 Google-tagged orders is a 1.94x ratio. That crosses the ~1.5x heuristic where over-reporting stops looking like normal platform self-crediting and starts looking like double-counting or a dedup defect.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the 1.5x ratio as a practitioner heuristic, not a standard.",
+        "evidence": "Consistently called \"the ~1.5x heuristic\" / \"the ~1.5x double-counting heuristic\" throughout (e.g. headline verdicts and section 3), never described as a standard; contrast is made explicit elsewhere for the MER figure: \"(vendor-sourced, not a standard) benchmark\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the suspected double-counting to the unexplained-residual/investigation bucket rather than accepting it as a documented definitional line.",
+        "evidence": "Variance table: \"Bucket: Residual, candidate defect\" / \"Status: Investigate \u2014 see open questions\"; and \"Residual is 100% of the gap by default, which fails the 80%-explained pass bar outright. This is provisional pending the checks below, not a final verdict.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes MER as total revenue divided by total ad spend from the source of truth (about 4.2 from $402k over $96k) as a blended cross-check.",
+        "evidence": "\"Blended cross-check (MER): total revenue \u00f7 total ad spend = $402k \u00f7 $96k = 4.19x.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats MER as a cross-check that sidesteps per-platform attribution, never as a target to hit, and does not present any cited MER figure as a benchmark to reach.",
+        "evidence": "\"it's a blunt instrument: it says nothing about which platform is over-claiming, only that paid spend overall isn't wildly disconnected from total revenue. Don't use it to clear the Google-specific flag.\" The cited 5.0+ figure is called \"not a standard\" and used only as a directional reference, not something to reach.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires normalizing date basis, attribution windows, and view-through/modeled inclusion per platform before quantifying each platform's gap.",
+        "evidence": "Section 2 'Normalization basis' table lists as 'Not confirmed': \"Date basis (interaction-date vs. event-date)\", \"Attribution window per platform\", \"Click-through vs. view-through conversions\", \"Modeled vs. observed conversions\", stating this changes \"how confidently you can call the Google gap a defect rather than a documented delta.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the counting-rule difference (some platforms count every conversion per click, others count one) as a definitional candidate for part of the excess.",
+        "evidence": "Normalization table row: \"Counting rule ('every' vs. 'one' per click) | Not confirmed\", listed among the unconfirmed axes affecting the gap's interpretation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes each platform's gap as its own pair against the 780 anchor with sign, rather than one aggregate paid-vs-orders figure.",
+        "evidence": "Variance table lists separate rows: \"Google Ads (640) vs. Google-tagged orders (330) ... +310\", \"Meta (510) vs. orders ... unknown ... Blocked\", \"TikTok (210) vs. orders ... unknown ... Blocked\", explicitly distinct from the rejected aggregate row for 1,360 vs 780.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects summing 640 + 510 + 210 into a 1,360 paid total as invalid.",
+        "evidence": "\"So 'paid is over-reporting by 74%' isn't defensible as written... platform self-reported numbers are not additive and cannot be trusted as a combined total \u2014 full stop, independent of any specific percentage.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the true conversion count is 780 (the order system's number) with overlapping platform claims on it, not 1,360 conversions.",
+        "evidence": "\"Your order management system, which attributes each order to a single source, recorded 780 paid-attributed orders last month\" combined with \"Google, Meta, and TikTok can *all three* claim that single order inside their own attribution window\" \u2014 establishes 780 as the real anchor with overlapping platform claims, not a summed 1,360.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to report a '74% over-count' as the user computed it.",
+        "evidence": "\"So 'paid is over-reporting by 74%' isn't defensible as written.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains cross-platform self-crediting (several platforms each claiming the same conversion) as a definitional cause to quantify, not a defect to fix.",
+        "evidence": "\"This is expected behavior, not a bug \u2014 it's a structural property of siloed, self-reported attribution.\" Paired with the suggestion to actually quantify overlap: \"feed all three platforms' raw conversion exports into GA4 (or a similar cross-channel model)... or run a holdout/geo incrementality test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags Google's 640 claimed vs roughly 330 anchor-credited (about 1.9x) as exceeding the roughly 1.5x ratio that suggests double-counting.",
+        "evidence": "The transcript only says \"A ~2x gap on a single platform is larger than what cross-platform overlap alone typically explains\" \u2014 it never states or references a 1.5x ratio threshold anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels the 1.5x ratio as a practitioner heuristic, not a standard.",
+        "evidence": "No mention of a 1.5x figure or heuristic appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Routes the suspected double-counting to the unexplained-residual/investigation bucket rather than accepting it as a documented definitional line.",
+        "evidence": "\"The Google gap (640 vs ~330) is the one worth digging into... it's worth isolating before you write anything. Check, in order: 1. Click-through vs. view-through split... 2. Modeled vs. observed conversions... 3. Attribution window mismatch... 4. Tracking leakage on your side\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes MER as total revenue divided by total ad spend from the source of truth (about 4.2 from $402k over $96k) as a blended cross-check.",
+        "evidence": "\"Blended ROAS caveat: $402,000 revenue / $96,000 spend = 4.19x, but flag clearly that this is *total revenue over total spend*, not paid's isolated contribution\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats MER as a cross-check that sidesteps per-platform attribution, never as a target to hit, and does not present any cited MER figure as a benchmark to reach.",
+        "evidence": "\"but flag clearly that this is *total revenue over total spend*, not paid's isolated contribution \u2014 organic, direct, and email are mixed into that $402k too.\" The figure is presented purely as a labeled caveat, never as a target or benchmark.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires normalizing date basis, attribution windows, and view-through/modeled inclusion per platform before quantifying each platform's gap.",
+        "evidence": "The checklist covers attribution window (\"Attribution window mismatch \u2014 confirm Google's conversion window... against whatever window your order system uses\") and view-through/modeled inclusion (items 1 and 2), but no step addresses normalizing the reporting date basis/period across platforms.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the counting-rule difference (some platforms count every conversion per click, others count one) as a definitional candidate for part of the excess.",
+        "evidence": "The transcript discusses attribution logic differences (\"single-touch, deduplicated model\" vs. \"any touch we saw... gets full credit\") but never describes a counting-rule difference of platforms counting every conversion per click versus counting one conversion per click/user.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes each platform's gap as its own pair against the 780 anchor with sign, rather than one aggregate paid-vs-orders figure.",
+        "evidence": "Only Google's gap is examined (\"The Google gap (640 vs ~330)\"), compared against an approximate Google-specific sub-figure (~330), not the full 780 anchor; Meta's and TikTok's individual gaps against 780 are never computed.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

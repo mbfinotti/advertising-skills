@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States platform click-to-approve is not a commercial agreement and requires a written agreement per featured person",
+        "evidence": "\"It is explicitly not a commercial agreement...Fix before launch: a short written agreement per person\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the client's 'go for it' DM as sufficient permission",
+        "evidence": "\"Client's DM 'go for it' \u2014 informal, not per-post, not written. It's not a licence...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires licensed usage rights for the client's post, as a non-employee, in the written agreement",
+        "evidence": "\"For the client specifically, add licensed usage rights, since they're not an employee.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires the partnership label for the client's post, on top of the paid-promotion label",
+        "evidence": "\"It needs the same review, plus a partnership label in addition to LinkedIn's paid-promotion label, since the client isn't an employee.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lists concrete written-agreement terms - several of: usage fee, term (30/60/90 days), spend caps, who may edit the post, pause and revocation handling, disclosure obligations",
+        "evidence": "\"usage fee (if any), term (30/60/90 days), spend cap, who may edit the post, pause/revocation handling, disclosure obligations\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mandates pre-publication compliance review and retention because the firm is regulated",
+        "evidence": "\"needs pre-publication compliance/financial-promotion sign-off as an ad...Retention: keep records of both the live post content and the ad creative\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the 2024 enforcement precedent: a US regulator fined a firm $850,000 over unsupervised influencer posts",
+        "evidence": "\"a 2024 enforcement action fined a firm $850k specifically over unsupervised endorsement posts\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the UK/EEA rule that ads must be obviously identifiable as advertising even when the poster is commercially connected to the brand",
+        "evidence": "\"Ads must be obviously identifiable as advertising even though the posters are genuinely connected to you\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the EEA targeting restriction: sensitive-category signals excluded, with some group or affinity targeting disabled there entirely",
+        "evidence": "\"EEA targeting: group/affinity-based targeting is disabled there \u2014 don't plan audience layers that depend on it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States consent is per-post and instantly revocable - a live switch someone else holds",
+        "evidence": "\"that's the in-platform switch (revocable instantly, by them, at any time)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that the Head of Advisory leaving would end that campaign and the creative cannot be retained, re-run, or re-hosted",
+        "evidence": "\"on LinkedIn, departure breaks eligibility \u2014 the ad turns off and the creative can't be re-hosted\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a multi-person portfolio with an explicit takedown-and-replace step",
+        "evidence": "Recommends adding a candidate post ('identifying at least one more candidate post...so the program survives a single person changing their mind') but never describes a takedown-and-replace step.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains the disclosure rationale: a brand paying to amplify a post about itself is an endorsement with a material connection",
+        "evidence": "The transcript discusses endorsement risk and ad-identifiability rules but never frames the rationale as 'a material connection' or explicitly ties disclosure to the brand paying to amplify a post about itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not greenlight next week's launch as-is; agreements and compliance review come first",
+        "evidence": "\"Realistic sequence: written agreements (both people) \u2192 compliance review of both posts as ads \u2192 link mechanism decided...That's very unlikely to compress into 'next week'\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States platform click-to-approve is not a commercial agreement and requires a written agreement per featured person",
+        "evidence": "'A DM saying \"go for it\" and a click on \"approve\" inside a social scheduling tool are not financial promotion sign-off' plus the requirement to 'Replace the client DM with written, specific consent covering paid use, duration, targeting, and withdrawal rights.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the client's 'go for it' DM as sufficient permission",
+        "evidence": "'Consent gap: a DM is not GDPR-adequate consent for identifiable personal data used in a paid, targeted, indefinite ad campaign.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires licensed usage rights for the client's post, as a non-employee, in the written agreement",
+        "evidence": "The required written consent covers paid use, duration, targeting, and withdrawal (personal-data/consent framing) but never addresses licensing the content/copyright itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires the partnership label for the client's post, on top of the paid-promotion label",
+        "evidence": "No 'Partnership' label requirement is mentioned; only general financial-promotion and DSA 'who paid for this ad' disclosure are discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Lists concrete written-agreement terms - several of: usage fee, term (30/60/90 days), spend caps, who may edit the post, pause and revocation handling, disclosure obligations",
+        "evidence": "Written consent must cover 'that it's paid promotion, expected duration, geographic targeting, and an easy right to withdraw' \u2014 covering disclosure, term, and revocation among the listed categories.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mandates pre-publication compliance review and retention because the firm is regulated",
+        "evidence": "'Route both posts... through a named, independent compliance approver \u2014 document the sign-off' and 'File the approval records... somewhere retrievable for audit,' citing 'SYSC 9 / COBS record-keeping.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the 2024 enforcement precedent: a US regulator fined a firm $850,000 over unsupervised influencer posts",
+        "evidence": "No enforcement precedent or fine figure is cited anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the UK/EEA rule that ads must be obviously identifiable as advertising even when the poster is commercially connected to the brand",
+        "evidence": "The transcript cites EU DSA 'who paid for this ad' transparency/ad-repository rules, not the distinct UK/EEA rule that ads must be obviously identifiable as advertising regardless of commercial connection.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the EEA targeting restriction: sensitive-category signals excluded, with some group or affinity targeting disabled there entirely",
+        "evidence": "No mention of sensitive-category targeting restrictions in the EEA.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States consent is per-post and instantly revocable - a live switch someone else holds",
+        "evidence": "Revocability of consent is never discussed; the consent section covers duration and withdrawal rights as contract terms, not real-time revocation mechanics.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that the Head of Advisory leaving would end that campaign and the creative cannot be retained, re-run, or re-hosted",
+        "evidence": "No discussion of what happens if the Head of Advisory departs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a multi-person portfolio with an explicit takedown-and-replace step",
+        "evidence": "No multi-person portfolio or takedown-and-replace recommendation appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains the disclosure rationale: a brand paying to amplify a post about itself is an endorsement with a material connection",
+        "evidence": "Disclosure requirements are grounded in financial-promotion and DSA transparency rules, not framed as an endorsement/material-connection rationale.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not greenlight next week's launch as-is; agreements and compliance review come first",
+        "evidence": "'Given verification lead times and the need for an independent compliance review, next week is tight but not impossible if you start item 1 and item 4 today' \u2014 conditions launch on completing the compliance/consent punch list first.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

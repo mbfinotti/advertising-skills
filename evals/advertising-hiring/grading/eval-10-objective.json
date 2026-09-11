@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the hybrid promotion: the creative strategist is a separate role bridging creative and buying, not a senior buyer with extra duties",
+        "evidence": "'Creative strategist is defined as \"a separate role bridging creative and buying, not a senior buyer\" \u2014 not a tier you bolt onto an existing media-buyer title.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the trigger condition: creative volume as the bottleneck opens a dedicated creative-strategist req",
+        "evidence": "'creative volume as the bottleneck opens a separate creative-strategist req.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Describes the role as owning the strategy connecting research, creative direction, and performance data across designers and buyers",
+        "evidence": "'The whole point of this rung is sitting at the intersection of research, creative direction, and performance \u2014 as a peer, testing and killing concepts together with the buyer.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the cheap mid-level plan, warning that underpaying this seat is the fast way to burn the ad budget",
+        "evidence": "'going cheap on this seat is \"the fastest way to light your ad budget on fire.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quotes the US creative-strategy compensation benchmark of $180,000 to $250,000-plus with source and date, labelled directional",
+        "evidence": "'Published creative-strategy-director bands run $180k\u2013$250k+ (Foxwell Digital, 2026, directional).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the creative strategist (drives performance learning) from a creative director (drives brand leadership) as the commonly misdiagnosed bottleneck",
+        "evidence": "The transcript never explicitly separates a 'creative strategist' from a distinct 'creative director' role concept; it only references a 'creative-strategy-director' salary band without drawing this distinction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the polished portfolios as unreliable evidence, because generated portfolios have defeated portfolio screening for creative-strategy skill",
+        "evidence": "'\"AI-generated portfolios have made portfolio screening unreliable for judging creative-strategy skill.\" Easy-looking portfolios in 2026 are a red flag for this rung, not a green light.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a paid assignment or paid trial as the work sample for this seat, named as a deliberate promotion of a format the default ranking starves",
+        "evidence": "'Paid concept-brief assignment... promoted from a portfolio review precisely because the portfolio can't be trusted as verifiably their own work'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pairs the work sample with a debrief on past creative wins and losses",
+        "evidence": "'Paid concept-brief assignment + a debrief on past creative wins/losses'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps any real-work assignment paid, never an unpaid take-home brief",
+        "evidence": "'No unpaid take-home, anywhere, at any stage.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defines the role's owned metrics around creative performance: hook rate, CTR by unit, or creative win rate",
+        "evidence": "'reads hook rate, hold rate, CTR-by-unit, and briefs from that' and 'validated against hook rate / hold rate \u2014 not raw CTR alone'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the distinct senior creative-strategist seat is largely a DTC phenomenon, fitting this brand's segment",
+        "evidence": "No statement claims the creative-strategist rung is 'largely a DTC phenomenon'; only that this brand is B2C/DTC apparel, without generalizing the rung to the segment.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the hybrid promotion: the creative strategist is a separate role bridging creative and buying, not a senior buyer with extra duties",
+        "evidence": "\"Plan A \u2014 reject as written... Your buyer still has a full-time buying job; 'creative strategy' gets bolted on with no reduction in buying scope.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the trigger condition: creative volume as the bottleneck opens a dedicated creative-strategist req",
+        "evidence": "\"4 concepts/month at $200k/month spend is low by DTC performance-marketing norms... Treat volume as the first lever to pull: target 8\u201312 concepts/month.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Describes the role as owning the strategy connecting research, creative direction, and performance data across designers and buyers",
+        "evidence": "\"Pair them tightly with the buyer via a weekly data readout (what's winning/fading) so creative briefs are driven by buying data.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the cheap mid-level plan, warning that underpaying this seat is the fast way to burn the ad budget",
+        "evidence": "Plan B is rejected for screening logic and reporting line, but no compensation figure or \"underpaying burns budget\" warning appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Quotes the US creative-strategy compensation benchmark of $180,000 to $250,000-plus with source and date, labelled directional",
+        "evidence": "No compensation benchmark appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the creative strategist (drives performance learning) from a creative director (drives brand leadership) as the commonly misdiagnosed bottleneck",
+        "evidence": "\"Creative director\" is never mentioned or contrasted anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the polished portfolios as unreliable evidence, because generated portfolios have defeated portfolio screening for creative-strategy skill",
+        "evidence": "The critique of portfolios is about aesthetic/brand polish not predicting performance creative ability, not about AI-generated portfolios defeating screening.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a paid assignment or paid trial as the work sample for this seat, named as a deliberate promotion of a format the default ranking starves",
+        "evidence": "\"screen with a paid test task (turn a brief into 2\u20133 ad concepts, review against your own historical winners) instead of a portfolio review.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pairs the work sample with a debrief on past creative wins and losses",
+        "evidence": "\"turn a brief into 2\u20133 ad concepts, review against your own historical winners\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps any real-work assignment paid, never an unpaid take-home brief",
+        "evidence": "\"screen with a paid test task\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defines the role's owned metrics around creative performance: hook rate, CTR by unit, or creative win rate",
+        "evidence": "No specific creative-performance metrics are named anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the distinct senior creative-strategist seat is largely a DTC phenomenon, fitting this brand's segment",
+        "evidence": "Not discussed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

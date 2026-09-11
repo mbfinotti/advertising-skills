@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to call the creative fatigued",
+        "evidence": "\"verdict : insufficient data, leaning healthy - do not call this fatigued\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the universal 3.0 frequency kill threshold and states triggers derive from the creative's own trailing baseline and the account's own history",
+        "evidence": "\"That 'kill at 3.0' number is folklore, not a platform rule\" and \"A real fatigue read needs two-plus signals moving together... against the creative's own baseline.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States frequency is a lagging, confirming signal that never carries the fatigue call by itself",
+        "evidence": "\"frequency is a lagging, confirming signal only\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes reported frequency is measured at ad or ad-set level while fatigue happens at creative level",
+        "evidence": "\"it's reported at ad-set level while fatigue happens per-creative\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes reported frequency is a period average, not the marginal effect of the next impression",
+        "evidence": "\"it's a period average, not the marginal effect of the next impression\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the two-signal rule requiring at least two signals, at least one leading, across two or more consecutive periods, and finds no decayed signal here",
+        "evidence": "\"A real fatigue read needs two-plus signals moving together, in the same direction, across two-plus consecutive periods... You have one period... and the two signals you do have are contradicting a decay story\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the stable link CTR (1.24% vs 1.21%) and stable CVR as evidence the creative is healthy",
+        "evidence": "\"Link CTR: 1.24% vs 1.21%... That's up, not decaying\"; \"CVR: 3.1% vs 3.2%... Directionally flat\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a healthy verdict and recommends leaving the ad alone",
+        "evidence": "\"verdict : insufficient data, leaning healthy\" and \"Don't pause the running video.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes cold from warm exposure tolerance before reading the frequency number, citing the higher warm tolerance as an attributed practitioner heuristic rather than a rule",
+        "evidence": "No mention of warm-audience tolerance anywhere; only cold-traffic ranges (2.0-2.5, 2.5-3.0) are cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises against pausing or swapping the creative tomorrow; the ready replacement may enter as an additional test at most, not a substitution",
+        "evidence": "\"do NOT pause. Launch the new video as a NEW ad ID alongside the current one... splitting a modest amount of budget to it rather than replacing the incumbent.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block including a next scheduled review or re-check date",
+        "evidence": "\"re-check : 2026-09-19\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not present the frequency-3.0 rule as a platform rule or research finding",
+        "evidence": "\"That 'kill at 3.0' number is folklore, not a platform rule\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to call the creative fatigued",
+        "evidence": "'A rising CTR at 3.4 frequency is a fairly strong signal that this specific creative hasn't worn out'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the universal 3.0 frequency kill threshold and states triggers derive from the creative's own trailing baseline and the account's own history",
+        "evidence": "'Frequency 3.0 is a rough heuristic, not a law \u2014 it varies a lot by audience size, campaign objective, and creative format'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States frequency is a lagging, confirming signal that never carries the fatigue call by itself",
+        "evidence": "No explicit general statement framing frequency this way",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes reported frequency is measured at ad or ad-set level while fatigue happens at creative level",
+        "evidence": "Not mentioned anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes reported frequency is a period average, not the marginal effect of the next impression",
+        "evidence": "Not mentioned anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the two-signal rule requiring at least two signals, at least one leading, across two or more consecutive periods, and finds no decayed signal here",
+        "evidence": "No such rule is articulated; reasoning is ad hoc rather than a stated two-signal/consecutive-period framework",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reads the stable link CTR (1.24% vs 1.21%) and stable CVR as evidence the creative is healthy",
+        "evidence": "'CTR is up, not down: 1.24% this week vs 1.21% trailing month' and CVR dip framed as noise",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a healthy verdict and recommends leaving the ad alone",
+        "evidence": "'the creative isn't the problem by the data you have \u2014 CTR is your fatigue canary and it's healthy'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes cold from warm exposure tolerance before reading the frequency number, citing the higher warm tolerance as an attributed practitioner heuristic rather than a rule",
+        "evidence": "No mention of cold vs warm audience tolerance anywhere",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises against pausing or swapping the creative tomorrow; the ready replacement may enter as an additional test at most, not a substitution",
+        "evidence": "'Launch the new video as a second ad in the same ad set... not a replacement'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block including a next scheduled review or re-check date",
+        "evidence": "Only a vague 'watch CVR for one more week' with no dated verdict block",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not present the frequency-3.0 rule as a platform rule or research finding",
+        "evidence": "Calls it 'a rough heuristic, not a law'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

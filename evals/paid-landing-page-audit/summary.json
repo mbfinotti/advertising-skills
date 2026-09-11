@@ -1,0 +1,239 @@
+{
+  "repo": "advertising-skills",
+  "skill": "paid-landing-page-audit",
+  "scenarios": 9,
+  "expectations_total": 121,
+  "expectations_subjective": 3,
+  "expectations_objective": 118,
+  "pass_rate_with_skill_pct": 94.2,
+  "pass_rate_without_skill_pct": 65.3,
+  "delta_pp": 28.9,
+  "uplift_multiplier": 1.44,
+  "trigger_accuracy_pct": 85.5,
+  "trigger_queries": 110,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 3,
+        "expectation": "The response evaluates fields by whether each is needed now versus collectible after the conversion."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response offers the legitimate alternative: real, attributable testimonials carrying a real name, role, and specific result."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Findings are evaluated mobile-first, since 74% of spend lands on mobile."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The response explains that stripped click IDs break the platform's ability to attribute and optimise."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The message-match check covers the visual axis (does the hero echo the ad's creative), not only the headline wording."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Findings are verified or scoped mobile-first, since 81% of sessions and spend are mobile."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The response refuses to compute a numeric MECLABS score, stating the heuristic is a thought tool, not an equation to solve."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The response does not deliver a ranked landing-page fix list."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The response declines to recommend an A/B test as the validation path at this conversion volume (below roughly 100 conversions per month)."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The response notes that the volume thresholds are practitioner heuristics and that a proper sample-size calculation would supersede them."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Findings derived from the pasted copy are labelled as opinion (or explicitly distinguished from data-backed observations)."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The report includes a section listing what could not be checked from pasted copy alone (e.g. rendering, load speed, layout, analytics funnel) and what that means for the findings."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response rejects the ~11% per-field figure, stating that published per-field numbers disagree in size and shape and no trustworthy universal percentage exists."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response states the defensible claim as direction only: every field costs conversion and the cost is non-linear."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response acknowledges a long lag (on the order of 30-180 days) before the change's true pipeline effect is visible."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response does not prescribe an A/B test as the validation path given roughly 85 conversions per month."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The proposed validation is shipping plus monitoring downstream lead-quality or pipeline movement over time."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "No specific percentage conversion or fill-rate lift is promised anywhere in the response."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Form findings carry an evidence-class label (opinion vs observation) or an equivalent explicit distinction."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response identifies fake urgency or fake scarcity as an FTC and/or ad-platform-policy exposure, not merely a bad practice."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response offers the legitimate alternative: real, attributable testimonials carrying a real name, role, and specific result."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response cites the verified alternative: visual first impressions form in about 50ms (Lindgaard), and/or that about 57% of viewing time lands above the fold."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The refusal is justified with experiment win-rate evidence: only roughly 10-33% of experiments (or about 12% in Optimizely's corpus) improve their target metric."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The countdown-timer removal and the 'double your salary' claim removal lead the list, ahead of every conversion fix."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The response does not adopt cheapest-first as the sort key, and states the ranking principle used instead: funnel step unblocked per unit of effort."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Each ranked fix carries a severity and an effort bracket, and not every fix is marked critical."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Findings are evaluated mobile-first, since 74% of spend lands on mobile."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The response explains that stripped click IDs break the platform's ability to attribute and optimise."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The response explains the 412-vs-236 divergence via attribution-window and view-through differences: two different measures of different things."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The response requires stating which of the two counts every subsequent observation uses (or picking one consistently)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The message-match check covers the visual axis (does the hero echo the ad's creative), not only the headline wording."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The response requests or uses the analytics funnel segmented by device and traffic source."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The report notes that upstream signals (CTR trend, frequency, tracking deduplication) were not supplied, and treats them as unchecked rather than silently assuming the page is the problem."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The offer-match failure is identified: the 35% offer and price are absent from the landing page, flagged as a policy-side bait-and-switch risk as well as a conversion leak."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Each fix names the funnel step it unblocks and carries an evidence-class label, a source tier, a severity, and an effort bracket."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "A not-a-problem section is present and non-empty."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "A re-check section gives, per fix, the funnel step expected to move, the direction, and a date or cadence for judging it."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Findings are verified or scoped mobile-first, since 81% of sessions and spend are mobile."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Given the CPA gap is a multiple of target, the response promotes offer and value-proposition-level work rather than settling for copy tweaks."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The response identifies that the actual ad was never supplied, and either requests it or marks the message-match check as blind or unverifiable without it."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "No specific percentage conversion lift or forecast of reaching 10.9% is given anywhere in the response."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The response refuses to compute a numeric MECLABS score, stating the heuristic is a thought tool, not an equation to solve."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The response notes motivation is largely pre-existing and external: a page refers to it and cannot create it."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The response declines ICE as the prioritisation scheme, naming its weakness: the proposer guesses two of the three inputs and scores their own idea."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The response recommends or applies evidence-weighted, mostly-binary scoring in the shape of PXL instead."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "At least two PXL-style binary questions appear (above the fold, noticeable within five seconds, on the paid entry path, backed by this page's data, backed by established research)."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The response notes the $300M case is a single anecdote, not a transferable lift template."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The 4-click signup path is judged by information scent per step rather than by click count."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The prioritisation ranks by funnel step unblocked per unit of effort, with effort bracketed as time and coordination rather than a currency amount."
+      }
+    ]
+  }
+}

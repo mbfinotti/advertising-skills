@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Applies the automation-layering framework of the three human jobs: Pilot, Doctor, and Teacher",
+        "evidence": "The transcript explicitly uses 'Use the three-job framework (Pilot / Doctor / Teacher) to name which job is actually failing' and describes each: 'Teacher \u2014 feeding the algorithm the business signal...', 'Doctor \u2014 diagnosing whether the target is right...', 'Pilot \u2014 monitoring delivery, catching drift.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the framework to Frederick Vallaeys (or Optmyzr)",
+        "evidence": "The transcript never mentions Frederick Vallaeys or Optmyzr anywhere; the framework is presented with no attribution.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reframes the manual-vs-automated debate into which of the three jobs the account is currently failing",
+        "evidence": "'Reframed this way, \"go back to manual\" and \"never fight the machine\" are both answering the wrong question... The decision was whether the machine was being taught the right thing.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses this account as failing the Teacher job: junk conversion signal feeding the bidder",
+        "evidence": "'Teacher \u2014 feeding the algorithm the business signal it can't see on its own (real lead quality). This is the one failing. Unqualified form fills are flowing in as if they were equally valuable conversions.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the fix is the signal/optimization event, not the bid strategy",
+        "evidence": "'Manual bidding doesn't fix a bad conversion event \u2014 it just makes the same bad optimization visible instead of automated... Re-point the optimization event to a qualified lead, feed automated bidding the corrected signal.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that an improving cost per form fill alongside junk leads means the tracked event is wrong, not the bidder",
+        "evidence": "'Cost per form fill down 30% with volume up is exactly what an automated bidder does when told \"get me more of this label,\" and the label is wrong. The bidder is doing its job faithfully on a bad instruction.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend reverting to manual bidding as the remedy",
+        "evidence": "'Don't revert to manual as a first move. It spends effort on the wrong lever and gives up gains you already earned, without touching the reason SDRs are seeing junk.' Manual is ranked last and explicitly rejected as the fix.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires measurement repair (a deeper funnel event or offline outcome import) before any bidding change",
+        "evidence": "'Push SDR qualification outcome...back to the platform as an offline conversion import, and switch the bid strategy to optimize toward that event instead of raw form fill' is listed as policy option 1, ranked first and required before considering value differentiation (option 2).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies closing the offline loop - pushing CRM stage outcomes with real deal values back to the platform - as the highest-impact B2B move",
+        "evidence": "Option 1 (re-pointing via offline conversion import of SDR qualification) is ranked highest: 'Ranked by value per unit of effort: (1) re-point the event > (2) add value differentiation > (3) revert to manual.' Real deal values are introduced as a follow-on (option 2: 'assign real or tiered values'), sequenced after but still identified as part of the offline-loop closure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends matching the conversion window to the ~4-month sales cycle rather than platform defaults",
+        "evidence": "The transcript explicitly argues against using the 4-month cycle for the evaluation window: 'window in conversion cycles = qualification lag + reporting delay (days, not the 4-month sales cycle \u2014 don't wait for closed-won to judge this).' It recommends matching to the qualification lag, not the full sales cycle.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends monitoring rules layered on top of the automated bidder as a complement, not a competition",
+        "evidence": "'Add monitoring rules on top (delivery drops, cost spikes, re-entry into learning) so the \"black box\" half of the team has a legible way to catch it drifting, instead of relying on trust alone.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges legitimate durable homes for manual bidding (e.g. brand-defense terms, tiny audiences) while rejecting them as grounds in this case",
+        "evidence": "The transcript only discusses manual bidding as a rejected remedy for this account's problem ('revert to manual...it's treating a symptom...instead of the cause') and never mentions any durable legitimate use case for manual bidding such as brand-defense terms or tiny audiences.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Applies the automation-layering framework of the three human jobs: Pilot, Doctor, and Teacher",
+        "evidence": "The transcript never mentions 'Pilot', 'Doctor', or 'Teacher' or any such three-job framework at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Attributes the framework to Frederick Vallaeys (or Optmyzr)",
+        "evidence": "No mention of Frederick Vallaeys or Optmyzr anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reframes the manual-vs-automated debate into which of the three jobs the account is currently failing",
+        "evidence": "The transcript reframes the debate as 'mechanism vs optimization signal' ('Both camps are debating the bidding *mechanism*. The actual problem is the *optimization signal*'), not in terms of the Pilot/Doctor/Teacher jobs framework, which is never introduced.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses this account as failing the Teacher job: junk conversion signal feeding the bidder",
+        "evidence": "The transcript diagnoses a bad conversion signal ('Smart/automated bidding... hill-climbs toward whatever conversion event you feed it... It has no idea a form fill from a job seeker is worthless') but never frames this as failing a 'Teacher job' since that framework isn't used.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the fix is the signal/optimization event, not the bid strategy",
+        "evidence": "\"The actual fix: change what the algorithm optimizes for, not how it bids\" and \"Don't go back to manual bidding. Fix the conversion signal you're feeding the algorithm.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that an improving cost per form fill alongside junk leads means the tracked event is wrong, not the bidder",
+        "evidence": "\"Automated bidding does exactly what you told it: get cheap form fills. It has no idea a form fill from a job seeker is worthless... Reverting throws away a real 30% CPA gain to solve a problem manual bidding doesn't actually solve,\" combined with the diagnosis that 'Even spread \u2192 signal problem. The algorithm is optimizing the wrong goal, full stop, regardless of mechanism.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend reverting to manual bidding as the remedy",
+        "evidence": "\"Don't go back to manual bidding. Fix the conversion signal you're feeding the algorithm (SQL-qualified import, not raw form fill)...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires measurement repair (a deeper funnel event or offline outcome import) before any bidding change",
+        "evidence": "\"Stop optimizing to raw form fill. Feed the platform a downstream qualification signal via offline conversion import (Google Ads Enhanced Conversions for Leads, LinkedIn CRM sync, etc.)... Keep raw form fill as a secondary/observation action only, not the bid target.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies closing the offline loop - pushing CRM stage outcomes with real deal values back to the platform - as the highest-impact B2B move",
+        "evidence": "The transcript recommends importing SQL-qualified/disqualified status ('SDR marks a lead \"SQL-qualified\" or \"disqualified\" in CRM within 24\u201372h, that status gets imported back as the primary conversion action') but does not mention pushing real deal values back to the platform, nor explicitly frame this as 'the highest-impact B2B move.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends matching the conversion window to the ~4-month sales cycle rather than platform defaults",
+        "evidence": "The transcript explicitly avoids waiting for the sales cycle ('You don't need to wait for the 4-month sales cycle to close deals. SQL qualification happens in days') and never discusses setting the conversion window/lookback to match the 4-month cycle.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends monitoring rules layered on top of the automated bidder as a complement, not a competition",
+        "evidence": "No mention of monitoring rules, automated rules, or scripts layered on top of the bidder; the transcript only discusses changing the conversion signal, adding a form gate, and running a holdout test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges legitimate durable homes for manual bidding (e.g. brand-defense terms, tiny audiences) while rejecting them as grounds in this case",
+        "evidence": "The transcript rejects manual bidding broadly ('a human bidding manually on the same \"form fill\" goal... would drift toward the same junk traffic over time, just slower and more expensively') but never acknowledges any legitimate durable use case for manual bidding such as brand-defense terms or tiny audiences.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that the cost-goal strategy (Google Target CPA) has no documented minimum conversion volume and can be started with no conversion history",
+        "evidence": "\"Google Ads Help states Target CPA \\\"can start with no conversion history\\\" and is \\\"effective for campaigns of all sizes.\\\"\" and \"The archetype that actually matches your stated goal... Target CPA \u2014 cost-goal, not return-goal \u2014 and that one has no documented minimum at all.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the '15 conversions in 30 days' minimum to Target ROAS (the return-goal strategy), not to Target CPA",
+        "evidence": "\"'15 conversions in 30 days' figure exists \u2705 True, but it's the Target ROAS (return-goal) minimum for Search/Shopping campaigns \u2014 a different strategy than the one you'd actually want first\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies '50 conversions' figures as reliability recommendations or guidance, not enablement gates",
+        "evidence": "\"it's Meta's ~50-events-per-ad-set-per-week learning-phase guidance (and similar figures for Demand Gen/App/Video campaigns), not a Search Target CPA rule. Even where it applies, it's a reliability recommendation, not a gate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes enablement thresholds from evaluation samples as two different kinds of published number that folklore merges",
+        "evidence": "\"a textbook conflation of two different kinds of number: an enablement gate (am I allowed to turn this on) versus an evaluation sample (how confidently can I read the result once it's on). The agency merged them.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not advise waiting until 15 or 50 conversions before adopting Target CPA",
+        "evidence": "\"Turn on Target CPA now, set at $370 (your trailing actual, not an aspirational number).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that low conversion volume costs variance and slow diagnosis (a bad target cannot be separated from bad luck), not eligibility or access",
+        "evidence": "\"it does cost you something real: variance and slow diagnosis. At this rate, a bad week and a bad target look identical for a while... That's a legitimate reason for caution \u2014 just not a reason to sit on manual bidding.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the volume-budget derivation (required budget \u2248 target cost \u00d7 volume threshold \u00f7 period) to the account's own numbers, e.g. showing what $120/day at ~$370 supports",
+        "evidence": "The $120/day figure appears only in the rollback trigger and closing 'What's still open' note ('whether $120/day is currently capping delivery'); no calculation like target-cost \u00d7 volume-threshold \u00f7 period is shown anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents consolidation, optimizing an upstream event with downstream outcome import, and accepting slower diagnosis as the options for thin volume",
+        "evidence": "No mention of 'consolidation' (e.g. combining campaigns/ad groups) anywhere in the transcript; only sanity-checking the demo-request event with sales and a future switch to deal-value import are mentioned, not framed as a set of thin-volume options alongside consolidation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks those thin-volume options rather than listing them flat, with consolidation leading on efficiency",
+        "evidence": "Since consolidation is never mentioned as an option (see prior item), no ranking of such options, let alone one led by consolidation, appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that importing downstream outcomes requires consent/privacy/legal review before customer or deal data is sent to a platform",
+        "evidence": "The transcript mentions 'CRM deal values start flowing to Google' as a switch trigger but never raises consent, privacy, or legal review considerations for sending customer/deal data to the ad platform.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends setting the initial Target CPA at or near the trailing actual (~$370), not at a goal or aspirational number",
+        "evidence": "\"Turn on Target CPA now, set at $370 (your trailing actual, not an aspirational number). Moving to an aggressive target would choke delivery; moving to today's actual just removes the manual guesswork...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels cited thresholds with an evidence tier or as-of date, or advises re-verifying them against live platform documentation",
+        "evidence": "\"\u26a0\ufe0f These thresholds drift roughly yearly... worth a 30-second check against the live Google Ads Help page before you act on this, since I answered from documented-but-dated reference material rather than a live fetch this session.\" Also the fact-check table tags claims as 'documented' / 'documented, misapplied'.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that the cost-goal strategy (Google Target CPA) has no documented minimum conversion volume and can be started with no conversion history",
+        "evidence": "\"you can flip Target CPA on today with zero conversion history, Google will not stop you\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the '15 conversions in 30 days' minimum to Target ROAS (the return-goal strategy), not to Target CPA",
+        "evidence": "The transcript attributes 30 conversions/30 days to Target CPA and ~50 to Target ROAS, but never attributes the specific '15 conversions in 30 days' figure to Target ROAS. It instead treats 15 as simply wrong/blended: \"even Google's own recommendation is usually stated as ~30 conversions/30 days for Target CPA, not 15 \u2014 and ~50 is the number Google cites for Target ROAS\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies '50 conversions' figures as reliability recommendations or guidance, not enablement gates",
+        "evidence": "\"That doesn't make their caution wrong, but it changes how urgently you should chase the number\" combined with \"~50 is the number Google cites for Target ROAS\" framed as recommendation language throughout, and explicitly: \"It's a *recommendation*, and even Google's own recommendation is usually stated as ~30 conversions/30 days for Target CPA\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes enablement thresholds from evaluation samples as two different kinds of published number that folklore merges",
+        "evidence": "The transcript does not distinguish enablement thresholds from evaluation/statistical-sample thresholds as two separate categories of number; it only distinguishes tCPA vs tROAS recommendation figures from each other, e.g. \"It sounds like your agency has blended the two thresholds.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not advise waiting until 15 or 50 conversions before adopting Target CPA",
+        "evidence": "The transcript recommends switching to \"Maximize Conversions (no CPA target)\" now and building volume, explicitly stating \"no conversion-history minimum\" and not telling the user to wait for 15 or 50 conversions before adopting Target CPA.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that low conversion volume costs variance and slow diagnosis (a bad target cannot be separated from bad luck), not eligibility or access",
+        "evidence": "\"At 9 conversions/month, the sample is small enough that one good or bad week skews the 'learned' CPA target wildly \u2014 the algorithm can lock onto a distorted pattern... This is a real statistical problem, not a Google permission problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the volume-budget derivation (required budget \u2248 target cost \u00d7 volume threshold \u00f7 period) to the account's own numbers, e.g. showing what $120/day at ~$370 supports",
+        "evidence": "The transcript computes budget needed to reach 15 and 50 conversions (\"~$6,000/month (~$200/day)\" and \"~$20,000/month\") using the account's ~$400 CPA, but never uses the specific $120/day or ~$370 figures as requested; it uses $3,600/month and ~$400 CPA instead, not the $120/day framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents consolidation, optimizing an upstream event with downstream outcome import, and accepting slower diagnosis as the options for thin volume",
+        "evidence": "The transcript lists consolidation (\"Consolidate conversion volume instead of fragmenting it\") and offline conversion import of sales-qualified outcomes, but does not present 'accepting slower diagnosis' as an option, and instead lists many other unrelated tactics (Enhanced Conversions, dayparting, negative keywords) rather than this specific triad.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks those thin-volume options rather than listing them flat, with consolidation leading on efficiency",
+        "evidence": "The recommendations are given as a flat numbered list of 7 items (Maximize Conversions first, consolidation second) without any explicit ranking rationale tied to efficiency: \"1. Switch to 'Maximize Conversions'... 2. Consolidate conversion volume...\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that importing downstream outcomes requires consent/privacy/legal review before customer or deal data is sent to a platform",
+        "evidence": "The transcript mentions offline conversion import (\"Consider importing sales-qualified outcomes via offline conversion import\") but never raises consent, privacy, or legal review requirements for sending customer/deal data to Google.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends setting the initial Target CPA at or near the trailing actual (~$370), not at a goal or aspirational number",
+        "evidence": "The transcript never explicitly recommends an initial Target CPA setting value; it recommends avoiding Target CPA for now in favor of Maximize Conversions, and does not address what CPA value to set if/when tCPA is adopted.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels cited thresholds with an evidence tier or as-of date, or advises re-verifying them against live platform documentation",
+        "evidence": "\"Push back on the agency for a volume-feasibility check... have them pull search volume/impression share data... and show what spend ceiling actually gets you to 30 (tCPA)\" \u2014 and more directly, the piece frames the 30/50 numbers as things to verify: \"is 50/month even reachable via Search for this vertical, or are they quoting a generic Google benchmark without checking your addressable search volume?\" though this is weak/indirect and does not explicitly advise re-verifying against live Google documentation or attach an as-of date.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

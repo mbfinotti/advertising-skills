@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not simply format the user's 20%-weekly ladder into a plan: the approach choice is examined before drafting.",
+        "evidence": "\"$95K \u00d7 1.20\u2077 \u2248 $340K in 7 weeks, but you only have 18 days... There is no safe ramp mechanic \u2014 20%/week, 15%/week, or any documented platform cadence \u2014 that closes a 3.16x gap in 18 days.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks the user clarifying questions before finalizing the plan, covering at least one of: hardness of the Q3 date, one-off target versus compounding asset, or the effort ceiling.",
+        "evidence": "Open item 5: \"Whether 'end of Q3' is a hard calendar commitment (Sep 30) or a trajectory reviewed at a board meeting \u2014 this single answer changes the entire shape of the plan.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents vertical ladder, measure-first, and horizontal expansion as named candidate approaches with trade-offs, and requests the user's pick.",
+        "evidence": "The three are named with trade-offs (\"Vertical ladder \u2014 recommended...\", \"Measure-first \u2014 folded in, not leading\", \"Horizontal expansion \u2014 rejected for now\"), but the memo ends by asking for sign-off on specific decisions (\"Approval needed on: the Sep 30 reframe...\") rather than asking the user to pick among the approaches.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the candidate ordering explicitly rather than leaving the ranking implied by list position.",
+        "evidence": "\"Default order for this skill: vertical ladder \u2192 measure-first \u2192 horizontal, then re-ranked against your inputs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes measure-first given the target is over 2x current spend (about 3.2x) on platform-attributed evidence, and names which condition triggered the promotion.",
+        "evidence": "\"Target is 3.16x current spend and evidence is attribution-only \u2014 both conditions that this skill says should promote measure-first. It is not promoted to lead, because you have no live incrementality program today... Instead it's folded in as a gate, not a leader.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Re-ranks using account specifics: the in-house studio shipping 10 creatives a month is cited as lowering horizontal expansion's effort.",
+        "evidence": "The studio's output is cited as a reason horizontal is harder, not easier: \"your creative studio (10/month) can't currently feed a second set of new audiences without starving the primary line\".",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the penetration bands: about 12% is under the 25% line, so vertical headroom remains available.",
+        "evidence": "\"30-day penetration ~12% sits well under the ~25% saturation band \u2014 real headroom remains on the existing audience. This keeps vertical ladder as the base engine.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The ramp includes a causal measurement step (geo holdout or incrementality test) or an explicit user-acknowledged risk line for scaling to 3x on attributed evidence.",
+        "evidence": "\"Plan includes: a geo-holdout (or platform-native lift study) launched at the ~$150K tier, reading out before the $190K (2x) line, gating whether the ladder continues past it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each proposed step carries a date or hold-until point, a monitor set, a rollback trigger, and a rollback action.",
+        "evidence": "Steps table has Date/Hold-until/Gate-to-advance columns, plus a dedicated Rollback section with triggers and actions applying to every step.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The flat raise-and-judge-weekly cadence is not endorsed as-is: hold length is tied to learning window plus conversion lag, with longer evaluation windows noted where Google (for example Performance Max) is involved.",
+        "evidence": "\"This plan keeps the same weekly cadence you already wanted \u2014 it just adds the gate, the hold, the rollback, and the checkpoint\" \u2014 the weekly cadence is explicitly retained, and no Performance Max / longer-window distinction is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The plan names its exit condition and which ceiling is expected to bind first.",
+        "evidence": "\"1. Creative supply \u2014 \ud83d\udd34 likely binds first (\u00a74).\" and \u00a77 Exit condition list.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The deliverable follows a structured ramp-plan shape containing at least gates, evidence bar, approach, steps, ceilings, and exit or open items.",
+        "evidence": "Numbered sections 1\u20138: Readiness Gates, Evidence bar, Approach, The ramp, Ceilings, Exit condition, Open items.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The plan is presented for the user's section-by-section validation or explicit approval, and the assistant does not execute or claim to execute budget changes.",
+        "evidence": "\"Present this to the board section by section; each section names what would change your recommendation...\" and \"Approval needed on:...\" with no claim of executed changes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Numbers carry documented/research/folklore labels, and any default step percentage travels with a recalibrate-from-account-history instruction.",
+        "evidence": "\"Using Rung 2: the 15\u201320% concrete default (folklore)... Recalibrate after step 3 once you have three real data points on how this account's efficiency responds.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not simply format the user's 20%-weekly ladder into a plan: the approach choice is examined before drafting.",
+        "evidence": "\"'raise budgets 20%/week until we hit the number,' used as the sole mechanism, is undercapitalized against real constraints... Those aren't reasons to reject scaling \u2014 they're reasons to scale with guardrails instead of a blind percentage rule.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks the user clarifying questions before finalizing the plan, covering at least one of: hardness of the Q3 date, one-off target versus compounding asset, or the effort ceiling.",
+        "evidence": "\"Pick one \u2014 the operating plan below is written to support all three... Decision required from the board (this is the gating step)\" with Options A (extend deadline), B (redefine target), C (compress timeline).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents vertical ladder, measure-first, and horizontal expansion as named candidate approaches with trade-offs, and requests the user's pick.",
+        "evidence": "The three named options (A: extend deadline, B: redefine target, C: compress timeline) address the deadline/target question, not a vertical-ladder/measure-first/horizontal-expansion approach choice.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the candidate ordering explicitly rather than leaving the ranking implied by list position.",
+        "evidence": "No three approach-type candidates (vertical/measure-first/horizontal) are presented, so no such ordering is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes measure-first given the target is over 2x current spend (about 3.2x) on platform-attributed evidence, and names which condition triggered the promotion.",
+        "evidence": "The geo holdout is listed as one bullet among several in section 4.4 without linking it explicitly to the 3.16x target size or attributed-evidence condition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Re-ranks using account specifics: the in-house studio shipping 10 creatives a month is cited as lowering horizontal expansion's effort.",
+        "evidence": "The creative section (4.3) discusses scaling creative supply generally but never ties the 10-assets/month baseline to horizontal expansion's effort or ranking.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the penetration bands: about 12% is under the 25% line, so vertical headroom remains available.",
+        "evidence": "\"12% penetration is genuine headroom on paper, but it doesn't mean the next dollar buys inventory at the same 3.1 ROAS\" \u2014 headroom is discussed but no banding framework (e.g. a 25% threshold) is applied.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The ramp includes a causal measurement step (geo holdout or incrementality test) or an explicit user-acknowledged risk line for scaling to 3x on attributed evidence.",
+        "evidence": "\"Run a geo holdout or conversion-lift test in parallel with the ramp on at least one platform to validate that platform-reported ROAS reflects real incremental revenue\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each proposed step carries a date or hold-until point, a monitor set, a rollback trigger, and a rollback action.",
+        "evidence": "\"Cap increases per platform at \u226420\u201325% per step, gated on a minimum 5\u20137 day observation window... Set a floor: pause further increases on a platform if trailing 7-day ROAS drops below an agreed threshold.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The flat raise-and-judge-weekly cadence is not endorsed as-is: hold length is tied to learning window plus conversion lag, with longer evaluation windows noted where Google (for example Performance Max) is involved.",
+        "evidence": "The 5-7 day window replaces the weekly clock, but no distinct/longer window is specified for Google or Performance Max specifically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The plan names its exit condition and which ceiling is expected to bind first.",
+        "evidence": "Multiple risks (auction relearning, creative supply, no efficiency floor, lockstep scaling, no incrementality check) are listed in section 3, but none is identified as the ceiling expected to bind first.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The deliverable follows a structured ramp-plan shape containing at least gates, evidence bar, approach, steps, ceilings, and exit or open items.",
+        "evidence": "The memo is organized into \"Decision Required,\" \"Ramp mechanism,\" \"Creative velocity,\" \"Measurement and validation,\" and \"Weekly board reporting\" sections.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The plan is presented for the user's section-by-section validation or explicit approval, and the assistant does not execute or claim to execute budget changes.",
+        "evidence": "\"Recommend the board choose Option A or B above at this meeting... then this plan executes starting this week.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Numbers carry documented/research/folklore labels, and any default step percentage travels with a recalibrate-from-account-history instruction.",
+        "evidence": "\"Both Meta and Google's own delivery systems treat budget jumps above roughly 20\u201330%... as a reset trigger\" is stated as fact with no documented/research/folklore label or recalibration instruction.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

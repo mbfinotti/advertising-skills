@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the tenure, campaign-count, reliability, and peer-comparison framing rather than tightening it, because cases citing years served, hours, campaign counts, or effort fail",
+        "evidence": "\"Drop the first four claims entirely \u2014 don't soften them, cut them.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rebuilds the case around an owned revenue, pipeline, contribution, or P&L number the user is accountable for",
+        "evidence": "\"What the owned number did\" section using the accountable metric (\"blended ROAS / CPA / revenue\")",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Converts the absorbed colleague accounts (scope creep) into a 'what I own now that I didn't' argument: what was taken on and what the owned number did",
+        "evidence": "\"What I own now that I didn't in February - Budget and campaign ownership for [N] accounts \u2014 mine, plus the two absorbed in March\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the survey evidence that remit growth without matching pay is widespread (51.2%, Marketing Week 2026 survey), making it a lever rather than a grievance",
+        "evidence": "This transcript does not mention the 51.2% remit-growth figure or any equivalent survey evidence on remit growth without pay.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps the evidence to what the senior rung is screened for: forecasts and budgets, multi-account portfolio economics, C-level narrative, QA of juniors",
+        "evidence": "\"None of these map to what a Senior Paid Media Manager screen actually tests: multi-account portfolio economics, forecast/budget ownership, C-level narrative, QA of juniors.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names budget and forecast responsibility as the senior-track signal to demonstrate or explicitly request",
+        "evidence": "\"get budget/forecast ownership confirmed in writing\" and \"Budget/forecast ownership: [state plainly whether this is real yet]\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the one-pager structure: what I own now, what the owned number did, evidence against the next rung's screen, market anchor, the ask",
+        "evidence": "template headers: \"## What I own now...\", \"## What the owned number did\", \"## Evidence against the next rung's screen\", \"## Market anchor\", \"## The ask\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The ask names title, band, and timing in one sentence",
+        "evidence": "\"Senior Paid Media Manager, [band], effective [date \u2014 tie it to the review].\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a market anchor carrying currency, source, date, and grade, with the grade stated out loud",
+        "evidence": "\"UK Senior Manager band, Marketing Week 2026 Career & Salary Survey (2,350 respondents, 16 April 2026): \u00a360,577 \u2014 down from \u00a372,434 in 2025\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses only the candidate's own evidence, indexed if the absolute figure is internally confidential; no invented numbers",
+        "evidence": "\"Fill every [ ] with your real figures before this goes anywhere \u2014 I've left them as placeholders rather than inventing numbers.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that an undated or last-year anchor damages credibility while the surveyed market is declining",
+        "evidence": "\"Quoting last year's figure would overstate a market that's currently declining, so anchor to 2026, not 2025.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a benchmark-to-change-course: budget or forecast responsibility not granted within an agreed window means the senior track is blocked there and the plan moves to changing seats",
+        "evidence": "\"if the review doesn't produce either the promotion or a written commitment to hand you budget/forecast ownership on a dated timeline, that's the signal the senior track is blocked at Bramblewick specifically\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises citing the internal ladder or a real job description for the target title when mapping evidence to the next rung's screen",
+        "evidence": "\"map evidence to the actual Senior JD\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the tenure, campaign-count, reliability, and peer-comparison framing rather than tightening it, because cases citing years served, hours, campaign counts, or effort fail",
+        "evidence": "Pillar 1 keeps campaign count and reliability as the lead pillar ('managed [X in ad spend] across [X] accounts and 240+ live campaigns, with a 100% on-time launch record'), tightening rather than rejecting this framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rebuilds the case around an owned revenue, pipeline, contribution, or P&L number the user is accountable for",
+        "evidence": "'Get these two numbers... 1. Total spend or revenue you're accountable for. 2. Any efficiency or growth metric... you can point to.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Converts the absorbed colleague accounts (scope creep) into a 'what I own now that I didn't' argument: what was taken on and what the owned number did",
+        "evidence": "'I've effectively been doing a senior manager's scope of ownership since March.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the survey evidence that remit growth without matching pay is widespread (51.2%, Marketing Week 2026 survey), making it a lever rather than a grievance",
+        "evidence": "No such survey statistic is cited anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps the evidence to what the senior rung is screened for: forecasts and budgets, multi-account portfolio economics, C-level narrative, QA of juniors",
+        "evidence": "No discussion of what the senior title is specifically screened for.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names budget and forecast responsibility as the senior-track signal to demonstrate or explicitly request",
+        "evidence": "Budget/forecast ownership is never named as a specific signal to demonstrate or request.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the one-pager structure: what I own now, what the owned number did, evidence against the next rung's screen, market anchor, the ask",
+        "evidence": "The structure used is three pillars (scale, scope, trajectory) plus a close question; no market anchor is included at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The ask names title, band, and timing in one sentence",
+        "evidence": "The opening line names only the title ('Senior Paid Media Manager'), not a comp band or specific timing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a market anchor carrying currency, source, date, and grade, with the grade stated out loud",
+        "evidence": "No market anchor/benchmark figure appears anywhere in this pitch.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses only the candidate's own evidence, indexed if the absolute figure is internally confidential; no invented numbers",
+        "evidence": "Placeholders like '[X in ad spend]' and '[add: campaign count taken on / spend...]' are used instead of invented figures.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that an undated or last-year anchor damages credibility while the surveyed market is declining",
+        "evidence": "No market anchor or related credibility warning is present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a benchmark-to-change-course: budget or forecast responsibility not granted within an agreed window means the senior track is blocked there and the plan moves to changing seats",
+        "evidence": "No such benchmark-to-change-course is set.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises citing the internal ladder or a real job description for the target title when mapping evidence to the next rung's screen",
+        "evidence": "No mention of citing an internal ladder or job description.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

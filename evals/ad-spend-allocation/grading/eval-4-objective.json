@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response refuses to include the McKinsey 2.7x / 70/20/10 shareholder-returns claim, identifying it as fabricated - no such report exists.",
+        "evidence": "\"Fabricated. No such McKinsey report exists.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response attributes 70/20/10 to Eric Schmidt's Google resource-allocation rule (2005), not to any media study.",
+        "evidence": "\"70/20/10 traces to Eric Schmidt's 2005 'The 70 Percent Solution' (Google resource-allocation rule, not a media study)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response labels 70/20/10 as folklore for media budgets, usable only as a portfolio-discipline device.",
+        "evidence": "\"a governance structure, not a marketing-science result. We're not claiming a return multiplier from it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response corrects the 60/40 framing: it is Binet & Field (IPA Databank), a dataset average across categories, never a per-brand law, and it must not be presented to finance as a proven or evidence-based optimum.",
+        "evidence": "\"a B2C cross-category average from the IPA Databank, not a B2B number... its own authors say don't present it to finance that way\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes the B2B reweighting of roughly 46/54 tilted toward activation (LinkedIn B2B Institute), relevant because Quintarra is B2B.",
+        "evidence": "\"The B2B-specific reweighting from the same research tradition (LinkedIn B2B Institute) lands closer to 46/54, tilted toward activation\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the rule of 7 as folklore with no supporting studies (optionally citing the contradicting three-exposures research) and refuses to size a frequency budget on it.",
+        "evidence": "\"Folklore, and contradicted... Krugman's actual 1972 research found three exposures sufficient. No study supports '7'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags the '20-30% of spend wasted on saturated channels' stat as a secondhand vendor citation, not presentable fact.",
+        "evidence": "\"Unsourced. Secondhand vendor citation, no primary study.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If any quantified figure is offered as a defensible replacement, it is the finding that integrated analytics frees 15-20% of marketing spend (McKinsey, 400+ engagements).",
+        "evidence": "\"McKinsey's review of 400+ client engagements over eight years found integrated marketing analytics frees 15\u201320% of marketing spend\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response recommends the split be presented as a starting posture corrected by marginal evidence each cycle, with a ring-fenced experiment slice.",
+        "evidence": "\"70% to channels proven to work now, 20% to the deliberate next bet, 10% to exploratory tests\" and \"We'll report marginal return by line each quarter to validate or correct the split.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response introduces no new unsourced quantified performance claims of its own.",
+        "evidence": "All new figures cited are attributed to named sources (IPA Databank, LinkedIn B2B Institute, McKinsey study), none presented as the model's own invented statistic.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If 70/20/10 survives in the deck, it is presented as maturity-dependent (phase-adjusted, e.g. roughly 40/30/30 with no proven channel, roughly 80/15/5 with a proven growth engine), not as a constant.",
+        "evidence": "No maturity-dependent alternate ratios (e.g. 40/30/30, 80/15/5) are mentioned anywhere in the corrected slide; 70/20/10 is kept as a fixed framework.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response refuses to include the McKinsey 2.7x / 70/20/10 shareholder-returns claim, identifying it as fabricated - no such report exists.",
+        "evidence": "\"\ud83d\udd34 **Don't use as-is \u2014 looks fabricated/conflated**... This has the shape of a stat that got stitched together \u2014 real source name + real-sounding number, wrong pairing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response attributes 70/20/10 to Eric Schmidt's Google resource-allocation rule (2005), not to any media study.",
+        "evidence": "The response attributes 70/20/10 only to \"McKinsey does have a well-known '70/20/10' framework... about innovation investment horizons\"; Eric Schmidt and Google are never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response labels 70/20/10 as folklore for media budgets, usable only as a portfolio-discipline device.",
+        "evidence": "The response frames it as \"borrowing the 70/20/10 logic\" from McKinsey's innovation framework, but never calls it folklore or explicitly limits it to a portfolio-discipline device.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response corrects the 60/40 framing: it is Binet & Field (IPA Databank), a dataset average across categories, never a per-brand law, and it must not be presented to finance as a proven or evidence-based optimum.",
+        "evidence": "\"it's an average, not 'the optimum' for any given company. Calling it 'proven optimum' for a B2B data-integration platform is the weak point a CFO will poke at... 'Proven optimum' doesn't [survive a follow-up question].\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes the B2B reweighting of roughly 46/54 tilted toward activation (LinkedIn B2B Institute), relevant because Quintarra is B2B.",
+        "evidence": "The response says only \"Binet & Field's own later B2B research points to a different balance...closer to 50/50 or more activation-heavy\" \u2014 no 46/54 figure and no LinkedIn B2B Institute citation given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the rule of 7 as folklore with no supporting studies (optionally citing the contradicting three-exposures research) and refuses to size a frequency budget on it.",
+        "evidence": "\"modern effectiveness researchers...generally treat '7' as folklore rather than an empirically derived optimum\" and the slide copy uses it \"as a floor, not a formula...rather than assuming a fixed number applies uniformly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags the '20-30% of spend wasted on saturated channels' stat as a secondhand vendor citation, not presentable fact.",
+        "evidence": "\"\ud83d\udd34 **Unsourced \u2014 treat as internal estimate, not an industry stat**... it reads like a folk statistic... Presenting it as 'the industry stat' without a named source is a real exposure risk.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If any quantified figure is offered as a defensible replacement, it is the finding that integrated analytics frees 15-20% of marketing spend (McKinsey, 400+ engagements).",
+        "evidence": "The response offers no fabricated replacement figure at all, instead deferring: \"If you want, I can also search for a legitimately citable stat to replace the McKinsey line \u2014 just say so and grant WebSearch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response recommends the split be presented as a starting posture corrected by marginal evidence each cycle, with a ring-fenced experiment slice.",
+        "evidence": "\"with an initial 90-day gate on the 10% experimental tranche before further commitment\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response introduces no new unsourced quantified performance claims of its own.",
+        "evidence": "The polished talking points reframe existing claims (attributing waste to \"our own channel-level audit\") without adding new invented statistics.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If 70/20/10 survives in the deck, it is presented as maturity-dependent (phase-adjusted, e.g. roughly 40/30/30 with no proven channel, roughly 80/15/5 with a proven growth engine), not as a constant.",
+        "evidence": "The polished slide keeps a flat \"70/20/10 model\" headline with no maturity-phased alternative splits mentioned anywhere.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Hook wording pulls from the provided review language (fear of opening the bank app, chaos months, spiky income) rather than claims any budgeting competitor could make.",
+        "evidence": "Most of the 12 hooks are built directly from the review quotes: C1 h2 \"I hadn't opened my bank app in four days\" and h3 \"I was genuinely scared of my own money\" are near-verbatim derivations of \"I stopped being scared to open my bank app\"; C3 h1/h3 use \"spiky income\" verbatim from the forum quote, h2 \"What if your budget flexed like your income does?\" extends it; C4 h2 \"A fixed budget can't survive a spiky income\" reuses the same phrase; C2 h1 \"POV: three payments, three random days this month\" and h3 \"my chaos-fixer app\" echo \"chaos months.\" Each concept also maps its motivation back to a nam",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Hook wording pulls from the provided review language (fear of opening the bank app, chaos months, spiky income) rather than claims any budgeting competitor could make.",
+        "evidence": "Three of four hooks are clearly review-derived: A opens with \"I used to open my banking app with my eyes half closed\" (a rewrite of the review \"I stopped being scared to open my bank app,\" which is also reused as an overlay at 8-14s); B opens with \"Your income is spiky. Your budget shouldn't be.\"; C opens with the forum comment verbatim as on-screen text: \"first budget that gets that my income is spiky.\" \"it made my chaos months make sense\" is used as a proof stamp in D at 8-14s. The deduction: Concept D's actual hook (0-3s) is \"This is the only budgeting app built for people who don't get pai",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

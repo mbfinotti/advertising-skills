@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The report opens with a one-paragraph verdict before any fix list.",
+        "evidence": "\"## VERDICT\" section precedes \"## FIX NOW\" section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The report notes that upstream signals (CTR trend, frequency, tracking deduplication) were not supplied, and treats them as unchecked rather than silently assuming the page is the problem.",
+        "evidence": "\"I have no CTR/frequency trend to rule out creative fatigue, and no confirmation that the purchase event fires once and reconciles with orders.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The verbal message-match failure is identified: 'Cookware, reimagined' does not confirm the ad's '5-piece copper set \u2014 35% off' promise.",
+        "evidence": "\"'Cookware, reimagined' confirms nothing the ad promised \u2014 no product, no price, no urgency.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The visual message-match failure is identified: the moodboard hero does not echo the ad's chef-and-pan creative, and the fix reuses the ad's key visual.",
+        "evidence": "\"Replace or supplement the hero with a product shot or a still frame from the ad itself (near-zero-cost asset reuse).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The offer-match failure is identified: the 35% offer and price are absent from the landing page, flagged as a policy-side bait-and-switch risk as well as a conversion leak.",
+        "evidence": "\"This is a policy-risk finding (Meta reviews ad and destination together; a price/offer that shifts between click and page reads as bait-and-switch)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The CTA mismatch is identified: 'Explore our collections' does not carry the ad's 'Shop the set' action.",
+        "evidence": "\"its CTA ('Explore our collections') routes to browsing rather than the promised set\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The late-revealed shipping cost is flagged, citing late-revealed extra costs as the top stated abandonment reason in B2C checkout research (Baymard).",
+        "evidence": "\"Extra costs revealed late is the single most-cited reason for checkout abandonment in Baymard's B2C survey data.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The fix list contains at most seven items, with message-match fixes at or near the top.",
+        "evidence": "Four fixes total; fixes 1-3 are message-match/offer related, at the top.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each fix names the funnel step it unblocks and carries an evidence-class label, a source tier, a severity, and an effort bracket.",
+        "evidence": "\"funnel step: land \u2192 product page click-through | evidence: opinion | source: consensus... | severity: critical | effort: hours\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Not every finding is marked critical.",
+        "evidence": "Fix 4 is marked \"severity: major\" while fixes 1-3 are \"critical\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A not-a-problem section is present and non-empty.",
+        "evidence": "\"## NOT A PROBLEM\" lists volume floor and CTA hierarchy as fine.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A could-not-check section is present and lists the absent session recordings/heatmaps with what that absence means for the findings.",
+        "evidence": "\"Session recordings / heatmaps \u2014 confirmed not set up. No rage-click, dead-click, or scroll-depth evidence exists to back the hero/CTA calls with behavioral data.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A re-check section gives, per fix, the funnel step expected to move, the direction, and a date or cadence for judging it.",
+        "evidence": "\"Fixes 1\u20133: land \u2192 product-page click-through rate on mobile paid social, expected up, judged 2026-10-10\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the report.",
+        "evidence": "No percentage lift figure appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The report opens with a one-paragraph verdict before any fix list.",
+        "evidence": "\"## \ud83c\udfaf Bottom line \u2014 CPA is 66% over target ($58 vs $35) because the funnel has three compounding leaks...\" appears before all findings and fix sections.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The report notes that upstream signals (CTR trend, frequency, tracking deduplication) were not supplied, and treats them as unchecked rather than silently assuming the page is the problem.",
+        "evidence": "The report only notes the absence of \"session recording or heatmap data\"; CTR trend, frequency, and tracking deduplication are not mentioned as unsupplied inputs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The verbal message-match failure is identified: 'Cookware, reimagined' does not confirm the ad's '5-piece copper set \u2014 35% off' promise.",
+        "evidence": "\"The ad sells a specific, tangible thing: 5-piece copper set, 35% off... The page ... headline ('Cookware, reimagined') answers a question nobody asked.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The visual message-match failure is identified: the moodboard hero does not echo the ad's chef-and-pan creative, and the fix reuses the ad's key visual.",
+        "evidence": "\"delivers an abstract moodboard with no product visible\" and fix: \"lead with the product (the copper pan/set, ideally the same visual world as the video ad)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The offer-match failure is identified: the 35% offer and price are absent from the landing page, flagged as a policy-side bait-and-switch risk as well as a conversion leak.",
+        "evidence": "The hidden price/offer is flagged only as a conversion issue (\"Each extra click is a drop-off point you're not measuring\"), with no bait-and-switch or policy-risk framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The CTA mismatch is identified: 'Explore our collections' does not carry the ad's 'Shop the set' action.",
+        "evidence": "\"Ad CTA: 'Shop the set.' Page CTA: 'Explore our collections.' These are different intents\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The late-revealed shipping cost is flagged, citing late-revealed extra costs as the top stated abandonment reason in B2C checkout research (Baymard).",
+        "evidence": "\"Baymard Institute puts 'unexpected costs' ahead of every other abandonment reason.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The fix list contains at most seven items, with message-match fixes at or near the top.",
+        "evidence": "The prioritized fix list has 6 items, with \"2. Rebuild the hero to match the ad\" placed near the top.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each fix names the funnel step it unblocks and carries an evidence-class label, a source tier, a severity, and an effort bracket.",
+        "evidence": "Fix list items are brief, e.g. \"3. Put price and the 35% discount on the landing page itself \u2014 don't force a click to learn if the offer applies.\" with no funnel-step/evidence-class/source-tier/severity/effort labeling per item.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Not every finding is marked critical.",
+        "evidence": "The report separates \"## \ud83d\udd34 Critical findings\" (5 items) from \"## \ud83d\udfe0 Secondary findings\" (2 items).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A not-a-problem section is present and non-empty.",
+        "evidence": "No section identifying elements that are fine/not a problem appears anywhere in the report.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A could-not-check section is present and lists the absent session recordings/heatmaps with what that absence means for the findings.",
+        "evidence": "\"## \u23f3 What this doesn't tell you yet \u2014 Without recordings/heatmaps, I can't confirm where in the funnel the 0.83% CVR is being lost\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A re-check section gives, per fix, the funnel step expected to move, the direction, and a date or cadence for judging it.",
+        "evidence": "Only a single blanket cadence is given: \"Re-run this audit with real behavioral data 2\u20133 weeks after instrumentation goes live\" \u2014 not broken out per fix.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the report.",
+        "evidence": "\"+66% relative lift in conversion rate, all else equal\" is presented as the math needed to hit the CPA target, not a promised outcome.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

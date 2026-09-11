@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The customer/practitioner testimonial format is recommended over founder-led, because the signed case study cleared for public use makes the testimonial the cheapest rung here.",
+        "evidence": "\"the thing that's normally the slowest, most expensive B2B format \u2014 a customer testimonial \u2014 is the cheapest one available to you right now. You already have... a signed, cleared case study, and a subject willing to be on camera.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The founder-led-first ordering is explicitly called a default that this account's assets re-rank, naming which facts moved it (the cleared case study and the camera-averse founder).",
+        "evidence": "\"You asked for founder-to-camera because the skill this is built on ranks it the fastest B2B format to ship \u2014 true when nothing rules it out. Here, something does: your founder won't be filmed... That flips the ranking.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The script uses a Challenge, then Solution, then Outcome spine.",
+        "evidence": "Body table has rows labeled Beat: Challenge, Solution, Outcome.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The outcome beat closes with the quantified result (14 hours a week down to 3) and the named role (ops director at Harber Logistics).",
+        "evidence": "Outcome beat: \"We went from fourteen hours a week reconciling to three,\" combined with the lower-third credential \"Marisol Deng, Ops Director, Harber Logistics.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A generally-expected-result line is included or checked, since results vary across customers.",
+        "evidence": "\"Typicality: 14\u21923 hrs is a large, specific swing. If it's not typical... add on-screen: 'Individual results vary by warehouse size and SKU volume.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Target duration is set in the 45-90 second band for a B2B testimonial, not the 15-25 second B2C band.",
+        "evidence": "\"Duration: 55 seconds (~135 spoken words), fits your 60s cap.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes completion falls sharply past two minutes and stays well under it.",
+        "evidence": "No mention of a two-minute completion cliff appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The plan covers multiple scripts across awareness stages, citing that a B2B buying committee of roughly 6-10 people means one script rarely converts alone.",
+        "evidence": "Only a single testimonial script/concept is delivered; no discussion of buying-committee size or multiple awareness-stage scripts appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sound-off is assumed: captions or on-screen text carry the message alone.",
+        "evidence": "\"Captions on throughout \u2014 assume sound off.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No discount-urgency CTA appears; the script carries a single low-commitment ask.",
+        "evidence": "CTA A/B both point to \"Book a 15-min demo\" with no discount or urgency language.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The speaker is credentialed inside the hook, with the role named early.",
+        "evidence": "\"Lower third from ~0:02: 'Marisol Deng, Ops Director, Harber Logistics' \u2014 credentials her before the hook finishes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The customer's sign-off to be named on camera is noted as required before filming.",
+        "evidence": "The only sign-off mentioned is \"get Marisol/Harber's final approval on the cut before it goes live\" \u2014 approval of the finished edit before it airs, not consent to be filmed/named noted as required before filming begins.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The customer/practitioner testimonial format is recommended over founder-led, because the signed case study cleared for public use makes the testimonial the cheapest rung here.",
+        "evidence": "\"I've written the script as a hybrid: founder bookends it, but the proof point is delivered by Marisol\" \u2014 a hybrid is recommended, not testimonial-over-founder-led.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The founder-led-first ordering is explicitly called a default that this account's assets re-rank, naming which facts moved it (the cleared case study and the camera-averse founder).",
+        "evidence": "The text only argues generically that \"a reluctant subject is usually the slowest part of a shoot\" without confirming the founder specifically is camera-averse; only Marisol's clearance (\"signed, cleared\") is named as fact.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The script uses a Challenge, then Solution, then Outcome spine.",
+        "evidence": "The table order is Hook \u2192 founder intro \u2192 Challenge (0:12\u20130:22) \u2192 Marisol's Outcome (0:22\u20130:34) \u2192 further Solution detail (0:34\u20130:44) \u2192 CTA \u2014 Outcome lands before the second Solution beat, not after it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The outcome beat closes with the quantified result (14 hours a week down to 3) and the named role (ops director at Harber Logistics).",
+        "evidence": "\"Reconciliation used to eat 14 hours of my week. With Ostrafell it's about 3. That's a full day back, every week\" paired with lower third \"Marisol Deng \u2014 Ops Director, Harber Logistics.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A generally-expected-result line is included or checked, since results vary across customers.",
+        "evidence": "No 'results may vary' or similarly-scoped disclaimer appears anywhere in the script.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Target duration is set in the 45-90 second band for a B2B testimonial, not the 15-25 second B2C band.",
+        "evidence": "The deliverable is titled \"60-SECOND LINKEDIN VIDEO AD\", within the 45-90s band.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes completion falls sharply past two minutes and stays well under it.",
+        "evidence": "No mention of completion rates or two-minute falloff anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The plan covers multiple scripts across awareness stages, citing that a B2B buying committee of roughly 6-10 people means one script rarely converts alone.",
+        "evidence": "Only one core script is produced (with an optional 15s cutdown of the same footage offered at the end); no mention of buying-committee size or multiple awareness-stage scripts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sound-off is assumed: captions or on-screen text carry the message alone.",
+        "evidence": "\"burned-in captions throughout (assume sound off), first frame must carry the hook \u2014 LinkedIn autoplay is muted\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No discount-urgency CTA appears; the script carries a single low-commitment ask.",
+        "evidence": "CTA is consistently \"Book a Demo\" / \"we should talk\" \u2014 no discount or urgency language.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The speaker is credentialed inside the hook, with the role named early.",
+        "evidence": "The hook (0:00\u20130:04) is a bare text card \"14 hours a week. Down to 3.\" with no speaker or credential present at that point.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The customer's sign-off to be named on camera is noted as required before filming.",
+        "evidence": "Marisol's clearance is only asserted as already true (\"Marisol is signed, cleared\"), not flagged as a to-do item to confirm before filming.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

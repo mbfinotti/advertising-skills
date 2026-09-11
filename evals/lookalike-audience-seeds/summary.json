@@ -1,0 +1,479 @@
+{
+  "repo": "advertising-skills",
+  "skill": "lookalike-audience-seeds",
+  "scenarios": 10,
+  "expectations_total": 134,
+  "expectations_subjective": 1,
+  "expectations_objective": 133,
+  "pass_rate_with_skill_pct": 82.8,
+  "pass_rate_without_skill_pct": 35.8,
+  "delta_pp": 47.0,
+  "uplift_multiplier": 2.31,
+  "trigger_accuracy_pct": 97.0,
+  "trigger_queries": 132,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Recommends sizing the post-enrichment upload at 2-3x the target matched count"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that if no procurement route or vendor DPA exists, rung 1 is deleted from the ladder and the honest finding is that no ladder clears the floor - reported as the finding rather than filled with a looser seed"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Applies a recency window (30-90 days default, up to 180 for pixel-tracked buyers) instead of the full lifetime list"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Warns that dropping old rows lifts the rate partly by shrinking the denominator, so the effective seed must still clear the floor afterwards"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Mentions Meta's Event Match Quality score with the 6.0+ practitioner target"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recomputes or instructs recomputing the effective seed (rows x match rate) against the platform floor after the fixes"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes the practitioner consensus that a few hundred high-value customers outperform thousands of undifferentiated subscribers, labeled directional rather than audited"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Runs the negative-selection pass on the 850 buyers before export"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Keeps existing customers in the seed and suppresses them from the acquisition campaign at delivery level"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends sizing the upload at 2-3x the matched target"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes that setup effort per split is identical (one WHERE clause) - the standing cost is what limits the count, not the query work"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends an automated warehouse sync over manual CSV on efficiency and compliance-cost grounds"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Positions a CSV only as a bridge, with a named owner and a date the sync lands"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends an overlap check between the resulting audiences with the roughly 20-30% concern threshold"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Names cohort LTV at 90/180/365 days by seed version as the KPI to grade seeds on"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes the geo holdout's evidence advantage: it survives cross-device identity loss and measures incremental sales rather than platform-attributed ones"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends verifying floors against the platforms' live documentation because floors move, citing Google Customer Match's cut from 1,000 to 100 in 2025 as the example"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Refuses to drop below high-intent viewers/lead-form submitters on the ranking - no page-engagers or all-visitors seed, because past that point per-row quality falls faster than effort"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Flags the one judgment call for high-intent viewers: agreeing which pages count as intent"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "States a promote-it trigger for the export: a compounding-asset mandate, or the same account losing this round again"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Notes platform-native audiences are durable against mobile-OS tracking loss, with retention windows up to 365 days"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Fills the refresh line with a cadence, a named owner, and the mechanism (manual CSV vs automated sync)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Addresses the 120-day recency window against the guidance: acceptable only for pixel/CAPI-tracked buyers (default 30-90 days), otherwise tightened toward 90"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Applies an expected match rate around 30-40% for a work-email contact list on LinkedIn"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Explains why the cheap rungs are structurally empty here: an all-time closed-won list has no recency window left to widen and no adjacent segment that is not lost deals or MQLs"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Mentions expanding won accounts into contacts via title, seniority, and function filters before upload"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Notes that enrichment brings a vendor DPA, counsel or lawful-basis re-check, and roughly a week or more of procurement coordination"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Cites LinkedIn sizing guidance of roughly 10,000+ uploaded emails for a contact list (or 1,000+ companies for a company list) to reliably clear 300 matched"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Advises judging early results on match quality and engagement only, deferring the seed verdict to cohort maturity because the B2B sales cycle lags the conversion read"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Recommends sizing the post-enrichment upload at 2-3x the target matched count"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that if no procurement route or vendor DPA exists, rung 1 is deleted from the ladder and the honest finding is that no ladder clears the floor - reported as the finding rather than filled with a looser seed"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Rejects cumulative lifetime spend/revenue as the value column"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Explains the reason: cumulative revenue tracks tenure, and high-revenue low-margin customers poison the model"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends margin or predicted LTV as the value column instead"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Requires refunded amounts to be excluded from the value computation"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Requires confirming the value column is actually mapped at upload"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Warns that an unmapped value column silently builds a standard (not value-based) lookalike, and that the value-based option being absent at audience-build time means the mapping failed"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Notes that value-based audiences on Meta require a separate terms acceptance"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends selection via RFM Champions + Loyal cohorts, or the top 10-25% by predicted LTV or margin, rather than the top 15% by spend"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Applies a recency window (30-90 days default, up to 180 for pixel-tracked buyers) instead of the full lifetime list"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Runs the negative-selection pass: strip refunders, chargebacks, serial returners, discount-only buyers, employees, and wholesale accounts"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Keeps existing customers in the seed while suppressing them from the acquisition campaign at delivery level"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends re-uploading normalized plaintext through the UI, with hashing reserved for API or warehouse syncs that require it"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags rows older than 12-18 months as past the decay cliff and recommends dropping or archiving them"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Warns that dropping old rows lifts the rate partly by shrinking the denominator, so the effective seed must still clear the floor afterwards"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Orders the fixes as: normalize formats first, then join identifiers already held, then drop stale rows, with enrichment last"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "References Meta's documented band (50-80% on good lists, below 40% signaling a poor or outdated list) as the calibration reference"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Mentions Meta's Event Match Quality score with the 6.0+ practitioner target"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recomputes or instructs recomputing the effective seed (rows x match rate) against the platform floor after the fixes"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Does not treat the improved match rate as evidence of audience quality - match rate is a data-hygiene leading indicator only"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "References the German precedent - the Bavarian DPA position upheld by the Higher Administrative Court Munich (2018) - that customer-list custom audiences require prior consent"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Requires Consent Mode v2 signals with both consent fields GRANTED for EEA use of Google Customer Match, mandatory since March 2024"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that suppression, opt-outs, and deletions must be enforced once in the warehouse before any sync, not per-platform afterwards"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Disclaims legal advice and routes the lawful-basis question to the user's counsel"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Treats list-based seed sources as unavailable (deleted from the menu), not merely delayed"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Offers platform-native engagement audiences as the seed class still available now, since they never leave the ad account and trigger no consent gate"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Cites the homogeneity principle: seed homogeneity affects audience effectiveness more than its size, per Meta's own guidance"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes the practitioner consensus that a few hundred high-value customers outperform thousands of undifferentiated subscribers, labeled directional rather than audited"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Computes the effective seed: 850 rows at Meta's 50-80% band is roughly 425-680 matched, which clears the 100 floor"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "If email clickers are ever exported, requires checking that ESP consent scope covers ad-platform upload rather than assuming it"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Runs the negative-selection pass on the 850 buyers before export"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Keeps existing customers in the seed and suppresses them from the acquisition campaign at delivery level"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends sizing the upload at 2-3x the matched target"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States that Meta lookalikes are country-scoped by construction, so one global seed produces an averaged audience serving no market well"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Requires one seed-and-lookalike pair per country"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Applies the split order country > product line > high-AOV vs all, with language/region last because it usually correlates with country and adds the least new information"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Checks each split's own effective seed against the floor before committing to it"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Caps the number of splits at what the single named refresh owner can maintain, advising against taking every proposed split at once"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes each split carries a permanent standing cost: an audience to refresh, monitor for overlap, and keep above its floor forever"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes that setup effort per split is identical (one WHERE clause) - the standing cost is what limits the count, not the query work"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends an automated warehouse sync over manual CSV on efficiency and compliance-cost grounds"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Positions a CSV only as a bridge, with a named owner and a date the sync lands"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends an overlap check between the resulting audiences with the roughly 20-30% concern threshold"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Frames the high-AOV split as a test (one comparison, keep the winner) run only after the country and product-line splits are settled"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Prescribes re-seeding on margin or predicted LTV and retiring that seed version"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Flags discount-only buyers (the 40%-off welcome-code cohort) as a negative-selection exclusion for the next seed"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Names cohort LTV at 90/180/365 days by seed version as the KPI to grade seeds on"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States the pass threshold: the seed version's 90-day acquired-customer cohort LTV meets or beats the account average at equal-or-better CPA"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Given no measured baseline, states the seed cannot be graded yet and sets the first cohort checkpoint as the baseline-building run"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Rejects the naive two-ad-set head-to-head comparison because audience overlap contaminates it"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Recommends a user-level split test or a geo holdout as the valid comparison methods"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Defaults to the split test, escalating to the geo holdout when the decision is expensive to reverse or the split test's own read is disputed"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes the geo holdout's evidence advantage: it survives cross-device identity loss and measures incremental sales rather than platform-attributed ones"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Treats the seed as a versioned artifact with a re-check scheduled one cohort window out"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Flags LinkedIn Lookalike Audiences as sunset in February 2024"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Names LinkedIn Predictive Audiences with a 300 matched minimum as the replacement"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Mentions the cap of 30 Predictive Audiences per ad account"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Takes TikTok's stricter 1,000 floor over the 100 figure, applying the rule that when a platform's own pages disagree you plan against the stricter number"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Concludes that 400 customers cannot reach TikTok's 1,000 matched floor at any match rate, since uploaded rows are below the floor itself"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Mentions the 10,000 practitioner-recommended TikTok seed as the realistic bar"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Takes 1,000 active matched (API docs) as the Google Demand Gen lookalike floor over the Help Center's 100"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that only exclusion/suppression audiences remain hard rules"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes Meta's detailed-targeting exclusions were removed in March 2025, leaving custom-audience exclusions under Audience Controls as the remaining hard suppression"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Computes the LinkedIn wholesale list's effective seed: 2,400 contacts at roughly 30-40% work-email match is about 720-960 matched, clearing the 300 floor"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends verifying floors against the platforms' live documentation because floors move, citing Google Customer Match's cut from 1,000 to 100 in 2025 as the example"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Notes platform-native audiences build inside the ad account in minutes and skip the customer-list upload and its consent gate entirely"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Flags the one judgment call for high-intent viewers: agreeing which pages count as intent"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Notes engagement-sourced audiences auto-refresh (Meta roughly every 3-7 days), removing the manual refresh burden"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "States a promote-it trigger for the export: a compounding-asset mandate, or the same account losing this round again"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Notes platform-native audiences are durable against mobile-OS tracking loss, with retention windows up to 365 days"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Respects the learning phase after the Friday launch: no performance verdict before roughly 50 optimization events per ad set per week or 2-4 weeks"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Refuses the 95% match assumption and estimates from Meta's documented 50-80% good-list band, explicitly labeling it an estimate"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Computes the effective-seed line as rows x match vs floor: 6,200 x 0.50-0.80 is roughly 3,100-4,960 matched against Meta's 100 floor, so it clears (within the 1,000-5,000 recommended band)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Fills the refresh line with a cadence, a named owner, and the mechanism (manual CSV vs automated sync)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Fills the measurement line with the $28 new-customer CPA target and cohort-LTV checkpoints by seed version against the $54 account average"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Sets the re-check date one cohort window out (roughly 90 days)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Records the negative-selection pass in the exclusions line and delivers existing-customer suppression as a separate delivery-level audience, keeping purchasers in the seed"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Addresses the 120-day recency window against the guidance: acceptable only for pixel/CAPI-tracked buyers (default 30-90 days), otherwise tightened toward 90"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "States the pass threshold: the seed version's 90-day acquired-customer cohort LTV must meet or beat the $54 account average at equal-or-better CPA"
+      }
+    ]
+  }
+}

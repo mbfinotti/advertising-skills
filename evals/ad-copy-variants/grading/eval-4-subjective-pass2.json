@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "It frames the B2B copy for a reader building an internal case: the quantified outcome as a line they can defend in a meeting.",
+        "evidence": "The transcript does lead with the quantified outcome ('Outcome first because the asset is already paid for and un-copyable \u2014 leads with your only hard number'; rank-1 angle is '\"One team cut duplicate payouts 31% in 90 days.\"'), so the 31% figure is positioned as the strongest asset. But the justification given is competitive ('This is the one number a competitor can't casually claim'), not internal-advocacy \u2014 there is no framing of the stat as a line a champion can carry into a budget meeting, survive scrutiny from finance, or forward to a skeptical approver. The internal-case reader appears ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "It frames the B2B copy for a reader building an internal case: the quantified outcome as a line they can defend in a meeting.",
+        "evidence": "The transcript treats the 31%/90-day stat mainly as an attention hook and credibility device for the ad itself ('precision is the credibility mechanism here'), not as a line the prospect carries into a budget or approval meeting. Nothing frames the reader as someone assembling an internal business case, and no guidance addresses forwardability, quotability to a CFO, or how the claim survives scrutiny from a colleague. The closest adjacent moves are (a) keeping the claim narrow and 'actually cleared' so it stays defensible, (b) third-person observational voice to avoid unsupportable attribution",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

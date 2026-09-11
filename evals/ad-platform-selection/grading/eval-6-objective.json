@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response states the podcast measurability floor (roughly $15,000+/month spread across 3+ shows in multi-episode flights) and that $9K sits below it.",
+        "evidence": "The transcript never states a $15,000/month podcast floor; instead it funds podcast at $9,000/month as primary without citing this floor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response does not fund podcast as primary at $9K, including via a shrunk one-show version - an underfunded channel produces no readable signal.",
+        "evidence": "\"Podcast/audio, 100% of the $9,000/month\" is the stated primary recommendation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Podcast is named in a deleted list with the floor it missed and the budget level that would clear it.",
+        "evidence": "Podcast is not deleted; it is funded as the primary channel throughout the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response walks down to the next-ranked fundable channel rather than spreading the $9K thinner or across several small bets.",
+        "evidence": "No walk-down occurs; podcast retains 100% of budget as primary.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response engages the promotion-against-rank conditions: buyer-on-surface evidence and no-capture-family both hold, but the promotion is refused specifically because the budget cannot clear the floor.",
+        "evidence": "\"budget clears the family's floor by concentrating on known-good shows (math below)\" \u2014 promotion is granted, not refused.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response recognizes that with no category search volume, capture cannot be the primary and a demand-creation family must be.",
+        "evidence": "\"Demand-creation is structurally required (zero search volume)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response recommends a creation family fundable at $9K (paid social prospecting or short-form video) as the primary.",
+        "evidence": "Primary chosen is podcast/audio, not paid social prospecting or short-form video.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response checks the chosen family's learning threshold against the budget (roughly 50 optimization events per ad set per 7 days, with the weekly spend implication worked for a stated target CPA).",
+        "evidence": "No such learning-threshold check is applied since the chosen primary is podcast, not paid social.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Podcast is registered as a later candidate with an explicit re-entry condition tied to budget, not silently dropped.",
+        "evidence": "Podcast is not deferred; it is the funded primary from day one.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any future podcast plan described includes measurement designed before booking (promo codes, vanity URLs, self-reported attribution) and show selection above a minimum download threshold.",
+        "evidence": "While promo codes/vanity URLs are specified, no explicit minimum download threshold is set \u2014 only \"current downloads/episode\" as a scoring input without a floor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Measurement plan includes self-reported attribution because a creation channel anchors the mix.",
+        "evidence": "\"Add 'How did you hear about us?' at signup immediately \u2014 mandatory the moment a creation channel enters the mix\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Plan concentrates roughly 80% of budget on the single funded primary.",
+        "evidence": "Primary show flight is sized \"~$5,000\u20137,500/month\" of the $9,000 total (56-83%), not clearly ~80%, and the framing is 100% of budget to the podcast family overall.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response states the podcast measurability floor (roughly $15,000+/month spread across 3+ shows in multi-episode flights) and that $9K sits below it.",
+        "evidence": "No such floor is stated; the transcript instead builds a full $9K podcast plan as workable via concentration into two shows.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response does not fund podcast as primary at $9K, including via a shrunk one-show version - an underfunded channel produces no readable signal.",
+        "evidence": "The plan funds podcast as primary: 'Anchor show $5,000/mo... Second show $3,000/mo... Reserve $1,000/mo' totaling the full $9K.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Podcast is named in a deleted list with the floor it missed and the budget level that would clear it.",
+        "evidence": "Podcast is never deleted; it is the funded recommendation throughout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response walks down to the next-ranked fundable channel rather than spreading the $9K thinner or across several small bets.",
+        "evidence": "No alternative channel family is considered; the entire response is a podcast execution plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response engages the promotion-against-rank conditions: buyer-on-surface evidence and no-capture-family both hold, but the promotion is refused specifically because the budget cannot clear the floor.",
+        "evidence": "No such reasoning or refusal appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response recognizes that with no category search volume, capture cannot be the primary and a demand-creation family must be.",
+        "evidence": "No discussion of category search volume or capture-vs-creation logic appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response recommends a creation family fundable at $9K (paid social prospecting or short-form video) as the primary.",
+        "evidence": "The recommended primary is podcast sponsorship, not paid social or short-form video.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response checks the chosen family's learning threshold against the budget (roughly 50 optimization events per ad set per 7 days, with the weekly spend implication worked for a stated target CPA).",
+        "evidence": "No ad-set optimization-event threshold is checked since the chosen family is podcast, not paid social.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Podcast is registered as a later candidate with an explicit re-entry condition tied to budget, not silently dropped.",
+        "evidence": "Podcast is the immediate primary recommendation, not a deferred later candidate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any future podcast plan described includes measurement designed before booking (promo codes, vanity URLs, self-reported attribution) and show selection above a minimum download threshold.",
+        "evidence": "Measurement design (promo codes, vanity URLs, self-reported field) is present, but no minimum download threshold for show selection is specified anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Measurement plan includes self-reported attribution because a creation channel anchors the mix.",
+        "evidence": "'\"How did you hear about us?\" field at signup \u2014 catches the delayed-conversion, code-forgotten crowd.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Plan concentrates roughly 80% of budget on the single funded primary.",
+        "evidence": "Budget is split 56% anchor / 33% second show / 11% reserve \u2014 spread across two shows deliberately, not concentrated 80% on one.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

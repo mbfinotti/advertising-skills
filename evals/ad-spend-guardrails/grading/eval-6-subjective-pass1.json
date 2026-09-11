@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Argues the strongest case against its own recommended architecture before presenting it.",
+        "evidence": "The 'Architecture' section does raise one objection before the bolded recommendation: 'Normal ranking (efficiency: tiered ladder > single floor > portfolio; effort: single floor > ladder > portfolio) would put the portfolio model last on cost.' But this is a single clause, and it is neutralized in the very next sentence by quoting the skill's own pre-packaged override ('An account that already owns the expensive parts...'), then reinforced again later ('cheaper to run than it looks'). It is a cited default-ranking caveat, not an independently argued strongest case: no engagement with the real ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Argues the strongest case against its own recommended architecture before presenting it.",
+        "evidence": "The document critiques only the incumbent policy ('The core problem' section attacks the single 2.8x bar) and never turns that scrutiny on its own staged framework. Nothing precedes or follows the recommendation with a counter-case: no acknowledgment that ring-fencing $10K/month as R&D 'funded whether or not it pays for itself' can become an unaccountable slush fund, that a two-strikes rule doubles the cost of genuinely bad tests, that an 8-week ramp could simply be sunk-cost rationalization, or that the original one-week kills might have been correct if the channels were truly unprofitable. T",
+        "score": 0,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

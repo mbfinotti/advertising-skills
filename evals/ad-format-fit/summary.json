@@ -1,0 +1,299 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-format-fit",
+  "scenarios": 6,
+  "expectations_total": 80,
+  "expectations_subjective": 1,
+  "expectations_objective": 79,
+  "pass_rate_with_skill_pct": 86.2,
+  "pass_rate_without_skill_pct": 33.8,
+  "delta_pp": 52.4,
+  "uplift_multiplier": 2.55,
+  "trigger_accuracy_pct": 86.1,
+  "trigger_queries": 72,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Flags connected TV as an awareness-only format unfit for demo generation (non-clickable, lean-back viewing)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Excludes full-screen vertical placements at setup instead of letting automatic placement letterbox the 16:9 film"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States the reason: letterboxed landscape in a vertical slot reads instantly as repurposed"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Concludes two assets per month cannot feed a placement that burns creative in about three weeks"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags running the 2-minute film as the primary ad as a misuse: completion collapses on long-form primary ads (documented cases under 10%)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Computes or applies standing load as effort per asset multiplied by refresh rate"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Applies the counterweight: no format wins every time (video wins only around 60% of head-to-heads), so every per-format verdict is conditional, never absolute"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Names the qualitative test: collecting a lead versus starting a sales conversation"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States that upload acceptance proves neither policy approval nor delivery"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Includes previewing the ad in every surface it will serve (feed, vertical, in-stream, partner network) among the blockers, checking truncation, cropping, and call-to-action"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Applies vertical safe zones - key elements out of roughly the top 14% and bottom 20-35% - or equivalent spec enforcement via export presets and a spec-bearing filename convention"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Derives the daily budget floor as (target CPA x 50) / 7, roughly $570/day at an $80 CPA"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Recommends a traffic or website-visits objective with manual funnel measurement instead of forcing the conversions objective"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that under-volume conversion optimisation is not neutral: the campaign pays more per click for a system that cannot learn"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Gives the structural reason: a carousel demands sequential swipe attention a cold audience does not give"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Distinguishes hard gates that block a launch from soft practitioner preferences that never do"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Delivers a per-format verdict table using fit / conditional / misfit / ineligible verdicts with a specific reason per row"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Labels the platform thresholds cited as an August 2026 snapshot or as unverified-current, and tells the user to confirm them in the ads interface before launch"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags inbox/message ads to cold EU audiences as reaching opted-in members only"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Classifies the EU inbox restriction as a legal/consent hard gate, not a performance preference"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States thought-leader ads run only under awareness, engagement, and video-view objectives"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States thought-leader image and video variants carry no call-to-action button, so a Book-a-demo direct-response unit is structurally impossible with them"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags connected TV as an awareness-only format unfit for demo generation (non-clickable, lean-back viewing)"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States connected TV on the professional network is generally only worth funding above roughly $15K/month total spend, so at $9K/month it cannibalizes budget from measurable formats"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Mentions at least one further connected TV constraint: automated bidding only, a daily minimum around $50, or limited geographies"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags the 210-member retargeting pool as below the 300-member minimum, so campaigns against it will not serve"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Cites the roughly 300,000 audience floor for sponsored content and inbox formats (or the ~50,000 general working floor) when sizing the cold audiences"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Marks each blocked format as ineligible with the specific gate named, instead of ranking it low"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends a substitute format for every non-fit row"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Attaches a date and verification status (August 2026 snapshot or unverified-current) to the platform numbers relied on"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Excludes full-screen vertical placements at setup instead of letting automatic placement letterbox the 16:9 film"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States the reason: letterboxed landscape in a vertical slot reads instantly as repurposed"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags the dialogue-driven film for silent-autoplay feed placements and requires full captions, citing that roughly 85% of feed video is watched muted"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Applies format lifespans: statics roughly 14-28 days, short video/carousels 21-35, creator-style 28-42"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Concludes two assets per month cannot feed a placement that burns creative in about three weeks"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Does not recommend commissioning creator/UGC video for this launch, and says the short deadline is why that rung is unreachable"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags running the 2-minute film as the primary ad as a misuse: completion collapses on long-form primary ads (documented cases under 10%)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Computes or applies standing load as effort per asset multiplied by refresh rate"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Presents the ranking as a default that would reverse under a compounding mandate (a shoot buys footage and rights that make later cuts an editing job), not as a law"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Applies the refresh priority order hook, visual treatment, format, then body copy/CTA - placing format third, not first"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Diagnoses the day-26 decline as fatigue arriving within the short-video expected lifespan of 21-35 days"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes frequency 2.1 on cold prospecting sits inside the comfortable ~1.0-2.5 band, so it does not implicate audience size or placement supply"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Warns the video-versus-static dashboard comparison is contaminated: delivery optimises for marginal, not average, cost, and the delivery system chose who saw which asset"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Orders confirmation methods placement-and-format breakdown first, then an isolated ad set, with a holdout last"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States the escalation rule: escalate one rung only when the previous method stays ambiguous, and reserve the holdout for a decision moving a whole budget line"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Names at least one signal that would genuinely implicate the format (placement-breakdown divergence, or failure persisting across every creative variant in one surface)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States qualified-opportunity rate frequently runs the other way because form friction filters for intent, and judges lead formats on downstream qualified-opportunity rate rather than cost per lead"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Applies the measured threshold: a landing page converting at 5%+ (here 6.5%, with an embedded calendar) receives the traffic - a measured conversion rate decides, not taste"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "If bumpers survive at all, restricts them to awareness and points direct-response interaction at click-priced in-feed video"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rejects the carousel 30-50% lower cost-per-conversion claim as unsupported by reliable independent evidence"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Positions carousel as fitting consideration, multi-product, warm audiences rather than an all-in format"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Applies the counterweight: no format wins every time (video wins only around 60% of head-to-heads), so every per-format verdict is conditional, never absolute"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Reserves in-platform lead forms for content or webinar registration, or for a landing page converting under roughly 2% - not for demo booking"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Names the qualitative test: collecting a lead versus starting a sales conversation"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Advises against launching the fully-automated multi-surface shopping type as the account's first campaign"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Names the disqualifying conditions present: below the roughly $50/day comfort floor, a new account, and weak/unverified tracking"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends starting with standard search/shopping campaigns and graduating later"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Marks the never-verified pixel as a launch blocker requiring the conversion event to show recent, verified firing (browser-side and server-side) before spend"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Names the silent-exclusion trap: an asset can be approved at upload yet silently excluded from mismatched placements"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States that upload acceptance proves neither policy approval nor delivery"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Flags the 14-field lead form against the 12-field maximum on the professional network"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States the launch threshold explicitly: any single failing blocker item means do not launch (zero blockers is the threshold)"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Includes previewing the ad in every surface it will serve (feed, vertical, in-stream, partner network) among the blockers, checking truncation, cropping, and call-to-action"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Applies vertical safe zones - key elements out of roughly the top 14% and bottom 20-35% - or equivalent spec enforcement via export presets and a spec-bearing filename convention"
+      }
+    ]
+  }
+}

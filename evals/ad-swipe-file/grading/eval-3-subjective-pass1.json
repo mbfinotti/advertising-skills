@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Judges the file by what it feeds into testing, not by its size or coverage.",
+        "evidence": "Opens by reframing the metric entirely: \"The real number isn't 240. It's 6.25%\" \u2014 15 of 240 ads reached a brief or test. Explicitly rejects size/coverage as the measure: \"Below a 50% floor, a swipe file is an archive, not a pipeline\"; \"40/week is a vanity metric\"; \"accountable for the pipeline-conversion rate, not the ad count.\" Argues scaling collection worsens the real problem (\"shoveling 4x more raw material into a funnel that already drops 94%\") and cuts competitor scope from 6 to 3\u20135 rather than expanding coverage. Proposes downstream-facing instruments: mandatory `test_status` through sa",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Judges the file by what it feeds into testing, not by its size or coverage.",
+        "evidence": "The response's entire frame is output-into-testing, not stock. It opens by converting 240/15 into a 6% hit rate and argues that doubling volume just yields '~10 useful ads/month buried in ~680 saved ones' \u2014 explicitly rejecting size as the measure. It proposes replacing the metric: 'Ads collected is a vanity number... Track utilization rate: curated ads referenced in a brief or test, divided by curated ads added, per month. Target 25-30%.' It mandates a hypothesis field ('why would this work for us', mandatory) and tagging by funnel stage / upcoming test slot so entries map to tests. It closes",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

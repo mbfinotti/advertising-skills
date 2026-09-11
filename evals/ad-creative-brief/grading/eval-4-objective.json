@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recommends static as this brief's format given the 6-business-day hard deadline and a single in-house designer, since video/UGC costs a week of coordination (creator search, shoot, rights, revisions)",
+        "evidence": "\"Recommendation: Static. Video/UGC is deferred to next sprint \u2014 not deleted.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks video/UGC as 'deferred to the next sprint' rather than deleted, because a hard deadline pins the format for this brief only",
+        "evidence": "\"The correct label is 'deferred to the next sprint,' never 'deleted'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes deferral (deadline pins this brief) from deletion (a constraint such as unobtainable creator rights removes the option from the menu)",
+        "evidence": "\"deletion is reserved for cases where creator rights or claim approval are categorically unavailable, which isn't the case here\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects 'statics are dead' and defends static as the cheapest honest at-bat and default first concept",
+        "evidence": "\"Static is the default first concept, described as 'the cheapest honest at-bat'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks the format options (static / search / video-UGC) by learning bought per production hour rather than by trend or taste",
+        "evidence": "\"The skill's efficiency ranking is fixed: static > search > video/UGC\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names video/UGC as what the efficiency order starves (top of learning value, last on efficiency)",
+        "evidence": "\"Video/UGC sits at the top of the value axis... but dead last on efficiency\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States at least one condition that would promote video/UGC over the ratio: a compounding-learning mandate, a Reels/TikTok-first placement veto, plateaued statics, or an already-owned studio/creator roster/footage library",
+        "evidence": "\"video/UGC for compounding learning and the strongest hook-layer isolation once you have a creator roster and footage library\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that placement can veto the format pick: on Reels- or TikTok-first placements a static barely earns delivery",
+        "evidence": "No statement anywhere that a Reels/TikTok-first placement would veto a static pick or that static barely earns delivery there.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks about, or explicitly weighs, fastest at-bat now versus learning that compounds, since the format ordering depends on that answer",
+        "evidence": "\"static for fast, cheap at-bats and message validation in between\" vs. \"video/UGC for compounding learning\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States deliverables as arithmetic (e.g. N hooks x M edits = K files)",
+        "evidence": "\"2 concepts... \u00d7 2 offer-framing variants each... \u00d7 2 ratios... = 8 exports\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags each deliverable iteration versus net-new, noting a resize is not a new design",
+        "evidence": "\"2 files NEW (the two base layouts) \u00b7 6 files IT (offer-copy swaps + ratio resizes)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns asset names in the brief using the four-level convention concept, iteration, format, test variable - ASCII with underscores - rather than leaving naming to whoever uploads",
+        "evidence": "\"<Concept>_V<n>_<Ratio>_<TestVariable> \u2014 e.g. PainFirst_V1_1x1_OfferFraming\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recommends static as this brief's format given the 6-business-day hard deadline and a single in-house designer, since video/UGC costs a week of coordination (creator search, shoot, rights, revisions)",
+        "evidence": "'Since the date is fixed, the format has to be fixed to what's actually executable in-house by day 6.' ... 'Static/motion carries the App Store launch.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks video/UGC as 'deferred to the next sprint' rather than deleted, because a hard deadline pins the format for this brief only",
+        "evidence": "'UGC becomes a second-wave program that starts now but ships later, once it's been sourced properly.' ... 'This is a second wave, not a rescue mission for the launch date.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes deferral (deadline pins this brief) from deletion (a constraint such as unobtainable creator rights removes the option from the menu)",
+        "evidence": "The document only discusses deferral of UGC and rejection of deleting static; no deletion scenario (e.g. unobtainable rights) is discussed to draw the deferral-vs-deletion distinction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects 'statics are dead' and defends static as the cheapest honest at-bat and default first concept",
+        "evidence": "'\"Statics are dead\" is a slogan, not a finding \u2014 Brightfin has no test data of its own yet. Static remains the fastest, cheapest way to iterate on message/hook before committing video budget.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks the format options (static / search / video-UGC) by learning bought per production hour rather than by trend or taste",
+        "evidence": "No learning-per-production-hour framework is articulated; the ranking rationale is deadline/capacity feasibility, not a search option is even mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names video/UGC as what the efficiency order starves (top of learning value, last on efficiency)",
+        "evidence": "No such framing is present anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States at least one condition that would promote video/UGC over the ratio: a compounding-learning mandate, a Reels/TikTok-first placement veto, plateaued statics, or an already-owned studio/creator roster/footage library",
+        "evidence": "Only a vague 'Format allocation gets revisited by results, not by assumption' is stated, without naming a specific promoting condition (e.g. compounding-learning mandate, placement veto, plateau).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that placement can veto the format pick: on Reels- or TikTok-first placements a static barely earns delivery",
+        "evidence": "No mention of Reels/TikTok placement vetoing static anywhere in the brief.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks about, or explicitly weighs, fastest at-bat now versus learning that compounds, since the format ordering depends on that answer",
+        "evidence": "The brief resolves the tension implicitly via deadline logic but never explicitly frames or asks the 'fastest at-bat vs compounding learning' trade-off.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States deliverables as arithmetic (e.g. N hooks x M edits = K files)",
+        "evidence": "Deliverables are listed as bullet counts ('6\u201310 static ad variants', '2\u20133 light-motion variants') without multiplication arithmetic.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags each deliverable iteration versus net-new, noting a resize is not a new design",
+        "evidence": "No iteration-vs-net-new distinction or resize note appears in the deliverables section.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns asset names in the brief using the four-level convention concept, iteration, format, test variable - ASCII with underscores - rather than leaving naming to whoever uploads",
+        "evidence": "No naming convention or asset-naming scheme is specified anywhere in the document.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

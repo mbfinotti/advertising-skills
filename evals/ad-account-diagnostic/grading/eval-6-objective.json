@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to rank or kill campaigns based on the summed total.",
+        "evidence": "\"that ranking cannot be trusted this week, full stop... Killing on this data risks cutting campaigns that are actually fine and keeping ones that aren't, based on which attribution mix each one happened to carry.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies summing conversions across differing attribution windows and models as invalid - a category error, not a comparable total.",
+        "evidence": "\"The 'total conversions' column is a category error. Meta (7-day click), Google Ads (30-day click), and GA4 (last-click) count the same customer journey under three different rules... Summing them was never valid, even before anything changed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the mid-month Meta setting change (7-day to 1-day click) as invalidating the month-over-month comparison on its own.",
+        "evidence": "\"The mid-month Meta setting change makes it worse, not just 'also wrong.' Moving from 7-day to 1-day click on the 12th mechanically shrinks Meta's conversion count going forward... every Meta-attributed number this month is itself a blend of two incompatible measurement regimes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that part of the reported -22% is mechanical, produced by the shorter attribution window rather than by performance.",
+        "evidence": "\"the blended total will likely show a materially smaller decline than 22% - because part of the apparent drop is the window shrink itself, not lost conversions\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reporting the three sources side by side until their definitions reconcile, instead of blending them.",
+        "evidence": "\"Split the report into three columns (Meta / Google Ads / GA4), never summed. Takes an analyst a few hours, and it's the only thing that makes any ranking below trustworthy again.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes each platform self-attributes, so platform claims cannot be summed with each other or with GA4.",
+        "evidence": "The transcript attributes the invalidity to differing windows/models (\"different windows, different models, one of them multi-touch-blind\") but never frames the issue as platforms self-attributing the same conversion (overlapping/double-counted credit across Meta, Google, and GA4).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends reconciling against the backend order table as the source of truth.",
+        "evidence": "\"Reconcile against your own order table (revenue and order count, not platform-reported conversions) \u2014 for a B2C ecommerce account this is the actual source of truth, not any ad platform's count.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Specifies the comparability requirements for the rebuilt comparison: equal window lengths, equal attribution-lag maturity, matched day-of-week composition.",
+        "evidence": "Only window length is addressed (\"until a full window exists entirely under 1-day click on both sides of the comparison\"); lag maturity is flagged as \"unknown - not stated\" rather than specified as a requirement, and day-of-week composition matching is never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the most recent days under-report due to attribution lag, so a month ending now reads artificially low.",
+        "evidence": "The transcript only lists \"lag maturity matched: unknown - not stated\" as a field in the verdict block; it never explains that recent days under-report due to conversion lag or that a month ending on 2026-09-12 would read artificially low for that reason.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Issues no kill list; the verdict is insufficient evidence (or equivalent) pending a clean comparison.",
+        "evidence": "\"decomposition : not performed - the input metric itself is invalid, so no CPM/CTR/CVR/AOV read can be trusted yet\" and \"findings deleted: ...nothing here is a confirmed root cause of a real decline yet; the '22% drop' itself is deleted as a finding\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States exactly what would clear the gate: per-source side-by-side exports on consistent settings plus the backend join.",
+        "evidence": "\"1) rebuild the report: report Meta, Google, GA4 conversions as three side-by-side columns, never summed, until definitions reconcile... 3) reconcile each platform's conversions against the order table (revenue, not count) before trusting any platform number\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets the re-check for when a clean, lag-mature comparison exists.",
+        "evidence": "\"re-check : first full calendar month entirely after the 12th, once Meta, Google, and GA4 are reported unsummed and Meta is measured on a stable window both sides\" - ties re-check to unsummed reporting and stable window, not to attribution-lag maturity.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to rank or kill campaigns based on the summed total.",
+        "evidence": "\"Don't kill anything yet. The report is broken, not the campaigns.\" and \"Only then decide on cuts\" after correction steps.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies summing conversions across differing attribution windows and models as invalid - a category error, not a comparable total.",
+        "evidence": "\"You're summing three attribution windows that measure fundamentally different things\" plus the table showing Meta/Google/GA4 windows differ, and \"Don't sum across sources at all for decision-making.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the mid-month Meta setting change (7-day to 1-day click) as invalidating the month-over-month comparison on its own.",
+        "evidence": "\"Since the 12th, Meta's reported conversions are structurally undercounted relative to the rest of the month\" and \"Never compare a blended month against last month while the Meta window changed partway through.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that part of the reported -22% is mechanical, produced by the shorter attribution window rather than by performance.",
+        "evidence": "\"the 22% drop is mostly (possibly entirely) an artifact of the Meta attribution window change on the 12th\" and \"That's a reporting shift, not a demand shift.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reporting the three sources side by side until their definitions reconcile, instead of blending them.",
+        "evidence": "\"Don't sum across sources at all for decision-making... Use each platform's own numbers to judge that platform's campaigns, and use GA4... as your health check across the board.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes each platform self-attributes, so platform claims cannot be summed with each other or with GA4.",
+        "evidence": "The transcript discusses double-counting due to cross-channel overlap (\"summing Meta + Google + GA4 already double-counts a customer who saw both ads\") but never uses the concept of platform self-attribution (i.e., each platform claims credit for conversions using its own model) as the reason sums are invalid.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends reconciling against the backend order table as the source of truth.",
+        "evidence": "No mention of a backend order table, CRM, or transactional database as ground truth; the closest is recommending GA4 as a 'single source of truth' or 'health check', not a backend order system.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies the comparability requirements for the rebuilt comparison: equal window lengths, equal attribution-lag maturity, matched day-of-week composition.",
+        "evidence": "Only equal window length is addressed (\"backfill this month's Meta numbers on 7-day click... so you're comparing apples to apples\"); no mention of attribution-lag maturity or day-of-week composition matching.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the most recent days under-report due to attribution lag, so a month ending now reads artificially low.",
+        "evidence": "No mention of attribution lag causing recent days to under-report; the transcript's only lag-related point is about the 7-day vs 1-day click window, not recency-based reporting lag.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Issues no kill list; the verdict is insufficient evidence (or equivalent) pending a clean comparison.",
+        "evidence": "\"Don't kill anything yet\" and the 5-step plan ends with \"Only then decide on cuts\" \u2014 no campaigns are named for cutting.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States exactly what would clear the gate: per-source side-by-side exports on consistent settings plus the backend join.",
+        "evidence": "The transcript recommends re-pulling Meta data on a consistent window and re-ranking, but never mentions a backend join as part of clearing the gate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the re-check for when a clean, lag-mature comparison exists.",
+        "evidence": "The transcript recommends re-ranking 'using the corrected Meta numbers' but frames no explicit re-check tied to lag-maturity; it only ties the re-check to window correction, not lag maturity.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

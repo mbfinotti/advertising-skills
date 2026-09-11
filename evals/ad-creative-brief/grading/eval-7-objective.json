@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects applying the TikTok 32% bar to Meta because hook rate is counted at 3-second plays over impressions on Meta but at 2 seconds on TikTok - never benchmark the metric across platforms",
+        "evidence": "\"hook rate is 3-second plays \u00f7 impressions on Meta but TikTok counts at 2 seconds \u2014 never benchmark across platforms... holding Meta... to the same number stacks the deck against every Meta file\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a minimum of roughly 2,000 impressions before reading a hook rate, so 600-900 impressions by Wednesday supports no kill call",
+        "evidence": "\"Published starting point (SparkUGC, cited in the skill): \u22652,000 impressions before reading a hook rate. 600\u2013900 by Wednesday is well under that\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires roughly 5-10 conversions or spend of 5-10x target CPA before any conversion-based kill or scale decision",
+        "evidence": "The test block's deciding KPI is hook rate only; no conversion-based floor (conversions or CPA multiple) is mentioned anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents those floors as attributed starting points to adapt to the account's volume, not universal laws",
+        "evidence": "\"Published starting point (SparkUGC, cited in the skill)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prefers the account's own trailing history as the benchmark over published bands, with published reference bands labelled as attributed and never universal",
+        "evidence": "\"Consider... reading Meta hook rate as a trend vs. account history rather than an absolute pass/fail at 32%.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects swapping the audience on losers mid-test: targeting stays frozen for the test window and targeting changes are their own test",
+        "evidence": "\"If it's redeployed against a new audience, that redeploy is a new test cell, not a continuation\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that changing targeting mid-test means the test variable is no longer the only variable, making the result unreadable",
+        "evidence": "\"'the test variable is no longer the only variable... Fix: freeze targeting for the test window; targeting changes are their own test.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-commits the on-win and the on-loss action before launch",
+        "evidence": "Table rows \"On win\" / \"On loss\" specify concrete next actions before the test runs.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names one deciding KPI with its benchmark written down before launch so kill/scale calls are not made by feel",
+        "evidence": "\"Threshold: \u226532% to survive, on both platforms.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the single variable that changes and lists what stays constant",
+        "evidence": "\"Variable: hook... Constants, frozen for the initial test window: creative body, offer, audience, placements.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the learning to a persistent written destination the whole team reads (angle bank or learning log), explicitly not only the end-of-month slide deck",
+        "evidence": "\"EOM slide deck for stakeholder reporting, plus a named learning log/angle bank updated same week\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the minimum-evidence floor per file/variant rather than pooled across all six files",
+        "evidence": "\"600\u2013900 impressions/file by Wednesday morning.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions hook rate as a leading signal read against the account's trailing average while the deciding KPI remains the conversion metric",
+        "evidence": "Hook rate itself is set as the 'Deciding KPI + benchmark' for this test, not repositioned as a leading signal beneath a separate conversion-based decider.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects applying the TikTok 32% bar to Meta because hook rate is counted at 3-second plays over impressions on Meta but at 2 seconds on TikTok - never benchmark the metric across platforms",
+        "evidence": "The brief applies the identical bar to both: 'Rule: hook rate < 32% \u2192 kill. Same bar on Meta and TikTok, per the TikTok agency's healthy-rate benchmark,' with both platforms measured at 3-second views/plays.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a minimum of roughly 2,000 impressions before reading a hook rate, so 600-900 impressions by Wednesday supports no kill call",
+        "evidence": "'A file is only eligible for a kill/keep decision once it has 600\u2013900 impressions' \u2014 directly contradicts a ~2,000 impression floor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires roughly 5-10 conversions or spend of 5-10x target CPA before any conversion-based kill or scale decision",
+        "evidence": "No conversion-based or CPA-based threshold is mentioned; decisions are based purely on hook rate at 600-900 impressions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents those floors as attributed starting points to adapt to the account's volume, not universal laws",
+        "evidence": "The 600-900 impression and 32% figures are presented as fixed rules without framing them as adaptable starting points.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Prefers the account's own trailing history as the benchmark over published bands, with published reference bands labelled as attributed and never universal",
+        "evidence": "The 32% bar is sourced from 'the TikTok agency's healthy-rate benchmark' and applied as a fixed universal rule, not the account's own trailing history.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects swapping the audience on losers mid-test: targeting stays frozen for the test window and targeting changes are their own test",
+        "evidence": "Section 5 explicitly implements an audience swap for killed files: 'relaunch the same creative into a new audience segment the same day.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that changing targeting mid-test means the test variable is no longer the only variable, making the result unreadable",
+        "evidence": "No such caveat is raised; the audience swap is presented as a deliberate, structured step rather than a variable-isolation concern.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-commits the on-win and the on-loss action before launch",
+        "evidence": "Section 4 ('hook rate < 32% \u2192 kill... Kill = pause spend') and Section 5 (audience swap, final kill rules) are all defined before the Monday launch.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names one deciding KPI with its benchmark written down before launch so kill/scale calls are not made by feel",
+        "evidence": "'Rule: hook rate < 32% \u2192 kill.' stated clearly ahead of the Monday launch.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the single variable that changes and lists what stays constant",
+        "evidence": "No explicit statement of a single changing variable with a corresponding constants list is present, beyond generic 'equal budget/impression pacing across all 6 files'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Routes the learning to a persistent written destination the whole team reads (angle bank or learning log), explicitly not only the end-of-month slide deck",
+        "evidence": "'Roll this into the end-of-month slide deck as usual' is the only reporting destination named \u2014 no separate persistent log.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the minimum-evidence floor per file/variant rather than pooled across all six files",
+        "evidence": "'Treat each file as 12 independent data points: 6 files \u00d7 2 platforms, scored separately (a file can pass on one platform and fail on the other).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions hook rate as a leading signal read against the account's trailing average while the deciding KPI remains the conversion metric",
+        "evidence": "Hook rate itself is the deciding kill/keep KPI throughout ('Rule: hook rate < 32% \u2192 kill'), not a leading signal subordinate to a conversion metric.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

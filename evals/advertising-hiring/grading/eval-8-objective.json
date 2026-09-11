@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Attaches a named source and a date to every salary figure quoted",
+        "evidence": "'Duane Brown / Take Some Risk 2026 PPC salary survey (445 responses, reported in Search Engine Land, Benjamin Wenner, April 13, 2026)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels every salary figure directional rather than definitive",
+        "evidence": "'Every figure is self-selected-survey directional, not a floor or ceiling.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quotes the US median for 6 to 9 years of experience at about $100,000",
+        "evidence": "'US median, 6-9 years: $100,000 \u2014 directional, source/date above.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Challenges the $170,000 anchor: flags the in-house 6-9-year figure as a small, outlier-skewed sample never to be quoted unqualified",
+        "evidence": "'the $170k in-house figure for the 6-9 year band is flagged by the source itself as a small, outlier-skewed sample.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes in-house out-earns agency at comparable experience bands as a directional pattern",
+        "evidence": "'In-house does out-earn agency at every band, but the only band where that premium is reported cleanly is 10-15 years ($140,000 in-house vs. $123,545 agency, ~13%).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the underlying salary survey as self-selected with a small or shrinking sample",
+        "evidence": "'flagged by the source itself as a small, outlier-skewed sample' and 'self-selected-survey directional'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to give a single industry turnover number",
+        "evidence": "'there is no single defensible industry number'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quotes turnover as a range of roughly 18 to 45 percent depending on source, cohort, and year",
+        "evidence": "'Model backfill risk at 18-45%, depending on source/cohort/year'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names at least two distinct sources behind different turnover figures",
+        "evidence": "'Sampled-agency average: 18-20% (Campaign US...)' / 'UK member-agency staff turnover: 26.8% (IPA, 2021)' / 'Industry average: ~30% (ANA, via Adweek)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes early-tenure churn in the first 45 to 90 days points at onboarding and scoping, making part of the backfill risk controllable through the ramp",
+        "evidence": "'churn that shows up in the first 45-90 days traces to onboarding and access delays, not the hire \u2014 budget your ramp... accordingly'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags compensation terms as needing HR or legal review",
+        "evidence": "'\u26a0\ufe0f Flag: compensation terms need HR/legal review before the req goes out'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the band as scoping input to pressure-test the funded level, not as an offer recommendation",
+        "evidence": "'these figures are scoping input only, not an offer band.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Carries the leveling insight that top earners own business outcomes (revenue contribution, margin) rather than campaign operations, recommending the scorecard weight outcome ownership",
+        "evidence": "No mention of outcome ownership, campaign operations, or scorecard weighting appears anywhere in this transcript, which covers only salary and turnover.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Attaches a named source and a date to every salary figure quoted",
+        "evidence": "\"I don't have live web access approved in this session, so these are estimates from general market knowledge (not pulled from a live comp survey like Pave, Radford, or LinkedIn Talent Insights).\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels every salary figure directional rather than definitive",
+        "evidence": "\"Treat $170k as a ceiling data point from one enterprise-in-house comp, not a floor to match\" and figures given as ranges throughout.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quotes the US median for 6 to 9 years of experience at about $100,000",
+        "evidence": "The transcript gives base $110k\u2013$150k / total comp ~$130k\u2013$175k, not a ~$100,000 median figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Challenges the $170,000 anchor: flags the in-house 6-9-year figure as a small, outlier-skewed sample never to be quoted unqualified",
+        "evidence": "\"your friend's $170k is one in-house team's line item, not a benchmark... Budgeting off a single anecdote risks under- or over-shooting.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes in-house out-earns agency at comparable experience bands as a directional pattern",
+        "evidence": "No in-house vs. agency salary comparison appears (only turnover is compared by employer type).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the underlying salary survey as self-selected with a small or shrinking sample",
+        "evidence": "No salary survey is cited or discussed at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to give a single industry turnover number",
+        "evidence": "The transcript settles on \"25% annual attrition risk is a reasonable planning assumption\" as a single number despite giving ranges earlier.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Quotes turnover as a range of roughly 18 to 45 percent depending on source, cohort, and year",
+        "evidence": "Ranges given are 20-30%, 25-35%+, and 15-22% \u2014 narrower than 18-45% and not tied to distinct sources/years.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names at least two distinct sources behind different turnover figures",
+        "evidence": "No sources are named; figures are called \"estimates from general market knowledge.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes early-tenure churn in the first 45 to 90 days points at onboarding and scoping, making part of the backfill risk controllable through the ramp",
+        "evidence": "Not mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags compensation terms as needing HR or legal review",
+        "evidence": "Not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames the band as scoping input to pressure-test the funded level, not as an offer recommendation",
+        "evidence": "The section is titled \"Salary to plan for\" and presents ranges as budgeting guidance, not as a pressure-test against a pre-set funded level.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Carries the leveling insight that top earners own business outcomes (revenue contribution, margin) rather than campaign operations, recommending the scorecard weight outcome ownership",
+        "evidence": "Not present anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

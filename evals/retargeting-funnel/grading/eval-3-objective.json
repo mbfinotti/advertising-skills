@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not recommend moving discounts earlier or making them bigger",
+        "evidence": "\"Don't tighten the ladder. Sooner and bigger discounts is the wrong direction \u2014 it will push abandonment past 79%, not below it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the abandonment rise from 74% to 79% after coupon launch as trained abandonment: customers learned that abandoning triggers a coupon",
+        "evidence": "\"discount-trained abandonment ... Your timeline confirms it: abandonment was 74% before the ladder, and has climbed to 79%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Restricts the discount to the final stage of the sequence only",
+        "evidence": "\"S4 Last-call ... The only discount rung \u2014 one offer, not an escalating one\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Makes the first stage a plain reminder or dynamic item ad with no incentive",
+        "evidence": "\"S1 Reminder ... Dynamic ad, exact item, no discount\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fills the middle stages with non-price messages in the B2C slot order: social proof, then objection handling (shipping, returns, guarantee)",
+        "evidence": "The table orders S2 Objection (3-7d) before S3 Social proof (8-14d) \u2014 the reverse of the required social-proof-then-objection order.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Excludes repeat abandoners from every incentive-carrying stage",
+        "evidence": "\"RTG_S4_15-21 excludes ... EXCL_REPEAT_ABANDON (3+ abandonments/90d, no purchase) \u2014 this is the specific fix for people farming the coupon\" (S4 is the only incentive-carrying stage).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the discount's structural costs: it spends margin every time it runs and is the hardest offer to withdraw once the market has learned it",
+        "evidence": "\"some share of your 'great converting' ads are showing discounts to people who already bought at full price \u2014 pure margin waste\" plus \"Behavior that took three months to teach doesn't reverse in the next billing cycle.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the principle that re-showing the same offer harder is the weakest stage design - change the offer or the angle instead",
+        "evidence": "\"Re-showing the same offer louder is the weakest possible stage design: if they saw it and didn't act, the angle was wrong, not the size of the number.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that un-training the coupon behaviour takes on the order of a quarter, while the ladder change itself takes minutes",
+        "evidence": "The text says \"Expect a quarter, not a week, to un-train behavior\" but never states the ladder redesign itself takes minutes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds converter exclusion on every stage with an explicit written window",
+        "evidence": "\"Converter exclusion window: 180 days\" applied as EXCL_PURCH_180 to every RTG_ stage in the exclusion map.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Makes the day-band stages mutually exclusive so one abandoner cannot sit in the 10%, 15%, and 20% pools at once",
+        "evidence": "\"RTG_S2_3-7 excludes RTG_S1_0-2 ... RTG_S4_15-21 excludes all above\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives or requests the brand's own time-to-conversion data to set the stage boundaries instead of keeping the arbitrary 1/7/14-day rungs",
+        "evidence": "\"I don't have your time-to-conversion lag distribution, so I can't derive exact day boundaries ... Pull the real time-to-conversion export and re-derive the windows above against your own converters, not the proxy.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not recommend moving discounts earlier or making them bigger",
+        "evidence": "'Tightening the ladder doesn't fix that \u2014 it accelerates it.' / 'Freeze or widen the ladder, don't tighten it'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the abandonment rise from 74% to 79% after coupon launch as trained abandonment: customers learned that abandoning triggers a coupon",
+        "evidence": "'74% \u2192 79% over exactly the three months since launch, in a program specifically designed to reward abandoning, is the expected signature of discount-conditioning, not of colder leads.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Restricts the discount to the final stage of the sequence only",
+        "evidence": "The proposal says 'only serve day-1 discount to segments with low predicted organic-recovery probability' \u2014 discount can still appear on day 1 for some segments, not confined strictly to a final stage.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Makes the first stage a plain reminder or dynamic item ad with no incentive",
+        "evidence": "'Try a non-price first touch. Urgency/social proof/stock-level reminder with no code, 2\u20134 hours after abandonment, before any discount enters the sequence.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fills the middle stages with non-price messages in the B2C slot order: social proof, then objection handling (shipping, returns, guarantee)",
+        "evidence": "No explicit middle-stage sequence of social proof then objection handling (shipping/returns/guarantee) is laid out; only a first non-price touch and randomized later discounts are described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Excludes repeat abandoners from every incentive-carrying stage",
+        "evidence": "'exclude customers who've redeemed an abandonment discount in the last 60\u201390 days, and only serve day-1 discount to segments with low predicted organic-recovery probability'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the discount's structural costs: it spends margin every time it runs and is the hardest offer to withdraw once the market has learned it",
+        "evidence": "Margin cost is named ('it's margin you handed to demand that already existed') but the 'hardest offer to withdraw once the market has learned it' point is never stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the principle that re-showing the same offer harder is the weakest stage design - change the offer or the angle instead",
+        "evidence": "'the fix... is to make the discount less certain and less generous, not faster and bigger' plus 'Break the predictability... randomize timing and amount within a band'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that un-training the coupon behaviour takes on the order of a quarter, while the ladder change itself takes minutes",
+        "evidence": "No such timeframe comparison appears; the 'a week, not a quarter' reference is about the diagnostic check period, not un-training duration.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds converter exclusion on every stage with an explicit written window",
+        "evidence": "No mention of excluding converters/buyers from the abandonment sequence anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Makes the day-band stages mutually exclusive so one abandoner cannot sit in the 10%, 15%, and 20% pools at once",
+        "evidence": "No discussion of preventing one abandoner from sitting in multiple day-band (10%/15%/20%) pools simultaneously.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Derives or requests the brand's own time-to-conversion data to set the stage boundaries instead of keeping the arbitrary 1/7/14-day rungs",
+        "evidence": "The diagnostic asks pulled ('time-to-purchase clustering') are aimed at detecting gaming, not at resetting the 1/7/14-day rungs; the plan explicitly says to freeze/widen rather than re-derive boundaries.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

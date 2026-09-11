@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects Ad Strength as a fatigue or performance signal",
+        "evidence": "\"Ad Strength is not a performance metric \u2014 it scores asset diversity and completeness\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States Ad Strength measures asset diversity and completeness, not performance",
+        "evidence": "same quote as above",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites Optmyzr's analysis finding 'Average'-strength ads with the best CPA/CVR as evidence",
+        "evidence": "\"Optmyzr's analysis of live accounts found 'Average'-strength RSAs posting the best CPA/CVR in the set\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Points to the asset performance labels (Learning/Low/Good/Best) as the performance-based signal on RSAs",
+        "evidence": "\"the legitimate Google Ads freshness signal (asset performance labels, not Ad Strength)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends replacing only the headline stuck at 'Low' for five weeks, not a full rewrite",
+        "evidence": "\"swap the single Low-labeled headline only... No full rewrite.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels any replacement cadence such as 2-4 weeks as practitioner advice, not a Google rule",
+        "evidence": "\"past the common 2\u20134 week replacement cadence practitioners use\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads two months of flat CTR and conversion rate as no decay, yielding a healthy verdict for the ad overall",
+        "evidence": "\"verdict : healthy (ad level) \u2014 one Low asset flagged for routine replacement, not fatigue\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses the account manager's full asset rewrite",
+        "evidence": "\"Rewriting all the assets this sprint would mean editing a live, working ad... for a problem the data doesn't show.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Bases any future fatigue read on the ad's own trailing performance baseline, not on platform score movement",
+        "evidence": "\"window : trailing 8 weeks (CTR/CVR) vs the ad's own history\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and re-check fields",
+        "evidence": "\"confidence : medium...\" and \"re-check : 2026-10-10...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend pausing or restructuring the RSA",
+        "evidence": "Only action recommended is swapping one headline; no pause or restructure is suggested.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects Ad Strength as a fatigue or performance signal",
+        "evidence": "'Ad Strength is a construct-diversity/best-practice checklist, not a performance metric... it does not measure fatigue, CTR decay, or conversion decline'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States Ad Strength measures asset diversity and completeness, not performance",
+        "evidence": "'It scores how many assets, pinning rules, and unique-message combinations you have'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites Optmyzr's analysis finding 'Average'-strength ads with the best CPA/CVR as evidence",
+        "evidence": "No citation of Optmyzr or any such study appears",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Points to the asset performance labels (Learning/Low/Good/Best) as the performance-based signal on RSAs",
+        "evidence": "\"Google's per-asset labels are built from real impression/click performance data (unlike the aggregate Ad Strength score)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends replacing only the headline stuck at 'Low' for five weeks, not a full rewrite",
+        "evidence": "'pause or replace that single headline... Leave the other 9 Good/Best assets alone'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels any replacement cadence such as 2-4 weeks as practitioner advice, not a Google rule",
+        "evidence": "No replacement cadence is mentioned at all",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reads two months of flat CTR and conversion rate as no decay, yielding a healthy verdict for the ad overall",
+        "evidence": "'flat CTR and flat conversion rate for two months. That's the opposite of the fatigue signature'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses the account manager's full asset rewrite",
+        "evidence": "\"don't let 'Average' Ad Strength drive a full rewrite\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Bases any future fatigue read on the ad's own trailing performance baseline, not on platform score movement",
+        "evidence": "'watch CTR/conv rate trended weekly... that's the metric that would actually tell you if creative is wearing out, not the Ad Strength badge'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and re-check fields",
+        "evidence": "No structured verdict block appears",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend pausing or restructuring the RSA",
+        "evidence": "Only recommends swapping one headline; no pause or restructure suggested",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

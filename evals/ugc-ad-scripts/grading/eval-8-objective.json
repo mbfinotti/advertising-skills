@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The recommendation cuts from 75 seconds to the 15-25 second band for paid social, citing steep completion falloff past roughly 45 seconds.",
+        "evidence": "The delivered script stays at 75s; only a \"30s cutdown\" is proposed as a separate future test, not a cut to the 15-25s band: \"I'd pressure-test this exact script as a 30s cutdown for cold prospecting, reserving the 75s cut for retargeting/warm audiences.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Lines are cut rather than consolidated into a longer video: the six features are trimmed to 2-3 value props.",
+        "evidence": "All six features remain in the delivered 75s script; trimming to \"2-3 features\" is only mentioned as a future 30s cutdown recommendation, not applied here.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "AIDA is set aside for this duration because four stages rarely land inside 25 seconds, with PAS as the default spine (BAB only if a filmable before state exists).",
+        "evidence": "\"None of that is a reason to refuse the brief \u2014 it's a reason to compress\" and \"Structure: AIDA, per brief\" \u2014 AIDA is kept, not set aside.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A social-proof beat is added, noting the classic direct-response frameworks omit it and paid social expects it.",
+        "evidence": "No social-proof beat or statement about frameworks omitting social proof appears anywhere in the script or notes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The '8-second attention span' claim is corrected as debunked (it traces to a 2015 report with no credible source) and is not repeated as fact.",
+        "evidence": "\"'8 seconds before attention dies' \u2014 the skill flags this exact stat as traced to an unsourced 2015 report and explicitly bans citing it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "'3 seconds' is not treated as a behavioral law: it is explained as a platform view-counting convention, with eye-tracking evidence putting the real window shorter (roughly 1.4 seconds for a brand-awareness lift, 3.9 for prompted recall).",
+        "evidence": "The transcript gives the real numbers (\"~1.4s for a brand-lift effect, ~3.9s for prompted recall\") but never frames '3 seconds' itself as a platform view-counting convention being corrected.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The opening logo sting is rejected: a logo card or static first frame is named as the most-cited cause of a low hook rate, and the ad opens on motion, a face, or the money-shot.",
+        "evidence": "\"Static logo card as frame one \u2014 the skill's named #1 cause of low hook rate. I didn't cut your brand moment \u2014 I moved it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The hook is front-loaded (roughly the first 3 seconds) and the CTA sits in the final ~5 seconds, with a beat split laid out.",
+        "evidence": "The Attention stage runs 0:00\u20130:08 (not ~3s) and the Action/CTA stage runs 1:02\u20131:15, a 13-second span at the end of a 75s ad, not a final ~5 seconds.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Narration time is estimated as spoken word count divided by 150 words per minute, and the script fits the target duration by that estimate.",
+        "evidence": "No word-count/150wpm runtime calculation appears anywhere in the transcript for this script.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "On-screen text stays around 5-10 words per second of screen time.",
+        "evidence": "On-screen captions throughout (e.g. \"free local address \u00d7 6 countries\", \"5 orders \u2192 1 box\") are short, well under any 5-10 words/second density.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The script assumes sound off, with on-screen text able to carry the message alone.",
+        "evidence": "\"vertical, sound-on-first with burned-in captions for muted viewers\" \u2014 the script is explicitly designed sound-on-first, not assuming sound off.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The CTA carries exactly one ask.",
+        "evidence": "CTA 1: \"Download Trundlepost, get your first address free\"; CTA 2: \"Use code MOVE for your first shipment free\" \u2014 each a single ask.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The recommendation cuts from 75 seconds to the 15-25 second band for paid social, citing steep completion falloff past roughly 45 seconds.",
+        "evidence": "The script remains \"75s | 9:16 vertical\" throughout; the only alternative offered is a hook-first reordering of the same 75s cut, with no mention of falloff past 45 seconds.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Lines are cut rather than consolidated into a longer video: the six features are trimmed to 2-3 value props.",
+        "evidence": "All six features (address, consolidation, inspection, storage, repacking, tracking/customs) are retained and each given its own caption/VO beat across Interest and Desire sections.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "AIDA is set aside for this duration because four stages rarely land inside 25 seconds, with PAS as the default spine (BAB only if a filmable before state exists).",
+        "evidence": "The script is explicitly structured and labeled by AIDA stages: \"ATTENTION\", \"INTEREST\", \"DESIRE\", \"ACTION\".",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A social-proof beat is added, noting the classic direct-response frameworks omit it and paid social expects it.",
+        "evidence": "No testimonial, review, or social-proof beat appears anywhere in the script, and no note flags its absence.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The '8-second attention span' claim is corrected as debunked (it traces to a 2015 report with no credible source) and is not repeated as fact.",
+        "evidence": "\"The 8-second window is exactly why performance creative... almost never opens on a static/animated logo\" treats the stat as valid fact rather than debunking it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "'3 seconds' is not treated as a behavioral law: it is explained as a platform view-counting convention, with eye-tracking evidence putting the real window shorter (roughly 1.4 seconds for a brand-awareness lift, 3.9 for prompted recall).",
+        "evidence": "No discussion of eye-tracking data or platform view-counting conventions appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The opening logo sting is rejected: a logo card or static first frame is named as the most-cited cause of a low hook rate, and the ad opens on motion, a face, or the money-shot.",
+        "evidence": "Despite the verbal caveat, the script itself still opens with \"LOGO STING \u2014 0:00\u20130:03\" as its first beat: \"I've written it your way as instructed.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The hook is front-loaded (roughly the first 3 seconds) and the CTA sits in the final ~5 seconds, with a beat split laid out.",
+        "evidence": "The Attention/hook beat runs 0:03\u20130:10 (after the logo occupies 0:00\u20130:03), and the Action/CTA beat runs 0:55\u20131:15, a 20-second block, not the final ~5 seconds.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Narration time is estimated as spoken word count divided by 150 words per minute, and the script fits the target duration by that estimate.",
+        "evidence": "The only timing check given is beat-duration arithmetic (\"3 + 7 + 20 + 25 + 20 = 75s exactly\"), with no word-count/wpm calculation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "On-screen text stays around 5-10 words per second of screen time.",
+        "evidence": "Caption density is low, e.g. three short bullet pop-ons (\"FREE FORWARDING ADDRESS\", \"PACKAGE CONSOLIDATION\", \"PHOTOS BEFORE YOU PAY TO SHIP\") spread across a 20-second Interest block, well under the ceiling.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The script assumes sound off, with on-screen text able to carry the message alone.",
+        "evidence": "\"Captions burned in throughout \u2014 85%+ of feed views are muted\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The CTA carries exactly one ask.",
+        "evidence": "\"Sign up free and get [X]% off your first shipment with code HOME[X]\" is a single sign-up ask with an attached incentive, not multiple stacked actions.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

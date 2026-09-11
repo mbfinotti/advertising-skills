@@ -1,0 +1,431 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ugc-ad-scripts",
+  "scenarios": 9,
+  "expectations_total": 108,
+  "expectations_subjective": 3,
+  "expectations_objective": 105,
+  "pass_rate_with_skill_pct": 75.0,
+  "pass_rate_without_skill_pct": 37.0,
+  "delta_pp": 38.0,
+  "uplift_multiplier": 2.03,
+  "trigger_accuracy_pct": 95.8,
+  "trigger_queries": 96,
+  "subjective_ac2": 0.676,
+  "subjective_pass_disagreements": [
+    {
+      "eval_id": 4,
+      "condition": "with_skill",
+      "expectation": "The framing leads with teaching or insight rather than a pitch, matched to a professional feed.",
+      "pass1": true,
+      "pass2": false
+    }
+  ],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 1,
+  "run_degraded": true,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Spoken length fits the 20-second target when estimated at spoken word count divided by 150 words per minute (roughly 50 words), rather than an over-long read."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The full word-for-word teleprompter request is declined, with the reason that fully scripted delivery goes stiff and the audience senses an ad."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Exactly two elements are locked word-for-word: the hook and the CTA."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The body is delivered as bullet-point beats with example phrasing the creator says in her own words."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "No hook or beat contrasts an exhausted before state with a rested after state."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response states a customer testimonial is not scientific evidence and efficacy claims need substantiation the advertiser independently holds, else the line is softened or cut."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Any endorser result that remains gets a generally-expected-result treatment, and a bare 'results not typical' disclaimer is not used as the fix."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response notes completion falls sharply past two minutes and stays well under it."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The plan covers multiple scripts across awareness stages, citing that a B2B buying committee of roughly 6-10 people means one script rarely converts alone."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The customer's sign-off to be named on camera is noted as required before filming."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The response warns hook rate measures attention, not value - ads at identical hook rates can differ several-fold in return - and never to scale on hook rate alone."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The diagnostic sequence is walked in order and only the failing stage is fixed, with the later stages named (low CTR points at the CTA; healthy CTR with low conversion points at the offer or landing page)."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The metric definitions are carried through correctly (hook rate = 3-second plays divided by impressions; hold rate = 15-second plays divided by 3-second plays)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The package notes the hook and CTA combinations against one fixed body produce 6 or more testable edits from one shoot."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The US and EU/France regimes are described as stacking: an ad running in both must satisfy both."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The response notes both the creator and the brand can be liable under EU rules on hidden advertising (or that undisclosed advertorial is unfair in all circumstances)."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The recommendation cuts from 75 seconds to the 15-25 second band for paid social, citing steep completion falloff past roughly 45 seconds."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Lines are cut rather than consolidated into a longer video: the six features are trimmed to 2-3 value props."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "AIDA is set aside for this duration because four stages rarely land inside 25 seconds, with PAS as the default spine (BAB only if a filmable before state exists)."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "A social-proof beat is added, noting the classic direct-response frameworks omit it and paid social expects it."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "'3 seconds' is not treated as a behavioral law: it is explained as a platform view-counting convention, with eye-tracking evidence putting the real window shorter (roughly 1.4 seconds for a brand-awareness lift, 3.9 for prompted recall)."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The hook is front-loaded (roughly the first 3 seconds) and the CTA sits in the final ~5 seconds, with a beat split laid out."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Narration time is estimated as spoken word count divided by 150 words per minute, and the script fits the target duration by that estimate."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The script assumes sound off, with on-screen text able to carry the message alone."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The problem beat is built to name the moment the pain shows up, using the emotional tag from the evidence record, not a feature list."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The concept is defined as one segment crossed with one motivation stated in the customer's own words and one format, with the offer fixed."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Spoken lines restrict themselves to words found in the evidence, with no marketing paraphrase (such as 'revolutionary' or 'seamless') in a person's mouth."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The refusal is grounded in regulation: fabricated reviews/testimonials are named a regulatory violation, not merely weak writing."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Every script is labeled UNVALIDATED with a note that voice-of-customer was not sourced."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Each concept carries 3-5 hook variants."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Every hook variant specifies all three channels: spoken line, on-screen text, and opening visual."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Hook and CTA are locked word-for-word while the body is bullet-point beats with example phrasing, not locked lines."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "A disclosure line for the free subscription (a material connection) is written into the script itself as a spoken or on-screen line, not delegated to a caption or platform toggle."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The full word-for-word teleprompter request is declined, with the reason that fully scripted delivery goes stiff and the audience senses an ad."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Exactly two elements are locked word-for-word: the hook and the CTA."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The body is delivered as bullet-point beats with example phrasing the creator says in her own words."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The three provided review quotes are handed to the creator as talking points, with beat wording drawn from those quotes rather than marketing paraphrase."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "3-5 hook variants are provided, each labeled with a distinct archetype."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "2 CTA variants are provided."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The package notes that the hook and CTA variants cut against one fixed body yield 6 or more edit combinations from a single shoot."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The first body line extends each hook's premise, with the transition line adjusted per hook where needed."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "A paid-partnership disclosure is written into an early beat of the script as a spoken or on-screen line, in addition to (not replaced by) the platform label."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The before/after contrast archetype is removed for this health-category ad and the removal is stated explicitly in the deliverable as deleted/ruled out, not silently omitted or ranked last."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "No hook or beat contrasts an exhausted before state with a rested after state."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The numeric sleep-score testimonial (61 to 89) is cut rather than softened, with the reason that specific numeric health testimonials are routinely rejected outright."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The 'Do you struggle with insomnia?' opener is rewritten out; no line uses second-person framing that implies the viewer's health condition."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response states a customer testimonial is not scientific evidence and efficacy claims need substantiation the advertiser independently holds, else the line is softened or cut."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The whole package is flagged for the user's own legal review before filming."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Any endorser result that remains gets a generally-expected-result treatment, and a bare 'results not typical' disclaimer is not used as the fix."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Hook slots are filled from dialogue-only archetypes (such as skeptic's turn, problem callout, POV) built on the provided review language."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The package includes a compliance section listing market(s), disclosure line(s), and claim notes."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Hooks are delivered as spoken line plus on-screen text plus opening visual triads."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Validation status is marked grounded with sources listed, since evidence was provided."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The customer/practitioner testimonial format is recommended over founder-led, because the signed case study cleared for public use makes the testimonial the cheapest rung here."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The founder-led-first ordering is explicitly called a default that this account's assets re-rank, naming which facts moved it (the cleared case study and the camera-averse founder)."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The script uses a Challenge, then Solution, then Outcome spine."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "A generally-expected-result line is included or checked, since results vary across customers."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response notes completion falls sharply past two minutes and stays well under it."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The plan covers multiple scripts across awareness stages, citing that a B2B buying committee of roughly 6-10 people means one script rarely converts alone."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The framing leads with teaching or insight rather than a pitch, matched to a professional feed."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The speaker is credentialed inside the hook, with the role named early."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The customer's sign-off to be named on camera is noted as required before filming."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The '30%+ is elite' benchmark is rejected as a target, noting vendor 'good' hook-rate figures conflict (roughly 18% to 40% for the same metric) and each vendor sells the analytics behind its number; external figures serve only as sanity checks."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The response warns hook rate measures attention, not value - ads at identical hook rates can differ several-fold in return - and never to scale on hook rate alone."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The diagnostic sequence is walked in order and only the failing stage is fixed, with the later stages named (low CTR points at the CTA; healthy CTR with low conversion points at the offer or landing page)."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The fix requires the first body line to extend each hook's premise, with the transition line rewritten per hook."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The plan changes one variable at a time and re-tests until the account's own median is beaten."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The metric definitions are carried through correctly (hook rate = 3-second plays divided by impressions; hold rate = 15-second plays divided by 3-second plays)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The plan pushes back on varying concept, offer, hooks, and CTA at once: two of the three testable variables (concept, hook, offer) are held constant while one varies."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The offer is fixed within each test package rather than mixed across it."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The stacked closing ask (download plus follow plus code) is rejected: each script carries exactly one ask."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The untrue 'before Sunday' deadline is removed or corrected as a deceptive fake-urgency claim; a real deadline or none is scripted."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The body stays fixed across hook variants within a concept."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "3-5 hook variants per concept, labeled with distinct archetypes, with no near-identical openings."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "2 CTA variants per concept, each a single ask."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Hooks are triads (spoken line, on-screen text, opening visual) with the three channels carrying different information, not the same line duplicated."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "No opening frame is a static card or logo; hooks open on motion, a face, or the money-shot."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The measurement plan names the single variable this round isolates."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The package notes the hook and CTA combinations against one fixed body produce 6 or more testable edits from one shoot."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The recommendation cuts from 75 seconds to the 15-25 second band for paid social, citing steep completion falloff past roughly 45 seconds."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Lines are cut rather than consolidated into a longer video: the six features are trimmed to 2-3 value props."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "AIDA is set aside for this duration because four stages rarely land inside 25 seconds, with PAS as the default spine (BAB only if a filmable before state exists)."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "A social-proof beat is added, noting the classic direct-response frameworks omit it and paid social expects it."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The '8-second attention span' claim is corrected as debunked (it traces to a 2015 report with no credible source) and is not repeated as fact."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "'3 seconds' is not treated as a behavioral law: it is explained as a platform view-counting convention, with eye-tracking evidence putting the real window shorter (roughly 1.4 seconds for a brand-awareness lift, 3.9 for prompted recall)."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The opening logo sting is rejected: a logo card or static first frame is named as the most-cited cause of a low hook rate, and the ad opens on motion, a face, or the money-shot."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The hook is front-loaded (roughly the first 3 seconds) and the CTA sits in the final ~5 seconds, with a beat split laid out."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Narration time is estimated as spoken word count divided by 150 words per minute, and the script fits the target duration by that estimate."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Public reviews are noted as usually too thin for B2B products to carry a concept, which the 4 thin reviews confirm here."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "A named customer's words from support tickets are flagged as needing that customer's consent before they reach a script."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Each harvested quote is recorded in four columns: exact quote, source, underlying desire or problem, emotional tag."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The problem beat is built to name the moment the pain shows up, using the emotional tag from the evidence record, not a feature list."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The concept is defined as one segment crossed with one motivation stated in the customer's own words and one format, with the offer fixed."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Spoken lines restrict themselves to words found in the evidence, with no marketing paraphrase (such as 'revolutionary' or 'seamless') in a person's mouth."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The dozen past-ad comments are treated as equal in rank to public reviews (both already public, both in the customer's words) and harvested now at no cost."
+      }
+    ]
+  }
+}

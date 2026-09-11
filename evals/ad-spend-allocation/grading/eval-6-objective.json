@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response refuses to assign proportional weights to the two zero-history lines based on how promising each seems.",
+        "evidence": "\"You asked me to 'assign weights proportional to how promising each seems'... I'm not going to do that\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Missing data is handled by the named fallback: scenarios with the missing inputs named, or an explicit equal-weight split marked provisional - never a confident-looking invented weighting.",
+        "evidence": "\"The only defensible move with literally no data is an equal-weight split, marked provisional\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The two new sponsorship lines are structured as bounded experiments, each with a hypothesis, minimum detectable effect, decision date, stop condition, and budget.",
+        "evidence": "Experiments table gives Hypothesis, MDE, Decision date, Stop condition, Budget for both podcast and community lines.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response declines to kill display prospecting on its $800/month CPA reading, explaining that near-zero spend readings do not predict scaled performance (a starved channel's efficiency is not its curve).",
+        "evidence": "\"its 3x CPA reading is more likely a starved-channel artifact than a real marginal signal... that's the classic 'starved channel misread as its curve' pattern\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Before any line is defunded as weakest, the response rules out lag, tracking issues, small sample, or seasonality as the cause.",
+        "evidence": "\"it likely never left the learning phase\" \u2014 attributes weak signal to sample/floor issue, not true underperformance.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response keeps Google-reported $310K and CRM-attributable $190K distinct, and does not average them or allocate on the platform-reported figure.",
+        "evidence": "\"Search must be judged on CRM-closed revenue ($190K), not Google Ads' claimed $310K... Every number below uses $190K for search.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The plan is labeled provisional wherever only platform-reported numbers exist.",
+        "evidence": "\"whole plan is labeled provisional, per the skill's own rule when only partial business-level data exists\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If exact dollars are given for the six lines, they sum exactly to $200,000.",
+        "evidence": "70,000+55,000+28,000+0+24,000+11,500+11,500 = $200,000; table states \"Sums exactly to the fixed total.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each line's marginal estimate carries an evidence-class label: measured, tested, or directional proxy.",
+        "evidence": "\"Evidence label\" column with entries like \"Directional proxy (business-level, not causal)\" and \"Unevaluated \u2014 continuation by default, flagged\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each changed line carries a rollback threshold and a verification date.",
+        "evidence": "New lines: \"Stop if 0 attributed leads/SQLs by day 90\" / \"Day 90\"; killed display line has no ongoing spend so no rollback needed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response names which numbers are measured, which are platform-reported, and which are guesses, and gives no point forecast without its assumptions.",
+        "evidence": "\"I sized $11,500 each as a plausible order-of-magnitude floor, not a quote.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response asks for, or explicitly flags as missing, contribution margin or payback inputs rather than silently assuming them.",
+        "evidence": "\"Can't run it \u2014 no contribution margin, deal size, lead-to-close rate, or retention given.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The output is presented section by section or as a proposal requiring the user's approval, not as a final executed split.",
+        "evidence": "\"Nothing here is final until you sign off section by section \u2014 say which parts you want to change before I'd consider this approved.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response refuses to assign proportional weights to the two zero-history lines based on how promising each seems.",
+        "evidence": "\"**Split: 60/40 in favor of niche-community sponsorship ($14,000 / $9,000).**\" is justified by narrative promise (\"shorter inferential leap to 'this person could buy'\" vs. podcast being \"slower and harder to attribute\").",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Missing data is handled by the named fallback: scenarios with the missing inputs named, or an explicit equal-weight split marked provisional - never a confident-looking invented weighting.",
+        "evidence": "The 60/40 split for the two untested lines is presented as a confident recommendation with reasoning, not as a scenario set or an equal-weight split marked provisional.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The two new sponsorship lines are structured as bounded experiments, each with a hypothesis, minimum detectable effect, decision date, stop condition, and budget.",
+        "evidence": "Only a budget and a vague future flag are given (\"neither new line has a CPA yet... insist on CRM-closed attribution...from day one\") \u2014 no hypothesis, MDE, decision date, or stop condition per line.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response declines to kill display prospecting on its $800/month CPA reading, explaining that near-zero spend readings do not predict scaled performance (a starved channel's efficiency is not its curve).",
+        "evidence": "\"Why display prospecting is zeroed out: $800/month, CPA running 3x every other line, with a full quarter of history to confirm it's not noise. That's a clean kill, not a 'reduce and monitor.'\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Before any line is defunded as weakest, the response rules out lag, tracking issues, small sample, or seasonality as the cause.",
+        "evidence": "Only sample size is addressed (\"a full quarter of history to confirm it's not noise\"); lag, tracking issues, and seasonality are not discussed before the display kill.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response keeps Google-reported $310K and CRM-attributable $190K distinct, and does not average them or allocate on the platform-reported figure.",
+        "evidence": "\"Google Ads is claiming $310K in attributed revenue; CRM-closed revenue attributable to search is $190K... On the CRM number, search is running at 2.7x ROAS...nowhere near the 4.4x the platform wants you to believe.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The plan is labeled provisional wherever only platform-reported numbers exist.",
+        "evidence": "The 60/40 sponsorship split \u2014 where no data of any kind exists yet \u2014 is presented as a firm recommendation, not labeled provisional.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "If exact dollars are given for the six lines, they sum exactly to $200,000.",
+        "evidence": "$70,000+$55,000+$28,000+$24,000+$14,000+$9,000+$0 = $200,000, matching \"**Total** | **$200,000**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each line's marginal estimate carries an evidence-class label: measured, tested, or directional proxy.",
+        "evidence": "No line carries an explicit evidence-class tag like \"measured\" or \"directional proxy\" in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each changed line carries a rollback threshold and a verification date.",
+        "evidence": "No specific rollback threshold or verification date is given for the killed display line or the two new sponsorship lines beyond a general \"Q3 planning\" flag.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response names which numbers are measured, which are platform-reported, and which are guesses, and gives no point forecast without its assumptions.",
+        "evidence": "\"You gave me two hard signals in this data \u2014 a CPA outlier on display, and an attribution gap on search. You gave me zero comparative signal on LinkedIn, review-site listings, or retargeting (no CPA, no CRM revenue).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response asks for, or explicitly flags as missing, contribution margin or payback inputs rather than silently assuming them.",
+        "evidence": "No mention of contribution margin or payback appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The output is presented section by section or as a proposal requiring the user's approval, not as a final executed split.",
+        "evidence": "The document is headed \"## Q2 Budget Allocation \u2014 $200,000 across 6 lines\" and presented as a completed allocation with rationale, with no approval-pending framing.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

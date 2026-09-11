@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not recommend cac-roas-benchmark now, because there is no spend data to measure.",
+        "evidence": "'Not cac-roas-benchmark: it computes CAC from real spend data, and you have none.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend ad-budget-pacing now, because there is no live budget to pace.",
+        "evidence": "'Not ad-budget-pacing: it tracks spend against an already-live budget, and no campaign exists yet.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that with zero spend there is nothing to measure, diagnose, or tune yet.",
+        "evidence": "'\"not spending yet\" empties the normal diagnosis/tuning rungs and promotes platform-selection + conversion-tracking to the top regardless of the default class order.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes mbfinotti/advertising-skills@ad-platform-selection to the top of the plan.",
+        "evidence": "'## Route: mbfinotti/advertising-skills@ad-platform-selection \u2014 before anything else...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes mbfinotti/advertising-skills@ad-conversion-tracking to the top alongside platform selection, before any launch.",
+        "evidence": "Short-list item 2: 'ad-conversion-tracking ... (promoted for the same reason)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes the launch chain in dependency order: ad-platform-selection, then ad-format-fit, then ad-conversion-tracking, then ad-creative-test-plan.",
+        "evidence": "Actual chain given is 'ad-platform-selection \u2192 ad-spend-guardrails \u2192 ad-conversion-tracking \u2192 (spend launches) \u2192 ad-budget-pacing \u2192 cac-roas-benchmark' \u2014 neither ad-format-fit nor ad-creative-test-plan appear.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each chain link states what it hands to the next link.",
+        "evidence": "'Each hands the next something concrete: platform pick narrows format and tracking work; guardrails give the benchmark a target...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any routine proposal is limited to a periodic kickoff re-invocation or a single recurring reminder, not pacing, spend-health, or wear-out routines.",
+        "evidence": "Proposes 'Weekly budget pacing check' (ad-budget-pacing) and 'Monthly CAC/ROAS health check' (cac-roas-benchmark) as dry-run routines, beyond just a kickoff re-invocation or single reminder.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The cold-start interview stays within 7 questions.",
+        "evidence": "Table lists exactly 7 fields: Business model, Spend, Conversion event/source, Creative capacity, Hard date/vertical, Effort ceiling, Decided.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "At least one interview question offers multiple-choice options.",
+        "evidence": "No question in the table or elsewhere is presented with lettered/listed multiple-choice options; all are inferred/assumed values, not options offered to the user.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Creates or proposes advertising-context.md capturing not-spending-yet status, the $3k/month band, and the $12/month B2C offer.",
+        "evidence": "'Channels / spend: none live yet; $3k/month starting next month, no channel chosen' and 'Offer / price point: journaling app, $12/month'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "'mbfinotti/advertising-skills@ad-platform-selection', '@ad-conversion-tracking', etc.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Raises the conversion source-of-truth question (what event counts as success and which system is authoritative) as something to settle before launch.",
+        "evidence": "'Conversion / source of truth: TBD \u2014 confirm which system is authoritative (billing platform vs. analytics tool) before ad-conversion-tracking can run'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not recommend cac-roas-benchmark now, because there is no spend data to measure.",
+        "evidence": "'cac-roas-benchmark' is never named; benchmark numbers are explicitly flagged as placeholders pending real spend data.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend ad-budget-pacing now, because there is no live budget to pace.",
+        "evidence": "'ad-budget-pacing' is never named as a skill recommendation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that with zero spend there is nothing to measure, diagnose, or tune yet.",
+        "evidence": "No explicit statement that zero spend means nothing can be measured/diagnosed/tuned yet; benchmarks are given as placeholders but the principle is not stated directly.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes mbfinotti/advertising-skills@ad-platform-selection to the top of the plan.",
+        "evidence": "No skill name is ever cited in the transcript; platform choice is discussed only within section 6's rollout plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes mbfinotti/advertising-skills@ad-conversion-tracking to the top alongside platform selection, before any launch.",
+        "evidence": "No skill name is cited for the tracking section (#3), which is also not positioned at the top (CAC ceiling and benchmarks come first).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposes the launch chain in dependency order: ad-platform-selection, then ad-format-fit, then ad-conversion-tracking, then ad-creative-test-plan.",
+        "evidence": "None of these skill names appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each chain link states what it hands to the next link.",
+        "evidence": "No named skill chain exists to evaluate handoffs against.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any routine proposal is limited to a periodic kickoff re-invocation or a single recurring reminder, not pacing, spend-health, or wear-out routines.",
+        "evidence": "The transcript proposes a recurring 'Weekly budget pacing dashboard' with a 'Cadence: every Monday morning' logging routine, which is a pacing routine.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The cold-start interview stays within 7 questions.",
+        "evidence": "No interview questions are asked at all in the transcript (0 \u2264 7).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "At least one interview question offers multiple-choice options.",
+        "evidence": "No interview questions are asked at all, so none offer multiple-choice options.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Creates or proposes advertising-context.md capturing not-spending-yet status, the $3k/month band, and the $12/month B2C offer.",
+        "evidence": "No mention of advertising-context.md anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "No skill names appear, so none are malformed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Raises the conversion source-of-truth question (what event counts as success and which system is authoritative) as something to settle before launch.",
+        "evidence": "'Every channel must report to the same two numbers: cost, and paid conversions. If a channel can't give you that cleanly, don't fund it yet.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

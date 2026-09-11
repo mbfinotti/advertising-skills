@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Keeps the correction to the smallest reversible change: a single variable and a modest step, not a campaign restructure.",
+        "evidence": "Explicitly recommends one variable at a modest step: 'loosen it a modest step (~10%), one variable, and let it resettle before judging (an edit itself triggers a relearning window, so don't stack this with anything else).' Declines the requested $800\u2192$1,100 jump and defers any cap change until evidence warrants, then only 'step it modestly (e.g. toward $900\u2013950) rather than jumping straight to $1,100 \u2014 the smallest reversible change, not the number the shortfall math happened to produce.' Steps 2 and 3 are diagnostic reads (Quality Score components, CPC trend), not additional simultaneous edit",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Keeps the correction to the smallest reversible change: a single variable and a modest step, not a campaign restructure.",
+        "evidence": "Partial. The response does restrain the user's proposed move (argues against the budget bump, suggests $900\u2013950 only as a 'harmless formality') and shows some minimality instinct: 'raise bids on the segments ... rather than blanket-raising' and naming target loosening as 'the direct lever'. But it never isolates one variable or specifies a modest step size or a measurement window before the next change. Instead it fans out into a multi-front program: loosen tCPA/tROAS, raise segment bids, improve Quality Score inputs (ad relevance, expected CTR, landing page experience), and fix 'eligibility g",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

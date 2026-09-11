@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "thepacedclick.com is classified verified-active on its dated post within roughly three months",
+        "evidence": "\"Newest post 3 weeks old \u2192 within the ~3-month window \u2192 **Verified-active**.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The Quiet Auction is not classified stale from its dateless homepage; the response says a dateless homepage is not evidence of staleness",
+        "evidence": "\"A dateless homepage is never grounds for 'stale' \u2014 several shows expose no dates on the homepage while their feed carries an exact one.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The podcast's own feed or a podcast-directory listing is named as the surface to check for a dated episode",
+        "evidence": "\"check the actual podcast feed or a directory listing (Apple Podcasts/Spotify) for the newest episode date\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The maribelquast.com person is classified unverified with the reason recorded, not declared inactive or dead from the parked domain",
+        "evidence": "\"Mark her **unverified, reason: personal domain parked/for-sale**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response proposes finding the person's live publishing surface (employer or agency blog, podcast feed, or speaker roster) instead of dropping her",
+        "evidence": "\"go find her live surface \u2014 check an agency/employer blog first, then LinkedIn ... Don't remove her from the list until that search comes up empty too.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "adspendweekly.com's HTTP 403 is classified unverified, never dead",
+        "evidence": "\"classify as **unverified**, record 'HTTP 403 / blocked' as the reason.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The overnight retry script is declined; the block is treated as the site's stated policy and a different surface is tried instead of routing around it",
+        "evidence": "\"Don't loop retries against it; if you need confirmation, go around it (check if it's referenced/dated on a directory, syndication partner, or its own social account) rather than hammering the same endpoint.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The bidlathe.com redirect is classified renamed-but-alive, the new URL is recorded, and the source is kept",
+        "evidence": "\"Redirect to a clearly related, updated property with a post from last month = **renamed but alive**... Update your list entry to thebidlathe.co\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "crestpond.com is identified as a resold domain serving an unrelated business and removed, distinguished from a parked or dead domain",
+        "evidence": "\"It resolves, but to an unrelated landscaping business \u2014 that's domain resale, the silent-failure decay mode the skill calls out specifically ... Classify **dead** and remove.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The Halstrom on Ads channel is labelled corroborated via a companion surface with the channel itself unobserved, not verified-active and not dead",
+        "evidence": "\"label it 'corroborated via companion surface (halstromgroup.com); channel itself unobserved' rather than a clean verified-active\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "veldtmarketing.io is classified stale (newest item older than roughly six months) and kept only if the user accepts the risk",
+        "evidence": "\"the newest dated post is 9 months old, past the ~6-month stale threshold ... keep it only if you ... explicitly accept the staleness risk\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifications rest on observed dated items, not on any site's own cadence claim",
+        "evidence": "The whole verdict set is built from dated posts/feeds rather than homepage cadence claims, e.g. treating the Quiet Auction homepage's silence as non-diagnostic.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No source is presented as verified without a dated observation behind it",
+        "evidence": "Every keep decision cites a specific dated item (\"3 weeks old\", \"post from last month\", \"9 months old\") rather than asserting verification blindly.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each verdict carries a status plus the date or reason it rests on",
+        "evidence": "Summary table column 'Status' pairs every source with its reasoning/date, e.g. \"Verified-stale (9 months)\".",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "thepacedclick.com is classified verified-active on its dated post within roughly three months",
+        "evidence": "'Three weeks since the last post is a normal newsletter gap, not a dead-source signal.' \u2705 KEEP",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The Quiet Auction is not classified stale from its dateless homepage; the response says a dateless homepage is not evidence of staleness",
+        "evidence": "'A homepage with no dates is a UX quirk, not proof of inactivity \u2014 you checked the wrong surface.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The podcast's own feed or a podcast-directory listing is named as the surface to check for a dated episode",
+        "evidence": "'Pull up the show's RSS feed or its Apple Podcasts/Spotify listing instead; those always timestamp episodes.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The maribelquast.com person is classified unverified with the reason recorded, not declared inactive or dead from the parked domain",
+        "evidence": "'\u274c DROP ... GoDaddy for-sale page means the domain lapsed and the original site is gone.' \u2014 this declares the source gone/dead rather than classifying it unverified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response proposes finding the person's live publishing surface (employer or agency blog, podcast feed, or speaker roster) instead of dropping her",
+        "evidence": "'If you still want this consultant as a source, find her current site/LinkedIn and re-add under a new entry \u2014 don't just relabel the dead domain.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "adspendweekly.com's HTTP 403 is classified unverified, never dead",
+        "evidence": "'\u26a0\ufe0f RELABEL/VERIFY, don't drop yet ... A hard 403 on every manual load usually means the site is bot-blocking your request pattern ... not that the source is dead.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The overnight retry script is declined; the block is treated as the site's stated policy and a different surface is tried instead of routing around it",
+        "evidence": "'don't run the retry script ... Leaving an overnight retry loop against a site that's already blocking you is disproportionate ... skip it. Instead, check it once in an actual browser, or check the Wayback Machine.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The bidlathe.com redirect is classified renamed-but-alive, the new URL is recorded, and the source is kept",
+        "evidence": "'\ud83d\udd01 RELABEL \u2014 Same publication, active (post from last month), just moved. Update the entry to thebidlathe.co.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "crestpond.com is identified as a resold domain serving an unrelated business and removed, distinguished from a parked or dead domain",
+        "evidence": "'Domain now sells landscaping \u2014 the PPC content and the publication behind it are gone, not just moved. No relabel target exists here; just remove it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The Halstrom on Ads channel is labelled corroborated via a companion surface with the channel itself unobserved, not verified-active and not dead",
+        "evidence": "'\u2705 KEEP, RELABEL primary link' \u2014 the channel is effectively marked verified/kept despite the channel itself never being observed, only a companion site.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "veldtmarketing.io is classified stale (newest item older than roughly six months) and kept only if the user accepts the risk",
+        "evidence": "'Nine months without a post in a fast-moving vertical ... is stale ... If you want optionality, park it on a low-priority/watchlist tier instead of your active source list.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifications rest on observed dated items, not on any site's own cadence claim",
+        "evidence": "Verdicts reference concrete observed dates: 'post from last month' (bidlathe), 'Nine months without a post' (veldt).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No source is presented as verified without a dated observation behind it",
+        "evidence": "Halstrom is marked '\u2705 KEEP' based only on a companion site's post, with the channel itself never dated/observed directly.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each verdict carries a status plus the date or reason it rests on",
+        "evidence": "Each numbered item carries an emoji/verdict label plus a reasoning clause, e.g. '\u26a0\ufe0f RELABEL/VERIFY, don't drop yet' with the 403 reasoning.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

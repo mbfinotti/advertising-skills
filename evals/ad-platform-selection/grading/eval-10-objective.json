@@ -1,0 +1,118 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response identifies the campaign as political / social-issue advertising in the EU.",
+        "evidence": "\"A campaign built to sway public opinion ahead of an EU Parliament vote... is exactly the 'social-issue advocacy' category the ban targets.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states the largest search and social platforms exited EU political, electoral, and social-issue advertising entirely (under the TTPA, from October 2025).",
+        "evidence": "\"the largest social platform (Meta/Facebook) stopped running political, electoral, and social-issue ads across the EU from early October 2025\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states the 2023 playbook cannot be rerun because those channel families no longer exist for this messaging in the EU - gone, not merely restricted.",
+        "evidence": "\"deleted at the disqualifier gate, before any scoring \u2014 not 'weaker,' not 'ranked lower.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes advocacy and NGO communication is caught in the same net even when it is not party-political.",
+        "evidence": "\"is exactly the 'social-issue advocacy' category the ban targets. It is not a borderline case.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response does not propose relabeling or reclassifying the ads as non-political to slip past platform review.",
+        "evidence": "No such suggestion appears; the response fully pivots to compliant alternative channels instead.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The disqualifier pass runs before any ranking, and removed families are named with the rule that removed them.",
+        "evidence": "Section 2 \"Deleted channels\" table precedes Section 3 ranking, naming \"Disqualifier \u2014 regulated category\" for each.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes EU consent requirements degrade tracking signal (high consent-mode adoption but widespread non-compliant implementations) and plans measurement accordingly.",
+        "evidence": "\"EEA consent-mode adoption is 90%+ but ~67% of implementations are non-compliant, so your dashboards will under-report\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response treats the regime as hard-blocking with serious penalties (fines up to a percentage of annual turnover), not a formality to risk.",
+        "evidence": "\"Fines for non-compliant political ad delivery run up to 6% of global annual turnover\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response advises reverifying current platform policy before spend commits, dating the check, given how fast these rules move.",
+        "evidence": "\"I could not browse the web this session to reverify current 2026 policy pages... Confirm against Meta's and Google's current EU ad policy pages before you brief anyone.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response identifies the campaign as political / social-issue advertising in the EU.",
+        "evidence": "'A campaign explicitly timed to sway an EU Parliament vote is squarely inside that definition [TTPA].'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states the largest search and social platforms exited EU political, electoral, and social-issue advertising entirely (under the TTPA, from October 2025).",
+        "evidence": "'Meta announced it would stop accepting social-issue, electoral, and political ads across the EU in response to TTPA, effective around the October 2025 application date.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states the 2023 playbook cannot be rerun because those channel families no longer exist for this messaging in the EU - gone, not merely restricted.",
+        "evidence": "The response hedges rather than declaring it gone, keeping 'Meta/Instagram \u2014 gated test budget... Only spend once policy confirmed to accept it' as a live 10% line item.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes advocacy and NGO communication is caught in the same net even when it is not party-political.",
+        "evidence": "TTPA 'defines \"political advertising\" broadly \u2014 any message \"liable to influence\" the outcome of a legislative or regulatory process, not just elections,' applied to this NGO campaign.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response does not propose relabeling or reclassifying the ads as non-political to slip past platform review.",
+        "evidence": "'Decide creative framing: vote-linked (higher risk of platform rejection...) vs. general ocean-awareness content (lower regulatory risk, weaker direct ask)' proposes softening framing specifically to reduce rejection risk.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The disqualifier pass runs before any ranking, and removed families are named with the rule that removed them.",
+        "evidence": "Meta is not removed but kept as a 'gated test budget' line within the channel table rather than excluded up front.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes EU consent requirements degrade tracking signal (high consent-mode adoption but widespread non-compliant implementations) and plans measurement accordingly.",
+        "evidence": "No discussion of GDPR/consent-mode signal loss appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response treats the regime as hard-blocking with serious penalties (fines up to a percentage of annual turnover), not a formality to risk.",
+        "evidence": "No fines or turnover-percentage penalty figures are mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response advises reverifying current platform policy before spend commits, dating the check, given how fast these rules move.",
+        "evidence": "'I could not verify live platform policy for this response... As of my last knowledge (Jan 2026)... Confirm current Meta and Google policy status for DE/FR/NL.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to predict an absolute hook-rate number for either opening",
+        "evidence": "\"I won't hand you a number like '38% hook rate' \u2014 anyone who does is selling you false precision\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the two openings are a single test cell: identical visual, wording-only difference, merged at the real-variation gate",
+        "evidence": "\"Both openings are the **exact same pour footage**, differing only in on-screen text. That fails this skill's real-variation gate outright\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the plan is below the 3-opening shipping floor and should not launch as-is",
+        "evidence": "\"shipping check : 1 real test cell, far below the 3-opening floor this skill treats as a minimum batch.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the base rate that only roughly 5% of creatives become winners as the reason volume produces winners",
+        "evidence": "No mention of a 5% creative-winner base rate appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a one-opening launch is a bet, not a test",
+        "evidence": "\"You are not testing creative variety \u2014 you're testing one opening.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reaching at least 3 gate-clearing openings that differ on the concept axis before spending the budget",
+        "evidence": "The \"What I'd actually do\" section recommends combining texts into one ad and recutting for \"a real second test cell for the next $1,800,\" but never states the need to reach 3 concept-distinct openings before spending this budget.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that polishing or rewording the existing two openings cannot produce the missing concepts - new concepts are required, and they re-enter the gates",
+        "evidence": "The transcript never explicitly states that new concepts must be produced and re-enter the gates; it only suggests a possible recut with other footage if available.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks about, or conditions its recommendation on, what other footage and production capacity exist before prescribing how to produce the additional concepts",
+        "evidence": "\"If you have any other frame from that shoot \u2014 steam, a bowl, ingredients, a sip reaction \u2014 recutting the opening on that shot...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not simply pick a winner between the two text lines and endorse the full-budget single-ad plan",
+        "evidence": "\"Don't run both as separate ads...Run Text 1...and add Text 2 as a second primary-text option on the same ad\" \u2014 rejects the original two-ad full-budget plan.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats any preference between the two text lines as a wording choice inside one cell, not a ranking of two candidates",
+        "evidence": "\"ranking : not applicable as a performance prediction \u2014 this is one test cell, not a batch to rank...That's a judgment call within one visual, not a hook-rate forecast.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any text-level preference favours the '$3 a serving' line on specificity grounds - a concrete checkable claim versus a generic benefit statement",
+        "evidence": "\"Text 1 over Text 2, on specificity and qualification \u2014 it makes a checkable claim (price)...where Text 2 is generic craving language any beverage brand could run\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames its role as deciding what deserves test budget with the market as judge, not as predicting the winner",
+        "evidence": "\"no pre-launch method \u2014 mine included \u2014 can tell you either of those things reliably\" and \"Ask me to compare this cell's *measured* hook rate against your account's own future batches...That comparison is the thing this method can actually do.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to predict an absolute hook-rate number for either opening",
+        "evidence": "'Anyone who tells you \"Ad B will hook at 24%\" without data is guessing with false precision.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the two openings are a single test cell: identical visual, wording-only difference, merged at the real-variation gate",
+        "evidence": "The transcript instead recommends running both as genuinely separate tests: 'Run both, split roughly 50/50 (~$900 each)... Judge on hook rate... first, then... hold rate... and cost-per-click' \u2014 treated as two distinct candidates, not merged into one cell.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the plan is below the 3-opening shipping floor and should not launch as-is",
+        "evidence": "No mention of a 3-opening floor; the plan proceeds with the existing 2 ads as sufficient for a split test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the base rate that only roughly 5% of creatives become winners as the reason volume produces winners",
+        "evidence": "No such statistic or reasoning appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a one-opening launch is a bet, not a test",
+        "evidence": "'Putting 100% of $1,800 behind one untested creative on a guess... throws away the one thing a small budget is good for: a cheap real answer.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reaching at least 3 gate-clearing openings that differ on the concept axis before spending the budget",
+        "evidence": "No call for a third distinct concept; recommendation is to split budget between the existing two ads only.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that polishing or rewording the existing two openings cannot produce the missing concepts - new concepts are required, and they re-enter the gates",
+        "evidence": "No such statement; the two existing wordings are treated as adequate material for a valid split test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks about, or conditions its recommendation on, what other footage and production capacity exist before prescribing how to produce the additional concepts",
+        "evidence": "The closing offer only asks about targeting setup ('tell me your targeting setup (interest stack vs. broad, campaign objective)'), not footage or production capacity.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not simply pick a winner between the two text lines and endorse the full-budget single-ad plan",
+        "evidence": "'No deal \u2014 and I'd push back before you commit $1,800 to either one.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats any preference between the two text lines as a wording choice inside one cell, not a ranking of two candidates",
+        "evidence": "The directional lean is framed as a ranking/prediction: 'if you're optimizing hook rate specifically, my directional lean is B... treat this as maybe a 55/45 read, not a prediction' \u2014 compares two candidates, not framed as one cell.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any text-level preference favours the '$3 a serving' line on specificity grounds - a concrete checkable claim versus a generic benefit statement",
+        "evidence": "The stated lean actually favors the opposite line: 'my directional lean is B (\"Finally, bone broth...\")', not the '$3 a serving' line.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames its role as deciding what deserves test budget with the market as judge, not as predicting the winner",
+        "evidence": "'it replaces \"my guess\" with \"your actual audience's behavior,\" which is the only signal that should be steering a $1,800 bet on a brand-new product.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

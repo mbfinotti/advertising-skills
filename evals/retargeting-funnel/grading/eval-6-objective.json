@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not deliver the requested 50/50 split; states that retargeting spend is bounded by pool size times frequency ceiling, not by ambition or platform ROAS",
+        "evidence": "\"50/50 is not deliverable ... retargeting spend is bounded by pool \u00d7 frequency cap \u00d7 CPM, not by ambition\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the ceiling from the given numbers: 8,000 people times 6 impressions per week times $16 CPM comes to roughly $750-800 per week, about $3,000-3,500 per month",
+        "evidence": "\"8,000 reachable people \u00d7 6 impressions/week cap = 48,000 impressions/week ... = $768/week ... \u2248$3,300/month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Caps the retargeting budget at that computed ceiling and states that excess budget forced in only buys frequency past the cap",
+        "evidence": "Recommended split sets retargeting at \"\u2248$3,300 (~7%)\" and notes current spend is \"already ~3.6x over that ceiling,\" implying overspend is wasted excess frequency.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 11x platform ROAS as suspect on its face: retargeting targets exactly the people most likely to convert on their own",
+        "evidence": "\"you're re-intercepting people who were converting anyway and the platform claims the credit\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the combination of high platform ROAS and flat blended revenue as the cannibalisation signature: paying to intercept conversions that were coming anyway",
+        "evidence": "\"11x platform ROAS on retargeting, flat blended revenue all year \u2014 is the named failure mode for exactly this setup ('Cannibalisation...')\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the scale of overstatement from large-scale randomized experiments: observational or platform attribution overestimated measured lift by roughly 7x to 9.5x",
+        "evidence": "\"Gordon, Zettelmeyer et al. 2019, 15 large-scale experiments ... overstates true incremental lift by roughly 7-9.5x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Schedules an incrementality test with a named design before moving budget toward retargeting",
+        "evidence": "\"Incrementality test, starting with the Q4 rollout (~Oct 1): 15-20% audience holdout on the retargeting pool ... Run 4-6 weeks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Selects the design by availability: a platform ghost-ad style lift test where offered, otherwise a randomized audience holdout withholding 10-20% of each stage",
+        "evidence": "\"ghost ads are the sharper design but Meta's minimums likely exceed an 8k-person account; default to holdout\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the blended-efficiency metric, total revenue divided by total marketing spend, as the account-level sanity metric that drops the attribution layer entirely",
+        "evidence": "\"Blended metric to report to the board going forward: total revenue \u00f7 total marketing spend, not per-channel platform ROAS.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the decision rule: if holdout-measured lift is indistinguishable from zero, the retargeting budget folds back into prospecting regardless of platform ROAS",
+        "evidence": "\"if holdout-measured lift on retargeting is indistinguishable from zero, retargeting spend goes to the pool ceiling and no further \u2014 the '11x' gets retired from the board deck.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Brings in the reach-over-frequency objection (growth comes from reaching light and non-buyers) as a ceiling argument on the retargeting share of budget",
+        "evidence": "No mention of Ehrenberg-Bass, light buyers, or a reach-over-frequency growth argument appears anywhere in section 6.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not deliver the requested 50/50 split; states that retargeting spend is bounded by pool size times frequency ceiling, not by ambition or platform ROAS",
+        "evidence": "'Retargeting can't absorb a 50% share of $48k/month. The audience is too small.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the ceiling from the given numbers: 8,000 people times 6 impressions per week times $16 CPM comes to roughly $750-800 per week, about $3,000-3,500 per month",
+        "evidence": "'Max weekly impressions: 8,000 \u00d7 6 = 48,000... Max monthly spend at $16 CPM: \u2248 $3,300/month (~7% of budget)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Caps the retargeting budget at that computed ceiling and states that excess budget forced in only buys frequency past the cap",
+        "evidence": "'Above that, dollars don't convert to more impressions \u2014 they either break the frequency cap... or sit unspent'; table shows core retargeting 'Held at... ceiling \u2014 do not increase'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 11x platform ROAS as suspect on its face: retargeting targets exactly the people most likely to convert on their own",
+        "evidence": "'the 11x ROAS may be partly overexposure/last-click credit for people who'd have bought anyway'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the combination of high platform ROAS and flat blended revenue as the cannibalisation signature: paying to intercept conversions that were coming anyway",
+        "evidence": "The transcript never references flat total/blended company revenue anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the scale of overstatement from large-scale randomized experiments: observational or platform attribution overestimated measured lift by roughly 7x to 9.5x",
+        "evidence": "No such research-based figure is cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Schedules an incrementality test with a named design before moving budget toward retargeting",
+        "evidence": "'Run a holdout/geo incrementality test on retargeting for 2-3 weeks.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Selects the design by availability: a platform ghost-ad style lift test where offered, otherwise a randomized audience holdout withholding 10-20% of each stage",
+        "evidence": "Only 'holdout/geo incrementality test' is mentioned generically, with no percentage or platform-ghost-ad-first logic specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes the blended-efficiency metric, total revenue divided by total marketing spend, as the account-level sanity metric that drops the attribution layer entirely",
+        "evidence": "No such account-level metric is proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the decision rule: if holdout-measured lift is indistinguishable from zero, the retargeting budget folds back into prospecting regardless of platform ROAS",
+        "evidence": "No explicit if-lift-is-zero-then-fold-back rule is stated; only a general recommendation to 'get a real number before committing a quarter's budget.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Brings in the reach-over-frequency objection (growth comes from reaching light and non-buyers) as a ceiling argument on the retargeting share of budget",
+        "evidence": "The pool-dependency argument ('Retargeting pool size is a function of prospecting') is present but doesn't invoke the reach/light-buyer growth argument specifically.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

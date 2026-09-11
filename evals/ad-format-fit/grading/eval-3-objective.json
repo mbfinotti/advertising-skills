@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Excludes full-screen vertical placements at setup instead of letting automatic placement letterbox the 16:9 film",
+        "evidence": "No statement about excluding placements at campaign setup; the only related text is a post-hoc preview check: \"Check specifically that the 16:9 film's cutdowns aren't letterboxed\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the reason: letterboxed landscape in a vertical slot reads instantly as repurposed",
+        "evidence": "No such reasoning appears anywhere in the transcript; letterboxing is mentioned only as a QA check item",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the dialogue-driven film for silent-autoplay feed placements and requires full captions, citing that roughly 85% of feed video is watched muted",
+        "evidence": "\"Caption every second \u2014 it was shot for sound-on 16:9 dialogue; Feed autoplays muted (~85% of feed video is watched with sound off)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies format lifespans: statics roughly 14-28 days, short video/carousels 21-35, creator-style 28-42",
+        "evidence": "appendix: \"Refresh cadence: statics 14-28 days, short video/carousel 21-35 days, creator-style 28-42 days\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes two assets per month cannot feed a placement that burns creative in about three weeks",
+        "evidence": "No explicit statement links the ~2 assets/month capacity to the 21-35 day refresh cadence as insufficient",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the 10-day deadline promotes near-zero-effort formats and demotes anything needing a shoot, naming the deadline as the answer that moved the ranking",
+        "evidence": "\"the 10-day deadline kills anything that needs a shoot or a rights pass for this launch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend commissioning creator/UGC video for this launch, and says the short deadline is why that rung is unreachable",
+        "evidence": "\"Don't build it for launch day. Start sourcing now... so a first UGC cut lands mid-sale or for the next cycle\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags running the 2-minute film as the primary ad as a misuse: completion collapses on long-form primary ads (documented cases under 10%)",
+        "evidence": "No statement about completion collapsing under 10% for long-form primary ads appears in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Fixes the film at the re-cut rung - chop it into short videos plus statics - rather than commissioning new assets",
+        "evidence": "\"Cut the 2-min film into 3-4 vertical (9:16) pieces, 15-30s each, built around the dialogue's strongest beats.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes or applies standing load as effort per asset multiplied by refresh rate",
+        "evidence": "No such calculation or formula appears; production capacity and refresh cadence are stated separately with no explicit multiplication or combined conclusion",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires a distinct cut per placement, or narrows the placement list to what one person can version",
+        "evidence": "\"Push existing product statics as Feed + Stories units... Don't force them into Reels\" and blocker: \"Preview every recut clip and every static in every surface it'll serve \u2014 feed, stories, reels\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels capacity-blocked formats as production-capacity misfits in the verdict rather than merely ranking them lower",
+        "evidence": "\"Creator/UGC-fronted vertical video | Misfit \u2014 production capacity, for this launch |\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the ranking as a default that would reverse under a compounding mandate (a shoot buys footage and rights that make later cuts an editing job), not as a law",
+        "evidence": "\"Your compounding framing (this being about ongoing format setup, not just this sale) is exactly the condition the skill says should promote it \u2014 just not inside this deadline.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Excludes full-screen vertical placements at setup instead of letting automatic placement letterbox the 16:9 film",
+        "evidence": "No mention of excluding placements at ad-set setup; instead recommends re-editing footage (\"Export...9:16 with blurred/extended background (not crop) for Stories\").",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the reason: letterboxed landscape in a vertical slot reads instantly as repurposed",
+        "evidence": "No such statement appears; reasoning is about losing framing on crop, not about a letterboxed look reading as repurposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the dialogue-driven film for silent-autoplay feed placements and requires full captions, citing that roughly 85% of feed video is watched muted",
+        "evidence": "\"Feed (in-app, sound-off default)...captions mandatory\" is stated but the ~85% muted-viewing statistic is never cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies format lifespans: statics roughly 14-28 days, short video/carousels 21-35, creator-style 28-42",
+        "evidence": "No lifespan/refresh-cadence numbers of any kind appear in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Concludes two assets per month cannot feed a placement that burns creative in about three weeks",
+        "evidence": "Capacity math is framed only against the 10-day sprint window, not against an ongoing ~3-week creative burn rate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the 10-day deadline promotes near-zero-effort formats and demotes anything needing a shoot, naming the deadline as the answer that moved the ranking",
+        "evidence": "\"10 days, 2 new assets/month capacity \u2248 0.6 new assets in this window. You cannot shoot new UGC video from scratch and edit it well in this timeframe as a one-person team.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend commissioning creator/UGC video for this launch, and says the short deadline is why that rung is unreachable",
+        "evidence": "The transcript explicitly recommends commissioning UGC: \"Order 2 UGC videos from a marketplace (this is your longest lead time \u2014 start it first).\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags running the 2-minute film as the primary ad as a misuse: completion collapses on long-form primary ads (documented cases under 10%)",
+        "evidence": "No discussion of running the full film as a primary ad or any completion-rate statistic for long-form video.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Fixes the film at the re-cut rung - chop it into short videos plus statics - rather than commissioning new assets",
+        "evidence": "\"Pull 3\u20135 strongest visual beats...Re-edit as silent, caption-led cutdowns: text does the selling, footage is texture/proof.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes or applies standing load as effort per asset multiplied by refresh rate",
+        "evidence": "No such calculation appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires a distinct cut per placement, or narrows the placement list to what one person can version",
+        "evidence": "\"Don't build all 4 rows from scratch \u2014 5 core assets (2 UGC + 3 brand-film cutdowns), each exported in 2 aspect ratios, covers the matrix.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels capacity-blocked formats as production-capacity misfits in the verdict rather than merely ranking them lower",
+        "evidence": "\"You cannot shoot new UGC video from scratch and edit it well in this timeframe as a one-person team\" states a hard capacity block, not a soft ranking.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the ranking as a default that would reverse under a compounding mandate (a shoot buys footage and rights that make later cuts an editing job), not as a law",
+        "evidence": "No discussion of how the ranking would change if the shoot bought reusable footage/rights for later cuts.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

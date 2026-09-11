@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that platform certifications are table stakes with weak standalone hiring signal",
+        "evidence": "\"Value: near-identical and low across all five \u2014 none moves a hiring decision on its own\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the whole certification menu ranks below one published teardown or equivalent demonstrable result",
+        "evidence": "\"the whole certification menu ranks below one published teardown\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against the $450 Blueprint budget: Meta Blueprint (~$150 per exam) is only worth paying when a target listing names it or an employer's partner status depends on it",
+        "evidence": "\"It earns its exam only when a specific target listing names it or an agency's Meta partner status depends on it. You have neither yet. Delete it from the plan now\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies Skillshop, LinkedIn Marketing Labs, TikTok Academy, and Amazon Ads as free",
+        "evidence": "\"Four of your six are free... Google Skillshop... LinkedIn Marketing Labs, TikTok Academy, Amazon Ads\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives Skillshop specifics: open-book exam of about 75 minutes and a 12-month expiry with the renewal diarised",
+        "evidence": "\"Google Skillshop (75 min, open-book, 80% pass, 12-month expiry)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why listings demand certifications anyway: individual certifications roll up into an agency's partner-program status (badge, beta access, rep support), not because they predict candidate quality",
+        "evidence": "Transcript only says Blueprint \"earns its exam only when... an agency's Meta partner status depends on it\" without explaining the badge/beta-access/rep-support rollup mechanism or contrasting it with candidate-quality signal.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that a certification-only CV is a documented rejection pattern",
+        "evidence": "\"'Cert-only CV' is a documented rejection pattern, not a hypothetical risk.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends chasing an agency junior seat as the default entry path",
+        "evidence": "\"Apply to agency-junior/PPC-executive roles starting now.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends running self-funded spend alongside applications, noting no credible-minimum budget exists because the full loop matters, not the size",
+        "evidence": "Transcript recommends \"Start a self-funded spend project\" but never states that no credible-minimum budget exists because the full loop matters, not the size.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns against modelling the plan on inflated self-taught success stories such as '20x ROAS' claims; a small honest documented project beats an inflated one",
+        "evidence": "No mention anywhere in the transcript of inflated ROAS claims or a warning against modeling on them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the dated benchmark-to-change-course: no interviews after roughly 6 months of applications means the gap is demonstrable results, not more certifications",
+        "evidence": "\"if you're not landing interviews within 6 months of applying, the gap is demonstrable results, not more certifications\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Breaks the TikTok Academy versus Amazon Ads priority by the user's channel interest (short-form video versus retail media) or asks which channel they target",
+        "evidence": "\"channel interest (breaks the TikTok/Amazon tie, and moves LinkedIn Labs up if you're headed B2B)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that platform certifications are table stakes with weak standalone hiring signal",
+        "evidence": "'Google Ads and Meta Blueprint exams are multiple-choice tests you can pass by memorizing an afternoon of study material. They signal \"I read the docs,\" not \"I can manage spend.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the whole certification menu ranks below one published teardown or equivalent demonstrable result",
+        "evidence": "No 'teardown' concept is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises against the $450 Blueprint budget: Meta Blueprint (~$150 per exam) is only worth paying when a target listing names it or an employer's partner status depends on it",
+        "evidence": "'Skip Blueprint's paid exam stack, skip TikTok/Amazon/LinkedIn certs entirely unless a specific job posting asks for them'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies Skillshop, LinkedIn Marketing Labs, TikTok Academy, and Amazon Ads as free",
+        "evidence": "'Skillshop' and 'LinkedIn Marketing Labs' are never named; only Meta Blueprint (paid) is discussed in detail.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives Skillshop specifics: open-book exam of about 75 minutes and a 12-month expiry with the renewal diarised",
+        "evidence": "No such details appear anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains why listings demand certifications anyway: individual certifications roll up into an agency's partner-program status (badge, beta access, rep support), not because they predict candidate quality",
+        "evidence": "This reasoning is not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that a certification-only CV is a documented rejection pattern",
+        "evidence": "The transcript says a cert-heavy CV is 'weaker' but does not cite it as a documented/observed rejection pattern.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends chasing an agency junior seat as the default entry path",
+        "evidence": "The plan instead recommends self-funded campaigns/volunteer work, not an agency junior seat.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends running self-funded spend alongside applications, noting no credible-minimum budget exists because the full loop matters, not the size",
+        "evidence": "Specific dollar figures are given repeatedly ('$500-1000', '$300-500', '$1,500'), contradicting the 'no credible-minimum budget' framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns against modelling the plan on inflated self-taught success stories such as '20x ROAS' claims; a small honest documented project beats an inflated one",
+        "evidence": "No such warning appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the dated benchmark-to-change-course: no interviews after roughly 6 months of applications means the gap is demonstrable results, not more certifications",
+        "evidence": "No such timeline or benchmark is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Breaks the TikTok Academy versus Amazon Ads priority by the user's channel interest (short-form video versus retail media) or asks which channel they target",
+        "evidence": "TikTok and Amazon Ads are only mentioned as things to skip entirely unless a posting requires them; no channel-preference question is asked.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

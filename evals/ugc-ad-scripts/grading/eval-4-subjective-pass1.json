@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The framing leads with teaching or insight rather than a pitch, matched to a professional feed.",
+        "evidence": "The script opens from the customer's lived problem, not from the brand: all four hooks are peer/problem/proof-led (\"Fourteen hours a week on reconciliation. Now it's three.\", \"Every Friday, my team lost half a day just proving the inventory numbers were right.\", \"How many hours does your team lose reconciling inventory every week?\"), with the product name withheld until the 15-30s Solution beat and the CTA held to the end. The choice is explicitly reasoned for the placement: \"on a professional feed a checkable number beats a framing device\", segment defined as \"Ops directors/managers at 3PLs..",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The framing leads with teaching or insight rather than a pitch, matched to a professional feed.",
+        "evidence": "Partially satisfied. The response opens to the user with a genuine insight rather than an order-taking pitch ('treating founder-to-camera as automatically \"fastest\" assumes the founder cooperates smoothly... A reluctant subject is usually the slowest part of a shoot'), and the ad itself leads with an outcome stat card rather than the product ('14 hours a week. Down to 3.' at 0:00\u20130:04, explicitly justified as 'stops the scroll before anyone commits to watching a person'). Feed-matching is well handled: 1:1 or 4:5, burned-in captions 'assume sound off', 'LinkedIn autoplay is muted', end card 'e",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

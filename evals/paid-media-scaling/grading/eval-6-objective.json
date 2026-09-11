@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that a doubled CPA on 7 conversions is too small a sample to conclude performance collapsed.",
+        "evidence": "\"7 conversions is not a base you can read a 2x CPA move from.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the roughly 3-week conversion lag means conversions attributable to the new spend have not landed yet, so the 5-day CPA read is structurally overstated.",
+        "evidence": "\"You are not looking at the marginal CPA of the new budget. You're looking at an accounting artifact of the lag.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks or asks about other false-positive causes before acting: tracking outages, seasonality, or running experiments.",
+        "evidence": "\"Is anything actually broken... Any seasonality... Are you running any other experiment/change this week that could be confounding the read?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to kill the campaign today, reserving instant cuts for genuine emergencies (runaway spend, policy or legal exposure, broken destination, confirmed tracking corruption) that this situation does not match.",
+        "evidence": "\"Reserve an instant kill for real emergencies \u2014 runaway spend past a hard ceiling, a policy/legal problem, a broken landing page, or confirmed tracking corruption... If those all come back clean, there is nothing here that justifies an emergency stop.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the smallest reversible action, such as reverting to the prior $800/day budget, over pausing or killing the campaign.",
+        "evidence": "\"step budget down partially (20-30% cut is the standard practitioner recipe... a reasonable de-risk move) rather than to zero. If it's the CPA number alone, hold at $1,600\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the one-fix-per-day sequence: drip-feeding edits across days can trigger repeated learning resets, and changes should be batched into one session.",
+        "evidence": "The transcript rejects daily drip-feeding (\"Stack three edits on three consecutive days and you get three overlapping resets\") but recommends sequential single-variable testing over weeks, not batching edits into one session.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the isolation logic: sequential daily edits during learning-phase instability do not isolate causes.",
+        "evidence": "\"You'd have three simultaneous, unresolved experiments, not three isolated ones. This is the inverse of isolating a variable.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the original single +100% jump as an oversized step likely to have reset learning and contributed to the instability.",
+        "evidence": "The transcript discusses the lag and sample size but never characterizes the original budget increase's magnitude (e.g., as a 100% jump or oversized step).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The re-approach plan uses smaller held steps with a slower resume (on the order of +10% per period after stabilization) rather than re-doubling.",
+        "evidence": "\"If that trips: cut 20-30%, stabilize two weeks, resume smaller.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A rollback trigger, rollback action, and verification date are pre-committed before any renewed up-move.",
+        "evidence": "\"cost-per-qualified-lead... exceeding ~1.5x its pre-increase baseline... If that trips: cut 20-30%, stabilize two weeks, resume smaller\" plus \"don't make a real go/no-go call on booked-job CPA before roughly Oct 1-4.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any judgment window for the re-approach covers the learning window plus the roughly 3-week lag, not another 5-day read.",
+        "evidence": "\"learning window + your 21-day lag \u2248 3-4 weeks from the 3rd \u2192 don't make a real go/no-go call on booked-job CPA before roughly Oct 1-4.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the persistence-based rollback convention (an efficiency drop persisting about 5-7 days at adequate sample before reverting) from an instant same-day kill, labeling it practitioner convention rather than platform rule.",
+        "evidence": "No 5-7 day persistence figure appears anywhere in the transcript; the rollback trigger is described only as \"sustained across the full hold \u2014 not one bad day\" without that specific window or an explicit practitioner-convention label attached to it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Monitoring during the re-approach includes leading indicators and delivery/learning status rather than CPA alone inside the lag window.",
+        "evidence": "\"Watch leading indicators instead: cost per lead/estimate booked, lead volume, and lead quality\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that a doubled CPA on 7 conversions is too small a sample to conclude performance collapsed.",
+        "evidence": "\"With n=7, one unusually expensive lead can swing 'CPA' by 30-50% on its own. You don't have a doubled CPA \u2014 you have a small sample that happens to look like one.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the roughly 3-week conversion lag means conversions attributable to the new spend have not landed yet, so the 5-day CPA read is structurally overstated.",
+        "evidence": "\"Click-to-booked-job is 3 weeks \u2014 so 'CPA has doubled' isn't even measurable yet... clicks from the Sept 3 budget change won't fully mature into booked jobs until ~Sept 24.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks or asks about other false-positive causes before acting: tracking outages, seasonality, or running experiments.",
+        "evidence": "\"roofing leads are storm/weather-driven. Did anything change in demand (weather events, competitor spend) around the 3rd that has nothing to do with your budget?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to kill the campaign today, reserving instant cuts for genuine emergencies (runaway spend, policy or legal exposure, broken destination, confirmed tracking corruption) that this situation does not match.",
+        "evidence": "\"Don't delete. Pause is reversible, delete is not\" and \"'Kill it, then one fix per day' defeats its own stated goal.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the smallest reversible action, such as reverting to the prior $800/day budget, over pausing or killing the campaign.",
+        "evidence": "\"Rather than pausing, consider just rolling the budget back toward $800-1,000/day rather than a full kill\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the one-fix-per-day sequence: drip-feeding edits across days can trigger repeated learning resets, and changes should be batched into one session.",
+        "evidence": "The response instead recommends \"change one at a time, with a 1-2 week hold each, not one per day\" \u2014 sequential single-variable testing over time, not batching changes into one session.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the isolation logic: sequential daily edits during learning-phase instability do not isolate causes.",
+        "evidence": "\"Stacking a new change every 24 hours means each change gets judged before its own learning-phase volatility clears... That's not isolation, it's guesswork with extra steps.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the original single +100% jump as an oversized step likely to have reset learning and contributed to the instability.",
+        "evidence": "\"Doubling daily budget is a >20% budget change, which resets Smart Bidding's learning phase (if you're on Target CPA/Maximize Conversions...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The re-approach plan uses smaller held steps with a slower resume (on the order of +10% per period after stabilization) rather than re-doubling.",
+        "evidence": "No forward re-ramp schedule with a specific smaller percentage (e.g. +10%) is given; the plan only specifies a rollback to \"$800-1,000/day\" and a hold period.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A rollback trigger, rollback action, and verification date are pre-committed before any renewed up-move.",
+        "evidence": "Only a hold-and-judge criterion is given (\"Hold that one state for 1-2 weeks or ~30 conversions\"); no rollback trigger/action is defined for a future renewed increase.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any judgment window for the re-approach covers the learning window plus the roughly 3-week lag, not another 5-day read.",
+        "evidence": "The hold specified is \"1-2 weeks or ~30 conversions,\" shorter than the previously stated 3-week click-to-booked-job lag.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the persistence-based rollback convention (an efficiency drop persisting about 5-7 days at adequate sample before reverting) from an instant same-day kill, labeling it practitioner convention rather than platform rule.",
+        "evidence": "No 5-7 day persistence convention is stated anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Monitoring during the re-approach includes leading indicators and delivery/learning status rather than CPA alone inside the lag window.",
+        "evidence": "\"Track lead volume and lead quality, not just CPA, during the hold \u2014 CPA is the least reliable metric at n=7.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

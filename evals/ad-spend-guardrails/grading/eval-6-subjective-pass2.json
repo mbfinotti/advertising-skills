@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Argues the strongest case against its own recommended architecture before presenting it.",
+        "evidence": "The only counter-case is a single framing sentence \u2014 \"Normal ranking (efficiency: tiered ladder > single floor > portfolio; effort: single floor > ladder > portfolio) would put the portfolio model last on cost\" \u2014 which is raised solely as a setup for an immediate override (\"But the skill's own override condition is your exact situation\") and then further defused with \"This is cheaper to run than it looks.\" It concedes one generic cost objection but never argues it at strength: no key-person dependency on the single analyst, no risk of the ring-fenced exploration budget becoming an unaccountabl",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Argues the strongest case against its own recommended architecture before presenting it.",
+        "evidence": "The document opens by attacking the status quo (single 2.8x bar), not its own proposal, and moves straight into the three-stage framework with no section weighing the costs or failure modes of that framework \u2014 no acknowledgment that ring-fencing $10K/month can simply fund losers, that a two-strikes rule structurally doubles the spend burned on genuinely bad campaigns, that a 1.5x\u21922.5x ramp can be gamed or that graduating cells may regress at scale, or that proxy events (ATC/IC) and the analyst's marginal-ROAS methodology may be unreliable. The only self-directed doubt appears late and briefly:",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

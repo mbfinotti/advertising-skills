@@ -1,0 +1,426 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-creative-test-plan",
+  "scenarios": 10,
+  "expectations_total": 126,
+  "expectations_subjective": 0,
+  "expectations_objective": 126,
+  "pass_rate_with_skill_pct": 88.9,
+  "pass_rate_without_skill_pct": 34.9,
+  "delta_pp": 54.0,
+  "uplift_multiplier": 2.55,
+  "trigger_accuracy_pct": 94.1,
+  "trigger_queries": 118,
+  "subjective_ac2": null,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Applies a duration floor of one full week (day-of-week coverage) and a ceiling of roughly 4-6 weeks tied to creative freshness"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Raises powering the read on a higher-volume up-funnel event (such as add-to-cart), or asks for that event's rate, instead of only accepting the underpowered purchase read"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Gives the reason mixing fails: the anchors contradict each other, so a blended rule never fires or fires twice"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Carries Denney's sizing: test budget approximately CPA x 50 (about $1,500 at a $30 CPA) and roughly 6 assets per test"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Carries the asset kill at 2x CPA spend ($60) with no conversion, and the cell kill after 5-7 days with no winner"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Sets an earliest evaluation moment (day 3 or later plus a minimum volume floor) before which no judgment is made"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Flags the novelty effect: new creatives get an early boost that fades, so short reads over-credit new variants"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Reframes 'our tests usually reach significance fast' as an artifact of unadjusted peeking rather than validating it"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes two ads at an identical hook rate can differ several-fold in return, because the gate says nothing about who survives to the call to action"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that high hook rate combined with low conversion usually signals an offer or landing-page problem, not a creative winner"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes the up-funnel lever is available because the add-to-cart event is verified (an unverified or broken event would delete that lever until tracking is cleared)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Frames the delivery floor as a read-validity requirement, not a performance unlock (exiting the learning state is worth only a modest ~5-10% efficiency gain)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Notes that native splits at typical budgets are underpowered and frequently return 'no winner'"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Recommends manual fixed-budget cells instead and states the structure ranking (manual fixed-budget > native deterministic split > campaign-level automatic allocation)"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Computes the stable-delivery minimum daily budget per cell of roughly $143/day (target CPA $20 x 50 / 7) and checks the proposed cells against it"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Labels the purchase-metric read with the explicit verdict 'Directional read' (a screening heuristic), not a significance-tested winner"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Applies a duration floor of one full week (day-of-week coverage) and a ceiling of roughly 4-6 weeks tied to creative freshness"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Pre-registers a kill threshold and a scale threshold per asset or cell before launch"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Pre-declares the inconclusive outcome as keep the control/champion, decided before launch rather than at readout"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Writes a falsifiable hypothesis containing a predicted direction, magnitude, named metric, audience, and date or sample, rather than 'see which wins'"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Raises powering the read on a higher-volume up-funnel event (such as add-to-cart), or asks for that event's rate, instead of only accepting the underpowered purchase read"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Instructs turning automated or AI creative-optimization features off inside the test cells"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Sets the primary decision metric to a CRM-fed pipeline-quality event (qualified/accepted lead), explicitly rejecting raw form fills as the decision metric"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Computes the stable-delivery floor on the form event at roughly $857/day per cell ($120 x 50 / 7) and shows the affordable cells sit far below it"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags the cells as delivery-limited, meaning their numbers are unstable regardless of sample math"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Schedules a second look roughly one sales cycle (~4 months) after the creative verdict for pipeline or opportunity outcomes, instead of treating the in-window read as final"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Adds a lead-quality guardrail: lead-to-qualified rate compared against the account's own trailing median"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Keeps the current 'automation' champion running concurrently as a control cell"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Pre-registers kill and scale thresholds and a fixed stop before launch"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Places the hypothesis magnitude on the qualified-lead proxy metric and says the revenue read lags by a sales cycle"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Describes the readout as judgment-based relative ranking, with no '95% confidence' claim anywhere"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Explains the allocation failure concretely: spend concentrates on early leaders (up to roughly 90% on one cell) before the others collect data"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes the auction-overlap caveat of manual cells: cells still compete in the same auctions against overlapping audiences"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Computes the stable-delivery floor of roughly $129/day per cell ($18 x 50 / 7) and flags that $450/day split four ways falls below it"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Resolves the floor breach with a named lever (fewer cells, sequential concepts, up-funnel read, or budget change) rather than shipping four delivery-limited cells silently"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Emits an explicit read-standard verdict per cell (Powered, Directional read, or Not testable as designed)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Pre-registers kill and scale rules and pre-declares inconclusive as keep the champion"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Refuses to schedule the six micro-variable single-variable tests as proposed, naming items like font, background hue, dash punctuation, CTA wording, and model direction as micro-variables not worth isolated spend at this budget"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Folds the micro-variations into concept-level executions or drops them, instead of testing them individually"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Names the high-leverage levers worth isolating (concept, angle, hook, format, creator/talent) and redirects the program there"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Computes the stable-delivery floor of roughly $500/day per cell ($70 x 50 / 7) and shows $6,000/month (~$200/day total) cannot fund even a compliant two-cell test on the purchase event"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Rejects strict isolation on feasibility grounds despite the user's stated compounding-learning preference - the preference alone does not promote isolation without the power to read the lever"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Presents the bundled-concept posture as the default at this budget, because it is the only posture producing a reliably detectable effect at normal budgets"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Labels any bundled result 'unlearnable at element level' (or an equivalent explicit label) so no element-level insight is mined from it later"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States the isolation trade-off explicitly (bundled buys detectability; strict isolation buys element-level learning only when powered) rather than treating single-variable testing as inherently more rigorous"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Names the condition that would promote strict isolation later (feasibility returning Powered on the lever's own MDE, e.g. after volume grows)"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Keeps one concept per cell with roughly 3-6 assets per cell in the proposed structure"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Pre-registers kill and scale thresholds and writes a falsifiable hypothesis with direction and magnitude, not 'see which performs'"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Corrects the attribution: the 'spend 1x CPA before judging / 3x CPA before killing' rule is untraceable folklore with no identifiable originator, not Barry Hott's"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States Hott's actual published position: he rejects mechanical per-ad CPA kill rules (ad-level CPA/ROAS irrelevant) and judges new ads by comparative benchmarking against the account's best ads"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Refuses to combine multiple kill-rule anchors and states the plan must adopt exactly one"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Gives the reason mixing fails: the anchors contradict each other, so a blended rule never fires or fires twice"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rules out the no-manual-kill / cost-cap-only approach (Faris) by name, tied to the hard 4-week deadline because it is the slowest to answer"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rules out Hott's comparative benchmarking by name, tied to the missing weekly reviewer and absent best-ads library"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Adopts Dara Denney's defaults as the single anchor, identified as the default when nothing promotes another"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Carries Denney's sizing: test budget approximately CPA x 50 (about $1,500 at a $30 CPA) and roughly 6 assets per test"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Carries the no-evaluation-before-day-3 rule"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Carries the asset kill at 2x CPA spend ($60) with no conversion, and the cell kill after 5-7 days with no winner"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Carries the scale rule: winners scaled +50-100%, done 2-3 times"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Pre-registers a fixed stopping rule and the inconclusive path (keep the current champion/batch) before launch"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Never presents the 1x/3x folklore thresholds as authoritative anywhere in the output"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Requires all cells including the control to launch at the same time, rejecting the Thursday/Monday stagger"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Flags the novelty effect: new creatives get an early boost that fades, so short reads over-credit new variants"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Reframes 'our tests usually reach significance fast' as an artifact of unadjusted peeking rather than validating it"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Pre-declares the inconclusive outcome as keep the control"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Computes the stable-delivery floor of roughly $321/day per cell ($45 x 50 / 7) and flags the $250/day cells as delivery-limited or fixes them with a named lever"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Emits an explicit per-cell read-standard verdict instead of implying significance is reachable"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Refuses to make hook rate the primary or deciding metric; assigns it as a gate metric used only to kill obvious losers early and cheaply"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States that gate metrics screen and never crown winners"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Cites the evidence class: a multi-account analysis of roughly $1.47M in ad spend found no statistically significant correlation between hook rate and revenue"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes two ads at an identical hook rate can differ several-fold in return, because the gate says nothing about who survives to the call to action"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Rejects the published 30% bar and sets the gate threshold from the account's own trailing median, noting published 'good' bands conflict (roughly 18% to 40%)"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Names a conversion-level primary metric (purchase CPA or conversion rate) as the decision metric"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that high hook rate combined with low conversion usually signals an offer or landing-page problem, not a creative winner"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Runs the feasibility check anyway: projects conversion volume per cell (about 14/day at $400/day and $28 CPA) and emits an explicit Powered-or-Directional verdict for the purchase read"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Reads the gate only after a minimum impression volume per asset (on the order of 1,000-2,000 impressions)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Rejects the 10-week duration, citing the roughly 4-6 week ceiling because novelty decay, fatigue, and external events contaminate longer windows"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Computes the stable-delivery floor on purchase of roughly $1,286/day per cell ($180 x 50 / 7) and shows the $125/day cells sit an order of magnitude below it"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Declares the purchase-event cells with the named verdict 'Not testable as designed' rather than shipping them with hedges"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes the up-funnel lever is available because the add-to-cart event is verified (an unverified or broken event would delete that lever until tracking is cleared)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States the stable-delivery requirement of roughly 50 optimization events per cell per week"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Frames the delivery floor as a read-validity requirement, not a performance unlock (exiting the learning state is worth only a modest ~5-10% efficiency gain)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Includes a one-sentence decision statement and a falsifiable hypothesis with direction and magnitude"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Recommends against the platform-native deterministic split for this test, tied to the hard 12-day deadline (splits take a week or more longer to answer)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Recommends manual fixed-budget cells instead and states the structure ranking (manual fixed-budget > native deterministic split > campaign-level automatic allocation)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Corrects the causality claim: even a deterministic split suffers divergent delivery - each ad is served to a distinct, undetectably optimized mix of users"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Marks the severity of divergent delivery: it can confound the magnitude and even flip the sign of the result (Braun & Schwartz 2025 or equivalent attribution)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "States that in-platform reads, splits included, are relative screening rather than causal proof, and that holdout/lift designs are what buy causality"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Asks whether a current champion exists to serve as the control cell, or includes a concurrent control"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Instructs turning automated creative-optimization features off inside test cells"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Writes the one-sentence decision statement ('Based on this test, we will ___') before anything else"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Rejects 'launch and see what happens' and writes a falsifiable hypothesis containing direction, magnitude, named metric, audience, and a date or sample"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Flags the multiple-comparisons problem of three concept cells against control: some variant wins by chance"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Quantifies or corrects it: roughly 30-40% more sample per cell at ~3 variants under a standard alpha-division correction, or fewer cells - and at minimum discloses the number of comparisons"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Adds a concurrent control cell (current champion) or asks whether one exists"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Pre-registers kill and scale thresholds, an earliest evaluation moment, a fixed stop, and inconclusive resolving to keep the control"
+      }
+    ]
+  }
+}

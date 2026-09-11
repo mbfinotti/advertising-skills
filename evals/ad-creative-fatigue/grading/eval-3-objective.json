@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Identifies healthy CTR with collapsing CVR as the inverse of the fatigue signature, pointing at landing page, offer, or tracking",
+        "evidence": "\"Fatigue's signature... is leading signals decaying while CVR holds... You have the exact inverse\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a confounded verdict, not fatigued",
+        "evidence": "\"verdict : confounded - landing-page/offer and/or tracking breakage, NOT fatigued\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to develop the requested new creative angle",
+        "evidence": "\"action : do not commission a refresh yet - run the two checks below first\"; \"Route the actual copy variants through ad-copy-variants / ad-creative-brief once you've confirmed which branch you're on\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ties the decline onset to the checkout deploy and/or the expired 20%-off code dates",
+        "evidence": "\"checkout release Sep 02 coincides exactly with CVR collapse onset\"; \"20%-off code expired ~Sep 02, same onset\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends comparing conversion rate for other traffic sources hitting the same page",
+        "evidence": "\"Pull CVR for other traffic hitting the same checkout in the same window \u2014 other ads, other channels, email, direct.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reconciling platform-reported conversions against the order system, checking for a stable ratio between the two rather than equality",
+        "evidence": "\"If the ratio of platform-reported to actual orders has shifted, that's tracking breakage\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports the confounder screen before reaching any fatigue conclusion",
+        "evidence": "Confounder screen table is presented and substantiates the 'Bottom line' verdict stated up top, consistent with the analysis that follows.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that no creative refresh can fix a problem downstream of the ad",
+        "evidence": "\"'no creative will fix it'\" (quoted from the skill's failure-mode table) and \"even a perfect hook keeps buying clicks that convert at checkout-disappointment rates\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends handing the structural or tracking root cause to an account-level diagnostic follow-up",
+        "evidence": "No mention of handing off to an account-level diagnostic skill; only instructs the user to run the checks themselves and ask the dev team questions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the fatigue signature for contrast: costs rise while conversion rate holds",
+        "evidence": "The contrast given is leading signals (CTR/hook) decaying while CVR holds \u2014 no mention of costs/CPA rising as the fatigue signature anywhere in this section.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and re-check fields",
+        "evidence": "\"confidence : medium...\" and \"re-check : 2-3 days after the diagnostic checks below...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames expected recovery as tied to fixing the funnel or offer, not to any new creative",
+        "evidence": "\"if tracking is the cause, CVR should show a step-function jump back once the fix ships... if it's the offer, CVR should recover only after the ad's message matches what checkout actually delivers\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Identifies healthy CTR with collapsing CVR as the inverse of the fatigue signature, pointing at landing page, offer, or tracking",
+        "evidence": "'Your hook rate hasn't moved and CTR is flat at 1.4%... The leak is happening after the click'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a confounded verdict, not fatigued",
+        "evidence": "'this isn't fatigue' \u2014 attributes decline to checkout release and/or promo expiry",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to develop the requested new creative angle",
+        "evidence": "Section '# Three fresh angles to test' delivers three fully fleshed-out concepts with hooks, body, and CTA",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ties the decline onset to the checkout deploy and/or the expired 20%-off code dates",
+        "evidence": "'a checkout flow shipped Sept 2, and a 20%-off code expired \"around then\"... Timing lines up'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends comparing conversion rate for other traffic sources hitting the same page",
+        "evidence": "'Check CVR site-wide, not just this ad. Pull CVR for organic, email, and other paid channels'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reconciling platform-reported conversions against the order system, checking for a stable ratio between the two rather than equality",
+        "evidence": "No mention of reconciling platform vs order-system conversion counts",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reports the confounder screen before reaching any fatigue conclusion",
+        "evidence": "Entire 'Diagnose before you touch creative' section runs before any creative conclusion",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that no creative refresh can fix a problem downstream of the ad",
+        "evidence": "'Don't rebuild the ad yet \u2014 run the site-wide CVR and funnel-step checks first'; decision tree: 'ad is fine, don't touch creative yet'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends handing the structural or tracking root cause to an account-level diagnostic follow-up",
+        "evidence": "No explicit hand-off to an account-level diagnostic process is recommended",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the fatigue signature for contrast: costs rise while conversion rate holds",
+        "evidence": "Fatigue is instead described via 'rising frequency \u2192 falling hook rate \u2192 falling CTR', not the CPA-rises/CVR-holds framing",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and re-check fields",
+        "evidence": "No structured verdict block with confidence or re-check date appears",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames expected recovery as tied to fixing the funnel or offer, not to any new creative",
+        "evidence": "'it'll likely recover your 3.2% CVR without any new creative'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

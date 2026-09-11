@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes the stable-delivery minimum daily budget per cell of roughly $143/day (target CPA $20 x 50 / 7) and checks the proposed cells against it",
+        "evidence": "\"Stable-delivery floor (on stated $20 CPA): $20 \u00d7 50 \u00f7 7 = **$143/day** minimum \u2014 $167 clears it, with only ~17% headroom.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the current best ad as a control cell running concurrently at its own fixed budget, not as a historical baseline",
+        "evidence": "\"C01 (control) | Current champion, running concurrently | $167/day | existing\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes required sample per cell for a purchase-rate significance read at 80% power and alpha 0.05 (exact two-proportion formula or the n = 16 x p(1-p) / MDE^2 shortcut), showing the number",
+        "evidence": "Table gives \"~3,680\", \"~13,300\", \"~35,000+\" required clicks/cell, Bonferroni-corrected at \u03b1=0.025 each, disclosed explicitly.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows with arithmetic that reaching significance on the purchase metric at any moderate MDE requires more days than the test window allows",
+        "evidence": "\"25% (\u21923.13%) | ~13,300 clicks | ~$16,600 | ~99 days\" and \"15% (\u21922.88%) | ~35,000+ | ~$44,000+ | ~260+ days\" versus the 28-day window.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the purchase-metric read with the explicit verdict 'Directional read' (a screening heuristic), not a significance-tested winner",
+        "evidence": "\"Anything realistic (15-30%, what most concept swaps actually produce) is **Directional read**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly tells the user the '95% confidence winner in 5 weeks' promise cannot be honored on the purchase event, rather than designing a plan that pretends it can",
+        "evidence": "\"We can promise a statistically significant winner only if one concept beats the champion by roughly 50% or more on purchase rate\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies a duration floor of one full week (day-of-week coverage) and a ceiling of roughly 4-6 weeks tied to creative freshness",
+        "evidence": "No explicit statement of a one-week floor or a 4-6 week creative-freshness ceiling appears anywhere in the transcript; only the day-28 hard stop tied to the 5-week deadline is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers a kill threshold and a scale threshold per asset or cell before launch",
+        "evidence": "\"Asset-level kill: **$40 spend (2\u00d7 the stated $20 CPA) with zero purchases**\" and \"Scale: winner gets the holiday production budget, plus an initial +50-100% budget step\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-declares the inconclusive outcome as keep the control/champion, decided before launch rather than at readout",
+        "evidence": "\"Inconclusive \u2192 **Keep control.** Champion retains the holiday budget by default. Decided now, not at readout.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a fixed stopping rule as a date or a sample size, whichever comes first",
+        "evidence": "\"**Hard stop** \u2014 pre-registered: 28 days or 3,680 clicks/cell, whichever comes first\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes a falsifiable hypothesis containing a predicted direction, magnitude, named metric, audience, and date or sample, rather than 'see which wins'",
+        "evidence": "\"H1: ... changing the champion's angle to a packing-hack demo will lower cost per purchase ~20-30% ... for cold prospecting, by day 28.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Raises powering the read on a higher-volume up-funnel event (such as add-to-cart), or asks for that event's rate, instead of only accepting the underpowered purchase read",
+        "evidence": "No add-to-cart, landing-page-view, or other up-funnel event is mentioned anywhere as an alternative metric in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Instructs turning automated or AI creative-optimization features off inside the test cells",
+        "evidence": "\"Auto creative optimization | Assumed currently on somewhere \u2014 **must be OFF in these 3 cells**\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes the stable-delivery minimum daily budget per cell of roughly $143/day (target CPA $20 x 50 / 7) and checks the proposed cells against it",
+        "evidence": "No $/day stable-delivery floor calculation appears anywhere; budget math only covers CPC/CVR reconciliation and sample-size tables.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes the current best ad as a control cell running concurrently at its own fixed budget, not as a historical baseline",
+        "evidence": "'3-arm test \u2014 Control (current best ad) vs. Packing-Hack vs. Lost-Luggage. Equal budget split... Control | $1,154 | ~923 | ~4,615' \u2014 runs concurrently with the same weekly budget as the other arms.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes required sample per cell for a purchase-rate significance read at 80% power and alpha 0.05 (exact two-proportion formula or the n = 16 x p(1-p) / MDE^2 shortcut), showing the number",
+        "evidence": "Tables show 'Clicks needed/arm' for various lifts, e.g. 'Scenario A... 40% | 4,613 | $17,300' computed via two-proportion z-test, power=80%.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows with arithmetic that reaching significance on the purchase metric at any moderate MDE requires more days than the test window allows",
+        "evidence": "'20% | 20,292 | $76,095' vs the actual budget of '$17,300 total test budget' \u2014 a 20% lift would cost >4x the available budget/time.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the purchase-metric read with the explicit verdict 'Directional read' (a screening heuristic), not a significance-tested winner",
+        "evidence": "The document never uses the term 'Directional read'; it frames the plan throughout in terms of z-test significance and MDE tables.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explicitly tells the user the '95% confidence winner in 5 weeks' promise cannot be honored on the purchase event, rather than designing a plan that pretends it can",
+        "evidence": "'the confident winner at 95% promise only holds if the real CVR is closer to 6.25%... Tell your marketing lead this caveat now, not at the all-hands.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies a duration floor of one full week (day-of-week coverage) and a ceiling of roughly 4-6 weeks tied to creative freshness",
+        "evidence": "No stated floor/ceiling logic tied to creative freshness; only mentions extending to 8 weeks as an option without a freshness rationale.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers a kill threshold and a scale threshold per asset or cell before launch",
+        "evidence": "No kill or scale thresholds are defined anywhere in the plan; only a week-1 'kill-switch QA' for technical malfunctions, not performance.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-declares the inconclusive outcome as keep the control/champion, decided before launch rather than at readout",
+        "evidence": "No statement that an inconclusive result defaults to keeping the current control ad.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States a fixed stopping rule as a date or a sample size, whichever comes first",
+        "evidence": "'No daily peeking for significance... Otherwise, let all three run untouched through week 5.' \u2014 fixed date-based stop.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes a falsifiable hypothesis containing a predicted direction, magnitude, named metric, audience, and date or sample, rather than 'see which wins'",
+        "evidence": "No formal hypothesis statement with predicted direction/magnitude is written; only MDE tables describing what's detectable.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Raises powering the read on a higher-volume up-funnel event (such as add-to-cart), or asks for that event's rate, instead of only accepting the underpowered purchase read",
+        "evidence": "No mention of add-to-cart or any up-funnel metric anywhere in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Instructs turning automated or AI creative-optimization features off inside the test cells",
+        "evidence": "No mention of AI/automated creative enhancement features at all.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that hook rate is a practitioner-constructed ratio, not a native platform metric",
+        "evidence": "\"Neither platform exposes \\\"hook rate\\\" as a native metric; it's a practitioner-constructed ratio\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States TikTok's common hook-rate construction as 2-second views divided by impressions",
+        "evidence": "\"TikTok: dominant construction is `2-second views \u00f7 impressions`\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States Meta's common hook-rate construction as 3-second video plays divided by impressions",
+        "evidence": "\"Meta: dominant construction is `3-second video plays \u00f7 impressions`.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the 31% vs 22% comparison is invalid because the two numbers are different metrics with different windows and constructions, not evidence TikTok hooks are better",
+        "evidence": "\"TikTok reading higher than Meta may simply reflect that TikTok's denominator counts survivors of a shorter window, not that TikTok creative is outperforming.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse the Meta rebuild on the basis of the cross-platform comparison",
+        "evidence": "\"Not a full-budget rebuild of \\\"all Meta openings\\\" chasing a benchmark that hasn't been verified.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the 'industry standard 30% hook rate' benchmark as unusable without its denominator, placement, traffic temperature, and source",
+        "evidence": "\"A single number pulled from a slide, with no stated platform, placement, traffic temperature, or denominator, is exactly the kind of directional claim that shouldn't survive contact with a budget decision.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends locking one hook-rate definition per account, writing it on every scorecard, and calibrating only within it",
+        "evidence": "The transcript asks for the formula in writing once (\"Have the agency state, in writing, the exact hook-rate formula...\") and recommends calibration over batches, but never states a rule to lock one definition and write it on every future scorecard.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that hook rate measures attention, not business performance",
+        "evidence": "\"Closing a hook-rate gap is not, on its own, a revenue thesis\" \u2014 distinguishing the attention metric from actual business (ROAS) performance.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the near-zero-to-negative correlation between hook rate and ROAS (approximately -0.19, hold rate -0.10)",
+        "evidence": "\"found hook rate correlates -0.19 with ROAS, hold rate -0.10, slightly the wrong direction\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends judging openings by within-account calibration (predicted vs measured rank agreement on one definition) rather than external benchmarks",
+        "evidence": "\"only trust hook rate as a signal for this account after it's shown, over several batches, that your top-ranked opening actually lands in the upper half of measured results\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for or verifies the exact numerator and denominator each dashboard uses before deeper analysis",
+        "evidence": "\"get the agency to write down the exact numerator/denominator each platform report is using\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Produces no numeric hook score or predicted hook-rate figure for any proposed new opening",
+        "evidence": "No numeric hook-rate figure is given for any proposed new TikTok-style opening anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that hook rate is a practitioner-constructed ratio, not a native platform metric",
+        "evidence": "'There's no universal definition of hook rate \u2014 it's always *(some early video-view threshold) / (some denominator)*, and both halves differ by platform.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States TikTok's common hook-rate construction as 2-second views divided by impressions",
+        "evidence": "Text hedges: 'TikTok commonly benchmarks on a 2-second or 6-second view' and separately 'Denominator: often impressions on one platform, video plays on the other' \u2014 no clean stated formula pairing 2-second views with impressions specifically for TikTok.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States Meta's common hook-rate construction as 3-second video plays divided by impressions",
+        "evidence": "'Meta hook rate is typically built from 3-second video plays or ThruPlay' is hedged with 'or ThruPlay', and the denominator is described as ambiguous ('often impressions on one platform, video plays on the other... depending on which tool/agency computed it'), not a clean fixed formula.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Concludes the 31% vs 22% comparison is invalid because the two numbers are different metrics with different windows and constructions, not evidence TikTok hooks are better",
+        "evidence": "'The 31% vs 22% comparison and the \"industry standard 30%\" benchmark are both apples-to-oranges.' and 'a chunk (plausibly most) of the 9-point gap is explained by platform mechanics, not creative style.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse the Meta rebuild on the basis of the cross-platform comparison",
+        "evidence": "'Verdict: \u274c Don't approve the rebuild budget on this evidence.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the 'industry standard 30% hook rate' benchmark as unusable without its denominator, placement, traffic temperature, and source",
+        "evidence": "'Before this benchmark does any work in a budget decision, it needs: Source and methodology... Vertical relevance... Recency... A benchmark slide with no citation is not evidence.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends locking one hook-rate definition per account, writing it on every scorecard, and calibrating only within it",
+        "evidence": "No mention of writing a locked definition on scorecards; recommendation is only to 'Standardize the outcome metric' within the A/B test plan, not an account-wide scorecard practice.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that hook rate measures attention, not business performance",
+        "evidence": "'Hook rate is even the metric that matters for Fernwood's goals. It's a leading/vanity metric. What matters is whether a higher hook rate on Meta actually moves CTR, add-to-cart, CPA, or ROAS.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the near-zero-to-negative correlation between hook rate and ROAS (approximately -0.19, hold rate -0.10)",
+        "evidence": "No correlation statistic of any kind is cited anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends judging openings by within-account calibration (predicted vs measured rank agreement on one definition) rather than external benchmarks",
+        "evidence": "No calibration methodology like predicted-vs-measured rank agreement is proposed; recommendation is a contained A/B test against current control.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks for or verifies the exact numerator and denominator each dashboard uses before deeper analysis",
+        "evidence": "'Ask the agency: exact formula (numerator threshold + denominator) used for each platform's hook rate, and whether it's the platform's native metric or an in-house agency calculation.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Produces no numeric hook score or predicted hook-rate figure for any proposed new opening",
+        "evidence": "No numeric prediction is given for any new opening; only the existing 31%/22%/30% figures are critiqued, not new figures generated.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

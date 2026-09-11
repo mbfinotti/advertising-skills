@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that Meta lookalikes are country-scoped by construction, so one global seed produces an averaged audience serving no market well",
+        "evidence": "Meta lookalikes are country-scoped by construction ... One combined list doesn't produce one weaker lookalike, it produces one seed feeding **five separate audience builds**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires one seed-and-lookalike pair per country",
+        "evidence": "the real unit of work is **one seed + one lookalike per country**, not one combined upload",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the split order country > product line > high-AOV vs all, with language/region last because it usually correlates with country and adds the least new information",
+        "evidence": "Country | **Do it \u2014 mandatory** ... Product line | **Phase 2, not launch** ... High-AOV | **A one-time split test** ... Language | **Drop it**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks each split's own effective seed against the floor before committing to it",
+        "evidence": "Meta's good-list match rate is 50\u201380% \u2192 **~55\u201390 matched**. Floor is 100 matched. This fails even in the optimistic case",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the Sweden split as failing: roughly 120 customers at 50-80% match is about 60-96 matched, under Meta's 100 floor, so Sweden needs the fallback ladder or gets deferred",
+        "evidence": "~55\u201390 matched. Floor is 100 matched. **This fails even in the optimistic case**, and it fails the 1,000\u20135,000 recommended range badly",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes each split carries a permanent standing cost: an audience to refresh, monitor for overlap, and keep above its floor forever",
+        "evidence": "Real signal value, but doubles your audience count (4 countries \u00d7 2 = 8) and doubles refresh load on day one",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that setup effort per split is identical (one WHERE clause) - the standing cost is what limits the count, not the query work",
+        "evidence": "The transcript never frames setup effort as uniform (one WHERE clause) versus standing cost as the limiting factor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the 'whenever I remember' refresh: static CSV uploads do not auto-refresh, so a weekly-to-monthly cadence with a named owner is required",
+        "evidence": "refresh : proposed monthly manual export | owner: <you> | bridge until volume justifies automated sync",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends an automated warehouse sync over manual CSV on efficiency and compliance-cost grounds",
+        "evidence": "The transcript only proposes manual monthly export as a 'bridge until volume justifies automated sync' \u2014 it never argues for sync over CSV on compliance or efficiency grounds now.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the per-platform opt-out handling: suppression must be enforced once in the warehouse before any sync, and a manual CSV re-uploads yesterday's opt-outs every cycle",
+        "evidence": "\"Opt-outs get processed inside each ad platform separately when someone complains\" is exactly the anti-pattern the skill calls out: suppression/opt-outs/deletions must be enforced **once, in your customer database, before any export**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions a CSV only as a bridge, with a named owner and a date the sync lands",
+        "evidence": "\"bridge until volume justifies automated sync\" gives no concrete date for when the sync would land.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends an overlap check between the resulting audiences with the roughly 20-30% concern threshold",
+        "evidence": "The transcript mentions overlap/cannibalization conceptually but never states a 20-30% threshold.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames the high-AOV split as a test (one comparison, keep the winner) run only after the country and product-line splits are settled",
+        "evidence": "A one-time split test, not a standing audience | Run it once the country seeds are live and stable, keep whichever wins, don't run both permanently",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that Meta lookalikes are country-scoped by construction, so one global seed produces an averaged audience serving no market well",
+        "evidence": "Transcript recommends the opposite: \"Keep the base list as one combined EU-5 pool. Don't split by country.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires one seed-and-lookalike pair per country",
+        "evidence": "Explicitly rejects country splits: \"Never create a Sweden-only export\" and keeps one combined pool.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the split order country > product line > high-AOV vs all, with language/region last because it usually correlates with country and adds the least new information",
+        "evidence": "No country split is used at all; only product-line and high-AOV splits are proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Checks each split's own effective seed against the floor before committing to it",
+        "evidence": "Only Sweden's match math is computed; furniture/lighting/high-AOV splits are asserted \"fine at your volumes\" with no computation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies the Sweden split as failing: roughly 120 customers at 50-80% match is about 60-96 matched, under Meta's 100 floor, so Sweden needs the fallback ladder or gets deferred",
+        "evidence": "\"Your Sweden segment (120 customers) drops to roughly 80-90 after Meta's typical hashed-match rate (~65-75%) \u2014 below the threshold for a usable audience on its own.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes each split carries a permanent standing cost: an audience to refresh, monitor for overlap, and keep above its floor forever",
+        "evidence": "Not framed this way; standing-cost reasoning for limiting split count is absent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that setup effort per split is identical (one WHERE clause) - the standing cost is what limits the count, not the query work",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the 'whenever I remember' refresh: static CSV uploads do not auto-refresh, so a weekly-to-monthly cadence with a named owner is required",
+        "evidence": "\"Set a recurring weekly reminder to sync the suppression list into Meta. A monthly full-list refresh is realistic for one person.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends an automated warehouse sync over manual CSV on efficiency and compliance-cost grounds",
+        "evidence": "No automated warehouse sync is discussed; only native Business Manager CSV import.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the per-platform opt-out handling: suppression must be enforced once in the warehouse before any sync, and a manual CSV re-uploads yesterday's opt-outs every cycle",
+        "evidence": "\"Keep one master suppression list... and check every export against it before upload \u2014 not the other way around.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions a CSV only as a bridge, with a named owner and a date the sync lands",
+        "evidence": "No bridge framing, owner name, or target date given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends an overlap check between the resulting audiences with the roughly 20-30% concern threshold",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames the high-AOV split as a test (one comparison, keep the winner) run only after the country and product-line splits are settled",
+        "evidence": "High-AOV is listed as a standing table row, not framed as a sequenced test.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

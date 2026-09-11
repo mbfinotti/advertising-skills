@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Puts the settings-class toggles first: the count-once switch and the filter flip (near-zero effort)",
+        "evidence": "Table rows 1-2 are '(b) Lead action counts \"every\" instead of once per click' and '(c) Internal traffic filter stuck in \"testing\"', both marked 'Near-zero \u2014 one setting/toggle', listed before row 3 '(a) ... ~1 hour'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flips the internal-traffic filter from testing to active, stating that tagged traffic is not excluded traffic",
+        "evidence": "The transcript only says 'Flip filter state from testing \u2192 active' \u2014 it never states that tagged/marked traffic is not the same as excluded traffic.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes exclusion filters are not retroactive, so the filter must be active before launch, not after",
+        "evidence": "No mention of retroactivity anywhere in the transcript; the filter flip is justified only by effort/impact tiering, not by a non-retroactivity argument.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Places the trigger correction (tag firing on page load instead of the completed action) in the hour-of-tag-manager-work class, ahead of every dev-dependent row",
+        "evidence": "'(a) Lead tag fires on every page load... | Re-trigger the tag... | Critical | ~1 hour \u2014 no dev needed', placed as fix #3, while the dev-dependent rows (d) and (f) are entirely struck from the pre-launch list ('Deleted from the pre-launch fix list').",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges the missing shared event ID as critical impact yet does not rank it first, because it costs a week of dev coordination",
+        "evidence": "'(d) No shared event ID (browser/server double-count). Critical impact, but the fix needs dev coordination across both senders plus a redeploy. No engineering resource exists before launch \u2192 this is deleted from the list'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "With no developer available before launch, removes the shared-event-ID row from this launch's fix list entirely rather than parking it at the bottom",
+        "evidence": "'this is deleted from the list per the \"no dev, no legal, no coordination before launch\" rule, not silently dropped.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every deleted row is named in the report with the measurement it costs and who accepted the loss - never silently dropped",
+        "evidence": "(d) has both: 'lead volume will be inflated... Someone at Duneport needs to sign off in writing on accepting that.' But (f) only states 'Effect accepted: attribution loss on any click that goes through that redirect' with no named approver/sign-off, so accountability is not uniformly documented across all risk-accepted deletions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the consent-path row as not applicable given US-only traffic touching no consent-regulated region",
+        "evidence": "'(e) Cookie banner blocks the tag on reject. Traffic is US-only and doesn't touch a consent-regulated region, so this row is deleted as not applicable \u2014 not ranked, not risk-accepted, just out of scope for this account.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defers the gclid-stripping redirect past the hard launch date as an explicitly risk-accepted item, in writing",
+        "evidence": "'(f) Redirect strips gclid before landing... Also deleted, not deferred. Effect accepted: attribution loss on any click that goes through that redirect.' and it reappears as priority #2 in 'First thing to schedule once the developer returns', documenting it in the written report as an accepted consequence pushed past launch.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Everything that makes the cut ships in one batch with a single learning reset - no serial fixes",
+        "evidence": "'Batch all three into one tag-manager release, then re-verify once... don't re-verify after each individual fix, or you reset the algorithm's learning phase three times instead of once.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names what the efficiency order starves (the server-side/click-identifier rebuild) and states a condition that would promote it, such as a setup meant to be trusted for quarters or offline outcome import depending on it",
+        "evidence": "'2. Click-identifier persistence through the redirect (f) \u2014 for a B2B funnel, this is what lets the CRM import offline lead-to-deal outcomes at all, not a nice-to-have.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Surfaces the unfixed double counting to the client as a named launch risk requiring explicit sign-off, not glossed over",
+        "evidence": "'That's a documented, named exception to the normal gate \u2014 not a clean GO. Get an explicit approver at Duneport to sign off on launching with double-counted leads, dated, in writing.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Puts the settings-class toggles first: the count-once switch and the filter flip (near-zero effort)",
+        "evidence": "Items '0. Activate the internal traffic filter \u2014 Day 1, first thing' and '1. Cap conversion counting to \"One\" per click \u2014 Day 1' are listed first, both noted as '5 minutes'/'2 minutes' with 'No developer needed', ahead of '2. Fix the conversion tag trigger \u2014 Day 1\u20132'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flips the internal-traffic filter from testing to active, stating that tagged traffic is not excluded traffic",
+        "evidence": "\"Flip GA4's filter from \\\"Testing\\\" to \\\"Active.\\\" ... \\\"Testing\\\" only tags internal traffic, it doesn't exclude it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes exclusion filters are not retroactive, so the filter must be active before launch, not after",
+        "evidence": "The transcript only says to activate the filter Day 1 'so your own QA over the next 9 days doesn't recontaminate the data' \u2014 it never states explicitly that exclusion filters are non-retroactive or that this is why activation must precede rather than follow launch.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Places the trigger correction (tag firing on page load instead of the completed action) in the hour-of-tag-manager-work class, ahead of every dev-dependent row",
+        "evidence": "\"2. Fix the conversion tag trigger \u2014 Day 1\u20132 ... No developer needed (GTM).\" This sits before item 3 ('likely needs the unavailable developer') and item 4 (dev-coordinated), both marked \ud83d\udfe0.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges the missing shared event ID as critical impact yet does not rank it first, because it costs a week of dev coordination",
+        "evidence": "\"Without it, every real lead is counted twice \u2014 a flat 2x inflation on top of whatever (a)/(b) were adding\" is ranked 4th (Day 3-5, \ud83d\udfe0) with \"Coordinate with whoever handles item 3 \u2014 same tracking layer, worth batching if it's the same vendor/contractor,\" placing it after the free/no-developer items.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "With no developer available before launch, removes the shared-event-ID row from this launch's fix list entirely rather than parking it at the bottom",
+        "evidence": "Item 4 ('Add a shared event ID for browser/server dedup \u2014 Day 3-5') remains an active scheduled fix in the plan and is verified in the Day 8-9 freeze checklist ('browser and server events collapse into a single deduplicated event'); it is not removed from the launch list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every deleted row is named in the report with the measurement it costs and who accepted the loss - never silently dropped",
+        "evidence": "No row is deleted from the six-item fix list; all six items (0-5) are scheduled and verified by Day 8-9, so there is no instance of a named deletion with cost/sign-off documentation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the consent-path row as not applicable given US-only traffic touching no consent-regulated region",
+        "evidence": "Item 5 keeps the row and modifies rather than deletes it: \"Get legal/privacy sign-off on switching to a default-allow + Google Consent Mode / opt-out model instead of blocking the tag outright on decline.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defers the gclid-stripping redirect past the hard launch date as an explicitly risk-accepted item, in writing",
+        "evidence": "Item 3 is scheduled to \"start Day 1, resolve by Day 5\u20136\" \u2014 within the 9-day pre-launch window \u2014 not deferred past the launch date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Everything that makes the cut ships in one batch with a single learning reset - no serial fixes",
+        "evidence": "The plan is explicitly staggered across days: 'Day 1', 'Day 1\u20132', 'start Day 1, resolve by Day 5\u20136', 'Day 3\u20135', 'parallel track, Day 2 start, close by Day 7', contradicting a single-batch rollout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names what the efficiency order starves (the server-side/click-identifier rebuild) and states a condition that would promote it, such as a setup meant to be trusted for quarters or offline outcome import depending on it",
+        "evidence": "No mention of a starved item or a promotion condition like being trusted for quarters or offline outcome import; the transcript schedules every item for completion within the 9 days instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Surfaces the unfixed double counting to the client as a named launch risk requiring explicit sign-off, not glossed over",
+        "evidence": "Double counting (item 4) is treated as a fix to be completed and verified by launch ('browser and server events collapse into a single deduplicated event' in the Day 8-9 checklist), not surfaced as an unfixed risk needing client sign-off.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

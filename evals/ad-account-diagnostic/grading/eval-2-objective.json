@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not adopt targeting tightening as the first fix, identifying the audience drift as a symptom of the optimization event rather than an independent cause.",
+        "evidence": "\"Don't tighten targeting yet... The 'broad audience pulling junk' story is the *symptom* of the event choice, not an independent cause.\" and \"Shelve the targeting-tightening plan for now\" placed as step 5, last.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the optimization event (raw whitepaper form fill) as the root cause, recorded as a structure-layer FAIL.",
+        "evidence": "Layer screen table: \"Structure | **FAIL \u2014 this is the root cause** | Campaigns optimize to raw whitepaper form fills, an event chosen for trackability, not business value.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the platform is doing exactly what it was asked: finding people who fill forms cheaply, in volume.",
+        "evidence": "\"The platforms did exactly what you told them to do \u2014 find the cheapest people who'll fill out the whitepaper form \u2014 and they found them.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges the account on cost per SQL (or cost per closed-won) rather than CPL, showing cost per SQL rose while CPL fell.",
+        "evidence": "\"CPL fell 28%. Cost per SQL more than **doubled**.\" with table showing Cost per SQL ~$714 \u2192 ~$1,552.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the CRM join (12% to 4% lead-to-SQL) as the carrying evidence, with the form-fill reconciliation noted as passing tracking.",
+        "evidence": "Table shows \"Lead\u2192SQL rate | 12% | 4%\"; Measurement/tracking layer marked \"pass (with a caveat)\" noting \"Form-fill event reconciles against CRM within a few percent.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the concentration of the SQL-rate collapse in the campaigns that received the shifted spend as localisation evidence.",
+        "evidence": "\"Critically, this collapse is **concentrated in exactly the campaigns you shifted budget into** \u2014 not spread evenly across the account. That localization matters: a uniform decline would point outward... a concentrated one points at what's specific to those campaigns.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The top-ranked fix is feeding CRM outcomes (SQL or closed-won) back to the platforms and optimizing to a qualified event, ahead of any targeting change.",
+        "evidence": "Step 2 (the main action item, ranked above targeting): \"Build the CRM feedback loop. Feed SQL (and ideally closed-won) status back to LinkedIn and Google as offline conversions... This is the single highest-leverage fix here.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Evaluates over B2B-length windows (roughly 90-day or 4-6 week minimum reads), not week-over-week.",
+        "evidence": "\"B2B lead\u2192SQL conversion typically takes 30\u201390 days\" and \"Give the offline loop 4-8 weeks to accumulate enough conversions\" and \"don't judge this before 8-12 weeks post-launch.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that pushing CRM outcomes into ad platforms triggers a consent and data-processing review before the wiring ships.",
+        "evidence": "\"Before wiring this, get a quick privacy/consent check \u2014 pushing CRM outcome data into ad platforms is a data-processing decision, not just a plumbing one, and it's not easily undone once fired.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the per-layer screen with four states; targeting is not marked FAIL as an independent cause.",
+        "evidence": "The layer screen table uses states \"pass (with a caveat)\", \"FAIL\", \"pass, with a note\", \"unknown\", \"pass, tentatively\", \"pass\" \u2014 more than four distinct labels are used rather than a clean four-state system, though targeting itself is correctly marked \"pass, with a note\" rather than FAIL.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Predicts the post-fix shape: CPL rises while the lead-to-SQL rate and cost per SQL recover, over one to two mature windows.",
+        "evidence": "\"CPL will likely rise back up somewhat... lead\u2192SQL rate should recover toward or above the prior ~12% baseline, and cost-per-SQL should fall back below the ~$714 prior-quarter level within roughly two SQL-maturity cycles.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns an owner and an order-of-magnitude effort to the top fix (roughly a week of marketing-ops/CRM wiring).",
+        "evidence": "\"Expect roughly a week of marketing-ops/CRM wiring, then it keeps paying without further work.\" \u2014 effort and implied owner (marketing-ops) given, though no explicit named individual owner.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends no budget increase and defers any targeting redesign until the event fix has been judged at maturity.",
+        "evidence": "Warns against the \"next reflex ('okay, then increase budget')\" as a bad outcome, and step 5: \"Shelve the targeting-tightening plan for now \u2014 not deleted permanently, just parked until step 2 has had a chance to work.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not adopt targeting tightening as the first fix, identifying the audience drift as a symptom of the optimization event rather than an independent cause.",
+        "evidence": "The transcript states: 'if the underlying issue is that you're bidding an algorithm toward \"cheapest form fill,\" narrowing the audience just makes the same algorithm find the cheapest form-fillers *inside* a smaller pool' and places tightening as step 5: '**Only then** tighten audience settings.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the optimization event (raw whitepaper form fill) as the root cause, recorded as a structure-layer FAIL.",
+        "evidence": "The transcript does identify form-fill-as-optimization-target as the root cause ('the campaigns are optimizing to a proxy metric (form fill)'), but there is no 'structure-layer' framework or explicit 'FAIL' designation anywhere in the transcript \u2014 no layered audit taxonomy is used at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains the platform is doing exactly what it was asked: finding people who fill forms cheaply, in volume.",
+        "evidence": "'When you optimize a bidding algorithm ... to a cheap, easy-to-hit event, and then feed it more budget, it will find you *more of the cheapest way to hit that event*... It just finds people who'll trade an email for a PDF, which correlates weakly with \"will buy data-quality software.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges the account on cost per SQL (or cost per closed-won) rather than CPL, showing cost per SQL rose while CPL fell.",
+        "evidence": "The transcript only recommends adding the metric going forward ('Add cost per SQL and SQL rate as first-class dashboard metrics next to CPL') rather than computing or presenting an actual cost-per-SQL figure that rose while CPL fell 28%.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the CRM join (12% to 4% lead-to-SQL) as the carrying evidence, with the form-fill reconciliation noted as passing tracking.",
+        "evidence": "'lead-to-SQL rate fell from 12% to 4%' is used as the key evidence, and separately: '\"Reconciles fine against the CRM\" only tells you tracking is accurate \u2014 it says nothing about quality.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the concentration of the SQL-rate collapse in the campaigns that received the shifted spend as localisation evidence.",
+        "evidence": "'CPL fell 28% and lead-to-SQL rate fell from 12% to 4% **in the same campaigns you shifted budget into**. That's not two unrelated facts \u2014 it's one fact.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The top-ranked fix is feeding CRM outcomes (SQL or closed-won) back to the platforms and optimizing to a qualified event, ahead of any targeting change.",
+        "evidence": "Fix list step 1-2: 'Stop optimizing to whitepaper fill as the terminal event' and 'Feed SQL (or even closed-won) data back into the platforms via offline conversion imports', with targeting relegated to step 5: 'Only then tighten audience settings'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Evaluates over B2B-length windows (roughly 90-day or 4-6 week minimum reads), not week-over-week.",
+        "evidence": "The transcript only vaguely notes 'Expect a lag (your sales cycle) before the algorithms have enough signal; that's normal and worth the patience' \u2014 no specific 90-day or 4-6 week evaluation window is given anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that pushing CRM outcomes into ad platforms triggers a consent and data-processing review before the wiring ships.",
+        "evidence": "No mention of consent, privacy, or data-processing review appears anywhere in the transcript when discussing offline conversion imports or Conversions API.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the per-layer screen with four states; targeting is not marked FAIL as an independent cause.",
+        "evidence": "The transcript contains no layered screening framework with four states at all; it is organized as narrative sections ('Audit checklist', 'Why tightening will disappoint', 'The fix') rather than a per-layer PASS/FAIL grid.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Predicts the post-fix shape: CPL rises while the lead-to-SQL rate and cost per SQL recover, over one to two mature windows.",
+        "evidence": "The transcript only predicts CPL will 'creep back up' as a downside of tightening targeting alone ('CPL will likely creep back up, and there's no guarantee SQL rate recovers'), not as an expected positive outcome of the recommended offline-conversion fix, and gives no 'one to two mature windows' timeframe.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns an owner and an order-of-magnitude effort to the top fix (roughly a week of marketing-ops/CRM wiring).",
+        "evidence": "No owner (e.g., marketing-ops, CRM team) or effort/time estimate is assigned to any fix step in the transcript; the fix list gives only actions, not who does them or how long they take.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends no budget increase and defers any targeting redesign until the event fix has been judged at maturity.",
+        "evidence": "The transcript defers targeting changes ('Only then tighten audience settings ... using what the audit ... actually shows') but never explicitly recommends holding budget flat, nor defines a maturity checkpoint before which targeting redesign should wait.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

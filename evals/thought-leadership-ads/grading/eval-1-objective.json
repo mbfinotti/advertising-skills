@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to deliver a launch-ready campaign plan and says explicitly which eligibility gates failed, instead of planning around them",
+        "evidence": "\"This can't be built into a campaign plan today. Three items in the skill's eligibility gate fail, and per the process I'm required to stop and tell you which ones\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the missing downstream capture layer (no conversion tracking, no retargeting audiences) as a failed gate",
+        "evidence": "\"No downstream capture layer \u2014 hard stop. You have no conversion tracking and no retargeting audiences live.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that retargeting is not retroactive: engagement generated before audiences exist is lost and cannot be recovered later",
+        "evidence": "\"Retargeting is not retroactive: every engager this campaign generates before those audiences exist is unrecoverable, permanently.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sequences the fix as build conversion tracking and the retargeting scaffold first, then return to this format - rejecting the 'add tracking later once we see if it works' order",
+        "evidence": "\"'Add it later once we see if the ads work' throws away the one asset...\" then \"Weeks 1\u20132: stand up conversion tracking, then the retargeting scaffold...all audiences created before the first ad serves\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the CEO's lunch enthusiasm as not consent, and requires her explicit per-post agreement before planning around her",
+        "evidence": "\"'Seemed enthusiastic over lunch' is an informal, verbal, revocable impression \u2014 not the per-post platform approval plus written agreement...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires a written commercial agreement beyond the platform's in-app approval",
+        "evidence": "\"Platform click-to-approve alone isn't a commercial agreement either.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that consent is revocable at any time and the ad turns off immediately when revoked",
+        "evidence": "Only says the informal lunch impression is 'revocable' and that leaving causes the channel to 'go to zero overnight' \u2014 never states the ad itself shuts off immediately upon revocation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the board's in-quarter pipeline deadline as incompatible with the format's slow payback (multi-quarter, roughly 90+ days to ROI)",
+        "evidence": "\"Documented payback is 90+ days to ROI, and the real verdict...is measured on a 2\u20134 quarter window \u2014 against a 6-month sales cycle, that math doesn't compress.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends direct-response and retargeting spend for the in-quarter pipeline goal rather than this format",
+        "evidence": "\"A board asking for quarter-one pipeline from a brand-new channel should be pointed at direct-response and retargeting spend, which is measurable inside a quarter.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not cite the $48k ACV as a reason to decline - it clears the roughly $25k practitioner bar",
+        "evidence": "\"$48k ACV clears the B2B viability bar for this format (practitioner floor is ~$25k+ with a narrow ICP) \u2014 Kelvane is a legitimate candidate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the single-featured-person risk: one revocation or departure ends the program, and recommends a multi-person roster",
+        "evidence": "\"the entire channel goes to zero overnight because it's a single-person program\" and \"bring me post history (hers, and ideally one more person so this isn't a single point of failure)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not propose reported CTR anywhere as a success metric for the future campaign",
+        "evidence": "CTR only appears describing a failed example submission ('judged on CTR at two weeks') as a cautionary contrast, never proposed as this campaign's metric.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to deliver a launch-ready campaign plan and says explicitly which eligibility gates failed, instead of planning around them",
+        "evidence": "The transcript delivers a full launch-ready plan with budget splits, campaign structure, and a 90-day timeline; it flags issues in a 'read this before anything else' section but still builds and delivers the complete plan around them rather than declining.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the missing downstream capture layer (no conversion tracking, no retargeting audiences) as a failed gate",
+        "evidence": "'No tracking = no provable pipeline... Fix: UTM parameters + one CRM lead-source field, before the first dollar spends' and 'Retargeting can't start month 1 regardless of intent \u2014 the audience has to accumulate past LinkedIn's practical minimum (~300) first.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that retargeting is not retroactive: engagement generated before audiences exist is lost and cannot be recovered later",
+        "evidence": "The plan only says retargeting audiences take time to accumulate ('the audience has to accumulate past LinkedIn's practical minimum (~300) first'); it never states that engagement generated before the audience exists is unrecoverable.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sequences the fix as build conversion tracking and the retargeting scaffold first, then return to this format - rejecting the 'add tracking later once we see if it works' order",
+        "evidence": "Tracking is listed as a 'Week 0' prerequisite but the plan proceeds to launch Campaign A immediately in Weeks 1-2 while retargeting is deliberately deferred to Month 2 as part of the same continuous plan, not as a 'return to the format' after separately building a scaffold.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the CEO's lunch enthusiasm as not consent, and requires her explicit per-post agreement before planning around her",
+        "evidence": "'Get Dana's actual authorization. TLA requires her to connect her profile inside Campaign Manager and approve it \u2014 lunch enthusiasm isn't that.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires a written commercial agreement beyond the platform's in-app approval",
+        "evidence": "No written commercial agreement is mentioned anywhere; the only authorization discussed is the in-app Campaign Manager approval.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that consent is revocable at any time and the ad turns off immediately when revoked",
+        "evidence": "Revocability of consent is never discussed; the single-person risk section says 'Nothing to fix now, just don't be surprised' rather than describing revocation mechanics.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the board's in-quarter pipeline deadline as incompatible with the format's slow payback (multi-quarter, roughly 90+ days to ROI)",
+        "evidence": "'With a 6-month sales cycle, nothing launched in the next 2.5 weeks produces closed pipeline by quarter-end \u2014 that was never physically possible... First qualified pipeline becomes visible in Q4/Q1.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends direct-response and retargeting spend for the in-quarter pipeline goal rather than this format",
+        "evidence": "The plan continues to recommend TLA as the vehicle throughout and never pivots to direct-response/retargeting spend as a substitute to meet the in-quarter goal; it instead resets the board's expectation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not cite the $48k ACV as a reason to decline - it clears the roughly $25k practitioner bar",
+        "evidence": "The $48k ACV is used only for audience sizing ('Company size: 500\u20135,000 employees \u2014 matches a $48k ACV deal'), never as a reason to decline the initiative.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the single-featured-person risk: one revocation or departure ends the program, and recommends a multi-person roster",
+        "evidence": "'Single-person dependency \u2014 if Dana skips a week or goes on leave, the channel has no fuel that week. Nothing to fix now, just don't be surprised.' \u2014 flags the risk but explicitly declines to recommend a fix or multi-person roster.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not propose reported CTR anywhere as a success metric for the future campaign",
+        "evidence": "The KPI table lists 'CTR | 0.45\u20130.65% | typical LinkedIn B2B range' as a target metric for the campaign.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

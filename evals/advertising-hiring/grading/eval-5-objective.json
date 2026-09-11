@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Cuts the loop from 5 rounds to at most 3",
+        "evidence": "'Loop cut to 3 rounds, one work sample done live inside a scheduled round, nothing unpaid, nothing done at home' and stage map lists exactly 3 stages.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Eliminates the duplicated panel by assigning each competency to exactly one stage",
+        "evidence": "'Panel two repeats panel one's competencies... Each competency now owned by exactly one round'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Produces a stage map naming which interviewer owns which competencies, one lane per panelist",
+        "evidence": "Stage map table: 'Screen | Recruiter | Exaggerator probes...' / 'Technical/case | Hiring manager + one senior paid search lead | Technical execution...' / 'Pod round | 2 future teammates...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires interviewers to submit scores independently before any group debrief",
+        "evidence": "'Every interviewer submits a written score with cited evidence... independently, before the group ever speaks. Nobody sees another interviewer's score first.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the convergence on the polished talker as the product of missing behavioral anchors plus shared scoring",
+        "evidence": "'Panel agrees a single gut score together before writing anything | This is the textbook cause of \"panel converges on the polished talker\" \u2014 no anchors, scores shared before written'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires every submitted score to cite a quote or concrete example",
+        "evidence": "'Every interviewer submits a written score with cited evidence \u2014 a quote or concrete example \u2014 independently'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Directs debrief time to where scores diverge, with disqualifying signals recorded separately from scores",
+        "evidence": "'The post-round call only happens after scores are in, and it's spent exclusively on where scores diverge... Disqualifying signals... are logged separately from the numeric score'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Weights commercial reasoning and communication over technical recall",
+        "evidence": "'Technical execution 30 / Diagnostic & commercial reasoning 35 / Communication & pod fit 35'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels any numeric competency weighting as a house convention, not a published standard",
+        "evidence": "'Weights (house convention, not a published standard)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends standardized questions across candidates as the mechanism that lets the loop shrink without losing signal",
+        "evidence": "No statement in the transcript frames standardized questions across candidates as the mechanism enabling the shorter loop; the fix is attributed to round-count cuts and independent scoring, not standardization.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Connects the mid-process drop-out to loop length and keeps any exercise inside a 60 to 90 minute session",
+        "evidence": "'5 rounds, candidates drop mid-process | Documented drop-off driver is round count + unpaid/unclear asks...' and Round 2 is scoped at 90 min.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Introduces no multi-hour unpaid take-home anywhere in the redesigned loop",
+        "evidence": "'the unpaid multi-hour take-home is off the menu entirely' and the loop contains only screen, technical/case (with live audit work sample), and pod round.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Cuts the loop from 5 rounds to at most 3",
+        "evidence": "\"New loop: 3 stages, target 8 business days screen-to-offer\" with candidate-facing total of \"1 async task + 2 interviews (+1 optional unscored chat).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Eliminates the duplicated panel by assigning each competency to exactly one stage",
+        "evidence": "Rubric table shows each of the 5 competencies scored in exactly one stage (e.g., \"Analytical judgment | Work sample\", \"Client communication | Client interview\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Produces a stage map naming which interviewer owns which competencies, one lane per panelist",
+        "evidence": "\"3a... Owns competencies: Analytical judgment, Platform fluency, Ownership.\" / \"3b... Owns competencies: Communication, Collaboration/culture-add.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires interviewers to submit scores independently before any group debrief",
+        "evidence": "\"every interviewer submits a written, independent score within 4 hours of their interview, before seeing anyone else's notes or attending any group call.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the convergence on the polished talker as the product of missing behavioral anchors plus shared scoring",
+        "evidence": "\"Converges on the most polished talker \u2192 a 1\u201310 'gut score' with no rubric measures charisma, not the job... you're measuring impression, not evidence, and you're measuring it too slowly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires every submitted score to cite a quote or concrete example",
+        "evidence": "\"Every score requires one written sentence of evidence citing what the candidate actually said or did. No evidence, no score \u2014 send it back.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Directs debrief time to where scores diverge, with disqualifying signals recorded separately from scores",
+        "evidence": "\"Wide disagreement is a signal to dig in, not average away\" addresses divergence, but no mechanism for recording disqualifying signals separately from scores is described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Weights commercial reasoning and communication over technical recall",
+        "evidence": "The rubric table contains no weighting column or percentages at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels any numeric competency weighting as a house convention, not a published standard",
+        "evidence": "No numeric weighting exists to label.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends standardized questions across candidates as the mechanism that lets the loop shrink without losing signal",
+        "evidence": "Loop compression is attributed to independent scoring and stage-splitting, not to standardized questions as the shrink mechanism.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Connects the mid-process drop-out to loop length and keeps any exercise inside a 60 to 90 minute session",
+        "evidence": "\"5 rounds, no compression \u2192 candidates drop out mid-process\"; work sample \"capped at 90 min.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Introduces no multi-hour unpaid take-home anywhere in the redesigned loop",
+        "evidence": "\"Work sample (async take-home, capped at 90 min, paid a flat $150 if not hired)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

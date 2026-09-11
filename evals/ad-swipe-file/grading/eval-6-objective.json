@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to rest the analysis on from-memory descriptions, because recall is biased toward the memorable and carries no dates.",
+        "evidence": "\"Recalled descriptions carry no dates... it classifies fine, it infers badly... recency bias in your own memory (what scrolled past you most often lately...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies that a staying-power decision turns on longevity, which requires dated fields no pasted or remembered ad carries.",
+        "evidence": "\"The decision you named ... is a longevity read... it only exists as a date... Recalled descriptions carry no dates.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sends the user to the public transparency surface with precise manual instructions: search the advertiser's name, filter to active ads, note first-seen dates, and capture copy plus landing destination.",
+        "evidence": "\"search by the advertiser's exact Page name, filter to active ads, set country to an EU member state...\" and \"capture a paraphrase of the message (not full copy), format, landing page destination, and first-seen date.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that when the agent cannot browse, the user-run manual pull is the only available source of run dates, and skipping it downgrades every inference to undated classification.",
+        "evidence": "\"I also can't browse the web from this session... promote the user-run manual pull... It's the only remaining source on the list that has dates.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Restricts the manual pull to the direct competitor set because it costs an hour of someone else's time.",
+        "evidence": "No statement restricting the pull to a direct competitor set or citing time-cost as the reason; the transcript simply proceeds with the three named competitors already given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Instructs setting the surface's country filter to an EU member state to expose the richer disclosure tier.",
+        "evidence": "\"set country to an EU member state even if you don't sell there (EU view discloses run dates + targeting criteria...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the EU view of professional-network ad libraries exposes targeting criteria such as role, geography, and company size, revealing which buying-committee members a competitor pays to reach.",
+        "evidence": "\"EU view discloses run dates + targeting criteria like role/seniority/company size \u2014 the rest of the world hides all of it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns of B2B blindness: buying research in private channels, DMs, and communities is invisible to any public surface, so the file captures only the visible top of funnel.",
+        "evidence": "No mention of private-channel/DM/community blindness anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the manual collection logged off and within platform terms, noting that delegating the browse to the user moves the hours but never the compliance obligation.",
+        "evidence": "The manual pull instructions never mention staying logged off or note that compliance obligations transfer with the delegated task.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Accepts the remembered ads only as a supplementary source, recorded with unknown dates rather than guessed ones.",
+        "evidence": "\"Where your recollection is genuinely useful: as a shortlist to go verify, not as the analysis itself.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames this first dated pull as the baseline that later dated pulls will be compared against for relaunch and change detection.",
+        "evidence": "No statement frames this pull as a future baseline for relaunch/change detection comparisons.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies identical schema fields across all three competitors so entries stay comparable side by side.",
+        "evidence": "\"Manual pull instructions, per competitor:\" followed by the same four numbered steps applied uniformly to each competitor.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to rest the analysis on from-memory descriptions, because recall is biased toward the memorable and carries no dates.",
+        "evidence": "\"human memory is a bad proxy for 'staying power' specifically: what you remember is skewed by ad frequency/spend and the platform's targeting of you, not by whether the campaign has actually run consistently over months.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies that a staying-power decision turns on longevity, which requires dated fields no pasted or remembered ad carries.",
+        "evidence": "\"note roughly when you first/last saw it and whether the creative/copy changed over that time, since that's the actual signal for staying power.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sends the user to the public transparency surface with precise manual instructions: search the advertiser's name, filter to active ads, note first-seen dates, and capture copy plus landing destination.",
+        "evidence": "Only vaguely mentions 'LinkedIn Ad Library, Meta Ad Library' with no step-by-step search/filter/capture instructions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that when the agent cannot browse, the user-run manual pull is the only available source of run dates, and skipping it downgrades every inference to undated classification.",
+        "evidence": "It says only \"otherwise I'll flag every read as a hypothesis to verify, not a finding\" \u2014 it never states the agent cannot browse itself or that this is the only available source of dates.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Restricts the manual pull to the direct competitor set because it costs an hour of someone else's time.",
+        "evidence": "No scope restriction or time-cost justification is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Instructs setting the surface's country filter to an EU member state to expose the richer disclosure tier.",
+        "evidence": "No country-filter instruction of any kind appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the EU view of professional-network ad libraries exposes targeting criteria such as role, geography, and company size, revealing which buying-committee members a competitor pays to reach.",
+        "evidence": "Not mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns of B2B blindness: buying research in private channels, DMs, and communities is invisible to any public surface, so the file captures only the visible top of funnel.",
+        "evidence": "No mention of private-channel/DM blindness.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the manual collection logged off and within platform terms, noting that delegating the browse to the user moves the hours but never the compliance obligation.",
+        "evidence": "No discussion of logged-off browsing or compliance obligation transfer.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Accepts the remembered ads only as a supplementary source, recorded with unknown dates rather than guessed ones.",
+        "evidence": "No explicit rule to record unknown dates rather than guess is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames this first dated pull as the baseline that later dated pulls will be compared against for relaunch and change detection.",
+        "evidence": "No baseline/future-comparison framing is present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies identical schema fields across all three competitors so entries stay comparable side by side.",
+        "evidence": "No schema is defined in this short transcript at all.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

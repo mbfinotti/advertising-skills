@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Corrects the attribution: the 'spend 1x CPA before judging / 3x CPA before killing' rule is untraceable folklore with no identifiable originator, not Barry Hott's",
+        "evidence": "\"The \\\"spend 1\u00d7 CPA before judging / 3\u00d7 CPA before killing\\\" rule is **untraceable folklore** ... it's often *mis*-attributed to Barry Hott specifically.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States Hott's actual published position: he rejects mechanical per-ad CPA kill rules (ad-level CPA/ROAS irrelevant) and judges new ads by comparative benchmarking against the account's best ads",
+        "evidence": "\"Hott's actual published position is the opposite: he explicitly rejects per-ad CPA kill rules ... and instead judges new ads by comparative benchmarking against a maintained library of best-ever ads\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to combine multiple kill-rule anchors and states the plan must adopt exactly one",
+        "evidence": "\"I've built the plan on Denney, with a platform cost cap layered in as a *safety net between your check-ins*, not as the decision rule itself.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the reason mixing fails: the anchors contradict each other, so a blended rule never fires or fires twice",
+        "evidence": "No statement anywhere explains that combining anchors causes contradictory or double-firing rules; the transcript only explains which single anchor fits.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rules out the no-manual-kill / cost-cap-only approach (Faris) by name, tied to the hard 4-week deadline because it is the slowest to answer",
+        "evidence": "\"a hard decision date (your Oct 12 feature deadline) is specifically named as one of the two conditions that rules Faris out, because it optimizes for a portfolio outcome with no per-ad element-level read and answers \\\"never.\\\"\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rules out Hott's comparative benchmarking by name, tied to the missing weekly reviewer and absent best-ads library",
+        "evidence": "\"a method that needs a weekly reviewer and a benchmark set you don't have time to run solo, checking twice a week\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adopts Dara Denney's defaults as the single anchor, identified as the default when nothing promotes another",
+        "evidence": "\"is **Dara Denney's anchor**, word for word. It's also the one that needs nothing you don't already have\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Carries Denney's sizing: test budget approximately CPA x 50 (about $1,500 at a $30 CPA) and roughly 6 assets per test",
+        "evidence": "No mention of a CPA\u00d750 test-budget figure (~$1,500) or a 6-assets-per-test default appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Carries the no-evaluation-before-day-3 rule",
+        "evidence": "\"**Never evaluate before Day 3.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Carries the asset kill at 2x CPA spend ($60) with no conversion, and the cell kill after 5-7 days with no winner",
+        "evidence": "Asset kill at $60/2xCPA is present, but there is no rule killing a cell after 5-7 days with no winner anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Carries the scale rule: winners scaled +50-100%, done 2-3 times",
+        "evidence": "\"raise its budget **+50\u2013100%**, done a maximum of **2\u20133 times** across the 4 weeks\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers a fixed stopping rule and the inconclusive path (keep the current champion/batch) before launch",
+        "evidence": "\"**Hard stop** \u2014 pre-declared now ... If nothing in the new batch beats the champion's baseline CPA by then: **keep the champion**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Never presents the 1x/3x folklore thresholds as authoritative anywhere in the output",
+        "evidence": "The rule is repeatedly labeled \"untraceable folklore\" and explicitly not adopted, only the $60/2xCPA Denney rule is used.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Corrects the attribution: the 'spend 1x CPA before judging / 3x CPA before killing' rule is untraceable folklore with no identifiable originator, not Barry Hott's",
+        "evidence": "'This is Barry Hott's 1\u00d7/3\u00d7 framework plus two additions you asked for' \u2014 explicitly attributes the folklore rule to Hott instead of correcting it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States Hott's actual published position: he rejects mechanical per-ad CPA kill rules (ad-level CPA/ROAS irrelevant) and judges new ads by comparative benchmarking against the account's best ads",
+        "evidence": "No mention of comparative benchmarking against the account's best ads or that Hott rejects mechanical per-ad CPA kill rules.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to combine multiple kill-rule anchors and states the plan must adopt exactly one",
+        "evidence": "The plan explicitly blends 'Barry Hott's 1\u00d7/3\u00d7 framework plus two additions you asked for' \u2014 a combination, not a single named anchor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives the reason mixing fails: the anchors contradict each other, so a blended rule never fires or fires twice",
+        "evidence": "No discussion of why blending anchors is problematic.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rules out the no-manual-kill / cost-cap-only approach (Faris) by name, tied to the hard 4-week deadline because it is the slowest to answer",
+        "evidence": "No mention of Faris or a cost-cap-only approach anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rules out Hott's comparative benchmarking by name, tied to the missing weekly reviewer and absent best-ads library",
+        "evidence": "No mention of comparative benchmarking being ruled out.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adopts Dara Denney's defaults as the single anchor, identified as the default when nothing promotes another",
+        "evidence": "No mention of Dara Denney anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Carries Denney's sizing: test budget approximately CPA x 50 (about $1,500 at a $30 CPA) and roughly 6 assets per test",
+        "evidence": "Budget is framed as '$20\u201330/day per ad (6 ads \u2248 $120\u2013180/day)' with milestone thresholds ($30/$60/$90/$150), not the CPAx50=$1,500 framework.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Carries the no-evaluation-before-day-3 rule",
+        "evidence": "Rules are spend-milestone based ('spend \u2265 $30 (1\u00d7)'), with no day-3 evaluation floor mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Carries the asset kill at 2x CPA spend ($60) with no conversion, and the cell kill after 5-7 days with no winner",
+        "evidence": "A 2x-zero-install kill exists ('\u2265 2\u00d7 ($60) | 0 | Hard kill') but framed as a Hott addition, and no '5-7 days no winner' cell-level kill rule is present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Carries the scale rule: winners scaled +50-100%, done 2-3 times",
+        "evidence": "No scaling percentage or count-of-scale-ups is specified; only 'Reallocate budget from killed ads into surviving ads.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers a fixed stopping rule and the inconclusive path (keep the current champion/batch) before launch",
+        "evidence": "Week 4 states 'No new kill decisions... Lock the batch' but no explicit inconclusive-defaults-to-champion statement is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Never presents the 1x/3x folklore thresholds as authoritative anywhere in the output",
+        "evidence": "'This is Barry Hott's 1\u00d7/3\u00d7 framework... and it's solid' \u2014 presents the folklore rule as an authoritative, attributed framework.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

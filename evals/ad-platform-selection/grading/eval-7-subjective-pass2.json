@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response recommends a prospecting or capture primary that generates the traffic first, chosen through the economics and demand-state logic rather than asserted.",
+        "evidence": "Section 4 names 'Paid social prospecting' as the primary \u2014 a traffic-generating prospecting channel \u2014 and it is reached, not asserted. Section 1 works the economics first (AOV $310 \u00d7 62% margin \u2192 $192 contribution; break-even ROAS 1.61x; allowable CAC \u2248$135 with first-order rationale since no LTV). Section 3 ranks survivors by value \u00f7 effort with explicit subscores and states the demand-state logic driving the pick: 'handmade lighting is a demand-creation category for a brand nobody's heard of yet \u2014 people aren't searching for Plumecraft, and category search volume for niche artisan lighting t",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response recommends a prospecting or capture primary that generates the traffic first, chosen through the economics and demand-state logic rather than asserted.",
+        "evidence": "The response does make prospecting the primary: $4,000 of $6,000 (67%) to 'Prospecting (Meta + Google, broad/interest/lookalike)', with the explicit rationale 'At this traffic level, growing the top of funnel *is* the retargeting strategy \u2014 it's what grows the pool you'll retarget later,' plus the sequencing line 'grow traffic and pixel pool first, retarget lightly and cheaply while that happens.' It also adds a capture layer \u2014 email/SMS flows (welcome, browse-abandon, cart-abandon) \u2014 argued as 'the highest-leverage retargeting channel you have at this scale... nearly free, isn't capped by min",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

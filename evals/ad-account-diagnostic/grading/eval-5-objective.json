@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to confirm the external/market story as written.",
+        "evidence": "\"Short answer: no, don't send that note as written.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the inherited agency narrative as unverified until the data independently reproduces it, rather than as the hypothesis to confirm.",
+        "evidence": "\"Sending the external framing to your CEO would be repeating the outgoing agency's unverified narrative, not confirming it.\" and the verdict block treats external as 'RULED OUT as primary cause' based on the uniformity test rather than accepted a priori.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the breakdown rather than the blended +34% account-level average.",
+        "evidence": "\"The blended number is just the saturating ad set dragging the account average up; the other four ad sets show what the market is actually doing to you this quarter, and it's a mild 2\u20136%, not 34%.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the concentration (one ad set at +85% while siblings sit at +2-6%) as evidence of an internal, targeted cause.",
+        "evidence": "\"An 85% spike sitting next to four sibling ad sets moving 2\u20136% isn't 'the auction went up'... Instead, one specific audience is behaving completely differently from its neighbors.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the rule: external elevation shows up roughly uniformly across every campaign and audience, while concentrated elevation points internal.",
+        "evidence": "\"real auction-wide inflation (Q4 seasonality, category-wide competitor spend) hits every audience buying into the same auction pool roughly evenly. A cause concentrated in one branch of the account is not that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads frequency rising from 2.1 to 4.8 with flat unique reach as audience saturation.",
+        "evidence": "\"frequency climbing from 2.1 to 4.8 while unique reach has been flat for a month is the textbook signature of audience saturation \u2014 you've stopped reaching new people and are now just paying more to show the same shrinking pool of users the ad again and again.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names targeting (narrow-audience saturation) as the layer behind the concentrated CPM rise.",
+        "evidence": "Verdict block: \"targeting : FAIL - narrow stacked-interest audience saturating: frequency 2.1->4.8, unique reach flat 30 days, CPM +85% isolated to this ad set...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats external as a diagnosis of exclusion that cannot be claimed while an internal layer FAILs.",
+        "evidence": "\"external : RULED OUT as primary cause - uniformity test fails (85% vs 2-6% is not what account-wide auction inflation looks like); a small genuine external component plausibly explains the +2-6% baseline move on the other four ad sets\" \u2014 external is only credited for the residual after targeting FAILs, not as a competing primary hypothesis.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Compares against the account's own history rather than category or industry CPM claims.",
+        "evidence": "The entire analysis uses the account's own ad-set breakdown and frequency/reach history (\"window : current period vs prior 60 days\") with no external industry CPM benchmark cited.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs, or explicitly conditions the verdict on, the tracking/reconciliation check before the targeting call.",
+        "evidence": "The reconciliation is listed as an open gap and a follow-up finding (\"run backend/CRM reconciliation before trusting the CPA number long-term\"), and confidence is only \"medium\" partly for this reason, but the targeting verdict itself is stated as the dominant cause without being conditioned on this check first \u2014 it's treated as sharpening confidence rather than a precondition, e.g. \"None of these missing pieces change the headline finding... they'd only sharpen the mechanism and the confidence level.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hands the audience redesign to a targeting workflow or owner rather than designing the new audiences inside this diagnosis.",
+        "evidence": "Finding 3 says \"redesign or refresh the saturated audience (broaden the stack, rotate in a lookalike, or let it cool while reallocating spend...)\" with owner \"media buyer\" and handoff \"audience redesign for the saturated ad set\" \u2014 no actual new audience is designed in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction (that ad set's CPM and frequency normalise once the audience is broadened or rotated) and sets a re-check date.",
+        "evidence": "\"prediction : once the saturated ad set is redesigned/refreshed, its CPM should fall back toward the sibling ad sets' range... and frequency should drop back toward ~2-3, within one full lag-mature comparison window\" and \"re-check : one full comparison window after the fix ships, at matched attribution-lag maturity\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Provides the corrected note for the CEO: mostly internal saturation, with at most the small uniform +2-6% residual attributable to the market.",
+        "evidence": "\"CPM being up isn't an industry-wide Q4 story here. When I break the account down by ad set, four of the five are only up 2\u20136%, which is a plausible seasonal drift. The fifth \u2014 our main prospecting ad set... is up 85%... That's audience saturation... It explains almost all of the blended CPM move and, in turn, the CPA increase.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to confirm the external/market story as written.",
+        "evidence": "\"The data doesn't support that as the primary driver.\" and \"don't confirm the market story as-is.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the inherited agency narrative as unverified until the data independently reproduces it, rather than as the hypothesis to confirm.",
+        "evidence": "\"The handover note attributes the CPA increase to industry-wide Q4 CPM inflation. The data doesn't support that as the primary driver\" \u2014 the note's claim is tested against the ad-set breakdown rather than accepted.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the breakdown rather than the blended +34% account-level average.",
+        "evidence": "\"Blended CPM is +34% vs. the prior 60 days, but that average is being dragged by one ad set, not five. The main prospecting ad set...is +85% CPM. The other four ad sets are +2% to +6%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the concentration (one ad set at +85% while siblings sit at +2-6%) as evidence of an internal, targeted cause.",
+        "evidence": "\"not concentrated 15-40x more in one set\" used as the basis for ruling out a market-wide cause and attributing it to the single ad set.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the rule: external elevation shows up roughly uniformly across every campaign and audience, while concentrated elevation points internal.",
+        "evidence": "\"If rising CPMs were purely an external auction effect...it would show up broadly across ad sets of similar type, not concentrated 15-40x more in one set.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads frequency rising from 2.1 to 4.8 with flat unique reach as audience saturation.",
+        "evidence": "\"frequency has climbed from 2.1 to 4.8 while unique reach has been flat for a month\" ... \"that combination is the signature of audience exhaustion/saturation\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names targeting (narrow-audience saturation) as the layer behind the concentrated CPM rise.",
+        "evidence": "\"the stacked-interest audience is narrow enough that Meta's delivery system is now re-serving the same small pool of people repeatedly instead of finding new users\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats external as a diagnosis of exclusion that cannot be claimed while an internal layer FAILs.",
+        "evidence": "\"~5-6 points of the CPM increase...is plausibly external/seasonal. The bulk of the blended +34%...is coming from one saturated, narrowly-targeted prospecting audience\" \u2014 external is only credited for the residual after the internal saturation cause is established.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Compares against the account's own history rather than category or industry CPM claims.",
+        "evidence": "\"Blended CPM is +34% vs. the prior 60 days\" \u2014 comparison is to the account's own historical baseline, not an industry/category benchmark.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs, or explicitly conditions the verdict on, the tracking/reconciliation check before the targeting call.",
+        "evidence": "No mention anywhere in the transcript of a tracking or reconciliation check being run or required before concluding the targeting/saturation diagnosis.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hands the audience redesign to a targeting workflow or owner rather than designing the new audiences inside this diagnosis.",
+        "evidence": "The write-up only says \"broaden/refresh the audience, add creative variants, or shift budget\" without designating a separate targeting workflow/owner to execute it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States a prediction (that ad set's CPM and frequency normalise once the audience is broadened or rotated) and sets a re-check date.",
+        "evidence": "No explicit prediction of normalization values or any re-check date appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Provides the corrected note for the CEO: mostly internal saturation, with at most the small uniform +2-6% residual attributable to the market.",
+        "evidence": "\"The correct statement to the CEO is that Q4 auction pressure is a real but minor factor (~2-6% CPM on most ad sets), while the dominant cause is frequency-driven saturation in the prospecting ad set\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

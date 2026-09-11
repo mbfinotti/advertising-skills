@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the percentage weighting of the seven scoring dimensions, refusing to endorse any importance order or weights among them",
+        "evidence": "\"The weights are invented.\" and \"Strip the weights and the 0\u2013100 sum \u2192 replace with gates...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the evidential reason: attention metrics correlate roughly -0.19 with ROAS (hold rate -0.10), so no evidence supports one dimension returning more performance per unit of effort than another",
+        "evidence": "\"The evidence base here is hook rate correlating -0.19 with ROAS (hold rate -0.10...). If the underlying attention metrics don't reliably predict revenue at all, a weighted blend of them doesn't either\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a printed weighting would steer real production hours and test budget on invented precision",
+        "evidence": "\"If the spreadsheet sums scores before checking gates, a gate-failing opening can out-score a gate-passing one and get funded\" \u2014 invented precision directly misallocating funding.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the 0-100 composite sum: bands are evidence for pairwise comparison, never arithmetic to total",
+        "evidence": "\"then **force-rank pairwise** within the batch...No sum, no percentage, no cross-batch number.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the only defensible dimension weighting is account-specific, re-derived from the account's own past winners after calibration fails - never a default written into a system",
+        "evidence": "\"re-derive weights from Halyard Swim's own actual winners \u2014 never a generic default\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps pairwise candidate ranking as the legitimate ranking and explains why: the same judge compares two concrete openings so the judge's bias applies to both sides and cancels",
+        "evidence": "Pairwise force-ranking is recommended (\"force-rank pairwise within the batch\") but no explanation is given that bias cancels because the same judge compares both concrete openings.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects '7 of 8 hook types covered' as evidence the batch is diverse or ready to ship",
+        "evidence": "\"So \\\"we cover 7 of 8 types\\\" doesn't prove the batch is diverse\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that hook taxonomies are naming and diagnostic vocabulary, never a scoring axis",
+        "evidence": "\"vocabulary for describing a mechanism, not a validated, falsifiable classification system\" and \"Use the hook-type tags only to *name* what a candidate is doing...never to score coverage.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites poor inter-rater reliability and overlapping, non-falsifiable category boundaries as the reason taxonomy tagging cannot be scored",
+        "evidence": "\"which is exactly why human hook-taxonomy tagging has poor inter-rater reliability\" and \"The categories overlap, mix psychological triggers with executional format\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Redirects the diversity question to the real-variation gate (distinct opening visuals, wording-only siblings merged) and the 3-opening concept-distinct shipping floor",
+        "evidence": "\"Real diversity is checked by the skill's actual **variation gate**...Count concept-distinct, gate-passing openings against the **3-opening shipping floor**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not offer a compromise such as adopting her weights as a starting point - the refusal to rank dimensions stands as the finding",
+        "evidence": "\"Don't adopt the spreadsheet as designed\" \u2014 no compromise offering her weights as a partial starting point is made anywhere.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes what may legitimately be ranked - candidates pairwise, and revision options by cost - from the banned ordering of scoring dimensions",
+        "evidence": "The transcript distinguishes pairwise candidate ranking from dimension weighting, but never discusses ranking revision options by cost within this section.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the percentage weighting of the seven scoring dimensions, refusing to endorse any importance order or weights among them",
+        "evidence": "The fix proposed keeps a weighted sum for the non-gated dimensions: 'the weighted sum for the remaining tradeable dimensions (time-to-signal, specificity, legibility, audience qualification, placement fit)' \u2014 weights are still endorsed for 5 of 7 dimensions, not refused.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives the evidential reason: attention metrics correlate roughly -0.19 with ROAS (hold rate -0.10), so no evidence supports one dimension returning more performance per unit of effort than another",
+        "evidence": "No correlation statistic is cited anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a printed weighting would steer real production hours and test budget on invented precision",
+        "evidence": "The closest statement is 'the 30% and 25% slots are effectively however the scorer feels that day' and 'this is an untested opinion dressed as a scoring system' \u2014 does not explicitly connect to steering production hours or test budget.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the 0-100 composite sum: bands are evidence for pairwise comparison, never arithmetic to total",
+        "evidence": "The proposed fix retains a composite structure (gates plus a weighted sum), not a rejection of summing scores into a total.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the only defensible dimension weighting is account-specific, re-derived from the account's own past winners after calibration fails - never a default written into a system",
+        "evidence": "No such statement; instead the recommendation is to backtest the existing formula ('has this formula been run against past hooks with known performance... backtest it'), not to derive weights solely from account-specific past winners as the only defensible source.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps pairwise candidate ranking as the legitimate ranking and explains why: the same judge compares two concrete openings so the judge's bias applies to both sides and cancels",
+        "evidence": "No discussion of pairwise ranking methodology or bias-cancellation reasoning appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects '7 of 8 hook types covered' as evidence the batch is diverse or ready to ship",
+        "evidence": "'\"7 of 8 hook types covered\" does not prove diversity \u2014 it's close to a mathematical certainty.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that hook taxonomies are naming and diagnostic vocabulary, never a scoring axis",
+        "evidence": "The transcript instead treats type-count as a legitimate (if currently misused) analytical signal, recommending a 'count-per-type table' rather than declaring taxonomy should never be a scoring axis at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites poor inter-rater reliability and overlapping, non-falsifiable category boundaries as the reason taxonomy tagging cannot be scored",
+        "evidence": "No mention of inter-rater reliability or category-boundary overlap issues anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Redirects the diversity question to the real-variation gate (distinct opening visuals, wording-only siblings merged) and the 3-opening concept-distinct shipping floor",
+        "evidence": "The diversity discussion stays entirely within the hook-type-taxonomy frame (count-per-type, pigeonhole principle); no mention of a real-variation gate or 3-opening shipping floor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not offer a compromise such as adopting her weights as a starting point - the refusal to rank dimensions stands as the finding",
+        "evidence": "A compromise is explicitly offered: 'Fix: split the model into (a) pass/fail gates for brand timing and promise continuity... and (b) the weighted sum for the remaining tradeable dimensions' \u2014 this retains her weighting scheme for most dimensions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes what may legitimately be ranked - candidates pairwise, and revision options by cost - from the banned ordering of scoring dimensions",
+        "evidence": "No such distinction is drawn; pairwise candidate ranking is never discussed.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Uses the consumer five-role vocabulary (initiator, influencer, decider, buyer, user) or an explicit subset of it for the household map",
+        "evidence": "The transcript labels roles as 'Researcher-champion (does the homework)' and 'Contract-risk co-decider (worried about lock-in)' \u2014 custom labels, not the initiator/influencer/decider/buyer/user vocabulary. The word 'decider' appears only in generic prose ('genuine second decider', 'single decider'), never as part of the five-role framework applied to label distinct roles.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States what carries over from organizational buying: the user often is not the approver, each decider needs a different message, and one unconvinced member can veto",
+        "evidence": "No statement addresses 'user is not the approver' or veto power of an unconvinced member. The transcript's carryover discussion instead cites a different B2B finding ('no-decision... beats losing to a competitor as the real threat on big-ticket purchases'), not the three items specified in this rubric item.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States at least two things that do not transfer: no procurement, legal, or security review; no career risk (the fear is personal and financial); personal money rather than company money; reviews and peers instead of RFPs",
+        "evidence": "Sequencing notes state 'there's no problem-identification-only vs. validation-only split like B2B has (no procurement/legal/security stage here).' The Personal risk column frames both roles' fears as personal/household-financial ('Championing a purchase the household later finds out was overpriced or oversized', 'Being the one who \"let\" the household sign something bad'), and the evidence note contrasts review mining with 'no closed-won/lost CRM diff to fall back on' as B2B would have.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends role-differentiated creative shown to one shared household audience instead of trying to isolate each partner",
+        "evidence": "\"What actually works per the skill's household-purchase section: role-differentiated creative into one shared household audience, not attempted person-level isolation... let frequency capping do the work of getting both messages in front of both people.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States household-graph and shared-device targeting is imprecise and unquantified",
+        "evidence": "\"CTV household graphs resolve to a household (an address, an IP cluster, a device cluster), not to a verified individual inside it... that's a lean, not a guarantee \u2014 both partners can and will see whatever plays on the household's screen.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to build a decision-maker map for the $89 tune-up offer, stating routine purchases have one decider and the mapping is overhead",
+        "evidence": "\"Should you build the same mapping for the $89 duct-cleaning tune-up? No \u2014 that's overhead here... $89 with no contract, no financing, no multi-year commitment is a routine maintenance purchase... Treat it as single-decider... One broad message, no role split, no separate targeting exercise.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Confirms the $14K system replacement qualifies as a high-consideration category with a genuine second decider",
+        "evidence": "\"Model applied: multi-decider consumer purchase, not B2B. Full-system replacement at $14K is a high-consideration home-improvement category with a genuine second decider \u2014 squarely the category this model is meant for.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Grounds the roles in the 220 reviews and labels each role evidenced or hypothesis",
+        "evidence": "\"Evidence source used: review mining (your 220 reviews)... I'm marking both roles below as hypothesis, not evidenced, until you can say roughly what fraction of the 220 reviews actually shows this two-person split.\" Both table rows list 'Hypothesis \u2014 user-reported pattern from 220 reviews, not yet quantified' under Evidence.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not import B2B committee statistics (such as 6-10 decision makers or CFO-approval rates) into the household map",
+        "evidence": "No mention of B2B statistics like decision-maker counts or CFO-approval rates anywhere in the transcript; the household is explicitly scoped to 'two-decider, per your review pattern' with no imported B2B figures.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Weights the contract-worried partner's angle toward risk reduction, such as warranty terms or contract safeguards, drawn from the stated fear of lock-in",
+        "evidence": "\"Weight the contract-risk angle toward risk-reduction, not urgency... Risk-reduction, not urgency: no-pressure quote, plain-language contract terms, licensing/insurance, third-party review proof\" and 'Proof / offer type: Warranty/terms one-pager + aggregate review score, ungated.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fills per-role fields including a messaging angle and a proof/offer type for each surviving household role",
+        "evidence": "The Role map table includes 'Messaging angle' and 'Proof / offer type' columns filled for both Researcher-champion ('Comparison/sizing transparency...', 'Ungated sizing/cost guide or comparison calculator') and Contract-risk co-decider ('Risk-reduction, not urgency...', 'Warranty/terms one-pager + aggregate review score, ungated').",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Uses the consumer five-role vocabulary (initiator, influencer, decider, buyer, user) or an explicit subset of it for the household map",
+        "evidence": "The transcript only uses ad-hoc labels like 'the researcher' and 'the contract-wary one' / 'risk-averse spouse' \u2014 it never uses or subsets the initiator/influencer/decider/buyer/user vocabulary anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States what carries over from organizational buying: the user often is not the approver, each decider needs a different message, and one unconvinced member can veto",
+        "evidence": "The transcript recommends 'write creative that answers both in 15 seconds' (differentiated messaging) but never frames this as carrying over from B2B/organizational buying, and never states that the user is often not the approver or that one unconvinced member can veto the purchase.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States at least two things that do not transfer: no procurement, legal, or security review; no career risk (the fear is personal and financial); personal money rather than company money; reviews and peers instead of RFPs",
+        "evidence": "No mention of procurement, legal/security review, career risk, personal vs company money, or RFPs vs reviews/peers as things that don't transfer from B2B buying; the transcript never draws this organizational-buying contrast at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends role-differentiated creative shown to one shared household audience instead of trying to isolate each partner",
+        "evidence": "'one ad, two messages, aimed at the household screen... write creative that answers both in 15 seconds... That's a copywriting fix, not a targeting-infrastructure fix, and it reaches both spouses on the same screen without needing to resolve who's who.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States household-graph and shared-device targeting is imprecise and unquantified",
+        "evidence": "'their audience graphs resolve to household (IP, device ID, ACR data), not the individual sitting on the couch. One shared TV, one ad slot, no way to know which spouse is watching. Any vendor pitching \"target the husband vs. the wife on the same Roku\" is overselling what ACR data actually resolves.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to build a decision-maker map for the $89 tune-up offer, stating routine purchases have one decider and the mapping is overhead",
+        "evidence": "'No.' followed by 'A duct-cleaning tune-up is a single-decision-maker, low-consideration purchase... The CAC from any identity-resolution or dual-persona campaign infrastructure won't pencil out against an $89 ticket.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Confirms the $14K system replacement qualifies as a high-consideration category with a genuine second decider",
+        "evidence": "Contrasted explicitly against the tune-up: the tune-up is called 'a single-decision-maker, low-consideration purchase' while the $14K item is treated throughout as needing 'two messages' for 'one spouse researches, one spouse fears getting locked in', implying a genuine second decider on a higher-consideration purchase.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Grounds the roles in the 220 reviews and labels each role evidenced or hypothesis",
+        "evidence": "'Since your reviews already show the pattern \u2014 one spouse researches, one spouse fears getting locked in' grounds the roles in reviews, but no role is explicitly labeled as 'evidenced' or 'hypothesis'; instead it suggests further review mining is still needed ('mine those 220 reviews for the actual language each persona uses... Happy to do that pass if you share the review export').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not import B2B committee statistics (such as 6-10 decision makers or CFO-approval rates) into the household map",
+        "evidence": "No mention anywhere in the transcript of B2B committee size figures, CFO approval rates, or any organizational decision-maker statistics.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Weights the contract-worried partner's angle toward risk reduction, such as warranty terms or contract safeguards, drawn from the stated fear of lock-in",
+        "evidence": "'\"fixed-price, no-pressure, cancel-anytime consult\" language for the contract-wary one' and 'words like \"locked in,\" \"pressured,\" \"fine print\"' directly ties the contract-worried persona's messaging to contract/risk-reduction safeguards.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fills per-role fields including a messaging angle and a proof/offer type for each surviving household role",
+        "evidence": "'comparison/efficiency numbers for the researcher, \"fixed-price, no-pressure, cancel-anytime consult\" language for the contract-wary one' and later 'financing calculator to one, no-obligation-quote reassurance to the other' \u2014 each role gets a distinct messaging angle plus a concrete proof/offer type.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

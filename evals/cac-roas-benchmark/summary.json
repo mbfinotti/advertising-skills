@@ -1,0 +1,319 @@
+{
+  "repo": "advertising-skills",
+  "skill": "cac-roas-benchmark",
+  "scenarios": 10,
+  "expectations_total": 123,
+  "expectations_subjective": 1,
+  "expectations_objective": 122,
+  "pass_rate_with_skill_pct": 91.1,
+  "pass_rate_without_skill_pct": 52.8,
+  "delta_pp": 38.3,
+  "uplift_multiplier": 1.73,
+  "trigger_accuracy_pct": 90.5,
+  "trigger_queries": 116,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Proposes cohort measurement: group leads by month generated and measure revenue at 90/180/365 days"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that blended CAC is always lower than paid CAC when organic acquisition exists, so part of the apparent improvement is purely definitional"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Warns that a fully-loaded figure shown to a board becomes a reported number finance has to own, and redefining it later is a restatement - so the definition must be agreed with finance"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Names the 4:1 rule's status: no traceable author, often misattributed to a 2016 Nielsen study, and mathematically just break-even at a 25% margin - not this business's 55%"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Distinguishes blended ROAS from MER by their denominators (total paid spend versus total marketing spend) when discussing the quoted 4x targets"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sizes the gap to external medians as context only, never as the basis of the verdict"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes that December must be compared against a prior December, not against November, because seasonality alone can invert a verdict"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Names reacting to a CAC bump by spreading spend into untested channels as the more common failure, compared with staying too long in a working channel"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Notes that measuring marginal CAC takes a quarter and deliberate unrecoverable test spend, and that it serves scaling decisions rather than health verdicts"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Requests longer trailing history and a seasonality check before reading two data points as a trend"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Recommends the standing investment: contribution margin costs real effort once and near-zero every period after, scheduled for when finance frees up"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Computes blended ROAS as 240,000 / 96,000 = 2.5 and labels it as the blended variant, distinct from the dashboard figure"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Names the 4:1 rule as folklore with its origin: no traceable author, often misattributed to a 2016 Nielsen study that says no such thing"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that 4:1 is simply break-even at a 25% contribution margin, and places this business's own 2.63 break-even next to it"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The verdict rests on break-even (rung 1) and the trailing history (rung 2); the ~2 ecommerce median is used only as context, never to set the verdict"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Runs or explicitly requests a mix-shift check before treating the January-July MER decline as a real trend"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Any external median cited carries publisher, year, sample, and the variant it measured"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Refuses to endorse scaling in this run and hands the pause/reallocate decision off to a spend-guardrails or budget-allocation workflow rather than prescribing budget moves itself"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Returns insufficient evidence as the verdict state, not unhealthy or catastrophe"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags the First Page Sage $239 as a combined organic-plus-paid figure from a sample the agency itself discloses as roughly 75% organic-weighted, making it a variant mismatch against paid-only spend"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Computes CPL as 60,000 / 500 = $120, labeled with variant, window, and source"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Computes break-even CPL as ACV x lead-to-close rate: 18,000 x 1.5% = $270"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Computes cost per SQL as 60,000 / 40 = $1,500"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Labels the CPL and cost-per-SQL reads as interim signals while the cohort is immature, explicitly not verdicts"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Proposes cohort measurement: group leads by month generated and measure revenue at 90/180/365 days"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Names exactly what would unlock the verdict: the April cohort reaching maturity"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Computes payback per plan rather than presenting a single blended payback figure"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Keeps the gross-margin term in the payback formula: monthly gross profit per customer is $10.50 on Basic (15 x 0.70) and $69.30 on Pro (99 x 0.70)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Reports Basic payback at approximately 37 months"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Reports Pro payback at approximately 5.6 months"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Does not report the margin-free figures (~26 months Basic, ~3.9 months Pro) that come from dividing CAC by the raw subscription price"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Names the 12-month payback rule as David Skok, 2011 - a rule of thumb tied to that era's fundraising conditions, never empirically validated"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Puts the business's own per-plan economics next to the quoted folk target instead of deleting or simply endorsing it"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that one blended number describes neither plan, since the same CAC means order-of-magnitude different payback at $15/month versus $99/month"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Delivers a separate reading per plan segment (Basic problematic, Pro comfortable) rather than a single verdict"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Every figure carries a variant label, window, and data source"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags that raw payback assumes the customer survives the payback window, and asks for retention or applies a discounted-payback view given the ~37-month Basic figure"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that renormalising is the right move here because the missing channel is small and its size is known, with withholding the blended figure named as the fallback"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Runs or explicitly requests a mix-shift check before declaring the April-October downtrend real"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Reads the history as a multi-period deteriorating trend pending the mix-shift confirmation"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that blended CAC is always lower than paid CAC when organic acquisition exists, so part of the apparent improvement is purely definitional"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends fully-loaded CAC (S&M including salaries, tooling, agency, creative) as the variant a board or investor audience expects"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Warns that a fully-loaded figure shown to a board becomes a reported number finance has to own, and redefining it later is a restatement - so the definition must be agreed with finance"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Withholds or gates any health judgment on break-even inputs and history rather than judging health from the CAC levels alone"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Names the 4:1 rule's status: no traceable author, often misattributed to a 2016 Nielsen study, and mathematically just break-even at a 25% margin - not this business's 55%"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Names 'MER above 4, 5-8 at scale' as a Taylor Holiday / Common Thread Collective stated heuristic never measured across a sample"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Shows that the same ROAS means different profit at different margins (for example 4x yields about $1.40 profit per ad dollar at 60% margin and $0.00 at 25%, or the equivalent computation at 55%)"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Does not adopt the ~2 median as the target, and any median quoted carries publisher, year, sample, and the variant measured"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Hands off setting the actual target or floor as written policy to a spend-guardrails workflow instead of declaring a policy number itself"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends the business's own trailing history (4-8 prior periods, same definition) as the second reference and asks for it"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Attaches publisher, year, and sample to any published payback median it cites"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Names the 3:1 LTV:CAC rule as David Skok's own figure from the early 2010s, a self-admitted guess, worth at most a secondary check"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Asks which CAC variant and spend lines feed the payback figure before comparing it to any external median"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Computes blended CAC as 140,000 / 3,800, approximately $37, labeled"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Computes first-order contribution as AOV x margin (78 x 0.42, approximately $33) and explicitly states the verdict is contingent on the repeat-purchase rate because CAC exceeds it"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Requests 4-8 prior periods of the same metrics as the trailing-history reference before finalizing the verdict"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes that December must be compared against a prior December, not against November, because seasonality alone can invert a verdict"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Declines to make the 30% December increase decision in this run and hands the budget move off to an allocation, scaling, or guardrails workflow"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "States the decision rule for diversifying: test a new channel only once the current channel's marginal CAC exceeds what the next channel could realistically deliver - and marginal CAC has not been measured here"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Establishes the variant of the $38-to-$46 figure as platform-attributed paid CAC and treats it as claimed rather than causal"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Names reacting to a CAC bump by spreading spend into untested channels as the more common failure, compared with staying too long in a working channel"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Notes that measuring marginal CAC takes a quarter and deliberate unrecoverable test spend, and that it serves scaling decisions rather than health verdicts"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Returns at most a watch state with a named next-period question, not an unhealthy verdict and not a reallocation instruction"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Hands the actual budget reallocation decision off to an allocation or channel-selection workflow"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Names the Friday deadline's effect on scope: the run stays on the near-zero-effort variants (blended CAC, MER) and any fully-loaded CAC or margin rebuild is deleted from this run and said so"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Does not substitute an external published benchmark to stand in for the missing break-even"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Does not assume or invent a margin figure (for example a 'typical SaaS' 75-80%) to force a verdict out"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Recommends the standing investment: contribution margin costs real effort once and near-zero every period after, scheduled for when finance frees up"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Includes a definitions record covering the intake answers and naming the variants this run deleted or deferred"
+      }
+    ]
+  }
+}

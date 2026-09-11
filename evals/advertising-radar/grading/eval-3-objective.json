@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "A podcast is promoted into the weekly core because the commute makes audio nearly free",
+        "evidence": "\"Ecommerce Playbook ... audio ... 10 (real runtime ~30\u201340 min, ridden on a warehouse leg)\" and \"Perpetual Traffic ... audio ... 10 (real runtime ~45\u201360 min, ridden on a second leg)\" both in Weekly core.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The commute re-rank is stated explicitly as what moved the podcast up",
+        "evidence": "\"**The thing that reshapes this list: your commute.** ... Podcasts ride it essentially free \u2014 I've counted them at a fraction of their real runtime against your budget\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A news roundup or daily digest holds a top slot in the weekly core",
+        "evidence": "\"PPC Land ... Daily roundup; the single biggest budget compressor \u2014 one read replaces several platform blogs\" listed first.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "DTC-ecosystem sources are recommended, and B2B-ecosystem sources (LinkedIn Ads specialists, B2B demand-gen communities) are absent",
+        "evidence": "Foxwell Digital, Common Thread Collective, Perpetual Traffic are DTC-oriented; no LinkedIn specialists or B2B demand-gen communities appear.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Google's official ads blog is present for the bought Google channel",
+        "evidence": "\"Google Ads & Commerce blog \u2014 blog.google/products/ads-commerce | text | Google Shopping\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An official Meta business/news source is present for the bought Meta channel",
+        "evidence": "\"Meta for Business news \u2014 facebook.com/business/news | text | Meta | 5 | Official Meta product notes\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No LinkedIn, TikTok, or Microsoft official platform sources appear",
+        "evidence": "None of these platforms' official blogs appear anywhere in the tables.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attention costs are priced as orders of magnitude (minutes, tens of minutes, most of an hour) rather than invented exact per-episode figures",
+        "evidence": "\"(real runtime ~30\u201340 min...)\" and \"(real runtime ~45\u201360 min...)\" \u2014 ranges, not fabricated precise figures.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 60",
+        "evidence": "\"**Estimated weekly minutes: ~55 of 60**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Roughly the last tenth of the budget is reserved for one community, justified as the slot that surfaces new sources",
+        "evidence": "\"r/PPC ... 5 (skim) | The community slot ... This is what keeps the list from going stale next quarter\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A bench of 2-3 substitutes is named",
+        "evidence": "Bench lists Optmyzr blog, Jon Loomer, CTC Coach's Corner blog, Foxwell Founders community as named substitutes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a what-they're-selling flag",
+        "evidence": "Every row has a filled 'Selling' column, e.g. \"agency (CTC)\", \"agency (Tier 11)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a status and date",
+        "evidence": "Every row has a 'Status + date' column, e.g. \"active, Aug 25, 2026 (Ep. 805)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No multi-day events occupy the weekly budget; events are absent or explicitly excluded for this budget",
+        "evidence": "\"Shoptalk ... optional, not costed against your weekly cap\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "A podcast is promoted into the weekly core because the commute makes audio nearly free",
+        "evidence": "'Drive time (untimed, ~160 min/week ...) \u2014 podcasts. This is dead time either way, so it doesn't count against your cap and can run longer without threatening the habit.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The commute re-rank is stated explicitly as what moved the podcast up",
+        "evidence": "'This is dead time either way, so it doesn't count against your cap and can run longer without threatening the habit.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A news roundup or daily digest holds a top slot in the weekly core",
+        "evidence": "Marketing Brew occupies the third row (10 min) of the reading table, after platform changelogs (5 min) and Common Thread Collective (15 min), not the top slot.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "DTC-ecosystem sources are recommended, and B2B-ecosystem sources (LinkedIn Ads specialists, B2B demand-gen communities) are absent",
+        "evidence": "Sources are Common Thread Collective, Marketing Brew, Foreplay, Modern Retail \u2014 no LinkedIn Ads or B2B demand-gen sources appear.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Google's official ads blog is present for the bought Google channel",
+        "evidence": "'Google Ads Help \"What's new\" + Merchant Center announcements \u2014 free, official, same deal.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An official Meta business/news source is present for the bought Meta channel",
+        "evidence": "'Meta Business changelog / Ads Help updates \u2014 free, no pitch, official platform notices.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No LinkedIn, TikTok, or Microsoft official platform sources appear",
+        "evidence": "No LinkedIn, TikTok, or Microsoft source appears anywhere in the reading list or podcast queue.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attention costs are priced as orders of magnitude (minutes, tens of minutes, most of an hour) rather than invented exact per-episode figures",
+        "evidence": "'Drive time (untimed, ~160 min/week across both warehouse round-trips)' \u2014 an order-of-magnitude estimate, not a per-episode figure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 60",
+        "evidence": "'Reading budget breakdown (fits in 60 min)' with a table summing to 60 minutes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Roughly the last tenth of the budget is reserved for one community, justified as the slot that surfaces new sources",
+        "evidence": "No community source or slot appears anywhere in the reading table or podcast queue.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A bench of 2-3 substitutes is named",
+        "evidence": "No bench or substitute list is provided anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a what-they're-selling flag",
+        "evidence": "'Common Thread Collective ... sells media-buying/creative services for DTC brands' and similar disclosures for every other entry.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a status and date",
+        "evidence": "Only a general disclaimer is given ('I wasn't able to re-verify these against live search this session ... from my training knowledge as of January 2026') with no per-entry status or date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No multi-day events occupy the weekly budget; events are absent or explicitly excluded for this budget",
+        "evidence": "No event or conference entry appears anywhere in the reading list, podcast queue, or habit description.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

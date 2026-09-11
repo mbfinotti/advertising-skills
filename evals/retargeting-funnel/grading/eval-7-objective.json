@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Fixes the bought-grinder problem with purchase-event suppression on the dynamic ads, not with converter audience exclusion alone",
+        "evidence": "\"No purchase-event suppression at the catalogue/SKU level on the dynamic ad campaign ... they need a purchase-event-to-catalogue-ID suppression\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds catalogue-level exclusions (including out-of-stock items) so the catalogue cannot serve items the user already bought or cannot buy",
+        "evidence": "The fix only builds EXCL_CATALOG_DURABLE_540 and EXCL_CATALOG_CONSUMABLE_60 for already-purchased items; out-of-stock suppression is never actually built, only referenced in a quoted failure-mode label 'bought/out-of-stock items'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the two mechanisms: audience exclusion controls who sees ads, catalogue suppression controls which items are shown, which is why the existing past-purchasers exclusion did not stop the grinder ads",
+        "evidence": "\"DPA/Advantage+ catalogue ads serve per-product, keyed to the catalogue feed \u2014 they need a purchase-event-to-catalogue-ID suppression, which the skill flags as a distinct fix from a general converter exclusion\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Audits that converter exclusion actually exists on every stage and every channel rather than trusting that the agency's old setup covers everything",
+        "evidence": "\"Repeat the audit on every other channel running a purchaser exclusion (Google Ads remarketing lists cap at 540 days regardless \u2014 check it isn't sitting at that ceiling either).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the shrinking prospecting reach as an over-long converter exclusion: the buyer pool accumulates and silently suppresses prospecting quarter over quarter",
+        "evidence": "\"A converter-exclusion audience with no window discipline only ever grows ... every purchaser permanently carved out of that pool is a real percentage of your addressable market gone.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects the shrinkage to platform retention changes: Meta extended purchase-event audience retention to 730 days, auto-applied to existing audiences, so a purchaser exclusion built on it now suppresses about two years of buyers",
+        "evidence": "\"Meta extended the retention ceiling on purchase-event website audiences from 180 to 730 days ... existing purchase audiences were auto-updated unless the account explicitly opted out.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets an explicit written converter-exclusion window sized to the roughly 2-month repurchase cycle (on the order of 90-180 days), not an open-ended exclusion",
+        "evidence": "\"Rebuild the exclusion as EXCL_PURCH_180 \u2014 180 days (3\u00d7 your 60-day reorder cycle, giving margin without choking prospecting...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names both failure directions of the window: too short re-ads recent buyers, too long silently chokes prospecting reach",
+        "evidence": "The transcript only discusses the too-long/accumulation failure direction; it never states that too-short a window would re-ad recent buyers.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds a standing review note to re-audit exclusion windows whenever a platform extends its retention defaults",
+        "evidence": "\"Diary this: re-audit exclusion windows every time a platform announces a retention-ceiling change, not just once.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves past purchasers beyond the exclusion window into a win-back or replenishment tier (the 2-month reorder cycle is a cross-sell or refill opportunity), outside the conversion ladder",
+        "evidence": "\"RTG_REPLENISH_45-75 | Consumable purchasers, 45\u201375d post-purchase\" and \"RTG_WINBACK_90-180\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Orders the fixes by waste removed per unit of effort: the suppression and audience-definition edits (minutes per channel) come first, before any funnel redesign",
+        "evidence": "\"This week's action order: (1) audit ... (2) rebuild ... (3) add ... All three are minutes-to-an-hour of work each and stop the bleeding on contact\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes an auditable naming convention separating inclusion and exclusion audiences so any stage reads as include X minus Y minus converters",
+        "evidence": "\"naming convention: RTG_<depth>_<window> include, EXCL_<what>_<window> exclude\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Verifies that the purchase event itself fires correctly as a prerequisite, since both the dynamic-ad suppression and the exclusion depend on it",
+        "evidence": "\"confirm purchase and catalogue-ID events are firing correctly before wiring the new exclusions (this is a hard prerequisite; don't build audiences on events you haven't checked).\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Fixes the bought-grinder problem with purchase-event suppression on the dynamic ads, not with converter audience exclusion alone",
+        "evidence": "'enable the native \"exclude people who already purchased this product\" setting, or build it manually: a custom audience of Purchase events with matching content_ids, excluded from that product's ad set'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds catalogue-level exclusions (including out-of-stock items) so the catalogue cannot serve items the user already bought or cannot buy",
+        "evidence": "Only purchase-based product suppression is discussed; out-of-stock catalogue exclusion is never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the two mechanisms: audience exclusion controls who sees ads, catalogue suppression controls which items are shown, which is why the existing past-purchasers exclusion did not stop the grinder ads",
+        "evidence": "'your past-purchasers exclusion suppresses prospecting campaigns at the account/customer level. It does nothing for Dynamic Product Ads (DPA), which retarget based on catalog-level events... not on whether that specific SKU was already purchased.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Audits that converter exclusion actually exists on every stage and every channel rather than trusting that the agency's old setup covers everything",
+        "evidence": "Questions to agency include 'Are DPA/catalog campaigns using a native purchase-suppression setting, or none at all?' and 'Are any other exclusion audiences stacked on top of past-purchasers in prospecting?'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the shrinking prospecting reach as an over-long converter exclusion: the buyer pool accumulates and silently suppresses prospecting quarter over quarter",
+        "evidence": "'the agency's past-purchasers exclusion is almost certainly an unbounded, all-time list... Every quarter you acquire new customers, so the excluded pool only grows.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects the shrinkage to platform retention changes: Meta extended purchase-event audience retention to 730 days, auto-applied to existing audiences, so a purchaser exclusion built on it now suppresses about two years of buyers",
+        "evidence": "No mention of any Meta retention-policy change or 730-day figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets an explicit written converter-exclusion window sized to the roughly 2-month repurchase cycle (on the order of 90-180 days), not an open-ended exclusion",
+        "evidence": "'On consumables, do the opposite: suppress for ~50 days (just under your 2-month reorder cycle), then deliberately let it lapse'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names both failure directions of the window: too short re-ads recent buyers, too long silently chokes prospecting reach",
+        "evidence": "The text extensively covers the 'too long chokes prospecting' direction but never frames a 'too short' failure mode in general terms.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds a standing review note to re-audit exclusion windows whenever a platform extends its retention defaults",
+        "evidence": "No such standing review trigger tied to platform policy changes is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Moves past purchasers beyond the exclusion window into a win-back or replenishment tier (the 2-month reorder cycle is a cross-sell or refill opportunity), outside the conversion ladder",
+        "evidence": "'let it lapse so a reorder-reminder ad picks the customer back up around day 55\u201360. This turns your retargeting into a reorder engine instead of a nuisance.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Orders the fixes by waste removed per unit of effort: the suppression and audience-definition edits (minutes per channel) come first, before any funnel redesign",
+        "evidence": "Priority order: 'This week: verify Purchase event content_ids match the catalog, add CAPI if missing' before 'Next 2 weeks: split catalog... rebuild past-purchasers exclusion'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes an auditable naming convention separating inclusion and exclusion audiences so any stage reads as include X minus Y minus converters",
+        "evidence": "No naming convention is proposed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Verifies that the purchase event itself fires correctly as a prerequisite, since both the dynamic-ad suppression and the exclusion depend on it",
+        "evidence": "'Verify your Purchase event (pixel or CAPI) actually passes content_ids matching the catalog product ID... this is the single most common cause of this exact complaint.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

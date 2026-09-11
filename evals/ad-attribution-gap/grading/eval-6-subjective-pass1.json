@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Assigns the chosen next step an owner and stops there, rather than designing the study or implementation inline.",
+        "evidence": "No owner is assigned to any recommended step \u2014 no role, team, or person is named as accountable. The closest gestures are routing language ('hands off to your conversion-tracking work', 'a Bucket 3 handoff to your tracking-fix work') and a conditional future requirement ('someone is named to own a permanent modeling refresh cadence'), none of which assign the chosen next step to anyone. The answer then does the opposite of stopping: it designs the implementation inline \u2014 exact survey wording ('How did you hear about us / what made you book this demo?'), where to place it ('required field at th",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Assigns the chosen next step an owner and stops there, rather than designing the study or implementation inline.",
+        "evidence": "No owner is assigned to any step; the closest gestures are impersonal ('costs an analyst's time', 'worth a call with your LinkedIn rep'), and the response does the opposite of stopping: it designs the implementation and the study inline in full detail \u2014 a 4-step click-ID capture/CRM-persistence/dedup-table build, a named ordered checklist of leak hypotheses, specific lift-study mechanics (Google Conversion Lift ghost-ad holdout, LinkedIn/Nielsen partner study, campaign-level switchback fallback), an 8-12 week runtime, MMM identifiability and spend-threshold analysis ($250-300k/month, 4+ channe",
+        "score": 0,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

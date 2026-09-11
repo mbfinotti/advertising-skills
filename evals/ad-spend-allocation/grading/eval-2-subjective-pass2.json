@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Channels excluded from the plan get explicit rejection lines, and no channel is funded merely to keep a presence.",
+        "evidence": "All three excluded channels appear as explicit table rows with '$0 \u2014 rejected this cycle' and channel-specific reasons: TikTok ('Fails funding floor at any slice of remaining budget (~$7,500/mo needed; none left after Search + Meta)'), Pinterest ('Same floor failure. Qualitatively a strong long-term fit for cookware... but not affordable to test properly this cycle'), YouTube ('No sourced floor for video/auction algorithms in this framework, but same logic applies \u2014 $2,400 is very unlikely to buy enough weekly conversion volume'). None are silently dropped. The two funded lines are sized to st",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Channels excluded from the plan get explicit rejection lines, and no channel is funded merely to keep a presence.",
+        "evidence": "No channel is excluded and none is explicitly rejected: the plan funds all five requested channels at identical $2,400/mo parity (\"Splitting $12K five ways gives each channel $2,400/mo\"), which is precisely presence-funding rather than allocation by expected return. No rejection lines exist for any unfunded option (e.g. Reddit, Amazon Ads, email/SMS, affiliate) \u2014 they are simply never mentioned. The transcript does acknowledge the problem (\"~16 conversions/week per channel... below Meta's ~50/week ideal\", TikTok \"likely the noisiest channel\", YouTube \"can't launch without creative production t",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

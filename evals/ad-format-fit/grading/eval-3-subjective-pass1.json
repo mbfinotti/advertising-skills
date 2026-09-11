@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Picks substitute formats by efficiency inside the objective, not by cheapness",
+        "evidence": "The verdict table is explicitly \"Ordered by direct-response efficiency for this objective\" and the substitutions are justified structurally, not by price. When creator/UGC video is cut for the 10-day window, the replacement is another full-screen vertical video row (recut of the owned 2-min film into 3-4 9:16 pieces) \u2014 i.e. the same job on the same surface \u2014 rather than a downgrade to the cheapest asset; UGC is explicitly retained as \"correctly the top row for full-screen mobile awareness-through-conversion long-term\" with a sourcing plan for mid-sale/next cycle. The clearest anti-cheapness si",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Picks substitute formats by efficiency inside the objective, not by cheapness",
+        "evidence": "Format substitution is argued from audience-fit effectiveness rather than cost: the matrix maps each placement to the source that actually performs there, and the key line \u2014 'cold traffic wants native/UGC-feel, warm traffic ... tolerates and often prefers polished brand footage. Your anniversary sale audience is mostly warm \u2014 don't over-index on UGC just because it's trendy' \u2014 chooses brand-film cutdowns for warm slots on merit, not price. It also rejects a cheap substitution on effectiveness grounds ('Dialogue-driven 16:9 doesn't survive a straight center-crop ... the dialogue does nothing so",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

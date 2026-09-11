@@ -1,0 +1,190 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Removes the multi-hour unpaid take-home outright, rather than shortening it or making it optional",
+        "evidence": "'\u274c Multi-hour unpaid take-home (current format) \u2014 not on the ranked list at any position. It's the one format whose funnel cost... exceeds its signal. Replaced below.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the two withdrawals to the format: senior candidates decline unpaid exercises, silently shrinking the funnel",
+        "evidence": "'Your two withdrawals this month aren't a signal about this candidate pool \u2014 they're the documented failure mode... You're filtering out the people you most want.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the live screen-share account audit as the replacement, enabled by the panelist who can grade an audit in real time",
+        "evidence": "'It only wins here because of a constraint you already stated: your head of growth is a former agency buyer who's great at reading accounts live.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the exercise inside the interview, time-boxed to 60 to 90 minutes",
+        "evidence": "'Session design \u2014 75\u201390 minutes, inside the interview loop, no take-home, no 3-day window'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the paid trial from the menu by name because paid candidate work has no budget approval",
+        "evidence": "'\u274c Paid trial / paid consulting engagement \u2014 requires budget approval and pay terms. Deleted.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the job shadow on the same no-budget constraint",
+        "evidence": "'Paid trial, job shadow, multi-hour unpaid take-home: deleted, not ranked last, per the no-budget constraint and the sourced funnel-damage finding.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records the deleted formats by name in the packet so they cannot resurface as an unscoped round",
+        "evidence": "'### Deletions and promotions, named (per this skill's own discipline)' lists each format explicitly.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Specifies synthetic or anonymized account data for the exercise",
+        "evidence": "'Candidate screen-shares and audits the sanitized account copy live' / 'seed the copy account with one place where the data is genuinely insufficient'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires the grading rubric to exist before the first candidate attempt",
+        "evidence": "'### Rubric \u2014 write this before the first candidate sits down'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds deliberate ambiguity or insufficient data into the case and scores naming it as a top answer",
+        "evidence": "'A candidate who says \"I can't recommend a change here until this tracking gap is fixed\" passes with the top score.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Budgets explicit debrief time, treating reasoning walked aloud as more signal than the artifact",
+        "evidence": "'### Debrief Agenda (15 min, right after the session) The debrief carries more signal than anything written down, because reasoning walked aloud exposes method a polished deliverable hides.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the paid trial as the option the ranking starves, with a condition that would promote it, such as a senior hands-on seat, an unverifiable portfolio, or a candidate already contracting elsewhere",
+        "evidence": "Paid trial is deleted 'by name' but no promotion condition (e.g., senior seat, unverifiable portfolio, candidate contracting elsewhere) is given anywhere in this transcript for reviving it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Offers the data-table case as the near-equivalent in-interview alternative",
+        "evidence": "'Data-table case: your fallback if scheduling ever prevents the live session \u2014 same rubric applies, same anonymized-data rule, ties the live audit on effort and signal-per-hour'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires anonymization of former-employer account data, scored as part of the answer, wherever an own-work presentation is used as fallback",
+        "evidence": "Own-work presentation is never mentioned as a format anywhere in this transcript; only live audit and data-table case appear.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the live format defeats third-party audit tooling and generated output",
+        "evidence": "'This defeats both AI-generated audits and third-party audit tools \u2014 you're watching method, not output.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Removes the multi-hour unpaid take-home outright, rather than shortening it or making it optional",
+        "evidence": "\"The fix: replace the take-home with a live working session... No prep deliverable, no take-home.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the two withdrawals to the format: senior candidates decline unpaid exercises, silently shrinking the funnel",
+        "evidence": "\"Two withdrawals this cycle isn't noise \u2014 it's the market telling you the ask is priced wrong.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the live screen-share account audit as the replacement, enabled by the panelist who can grade an audit in real time",
+        "evidence": "\"You're sitting on an underused asset: a head of growth who reads accounts live, in real time. That's the actual skill you're hiring for. Test it live instead of grading homework.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the exercise inside the interview, time-boxed to 60 to 90 minutes",
+        "evidence": "\"Format: 75-minute scheduled call, screen-share, candidate + head of growth.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the paid trial from the menu by name because paid candidate work has no budget approval",
+        "evidence": "The transcript instead keeps a paid micro-project as a future option: \"if you ever want to A/B a paid micro-project for your top 1-2 finalists only... say $150-250 for a 2-hour scoped task... worth revisiting.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the job shadow on the same no-budget constraint",
+        "evidence": "Job shadowing is never mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records the deleted formats by name in the packet so they cannot resurface as an unscoped round",
+        "evidence": "Only the take-home is explicitly removed; paid trial and job shadow are not addressed as deleted formats.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies synthetic or anonymized account data for the exercise",
+        "evidence": "The export used is \"a read-only export (campaign structure, spend/ROAS by campaign, last 90 days)\" of the company's own real account, with no mention of anonymization or synthetic data.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires the grading rubric to exist before the first candidate attempt",
+        "evidence": "\"Written scoring rubric, locked before the call.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds deliberate ambiguity or insufficient data into the case and scores naming it as a top answer",
+        "evidence": "Not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Budgets explicit debrief time, treating reasoning walked aloud as more signal than the artifact",
+        "evidence": "The transcript values reasoning (\"you see reasoning under pressure, not just output\") but sets no distinct scheduled debrief slot, only \"Score immediately after each call.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the paid trial as the option the ranking starves, with a condition that would promote it, such as a senior hands-on seat, an unverifiable portfolio, or a candidate already contracting elsewhere",
+        "evidence": "\"if you ever want to A/B a paid micro-project for your top 1-2 finalists only (not all candidates)... worth revisiting once you see whether the live-session format alone stops the withdrawals.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers the data-table case as the near-equivalent in-interview alternative",
+        "evidence": "\"If you still want an async component... cap it at 30 minutes: 'Here's a screenshot of one campaign \u2014 write 3 bullet points on what you'd change and why.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires anonymization of former-employer account data, scored as part of the answer, wherever an own-work presentation is used as fallback",
+        "evidence": "Not present; no own-work/former-employer presentation fallback is discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the live format defeats third-party audit tooling and generated output",
+        "evidence": "Not mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

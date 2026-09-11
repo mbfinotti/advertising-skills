@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response rejects treating the Unbounce 6.6% / 10.9% medians as a target, presenting them as context only.",
+        "evidence": "\"the source document explicitly frames it as **context, never a target**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The rejection names the caveat: a vendor dataset, self-selected, with conversion definitions varying by page type.",
+        "evidence": "\"Unbounce's own report calls this a vendor, self-selected dataset where 'conversion' is defined differently per page type\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the speed sprint because the field Core Web Vitals already pass the 'good' thresholds.",
+        "evidence": "\"your own field data says don't book it... Your CrUX field data at p75 \u2014 LCP 2.1s, INP 140ms, CLS 0.04 \u2014 clears the Core Web Vitals 'good' bar on all three metrics\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response distinguishes lab data (Lighthouse) from field data (CrUX), treating field data as the deciding evidence.",
+        "evidence": "\"Lighthouse 68/100 is a lab score under throttled conditions... Your CrUX field data at p75... clears the Core Web Vitals 'good' bar\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Speed is filed under the not-a-problem section, with the point that speed work on a passing page steals priority from message and offer work.",
+        "evidence": "\"a dedicated speed sprint isn't supported by this data and would pull effort from the fixes above\" under \"NOT A PROBLEM\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any Core Web Vitals thresholds cited match LCP 2.5s or less, INP 200ms or less, CLS 0.1 or less, at the 75th percentile.",
+        "evidence": "\"thresholds: LCP \u22642.5s, INP \u2264200ms, CLS \u22640.1\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response weights devices by where the money is: it notes desktop carries 70% of revenue and scopes fixes to both devices rather than mobile-only.",
+        "evidence": "\"Fix 1 (message match): land \u2192 engage rate on paid search, mobile + desktop segmented.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response screens out the 'Submit' to 'Get my box' button tweak as too small to plausibly close a 2.3x CPA gap, and says so explicitly.",
+        "evidence": "\"A button-copy tweak does not close a multiple-of-target gap \u2014 no hour-scale fix does.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The hidden price (no price before checkout) is flagged as an offer-clarity or trust finding.",
+        "evidence": "\"Offer clarity - price hidden until checkout. Only defensible for high-ticket, call-booked offers\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response identifies that the actual ad was never supplied, and either requests it or marks the message-match check as blind or unverifiable without it.",
+        "evidence": "\"the ad copy wasn't supplied for this audit... it currently runs blind.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response still audits the pasted copy rather than stopping at meta-commentary.",
+        "evidence": "Full \"FIX NOW\" list with 6 ranked items is delivered.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift or forecast of reaching 10.9% is given anywhere in the response.",
+        "evidence": "\"Keep 10.9% as 'there's real headroom,' not as the number people are held to.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response rejects treating the Unbounce 6.6% / 10.9% medians as a target, presenting them as context only.",
+        "evidence": "\"Don't adopt it as-is... Use the benchmark as a sanity check, not a commitment.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The rejection names the caveat: a vendor dataset, self-selected, with conversion definitions varying by page type.",
+        "evidence": "\"Unbounce's benchmark blends lead-gen forms (one email field) with real purchase flows. A subscription meal kit checkout... carries far more friction than the median 'paid search' page in that dataset. You're not comparing like for like.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the speed sprint because the field Core Web Vitals already pass the 'good' thresholds.",
+        "evidence": "\"All three Core Web Vitals are passing, on mobile, where 78% of your traffic already lives... don't spend a month here.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response distinguishes lab data (Lighthouse) from field data (CrUX), treating field data as the deciding evidence.",
+        "evidence": "\"Lighthouse 68/100 is a lab score \u2014 synthetic run, throttled network... CrUX field data at p75 mobile... Field data should override lab score whenever they conflict.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Speed is filed under the not-a-problem section, with the point that speed work on a passing page steals priority from message and offer work.",
+        "evidence": "\"You're proposing a speed sprint to fix a problem your real users aren't experiencing... redirect that month to the pricing/copy tests above.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any Core Web Vitals thresholds cited match LCP 2.5s or less, INP 200ms or less, CLS 0.1 or less, at the 75th percentile.",
+        "evidence": "\"CrUX field data at p75 mobile: LCP 2.1s (green, <2.5s), INP 140ms (green, <200ms), CLS 0.04 (green, <0.1).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response weights devices by where the money is: it notes desktop carries 70% of revenue and scopes fixes to both devices rather than mobile-only.",
+        "evidence": "\"On mobile sessions vs desktop revenue (78%/70%)... Before touching the mobile page, pull cross-device/assisted-conversion paths (GA4 or equivalent).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response screens out the 'Submit' to 'Get my box' button tweak as too small to plausibly close a 2.3x CPA gap, and says so explicitly.",
+        "evidence": "\"Expect low single-digit relative lift, not a path to 10.9%. Don't let it be the only thing in flight\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The hidden price (no price before checkout) is flagged as an offer-clarity or trust finding.",
+        "evidence": "\"No price before checkout | \ud83d\udd34 Primary suspect | This is your highest-probability conversion killer... a paid-search visitor who can't see a price will price-check a competitor\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response identifies that the actual ad was never supplied, and either requests it or marks the message-match check as blind or unverifiable without it.",
+        "evidence": "No statement notes the ad copy itself was never supplied or that the message-match check is unverifiable without it; the response discusses matching \"the ad/keyword\" without flagging this gap.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response still audits the pasted copy rather than stopping at meta-commentary.",
+        "evidence": "The \"# Copy audit\" table evaluates headline, bullets, photo, CTA, FAQ accordion, and pricing directly.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift or forecast of reaching 10.9% is given anywhere in the response.",
+        "evidence": "\"Set target from your own baseline: e.g. 3.9% \u2192 5.5\u20136% next quarter via a defined test roadmap\" gives a specific percentage lift target.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

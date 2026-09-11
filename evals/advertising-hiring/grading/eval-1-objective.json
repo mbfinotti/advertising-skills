@@ -1,0 +1,190 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Names the rung as an explicit written decision before or at the head of the role definition",
+        "evidence": "'## 1. Rung decision\\n\\n**Performance marketer.**' appears as its own section immediately before '## 2. Role definition'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the performance-marketer generalist rung, overriding the user's proposed Meta-specialist media buyer",
+        "evidence": "'I'm not writing that req... Three facts push this off the Meta\u2011specialist track and onto performance marketer.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Grounds the override in the first-hire rule: the first dedicated hire owns measurement and channel choice, never a single channel",
+        "evidence": "'This is your first dedicated hire, not an addition to a team. Nobody currently owns measurement. A Meta buyer optimizes what's inside Meta's boundary \u2014 they don't stand up attribution from zero.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the unreconciled Shopify tracking as evidence the seat must own measurement",
+        "evidence": "'\"Conversion tracking is mostly right, I think \u2014 never reconciled against Shopify\" is the single biggest red flag in this packet... nobody should get spend authority against numbers nobody has validated.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a dedicated Meta buyer gets added alongside the generalist later once spend passes roughly $50k/month or three-plus channels run, rather than hired instead of the generalist now",
+        "evidence": "'that condition adds a buyer alongside an existing generalist, it doesn't replace one on a first hire... once measurement is owned and three channels are stable, a dedicated Meta buyer becomes a well\u2011justified second hire, not your first.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the growth-marketer rung as the option the default ordering starves, with the condition that would promote it",
+        "evidence": "'growth\u2011marketer rung \u2014 promote if lifecycle/conversion enters scope' and 'Not a growth marketer: mandate stops at paid + measurement, not conversion/lifecycle.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States which condition moved the pick off the default rung, or states that nothing did",
+        "evidence": "The rung decision section lists the three facts (first hire, 3 channels, unreconciled tracking) that moved it to performance marketer.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes a one-line mission for the role",
+        "evidence": "'Mission: Own paid media performance and measurement truth across Meta, Google, and TikTok \u2014 from validated tracking to a defensible ROAS/MER read the founder can trust without checking it themselves.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lists 3 to 6 ranked outcomes, each with a date",
+        "evidence": "Three outcomes listed with 'by day 30', 'by day 60', 'by day 120'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a measurement-validation outcome such as platform-versus-backend reconciliation among the top outcomes",
+        "evidence": "'Platform\u2011vs\u2011Shopify revenue reconciliation documented and conversion tracking validated, by day 30.' is outcome #1.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lists 4 to 6 competencies",
+        "evidence": "'Measurement & attribution ownership \u00b7 cross\u2011channel media judgment... \u00b7 creative\u2011testing discipline \u00b7 commercial reasoning... \u00b7 communication...' (5 competencies).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Separates must-haves (capped around 5 to 7) from nice-to-haves, with disqualifiers listed separately",
+        "evidence": "'Must\u2011haves (6):' ... '**Nice\u2011to\u2011haves:**' ... '**Disqualifiers (kept separate from scoring):**'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Excludes platform certifications from the must-have bar and from competence scoring",
+        "evidence": "'Certifications (Meta Blueprint, Google Skillshop): appear nowhere in scoring... don't reject a strong candidate over a missing one.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a TikTok channel verdict needs 3 to 6 months, against the producing-this-quarter pressure",
+        "evidence": "'channel verdicts realistically take 3\u20136 months (AJ Wilcox)... don't let a still\u2011unproven TikTok channel become the day\u201190 success bar.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fits the interview loop into the two rounds the panel can run",
+        "evidence": "'Rounds 2a\u20132c run back\u2011to\u2011back as one ~90\u2011minute session, matching the loop shape you asked for (2 rounds, realistic panel time).'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Names the rung as an explicit written decision before or at the head of the role definition",
+        "evidence": "\"I've scoped the role below as full-funnel performance owner, Meta-weighted \u2014 same person you were picturing, wider mandate\" appears before the Role definition table.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the performance-marketer generalist rung, overriding the user's proposed Meta-specialist media buyer",
+        "evidence": "\"'Meta media buyer' is the wrong title for what you're actually building... Meta being 70% of spend today argues for Meta expertise, not a Meta-only mandate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Grounds the override in the first-hire rule: the first dedicated hire owns measurement and channel choice, never a single channel",
+        "evidence": "The override is grounded in TikTok launch/in-house capability building (\"you want this to be a long-term in-house capability\"), not stated as a general first-hire rule combining measurement ownership and channel choice.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the unreconciled Shopify tracking as evidence the seat must own measurement",
+        "evidence": "\"Measurement \u2014 co-owns the tracking reconciliation with ops; owns keeping it correct going forward\" directly ties the Shopify/tracking issue to role scope.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a dedicated Meta buyer gets added alongside the generalist later once spend passes roughly $50k/month or three-plus channels run, rather than hired instead of the generalist now",
+        "evidence": "No mention of a $50k/month or channel-count threshold for adding a dedicated Meta buyer anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the growth-marketer rung as the option the default ordering starves, with the condition that would promote it",
+        "evidence": "No mention of a \"growth marketer\" rung anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States which condition moved the pick off the default rung, or states that nothing did",
+        "evidence": "No discussion of a default rung or what moved the pick off it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Writes a one-line mission for the role",
+        "evidence": "The role definition table lists Title/Reports to/Level/Spend owned but has no \"Mission\" line.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Lists 3 to 6 ranked outcomes, each with a date",
+        "evidence": "\"Days 1\u201314... Days 15\u201330... Days 30\u201360... Days 60\u201390\" each paired with concrete deliverables in the First 30/60/90 section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a measurement-validation outcome such as platform-versus-backend reconciliation among the top outcomes",
+        "evidence": "\"Days 1\u201314: Finish/validate the tracking reconciliation (if not already done via the paid audit), full account audit across Meta + Google\" is the first listed outcome.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lists 4 to 6 competencies",
+        "evidence": "Must-have list contains 5 bullet competencies (spend experience, DTC background, tracking fluency, creative briefing, communication).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Separates must-haves (capped around 5 to 7) from nice-to-haves, with disqualifiers listed separately",
+        "evidence": "Distinct \"Must-have,\" \"Strong plus,\" and \"Disqualifiers\" sections.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Excludes platform certifications from the must-have bar and from competence scoring",
+        "evidence": "No certification requirement appears anywhere in the Requirements section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a TikTok channel verdict needs 3 to 6 months, against the producing-this-quarter pressure",
+        "evidence": "The plan instead targets a kill/scale decision by Day 60 (\"Days 30\u201360: TikTok live, budget allocated to what's working, kill what isn't\") with no 3\u20136 month verdict warning.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Fits the interview loop into the two rounds the panel can run",
+        "evidence": "\"Hiring process (2 rounds, panel = you + Head of Ops)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Sets the primary decision metric to a CRM-fed pipeline-quality event (qualified/accepted lead), explicitly rejecting raw form fills as the decision metric",
+        "evidence": "\"Primary (decision metric): cost per CRM-qualified lead / qualified-lead rate, fed back from CRM \u2014 **not raw form fills**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats cheap form fills that sales rejects as a guardrail breach, not a win",
+        "evidence": "\"cheap form fills that sales rejects are a guardrail breach, not a win, and that's exactly the trap this budget/timeline sets\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declares the verdict for this structure as 'Directional read' and states it in the plan, refusing the statistical-significance framing",
+        "evidence": "\"**VERDICT: Directional read, delivery-limited, declared.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor on the form event at roughly $857/day per cell ($120 x 50 / 7) and shows the affordable cells sit far below it",
+        "evidence": "\"that floor is **$857/day per cell**. Your test budget ... gives each cell **~$214/day**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the cells as delivery-limited, meaning their numbers are unstable regardless of sample math",
+        "evidence": "\"Both cells stay delivery-limited for the entire test; the numbers won't stabilize regardless of the sample math.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Extends the judgment window to several weeks (roughly 4-6), pushing back on the three-week deadline for a qualified-lead read",
+        "evidence": "Option D: \"~6-8 weeks, ~2-3x current budget | Powered read at a 30-40% MDE, the honest middle ground\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Schedules a second look roughly one sales cycle (~4 months) after the creative verdict for pipeline or opportunity outcomes, instead of treating the in-window read as final",
+        "evidence": "\"Second look (mandatory, scheduled now, not skipped): opportunity-creation rate per cell at ~day 130 (one full sales cycle from launch)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds a lead-quality guardrail: lead-to-qualified rate compared against the account's own trailing median",
+        "evidence": "\"Guardrails: lead-to-qualified rate \u2265 account trailing median (30%)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the current 'automation' champion running concurrently as a control cell",
+        "evidence": "\"C01_ANG-automation-timesaving\" (control) \"current champion, relaunched fresh and concurrent (never compared to its historical account numbers)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale thresholds and a fixed stop before launch",
+        "evidence": "\"**Fixed stopping rule**: day 21 or $9,000 total spend, whichever first.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places the hypothesis magnitude on the qualified-lead proxy metric and says the revenue read lags by a sales cycle",
+        "evidence": "hypothesis: \"will raise the qualified-lead rate by roughly 20-30% relative (30%->36-39%)\" and \"second look 2027-01-22 (~day 130, one sales cycle)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Describes the readout as judgment-based relative ranking, with no '95% confidence' claim anywhere",
+        "evidence": "\"day-21 result will be reported as a ranking on ~11 qualified leads per cell, never as a \\\"winner at 95% confidence\\\"\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not resolve the budget shortfall by assuming a budget increase; works within $9,000/month or names consolidation/up-funnel levers explicitly",
+        "evidence": "Option A is what's shipped: \"I've designed the plan below as **Option A**, since that's what your stated budget and deadline actually support.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Sets the primary decision metric to a CRM-fed pipeline-quality event (qualified/accepted lead), explicitly rejecting raw form fills as the decision metric",
+        "evidence": "'Primary metric: form fills per $1,000 spent (CPL), tracked as a running Poisson rate-ratio test.' Fills remain the primary metric; SQL-accepted rate is only a guardrail.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats cheap form fills that sales rejects as a guardrail breach, not a win",
+        "evidence": "'Guardrail metric: SQL-accepted rate per angle \u2014 flag (don't auto-kill) if either angle's guardrail drops >10pp below the other.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declares the verdict for this structure as 'Directional read' and states it in the plan, refusing the statistical-significance framing",
+        "evidence": "'Week 3 checkpoint: report the interim rate-ratio... explicitly labeled \"directional \u2014 not yet significant\"'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor on the form event at roughly $857/day per cell ($120 x 50 / 7) and shows the affordable cells sit far below it",
+        "evidence": "No such $/day delivery-floor calculation appears anywhere in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the cells as delivery-limited, meaning their numbers are unstable regardless of sample math",
+        "evidence": "The plan discusses statistical underpowering but never frames the arms as platform delivery-limited (learning-phase instability).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Extends the judgment window to several weeks (roughly 4-6), pushing back on the three-week deadline for a qualified-lead read",
+        "evidence": "'Continue running past week 3 if inconclusive; re-check at 6-week and 10-week marks.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Schedules a second look roughly one sales cycle (~4 months) after the creative verdict for pipeline or opportunity outcomes, instead of treating the in-window read as final",
+        "evidence": "Only notes '$45k ACV, 4-month cycle... You won't know that until ~Q1 2027' as an observation, without scheduling a concrete second checkpoint at that time.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds a lead-quality guardrail: lead-to-qualified rate compared against the account's own trailing median",
+        "evidence": "Guardrail compares the two angles to each other ('drops >10pp below the other'), not against the account's own trailing median.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the current 'automation' champion running concurrently as a control cell",
+        "evidence": "The plan only compares two new angles (CFO vs. automation) to each other; no separate champion/control cell is defined.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale thresholds and a fixed stop before launch",
+        "evidence": "Only a significance decision rule is pre-registered; no explicit kill (pause) or scale (budget-up) thresholds are defined.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Places the hypothesis magnitude on the qualified-lead proxy metric and says the revenue read lags by a sales cycle",
+        "evidence": "Magnitude tables (20%-100%+) are built on fill-rate lift, not the qualified-lead metric; revenue lag is mentioned only in passing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Describes the readout as judgment-based relative ranking, with no '95% confidence' claim anywhere",
+        "evidence": "The plan retains statistical framing throughout, e.g. 'Poisson rate-ratio test, \u03b1=0.05 two-sided, 80% power' and 'Call a winner only when the interim-corrected CI excludes RR=1.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not resolve the budget shortfall by assuming a budget increase; works within $9,000/month or names consolidation/up-funnel levers explicitly",
+        "evidence": "'My call: Option B... gives leadership a checkpoint on schedule and preserves the option to reach real significance without... burning extra budget.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

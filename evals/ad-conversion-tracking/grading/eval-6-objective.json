@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recognizes the brand-new-property case: the platform UI cannot be expected to show the conversion within the session, since events take hours to appear and a fresh conversion action starts in a waiting status",
+        "evidence": "The transcript references the exception generically ('Miravelle does qualify for the skill's one named exception (brand-new property, no traffic yet...)') but then treats the empty Events Manager as 'one concrete anomaly ... that needs a root cause,' and marks check 5 as an outright 'FAIL, critical' requiring diagnosis (ad blocker, wrong Pixel ID, unpublished container) rather than explaining it as an expected hours-long delay or waiting status.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Issues a provisional PASS explicitly labelled as provisional - never a plain GO or 'verified'",
+        "evidence": "The decision issued is 'DECISION: NO-GO (provisional PASS not yet earned - payload unverified, platform-UI check failed)' \u2014 no provisional PASS is actually issued, only withheld.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Conditions the provisional pass on debug-mode evidence plus a correct, inspected payload",
+        "evidence": "\"that provisional path still requires debug-mode evidence *plus* a correct payload \u2014 you have the first, not the second. So you're not even at 'provisional PASS' yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mandates re-verification the moment the first live conversions land",
+        "evidence": "\"Once a real event lands in Events Manager with correct value, re-run the full sequence once more using an actual campaign click (after launch, in the first hours) to confirm the click identifier (fbclid) survives to the order.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires re-running the test conversion on the consent-reject path, not only the accept path",
+        "evidence": "\"Re-run the test purchase with consent **rejected**, confirm nothing fires.\" and \"Reject-path test, not just accept (untested): you only tested consent-accept ... Test both paths before launch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the reject path is where tracking signal silently dies",
+        "evidence": "The only reject-path concern raised is the opposite direction: \"if the pixel fires on the reject path too, that's a compliance problem, not just a measurement one\" \u2014 there is no statement that the reject path is where signal silently dies/is lost.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "With consent-regulated traffic the majority of the audience, treats the consent path as a pre-launch fix rather than a risk-accepted deferral",
+        "evidence": "The transcript notes 'France and Germany are both consent-regulated (CNIL / TTDSG)' and treats reject-path testing as a 'hard skill requirement, not optional polish,' but it never establishes that consent-regulated traffic is the majority of the audience.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that changing what fires on the consent-reject path needs privacy or legal sign-off",
+        "evidence": "No mention of privacy or legal sign-off anywhere in the transcript; the reject-path issue is framed only as a technical/compliance test to run, with no sign-off requirement noted.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires testing on the live published site outside preview mode, since a container can work in preview and never have been published",
+        "evidence": "\"Confirm the GTM container is actually published, not just previewed. This is the single most common cause of 'works in preview, nothing live' ... invisible until you specifically test the *live* site with preview mode closed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires refreshing the confirmation page after the test purchase to check no second event fires",
+        "evidence": "There is no mention anywhere in the transcript of refreshing the confirmation page to check for a duplicate/second event firing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Payload inspection covers the event name, the value (12), the currency (EUR), a per-conversion event ID, and the click identifier",
+        "evidence": "\"confirm: event name = `Purchase`, value = the amount actually paid after the discount code (not the \u20ac12 list price) ... currency = EUR, an `event_id`, and `fbp`/`fbc` cookies present.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The test journey starts by landing with the click identifier in the URL, walking the exact path a paid click takes",
+        "evidence": "The report explicitly excuses the missing click ID rather than requiring it: \"no click ID (expected pre-launch, no ad click yet)\" \u2014 the test procedure never requires starting the journey with a click identifier in the URL to mimic a paid click before launch.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recognizes the brand-new-property case: the platform UI cannot be expected to show the conversion within the session, since events take hours to appear and a fresh conversion action starts in a waiting status",
+        "evidence": "The transcript never frames the empty Events Manager as a normal delay for a brand-new pixel/property. Instead it treats it strictly as a failure to diagnose: 'One purchase, in one browser, verified only by the client-side GTM debugger, with Events Manager showing zero, is not \"verified\" \u2014 it's an open bug.' No mention of processing lag or a 'waiting'/unverified pixel status for new properties.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Issues a provisional PASS explicitly labelled as provisional - never a plain GO or 'verified'",
+        "evidence": "The transcript opens with 'No \u2014 don't mark it verified' and closes with 'is not \"verified\" \u2014 it's an open bug.' This is an outright rejection of the verification claim, not a provisional pass of any kind.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Conditions the provisional pass on debug-mode evidence plus a correct, inspected payload",
+        "evidence": "No provisional pass is issued at all (see item 2), so there is no conditioning of a pass on debug-mode evidence plus payload inspection \u2014 instead the transcript demands a full re-test before any verdict is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Mandates re-verification the moment the first live conversions land",
+        "evidence": "The transcript's checklist is entirely pre-launch ('Re-run the test per the checklist above ... and only call it done once...'); there is no instruction to re-verify once real/live conversions start flowing after launch.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires re-running the test conversion on the consent-reject path, not only the accept path",
+        "evidence": "Consent is discussed only in terms of acceptance: '\"I accepted the cookie banner\" needs to translate into the CMP calling gtag(...)' and 'confirm analytics_storage/ad_storage/... actually flip to granted after accepting.' No instruction to test the reject/decline path.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the reject path is where tracking signal silently dies",
+        "evidence": "There is no discussion of the consent-reject path at all, let alone a claim that tracking silently dies there; the consent discussion is confined to the accept flow.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "With consent-regulated traffic the majority of the audience, treats the consent path as a pre-launch fix rather than a risk-accepted deferral",
+        "evidence": "The France/Germany GDPR point is used to justify deferred mitigation via server-side tracking ('plan to add Meta Conversions API (server-side) alongside the pixel \u2014 it's the standard mitigation...'), which is a deferral to a follow-up mitigation, not a mandate to fix the consent path itself before launch; and the reject path specifically is never addressed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that changing what fires on the consent-reject path needs privacy or legal sign-off",
+        "evidence": "No mention of the reject path or of privacy/legal sign-off anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires testing on the live published site outside preview mode, since a container can work in preview and never have been published",
+        "evidence": "The re-test instructions focus on browser/extension conditions ('Redo the test purchase in an incognito window with zero extensions') and consent/network checks, not on confirming the GTM container version was actually published live as opposed to merely passing in preview/debug mode.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires refreshing the confirmation page after the test purchase to check no second event fires",
+        "evidence": "No mention anywhere of refreshing the confirmation/thank-you page to check for duplicate firing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Payload inspection covers the event name, the value (12), the currency (EUR), a per-conversion event ID, and the click identifier",
+        "evidence": "The transcript only asks to confirm 'the Purchase with the correct value/currency' generically \u2014 no specific value (12) or currency (EUR) is named, and there is no mention of checking a per-conversion event ID (dedup ID) or a click identifier (fbclid/gclid) in the payload.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The test journey starts by landing with the click identifier in the URL, walking the exact path a paid click takes",
+        "evidence": "There is no instruction to begin the test by landing on the site via a URL carrying a click identifier (e.g., fbclid/gclid) to replicate a paid-click journey; the re-test guidance only mentions redoing the purchase in incognito/normal browser profiles.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

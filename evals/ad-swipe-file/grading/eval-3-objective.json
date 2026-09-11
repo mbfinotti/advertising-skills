@@ -1,0 +1,130 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses the file as an archive, not a pipeline, based on the share of entries that ever reached a test status.",
+        "evidence": "\"15 of 240 saved ads ever reached a brief or a test \u2014 a 6.25% pipeline-conversion rate. Below a 50% floor, a swipe file is an archive, not a pipeline.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the half threshold: at least half of saved entries must eventually reach a test status, and 15 of 240 sits far below it.",
+        "evidence": "\"Pipeline gate: \u226550% of saved entries reach hypothesized or further. You are currently at 6.25%.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends cutting collection volume, explicitly rejecting the proposed doubling to 40 ads a week.",
+        "evidence": "\"Doubling collection to 40 ads/week does not fix this \u2014 it makes it worse... the right move is to hold or cut collection volume.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns a named owner for the file as part of the fix.",
+        "evidence": "\"Assign an owner. One person runs the weekly session and is accountable for the pipeline-conversion rate, not the ad count. This is the single highest-leverage fix.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Forces a hypothesis-conversion step at the end of every session until the tested share recovers.",
+        "evidence": "\"Close every session with 5\u20138 written hypotheses... force every session to end in hypotheses, per the file's own recovery rule.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires a test-status field on every entry with a progression along the lines of saved, hypothesized, briefed, testing, tested-won, tested-lost, dropped.",
+        "evidence": "\"Make test_status mandatory on every entry, retroactively... moving saved \u2192 hypothesized \u2192 briefed \u2192 testing \u2192 tested-won/lost.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ends each session with 5-8 written hypotheses in the 'We believe [change] will produce [outcome] because [insight]' format.",
+        "evidence": "\"Close every session with 5\u20138 written hypotheses, format: 'We believe [change] will produce [outcome] because [insight, citing which competitor and which signal].'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces reactive saving with a scheduled weekly session of roughly 30-45 minutes per competitor set.",
+        "evidence": "\"Weekly 30\u201345 minute session per competitor, hunting specifically for ads running 2+ weeks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Directs sessions to deliberately hunt ads that have run more than two weeks.",
+        "evidence": "\"hunting specifically for ads running 2+ weeks \u2014 longevity is the signal that matters, not raw count.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Institutes a per-session change log recording appeared, disappeared, or relaunched ads, with test-status updates and pruning driven by actual run data rather than memory.",
+        "evidence": "No mention of a per-session change log tracking appeared/disappeared/relaunched ads appears anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses the file as an archive, not a pipeline, based on the share of entries that ever reached a test status.",
+        "evidence": "\"240 ads / 6 months, 15 used = 6% hit rate... A spreadsheet is a graveyard \u2014 things go in, nothing comes back out at the moment it matters.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the half threshold: at least half of saved entries must eventually reach a test status, and 15 of 240 sits far below it.",
+        "evidence": "No 50% threshold is stated; only the raw 6% figure is used without a defined benchmark.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends cutting collection volume, explicitly rejecting the proposed doubling to 40 ads a week.",
+        "evidence": "It instead endorses scaling collection via automation: \"Volume is cheap and doesn't need a human... 'even 200/week' costs nothing but API/tool budget.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns a named owner for the file as part of the fix.",
+        "evidence": "Only vague ownership is suggested: \"A human (or one clearly-owned rotating role) reviews the raw pull weekly\" \u2014 no specific named owner.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Forces a hypothesis-conversion step at the end of every session until the tested share recovers.",
+        "evidence": "A mandatory hypothesis field for promotion is required, but it is not framed as an end-of-session ritual tied to recovery of the tested share.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires a test-status field on every entry with a progression along the lines of saved, hypothesized, briefed, testing, tested-won, tested-lost, dropped.",
+        "evidence": "No such status-field progression is defined anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ends each session with 5-8 written hypotheses in the 'We believe [change] will produce [outcome] because [insight]' format.",
+        "evidence": "No hypothesis-writing ritual in this format is described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Replaces reactive saving with a scheduled weekly session of roughly 30-45 minutes per competitor set.",
+        "evidence": "Only a \"Weekly 20-min ritual, tied to the brief/test calendar\" for pushing curated ads into briefs is mentioned, not a 30-45 min per-competitor collection session.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Directs sessions to deliberately hunt ads that have run more than two weeks.",
+        "evidence": "No instruction to hunt for ads running more than two weeks.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Institutes a per-session change log recording appeared, disappeared, or relaunched ads, with test-status updates and pruning driven by actual run data rather than memory.",
+        "evidence": "Only \"Retire ads after ~90 days unused\" is mentioned; no appeared/disappeared/relaunched change log is instituted.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-conversion-tracking",
+  "scenarios": 6,
+  "expectations_total": 71,
+  "expectations_subjective": 1,
+  "expectations_objective": 70,
+  "pass_rate_with_skill_pct": 74.6,
+  "pass_rate_without_skill_pct": 38.0,
+  "delta_pp": 36.6,
+  "uplift_multiplier": 1.96,
+  "trigger_accuracy_pct": 90.3,
+  "trigger_queries": 62,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The required trace includes the test event appearing in the platform UI with correct value and currency"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The decision block names an approver and a date"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Ships the fix as one batch with a single learning reset, rather than serial one-at-a-time changes"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends tracking the platform-vs-backend ratio weekly after launch, with a stable ratio read as healthy even when nonzero"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags a ratio swinging week to week as the real alarm condition, meaning the pipeline is dropping events"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Marks ongoing cross-platform reconciliation after launch as a separate task outside this pre-launch verification's scope"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Verifies with a test lead carrying a unique QA value, confirmed to land on the CRM record"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Requires deleting the QA test lead from the CRM as part of test-data cleanup"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Flips the internal-traffic filter from testing to active, stating that tagged traffic is not excluded traffic"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes exclusion filters are not retroactive, so the filter must be active before launch, not after"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Every deleted row is named in the report with the measurement it costs and who accepted the loss - never silently dropped"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recognizes the brand-new-property case: the platform UI cannot be expected to show the conversion within the session, since events take hours to appear and a fresh conversion action starts in a waiting status"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Issues a provisional PASS explicitly labelled as provisional - never a plain GO or 'verified'"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States the reject path is where tracking signal silently dies"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "With consent-regulated traffic the majority of the audience, treats the consent path as a pre-launch fix rather than a risk-accepted deferral"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes that changing what fires on the consent-reject path needs privacy or legal sign-off"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Requires refreshing the confirmation page after the test purchase to check no second event fires"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The test journey starts by landing with the click identifier in the URL, walking the exact path a paid click takes"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The required trace includes inspecting the actual outgoing event payload, not just observing the tag fire in a debugger"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The required trace includes the test event appearing in the platform UI with correct value and currency"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Report distinguishes pass, fail, unknown, and not applicable per check, with unknown never counted as pass"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The decision block names an approver and a date"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Warns the event ID must be generated per conversion, never per page load, since a refresh would mint a new conversion"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States the browser and server timestamps must land within the platform's matching window"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States Meta deduplicates on event_id plus event name within a 48-hour window"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Directs to the dedup rate in Events Manager as the first confirmation, before pulling any browser-vs-server count comparison"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Cites a healthy dedup benchmark of roughly 90%+ of browser events deduplicated"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Ships the fix as one batch with a single learning reset, rather than serial one-at-a-time changes"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Explains that the double counting trains the bidding algorithm on false signal (over-counting exits learning on phantom conversions)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Rejects reading the 9.1/10 match quality score as proof of deduplication - identifies it as a completeness signal, not an accuracy signal"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that duplicate conversions can still score high on match quality, so the score alone never confirms dedup"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Points to the dedup rate in the event manager as the check that actually answers whether dedup works"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Does not spend the pre-launch window trying to improve the match quality score"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Classifies the ~15% platform-vs-analytics gap as inside the normal, structural 10-20% band"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Evaluates the analytics-vs-backend gap (486 vs 502, roughly 3%) against the under-25% threshold and clears it"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that an analytics-vs-backend gap above roughly 35% is what would warrant investigation before launch, and this is nowhere near it"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends tracking the platform-vs-backend ratio weekly after launch, with a stable ratio read as healthy even when nonzero"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags a ratio swinging week to week as the real alarm condition, meaning the pipeline is dropping events"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Marks ongoing cross-platform reconciliation after launch as a separate task outside this pre-launch verification's scope"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Ties offline outcome import to the click identifier being captured and stored on the CRM record"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Verifies with a test lead carrying a unique QA value, confirmed to land on the CRM record"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Requires deleting the QA test lead from the CRM as part of test-data cleanup"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes exclusion filters are not retroactive, so the filter must be active before launch, not after"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "With no developer available before launch, removes the shared-event-ID row from this launch's fix list entirely rather than parking it at the bottom"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Every deleted row is named in the report with the measurement it costs and who accepted the loss - never silently dropped"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Deletes the consent-path row as not applicable given US-only traffic touching no consent-regulated region"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Defers the gclid-stripping redirect past the hard launch date as an explicitly risk-accepted item, in writing"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Everything that makes the cut ships in one batch with a single learning reset - no serial fixes"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Names what the efficiency order starves (the server-side/click-identifier rebuild) and states a condition that would promote it, such as a setup meant to be trusted for quarters or offline outcome import depending on it"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Surfaces the unfixed double counting to the client as a named launch risk requiring explicit sign-off, not glossed over"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recognizes the brand-new-property case: the platform UI cannot be expected to show the conversion within the session, since events take hours to appear and a fresh conversion action starts in a waiting status"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Issues a provisional PASS explicitly labelled as provisional - never a plain GO or 'verified'"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Conditions the provisional pass on debug-mode evidence plus a correct, inspected payload"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Mandates re-verification the moment the first live conversions land"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Requires re-running the test conversion on the consent-reject path, not only the accept path"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States the reject path is where tracking signal silently dies"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "With consent-regulated traffic the majority of the audience, treats the consent path as a pre-launch fix rather than a risk-accepted deferral"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes that changing what fires on the consent-reject path needs privacy or legal sign-off"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Requires testing on the live published site outside preview mode, since a container can work in preview and never have been published"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Requires refreshing the confirmation page after the test purchase to check no second event fires"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Payload inspection covers the event name, the value (12), the currency (EUR), a per-conversion event ID, and the click identifier"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The test journey starts by landing with the click identifier in the URL, walking the exact path a paid click takes"
+      }
+    ]
+  }
+}

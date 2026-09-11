@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Writes every hypothesis in the exact 'We believe [change] will produce [outcome] because [insight]' format.",
+        "evidence": "\"We believe a vet-testimonial UGC concept will outperform our current creative on trust/safety objections, because 2 of our 3 direct rivals have run it 40+ days...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Produces between 5 and 8 hypotheses.",
+        "evidence": "Only four hypotheses are listed in the Ranked hypotheses table: H1, H1b, H2, H3.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Backs each insight with a receipt from the file: which competitor, which signal, what corroboration, and what is missing from the user's own account.",
+        "evidence": "\"because 2 of our 3 direct rivals have run it 40+ days with 3\u20134 concept variants each, it topped last month's review too, and we've never tested testimonial anything.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks on signal strength and gap-in-own-account weighted as equal, both above ease of production.",
+        "evidence": "Value scores equal Signal+Gap (e.g. H1: 3+3=6) with Ease excluded from the Value calculation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses ease of production only to order hypotheses within a value band, never to promote one across bands.",
+        "evidence": "\"H1 is explicitly promoted past its Ease=1 score\" via two named non-ease conditions, not via ease itself.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes the vet-testimonial UGC hypothesis into the top three despite its production cost.",
+        "evidence": "H1 (Ease=1, lowest ease/highest cost) is listed first in the ranked table and as item 1 in the sprint test list.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the condition that promoted it: surviving two consecutive sessions in the top band, or the compounding-asset mandate, and says which.",
+        "evidence": "\"Two separate promotion conditions both hold \u2014 say which: (a) it survived two consecutive sessions in the top band, and (b) you told me the mandate is a durable creative library...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the compounding rationale where used: the shoot also produces the footage later hypotheses in that family reuse.",
+        "evidence": "\"the shoot you'd commission also produces reusable vet-authority footage for every later hypothesis in that family.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Strikes the arthritis-reversal hypothesis as deleted rather than benched, naming the category-forbidden claim as the constraint that killed it.",
+        "evidence": "\"Deleted, not entered as a hypothesis: the arthritis-reversal chew claim. Category rules forbid it outright...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why deletion rather than benching: a permanently unproducible hypothesis inflates the pipeline gate and reappears as scope every session.",
+        "evidence": "\"struck from the list per the skill's rule on permanently unproducible hypotheses, so it doesn't sit on the bench inflating the pipeline.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Takes exactly the top three forward, keeping the remainder in the file at a hypothesized test status.",
+        "evidence": "H3, the remainder, is logged with \"test_status: saved\", not \"hypothesized\" as the rubric expects.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hands the top three onward to creative-brief and test-plan work rather than writing briefs or tests itself.",
+        "evidence": "\"Brief H1 and H1b through mbfinotti/advertising-skills@ad-creative-brief... through mbfinotti/advertising-skills@ad-creative-test-plan.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the withdrawn countdown-hook launches as evidence the hook likely underperforms in the category, usable at most as a cheap disconfirming test, never as an angle to copy.",
+        "evidence": "\"Under-14-days is the 'testing, or failing' band \u2014 a soft negative signal... worth a cheap disconfirming test only if capacity ever frees up; not this sprint.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Counts the same angle running across two independent rivals as cross-competitor repetition, the strongest available corroboration for the vet-testimonial signal.",
+        "evidence": "\"cross-competitor repetition (2 of 3 direct rivals, independently) is the single strongest corroborator this file can produce \u2014 it can't be one advertiser's neglect.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Writes every hypothesis in the exact 'We believe [change] will produce [outcome] because [insight]' format.",
+        "evidence": "The document is written as a Why/Action sprint list (e.g. '**Why:** Two of three direct rivals...'), not in the 'We believe... will produce... because...' template.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Produces between 5 and 8 hypotheses.",
+        "evidence": "Only four items are listed: vet-testimonial UGC, picky-eater statics, kill arthritis claim, hold countdown hooks.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Backs each insight with a receipt from the file: which competitor, which signal, what corroboration, and what is missing from the user's own account.",
+        "evidence": "Vet-testimonial cites competitor+signal+internal corroboration, but picky-eater ('Whitespace \u2014 nobody in category addresses it') and countdown-hold lack the full four-part receipt structure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks on signal strength and gap-in-own-account weighted as equal, both above ease of production.",
+        "evidence": "No explicit ranking methodology weighting signal strength and account-gap equally above ease is stated; two items are both labeled P1 without this rationale.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses ease of production only to order hypotheses within a value band, never to promote one across bands.",
+        "evidence": "No explicit rule distinguishing within-band ordering from cross-band promotion is articulated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes the vet-testimonial UGC hypothesis into the top three despite its production cost.",
+        "evidence": "\"\ud83c\udfaf P1 \u2014 Vet-testimonial UGC (start sourcing now)... no agency and no in-house editor\" \u2014 placed first despite acknowledged production difficulty.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the condition that promoted it: surviving two consecutive sessions in the top band, or the compounding-asset mandate, and says which.",
+        "evidence": "\"It also topped our own creative review last month. Two independent signals, same idea, skipped twice.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the compounding rationale where used: the shoot also produces the footage later hypotheses in that family reuse.",
+        "evidence": "\"Once secured, brief 2-3 concept variants (angle, objection, format) instead of one video \u2014 matches competitor investment and builds library depth, not a one-off.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Strikes the arthritis-reversal hypothesis as deleted rather than benched, naming the category-forbidden claim as the constraint that killed it.",
+        "evidence": "\"Category rules flat-out forbid this claim. Not a prioritization call \u2014 it doesn't go on the test list at all. Action: Remove from the idea backlog.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why deletion rather than benching: a permanently unproducible hypothesis inflates the pipeline gate and reappears as scope every session.",
+        "evidence": "No explanation about pipeline-gate inflation or recurring scope is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Takes exactly the top three forward, keeping the remainder in the file at a hypothesized test status.",
+        "evidence": "Only two items move forward (vet-testimonial sourcing, picky-eater statics); one is killed and one held \u2014 not a set of exactly three forwarded.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hands the top three onward to creative-brief and test-plan work rather than writing briefs or tests itself.",
+        "evidence": "The document itself is framed as the sprint plan with production steps, without explicitly deferring to separate brief/test-design work.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the withdrawn countdown-hook launches as evidence the hook likely underperforms in the category, usable at most as a cheap disconfirming test, never as an angle to copy.",
+        "evidence": "\"A rival ran this and pulled it within two weeks \u2014 that's a negative durability signal, not proof of concept... Don't test this sprint.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Counts the same angle running across two independent rivals as cross-competitor repetition, the strongest available corroboration for the vet-testimonial signal.",
+        "evidence": "\"Two of three direct rivals have sustained this 40+ days (4 and 3 concept variants) \u2014 that's a durability signal, not a fluke.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

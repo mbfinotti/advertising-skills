@@ -1,0 +1,377 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-copy-variants",
+  "scenarios": 8,
+  "expectations_total": 100,
+  "expectations_subjective": 8,
+  "expectations_objective": 92,
+  "pass_rate_with_skill_pct": 72.0,
+  "pass_rate_without_skill_pct": 48.0,
+  "delta_pp": 24.0,
+  "uplift_multiplier": 1.5,
+  "trigger_accuracy_pct": 84.4,
+  "trigger_queries": 90,
+  "subjective_ac2": 0.754,
+  "subjective_pass_disagreements": [
+    {
+      "eval_id": 2,
+      "condition": "with_skill",
+      "expectation": "The drafted variants make genuinely different arguments rather than rewording one claim.",
+      "pass1": true,
+      "pass2": false
+    },
+    {
+      "eval_id": 3,
+      "condition": "with_skill",
+      "expectation": "Each new headline makes a distinct argument rather than a synonym rewrite of 'Review contracts 10x faster'.",
+      "pass1": false,
+      "pass2": true
+    }
+  ],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The response declines to simply select 6 of the 12 headlines as the test set."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It identifies that all 12 headlines make the same single argument (the accuracy outcome claim) and are rewordings, not distinct variants."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It proposes replacing the set with variants built on genuinely different angles (a different problem, mechanism, or audience)."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It flags second-person phrasing that implies knowledge of the reader's health condition as a risk for this category."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It applies a generic test: notes that a direct competitor could run these headlines unchanged over their own logo."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It states that wording-level variation is legitimate only after an angle has won, labelled as V2/V3 of the same variant ID."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Any proposed replacement variants are labelled with angle, awareness stage, formula, and version."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "It states that fabricated reviews or testimonials are a regulatory violation carrying per-violation penalties, not merely weak writing."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "It refuses the 'fastest' superlative or conditions it on the user confirming substantiation."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "It notes that platforms reject unsubstantiated superlatives."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "It states that proof assets are ones a competitor could not run unchanged, unlike benefit, brand, or urgency lines."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Each new headline makes a distinct argument rather than a synonym rewrite of 'Review contracts 10x faster'."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "It advises verifying slot counts and character limits in the user's own ads interface or preview rather than trusting remembered numbers."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "It frames the B2B copy for a reader building an internal case: the quantified outcome as a line they can defend in a meeting."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It names at least two conflicting practitioner conventions on variant count (a hard cap of 3; 3-5 per ad group; a warning that 5+ dilutes traffic and inflates false positives)."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It states the default of about three genuinely distinct angles, and that this account's volume argues for moving down toward two, not up."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It ranks what one more slot buys: a new angle above a different awareness stage above a new formula above a new wording."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It explains that a reword costs near-zero and teaches near-zero - synonym preference, not market truth."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It states that the account's own testable volume decides the count, since the published conventions conflict."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommended angles skew to B2B arguments (quantified outcome, risk or compliance reduction, peer proof, total cost of ownership) for a reader building an internal case."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Any replacement copy it drafts promises only what the landing page actually offers (the subscription box)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Any replacement copy is labelled with angle, awareness stage, formula, and version."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It recommends recording the set in a variant matrix, one row per variant, including a one-line hypothesis per variant."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The matrix includes an evidence-source column tracing each proof point to user-supplied material."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It states that a matrix without version codes or tracking mapping is incomplete."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It warns that emojis can count as more than one character."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It includes a humanizing pass over headlines, primary text, and descriptions before final delivery, rather than shipping raw first-draft output."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It re-checks surface fit after the humanizing pass because lengths change."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The response declines to simply select 6 of the 12 headlines as the test set."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It identifies that all 12 headlines make the same single argument (the accuracy outcome claim) and are rewordings, not distinct variants."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It justifies that verdict with an interchangeability check: the headlines could be swapped between these lines without any argument breaking."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It states that a shippable set must span at least two distinct problems, mechanisms, or audiences."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It proposes replacing the set with variants built on genuinely different angles (a different problem, mechanism, or audience)."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It asks to see the 200 app-store reviews (or otherwise requests the user's evidence) before drafting proof-bearing copy."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It flags second-person phrasing that implies knowledge of the reader's health condition as a risk for this category."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It applies a generic test: notes that a direct competitor could run these headlines unchanged over their own logo."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "It states that wording-level variation is legitimate only after an angle has won, labelled as V2/V3 of the same variant ID."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Any proposed replacement variants are labelled with angle, awareness stage, formula, and version."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "It states that fabricated reviews or testimonials are a regulatory violation carrying per-violation penalties, not merely weak writing."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "It refuses the 'fastest' superlative or conditions it on the user confirming substantiation."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "It notes that platforms reject unsubstantiated superlatives."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Every specific claim in any drafted copy traces to user-supplied material (the 10-minute claim from the landing page is the only usable specific)."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Any drafted variants are labelled with angle, awareness stage, formula, and version."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The drafted variants make genuinely different arguments rather than rewording one claim."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "It states that proof assets are ones a competitor could not run unchanged, unlike benefit, brand, or urgency lines."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "It advises verifying slot counts and character limits in the user's own ads interface or preview rather than trusting remembered numbers."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "It names how the 3-week deadline moved the ranking: angles that draft the same day (such as pain) are promoted."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "It presents 2-3 candidate angle sets of roughly 3-5 angles each, with one recommendation and rationale."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "It states the ranking is a default that shifts with the account's own assets and constraints, not a law."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "It asks for explicit approval of an angle set before writing any full ad variants, and does not deliver finished headline/primary-text sets in this reply."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "It frames the B2B copy for a reader building an internal case: the quantified outcome as a line they can defend in a meeting."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It names at least two conflicting practitioner conventions on variant count (a hard cap of 3; 3-5 per ad group; a warning that 5+ dilutes traffic and inflates false positives)."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It presents the trade-off - traffic dilution against hypothesis coverage - instead of endorsing one convention as settled best practice."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It states the default of about three genuinely distinct angles, and that this account's volume argues for moving down toward two, not up."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It states that B2B copy at this volume gets judged on upstream signals (CTR, lead quality) rather than conversion-level significance."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It ranks what one more slot buys: a new angle above a different awareness stage above a new formula above a new wording."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It explains that a reword costs near-zero and teaches near-zero - synonym preference, not market truth."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It treats driver-safety copy as a new variant with its own ID at V1, not a V2 of the cost-savings winner, reserving V2/V3 for wording iterations of a declared winner."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It does not compute sample size, spend, or duration, deferring test design to a separate test-planning step."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "It states that the account's own testable volume decides the count, since the published conventions conflict."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommended angles skew to B2B arguments (quantified outcome, risk or compliance reduction, peer proof, total cost of ownership) for a reader building an internal case."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Any proposed variants are labelled with angle, awareness stage, formula, and version, or recorded in a matrix with stable IDs."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Any replacement copy is labelled with angle, awareness stage, formula, and version."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It separates the stable ID from the human-readable name, so renaming never breaks tracking history."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It proposes an ID scheme encoding angle, awareness stage, sequence, and version (e.g. angle_awareness_seq_vN)."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It states that V2/V3 markers are reserved for wording iterations of the same angle after it wins."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It recommends that one person approve any new tracking value before launch."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It recommends recording the set in a variant matrix, one row per variant, including a one-line hypothesis per variant."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The matrix includes an evidence-source column tracing each proof point to user-supplied material."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It states that a matrix without version codes or tracking mapping is incomplete."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "It keeps the naming and tracking glossary (separator, casing, codes) with the matrix rather than in a separate document."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The response does not assert platform character limits from memory as authoritative; it asks the user to paste current limits from their ads manager or states that remembered limits go stale."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It states that the user's own ad preview is the final authority on fit."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It warns that the professional-network placement clips headlines permanently with no expander, or asks the user to confirm truncation behaviour per placement."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It warns that emojis can count as more than one character."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It pushes back on leading every headline with the product name, explaining that naming the product first to an unaware reader is wasted."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It avoids or flags second-person phrasing that asserts the reader has back pain, as implying knowledge of a health condition."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It includes a humanizing pass over headlines, primary text, and descriptions before final delivery, rather than shipping raw first-draft output."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "It re-checks surface fit after the humanizing pass because lengths change."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "In drafted variants, the headline complements the primary text rather than repeating it."
+      }
+    ]
+  }
+}

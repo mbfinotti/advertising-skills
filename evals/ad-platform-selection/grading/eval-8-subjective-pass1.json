@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The verdict is honest about the economics: either one primary consistent with the math, or a statement that paid does not clear until margin or repeat-purchase economics improve.",
+        "evidence": "The answer computes contribution ($12.92), break-even ROAS (2.94x) and an allowable CAC (~$9), then states the conclusion plainly: 'granola at $38 AOV / 34% margin can't fund paid acquisition off a first purchase alone' and 'until you have that number, no paid channel plan (including a more sensible one) should get real budget.' It rejects both CTV and podcast against explicit floors ($5K/mo, $15K+ across 3 shows) rather than accommodating them, and gates any revisit on real LTV/repeat-rate moving the CAC ceiling past $9-13. It also names one candidate primary (retail media) that is explicitly",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The verdict is honest about the economics: either one primary consistent with the math, or a statement that paid does not clear until margin or repeat-purchase economics improve.",
+        "evidence": "Strong on surfacing the math \u2014 computes '$38 AOV \u00d7 34% margin = ~$13 gross profit/order' and correctly makes repeat-purchase rate the deciding variable ('that number should decide your channel mix'). It also correctly kills CTV at $500/mo with CPM math. But the verdict itself is hedged rather than resolved: it names a bucket of three platforms ('Meta/TikTok/Google direct response') rather than one primary, adds a second concurrent test ('1-2 committed weeks on a niche podcast with a promo code'), and never states the implication of its own number \u2014 that at ~$13 gross profit, paid acquisition l",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to invent buyer personas from the product description alone",
+        "evidence": "\"I'm not going to produce the plan as asked\" combined with \"Never invent an ICP from the product description alone\" quoted and endorsed as the reason for refusal.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the reason: a plan built on an imagined customer optimizes toward fiction (or equivalent statement that an unevidenced ICP invalidates the plan)",
+        "evidence": "\"a plan built on an imagined customer optimizes toward fiction\" is quoted from the skill, and the transcript restates it: \"A plan built on personas I made up from a product description isn't a targeting plan against your buyers; it's a targeting plan against my guess of your buyers, with your $4,500/month behind it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requests an ICP document or proposes deriving the ICP from the 22 existing paying gyms (customer list)",
+        "evidence": "\"You have a customer list \u2014 22 paying gyms. That's exactly the fallback the skill asks for.\" followed by a request for names/locations, plan tier, tenure, acquisition channel, and qualitative color on the 22 gyms.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not deliver a funded tier plan before ICP evidence exists",
+        "evidence": "The transcript ends with a request for data and clarifying questions rather than any tier plan; it states \"Send over what you have on the 22 gyms ... and I'll build the full tier plan, sizing, budget split, exclusion matrix, and test sequence from that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the instruction to score gyms with missing member-count or revenue data negatively",
+        "evidence": "\"Treating missing data as a red flag inverts a rule the skill states explicitly\" and \"I'll score unknowns neutral and rank on whatever real signals exist instead.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that unknown attributes score neutral, never negative",
+        "evidence": "Direct quote: \"Unknown attributes score neutral, never negative. Absence of evidence is not a negative signal...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a thin public footprint correlates with business size, not with fit",
+        "evidence": "\"which correlates with size, not fit\" quoted from the skill, and restated: \"Small independent gyms are disproportionately the ones with no public member-count or revenue data \u2014 that's a footprint artifact, not a quality signal.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for (or lists as required inputs) the conversion definition and target CPA",
+        "evidence": "\"1. What counts as a conversion (trial start, paid signup, demo booked?) and target CPA/ROAS?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks about first-party assets beyond the customer list (site traffic volume, engaged followers, CRM)",
+        "evidence": "\"3. First-party assets: site traffic volume, email list, any pixel history?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for (or lists as a required input) the size of the addressable universe",
+        "evidence": "\"4. Addressable universe: roughly how many independent gyms fit your market (geography, size band)?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that evidence source and date must be recorded next to each tier in the eventual plan",
+        "evidence": "No mention anywhere in the transcript of recording evidence source/date alongside tiers; this requirement is absent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes attributes (what is true) from signals (why now) when describing what the ICP work must produce",
+        "evidence": "The transcript does not use or explain an attributes-vs-signals distinction; it lists data points (plan tier, tenure, acquisition channel, qualitative color) without framing them as two categories of 'what is true' vs 'why now'.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to invent buyer personas from the product description alone",
+        "evidence": "The transcript delivers full personas: 'Persona A \u2014 The Owner-Operator (primary, ~60% of spend)' etc., explicitly labeled '## 1. Buyer personas (sketched from product logic, not research)' rather than declining to produce them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the reason: a plan built on an imagined customer optimizes toward fiction (or equivalent statement that an unevidenced ICP invalidates the plan)",
+        "evidence": "The document only flags personas as 'working hypotheses to validate, not facts' and later says 'Since personas above are inferred, not researched, run a lightweight pass' \u2014 it never states that optimizing paid spend against an imagined customer wastes budget or invalidates the plan itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requests an ICP document or proposes deriving the ICP from the 22 existing paying gyms (customer list)",
+        "evidence": "Section 6: 'Validate the personas against your 22 gyms... 1. Pull location count, member count..., and current/previous tool for each of the 22. 2. Tag each against Persona A/B/C. 3. After 4 weeks... reweight budget toward that persona.' Also \u00a75 Audience 1 uses the '22 gyms' owner/manager contacts as a Custom Audience.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not deliver a funded tier plan before ICP evidence exists",
+        "evidence": "The transcript delivers a complete funded plan immediately: '## 3. Channel & budget allocation \u2014 $4,500/mo' with a full budget table, before any persona validation against the 22 gyms occurs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the instruction to score gyms with missing member-count or revenue data negatively",
+        "evidence": "The transcript implements the instruction rather than rejecting it: 'Tier D (bottom of list) = no public member-count or revenue signal at all \u2014 per your instruction, missing data is scored as a red flag rather than neutral/unknown, and these prospects sort to the bottom of the primary outreach queue.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that unknown attributes score neutral, never negative",
+        "evidence": "The transcript states the opposite: missing data 'is scored as a red flag rather than neutral/unknown' \u2014 explicitly treating unknowns as negative, not neutral.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that a thin public footprint correlates with business size, not with fit",
+        "evidence": "\"this rule will systematically deprioritize small, digitally invisible gyms \u2014 which in this category are often the *least* professionalized on ops and therefore the best-fit early customers, they just haven't been indexed anywhere yet.\" This frames thin public footprint as correlating with being small/under-indexed rather than with poor fit (in fact possibly best fit).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for (or lists as required inputs) the conversion definition and target CPA",
+        "evidence": "The transcript asserts its own conversion definition ('Primary conversion: demo booked or trial started') and supplies a placeholder CAC ('As a placeholder at $150/mo avg... target CAC \u2264 $600\u2013900') rather than asking the user to supply these as required inputs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks about first-party assets beyond the customer list (site traffic volume, engaged followers, CRM)",
+        "evidence": "No request for existing site traffic volume, follower counts, or CRM data appears anywhere; \u00a75 Audience 3 simply assumes 'Website visitors (30/60/90-day windows)... engaged Instagram/FB page visitors' will exist without asking about current volumes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks for (or lists as a required input) the size of the addressable universe",
+        "evidence": "No mention of total addressable market or universe size is requested anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that evidence source and date must be recorded next to each tier in the eventual plan",
+        "evidence": "Section 9's table has a 'Source' column per signal (e.g. 'Google Business, Instagram, Yelp') but nowhere states that a source and date must be recorded next to each tier assignment in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes attributes (what is true) from signals (why now) when describing what the ICP work must produce",
+        "evidence": "Section 9's rubric labels all rows uniformly as 'Signal' (e.g. both 'Public member-count/revenue proxy' and 'Recent growth signal (new location announced, hiring posts)' sit under one 'Signal' column) without distinguishing static attributes from timing/trigger signals.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Reads 37% penetration against the saturation bands (under 25% headroom remains, 25-35% hold, 35%+ scale horizontally) and refuses the requested vertical ramp on this campaign.",
+        "evidence": "\"Penetration 37% \u2192 past the ~35%+ band where the skill says 'scale horizontally, not vertically.'\" followed by \"vertical ladder is deleted for this line\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats two consecutive months of declining unique reach as the leading saturation indicator.",
+        "evidence": "\"Unique reach declined two months running \u2192 the leading saturation indicator, and per the skill it 'flags the wall before frequency or CPM spikes do.' Yours has already flagged twice.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes frequency 3.6 sits above the roughly 3.0 prospecting danger band, labeling the band as practitioner folklore rather than platform rule.",
+        "evidence": "\"Frequency 3.6 and climbing \u2192 above the ~3.0 prospecting danger band, and still rising\" ... \"all folklore practitioner bands but all four firing at once\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads rising CPM with flat CTR as saturation corroboration rather than as a bidding or creative problem.",
+        "evidence": "\"CPM +31% YoY, flat CTR \u2192 auction cost rising with no compensating engagement lift.\" listed among the four saturation signals.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that doubling budget grows penetration only about 50-70%, not 100%, so the target cannot be bought vertically on this audience.",
+        "evidence": "\"Doubling budget on a saturating audience typically grows penetration ~50-70%, not 100% (folklore) \u2014 meaning you'd pay for a bigger doubling than you actually get\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the vertical ladder for this account rather than merely demoting it, and names the saturation constraint that deleted it.",
+        "evidence": "\"Deleted: vertical ladder as the primary mechanism for new dollars. Reason: all four saturation signals present simultaneously, plus gate 4 already failing at current spend.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Redirects the increase to horizontal expansion: new audiences, geos, placements, or channels at proven per-unit budgets.",
+        "evidence": "\"Promoted: horizontal expansion (new audience segments, placements, or a second campaign structure at proven per-unit economics) as the primary route to the incremental $70K\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes each new horizontal unit runs its own learning phase and permanently multiplies creative demand, and checks the 6-new-ads-per-month pipeline against that demand.",
+        "evidence": "The creative-supply math is tied to overall budget targets (\u2248budget\u00f7$5,000), but the transcript never states that horizontal units each need their own learning phase or permanently multiply creative demand.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns about audience overlap or cannibalization between new and existing units and calls for exclusions.",
+        "evidence": "No mention of audience overlap, cannibalization, or exclusions appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Grounds horizontal expansion in penetration-and-light-buyer growth evidence, citing Ehrenberg-Bass or labeling the rationale as research-supported.",
+        "evidence": "The transcript cites only folklore saturation bands and a folklore creative ratio; no Ehrenberg-Bass or light-buyer/penetration research citation appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not treat the campaign still hitting 2.2 blended MER as license to push vertically: asks for or computes marginal efficiency on the newest spend bands.",
+        "evidence": "\"You cite blended MER 2.2 only... No marginal aMER given.\" and Open items: \"Marginal CAC/aMER on the last few spend bands of the core campaign \u2014 required before Week 3's step, not optional.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each horizontal unit or step still carries a hold period, monitor set, and rollback trigger.",
+        "evidence": "Steps table: each week row has \"Hold-until / monitor\" and \"Rollback trigger \u2192 action\" columns covering both vertical and horizontal spend.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names an exit condition for the ramp (such as marginal contribution crossing zero or a penetration band) rather than running increases indefinitely.",
+        "evidence": "\"Target reached ($140K total) and the incrementality/holdout test confirms... or marginal contribution margin on any new band crosses $0, or core-line penetration/frequency/reach signals fail to stabilize by W4\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Reads 37% penetration against the saturation bands (under 25% headroom remains, 25-35% hold, 35%+ scale horizontally) and refuses the requested vertical ramp on this campaign.",
+        "evidence": "The response still executes the requested vertical budget ramp to $140K via the step table, pairing it with reach expansion rather than refusing it: \"Weeks 1\u20132 ($80.5K \u2192 $92.6K): unlock reach before pushing harder.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats two consecutive months of declining unique reach as the leading saturation indicator.",
+        "evidence": "\"unique reach down 2 months straight = you're re-showing the same people ads, not finding new ones.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes frequency 3.6 sits above the roughly 3.0 prospecting danger band, labeling the band as practitioner folklore rather than platform rule.",
+        "evidence": "The guardrail table sets the action threshold at \"> 4.5\u20135\", and no ~3.0 danger band or folklore label is mentioned anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reads rising CPM with flat CTR as saturation corroboration rather than as a bidding or creative problem.",
+        "evidence": "\"CTR flat is the one good sign \u2014 creative isn't fatigued, the audience pool is... CPM +31% YoY is partly... self-inflicted: rising frequency means you're bidding against your own prior impressions\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that doubling budget grows penetration only about 50-70%, not 100%, so the target cannot be bought vertically on this audience.",
+        "evidence": "No such penetration-growth percentage estimate appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the vertical ladder for this account rather than merely demoting it, and names the saturation constraint that deleted it.",
+        "evidence": "The vertical schedule from $80.5K to $140K is retained and executed throughout, just paired with reach-expansion actions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Redirects the increase to horizontal expansion: new audiences, geos, placements, or channels at proven per-unit budgets.",
+        "evidence": "New audience/placement additions (\"add 1\u20132 new audience inputs\", \"Reels/Audience Network\") are layered into the same vertically-scaling campaign rather than budget being redirected to separate horizontal units.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes each new horizontal unit runs its own learning phase and permanently multiplies creative demand, and checks the 6-new-ads-per-month pipeline against that demand.",
+        "evidence": "The creative cadence section discusses scaling from \"6/month \u2192 12 over 8 weeks\" tied to audience expansion, but never states that each new horizontal unit runs its own separate learning phase.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns about audience overlap or cannibalization between new and existing units and calls for exclusions.",
+        "evidence": "No mention of audience overlap, cannibalization, or exclusions anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Grounds horizontal expansion in penetration-and-light-buyer growth evidence, citing Ehrenberg-Bass or labeling the rationale as research-supported.",
+        "evidence": "No citation of Ehrenberg-Bass or any research-labeled rationale appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not treat the campaign still hitting 2.2 blended MER as license to push vertically: asks for or computes marginal efficiency on the newest spend bands.",
+        "evidence": "No marginal-MER computation on recent spend bands is performed; the guardrail only sets a floor of \"< 2.2 for 2 consecutive weeks\" as a freeze trigger, not a marginal-efficiency check on current bands.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each horizontal unit or step still carries a hold period, monitor set, and rollback trigger.",
+        "evidence": "Guardrails table: \"Frequency > 4.5\u20135 \u2192 Pause that week's bump, prioritize reach expansion\"; \"New-ad CPA > 20% worse... for a full week \u2192 Pause that ad\", checked \"every Monday before approving the next bump.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names an exit condition for the ramp (such as marginal contribution crossing zero or a penetration band) rather than running increases indefinitely.",
+        "evidence": "\"Unique reach: Still declining after audience expansion \u2192 Do not proceed to next budget tier; add another expansion lever first\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

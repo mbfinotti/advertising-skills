@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects switching off the Conversions API events as the fix for the double counting",
+        "evidence": "\"Turning off CAPI purchase events is the fix that looks obvious and is backwards.\" and \"Do not delete or disable the CAPI purchase event at any point in this fix.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States why disabling the server event is backwards: it silently discards the more resilient signal source",
+        "evidence": "\"It doesn't fix measurement \u2014 it deletes the more resilient of your two signal sources (the one immune to iOS/ATT loss, ad blockers, and browser cookie limits) right before a holiday campaign\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes a shared per-conversion event ID sent identically by both the browser and the server",
+        "evidence": "\"Confirm both sources send the same event_id per conversion. Use the Shopify order ID (or order confirmation ID) as that shared ID, sent identically by the pixel and by CAPI for the same order.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the order ID as the shared event ID",
+        "evidence": "\"Use the Shopify order ID (or order confirmation ID) as that shared ID\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 'Purchase' vs 'purchase' mismatch as a dedup breaker in its own right - event names must match exactly, including casing",
+        "evidence": "\"matching event name, exact string including case\" combined with \"pixel sends Purchase, server sends purchase. That's a naming/casing mismatch \u2014 Meta treats those as two different event types, dedup never triggers\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns the event ID must be generated per conversion, never per page load, since a refresh would mint a new conversion",
+        "evidence": "\"identical event_id on both sends (per-conversion, not per-page-load)\" \u2014 states the per-conversion requirement, though it does not spell out the refresh-minting-a-new-conversion consequence explicitly.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the browser and server timestamps must land within the platform's matching window",
+        "evidence": "\"timestamps within the 48-hour window\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States Meta deduplicates on event_id plus event name within a 48-hour window",
+        "evidence": "\"Meta's Events Manager merges a browser (pixel) event and a server (CAPI) event into one counted conversion only when three things line up... identical event_id on both sends... matching event name, exact string including case... timestamps within the 48-hour window\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Directs to the dedup rate in Events Manager as the first confirmation, before pulling any browser-vs-server count comparison",
+        "evidence": "\"In Events Manager, check the dedup rate first (single screen, fastest signal) \u2014 target ~90%+, and confirm this one test order shows as one counted conversion\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites a healthy dedup benchmark of roughly 90%+ of browser events deduplicated",
+        "evidence": "\"target ~90%+\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ships the fix as one batch with a single learning reset, rather than serial one-at-a-time changes",
+        "evidence": "The transcript lists steps (standardize name, confirm event ID, don't disable CAPI) but never discusses batching the deployment to avoid multiple learning resets, or contrasts this with serial one-at-a-time changes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that the double counting trains the bidding algorithm on false signal (over-counting exits learning on phantom conversions)",
+        "evidence": "\"launching while it's still ~2x would train the algorithm on phantom volume through your highest-spend window\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects switching off the Conversions API events as the fix for the double counting",
+        "evidence": "\"Don't turn off CAPI \u2014 that's fixing the symptom by deleting the better signal\" and \"Turning it off 'solves' the double-count by throwing away the fix's whole point.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States why disabling the server event is backwards: it silently discards the more resilient signal source",
+        "evidence": "\"CAPI is what survives iOS 14.5+ ATT opt-outs, Safari ITP, and ad blockers that kill the browser pixel... Disabling CAPI purchases removes exactly the redundancy that protects your purchase signal when browser tracking fails.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes a shared per-conversion event ID sent identically by both the browser and the server",
+        "evidence": "\"Generate one ID per order (e.g. the Shopify order ID, or a UUID set at checkout) and send that exact same value in both the pixel's eventID and the CAPI event's event_id.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the order ID as the shared event ID",
+        "evidence": "\"Generate one ID per order (e.g. the Shopify order ID, or a UUID set at checkout)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 'Purchase' vs 'purchase' mismatch as a dedup breaker in its own right - event names must match exactly, including casing",
+        "evidence": "\"Your pixel sends Purchase (Meta's standard event name), your server sends purchase. Meta treats these as two different event types. No dedup happens...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns the event ID must be generated per conversion, never per page load, since a refresh would mint a new conversion",
+        "evidence": "The transcript only says to generate 'one ID per order' but never warns against generating it per page load or mentions the refresh scenario.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the browser and server timestamps must land within the platform's matching window",
+        "evidence": "No mention of timestamps or a matching time window anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States Meta deduplicates on event_id plus event name within a 48-hour window",
+        "evidence": "The transcript describes matching on event_name and event_id but never mentions a 48-hour (or any) time window.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Directs to the dedup rate in Events Manager as the first confirmation, before pulling any browser-vs-server count comparison",
+        "evidence": "Step 4 says to use Test Events tool and check for 'Event deduplicated', and step 5 recommends comparing volumes to Shopify's order count, but there is no explicit instruction to check the dedup rate metric first before any browser-vs-server comparison.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites a healthy dedup benchmark of roughly 90%+ of browser events deduplicated",
+        "evidence": "No numeric dedup benchmark percentage is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ships the fix as one batch with a single learning reset, rather than serial one-at-a-time changes",
+        "evidence": "The transcript lists sequential numbered steps (1-5) but never discusses batching changes to avoid multiple learning-phase resets or explicitly recommends deploying all changes together for this reason.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that the double counting trains the bidding algorithm on false signal (over-counting exits learning on phantom conversions)",
+        "evidence": "The transcript mentions match quality (EMQ) affecting optimization, but never explains that double-counted purchases feed false/phantom conversion signal into the bidding algorithm's learning phase.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

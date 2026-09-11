@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Depth is allocated to Microsoft Ads while Google coverage stays at maintenance weight (release-note and roundup skims)",
+        "evidence": "The plan is explicitly and structurally front-loaded on Microsoft: the assumption block states \"Microsoft gets depth (you have zero mental model there and headlines can't build one); Google gets a breadth refresh only (you already have years of context)\", and the header says it is \"front-loaded on Microsoft since that's the actual gap.\" Week 1 (~115 min) is entirely Microsoft \u2014 official blog (15), two Paid Media Pros tutorials (50), the platform's own certification/help modules (40) \u2014 plus a cheap PPC Land roundup. Week 2 adds 50 more minutes of Microsoft video on import tool / UET conversion ",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Depth is allocated to Microsoft Ads while Google coverage stays at maintenance weight (release-note and roundup skims)",
+        "evidence": "The plan puts essentially all depth into Microsoft-specific divergences: the 'Skip entirely (you already know this)' section explicitly excludes match types, negatives, ad rank/auction, Quality Score, structure, RSAs, conversion-tracking philosophy and 'PPC 101' as already-known Google material, and every substantive block is Microsoft-only (Learning Lab, Google Ads import quirks, UET tag, Microsoft Advertising Editor, editorial policy for freight, LinkedIn Profile targeting, call tracking deltas). 'What not to bother with' further trims Shopping/Merchant Center, deep bidding-algorithm reading",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

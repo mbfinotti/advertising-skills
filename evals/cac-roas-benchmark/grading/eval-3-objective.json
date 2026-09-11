@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Excludes the 60 renewals and reactivations from the denominator and recomputes new-customer CAC as 93,000 / 240, approximately $387-388, instead of accepting $310",
+        "evidence": "'New-customer CAC | blended, corrected ($93,000 \u00f7 240) | $387.50'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that counting renewals as acquisitions inflates the denominator and flatters every verdict built on it",
+        "evidence": "'the corrected CAC ($387.50) is 25% higher than the number billing currently reports ($310) purely from excluding reactivations and renewals'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes payback per plan rather than presenting a single blended payback figure",
+        "evidence": "Separate 'Payback \u2014 Basic' and 'Payback \u2014 Pro' rows in the metric table",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the gross-margin term in the payback formula: monthly gross profit per customer is $10.50 on Basic (15 x 0.70) and $69.30 on Pro (99 x 0.70)",
+        "evidence": "'Monthly gross profit / customer \u2014 Basic | $15 \u00d7 70% | $10.50' and 'Pro | $99 \u00d7 70% | $69.30'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports Basic payback at approximately 37 months",
+        "evidence": "'Payback \u2014 Basic | corrected CAC \u00f7 Basic gross profit | 36.9 months'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports Pro payback at approximately 5.6 months",
+        "evidence": "'Payback \u2014 Pro | corrected CAC \u00f7 Pro gross profit | 5.6 months'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not report the margin-free figures (~26 months Basic, ~3.9 months Pro) that come from dividing CAC by the raw subscription price",
+        "evidence": "Metric table only shows margin-adjusted payback figures (36.9 and 5.6 months); no raw-price-based figures appear",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the 12-month payback rule as David Skok, 2011 - a rule of thumb tied to that era's fundraising conditions, never empirically validated",
+        "evidence": "'12-month CAC payback \u2014 David Skok, 2011... Self-admitted rule of thumb tied to 2011 fundraising conditions, never empirically validated.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Puts the business's own per-plan economics next to the quoted folk target instead of deleting or simply endorsing it",
+        "evidence": "'Loopwell's own numbers: Pro clears it by more than 2\u00d7; Basic misses it by roughly 3\u00d7'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that one blended number describes neither plan, since the same CAC means order-of-magnitude different payback at $15/month versus $99/month",
+        "evidence": "'it's an artifact of averaging a 5.6-month segment with a 36.9-month one \u2014 it describes neither plan. Don't report it as \"the\" number.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a separate reading per plan segment (Basic problematic, Pro comfortable) rather than a single verdict",
+        "evidence": "Headline: 'Pro plan segment: Healthy' / 'Basic plan segment: Watch' as separate bullets",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every figure carries a variant label, window, and data source",
+        "evidence": "Metric table populates Variant/Window/Source for all rows",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that raw payback assumes the customer survives the payback window, and asks for retention or applies a discounted-payback view given the ~37-month Basic figure",
+        "evidence": "'whether the 36.9-month payback is ever actually recovered depends entirely on whether Basic customers outlast that window, and no retention number was given... Named next-period question: what's Basic's median customer tenure \u2014 above or below ~37 months?'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Excludes the 60 renewals and reactivations from the denominator and recomputes new-customer CAC as 93,000 / 240, approximately $387-388, instead of accepting $310",
+        "evidence": "'Corrected CAC = $93,000 / 240 = $387.50 (25% higher than reported)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that counting renewals as acquisitions inflates the denominator and flatters every verdict built on it",
+        "evidence": "'The reported $310 CAC (10.3 months payback) was an illusion. It used an inflated \"new customer\" count as the denominator.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes payback per plan rather than presenting a single blended payback figure",
+        "evidence": "Only a single blended payback is computed: '$387.50 / $30.10 = 12.9 months' using blended ARPU, with no separate Basic/Pro payback figures.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the gross-margin term in the payback formula: monthly gross profit per customer is $10.50 on Basic (15 x 0.70) and $69.30 on Pro (99 x 0.70)",
+        "evidence": "No per-plan gross profit figures are computed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reports Basic payback at approximately 37 months",
+        "evidence": "No Basic-specific payback figure appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reports Pro payback at approximately 5.6 months",
+        "evidence": "No Pro-specific payback figure appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not report the margin-free figures (~26 months Basic, ~3.9 months Pro) that come from dividing CAC by the raw subscription price",
+        "evidence": "The transcript never engages in per-plan payback analysis at all, so it neither performs nor avoids this specific error in a demonstrable way.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the 12-month payback rule as David Skok, 2011 - a rule of thumb tied to that era's fundraising conditions, never empirically validated",
+        "evidence": "Only 'Skok's formula' and 'Skok's payback bar' are mentioned, with no year or critique of its origin/validation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Puts the business's own per-plan economics next to the quoted folk target instead of deleting or simply endorsing it",
+        "evidence": "No per-plan economics are computed to place next to the Skok benchmark.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that one blended number describes neither plan, since the same CAC means order-of-magnitude different payback at $15/month versus $99/month",
+        "evidence": "The transcript notes ARPU is 'heavily diluted' by Basic but never states the blended number describes neither plan or gives order-of-magnitude payback contrast.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a separate reading per plan segment (Basic problematic, Pro comfortable) rather than a single verdict",
+        "evidence": "The bottom line is a single verdict: 'you're about 8% over Skok's payback bar,' with no separate per-plan reading.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every figure carries a variant label, window, and data source",
+        "evidence": "No time window (e.g., a specific month) is stated anywhere in the transcript for any of the figures.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that raw payback assumes the customer survives the payback window, and asks for retention or applies a discounted-payback view given the ~37-month Basic figure",
+        "evidence": "No discussion of survival/retention assumptions or discounted payback appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

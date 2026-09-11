@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Findings are evaluated mobile-first, since 74% of spend lands on mobile.",
+        "evidence": "Mobile share is captured in the header inputs block (`device: mobile = 74% of spend`) and genuinely drives reasoning in three places: fix #5 (autoplay-with-sound) is justified explicitly by the mobile audience \u2014 'a well-documented way to lose exactly the mobile audience your paid spend is buying (74% of spend is mobile, where unmuted autoplay is most jarring)'; the ruled-out LCP item weighs severity by device \u2014 'failing Core Web Vitals on the device carrying 74% of spend is an established-research trigger strong enough to override the usual ranking'; and the Re-check section segments one metri",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Findings are evaluated mobile-first, since 74% of spend lands on mobile.",
+        "evidence": "Mobile awareness appears but is partial and not the evaluative frame. The 74% figure is cited once, and only in the deprioritized section ('Since mobile is 74% of spend, this is your biggest conversion leak'), to justify seeking dev budget for LCP. Item 3 references '5.2s LCP' and item 5 adds a mobile preview caveat ('preview it on mobile after moving it'), but that is layout QA, not mobile-first prioritization. The ranking is explicitly declared on a non-mobile axis: 'Ranked by what's cheapest to execute in the CMS (copy/image only), not by impact.' Items 1, 2 and 4 (hero claim, headline, cou",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

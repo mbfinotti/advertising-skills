@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Findings are verified or scoped mobile-first, since 81% of sessions and spend are mobile.",
+        "evidence": "Mobile appears only twice and never shapes a finding. Under COULD NOT CHECK: 'layout stability on the 81%-mobile traffic is unchecked' \u2014 a correct acknowledgement that nothing was rendered/verified on mobile. And one RE-CHECK metric is mobile-scoped: 'land \u2192 product-page click-through rate on mobile paid social'. That is the extent of it. All four FIX NOW items are written device-agnostically: fix 1 ('surface the price and \"35% off\" on the landing page itself') says nothing about above-the-fold real estate on a small viewport; fix 2 (headline rewrite) and fix 3 (hero product shot vs. abstract ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Findings are verified or scoped mobile-first, since 81% of sessions and spend are mobile.",
+        "evidence": "Mobile share is surfaced prominently and repeatedly: the numbers section flags '81% of sessions *and* spend is mobile, but you have no mobile-vs-desktop performance split. **This is your first fix, not a finding** \u2014 you're flying blind on 4 in 5 dollars.' A secondary finding scopes the collage hero to mobile ('Mobile-heavy traffic + collage hero... On mobile (81% of your traffic), this is a likely Largest Contentful Paint / load-time tax'), and fix #6 asks to split mobile vs desktop reporting. However, the five critical findings themselves are written device-agnostically and are not scoped to ",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

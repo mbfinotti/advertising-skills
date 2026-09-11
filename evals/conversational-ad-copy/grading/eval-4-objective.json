@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Delivery is checked first: 214 impressions in six days is treated as a delivery problem, not evidence about the copy.",
+        "evidence": "\"Delivery, days not weeks: 214 impressions over 6 days (~36/day) \u2014 is that flat, rising, or falling? If flat/low from day one, that's a targeting or delivery problem, not a copy problem\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The near-minimum bid is raised as a likely cause, with the point that an under-bid campaign serves nothing and reads identically to bad copy.",
+        "evidence": "\"Bidding at the platform minimum is a plausible explanation for thin impression volume on its own \u2014 worth confirming you're clearing the delivery threshold before concluding the *copy* is underperforming.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to benchmark this surface against the account's own Google Search 4.2% CTR.",
+        "evidence": "\"Two different surfaces, not a copy comparison... The valid comparison is this account's own trailing numbers *on this same surface*, and you don't have those yet\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The account's own trailing numbers on this same surface are named as the only valid baseline, and with none existing, the first 30 days are set as the baseline.",
+        "evidence": "\"day 6 of a first-30-days baseline period doesn't produce one\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 1-day conversion window is flagged as under-crediting this surface, and the attribution window is extended to at least 7-14 days.",
+        "evidence": "\"roughly 60% of conversions outside the immediate click window... Extend your attribution window to 7\u201314 days minimum before this number means anything.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Re-framing the situation description is recommended before rewriting the copy line.",
+        "evidence": "The transcript never mentions 'situation description' at all; the closest is a generic 'targeting or delivery problem' note with no reframing recommendation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "An immediate copy rewrite is not the primary recommendation.",
+        "evidence": "\"Bottom line: rewrite is premature.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivery across situation descriptions is named as the first read because it is free and readable in days, with alternate situation descriptions suggested for the diagnosis.",
+        "evidence": "No alternate situation descriptions are proposed anywhere in this transcript; only a generic delivery check is listed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No sized variant test is proposed now; it is deferred until delivery and click-through stop moving.",
+        "evidence": "The transcript contains no mention of a variant test or its deferral at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The organic answer appearances are not credited to the ad: paid and organic are named as two separate systems on the same prompt, to be read separately.",
+        "evidence": "\"paid and organic are two separate systems answering the same prompt... Track organic visibility and paid delivery as two separate lines.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Click-through is framed as a relative read only, since no query-level reporting sits behind it.",
+        "evidence": "Reasoning given is lack of a published CTR benchmark and small sample size, not absence of query-level reporting: \"there's no published CTR benchmark for this format to sanity-check against anyway\".",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No published external benchmark is used as the pass/fail bar for the campaign.",
+        "evidence": "\"there's no published CTR benchmark for this format to sanity-check against anyway\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Beyond confirming the delivery threshold, bid and budget management is routed out of scope rather than turned into bidding advice.",
+        "evidence": "\"One flag on the bid, not a bidding decision (bidding is out of my scope here, routing this to whoever owns it)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Delivery is checked first: 214 impressions in six days is treated as a delivery problem, not evidence about the copy.",
+        "evidence": "The response frames 214 impressions purely as a statistical sample-size issue (\"3 clicks / 214 impressions... your true CTR is roughly 0.3%\u20134.1%\"), never as a delivery/serving problem.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The near-minimum bid is raised as a likely cause, with the point that an under-bid campaign serves nothing and reads identically to bad copy.",
+        "evidence": "Bid or budget is never mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to benchmark this surface against the account's own Google Search 4.2% CTR.",
+        "evidence": "\"Comparing this CTR to Search CTR is comparing two different things... Benchmarking against Search sets you up to 'fix' copy that was never broken.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The account's own trailing numbers on this same surface are named as the only valid baseline, and with none existing, the first 30 days are set as the baseline.",
+        "evidence": "The response only says \"Re-evaluate at 30 days, not 6\" without framing trailing account-specific numbers as the baseline concept.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The 1-day conversion window is flagged as under-crediting this surface, and the attribution window is extended to at least 7-14 days.",
+        "evidence": "\"Your 1-day click window is almost certainly hiding your real conversions... Fix now: extend the attribution window to 7\u201314 days\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Re-framing the situation description is recommended before rewriting the copy line.",
+        "evidence": "No 'situation description' concept appears in this transcript at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "An immediate copy rewrite is not the primary recommendation.",
+        "evidence": "\"Don't touch the copy.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivery across situation descriptions is named as the first read because it is free and readable in days, with alternate situation descriptions suggested for the diagnosis.",
+        "evidence": "No situation descriptions or delivery-across-descriptions concept appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No sized variant test is proposed now; it is deferred until delivery and click-through stop moving.",
+        "evidence": "\"wait until you have ~20\u201330 clicks per variant before any A/B test means anything. At ~35 impressions/day and current CTR, that's several more weeks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The organic answer appearances are not credited to the ad: paid and organic are named as two separate systems on the same prompt, to be read separately.",
+        "evidence": "The response actually hypothesizes a causal link: \"plausibly a co-occurrence/entity-recognition effect where paid presence feeds the same retrieval signals that drive organic citation (a rough analogue to paid-search brand-lift on organic CTR)\".",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Click-through is framed as a relative read only, since no query-level reporting sits behind it.",
+        "evidence": "CTR is discussed via confidence intervals and benchmarking caveats, but never explicitly framed as a 'relative read only' due to lack of query-level reporting.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No published external benchmark is used as the pass/fail bar for the campaign.",
+        "evidence": "\"Benchmarking against Search sets you up to 'fix' copy that was never broken.\" \u2014 the Google Search 4.2% figure is explicitly rejected as a bar.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Beyond confirming the delivery threshold, bid and budget management is routed out of scope rather than turned into bidding advice.",
+        "evidence": "Bid/budget is never addressed, confirmed, or routed out of scope anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

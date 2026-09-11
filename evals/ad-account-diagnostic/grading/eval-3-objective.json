@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The verdict is insufficient evidence: no root-cause layer is named on this data.",
+        "evidence": "\"verdict : insufficient evidence for a definitive root cause \u2014 but sufficient evidence that the two proposed actions are both premature and both would make things worse, not better\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses both proposed moves (the manual-CPC switch and the budget doubling) rather than picking one of them.",
+        "evidence": "\"### Why not manual CPC\" ... \"### Why not doubling the budget\" \u2014 both options are rejected, and the top decision states \"do neither. Hold current settings, don't touch bidding strategy or budget today.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the +50% budget change nine days ago as a significant edit that reset the learning phase.",
+        "evidence": "\"a 50% budget increase is well above the ~20% threshold practitioners treat as a \\\"significant edit\\\" that resets automated-bidding learning; Google Smart Bidding can take up to 3 weeks or 1-2 conversion cycles to restabilize. You are 9 days in.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that the most recent week under-reports because of attribution lag, so a trailing window looks like decline by construction.",
+        "evidence": "The transcript only flags \"lag maturity matched: NO\" once in the header without ever explaining that conversion/attribution lag causes the most recent week to systematically under-report; the actual explanation given for the low count is statistical noise/variance ('a true weekly average of ~11 has a natural week-to-week spread wide enough that a single week landing at 6 is not clearly distinguishable from ordinary variance'), not attribution lag.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that roughly 6 conversions is far below any read that clears the noise band, and below the ~30-conversion evaluation reference for automated bidding.",
+        "evidence": "The noise-band point is made for the '6' figure ('a single week landing at 6 is not clearly distinguishable from ordinary variance'), but the ~30-conversion floor is only compared against the baseline monthly total, not the observed 6: \"conversion volume (~11/wk \u2248 44-48/mo) sits near Google's own \u226530-conversion floor for evaluating automated bidding\" \u2014 the 6-vs-30 connection is never made explicit.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the gate math: roughly how many more days or conversions are needed at current volume before a verdict is possible.",
+        "evidence": "\"re-check : 2026-09-26 (one full week past the 3-week learning ceiling from the budget change)\" combined with \"You are 9 days in\" gives the days-remaining gate math.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends freezing further edits until a lag-mature window has accumulated.",
+        "evidence": "\"Do nothing to bidding or budget until the re-check date. Let the 9-day-old change finish playing out its own learning window before drawing any conclusion from it, let alone stacking a second change on top.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues no quantified performance prediction on this data, saying why.",
+        "evidence": "The transcript does issue a quantified prediction: \"prediction : if left untouched, weekly consultation requests should trend back toward the 10-12 baseline within roughly 1-2 more weeks (by day ~18-21 post-edit) as delivery exits learning\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check date at a mature window, roughly two or more weeks after the edit.",
+        "evidence": "\"re-check : 2026-09-26 (one full week past the 3-week learning ceiling from the budget change)\" \u2014 the budget edit was ~9 days before 2026-09-12, so the re-check date falls roughly 23 days after the edit.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records reconciliation as unverified due to the missing CRM access and caps stated confidence accordingly (low).",
+        "evidence": "\"reconciliation gap: unverified (no CRM access)\" and \"measurement/tracking : unknown - no CRM access to reconcile platform-reported requests against reality [severity: high, confidence: low]\"; overall \"confidence : low-medium \u2014 no backend reconciliation, single week of post-edit data\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses unknown states for the layers this data cannot power, instead of marking them clean.",
+        "evidence": "\"targeting : unknown - no audience/keyword data supplied\" and \"creative : unknown - no CTR/ad-level data supplied\" and \"offer & downstream : unknown - no landing page/form data supplied\" \u2014 layers are marked unknown, not clean.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends obtaining CRM or backend read access before the next diagnostic run.",
+        "evidence": "\"Get reconciliation access back \u2014 today, from anyone, not just the office manager. ... Ask whoever has admin/read access to the CRM or booking system to pull raw consultation-request counts by day for the last 3 weeks\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that 20-50% day-to-day swings during learning are expected volatility, not evidence of a defect.",
+        "evidence": "\"9 days is still inside the up-to-3-week window where 20-50% CPA/output swings are normal, not signal\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The verdict is insufficient evidence: no root-cause layer is named on this data.",
+        "evidence": "The transcript never asserts a definitive root cause; it treats the budget change as the 'most likely' disruptive factor but frames the whole situation as needing more data: 'Treat \"6 vs. 10-12\" cautiously as a sample size of one week' and recommends waiting and gathering more evidence rather than declaring a cause.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses both proposed moves (the manual-CPC switch and the budget doubling) rather than picking one of them.",
+        "evidence": "\"Neither. Do this instead: revert the budget increase, keep whatever bidding strategy you already had, and wait it out.\" followed by explicit 'Why not Manual CPC' and 'Why not doubling the budget' sections.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the +50% budget change nine days ago as a significant edit that reset the learning phase.",
+        "evidence": "The transcript says 'budget raised 9 days ago' and discusses budget increase disrupting Smart Bidding, but never specifies the magnitude as +50%, and frames it as knocking bidding 'out of its stable state' / triggering re-exploration rather than explicitly 'resetting the learning phase' due to the budget change (learning-phase reset is only discussed regarding switching bidding strategy, not the budget increase itself).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that the most recent week under-reports because of attribution lag, so a trailing window looks like decline by construction.",
+        "evidence": "There is no mention of conversion attribution lag causing the most recent week to under-report; the transcript only questions data quality ('conversion tracking itself break') and sample size, not lag-based under-reporting.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that roughly 6 conversions is far below any read that clears the noise band, and below the ~30-conversion evaluation reference for automated bidding.",
+        "evidence": "The transcript mentions '~10-12 conversions/week is thin but workable for Smart Bidding' and treats 6 as a small sample, but never cites a ~30-conversion evaluation threshold or states 6 is 'far below' a noise-clearing bar with a specific reference number.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the gate math: roughly how many more days or conversions are needed at current volume before a verdict is possible.",
+        "evidence": "No specific day or conversion count is given as a gating threshold; the recommendation is only 'Hold any further bidding/budget changes for 1-2 weeks post-revert, then reassess' without a conversion-count gate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends freezing further edits until a lag-mature window has accumulated.",
+        "evidence": "\"Hold any further bidding/budget changes for 1-2 weeks post-revert, then reassess with the office manager back and real CRM lead-quality data in hand\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues no quantified performance prediction on this data, saying why.",
+        "evidence": "The transcript avoids predicting specific future numbers, instead giving qualitative guidance and caveats like treating the 6 vs 10-12 comparison 'cautiously as a sample size of one week' without projecting future conversion counts.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check date at a mature window, roughly two or more weeks after the edit.",
+        "evidence": "The transcript says 'Hold any further bidding/budget changes for 1-2 weeks post-revert, then reassess' \u2014 this is a window of 1-2 weeks (not clearly 'two or more weeks') and is a re-check window rather than a specific date, and it's measured from the revert, not from the original edit.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records reconciliation as unverified due to the missing CRM access and caps stated confidence accordingly (low).",
+        "evidence": "\"With no CRM, you don't know if these were 6 *qualified* leads or 6 raw form submissions of any quality\" and the overall framing repeatedly caveats conclusions due to missing CRM data, though it does not explicitly state a numeric/labeled confidence level like 'low'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses unknown states for the layers this data cannot power, instead of marking them clean.",
+        "evidence": "The transcript explicitly flags unknowns rather than assuming things are fine, e.g. \"did conversion tracking itself break around the same date as the budget change\" and \"you don't know if these were 6 *qualified* leads or 6 raw form submissions of any quality\" rather than assuming lead quality or tracking integrity are fine.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends obtaining CRM or backend read access before the next diagnostic run.",
+        "evidence": "\"then reassess with the office manager back and real CRM lead-quality data in hand \u2014 that's when a genuine strategy decision ... can be made on evidence instead of a guess\" implies needing CRM data before the next decision, though it doesn't explicitly recommend obtaining direct 'backend read access' as an action item, just waiting for the office manager's return.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that 20-50% day-to-day swings during learning are expected volatility, not evidence of a defect.",
+        "evidence": "The transcript discusses 1-2 week volatility periods after changes but never mentions day-to-day swings in the 20-50% range as expected/normal volatility.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

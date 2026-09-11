@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Identifies trailing-window attribution lag: the most recent days of any trailing window under-report conversions by construction",
+        "evidence": "\"Newest days in a trailing window are always under-reported \u2014 conversions haven't finished landing yet\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States every trailing window ends in an apparent decline, consistent with the gap shrinking on the next pull as conversions backfill",
+        "evidence": "\"Those same days 'mature' and backfill conversions a week later \u2014 the decline was never real, it just hadn't finished counting\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires both comparison windows to be lag-mature before any delta is read",
+        "evidence": "\"Re-pull on lag-mature windows. Compare two windows that are both old enough for attribution to have fully closed\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the mid-month switch from 7-day click to 1-day click as manufacturing an artificial decline and requires the same attribution setting on both windows",
+        "evidence": "\"Standardize the attribution setting across baseline and comparison.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects CTR (all) and requires link/outbound CTR, because all-clicks counts reactions, comments, and expands and can flatter a dying ad",
+        "evidence": "\"Pull link/outbound CTR, not CTR (all)... CTR (all) includes likes/comments/shares, not outbound clicks\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a confounded or insufficient-data verdict rather than fatigued",
+        "evidence": "\"This is not fatigue. It's a measurement artifact \u2014 don't refresh the creative yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to produce the requested refresh plan",
+        "evidence": "\"Don't brief a refresh off this data.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends re-pulling the same windows after the attribution window closes to confirm the backfill",
+        "evidence": "The recommendation is to compare already-mature historical windows (\"days 14\u201320 vs. days 21\u201327 ago\") going forward, not to re-pull the current windows later to confirm the backfill occurred.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the remaining confounder screen before any verdict",
+        "evidence": "\"Pull the rest of the confounder-screen data before anyone reopens the fatigue conversation\" lists change log, CPM, FTIR, tracking reconciliation, sibling creatives.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires the two-signal rule with at least one leading signal before any future fatigue call",
+        "evidence": "\"Require at least two signals (link CTR + one more...) moving together across two-plus lag-mature periods\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and re-check fields",
+        "evidence": "No structured verdict block or 'confidence' field appears anywhere in this section; the response is entirely prose/tables.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names fixing the measurement method - matched, mature windows on one consistent attribution setting - as the action",
+        "evidence": "\"Fix the measurement, then re-run the read\" section lists lag-mature windows and standardized attribution setting as the required fixes.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Identifies trailing-window attribution lag: the most recent days of any trailing window under-report conversions by construction",
+        "evidence": "'Trailing-7-day CPA pulled on Monday is immature \u2014 clicks from Thu\u2013Sun haven't finished converting yet'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States every trailing window ends in an apparent decline, consistent with the gap shrinking on the next pull as conversions backfill",
+        "evidence": "'This repeats every Monday because you're always comparing a fresh, unsettled week against a fully matured prior week'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires both comparison windows to be lag-mature before any delta is read",
+        "evidence": "'Report CPA on a consistent attribution window across compared periods \u2014 don't compare a 1-day-click week against a 7-day-click week'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the mid-month switch from 7-day click to 1-day click as manufacturing an artificial decline and requires the same attribution setting on both windows",
+        "evidence": "'The mid-month attribution change amplifies exactly this artifact... Report CPA on a consistent attribution window'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects CTR (all) and requires link/outbound CTR, because all-clicks counts reactions, comments, and expands and can flatter a dying ad",
+        "evidence": "Transcript instead relies on 'CTR (all) is flat' as supporting evidence rather than rejecting it as a flawed metric",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Issues a confounded or insufficient-data verdict rather than fatigued",
+        "evidence": "'very likely a measurement artifact, not real fatigue'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to produce the requested refresh plan",
+        "evidence": "'Step 2 \u2014 Refresh plan (run in parallel, evaluated on fixed measurement)' delivers a full plan with control/challenger structure",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends re-pulling the same windows after the attribution window closes to confirm the backfill",
+        "evidence": "'Re-pull the last 6 weeks of history using a matured (T-7) window only, and compare like-for-like'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs the remaining confounder screen before any verdict",
+        "evidence": "Checks CTR stability and timing alignment before concluding measurement artifact",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires the two-signal rule with at least one leading signal before any future fatigue call",
+        "evidence": "No explicit two-signal/leading-signal rule is articulated, though frequency/reach/CTR are recommended trackers",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and re-check fields",
+        "evidence": "No structured verdict block with a confidence label; only 'Re-evaluate in 4 weeks' as a bare re-check",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names fixing the measurement method - matched, mature windows on one consistent attribution setting - as the action",
+        "evidence": "'Step 1 \u2014 Fix measurement (do this before any creative work)'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

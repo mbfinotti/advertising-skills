@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response computes payback separately for the $19 plan and the $549 plan rather than on the $74 blended ARPU.",
+        "evidence": "\"Starter (45% retention) | 200/15.58 = 12.8 months\" vs \"Scale (92% retention) | 200/450.18 = 0.44 months\" computed as separate rows.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response shows that a ~$200 CAC against the Starter plan pays back in roughly a year or more (about $15.60/month gross profit), making that tier unaffordable for paid acquisition.",
+        "evidence": "\"Starter | $19 \u00d7 0.82 = $15.58\" and \"200/15.58 = 12.8 months ... 200/(15.58\u00d70.45) = 28.5 months ... Fails\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response recommends routing the Starter tier to organic or product-led motions instead of paid ads.",
+        "evidence": "\"Starter goes through organic/PLG, not paid\" and \"Starter acquisition is not funded from this budget \u2014 route it to SEO/content/self-serve signup\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response shows the Scale plan's monthly gross profit around $450 and a payback well under one month at a $200 CAC, anchoring paid acquisition to that tier.",
+        "evidence": "\"Scale | $549 \u00d7 0.82 = $450.18\" and \"200/450.18 = 0.44 months ... Under 3 months\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response applies a discounted payback calculation (CAC divided by monthly gross profit times retention rate) using the stated 45% and/or 92% retention figures.",
+        "evidence": "\"200/(15.58\u00d70.45) = 28.5 months\" and \"200/(450.18\u00d70.92) = 0.48 months\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response treats payback period, not LTV:CAC, as the primary affordability gate.",
+        "evidence": "\"Payback per plan is the real gate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response explicitly challenges the 3.2:1 LTV:CAC ratio, naming at least one structural flaw (blended ARPU hides per-plan variance, churn front-loads, best customers compound, or revenue-delay cash gap).",
+        "evidence": "\"LTV:CAC of 3.2:1 is a blended figure sitting on top of two products that don't behave alike... averaging them produces a number that describes neither.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If LTV:CAC is used at all, it appears only as a secondary sanity check after payback clears.",
+        "evidence": "3.2:1 is only critiqued at the outset and never reused as a decision metric afterward.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response does not present a single blended payback or blended CAC number as the decision basis.",
+        "evidence": "All payback/CAC figures are computed per-plan (Starter vs Scale) throughout.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response derives an allowable CAC from a payback target rather than accepting the agency's $200 quote as the ceiling.",
+        "evidence": "\"Allowable CAC by plan (derived, 12-month target...): Starter: 12 \u00d7 15.58 \u00d7 0.45 \u2248 $84\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response references a target payback band of roughly 3-12 months (with a longer allowance only for enterprise motions).",
+        "evidence": "\"outside the 3\u201312mo band, past even the 18mo enterprise ceiling\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommendation names exactly one funded primary channel family, not a list of platforms to try in parallel.",
+        "evidence": "\"Paid search, scoped to Scale-fit intent keywords\" is the sole primary recommendation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response gathers or conditions on missing economics inputs (sales cycle, buyer concentration, existing channels) before or alongside naming the primary, rather than picking a platform from price alone.",
+        "evidence": "\"Assumptions flagged, unconfirmed: sales cycle length, geography/regulation, tracking/landing-page readiness, existing channels, team's channel skill, deadline.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response computes payback separately for the $19 plan and the $549 plan rather than on the $74 blended ARPU.",
+        "evidence": "Starter: 'payback \u2248 12.8 months'; Scale: 'payback \u2248 13 days' \u2014 each computed from its own monthly gross profit and CAC.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response shows that a ~$200 CAC against the Starter plan pays back in roughly a year or more (about $15.60/month gross profit), making that tier unaffordable for paid acquisition.",
+        "evidence": "'Monthly gross profit: $19 \u00d7 0.82 = $15.58 ... At $200 CAC: LTV:CAC \u2248 1.2:1, payback \u2248 12.8 months.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response recommends routing the Starter tier to organic or product-led motions instead of paid ads.",
+        "evidence": "The response instead says 'route self-serve signups to Starter \u2014 separately measure CAC:LTV for each,' never proposing organic/PLG motions for Starter.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response shows the Scale plan's monthly gross profit around $450 and a payback well under one month at a $200 CAC, anchoring paid acquisition to that tier.",
+        "evidence": "'Monthly gross profit: $549 \u00d7 0.82 = $450 ... At $200 CAC: LTV:CAC \u2248 325:1, payback \u2248 13 days.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response applies a discounted payback calculation (CAC divided by monthly gross profit times retention rate) using the stated 45% and/or 92% retention figures.",
+        "evidence": "Payback is computed as simple CAC \u00f7 monthly GP (e.g. 'payback \u2248 12.8 months'), not discounted by the retention rate; retention is used only to derive churn/lifetime for LTV.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response treats payback period, not LTV:CAC, as the primary affordability gate.",
+        "evidence": "The framing leads with LTV:CAC throughout ('LTV:CAC \u2248 1.2:1', 'well below the ~3:1 safety threshold'), with payback given as a secondary figure alongside it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response explicitly challenges the 3.2:1 LTV:CAC ratio, naming at least one structural flaw (blended ARPU hides per-plan variance, churn front-loads, best customers compound, or revenue-delay cash gap).",
+        "evidence": "'Your board's 3.2:1 is a blended average across two businesses with almost nothing in common.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If LTV:CAC is used at all, it appears only as a secondary sanity check after payback clears.",
+        "evidence": "LTV:CAC is the lead metric in both per-plan breakdowns and the overall argument, not a secondary check after payback.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response does not present a single blended payback or blended CAC number as the decision basis.",
+        "evidence": "No blended payback/CAC figure appears; decisions rest on the separate Starter and Scale calculations.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response derives an allowable CAC from a payback target rather than accepting the agency's $200 quote as the ceiling.",
+        "evidence": "The $200 CAC is used as the given input throughout ('At $200 CAC...'); no allowable-CAC-from-payback-target derivation is shown.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response references a target payback band of roughly 3-12 months (with a longer allowance only for enterprise motions).",
+        "evidence": "No such band is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommendation names exactly one funded primary channel family, not a list of platforms to try in parallel.",
+        "evidence": "'LinkedIn Ads... Google Search... split-test $3\u20135K across LinkedIn + Google Search for 4\u20136 weeks' names two channels to run in parallel.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response gathers or conditions on missing economics inputs (sales cycle, buyer concentration, existing channels) before or alongside naming the primary, rather than picking a platform from price alone.",
+        "evidence": "The response moves directly from per-plan LTV:CAC math to platform recommendations without requesting sales cycle, buyer concentration, or existing-channel data first.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

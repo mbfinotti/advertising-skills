@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to produce one unified 1-to-5 ranking spanning the three placements, because candidates in different windows are not one comparison",
+        "evidence": "The transcript does produce a numbered \"Cross-placement budget priority\" list of all 5 candidates (\"1. #3 ... 2. #2 ... 3. #5 ... 4. #1 ... 5. #4\"), despite caveating it as \"judgment, not a comparable score.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Normalises the two Meta feed candidates to roughly the first 3 seconds",
+        "evidence": "\"your five openings span three different hook windows (3s Meta, 5s YouTube skippable, 6s forced bumper)\" \u2014 candidates 1 and 2 are labeled Meta feed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the roughly 5-second window (up to the skip button) to the two YouTube skippable candidates",
+        "evidence": "\"5s YouTube skippable\" applied to candidates 3 and 4, both labeled \"YouTube skippable.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the bumper as a forced view and states that stop-the-scroll hook logic does not apply to it",
+        "evidence": "\"5 \u2014 Bumper... (forced view \u2014 only continuity, branding, qualification apply; scroll-stop logic is off the table by design)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Scores or proposes to score the bumper only on continuity, branding, and audience qualification, and says so explicitly",
+        "evidence": "\"continuity `strong`...brand timing `strong`...qualification `strong`\" \u2014 only these three dimensions banded for candidate 5.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that transcript-only input cannot support a strong sound-off legibility band, banding it at best adequate",
+        "evidence": "\"every sound-off band below is capped at `adequate`, never `strong`, per the skill's own rule for transcript-only input\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requests the missing first-frame, visual, or on-screen-text information as the input that would resolve the ambiguous bands",
+        "evidence": "The transcript states assumptions and caps bands but never explicitly asks the user to supply a storyboard or first-frame visuals as the next step to resolve them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses strong/adequate/weak bands with no numeric scores anywhere",
+        "evidence": "All dimension bands use \"strong\"/\"adequate\"/\"weak\" labels, e.g. \"time-to-signal `adequate`...sound-off `adequate`\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the counting difference across formats (for example that a paid YouTube skippable view counts at 30 seconds, completion, or interaction) rather than proposing one hook-rate readout across all five",
+        "evidence": "\"YouTube skippable counts a \\\"view\\\" at 30s/completion/interaction \u2014 a completely different metric from a feed hook rate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags candidate 4's 'Meet Copperleaf, founded in 2019' opening as a brand-announcement or slow-build anti-pattern that spends the highest-attention seconds on the advertiser, or bands it weak on time-to-signal",
+        "evidence": "\"time-to-signal `weak`\" and \"brand timing `weak` under a DR objective (brand-first open is the accidental extreme the rubric flags)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Compares candidates head-to-head only within the same placement group (Meta pair against each other, skippable pair against each other)",
+        "evidence": "\"Meta feed: 1. #2 \u2014 vs #1:...\" and \"YouTube skippable in-stream: 1. #3 \u2014 vs #4:...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives per-candidate raise-the-rank notes or input requests instead of an absolute performance prediction for any candidate",
+        "evidence": "\"#3: rung 1\u20132, text/caption fix...#2: rung 1, text rewrite...#1: rung 1, text rewrite...\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to produce one unified 1-to-5 ranking spanning the three placements, because candidates in different windows are not one comparison",
+        "evidence": "The transcript is titled 'Ranked: Copperleaf Q4 Video Openings (Best \u2192 Worst for Budget)' with a single numbered list 1 through 5 spanning YouTube, Meta, and bumper formats together.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Normalises the two Meta feed candidates to roughly the first 3 seconds",
+        "evidence": "No explicit statement of a 3-second normalization window for the Meta candidates (Ad 1, Ad 2).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the roughly 5-second window (up to the skip button) to the two YouTube skippable candidates",
+        "evidence": "Ad 3: 'Directly defuses the one threat unique to this format (the 5-second skip button)'; Ad 4: 'the one format engineered to lose the viewer in 5 seconds.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the bumper as a forced view and states that stop-the-scroll hook logic does not apply to it",
+        "evidence": "'bumpers are a reach/frequency and recall tool, not a response driver, so this format inherently contributes less to a performance-focused Q4 push... Rank reflects role, not script quality.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Scores or proposes to score the bumper only on continuity, branding, and audience qualification, and says so explicitly",
+        "evidence": "No explicit statement that the bumper should be scored only on continuity/branding/audience-qualification criteria; only general commentary is given ('name + one crisp positioning line fits 6 non-skippable seconds').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that transcript-only input cannot support a strong sound-off legibility band, banding it at best adequate",
+        "evidence": "No mention anywhere of transcript-only input limiting sound-off legibility assessment.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requests the missing first-frame, visual, or on-screen-text information as the input that would resolve the ambiguous bands",
+        "evidence": "No request for additional visual/first-frame information is made; the ranking is delivered as final without caveats about missing visual data.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses strong/adequate/weak bands with no numeric scores anywhere",
+        "evidence": "No numeric scores appear, but the transcript does not use the strong/adequate/weak band vocabulary; it uses ordinal ranks (1-5) with prose critique instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the counting difference across formats (for example that a paid YouTube skippable view counts at 30 seconds, completion, or interaction) rather than proposing one hook-rate readout across all five",
+        "evidence": "Instead, the transcript explicitly treats them under one continuous scale: 'This is the strongest hook of the five.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags candidate 4's 'Meet Copperleaf, founded in 2019' opening as a brand-announcement or slow-build anti-pattern that spends the highest-attention seconds on the advertiser, or bands it weak on time-to-signal",
+        "evidence": "'Weakest by a clear margin: a founder-story/brand-intro opener in the one format engineered to lose the viewer in 5 seconds. No pain point, no benefit, no reason to stay.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Compares candidates head-to-head only within the same placement group (Meta pair against each other, skippable pair against each other)",
+        "evidence": "The single ranked list directly compares across placement types (e.g., Ad 3 YouTube ranked #1 above Ad 1 Meta #2), not grouped by placement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives per-candidate raise-the-rank notes or input requests instead of an absolute performance prediction for any candidate",
+        "evidence": "The 'Budget takeaway' gives allocation directives ('Put the largest share behind Ad 3, then Ad 1') rather than a consistent set of raise-the-rank revision notes for each candidate.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

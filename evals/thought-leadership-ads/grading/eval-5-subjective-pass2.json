@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats the exclusion list as a first-class deliverable that can end up longer than the inclusion list",
+        "evidence": "A dedicated section 'Audience exclusions \u2014 yes, and it's overdue, not optional' frames exclusions as mandatory and overdue, quantifies the waste ('1,900 customers and 40 employees have likely been eating impressions... for 8 weeks \u2014 wasted twice: spend, and credibility'), and enumerates five prioritized exclusion categories with build order and source (CRM export, open pipeline, HRIS/employee setting, named competitor list, students), plus an explicit 'Delete, don't wait on: site-visitor URL exclusion' decision about a tier-blocked capability. It also carries into the bottom line ('ship the fo",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats the exclusion list as a first-class deliverable that can end up longer than the inclusion list",
+        "evidence": "Exclusions do get a dedicated H2 section (\"Yes, add exclusions \u2014 and you don't need the site-visitor feature for it\") with real substance: it disambiguates Website Retargeting (Insight Tag) from Matched Audiences list upload, gives three numbered actions (upload 1,900 customers as exclusion, exclude the 40 employees by list or 'Company - current employer', re-approach the rep with the precise feature name), and notes the cross-sell caveat. That is first-class treatment in form. But the substance is confined entirely to the two lists the user already named \u2014 no attempt to build out an exclusion",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

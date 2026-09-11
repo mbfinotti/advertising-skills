@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the 10-week duration, citing the roughly 4-6 week ceiling because novelty decay, fatigue, and external events contaminate longer windows",
+        "evidence": "\"10 weeks blows through the **4-6 week duration ceiling** ... past that window, novelty decay and creative fatigue contaminate the comparison\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor on purchase of roughly $1,286/day per cell ($180 x 50 / 7) and shows the $125/day cells sit an order of magnitude below it",
+        "evidence": "\"target CPA \u00d7 50 \u00f7 7 \u2248 **$1,286/day/cell** ... You're at **9.7% of that floor**.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declares the purchase-event cells with the named verdict 'Not testable as designed' rather than shipping them with hedges",
+        "evidence": "\"**VERDICT: Not testable as designed on purchase, at any duration within (or even beyond) reasonable bounds.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the ranked fix levers with the up-funnel read first (up-funnel > widen MDE > fewer cells > raise budget), not more budget or more time by default",
+        "evidence": "\"(fixes ranked: up-funnel > wider MDE > fewer cells > more budget)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes 'raise the budget' from the menu by name because finance already refused (no budget authority), instead of listing it as a fallback option",
+        "evidence": "\"*Raise the budget* \u2014 **deleted**, named explicitly: finance has closed this door twice this quarter.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves the optimization and read to the add-to-cart event, whose floor of roughly $86/day per cell ($12 x 50 / 7) the $125/day cells clear",
+        "evidence": "\"Stable-delivery floor: $12 \u00d7 50 \u00f7 7 = **$85.71/day/cell** ... Available: $125/day/cell = **146% of floor \u2014 clears it.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records both reads in the plan: the add-to-cart read at its computed standard AND the purchase metric explicitly labelled Directional",
+        "evidence": "\"primary = add-to-cart rate/ranking (Directional...) secondary (lagging, non-decision) = purchase CPA \u2014 tracked as a directional guardrail only\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the up-funnel lever is available because the add-to-cart event is verified (an unverified or broken event would delete that lever until tracking is cleared)",
+        "evidence": "No statement anywhere ties availability of the ATC lever to verification of that tracking event, or warns it would be deleted if unverified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the stable-delivery requirement of roughly 50 optimization events per cell per week",
+        "evidence": "Formula \"$12 \u00d7 50 \u00f7 7\" applied consistently encodes the 50-events/week stable-delivery standard used throughout.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the delivery floor as a read-validity requirement, not a performance unlock (exiting the learning state is worth only a modest ~5-10% efficiency gain)",
+        "evidence": "No mention anywhere that exiting the learning phase is only worth a modest 5-10% efficiency gain.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the control cell concurrent and pre-registers kill and scale thresholds and a fixed stop",
+        "evidence": "\"Control: current champion, running concurrently at the same $125/day \u2014 never compared to its historical numbers.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a one-sentence decision statement and a falsifiable hypothesis with direction and magnitude",
+        "evidence": "\"decision: Based on this test, whichever new concept ranks best on add-to-cart rate vs. the control ... becomes the new control next cycle.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the 10-week duration, citing the roughly 4-6 week ceiling because novelty decay, fatigue, and external events contaminate longer windows",
+        "evidence": "The redesigned plan totals '~9\u201310 weeks' (5-week Phase 1 + 4-5 week Phase 2), not constrained to a 4-6 week ceiling, and no novelty/fatigue-based ceiling is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor on purchase of roughly $1,286/day per cell ($180 x 50 / 7) and shows the $125/day cells sit an order of magnitude below it",
+        "evidence": "No $/day floor computation appears; the analysis uses conversions-per-day and days-to-target tables instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Declares the purchase-event cells with the named verdict 'Not testable as designed' rather than shipping them with hedges",
+        "evidence": "States 'at this spend level, \"purchase\" as the read metric doesn't work at any reasonable timeline' but never uses the specific verdict phrase 'Not testable as designed.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the ranked fix levers with the up-funnel read first (up-funnel > widen MDE > fewer cells > raise budget), not more budget or more time by default",
+        "evidence": "'swap your primary decision metric from purchase to add-to-cart, and you get a robust, statistically defensible read in 5 weeks instead of never' \u2014 up-funnel is the chosen fix.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes 'raise the budget' from the menu by name because finance already refused (no budget authority), instead of listing it as a fallback option",
+        "evidence": "'The design: two phases, same $500/day, no ask to Finance' \u2014 explicitly avoids proposing a budget increase.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves the optimization and read to the add-to-cart event, whose floor of roughly $86/day per cell ($12 x 50 / 7) the $125/day cells clear",
+        "evidence": "'Primary metric: add-to-cart rate (cost per ATC vs. control)... 100 (bare floor) | 9.6 | 1.4 weeks' shows ATC clears usable volume quickly at $125/day/cell.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records both reads in the plan: the add-to-cart read at its computed standard AND the purchase metric explicitly labelled Directional",
+        "evidence": "'Reported but not decisioned on: raw purchase CPA per cell. At ~19-24 purchases/cell it's directional color only.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the up-funnel lever is available because the add-to-cart event is verified (an unverified or broken event would delete that lever until tracking is cleared)",
+        "evidence": "No caveat about needing to verify ATC tracking accuracy before relying on it as the primary metric.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the stable-delivery requirement of roughly 50 optimization events per cell per week",
+        "evidence": "Uses a '~100 conversions/arm bare floor' total-sample standard, not the Meta learning-phase ~50-events/week delivery standard.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames the delivery floor as a read-validity requirement, not a performance unlock (exiting the learning state is worth only a modest ~5-10% efficiency gain)",
+        "evidence": "No discussion of exiting the learning phase as only a modest efficiency gain vs. a validity requirement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the control cell concurrent and pre-registers kill and scale thresholds and a fixed stop",
+        "evidence": "'Split: 25/25/25/25 across Control / A / B / C, run simultaneously' and 'Kill a concept only if it's significantly worse than control (p < 0.017)... One formal read-out, at week 5.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a one-sentence decision statement and a falsifiable hypothesis with direction and magnitude",
+        "evidence": "No single upfront 'Based on this test, we will ___' decision statement or explicit magnitude-bearing hypothesis is written.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

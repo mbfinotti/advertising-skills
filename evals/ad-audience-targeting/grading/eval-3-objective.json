@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes the per-ad-set daily budget floor as (target CPA x ~50 weekly optimization events) / 7, i.e. roughly $300/day at a $42 CPA",
+        "evidence": "\"Budget floor per ad set \u2248 (target CPA \u00d7 50) \u00f7 7. At your $42 CPA that floor is **$300/day per ad set**.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States every proposed ad set sits far below the budget floor and will not exit learning",
+        "evidence": "Table shows all six ad sets at 3%-8% funded, followed by: \"None gets close... the account will run 'learning limited' almost regardless of structure.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quantifies the shortfall (e.g. $25/day at a $42 CPA yields roughly 4 conversions a week versus the ~50 needed)",
+        "evidence": "Table row: \"Cast iron enthusiasts | $25 | ~4.2 | 8% funded\" (and similar rows for other ad sets), directly quantifying conversions/week vs. the ~50 floor.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a fail verdict on the six-way split rather than approving or lightly tweaking it",
+        "evidence": "\"## Verdict: this structure won't work as planned. Two structural failures and one major gap, all fixable.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the fix order: merge tiers into their nearest neighbour first, before changing optimization events or cutting",
+        "evidence": "\"Fix order for underfunded tiers, in order of effort: merge upward > cheaper proxy event > cut. Applied here:\" followed by merging three interest ad sets into one, and cutting competitor fans last.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents optimizing to a cheaper higher-funnel proxy event as the second-choice fix, with purchases still tracked as the true KPI",
+        "evidence": "\"2. **Optimize to a cheaper upstream event** temporarily (e.g. Add to Cart or Checkout Initiated instead of Purchase) to get ad sets out of 'learning limited' faster, then switch back to Purchase once volume builds \u2014 accepting a softer proxy metric in the meantime that you reconcile against actual CPA afterward.\" listed as path 2 after raising budget, and in the fix order 'cheaper proxy event' sits between merge and cut.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that even one fully consolidated ad set at $120/day cannot reach ~50 purchase events a week at a $42 CPA, so recommends the higher-funnel optimization event",
+        "evidence": "\"even if you collapsed **all $120/day into one ad set**, that's still only 40% of the $300/day floor a $42 CPA needs\" combined with later recommending \"Optimize to a cheaper upstream event... to get ad sets out of 'learning limited' faster\" as one of the \"Two honest paths from here\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cuts the 900-person competitor-fans tier as below the platform delivery floor",
+        "evidence": "\"900 people is far below Meta's delivery threshold (pools under ~1,000 struggle to deliver at all)... Cut it as a standalone ad set.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly rejects the 'keep it for coverage' rationale (never keep an unfundable tier for coverage)",
+        "evidence": "\"Keeping it 'for coverage' is the specific trap to avoid here: an audience that can't be funded to significance doesn't produce coverage, it produces a line item that never learns and drags blended account CPA down while it burns its $10/day.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that very small audiences also pay more per impression",
+        "evidence": "No mention of CPM or cost-per-impression increasing for small audiences anywhere in the transcript; the only cost-related claim about the 900-person tier is about delivery/funding thresholds, not price per impression.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that consolidation regularly halves cost per result on the same budget (over-segmentation failure mode)",
+        "evidence": "The closest statement is \"Three ad sets buying the same audience three times just triples your distance from the learning floor for no precision gained,\" which discusses distance-from-floor, not a claim that consolidation halves cost per result.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends an overlap audit between the interest-based ad sets before launch, not only when troubleshooting",
+        "evidence": "The listed audit is \"Audit overlap between the lookalike and the consolidated interest stack once both are live\" \u2014 this is between the lookalike and the (now single, merged) interest stack, timed for 'once both are live' rather than before launch, and not an audit between separate interest-based ad sets.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds exclusions: existing customers excluded from prospecting, higher-intent pools excluded from lower-intent tiers",
+        "evidence": "\"Build the exclusion matrix: retargeting/customer-list pool excluded from lookalike and prospecting; existing customers and employees excluded everywhere.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies interest and affinity targeting as the least efficient tier, treated by the platform as suggestions rather than constraints",
+        "evidence": "\"efficiency order is first-party custom > retargeting > lookalike > behavioral/in-market > cold broad > interest & affinity. Your plan is built almost entirely from the **least** efficient tier \u2014 five of six ad sets are interest/affinity audiences (treated as loose suggestions by Meta's delivery algorithm, not hard constraints)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes the per-ad-set daily budget floor as (target CPA x ~50 weekly optimization events) / 7, i.e. roughly $300/day at a $42 CPA",
+        "evidence": "The transcript cites the 50 conversions/week benchmark ('roughly 50 conversions per week per ad set is the standard benchmark for exiting/staying out of learning-phase instability') but never computes the implied daily budget floor (~$300/day at $42 CPA).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States every proposed ad set sits far below the budget floor and will not exit learning",
+        "evidence": "\"Every single ad set is far below the volume needed for Meta's algorithm to learn reliably. In practice this means: prolonged learning phase, erratic delivery...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quantifies the shortfall (e.g. $25/day at a $42 CPA yields roughly 4 conversions a week versus the ~50 needed)",
+        "evidence": "Table row: \"Cast iron enthusiasts | $25 | $175 | ~4.2\" quantifying weekly conversions against the $42 CPA, contrasted with the stated ~50/week benchmark.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a fail verdict on the six-way split rather than approving or lightly tweaking it",
+        "evidence": "\"No \u2014 the structure has a real problem... Cut to 2\u20133 broader ad sets under CBO before you spend meaningfully against this.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the fix order: merge tiers into their nearest neighbour first, before changing optimization events or cutting",
+        "evidence": "The 'What I'd do instead' list starts with consolidation (step 1) and cutting competitor-fans (step 4), but no optimization-event change is ever mentioned anywhere in the transcript, so the prescribed merge-before-optimization-event-change ordering isn't demonstrated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents optimizing to a cheaper higher-funnel proxy event as the second-choice fix, with purchases still tracked as the true KPI",
+        "evidence": "No mention of a proxy/higher-funnel optimization event (e.g. add-to-cart, lead) anywhere in the transcript; the six recommended steps are consolidation, keeping wedding registry, keeping/widening the lookalike, dropping competitor-fans, switching to CBO, and reassessing after 1-2 weeks.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that even one fully consolidated ad set at $120/day cannot reach ~50 purchase events a week at a $42 CPA, so recommends the higher-funnel optimization event",
+        "evidence": "The transcript never calculates weekly conversions for a single consolidated $120/day ad set, nor does it recommend a higher-funnel optimization event; consolidation is instead paired with switching to CBO.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cuts the 900-person competitor-fans tier as below the platform delivery floor",
+        "evidence": "\"The 900-person audience should be cut, not shrunk further: A standalone ad set on a 900-person audience doesn't work at any budget\" and step 4: \"Drop the competitor-fans ad set entirely; fold the angle into creative testing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly rejects the 'keep it for coverage' rationale (never keep an unfundable tier for coverage)",
+        "evidence": "\"'Coverage' isn't a real objective at this scale \u2014 you're not adding reach, you're adding noise and burning a fixed $10/day that would do far more good elsewhere.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that very small audiences also pay more per impression",
+        "evidence": "\"Frequency spikes fast. At $10/day into that pool, you'll likely hit 3\u20137x frequency within the first week \u2014 ad fatigue and rising CPMs before you've even collected enough data to judge performance.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that consolidation regularly halves cost per result on the same budget (over-segmentation failure mode)",
+        "evidence": "No statement anywhere in the transcript about consolidation typically halving cost per result or any equivalent magnitude claim; the benefit of consolidation is argued qualitatively (avoiding auction competition against oneself, better learning-phase volume) without a cost-per-result figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends an overlap audit between the interest-based ad sets before launch, not only when troubleshooting",
+        "evidence": "The 'Audience overlap among the other five' section analyzes likely overlap ('very likely to overlap heavily') but the six-step action plan never includes running an overlap audit/tool before launch.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds exclusions: existing customers excluded from prospecting, higher-intent pools excluded from lower-intent tiers",
+        "evidence": "No mention of audience exclusions (existing customers, or higher-intent vs lower-intent tier exclusions) anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies interest and affinity targeting as the least efficient tier, treated by the platform as suggestions rather than constraints",
+        "evidence": "The transcript only says \"Meta's current targeting generally outperforms manually stacked interest slices\" when suggesting Advantage+ expansion, but never frames interest/affinity targeting as the least efficient tier or as being treated by the platform as 'suggestions rather than constraints'.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

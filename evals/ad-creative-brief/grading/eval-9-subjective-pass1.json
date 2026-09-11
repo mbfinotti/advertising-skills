@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Writes the messaging angle as a conversational customer sentence, preferably using verbatim review language",
+        "evidence": "The Message table's **Messaging angle** field is a full spoken-sounding sentence \u2014 \"You don't have to guess whether a joint supplement actually works \u2014 this one was formulated by a vet, at the doses the science actually supports.\" \u2014 and the transcript explicitly applies the say-it-out-loud test, naming why the tagline form (\"vet-formulated science\") fails it: \"it's a tagline, not a sentence a customer would say.\" The completion test reinforces the customer-voice register (\"this isn't another glucosamine-and-hope chew \u2014 someone with actual credentials decided what's in it\"). Falls short of 5 on",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Writes the messaging angle as a conversational customer sentence, preferably using verbatim review language",
+        "evidence": "The core angle is stated in brand/marketer abstraction, not customer voice: 'Fernhollow is the joint supplement a vet would formulate for their own dog \u2014 not a supplement company that hired a vet to sign off on it.' The hero claim ('Vet-formulated. Not vet-endorsed.') and all ten hooks are agency-style ad copy ('The dosing math your vet would actually check.', 'No proprietary blend. Every dose, listed.'), never a sentence a dog owner would actually say. No verbatim review language is used \u2014 the brief explicitly states none were provided and only cites the aggregate '3,100 reviews'. The single ",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

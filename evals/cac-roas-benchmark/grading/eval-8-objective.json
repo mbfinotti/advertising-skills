@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags that Meta and Google jointly claim $575,000 of attributed revenue against $390,000 of actual revenue - roughly 147% - so the platforms are double-counting",
+        "evidence": "'$575,000 in combined paid-attributed revenue is 47% higher than the $390,000... reconciling why Meta + Google jointly claim 147% of total company revenue'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to sum platform-attributed revenue across platforms, stating platform-reported ROAS is non-additive",
+        "evidence": "'Summing them and calling it \"combined ROAS\" treats two non-additive numbers as additive.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors revenue on the order system's $390,000 net figure, not on platform-attributed value",
+        "evidence": "'Revenue basis: order-system net revenue, $390,000 (net of refunds \u2014 the correct anchor per this skill)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes blended ROAS as 390,000 / 140,000, approximately 2.79, labeled blended with the November window",
+        "evidence": "'Blended ROAS (= MER...) | total net revenue \u00f7 total paid spend | 2.79 | Nov'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even ROAS as 1 / 0.42, approximately 2.38",
+        "evidence": "'Break-even ROAS | 1 \u00f7 contribution margin | 2.38'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges spend health against the business's own break-even (2.79 versus 2.38), not against the 4.1 platform composite",
+        "evidence": "'Actual blended ROAS = 390,000 \u00f7 140,000 = 2.79. That clears break-even'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the platform figures as claimed/attributed rather than caused revenue, and any attribution-inflation evidence cited carries its provenance",
+        "evidence": "'Meta's $310K and Google's $265K are each platform-attributed \u2014 modeled/claimed conversions, not caused ones' citing 'Gordon, Zettelmeyer, Bhargava & Chapsky's 2019 Marketing Science RCT'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes blended CAC as 140,000 / 3,800, approximately $37, labeled",
+        "evidence": "'Blended CAC | total paid spend \u00f7 all new customers | $36.84 | Nov'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes first-order contribution as AOV x margin (78 x 0.42, approximately $33) and explicitly states the verdict is contingent on the repeat-purchase rate because CAC exceeds it",
+        "evidence": "'First-order allowable CAC | AOV \u00d7 contribution margin | $32.76' and 'Profitability on this cohort depends on repeat purchases, and no repeat-rate/LTV data was supplied'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requests 4-8 prior periods of the same metrics as the trailing-history reference before finalizing the verdict",
+        "evidence": "'Get 4-8 months of blended ROAS/CAC on this same definition before the next check'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that December must be compared against a prior December, not against November, because seasonality alone can invert a verdict",
+        "evidence": "Transcript flags BFCM margin compression risk for November/December generally but never states December must be compared to a prior December rather than November",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Declines to make the 30% December increase decision in this run and hands the budget move off to an allocation, scaling, or guardrails workflow",
+        "evidence": "'Sizing the actual December budget move... not this skill's call: \u2192 ad-spend-guardrails'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every reported figure carries a variant label, a window, and a data source",
+        "evidence": "Metric table populates Variant/Window/Source for every row",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags that Meta and Google jointly claim $575,000 of attributed revenue against $390,000 of actual revenue - roughly 147% - so the platforms are double-counting",
+        "evidence": "'platform-attributed revenue ($575K) is 47% higher than total store revenue ($390K)' and '$185K of phantom/double-counted revenue'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to sum platform-attributed revenue across platforms, stating platform-reported ROAS is non-additive",
+        "evidence": "'Don't use summed platform ROAS as a scaling input, period.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors revenue on the order system's $390,000 net figure, not on platform-attributed value",
+        "evidence": "'use total revenue over total spend...MER = $390,000 / $140,000 = 2.79'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes blended ROAS as 390,000 / 140,000, approximately 2.79, labeled blended with the November window",
+        "evidence": "'MER = $390,000 / $140,000 = 2.79' explicitly framed as a blended figure across both platforms' spend.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even ROAS as 1 / 0.42, approximately 2.38",
+        "evidence": "'Breakeven MER at 42% contribution margin = 1 / 0.42 = 2.38'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges spend health against the business's own break-even (2.79 versus 2.38), not against the 4.1 platform composite",
+        "evidence": "'You're sitting at 2.79 MER against a 2.38 breakeven \u2014 a margin of safety of about 0.4x'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the platform figures as claimed/attributed rather than caused revenue, and any attribution-inflation evidence cited carries its provenance",
+        "evidence": "Consistently uses 'platform-attributed revenue' vs. 'actual net revenue' throughout, with the inflation demonstrated via the store's own order data.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes blended CAC as 140,000 / 3,800, approximately $37, labeled",
+        "evidence": "No CAC calculation appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes first-order contribution as AOV x margin (78 x 0.42, approximately $33) and explicitly states the verdict is contingent on the repeat-purchase rate because CAC exceeds it",
+        "evidence": "No such first-order contribution calculation or repeat-purchase contingency statement appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requests 4-8 prior periods of the same metrics as the trailing-history reference before finalizing the verdict",
+        "evidence": "No request for multi-period trailing history appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that December must be compared against a prior December, not against November, because seasonality alone can invert a verdict",
+        "evidence": "No mention of year-over-year/seasonality comparison for the December decision.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Declines to make the 30% December increase decision in this run and hands the budget move off to an allocation, scaling, or guardrails workflow",
+        "evidence": "The transcript itself renders a judgment: 'That's a thin cushion, not a green light for +30% spend' rather than deferring to a separate workflow.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every reported figure carries a variant label, a window, and a data source",
+        "evidence": "Figures are labeled by platform (Meta/Google), attributed vs. actual, and 'for the month'/November context.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

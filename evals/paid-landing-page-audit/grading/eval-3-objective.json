@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response rejects applying Baymard's checkout figures to this B2B lead form, stating they are B2C ecommerce checkout data.",
+        "evidence": "\"Baymard's 11.3-field average / ~8-achievable figure is B2C ecommerce checkout data, and this skill's own reference material is explicit that it must never be used as a B2B lead-form benchmark.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the ~11% per-field figure, stating that published per-field numbers disagree in size and shape and no trustworthy universal percentage exists.",
+        "evidence": "\"The \\\"~11% per field\\\" figure is contested \u2014 published sources disagree on both size and shape\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states the defensible claim as direction only: every field costs conversion and the cost is non-linear.",
+        "evidence": "\"it licenses only a direction (more fields cost some conversion, non-linearly), never a number, and never a target field count.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response identifies lead quality, not fill volume, as the current bottleneck, using the SDR complaint about unqualified MQLs.",
+        "evidence": "\"an observation, not an opinion, that the current funnel over-produces unqualified leads (SDR-reported: over half of MQLs are students/consultants with no budget)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response treats adding or keeping a qualifying field as a legitimate recommendation in this situation, not as an error.",
+        "evidence": "Fix 2: \"add server-side business-email-domain validation\"; Fix 4: \"require the field... treat it as a qualification pair\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The recommendation is judged against pipeline (MQL to SQL to closed-won or equivalent), not against form-fill rate.",
+        "evidence": "\"funnel step: form completion, and the metric that actually matters: MQL \u2192 SQL\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response acknowledges a long lag (on the order of 30-180 days) before the change's true pipeline effect is visible.",
+        "evidence": "\"given typical 60-180 day cycles on an $80k-ACV enterprise deal\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not endorse cutting the form to 3 fields to maximize fills.",
+        "evidence": "\"halt the 3-field cut; re-derive any field-count change from this page's own field-level and MQL-quality data\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explicitly counters the assumption that a shorter form is always better, noting shorter B2B forms can degrade lead quality or revenue.",
+        "evidence": "\"Cutting to 3 fields removes filtering friction with no offsetting quality gain, and would plausibly make that specific, already-reported problem worse.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response evaluates fields by whether each is needed now versus collectible after the conversion.",
+        "evidence": "The response never uses a needed-now-vs-collectible-later framework; it instead proposes email/company validation and instrumentation, and lists field identities under 'Could Not Check' as unknown.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response does not prescribe an A/B test as the validation path given roughly 85 conversions per month.",
+        "evidence": "\"At 85 conversions/month you're under this skill's ~100/month floor for treating an A/B test as a validation path, so don't test it head-to-head\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The proposed validation is shipping plus monitoring downstream lead-quality or pipeline movement over time.",
+        "evidence": "\"ship #2 first, then watch MQL qualification rate on a before/after basis rather than a split test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion or fill-rate lift is promised anywhere in the response.",
+        "evidence": "No percentage figure for conversion or fill-rate lift appears anywhere.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Form findings carry an evidence-class label (opinion vs observation) or an equivalent explicit distinction.",
+        "evidence": "\"evidence: opinion (citation-applicability judgment) | source: established research\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response rejects applying Baymard's checkout figures to this B2B lead form, stating they are B2C ecommerce checkout data.",
+        "evidence": "\"Baymard's 11.3-field figure is checkout research: someone who already decided to buy is being asked for shipping/billing data with zero informational value to you as the seller.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the ~11% per-field figure, stating that published per-field numbers disagree in size and shape and no trustworthy universal percentage exists.",
+        "evidence": "The response accepts the figure as valid but misapplied: \"The '-11% per field' rule is real, but it's a rule about fills, not about qualified pipeline.\" \u2014 it does not challenge the figure's reliability or cite disagreement across sources.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response states the defensible claim as direction only: every field costs conversion and the cost is non-linear.",
+        "evidence": "No statement frames field cost as directional/non-linear; the response instead argues qualifying fields are net-positive for pipeline.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response identifies lead quality, not fill volume, as the current bottleneck, using the SDR complaint about unqualified MQLs.",
+        "evidence": "\"SDR says >50% are unqualified... That's the trap: fills is a vanity metric here.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response treats adding or keeping a qualifying field as a legitimate recommendation in this situation, not as an error.",
+        "evidence": "\"Keep it short, but keep the two fields that do qualification work\" \u2014 job title and company size are retained by design.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The recommendation is judged against pipeline (MQL to SQL to closed-won or equivalent), not against form-fill rate.",
+        "evidence": "\"The KPI that should be driving this decision is qualified pipeline $ per session, not form-fill rate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response acknowledges a long lag (on the order of 30-180 days) before the change's true pipeline effect is visible.",
+        "evidence": "No lag duration of that scale is stated; instead a short \"A/B test it against the 5-field version above for 2-3 weeks\" is proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response does not endorse cutting the form to 3 fields to maximize fills.",
+        "evidence": "\"Don't cut to 3 fields.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explicitly counters the assumption that a shorter form is always better, noting shorter B2B forms can degrade lead quality or revenue.",
+        "evidence": "\"cutting fields blindly can shrink [pipeline] while growing the fill-rate term \u2014 that's exactly the failure mode described above.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response evaluates fields by whether each is needed now versus collectible after the conversion.",
+        "evidence": "\"Company (auto-enrich company size/industry via Clearbit/ZoomInfo/similar on email domain instead of asking)\" \u2014 deferring collection via enrichment versus \"Job title \u2014 free text or seniority dropdown; single biggest SDR-triage signal\" kept because needed now.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not prescribe an A/B test as the validation path given roughly 85 conversions per month.",
+        "evidence": "\"A/B test it against the 5-field version above for 2-3 weeks, but score both on SQL rate and pipeline $ per session\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The proposed validation is shipping plus monitoring downstream lead-quality or pipeline movement over time.",
+        "evidence": "The primary validation proposed is an A/B test, not ship-and-monitor: \"A/B test it against the 5-field version above for 2-3 weeks\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion or fill-rate lift is promised anywhere in the response.",
+        "evidence": "\"Fills likely rise \u2014 plausibly 40-70%+, in line with field-reduction benchmarks. Say fills go to ~130-140.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Form findings carry an evidence-class label (opinion vs observation) or an equivalent explicit distinction.",
+        "evidence": "No opinion/observation labeling is applied to any form-related finding.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

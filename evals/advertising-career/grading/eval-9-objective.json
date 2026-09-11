@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that the seat ranking flips at mid-level: from mid onward in-house ranks above freelance, which ranks above agency",
+        "evidence": "\"in-house beats both agency and freelance mid-level onward once reps stop being the scarce resource\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that staying agency past mid-level fights the compensation curve (agency pay lowest at junior and capped at mid)",
+        "evidence": "\"past mid-level, staying agency fights the comp curve rather than building it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to promote freelance on the day rate alone, because that number is exactly what the ranking already priced in and rejected",
+        "evidence": "\"the high day rate is exactly what that ratio has already priced in and still rejects it as a first move\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the \u00a370K+ arithmetic: the \u00a3300 median PPC day rate (itjobswatch, 2025) is down roughly 15% year-on-year and freelance income is volatile",
+        "evidence": "\"itjobswatch, 6 months to 17 July 2025 \u2014 UK median PPC contractor day rate \u00a3300... down ~15% year-on-year\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names freelance's real effort: a standing sales job on top of the craft, plus income instability",
+        "evidence": "\"its cost isn't the work, it's running a standing sales job for years before any track record exists\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the former client's hint from the condition that actually promotes freelance: a client who has said yes, or a network that reliably converts",
+        "evidence": "\"A hint is not a signed contract, and one lead is not a network.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Re-ranks on what the user is short of: short of money points to in-house early, short of autonomy is the case that takes freelance early despite the order",
+        "evidence": "The transcript discusses burnout/fatigue but never frames the choice around being 'short of money' vs 'short of autonomy' as a re-ranking axis.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the burnout evidence as survey-grade context for the agency exit (Marketing Week 2026 survey figures such as 65.3% overwhelmed or 55.1% emotionally exhausted)",
+        "evidence": "\"65.3% of marketers felt overwhelmed, 60.7% undervalued, 55.1% emotionally exhausted, 51.2% saw remit grow without matching pay\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quotes pay figures with source, date, and grade, and treats the \u00a348K offer against dated ranges rather than points",
+        "evidence": "\"\u00a348K clears it and lands you inside 3Search's 2025 PPC Manager band (\u00a350K\u2013\u00a370K, 1,300+ respondents)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the ordering out loud as a default rather than a law, and names which of the user's circumstances moved which option",
+        "evidence": "\"I'm reading 'honestly fried' as low capacity for anything that adds a second job\" tied to freelance being deprioritized",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks clarifying questions or explicitly conditions the recommendation on the unanswered constraints (deadline, one-off versus compounding goal, effort ceiling and reversibility)",
+        "evidence": "\"Does the homeware role carry budget/forecast responsibility... How fried, precisely\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that the seat ranking flips at mid-level: from mid onward in-house ranks above freelance, which ranks above agency",
+        "evidence": "No general ranking framework (in-house > freelance > agency) is stated; only a specific in-house vs freelance comparison is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that staying agency past mid-level fights the compensation curve (agency pay lowest at junior and capped at mid)",
+        "evidence": "No discussion of agency pay curves by seniority level.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to promote freelance on the day rate alone, because that number is exactly what the ranking already priced in and rejected",
+        "evidence": "'\u00a3300/day \u00d7 5 days \u00d7 52 weeks = \u00a378K is a spreadsheet fantasy, not a forecast... Net, you're likely looking at parity with the in-house offer or worse'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the \u00a370K+ arithmetic: the \u00a3300 median PPC day rate (itjobswatch, 2025) is down roughly 15% year-on-year and freelance income is volatile",
+        "evidence": "The utilization-rate correction is made, but no itjobswatch citation, 2025 date, or 15% YoY decline figure is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names freelance's real effort: a standing sales job on top of the craft, plus income instability",
+        "evidence": "'Freelance doesn't reduce that \u2014 it usually adds a 9th \"account\" (running your own business: invoicing, chasing payment, finding the next client) on top of delivery work, solo'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the former client's hint from the condition that actually promotes freelance: a client who has said yes, or a network that reliably converts",
+        "evidence": "'One former client hinting at a project is not a contract... ask what \"sending a project\" actually means \u2014 get it in writing, get a scope, get a rate.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Re-ranks on what the user is short of: short of money points to in-house early, short of autonomy is the case that takes freelance early despite the order",
+        "evidence": "No conditional 'if short of autonomy, freelance instead' branch is offered; the recommendation is unconditionally in-house.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the burnout evidence as survey-grade context for the agency exit (Marketing Week 2026 survey figures such as 65.3% overwhelmed or 55.1% emotionally exhausted)",
+        "evidence": "No survey statistics on burnout are cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Quotes pay figures with source, date, and grade, and treats the \u00a348K offer against dated ranges rather than points",
+        "evidence": "The \u00a348K offer and 17% raise are discussed without any source, date, or grading of a market range.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the ordering out loud as a default rather than a law, and names which of the user's circumstances moved which option",
+        "evidence": "No general default-ordering framework is articulated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks clarifying questions or explicitly conditions the recommendation on the unanswered constraints (deadline, one-off versus compounding goal, effort ceiling and reversibility)",
+        "evidence": "The response opens with a definitive verdict ('In-house, at \u00a348K.') with no clarifying questions asked.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

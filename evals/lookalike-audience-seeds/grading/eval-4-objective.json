@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Stops at the privacy and consent gate before doing any selection work, rather than proceeding with the seed definition",
+        "evidence": "Step 2 of this process is a hard stop, run *before* selecting a single row",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the agency's claim: SHA-256 output is pseudonymous, not anonymous, so consent obligations survive hashing",
+        "evidence": "SHA-256 hashing does not make the list anonymous, and GDPR does not stop applying to it ... hashing produces **pseudonymous** data, not anonymous data",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "References the German precedent - the Bavarian DPA position upheld by the Higher Administrative Court Munich (2018) - that customer-list custom audiences require prior consent",
+        "evidence": "The Bavarian DPA position, upheld by the Higher Administrative Court Munich (2018, Ref. 5 CS 18.1157)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires Consent Mode v2 signals with both consent fields GRANTED for EEA use of Google Customer Match, mandatory since March 2024",
+        "evidence": "Consent Mode v2 signals passed with both `ad_storage` and `ad_user_data` GRANTED for the EEA rows going to Google Customer Match (mandatory since March 2024)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the sleep-and-anxiety product segment as a seed built on a sensitive health category",
+        "evidence": "This skill blocks seeds built on sensitive categories outright \u2014 health is explicitly listed. Purchase history for a sleep-and-anxiety product line discloses a likely health or mental-health condition",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to upload in parallel with legal review: no upload before the consent basis is confirmed",
+        "evidence": "No. This skill is not legal advice ... the specific ask (\"define and upload the seed now, review after\") is the one move the gate exists to prevent.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the specific missing gate items (documented lawful basis or consent, Consent Mode v2 status, platform terms acceptance) instead of a generic 'check with legal'",
+        "evidence": "Documented lawful basis / consent ... Consent Mode v2 signals ... Opt-outs and deletions enforced once in the warehouse ... Meta's separate customer-list terms acceptance",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that suppression, opt-outs, and deletions must be enforced once in the warehouse before any sync, not per-platform afterwards",
+        "evidence": "Opt-outs and deletions enforced once in the warehouse, before export \u2014 not patched in per-platform afterward.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Disclaims legal advice and routes the lawful-basis question to the user's counsel",
+        "evidence": "This skill is not legal advice and routes exactly this kind of open question to counsel",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not emit a Seed Specification, because an unconfirmed consent basis fails the evidence gate",
+        "evidence": "## Seed Specifications \u2014 BLOCKED / Per the Evidence Gate, these cannot be emitted as usable specs",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats list-based seed sources as unavailable (deleted from the menu), not merely delayed",
+        "evidence": "Note the sleep-and-anxiety segment doesn't even get a draft spec above \u2014 per the sensitive-category rule it's excluded from the menu, not deferred.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers platform-native engagement audiences as the seed class still available now, since they never leave the ad account and trigger no consent gate",
+        "evidence": "Platform-native engagement audiences carry no consent exposure at all \u2014 no customer list leaves the warehouse, so step 2 doesn't apply",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions platform customer-list terms acceptance for the specific ad account as a gate item",
+        "evidence": "Meta's separate customer-list terms acceptance on the ad account (and a further, separate acceptance if any list ends up value-based)",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Stops at the privacy and consent gate before doing any selection work, rather than proceeding with the seed definition",
+        "evidence": "Entire transcript addresses consent/GDPR gate with no seed-selection work performed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the agency's claim: SHA-256 output is pseudonymous, not anonymous, so consent obligations survive hashing",
+        "evidence": "\"Hashing \u2260 anonymization under GDPR. SHA-256 of an email address is pseudonymization, not anonymization.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "References the German precedent - the Bavarian DPA position upheld by the Higher Administrative Court Munich (2018) - that customer-list custom audiences require prior consent",
+        "evidence": "Only cites \"CNIL (France) and other EU DPAs\" generically, no German Bavarian DPA/Munich court reference.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires Consent Mode v2 signals with both consent fields GRANTED for EEA use of Google Customer Match, mandatory since March 2024",
+        "evidence": "Not mentioned anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the sleep-and-anxiety product segment as a seed built on a sensitive health category",
+        "evidence": "\"Article 9 GDPR classifies health-related data as a special category, requiring explicit consent.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to upload in parallel with legal review: no upload before the consent basis is confirmed",
+        "evidence": "\"No. Concretely: 1. Do not upload the sleep-and-anxiety segment at all... 2. Do not upload the general 30,000-customer list... until you've confirmed the legal basis.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the specific missing gate items (documented lawful basis or consent, Consent Mode v2 status, platform terms acceptance) instead of a generic 'check with legal'",
+        "evidence": "\"Ask legal for a 15-minute fast-path check specifically on: (a) does existing consent language cover ad-platform data sharing, and (b) is there any special-category carve-out.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that suppression, opt-outs, and deletions must be enforced once in the warehouse before any sync, not per-platform afterwards",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Disclaims legal advice and routes the lawful-basis question to the user's counsel",
+        "evidence": "No explicit disclaimer that this is not legal advice.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not emit a Seed Specification, because an unconfirmed consent basis fails the evidence gate",
+        "evidence": "No spec table or seed definition is produced anywhere in the response.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats list-based seed sources as unavailable (deleted from the menu), not merely delayed",
+        "evidence": "Language is delay-framed: \"Hold the sleep-and-anxiety seed... until you have explicit, specific consent.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Offers platform-native engagement audiences as the seed class still available now, since they never leave the ad account and trigger no consent gate",
+        "evidence": "The \"this week\" options only cover the consented subset of the customer list, not platform-native engagement audiences.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Mentions platform customer-list terms acceptance for the specific ad account as a gate item",
+        "evidence": "\"Meta's and Google's own Custom Audience / Customer Match terms additionally require you to represent that you have the necessary consents and legal basis before upload.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

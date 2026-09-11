@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Writes the messaging angle as a conversational sentence a customer could plausibly say out loud, not a tagline or a feature list",
+        "evidence": "\u00a73 Message: Messaging angle = *\"I don't want to pop a pill that makes me groggy the next day just to fall asleep.\"* \u2014 first-person, plain-spoken, no brand slogan phrasing, no feature enumeration. The brief also explicitly applies the say-it-out-loud test inline ('Test: a customer could plausibly say this out loud \u2014 passes'), and keeps the feature/benefit language separate in the adjacent 'Value prop' row rather than blending it into the angle. Hook directions (H1\u2013H4) and the trust-bar claims are likewise kept distinct from the angle, so the angle field isn't contaminated by claim stacking.",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Writes the messaging angle as a conversational sentence a customer could plausibly say out loud, not a tagline or a feature list",
+        "evidence": "The brief expresses its angles almost entirely as claim tables and taglines. Section 5 'Message Architecture' is a pure feature/claim grid (Pillar | Core claim | Emotional job), and Section 8 'Copy Toolkit' offers polished brand-voice taglines \u2014 'Sleep support, minus the melatonin hangover.', 'Every batch, third-party tested. No exceptions.', 'Prescription-level relief, without the prescription price.', '40,000+ people changed how they sleep.' \u2014 none of which is a sentence a customer would say out loud; they are advertiser-to-customer slogans. Concept tone notes are also brand voice ('Everyone",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

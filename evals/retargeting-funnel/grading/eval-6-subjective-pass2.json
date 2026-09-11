@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats the common 70/30 practice and the 50/50 move as conditional heuristics (justified only when traffic is high and conversion is the bottleneck), overridden here by the pool-bound ceiling",
+        "evidence": "The override half is clearly satisfied: the 50/50 ask is labelled the 'Naive \"board\" ask' in the split table and explicitly displaced by ceiling math ('the pool math caps retargeting near 7% regardless'; 'retargeting spend is bounded by pool \u00d7 frequency cap \u00d7 CPM, not by ambition \u2014 this is the binding constraint, not a target to negotiate'). But the heuristic half is missing: the 70/30 industry-standard baseline is never named or discussed anywhere, and the answer never states the conditions under which a 50/50 (or heavier-retargeting) split would legitimately apply \u2014 i.e. high traffic volume ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats the common 70/30 practice and the 50/50 move as conditional heuristics (justified only when traffic is high and conversion is the bottleneck), overridden here by the pool-bound ceiling",
+        "evidence": "The pool-bound ceiling override is clearly present and well-developed: the answer computes a ~$3,300/month ceiling (8,000 \u00d7 6 \u00d7 4.3 \u00d7 $16 CPM) and uses it to reject the literal 50% retargeting allocation ('Above that, dollars don't convert to more impressions'), and the section 'Why literal 50/50 is the wrong instrument, not the wrong instinct' explicitly frames the board's ask as a misapplied instrument rather than a wrong goal. However, the conditionality framing the item asks for is absent. The 70/30 industry-standard practice is never mentioned at all \u2014 no acknowledgment that it exists, le",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

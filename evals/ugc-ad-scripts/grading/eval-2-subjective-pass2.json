@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The first body line extends each hook's premise, with the transition line adjusted per hook where needed.",
+        "evidence": "The body section states explicitly: \"Beat 1 (transition) changes per hook to extend its specific premise. Beats 2-4 are identical across all three hooks.\" Each of the three Beat 1 lines is written to continue its own hook: Hook 1 (problem callout, \"I have killed every single plant I've ever owned\") \u2192 \"I wasn't checking on them. I was guessing.\" explains the cause of the stated failure; Hook 2 (skeptic's turn, \"I really thought I just didn't have a green thumb\") \u2192 \"Turns out it wasn't me \u2014 I just wasn't checking.\" completes the reversal the hook sets up; Hook 3 (POV, second-person \"your monster",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The first body line extends each hook's premise, with the transition line adjusted per hook where needed.",
+        "evidence": "The script contains only a single hook ('If you've killed more plants than you can count... this one's for you.') \u2014 no hook variants are offered, so there is no per-hook adjustment of the transition line anywhere in the deliverable. The one body line that follows ('I used to just water it and hope for the best.') is loosely continuous with that single hook's premise (plant-killing \u2192 no watering system), which is the only partial credit available; but the rubric's core requirement \u2014 multiple hooks, each with a first body line and transition tuned to it \u2014 is absent. The 'Delivery notes' and 'One",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

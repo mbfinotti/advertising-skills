@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that LinkedIn's 300 minimum applies to matched members, not uploaded rows, and rejects the user's row-count reading",
+        "evidence": "LinkedIn's 300 minimum is a **matched** count, not a row count.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies an expected match rate around 30-40% for a work-email contact list on LinkedIn",
+        "evidence": "LinkedIn matches work-email contact lists at roughly **30\u201340%** (LinkedIn Help + practitioner data).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the effective seed at roughly 210-280 matched (700 x 0.30-0.40) and concludes it fails the 300 matched floor",
+        "evidence": "700 rows \u00d7 30\u201340% match = **~210\u2013280 matched people** ... Fails, across the entire documented range",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the 'LinkedIn lookalike' framing: LinkedIn Lookalike Audiences were sunset in February 2024, replaced by Predictive Audiences",
+        "evidence": "\"lookalike\" is the pre-Feb-2024 name. LinkedIn sunset Lookalike Audiences and replaced them with **Predictive Audiences**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to add the 6,000 MQLs to the seed, keeping closed-won as the selection and stating that selection quality is never the first thing traded (SQL-only beats all-MQL)",
+        "evidence": "seed from closed-won, not MQLs ... If a floor gap remains after the levers below, the correct downgrade is **SQL-only**, never raw MQL.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends fallback ladder rung 1, identity enrichment appending personal identifiers, as the route to the floor",
+        "evidence": "Rung 1 \u2014 Enrich identifiers | **Likely your fix** | Identity resolution appends personal emails/phones",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why the cheap rungs are structurally empty here: an all-time closed-won list has no recency window left to widen and no adjacent segment that is not lost deals or MQLs",
+        "evidence": "3 \u2014 Stack an adjacent segment | Probably empty | The only adjacent segments for closed-won are lost deals or MQLs \u2014 both forbidden as a first move",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions expanding won accounts into contacts via title, seniority, and function filters before upload",
+        "evidence": "expands each closed-won *account* into multiple buying-committee contacts via title/seniority/function",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that enrichment brings a vendor DPA, counsel or lawful-basis re-check, and roughly a week or more of procurement coordination",
+        "evidence": "Cost: real \u2014 vendor selection, DPA, security review, a week+ of coordination before a row moves.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites LinkedIn sizing guidance of roughly 10,000+ uploaded emails for a contact list (or 1,000+ companies for a company list) to reliably clear 300 matched",
+        "evidence": "LinkedIn's own recommendation reinforces this independently: they suggest uploading **10,000+ emails**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises judging early results on match quality and engagement only, deferring the seed verdict to cohort maturity because the B2B sales cycle lags the conversion read",
+        "evidence": "re-check : cannot set - depends on launch date (Q6) and B2B sales-cycle maturity (~2 quarters typical; early reads should be limited to match quality/engagement, not cohort LTV)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends sizing the post-enrichment upload at 2-3x the target matched count",
+        "evidence": "No mention of a 2-3x sizing multiplier anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that if no procurement route or vendor DPA exists, rung 1 is deleted from the ladder and the honest finding is that no ladder clears the floor - reported as the finding rather than filled with a looser seed",
+        "evidence": "The transcript treats enrichment as 'Likely your fix' and never addresses the no-procurement scenario or reports that no ladder clears the floor.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that LinkedIn's 300 minimum applies to matched members, not uploaded rows, and rejects the user's row-count reading",
+        "evidence": "\"700 uploaded rows \u2260 700 matched LinkedIn members. The 300 minimum applies to the matched audience LinkedIn can actually resolve against real profiles, not your CSV row count.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies an expected match rate around 30-40% for a work-email contact list on LinkedIn",
+        "evidence": "Transcript uses \"40\u201365% range\" as the match-rate estimate, not 30-40%.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the effective seed at roughly 210-280 matched (700 x 0.30-0.40) and concludes it fails the 300 matched floor",
+        "evidence": "\"At the low end of that range, 700 rows could resolve to ~280 matched profiles \u2014 under the floor, not comfortably above it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the 'LinkedIn lookalike' framing: LinkedIn Lookalike Audiences were sunset in February 2024, replaced by Predictive Audiences",
+        "evidence": "\"LinkedIn sunset Lookalike Audiences and folded that capability into Predictive Audiences, built on top of a Matched Audience source list.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to add the 6,000 MQLs to the seed, keeping closed-won as the selection and stating that selection quality is never the first thing traded (SQL-only beats all-MQL)",
+        "evidence": "\"Don't pad the seed with the 6,000 MQLs. This is the part most likely to quietly wreck the whole exercise.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends fallback ladder rung 1, identity enrichment appending personal identifiers, as the route to the floor",
+        "evidence": "\"If it comes in light, add first name, last name, and company domain columns to the upload \u2014 multiple match keys measurably lift match rate versus email alone.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why the cheap rungs are structurally empty here: an all-time closed-won list has no recency window left to widen and no adjacent segment that is not lost deals or MQLs",
+        "evidence": "No discussion of why recency-widening or adjacent-segment rungs are unavailable for an all-time closed-won list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Mentions expanding won accounts into contacts via title, seniority, and function filters before upload",
+        "evidence": "Not present; company list uses domains only, no title/seniority/function contact-expansion step mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that enrichment brings a vendor DPA, counsel or lawful-basis re-check, and roughly a week or more of procurement coordination",
+        "evidence": "No mention of enrichment vendor DPA or procurement timeline.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites LinkedIn sizing guidance of roughly 10,000+ uploaded emails for a contact list (or 1,000+ companies for a company list) to reliably clear 300 matched",
+        "evidence": "No such sizing figures given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises judging early results on match quality and engagement only, deferring the seed verdict to cohort maturity because the B2B sales cycle lags the conversion read",
+        "evidence": "Step 5 recommends judging on \"pipeline-stage conversion (SQL/opportunity rate)\" without discussing deferring due to sales-cycle lag.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends sizing the post-enrichment upload at 2-3x the target matched count",
+        "evidence": "No such sizing multiplier mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that if no procurement route or vendor DPA exists, rung 1 is deleted from the ladder and the honest finding is that no ladder clears the floor - reported as the finding rather than filled with a looser seed",
+        "evidence": "Not addressed; only says \"If truly stuck, run it at 700 and accept a slightly less precise model.\"",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

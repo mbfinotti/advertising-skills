@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response rejects last month's closed-won report as the reallocation signal for a ~105-day sales cycle, stating that closed revenue traces to spend from one to two quarters earlier.",
+        "evidence": "\"Deals closing this month were sourced 3\u20134 months ago, before this quarter's spend even ran. That number indicts LinkedIn spend from roughly a quarter ago\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response reallocates on leading indicators instead: cost per SQL, pipeline created, and penetration.",
+        "evidence": "Rollback thresholds use \"cost/SQL > 1.3x trailing baseline\"; split rationale uses pipeline share and LinkedIn penetration.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response applies pipeline share versus budget share: capture (search plus review sites) at 63% of pipeline on 45% of budget is under-funded at the margin and gains budget.",
+        "evidence": "\"Search + review sourced 63% of pipeline on 45% of budget \u2014 pipeline share exceeds budget share, the clearest under-funded signal\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response uses the 38% impression share lost to budget as headroom evidence for search.",
+        "evidence": "\"Search additionally has 38% impression share lost to budget, meaning real, budget-responsive headroom\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response computes LinkedIn 30-day penetration at about 33% (12,400 of 38,000) and reads it as the hold band (25-35%), not as scale-up room and not as proof the channel is worthless.",
+        "evidence": "\"LinkedIn's 30-day penetration is 12,400 / 38,000 = 32.6%, squarely in the hold band (25\u201335%)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses the 60% single-step cut; any LinkedIn reduction is bounded to roughly 15-20% of the line, with moves of 30% or more in one step refused.",
+        "evidence": "\"A 60% single-cycle cut is also 3x this framework's 'never move 30%+ per line' default. I'm implementing it anyway as your explicit, approver-directed call\" \u2014 the cut is executed, not refused.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response computes and carries break-even CPL of about $3,520 ($32,000 x 11%) into the plan.",
+        "evidence": "\"Break-even CPL = ACV \u00d7 lead-to-close = $32,000 \u00d7 11% = $3,520.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposed amounts sum exactly to $120,000.",
+        "evidence": "44,000+25,000+12,000+21,600+17,400 = $120,000, and table states \"sums exact.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Changed lines carry rollback thresholds and verification dates.",
+        "evidence": "Each per-line packet includes 'Rollback threshold' and 'Verify' entries (e.g. Search: \"cost/SQL > 1.3x trailing baseline for 2 consecutive weeks\" / \"Day 45... Day 90\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marginal estimates are labeled as directional proxies, since no incrementality test or MMM is in evidence.",
+        "evidence": "\"Evidence rung : Directional proxies only \u2014 no incrementality test or MMM in place\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Before any defund, the response rules out lag, tracking outages, small samples, or seasonality as the cause of the weak signal, rather than defunding the worst attributed performer outright.",
+        "evidence": "\"Judging a 105-day-cycle channel on last month's closed-won is a named failure mode, not a metric\" \u2014 extensive lag analysis before any defund decision.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags governance for the proposed cut: a move above roughly 25% of a channel's quarterly budget requires joint marketing-and-finance sign-off (or at minimum an approval workflow above roughly 10%).",
+        "evidence": "\"well above the 25% joint-signoff threshold this framework defaults to \u2014 route it through Finance alongside Marketing before execution\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The output is presented as a proposal awaiting approval, not as an executed decision.",
+        "evidence": "\"route it through Finance alongside Marketing before execution\" implies the move has not yet been executed and requires further sign-off.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response rejects last month's closed-won report as the reallocation signal for a ~105-day sales cycle, stating that closed revenue traces to spend from one to two quarters earlier.",
+        "evidence": "\"Last month's 'zero from LinkedIn' reflects deals that closed last month \u2014 given the 105-day sales cycle, those were sourced ~3.5 months ago... It's a lagging indicator being used to judge current performance.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response reallocates on leading indicators instead: cost per SQL, pipeline created, and penetration.",
+        "evidence": "\"sourced 63% of pipeline on 45% of spend\" and \"LinkedIn's reach is also thin (12,400 of 38,000, 33% in 30 days)\" are used as the basis for reallocation instead of closed-won; no CPL/SQL metric is used, though.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response applies pipeline share versus budget share: capture (search plus review sites) at 63% of pipeline on 45% of budget is under-funded at the margin and gains budget.",
+        "evidence": "\"It's part of the channel pair (with search) that sourced 63% of pipeline on 45% of spend \u2014 strong combined efficiency\" and both search and review-site listings receive increases.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response uses the 38% impression share lost to budget as headroom evidence for search.",
+        "evidence": "\"38% of search impression share is currently lost to budget, not to targeting or market size. That's near-guaranteed incremental volume, not a bet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response computes LinkedIn 30-day penetration at about 33% (12,400 of 38,000) and reads it as the hold band (25-35%), not as scale-up room and not as proof the channel is worthless.",
+        "evidence": "\"LinkedIn's reach is also thin (12,400 of 38,000, 33% in 30 days)... This doesn't invalidate the cut... The directional call is sound\" \u2014 used to support holding LinkedIn at a reduced but non-zero level, not scaling up or declaring it worthless.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses the 60% single-step cut; any LinkedIn reduction is bounded to roughly 15-20% of the line, with moves of 30% or more in one step refused.",
+        "evidence": "\"LinkedIn kept at $21.6K, not zero. CEO asked for a 60% cut, not elimination \u2014 honored as stated.\" The response implements the full 60% cut rather than refusing or bounding it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response computes and carries break-even CPL of about $3,520 ($32,000 x 11%) into the plan.",
+        "evidence": "No CPL or break-even CPL figure of any kind appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposed amounts sum exactly to $120,000.",
+        "evidence": "$52K+$27K+$19.4K+$21.6K = $120K, and table states \"**Total** | $120K | **$120K**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Changed lines carry rollback thresholds and verification dates.",
+        "evidence": "\"re-evaluate the $21.6K based on that leading signal once this quarter's cohort has had time to mature \u2014 not at 30 days\" gives vague timing but no specific date or quantified rollback threshold for any line.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marginal estimates are labeled as directional proxies, since no incrementality test or MMM is in evidence.",
+        "evidence": "No line's marginal estimate is explicitly labeled as a \"directional proxy\" or similar evidence-class tag anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Before any defund, the response rules out lag, tracking outages, small samples, or seasonality as the cause of the weak signal, rather than defunding the worst attributed performer outright.",
+        "evidence": "\"given the 105-day sales cycle, those were sourced ~3.5 months ago, under whatever targeting/creative was running back then, not under current LinkedIn spend. It's a lagging indicator being used to judge current performance.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags governance for the proposed cut: a move above roughly 25% of a channel's quarterly budget requires joint marketing-and-finance sign-off (or at minimum an approval workflow above roughly 10%).",
+        "evidence": "No governance/approval-threshold language appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The output is presented as a proposal awaiting approval, not as an executed decision.",
+        "evidence": "\"## \u26a0\ufe0f Caveat before you present this upward\" frames the plan as something still to be presented, not yet finalized/executed.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

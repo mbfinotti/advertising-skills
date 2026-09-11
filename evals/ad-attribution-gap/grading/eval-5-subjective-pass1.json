@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Ranks the test-order cleanup high despite its $6k being the smallest figure, because it is near-zero effort and owned outright by the analyst.",
+        "evidence": "Test orders are placed #2 of 4 in the fix-order table, ahead of the $9k UTM item and the $55k cross-device item. The justification explicitly names both required reasons: effort ('Near-zero: analyst filters known internal/test accounts out of the reporting query') and ownership ('the analyst owns this outright, no other team involved'), while acknowledging the size trade-off head-on: 'Smallest number on the list, but cheapest fix by far'. The operational section reinforces it: 'Ship #1 and #2 this week. Both are analyst/marketing-ops work, zero engineering dependency.'",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Ranks the test-order cleanup high despite its $6k being the smallest figure, because it is near-zero effort and owned outright by the analyst.",
+        "evidence": "The transcript places internal test orders at #2 of 4 (\"~220/mo, ~$6k\" \u2014 the smallest dollar figure) and justifies it explicitly on effort rather than size: \"Same profile: cheap, fast, low/no engineering lift (add a test flag/filter in the order system and exclude in reporting)\" plus \"Corrupts AOV, conversion rate, and revenue baselines.\" The opening also rejects the biggest-number heuristic outright (\"It conflates dollar size with priority and ignores... fix effort\"). Ownership is only implied \u2014 \"same profile\" as #1, which is routed to \"marketing ops/analytics, not the eng queue\" \u2014 rather tha",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

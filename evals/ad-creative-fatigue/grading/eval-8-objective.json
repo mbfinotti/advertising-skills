@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Identifies performance improving under repeated exposure as wear-in",
+        "evidence": "\"View rate and aided recall improving together, over multiple weeks, is close to the textbook definition of wear-in\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes wear-in is a plausible verdict for brand objectives, attributed to Les Binet",
+        "evidence": "\"a real and separate effect from fatigue (Les Binet), documented specifically for brand-objective campaigns\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes Meta's 2023 research found no wear-in for direct-response objectives, so the verdict is available only because this objective is brand",
+        "evidence": "\"Meta's 2023 research found no wear-in effect for direct-response \u2014 but you're explicitly optimizing for lift and view metrics, not conversions, so that caveat doesn't disqualify your read\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a wear-in verdict and recommends leaving the ad alone",
+        "evidence": "\"verdict : wear-in... action : leave it running; do not rotate on the frequency number\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to rotate the creative on a frequency number",
+        "evidence": "\"do not rotate on the frequency number\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the agency's universal four-week rotation policy as not derived from this creative's own data",
+        "evidence": "\"a calendar-triggered rotation ('every ad wears out every 4 weeks, no exceptions') is a universal threshold applied without reading the account's own signals\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Verifies the improvement holds across multiple consecutive periods against the creative's own baseline",
+        "evidence": "\"view rate : improving, sustained\" and \"aided recall: improving, sustained\" over Weeks 1-8",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Still screens confounders such as seasonality, auction, or mix shift before accepting the improving trend",
+        "evidence": "Confounder screen table lists seasonality/window mix, auction CPM inflation, sibling-mix shift with statuses even where flagged 'not screened'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the same improving read would be treated with suspicion if the objective were direct response",
+        "evidence": "\"Meta's 2023 research found no wear-in effect for direct-response... it's the case where wear-in is the legitimate call\" (implying DR would not get this call)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and a re-check or monitoring date",
+        "evidence": "\"confidence : medium...\" and \"re-check : ~4 weeks out (2026-10-10)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Continues scheduled monitoring rather than declaring the creative permanently immune to wear-out",
+        "evidence": "\"re-pull view rate, recall, and reach trend... if that reverses, re-open the case\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Identifies performance improving under repeated exposure as wear-in",
+        "evidence": "Describes the phenomenon ('repetition drives recall for longer than performance marketers expect') but never uses or labels the concept as 'wear-in'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes wear-in is a plausible verdict for brand objectives, attributed to Les Binet",
+        "evidence": "'There's decent evidence (marketing science, e.g. Binet & Field, and Nielsen/Kantar brand-lift studies)...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes Meta's 2023 research found no wear-in for direct-response objectives, so the verdict is available only because this objective is brand",
+        "evidence": "No mention of Meta's 2023 research or this specific distinction",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Issues a wear-in verdict and recommends leaving the ad alone",
+        "evidence": "'Don't force the rotation on a calendar rule... keep running the current film'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to rotate the creative on a frequency number",
+        "evidence": "'No \u2014 forcing a rotation right now would be optimizing for the agency's rule instead of your actual objective'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the agency's universal four-week rotation policy as not derived from this creative's own data",
+        "evidence": "\"if the agency's 'every 4 weeks, no exceptions' policy is a blanket ops rule rather than a data-backed one for brand campaigns, it's worth pushing back on it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Verifies the improvement holds across multiple consecutive periods against the creative's own baseline",
+        "evidence": "References 'an 8-week upward trend' for view rate and recall climbing at week 8",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Still screens confounders such as seasonality, auction, or mix shift before accepting the improving trend",
+        "evidence": "'Check whether the recall/view-rate improvement is coming from reach expansion... rather than the existing audience re-responding'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the same improving read would be treated with suspicion if the objective were direct response",
+        "evidence": "Only contrasts wear-out thresholds by objective; never states the improving trend itself would be suspicious under a DR objective",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and a re-check or monitoring date",
+        "evidence": "No structured verdict block with confidence or dated re-check appears",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Continues scheduled monitoring rather than declaring the creative permanently immune to wear-out",
+        "evidence": "Recommends ongoing monitoring: 'watch for negative signals... rising negative feedback/hide rate, rising cost-per-lift, declining completion rate'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

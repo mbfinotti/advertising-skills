@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response works in channel-family vocabulary (paid search, paid social, B2B professional networks) rather than framing the decision inside one vendor's product names.",
+        "evidence": "Every decision unit is a family: the deleted-channels table lists \"Retail media\", \"Podcast/audio\", \"Connected TV\", \"Short-form video\", \"Paid social prospecting\"; the ranking table lists \"Paid search\" and \"B2B professional networks (LinkedIn-type)\". The primary recommendation is \"Paid search, scoped to Scale-fit intent keywords\" \u2014 not Google Ads \u2014 and the second-channel trigger is \"Add B2B professional networks\", not LinkedIn Ads. Vendor names appear only as bounded illustrations of a family (\"LinkedIn-type\") or to attach a concrete price point to one (\"Paid review listings (G2/Capterra)\", \"~$2",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response works in channel-family vocabulary (paid search, paid social, B2B professional networks) rather than framing the decision inside one vendor's product names.",
+        "evidence": "The decision is framed vendor-first: the section is headed \"So: which platform?\" and both recommendations lead with brand names \u2014 \"**LinkedIn Ads**\" and \"**Google Search**\" \u2014 while the rejections are also vendor-named (\"Not Meta or TikTok, and not broad Google Display\"). The family labels themselves (paid search, paid social, B2B professional networks) never appear; \"LinkedIn Ads\" is even described as \"the only major ad platform that lets you bias spend toward accounts,\" locking the reasoning to a specific vendor rather than to the targeting capability class. Partial credit only because underl",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

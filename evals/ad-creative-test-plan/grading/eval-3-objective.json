@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects comparing new cells to the champion's historical Q2 CPA and requires the champion to run concurrently as a control cell in the same structure and budget",
+        "evidence": "\"Run the champion concurrently as your control cell, same structure, same window, same budget tier as the challengers\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the reason for the concurrent control: unequal delivery history and/or seasonality make old numbers incomparable",
+        "evidence": "\"Q2 (Apr\u2013Jun) vs. now (mid-September) is a different season, auction, and audience-optimization state entirely, and it's been out of the delivery/learning loop.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects campaign-level automatic budget allocation as a test structure",
+        "evidence": "\"Campaign budget optimization is the wrong structure \u2014 never use it for a test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the allocation failure concretely: spend concentrates on early leaders (up to roughly 90% on one cell) before the others collect data",
+        "evidence": "\"can concentrate up to ~90% of budget on one concept before the others collect enough data to be comparable\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends manual fixed-budget cells (or a platform-native deterministic split) with a stated fixed budget per cell",
+        "evidence": "\"Switch to **manual fixed-budget ad sets**, one per concept plus control, each running its own protected daily budget.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs turning the automated/AI creative-optimization feature off inside the test cells",
+        "evidence": "\"Turn the AI creative enhancement off inside the test cells.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the auction-overlap caveat of manual cells: cells still compete in the same auctions against overlapping audiences",
+        "evidence": "\"manual cells still share auctions - overlap/cost inflation possible\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $129/day per cell ($18 x 50 / 7) and flags that $450/day split four ways falls below it",
+        "evidence": "\"Stable-delivery floor ... \u2248 $128.57/day per cell.\" and \"$450/day split evenly \u2192 **$112.50/cell** \u2014 under the floor.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Resolves the floor breach with a named lever (fewer cells, sequential concepts, up-funnel read, or budget change) rather than shipping four delivery-limited cells silently",
+        "evidence": "\"raise the daily budget ~$150, or drop to two concepts this round.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits an explicit read-standard verdict per cell (Powered, Directional read, or Not testable as designed)",
+        "evidence": "\"VERDICT: Directional read only - declare this before launch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States with arithmetic what claim the two-week window can support on the purchase metric (screening/Directional versus Powered)",
+        "evidence": "\"117 purchases/cell will **not** reach significance in this window. Call this what it is now, in writing, before launch: a **Directional read**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale rules and pre-declares inconclusive as keep the champion",
+        "evidence": "\"inconclusive -> keep control running at current spend, no challenger promoted\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects comparing new cells to the champion's historical Q2 CPA and requires the champion to run concurrently as a control cell in the same structure and budget",
+        "evidence": "'Fix: re-run the champion concurrently as a small live control arm (e.g. $50/day) alongside the 3 new concepts. Compare against that, not the historical number.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the reason for the concurrent control: unequal delivery history and/or seasonality make old numbers incomparable",
+        "evidence": "'Comparing today's result to a number from a different quarter ignores seasonality, CPM shifts, competitive pressure, and platform algorithm changes since then.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects campaign-level automatic budget allocation as a test structure",
+        "evidence": "'CBO is a budget-exploitation algorithm, not a randomized experiment... Fix: run the 3 concepts in separate ad sets with fixed, equal daily budgets.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the allocation failure concretely: spend concentrates on early leaders (up to roughly 90% on one cell) before the others collect data",
+        "evidence": "States 'Expect it to dump 70-80% of budget into one concept within the first 2-3 days' \u2014 a lower figure than the ~90% benchmark, not matching the specified magnitude.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends manual fixed-budget cells (or a platform-native deterministic split) with a stated fixed budget per cell",
+        "evidence": "'4 ad sets, fixed equal budgets: 3 new concepts + 1 re-run champion (~$112/day each...)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs turning the automated/AI creative-optimization feature off inside the test cells",
+        "evidence": "'Fix: disable enhancements during the concept test. Turn them on afterward to optimize the winner.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the auction-overlap caveat of manual cells: cells still compete in the same auctions against overlapping audiences",
+        "evidence": "No mention that manually separated fixed-budget ad sets still compete in the same auctions against overlapping audiences.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $129/day per cell ($18 x 50 / 7) and flags that $450/day split four ways falls below it",
+        "evidence": "No $129/day floor calculation appears; only ~$112/day per cell is computed without reference to a stable-delivery threshold.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Resolves the floor breach with a named lever (fewer cells, sequential concepts, up-funnel read, or budget change) rather than shipping four delivery-limited cells silently",
+        "evidence": "No floor breach is identified, so no lever is proposed to resolve it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Emits an explicit read-standard verdict per cell (Powered, Directional read, or Not testable as designed)",
+        "evidence": "No such labeled verdict system is used anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States with arithmetic what claim the two-week window can support on the purchase metric (screening/Directional versus Powered)",
+        "evidence": "'~116 conversions per concept at an $18 CPA \u2014 thin but workable... 2 weeks is tight for this structure to reach significance on all 4 arms; be ready to extend rather than force a call on thin data.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale rules and pre-declares inconclusive as keep the champion",
+        "evidence": "'Pre-register the decision rule: min. 100 conversions/arm, winner's CPA must beat the concurrent champion's CPA...' defines a scale-like rule but no explicit kill threshold or explicit 'inconclusive keeps champion' statement.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

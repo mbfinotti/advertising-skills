@@ -1,0 +1,21 @@
+No, this plan has real problems. Here's what breaks in it, and what I'd do instead.
+
+## The math problem
+
+At $42 AOV and 58% margin, your gross profit per order is ~$24.36. A 4x ROAS threshold means you'd need to spend $1 to make $4 in revenue — that's a ~14.5% cost-of-acquisition-to-revenue ratio, which sounds conservative, but check what it means in absolute terms: at 4x ROAS your CAC ceiling is $10.50, leaving ~$13.86 in profit per order before fixed costs. That's actually fine as a floor — the real issue is the two-week window and the even split, not the 4x number itself.
+
+## Five channels, $2,400 each, two weeks — this won't produce a real signal
+
+- **Sample size**: $2,400 over 14 days is ~$171/day per channel. At even a good $25 CPA that's ~7 conversions/day, ~96 total over the test. Split across 5 channels, some will land in the 15-25 conversion range — not enough to trust a ROAS number, especially on Pinterest or a TV test where baseline volume is thin to begin with.
+- **Streaming TV is not a direct-response channel on this budget.** $2,400 for two weeks of streaming TV won't buy meaningful reach, and TV's effect is largely upper-funnel/brand lift with delayed, hard-to-attribute conversions (people see the ad, then later search your brand or type the URL directly). Judging it on 14-day ROAS will almost always kill it, correctly or not — you can't tell which. If you want to test TV, it needs a longer window (4-8 weeks minimum) and a way to measure lift (e.g., geo holdout, branded search lift, or a dedicated promo code), not last-click ROAS.
+- **Google Search is fundamentally different from the other four.** It's intent-driven (people already searching for reef-safe sunscreen or your brand) vs. Meta/TikTok/Pinterest, which are interruption/discovery-driven. Search should almost always get funded first and judged on different terms — it's usually your highest-ROAS channel by nature, not because it's "winning" a fair fight.
+- **New account/pixel learning phase**: Meta and TikTok algorithms need ~50 conversions per ad set to exit learning phase and optimize properly. At $2,400/14 days you may never get there, meaning you're judging the algorithm before it's actually calibrated — you'd be killing channels for underperforming during their startup penalty.
+
+## What I'd do instead
+
+1. **Split unevenly, not evenly.** Something like: Google Search $3,000 (capture existing demand, fund to whatever it can profitably absorb), Meta $4,500 (proven DTC workhorse, needs enough budget to exit learning phase), TikTok $2,500, Pinterest $1,500 (aesthetic/intent fit for sunscreen, but smaller platform, lower budget is fine), and drop the TV test until you have Search+Meta running efficiently — meaning a real ad budget of $6K+/month freed up for it, run properly over 6-8 weeks with a lift methodology, not ROAS.
+2. **Use a 4-week test window, not 2.** Two weeks doesn't get you out of algorithm learning phase and doesn't give small-budget channels enough conversions to be statistically meaningful. Evaluate at week 2 (directional check, don't kill yet) and decide at week 4.
+3. **Set the bar differently per channel type.** Search: judge on ROAS immediately, it should already work. Meta/TikTok: judge on ROAS but only after learning phase (50+ conversions) or 2+ weeks, whichever is later. Pinterest: same, lower bar since it's a smaller-audience platform — give it more patience. TV: don't judge on ROAS at all in 2-4 weeks; track branded search volume and direct traffic as a lift proxy instead.
+4. **Keep 4x ROAS as your blended target, not a per-channel kill switch in week 2.** Use it as the number the whole $12K needs to hit collectively once things stabilize (month 2-3), and use week-2 data only to catch channels that are dramatically broken (e.g., >$40 CPA with zero conversions), not to make final kill/keep calls.
+
+**Bottom line**: fund Search and Meta properly, treat TikTok/Pinterest as smaller bets with a longer leash, and pull TV out of this test entirely — it needs its own budget and its own success metric, not a 2-week ROAS gate it was never going to pass.

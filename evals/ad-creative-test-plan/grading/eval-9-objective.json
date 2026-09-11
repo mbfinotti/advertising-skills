@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recommends against the platform-native deterministic split for this test, tied to the hard 12-day deadline (splits take a week or more longer to answer)",
+        "evidence": "\"native split rejected: it runs 1+ week longer than this deadline allows\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that native splits at typical budgets are underpowered and frequently return 'no winner'",
+        "evidence": "The transcript says native split \"is underpowered at this budget\" but never states it \"frequently returns 'no winner'\" anywhere in this section.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends manual fixed-budget cells instead and states the structure ranking (manual fixed-budget > native deterministic split > campaign-level automatic allocation)",
+        "evidence": "Manual cells are recommended with a stated $75/day budget, but no explicit ranking naming campaign-level automatic allocation appears anywhere in this section.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the causality claim: even a deterministic split suffers divergent delivery - each ad is served to a distinct, undetectably optimized mix of users",
+        "evidence": "\"even platform-native deterministic splits suffer **divergent delivery**: the ad algorithm still shows each cell a differently-optimized mix of users\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks the severity of divergent delivery: it can confound the magnitude and even flip the sign of the result (Braun & Schwartz 2025 or equivalent attribution)",
+        "evidence": "\"which can confound the magnitude of a result \u2014 and even flip its sign.\" (Braun & Schwartz, Journal of Marketing, 2025)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that in-platform reads, splits included, are relative screening rather than causal proof, and that holdout/lift designs are what buy causality",
+        "evidence": "\"Only a geo-holdout / incrementality design gets you actual causal proof, and that's a different (and much more expensive) test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to promise the board a causal or significance-tested winner in 12 days; the plan states exactly what claim the read supports",
+        "evidence": "\"At this budget the ad platform cannot produce a statistically significant winner \u2014 no test at this spend level can, and we said so before launch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $229/day per cell ($32 x 50 / 7) and flags $150/day total split across cells as far below it",
+        "evidence": "\"\u2248 $32 \u00d7 50 \u00f7 7 \u2248 **$229/day/cell**. Your budget: $150/day total \u00f7 2 cells = **$75/day/cell** \u2014 about **33% of the floor**.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits the named verdict for the as-proposed structure ('Not testable as designed' on purchase, or Directional only after a named fix)",
+        "evidence": "\"**Verdict on the purchase event: Not testable as designed**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fixes the floor breach with a ranked lever (up-funnel read, wider MDE, or fewer cells) rather than silently shipping delivery-limited cells",
+        "evidence": "\"**Fix applied** (Section 4, ranked levers \u2014 up-funnel > widen MDE > fewer cells > raise budget)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks whether a current champion exists to serve as the control cell, or includes a concurrent control",
+        "evidence": "\"**No existing champion cell**: assumed you're running Concept A vs. Concept B head-to-head, not against a running control. If a champion creative is live, add it as a third concurrent cell\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs turning automated creative-optimization features off inside test cells",
+        "evidence": "\"automated-creative-optimization (Advantage+ Creative / dynamic creative): off\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers the stopping rule, earliest evaluation moment, and kill/scale thresholds before launch",
+        "evidence": "\"earliest evaluation day 3 ... interim check day 7 ... hard stop day 10 ... or $1,500 total spend, whichever first\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recommends against the platform-native deterministic split for this test, tied to the hard 12-day deadline (splits take a week or more longer to answer)",
+        "evidence": "The plan builds the entire configuration around 'Meta Ads Manager \u2192 Experiments \u2192 A/B Test' and states 'That part of your reasoning is correct... is the real reason to use the native tool.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that native splits at typical budgets are underpowered and frequently return 'no winner'",
+        "evidence": "'the test is more likely to return \"not significant\" than to wrongly call a winner.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends manual fixed-budget cells instead and states the structure ranking (manual fixed-budget > native deterministic split > campaign-level automatic allocation)",
+        "evidence": "No manual ad-set alternative is recommended; the native A/B tool remains the chosen structure throughout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the causality claim: even a deterministic split suffers divergent delivery - each ad is served to a distinct, undetectably optimized mix of users",
+        "evidence": "No mention of divergent delivery/optimized audience mixes undermining causal comparison within the native split.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marks the severity of divergent delivery: it can confound the magnitude and even flip the sign of the result (Braun & Schwartz 2025 or equivalent attribution)",
+        "evidence": "Not mentioned anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that in-platform reads, splits included, are relative screening rather than causal proof, and that holdout/lift designs are what buy causality",
+        "evidence": "The plan instead states 'It gives you an unbiased causal estimate with a confidence interval \u2014 not \"proof\"' \u2014 treating it as causal, not mere screening.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to promise the board a causal or significance-tested winner in 12 days; the plan states exactly what claim the read supports",
+        "evidence": "'What this design can and cannot claim... A test at this scale can reliably detect only a large gap... It is underpowered to reliably detect a moderate... gap.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $229/day per cell ($32 x 50 / 7) and flags $150/day total split across cells as far below it",
+        "evidence": "'Meta's own learning-phase exit criterion is ~50 conversions per ad set per week. At this spend, each cell gets ~16/week \u2014 under a third of that.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits the named verdict for the as-proposed structure ('Not testable as designed' on purchase, or Directional only after a named fix)",
+        "evidence": "'Treat the day-12 readout as a directional result with a stated confidence level, not a final verdict.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fixes the floor breach with a ranked lever (up-funnel read, wider MDE, or fewer cells) rather than silently shipping delivery-limited cells",
+        "evidence": "'Use the secondary funnel metrics (CTR, cost/LPV, cost/ATC) as an earlier, higher-volume signal to say which concept is trending ahead.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks whether a current champion exists to serve as the control cell, or includes a concurrent control",
+        "evidence": "No mention of an existing champion or control cell; the test is purely Concept A vs. Concept B.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Instructs turning automated creative-optimization features off inside test cells",
+        "evidence": "No mention of Advantage+ or automated creative enhancement features being disabled.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers the stopping rule, earliest evaluation moment, and kill/scale thresholds before launch",
+        "evidence": "'Fixed end date, 10 days, set at launch \u2014 not stopped manually early' and 'Pre-registration... write down the hypothesis, the primary metric, and the stopping rule in one line each.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+# Denticor Buying Committee Map
+
+Applying `mbfinotti/advertising-skills@ad-buyer-group-mapper` to Denticor ($7K ACV scheduling/recall SaaS, independent dental clinics, 1-3 locations).
+
+## Committee summary
+
+**Size: 2 evidenced roles, 1 hypothesis, 5 deleted.** Not 8.
+
+The VP's number comes from Gartner's "6 to 10 decision makers" figure. That qualifier — *complex solutions only* — is almost always dropped when the stat gets cited, and it's being dropped here: a $7K/year tool sold to a 1-3 location independent practice is about as far from a complex enterprise purchase as B2B software gets. TrustRadius's own SMB data (2,164 buyers) puts SMB committees at 2-3 people, which is exactly what your 40 closed-won deals show.
+
+Your CRM notes are the strongest evidence this method recognizes — a closed-won diff across 40 real deals beats published research, buyer interviews, or title inference by a wide margin. They directly answer the question the VP's framework can't: not "how many roles could theoretically be involved," but "how many roles actually showed up when you won." Two. This map is built from that, not from the 8-persona template.
+
+**Purchase type:** not stated — net-new tool vs. replacing an existing scheduling/recall system changes who else might surface (whoever owned the incumbent tool). Confirm before finalizing.
+
+**Precision vs. reach posture: one merged campaign with role-aware creative, not eight per-role campaigns.** Per-role campaigns are only defensible below ~500 named accounts or above ~$100K ACV. Denticor is at $7K ACV — nowhere near that ceiling — and independent 1-3 location dental practices in the US likely number in the tens of thousands, nowhere near that 500-account floor (confirm exact count with the sibling audience-targeting skill before locking budget). Neither threshold clears. Eight separate campaigns at this ACV, against audiences this narrow, would also crater below the platform-floor numbers below.
+
+**Named deletions** (not demoted — deleted, so they don't quietly reappear as unfunded scope next quarter):
+
+| Persona (VP's list) | Why deleted |
+|---|---|
+| IT consultant | No dedicated IT stakeholder in 1-3 location independent practices; none in the 40 wins. Revisit only if a future 4+ location segment shows a technical evaluator in closed-won notes. |
+| Procurement | Doesn't exist as a function at $7K ACV in a practice this size. |
+| Compliance | HIPAA privacy-officer duties sit with the office manager or owner in practices this small, not a dedicated hire. Folded into their creative as a proof point, not a separate audience. |
+| Finance | Owner is the sole budget holder. A finance campaign would target an empty seat. |
+| Front-desk staff | No budget, no veto, absent from all 40 win notes as decision influencers. Matters for post-sale adoption, not ad targeting. |
+
+## Role map
+
+| Role | Evidence | Measured on | Personal risk | Likely objection (hypothesis) | Messaging angle | Proof/offer | Targeting proxy |
+|---|---|---|---|---|---|---|---|
+| **Practice Owner** — economic buyer, often also champion/end user in solo-owner practices | Evidenced — present in effectively all 40 closed-won deals per CRM notes | Practice revenue/profitability: no-show losses, recall reactivation | Buying a system that disrupts scheduling or that staff won't use — reputational and revenue hit, since it's their name on the practice | "We already handle recall with postcards/calls" or "not sure this pays for itself at our size" | Revenue recovered from fewer no-shows and reactivated recall patients, framed against the $7K cost — direct payback, not a feature list | ROI/savings calculator using no-show rate and recall reactivation; a short case study from a similarly-sized independent practice | Function: Practice Owner/Principal. Industry: Dental/Healthcare Practices. Company size: 1-3 locations |
+| **Office Manager** — champion + end user | Evidenced — present alongside the owner in effectively all 40 wins per CRM notes | Front-desk workload, no-show rate, schedule fill rate, recall completion | Championing a tool the front-desk team refuses to adopt — reflects on them | "Will my team actually use this, or is it one more login?" | Hours given back to front-desk staff each week, fewer manual recall calls, simple enough staff will actually use it — workflow relief, not P&L | Short product walkthrough or ungated "day in the life" workflow guide (low-friction fits this deal size) | Function: Office/Practice Management, Administrative. Industry: Dental/Healthcare Practices. Company size: 1-3 locations |
+| **Lead Dentist** (only where distinct from Owner) | Hypothesis — not confirmed as a separate participant; in most 1-3 location practices the owner *is* the treating dentist | — | — | — | Not a separate campaign. Use only as a clinical-credibility proof point inside the Owner's creative (e.g. "built around how recall actually works chairside") | — | — |
+
+Disproof test on the hypothesis row: pull the subset of the 40 wins where ownership and clinical lead are different people (associate-owned or multi-dentist practices). If a distinct clinical stakeholder shows up in fewer than 2 of those, drop the role permanently rather than re-testing it every quarter.
+
+**Estimated proxy audience vs. floor:** not calculable without the exact addressable market count — hand this to `mbfinotti/advertising-skills@ad-audience-targeting` before spending budget. Flag now: on a platform like LinkedIn, "dental practice owners at 1-3 location practices" is a genuinely narrow professional-network cell and may sit near or below the 20,000-50,000 practical floor. Meta/Google local-business and healthcare-vertical targeting will likely run larger and are worth testing against it before committing spend to one platform.
+
+## Sequencing notes
+
+No staged rollout needed. Unlike enterprise committees, there's no separate validation-stage security/procurement wave to plan for — those roles are deleted. Owner and office manager show up together in your own data, not in sequence, so reach both in the same campaign window with role-differentiated creative rather than staggering them.
+
+Weight both angles toward risk reduction, not urgency: 40-60% of B2B deals end in no-decision, and 56% of those are lost to indecision rather than a competitor. An owner sitting on a $7K decision is exactly the indecision profile — "no long-term contract," "cancel anytime," "see your numbers before you commit" will outperform urgency framing.
+
+## Handoffs
+
+- `mbfinotti/advertising-skills@ad-audience-targeting` — size and budget the merged-map audience, confirm the actual addressable market count, pick platforms.
+- `mbfinotti/advertising-skills@lookalike-audience-seeds` — the 40 closed-won accounts are a ready-made seed list; use them rather than starting from a cold industry list.
+- `mbfinotti/advertising-skills@ad-copy-variants` — write the Owner and Office Manager ad copy from the angles above.
+
+## What to tell the VP
+
+The 8-persona plan is the exact failure pattern this method is built to catch: SMB deal size, no per-role evidence for 6 of the 8 proposed roles, and a market too narrow to support 8 separate audiences without falling below platform significance floors. "6 to 10 decision makers" describes complex enterprise solutions — not a $7K tool sold to a 1-3 location independent practice, where your own 40 closed-won deals already show the real number: 2.

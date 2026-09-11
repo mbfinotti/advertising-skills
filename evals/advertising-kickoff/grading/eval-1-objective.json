@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats the session as a cold start from the stated absence of advertising-context.md, without asking the user whether this is a new or continuing project.",
+        "evidence": "'Cold start confirmed \u2014 no advertising-context.md anywhere in the accessible repo.' No question is asked about whether this is new/continuing.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reviews or references the README and docs/media-plan-draft.md content named in the prompt before asking interview questions.",
+        "evidence": "'I looked for the README and docs/media-plan-draft.md you mentioned. This sandbox only has access to /home/user/skills-affiliation... no invoicing-SaaS README, no docs/ folder' \u2014 stated before any interview question is posed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not re-ask the business model question, since the prompt already identifies B2B SaaS with self-serve plus sales-assisted tiers.",
+        "evidence": "'Business model \u2192 B2B, mixed: self-serve ($49/mo) + sales-assisted enterprise tier' is listed under 'Detected' and not re-asked.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not re-ask which channels are bought or the spend band, since the prompt already states Google Search + LinkedIn at about $8k/month.",
+        "evidence": "'Channels + spend band \u2192 Google Search + LinkedIn, ~$8k/month on Google' listed as detected, not re-asked.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks no more than 7 interview questions in total.",
+        "evidence": "'Still open... 5 questions left, max' \u2014 total interview capped at 5.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents a single first interview question rather than dumping the full questionnaire in one block.",
+        "evidence": "'Answer this one: What's the goal of this session...' with explicit note 'I'm asking this one alone, not the whole list.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "At least one interview question offers multiple-choice (lettered or listed) answer options.",
+        "evidence": "'is it the platform pixel, an analytics tool, or your CRM/billing system (Stripe?) that's authoritative' offers explicit options.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks what conversion event counts as success and where the source of truth lives, since no provided material answers it.",
+        "evidence": "'is it the platform pixel, an analytics tool, or your CRM/billing system (Stripe?) that's authoritative for \"this became a paying customer\"?'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks about hard constraints and a landing date, and about one-off versus compounding plus the effort ceiling.",
+        "evidence": "Open question list includes '3. Hard constraints / landing date' and '4. One-off vs. compounding + effort ceiling.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks the goal of this session as a question distinct from the project's overall goal.",
+        "evidence": "'is it the same as the project's overall goal of \"take paid ads seriously,\" or something narrower...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creates or drafts advertising-context.md at the project root with structured one-line fields (business model, offer/price, channels/spend, conversion source of truth, constraints, stakeholders) rather than free-form prose.",
+        "evidence": "Draft markdown block with fields like '**Business model**:', '**Channels / spend**:' etc. is shown, described as 'Draft context artifact (not yet written to disk)'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes or plans a session-log line in the artifact before the session ends.",
+        "evidence": "'## Session log\\n- 2026-09-12 - kickoff started, cold start...' included in the draft.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection's 31 skills.",
+        "evidence": "'mbfinotti/advertising-skills@advertising-kickoff', '@ad-conversion-tracking', '@ad-attribution-gap' \u2014 all correctly prefixed.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats the session as a cold start from the stated absence of advertising-context.md, without asking the user whether this is a new or continuing project.",
+        "evidence": "The transcript disputes the premise entirely: 'So: this is the wrong project, or the wrong folder' and asks the user to confirm the correct directory, rather than treating it as a cold start.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reviews or references the README and docs/media-plan-draft.md content named in the prompt before asking interview questions.",
+        "evidence": "'No docs/ directory exists at all \u2014 so no docs/media-plan-draft.md' \u2014 the file is claimed absent, so its content is never referenced.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not re-ask the business model question, since the prompt already identifies B2B SaaS with self-serve plus sales-assisted tiers.",
+        "evidence": "No business-model question is asked anywhere in the transcript; it only asks to confirm the working directory.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not re-ask which channels are bought or the spend band, since the prompt already states Google Search + LinkedIn at about $8k/month.",
+        "evidence": "No channel/spend question is asked; the transcript only requests directory confirmation or fresh scaffolding info.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks no more than 7 interview questions in total.",
+        "evidence": "Only two clarifying asks appear ('Confirm the correct working directory...' / 'If Fernhollow doesn't have a repo yet, tell me'), well under 7.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents a single first interview question rather than dumping the full questionnaire in one block.",
+        "evidence": "The 'What I need from you' section lists two bullet asks together in one block rather than a single sequenced question.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "At least one interview question offers multiple-choice (lettered or listed) answer options.",
+        "evidence": "The two possibilities listed ('1. You meant to open...' '2. You're testing/conflating...') are diagnostic hypotheses, not a lettered multiple-choice question posed to the user for an answer.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks what conversion event counts as success and where the source of truth lives, since no provided material answers it.",
+        "evidence": "No mention of conversion events or source of truth anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks about hard constraints and a landing date, and about one-off versus compounding plus the effort ceiling.",
+        "evidence": "No such questions appear; the transcript is entirely about the file/repo mismatch.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks the goal of this session as a question distinct from the project's overall goal.",
+        "evidence": "No session-goal question is asked; the only asks are about confirming the correct repo.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Creates or drafts advertising-context.md at the project root with structured one-line fields (business model, offer/price, channels/spend, conversion source of truth, constraints, stakeholders) rather than free-form prose.",
+        "evidence": "No file is created; the transcript explicitly refuses to fabricate one ('I'm not going to fabricate an advertising-context.md on top of a false premise').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes or plans a session-log line in the artifact before the session ends.",
+        "evidence": "No session log or artifact plan is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection's 31 skills.",
+        "evidence": "No skill names are used anywhere in the transcript, so none violate the naming form.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

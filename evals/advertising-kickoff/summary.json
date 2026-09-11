@@ -1,0 +1,387 @@
+{
+  "repo": "advertising-skills",
+  "skill": "advertising-kickoff",
+  "scenarios": 12,
+  "expectations_total": 153,
+  "expectations_subjective": 1,
+  "expectations_objective": 152,
+  "pass_rate_with_skill_pct": 90.2,
+  "pass_rate_without_skill_pct": 53.6,
+  "delta_pp": 36.6,
+  "uplift_multiplier": 1.68,
+  "trigger_accuracy_pct": 78.8,
+  "trigger_queries": 146,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Identifies the flight end date 2026-10-05 as a fixed date inside six weeks and states that it promotes fast-acting work."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Patches only artifact fields that changed rather than regenerating the whole file."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The tCPA bidding work is ranked below the guardrails policy work, with tuning identified as buying little until the classes above it are in place."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Creates or proposes advertising-context.md recording the hiring project, the board approval, and the stakeholders."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Proposes the launch chain in dependency order: ad-platform-selection, then ad-format-fit, then ad-conversion-tracking, then ad-creative-test-plan."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Any routine proposal is limited to a periodic kickoff re-invocation or a single recurring reminder, not pacing, spend-health, or wear-out routines."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "At least one interview question offers multiple-choice options."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that a consent-mode change or server-side conversion upload triggers a data-processing or consent review and cannot be un-sent."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Proposes at most 4 routines."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Every proposed routine names an explicit output channel (a named chat channel, tracker, or document); no routine's output is a bare notify-me."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Records the surviving and new routines in advertising-context.md (or proposes creating it) so the next warm start knows what is running."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States the routine ranking as attention cost per firing weighed against the decision each firing enables, not as setup cost."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Writes the session's durable facts into advertising-context.md first and derives memory entries from the artifact, not directly from the conversation."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Memory is stored in one sanctioned location with an index file listing entries with one-line hooks."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Appends a session-log line to the artifact before the session ends."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Treats the session as a cold start from the stated absence of advertising-context.md, without asking the user whether this is a new or continuing project."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Reviews or references the README and docs/media-plan-draft.md content named in the prompt before asking interview questions."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Presents a single first interview question rather than dumping the full questionnaire in one block."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "At least one interview question offers multiple-choice (lettered or listed) answer options."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks what conversion event counts as success and where the source of truth lives, since no provided material answers it."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks about hard constraints and a landing date, and about one-off versus compounding plus the effort ceiling."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks the goal of this session as a question distinct from the project's overall goal."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Creates or drafts advertising-context.md at the project root with structured one-line fields (business model, offer/price, channels/spend, conversion source of truth, constraints, stakeholders) rather than free-form prose."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Includes or plans a session-log line in the artifact before the session ends."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Asks only what the goal of this session is, and re-asks none of the business model, channel, spend, or conversion questions already answered in the pasted artifact."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Produces a state summary of exactly 5 lines."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The state summary covers business model and channels, spend band, conversion source of truth, in-flight work, and the active constraint."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Identifies the flight end date 2026-10-05 as a fixed date inside six weeks and states that it promotes fast-acting work."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Work that pays back over a quarter (for example guardrail re-baselining, consolidation, or hiring) is placed in a Not-now list with the flight date as its explicit unblocking condition, not silently dropped or ranked last."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The short-list contains between 5 and 8 entries."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Each short-list entry names both the bottleneck it attacks and what the session costs."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The short-list ordering is stated as value returned per unit of effort, and the cheapest near-zero tuning items are not placed on top on cheapness grounds."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Patches only artifact fields that changed rather than regenerating the whole file."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Routes the raise-the-total-on-a-proven-campaign ask to mbfinotti/advertising-skills@paid-media-scaling."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Routes the written CAC ceiling and shut-off rule ask to mbfinotti/advertising-skills@ad-spend-guardrails."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Routes the weekly burning-too-fast-or-too-slow ask to mbfinotti/advertising-skills@ad-budget-pacing."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Routes the tCPA target question to mbfinotti/advertising-skills@ad-bidding-strategy."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Names a single skill as the route for the immediate task, with the rest sequenced rather than presented as a run-everything-now list."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Creates or proposes advertising-context.md capturing the fixed $45k/month and the December $18k incident as constraint or history fields."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Routes the founder's hiring need to mbfinotti/advertising-skills@advertising-hiring."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Routes the cousin's break-into-paid-ads question to mbfinotti/advertising-skills@advertising-career."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Identifies the two skills as mirror images split by who is asking (hirer versus candidate)."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Creates or proposes advertising-context.md recording the hiring project, the board approval, and the stakeholders."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes that no skill in the collection executes changes in-platform (every skill plans, audits, or decides)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Explains that with zero spend there is nothing to measure, diagnose, or tune yet."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Promotes mbfinotti/advertising-skills@ad-platform-selection to the top of the plan."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Promotes mbfinotti/advertising-skills@ad-conversion-tracking to the top alongside platform selection, before any launch."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Proposes the launch chain in dependency order: ad-platform-selection, then ad-format-fit, then ad-conversion-tracking, then ad-creative-test-plan."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Each chain link states what it hands to the next link."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Any routine proposal is limited to a periodic kickoff re-invocation or a single recurring reminder, not pacing, spend-health, or wear-out routines."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "At least one interview question offers multiple-choice options."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Creates or proposes advertising-context.md capturing not-spending-yet status, the $3k/month band, and the $12/month B2C offer."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Moves creative work off the short-list into a Not-now list with creative production capacity as the explicit unblocking condition."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Names ad-swipe-file and/or ad-copy-variants as exceptions that remain available despite the designer gap, because they need no production capacity."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Flags that the regulated vertical adds a legal or compliance review to the measurement work and to any customer seed-list work, lengthening it without changing what it buys."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that a consent-mode change or server-side conversion upload triggers a data-processing or consent review and cannot be un-sent."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Routes the immediate task to exactly one measurement skill rather than a bundle."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Shows every proposed routine as a dry-run (name, trigger, what it does, output channel, first run) before anything recurring is created."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Every proposed routine names an explicit output channel (a named chat channel, tracker, or document); no routine's output is a bare notify-me."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Proposes a monthly spend health check invoking mbfinotti/advertising-skills@cac-roas-benchmark, anchored before the allocation decision it feeds."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Includes monthly search term mining invoking mbfinotti/advertising-skills@ad-negative-keywords, justified by search being a meaningful share (~40%) of spend."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Flags that search term reports carry user-typed text that can identify a person, so the mining routine's output channel must be covered by the data-handling policy."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Records the surviving and new routines in advertising-context.md (or proposes creating it) so the next warm start knows what is running."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Writes the session's durable facts into advertising-context.md first and derives memory entries from the artifact, not directly from the conversation."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "On the B2C-$40k versus B2B-$25k divergence, proposes reconciliation with the artifact winning by default."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Shows the diff of the memory and artifact changes and gets approval before committing, rather than committing sight-unseen despite the instruction to commit."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Memory is stored in one sanctioned location with an index file listing entries with one-line hooks."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Asks only the session-goal question; no re-interview of facts the artifact holds."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Appends a session-log line to the artifact before the session ends."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Routes the seed-list work to mbfinotti/advertising-skills@lookalike-audience-seeds rather than ad-audience-targeting."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Routes the immediate task to mbfinotti/advertising-skills@ad-account-diagnostic as the single route."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Maps the creative-fatigue hypothesis to mbfinotti/advertising-skills@ad-creative-fatigue as a conditional next step."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Maps the double-firing pixel hypothesis to mbfinotti/advertising-skills@ad-conversion-tracking as a conditional next step."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Maps the landing-page hypothesis to mbfinotti/advertising-skills@paid-landing-page-audit as a conditional next step."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Creates or updates the context artifact recording the CPA jump and the three competing hypotheses as open items."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Routes the immediate task to mbfinotti/advertising-skills@ad-creative-brief."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Proposes the post-verdict chain: ad-creative-brief, then ugc-ad-scripts and/or ad-copy-variants, justified by the recorded fatigue verdict."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Presents the chain in dependency order with handoffs, not as an efficiency-ranked list."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Produces a state summary of exactly 5 lines."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Honors the decided Q4 budget freeze: paid-media-scaling and budget-raise work are excluded or named as ruled out by the freeze, not ranked low."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection."
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Routes ask (a), the three-way reporting mismatch, to mbfinotti/advertising-skills@ad-attribution-gap."
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Routes ask (b), choosing among video openings, to mbfinotti/advertising-skills@ad-hook-analyzer."
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Routes ask (c), the stay-current sources request, to mbfinotti/advertising-skills@advertising-radar."
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Routes ask (d), copy for a single response slot inside an AI assistant, to mbfinotti/advertising-skills@conversational-ad-copy."
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Checks for or proposes bootstrapping advertising-context.md, since the prompt names no existing artifact."
+      }
+    ]
+  }
+}

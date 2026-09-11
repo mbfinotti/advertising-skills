@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Warns that quoting a 2025 figure overstates the current market because the strongest UK survey shows marketing pay declining year-on-year",
+        "evidence": "\"it shows senior-manager pay fell year-on-year\" and \"In a market the strongest available survey shows declining, that's an aggressive anchor\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the Marketing Week 2026 Career & Salary Survey as the survey-grade UK benchmark",
+        "evidence": "\"Marketing Week's Career & Salary Survey. Your... is the 2025 wave. The 2026 wave (2,350 respondents, published 16 April 2026) has already superseded it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the 2026 senior manager figure of \u00a360,577",
+        "evidence": "table: \"Senior manager | \u00a372,434 | \u00a360,577\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Contrasts the 2026 figure with the 2025 senior manager figure of \u00a372,434 to show the decline",
+        "evidence": "same table row shows both years side by side, \"That's a ~16% drop.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the survey's respondent count (2,350) or its April 2026 date when grading the source",
+        "evidence": "\"2,350 respondents, published 16 April 2026\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels every quoted pay figure with currency, source, date, and grade",
+        "evidence": "\"Survey: 3Search Performance Marketing Salary Guide 2025 (1,300+ respondents)...\" and \"Aggregate, directional only: Major Players (2026)...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes survey-grade sources from aggregate or job-board estimates, treating aggregates as wide ranges",
+        "evidence": "\"Aggregate, directional only: Major Players (2026)... (wide range, not a point figure)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents benchmarks as ranges, never a single point figure",
+        "evidence": "\"A defensible range, given what's verifiable: \u00a362,000\u2013\u00a370,000 base, positioned as a range tied to scope, not a single anchored point.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly advises against anchoring at \u00a375,000 on the basis of the 2025 number as found",
+        "evidence": "\"don't anchor at \u00a375,000 \u2014 that figure is stale, and stale in the wrong direction\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reverifying the figure before it anchors the negotiation, or dating and grading it out loud if verification is not possible",
+        "evidence": "\"I wasn't able to browse live to re-verify this against a fresher source today... treat it as survey-grade but re-check if you can before the final round\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers the 3Search Performance Marketing Salary Guide 2025 (1,300+ responses, \u00a350,000-\u00a370,000 for PPC Managers) as an additional survey-grade anchor",
+        "evidence": "\"3Search Performance Marketing Salary Guide 2025 (1,300+ respondents) \u2014 PPC/paid media managers: \u00a350,000\u2013\u00a370,000\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that an undated or last-year figure quoted in a negotiation damages the candidate's credibility",
+        "evidence": "\"a retail brand's HR/talent team running its own 2026 benchmarking will read it as citing outdated data, which costs credibility right when you're trying to build it\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Warns that quoting a 2025 figure overstates the current market because the strongest UK survey shows marketing pay declining year-on-year",
+        "evidence": "The transcript never mentions a 2025 figure, a declining market trend, or any survey showing year-on-year decline; it only discusses title/location mismatches.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the Marketing Week 2026 Career & Salary Survey as the survey-grade UK benchmark",
+        "evidence": "No survey is named anywhere in the transcript; the \u00a372k figure is referred to only as 'your source'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the 2026 senior manager figure of \u00a360,577",
+        "evidence": "This figure does not appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Contrasts the 2026 figure with the 2025 senior manager figure of \u00a372,434 to show the decline",
+        "evidence": "The transcript mentions '\u00a372k' only as a mismatched-title figure, not as a dated 2025 figure being contrasted with a 2026 figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the survey's respondent count (2,350) or its April 2026 date when grading the source",
+        "evidence": "No respondent count or survey date is mentioned anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels every quoted pay figure with currency, source, date, and grade",
+        "evidence": "Figures like '\u00a372k figure', '\u00a355\u201365k', '\u00a368,000\u2013\u00a378,000' are given with currency only, never a named source, date, or explicit grade.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes survey-grade sources from aggregate or job-board estimates, treating aggregates as wide ranges",
+        "evidence": "The transcript only contrasts 'a generic national survey' with 'live postings' advertised ranges' loosely, without labeling either as survey-grade vs aggregate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents benchmarks as ranges, never a single point figure",
+        "evidence": "'Manchester-market-rate for the same title could realistically be \u00a355\u201365k' and 'e.g. \"\u00a368,000\u2013\u00a378,000 depending on the full package\"' \u2014 ranges used throughout.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly advises against anchoring at \u00a375,000 on the basis of the 2025 number as found",
+        "evidence": "'anchoring at \u00a375k off a mismatched benchmark risks either underselling yourself... or looking out of touch with market rate'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reverifying the figure before it anchors the negotiation, or dating and grading it out loud if verification is not possible",
+        "evidence": "'Before next week, spend 20 minutes cross-checking: search \"paid media manager\" + \"Manchester\" on Glassdoor/Totaljobs/Reed... ask what they're placing similar roles at right now'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers the 3Search Performance Marketing Salary Guide 2025 (1,300+ responses, \u00a350,000-\u00a370,000 for PPC Managers) as an additional survey-grade anchor",
+        "evidence": "This guide is never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that an undated or last-year figure quoted in a negotiation damages the candidate's credibility",
+        "evidence": "No mention of credibility risk from quoting an undated/outdated figure.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

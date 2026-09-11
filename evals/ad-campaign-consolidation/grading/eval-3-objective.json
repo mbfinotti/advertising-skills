@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects merging brand and non-brand search under one campaign and one bid strategy",
+        "evidence": "\"Brand vs non-brand belongs in separate campaigns with distinct bid strategies regardless of what else you merge.\" Also heading '1. Brand and non-brand search sharing one bid pool' is presented as a thing wrong with the plan.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends keeping brand and non-brand in separate campaigns with distinct bid strategies",
+        "evidence": "\"Brand vs non-brand belongs in separate campaigns with distinct bid strategies regardless of what else you merge.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends excluding brand terms from any blended or automated campaign type",
+        "evidence": "The transcript only recommends separate campaigns/bid strategies for brand vs non-brand; it never frames this as 'excluding brand terms from any blended or automated campaign type.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Predicts that a pooled budget concentrates roughly 70-90% of spend into the structurally cheapest branch or two",
+        "evidence": "No percentage estimate is given anywhere; the transcript only says the cheaper branch 'will eat the shared budget' without quantifying a 70-90% share.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names brand search and/or retargeting as the branches that will eat the pooled budget, given the $9 vs $52 cost gap",
+        "evidence": "\"$9 vs $52 CPA is not a small gap... Brand search will eat the shared budget, non-brand growth will starve\" and \"the algorithm parks spend on warm converters, cold acquisition goes dark\" for retargeting.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that blended ROAS will look healthy while non-brand growth starves and the account goes blind where it matters",
+        "evidence": "\"the blended number will look great while you go blind on the channel that actually finds new customers\" and \"reported account ROAS climbs while your actual customer pipeline shrinks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps prospecting and retargeting structurally separate rather than pooled into one entity",
+        "evidence": "\"keep brand/non-brand and prospecting/retargeting structurally separate no matter what\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that reported retargeting ROAS overstates true incremental ROAS, citing a magnitude around 40-70%",
+        "evidence": "\"Platform-reported retargeting ROAS is commonly overstated relative to true incremental ROAS by 40-70%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends judging the consolidation by incrementality rather than platform-reported ROAS",
+        "evidence": "\"prefer an incrementality read (even a lightweight lift study) over platform-reported ROAS for the verdict, because platform ROAS is the platform grading its own homework.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a platform lift study as the default verdict method",
+        "evidence": "The transcript only mentions 'a lightweight lift study' as a parenthetical alternative ('even a lightweight lift study'), while the primary recommended judge is the pre-merge baseline comparison, not a platform lift study as the default method.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the escalation condition for a geo holdout (a large share of the account's budget moved, or the platform grading its own homework being exactly what is disputed)",
+        "evidence": "The transcript never mentions a geo holdout or any escalation condition for one; it only references incrementality reads and lift studies in passing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Restricts any budget pooling to comparable cost-per-conversion branches, with minimum/maximum spend floors where a strategically required branch would starve",
+        "evidence": "\"pool only branches with comparable cost-per-conversion, or keep separate budgets with floors.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the consultant's 30-day account-ROAS success criterion in favour of comparing against the account's own pre-merge baseline, not industry benchmarks",
+        "evidence": "\"Account-level ROAS after 30 days is the wrong judge, or at least an incomplete one... Judge against your own pre-merge baseline per segment, not one blended post-merge number\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects merging brand and non-brand search under one campaign and one bid strategy",
+        "evidence": "\"Keep campaigns/budgets separated by intent type (brand, non-brand, prospecting, retargeting) \u2014 that structure exists precisely so each can be judged and optimized against the right metric.\" This directly rejects the consultant's plan to merge all four buckets, including brand and non-brand, into one campaign/bid strategy.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends keeping brand and non-brand in separate campaigns with distinct bid strategies",
+        "evidence": "\"Keep campaigns/budgets separated by intent type (brand, non-brand, prospecting, retargeting)... that's better solved with automated bidding within each campaign (tROAS/tCPA per segment) rather than merging the campaigns themselves.\" Recommends per-segment bid targets, i.e., distinct bid strategies per campaign.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends excluding brand terms from any blended or automated campaign type",
+        "evidence": "The transcript recommends keeping brand as its own separate campaign and applying automated bidding 'within each campaign' individually, but never explicitly states brand terms must be excluded from any blended/automated campaign construct \u2014 it only argues against merging campaigns generally.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Predicts that a pooled budget concentrates roughly 70-90% of spend into the structurally cheapest branch or two",
+        "evidence": "The transcript predicts budget will shift toward 'brand search and retargeting' but gives no percentage estimate such as 70-90%; it states only that prospecting and non-brand 'will get starved of budget' without quantifying the concentration.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names brand search and/or retargeting as the branches that will eat the pooled budget, given the $9 vs $52 cost gap",
+        "evidence": "\"it will systematically reallocate spend toward whichever segment converts easiest \u2014 brand search and retargeting \u2014 because that's the fastest path to hitting the target,\" contrasted with 'Brand search at $9 CPA' vs 'Non-brand search ($52 CPA...)'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that blended ROAS will look healthy while non-brand growth starves and the account goes blind where it matters",
+        "evidence": "\"If it holds steady or improves, that's equally uninformative: it could just mean the algorithm quietly shifted budget to brand+retargeting while prospecting starved, and you'd only discover that a quarter later when new-customer volume has cratered.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps prospecting and retargeting structurally separate rather than pooled into one entity",
+        "evidence": "\"Keep campaigns/budgets separated by intent type (brand, non-brand, prospecting, retargeting)\" \u2014 prospecting and retargeting remain distinct, separately-judged entities in the recommendation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that reported retargeting ROAS overstates true incremental ROAS, citing a magnitude around 40-70%",
+        "evidence": "The transcript states \"that 8.4x is likely inflated\" and that retargeting \"often claims credit it didn't earn,\" but gives no numeric magnitude (e.g., 40-70%) for the overstatement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends judging the consolidation by incrementality rather than platform-reported ROAS",
+        "evidence": "\"run an actual incrementality/holdout test on retargeting before trusting its reported ROAS\" and \"judge on incrementality, not raw ROAS.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a platform lift study as the default verdict method",
+        "evidence": "The transcript only generically mentions a 'holdout/incrementality test' and 'Have you run a holdout/incrementality test on it?' without naming a platform-native lift study as the default verdict method.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the escalation condition for a geo holdout (a large share of the account's budget moved, or the platform grading its own homework being exactly what is disputed)",
+        "evidence": "No mention of geo holdouts or any escalation condition tied to budget share or platform self-grading appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Restricts any budget pooling to comparable cost-per-conversion branches, with minimum/maximum spend floors where a strategically required branch would starve",
+        "evidence": "The transcript argues against pooling altogether and never proposes a conditional pooling rule based on comparable cost-per-conversion branches or min/max spend floors.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the consultant's 30-day account-ROAS success criterion in favour of comparing against the account's own pre-merge baseline, not industry benchmarks",
+        "evidence": "The transcript rejects the 30-day window (\"30 days is too short a window regardless... you'll be making a structural decision... off what could just be a month of algorithm learning-phase volatility\") and suggests \"60\u201390 days\" evaluated on CAC vs. LTV, but never frames the alternative as comparison against the account's own pre-merge baseline versus industry benchmarks.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

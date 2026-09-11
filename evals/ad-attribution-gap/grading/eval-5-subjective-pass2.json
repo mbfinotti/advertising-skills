@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Ranks the test-order cleanup high despite its $6k being the smallest figure, because it is near-zero effort and owned outright by the analyst.",
+        "evidence": "Test orders are placed #2 of 4 in the fix-order table, with fix effort \"Near-zero: analyst filters known internal/test accounts out of the reporting query\" and the explicit justification \"Second. Smallest number on the list, but cheapest fix by far \u2014 the analyst owns this outright, no other team involved. Knock it out same week as #1.\" The operational section reinforces it: \"Ship #1 and #2 this week. Both are analyst/marketing-ops work, zero engineering dependency.\" The smallest-figure-but-high-rank tension, the near-zero effort, and sole analyst ownership are all named.",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Ranks the test-order cleanup high despite its $6k being the smallest figure, because it is near-zero effort and owned outright by the analyst.",
+        "evidence": "Placed at #2 of 4, explicitly ahead of the $9k UTM bug and the $55k cross-device gap, so the smallest dollar figure is deliberately not last. Rationale is effort-based and baseline-based: 'Same profile: cheap, fast, low/no engineering lift (add a test flag/filter in the order system and exclude in reporting)' and 'Corrupts AOV, conversion rate, and revenue baselines \u2014 same reason to clear it before evaluating anything else.' The opening also states the general principle that dollar size alone is the wrong heuristic and that fix effort and whether engineering is the bottleneck matter. Ownership",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

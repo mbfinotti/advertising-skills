@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not endorse immediately moving budget into untested channels on the strength of the 20% CAC rise alone",
+        "evidence": "'The CAC jump alone does not confirm saturation, and it does not support an immediate 30% reallocation.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks contribution margin first: judges the $46 against the business's own allowable CAC before treating the rise as a problem",
+        "evidence": "'Break-even: $49.40 allowable CAC. Current Meta CAC of $46 sits under it'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes first-order allowable CAC as AOV x margin (95 x 0.52, approximately $49) and notes $46 still sits under it, with thin headroom",
+        "evidence": "'Break-even allowable CAC | AOV \u00d7 contribution margin = $95 \u00d7 0.52 | $49.40' and 'Gap: $3.40 (6.9%)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the decision rule for diversifying: test a new channel only once the current channel's marginal CAC exceeds what the next channel could realistically deliver - and marginal CAC has not been measured here",
+        "evidence": "'test a new one once the current channel's marginal CAC exceeds what the next channel could realistically deliver. Nobody has that number for TikTok or Pinterest yet'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Establishes the variant of the $38-to-$46 figure as platform-attributed paid CAC and treats it as claimed rather than causal",
+        "evidence": "'Meta CAC (start) | paid, platform-reported (assumed)' and 'platforms are documented to over-count attributed conversions'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names reacting to a CAC bump by spreading spend into untested channels as the more common failure, compared with staying too long in a working channel",
+        "evidence": "No comparison of relative failure frequency between over-diversifying and staying too long appears anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that measuring marginal CAC takes a quarter and deliberate unrecoverable test spend, and that it serves scaling decisions rather than health verdicts",
+        "evidence": "Transcript states testing is 'a marginal-CAC / reallocation decision, not a health-check outcome' but never mentions the quarter-long timeframe or deliberate unrecoverable test spend",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requests longer trailing history and a seasonality check before reading two data points as a trend",
+        "evidence": "Requests 'a weekly series for the last 8-12 weeks' (trailing history) but no seasonality check is mentioned anywhere",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Returns at most a watch state with a named next-period question, not an unhealthy verdict and not a reallocation instruction",
+        "evidence": "'Verdict: Watch... Watch means \"re-examine next period with a named question\" \u2014 not \"act\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands the actual budget reallocation decision off to an allocation or channel-selection workflow",
+        "evidence": "'Whether to test TikTok/Pinterest is a marginal-CAC / reallocation decision... that's ad-spend-allocation'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every reported figure carries a variant label, a window, and a data source",
+        "evidence": "Metric table populates Variant/Window/Source for every row",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not endorse immediately moving budget into untested channels on the strength of the 20% CAC rise alone",
+        "evidence": "'Don't reallocate 30% off a two-month CAC trend and team consensus.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks contribution margin first: judges the $46 against the business's own allowable CAC before treating the rise as a problem",
+        "evidence": "'Contribution margin per order: 52% \u00d7 $95 AOV = $49.40...At $46 CAC: $3.40 profit/order...still profitable.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes first-order allowable CAC as AOV x margin (95 x 0.52, approximately $49) and notes $46 still sits under it, with thin headroom",
+        "evidence": "'$49.40...At $46 CAC: $3.40 profit/order (3.6% of AOV) \u2014 thin, but still profitable'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the decision rule for diversifying: test a new channel only once the current channel's marginal CAC exceeds what the next channel could realistically deliver - and marginal CAC has not been measured here",
+        "evidence": "No such marginal-CAC decision rule is stated anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Establishes the variant of the $38-to-$46 figure as platform-attributed paid CAC and treats it as claimed rather than causal",
+        "evidence": "The $38\u2192$46 figures are analyzed at face value with no discussion of attribution variant or claimed-vs-causal framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names reacting to a CAC bump by spreading spend into untested channels as the more common failure, compared with staying too long in a working channel",
+        "evidence": "The transcript calls the reallocation 'the riskier bet' for this specific case but never frames it as a generally more common failure mode versus staying too long.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that measuring marginal CAC takes a quarter and deliberate unrecoverable test spend, and that it serves scaling decisions rather than health verdicts",
+        "evidence": "No discussion of marginal CAC measurement timeframe or its role in scaling vs. health verdicts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requests longer trailing history and a seasonality check before reading two data points as a trend",
+        "evidence": "'Same period last year, if available (seasonality check)' listed among diagnostics to check.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Returns at most a watch state with a named next-period question, not an unhealthy verdict and not a reallocation instruction",
+        "evidence": "The transcript still recommends 'a capped test (10\u201315% of budget...) into TikTok/Pinterest,' which is itself a reallocation instruction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hands the actual budget reallocation decision off to an allocation or channel-selection workflow",
+        "evidence": "The transcript makes the recommendation itself ('Run a capped test...') rather than deferring to a separate workflow.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every reported figure carries a variant label, a window, and a data source",
+        "evidence": "Contribution margin, AOV, and the $38\u2192$46 CAC figures are each identified with their context (per order, per month trend).",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

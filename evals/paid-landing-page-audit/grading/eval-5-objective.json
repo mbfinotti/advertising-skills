@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The countdown-timer removal and the 'double your salary' claim removal lead the list, ahead of every conversion fix.",
+        "evidence": "Fix 1 'Delete the resetting countdown timer' and Fix 2 'Rewrite the guaranteed to double your salary claim' precede fixes 3-5.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The resetting countdown is treated as a removal despite the claim that it 'converts well', because the exposure stands every day it remains.",
+        "evidence": "\"'It's been there a year and converts well' is an anecdote from one person watching one uncontrolled period... irrelevant to the compliance exposure, which accrues daily regardless of conversion rate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The unsubstantiated salary-doubling guarantee is flagged as an FTC and/or ad-platform policy exposure.",
+        "evidence": "\"exactly the claim class ad platforms disapprove destinations for (unrealistic-results promises) and the kind of income claim regulators scrutinize hardest\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not adopt cheapest-first as the sort key, and states the ranking principle used instead: funnel step unblocked per unit of effort.",
+        "evidence": "\"the skill this audit follows ranks by *efficiency* (funnel-step-unblocked per unit of effort), not raw cost\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The speed fix (5.2s mobile LCP) is deleted from the ranked list because there is no route to engineering at all.",
+        "evidence": "\"Ruled out here anyway, not demoted, because you have no route to engineering at all \u2014 not a slow queue, no queue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The deleted speed work is named in a dedicated ruled-out section together with the constraint that removed it, not parked at the bottom of the ranked list or dropped silently.",
+        "evidence": "Listed under \"## Ruled out\": \"Mobile LCP 5.2s (field data...)\" with constraint explanation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Message match (making the headline confirm the promoted course) sits at or near the top of the shippable fixes.",
+        "evidence": "Fix 3: \"Fix the headline to name the course the ad promotes\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moving the footer testimonials to the point of friction is presented as an hour-scale, high-ratio fix.",
+        "evidence": "\"This is a placement problem, not a content problem, which is why it's cheap.\" ... \"effort: hours\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The ranked fix list contains at most seven items.",
+        "evidence": "Five numbered fixes (1-5) are listed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each ranked fix carries a severity and an effort bracket, and not every fix is marked critical.",
+        "evidence": "Severities: critical, critical, major, major, major \u2014 not uniformly critical.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Effort is expressed as time and coordination (hours, days, weeks), never as a currency amount.",
+        "evidence": "\"effort: hours (delete a CMS block)\" etc. throughout.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage lift figure appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The form recommendation is scoped against the no-dev constraint (CMS-editable changes, or fields assessed as needed-now versus collectible-later) rather than assuming a rebuild.",
+        "evidence": "\"14-field signup form... Ruled out because the form lives in a form stack you can't touch, not because it's a small leak.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The countdown-timer removal and the 'double your salary' claim removal lead the list, ahead of every conversion fix.",
+        "evidence": "The order is: 1. salary claim, 2. headline rewrite, 3. autoplay video, 4. countdown timer, 5. testimonials \u2014 the countdown timer sits at #4, behind two other fixes, not leading the list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The resetting countdown is treated as a removal despite the claim that it 'converts well', because the exposure stands every day it remains.",
+        "evidence": "\"'Converts well' isn't the same as safe... it's the kind of thing that gets ad accounts and landing pages flagged on review.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The unsubstantiated salary-doubling guarantee is flagged as an FTC and/or ad-platform policy exposure.",
+        "evidence": "\"Income/earnings guarantees are FTC-regulated and violate Google Ads' misleading claims policy \u2014 this single line is a live account-suspension risk on your paid spend\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not adopt cheapest-first as the sort key, and states the ranking principle used instead: funnel step unblocked per unit of effort.",
+        "evidence": "\"Ranked by what's cheapest to execute in the CMS (copy/image only), not by impact\" \u2014 the response explicitly states cheapest-to-execute is the sort key.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The speed fix (5.2s mobile LCP) is deleted from the ranked list because there is no route to engineering at all.",
+        "evidence": "\"Mobile LCP 5.2s (c): this is a page-speed/infra problem... no CMS content edit gets you under Google's 2.5s 'good' threshold\" is placed in the excluded \"Not in this list\" section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The deleted speed work is named in a dedicated ruled-out section together with the constraint that removed it, not parked at the bottom of the ranked list or dropped silently.",
+        "evidence": "\"## Not in this list \u2014 you can't fix these, don't try\" explicitly lists LCP with the reasoning.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Message match (making the headline confirm the promoted course) sits at or near the top of the shippable fixes.",
+        "evidence": "\"## 2. Rewrite the headline to name the course \u2014 seconds. Match it to what the ad promised.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moving the footer testimonials to the point of friction is presented as an hour-scale, high-ratio fix.",
+        "evidence": "\"## 5. Move testimonials above the fold \u2014 minutes, more clicks (drag/reorder + mobile check)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The ranked fix list contains at most seven items.",
+        "evidence": "The ranked list contains exactly 5 items (numbered 1-5).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each ranked fix carries a severity and an effort bracket, and not every fix is marked critical.",
+        "evidence": "Effort is stated per item (\"seconds\", \"minutes\") but no explicit severity label accompanies each item, e.g. item 3 (\"one widget toggle, minutes\") carries no severity marker.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Effort is expressed as time and coordination (hours, days, weeks), never as a currency amount.",
+        "evidence": "Effort is described throughout as \"seconds\", \"minutes\" \u2014 no currency figures appear.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage lift figure appears anywhere in the response.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The form recommendation is scoped against the no-dev constraint (CMS-editable changes, or fields assessed as needed-now versus collectible-later) rather than assuming a rebuild.",
+        "evidence": "\"14-field signup form (f): same story \u2014 the form stack isn't yours to edit... Flag it as the top business case for getting any dev resource\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

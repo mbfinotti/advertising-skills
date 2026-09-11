@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects 'influencers' as a role label, stating it yields no targeting attribute and no messaging angle",
+        "evidence": "\"\u274c **\\\"Influencer\\\" as a targeting label** \u2014 sales' framing needs translating. \\\"Influencer\\\" maps to no ad-platform attribute and no distinct message; it's replaced below by the actual roles it was standing in for (Technical Evaluator, End User, and Gatekeeper).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes champion, coach, and mobilizer, and states a champion who cannot move the group calls for a consensus-driver, not a louder champion",
+        "evidence": "The transcript only uses a five-role model (Champion, End user, Economic buyer, Technical evaluator, Gatekeeper-blocker) with Initiator merged into Champion. It states \"a champion who can't move the group needs a *consensus-driver*, not a louder champion\" but never introduces or distinguishes separate 'coach' and 'mobilizer' roles anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects ending every ad with a demo CTA and matches offer friction to role warmth instead",
+        "evidence": "\"Forcing a demo CTA onto a Security/Procurement-facing ad is close to guaranteed spend waste at that stage... for the Gatekeeper and Technical Evaluator, the ad's primary hook and click-through lead with the role-appropriate proof asset (security pack / architecture doc), with 'Book a demo' as a secondary, lower-emphasis button rather than the only path\" \u2014 combined with per-role offer types ranging from ungated walkthroughs/security packs to ROI calculators, showing friction matched to role warmth.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the conversion bands: low-friction offers around 10-15% versus cold demo or trial requests around 1.5-4%",
+        "evidence": "\"high-friction CTAs (demo/trial) convert around 1.5\u20134%, low-friction ungated offers around 10\u201315%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States cold gatekeepers do not book demos at all",
+        "evidence": "\"*cold gatekeepers don't book demos at all*\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets the default offer rung per role to an ungated low-friction asset, escalating only after that role's proxy audience engages twice, never on the first touch",
+        "evidence": "No mention anywhere in the transcript of an engagement-count-based escalation rule (e.g., 'twice' or 'first touch'); offers are assigned per role but no escalation-after-engagement logic is described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes the compliance/security pack given the SOC 2 Type II already held (about an hour to assemble), noting it removes a validation-stage veto",
+        "evidence": "The transcript does promote the pack (\"Security/compliance pack, ungated** (near-free to assemble \u2014 you already hold the certification)\") and discusses reaching gatekeepers earlier to avoid late veto issues, but never states or approximates \"about an hour to assemble\" \u2014 it uses \"near-free\" instead, and never explicitly frames it as removing a 'validation-stage veto' in those terms.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the benchmark report from the offer menu because no proprietary data exists, rather than ranking it last",
+        "evidence": "\"\u274c **Benchmark report** \u2014 you have no proprietary data to fill one; per the skill, this deletes it outright, not demotes it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes a demo or trial is a standing job because each one spends sales capacity again",
+        "evidence": "No statement in the transcript characterizes a demo/trial as a recurring 'standing job' that consumes sales capacity each time; this concept is absent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the swap test on angles: flags, rewrites, or merges any angle that could run unchanged against another role",
+        "evidence": "There is no mention of a 'swap test' or any process checking whether an angle could run unchanged against a different role; each role's angle is simply presented once.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sources verbatim customer language from the two years of call recordings for the messaging angles, stating exact phrases beat polished descriptions",
+        "evidence": "The messaging angles (e.g., \"See exceptions before the customer calls about them \u2014 not another screen to check\") are presented as constructed phrasing, not sourced as verbatim quotes from the call recordings, and no claim is made that exact phrases beat polished descriptions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Fills all six per-role fields: measured on, personal risk, likely objection, messaging angle, proof/offer type, targeting proxy",
+        "evidence": "The Role Map table includes columns 'Measured on', 'Personal risk', 'Likely objection', 'Messaging angle', 'Proof / offer type', and 'Targeting proxy' filled in for every role (Champion, End user, Economic buyer, Technical evaluator, Gatekeeper-blocker).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks any role or objection seeded from generic patterns as a hypothesis to verify against the user's own call notes, noting fine-grained per-role objection maps are weakly evidenced in published research",
+        "evidence": "Every role is marked 'Hypothesis' with a disproof condition tied to the user's call recordings (e.g., \"Disproof: cut if the next 10 stalled-deal recordings show no consistent champion role\"), but the transcript never states that fine-grained per-role objection maps are weakly evidenced in published research.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects 'influencers' as a role label, stating it yields no targeting attribute and no messaging angle",
+        "evidence": "\"Sales is using 'influencer' as a catch-all. It's actually six distinct roles above, each with a different objection. One generic ad creative aimed at 'influencers' will underperform because a dispatcher and a CFO are blocked by opposite things (dispatcher: fear of surveillance; CFO: unproven payback).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes champion, coach, and mobilizer, and states a champion who cannot move the group calls for a consensus-driver, not a louder champion",
+        "evidence": "The transcript only uses 'Champion' as one of seven committee roles (Champion, Economic Buyer, Financial Approver, Technical/IT Evaluator, Procurement, Operations/End Users, Status-quo Skeptic) and never uses the terms 'coach' or 'mobilizer', nor frames the fix as needing a 'consensus-driver'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects ending every ad with a demo CTA and matches offer friction to role warmth instead",
+        "evidence": "\"Complying as stated: every ad's final CTA button says Book a Demo... The button text stays 'Book a Demo' everywhere; only the page content around it changes.\" The transcript explicitly complies with the mandate rather than rejecting it, keeping the same CTA for all roles including cold ones.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the conversion bands: low-friction offers around 10-15% versus cold demo or trial requests around 1.5-4%",
+        "evidence": "No conversion rate percentages or benchmark figures appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States cold gatekeepers do not book demos at all",
+        "evidence": "The transcript only says cold audiences \"rarely convert on a 30-minute rep meeting as their first action\" \u2014 it does not state they do not book demos at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the default offer rung per role to an ungated low-friction asset, escalating only after that role's proxy audience engages twice, never on the first touch",
+        "evidence": "No escalation ladder or two-engagement threshold is described; every role's Offer/CTA column in the table is \"Book a Demo\" (with landing-page content variation), not an ungated low-friction default.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes the compliance/security pack given the SOC 2 Type II already held (about an hour to assemble), noting it removes a validation-stage veto",
+        "evidence": "The table lists \"SOC 2 Type II report, integration timeline (days, not months)\" as the proof point for the IT/Security row, but there is no mention of assembly time (\"about an hour\") or framing that it removes a validation-stage veto.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the benchmark report from the offer menu because no proprietary data exists, rather than ranking it last",
+        "evidence": "\"Don't publish a 'big industry benchmark report' with no proprietary data behind it \u2014 it reads as generic, gets no press pickup, and is a credibility risk if anyone asks about methodology or sample size.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes a demo or trial is a standing job because each one spends sales capacity again",
+        "evidence": "No mention of demos/trials consuming sales capacity as a recurring cost anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the swap test on angles: flags, rewrites, or merges any angle that could run unchanged against another role",
+        "evidence": "No swap test or cross-role angle-interchangeability check is described; each row's angle is asserted without testing whether it could apply unchanged to another role.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sources verbatim customer language from the two years of call recordings for the messaging angles, stating exact phrases beat polished descriptions",
+        "evidence": "\"Mined and anonymized, that's proprietary insight... Recurring pain patterns, timelines, carrier-friction quotes\" \u2014 quotes are mentioned as a source, but the transcript never claims exact/verbatim phrases outperform polished descriptions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Fills all six per-role fields: measured on, personal risk, likely objection, messaging angle, proof/offer type, targeting proxy",
+        "evidence": "The table's columns are Role, Typical title, What they actually care about, Message angle, Proof point, Ad concept, Offer/CTA \u2014 it does not include distinct 'measured on', 'personal risk', 'likely objection', or 'targeting proxy' fields.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marks any role or objection seeded from generic patterns as a hypothesis to verify against the user's own call notes, noting fine-grained per-role objection maps are weakly evidenced in published research",
+        "evidence": "No hedging language flags the committee map's roles/objections as unverified hypotheses to check against the user's own data; the table and recommendations are presented as settled fact.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

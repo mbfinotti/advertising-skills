@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not rank the 10 text lines as 10 separate candidates",
+        "evidence": "\"I can't force-rank \\\"which of the 10 to produce first,\\\" because as specified there aren't 10 candidates.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the 10 wording-only variations over the same stunt visual are a single test cell, because the real-variation gate requires the opening visual to differ",
+        "evidence": "\"Identical footage, ten different first lines = one test cell, not ten.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the star opening as failing audience qualification: universal spectacle that stops everyone qualifies no one for a $265 carry-on",
+        "evidence": "\"Fruit destruction is universal curiosity \u2014 it stops people with zero travel need exactly as readily as it stops a carry-on buyer.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses a promise-payoff problem: the hook window (splattering watermelon, product absent until second 12) does not set up what the ad sells",
+        "evidence": "\"TikTok's hook window is ~3 seconds; the suitcase appears at second 12 \u2014 4x the entire window.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the documented high-hook-rate/mediocre-ROAS failure pattern - the hook stops the scroll but nothing downstream converts",
+        "evidence": "\"a practitioner reporting a 43% hook rate with mediocre ROAS because 'the hook stopped the scroll but didn't qualify the right viewer or set up the offer.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Invokes the qualified-attention warning (higher hook rate or thumbstop does not mean better performance; clickbait gets attention without sales)",
+        "evidence": "\"This is Barry Hott's warning by the book: 'clickbait can get tons of clicks without generating any sales.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States hook rate measures attention rather than performance, citing the roughly -0.19 correlation with ROAS",
+        "evidence": "\"hook rate correlates -0.19 with ROAS across measured accounts (wrong direction), and this ad is your account's own live data point\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly declines to treat the 41% hook rate as evidence the opening works",
+        "evidence": "\"The hook isn't your best ever; it's your best-documented case of the metric your CMO is optimizing for actively working against you.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the fault as structural - the hook-window footage does not implicate the product or buyer - so the fix sits at the re-cut or new-footage rung, not a first-line rewrite",
+        "evidence": "\"Rung 1 (text rewrite) \u2014 will not work here...Rung 4 (shoot a new opening beat) \u2014 the likely real fix.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the next batch contain genuinely distinct concepts that qualify the buyer, meeting the 3-opening concept-distinct floor",
+        "evidence": "The transcript notes the current batch is \"Deep below the 3-opening floor\" but never explicitly instructs that the next/future batch must meet the 3-opening floor with concept-distinct openings.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames any recommendation as within-batch test-budget shortlisting, with no absolute hook-rate prediction for any new variant",
+        "evidence": "No absolute hook-rate figure is predicted for any proposed re-cut or reshoot variant anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States or verifies the TikTok hook-rate construction (2-second views divided by impressions) when discussing the 41% figure",
+        "evidence": "\"TikTok's default is 2-second views \u00f7 impressions, but confirm before trusting the 41% figure at all.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not rank the 10 text lines as 10 separate candidates",
+        "evidence": "'the 10 lines themselves aren't in this conversation... send them over and I'll score each one' \u2014 no ranking of 10 lines is performed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the 10 wording-only variations over the same stunt visual are a single test cell, because the real-variation gate requires the opening visual to differ",
+        "evidence": "'if the footage and the 12-second delay stay fixed, a new first line can move the hook rate (maybe), but it can't fix the decoupling... So all 10 variants are likely to inherit the same pattern.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the star opening as failing audience qualification: universal spectacle that stops everyone qualifies no one for a $265 carry-on",
+        "evidence": "'Hook rate likely selects the wrong audience. People who watch past second 3 for a fruit-splatter payoff are disproportionately entertainment-seekers, not carry-on shoppers.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses a promise-payoff problem: the hook window (splattering watermelon, product absent until second 12) does not set up what the ad sells",
+        "evidence": "'The hook and the product are decoupled by 12 seconds... nothing in the first 12 seconds primes \"durable,\" \"travel,\" or \"protects what's inside.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the documented high-hook-rate/mediocre-ROAS failure pattern - the hook stops the scroll but nothing downstream converts",
+        "evidence": "'The 0.8 ROAS and flat sales aren't noise sitting next to a great number \u2014 they're the other half of the same story: you've built a very good watermelon ad that happens to have a suitcase in it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Invokes the qualified-attention warning (higher hook rate or thumbstop does not mean better performance; clickbait gets attention without sales)",
+        "evidence": "'\"Best hook rate \u2192 make 10 more like it\" treats hook rate as a proxy for ad quality. It isn't \u2014 it's a proxy for *scroll-stopping power*, full stop.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States hook rate measures attention rather than performance, citing the roughly -0.19 correlation with ROAS",
+        "evidence": "No correlation statistic is cited anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explicitly declines to treat the 41% hook rate as evidence the opening works",
+        "evidence": "'A watermelon exploding off a parking garage stops thumbs because it's violent, novel, and satisfying in slow motion. None of that has anything to do with wanting a $265 carry-on.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the fault as structural - the hook-window footage does not implicate the product or buyer - so the fix sits at the re-cut or new-footage rung, not a first-line rewrite",
+        "evidence": "'one structurally different variant \u2014 same stunt, but pull the suitcase into frame in the first 2-3 seconds (e.g., watermelon packed *inside* the case before the drop...)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the next batch contain genuinely distinct concepts that qualify the buyer, meeting the 3-opening concept-distinct floor",
+        "evidence": "The recommendation is 'ship 2-3 of the strongest lines plus one structurally different variant' \u2014 retains multiple wording-only lines rather than calling for a full batch of concept-distinct new openings.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames any recommendation as within-batch test-budget shortlisting, with no absolute hook-rate prediction for any new variant",
+        "evidence": "No numeric hook-rate prediction is given for any proposed new variant anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States or verifies the TikTok hook-rate construction (2-second views divided by impressions) when discussing the 41% figure",
+        "evidence": "No mention of a specific platform or hook-rate construction formula when discussing the 41% figure.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

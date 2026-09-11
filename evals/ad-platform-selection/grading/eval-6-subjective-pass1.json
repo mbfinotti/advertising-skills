@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The survey evidence is used to justify the audience-presence score but is not allowed to override the funding floor.",
+        "evidence": "Section 3 ties the survey directly and only to the scoring of presence/reachability: \"Podcast's value-5 on audience presence and reachability is direct evidence: 200-signup survey, top answer, buyer named the exact 2\u20133 shows.\" The funding floor is then treated as a separate, independently-checked gate: the starved-family promotion lists condition (3) as \"budget clears the family's floor *by concentrating on known-good shows* (math below)\" \u2014 i.e. the floor is satisfied by concentration math, not waived because the evidence is strong. Section 4/5 enforce that concentration rather than letting ev",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The survey evidence is used to justify the audience-presence score but is not allowed to override the funding floor.",
+        "evidence": "The survey is used correctly as audience-presence evidence: 'Use those as the anchor picks \u2014 survey data beats my guesswork every time' and 'Confirm the actual named shows from your survey (don't skip this \u2014 it's better data than my shortlist)' \u2014 so the 200 respondents justify which shows have real audience presence. However, no explicit funding floor is defined as a separate, non-overridable constraint. The nearest analogues are implicit: the concentration argument ('$9K split across five shows buys forgettable cameos... $9K on two shows... buys recall') implies a minimum viable per-show spen",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

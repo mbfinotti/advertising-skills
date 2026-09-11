@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Stops the deletion of the prior dated pull: pulls are never overwritten or discarded, and a re-run creates a new dated pull alongside the old one.",
+        "evidence": "\"Don't delete last month's pull folder... 'Dated raw pulls live separately from this synthesized file and are never overwritten... re-runs create a new dated pull.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why the archive matters: surfaces drop non-political ads when paused and disclosure lapses roughly a year after an ad last runs, so the swipe file is the only durable archive.",
+        "evidence": "The transcript states \"Most ad-library surfaces purge a paused ad's disclosure the moment it stops running (Meta Ad Library does this for non-political ads)\" \u2014 immediate purge, not a roughly-year-later lapse, and no ~1-year retention claim appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Appends a change-log entry classifying each movement as appeared, disappeared, or relaunched.",
+        "evidence": "\"Add both as change-log entries in the master sheet: one disappeared (\u00d73), one relaunched (\u00d72), dated to this pull.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the two returned ads as relaunches, stronger evidence than an ad that simply never stopped.",
+        "evidence": "\"the relaunch is your strongest new signal this session (survived a pause-and-return, which is stronger evidence than an ad that just never stopped).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Re-ranks the corroborators now that a second dated pull exists: relaunch recency becomes near-zero effort and moves up behind variant duplication.",
+        "evidence": "\"This is your second dated pull, which is exactly when relaunch-recency corroboration turns nearly free and starts pulling weight in the ranking.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs cross-competitor repetition deliberately as the last step of the session, noting it cannot win the per-minute ordering because it needs the finished classification pass.",
+        "evidence": "\"Cross-competitor repetition check, deliberately, now \u2014 it's the strongest corroborator in the whole list and the one the per-session efficiency ordering structurally starves.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Updates test statuses on old entries and prunes using actual run data, never memory.",
+        "evidence": "\"Test-status pass on old entries \u2014 anything sitting at hypothesized/briefed for the disappeared ads' concepts, decide if it's now stale.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ends the session with a fresh set of written hypotheses.",
+        "evidence": "\"A fresh hypothesis pass \u2014 the relaunch is your strongest new signal this session...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the maintenance cadence at a scheduled weekly session of roughly 30-45 minutes per competitor set, hunting ads that have run more than two weeks.",
+        "evidence": "The transcript refers throughout to a monthly cadence (\"this month's pull\", \"a second monthly pull is a good checkpoint\"), not a weekly 30-45 minute cadence, and never mentions hunting ads running more than two weeks.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Logs the three disappeared ads as observations without asserting they failed, labelling any killed-because-losing reading as inference.",
+        "evidence": "\"Do not write 'these lost' as fact \u2014 a pulled ad can mean it lost, graduated into a bigger buy, got replaced by a landing-page test, or was folded into a new concept.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the synthesized file citing which dated pull each entry came from.",
+        "evidence": "\"Add both as change-log entries in the master sheet: one disappeared (\u00d73), one relaunched (\u00d72), dated to this pull.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Stops the deletion of the prior dated pull: pulls are never overwritten or discarded, and a re-run creates a new dated pull alongside the old one.",
+        "evidence": "\"Keep last month's pull folder \u2014 don't delete it... Deleting last month's folder destroys the only evidence that would let someone re-verify.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why the archive matters: surfaces drop non-political ads when paused and disclosure lapses roughly a year after an ad last runs, so the swipe file is the only durable archive.",
+        "evidence": "The justification given is diffability ('that claim is only checkable by diffing two snapshots'), not the specific fact about ad libraries dropping paused ads or a ~1-year disclosure lapse.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Appends a change-log entry classifying each movement as appeared, disappeared, or relaunched.",
+        "evidence": "\"Write it explicitly: date, source pull, 3 ads dropped..., and 2 spring-paused ads reactivated.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the two returned ads as relaunches, stronger evidence than an ad that simply never stopped.",
+        "evidence": "It labels them 'reactivated' but never compares this signal's strength to an ad that never stopped running.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Re-ranks the corroborators now that a second dated pull exists: relaunch recency becomes near-zero effort and moves up behind variant duplication.",
+        "evidence": "No corroborator re-ranking is discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs cross-competitor repetition deliberately as the last step of the session, noting it cannot win the per-minute ordering because it needs the finished classification pass.",
+        "evidence": "Not mentioned in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Updates test statuses on old entries and prunes using actual run data, never memory.",
+        "evidence": "No test-status update or pruning-by-run-data instruction appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ends the session with a fresh set of written hypotheses.",
+        "evidence": "No hypothesis-writing step is included.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the maintenance cadence at a scheduled weekly session of roughly 30-45 minutes per competitor set, hunting ads that have run more than two weeks.",
+        "evidence": "The transcript works within a 'monthly pull' cadence throughout, with no weekly 30-45 min per-competitor session or >2-week-run hunting instruction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Logs the three disappeared ads as observations without asserting they failed, labelling any killed-because-losing reading as inference.",
+        "evidence": "\"3 ads dropped (with whatever ad IDs/creative refs you have)\" \u2014 stated as a neutral fact of movement, with no performance/failure claim attached.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the synthesized file citing which dated pull each entry came from.",
+        "evidence": "It says the rollup should be 'regenerated from' the dated pulls but does not specify that each entry in the synthesized file cites its source dated pull.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

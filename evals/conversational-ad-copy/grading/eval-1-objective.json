@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response identifies the placement as model-generated, where the model synthesises the ad text from the landing page and feed rather than rendering advertiser-written copy.",
+        "evidence": "\"copy is **model-generated from feed + landing page**, not rendered from your existing ad assets.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not deliver the requested 6 headlines and 4 descriptions as the solution, and states that editing headlines changes nothing on this surface.",
+        "evidence": "\"new headline/description *ad copy* won't move this surface \u2014 the model reads your landing page and feed, so that's what gets rewritten below. I'm delivering it in the same 6-headline / 4-description shape you asked for, just mapped onto the assets that are actually eligible\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The core deliverable is rewritten source material - landing-page passages and feed fields - shown as before/after, not ad copy.",
+        "evidence": "\"**Current:** \\\"Fernhollow is the revolutionary, next-generation platform...\\\"\" followed by \"**6 headline-style rewrites** (H1/subhead candidates...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Landing-page passages are worked first and named as the highest-efficiency asset among the editable ones.",
+        "evidence": "Landing-page hero is \"top priority\" but Shopping feed fields are separately labeled \"co-first priority\" \u2014 tied for first rather than singularly named highest.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The rewritten hero passage names Fernhollow in its first sentence.",
+        "evidence": "\"1. Fernhollow cuts month-end reconciliation from 11 hours to 4.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The rewritten passage leads with the claim and keeps one idea per short block.",
+        "evidence": "\"4. Fernhollow turns an 11-hour month-end close into a 4-hour one.\" \u2014 single-idea, claim-first headline lines",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 11-hours-to-4 reconciliation figure is carried into the rewrite, attributed to the 2025 study of 32 finance teams and dated.",
+        "evidence": "\"Reconciliation cut from 11 hours to 4 (64%) | 2025 Fernhollow customer study, n=32 mid-market finance teams\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The superlatives from the old hero ('revolutionary', 'next-generation') are removed and no new unsupported superlative is introduced.",
+        "evidence": "\"'revolutionary / next-generation / transforms' (old hero) | UNSOURCED \u2014 dropped, not carried into any rewrite\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No statistic, customer count, or testimonial beyond the supplied study appears in any rewritten passage.",
+        "evidence": "All rewrites reference only the 11hr-to-4hr / 32-team / 64% figures; grounding table lists no other stats.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reviews are named as the asset with the highest trust weight and no direct edit path, scoped as a quarter-scale programme with nothing expected inside this flight.",
+        "evidence": "\"No solicitation program mentioned, and reviews are a quarter-scale asset, not a sprint one... expect nothing from it inside this flight.\" \u2014 no mention of 'highest trust weight' or 'no direct edit path'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Structured data is addressed as a dev-queue ticket that pins facts the model would otherwise infer.",
+        "evidence": "\"Pins the number for re-crawl instead of leaving the model to infer it. Route to your dev queue \u2014 not written out in full here.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags that the landing-page and feed rewrites may belong to whoever owns the site and feed, and routes or asks about ownership rather than assuming the user can ship them.",
+        "evidence": "\"Landing-page hero (top priority \u2014 you own it, model paraphrases it directly)\" \u2014 asserts ownership rather than asking/routing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response states that adjacency - what the model says beside the ad, including competitors it cites - is not controllable through copy, and that monitoring is the control for that risk.",
+        "evidence": "No mention of adjacency, competitor citation, or monitoring as a control anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response identifies the placement as model-generated, where the model synthesises the ad text from the landing page and feed rather than rendering advertiser-written copy.",
+        "evidence": "\"Since these get reassembled by the model from your site/feed, every claim below is something already true and verifiable on your page\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not deliver the requested 6 headlines and 4 descriptions as the solution, and states that editing headlines changes nothing on this surface.",
+        "evidence": "The transcript delivers exactly '## Headlines' (6 items) and '## Descriptions' (4 items) as the primary solution, and never states that editing headlines is ineffective on this surface.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The core deliverable is rewritten source material - landing-page passages and feed fields - shown as before/after, not ad copy.",
+        "evidence": "The core deliverable is the 6 headlines + 4 descriptions; the source-material rewrite appears only as a brief closing 'Note' with a single suggested line, not a before/after treatment.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Landing-page passages are worked first and named as the highest-efficiency asset among the editable ones.",
+        "evidence": "The hero-line rewrite appears last, under 'Note on the underlying source content', not worked first or named as highest-efficiency.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The rewritten hero passage names Fernhollow in its first sentence.",
+        "evidence": "The suggested rewrite is \"32 mid-market finance teams cut month-end reconciliation from 11 hours to 4 (2025 customer study).\" \u2014 no mention of Fernhollow.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The rewritten passage leads with the claim and keeps one idea per short block.",
+        "evidence": "\"32 mid-market finance teams cut month-end reconciliation from 11 hours to 4 (2025 customer study).\" is a single short claim-first sentence.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 11-hours-to-4 reconciliation figure is carried into the rewrite, attributed to the 2025 study of 32 finance teams and dated.",
+        "evidence": "\"32 mid-market finance teams cut month-end reconciliation from 11 hours to 4 (2025 customer study)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The superlatives from the old hero ('revolutionary', 'next-generation') are removed and no new unsupported superlative is introduced.",
+        "evidence": "\"I dropped the unverifiable adjectives from your current hero ('revolutionary,' 'next-generation,' 'transforms')\" and the replacement line contains no superlatives.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No statistic, customer count, or testimonial beyond the supplied study appears in any rewritten passage.",
+        "evidence": "The only figures used are '32', '11 hrs', '4-hr', and '2025 study' \u2014 all from the supplied study.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reviews are named as the asset with the highest trust weight and no direct edit path, scoped as a quarter-scale programme with nothing expected inside this flight.",
+        "evidence": "Reviews are not mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Structured data is addressed as a dev-queue ticket that pins facts the model would otherwise infer.",
+        "evidence": "Structured data is not mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response flags that the landing-page and feed rewrites may belong to whoever owns the site and feed, and routes or asks about ownership rather than assuming the user can ship them.",
+        "evidence": "The note simply states \"I'd rewrite that on-page too\" with no mention of ownership or routing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response states that adjacency - what the model says beside the ad, including competitors it cites - is not controllable through copy, and that monitoring is the control for that risk.",
+        "evidence": "Adjacency/competitor citation risk is not discussed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

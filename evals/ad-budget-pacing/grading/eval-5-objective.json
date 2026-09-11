@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Corrects the 20% claim: the figure appears in no Meta documentation and is folklore; Meta's actual wording ties reset risk to the unquantified magnitude of the change.",
+        "evidence": "\"the '20% budget change resets Meta's learning' threshold you cited is folklore, not a documented Meta rule - it appears in no Meta documentation, which ties reset risk to unquantified 'magnitude of the change' instead.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse keeping edits under 20% as a documented-safe pattern, while allowing that treating large edits cautiously is sound risk management.",
+        "evidence": "\"Your own account just demonstrated this directly: you deliberately stayed under 20% on the Nov 3 increase and delivery still got choppy. That's evidence against the 20% line, not for it. Treating any large edit cautiously is still the right instinct; the specific number just isn't a platform guarantee you can rely on to rule out relearning.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Withholds the over-pacing client alert because the two recent budget edits landed inside the relearning window, so the post-edit volatility is the edits, not a pacing problem.",
+        "evidence": "\"Gate check 5 - budget edit inside the relearning window... Two days post-edit, what you're seeing is very likely the *edit* talking, not the *pacing*.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that the $3,850 figure is intra-day: no alert should fire on this morning's live dashboard numbers, which lag and get restated; yesterday's finalized figures are the basis.",
+        "evidence": "\"Gate check 6 - the figure is intra-day. 'This morning's' $3,850 is a live, unrestated number. Dashboards lag and get restated; the skill's daily check is built to read *yesterday's finalized* spend, never today's running total.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the ratio of approximately 1.17 from $3,850 against the $3,300 expected by day 11, but reports it as suppressed rather than as an actionable over-pacing alert.",
+        "evidence": "\"pacing ratio 1.17 (matches your own 17% figure)\" alongside \"status : SUPPRESSED - does not clear the false-alarm gate (see below)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises waiting out the settle window before judging pacing on this account.",
+        "evidence": "\"Wait for the settle window. Hold off on any further budget edit until roughly **Nov 13-14** (4-5 days after the Nov 9 cut)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against the third corrective edit now, because correcting through a relearning window makes the correction's own volatility read as a new anomaly inviting yet another correction.",
+        "evidence": "\"*'Correcting through a relearning window - the correction's own volatility then reads as a new anomaly, inviting a second correction.'* A third edit inside eight days would compound the instability you're trying to fix, not resolve it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Still ships a report with the suppression reason recorded rather than replying with either the requested alert or nothing.",
+        "evidence": "The full \"BUDGET PACING REPORT\" block is output with fields including \"status : SUPPRESSED - does not clear the false-alarm gate\" and \"suppression: gate check 5 ... AND gate check 6 ...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the pacing record is not immutable - spend gets restated and invalid-traffic credits can move history - so figures should be date-stamped and re-pulled before any escalation.",
+        "evidence": "The transcript mentions dashboards \"lag and get restated\" generically, but never mentions invalid-traffic credits, nor explicitly instructs date-stamping figures before escalation \u2014 this specific point is not covered.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames any eventual correction as the smallest reversible change: one variable, a modest step, edits bundled rather than dripped.",
+        "evidence": "\"make one small, reversible cut - not a round 'let's take off 15% again' - sized off the formula above, and then hold your hands off it through the next settle window.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not draft or recommend sending a client-facing over-pacing alert today.",
+        "evidence": "\"**Bottom line first: don't send an over-pacing alert today...**\" and instead drafts a \"status note\" titled \"status check, no action needed yet\" explicitly saying \"I'm not treating that as a signal yet\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Corrects the 20% claim: the figure appears in no Meta documentation and is folklore; Meta's actual wording ties reset risk to the unquantified magnitude of the change.",
+        "evidence": "The transcript treats the 20% threshold as a valid fact throughout: 'That stays under your 20% learning-phase threshold, consistent with the discipline you've already been applying' and 'the threshold that avoids resetting the campaign's learning phase.' No mention that this figure is unofficial folklore or that Meta's actual guidance is unquantified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse keeping edits under 20% as a documented-safe pattern, while allowing that treating large edits cautiously is sound risk management.",
+        "evidence": "The transcript explicitly endorses it as safe: 'That stays under your 20% learning-phase threshold, consistent with the discipline you've already been applying' \u2014 presenting the 20% rule as a documented-safe pattern rather than questioning it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Withholds the over-pacing client alert because the two recent budget edits landed inside the relearning window, so the post-edit volatility is the edits, not a pacing problem.",
+        "evidence": "The transcript does the opposite: it computes an over-pacing figure and explicitly drafts a client email titled 'Juniper Financial \u2014 Meta Ads November Pacing Alert' stating '28% ahead of pace' and recommending an immediate budget cut, rather than withholding the alert.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that the $3,850 figure is intra-day: no alert should fire on this morning's live dashboard numbers, which lag and get restated; yesterday's finalized figures are the basis.",
+        "evidence": "The transcript explicitly says the opposite framing: 'today's delivery hasn't run yet, so it isn't meaningfully reflected in that $3,850. The $3,850 is what 10 complete days (Nov 1\u201310) produced,' treating $3,850 as a stable, actionable 10-day total rather than flagging it as an intra-day/lagging figure requiring caution before alerting.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the ratio of approximately 1.17 from $3,850 against the $3,300 expected by day 11, but reports it as suppressed rather than as an actionable over-pacing alert.",
+        "evidence": "The transcript does compute the 1.17 figure ('9,000 \u00d7 11/30 = $3,300 \u2192 3,850/3,300 \u2212 1 = 16.7%') but explicitly reports it as understated and replaces it with an actionable 28.3% figure to be escalated: 'You're hotter than you think. Worth fixing the internal number before it goes in the email' \u2014 not suppressed, but corrected upward and used as the basis for an alert.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises waiting out the settle window before judging pacing on this account.",
+        "evidence": "No advice to wait before judging pacing; instead the transcript immediately proceeds to judge pacing as '28.3% over pace' and drafts a client alert and budget cut recommendation to act on today.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises against the third corrective edit now, because correcting through a relearning window makes the correction's own volatility read as a new anomaly inviting yet another correction.",
+        "evidence": "The transcript explicitly recommends making the third edit now: 'Recommended cut... From current $300.90/day, that's a 14.4% cut \u2014 call it 15%... Action we're taking today: reducing the daily budget by approximately 15%.' It only cautions holding steady *after* making this third edit, not against making it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Still ships a report with the suppression reason recorded rather than replying with either the requested alert or nothing.",
+        "evidence": "The transcript does not suppress anything; it fully drafts and delivers the client-facing alert email under the heading 'Client email' with subject 'Meta Ads November Pacing Alert.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the pacing record is not immutable - spend gets restated and invalid-traffic credits can move history - so figures should be date-stamped and re-pulled before any escalation.",
+        "evidence": "No mention anywhere in the transcript of spend restatement, invalid-traffic credits, or the need to date-stamp/re-pull figures before escalating.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames any eventual correction as the smallest reversible change: one variable, a modest step, edits bundled rather than dripped.",
+        "evidence": "The transcript instead frames the correction as a further discrete percentage cut layered onto two prior edits ('this would be your third daily-budget edit in 9 days'), not as consolidating into one minimal bundled change; it proceeds with the drip-style edit rather than advising against dripping before making the edit.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not draft or recommend sending a client-facing over-pacing alert today.",
+        "evidence": "The transcript explicitly drafts a full client-facing email under 'Client email' with subject 'Juniper Financial \u2014 Meta Ads November Pacing Alert' and says 'Action we're taking today: reducing the daily budget by approximately 15%' \u2014 directly violating this item.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

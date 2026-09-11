@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not answer with a budget-increase amount; declines to size a raise on this evidence.",
+        "evidence": "\"Don't raise the budget \u2014 not 40%, not higher.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Splits the impression-share loss into lost-to-budget versus lost-to-rank before making any recommendation.",
+        "evidence": "\"localisation : lost IS decomposes to rank 42 / budget 4 (sums to the full 46-point loss...)\" appears in the verdict block before the 'Direct answer' recommendation section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies rank (42% lost-to-rank versus 4% lost-to-budget) as the binding constraint.",
+        "evidence": "\"the account is rank-constrained, not budget-constrained. Budget is not the failing link - Ad Rank (bid \u00d7 Quality Score) is.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that increasing the budget will not recover impression share lost to rank.",
+        "evidence": "\"More budget can only ever reclaim the 4-point side. It does nothing for the 42-point side, because that impression was never available to you at your current bid/quality position, regardless of daily cap.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the unspent daily budget (11 of the last 30 days) as corroborating evidence that budget is not the cap.",
+        "evidence": "\"you failed to spend the full daily budget on 11 of the last 30 days. If the account were genuinely budget-capped, it would burn through the daily budget on nearly every day\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that a single-step budget increase beyond roughly 20% counts as a significant edit and resets learning.",
+        "evidence": "No mention anywhere in the transcript of a ~20% threshold, 'significant edit' classification, or learning-phase reset from a budget change; the 40% figure is only discussed in terms of its inability to fix rank loss.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Points the fix at rank components (bid and quality/relevance), handed to a bidding/quality workflow or owner rather than executing a bid change itself.",
+        "evidence": "\"handoff : mbfinotti/advertising-skills@ad-bidding-strategy (rank/bid fix)\" and step 3: \"raise max CPC bids (or move to a more aggressive bid strategy) on the specific campaigns/ad groups carrying the rank loss\" is framed as a recommendation to make, not an action the transcript itself executes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the pattern through decomposition first (volume down while efficiency stable means delivery constrained) before naming the layer.",
+        "evidence": "\"decomposition : Volume down (IS 71%\u219254%), efficiency stable (CPA flat at $58) \u2192 \\\"volume down, efficiency stable\\\" pattern \u2192 bidding/budget layer, lost-IS split\" precedes the layer screen and verdict.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Verifies, or explicitly conditions the bidding read on, measurement/tracking passing first.",
+        "evidence": "Measurement/tracking is listed as \"unknown - no reconciliation data supplied [n/a, low]\" but the bidding/budget layer is still given a \"FAIL ... [high sev, medium-high conf]\" verdict with no statement conditioning that verdict on tracking being confirmed intact.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the layer screen with the bidding/budget finding carrying the impression-share-split evidence.",
+        "evidence": "\"bidding/budget : FAIL - lost-to-rank (42) is 91% of total lost IS, lost-to-budget (4) is 9%; 11/30 days underspend the daily budget while rank loss is the dominant driver [high sev, medium-high conf]\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction tied to the rank fix (impression share recovers only if rank improves) with a re-check window.",
+        "evidence": "\"prediction : a 40% (or any) budget increase moves search IS by at most ~4 points... it cannot touch the 42-point rank loss\" plus \"re-check : one full lag-mature window (4-6 weeks) after the bid/rank fix ships\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the condition under which budget would have been the right answer (lost-to-budget dominating with efficiency holding at the margin) and shows this data does not meet it.",
+        "evidence": "\"Only revisit a genuine budget increase once lost-to-budget itself is a large share of the loss (it isn't, at 4 points) \u2014 at that point Impression Share Lost (Budget) and full daily-budget utilization on the days in question are the metrics that justify it, not the topline IS trend.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not answer with a budget-increase amount; declines to size a raise on this evidence.",
+        "evidence": "The transcript explicitly gives a number: 'Size any budget increase to ~4\u20138%, not 40%'. This is sizing a budget raise rather than declining to size one.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Splits the impression-share loss into lost-to-budget versus lost-to-rank before making any recommendation.",
+        "evidence": "'IS = 54% / Lost IS (budget) = 4% / Lost IS (rank) = 42% / Total = 100%' is presented under 'The math' before any recommendations are given in the later 'Recommendation' section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies rank (42% lost-to-rank versus 4% lost-to-budget) as the binding constraint.",
+        "evidence": "'Of the 46 points of impression share you're losing, 91% (42/46) is rank-based, only 9% (4/46) is budget-based.' and 'the drop is an Ad Rank problem'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that increasing the budget will not recover impression share lost to rank.",
+        "evidence": "'A budget increase can only ever recover the budget-capped slice... A 40% spend increase, or a 400% one, cannot touch the 42-point rank loss.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the unspent daily budget (11 of the last 30 days) as corroborating evidence that budget is not the cap.",
+        "evidence": "'on 37% of days you aren't even spending the current budget \u2014 meaning... demand/eligibility doesn't fill what you already have. That's a second independent signal pointing away from \"we're outspent\"'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that a single-step budget increase beyond roughly 20% counts as a significant edit and resets learning.",
+        "evidence": "No mention anywhere of a 20% threshold, 'significant edit' status, or learning-phase reset caused by large bid/budget changes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Points the fix at rank components (bid and quality/relevance), handed to a bidding/quality workflow or owner rather than executing a bid change itself.",
+        "evidence": "The recommendation says to 'Check bid strategy... consider loosening the CPA target modestly' and 'Audit Quality Score components' as action items for the user/boss to do, not something the assistant executes itself.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the pattern through decomposition first (volume down while efficiency stable means delivery constrained) before naming the layer.",
+        "evidence": "The transcript does jump straight into the lost-IS split as the decomposition; it does not first frame it generically as 'volume down, efficiency stable \u2192 delivery constrained' before naming the rank layer. The stable-CPA point is mentioned later under 'What's actually happening' after the layer (rank) has already been named, not before.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Verifies, or explicitly conditions the bidding read on, measurement/tracking passing first.",
+        "evidence": "There is no mention of verifying conversion tracking, measurement integrity, or conditioning the rank/bidding diagnosis on tracking being correct anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the layer screen with the bidding/budget finding carrying the impression-share-split evidence.",
+        "evidence": "The impression-share split (54%/4%/42%) is presented as the direct evidence underpinning the bidding/budget-vs-rank finding: 'Your lost-IS split accounts for the whole gap... the drop is an Ad Rank problem'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction tied to the rank fix (impression share recovers only if rank improves) with a re-check window.",
+        "evidence": "The transcript says to 'Re-pull lost IS (budget) after the bid/QS fixes' but gives no explicit timeframe/window for re-checking, and does not state a clear prediction like 'IS will recover only if rank improves' \u2014 it only warns against raising budget prematurely.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the condition under which budget would have been the right answer (lost-to-budget dominating with efficiency holding at the margin) and shows this data does not meet it.",
+        "evidence": "The transcript states budget is not the answer and shows the 4% vs 42% split, but never articulates the general condition ('if lost-to-budget dominated while efficiency held at the margin, budget would be right') as a hypothetical rule \u2014 it only argues from the specific numbers at hand.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

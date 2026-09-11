@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response computes contribution per sale near $13 (34% of $38).",
+        "evidence": "\"Contribution per sale = $38 \u00d7 34% = $12.92\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connected TV is deleted for a sub-$50-contribution product, with the CPM range ($20-40) plus production cost math named.",
+        "evidence": "\"'CPM plus production math rarely clears a sub-$50 contribution.' You're at $13.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response rejects the cheap-entry logic: a $500/month self-serve tier does not make CTV efficient, because the ranking criterion is value per unit of effort, not cheapest to start.",
+        "evidence": "\"The $500/month 'minimum' is a billing floor, not a signal threshold... $500/month at $20\u201340 CPMs buys 12,500\u201325,000 impressions \u2014 not a test, a rounding error.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response names CTV's real cost as front-loaded: video production (roughly $1,500-$5,000 to repurpose, $15,000+ for a new spot) plus a measurement build due before any result.",
+        "evidence": "The transcript cites the general disqualifier rule and CPM range but never breaks out the $1,500-$5,000 (repurpose) vs $15,000+ (new spot) production cost figures.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes CTV takes about a quarter before a readable result and its click-level measurement is structurally weak, requiring incrementality planning.",
+        "evidence": "Structurally weak click measurement is mentioned (\"structurally weak at the click level\") but no ~quarter-length readable-result timeframe is stated for CTV.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response rejects copying Verdora's channel mix, naming the failure mode: the competitor's margin and LTV, not their taste, made their mix work.",
+        "evidence": "\"Copying a competitor's channels without matching their economics is the single most common way these plans fail... Whatever lets Verdora afford them, you don't have it yet\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Podcast is gated on its roughly $15K measurability floor relative to the $14K total budget.",
+        "evidence": "\"Measurable podcast spend needs ~$15,000+ spread across 3+ shows... Your entire monthly budget is $14K.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response runs the affordability gate before ranking any channel, deriving allowable CAC from contribution rather than jumping to channel names.",
+        "evidence": "Contribution/allowable-CAC ($9) computed before any channel ranking is discussed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response flags that first-order contribution of ~$13 sits below common benchmark CPAs (e.g., paid social median CPA near $38) and asks about repeat purchase or LTV before approving any paid channel.",
+        "evidence": "\"Paid social prospecting (ecommerce median) | ~$38 CPA | ~$9\" and \"Repeat purchase rate or any LTV estimate \u2014 even rough.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Break-even ROAS computed near 2.9x for a 34% margin.",
+        "evidence": "\"Break-even ROAS at 34% margin is 2.94x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes that at the ecommerce median paid-social ROAS of roughly 1.86-1.93x, a 34% margin is unprofitable - below the ~50% margin line.",
+        "evidence": "\"Paid social ROAS at median (1.86\u20131.93x) | needs >50% margin to be profitable | you're at 34%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deleted channels are named with the gate each failed, not parked as start-cheap-and-see experiments.",
+        "evidence": "\"Hold CTV and podcast entirely. Revisit both only once you have (a) real LTV/repeat-rate data ... and (b) budget that clears their actual floors\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response computes contribution per sale near $13 (34% of $38).",
+        "evidence": "'$38 AOV \u00d7 34% margin = ~$13 gross profit/order.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connected TV is deleted for a sub-$50-contribution product, with the CPM range ($20-40) plus production cost math named.",
+        "evidence": "CPM math is given ('typical CTV CPMs ($25\u201340)... ~15\u201320K impressions/month') but no production-cost math appears anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response rejects the cheap-entry logic: a $500/month self-serve tier does not make CTV efficient, because the ranking criterion is value per unit of effort, not cheapest to start.",
+        "evidence": "'$500/month on CTV is not \"starting cheap\" \u2014 it's statistically invisible.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response names CTV's real cost as front-loaded: video production (roughly $1,500-$5,000 to repurpose, $15,000+ for a new spot) plus a measurement build due before any result.",
+        "evidence": "No video production cost figures or measurement-build cost are mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes CTV takes about a quarter before a readable result and its click-level measurement is structurally weak, requiring incrementality planning.",
+        "evidence": "Only 'CTV has no clicks \u2014 you can't attribute conversions to it at that volume either' is stated; no quarter-length timeline is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response rejects copying Verdora's channel mix, naming the failure mode: the competitor's margin and LTV, not their taste, made their mix work.",
+        "evidence": "The stated reason is budget scale, not margin/LTV: 'they're likely spending 10-20x your total monthly budget just there.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Podcast is gated on its roughly $15K measurability floor relative to the $14K total budget.",
+        "evidence": "Podcast is only casually suggested ('1-2 committed weeks on a niche podcast with a promo code') with no $15K floor cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response runs the affordability gate before ranking any channel, deriving allowable CAC from contribution rather than jumping to channel names.",
+        "evidence": "'Check the unit economics first... Your CAC ceiling depends entirely on repeat-purchase rate... that number should decide your channel mix, not what the competitor is doing.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response flags that first-order contribution of ~$13 sits below common benchmark CPAs (e.g., paid social median CPA near $38) and asks about repeat purchase or LTV before approving any paid channel.",
+        "evidence": "It asks about repeat-purchase rate at the end but never cites a benchmark CPA (e.g., ~$38 paid-social median) for comparison.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Break-even ROAS computed near 2.9x for a 34% margin.",
+        "evidence": "No break-even ROAS figure is computed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes that at the ecommerce median paid-social ROAS of roughly 1.86-1.93x, a 34% margin is unprofitable - below the ~50% margin line.",
+        "evidence": "No such benchmark ROAS statistic is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deleted channels are named with the gate each failed, not parked as start-cheap-and-see experiments.",
+        "evidence": "CTV is explicitly rejected with a stated reason ('statistically invisible... underfunding a channel below its effectiveness threshold') rather than left as a cheap test to try.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

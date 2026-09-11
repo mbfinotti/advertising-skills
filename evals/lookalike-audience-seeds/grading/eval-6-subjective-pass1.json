@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Caps the number of splits at what the single named refresh owner can maintain, advising against taking every proposed split at once",
+        "evidence": "A dedicated section 'Splits: cap it to what one person can actually maintain' ties the cap explicitly to the manual refresh owner ('refresh here is manual (\"whenever I remember\") \u2014 no automated sync, no second person') and quotes the two-splits-fine/six-is-a-part-time-job guidance. The table rejects taking all four proposed splits: country = mandatory, product line = deferred to phase 2 ('doubles refresh load on day one'), high-AOV = one-time test not a standing audience, language = dropped. A staged rollout gates the product-line split behind 'once refresh is reliably happening on schedule' w",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Caps the number of splits at what the single named refresh owner can maintain, advising against taking every proposed split at once",
+        "evidence": "The answer does state an explicit cap tied to solo capacity \u2014 'Layered structure (4 lists max, to stay manageable solo)' \u2014 and reinforces it with refresh-cadence realism: 'A monthly full-list refresh is realistic for one person; the suppression sync needs to be more frequent than that.' It also trims two proposed dimensions on maintainability/size grounds: 'No Sweden-specific list, ever' and 'don't fork the seed lists' for language ('Language: creative/targeting layer, not a separate seed list'). However, the cap is asserted rather than derived from the owner's actual maintenance bandwidth, an",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

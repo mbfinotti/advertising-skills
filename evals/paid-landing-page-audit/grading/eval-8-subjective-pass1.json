@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Given the CPA gap is a multiple of target, the response promotes offer and value-proposition-level work rather than settling for copy tweaks.",
+        "evidence": "The response explicitly refuses to let the copy tweak carry the load: \"calibrate what it can do: your CPA gap is 2.3x target... A button-copy tweak does not close a multiple-of-target gap \u2014 no hour-scale fix does,\" and the VERDICT states \"None of these, individually or together, plausibly close a 2.3-2.8x gap - that gap needs message-match confirmation and offer-clarity work, not a speed sprint and not a button label alone.\" Ranking reflects this: #1 headline/message-match against actual ad promise and #2 offer clarity (price/plan visibility, with the DTC-subscription reasoning for why hiding ",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Given the CPA gap is a multiple of target, the response promotes offer and value-proposition-level work rather than settling for copy tweaks.",
+        "evidence": "Partial credit only. The response does refuse to settle for copy tweaks: it explicitly demotes the CTA change (\"cheap, low risk, but bundle with bigger tests, don't treat as the strategy\"), and in the CPA section it states \"Don't rely on landing page work alone to close a $52 gap,\" showing the arithmetic (~9% CVR needed) that proves page-level tinkering can't close it. It also reaches slightly into value-proposition territory: price transparency ranked #1 (\"a paid-search visitor who can't see a price will price-check a competitor\"), benefit bullets required to hit real objections (time saved, ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

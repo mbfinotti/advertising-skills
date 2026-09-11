@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats agency and freelance effort as a tie in size only, costing different things: hours and burnout risk versus income stability and a standing sales job",
+        "evidence": "The answer names the two different cost-types but never frames them as equal in magnitude. Agency's cost appears as burnout ('agency's \"highest \u2014 volume plus client demands\"', 'staying at the agency at \u00a341K running 8 accounts... dominated on both pay and burnout'), and freelance's cost appears as income instability plus sales work ('freelance's self-managed income risk'; 'its cost isn't the work, it's running a standing sales job for years before any track record exists'; 'adds a second axis of it (client-getting on top of delivery)'; no pension/sick pay/holiday). So the *different things they",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats agency and freelance effort as a tie in size only, costing different things: hours and burnout risk versus income stability and a standing sales job",
+        "evidence": "The answer names the distinct costs on each side: the agency/in-house side carries hours and burnout ('You're fried from context-switching across 8 accounts'), while freelance carries income instability ('realistic utilisation... 55-65%', no sick pay/holiday/pension, 'tax you now have to save yourself') and a permanent sales obligation ('adds a 9th \"account\"... finding the next client', 'the first 3-6 months are spent selling, not billing'). What it does not do is treat the two efforts as comparable in size \u2014 it explicitly ranks freelance as strictly more work ('Freelance doesn't reduce that \u2014",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

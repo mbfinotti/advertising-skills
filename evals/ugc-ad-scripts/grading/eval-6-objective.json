@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The plan pushes back on varying concept, offer, hooks, and CTA at once: two of the three testable variables (concept, hook, offer) are held constant while one varies.",
+        "evidence": "\"Strategic flag, not a fix: you're bundling concept and offer together across these four... Next round, hold the offer fixed and vary only concept, or vice versa.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The offer is fixed within each test package rather than mixed across it.",
+        "evidence": "Each concept lists a single offer (e.g. Concept 1 \"offer: free trial\", Concept 2 \"offer: QUILL20 discount code\") held constant across its own hook variants.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The stacked closing ask (download plus follow plus code) is rejected: each script carries exactly one ask.",
+        "evidence": "\"the spoken CTA is the one thing being tested (single ask, matches each concept's actual offer)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The untrue 'before Sunday' deadline is removed or corrected as a deceptive fake-urgency claim; a real deadline or none is scripted.",
+        "evidence": "\"'Before Sunday' is dropped... I used the true deadline instead: 'live all month.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The body stays fixed across hook variants within a concept.",
+        "evidence": "Each concept's Body section is labeled fixed with only the transition line adjusted per hook, e.g. Concept 1's body table is shared across all three hooks.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "3-5 hook variants per concept, labeled with distinct archetypes, with no near-identical openings.",
+        "evidence": "Each of the four concepts lists 3 hooks with distinct archetypes (e.g. Concept 2: POV, Reverse psychology, Ironic list).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "2 CTA variants per concept, each a single ask.",
+        "evidence": "Each concept has CTA variants A and B, each a single spoken ask (e.g. Concept 1: \"Try Quillbird free\" / \"Start your free trial\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hooks are triads (spoken line, on-screen text, opening visual) with the three channels carrying different information, not the same line duplicated.",
+        "evidence": "Hook tables consistently show distinct spoken/on-screen/visual content, e.g. Concept 1 hook 1: spoken \"I thought this was another app I'd delete\" vs on-screen \"was so wrong\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No opening frame is a static card or logo; hooks open on motion, a face, or the money-shot.",
+        "evidence": "Opening visuals are consistently motion/face-based, e.g. \"Creator on couch, phone face-down, unimpressed look at camera.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The measurement plan names the single variable this round isolates.",
+        "evidence": "\"What each package tests: 3 hook variants against one fixed body, fixed offer, and one fixed spoken CTA \u2014 the standard single-variable read.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The package notes the hook and CTA combinations against one fixed body produce 6 or more testable edits from one shoot.",
+        "evidence": "No statement computing hook\u00d7CTA edit combinations (e.g. \"3 hooks \u00d7 2 CTAs = 6 edits\") appears anywhere in the measurement plan or package notes.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The plan pushes back on varying concept, offer, hooks, and CTA at once: two of the three testable variables (concept, hook, offer) are held constant while one varies.",
+        "evidence": "No pushback appears; instead four concepts are delivered each pairing a different offer (free trial, discount code, waitlist, plain download) with no objection to testing multiple variables simultaneously.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The offer is fixed within each test package rather than mixed across it.",
+        "evidence": "Every concept, regardless of its stated offer (e.g. Concept C's waitlist), ends with the same mandatory closer including the discount code: \"Download Quillbird, follow us for tips, and use code QUILL20 before Sunday\" \u2014 mixing offers within a single script.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The stacked closing ask (download plus follow plus code) is rejected: each script carries exactly one ask.",
+        "evidence": "The mandatory closer explicitly stacks three asks \u2014 \"Download Quillbird, follow us for tips, and use code QUILL20 before Sunday\" \u2014 used verbatim and unrejected in all four concepts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The untrue 'before Sunday' deadline is removed or corrected as a deceptive fake-urgency claim; a real deadline or none is scripted.",
+        "evidence": "\"before Sunday\" is kept unmodified across all four concepts with no flag about its validity, e.g. \"use code QUILL20 before Sunday\" in Concept A, B, C, and D.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The body stays fixed across hook variants within a concept.",
+        "evidence": "No hook variants exist within any concept to test against a fixed body \u2014 each concept has a single, unvaried script.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "3-5 hook variants per concept, labeled with distinct archetypes, with no near-identical openings.",
+        "evidence": "Each concept table has exactly one opening beat (0\u20133s row); no variants are offered anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "2 CTA variants per concept, each a single ask.",
+        "evidence": "The identical triple-ask closer is reused as the sole CTA across all four concepts with no variant.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hooks are triads (spoken line, on-screen text, opening visual) with the three channels carrying different information, not the same line duplicated.",
+        "evidence": "Concepts A, C, D merge VO and on-screen text into a single 'VO / On-screen text' column (e.g. Concept A: \"I used to open my banking app with my eyes half closed\" used as both), collapsing two channels into one instead of carrying distinct information.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No opening frame is a static card or logo; hooks open on motion, a face, or the money-shot.",
+        "evidence": "Concept C opens with \"Black screen, text builds word by word\" \u2014 a static text card, not motion, a face, or a money-shot.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The measurement plan names the single variable this round isolates.",
+        "evidence": "No measurement or single-variable-isolation plan appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The package notes the hook and CTA combinations against one fixed body produce 6 or more testable edits from one shoot.",
+        "evidence": "No such note appears; the production notes only cover shoot-day logistics.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

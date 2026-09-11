@@ -1,0 +1,311 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-attribution-gap",
+  "scenarios": 8,
+  "expectations_total": 97,
+  "expectations_subjective": 2,
+  "expectations_objective": 95,
+  "pass_rate_with_skill_pct": 83.5,
+  "pass_rate_without_skill_pct": 47.4,
+  "delta_pp": 36.1,
+  "uplift_multiplier": 1.76,
+  "trigger_accuracy_pct": 100.0,
+  "trigger_queries": 90,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "States that the ad platform and analytics explain where conversions came from, never how many there were."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Requires normalization to a common basis before comparing any numbers, naming at least date basis, timezone, and conversion definition as axes to align."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Classifies gap causes into exactly three buckets: timing, definitional, and unexplained residual."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags the 38% click-ID match rate as below the roughly 50% threshold that indicates a capture defect, not a normal loss."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends longer comparison windows because percentage gaps swing wildly on small denominators."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends attributing at account level rather than contact level, so the form-filler does not absorb credit owed to a multi-person buying group."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that a defect requires a direction flip, a sudden jump, or a gap resisting known mechanisms, and that this gap is attributable so it does not qualify."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Instructs annotating the report history at each fix date, because the post-fix step-change is a discontinuity that would otherwise look like a defect next period."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States self-reported attribution's honest limits (coarse, self-report-biased) alongside its advantage of surviving consent loss and blocking entirely."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Presents server-side collection with shared event IDs as the rung that closes double-counting at the source, at the cost of engineering weeks across two teams."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Describes the mature end state as triangulation - platform attribution for bid optimization, experiments for causal ground truth, mix modeling for portfolio allocation - with no single method trusted alone."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Assigns the chosen next step an owner and stops there, rather than designing the study or implementation inline."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "When citing tolerance bands, labels their source status: only the analytics vendor's own documented figures (up to 10% pageview and 20% user/session discrepancy) are official, while other bands come from vendors selling tracking audits and are indicative only."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends re-running the comparison after attribution windows close to confirm suspected timing items actually resolved."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes that a residual of this size makes a real tracking defect the likely case (most audited accounts carry at least one), so known defect mechanisms should be checked before accepting the remainder."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Justifies the 80% threshold by reference to the officially published expected-discrepancy band, rather than presenting it as arbitrary."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "States that the ad platform and analytics explain where conversions came from, never how many there were."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Requires normalization to a common basis before comparing any numbers, naming at least date basis, timezone, and conversion definition as axes to align."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Identifies the platform's ad-interaction-date (click-date) stamping vs the order system's event-date stamping as a specific cause of misalignment."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Treats the $18k of refunds as a definitional line (source of truth records reversals the platform and analytics rarely reverse), not as a tracking defect."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Classifies gap causes into exactly three buckets: timing, definitional, and unexplained residual."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that an explicit unexplained residual must remain in the final report and must not be driven to zero."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags Google's 640 claimed vs roughly 330 anchor-credited (about 1.9x) as exceeding the roughly 1.5x ratio that suggests double-counting."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Labels the 1.5x ratio as a practitioner heuristic, not a standard."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Requires normalizing date basis, attribution windows, and view-through/modeled inclusion per platform before quantifying each platform's gap."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Names the counting-rule difference (some platforms count every conversion per click, others count one) as a definitional candidate for part of the excess."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Computes each platform's gap as its own pair against the 780 anchor with sign, rather than one aggregate paid-vs-orders figure."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Rejects cohorting by Q2 close date and requires cohorting by lead creation date instead."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Explains that a close-date pull mixes cohorts the platforms saw months apart, because of lead-to-close lag."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags the 38% click-ID match rate as below the roughly 50% threshold that indicates a capture defect, not a normal loss."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States the normal practitioner-reported click-ID match-rate range as roughly 75-85%."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Refuses to switch attribution models mid-analysis and treats the model question as out of scope, redirecting it rather than picking a model."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends longer comparison windows because percentage gaps swing wildly on small denominators."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Names offline conversion upload lag or processing latency as a timing cause of the platform undercount."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends attributing at account level rather than contact level, so the form-filler does not absorb credit owed to a multi-person buying group."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Assigns the click-ID capture fix an owner (marketing ops or RevOps) and hands the tracking fix off rather than treating it as part of the reconciliation itself."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Declines to prescribe a tracking fix, stating that no defect is established from this comparison."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Explicitly classifies the candidate causes as timing or definitional rather than presenting an undifferentiated list of possibilities."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that a defect requires a direction flip, a sudden jump, or a gap resisting known mechanisms, and that this gap is attributable so it does not qualify."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Predicts that on a short ecommerce cycle the timing share of the gap resolves within days and recommends re-running the comparison to confirm it."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Identifies the stripped-UTM fix as spending a second team's hour (whoever owns the shortener or redirect chain), distinct from fixes the analyst owns alone."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Instructs annotating the report history at each fix date, because the post-fix step-change is a discontinuity that would otherwise look like a defect next period."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Assigns an owner to each defect in the list."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Hands the duplicate-tag and dedup work off to a dedicated conversion-tracking process rather than detailing tag surgery inside the reconciliation."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Given the CFO's refusal to withhold spend, deletes the holdout from the menu explicitly and states the causal option is off the menu, rather than parking it under 'later' or recommending it anyway."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Challenges the media-mix-modeling purchase: MMM fits a portfolio spanning channels no conversion record covers and requires a permanent owner for a standing pipeline and refresh cadence, which a two-platform account is unlikely to justify."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends self-reported attribution ('how did you hear about us') as the default rung, running alongside the existing reconciliation."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States self-reported attribution's honest limits (coarse, self-report-biased) alongside its advantage of surviving consent loss and blocking entirely."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Presents server-side collection with shared event IDs as the rung that closes double-counting at the source, at the cost of engineering weeks across two teams."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Ranks the remaining options on more than one axis (such as value, effort, or efficiency) instead of a single blended list."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Describes the mature end state as triangulation - platform attribution for bid optimization, experiments for causal ground truth, mix modeling for portfolio allocation - with no single method trusted alone."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Names the obligation the recommended rung incurs (for example a privacy-notice line for a new form field, or consent and data-residency review for server-side collection)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Treats the steady 9% residual as documented and acceptable under the judgment test (stable, direction-consistent), not as a defect to chase to zero."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Assigns the chosen next step an owner and stops there, rather than designing the study or implementation inline."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "If citing the figure that roughly 70% of AI-assistant-driven traffic arrives with no referrer, labels it directional rather than audited."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Judges the steady 12% total gap normal using the stability, direction-consistency, and decomposability test rather than a bare percentage threshold."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "When citing tolerance bands, labels their source status: only the analytics vendor's own documented figures (up to 10% pageview and 20% user/session discrepancy) are official, while other bands come from vendors selling tracking audits and are indicative only."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Explains the rejection: consent rates and media mix shift continuously, so the gap must be re-derived each period rather than frozen."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Requires that any platform ROAS shown in the deck be labeled non-incremental, with platform numbers reserved for in-platform bid optimization."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Computes the explained share as roughly 67% (940 of 1,410) and states it falls below the roughly 80% pass threshold."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Prescribes iterating on the 470 unexplained conversions by walking the timing and definitional cause lists with the direction check (each candidate cause must push the gap the observed way)."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends re-running the comparison after attribution windows close to confirm suspected timing items actually resolved."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes that a residual of this size makes a real tracking defect the likely case (most audited accounts carry at least one), so known defect mechanisms should be checked before accepting the remainder."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that if the share is still below the threshold at the deadline, the deck should carry the honest figure with named exclusions of what was ruled out, which beats a fabricated 100%."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Justifies the 80% threshold by reference to the officially published expected-discrepancy band, rather than presenting it as arbitrary."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Prescribes the reconciliation report shape: per-pair verdicts, a normalization basis, a variance table with bucket, direction check, and owner per cause line, a residual statement, and known deltas to carry forward."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Sequences the two weeks with hour- and day-scale checks only, deferring anything that needs a full test period past the board date."
+      }
+    ]
+  },
+  "conditions": {
+    "mcp_servers": "enabled",
+    "project_claude_md": "loaded",
+    "user_claude_md": "loaded",
+    "note": "measured before MCP servers and the project CLAUDE.md were removed from the subprocesses; not comparable to skills recorded with those disabled"
+  }
+}

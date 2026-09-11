@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Pushes back on covering all 12 competitors in one pass and caps the first pass at roughly 3-5 direct competitors, queuing the rest for later sessions.",
+        "evidence": "\"Push back on classifying all 12 in one pass \u2014 start with the direct set, queue the rest.\" / \"Proceed with the direct-tier subset (3\u20135 competitors) today; queue the rest.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects tagging ads at the moment of discovery and requires collecting roughly 20-30 active or recently-run ads per competitor before any classification begins.",
+        "evidence": "\"Don't tag on first sight \u2014 collect 20\u201330 ads per competitor before classifying anything.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Justifies deferred classification by the anchoring risk: classifying as you go locks the taxonomy onto whatever was seen first.",
+        "evidence": "\"Classifying as you go anchors your taxonomy to whatever you saw first, and you'll rename categories halfway through.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs setting the transparency surface's country filter to an EU member state deliberately, even though the market is US-only.",
+        "evidence": "\"Country filter: use EU, not US \u2014 even though you only sell in the US.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the EU filter's payoff: ads served in the EU must disclose targeting parameters and reach data that the same campaigns hide elsewhere.",
+        "evidence": "\"The EU Digital Services Act forces platforms to disclose, for EU-served ads only, run dates, targeting, and reach \u2014 fields every other country view hides.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires filtering the surface to active ads before reading anything, so killed tests do not inflate the apparent format mix.",
+        "evidence": "\"Browse each channel's public transparency surface, logged off, advertiser name search, filtered to active ads, US filter \u2014 this is your creative/offer/landing-page record.\" (rationale for why killed tests inflate mix is not stated but the active-filter requirement itself is explicit)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses the spare-login idea and restricts collection to public, logged-off surfaces or official APIs.",
+        "evidence": "\"Drop the personal login. Public library only, always logged off.\" and \"Checking whether the platform has an official API instead of a login (preferred).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets up each session's raw pull in a dated folder per competitor, kept separate from the synthesized swipe file, with prior pulls never overwritten.",
+        "evidence": "\"Keep each session's raw pull in a dated folder per competitor, separate from the synthesized file. Never overwrite a prior pull \u2014 re-runs create a new dated pull plus a change-log entry.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks interview questions before collecting, including the delivery date, whether the user wants a one-off win or a compounding asset, and the effort ceiling.",
+        "evidence": "Only 'Decision at stake + deadline' and 'One-off vs. compounding' are asked; no question about effort ceiling/production capacity appears in the 'Open questions' list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines a record schema whose classification axes include format, hook type, offer/angle, concept, awareness stage, funnel stage, and persona.",
+        "evidence": "\"Classification: format (...), hook_type (...), offer_angle, concept, awareness_stage (Schwartz 5 levels), funnel_stage (TOFU/MOFU/BOFU), persona.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Makes a test-status field mandatory on every saved entry.",
+        "evidence": "\"Pipeline (mandatory): test_status \u2014 saved \u2192 hypothesized \u2192 briefed \u2192 testing \u2192 tested-won/lost/dropped.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Stores each ad's message as a paraphrase or one short attributed quote, never a full transcription, and forbids bulk-archiving creative files.",
+        "evidence": "\"message (paraphrase + max one short quote \u2014 never full copy)\" and \"Store paraphrases and short quotes, never screenshots at scale\" and \"No login, no bypass, no bulk-downloading creative files.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Directs unverifiable fields to be recorded as unknown rather than guessed.",
+        "evidence": "\"Mark anything unverifiable unknown.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Pushes back on covering all 12 competitors in one pass and caps the first pass at roughly 3-5 direct competitors, queuing the rest for later sessions.",
+        "evidence": "The transcript repeatedly treats all 12 as the working set ('run each competitor twice', 'a fast scan across all 12 competitors') with no cap to 3-5 or deferral of the rest.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects tagging ads at the moment of discovery and requires collecting roughly 20-30 active or recently-run ads per competitor before any classification begins.",
+        "evidence": "It recommends a time-boxed scan ('burn 30\u201345 minutes on a fast scan across all 12 competitors') rather than a specific per-competitor ad count of 20-30 before classification.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Justifies deferred classification by the anchoring risk: classifying as you go locks the taxonomy onto whatever was seen first.",
+        "evidence": "\"You can't consistently tag 'hook' on ad #1 because you haven't seen ad #200 yet \u2014 you don't know your own categories. First-pass tagging on an unstable taxonomy means silent renaming and drift...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs setting the transparency surface's country filter to an EU member state deliberately, even though the market is US-only.",
+        "evidence": "It suggests 'All countries' or 'add CA/UK/AU' for the early-signal pass \u2014 no EU member state is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains the EU filter's payoff: ads served in the EU must disclose targeting parameters and reach data that the same campaigns hide elsewhere.",
+        "evidence": "No mention of EU-specific disclosure requirements anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires filtering the surface to active ads before reading anything, so killed tests do not inflate the apparent format mix.",
+        "evidence": "The transcript only notes Meta 'reliably shows currently active ads' as an observation, not an instruction to pre-filter to active before reading/classifying to avoid format-mix inflation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses the spare-login idea and restricts collection to public, logged-off surfaces or official APIs.",
+        "evidence": "Instead of refusing, it asks a clarifying question and offers to 'fold the exact login step into that platform's section below' \u2014 it accommodates the login rather than restricting to logged-off public surfaces.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets up each session's raw pull in a dated folder per competitor, kept separate from the synthesized swipe file, with prior pulls never overwritten.",
+        "evidence": "No dated-folder structure is proposed; the plan uses 'one master sheet, one row per ad' with no mention of preserving prior raw pulls separately.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks interview questions before collecting, including the delivery date, whether the user wants a one-off win or a compounding asset, and the effort ceiling.",
+        "evidence": "The only clarifying question asked is about the spare-login platform/account type; no questions about delivery date, one-off vs compounding asset, or effort ceiling.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines a record schema whose classification axes include format, hook type, offer/angle, concept, awareness stage, funnel stage, and persona.",
+        "evidence": "The columns listed are Competitor, Platform, Ad permalink, Saved creative, Date first seen, Country pass, Format, Hook, Offer/promo visible, CTA, Notes \u2014 missing concept, awareness stage, funnel stage, and persona.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Makes a test-status field mandatory on every saved entry.",
+        "evidence": "No test-status column appears among the listed tracking-sheet fields.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Stores each ad's message as a paraphrase or one short attributed quote, never a full transcription, and forbids bulk-archiving creative files.",
+        "evidence": "It instructs the opposite: \"Screenshot or save the creative, don't just bookmark the link\" and \"TikTok ad video assets often download directly \u2014 grab the file, not just a thumbnail.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Directs unverifiable fields to be recorded as unknown rather than guessed.",
+        "evidence": "No instruction anywhere to mark unverifiable fields as 'unknown'.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes the required daily spend as approximately $2,333 over the 6 remaining days, confirming the user's $2,400 figure is arithmetically close.",
+        "evidence": "`required_daily` | 14,000 / 6 | **$2,333.33/day** and 'Your math is off by ~$400... The number that lands exactly on budget is `required_daily` = **$2,333.33/day**, not $2,400.' The transcript computes the exact figure but explicitly says the $2,400 figure is NOT close ('off by ~$400', '1% over'), which contradicts 'confirming... is arithmetically close' \u2014 it actually flags it as an error worth correcting rather than confirming closeness.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the projected period spend of approximately $32,240 (roughly 81% utilization) if nothing changes.",
+        "evidence": "`projected_spend` (run rate) | (26,000/25) \u00d7 31 | **$32,240** \u2014 and later 'current trailing pace projects to $32,240 \u2014 a $7,760 shortfall against the $40,000 hard commitment.' Also pacing_ratio of 0.806 (80.6%) is reported, matching 'roughly 81%'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports the corrective figure of approximately +$1,283/day against the $1,050 trailing 7-day average.",
+        "evidence": "`adjust_spend_by` | 2,333.33 \u2212 1,050 (trailing 7\u2011day avg) | **+$1,283.33/day**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not simply validate the plan: warns that an end-of-period spend dump buys the worst inventory at the worst prices.",
+        "evidence": "'A single overnight cliff to $2,333/day, held flat for 6 days regardless of what's actually delivering, is the textbook end-of-period spend dump: it tends to buy the worst inventory at the worst prices in the campaign's final stretch.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a period landing on budget via a last-days surge is a failed pace that hit its number.",
+        "evidence": "The transcript never characterizes a last-days surge landing on budget as a 'failed pace that hit its number' or similar framing; it discusses risks (relearning, worst inventory) but does not state the pacing itself is a failure despite hitting the number.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the no-dump success criterion: final-week spend share within about 5 percentage points of the expected curve's share.",
+        "evidence": "No mention of a specific percentage-point threshold for final-week spend share versus expected curve share anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "References the 95-105% utilization band for a hard-commitment budget, labelled a convention, noting a smoother ramp landing inside the band can beat hitting exactly $40,000 via a dump.",
+        "evidence": "No mention of a 95-105% utilization band or any such convention; the only 'band' referenced is the '0.85 urgent-band floor' for pacing ratio, which is unrelated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that the single large budget jump itself forces delivery relearning, and recommends starting the increase immediately with daily recomputation of the required daily and corrective figures so the correction stays continuous instead of a cliff.",
+        "evidence": "'Relearning-window volatility. A change of this magnitude is exactly what platforms' delivery systems treat as a significant edit \u2014 expect a settle period where delivery is unstable' combined with 'Proposed | $2,333/day for Oct 26\u201331, **recomputed daily** rather than set once \u2014 recalculate `required_daily` each morning against actual finalized spend from the prior day' and 'Recomputing daily (as above) keeps the correction continuous instead of letting any shortfall pile into the last 1\u20132 days.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shapes the recommendation as a change packet with current and proposed values, rationale, a verification date, and a rollback trigger.",
+        "evidence": "The 'Recommendation (change packet)' table includes Current, Proposed, Affected objects, Rationale, Expected effect, Owner, Verification date ('Daily, Oct 27\u201330'), and Rollback trigger ('If actual delivery underdelivers the new daily target for 2 consecutive days...').",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names an owner and hands off, rather than executing or promising to execute the budget change.",
+        "evidence": "'**Owner** | Bexley Home media buyer / account manager' \u2014 the transcript presents this as a recommendation packet for someone else to act on, not something it executes itself.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that the $40,000 commitment is reconciled at period end on billed cost, not served cost.",
+        "evidence": "No mention anywhere in the transcript of billed cost versus served cost or how the commitment is reconciled at period end.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes the required daily spend as approximately $2,333 over the 6 remaining days, confirming the user's $2,400 figure is arithmetically close.",
+        "evidence": "\"Exact daily rate needed: $14,000 \u00f7 6 = **$2,333/day**, not $2,400/day\" and \"$2,400/day \u00d7 6 days = $14,400 \u2192 total spend ... That's $400 over budget \u2014 close, but 'almost exactly $40k' isn't quite right.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the projected period spend of approximately $32,240 (roughly 81% utilization) if nothing changes.",
+        "evidence": "The transcript never computes a projected spend if nothing changes (no $32,240 or 81% figure appears anywhere).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reports the corrective figure of approximately +$1,283/day against the $1,050 trailing 7-day average.",
+        "evidence": "The transcript states a +122\u2013129% increase from $1,050/day to $2,333\u20132,400/day, but never reports the additive corrective figure of approximately +$1,283/day.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not simply validate the plan: warns that an end-of-period spend dump buys the worst inventory at the worst prices.",
+        "evidence": "The transcript does push back on the plan, but its stated concerns are learning-phase disruption and underspend risk, not inventory/pricing quality (\"buys the worst inventory at the worst prices\" is not mentioned).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a period landing on budget via a last-days surge is a failed pace that hit its number.",
+        "evidence": "No statement frames a last-days surge landing on budget as a 'failed pace that hit its number' \u2014 the transcript instead frames underspend as the real risk and recommends a ramp, without this specific framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the no-dump success criterion: final-week spend share within about 5 percentage points of the expected curve's share.",
+        "evidence": "No such percentage-point criterion appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "References the 95-105% utilization band for a hard-commitment budget, labelled a convention, noting a smoother ramp landing inside the band can beat hitting exactly $40,000 via a dump.",
+        "evidence": "No utilization band (95-105%) is mentioned in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that the single large budget jump itself forces delivery relearning, and recommends starting the increase immediately with daily recomputation of the required daily and corrective figures so the correction stays continuous instead of a cliff.",
+        "evidence": "\"a budget increase over roughly 20\u201330% in a single day risks knocking the ad set out of the learning phase\" and the ramp table starting Oct 26 with the note \"recheck actual-vs-plan spend daily through the 31st\" \u2014 though it does not explicitly frame this as recomputing the required daily/corrective figures each day, it does recommend starting the increase immediately (ramp begins next day) and daily rechecking.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shapes the recommendation as a change packet with current and proposed values, rationale, a verification date, and a rollback trigger.",
+        "evidence": "The transcript gives a ramp table and rationale but does not include a formal 'current vs proposed' change packet structure, nor a rollback trigger.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names an owner and hands off, rather than executing or promising to execute the budget change.",
+        "evidence": "No owner is named for executing the change; the transcript ends with a general recommendation (\"Bottom line: set tomorrow's budget closer to $1,700\u20131,800...\") with no handoff to a named person.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that the $40,000 commitment is reconciled at period end on billed cost, not served cost.",
+        "evidence": "\"Since the client is billed the full $40k regardless, any shortfall means Calder & Moss delivers less media value than what's billed\" \u2014 this distinguishes billed amount from actual delivered (served) value, implying billed-cost reconciliation, though it does not use the exact 'billed cost vs served cost' terminology explicitly.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

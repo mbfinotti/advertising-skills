@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats manual CPC as a durable strategy with legitimate long-term uses rather than dismissing it as only a bootstrapping phase",
+        "evidence": "The transcript is framed around getting off manual: 'wrong to freeze you on manual CPC while you wait', 'not a reason to sit on manual bidding', and step 1 is 'Turn on Target CPA now'. The only nod to manual's legitimate value is one clause inside the policy block \u2014 'Runner-up (stay manual) rejected: manual buys per-auction control you haven't asked for' \u2014 which does name a real durable property (per-auction control) but immediately dismisses it as unneeded rather than presenting manual as a valid long-term choice for certain accounts (tight per-keyword control, low-volume/thin-data accounts, ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats manual CPC as a durable strategy with legitimate long-term uses rather than dismissing it as only a bootstrapping phase",
+        "evidence": "The answer actively dismisses manual CPC rather than defending it: point 1 urges switching to Maximize Conversions because it is 'better than sitting on manual CPC, which wastes the auction-time signals Google could already be using.' Manual CPC is framed purely as the inferior status quo to escape while volume is low, with no acknowledgement of legitimate durable uses (e.g. tight cost control, thin/noisy conversion data, brand or low-volume campaigns, cases where Smart Bidding never gets enough signal). Point 6 ('Run manual CPC (or Maximize Conversions) actively, not passively' with search-te",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

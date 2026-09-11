@@ -1,0 +1,38 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The 'everyone says TikTok' rationale is treated as trend-following, not audience evidence; the response asks for or reasons from evidence of where webinar-software buyers actually concentrate.",
+        "evidence": "The response never surfaces or interrogates the social-proof rationale behind the TikTok request \u2014 the words 'everyone says' / trend-following / bandwagon never appear, and no request is made for evidence of where webinar-software buyers actually are. TikTok/Reels are deleted purely on a creative-capacity gate ('Disqualifier \u2014 capacity', '2 static graphics/month'), and the CTV/LinkedIn deletions are likewise cost/LTV-based, never audience-presence-based. The closest adjacent reasoning is in the paid-search row ('Buyers of B2B software actively search') and \u00a74 ('Demand already exists for \"webin",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Effort is framed as what the team spends (assets per month, hours, reversibility) and the two-person ceiling materially drives the ranking.",
+        "evidence": "Effort is consistently expressed as team production spend rather than money: 'requiring 10-20 creative variants/month with fatigue in 3-5 days ... Your capacity is 2 static graphics/month and explicitly no video ... ~5-10x under the minimum viable volume' and the explicit note that 'more money doesn't fix a creative-supply problem' \u2014 a clean separation of effort from budget. That ceiling materially drives outcomes: it disqualifies short-form video, co-disqualifies CTV ('there's no video capacity to feed it'), and is the stated reason paid search ranks #1 ('Effort is a week of setup then near-z",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The 'everyone says TikTok' rationale is treated as trend-following, not audience evidence; the response asks for or reasons from evidence of where webinar-software buyers actually concentrate.",
+        "evidence": "The response does reason about buyer fit: \"TikTok/Reels are consumer discovery platforms; a $190/mo B2B webinar tool is a considered purchase usually surfaced via search intent, LinkedIn, or content \u2014 not scroll-and-impulse,\" and redirects budget to \"LinkedIn ads or search... match B2B buyer intent.\" But this arrives late, flagged as a secondary aside (\"Also worth naming\"), subordinate to the creative-supply thesis. It never names or challenges the 'everyone says TikTok' premise as trend-following, and it asks for no evidence \u2014 no request for where current customers or trials actually came fro",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Effort is framed as what the team spends (assets per month, hours, reversibility) and the two-person ceiling materially drives the ranking.",
+        "evidence": "Creative supply is the organizing frame of the whole answer: \"The budget isn't the binding constraint. Creative supply is.\" Effort is quantified in team output \u2014 \"You're producing 2 static graphics/month... roughly 1 creative every 15 days\" versus \"closer to 8-15 new video-native assets/month\" required. The two-person ceiling is stated explicitly and drives the conclusion: \"Two people making 2 static graphics/month cannot feed that machine.\" Both recommendations are ranked by that ceiling \u2014 option 1 routes budget to \"a channel that matches your 2-assets/month capacity,\" option 2 keeps spend bu",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Assigns the chosen next step an owner and stops there, rather than designing the study or implementation inline.",
+        "evidence": "No owner is named for any recommended step \u2014 the ranked list ('Split the 118 by platform', 'Self-reported attribution', 'Server-side click-ID capture', 'Reopen the constraint') is addressed to an unspecified 'you' with no role, team, or person assigned; the only ownership language is conditional and about a hypothetical future MMM ('someone is named to own a permanent modeling refresh cadence'). It also does the opposite of stopping: it designs the work inline \u2014 exact form copy ('How did you hear about us / what made you book this demo?'), field requirements ('required field at the point of de",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Assigns the chosen next step an owner and stops there, rather than designing the study or implementation inline.",
+        "evidence": "The response never names an owner for any step \u2014 no team, role, or person is assigned (the only role mentioned is 'an analyst's time' as a cost framing, not an assignment, and 'your LinkedIn rep' as an external contact). Instead it does exactly the opposite of stopping: it designs the implementation inline (capture `gclid` and LinkedIn click ID into a hidden form field, persist to CRM with named custom fields `first_touch_source`/`first_touch_click_id`/`all_touch_sources`, build a deduplicated touchpoint table, apply a U-shaped/position-based model), designs the experiment inline (Google Ads C",
+        "score": 0,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

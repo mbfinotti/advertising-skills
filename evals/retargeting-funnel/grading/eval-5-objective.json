@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that Meta exposes no impression-cap field on the sales/conversion objective (only on reach or awareness-type objectives) and therefore does not instruct the user to set a cap in Ads Manager for this campaign",
+        "evidence": "\"there's no cap field to set ... it isn't exposed on Sales (conversion) campaigns like this one.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defines a cap-proxy instead: the frequency reading at which to intervene, plus decay signals",
+        "evidence": "\"What you actually control is a cap-proxy: a frequency reading you act on, backed by decay signals\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the decay thresholds: CTR falling 15-20% or more and CPM rising 10% or more, measured against a 7-day rolling baseline",
+        "evidence": "\"Both decay triggers (CTR \u221215-20%+, CPM +10%+) are already blown past\"; frequency proxy framed as '7-day rolling frequency, checked weekly'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the thresholds to the given numbers: the CTR drop (1.8% to 1.1%, about 39%) and the CPM rise ($14 to $19, about 36%) both breach them, so the cap is already breached in effect",
+        "evidence": "\"frequency 9, CTR down 39% (1.8%\u21921.1%), CPM up 36% ($14\u2192$19). Both decay triggers ... are already blown past\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places frequency 9 against the retargeting operating band (roughly 2-4 watch, 4-6 warning, above 6 act): the account is past the act threshold",
+        "evidence": "\"Act: >6/week \u2192 rotate creative and/or cut spend ... this isn't approaching the cap, it's well into 'act,' already burned.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the structural cause: a roughly 3,200-person pool with one creative is an uncapped frequency machine regardless of settings - audience size and creative rotation are the real cap",
+        "evidence": "\"it's a 3,200-person pool running one creative. A small warm audience with a single ad is, functionally, an uncapped frequency machine\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires at least 3 distinct creative concepts in rotation for the stage",
+        "evidence": "\"Get at least 2 more distinct creative concepts into this ad set \u2014 3+ concepts is the floor for any retargeting stage this small\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that editing the live ad resets Meta's learning phase while pausing does not, so replacement creative launches alongside, not as an edit",
+        "evidence": "\"Don't fix the live ad by editing it \u2014 on Meta that resets the Sales-objective learning phase. Launch the new creative as new ads alongside it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lists rising negative feedback (hides, see-less-of-this) as a third breach signal to monitor",
+        "evidence": "The transcript's cap-proxy bands only reference frequency, CTR, and CPM; negative feedback (hides/see-less) is never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that retargeting tolerates higher frequency than prospecting because the audience knows the brand, but tolerance is not immunity",
+        "evidence": "The text gives a tolerance figure ('Meta retargeting generally tolerates 5\u20137/week before fatigue') but never compares it to prospecting or explains it via brand familiarity.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a review cadence for the frequency and decay readings rather than a set-and-forget answer",
+        "evidence": "\"Set your going-forward proxy at 4 (intervene) / 6 (hard stop or rotate) per 7-day rolling frequency, checked weekly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects budget to the pool: spend beyond reachable pool times capped weekly impressions times CPM only buys frequency past the cap, so the stage's budget is capped at that ceiling rather than raised",
+        "evidence": "No such spend-ceiling calculation appears anywhere in section 5's transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that Meta exposes no impression-cap field on the sales/conversion objective (only on reach or awareness-type objectives) and therefore does not instruct the user to set a cap in Ads Manager for this campaign",
+        "evidence": "'Sales-objective auction campaigns... don't expose a native frequency-cap field in Ads Manager \u2014 that dial only exists under \"Reach and Frequency\" buying'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defines a cap-proxy instead: the frequency reading at which to intervene, plus decay signals",
+        "evidence": "'cap below where you broke, not at it' and 'Check the Frequency breakdown weekly... manually pause/refresh once weekly freq crosses ~3\u20134'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the decay thresholds: CTR falling 15-20% or more and CPM rising 10% or more, measured against a 7-day rolling baseline",
+        "evidence": "No specific percentage thresholds or rolling-baseline methodology are given anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the thresholds to the given numbers: the CTR drop (1.8% to 1.1%, about 39%) and the CPM rise ($14 to $19, about 36%) both breach them, so the cap is already breached in effect",
+        "evidence": "The transcript never cites specific CTR or CPM figures \u2014 only 'CPM rising as CTR falls' in general terms.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Places frequency 9 against the retargeting operating band (roughly 2-4 watch, 4-6 warning, above 6 act): the account is past the act threshold",
+        "evidence": "'Single-video-creative retargeting on Sales objective typically holds up to freq 4\u20136/week before decay; you're already past that, so cap below where you broke, not at it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the structural cause: a roughly 3,200-person pool with one creative is an uncapped frequency machine regardless of settings - audience size and creative rotation are the real cap",
+        "evidence": "'with a 3,200-person warm audience... One creative absorbing all impressions is why frequency and fatigue are the same curve.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires at least 3 distinct creative concepts in rotation for the stage",
+        "evidence": "'Add 2\u20133 more video variants now... Splitting the same budget across 3 ads roughly divides per-creative frequency by 3'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that editing the live ad resets Meta's learning phase while pausing does not, so replacement creative launches alongside, not as an edit",
+        "evidence": "No mention of Meta's learning phase or the edit-vs-pause distinction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Lists rising negative feedback (hides, see-less-of-this) as a third breach signal to monitor",
+        "evidence": "Negative feedback (hides/see-less) is never mentioned as a monitoring signal.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that retargeting tolerates higher frequency than prospecting because the audience knows the brand, but tolerance is not immunity",
+        "evidence": "No explicit contrast with prospecting tolerance is made; only a retargeting-specific 4-6/week figure is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a review cadence for the frequency and decay readings rather than a set-and-forget answer",
+        "evidence": "'Check the Frequency breakdown weekly (Ads Manager \u2192 Breakdown \u2192 By Delivery \u2192 Frequency) and manually pause/refresh once weekly freq crosses ~3\u20134'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects budget to the pool: spend beyond reachable pool times capped weekly impressions times CPM only buys frequency past the cap, so the stage's budget is capped at that ceiling rather than raised",
+        "evidence": "'3/week \u2248 9,600 impressions/week max against this pool \u2014 still enough delivery to convert, but you stop the spiral before CPM eats the campaign,' paired with the recommendation to grow the pool rather than raise budget.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

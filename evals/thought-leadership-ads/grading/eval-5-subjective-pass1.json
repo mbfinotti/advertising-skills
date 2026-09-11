@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats the exclusion list as a first-class deliverable that can end up longer than the inclusion list",
+        "evidence": "Exclusions get their own section framed as mandatory (\"yes, and it's overdue, not optional\"), with a prioritized, build-ordered list of five categories (customers 1,900; open pipeline; employees 40; competitors; students), explicit ship-today sequencing for the first four, the quantified cost of not having them (\"wasted twice: spend, and credibility\"), and a decisive call to delete the site-visitor URL exclusion because the tier doesn't support it rather than leaving phantom work. It also appears in the CEO bottom line (\"ship the four exclusions you can build today\"). The exclusion list is in ",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats the exclusion list as a first-class deliverable that can end up longer than the inclusion list",
+        "evidence": "Exclusions get a dedicated H2 section ('Yes, add exclusions \u2014 and you don't need the site-visitor feature for it') with concrete, actionable steps: upload the 1,900 customers and 40 employees as Matched Audiences, correctly distinguishes Website Retargeting (tier-gated) from Company/Contact List Upload (generally available), and tells the user to go back to the rep with the precise feature name and escalate if refused. It also notes the cross-sell nuance (target rather than exclude if running expansion). That is first-class treatment of exclusions as a deliverable. However, the exclusion list ",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

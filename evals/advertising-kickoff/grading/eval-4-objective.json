@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Routes the founder's hiring need to mbfinotti/advertising-skills@advertising-hiring.",
+        "evidence": "'Routed via advertising-kickoff to the hirer/candidate mirror pair: advertising-hiring (you) and advertising-career (your cousin).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not route the founder to advertising-career.",
+        "evidence": "Founder's deliverable is 'Part 1 \u2014 Hiring Packet' via advertising-hiring only.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the cousin's break-into-paid-ads question to mbfinotti/advertising-skills@advertising-career.",
+        "evidence": "'Routed to advertising-career, goal: adjacent-role entry (organic social \u2192 paid).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not route the cousin to advertising-hiring.",
+        "evidence": "Cousin's section (Part 2) is entirely framed around advertising-career guidance, no hiring-skill content.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the two skills as mirror images split by who is asking (hirer versus candidate).",
+        "evidence": "'the hirer/candidate mirror pair: advertising-hiring (you) and advertising-career (your cousin)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects advertising-hiring's scope to the level/rung decision, the interview loop or work sample, and a 30-60-90 ramp with staged spend authority.",
+        "evidence": "'### Rung decision', '### Stage map', '### Work sample', '### Ramp plan' sections with 'Weeks 1\u20132: shadow... By day 90: full authority over the $70k/month.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not claim the hiring skill will source candidates, post jobs, run applicant tracking, or write offers.",
+        "evidence": "No mention anywhere of sourcing, job posting, applicant tracking, or offer generation; deliverable is packet content only.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not claim the career skill will find or submit job applications for the cousin.",
+        "evidence": "Cousin guidance covers positioning, portfolio, interview prep \u2014 no claim of submitting applications on her behalf.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the hiring question as the session's goal and therefore first in priority, rather than ranking it inside or below the account-work ladder.",
+        "evidence": "Document opens with 'Part 1 \u2014 Hiring Packet' as the primary deliverable, with account work relegated to 'Not now' inside it.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps any account-side suggestions for the $70k spend separate from the hiring route instead of merging both into one ranked list.",
+        "evidence": "Account-related skills (ad-conversion-tracking, ad-spend-guardrails, cac-roas-benchmark) appear only under '### Not now (unblocked once the hire lands)', separate from the hiring packet's own structure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "'mbfinotti/advertising-skills@advertising-hiring', '@advertising-career', '@ad-conversion-tracking' etc.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creates or proposes advertising-context.md recording the hiring project, the board approval, and the stakeholders.",
+        "evidence": "'No context artifact written: this session runs inside the advertising-skills library repo... so advertising-context.md would be scaffolding a business file into the wrong repo.' \u2014 no draft content is shown or proposed, unlike other sections.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Routes the founder's hiring need to mbfinotti/advertising-skills@advertising-hiring.",
+        "evidence": "No skill name appears anywhere in the transcript; the hiring guidance is given directly.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not route the founder to advertising-career.",
+        "evidence": "'advertising-career' is never mentioned.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the cousin's break-into-paid-ads question to mbfinotti/advertising-skills@advertising-career.",
+        "evidence": "No skill name is cited for the cousin's section; it's answered with a direct learning-order list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not route the cousin to advertising-hiring.",
+        "evidence": "The cousin section never references 'advertising-hiring'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the two skills as mirror images split by who is asking (hirer versus candidate).",
+        "evidence": "No skill names are used, so no such mirror-image framing is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Connects advertising-hiring's scope to the level/rung decision, the interview loop or work sample, and a 30-60-90 ramp with staged spend authority.",
+        "evidence": "The response covers 'Level to hire', a work-sample-based 'Interview process' (e.g. 'Live account audit (take-home...)'), and a phased 'Spend authority \u2014 first 90 days' table.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not claim the hiring skill will source candidates, post jobs, run applicant tracking, or write offers.",
+        "evidence": "The transcript only gives level guidance, interview design, and ramp structure \u2014 no claims about sourcing, posting, ATS, or offers.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not claim the career skill will find or submit job applications for the cousin.",
+        "evidence": "The cousin section gives a learning roadmap only, no claim about finding/submitting applications.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the hiring question as the session's goal and therefore first in priority, rather than ranking it inside or below the account-work ladder.",
+        "evidence": "The hiring section leads the document ('# Hiring a Performance Marketing Manager...'), with the cousin's section following after a divider.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps any account-side suggestions for the $70k spend separate from the hiring route instead of merging both into one ranked list.",
+        "evidence": "There is no merged ranked list combining account tactics with hiring; the content is entirely about hiring process and ramp, not account optimization tactics.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "No skill names appear, so none are malformed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creates or proposes advertising-context.md recording the hiring project, the board approval, and the stakeholders.",
+        "evidence": "No mention of advertising-context.md or artifact creation anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Applies a hire-at-all gate before building anything, instead of delivering the packet as asked",
+        "evidence": "'# Gate check first \u2014 this fails before any packet gets built'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends against making the hire now",
+        "evidence": "'the hire is deleted from the menu for now \u2014 not ranked last, deleted \u2014 until two things are true'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the monthly budget below the roughly $5,000 threshold as a gate failure",
+        "evidence": "'Monthly channel budget under $5,000 | $3,500/month on LinkedIn | \ud83d\udd34 Yes'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites missing marketing fundamentals (positioning and pricing in flux) as a gate failure",
+        "evidence": "'Marketing fundamentals missing (positioning, pricing) | Homepage on its 3rd rewrite; pricing changes monthly | \ud83d\udd34 Yes'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the 6-week verdict window as a gate failure, since judging a channel takes 3 to 6 months",
+        "evidence": "'Unwillingness to commit 3-6 months before judging channel fit | 6-week kill switch on the channel and the hire | \ud83d\udd34 Yes'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the hire is deleted from the menu until the missing fundamentals are fixed, not merely deferred or ranked last",
+        "evidence": "'the hire is deleted from the menu for now \u2014 not ranked last, deleted \u2014 until two things are true: positioning is stable and pricing has stopped moving monthly.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks the alternatives in the order agency, then freelancer, then self-manage",
+        "evidence": "'- **Agency \u2014 deleted.**' followed by '- **Freelancer \u2014 the realistic bridge, but not yet.**' followed by '- **Self-manage \u2014 the honest answer...**'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the ranking basis as channel coverage bought per hour of the founder's own time",
+        "evidence": "'Ranked by coverage bought per hour of your own time, then narrowed to what a 4-person, $3,500/month shop can actually absorb'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges the trade-off: the agency costs the most money and control while consuming the fewest founder hours",
+        "evidence": "Agency section only states 'That alone exceeds your entire channel budget. Off the table on cost, not on merit' \u2014 no explicit mention of control cost or hours-saved trade-off.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the freelancer's worker-classification exposure as a compliance cost the agency route does not carry",
+        "evidence": "'Lower cost, reversible in a notice period, no worker-classification exposure if structured as a short defined-scope contract.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns against comparing agency retainer fees to in-house salaries, directing the comparison to hours returned and channels covered",
+        "evidence": "No such warning appears anywhere in the transcript; comparisons are made on cost and coverage-per-hour only, never explicitly against in-house salary benchmarking.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the in-house hire remains the destination once the gate passes - the alternatives are a bridge, not a replacement",
+        "evidence": "'Freelancer \u2014 the realistic bridge, but not yet.' and 'the role is a straightforward first-hire call (performance marketer, generalist, owns measurement + one channel), and I can turn it around in one pass once the above is true.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not proceed to build the requested scorecard, interview loop, and work sample for an immediate hire",
+        "evidence": "No scorecard, interview loop, or work sample is built; the document ends with conditions for revisiting.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Points out the 6-week judgment plan would fire any hire before a ramp or channel verdict could complete",
+        "evidence": "'the 6-week window can't resolve regardless of who you hire' and quoting the skill: 'an organization unwilling to wait that long will fire the hire before the ramp completes.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Applies a hire-at-all gate before building anything, instead of delivering the packet as asked",
+        "evidence": "The transcript proceeds directly into \"1. Scorecard,\" \"2. Interview Loop,\" \"3. Work Sample,\" and \"4. The 6-week trial\" \u2014 the full requested packet is delivered.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends against making the hire now",
+        "evidence": "No recommendation against hiring appears; the packet builds out the hire as requested with caveats folded into the design.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the monthly budget below the roughly $5,000 threshold as a gate failure",
+        "evidence": "The $3,500/mo budget is treated as a scoping constraint for the trial design, not as a gate-failure reason to avoid hiring.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites missing marketing fundamentals (positioning and pricing in flux) as a gate failure",
+        "evidence": "Positioning/pricing flux is treated as something to design around (\"I've built that into the scorecard and the work sample as an explicit, scored competency\"), not as a reason to block the hire.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the 6-week verdict window as a gate failure, since judging a channel takes 3 to 6 months",
+        "evidence": "The 6-week window is treated as tight but workable (\"I've built the trial structure... so spend starts day one\"), not flagged as fundamentally too short for a channel verdict.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the hire is deleted from the menu until the missing fundamentals are fixed, not merely deferred or ranked last",
+        "evidence": "No such statement; the hire proceeds immediately per the built packet.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks the alternatives in the order agency, then freelancer, then self-manage",
+        "evidence": "No agency/freelancer/self-manage alternatives are discussed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the ranking basis as channel coverage bought per hour of the founder's own time",
+        "evidence": "Not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges the trade-off: the agency costs the most money and control while consuming the fewest founder hours",
+        "evidence": "Not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the freelancer's worker-classification exposure as a compliance cost the agency route does not carry",
+        "evidence": "Not present; the contractor classification for this hire itself is only noted as an assumption, not compared to an agency route.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns against comparing agency retainer fees to in-house salaries, directing the comparison to hours returned and channels covered",
+        "evidence": "Not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the in-house hire remains the destination once the gate passes - the alternatives are a bridge, not a replacement",
+        "evidence": "Not present; no gate/bridge framing exists.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not proceed to build the requested scorecard, interview loop, and work sample for an immediate hire",
+        "evidence": "The transcript builds all three in full: Scorecard (section 1), Interview Loop (section 2), Work Sample (section 3).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Points out the 6-week judgment plan would fire any hire before a ramp or channel verdict could complete",
+        "evidence": "Instead the transcript builds checkpoints to make the 6-week window work (\"Put checkpoints on the calendar at hire time\"), not a warning that 6 weeks is too short to judge fairly.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response treats both platform recommendations as inputs, not instructions, noting each is computed in isolation and knows nothing about the budget ceiling or the other lines.",
+        "evidence": "\"Meta's +25% is a black-box optimizer recommendation with no comparable capacity signal behind it. They're not equally credible inputs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The conflict is resolved with the equimarginal rule: rank every line's marginal return on one comparable basis and fund down the ranking until the fixed total is spent.",
+        "evidence": "\"Rank order for the next dollar: Google non-brand > CTV (as a bounded test, not a scaled bet) > Meta Advantage+ (hold).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects comparing CTV to Meta's blended 3.4x; the correct benchmark is Meta's marginal efficiency - the last dollars that would be defunded.",
+        "evidence": "\"CTV vs. Meta's blended 3.4x is the wrong test. Compare CTV to Meta's *marginal* return\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response declines to resolve the conflict by raising the total to $140K; the total stays fixed at $110K and raising it is named as a separate decision outside this exercise.",
+        "evidence": "\"Don't skip to $140K... raising the total is a different decision with its own proof bar, and nothing here clears it yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not fund both platform recommendations at full size simultaneously just because each platform says scale.",
+        "evidence": "\"fund Google's headroom, not Meta's ask, and only partially\" while \"Meta Advantage+ stays flat this cycle.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If CTV enters the split, it is a bounded experiment with a hypothesis, minimum detectable effect, decision date, stop condition, and a budget checked against a funding floor.",
+        "evidence": "Only says \"Give it a hypothesis, a decision date, and a stop condition, same as any other bounded test\" as an instruction \u2014 no actual hypothesis or MDE is provided for CTV.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any increase is bounded to 15-20% of a line per cycle; the +30% Google recommendation is not taken as a single step.",
+        "evidence": "\"Fund Google non-brand a bounded step \u2014 15\u201320% of its current spend, not the full +30% Google asked for.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Platform-reported figures (the 3.4x and the advisors' projections) are not used as the allocation basis; they are flagged as overstating real return, with the plan marked provisional where they are all that exists.",
+        "evidence": "\"Data-basis gate Fails as presented, on three separate numbers... Whole plan below is labeled provisional.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any proposed amounts sum exactly to $110,000.",
+        "evidence": "\"the Google step and the CTV test budget have to come out of the existing $110K, not on top of it\" \u2014 total explicitly kept fixed even though exact split is deferred.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Changed lines carry rollback thresholds and verification dates.",
+        "evidence": "Explicitly deferred: \"this turns into a one-page change packet (current \u2192 proposed, rationale, rollback threshold, verify date) per line \u2014 happy to build that the moment those numbers exist.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The 'Limited by budget' status (impression share lost to budget) is used as a headroom signal for search and labeled a directional proxy.",
+        "evidence": "\"Google non-brand | 'Limited by budget' | Directional proxy, real one. Lost impression share to budget is exactly the rung-1 signal\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The output is presented as a proposal awaiting approval, not an executed change.",
+        "evidence": "\"Nothing above authorizes a platform change; that's yours to execute.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response treats both platform recommendations as inputs, not instructions, noting each is computed in isolation and knows nothing about the budget ceiling or the other lines.",
+        "evidence": "\"That's not neutral advice \u2014 it's each algorithm reporting how much it *could* spend, not how much incremental profit the next dollar produces.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The conflict is resolved with the equimarginal rule: rank every line's marginal return on one comparable basis and fund down the ranking until the fixed total is spent.",
+        "evidence": "The response instead proposes a test-and-compare tranche shift (\"Shift a test tranche...into Google non-brand for 2\u20133 weeks. Compare marginal ROAS\"), not an explicit ranking of all lines funded down a list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response rejects comparing CTV to Meta's blended 3.4x; the correct benchmark is Meta's marginal efficiency - the last dollars that would be defunded.",
+        "evidence": "\"Comparing CTV's projected ROAS against Meta's blended 3.4x is the wrong bar... Benchmark CTV against **Meta's marginal (incremental) ROAS**, not blended\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response declines to resolve the conflict by raising the total to $140K; the total stays fixed at $110K and raising it is named as a separate decision outside this exercise.",
+        "evidence": "\"Don't fund both recommendations and don't skip to $140K... Keep total at $110K. Don't expand yet... A budget increase is a separate decision from reallocation\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not fund both platform recommendations at full size simultaneously just because each platform says scale.",
+        "evidence": "\"It funds both platforms' self-interested asks simultaneously without ever checking which one actually has better marginal returns. You'd be guessing $15K to Google and $15K to Meta based on who asked, not who deserves it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If CTV enters the split, it is a bounded experiment with a hypothesis, minimum detectable effect, decision date, stop condition, and a budget checked against a funding floor.",
+        "evidence": "\"Run CTV as a small, dedicated test (5\u20138% of total budget, $5\u20139K/month, 60\u201390 days minimum...) Measure it with a geo holdout... Greenlight based on incremental ROAS vs. your CAC/payback target\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any increase is bounded to 15-20% of a line per cycle; the +30% Google recommendation is not taken as a single step.",
+        "evidence": "The response flags the Google +30% figure as unreliable (\"projected off average auction performance, not marginal ROAS\") but never states a 15-20% increment norm or explicitly caps it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Platform-reported figures (the 3.4x and the advisors' projections) are not used as the allocation basis; they are flagged as overstating real return, with the plan marked provisional where they are all that exists.",
+        "evidence": "\"Blended 3.4x is inflated by retargeting/branded conversions riding on demand CTV itself may be creating\" and \"since Advantage+ attribution is not independently verifiable\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any proposed amounts sum exactly to $110,000.",
+        "evidence": "Only ranges are given (\"a test tranche (~10% of total, $10\u201311K)\", CTV \"$5\u20139K/month\") with no itemized table of dollar amounts summing precisely to $110,000.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Changed lines carry rollback thresholds and verification dates.",
+        "evidence": "\"Shift a test tranche...for 2\u20133 weeks\" and \"Run CTV as a small, dedicated test...60\u201390 days minimum\" both carry timelines tied to evaluation criteria (marginal ROAS, incremental ROAS vs. CAC/payback).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 'Limited by budget' status (impression share lost to budget) is used as a headroom signal for search and labeled a directional proxy.",
+        "evidence": "\"Google's 'Limited by budget' + 30% is a real signal of headroom, but it's projected off average auction performance, not marginal ROAS.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The output is presented as a proposal awaiting approval, not an executed change.",
+        "evidence": "\"## What to actually do this month\" lists recommended next steps ending with \"Revisit the $140K question only with reallocation + CTV test data in hand\" rather than an executed decision.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Applies the sampling-noise band p plus-or-minus 2 times sqrt(p(1-p)/n) to the baseline rate",
+        "evidence": "\"1.1% \u00b1 2 \u00d7 \u221a(0.011 \u00d7 0.989 / 8,000) = 1.1% \u00b1 0.23%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the 0.95% read sits inside the noise band around 1.1% at roughly 8,000 impressions (band approximately 0.87%-1.33%), so the observed decline is noise",
+        "evidence": "\"noise band: 0.87% \u2013 1.33%. Your observed 0.95% sits inside that band.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes two days of data fails the requirement of movement across two or more consecutive periods",
+        "evidence": "\"Two-signal rule: ... You have one leading signal (CTR), one period (a 2-day aggregate, not even broken out day by day).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues an insufficient data verdict",
+        "evidence": "\"verdict : insufficient data\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to recommend killing or replacing the creative by Monday",
+        "evidence": "\"action : no refresh, no kill. Do not retire the creative.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the additional days, impressions, or spend needed before the noise band becomes narrower than the observed delta",
+        "evidence": "\"re-check : once the comparison window has enough impressions/days that the noise band narrows below the observed delta - at ~$70/day this account needs several more days minimum\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that 3-5 weekly conversions cannot clear the conversion floor for any CPA- or CVR-based claim",
+        "evidence": "\"3 signups vs 5 is a B2B low-volume account by definition \u2014 this skill explicitly says accounts like yours can't use conversion counts to confirm anything\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends gating this low-conversion account on leading engagement signals and saying so in the verdict's confidence line",
+        "evidence": "The confidence line reads only \"confidence : low - single signal, single short period, inside its own noise band, confounder screen not run\" \u2014 no mention of gating on engagement signals there; that point appears only in the 'What to tell your manager' prose.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that retiring a healthy creative on an underpowered read is the expensive false positive to avoid",
+        "evidence": "\"Killing a $70/day, low-volume creative on an underpowered two-day read... is the expensive mistake to avoid here, not the safe default.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses a moving-average comparison against the creative's own trailing baseline instead of comparing single days",
+        "evidence": "No moving-average methodology is proposed; the recommendation is simply to \"pull day-by-day CTR and signups for the last 2 weeks\" without averaging.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence marked low and the gate math given as its basis",
+        "evidence": "\"confidence : low - single signal, single short period, inside its own noise band, confounder screen not run\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check date after enough data accumulates",
+        "evidence": "\"re-check : once the comparison window has enough impressions/days that the noise band narrows below the observed delta\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Applies the sampling-noise band p plus-or-minus 2 times sqrt(p(1-p)/n) to the baseline rate",
+        "evidence": "'95% confidence interval on the 2-day CTR: [0.74%, 1.16%]' with z-score \u22481.3 \u2014 functionally equivalent CI calculation",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the 0.95% read sits inside the noise band around 1.1% at roughly 8,000 impressions (band approximately 0.87%-1.33%), so the observed decline is noise",
+        "evidence": "'Your two-week baseline (1.1%) sits comfortably inside that interval' [0.74%,1.16%]",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes two days of data fails the requirement of movement across two or more consecutive periods",
+        "evidence": "'Don't act on a 2-day CTR read... you don't have enough clicks yet to tell'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues an insufficient data verdict",
+        "evidence": "'You don't have enough clicks yet to tell \"creative fatigue\" apart from \"Tuesday.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to recommend killing or replacing the creative by Monday",
+        "evidence": "'kill it based on this data and you're optimizing for noise, not signal'; 'Don't act on a 2-day CTR read'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the additional days, impressions, or spend needed before the noise band becomes narrower than the observed delta",
+        "evidence": "'Let it run to at least a full week (or until it's accumulated enough impressions that the CI tightens below baseline)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that 3-5 weekly conversions cannot clear the conversion floor for any CPA- or CVR-based claim",
+        "evidence": "\"Meta's own rule of thumb is ~50 conversions/week per ad set... You're in 'learning phase' territory, not 'verdict' territory\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends gating this low-conversion account on leading engagement signals and saying so in the verdict's confidence line",
+        "evidence": "No structured confidence line stating this gating explicitly",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that retiring a healthy creative on an underpowered read is the expensive false positive to avoid",
+        "evidence": "Concept is implied ('optimizing for noise, not signal') but never framed as the specific 'expensive false positive' risk",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses a moving-average comparison against the creative's own trailing baseline instead of comparing single days",
+        "evidence": "No moving-average methodology is proposed",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence marked low and the gate math given as its basis",
+        "evidence": "No structured verdict block with an explicit confidence label",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check date after enough data accumulates",
+        "evidence": "'Let it run to at least a full week... before calling it up or down' functions as a re-check condition, though no specific date given",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

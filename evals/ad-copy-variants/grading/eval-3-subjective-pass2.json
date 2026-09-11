@@ -1,0 +1,38 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "It organizes new assets into themed buckets, distinct across buckets and non-duplicative within them.",
+        "evidence": "Every new asset carries an explicit bucket label (Proof, Identity, Objection/budget, CTA, Brand) in the headline and description tables, and the variant matrix regroups them by angle with evidence sources; a separate 'Deleted angles' table records urgency, comparison, contrarian, mechanism, risk/compliance and 'more speed synonyms' as deliberately empty buckets. Buckets are clearly distinct from one another. Deduction: within the Objection/budget bucket, H3 ('Contract review, $89/user/mo') and H4 ('$89 per user, per month') make the same price argument twice \u2014 justified as a length variant, bu",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each new headline makes a distinct argument rather than a synonym rewrite of 'Review contracts 10x faster'.",
+        "evidence": "The answer explicitly diagnoses the 9 live headlines as one saturated speed angle and refuses to add synonyms; the new set spans customer proof, buyer identity ('Built for legal ops leaders'), price transparency, a CTA, and a brand headline \u2014 none is a reworded speed claim in the '10x faster' mould. Deductions: H1 ('Redlines: week to afternoon') is still fundamentally a speed-outcome statement, distinguished mainly by being sourced to a testimonial rather than by a new argument; and H3/H4 make one identical price argument across two slots, so the 6 headlines carry roughly 4\u20135 distinct argument",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "It organizes new assets into themed buckets, distinct across buckets and non-duplicative within them.",
+        "evidence": "The headline table has an explicit 'Type it adds' column assigning each asset a message-type theme (brand+category, keyword/category, price, CTA, social proof, audience/ICP), and the opening section explains the organizing principle: all 9 existing headlines are one type, and Google rewards type diversity. Descriptions are likewise differentiated by theme (testimonial proof vs. audience+price), with an explicit note that description 2 'complement[s] description 1 rather than repeating it,' plus a de-duplication check against the existing 9. Falls short of full marks because it labels one asset",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each new headline makes a distinct argument rather than a synonym rewrite of 'Review contracts 10x faster'.",
+        "evidence": "None of the six headlines restates the speed/efficiency claim. 'Brivano Contract Software' (brand), 'Contract Review Software' (keyword match), 'From $89 per User/Month' (price), 'Book a Brivano Demo' (CTA), 'See What Customers Say' (social proof), 'Built for Legal Teams' (audience) each assert something the existing outcome-claim set does not. The answer also actively guards distinctness by refusing to fabricate urgency or 'AI-powered'/'#1' claims that weren't verified, keeping each line to a separate verifiable argument.",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

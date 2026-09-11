@@ -1,0 +1,106 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that 6% sits within the 4-8% practical floor of a healthy account and recommends against forcing new exclusions toward 0%",
+        "evidence": "\"6% wasted spend ... is already under this program's 10% pass threshold and close to the 4-8% practical floor most healthy accounts sit at\" and \"Recommend to your director: hold the wasted-spend KPI under 10% (already met) and stop chasing zero.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against bulk-adding the purchased mega-list because it was not derived from this account's own search term report",
+        "evidence": "\"A generic list bought off a forum has zero evidence of what Meltbury's own buyers actually search... No evidence gate passed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites that a large published study of account-level exclusions found near-zero CPA/ROAS difference versus accounts without them - where and how negatives are applied matters more than how many",
+        "evidence": "\"A published finding on account-level exclusions: volume of negatives shows near-zero CPA/ROAS improvement \u2014 where and how negatives are applied matters more than list size.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that the mega-list at account level was never checked against this account's conversion history and active keywords, so it risks silently blocking converting queries with the widest, hardest-to-audit blast radius",
+        "evidence": "\"Account level = widest blast radius, worst reversibility... Highest odds of the single worst mistake: negating a term that quietly converts for Meltbury\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends shifting effort to the conflict sweep and the watchlist instead of new exclusions",
+        "evidence": "The transcript recommends a \"conflict sweep\" and \"tighter overblocking review\" but never mentions a watchlist anywhere in this section",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends lengthening the review interval rather than moving to daily passes",
+        "evidence": "\"Several consecutive near-empty passes is the playbook's own signal to lengthen the interval, not shorten it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames success against the pass threshold: wasted spend share under 10% of non-brand spend AND zero converting terms blocked, verified against the change log and conversion history",
+        "evidence": "The transcript states \"Meltbury is already inside the 90-day pass criteria (<10% wasted, no converting terms blocked)\" but never mentions verifying this against a change log",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that every negative narrows reach: negate the clearly wrong, never the merely uncertain",
+        "evidence": "\"Pushing toward 0% means negating merely-uncertain terms \u2014 which the playbook flags as the direct path to the costliest mistake in this discipline: blocking a query that was converting.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that 6% sits within the 4-8% practical floor of a healthy account and recommends against forcing new exclusions toward 0%",
+        "evidence": "'At 6%, you're already in solid-performer territory for a $40k/month non-brand book. Diminishing returns set in below ~5%... Reframe the KPI: track wasted spend in **dollars with a floor** (e.g., hold 4\u20136% of non-brand).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against bulk-adding the purchased mega-list because it was not derived from this account's own search term report",
+        "evidence": "'Generic forum lists are built for someone else's catalog... Do not bulk-add the 2,300-term mega-list... Cross-reference the mega-list against it \u2014 keep only terms with zero/near-zero conversions in *this* account's real data.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites that a large published study of account-level exclusions found near-zero CPA/ROAS difference versus accounts without them - where and how negatives are applied matters more than how many",
+        "evidence": "No study, statistic, or external research on account-level exclusions is cited anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that the mega-list at account level was never checked against this account's conversion history and active keywords, so it risks silently blocking converting queries with the widest, hardest-to-audit blast radius",
+        "evidence": "'Bulk, unvalidated changes destroy your ability to diagnose cause and effect... safe generic negatives (adult content, job search, unrelated verticals) \u2192 add account-level; anything home-goods-adjacent \u2192 add at campaign/ad group level with judgment, not in bulk.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends shifting effort to the conflict sweep and the watchlist instead of new exclusions",
+        "evidence": "No 'conflict sweep' or 'watchlist' mechanism is mentioned anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends lengthening the review interval rather than moving to daily passes",
+        "evidence": "The transcript recommends maintaining, not lengthening, cadence: 'Keep the **weekly** cadence for full search-term review. Replace \"more frequent manual review\" with an automated anomaly alert.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames success against the pass threshold: wasted spend share under 10% of non-brand spend AND zero converting terms blocked, verified against the change log and conversion history",
+        "evidence": "The transcript instead frames the target as 'a 4\u20136% waste-share band tracked alongside conversion volume, CPA, and non-brand impression share' \u2014 no 10% threshold or 'zero converting terms blocked' verification against a change log is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that every negative narrows reach: negate the clearly wrong, never the merely uncertain",
+        "evidence": "The closest statements are about exploration spend being 'a feature, not a leak' and screening for 'partial-match collateral damage,' but no explicit principle of 'negate the clearly wrong, never the merely uncertain' is stated.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

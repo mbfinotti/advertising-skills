@@ -1,0 +1,38 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response proposes alternatives outside the exited families (for example podcast/audio, native/discovery, direct media buys) with honest caveats, rather than pretending search and social remain available.",
+        "evidence": "Section 2 explicitly deletes Meta, Google Search, and YouTube at the disqualifier gate ('Any plan that puts spend there ... is not executable'), and Section 3 ranks only survivors: native/discovery (Taboola/Outbrain-class), direct publisher insertion orders, a narrow LinkedIn stakeholder line, plus conditional CTV. Podcast/audio and CTV are explicitly evaluated and rejected on funding-floor grounds with figures (~$15k/market, ~$165/day/market), not silently dropped. Caveats are honest and repeated: native/discovery 'Must be re-verified against each platform's live EU political-ad policy before",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The recommended awareness plan carries a measurement design suited to weak click-level reads (self-reported, incrementality-style, or equivalent).",
+        "evidence": "Section 8 sets the measurement rung explicitly: UTM + last-non-direct as the floor, then 'Add self-reported attribution immediately (\"How did you hear about this campaign?\" on the action page) \u2014 required the moment a creation channel enters the mix'. It anticipates weak click signal directly: EEA consent-mode adoption 90%+ with ~67% non-compliant implementations means dashboards under-report; 'Don't judge this plan on any single platform's dashboard \u2014 none of the surviving channels here have a clean platform-reported conversion path'; and tracking must be verified end-to-end pre-launch. Sectio",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response proposes alternatives outside the exited families (for example podcast/audio, native/discovery, direct media buys) with honest caveats, rather than pretending search and social remain available.",
+        "evidence": "The plan does reach outside the exited families: programmatic/contextual display via an 'independent DSP, not Meta/Google-gated' placed on named policy publishers (Politico Europe, Euractiv, ENDS Europe), native/discovery (Outbrain/Taboola, 10%), creator partnerships (10%), and DOOH (10%) \u2014 roughly half the budget. Caveats are honest and prominent: the TTPA framing, 'I could not verify live platform policy for this response \u2014 treat the numbers below as the media plan, not as confirmation that Meta/Google will serve it as written,' and Meta is explicitly a 'gated test budget' spent 'only once p",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The recommended awareness plan carries a measurement design suited to weak click-level reads (self-reported, incrementality-style, or equivalent).",
+        "evidence": "The KPI section leads with click/conversion-level metrics: 'Cost per petition signature / MEP contact generated (primary metric)' and 'Video completion rate.' There is no incrementality design \u2014 no geo holdout, no matched-market control, no brand-lift or survey instrument, no self-reported attribution ('how did you hear about us') on the petition/MEP-contact form, no pre/post baseline. The two non-click reads offered are 'Media mentions / share of voice' and a post-vote 'correlate campaign-heavy constituencies against how their MEPs voted' \u2014 the latter gestures at geo-level inference but is po",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

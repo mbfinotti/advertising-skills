@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags Google Similar Audiences as removed in August 2023, so item 1 is a dead product",
+        "evidence": "Google removed Similar Audiences from all ad groups and campaigns on **August 1, 2023**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the replacement mechanism: first-party lists now act as signals (Customer Match) feeding optimized targeting and Demand Gen lookalikes",
+        "evidence": "your converter list now works as a **signal** feeding Smart/Performance Max bidding, or as the seed for a **Demand Gen lookalike**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags LinkedIn Lookalike Audiences as sunset in February 2024",
+        "evidence": "Sunset **February 29, 2024**, replaced by **Predictive Audiences**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names LinkedIn Predictive Audiences with a 300 matched minimum as the replacement",
+        "evidence": "replaced by **Predictive Audiences** (300-matched minimum, max 30 per ad account)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions the cap of 30 Predictive Audiences per ad account",
+        "evidence": "300-matched minimum, max 30 per ad account",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Takes TikTok's stricter 1,000 floor over the 100 figure, applying the rule that when a platform's own pages disagree you plan against the stricter number",
+        "evidence": "TikTok's Help Center floor is **1,000 matched**; the \"100\" the doc cites is from a lower-authority FAQ page ... plan against the stricter of two conflicting platform numbers",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes that 400 customers cannot reach TikTok's 1,000 matched floor at any match rate, since uploaded rows are below the floor itself",
+        "evidence": "Even optimistically matching 400 rows at an 80% rate yields ~320 matched people \u2014 under 1,000 either way.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions the 10,000 practitioner-recommended TikTok seed as the realistic bar",
+        "evidence": "grow the seed toward TikTok's practitioner-recommended 10,000, or drop this channel",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Takes 1,000 active matched (API docs) as the Google Demand Gen lookalike floor over the Help Center's 100",
+        "evidence": "Google's API docs put the Demand Gen lookalike floor at **1,000 active matched**; the Help Center's \"100\" is the looser, lower-authority figure",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the Meta hard-restrict belief: inclusion audiences behave as suggestions under Advantage+, and the delivery algorithm may serve outside them",
+        "evidence": "On Meta, **inclusion audiences are suggestions, not hard rules** \u2014 Advantage+ delivery can and does serve outside a lookalike",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that only exclusion/suppression audiences remain hard rules",
+        "evidence": "the only thing that still hard-blocks delivery is a **custom-audience exclusion** under Audience Controls",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes Meta's detailed-targeting exclusions were removed in March 2025, leaving custom-audience exclusions under Audience Controls as the remaining hard suppression",
+        "evidence": "Detailed-targeting exclusions were removed in March 2025; the only thing that still hard-blocks delivery is a custom-audience exclusion under Audience Controls",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the LinkedIn wholesale list's effective seed: 2,400 contacts at roughly 30-40% work-email match is about 720-960 matched, clearing the 300 floor",
+        "evidence": "2,400 work-email contacts at LinkedIn's typical 30\u201340% match rate is ~720\u2013960 matched \u2014 clears 300",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends verifying floors against the platforms' live documentation because floors move, citing Google Customer Match's cut from 1,000 to 100 in 2025 as the example",
+        "evidence": "No mention of Google Customer Match's floor being cut from 1,000 to 100 in 2025.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags Google Similar Audiences as removed in August 2023, so item 1 is a dead product",
+        "evidence": "\"Google fully sunset Similar Audiences (Similar Segments) in 2023.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the replacement mechanism: first-party lists now act as signals (Customer Match) feeding optimized targeting and Demand Gen lookalikes",
+        "evidence": "\"uploading your converter list as a Customer Match segment and letting Optimized Targeting / Audience Expansion find similar users automatically? That's the real current equivalent.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags LinkedIn Lookalike Audiences as sunset in February 2024",
+        "evidence": "Only hedges: \"LinkedIn has been sunsetting Lookalike Audiences... Confirm in their live Campaign Manager account that classic Lookalike is still available,\" no firm sunset date/confirmation given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names LinkedIn Predictive Audiences with a 300 matched minimum as the replacement",
+        "evidence": "Predictive Audiences is named but no 300 matched minimum figure is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Mentions the cap of 30 Predictive Audiences per ad account",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Takes TikTok's stricter 1,000 floor over the 100 figure, applying the rule that when a platform's own pages disagree you plan against the stricter number",
+        "evidence": "Says only \"Verify the exact current minimum in TikTok's own docs rather than trusting the doc's number,\" without asserting the 1,000 figure or the stricter-number rule.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Concludes that 400 customers cannot reach TikTok's 1,000 matched floor at any match rate, since uploaded rows are below the floor itself",
+        "evidence": "Only says the 400-row CSV \"could land you at or under the functional floor,\" no explicit 1,000 floor or impossibility conclusion.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Mentions the 10,000 practitioner-recommended TikTok seed as the realistic bar",
+        "evidence": "Recommends \"top 1,000\u20132,000 customers,\" not 10,000.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Takes 1,000 active matched (API docs) as the Google Demand Gen lookalike floor over the Help Center's 100",
+        "evidence": "States Demand Gen has no lookalike feature as described at all, no 1,000 figure given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the Meta hard-restrict belief: inclusion audiences behave as suggestions under Advantage+, and the delivery algorithm may serve outside them",
+        "evidence": "\"Advantage+ Shopping is built around letting Meta's algorithm find audiences, not fencing them in... manual hard-locking to one audience with expansion off may not even be the intended workflow.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that only exclusion/suppression audiences remain hard rules",
+        "evidence": "Not explicitly stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes Meta's detailed-targeting exclusions were removed in March 2025, leaving custom-audience exclusions under Audience Controls as the remaining hard suppression",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the LinkedIn wholesale list's effective seed: 2,400 contacts at roughly 30-40% work-email match is about 720-960 matched, clearing the 300 floor",
+        "evidence": "Uses 20-30% match rate concluding \"a source audience in the hundreds, which is thin,\" the opposite conclusion from clearing the floor comfortably.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends verifying floors against the platforms' live documentation because floors move, citing Google Customer Match's cut from 1,000 to 100 in 2025 as the example",
+        "evidence": "General \"verify... rather than trusting the doc's number\" advice given, but no specific Google 1,000-to-100 2025 example cited.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

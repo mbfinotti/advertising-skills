@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Places measurement integrity (ad-conversion-tracking and/or ad-attribution-gap) at the top of the short-list.",
+        "evidence": "'\ud83d\udfe2 1. ad-conversion-tracking \u2014 Bottleneck: nobody knows if the pixel/tag numbers are even real.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly states that the platform pixel being the only source of truth is what pins measurement first.",
+        "evidence": "'Q4's answer (\"a platform pixel named as the only source of truth\") pins measurement integrity to rung 1 regardless of what the session wanted'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects opening with negative keywords and bid tweaks, characterizing tuning as near-zero effort buying near-zero value until the classes above are in place.",
+        "evidence": "'\ud83d\udd34 6. ad-negative-keywords ... Near-zero effort, near-zero value until rungs 1-3 pass'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not present the cheapest option as the top recommendation on cheapness grounds.",
+        "evidence": "Top item justified by bottleneck ('nobody knows if the pixel/tag numbers are even real'), with cheapness mentioned only secondarily.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves creative work off the short-list into a Not-now list with creative production capacity as the explicit unblocking condition.",
+        "evidence": "'deleted from the short-list by your stated constraint (no creative production capacity this quarter), not merely ranked low. Unblocks when a designer is hired or contracted.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not rank creative entries at the bottom of the short-list as an alternative to moving them out.",
+        "evidence": "Creative-cluster items appear only in '## Not now', not within the ranked short-list at all.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names ad-swipe-file and/or ad-copy-variants as exceptions that remain available despite the designer gap, because they need no production capacity.",
+        "evidence": "'5. ad-copy-variants \u2014 ... this is the one creative-class skill (along with ad-swipe-file) that needs no designer'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that the regulated vertical adds a legal or compliance review to the measurement work and to any customer seed-list work, lengthening it without changing what it buys.",
+        "evidence": "'Get legal/privacy counsel to pull the exact event parameters both tags send, before touching bidding, keywords, or anything else.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that a consent-mode change or server-side conversion upload triggers a data-processing or consent review and cannot be un-sent.",
+        "evidence": "No statement in the transcript ties a consent-mode change or server-side conversion upload to an irreversible data-processing/consent review; only 'consent-mode configured correctly' is mentioned as a check item.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the re-rank out loud, naming which stated fact moved which class of work.",
+        "evidence": "'*(promoted to rung 1 by Q4 \u2014 platform pixel is your only source of truth)*' and 'deleted from the short-list by your stated constraint (no creative production capacity this quarter)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The short-list has between 5 and 8 entries, each naming the bottleneck it attacks and what the session costs.",
+        "evidence": "7 numbered entries each with 'Bottleneck:' and 'Cost:' labels, e.g. '\ud83d\udfe2 2. ad-account-diagnostic \u2014 Bottleneck: ... Cost: one session...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the immediate task to exactly one measurement skill rather than a bundle.",
+        "evidence": "'## Route: mbfinotti/advertising-skills@ad-conversion-tracking \u2014 start here, not with negative keywords or bids.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "'mbfinotti/advertising-skills@ad-conversion-tracking', '@ad-account-diagnostic', '@cac-roas-benchmark' etc.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Places measurement integrity (ad-conversion-tracking and/or ad-attribution-gap) at the top of the short-list.",
+        "evidence": "'Priority 1 \u2014 Close the loop between ad spend and real outcomes ... This is the single highest-leverage move on the list' \u2014 explicitly the top of the ranked growth priorities (P0 being the separate compliance fire).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly states that the platform pixel being the only source of truth is what pins measurement first.",
+        "evidence": "'Your only tracking is the Meta pixel and Google tag \u2014 neither connected to the EHR or billing... You don't know if a \"conversion\" is a real patient or a bounce.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects opening with negative keywords and bid tweaks, characterizing tuning as near-zero effort buying near-zero value until the classes above are in place.",
+        "evidence": "'Your instinct to start with negative keywords and bid tweaks is reasonable but misplaced as the first move... Tightening bids and negatives now just optimizes harder toward a number that might not correlate with revenue.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not present the cheapest option as the top recommendation on cheapness grounds.",
+        "evidence": "The top items are compliance (P0) and measurement (P1), justified by leverage/risk, not cost; cheap tuning is explicitly demoted to P2 'maintenance'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves creative work off the short-list into a Not-now list with creative production capacity as the explicit unblocking condition.",
+        "evidence": "Creative fatigue work is kept as an active numbered Priority 4 ('Creative fatigue risk, mitigate without a designer') rather than deferred to a separate Not-now list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not rank creative entries at the bottom of the short-list as an alternative to moving them out.",
+        "evidence": "Creative fatigue is Priority 4 of 7 (P0-P6), with P5 and P6 following it, so it is not at the bottom.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names ad-swipe-file and/or ad-copy-variants as exceptions that remain available despite the designer gap, because they need no production capacity.",
+        "evidence": "Neither skill name is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that the regulated vertical adds a legal or compliance review to the measurement work and to any customer seed-list work, lengthening it without changing what it buys.",
+        "evidence": "Legal review is flagged for tracking changes ('Build a lightweight legal-review lane for tracking changes... a fully ad hoc review cycle will throttle P1 and P0') but no customer seed-list work exists or is discussed in this scenario.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that a consent-mode change or server-side conversion upload triggers a data-processing or consent review and cannot be un-sent.",
+        "evidence": "No statement about irreversibility of server-side conversion uploads or consent-mode changes appears; CAPI/Enhanced Conversions are discussed only in terms of privacy improvement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the re-rank out loud, naming which stated fact moved which class of work.",
+        "evidence": "'Given a state AG inquiry last year, this is the actual fire, not a growth item' and 'Your designer left, so protect this lane' explicitly tie facts to reprioritization.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The short-list has between 5 and 8 entries, each naming the bottleneck it attacks and what the session costs.",
+        "evidence": "Seven priorities (P0-P6) are listed, each with a stated rationale (e.g. 'no legal review needed', 'no design resource required', 'this week').",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the immediate task to exactly one measurement skill rather than a bundle.",
+        "evidence": "No skill name (e.g. ad-conversion-tracking) is ever cited; Priority 1 is described in prose without a named skill route.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "No skill names appear anywhere in the transcript, so none are malformed.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

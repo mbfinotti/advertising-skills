@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes blended ROAS as 240,000 / 96,000 = 2.5 and labels it as the blended variant, distinct from the dashboard figure",
+        "evidence": "Metric table: 'Blended ROAS | net revenue \u00f7 paid media spend | 240,000 / 96,000 = 2.50' listed separately from '\"Combined ROAS\" | platform-reported ... | 4.6'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes MER as approximately 2.18 (240,000 / 110,000), with the denominator explicitly including the $14,000 of agency and creative spend",
+        "evidence": "'MER | net revenue \u00f7 total marketing spend | 240,000 / 110,000 = 2.18 | ... order system + finance (media + agency + creative)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even ROAS/MER as 1 / 0.38, approximately 2.63",
+        "evidence": "'Break-even ROAS / MER | 1 \u00f7 contribution-margin rate | 1 / 0.38 = 2.63'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the dashboard 4.6 as platform-reported/attributed ROAS - a claimed figure, not the number judged against break-even",
+        "evidence": "'Your \"combined ROAS 4.6\" is platform-reported ROAS... not money-anchored... This rests on rungs 1 and 2 together, not on the 4.6 dashboard figure'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the 4:1 rule as folklore with its origin: no traceable author, often misattributed to a 2016 Nielsen study that says no such thing",
+        "evidence": "'\"4:1 ROAS\" \u2014 no traceable author, often misattributed to a 2016 Nielsen study that makes no such claim.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that 4:1 is simply break-even at a 25% contribution margin, and places this business's own 2.63 break-even next to it",
+        "evidence": "'It's simply break-even at a 25% margin, retroactively treated as a target. Ferndale's own break-even, from its actual 38% margin, is 2.63'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Returns an unhealthy verdict because MER (and blended ROAS) sit below the business's own break-even by arithmetic, not a healthy verdict",
+        "evidence": "'Verdict: unhealthy. Below the business's own break-even (2.63) on MER (2.18) and even on the narrower blended ROAS (2.50)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The verdict rests on break-even (rung 1) and the trailing history (rung 2); the ~2 ecommerce median is used only as context, never to set the verdict",
+        "evidence": "'this is rung 3, the weakest evidence... rung 3 never overrides rungs 1\u20132'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs or explicitly requests a mix-shift check before treating the January-July MER decline as a real trend",
+        "evidence": "'no channel-level breakdown was provided to run the mix-shift check, but that check would only explain why MER is falling, not change the fact'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the MER history as a sustained multi-period deterioration rather than a one-off dip",
+        "evidence": "'This isn't a one-bad-month blip and it isn't a mix-shift artifact... A sustained deteriorating trend that has been below break-even the whole visible history'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every reported figure carries a variant label, a window, and a data source",
+        "evidence": "Metric table consistently populates Variant/Window/Source columns for every row",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any external median cited carries publisher, year, sample, and the variant it measured",
+        "evidence": "'Triple Whale 2025, 18,000+ ecommerce brands, vendor-instrumented, median blended ROAS 2.04'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to endorse scaling in this run and hands the pause/reallocate decision off to a spend-guardrails or budget-allocation workflow rather than prescribing budget moves itself",
+        "evidence": "'Do not scale next month on this data. Setting a floor/kill-switch before any scale decision \u2192 mbfinotti/advertising-skills@ad-spend-guardrails'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes blended ROAS as 240,000 / 96,000 = 2.5 and labels it as the blended variant, distinct from the dashboard figure",
+        "evidence": "The transcript computes '$240,000 \u00f7 $96,000 = 2.50' only to reject it as 'the wrong denominator,' never presenting it as a legitimate 'blended ROAS' variant distinct from the 4.6 dashboard figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes MER as approximately 2.18 (240,000 / 110,000), with the denominator explicitly including the $14,000 of agency and creative spend",
+        "evidence": "'Jul | 2.18 ($240,000 \u00f7 $110,000 media+agency)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even ROAS/MER as 1 / 0.38, approximately 2.63",
+        "evidence": "'Breakeven MER = 1 \u00f7 0.38 = 2.63'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the dashboard 4.6 as platform-reported/attributed ROAS - a claimed figure, not the number judged against break-even",
+        "evidence": "'Throw it out for decision-making' regarding the 4.6, while the verdict is judged against MER 2.18 vs breakeven 2.63.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the 4:1 rule as folklore with its origin: no traceable author, often misattributed to a 2016 Nielsen study that says no such thing",
+        "evidence": "No mention of the 4:1 rule's origin, authorship, or the Nielsen misattribution anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that 4:1 is simply break-even at a 25% contribution margin, and places this business's own 2.63 break-even next to it",
+        "evidence": "The transcript never connects 4:1 to a 25% margin calculation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Returns an unhealthy verdict because MER (and blended ROAS) sit below the business's own break-even by arithmetic, not a healthy verdict",
+        "evidence": "'No \u2014 you're not healthy in July' and 'Contribution profit: $91,200 \u2212 $110,000 = \u2212$18,800'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The verdict rests on break-even (rung 1) and the trailing history (rung 2); the ~2 ecommerce median is used only as context, never to set the verdict",
+        "evidence": "No external ~2 ecommerce median appears anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs or explicitly requests a mix-shift check before treating the January-July MER decline as a real trend",
+        "evidence": "No mix-shift check is run or requested; the decline is treated as real based on monotonicity alone.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reads the MER history as a sustained multi-period deterioration rather than a one-off dip",
+        "evidence": "'That's seven straight months of declining marketing efficiency, not a one-month blip.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every reported figure carries a variant label, a window, and a data source",
+        "evidence": "MER table is broken out by month with denominator source noted ('media+agency'), 4.6 labeled as combined/platform figure, margin and revenue figures identified by source.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any external median cited carries publisher, year, sample, and the variant it measured",
+        "evidence": "The '4:1 industry standard' is referenced with no publisher, year, or sample attached.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to endorse scaling in this run and hands the pause/reallocate decision off to a spend-guardrails or budget-allocation workflow rather than prescribing budget moves itself",
+        "evidence": "The transcript itself prescribes specific actions: 'Push MER back comfortably above 2.63...before increasing spend' and 'Re-evaluate the $14,000/month agency fee' rather than deferring to a separate workflow.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

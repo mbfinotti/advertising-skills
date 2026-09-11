@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The ask is matched to the conversation stage rather than a hard same-chat close.",
+        "evidence": "The response explicitly kills the supplied hard close: \"'Book a demo today, limited onboarding slots for Q4' \u2014 this doesn't ship,\" citing a \"mismatched ask ('close the deal right there in the chat' against a quarter-long, $120k-ACV enterprise cycle)\" and reframing: \"A response slot next to a $120k decision doesn't close anything; it opens a research thread. The copy below asks for that thread, not the signature.\" The delivered slot copy carries no CTA at all \u2014 \"Ask: none folded into the line. Early/mid-research register \u2014 the landing page carries the demo CTA\" \u2014 and the stage assumption is sta",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The ask is matched to the conversation stage rather than a hard same-chat close.",
+        "evidence": "All three variants terminate in the same hard-close CTA \u2014 `[ Book a demo ]` \u2014 with demo-request rate set as the sole primary metric, and nothing in the transcript reasons about where the reader sits in the conversation or whether a lighter, stage-appropriate ask (case study, see how it works, pricing page) would fit a sponsored slot better. The only stage-awareness shown is about disclosure ('never reads as an organic assistant recommendation'), not about calibrating the ask. Partial credit for softer connective phrasing in the body copy \u2014 'See how it'd work for your team' (A) and 'Talk to us ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

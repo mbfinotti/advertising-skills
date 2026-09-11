@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the colleague's view-through/modeled explanation because those causes push the platform's count higher, which cannot explain a platform-low gap (direction check applied to strike the candidate cause).",
+        "evidence": "\"View-through and modeled conversions are a platform-high cause \u2014 they add conversions the store never sees, so they push the platform's number above the anchor, never below it. Your platform number is below the anchor (41 vs 67). A cause that inflates the platform's count cannot explain a count that's too low. Apply the direction rule and strike it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the single-day comparison itself as manufacturing the worst-case discrepancy and recommends a 7-day-or-longer window or weekly grain.",
+        "evidence": "\"Single-day comparisons are the worst case for exactly this reason.\" and Fix step 1: \"Stop comparing single raw days. Re-run this comparison at weekly grain going forward; day-level pulls amplify exactly the timezone and lag effects above into false alarms.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the UTC vs UTC-8 timezone mismatch as shifting conversions across calendar days without any real discrepancy.",
+        "evidence": "\"Timezone misalignment shifts what \"Tuesday\" means by 8 hours... A same-labeled-day comparison across two different clocks is comparing two different windows, not the same day \u2014 this alone can account for a meaningful slice of the 26-unit gap, in either direction, without any tracking defect.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the still-open 7-day click window from Monday's launch as timing: the platform's number keeps growing after the pull.",
+        "evidence": "\"The new campaign launched Monday with a 7-day click window... the platform's Tuesday count is structurally at its most incomplete right now and will keep rising for up to 7 days as Monday's and Tuesday's clicks finish converting.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names ad-interaction-date stamping vs order-event-date stamping as a reason a single day cannot line up between the two systems.",
+        "evidence": "\"Ad platforms stamp conversions on the click date and backdate them as they land, not on the purchase date. So a person who clicked Monday or Tuesday and buys on Thursday will eventually get counted back onto Monday or Tuesday \u2014 but not yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends letting recent conversions age or re-running after the window closes, rather than acting on the immature pull.",
+        "evidence": "\"Wait for the window to mature before re-judging. Re-pull Tuesday's platform number again after the 7-day click window fully closes (i.e., a week from launch) before drawing any conclusion. Expect the 41 to have grown by then.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to prescribe a tracking fix, stating that no defect is established from this comparison.",
+        "evidence": "\"Verdict: not yet classified as a defect \u2014 the data available today can't separate timing from a real problem\" and \"Only escalate as a defect if, after steps 2\u20134, the gap is still large... At that point this becomes a ... handoff (tag/pixel fix), not a reconciliation problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors the order count on the store backend's 67 and treats the platform as explaining origin, not volume.",
+        "evidence": "\"Anchor: store backend, 67 paid orders. Ad platform reports 41 \u2014 a gap of 26 units\"; the platform figure is used throughout only to diagnose attribution/timing causes, never treated as an alternate order count.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly classifies the candidate causes as timing or definitional rather than presenting an undifferentiated list of possibilities.",
+        "evidence": "Section header \"What's actually going on: two Bucket 1 (timing) causes, both pointing platform-low\" and later \"that's a real Bucket 3 defect (broken/missing tag)\" and \"Attribution model / counting rule mismatch\" as a separate category.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a defect requires a direction flip, a sudden jump, or a gap resisting known mechanisms, and that this gap is attributable so it does not qualify.",
+        "evidence": "The transcript gives different escalation criteria (\"Only escalate as a defect if... the gap is still large, hasn't shrunk as the window matured, or the test purchase didn't fire a tracked conversion\") but never states the specific criteria of a direction flip, a sudden jump, or a gap resisting known mechanisms.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Predicts that on a short ecommerce cycle the timing share of the gap resolves within days and recommends re-running the comparison to confirm it.",
+        "evidence": "\"Re-pull Tuesday's platform number again after the 7-day click window fully closes (i.e., a week from launch) before drawing any conclusion. Expect the 41 to have grown by then.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Establishes or asks for each system's attribution window, counting rule, and conversion definition before putting a number on the gap.",
+        "evidence": "States the platform's \"7-day click window\" explicitly, and flags to check \"if the platform is set to a shorter effective reporting window than the 7-day click window you launched with, or 'one conversion per click' vs 'every' \u2014 check the platform's own settings rather than assume.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the colleague's view-through/modeled explanation because those causes push the platform's count higher, which cannot explain a platform-low gap (direction check applied to strike the candidate cause).",
+        "evidence": "\"View-through and modeled conversions inflate a platform's numbers \u2014 they add credit for people who saw (not clicked) an ad, or credit statistically imputed conversions. That mechanism explains a platform reporting more purchases than reality, not 41 vs. 67 actual orders.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the single-day comparison itself as manufacturing the worst-case discrepancy and recommends a 7-day-or-longer window or weekly grain.",
+        "evidence": "\"Checking 'yesterday's' number the next morning \u2014 one day after a campaign launch \u2014 is checking a number that is still actively being populated. It will look artificially low almost every time\" combined with the recommendation to \"treat any day younger than 7 days as provisional\" and \"Re-run this comparison after the 7-day window closes on the new campaign.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the UTC vs UTC-8 timezone mismatch as shifting conversions across calendar days without any real discrepancy.",
+        "evidence": "\"Store = UTC\u20118, platform = UTC, an 8\u2011hour offset. The platform's 'Tuesday' ... does not cover the same real-world window as the store's 'Tuesday' ... Any day-by-day comparison between the two systems will be skewed by this 8-hour slice\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the still-open 7-day click window from Monday's launch as timing: the platform's number keeps growing after the pull.",
+        "evidence": "\"Reporting/matching lag: conversions keep trickling in and getting backfilled for the length of the attribution window ... Checking 'yesterday's' number the next morning ... is checking a number that is still actively being populated.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names ad-interaction-date stamping vs order-event-date stamping as a reason a single day cannot line up between the two systems.",
+        "evidence": "\"Ad platforms typically report conversions by click date, not purchase date, in day-by-day breakdowns \u2014 so a Tuesday purchase from someone who clicked Monday ... can show up on a different day's row than the one you're checking.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends letting recent conversions age or re-running after the window closes, rather than acting on the immature pull.",
+        "evidence": "\"Don't judge a day's number until the attribution window has closed. With a 7-day click window, treat any day younger than 7 days as provisional.\" and \"Re-run this comparison after the 7-day window closes on the new campaign.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to prescribe a tracking fix, stating that no defect is established from this comparison.",
+        "evidence": "The transcript prescribes multiple concrete tracking/reconciliation fixes (\"Align timezones\", \"Stop comparing platform-attributed purchases to total store orders\", \"Set up server-side tracking with order-ID matching (Conversions API / Enhanced Conversions)\"), rather than declining to prescribe fixes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Anchors the order count on the store backend's 67 and treats the platform as explaining origin, not volume.",
+        "evidence": "\"The store backend's 67 paid orders include everything \u2014 organic, direct traffic, email, other ad channels, returning customers with no ad touchpoint. There is no reason to expect 41 (ad-attributed) to equal or even approach 67 (all orders).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly classifies the candidate causes as timing or definitional rather than presenting an undifferentiated list of possibilities.",
+        "evidence": "The transcript numbers three causes (population mismatch, timezone, attribution window) and describes their mechanisms, but never uses explicit category labels like \"timing\" or \"definitional\" to classify them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a defect requires a direction flip, a sudden jump, or a gap resisting known mechanisms, and that this gap is attributable so it does not qualify.",
+        "evidence": "The closest statement is \"even with flawless tracking, 41 vs. 67 ... is not evidence of 'missing' conversions. It may be entirely expected,\" but the transcript never articulates the specific criteria of a direction flip, sudden jump, or resistance to known mechanisms as the bar for a real defect.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Predicts that on a short ecommerce cycle the timing share of the gap resolves within days and recommends re-running the comparison to confirm it.",
+        "evidence": "The transcript recommends to \"Re-run this comparison after the 7-day window closes on the new campaign,\" but does not explicitly predict that the timing-driven share of the gap will resolve within days on a short ecommerce cycle.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Establishes or asks for each system's attribution window, counting rule, and conversion definition before putting a number on the gap.",
+        "evidence": "The transcript works through the platform's 7-day click attribution window, its click-date vs. purchase-date counting rule, and the view-through/modeled vs. click-through/observed conversion definitions (\"pull the platform's click-through, observed-only conversion count\") as the basis for explaining the 41 vs. 67 gap.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

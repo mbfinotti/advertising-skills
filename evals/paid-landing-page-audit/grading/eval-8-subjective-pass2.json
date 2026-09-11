@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Given the CPA gap is a multiple of target, the response promotes offer and value-proposition-level work rather than settling for copy tweaks.",
+        "evidence": "The response explicitly refuses to let the copy tweak carry the load: \"calibrate what it can do: your CPA gap is 2.3x target... A button-copy tweak does not close a multiple-of-target gap \u2014 no hour-scale fix does.\" The VERDICT repeats this: \"None of these, individually or together, plausibly close a 2.3-2.8x gap - that gap needs message-match confirmation and offer-clarity work, not a speed sprint and not a button label alone.\" Prioritization matches the framing: #1 headline/message match against the actual ads and #2 offer clarity (price transparency before checkout, with the DTC-subscription",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Given the CPA gap is a multiple of target, the response promotes offer and value-proposition-level work rather than settling for copy tweaks.",
+        "evidence": "The response does refuse to treat copy as the answer \u2014 it explicitly demotes the CTA change (\"cheap, correct, low-impact-alone fix\", \"don't treat as the strategy\") and states \"Don't rely on landing page work alone to close a $52 gap.\" But the escalation it offers is media-side efficiency (\"tighter keyword match types, negative keyword pass, Quality Score work\") and split-the-gap arithmetic (\"CVR to ~6%, CPC down 15%\"), which is channel optimization, not offer or value-proposition work. The nearest approach to offer-level thinking is price *visibility* (\"Show a starting price above the fold\") p",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

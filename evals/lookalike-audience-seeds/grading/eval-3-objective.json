@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Identifies the salted pre-hash as the primary cause: the platform hashes on ingest, so a salted or double hash never matches",
+        "evidence": "A per-customer salt means your hash can never equal Meta's hash of the same email \u2014 not \"worse,\" *impossible*",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends re-uploading normalized plaintext through the UI, with hashing reserved for API or warehouse syncs that require it",
+        "evidence": "Upload normalized plaintext through Meta's UI \u2014 Meta hashes on ingest ... the correct route is the **Conversions API**, hashing with Meta's exact spec",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the phone format to digits with country code, no plus sign, no leading zero (E.164-style, e.g. 447911123456)",
+        "evidence": "Reformat phone to E.164 digits: strip `+`, spaces, and the leading `0` after the UK country code \u2192 `447911123456`",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects emails to lowercased and trimmed",
+        "evidence": "Lowercase + trim every email before hashing.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends adding more identifier types per row, since multiple identifiers per row beat email alone",
+        "evidence": "Join any other identifier you already hold (name, postcode) \u2014 multiple identifiers per row beats email alone",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags rows older than 12-18 months as past the decay cliff and recommends dropping or archiving them",
+        "evidence": "Contact data past 12\u201318 months measurably degrades match rate ... Segment out the 2021\u20132022 rows and test separately, or drop them",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that dropping old rows lifts the rate partly by shrinking the denominator, so the effective seed must still clear the floor afterwards",
+        "evidence": "No mention of the effective seed / denominator tradeoff when dropping stale rows.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Orders the fixes as: normalize formats first, then join identifiers already held, then drop stale rows, with enrichment last",
+        "evidence": "normalize formats > join identifiers already held > drop stale rows > buy enrichment",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Answers the enrichment question with no: it is the lowest-ratio lever here and not the first move, reserved for cases like B2B work-email lists on consumer platforms",
+        "evidence": "Short answer: no, don't buy enrichment yet. ... that's the one case where enrichment is the *only* rung that moves the needle. Nothing in what you've described points to that case.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "References Meta's documented band (50-80% on good lists, below 40% signaling a poor or outdated list) as the calibration reference",
+        "evidence": "Meta's documented range for a clean list is **50\u201380% matched**; below 40% signals a poor/outdated list.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions Meta's Event Match Quality score with the 6.0+ practitioner target",
+        "evidence": "No mention of Event Match Quality score anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recomputes or instructs recomputing the effective seed (rows x match rate) against the platform floor after the fixes",
+        "evidence": "Only says \"Re-upload after 1\u20134 and remeasure before touching rung 1 (enrichment)\" \u2014 no explicit rows x rate vs floor recomputation is shown or instructed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not treat the improved match rate as evidence of audience quality - match rate is a data-hygiene leading indicator only",
+        "evidence": "match rate tells you the data got clean \u2014 it doesn't tell you the lookalike will perform. Grade the resulting audience on new-customer CPA and 90-day cohort LTV, not on the match percentage itself",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Identifies the salted pre-hash as the primary cause: the platform hashes on ingest, so a salted or double hash never matches",
+        "evidence": "\"A per-customer salt guarantees your hash never equals Meta's hash of that same email, even when the email is 100% correct... That's almost certainly your 9%.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends re-uploading normalized plaintext through the UI, with hashing reserved for API or warehouse syncs that require it",
+        "evidence": "Transcript instead recommends computing the correct unsalted hash themselves and uploading the hash, not plaintext via UI: \"Compute the Meta-required hash \u2014 SHA256(lowercase(trim(email))), no salt \u2014 at export time.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the phone format to digits with country code, no plus sign, no leading zero (E.164-style, e.g. 447911123456)",
+        "evidence": "\"strip all non-digits, prepend country code, drop the leading trunk 0 \u2192 447911123456.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects emails to lowercased and trimmed",
+        "evidence": "\"Meta requires lowercase + trimmed whitespace before hashing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends adding more identifier types per row, since multiple identifiers per row beat email alone",
+        "evidence": "\"Add more identifier columns if you have them \u2014 first name, last name, city, state, zip, DOB, gender.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags rows older than 12-18 months as past the decay cliff and recommends dropping or archiving them",
+        "evidence": "Only notes staleness costs \"single-digit-to-teens percentage points,\" no recommendation to drop/archive stale rows.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that dropping old rows lifts the rate partly by shrinking the denominator, so the effective seed must still clear the floor afterwards",
+        "evidence": "Not addressed since dropping is never recommended.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Orders the fixes as: normalize formats first, then join identifiers already held, then drop stale rows, with enrichment last",
+        "evidence": "Order given is salt removal, phone fix, re-test, add identifiers, enrichment last \u2014 no \"drop stale rows\" step included.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Answers the enrichment question with no: it is the lowest-ratio lever here and not the first move, reserved for cases like B2B work-email lists on consumer platforms",
+        "evidence": "\"Should you buy an enrichment service? No \u2014 not yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "References Meta's documented band (50-80% on good lists, below 40% signaling a poor or outdated list) as the calibration reference",
+        "evidence": "Uses \"typically 40\u201365% for reasonably fresh B2C lists,\" not the 50-80%/40% band.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Mentions Meta's Event Match Quality score with the 6.0+ practitioner target",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recomputes or instructs recomputing the effective seed (rows x match rate) against the platform floor after the fixes",
+        "evidence": "Only recommends re-testing match rate on a sample, no explicit effective-seed-vs-floor recomputation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not treat the improved match rate as evidence of audience quality - match rate is a data-hygiene leading indicator only",
+        "evidence": "No explicit statement distinguishing match rate as hygiene-only after the fix is proposed.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

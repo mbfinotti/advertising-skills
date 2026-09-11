@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to promise a winning ad: roughly 5% of creatives become winners at scale, a hit rate no brief can repeal",
+        "evidence": "\"Motion's published number \u2014 ~5% of creatives become winners, across 578,750 creatives and $1.29B of spend\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the brief's job as maximising the quality, cleanliness and diversity of every at-bat rather than promising outcomes",
+        "evidence": "\"don't let 'did sprint 1-2 produce a winner' be the pass/fail gate on the process. Use it as a bonus outcome, not the test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instruments the three KPIs in efficiency order, standing them up one at a time rather than all three at once",
+        "evidence": "\"Stand these up in this sequence \u2014 each is strictly cheaper to run than the next\" numbered 1-3",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Puts rebrief rate first: the share of briefs sent back for clarification before production starts, kept as a simple counter by whoever sends briefs back",
+        "evidence": "\"Rebrief rate \u2014 the day-one dashboard metric. Share of briefs sent back by the executor for clarification before production starts... One counter, kept by whoever issues briefs\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the rebrief-rate target as under 20%, labelled a practical self-set target to tighten from the team's own history, not a researched constant",
+        "evidence": "\"Target: under 20%, then tighten against your own history once you have a baseline.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Puts brief-to-launch cycle time second, measured as two dates per brief, with the published benchmark of 10 business days or less",
+        "evidence": "\"Two timestamps per brief: brief approved, asset live. Published B2B reference point: 10 business days or less.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Puts the concepts-briefed-to-winner ratio third over a rolling 90-day window, warned to be noise until enough concepts ship - which two sprints at 4 concepts a month cannot provide",
+        "evidence": "\"Concepts-briefed-to-winner ratio \u2014 a rolling 90-day trend... at 4/month, that's ~12 concepts in the first window, which is still thin.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges the winner ratio against the team's own history rather than an absolute bar, given the roughly 5% base rate",
+        "evidence": "\"Read the trend against your own account's history, never against Motion's 5% figure as an absolute bar\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the re-rank condition: if a rolling results log already exists in the reporting stack, the ratio becomes free and moves to the top",
+        "evidence": "\"If your reporting stack already logs concept outcomes automatically, this ratio is closer to free and can move up the list\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Provides the diagnostic reads: a rising rebrief rate is a brief problem; a collapsing winner ratio with clean briefs is a concept-diversity problem",
+        "evidence": "\"Rebrief rate climbing \u2192 brief problem... Winner ratio flat or falling while rebrief rate and cycle time stay clean \u2192 a concept-diversity problem\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the briefing stakes: roughly a third of marketing budget wasted through poor briefing and/or the gap where 80% of marketers think their briefs are good while only 10% of agencies agree",
+        "evidence": "No such statistic about wasted marketing budget or the 80% vs 10% agency-agreement gap appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines when a single brief counts done: every field carries real content with an evidence citation and the executor confirms zero clarification questions on read-through",
+        "evidence": "No explicit 'definition of done' statement (every field with evidence citation, zero clarification questions) is given; only the rebrief-rate metric is described.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to promise a winning ad: roughly 5% of creatives become winners at scale, a hit rate no brief can repeal",
+        "evidence": "The document only uses a hypothetical illustrative '25%' figure for a binomial-probability example, not an actual asserted ~5% industry base rate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames the brief's job as maximising the quality, cleanliness and diversity of every at-bat rather than promising outcomes",
+        "evidence": "No such explicit framing of 'the brief's job' appears; the document is scoped to dashboard/metric design, not brief-writing philosophy.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Instruments the three KPIs in efficiency order, standing them up one at a time rather than all three at once",
+        "evidence": "The dashboard recommends implementing five leading metrics together: 'Top row: the 5 leading metrics above... trending sprint over sprint' \u2014 not staged one at a time.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Puts rebrief rate first: the share of briefs sent back for clarification before production starts, kept as a simple counter by whoever sends briefs back",
+        "evidence": "The closest analog, 'Clarification cycles,' is listed second among five leading metrics, not singled out first as a simple counter.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives the rebrief-rate target as under 20%, labelled a practical self-set target to tighten from the team's own history, not a researched constant",
+        "evidence": "No specific rebrief-rate target percentage is given anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Puts brief-to-launch cycle time second, measured as two dates per brief, with the published benchmark of 10 business days or less",
+        "evidence": "'Time-to-brief-approval \u2014 days from kickoff to a signed-off brief' is listed third among five metrics with no 10-business-day benchmark cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Puts the concepts-briefed-to-winner ratio third over a rolling 90-day window, warned to be noise until enough concepts ship - which two sprints at 4 concepts a month cannot provide",
+        "evidence": "The win-rate metric is tracked over a 'rolling 6-12 month window,' not a 90-day window, and is presented as a separate lagging-metric section rather than 'third' in an ordered list of three.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Judges the winner ratio against the team's own history rather than an absolute bar, given the roughly 5% base rate",
+        "evidence": "No comparison to the team's own trailing history or a 5% base rate is made; the document instead proposes confidence intervals against a fixed threshold definition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the re-rank condition: if a rolling results log already exists in the reporting stack, the ratio becomes free and moves to the top",
+        "evidence": "No such re-rank condition is mentioned anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Provides the diagnostic reads: a rising rebrief rate is a brief problem; a collapsing winner ratio with clean briefs is a concept-diversity problem",
+        "evidence": "The document instead proposes a 'correlation view... brief completeness score vs. win/loss' rather than stating these two specific diagnostic reads.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the briefing stakes: roughly a third of marketing budget wasted through poor briefing and/or the gap where 80% of marketers think their briefs are good while only 10% of agencies agree",
+        "evidence": "No such statistics about wasted budget or the 80%/10% perception gap appear anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines when a single brief counts done: every field carries real content with an evidence citation and the executor confirms zero clarification questions on read-through",
+        "evidence": "The 'Brief completeness score' is only described as 'a checklist... scored 0-100%,' with no definition of a done-state requiring evidence citations and zero clarification questions.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

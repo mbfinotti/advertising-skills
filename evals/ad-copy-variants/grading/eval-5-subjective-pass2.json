@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recommended angles skew to B2B arguments (quantified outcome, risk or compliance reduction, peer proof, total cost of ownership) for a reader building an internal case.",
+        "evidence": "Only one of the three proposed angles is squarely a B2B internal-case argument: angle #2 'Risk/compliance reduction' (fewer incidents \u2192 fewer claims \u2192 lower exposure: insurance, liability, DOT), justified explicitly with the internal-case logic 'the angle a safety or ops buyer can carry into a budget conversation \u2014 a B2B ad has to arm the reader with a line they can repeat in a meeting.' The intake questions also reach for quantified proof ('accident-reduction numbers, insurance-premium data, a customer quote'), which gestures at quantified outcome and peer proof. But the other two angles are ",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recommended angles skew to B2B arguments (quantified outcome, risk or compliance reduction, peer proof, total cost of ownership) for a reader building an internal case.",
+        "evidence": "The answer never recommends messaging angles at all \u2014 it only prescribes test structure (keep 70-80% budget on the winner, one incremental copy variant, one isolated segment test, 4-6 week windows). The only angle references are echoes of the user's existing setup ('same cost-savings angle', 'does driver-safety even work as an audience'), which touch TCO/risk themes incidentally rather than as recommended B2B arguments; no peer proof, no quantified-outcome or compliance framing, and no new angle suggestions appear. The lone internal-case element is the 'What to tell your CMO' script, which arg",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

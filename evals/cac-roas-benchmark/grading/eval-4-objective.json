@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to compute the verdict from the zero-filled $225,000 spend total, naming the $0 TikTok line as silently corrupting the blend",
+        "evidence": "'A zero-filled channel is not a conservative placeholder \u2014 it silently deflates the spend denominator and inflates every ratio built on it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Renormalises the spend total using the known ~8% TikTok share, arriving at roughly $245,000 total spend and an October MER of approximately 2.1",
+        "evidence": "'MER, renormalized (TikTok \u22488% of paid spend) | total revenue \u00f7 (Meta+Google+ imputed TikTok) | ~2.13x (range 2.08\u20132.17x for a 6\u201310% TikTok share)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that renormalising is the right move here because the missing channel is small and its size is known, with withholding the blended figure named as the fallback",
+        "evidence": "'Channel size is known historically (~8% of paid spend) and is small relative to the whole, so it qualifies for renormalization rather than withholding'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even MER as 1 / 0.44, approximately 2.27",
+        "evidence": "'Break-even MER | 1 \u00f7 contribution margin = 1 \u00f7 0.44 | 2.27x'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges October against break-even using the corrected MER (at or below 2.27), not the zero-filled ~2.31 that would sit above it",
+        "evidence": "'The renormalized reading (~2.13x, full plausible range 2.08\u20132.17x) does not [clear break-even] \u2014 every point in the range sits below break-even.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs or explicitly requests a mix-shift check before declaring the April-October downtrend real",
+        "evidence": "'Mix-shift check: nothing in the Apr\u2013Sep series suggests a channel-mix explanation for that decline \u2014 it reads as a genuine efficiency drift, not reallocation.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the history as a multi-period deteriorating trend pending the mix-shift confirmation",
+        "evidence": "'Already deteriorating for 3 straight months before October: 2.30 \u2192 2.28 \u2192 2.26 (Jul\u2013Sep).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The verdict (unhealthy or watch) rests on the business's own break-even and trailing history, with no external median setting it",
+        "evidence": "'External benchmark \u2014 not used to set this verdict... rungs 1 and 2 already settle it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every reported figure carries variant, window, and data source labels",
+        "evidence": "Metric table populates Variant/Window/Source for every row",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names restoring TikTok reporting as a concrete next step or next-period question",
+        "evidence": "'Get the actual October TikTok spend from billing/invoices (independent of the broken API token) and rerun this check with real numbers'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not zero-fill, average around, or silently ignore the missing channel anywhere in the calculation",
+        "evidence": "The verdict calculation uses the renormalized figure exclusively; the zero-filled figure is shown only as a labeled contrast, e.g. 'Don't ship the zero-filled 2.31x as \"healthy\" to anyone'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to compute the verdict from the zero-filled $225,000 spend total, naming the $0 TikTok line as silently corrupting the blend",
+        "evidence": "'Don't use the sheet's $0 for TikTok \u2014 it silently breaks the MER calc.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Renormalises the spend total using the known ~8% TikTok share, arriving at roughly $245,000 total spend and an October MER of approximately 2.1",
+        "evidence": "'Corrected...$225,000 / 0.92 = $244,565...520,000 / 244,565 = 2.13'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that renormalising is the right move here because the missing channel is small and its size is known, with withholding the blended figure named as the fallback",
+        "evidence": "The transcript renormalizes directly without discussing withholding as an alternative or justifying the choice based on channel size being small/known.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even MER as 1 / 0.44, approximately 2.27",
+        "evidence": "'Breakeven MER = 1 / contribution margin = 1 / 0.44 = 2.27'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges October against break-even using the corrected MER (at or below 2.27), not the zero-filled ~2.31 that would sit above it",
+        "evidence": "'October corrected (2.13) is not just below breakeven, it's meaningfully further below than September was'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs or explicitly requests a mix-shift check before declaring the April-October downtrend real",
+        "evidence": "No mix-shift check is run or requested anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reads the history as a multi-period deteriorating trend pending the mix-shift confirmation",
+        "evidence": "The trend is declared real outright ('the downtrend is real') with no pending mix-shift caveat.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The verdict (unhealthy or watch) rests on the business's own break-even and trailing history, with no external median setting it",
+        "evidence": "No external median appears anywhere; verdict rests on breakeven 2.27 and the Apr-Sep trend line.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every reported figure carries variant, window, and data source labels",
+        "evidence": "Table clearly separates 'As reported' vs 'Corrected' figures with the monthly MER series labeled Apr-Sep.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names restoring TikTok reporting as a concrete next step or next-period question",
+        "evidence": "'Pull actual spend from there to replace the estimate' referencing TikTok Ads Manager billing/invoices.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not zero-fill, average around, or silently ignore the missing channel anywhere in the calculation",
+        "evidence": "The transcript explicitly rejects the $0 fill and instead imputes based on historical share.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

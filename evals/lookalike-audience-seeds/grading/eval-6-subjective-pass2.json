@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Caps the number of splits at what the single named refresh owner can maintain, advising against taking every proposed split at once",
+        "evidence": "The \"Splits: cap it to what one person can actually maintain\" section explicitly ties the cap to the manual refresh reality (\"refresh here is manual ('whenever I remember') \u2014 no automated sync, no second person\") and quotes the two-splits-is-fine/six-is-a-part-time-job guidance. It then rejects taking all proposed splits at once via a per-split table: country = mandatory, product line = deferred to phase 2 (\"doubles refresh load on day one\"), high-AOV = one-time split test rather than a standing audience, language = dropped. The staged rollout further gates the product-line split on the refres",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Caps the number of splits at what the single named refresh owner can maintain, advising against taking every proposed split at once",
+        "evidence": "The answer does state an explicit cap tied to the solo operator \u2014 the heading \"Layered structure (4 lists max, to stay manageable solo)\" \u2014 and touches maintenance capacity elsewhere (\"A monthly full-list refresh is realistic for one person; the suppression sync needs to be more frequent\"). But it does not advise against taking every proposed split at once: the 4-list cap is exactly the full set of proposed splits, and the bottom line green-lights all of them simultaneously (\"One combined EU-5 Custom Audience + Lookalike: keep as planned. Furniture/Lighting and High-AOV as additional Lookalikes",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

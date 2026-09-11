@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Excludes the Series B carousel as an ineligible format, or marks it 'format eligibility: verify in platform'",
+        "evidence": "\"(a) Series B carousel...Ineligible \u2014 multi-image carousels are excluded...Deleted\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Excludes the poll as an ineligible format, or marks it verify in platform",
+        "evidence": "\"(b) Warehouse-automation poll...Ineligible \u2014 polls are excluded...Deleted\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Excludes the PDF document post as an ineligible format (or marks it verify in platform), despite its 1,500 reactions",
+        "evidence": "\"(e) Cost-teardown PDF document \u2014 1,500 reactions...Ineligible \u2014 document posts are excluded...Deleted\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Scores candidates against Priya's own trailing median (about 120 reactions), not an absolute engagement threshold",
+        "evidence": "Table column header \"Engagement vs. median (120)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the plain-text customer picking-error post, noting its existing engagement or comments carry into the ad as visible social proof",
+        "evidence": "The post is recommended for its comment rate as an 'intent signal' but no statement says its existing engagement/comments carry into the ad as visible social proof.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Prefers evergreen buyer-problem content over the Series B news spike",
+        "evidence": "The Series B carousel is excluded solely for format ineligibility (carousel), not compared against evergreen content as a preference.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Caps product-pitch content at roughly 20% of the promoted set (about 80% genuine thought leadership) rather than banning or freely including the arm-launch pitch",
+        "evidence": "\"it's also a product pitch, the lowest-ranked content type in this format (target mix is roughly 80% thought leadership / 20% pitch)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "On the day-old video: waits for the roughly 3-day organic surge to settle, about a day past peak engagement, before launch",
+        "evidence": "\"Organic reach concentrates in the first ~3 days; promoting mid-surge means the ad chases a moving baseline. Let it settle a day past its peak\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires any edit or pinned comment to happen before launch, warning that a later edit changes the running ad",
+        "evidence": "No statement in this transcript warns that editing after launch changes the running ad; only discusses whether Priya is willing to edit posts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects or clearly cautions against the ghost-written-to-promote posts: manufactured posts read as ads and defeat the format",
+        "evidence": "\"writing posts specifically to be promoted inverts that and reads as an ad, which defeats the format.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Discloses that the organic-validation rule is contested (majority pre-validation practice vs a minority content-quality view), not presented as law",
+        "evidence": "\"There's a documented minority view (content quality matters more than pre-validation) but it applies when someone has strong content and a small following\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes a promoted post inherits its comment thread, dead or alive",
+        "evidence": "No mention of comment threads (dead or alive) being inherited by the promoted post anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a link plan for each selected post (pinned first comment, in-post tracked link, or a declared no-destination choice)",
+        "evidence": "\"Link plan for (c) \u2014 and (f) once cleared. Default to a tracked link in Priya's pinned first comment.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Excludes the Series B carousel as an ineligible format, or marks it 'format eligibility: verify in platform'",
+        "evidence": "The carousel is excluded on content grounds ('inflated by investors/press/talent... reads as brand noise'), not on format-eligibility grounds, and no 'verify in platform' note is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Excludes the poll as an ineligible format, or marks it verify in platform",
+        "evidence": "The poll is put on 'HOLD, don't boost as-is' because 'Votes are a low-effort tap, not proof a cold audience will act on it' \u2014 a content-quality rationale, not a format-eligibility one, and no platform-verification note is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Excludes the PDF document post as an ineligible format (or marks it verify in platform), despite its 1,500 reactions",
+        "evidence": "The PDF post is explicitly promoted, not excluded: '\u2705 (e) PDF cost teardown \u2014 PROMOTE (second pick).'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Scores candidates against Priya's own trailing median (about 120 reactions), not an absolute engagement threshold",
+        "evidence": "'Criteria used: ... performance vs. the 120-reaction median' applied throughout, e.g. '95 reactions is below median' and '1,500 reactions, well above median.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the plain-text customer picking-error post, noting its existing engagement or comments carry into the ad as visible social proof",
+        "evidence": "The post is recommended as top pick for its comment ratio and native feel, but the transcript never states that its existing reactions/comments carry over and remain visible once the post is running as a paid ad.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Prefers evergreen buyer-problem content over the Series B news spike",
+        "evidence": "Promotes (c) and (e), evergreen pain-point/ROI content, while excluding (a) the Series B carousel as 'brand noise to a cold ICP audience.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Caps product-pitch content at roughly 20% of the promoted set (about 80% genuine thought leadership) rather than banning or freely including the arm-launch pitch",
+        "evidence": "'\u274c (d) Robotic arm launch pitch \u2014 EXCLUDE... Send it back to the content lead as a rewrite candidate, not a promotion candidate' \u2014 a full ban, not a capped inclusion.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "On the day-old video: waits for the roughly 3-day organic surge to settle, about a day past peak engagement, before launch",
+        "evidence": "'HOLD, revisit in a few days... Don't decide until it plateaus' gives a vague timeframe with no reference to a ~3-day surge window or waiting a day past peak.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires any edit or pinned comment to happen before launch, warning that a later edit changes the running ad",
+        "evidence": "No discussion of edits, pinned comments, or their effect on a running ad appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects or clearly cautions against the ghost-written-to-promote posts: manufactured posts read as ads and defeat the format",
+        "evidence": "The two ghostwritten posts are embraced, not cautioned against: 'Treat the two ghostwritten posts as the campaign's primary assets, not supplements.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Discloses that the organic-validation rule is contested (majority pre-validation practice vs a minority content-quality view), not presented as law",
+        "evidence": "The organic-validation criteria are presented flatly as 'Criteria used' with no acknowledgment of a contested or minority view.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes a promoted post inherits its comment thread, dead or alive",
+        "evidence": "No mention of comment-thread inheritance for any promoted post.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a link plan for each selected post (pinned first comment, in-post tracked link, or a declared no-destination choice)",
+        "evidence": "No link/destination plan (pinned comment, in-post link, or no-destination) is discussed for any of the selected posts.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

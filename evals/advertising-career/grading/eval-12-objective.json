@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to rank B2B against B2C, framing them as two markets a buyer moves between rather than options competing for the same hours",
+        "evidence": "\"Don't rank B2B against DTC \u2014 they're not competing options, they're two markets that use the same underlying skill set on different channel mixes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names several of the skills that transfer unchanged: platform mechanics, bidding logic, tracking and attribution setup, budget pacing, audience construction, testing discipline, unit-economics literacy, diagnostic mindset",
+        "evidence": "\"Transfers unchanged: platform mechanics, bidding logic, tracking/attribution setup, budget pacing, audience construction, testing discipline, unit-economics literacy, diagnostic mindset.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the narrow re-learning for the DTC move: creative cadence and high-volume creative testing",
+        "evidence": "\"The one real gap moving to DTC: creative cadence.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names what changes on the DTC side: channel families (paid social, short-form video, shopping/feed formats) and core metrics (ROAS, MER, contribution margin, CPA rather than pipeline and MQL/SQL)",
+        "evidence": "Transcript names metric changes (\"DTC just adds ROAS/MER/contribution margin\") but never names specific channel families such as short-form video or shopping/feed formats.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects doubling down on hand-optimisation: keyword-by-keyword bidding, manual audience building, manual bid adjustments, and routine reporting are commoditised and no career case should be built on them",
+        "evidence": "\"Commoditised \u2014 don't build a career case on these: Keyword-by-keyword bidding, manual audience building, manual bid adjustments, routine reporting assembly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the role shift as moving from keyword manager to system optimizer: upstream in the inputs, mid-campaign in the signals, downstream in the measurement",
+        "evidence": "\"'from keyword manager to system optimizer' (Search Engine Land, 3 June 2026): upstream in the inputs, mid-campaign in the signals, downstream in the measurement\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the appreciating areas: creative strategy and testing, measurement and incrementality, first-party data and feed/catalogue work, AI-creative workflows, and system judgment",
+        "evidence": "\"Creative strategy and testing... Measurement and incrementality... First-party data and feed/catalogue work... AI-creative and prompt workflows... System judgment\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the practitioner consensus that creative roadmapping has no AI replacement yet",
+        "evidence": "\"Creative strategy and testing (practitioner consensus: no AI replacement yet)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the deliberate contradiction: the cheapest area to pick up (AI-creative workflows, an evening) is also the one commoditising fastest, so it wins an interview this quarter and expires by the next rung",
+        "evidence": "\"These contradict on purpose: the cheap skill commoditises fastest too.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Conditions the lead choice: AI-creative workflows on a hard deadline, creative strategy and testing on a compounding mandate, and never the cheap end as a career case on its own",
+        "evidence": "\"lean on AI-creative/prompt fluency as the thing you can credibly claim in a conversation this quarter, but commit your actual study hours to creative strategy and testing\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions the user's seven years of watching automated systems as progress toward system judgment, the appreciating skill built from exactly that experience",
+        "evidence": "\"Seven years of that is real, portable depth\" is tied to platform-mechanics transferability, not explicitly connected to system judgment as the appreciating skill.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Expresses the effort axis in time units (an evening, a week, a quarter, years), never in money",
+        "evidence": "\"(effort measured in years/hours/reversibility, never money)\" and \"AI-creative workflows (an evening) \u2192 feed/catalogue work (a week) \u2192 creative testing (a quarter...) \u2192 ... system judgment (years)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to rank B2B against B2C, framing them as two markets a buyer moves between rather than options competing for the same hours",
+        "evidence": "The transcript instead gives a directive verdict ('Bottom line: Take the DTC conversation') without framing B2B/B2C as two non-competing markets.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names several of the skills that transfer unchanged: platform mechanics, bidding logic, tracking and attribution setup, budget pacing, audience construction, testing discipline, unit-economics literacy, diagnostic mindset",
+        "evidence": "'Auction mechanics, bid strategy logic, attribution modeling, incrementality testing \u2014 the math doesn't care what's in the cart... Funnel diagnosis discipline'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the narrow re-learning for the DTC move: creative cadence and high-volume creative testing",
+        "evidence": "'Creative velocity. DTC lives or dies on constant creative testing (UGC, video hooks, iteration speed)... This is your real skill gap, not the channels.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names what changes on the DTC side: channel families (paid social, short-form video, shopping/feed formats) and core metrics (ROAS, MER, contribution margin, CPA rather than pipeline and MQL/SQL)",
+        "evidence": "'Platform mix \u2014 you'll need to get fluent in Meta/TikTok fast; LinkedIn is nearly irrelevant in DTC' and 'Inventory/margin-aware bidding (blended CAC vs. contribution margin...)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects doubling down on hand-optimisation: keyword-by-keyword bidding, manual audience building, manual bid adjustments, and routine reporting are commoditised and no career case should be built on them",
+        "evidence": "'Automated bidding (Performance Max, Advantage+, Smart Bidding) has already eaten the layer of the job that was manual bid/budget tweaking \u2014 that part is dead'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the role shift as moving from keyword manager to system optimizer: upstream in the inputs, mid-campaign in the signals, downstream in the measurement",
+        "evidence": "'Feeding the machine... Reading the machine... Strategy the machine can't do' \u2014 upstream/downstream framing of the changed role.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the appreciating areas: creative strategy and testing, measurement and incrementality, first-party data and feed/catalogue work, AI-creative workflows, and system judgment",
+        "evidence": "'go deep on incrementality testing, MMM, and first-party data/conversion API work rather than doubling down on manual campaign craftsmanship.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the practitioner consensus that creative roadmapping has no AI replacement yet",
+        "evidence": "No such statement about AI and creative roadmapping appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the deliberate contradiction: the cheapest area to pick up (AI-creative workflows, an evening) is also the one commoditising fastest, so it wins an interview this quarter and expires by the next rung",
+        "evidence": "AI-creative workflows are never discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Conditions the lead choice: AI-creative workflows on a hard deadline, creative strategy and testing on a compounding mandate, and never the cheap end as a career case on its own",
+        "evidence": "No such conditional lead-choice framing appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Positions the user's seven years of watching automated systems as progress toward system judgment, the appreciating skill built from exactly that experience",
+        "evidence": "The user's experience is never explicitly reframed as progress toward 'system judgment'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Expresses the effort axis in time units (an evening, a week, a quarter, years), never in money",
+        "evidence": "The transcript gives no time-unit effort estimates (no evenings/weeks/quarters/years) for the recommended skill investments.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

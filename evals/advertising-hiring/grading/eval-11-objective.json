@@ -1,0 +1,58 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Identifies the user as a candidate, not a hiring manager",
+        "evidence": "Title '# 30-60-90 Ramp'... no wait \u2014 this is Section 11: '# Growth Marketer Final Round \u2014 Fintech, $150K Base \u2014 Prep Plan + Scorecard' framed entirely around 'you' preparing to interview: 'The Prep Plan... Day 1 (Sat) \u2014 Orient + bank stories'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes them to the candidate-side sibling skill (advertising-career) for interview prep and progression",
+        "evidence": "No mention of any sibling skill, skill name, or routing instruction appears anywhere in the transcript; the response directly delivers the prep content itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not deliver an employer-side hiring packet (rung decision, req, candidate-evaluation scorecard, ramp) as the response",
+        "evidence": "The entire deliverable is a candidate prep plan and scorecard-to-study-for, not a rung decision/req/candidate-evaluation packet/ramp.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames any guidance offered from the candidate's side, such as what a live account audit round tests",
+        "evidence": "'This is the room's signature round. Rehearse the 5-part spoken structure (below) on a real or example account... Time yourself: ~10 minutes total.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Identifies the user as a candidate, not a hiring manager",
+        "evidence": "\"Interview Prep: Growth Marketer, Fintech ($150k, Final Round + Live Account Audit)\" and the day-by-day plan is written entirely for the person being interviewed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes them to the candidate-side sibling skill (advertising-career) for interview prep and progression",
+        "evidence": "No skill routing or reference to any sibling skill appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not deliver an employer-side hiring packet (rung decision, req, candidate-evaluation scorecard, ramp) as the response",
+        "evidence": "The entire deliverable is a candidate prep plan (research, mock audit, STAR stories, cheat sheet) \u2014 no req, rung decision, or employer scorecard is produced.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames any guidance offered from the candidate's side, such as what a live account audit round tests",
+        "evidence": "\"What 'live account audit' usually tests: They're not grading whether you find the 'right' answer. They're grading whether you think out loud in a structured way under unfamiliar data.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects both positions: neither auto-reject nor assume-it-transfers",
+        "evidence": "'\"reject\" and \"great media buying transfers\" are both the wrong call. This is a probe-and-weight case, not a coin flip'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that buying instincts do not transfer between segments by default",
+        "evidence": "'Those instincts do not transfer well.' (quoting Constant Hire)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends probing and weighting the segment gap in scoring rather than treating it as a disqualifier",
+        "evidence": "'a segment-crossing candidate gets the instincts-transfer probe, weighted \u2014 never an automatic reject.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the instinct set the DTC candidate brings: first-order economics such as ROAS against break-even, contribution margin, CAC, or creative-testing velocity",
+        "evidence": "'Does she reach for cost-per-SQL / cost-per-qualified-lead on her own, or default to ROAS/CAC?' and 'Her six years of creative-testing velocity and scaling discipline are real assets'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names what the B2B seat must own instead: pipeline metrics, cost per qualified lead or cost per SQL over a long cycle",
+        "evidence": "'Does she reach for cost-per-SQL / cost-per-qualified-lead on her own'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes B2B clicks cost several times more yet cost-per-SQL can still win",
+        "evidence": "'does she treat \"clicks cost several times more but cost-per-SQL can still win\" as intuitive'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the documented mis-hire pattern: a DTC buyer optimizing toward first-order conversion on a six-month pipeline",
+        "evidence": "'a named, documented failure mode: DTC buyer optimizing to first-order profitability on a long sales cycle \u2014 sitting right next to its twin'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds a final-round situational probe on lead quality or attribution over a long sales cycle",
+        "evidence": "'\"Our sales cycle is six months. Walk me through how you'd evaluate a channel at day 45, when you have clicks and MQLs but no closed pipeline yet.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the hiring process itself is identical across segments - only the owned instincts and metrics change",
+        "evidence": "No such statement appears; the transcript discusses probe design without asserting the process itself is segment-invariant.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a 3 to 6 month channel-verdict expectation for the ramp if the candidate is hired",
+        "evidence": "The 3-6 month window is only invoked as a scoring criterion during the interview probe ('Does she show patience with a 3\u20136 month channel-verdict window'), not restated as an expectation within the decision-rule/ramp section.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines a watch area around optimizing toward cheap leads or first-order conversions instead of SQL quality",
+        "evidence": "'Flag \"reverting to fast, ROAS-style optimization under pressure\" as a named watch area in her ramp'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the killed-campaign question or the incrementality-versus-attribution probe to test judgment beyond segment familiarity",
+        "evidence": "'Kill-decision: \"Walk me through a campaign you killed, and why.\"' and 'Incrementality probe: \"How do you separate incremental revenue from attribution-modeling noise?\"'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects both positions: neither auto-reject nor assume-it-transfers",
+        "evidence": "\"Both the VP and the CMO are half-right... 'reject' is an overcorrection... the risk isn't competence.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that buying instincts do not transfer between segments by default",
+        "evidence": "\"the two channels optimize for structurally different things\" followed by a list of predictable DTC\u2192B2B failure patterns.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends probing and weighting the segment gap in scoring rather than treating it as a disqualifier",
+        "evidence": "\"None of that is disqualifying. All of it is testable... resolve it as a diagnostic.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the instinct set the DTC candidate brings: first-order economics such as ROAS against break-even, contribution margin, CAC, or creative-testing velocity",
+        "evidence": "\"built attribution systems, managed CAC/LTV tradeoffs under real budget pressure, scaled spend without cratering ROAS, ran creative testing at volume\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names what the B2B seat must own instead: pipeline metrics, cost per qualified lead or cost per SQL over a long cycle",
+        "evidence": "\"the real optimization target (pipeline influenced, not last-click ROAS)... pipeline-influence / MQL-to-SQL / multi-touch attribution concepts\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes B2B clicks cost several times more yet cost-per-SQL can still win",
+        "evidence": "No comparison of click cost multiples between segments appears anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies the documented mis-hire pattern: a DTC buyer optimizing toward first-order conversion on a six-month pipeline",
+        "evidence": "\"People coming from DTC into long-cycle B2B tend to fail... in specific, predictable ways: They over-index on last-click/MER-style metrics...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds a final-round situational probe on lead quality or attribution over a long sales cycle",
+        "evidence": "\"Test sales partnership instinct... have him ask how they'd define a qualified lead jointly with sales, and how they'd handle disagreement over lead quality.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the hiring process itself is identical across segments - only the owned instincts and metrics change",
+        "evidence": "No such meta-statement about process identity across segments appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a 3 to 6 month channel-verdict expectation for the ramp if the candidate is hired",
+        "evidence": "No verdict-timeline expectation is given anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines a watch area around optimizing toward cheap leads or first-order conversions instead of SQL quality",
+        "evidence": "\"They over-index on last-click/MER-style metrics and undervalue upper-funnel/brand or ABM spend because it doesn't show ROI in 30 days.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the killed-campaign question or the incrementality-versus-attribution probe to test judgment beyond segment familiarity",
+        "evidence": "None of the five proposed final-round questions ask about a killed campaign or incrementality-versus-attribution.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

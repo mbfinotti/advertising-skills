@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses a three-day kill window as shorter than the conversion lag, setting a minimum evidence window of 4-6 weeks or longer given the 75-day cycle.",
+        "evidence": "The policy explicitly keeps the 3-day streak: \"cost/SQL above hard floor for 3 consecutive days (your original window \u2014 appropriate here since SQL qualification is fast, unlike the 75-day cycle)\" rather than extending to weeks.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that cost per SQL or CAC read on a short window counts this period's spend against an earlier period's customers, so the two-week spike may be lag rather than economics.",
+        "evidence": "No explanation of a lag mechanism appears; the missing baseline is only noted as \"Current baseline cost per SQL (pre-spike) MISSING \u2014 only known to have doubled\" with no lag reasoning.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the 3x-CPA kill rule as untraceable folklore and declines to present it as a benchmark.",
+        "evidence": "\"'3x CPA' is untraceable folklore, not your economics. No published source derives it \u2014 it's not tied to your 62% margin.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors any spend-based gate to attributed practitioner guidance (such as no activation by $500-1,000 of spend, or 3-4x CPA of spend before judging), labeled as guidance rather than measurement.",
+        "evidence": "The evidence gate (\">=3 days live AND >=15 SQLs\") is labeled \"proposed default, confirm with RevOps\" but is not attributed to any named practitioner source or benchmark figure like $500-1,000.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Designs two independent halt conditions: a consecutive-period streak condition and a budget-burn rate condition, either firing alone.",
+        "evidence": "\"Streak cost/SQL above hard floor for 3 consecutive days\" and \"Rate 25% of the channel's weekly budget spent while above hard floor within any 72h window \u2014 second, independent trigger\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes both a per-period cap and a rolling cumulative cap so a slow bleed inside daily tolerance still trips.",
+        "evidence": "No explicit reasoning connects a per-period cap with a rolling cumulative cap to catch a slow bleed; the monthly cash-cap line states \"cap value pending runway input\" and is not tied to this purpose.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds an evidence gate requiring both a minimum data window and a minimum spend or conversion volume before any kill is allowed.",
+        "evidence": "\"Evidence no halt before the channel has both run >=3 days live in-flight AND generated >=15 SQLs, whichever comes first ... a channel below this bar is held flat, never killed\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the restart condition alongside the halt condition: what must be true, over what window, approved by whom.",
+        "evidence": "The restart line only states \"restart at 50% of prior daily budget once root cause is named and fixed... cap any pause near 7 days before requiring a 'cold-restart' review\" with no named approver for the restart decision itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Routes breaches into three outcomes - allow, review, halt - instead of forcing every breach into an immediate stop.",
+        "evidence": "Layers table: target floor -> \"investigate, weekly review\"; hard floor -> \"automatic halt of the breaching channel\"; break-even -> \"stop, always\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keys the kill evidence on pipeline-stage signals such as SQL-to-closed-won, never raw lead volume.",
+        "evidence": "\"counter-metric: SQL-to-closed-won rate \u2014 catches a channel that gets 'cheaper' by delivering SQLs that never close\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives allowable CAC from contribution per deal, about $14,880 ($24,000 x 62%), instead of accepting the 3x-of-target framing as the ceiling.",
+        "evidence": "\"Contribution per closed-won $14,880 (= $24,000 x 62%)\" and \"Break-even CAC = $14,880 per closed-won deal\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names a kill-decision owner and escalation path outside the team spending the money.",
+        "evidence": "\"Owner CFO owns break-even inputs and the break-even floor / CMO owns the target floor and the hard floor / Execution Media buyer/agency executes; cannot raise its own ceiling\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Specifies fail-closed handling: missing, stale, or broken data holds spend flat and blocks scaling, and is never treated as the number being fine.",
+        "evidence": "\"Fail-closed missing / stale / broken SQL feed data -> hold spend flat, never treat as breach or as clean\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses a three-day kill window as shorter than the conversion lag, setting a minimum evidence window of 4-6 weeks or longer given the 75-day cycle.",
+        "evidence": "The rule keeps a 'trailing 3-day rolling CPSQL' as the operative window rather than extending to 4-6 weeks; it substitutes a leading proxy instead of lengthening the window.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that cost per SQL or CAC read on a short window counts this period's spend against an earlier period's customers, so the two-week spike may be lag rather than economics.",
+        "evidence": "\"True CPA (spend \u00f7 closed-won deals) lags spend by ~75 days... A 3-day CPA reading isn't CPA, it's noise; you'd be measuring deals that closed from spend placed months ago.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 3x-CPA kill rule as untraceable folklore and declines to present it as a benchmark.",
+        "evidence": "The doc explicitly keeps and builds around the CMO's 3x rule: \"The fix isn't to abandon the CMO's instinct \u2014 it's to run the rule on a leading proxy\" and \"Implied CPA > 3\u00d7 Target CPA\".",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Anchors any spend-based gate to attributed practitioner guidance (such as no activation by $500-1,000 of spend, or 3-4x CPA of spend before judging), labeled as guidance rather than measurement.",
+        "evidence": "No practitioner-attributed spend guidance is cited anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Designs two independent halt conditions: a consecutive-period streak condition and a budget-burn rate condition, either firing alone.",
+        "evidence": "The trigger requires CPA>3x AND SQL floor AND 3 consecutive checks (all-AND), with no separate budget-burn-rate condition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes both a per-period cap and a rolling cumulative cap so a slow bleed inside daily tolerance still trips.",
+        "evidence": "Only a rolling 3-day CPSQL window is used; no separate per-period plus cumulative cap structure exists.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds an evidence gate requiring both a minimum data window and a minimum spend or conversion volume before any kill is allowed.",
+        "evidence": "\"Trailing 3-day SQL count \u2265 [floor, e.g. 5]\" combined with \"Require the breach to hold across 3 consecutive rolling checks\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the restart condition alongside the halt condition: what must be true, over what window, approved by whom.",
+        "evidence": "\"## Reactivation - Stay paused until root cause is documented... Reinstate at 25\u201350% of prior budget for a probation period before returning to full spend.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes breaches into three outcomes - allow, review, halt - instead of forcing every breach into an immediate stop.",
+        "evidence": "On trigger the rule states \"Auto-pause the channel (spend \u2192 $0)\" immediately, which is itself an immediate stop rather than a review-first routing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keys the kill evidence on pipeline-stage signals such as SQL-to-closed-won, never raw lead volume.",
+        "evidence": "\"CPSQL (cohort) \u2014 spend \u00f7 SQLs\" and \"SQL\u2192Won rate \u2014 trailing 90-day conversion rate from SQL to closed-won.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives allowable CAC from contribution per deal, about $14,880 ($24,000 x 62%), instead of accepting the 3x-of-target framing as the ceiling.",
+        "evidence": "The doc computes $14,880 but still frames the ceiling via '3x kill threshold on that placeholder \u2248 $14,880 implied CPA' rather than rejecting the 3x-of-target framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names a kill-decision owner and escalation path outside the team spending the money.",
+        "evidence": "\"Rule owner (sets Target CPA, SQL\u2192Won rate): CMO / Growth lead\" \u2014 the same team that spends the money, with no outside owner named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies fail-closed handling: missing, stale, or broken data holds spend flat and blocks scaling, and is never treated as the number being fine.",
+        "evidence": "Staleness is flagged ('a stale rate silently breaks the whole rule') but no explicit fail-closed 'hold spend flat' behavior is specified.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

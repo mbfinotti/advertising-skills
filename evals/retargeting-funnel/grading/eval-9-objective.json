@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags that Meta standard website custom audiences cap at 180 days, so the requested 365-day Meta audience silently becomes a 180-day one - the ceiling truncates, it does not error",
+        "evidence": "\"Meta's retention ceiling for standard website custom audiences is 180 days, not 365 ... Ask for 365 and Meta silently truncates to 180.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes Google's remarketing-list ceiling (540 days, so 365 is possible there) and/or instructs verifying each platform's current retention ceiling against official documentation before building",
+        "evidence": "\"Google's remarketing list ceiling (540 days) survives this better technically, but suffers the same Safari undercounting on the pixel side.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the Safari/iOS constraint: first-party cookies are capped around 7 days on Safari, so pixel-based windows beyond about a week undercount the 55% Apple-heavy traffic",
+        "evidence": "\"Safari caps first-party JS cookies at 7 days ... With 55% of your traffic on Safari/iOS, over half your visitors functionally disappear from a pixel-based audience after about a week\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves long-window membership to CRM-list or first-party uploaded audiences, which persist until removed, instead of the pixel",
+        "evidence": "\"your long-tail retargeting needs to be CRM-list-based, not pixel-based.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the horizon from the CRM lag data given: the 80th percentile near 150 days sets an active-evaluation window on that order, rather than 365 days chosen for width or a 30-day default",
+        "evidence": "\"I'm using 150 days as the active-evaluation horizon\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects book-a-demo-to-everyone as the single message: the direct ask converts intent already present and buys no new belief, so it cannot be the whole sequence",
+        "evidence": "\"Day-2 visitor hasn't built any belief yet; hitting them with your highest-friction ask (a sales-assisted demo) before proof/objection content wastes the impression.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds the B2B ladder in the order proof, objection handling, ROI content, then the direct ask, with no discount rung",
+        "evidence": "\"B2B ladder order is proof \u2192 objection \u2192 ROI \u2192 ask \u2014 you're running only the last rung, on everyone, immediately.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Splits the single audience into behavioural-depth tiers claimed deepest first (pricing or trial signals above feature pages above all visitors), or sequences by CRM deal stage",
+        "evidence": "S1 pricing-page view, S2 feature/product view, S3 'CRM deals in evaluation/proposal' \u2014 depth- and deal-stage-based tiers.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers the ranked privacy mitigations: enhanced or first-party conversion matching as the cheap first move, CRM-list audiences for long windows, server-side event delivery as the heaviest",
+        "evidence": "The transcript only recommends CRM-list audiences for long windows; it never mentions enhanced/first-party conversion matching or server-side event delivery as a ranked set of mitigations.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Excludes current customers on every stage via a list-based exclusion, and makes the surviving stages mutually exclusive",
+        "evidence": "\"Converter/customer exclusion: no expiry (list-based, tied to CRM customer status...)\" applied as EXCL_CUSTOMERS across every RTG_ stage in the exclusion map.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Schedules an incrementality check (for example a 10-20% holdout) as part of the delivered plan, not as an afterthought",
+        "evidence": "\"Incrementality: 10-20% audience holdout on S4 ... for one full sales cycle (~150 days)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that the plan needs the after-exclusion size check against each platform's delivery floor before shipping",
+        "evidence": "\"run the size check after exclusions before building \u2014 and if any stage is under, collapse in this order: widen window \u2192 broaden trigger \u2192 merge adjacent stages \u2192 single warm pool.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags that Meta standard website custom audiences cap at 180 days, so the requested 365-day Meta audience silently becomes a 180-day one - the ceiling truncates, it does not error",
+        "evidence": "'Meta caps website Custom Audience retention at 180 days, not 365 \u2014 the setting will silently truncate.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes Google's remarketing-list ceiling (540 days, so 365 is possible there) and/or instructs verifying each platform's current retention ceiling against official documentation before building",
+        "evidence": "No Google Ads retention ceiling or instruction to verify official docs is given; only Meta's cap and Safari's ITP are discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the Safari/iOS constraint: first-party cookies are capped around 7 days on Safari, so pixel-based windows beyond about a week undercount the 55% Apple-heavy traffic",
+        "evidence": "'Safari's ITP caps JS-set first-party cookies at 7 days... So for the majority of your visitors, the pixel-based membership window is realistically ~7 days, not 180 or 365'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves long-window membership to CRM-list or first-party uploaded audiences, which persist until removed, instead of the pixel",
+        "evidence": "'build Customer Match (Google) and Customer List Custom Audiences (Meta) \u2014 these don't decay with ITP and are the only reliable way to cover a 95\u2013150 day cycle for Safari users.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the horizon from the CRM lag data given: the 80th percentile near 150 days sets an active-evaluation window on that order, rather than 365 days chosen for width or a 30-day default",
+        "evidence": "p80=150 days is cited as a technical concern against the 180-day cap, but no explicit ~150-day window is set as the operative audience horizon in the revised plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects book-a-demo-to-everyone as the single message: the direct ask converts intent already present and buys no new belief, so it cannot be the whole sequence",
+        "evidence": "'A day-2 visitor and a day-340 visitor get the same \"book a demo\" ask... hitting cold traffic with a hard CTA wastes spend and trains people to tune you out.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds the B2B ladder in the order proof, objection handling, ROI content, then the direct ask, with no discount rung",
+        "evidence": "Only three tiers are given ('educational/proof content'\u2192'comparison/ROI content'\u2192'the actual demo CTA'), with no distinct objection-handling stage named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Splits the single audience into behavioural-depth tiers claimed deepest first (pricing or trial signals above feature pages above all visitors), or sequences by CRM deal stage",
+        "evidence": "Tiers are listed shallow-to-deep ('All visitors...\u2192 Engaged...\u2192 High-intent...'), not deepest-first, and no CRM deal-stage sequencing is used.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Offers the ranked privacy mitigations: enhanced or first-party conversion matching as the cheap first move, CRM-list audiences for long windows, server-side event delivery as the heaviest",
+        "evidence": "CAPI, Enhanced Conversions, and Customer Match are all bundled together as one fix with no explicit cost/weight ranking.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Excludes current customers on every stage via a list-based exclusion, and makes the surviving stages mutually exclusive",
+        "evidence": "'exclude closed-won, closed-lost-recent, and open-opportunity contacts' addresses converter exclusion, but no mutual-exclusivity structure between the three new intent tiers is described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Schedules an incrementality check (for example a 10-20% holdout) as part of the delivered plan, not as an afterthought",
+        "evidence": "No incrementality test or holdout is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that the plan needs the after-exclusion size check against each platform's delivery floor before shipping",
+        "evidence": "No audience-size-versus-platform-floor check is discussed.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

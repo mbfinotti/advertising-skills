@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Sizes the seasonality adjustment to the expected conversion-rate lift, not the conversion-count multiple",
+        "evidence": "\"A genuine rate lift (25% off converts a given visitor more often than full price) \u2014 this is the only part that belongs in the adjustment... that ratio is your adjustment input, and it'll land well under 200%.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that conversions tripling does not mean conversion rate triples, since traffic also rises during the sale",
+        "evidence": "\"More traffic (more shoppers searching/clicking because it's BFCM) \u2014 the auction already absorbs this on its own; you don't need to tell the bidder about it... Feeding it the full 3x double-counts the traffic surge on top of what the auction already sees\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns an oversized adjustment causes overspend or budget exhaustion early in the day",
+        "evidence": "\"a 100% adjustment for an expected doubling of conversions blew a full day's budget by late morning, because rate rose far less than count.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Restricts the seasonality-adjustment tool to a short event window (roughly 1-7 days), not a full month",
+        "evidence": "\"Seasonality/conversion-rate adjustments are documented for short spikes (roughly 1-7 days), not month-long stretches.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "For the month-long November pattern, recommends re-deriving the target from seasonal actuals instead of stretching the spike tool",
+        "evidence": "\"Re-derive your bid target from November's own trailing actuals (last year's Nov numbers, or the Oct\u2192Nov delta), then restore the normal target in December. Don't cover it with a stretched adjustment.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects using data exclusions for a demand swing",
+        "evidence": "\"Your BFCM weekend isn't broken data. It's real, valid conversions from a real (temporary) shift in demand and price. Excluding it throws away exactly the signal... Drop the exclusion.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States data exclusions exist for broken or corrupted tracking, not unusual demand",
+        "evidence": "\"data exclusions are outage tooling, for broken tracking \u2014 not for demand swings.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that frequent data exclusions degrade the bidder",
+        "evidence": "\"'Do not conflate the two; frequent exclusions degrade the bidder.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends restoring normal targets/settings after the sale window ends",
+        "evidence": "\"restore the normal target in December\" and \"consider a separate, temporary target move for margin compression if on tCPA/tROAS\" alongside \"Target itself... may need its own temporary move... then restore after the sale.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes a temporary demand swing (loosen, then restore) from a permanent efficiency change (re-derive the target permanently)",
+        "evidence": "The transcript treats both the BFCM adjustment and the November target re-derivation as temporary (restored in December); no scenario of a permanent efficiency change requiring a permanently re-derived target is discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that the 25% sitewide discount changes contribution margin and therefore the break-even/target derivation for the promo period",
+        "evidence": "\"25% off sitewide isn't just a demand event, it's a temporary economics change. If you're running a cost-goal or return-goal (tCPA/tROAS) strategy, break-even shifts down for the discount window because margin per order shrinks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against other concurrent target changes during the promo window",
+        "evidence": "\"batch these as one coordinated change going into the weekend rather than editing piecemeal during it \u2014 a single relearn beats a chain of resets\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Sizes the seasonality adjustment to the expected conversion-rate lift, not the conversion-count multiple",
+        "evidence": "The transcript accepts \"+200% is right for that weekend\" as a direct conversion-rate figure without distinguishing it from a raw conversion-count multiple; it never addresses whether the observed tripling of conversions equals a tripling of conversion rate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that conversions tripling does not mean conversion rate triples, since traffic also rises during the sale",
+        "evidence": "No mention of traffic increasing during BFCM anywhere in the transcript; the piece treats \"triples\" as directly equal to the CVR adjustment (\"Your BFCM weekend genuinely triples (+200% is right for that weekend)\") without caveating for traffic-driven conversion count growth.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns an oversized adjustment causes overspend or budget exhaustion early in the day",
+        "evidence": "The overspend warning given is about the wrong scope (whole month vs event window) \u2014 \"Result: overbidding (and overspending) on the ~26 non-peak days\" \u2014 not about intraday budget exhaustion from an oversized adjustment.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Restricts the seasonality-adjustment tool to a short event window (roughly 1-7 days), not a full month",
+        "evidence": "\"Google's own guidance caps recommended use at 1\u20137 days (14 max)\" and \"Scope the seasonality adjustment tightly to the actual sale window (e.g. Black Friday through Cyber Monday...). Leave the rest of November alone.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "For the month-long November pattern, recommends re-deriving the target from seasonal actuals instead of stretching the spike tool",
+        "evidence": "\"if the non-peak lift is real and sustained, that's a target (tCPA/tROAS) conversation, not a seasonality-adjustment one\" and \"watch tCPA/tROAS daily and nudge targets manually only if it's underdelivering, rather than pre-setting a blanket adjustment.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects using data exclusions for a demand swing",
+        "evidence": "\"Don't exclude BFCM weekend data. Only add a data exclusion if something actually breaks during that window... not for the demand event itself.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States data exclusions exist for broken or corrupted tracking, not unusual demand",
+        "evidence": "\"Data exclusions exist for genuinely anomalous data you don't want the model learning from because it won't recur or doesn't reflect real customer behavior: a tracking outage, a payment processor failure, a site crash, a bugged promo code \u2014 not-representative noise.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that frequent data exclusions degrade the bidder",
+        "evidence": "No statement anywhere about repeated/frequent exclusions harming the bidding algorithm's learning over time.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends restoring normal targets/settings after the sale window ends",
+        "evidence": "\"Set it up a few days ahead, remove it right after.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes a temporary demand swing (loosen, then restore) from a permanent efficiency change (re-derive the target permanently)",
+        "evidence": "BFCM is handled as a temporary, removed-after adjustment (\"remove it right after\"), while the sustained November lift is routed to an ongoing target conversation (\"nudge targets manually... rather than pre-setting a blanket adjustment\"), implicitly separating short-term and sustained handling.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that the 25% sitewide discount changes contribution margin and therefore the break-even/target derivation for the promo period",
+        "evidence": "The discount is mentioned only as a demand driver Smart Bidding should see (\"the 25% discount itself is a real driver Smart Bidding should be allowed to see (it partly explains the CVR lift)\"), with no discussion of margin impact or need to re-derive tCPA/tROAS targets for reduced margin during the promo.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises against other concurrent target changes during the promo window",
+        "evidence": "No instruction to avoid making other concurrent target/settings changes during the BFCM promo window appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Issues a fatigued verdict from the supplied evidence: two leading signals across four consecutive periods, confounders passing, gate cleared",
+        "evidence": "\"verdict : fatigued (not saturating - CVR stable and FTIR healthy rule that out)\" with \"gate cleared with margin\" in the confidence-gate section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the rungs the constraints rule out rather than merely demoting them to the bottom of the list",
+        "evidence": "\"ruled out\" section explicitly removes rung 1, 4/7, 6, 5, 8 each with a stated reason.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rules out the hook swap, naming the departed video editor as the deleting constraint",
+        "evidence": "\"rung 1 (hook swap) - no in-house editor, they left last month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rules out iterating and the new concept, naming the five-week agency lead time against the four-day deadline",
+        "evidence": "\"rung 4 (iterate) & rung 7 (new concept) for the 4-day deadline - agency lead time is 5 weeks, can't land before the board demo\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rules out audience expansion, naming the unavailable legal/lawful-basis sign-off",
+        "evidence": "\"rung 6 (audience expansion) - ...separately blocked: legal is out, no list sign-off available\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats rotation as limited to the single healthy static or rules it out for lack of a challenger bench",
+        "evidence": "action taken is \"budget shift to the healthier creative (the static)\" \u2014 the only other live asset, with no other challengers available.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Selects a same-day surviving action - shifting budget toward the healthy static, optionally with a frequency-cap check - as the highest-ranked remaining rung",
+        "evidence": "\"action : rung 3 - budget shift to the healthier creative (the static), immediate\"; rung 5 (frequency cap) considered and \"not selected: no over-exposure signature\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the still-profitable fatigued video running rather than pausing a producer with nothing staged",
+        "evidence": "\"Don't zero the video out completely: it's still converting at a stable rate... Leave it at a minimal testing weight\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the same-day action buys time and CPA protection, not a fix",
+        "evidence": "\"won't fully recover the video's own trend, because the video itself stays fatigued until the iteration lands\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names every deleted rung with its deleting constraint on the verdict's ruled-out line",
+        "evidence": "Each ruled-out rung (1, 4/7, 6, 5, 8) is listed with its specific blocking reason in the verdict block.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend editing the live video",
+        "evidence": "Only budget-shift and parallel agency briefing are recommended; no edit of the live video is suggested.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends starting replacement production for after the deadline so the deleted rungs return as funded scope rather than silently disappearing",
+        "evidence": "\"Both are QUEUED in parallel, starting today, for the compounding fix (lands ~2026-10-17)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with a re-check one full comparison window after the action",
+        "evidence": "\"re-check : CPL pulse 2026-09-15...; full fatigue re-check on the new mix 2026-10-12 (one 30-day window after the shift)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Issues a fatigued verdict from the supplied evidence: two leading signals across four consecutive periods, confounders passing, gate cleared",
+        "evidence": "'Hook rate down 24%... First-time impression ratio 71%... CPM in line, tracking reconciles, LP untouched, budget flat'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the rungs the constraints rule out rather than merely demoting them to the bottom of the list",
+        "evidence": "Constraints are referenced narratively ('the legal blocker this month is a non-issue here') rather than as an explicit rung-deletion structure",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rules out the hook swap, naming the departed video editor as the deleting constraint",
+        "evidence": "Contrary: the hook swap is recommended as the primary action ('the hook is what's fatigued, so a new hook is the highest-leverage low-effort fix'), not ruled out",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rules out iterating and the new concept, naming the five-week agency lead time against the four-day deadline",
+        "evidence": "States 'Five weeks won't help the demo' but frames the agency brief as starting in parallel, not as a ruled-out rung with the deadline as the named constraint",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rules out audience expansion, naming the unavailable legal/lawful-basis sign-off",
+        "evidence": "Audience is excluded because 'CVR is steady, 71% first-time ratio isn't alarming' (diagnostic reasoning), not because of the legal blocker, though the blocker is mentioned as moot",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats rotation as limited to the single healthy static or rules it out for lack of a challenger bench",
+        "evidence": "Not discussed in these terms",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Selects a same-day surviving action - shifting budget toward the healthy static, optionally with a frequency-cap check - as the highest-ranked remaining rung",
+        "evidence": "'1. Shift budget weight toward the static now... 2. Cap frequency on the video ad set, or lower its budget share'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the still-profitable fatigued video running rather than pausing a producer with nothing staged",
+        "evidence": "'Cap frequency... or lower its budget share, rather than pausing it'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the same-day action buys time and CPA protection, not a fix",
+        "evidence": "'Kicking off the agency brief now shows a real fix is in motion, separate from the stopgap'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names every deleted rung with its deleting constraint on the verdict's ruled-out line",
+        "evidence": "No structured 'ruled-out' line appears anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend editing the live video",
+        "evidence": "Contrary: 'Swap primary text, headline, and CTA on the existing video' directly edits the live ad",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends starting replacement production for after the deadline so the deleted rungs return as funded scope rather than silently disappearing",
+        "evidence": "'Start the agency clock today regardless... a real fix is in motion, separate from the stopgap'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with a re-check one full comparison window after the action",
+        "evidence": "No structured verdict block or dated re-check for the budget-shift action appears",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

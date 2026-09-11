@@ -1,0 +1,38 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Any drafted variants keep message match with the landing page promise of planning a week of meals in 10 minutes.",
+        "evidence": "All six rows carry the destination promise explicitly: `pain_pa_01_v1` (\"plans your whole week of meals in 10 minutes\"), `pain_ma_01_v1` (\"Plan your whole week of meals in 10 minutes, once\"), `mechanism_sa_01_v1` headline (\"Plan a week of meals in 10 min\"), `mechanism_ua_01_v1` (\"Your week, planned in 10 minutes\"), `value_pa_01_v1` (\"your whole week planned in 10 minutes, for $4.99/month\"). The matrix states the destination match up front and the gate column tracks message match per row. Only `value_ma_01_v1` is slightly looser (\"one 10-minute setup... Plan solved\") but still carries the 10-mi",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The drafted variants make genuinely different arguments rather than rewording one claim.",
+        "evidence": "Three angle families are declared (pain/decision fatigue, mechanism/speed, price-value) and only price-value introduces a truly independent argument ($4.99/mo, \"less than one takeout order\"). The four pain and mechanism variants converge on the same underlying claim \u2014 one 10-minute session replaces five nightly decisions: `pain_ma_01_v1` (\"10 minutes now beats 5 scrambles later\"), `mechanism_sa_01_v1` (\"done in about 10 minutes, not spread across five separate decisions\"), `mechanism_ua_01_v1` (\"one 10-minute sit-down\"), `pain_pa_01_v1` (\"decide once, cook all week\"). The differences there are",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Any drafted variants keep message match with the landing page promise of planning a week of meals in 10 minutes.",
+        "evidence": "All six variants anchor on the same core promise: #1 \"Plan your whole week of meals in 10 minutes\"; #2 \"your full week, planned in 10 minutes, for $4.99/month\"; #4 \"literally 10 minutes, start to finish\"; #5 \"10 minutes, one week sorted\"; #6 \"Your week, planned in 10 minutes.\" Even #3, which swaps the number for \"the time it takes to make coffee,\" still promises \"7 days of meals\" in a coffee-brew window, consistent with the 10-minute claim. The response explicitly frames the set as built \"using only what's actually true about Cartwheel today (speed, price, the core promise),\" so no variant dri",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The drafted variants make genuinely different arguments rather than rewording one claim.",
+        "evidence": "Nearly every variant restates the same speed claim with different phrasing rather than a different argument. #4 (\"The fastest way to plan a week of meals \u2014 literally 10 minutes\") is a bare restatement of #1; #5 and #3 are the same speed claim dressed in comparison metaphors (deciding what to watch, making coffee); #6 is #2 with the price moved to the front. Only two distinct angles surface at all \u2014 decision fatigue (#1 \"no decision fatigue\", #3 \"Stop staring at your fridge\") and price (#2, #6 \"$4.99/month\") \u2014 and both ride on top of the same 10-minute hook rather than standing as separate argu",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

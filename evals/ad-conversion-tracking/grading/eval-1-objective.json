@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to sign off tracking on the strength of settings screenshots plus a green tag-debugger result alone",
+        "evidence": "\"A green tag in Tag Assistant is not proof of measurement. It tells you the tag fires \u2014 it tells you nothing about whether the value, currency, or event ID are correct, or whether Google actually received and is recording it. Screenshots of settings screens are the same category of non-evidence: reviewed, not traced.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires at least one real test conversion traced end to end before any GO can issue",
+        "evidence": "Row 3: \"real test conversion, end to end | not done | critical | near-zero | no test lead submitted with a unique QA value, no confirmation it landed in the CRM\"; Fix step 1: \"Submit one real test demo request with a unique identifiable value... confirm it lands wherever demo requests go.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The required trace includes inspecting the actual outgoing event payload, not just observing the tag fire in a debugger",
+        "evidence": "Row 4: \"payload inspection | not done | critical | near-zero | event name/value/currency/event ID never read from the actual request\"; Fix step 2: \"Inspect the payload \u2014 browser network tab or Tag Assistant's event detail: correct event name, value/currency..., a stable event ID.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The required trace includes the test event appearing in the platform UI with correct value and currency",
+        "evidence": "Fix step 3 only checks status flip: \"Recheck the conversion action status in Google Ads. It should flip off 'No recent conversions' within a few hours\" \u2014 no requirement that the platform UI itself show the correct value/currency for the test event; that check is confined to the payload-inspection step (network tab), not the platform UI.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not accept the 'No recent conversions' status on a primary action as a benign pre-launch artifact - treats an unhealthy primary-action status as an automatic NO-GO until it reads healthy",
+        "evidence": "\"'No recent conversions' is an automatic NO-GO, independent of everything else \u2014 the skill treats a primary action in a misconfigured or waiting status as a hard blocker, full stop.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The verdict issued is NO-GO (or GO explicitly withheld), not a conditional or assumed pass",
+        "evidence": "\"## DECISION: NO-GO\" and \"I can't sign this off.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a check that the container/tag works on the live site outside preview or debug mode (published, not only previewed)",
+        "evidence": "Check 3 is explicitly separate from the debug/preview check (row 2) and requires \"Submit one real test demo request... confirm it lands wherever demo requests go (CRM/inbox/whatever 'Demo Request' feeds)\" \u2014 a live production submission distinct from Tag Assistant preview.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Allows a few hours of reporting lag before concluding the test event is missing from the platform UI",
+        "evidence": "\"It should flip off 'No recent conversions' within a few hours of that test firing. If it doesn't, the tag isn't actually reaching Google...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Report distinguishes pass, fail, unknown, and not applicable per check, with unknown never counted as pass",
+        "evidence": "Table uses distinct results: \"pass\", \"not done\", \"fail\", \"unknown\" (row 6, dedup), \"n/a yet\" (rows 7-8), \"blocked\" (row 9) \u2014 unknown/n/a are kept separate from pass and contribute to the NO-GO, not counted as passing.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The decision block names an approver and a date",
+        "evidence": "\"**approver:** \u2014 (withheld) **date:** 2026-09-12\" \u2014 the date is given but the approver is explicitly withheld, not named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not propose launching and monitoring as a substitute - verification completes before any spend starts",
+        "evidence": "\"Run the test conversion today, and paste me the status + payload once you have it \u2014 this is genuinely a same-day fix, not a schedule risk to Monday,\" paired with the overall NO-GO decision and fix-order-before-launch structure; no suggestion to launch and watch reporting instead.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to sign off tracking on the strength of settings screenshots plus a green tag-debugger result alone",
+        "evidence": "\"I can't sign that line off yet\" ... \"Tag Assistant showing 'green' only proves the tag fires when you manually trigger it in test mode on that page. It does not prove: The tag fires the same way for real users... The conversion is being recorded server-side by Google...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires at least one real test conversion traced end to end before any GO can issue",
+        "evidence": "\"Send one real test conversion end-to-end: submit an actual demo request through the live site (not a direct hit on the thank-you URL), then confirm it appears in Google Ads under Conversions \u2192 Demo Request within 24h\" and the checklist line states \"Action before launch: run one real end-to-end test conversion... Sign-off pending that confirmation.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The required trace includes inspecting the actual outgoing event payload, not just observing the tag fire in a debugger",
+        "evidence": "No mention anywhere of inspecting the network request/event payload (e.g., via browser devtools Network tab or GTM Preview's data layer values); the verification steps only cover live-site submission, Ads UI appearance, GA4 cross-check, GTM publish status, and consent-mode gating.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The required trace includes the test event appearing in the platform UI with correct value and currency",
+        "evidence": "The transcript only asks to \"confirm it appears in Google Ads under Conversions \u2192 Demo Request within 24h\" \u2014 it never mentions checking that the recorded conversion has the correct value or currency.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not accept the 'No recent conversions' status on a primary action as a benign pre-launch artifact - treats an unhealthy primary-action status as an automatic NO-GO until it reads healthy",
+        "evidence": "\"'No recent conversions' is the actual problem, not a side detail explained away by 'we haven't launched.'\" and the checklist marks it \"\ud83d\udd34 Tracking \u2014 NOT verified\" with sign-off explicitly \"pending that confirmation.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The verdict issued is NO-GO (or GO explicitly withheld), not a conditional or assumed pass",
+        "evidence": "\"I can't sign that line off yet\" and the checklist line reads \"\ud83d\udd34 Tracking \u2014 NOT verified... Sign-off pending that confirmation,\" explicitly withholding approval rather than assuming a pass.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a check that the container/tag works on the live site outside preview or debug mode (published, not only previewed)",
+        "evidence": "\"Check GTM publish status: confirm the container version with this tag is the live published version, not just saved in workspace.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Allows a few hours of reporting lag before concluding the test event is missing from the platform UI",
+        "evidence": "\"then confirm it appears in Google Ads under Conversions \u2192 Demo Request within 24h (Ads conversions are not instant \u2014 allow up to a day)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Report distinguishes pass, fail, unknown, and not applicable per check, with unknown never counted as pass",
+        "evidence": "The transcript presents only a single checklist line for the tracking item (marked \"\ud83d\udd34 NOT verified\"); there is no broader report with multiple checks explicitly categorized as pass/fail/unknown/N-A.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The decision block names an approver and a date",
+        "evidence": "No approver name or date appears anywhere in the transcript; the checklist line and closing paragraph contain no attribution or dating.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not propose launching and monitoring as a substitute - verification completes before any spend starts",
+        "evidence": "The recommended checklist explicitly makes verification an \"Action before launch\" with \"Sign-off pending that confirmation,\" rather than suggesting the campaign launch and tracking be monitored afterward.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Scopes the output to identifying which creatives, if any, need action rather than scheduling a wholesale refresh",
+        "evidence": "The response opens by explicitly rejecting the wholesale-refresh default: 'The headline call: don't replace all 28 next month. Replace by concept, on evidence, staggered.' It gives five concrete reasons why 'refresh all 28' is wrong (wrong unit of analysis, Advantage+ masking, no confounder screen, mass relaunch resets learning, skips cheaper rungs). Phase 0 is a confounder screen where 'Any FAIL here ends the fatigue inquiry and redirects the fix \u2014 it does not greenlight a refresh,' preserving the 'if any' branch. Phase 1 issues a per-concept Fatigue Verdict with a 'healthy | confounded | ins",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Scopes the output to identifying which creatives, if any, need action rather than scheduling a wholesale refresh",
+        "evidence": "Partial credit. The response does front-load diagnosis: \u00a70 challenges the brief ('treats symptom as if it were the diagnosis', warns about no counterfactual and learning reset), and \u00a71 'Diagnose before building (Days 1\u20133)' proposes a real per-concept triage on frequency, CPM, CTR, hook rate, CPA and spend share, with a tier table (\ud83d\udfe2 keep-live / \ud83d\udfe0 fatigued winner / \ud83d\udd34 dead weight) and per-tier actions including 'Do NOT touch yet' and 'Kill immediately, don't bother refreshing'. That is genuine per-creative scoping.\n\nBut the deliverable is still explicitly a wholesale refresh schedule, not a scop",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

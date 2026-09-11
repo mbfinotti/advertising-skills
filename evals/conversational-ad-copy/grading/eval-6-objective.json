@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response states that roughly 8 conversions a month is far too low for copy-level statistical significance inside 4 weeks - that read takes months at minimum.",
+        "evidence": "\"conversion volume too low for copy-level significance for months... read delivery, click-through, and demo-request quality quarterly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The pick-a-winner-on-conversions plan is replaced with the reads that survive low volume: delivery, click-through against the account's own trailing numbers, and downstream lead quality.",
+        "evidence": "Measurement plan lists \"Delivery across the situation descriptions\", \"Click-through vs. your own trailing numbers\", \"Demo-request quality, read quarterly\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lead quality is framed as a quarterly read, matching the quarterly deal cycle.",
+        "evidence": "\"Demo-request quality, read quarterly, not at week 4 \u2014 matches your actual deal cycle\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 6-variant launch is cut to at most 2-3 variants, and any test is sized before money moves, with the matrix routed to a variant or test-plan exercise rather than run ad hoc in this slot.",
+        "evidence": "\"run at 2-3 variants max via a dedicated test-plan skill, only once delivery and click-through have stabilized\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 4-week deadline is named as deleting the sized test outright rather than shrinking it.",
+        "evidence": "\"Six variants, winner picked on conversions after 4 weeks \u2014 kill this... Six variants now is scope this flight can't afford; name it as parked, not dropped.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "'Limited onboarding slots for Q4' is removed as manufactured urgency, or required to be evidenced as a genuine dated constraint before use.",
+        "evidence": "\"'limited onboarding slots for Q4' | UNSOURCED \u2014 held, not written around. No capacity data supplied. Reintroduce only with a real, dated constraint\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Expectations are reset: the slot opens a research cycle for a $120k B2B purchase, it does not close a deal in the chat.",
+        "evidence": "\"A response slot next to a $120k decision doesn't close anything; it opens a research thread.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The shipped line hands the reader a quantified outcome to carry into an internal case - the 6-weeks-to-9-days figure.",
+        "evidence": "\"Title: 'Audit prep: 6 weeks to 9 days'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "That figure is attributed to the 2026 study across 14 hospital networks and dated in a grounding table or claim-to-source mapping.",
+        "evidence": "\"'6 weeks to 9 days' / '14 hospital networks' / 2026 | 2026 audit-cycle study across 14 hospital networks (user-supplied) \u2014 review date: 12 months out (2027-09)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The slot carries a single angle anchored to the supplied study, one idea only.",
+        "evidence": "\"Slot copy \u2014 one angle, one idea: audit-prep time, sourced.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The situation description is written as Persona + Intent + Scope prose about a hospital-network compliance evaluator, not a keyword string.",
+        "evidence": "\"A compliance or quality leader at a hospital network preparing for an upcoming accreditation or regulatory audit, looking for software to cut audit-prep time and build a case for leadership.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response states that roughly 8 conversions a month is far too low for copy-level statistical significance inside 4 weeks - that read takes months at minimum.",
+        "evidence": "\"Sablewood gets ~8 demo requests/month across *all* channels today... Splitting into 6 variants from day one means each arm could see single-digit conversions after 4 weeks: not enough to call a statistically meaningful winner, only noise dressed up as a decision.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The pick-a-winner-on-conversions plan is replaced with the reads that survive low volume: delivery, click-through against the account's own trailing numbers, and downstream lead quality.",
+        "evidence": "CTR is used as an early-read metric and lead quality is tracked downstream, but no benchmarking against 'the account's own trailing numbers' or delivery is discussed since this is a brand-new placement with no history.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Lead quality is framed as a quarterly read, matching the quarterly deal cycle.",
+        "evidence": "\"track SQL\u2192opportunity\u2192close rate by originating variant over the following quarter\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 6-variant launch is cut to at most 2-3 variants, and any test is sized before money moves, with the matrix routed to a variant or test-plan exercise rather than run ad hoc in this slot.",
+        "evidence": "\"## Test plan (revised: 3 variants, not 6)\" presented as its own dedicated section sizing the test (\"~15\u201320+ conversions per arm before trusting a gap\") before launch.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 4-week deadline is named as deleting the sized test outright rather than shrinking it.",
+        "evidence": "The response keeps a 4-week test window and merely reduces variant count / allows extension (\"don't force a call \u2014 extend the test\"), rather than deleting the sized test outright.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "'Limited onboarding slots for Q4' is removed as manufactured urgency, or required to be evidenced as a genuine dated constraint before use.",
+        "evidence": "\"I didn't put it in the variants above because if it's not true, it's a false-scarcity claim... If Q4 onboarding capacity genuinely is limited, tell me the real number/date and I'll add a Variant D\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Expectations are reset: the slot opens a research cycle for a $120k B2B purchase, it does not close a deal in the chat.",
+        "evidence": "\"Because ACV is ~$120k and the deal cycle runs a quarter, don't wait for closed-won to judge the ad \u2014 demo bookings are the right 4-week signal.\" CTA is \"Book a demo\", not a purchase.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The shipped line hands the reader a quantified outcome to carry into an internal case - the 6-weeks-to-9-days figure.",
+        "evidence": "\"9 days, not 6 weeks. Across 14 hospital networks in 2026, Sablewood cut audit prep from 6 weeks to 9 days.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "That figure is attributed to the 2026 study across 14 hospital networks and dated in a grounding table or claim-to-source mapping.",
+        "evidence": "\"Across 14 hospital networks in 2026, Sablewood cut audit prep from 6 weeks to 9 days\" plus the closing sourcing question: \"is the 2026 study Sablewood's own, or independent/third-party?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The slot carries a single angle anchored to the supplied study, one idea only.",
+        "evidence": "Each variant (A, B, C) centers on a single stat-anchored idea, e.g. Variant A: \"9 days, not 6 weeks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The situation description is written as Persona + Intent + Scope prose about a hospital-network compliance evaluator, not a keyword string.",
+        "evidence": "No targeting/situation-description field is addressed anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

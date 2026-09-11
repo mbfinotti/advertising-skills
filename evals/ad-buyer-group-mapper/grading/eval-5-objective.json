@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects urgency and countdown-style messaging for the economic buyer and gatekeepers, recommending risk-reduction and proof instead",
+        "evidence": "\"Countdown/urgency framing for the CFO and the security reviewer \u2014 deleted, not softened... this is the direct evidence-based fix for both named problems\" and \u00a73: \"the proposed fix (countdown urgency, CFO + security reviewer, all gated) makes both worse, not better\" with the recommendation to \"ship it as a self-paced calculator/benchmark the buyer controls, and pair it everywhere with proof that the known stall points (security, consensus) are retired.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States 40-60% of deals end in no-decision and about 56% of those are lost to indecision (fear of messing up) rather than status-quo preference, which is why amplifying urgency backfires",
+        "evidence": "\"matches the published pattern almost exactly: 40-60% of B2B deals end in no-decision, and 56% of those are fear-of-messing-up (indecision), not preference for the status quo. Urgency/countdown pressure is evidenced to *backfire* on indecision\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reaching security, legal, and procurement before the validation stage, noting a security reviewer added late can reopen requirements and reset agreed work",
+        "evidence": "The transcript only treats the security/InfoSec reviewer as a gatekeeper role to move earlier (\"reset agreed work... The fix isn't an ad \u2014 it's moving the security/compliance pack earlier\"); legal appears only once in passing (\"security/legal sign-off on the compliance pack\") and procurement is never mentioned as a role or recommendation at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Calls reaching validation-stage roles before validation the cheapest insurance in the map",
+        "evidence": "No such phrase or equivalent claim appears anywhere in the transcript; the closest is calling moving the gatekeeper earlier \"the single highest-leverage fix for failure pattern #1,\" not \"cheapest insurance.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Models the journey as six looping buying jobs that roughly 90% of buyers revisit, not a linear funnel",
+        "evidence": "\"Mapped to the six buying jobs, not a linear funnel (90% of buyers loop back)\" followed by a table of six buying jobs: Problem identification, Requirements building, Supplier selection, Business case, Validation, Consensus creation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects gating the content behind forms, citing that fewer than 30% of eventual buyers ever fill a form on the winning vendor's site",
+        "evidence": "\"'Gate everything behind a form' \u2014 deleted as a blanket rule\" and later: \"fewer than 30% of eventual buyers ever fill out a form on the winning vendor's site. Two-tier it instead...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites that roughly 70% of the journey completes before any seller contact and/or that 81-84% of deals go to the first vendor contacted, so ungated content and paid reach must carry the pre-contact phase",
+        "evidence": "\"don't gate the full committee cold against all 300 accounts \u2014 70% of the journey completes before any seller contact\" and \"Ungated, always: the security/compliance pack, the architecture doc, the planner demo invite \u2014 these carry the pre-contact phase\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Maps arrival order: end users and the initiator at problem identification, the economic buyer at the business case, gatekeepers at validation",
+        "evidence": "Sequencing table: \"Problem identification | Champion/Initiator, End user\", \"Business case | Economic buyer (CFO) | Risk-reduction calculator\", \"Validation | Security gatekeeper (confirmation only \u2014 they should already be engaged)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites that 79% of purchases require CFO approval when placing the economic buyer",
+        "evidence": "\"Evidenced by brief (leadership named CFO explicitly) + matches the published 79%-CFO-approval band\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns the security gatekeeper an ungated compliance/security documentation pack, delivered before the validation stage",
+        "evidence": "Role map row: \"Compliance/security pack (SOC 2, pen-test summary, DPA template), ungated\"; sequencing table: \"Supplier selection | Security gatekeeper (moved up from validation) | The single highest-leverage fix... reach them here, ungated, before they'd otherwise show up cold at month five\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges per-role creative defensible under the thresholds, since about 300 named accounts and $150K ACV clear both",
+        "evidence": "\"300 named accounts clears the <500-account threshold and $150K ACV clears the >$100K threshold \u2014 both conditions independently... Per-role creative is economically defensible here.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gates committee-wide multi-role targeting on account-level intent or engagement (surging or engaged accounts), not a cold industry-wide list",
+        "evidence": "The only intent/engagement-gated element described is a single content asset (\"Gated, selectively: the deeper ROI/benchmark report for the CFO, once an account shows two engagements or lands on the intent-ranked/inbound list\"), not the committee-wide multi-role targeting itself, which is instead run against the full named-300 account list with engagement-objective campaign settings.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a sequencing-notes section mapping which roles to reach at which buying job and where risk reduction replaces urgency",
+        "evidence": "Section \"4. Sequencing notes\" contains a table of buying jobs to roles reached, including \"Consensus creation | All roles, weighted toward risk reduction for CFO + gatekeeper specifically | This is where no-decision gets prevented, not where urgency gets applied\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects urgency and countdown-style messaging for the economic buyer and gatekeepers, recommending risk-reduction and proof instead",
+        "evidence": "\"Countdown messaging pressures people who are already engaged \u2014 it does nothing for a security reviewer who was never looped in until month 5, and it does nothing for a champion who lost the room because no economic buyer ever showed up\" and Phase 3 message to CFO uses \"cost-of-delay framed against their own numbers\" tied to a \"real, confirmed deadline\" with proof (ROI model, SOC2 report, architecture diagrams) required throughout the committee map.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States 40-60% of deals end in no-decision and about 56% of those are lost to indecision (fear of messing up) rather than status-quo preference, which is why amplifying urgency backfires",
+        "evidence": "No statistics on no-decision rate or the 56% indecision figure appear anywhere in the transcript; the document explicitly says it lacks source data (\"I don't have the 30 call recordings/win-loss notes in front of me\") and never cites such percentages.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends reaching security, legal, and procurement before the validation stage, noting a security reviewer added late can reopen requirements and reset agreed work",
+        "evidence": "\"Pull the Security Reviewer to Stage 1... Run Legal and Security in parallel, not sequentially after Procurement\" and \"Late entry = re-litigating scope, timeline, sometimes price, after everyone else is already sold\" (Security Reviewer row, 'What kills the deal if mishandled' column).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Calls reaching validation-stage roles before validation the cheapest insurance in the map",
+        "evidence": "The transcript never uses the phrase \"cheapest insurance\" or an equivalent framing; it calls the ungated security packet \"the single highest-leverage move against the month-5 problem\" but does not characterize early outreach as insurance.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Models the journey as six looping buying jobs that roughly 90% of buyers revisit, not a linear funnel",
+        "evidence": "The transcript uses a phased sequential model (Phase 0 through Phase 4) and a committee-map/month-based timeline; there is no mention of 'six buying jobs', looping non-linear stages, or a 90% revisit statistic.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects gating the content behind forms, citing that fewer than 30% of eventual buyers ever fill a form on the winning vendor's site",
+        "evidence": "The transcript does reject gating top-of-funnel content ('Gating: none... A security reviewer researching a vendor mid-eval and hitting a lead-gen form reads as a vendor with something to hide') but never cites the '<30% fill a form' statistic or any similar figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites that roughly 70% of the journey completes before any seller contact and/or that 81-84% of deals go to the first vendor contacted, so ungated content and paid reach must carry the pre-contact phase",
+        "evidence": "No such statistics (70% pre-contact completion, 81-84% first-vendor-contacted) appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps arrival order: end users and the initiator at problem identification, the economic buyer at the business case, gatekeepers at validation",
+        "evidence": "The committee map instead assigns 'Champion / Initiator' to Month 0, 'End Users' to Month 2-4, and does not use 'problem identification'/'business case'/'validation' stage terminology at all; it is organized by calendar month, not named buying jobs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites that 79% of purchases require CFO approval when placing the economic buyer",
+        "evidence": "The transcript names CFO as the likely Economic Buyer but never cites a 79% statistic or any percentage regarding CFO approval requirements.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns the security gatekeeper an ungated compliance/security documentation pack, delivered before the validation stage",
+        "evidence": "\"Publish a self-serve security packet, ungated. SOC2 summary, subprocessor list, architecture overview\" and in Phase 1 (before any opportunity/validation stage): \"Security trust page (SOC2 badge, security overview, architecture summary) live and crawlable\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Judges per-role creative defensible under the thresholds, since about 300 named accounts and $150K ACV clear both",
+        "evidence": "The transcript does note the account count and deal size ('300 named accounts is an ABM list, not a lead-gen funnel', '$150K supply-chain-planning purchase') but never references specific thresholds or explicitly judges per-role creative as 'defensible under the thresholds'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gates committee-wide multi-role targeting on account-level intent or engagement (surging or engaged accounts), not a cold industry-wide list",
+        "evidence": "Phase 1 targets \"the 300 named accounts\" broadly with account-based ads, and success is measured by \"account-level engagement (site visits, security page views) from target accounts\"; Phase 2 explicitly narrows to \"accounts in open pipeline\" \u2014 this is account-based sequencing by engagement/pipeline stage rather than a cold industry-wide list, satisfying the spirit of gating on account-level status.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a sequencing-notes section mapping which roles to reach at which buying job and where risk reduction replaces urgency",
+        "evidence": "Section '3. Campaign Sequencing' with Phases 0-4 explicitly maps roles (Champion, EB, Security Reviewer) to phases, and states 'Countdown/urgency creative is used exactly once, in Phase 3, and only against a verified real deadline' while risk-reduction proof (security packet, ROI model) is used everywhere else.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

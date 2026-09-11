@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response works in channel-family vocabulary (paid search, paid social, B2B professional networks) rather than framing the decision inside one vendor's product names.",
+        "evidence": "Every row in both the deleted-channels table and the ranked-candidates table is a family: 'Retail media', 'Podcast/audio', 'Connected TV', 'Short-form video', 'Paid social prospecting', 'Paid search', 'B2B professional networks (LinkedIn-type)'. The primary recommendation is 'Paid search, scoped to Scale-fit intent keywords' \u2014 no Google Ads/Microsoft Ads product framing, no campaign-type or vendor UI vocabulary. Vendor names appear only as parenthetical exemplars subordinated to the family label ('LinkedIn-type', 'Paid review listings (G2/Capterra)'), and the second-channel trigger is likewise",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response works in channel-family vocabulary (paid search, paid social, B2B professional networks) rather than framing the decision inside one vendor's product names.",
+        "evidence": "The decision is framed vendor-first throughout: the section is titled 'So: which platform?' and the answer is delivered as brand names \u2014 'Not Meta or TikTok, and not broad Google Display', '**LinkedIn Ads**', '**Google Search**'. Category terms like 'paid search', 'paid social', or 'B2B professional networks' never appear. Partial credit because each recommendation is justified by a channel-family mechanism rather than a product feature ('the only major ad platform that lets you bias spend toward accounts that look like Scale buyers', 'bottom-funnel commercial-intent keywords... high-intent tr",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

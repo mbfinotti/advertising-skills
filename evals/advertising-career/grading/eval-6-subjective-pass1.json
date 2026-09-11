@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recommends bringing a prioritised point of view instead of a checklist walkthrough",
+        "evidence": "The entire response is built on this recommendation. It opens by naming the tool-report walkthrough as the failure mode ('reads as a lack of independent judgment'), then says explicitly: 'Keep the tool. Change what you present... build your own prioritized point of view on top of it. The deliverable they're grading is your judgment, not the tool's coverage.' The structure operationalises it: a dedicated 'Prioritised recommendation \u2014 8 min' section with 'top three changes, ranked by expected impact'; instructions to 'collapse them into 2-3 dollar-weighted findings, not a scrolling list' and 'cl",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recommends bringing a prioritised point of view instead of a checklist walkthrough",
+        "evidence": "The transcript's central thesis is exactly this: 'A 40-point checklist read top-to-bottom in 45 minutes is a data dump, not an audit' and 'Structure the walkthrough to demonstrate that, not to complete the checklist.' Section 4 instructs 'Don't go in checklist order' and re-sorts the 40 points into \ud83d\udd34 account-breaking / \ud83d\udfe0 meaningful / \ud83d\udfe2 hygiene buckets with time budget 'proportional to impact, not proportional to checklist length' \u2014 explicitly naming this sorting as 'the skill they're testing.' Section 3 opens with a health snapshot 'before the 40 points', section 6 closes 'with a plan, not a l",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

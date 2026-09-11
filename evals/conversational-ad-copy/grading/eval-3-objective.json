@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response asks the user for the placement's current field limits from their own ads manager rather than asserting character limits from memory, or explicitly marks any cited limit as stale and requiring verification before use.",
+        "evidence": "\"I used the vendor-documented spec since you don't have it open; re-paste the current numbers before this ships, they go stale weekly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to write 'trusted by 20,000 freelancers' because no source supports it.",
+        "evidence": "\"'trusted by 20,000 freelancers' | none supplied | UNSOURCED \u2014 held.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No customer quote or testimonial is invented anywhere in the output.",
+        "evidence": "\"customer quote | none supplied | UNSOURCED \u2014 held. A real, permissioned quote can go in on the next iteration\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The unsupported popularity claim is labelled UNSOURCED and held - it is not softened into a vaguer substitute such as 'thousands of freelancers' or 'a popular choice'.",
+        "evidence": "Grounding table marks it \"UNSOURCED \u2014 held\"; shipped copy uses only \"median 6 minutes\", no vaguer substitute like 'many freelancers' appears.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The shipped copy is built on the supplied 6-minute median from the July 2026 support-ticket analysis.",
+        "evidence": "\"Quillhatch flags risky contract clauses in a median 6 minutes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 6-minute claim is dated and assigned a review date.",
+        "evidence": "\"sourced, dated 2026-07 \u2014 **review date: 2027-01-31**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A grounding table or claim-to-source mapping covers every claim in the shipped copy.",
+        "evidence": "Table lists both \"flags risky contract clauses\" and \"median 6 minutes\" as sourced.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The copy uses the specific figure rather than adjectives like 'fast' or 'powerful'.",
+        "evidence": "Title: \"Spot risky clauses fast\" \u2014 uses the adjective \"fast\" rather than a specific figure, contradicting the criterion even though the Copy line uses \"median 6 minutes\".",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The copy contains no hedged language such as 'may help' or 'could potentially'.",
+        "evidence": "\"Quillhatch flags risky contract clauses in a median 6 minutes.\" \u2014 no hedging language present.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The copy names Quillhatch and makes full sense lifted out of the conversation thread.",
+        "evidence": "\"Quillhatch flags risky contract clauses in a median 6 minutes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The line reads as a recommendation, with no interruption pattern or urgency injected.",
+        "evidence": "\"8. Recommendation register, no manufactured urgency \u2713\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A quotability gate result is included showing pass/fail per check for the shipped line.",
+        "evidence": "\"Quotability gate \u2014 9/10, one open item\" with items 1-10 each marked \u2713 or 'open'.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response asks the user for the placement's current field limits from their own ads manager rather than asserting character limits from memory, or explicitly marks any cited limit as stale and requiring verification before use.",
+        "evidence": "\"I don't have verified specs for an 'in-assistant sponsored card' format... used the widths most self-serve ad platforms converge on... as a *placeholder*, flagged inline. Swap in the real limits from the ads manager before you submit.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to write 'trusted by 20,000 freelancers' because no source supports it.",
+        "evidence": "\"Cut: 'trusted by 20,000 freelancers.' You told me directly there's no data behind that number \u2014 it's invented... I won't draft copy with it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No customer quote or testimonial is invented anywhere in the output.",
+        "evidence": "\"Cut: the customer quote... Otherwise I'm not inventing one.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The unsupported popularity claim is labelled UNSOURCED and held - it is not softened into a vaguer substitute such as 'thousands of freelancers' or 'a popular choice'.",
+        "evidence": "The claim is entirely cut (\"it's invented... I'd suggest not shipping it from anywhere else either\"), not replaced with a vaguer version like \"thousands of freelancers\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The shipped copy is built on the supplied 6-minute median from the July 2026 support-ticket analysis.",
+        "evidence": "\"Kept: the July 2026 support-ticket stat. 'Median 6 minutes to flag a risky clause' is real, specific, and defensible... Built the copy around it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 6-minute claim is dated and assigned a review date.",
+        "evidence": "The transcript dates the claim (\"July 2026\") but never assigns a review date \u2014 it only poses an open question: \"Is 'median 6 minutes' from a large enough ticket sample to stand behind publicly?\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A grounding table or claim-to-source mapping covers every claim in the shipped copy.",
+        "evidence": "No table exists; sourcing is only loosely mentioned inline for Option B (\"per our own support data\"), not systematically for all claims/options.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The copy uses the specific figure rather than adjectives like 'fast' or 'powerful'.",
+        "evidence": "Option B reads \"Quillhatch flags risky clauses fast \u2014 median 6 minutes, per our own support data,\" mixing the specific figure with the vague adjective 'fast'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The copy contains no hedged language such as 'may help' or 'could potentially'.",
+        "evidence": "None of the options use hedging language such as 'may' or 'could potentially'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The copy names Quillhatch and makes full sense lifted out of the conversation thread.",
+        "evidence": "\"Quillhatch: Catch Risky Clauses\" (Option A headline) stands alone and names the product.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The line reads as a recommendation, with no interruption pattern or urgency injected.",
+        "evidence": "All three options are plain descriptive/recommendation copy with no urgency or interruption language.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A quotability gate result is included showing pass/fail per check for the shipped line.",
+        "evidence": "No quotability gate or per-check pass/fail result appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

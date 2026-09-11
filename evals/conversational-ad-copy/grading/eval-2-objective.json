@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response declines to trim the search line and rewrites from the reader's situation instead, stating why a trim fails on this surface.",
+        "evidence": "\"the search line wasn't trimmed \u2014 it was rewritten... fails on three separate grounds, not just length\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "'#1 Project Management Tool' is flagged as an unsupported superlative and appears in no shipped line.",
+        "evidence": "\"'#1 Project Management Tool' (from original search ad) | None supplied | UNSOURCED \u2014 dropped, not carried into the card\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 'Ends Tonight' countdown is removed as manufactured urgency; if the offer is used at all, it carries its real March 31, 2026 end date.",
+        "evidence": "\"'30% off \u2014 Ends Tonight' ... Inaccurate as originally worded \u2014 dropped\" ... \"Brightgale: project management software, 30% off through March 31, 2026.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Title and copy are delivered within the pasted 50 and 100 character limits, with character counts shown for each line.",
+        "evidence": "\"Title: ... (38/50 chars)\" and \"Copy: ... (93/100 chars)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The shipped copy line names Brightgale explicitly, with no pronoun carrying the product reference.",
+        "evidence": "\"Brightgale: 210 customers shipped their first project plan in under 20 minutes (2026 survey).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The slot copy carries exactly one idea; the discount and the 20-minute onboarding claim are not bundled into a single line.",
+        "evidence": "\"Why this angle over the discount: ... The discount is real but time-bound and better suited to its own tested variant (see below) than to bundling with the speed claim.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The copy line leads with the claim, with support after.",
+        "evidence": "\"Title: First project plan in under 20 minutes\" then \"Copy: Brightgale: 210 customers shipped their first project plan in under 20 minutes (2026 survey).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The targeting field is written as Persona + Intent + Scope situation prose - who the person is, what decision they are making, what narrows it to the category - not a keyword string, within 280 characters.",
+        "evidence": "\"A team lead choosing project management software after past tools took weeks to configure, needing the team executing on a real plan within a day.\" (146 chars)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "One or two alternate situation descriptions are supplied for delivery diagnosis.",
+        "evidence": "\"Alternate, for delivery diagnosis: 'A manager comparing project management tools after one buried a simple plan under setup screens...'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The under-20-minutes claim is traced to the 2026 survey of 210 customers in a grounding table or equivalent claim-to-source mapping.",
+        "evidence": "\"'210 customers' / '2026 survey' | 2026 onboarding survey, 210 customers, supplied by user | Sourced\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A quotability gate of 10 explicit checks is run on the shipped line with a stated pass bar of 9 out of 10.",
+        "evidence": "Gate is titled \"Quotability gate \u2014 10/10\" with all 10 items passing; no statement of a 9/10 pass threshold appears anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No line is silently truncated to fit: any over-limit draft is shown with its count alongside a trimmed alternative for the user to choose.",
+        "evidence": "No over-limit draft appears in this transcript \u2014 all shipped lines are already within limits (38/50, 93/100), so no such trimming demonstration is shown.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response declines to trim the search line and rewrites from the reader's situation instead, stating why a trim fails on this surface.",
+        "evidence": "\"Before handing over fields, two things in the source ad don't survive a straight trim \u2014 flagging them rather than silently carrying them over\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "'#1 Project Management Tool' is flagged as an unsupported superlative and appears in no shipped line.",
+        "evidence": "\"'#1 Project Management Tool' isn't backed by the evidence you gave me... I dropped the #1 claim rather than carry forward a claim with no substantiation behind it.\" \u2014 absent from Title/Copy/Targeting.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 'Ends Tonight' countdown is removed as manufactured urgency; if the offer is used at all, it carries its real March 31, 2026 end date.",
+        "evidence": "\"'Ends Tonight' is false. The 30% discount runs through March 31, 2026, not tonight.\" and copy reads \"30% off through Mar 31, 2026.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Title and copy are delivered within the pasted 50 and 100 character limits, with character counts shown for each line.",
+        "evidence": "\"Title (45/50 chars)\" and \"Copy (81/100 chars)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The shipped copy line names Brightgale explicitly, with no pronoun carrying the product reference.",
+        "evidence": "Copy line reads \"210 teams shipped their first plan in under 20 min. 30% off through Mar 31, 2026.\" \u2014 no mention of Brightgale (only the Title field names it).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The slot copy carries exactly one idea; the discount and the 20-minute onboarding claim are not bundled into a single line.",
+        "evidence": "The Copy line combines both: \"210 teams shipped their first plan in under 20 min. 30% off through Mar 31, 2026.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The copy line leads with the claim, with support after.",
+        "evidence": "The line bundles two independent claims (onboarding stat + discount) rather than a claim followed by supporting detail.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The targeting field is written as Persona + Intent + Scope situation prose - who the person is, what decision they are making, what narrows it to the category - not a keyword string, within 280 characters.",
+        "evidence": "\"Target small and mid-sized team leads and project managers researching project management software, especially those comparing tools for faster onboarding...\" (250/280)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "One or two alternate situation descriptions are supplied for delivery diagnosis.",
+        "evidence": "Only a single targeting description is provided; no alternates are offered.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The under-20-minutes claim is traced to the 2026 survey of 210 customers in a grounding table or equivalent claim-to-source mapping.",
+        "evidence": "\"The 210-customer 2026 onboarding survey supports a specific, honest claim \u2014 'first project plan shipped in under 20 minutes'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A quotability gate of 10 explicit checks is run on the shipped line with a stated pass bar of 9 out of 10.",
+        "evidence": "No quotability gate or pass-bar check appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No line is silently truncated to fit: any over-limit draft is shown with its count alongside a trimmed alternative for the user to choose.",
+        "evidence": "All delivered lines show explicit counts (\"45/50\", \"81/100\", \"250/280\") with no evidence of silent truncation.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

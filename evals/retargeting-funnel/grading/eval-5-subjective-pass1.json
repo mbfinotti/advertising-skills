@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats published frequency bands as starting points to recalibrate against the account's own decay curve, not as evidence-based constants",
+        "evidence": "Partial. The answer hedges the published numbers ('Meta retargeting generally tolerates 5\u20137/week', 'practitioner data shows...') and frames its thresholds as a 'cap-proxy' rather than a real setting, and it does read the account's own signals (freq 9, CTR \u221239%, CPM +36%) to declare the decay triggers already blown. But the prescribed bands (2\u20134 watch / 4\u20136 warning / >6 act, then 'set your going-forward proxy at 4 / 6') are imported wholesale from the generic norms and never derived from or reconciled with this account's observed decay onset \u2014 the account data is used only for diagnosis, not ca",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats published frequency bands as starting points to recalibrate against the account's own decay curve, not as evidence-based constants",
+        "evidence": "The answer does subordinate the published band to the account's own data: it cites the typical '4\u20136/week before decay' benchmark and then explicitly overrides it \u2014 'you're already past that, so cap below where you broke, not at it' \u2014 and grounds this in the account's observed CTR/CPM pattern ('Your CTR/CPM data shows the fatigue curve kicked in well before freq 9'). That is the right directional move. But the recalibration is shallow: it never locates where in the account's data the inflection actually occurred (only 'well before 9'), so the number 3 is derived by stepping down from the publis",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

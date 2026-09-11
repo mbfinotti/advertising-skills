@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response rejects retargeting as the primary channel: it multiplies traffic already being bought and its ceiling is capped by whatever feeds it.",
+        "evidence": "\"It's a capture mode, not a channel \u2014 it multiplies traffic you're already buying.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes ~900 visits/month is far too small a pool for retargeting to produce meaningful volume or signal.",
+        "evidence": "\"your retargeting pool is roughly 130\u2013220 people (engaged browsers) and maybe 45\u201390 add-to-carts, well under what any ad platform needs\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response explains retargeting's high apparent ROI comes from near-zero effort reusing existing traffic and creative, while it ranks last on value - not because it creates demand.",
+        "evidence": "The transcript explains retargeting multiplies existing traffic but never frames it as ranking last on 'value' with near-zero effort explaining apparent high ROI; it is left unscored (\"not scored here\") rather than explained this way.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes retargeting only takes effect once a paid traffic pool has accumulated, so it cannot lead a cold start.",
+        "evidence": "\"add once prospecting has run long enough to build an actual pool... There's nothing to retarget yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response rejects day-one incrementality/geo-lift testing as the heaviest measurement rung, reserved for the biggest line item once spend justifies withholding some of it.",
+        "evidence": "\"It's reserved for your biggest line item once spend justifies withholding part of it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response prescribes the starting measurement rung for a small-budget plan: UTM discipline plus last-non-direct attribution.",
+        "evidence": "\"Day one: UTM discipline + last-non-direct attribution.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Self-reported attribution is added only when or if a demand-creation channel enters the mix.",
+        "evidence": "\"Immediately on top, because a creation channel (paid social) is the primary: add a 'How did you hear about us?' field\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Measurement rungs are added one at a time on explicit triggers, never all at once.",
+        "evidence": "Each rung (UTM, self-reported, MER, geo-lift) is conditioned on a distinct trigger, e.g. \"formalize MER... once that gap becomes visibly material\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response computes the affordability inputs: contribution near $192 per sale and break-even ROAS near 1.6x for a 62% margin.",
+        "evidence": "\"AOV $310 \u00d7 62% margin \u2192 contribution per sale \u2248 $192\" and \"Break-even ROAS = 1 / 0.62 \u2248 1.61x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Retargeting is positioned as a later add-on mode with an explicit trigger (an accumulated traffic pool), not deleted for economics.",
+        "evidence": "\"retargeting specifically gets layered back in as a near-zero-cost secondary once a real pool exists\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Plan funds one primary above its learning threshold with the $6K rather than splitting it.",
+        "evidence": "\"$4,800 (80%) \u2192 one consolidated paid-social prospecting ad set\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The consultant's advice is explicitly challenged rather than implemented as-is.",
+        "evidence": "\"Retargeting can't be your day-one channel\" and \"Geo-lift holdout testing from day one is the wrong measurement rung\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response rejects retargeting as the primary channel: it multiplies traffic already being bought and its ceiling is capped by whatever feeds it.",
+        "evidence": "'growing the top of funnel *is* the retargeting strategy \u2014 it's what grows the pool you'll retarget later' with prospecting funded at 67% vs. retargeting at 17%.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes ~900 visits/month is far too small a pool for retargeting to produce meaningful volume or signal.",
+        "evidence": "'your realistically remarketable pool is maybe 300-500 people, and cart-abandoners are probably 10-30/month. Ad platforms recommend 1,000+ people in an audience for stable delivery.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response explains retargeting's high apparent ROI comes from near-zero effort reusing existing traffic and creative, while it ranks last on value - not because it creates demand.",
+        "evidence": "No such 'near-zero effort/ranks last on value' framing appears; the argument centers on pool size and geo-lift incompatibility instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes retargeting only takes effect once a paid traffic pool has accumulated, so it cannot lead a cold start.",
+        "evidence": "'grow traffic and pixel pool first, retarget lightly and cheaply while that happens' and the 67%/17% prospecting-first split.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response rejects day-one incrementality/geo-lift testing as the heaviest measurement rung, reserved for the biggest line item once spend justifies withholding some of it.",
+        "evidence": "'geo-lift becomes viable, and at that point it should be tested against prospecting, not retargeting' once spend is 5-10x larger.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response prescribes the starting measurement rung for a small-budget plan: UTM discipline plus last-non-direct attribution.",
+        "evidence": "The stated foundation is 'GA4 + UTMs + CAPI' with assisted-conversion tracking, not a last-non-direct attribution model specifically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Self-reported attribution is added only when or if a demand-creation channel enters the mix.",
+        "evidence": "Self-reported attribution is never mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Measurement rungs are added one at a time on explicit triggers, never all at once.",
+        "evidence": "The staged 'Now-month 3 / Month 3-6 / Month 6-12 / 12+ months' measurement plan adds capability incrementally over time.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response computes the affordability inputs: contribution near $192 per sale and break-even ROAS near 1.6x for a 62% margin.",
+        "evidence": "No contribution-dollar or break-even-ROAS figures appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Retargeting is positioned as a later add-on mode with an explicit trigger (an accumulated traffic pool), not deleted for economics.",
+        "evidence": "'Retargeting budget can grow in proportion to pool size \u2014 not before' while still funded at $1,000/mo now.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Plan funds one primary above its learning threshold with the $6K rather than splitting it.",
+        "evidence": "'Prospecting (Meta + Google...) $4,000 (67%)' dominates the budget as the funded primary.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The consultant's advice is explicitly challenged rather than implemented as-is.",
+        "evidence": "'Geo-lift holdout testing does not pair with retargeting, and it does not pair with your current traffic' directly challenges the consultant's plan.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

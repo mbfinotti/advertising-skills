@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Confirms a fatigued verdict from two or more signals moving together across consecutive periods with the gate cleared",
+        "evidence": "\"Two-signal rule: hook rate and link CTR, both leading, moving the same direction across 2+ consecutive weekly periods. Cleared.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Localises the decay to the hook: hook rate falling while hold rate and CVR stay stable means the opening is tired, not the whole ad",
+        "evidence": "\"Hook rate falling for three straight weekly reads... while hold rate at 15s stays flat... is the specific signature of hook fatigue, not ad fatigue\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the hook-fatigue framing to Ben Heath or labels it as a practitioner heuristic",
+        "evidence": "No attribution to Ben Heath or any practitioner appears anywhere in this section.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a hook/thumbnail swap on the same body as the first action, ahead of any new concept",
+        "evidence": "\"action : rung 1 - new hook/opening on the same body, shipped as a NEW asset ID\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the six-week new concept over-serves the evidence, being the highest-effort remedy reserved for an exhausted concept",
+        "evidence": "\"ruled out : new concept (rung 7) - nothing here shows the CONCEPT is exhausted, only the opening. Going straight to a 6-week agency rebuild skips the cheapest, fastest rung\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Because negative feedback is elevated, requires the swap to ship as a new ad/asset ID, since the algorithmic penalty rides the asset ID and a hook swap on the same ID does not clear it",
+        "evidence": "\"shipped as a NEW asset ID (not an edit) because the elevated hide/report rate means a same-ID swap won't clear the algorithmic penalty\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs never to edit the live ad because edits reset learning and destroy the baseline; the swap launches alongside",
+        "evidence": "The stated reason for shipping as a new ID is only the negative-feedback/algorithmic penalty (\"the tripled hide/report rate means editing the existing ID won't clear the penalty\") \u2014 no mention of learning-phase reset or baseline destruction as the rationale.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the current ad running while the swap ramps, never pausing a producer with nothing staged",
+        "evidence": "\"Don't retire the creative. It's still your volume driver at a stable 2.8% CVR \u2014 pause nothing, keep it running while the fix ramps.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns the hook swap to the in-house editor, matching its effort profile",
+        "evidence": "\"Use the in-house editor this week, not the agency in six.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States expected recovery as hook rate and link CTR back toward baseline on the same audience, which also confirms fatigue over saturation",
+        "evidence": "\"expected : hook rate and link CTR recover toward baseline on the same audience... Recovery on the same audience also closes out the saturation question definitively.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check one full comparison window after the swap launches",
+        "evidence": "\"re-check : 2026-09-22 (one full weekly window after the new hook ships)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block including the confounder screen and a confidence line",
+        "evidence": "The FATIGUE VERDICT code block contains both a \"confounder screen\" section and a \"confidence\" line.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions iterating the winner, not the new concept, as the fallback if the hook swap fails",
+        "evidence": "\"iterate further (new pacing/format, still same concept) before concluding the concept itself is spent. Only if iteration stops recovering performance across a couple of attempts does a full agency rebuild become the right call\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Confirms a fatigued verdict from two or more signals moving together across consecutive periods with the gate cleared",
+        "evidence": "'Hook rate falling (24%\u219219%\u219216%) while hold rate stays flat... Hide/report rate tripling is the tell'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Localises the decay to the hook: hook rate falling while hold rate and CVR stay stable means the opening is tired, not the whole ad",
+        "evidence": "'the same people are seeing this ad again and again and scrolling past faster, but anyone who does stop still watches it the same way'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the hook-fatigue framing to Ben Heath or labels it as a practitioner heuristic",
+        "evidence": "No attribution or heuristic-labeling given",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a hook/thumbnail swap on the same body as the first action, ahead of any new concept",
+        "evidence": "'Cut 3-4 new cold opens/hooks from the same footage... Refresh the thumbnail/first-frame image'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the six-week new concept over-serves the evidence, being the highest-effort remedy reserved for an exhausted concept",
+        "evidence": "'You'd be discarding a video that's still converting at 2.8%... based on a symptom that's localized to the first 3 seconds'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Because negative feedback is elevated, requires the swap to ship as a new ad/asset ID, since the algorithmic penalty rides the asset ID and a hook swap on the same ID does not clear it",
+        "evidence": "Not addressed; no discussion of asset-ID mechanics for the hide/report penalty",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Instructs never to edit the live ad because edits reset learning and destroy the baseline; the swap launches alongside",
+        "evidence": "No such instruction; recommends swapping text/thumbnail without clarifying it must be a new asset alongside the live one",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the current ad running while the swap ramps, never pausing a producer with nothing staged",
+        "evidence": "Not explicitly stated; only 'Let those hook variants run 1-2 weeks' with no mention of the original ad's status during this period",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns the hook swap to the in-house editor, matching its effort profile",
+        "evidence": "'This is exactly the \"spare capacity\" your in-house editor is suited for'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States expected recovery as hook rate and link CTR back toward baseline on the same audience, which also confirms fatigue over saturation",
+        "evidence": "Recovery is described ('If hook rate recovers with hold/CVR still intact') but never contrasted against a saturation explanation",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check one full comparison window after the swap launches",
+        "evidence": "'Let those hook variants run 1-2 weeks. If hook rate recovers...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block including the confounder screen and a confidence line",
+        "evidence": "No structured verdict block with confidence appears",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Positions iterating the winner, not the new concept, as the fallback if the hook swap fails",
+        "evidence": "No explicit fallback plan is given if the hook swap fails",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

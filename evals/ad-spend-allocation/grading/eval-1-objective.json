@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response does not finalize the user's plan; it distinguishes average return from marginal return and states that money moves on marginal return, not on which line has the best average ROAS.",
+        "evidence": "\"compares it to Meta's *average*, not marginal, ROAS\" and \"Judge it then, against Meta's marginal line (the last dollars you'd actually pull from it), not Meta's blended average.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags the 12x Google brand figure as platform-reported and untrustworthy for allocation, citing systematic overstatement of real return (on the order of 1.75-2.97x) and/or brand search collapsing under incrementality testing.",
+        "evidence": "\"Platform ROAS overstates true return 1.75\u20132.97x... one published test saw a brand-search ROAS collapse from 19x to 5.7x under incrementality testing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not increase Google brand search; it holds or reduces the line pending a holdout or incrementality test.",
+        "evidence": "Google brand: $12,000 \u2192 $9,600 (\u221220%), with a new 'Google brand search holdout' experiment proposed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the 100% step on brand search on step-size grounds: default increments are 15-20% of a line per cycle, and a move of 30% or more in one step is refused.",
+        "evidence": "\"Trimmed at the maximum single-cycle step, not killed\" \u2014 capped at \u221220%, explicitly framed as the ceiling, not a kill.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to cut Meta prospecting to fund retargeting, explaining that retargeting's 4.9x is partly credit for conversions prospecting created.",
+        "evidence": "Plan cuts retargeting (not prospecting) to fund prospecting: \"its 4.9x is partly credit for conversions prospecting created.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states that over-funding retargeting inflates blended ROAS while starving the prospecting that refills the retargeting pool.",
+        "evidence": "Only 'pool-refill risk' appears as a rollback trigger label; no explicit statement that over-funding retargeting inflates blended ROAS while starving prospecting.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response computes Meta prospecting reach against audience (about 410K of 2.4M, roughly 17%) and reads under-25% penetration as headroom, treating the line as a candidate for more budget despite its lower average ROAS.",
+        "evidence": "\"Penetration 410K/2.4M \u2248 17% \u2014 under the 25% headroom band, real room to scale.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response reads the 44% impression share lost to budget as budget-responsive headroom for Google non-brand search.",
+        "evidence": "\"Lost impression share to budget = 44%, well under the 60\u201380% ceiling where more budget stops helping.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response corrects the 4x target: break-even ROAS equals 1 divided by contribution margin, about 1.9x at 52% margin, and says the flat 4x benchmark is wrong for this brand.",
+        "evidence": "\"Your break-even is 1.92x (1 \u00f7 0.52), not 4x \u2014 4x is a folk benchmark, not derived from your margin.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to kill the TikTok test before its day-60 decision date, and states the right comparison for the new channel is the incumbent's marginal efficiency (the last dollars being moved), not Meta's average.",
+        "evidence": "\"killing it now breaks its own test design\" and \"Judge it then, against Meta's marginal line... not Meta's blended average.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any proposed amounts sum exactly to $80,000.",
+        "evidence": "32,600+16,200+13,600+9,600+8,000 = $80,000, and table states \"Sums exactly to the fixed budget\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every changed line carries a rollback threshold and a verification date.",
+        "evidence": "Each row has 'Rollback threshold' and 'Verify' columns filled (e.g. Meta prospecting: \"CPA > 1.3x current, for 2 straight weeks\" / \"Day 30\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marginal estimates are labeled by evidence class (directional proxy at minimum), and the plan is marked provisional where only platform-reported numbers exist.",
+        "evidence": "\"No incrementality tests or MMM exist, so nothing here is measured \u2014 every marginal call below is a directional proxy.\" Uncertainty column present per line.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The output is presented as a proposal awaiting the user's approval, not as an executed or final change.",
+        "evidence": "\"Nothing above executes until you approve it \u2014 this is a proposal, not a change log.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response does not finalize the user's plan; it distinguishes average return from marginal return and states that money moves on marginal return, not on which line has the best average ROAS.",
+        "evidence": "\"Your instinct to move money toward the higher-ROAS lines is the standard trap. Blended platform ROAS isn't comparable across channels, and two of your \\\"best performers\\\" have structural ceilings the raw multiplier hides.\" and \"I sized the +$6K assuming its marginal ROAS holds near its current average\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags the 12x Google brand figure as platform-reported and untrustworthy for allocation, citing systematic overstatement of real return (on the order of 1.75-2.97x) and/or brand search collapsing under incrementality testing.",
+        "evidence": "The response says \"Google's self-reported ROAS on brand terms is structurally inflated because it's crediting your own existing customers finding you\" but gives no specific overstatement multiplier and no explicit statement that brand search collapses under incrementality testing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response does not increase Google brand search; it holds or reduces the line pending a holdout or incrementality test.",
+        "evidence": "Table: \"Google brand search | $12K | **$10K** | \u2212$2K\" with note \"Provisional trim pending IS check\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the 100% step on brand search on step-size grounds: default increments are 15-20% of a line per cycle, and a move of 30% or more in one step is refused.",
+        "evidence": "No explicit step-size percentage rule (e.g. 15-20% default, 30%+ refused) is stated anywhere for brand search; the rejection is argued purely via attribution-artifact reasoning.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to cut Meta prospecting to fund retargeting, explaining that retargeting's 4.9x is partly credit for conversions prospecting created.",
+        "evidence": "\"Taking $12K from prospecting and dumping it into retargeting doesn't grow the retargeting pool \u2014 it just increases frequency against the same people... Its 4.9x is also attribution-inflated for the same reason as brand search.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states that over-funding retargeting inflates blended ROAS while starving the prospecting that refills the retargeting pool.",
+        "evidence": "\"retargeting audience size is a function of upper-funnel traffic, which prospecting generates... Its 4.9x is also attribution-inflated\" combined with the prospecting section's warning that gutting it damages \"retargeting pool size... in 60\u201390 days.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response computes Meta prospecting reach against audience (about 410K of 2.4M, roughly 17%) and reads under-25% penetration as headroom, treating the line as a candidate for more budget despite its lower average ROAS.",
+        "evidence": "\"You've reached 410K of a 2.4M addressable audience in 30 days (~17%)\" is used to argue against cutting it 40%, but the final table still cuts prospecting from $30K to $24K (-$6K) rather than increasing it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response reads the 44% impression share lost to budget as budget-responsive headroom for Google non-brand search.",
+        "evidence": "\"Non-brand search losing 44% impression share to budget is the single cleanest, lowest-risk signal in this whole account \u2014 it means proven, converting auctions you're simply not showing up for.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response corrects the 4x target: break-even ROAS equals 1 divided by contribution margin, about 1.9x at 52% margin, and says the flat 4x benchmark is wrong for this brand.",
+        "evidence": "\"Breakeven ROAS at 52% margin is **1.92x** (1 \u00f7 0.52). A blanket 4x target is an arbitrary industry benchmark, not derived from your contribution margin\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to kill the TikTok test before its day-60 decision date, and states the right comparison for the new channel is the incumbent's marginal efficiency (the last dollars being moved), not Meta's average.",
+        "evidence": "\"Ending early on an incomplete read means you'll never know if the day-60 verdict would've flipped\" refuses the early kill, but nowhere does the response state TikTok should be compared to Meta's marginal (last-dollar) efficiency rather than its average.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any proposed amounts sum exactly to $80,000.",
+        "evidence": "$24K+$18K+$20K+$10K+$8K = $80K, and table states \"**Total** | **$80K** | **$80K**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every changed line carries a rollback threshold and a verification date.",
+        "evidence": "\"What to watch after the shift\" gives thresholds (e.g. \"first sign of pool saturation\", \"if it stalls, that's your next cut signal\") but only TikTok has an explicit date (\"Day 60 TikTok readout\"); the other three lines have no specified verification date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marginal estimates are labeled by evidence class (directional proxy at minimum), and the plan is marked provisional where only platform-reported numbers exist.",
+        "evidence": "\"Google brand search | $12K | **$10K** | \u2212$2K | Provisional trim pending IS check\" and \"I sized the +$6K assuming its marginal ROAS holds near its current average \u2014 reasonable...but confirm before scaling further\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The output is presented as a proposal awaiting the user's approval, not as an executed or final change.",
+        "evidence": "\"Before you lock this in, pull three numbers\" frames the entire split as pending verification before being locked in.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

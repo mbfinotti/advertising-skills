@@ -1,0 +1,447 @@
+{
+  "repo": "advertising-skills",
+  "skill": "advertising-hiring",
+  "scenarios": 11,
+  "expectations_total": 139,
+  "expectations_subjective": 1,
+  "expectations_objective": 138,
+  "pass_rate_with_skill_pct": 84.9,
+  "pass_rate_without_skill_pct": 42.4,
+  "delta_pp": 42.5,
+  "uplift_multiplier": 2.0,
+  "trigger_accuracy_pct": 91.0,
+  "trigger_queries": 134,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Acknowledges the trade-off: the agency costs the most money and control while consuming the fewest founder hours"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Warns against comparing agency retainer fees to in-house salaries, directing the comparison to hours returned and channels covered"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes free certifications can be earned after hire in days, so a strong candidate is never rejected over a missing one"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Includes the second senior filter: translating platform ROAS into break-even ROAS and MER, noting platform ROAS is biased upward because platforms double-claim conversions"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Names the paid trial as the option the ranking starves, with a condition that would promote it, such as a senior hands-on seat, an unverifiable portfolio, or a candidate already contracting elsewhere"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Requires anonymization of former-employer account data, scored as part of the answer, wherever an own-work presentation is used as fallback"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Replaces bare numeric anchors with a role-specific behavioral description per anchor point"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends standardized questions across candidates as the mechanism that lets the loop shrink without losing signal"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Overrides the IT policy: all tool access granted on day one, with delayed access named as an avoidable cause of a slow start"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Distinguishes staged authority from staged access - access is full from day one while authority is staged"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Sets an explicit spend-approval threshold in week one, written as a number rather than left as a vibe"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Stages weeks 1-2 as shadow: observe, ask, audit, no changes"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Stages weeks 3-6 as co-sign, or independent only under a small explicit cap"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Includes a day-one access checklist that covers the mobile measurement partner, since this is an app advertiser"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States the hiring process itself is identical across segments - only the owned instincts and metrics change"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets a 3 to 6 month channel-verdict expectation for the ramp if the candidate is hired"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Carries the leveling insight that top earners own business outcomes (revenue contribution, margin) rather than campaign operations, recommending the scorecard weight outcome ownership"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Recommends a contained optimization as the next win, never a scaling bet"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Distinguishes the creative strategist (drives performance learning) from a creative director (drives brand leadership) as the commonly misdiagnosed bottleneck"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Notes the distinct senior creative-strategist seat is largely a DTC phenomenon, fitting this brand's segment"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Routes them to the candidate-side sibling skill (advertising-career) for interview prep and progression"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Grounds the override in the first-hire rule: the first dedicated hire owns measurement and channel choice, never a single channel"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that a dedicated Meta buyer gets added alongside the generalist later once spend passes roughly $50k/month or three-plus channels run, rather than hired instead of the generalist now"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Names the growth-marketer rung as the option the default ordering starves, with the condition that would promote it"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States which condition moved the pick off the default rung, or states that nothing did"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Writes a one-line mission for the role"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Warns that a TikTok channel verdict needs 3 to 6 months, against the producing-this-quarter pressure"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Applies a hire-at-all gate before building anything, instead of delivering the packet as asked"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends against making the hire now"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Cites the monthly budget below the roughly $5,000 threshold as a gate failure"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Cites missing marketing fundamentals (positioning and pricing in flux) as a gate failure"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Cites the 6-week verdict window as a gate failure, since judging a channel takes 3 to 6 months"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States the hire is deleted from the menu until the missing fundamentals are fixed, not merely deferred or ranked last"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Ranks the alternatives in the order agency, then freelancer, then self-manage"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States the ranking basis as channel coverage bought per hour of the founder's own time"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Acknowledges the trade-off: the agency costs the most money and control while consuming the fewest founder hours"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags the freelancer's worker-classification exposure as a compliance cost the agency route does not carry"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Warns against comparing agency retainer fees to in-house salaries, directing the comparison to hours returned and channels covered"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States the in-house hire remains the destination once the gate passes - the alternatives are a bridge, not a replacement"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Does not proceed to build the requested scorecard, interview loop, and work sample for an immediate hire"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Points out the 6-week judgment plan would fire any hire before a ramp or channel verdict could complete"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Pairs the $250k/month screen with a walk-me-through-a-campaign-you-killed probe"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Pairs the spend screen with an incrementality-versus-attribution probe"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Removes both certifications from must-haves and from competence scoring, treating them as a floor rather than a signal"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes free certifications can be earned after hire in days, so a strong candidate is never rejected over a missing one"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that if partner compliance genuinely requires a certification, the req must say so explicitly so it is not read as a skill bar"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Replaces formula-recall questions with questions probing reasoning about relationships between metrics"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Includes a ROAS-drop diagnostic filter expecting the fixed order: measurement first, then media, then creative, then post-click"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Includes the backend discriminator: low ROAS with stable backend sales points to tracking or attribution gaps, not true underperformance"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Includes the second senior filter: translating platform ROAS into break-even ROAS and MER, noting platform ROAS is biased upward because platforms double-claim conversions"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Includes at least one exaggerator probe, such as who they admire in the field, what publications they read, or claimed mastery of the newest automated campaign types as a lying signal"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Weights commercial reasoning and communication over technical recall, with any numeric weighting labelled a house convention rather than a published standard"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Deletes the paid trial from the menu by name because paid candidate work has no budget approval"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Deletes the job shadow on the same no-budget constraint"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Records the deleted formats by name in the packet so they cannot resurface as an unscoped round"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Specifies synthetic or anonymized account data for the exercise"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Builds deliberate ambiguity or insufficient data into the case and scores naming it as a top answer"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Budgets explicit debrief time, treating reasoning walked aloud as more signal than the artifact"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Requires anonymization of former-employer account data, scored as part of the answer, wherever an own-work presentation is used as fallback"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes the live format defeats third-party audit tooling and generated output"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Directs debrief time to where scores diverge, with disqualifying signals recorded separately from scores"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Weights commercial reasoning and communication over technical recall"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Labels any numeric competency weighting as a house convention, not a published standard"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends standardized questions across candidates as the mechanism that lets the loop shrink without losing signal"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Overrides the IT policy: all tool access granted on day one, with delayed access named as an avoidable cause of a slow start"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Distinguishes staged authority from staged access - access is full from day one while authority is staged"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Sets an explicit spend-approval threshold in week one, written as a number rather than left as a vibe"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Stages weeks 3-6 as co-sign, or independent only under a small explicit cap"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Grants independent authority within a written cap by day 60"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Grants full authority by day 90"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Makes full authority contingent on a validated measurement audit - no audit, no full authority"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Rejects the month-one 50% scaling win: the first win is a tracking fix or contained optimization, never a scaling bet"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Ends the ramp with watch areas as a section distinct from the goals"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Labels the authority ladder and milestone skeleton as this plan's own synthesis rather than a published standard"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes B2B clicks cost several times more yet cost-per-SQL can still win"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States the hiring process itself is identical across segments - only the owned instincts and metrics change"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets a 3 to 6 month channel-verdict expectation for the ramp if the candidate is hired"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Includes the killed-campaign question or the incrementality-versus-attribution probe to test judgment beyond segment familiarity"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Attaches a named source and a date to every salary figure quoted"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Quotes the US median for 6 to 9 years of experience at about $100,000"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes in-house out-earns agency at comparable experience bands as a directional pattern"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Flags the underlying salary survey as self-selected with a small or shrinking sample"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Refuses to give a single industry turnover number"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Quotes turnover as a range of roughly 18 to 45 percent depending on source, cohort, and year"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Names at least two distinct sources behind different turnover figures"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes early-tenure churn in the first 45 to 90 days points at onboarding and scoping, making part of the backfill risk controllable through the ramp"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Flags compensation terms as needing HR or legal review"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Frames the band as scoping input to pressure-test the funded level, not as an offer recommendation"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Carries the leveling insight that top earners own business outcomes (revenue contribution, margin) rather than campaign operations, recommending the scorecard weight outcome ownership"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Cites the 3 to 6 month window before a channel verdict is possible"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Prescribes the fix: set the written spend threshold now and restart the staged authority ladder (co-sign, then independent within a cap, then full)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Makes full spend authority contingent on the validated measurement audit"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Recommends a contained optimization as the next win, never a scaling bet"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Proposes a concrete later review point consistent with the 3 to 6 month window instead of an immediate decision"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Rejects the cheap mid-level plan, warning that underpaying this seat is the fast way to burn the ad budget"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Quotes the US creative-strategy compensation benchmark of $180,000 to $250,000-plus with source and date, labelled directional"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Distinguishes the creative strategist (drives performance learning) from a creative director (drives brand leadership) as the commonly misdiagnosed bottleneck"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Treats the polished portfolios as unreliable evidence, because generated portfolios have defeated portfolio screening for creative-strategy skill"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Defines the role's owned metrics around creative performance: hook rate, CTR by unit, or creative win rate"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Notes the distinct senior creative-strategist seat is largely a DTC phenomenon, fitting this brand's segment"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Routes them to the candidate-side sibling skill (advertising-career) for interview prep and progression"
+      }
+    ]
+  }
+}

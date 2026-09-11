@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Derives the hot-window edge from the converter time-lag percentiles, placing it at roughly 4-7 days (the ~80% point sits near 5 days), instead of keeping the proposed 30-day windows",
+        "evidence": "\"80th-percentile edge (interpolating between 58%@1d and 86%@5d) lands at ~day 4 \u2192 this is the hot-window boundary.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States explicitly that stage boundaries come from Emberline's own lag distribution and that platform default retention windows are arbitrary relative to this specific business",
+        "evidence": "The transcript derives windows from GA4 data ('Basis for the windows (no proxy needed \u2014 you have real data)') but never states that platform default retention windows are arbitrary relative to this business \u2014 it only critiques the user's own 30/60/180 sketch, not platform defaults generically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Collapses the five-stage plan to fewer conversion stages (a hot/warm/win-back shape) because 80%+ of converters buy within 7 days",
+        "evidence": "The revised plan keeps five stages (S1 Deep-intent through S5 Win-back) \u2014 it restructures rather than collapsing; collapse is only floated as a fallback ('fall back to the single pool only if the size check forces it').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives the collapse reason: more stages than the conversion cycle supports produces empty or wasted stages",
+        "evidence": "No collapse is actually performed, so no reason for collapsing is given; the plan retains 5 stages throughout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the 0-60-day window on checkout abandoners: deep-intent actions get the shortest windows because intent decays fast",
+        "evidence": "\"S1 Deep-intent | Cart or checkout start, no purchase | 0-4 days\" versus the critiqued 'uniform 0-30/0-60/0-180 windows regardless of depth' in the original sketch.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns windows inversely to behavioural depth: cart/checkout tiers get the shortest windows and shallow all-visitor tiers the longest",
+        "evidence": "S1 (cart/checkout) 0-4d, S2 (product view) 0-12d, S3 (any visitor) 0-20d \u2014 shortest window for deepest action, longest for shallowest.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Claims stages deepest-first along the depth order cart or checkout start above product page viewer above any visitor",
+        "evidence": "Stage table lists S1 Deep-intent (cart/checkout), S2 Product viewer, S3 General visitor in that depth order.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves past buyers out of the conversion ladder into a separate win-back or replenishment tier",
+        "evidence": "\"S5 Win-back | Purchasers | 45-120 days after purchase date | Replenishment / new drops / referral \u2014 separate budget, outside the acquisition ladder\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Makes stages mutually exclusive - each stage excludes all deeper and fresher stages - and points out that in the draft one user sits in several stages at once",
+        "evidence": "\"every stage overlaps every other stage (a cart abandoner sits in stages 1, 2 and 3 simultaneously \u2192 ad sets bid against themselves)\" plus a full exclusion map.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the self-competition mechanism: overlapping stages bid against each other in the same auction and inflate CPM with zero incremental reach",
+        "evidence": "\"a cart abandoner sits in stages 1, 2 and 3 simultaneously \u2192 ad sets bid against themselves\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Excludes converters from every stage and writes an explicit converter-exclusion window as a number of days, not an open-ended exclusion",
+        "evidence": "\"Converter exclusion window: 90 days\" applied via EXCL_PURCH_90 on every RTG_ row in the exclusion map.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes an auditable audience naming convention that distinguishes inclusion audiences from exclusion audiences (for example RTG_ and EXCL_ prefixes)",
+        "evidence": "\"Naming convention: RTG_<depth>_<window> / EXCL_<what>_<window>.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Plans at least 3 distinct creative concepts per stage",
+        "evidence": "Stage table 'Concepts' column shows 3 for every stage S1-S5.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives each stage a distinct message job following the B2C slot order reminder, then social proof, then objection handling, then incentive, with any discount confined to the final stage",
+        "evidence": "S1 'Reminder \u2014 ... No discount', S2 'Social proof', S3 'Objection handling', S4 'Incentive + urgency \u2014 the only discount rung'.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Derives the hot-window edge from the converter time-lag percentiles, placing it at roughly 4-7 days (the ~80% point sits near 5 days), instead of keeping the proposed 30-day windows",
+        "evidence": "Curve cited as '58% / 1 day \u2192 86% / 5 days \u2192 96% / 12 days'; deepest stages set to 'Window: 0\u20137 days, not 30' (cart) and 'Window: 0\u20137 days, cut way down from 60' (checkout), landing in the 4-7 day range.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States explicitly that stage boundaries come from Emberline's own lag distribution and that platform default retention windows are arbitrary relative to this specific business",
+        "evidence": "The text explains the curve is 'blended' and misleading for later stages, but never states that platform default retention windows are arbitrary relative to this business.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Collapses the five-stage plan to fewer conversion stages (a hot/warm/win-back shape) because 80%+ of converters buy within 7 days",
+        "evidence": "The plan keeps all five stages (1 All visitors, 2 Product viewers, 3 Cart, 4 Checkout, 5 Past buyers) \u2014 just retunes each stage's window rather than collapsing them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives the collapse reason: more stages than the conversion cycle supports produces empty or wasted stages",
+        "evidence": "No such reasoning appears; the plan never argues for fewer stages.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the 0-60-day window on checkout abandoners: deep-intent actions get the shortest windows because intent decays fast",
+        "evidence": "'Window: 0\u20137 days, cut way down from 60. This is your smallest, highest-intent, highest-value pool \u2014 60 days of exposure just burns frequency on people who already declined at the last step.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns windows inversely to behavioural depth: cart/checkout tiers get the shortest windows and shallow all-visitor tiers the longest",
+        "evidence": "Stage 1: 0-14 days; Stage 2: 0-10 days; Stage 3: 0-7 days; Stage 4: 0-7 days \u2014 window shrinks with depth.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Claims stages deepest-first along the depth order cart or checkout start above product page viewer above any visitor",
+        "evidence": "Stage-by-stage section is ordered shallow-to-deep: '1. All site visitors' ... '2. Product page viewers' ... '3. Cart abandoners' ... '4. Checkout abandoners' \u2014 not deepest-first.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Moves past buyers out of the conversion ladder into a separate win-back or replenishment tier",
+        "evidence": "'Past buyers \u2014 reframe from a single \"0\u2013180 day\" blast into replenishment segments tied to candle burn time... not the visit-to-purchase curve'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Makes stages mutually exclusive - each stage excludes all deeper and fresher stages - and points out that in the draft one user sits in several stages at once",
+        "evidence": "'Right now your plan has 4 overlapping \"0-30 day\" pools, meaning a checkout abandoner gets shown all five messages at once \u2014 wasted spend and a confusing mixed message.' Waterfall exclusion is proposed as fix #1.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the self-competition mechanism: overlapping stages bid against each other in the same auction and inflate CPM with zero incremental reach",
+        "evidence": "Only 'wasted spend and a confusing mixed message' is cited \u2014 no mention of stages bidding against each other or CPM inflation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Excludes converters from every stage and writes an explicit converter-exclusion window as a number of days, not an open-ended exclusion",
+        "evidence": "Only 'all exclude buyers' is stated generically, with no explicit number-of-days converter-exclusion window given for stages 1-4.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposes an auditable audience naming convention that distinguishes inclusion audiences from exclusion audiences (for example RTG_ and EXCL_ prefixes)",
+        "evidence": "No naming convention is proposed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Plans at least 3 distinct creative concepts per stage",
+        "evidence": "Messaging per stage is described in general terms (e.g. 'bestsellers, scent stories, UGC/reviews') without enumerating 3+ distinct creative concepts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives each stage a distinct message job following the B2C slot order reminder, then social proof, then objection handling, then incentive, with any discount confined to the final stage",
+        "evidence": "Discount appears mid-sequence in Stage 3 ('single touch days 4-7 with a small time-limited incentive') as well as Stage 4, not confined to the final stage only.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

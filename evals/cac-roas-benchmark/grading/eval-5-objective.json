@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses the 35% improvement claim because Q1 is paid CAC and Q2 is blended CAC - two different variants that cannot be compared",
+        "evidence": "'The two figures compare different CAC variants, not two readings of the same metric... rejected. It's a Paid-CAC-vs-Blended-CAC comparison.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that blended CAC is always lower than paid CAC when organic acquisition exists, so part of the apparent improvement is purely definitional",
+        "evidence": "Transcript explains the specific Q1/Q2 variant switch mechanism but never states the general principle that blended CAC is always lower than paid CAC when organic exists",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recomputes the like-for-like comparison: Q2 paid CAC = 185,000 / 1,850 = $100, meaning paid CAC worsened roughly 5% quarter over quarter",
+        "evidence": "'paid CAC went from $95 to $100 \u2014 a 5.3% increase' and metric table shows 'Paid CAC | ... | $100 | Q2'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents both Q2 variants side by side, each labeled ($62 blended, $100 paid), rather than silently picking one",
+        "evidence": "Metric table lists 'Blended CAC | ... | $62 | Q2' and 'Paid CAC | ... | $100 | Q2' together",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the silent variant switch as the failure: CAC appears to improve with nothing actually changing",
+        "evidence": "Quotes the skill's own case: 'Silently switching variants makes CAC \"improve\" with nothing changing.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends fully-loaded CAC (S&M including salaries, tooling, agency, creative) as the variant a board or investor audience expects",
+        "evidence": "'promote fully-loaded/rung-1 rigor whenever the audience is finance or investors'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a fully-loaded figure shown to a board becomes a reported number finance has to own, and redefining it later is a restatement - so the definition must be agreed with finance",
+        "evidence": "No such statement appears anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the organic surge is a mix shift, so any blended CAC trend cannot be read without a mix-shift check",
+        "evidence": "'it's a mix-shift, not a paid-spend efficiency gain, and mix-shift is exactly what Step 2 warns can move a blended number \"while every segment is flat.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Withholds or gates any health judgment on break-even inputs and history rather than judging health from the CAC levels alone",
+        "evidence": "'overall paid-channel health: insufficient evidence for a full verdict (no margin \u2192 no break-even; only one same-variant data point \u2192 no valid trend)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not present $95 to $62 as a single continuous trend line or average the two figures",
+        "evidence": "Explicitly separates the two into distinct board-slide statements rather than combining them",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every figure carries a variant label, window, and data source",
+        "evidence": "Metric table populates Variant/Window/Source columns",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses the 35% improvement claim because Q1 is paid CAC and Q2 is blended CAC - two different variants that cannot be compared",
+        "evidence": "'the numerator switched from paid spend to total spend, and the denominator switched from paid-attributed customers to all customers...That's not an efficiency gain \u2014 it's a definition change'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that blended CAC is always lower than paid CAC when organic acquisition exists, so part of the apparent improvement is purely definitional",
+        "evidence": "The transcript demonstrates this only for this specific case, never states it as a general rule about blended vs paid CAC.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recomputes the like-for-like comparison: Q2 paid CAC = 185,000 / 1,850 = $100, meaning paid CAC worsened roughly 5% quarter over quarter",
+        "evidence": "'Q2 paid CAC: $185,000 \u00f7 1,850 = $100...+5.3% \u2014 paid CAC got worse'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents both Q2 variants side by side, each labeled ($62 blended, $100 paid), rather than silently picking one",
+        "evidence": "Table showing '$62 blended' with a callout and '$95 \u2192 $100 (+5%)' paid CAC shown separately.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the silent variant switch as the failure: CAC appears to improve with nothing actually changing",
+        "evidence": "'it's a definition change that happens to land in the same direction as a lucky, non-repeatable event.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends fully-loaded CAC (S&M including salaries, tooling, agency, creative) as the variant a board or investor audience expects",
+        "evidence": "No mention of fully-loaded CAC or S&M costs anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that a fully-loaded figure shown to a board becomes a reported number finance has to own, and redefining it later is a restatement - so the definition must be agreed with finance",
+        "evidence": "No discussion of finance ownership or restatement risk appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the organic surge is a mix shift, so any blended CAC trend cannot be read without a mix-shift check",
+        "evidence": "'pulling blended CAC to $62 \u2014 validating investment in earned/organic channels' frames the PR-driven organic surge as the driver of the blended number's movement.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Withholds or gates any health judgment on break-even inputs and history rather than judging health from the CAC levels alone",
+        "evidence": "No break-even computation or explicit gating discussion appears; the transcript focuses on definitional correctness rather than health verdict gating.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not present $95 to $62 as a single continuous trend line or average the two figures",
+        "evidence": "The transcript explicitly separates and criticizes treating them as one trend.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every figure carries a variant label, window, and data source",
+        "evidence": "Q1 paid CAC, Q2 paid CAC, and Q2 blended CAC are each explicitly labeled with quarter and variant.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

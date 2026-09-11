@@ -1,0 +1,419 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-swipe-file",
+  "scenarios": 9,
+  "expectations_total": 109,
+  "expectations_subjective": 1,
+  "expectations_objective": 108,
+  "pass_rate_with_skill_pct": 83.5,
+  "pass_rate_without_skill_pct": 30.3,
+  "delta_pp": 53.2,
+  "uplift_multiplier": 2.76,
+  "trigger_accuracy_pct": 74.0,
+  "trigger_queries": 104,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Asks interview questions before collecting, including the delivery date, whether the user wants a one-off win or a compounding asset, and the effort ceiling."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Names cross-competitor repetition as the strongest corroborator because a single advertiser's neglect cannot fake it, while noting it needs the classified file to check."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States at least two structural caveats on the longevity inference, such as ad-object dating preserving the original start date after edits, large advertisers affording mediocre ads, brand-awareness campaigns running indefinitely, or wear-in."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States that public surfaces expose nothing about spend or performance, so 'best performer' cannot be observed, only inferred."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Declines to write the finished creative in this workflow and hands briefing or copy production to the sibling skills for briefs and test design."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Institutes a per-session change log recording appeared, disappeared, or relaunched ads, with test-status updates and pruning driven by actual run data rather than memory."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Refuses reproducing the combination of script, layout, and look together, noting each element alone might be defensible but together they reproduce the expression of the original."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes comparative advertising is lawful in major jurisdictions only when truthful and objective, and that some platforms restrict naming competitors regardless of law."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that the guidance is not legal advice and that jurisdictions differ."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Restricts the manual pull to the direct competitor set because it costs an hour of someone else's time."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Warns of B2B blindness: buying research in private channels, DMs, and communities is invisible to any public surface, so the file captures only the visible top of funnel."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Keeps the manual collection logged off and within platform terms, noting that delegating the browse to the user moves the hours but never the compliance obligation."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Frames this first dated pull as the baseline that later dated pulls will be compared against for relaunch and change detection."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Produces between 5 and 8 hypotheses."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Takes exactly the top three forward, keeping the remainder in the file at a hypothesized test status."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Explains the transcription refusal: verbatim reproduction at scale is a copyright liability and structured records are more useful."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Explains why the archive matters: surfaces drop non-political ads when paused and disclosure lapses roughly a year after an ad last runs, so the swipe file is the only durable archive."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Keeps the maintenance cadence at a scheduled weekly session of roughly 30-45 minutes per competitor set, hunting ads that have run more than two weeks."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Pushes back on covering all 12 competitors in one pass and caps the first pass at roughly 3-5 direct competitors, queuing the rest for later sessions."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Rejects tagging ads at the moment of discovery and requires collecting roughly 20-30 active or recently-run ads per competitor before any classification begins."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Instructs setting the transparency surface's country filter to an EU member state deliberately, even though the market is US-only."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Explains the EU filter's payoff: ads served in the EU must disclose targeting parameters and reach data that the same campaigns hide elsewhere."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Requires filtering the surface to active ads before reading anything, so killed tests do not inflate the apparent format mix."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Refuses the spare-login idea and restricts collection to public, logged-off surfaces or official APIs."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Sets up each session's raw pull in a dated folder per competitor, kept separate from the synthesized swipe file, with prior pulls never overwritten."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks interview questions before collecting, including the delivery date, whether the user wants a one-off win or a compounding asset, and the effort ceiling."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Defines a record schema whose classification axes include format, hook type, offer/angle, concept, awareness stage, funnel stage, and persona."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Makes a test-status field mandatory on every saved entry."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Stores each ad's message as a paraphrase or one short attributed quote, never a full transcription, and forbids bulk-archiving creative files."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Directs unverifiable fields to be recorded as unknown rather than guessed."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Raises the neglect explanation: under cost-cap or bid-cap buying, advertisers park 10-20 ads and never prune, so one long-running ad surrounded by stale ones can measure neglect rather than success."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Seeks corroboration starting with variant duplication and geographic or placement breadth, the signals readable off the listing already on screen."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Names cross-competitor repetition as the strongest corroborator because a single advertiser's neglect cannot fake it, while noting it needs the classified file to check."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Records the longevity read together with the threshold that produced it, for example 'active 200+ days with N variants', rather than a bare verdict."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Distinguishes what may be reused: the angle, offer mechanic, hook type, format, and layout structure."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Applies the identity test: if a viewer who saw the competitor's ad would think the user's ad is that ad, expression was copied."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recasts the request as a written hypothesis in the 'We believe [change] will produce [outcome] because [insight]' form instead of producing finished ad copy."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Declines to write the finished creative in this workflow and hands briefing or copy production to the sibling skills for briefs and test design."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Applies the half threshold: at least half of saved entries must eventually reach a test status, and 15 of 240 sits far below it."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends cutting collection volume, explicitly rejecting the proposed doubling to 40 ads a week."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Assigns a named owner for the file as part of the fix."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Forces a hypothesis-conversion step at the end of every session until the tested share recovers."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Requires a test-status field on every entry with a progression along the lines of saved, hypothesized, briefed, testing, tested-won, tested-lost, dropped."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Ends each session with 5-8 written hypotheses in the 'We believe [change] will produce [outcome] because [insight]' format."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Replaces reactive saving with a scheduled weekly session of roughly 30-45 minutes per competitor set."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Directs sessions to deliberately hunt ads that have run more than two weeks."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Institutes a per-session change log recording appeared, disappeared, or relaunched ads, with test-status updates and pruning driven by actual run data rather than memory."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Judges the win rate against the user's own spend tier, roughly 4% under $10K per month, not against top-tier figures."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Computes roughly 5% from 1 winner in 21 launches and concludes the result is within the expected band for the tier, so the swipe file is not failing."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that win-rate judgment requires adequate volume, roughly 20 launches per winner, which the 21 launches just meets."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Flags the published win-rate benchmarks as directional and heavily weighted toward one vendor's DTC dataset."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Names the expected creative win-rate range of roughly 5-9% varying by spend tier, with the top of the range reserved for very large spenders around $1M+ per month."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that a near-zero win rate at adequate volume would indicate a strategy or product-market-fit problem, escalated to an account diagnostic rather than to more collection."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Checks the pipeline gate separately: what share of saved entries reaches a test status, as its own health measure distinct from win rate."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Refuses reproducing the combination of script, layout, and look together, noting each element alone might be defensible but together they reproduce the expression of the original."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Flags the distinctive chat-bubble interface look as trade dress, protectable even when every individual element is free."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Routes the 'better than [rival brand]' comparative claim naming the competitor's mark to legal counsel before briefing."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes comparative advertising is lawful in major jurisdictions only when truthful and objective, and that some platforms restrict naming competitors regardless of law."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Refuses the bulk download of the 30 videos, calling out that a folder of downloaded creatives is both a high-risk artifact and analytically less useful than structured records."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Replaces the download with structured records carrying a paraphrase and at most one short attributed quote per entry."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States the reuse line both ways: angles, offer mechanics, hook types, formats, layout structures, and funnel shape are reusable, while verbatim copy, images, video, audio, and trade dress are not."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that the guidance is not legal advice and that jurisdictions differ."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Sends the user to the public transparency surface with precise manual instructions: search the advertiser's name, filter to active ads, note first-seen dates, and capture copy plus landing destination."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States that when the agent cannot browse, the user-run manual pull is the only available source of run dates, and skipping it downgrades every inference to undated classification."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Restricts the manual pull to the direct competitor set because it costs an hour of someone else's time."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Instructs setting the surface's country filter to an EU member state to expose the richer disclosure tier."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes the EU view of professional-network ad libraries exposes targeting criteria such as role, geography, and company size, revealing which buying-committee members a competitor pays to reach."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Warns of B2B blindness: buying research in private channels, DMs, and communities is invisible to any public surface, so the file captures only the visible top of funnel."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Keeps the manual collection logged off and within platform terms, noting that delegating the browse to the user moves the hours but never the compliance obligation."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Accepts the remembered ads only as a supplementary source, recorded with unknown dates rather than guessed ones."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Frames this first dated pull as the baseline that later dated pulls will be compared against for relaunch and change detection."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Applies identical schema fields across all three competitors so entries stay comparable side by side."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Writes every hypothesis in the exact 'We believe [change] will produce [outcome] because [insight]' format."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Produces between 5 and 8 hypotheses."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Backs each insight with a receipt from the file: which competitor, which signal, what corroboration, and what is missing from the user's own account."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Ranks on signal strength and gap-in-own-account weighted as equal, both above ease of production."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Uses ease of production only to order hypotheses within a value band, never to promote one across bands."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Explains why deletion rather than benching: a permanently unproducible hypothesis inflates the pipeline gate and reappears as scope every session."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Takes exactly the top three forward, keeping the remainder in the file at a hypothesized test status."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Hands the top three onward to creative-brief and test-plan work rather than writing briefs or tests itself."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that public surfaces expose nothing about spend or performance, so everything beyond creative, advertiser, and dates is inference."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Refuses the word-for-word transcription and stores a paraphrase plus at most one short attributed quote per entry."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Explains the transcription refusal: verbatim reproduction at scale is a copyright liability and structured records are more useful."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Attaches the producing threshold to any inference recorded, rather than a bare verdict."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Classifies each pasted ad on the schema axes, including format, hook type, offer/angle, awareness stage, and funnel stage."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes that pasted, recalled-source entries carry no run dates and a recall bias, limiting any longevity inference from them."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Explains why the archive matters: surfaces drop non-political ads when paused and disclosure lapses roughly a year after an ad last runs, so the swipe file is the only durable archive."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Reads the two returned ads as relaunches, stronger evidence than an ad that simply never stopped."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Re-ranks the corroborators now that a second dated pull exists: relaunch recency becomes near-zero effort and moves up behind variant duplication."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Runs cross-competitor repetition deliberately as the last step of the session, noting it cannot win the per-minute ordering because it needs the finished classification pass."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Updates test statuses on old entries and prunes using actual run data, never memory."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Ends the session with a fresh set of written hypotheses."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Keeps the maintenance cadence at a scheduled weekly session of roughly 30-45 minutes per competitor set, hunting ads that have run more than two weeks."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Keeps the synthesized file citing which dated pull each entry came from."
+      }
+    ]
+  }
+}

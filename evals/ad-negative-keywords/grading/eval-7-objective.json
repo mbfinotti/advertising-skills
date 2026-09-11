@@ -1,0 +1,106 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Reports the account-level exclusion rung as deleted from this account's menu because of the missing edit rights - removed by the constraint, not ranked last",
+        "evidence": "\"Account-level is off the menu entirely \u2014 not deprioritized, deleted. You have no way to express it, so don't plan around it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a shared negative keyword list for the recurring cross-campaign theme",
+        "evidence": "\"Build one shared negative keyword list \u2014 name it something like Informational Intent - Training-Certification-Webinar\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that on this platform negative keyword lists attach to campaigns only, never ad groups, so the list must be attached to each of the 6 campaigns",
+        "evidence": "\"negative keyword lists attach at the campaign level, and attaching a list to a campaign is a campaign-level action\" and \"Attach that same list to all 6 campaigns.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the broad match plan because this platform has no negative broad match at all - phrase and exact only",
+        "evidence": "\"Microsoft Advertising has no negative broad match at all \u2014 only phrase and exact. There's nothing to add 'broad match negatives' to; that option doesn't exist on this platform, full stop.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States this platform's default negative match type is phrase, so report additions need no switch away from exact",
+        "evidence": "No statement in the transcript addresses the default match type when adding negatives from the Microsoft Advertising report screen",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that close variants of a negative still match on this platform too, so plural and synonym variants must be added manually",
+        "evidence": "\"Microsoft doesn't filter close variants any more than Google does (plurals, synonyms, misspellings all still get through unless you list them)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the platform's dedicated negative keyword conflict report for the periodic conflict sweep",
+        "evidence": "\"Microsoft has a dedicated negative keyword conflict report \u2014 run it as part of your quarterly conflict sweep\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends logging the change with date, terms, level, match type, and reason",
+        "evidence": "No recommendation to log changes with date, terms, level, match type, and reason appears anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Reports the account-level exclusion rung as deleted from this account's menu because of the missing edit rights - removed by the constraint, not ranked last",
+        "evidence": "'You can't rely on one account-wide shared negative keyword list if the client has locked account settings... If it's genuinely locked out: 1. Maintain the negative list as a spreadsheet... 2. Use Microsoft Advertising Editor to bulk-push identical campaign-level negative keyword sets.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a shared negative keyword list for the recurring cross-campaign theme",
+        "evidence": "'That single unlock solves the whole duplication problem \u2014 worth pursuing before building a workaround... we need edit access to negative keyword lists in the shared library for cross-campaign query hygiene.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that on this platform negative keyword lists attach to campaigns only, never ad groups, so the list must be attached to each of the 6 campaigns",
+        "evidence": "The transcript never states this as a platform fact; it only recommends campaign-level application as a strategic choice ('Apply the negatives at the campaign level in each of the 6 campaigns \u2014 the theme cuts across ad groups, so ad-group-level application would multiply your maintenance burden').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the broad match plan because this platform has no negative broad match at all - phrase and exact only",
+        "evidence": "The transcript explicitly keeps broad match as a valid option for single words: 'Build a **list of individual phrase-match negatives**, reserving single-word broad negatives only for terms with zero legitimate use case for Corvale' \u2014 contradicting the claim that broad negatives don't exist on this platform.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States this platform's default negative match type is phrase, so report additions need no switch away from exact",
+        "evidence": "No mention of a default match type for report-screen additions appears anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that close variants of a negative still match on this platform too, so plural and synonym variants must be added manually",
+        "evidence": "There is no discussion of close-variant matching behavior for Microsoft Advertising negatives in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends the platform's dedicated negative keyword conflict report for the periodic conflict sweep",
+        "evidence": "'Use the **negative keyword / search term exclusion report** in Microsoft Ads to confirm the negatives aren't silently suppressing converting queries... Re-pull query reports biweekly for the first month... then monthly.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends logging the change with date, terms, level, match type, and reason",
+        "evidence": "The transcript only recommends tracking spend/clicks avoided as a metric ('Track clicks/spend avoided from the junk theme as a specific metric') \u2014 no change log with date, terms, level, match type, and reason is proposed.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

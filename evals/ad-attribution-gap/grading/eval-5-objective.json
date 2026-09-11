@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects 'biggest number first' and ranks defects by revenue at stake per unit of fix effort.",
+        "evidence": "\"'Biggest number first' is the exact trap this analysis is built to catch. The skill's rule is: rank defects by revenue at stake per unit of fix effort, never by revenue alone\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places the duplicate purchase tag at or near the top: hour-scale, one owner, against a large over-count.",
+        "evidence": "Row #1: \"Duplicated purchase tag ... $29k/mo over-claimed by the platform ... An hour: one owner edits one tag container, fully reversible ... First. Efficiency leader in this class\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not place cross-device losses first despite $55k being the largest number.",
+        "evidence": "Row #4 is placed last: \"$55k/mo unattributed \u2014 biggest number on the list ... Last, despite the size.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that cross-device identity work is quarter-scale or standing engineering effort and partly structural at any effort level.",
+        "evidence": "\"A quarter of engineering, or a standing job \u2014 structural at any effort\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the cross-device gap has been stable for four months, and that a stable structural loss can wait while a growing one is what would promote it.",
+        "evidence": "\"it's been stable for four months, not growing, so the one condition that would promote it above the hour-scale fixes doesn't fire by default\"; and \"the $55k stops being stable and starts growing period over period\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Given engineering is booked, names cross-device explicitly as deferred or struck from the ranked fix list, carried as a quantified known delta, rather than silently parked at the bottom of the ranking.",
+        "evidence": "\"Don't let #4 disappear. Document it as a known delta to carry forward this quarter (stable \u2248 $55k/mo unattributed, cause: cross-device/identity), not as a solved or dropped item.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the stripped-UTM fix as spending a second team's hour (whoever owns the shortener or redirect chain), distinct from fixes the analyst owns alone.",
+        "evidence": "\"An hour, but a second team's hour \u2014 whoever owns the redirect/shortener config\" versus #2 \"the analyst owns this outright, no other team involved\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows the revenue figure and the fix-effort adjustment for each defect so the reader can see why the biggest number is not first, rather than presenting a bare ordered list.",
+        "evidence": "The table includes explicit \"Revenue at stake\" and \"Fix effort\" columns for all four rows, e.g. \"$29k/mo over-claimed ... An hour\" vs \"$55k/mo unattributed ... A quarter of engineering\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs annotating the report history at each fix date, because the post-fix step-change is a discontinuity that would otherwise look like a defect next period.",
+        "evidence": "No mention anywhere in the transcript of annotating report history at fix dates or of a post-fix step-change being mistaken for a new defect; the 'What this means operationally' section covers scheduling, ownership confirmation, and the $55k tracking, but not history annotation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns an owner to each defect in the list.",
+        "evidence": "#1: \"Tag container edits are normally owned by marketing ops/analytics, not core engineering\"; #2: \"the analyst owns this outright\"; #3: \"whoever owns the redirect/shortener config\"; #4: tied to \"A quarter of engineering\" as the resource needed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands the duplicate-tag and dedup work off to a dedicated conversion-tracking process rather than detailing tag surgery inside the reconciliation.",
+        "evidence": "\"Hand off #1, #3 (if engineering-owned), and #4 to mbfinotti/advertising-skills@ad-conversion-tracking for the actual technical fixes \u2014 this reconciliation's job stops at naming, quantifying, and ranking them.\" No tag-surgery detail is given beyond \"one owner edits one tag container.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects 'biggest number first' and ranks defects by revenue at stake per unit of fix effort.",
+        "evidence": "\"No \u2014 biggest number first is the wrong heuristic here. It conflates dollar size with priority and ignores three things: fix effort, whether engineering is even the bottleneck, and whether you can trust the number yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places the duplicate purchase tag at or near the top: hour-scale, one owner, against a large over-count.",
+        "evidence": "\"1. Duplicated purchase tag ($29k/mo over-reported) \u2014 first, fast ... Likely a tag-container config fix (GTM), not a dev sprint item \u2014 probably doesn't even compete for your 'fully booked' engineering time. Route to marketing ops/analytics, not the eng queue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not place cross-device losses first despite $55k being the largest number.",
+        "evidence": "Cross-device is listed as item \"4. Cross-device attribution ($55k/mo estimated) \u2014 last, and scope it, don't rush it\", after the three smaller findings.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that cross-device identity work is quarter-scale or standing engineering effort and partly structural at any effort level.",
+        "evidence": "\"Fixing it properly (identity resolution, server-side tracking, login incentives, probabilistic modeling) is a multi-sprint engineering investment \u2014 exactly the kind of work that shouldn't get squeezed into a fully-booked quarter\"; also \"only one (cross-device) is a structural gap.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the cross-device gap has been stable for four months, and that a stable structural loss can wait while a growing one is what would promote it.",
+        "evidence": "\"'Stable for four months' means it's not urgent-urgent \u2014 no fire, no trend getting worse.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Given engineering is booked, names cross-device explicitly as deferred or struck from the ranked fix list, carried as a quantified known delta, rather than silently parked at the bottom of the ranking.",
+        "evidence": "\"#4 gets scoped properly and re-measured before you commit real engineering time to it \u2014 which may turn out to be less than $55k once the tagging bug and UTM leak are fixed\"; \"Scope it as a proper project for next quarter's roadmap instead.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the stripped-UTM fix as spending a second team's hour (whoever owns the shortener or redirect chain), distinct from fixes the analyst owns alone.",
+        "evidence": "The UTM item only says \"configure the shortener to pass query params through, or swap redirect method, moderate effort, high confidence\" with no mention of which team or owner performs this, distinct from the analyst.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Shows the revenue figure and the fix-effort adjustment for each defect so the reader can see why the biggest number is not first, rather than presenting a bare ordered list.",
+        "evidence": "Each numbered item pairs a dollar figure with an effort note, e.g. \"2. Internal test orders (~220/mo, ~$6k) ... Same profile: cheap, fast, low/no engineering lift\" and \"4. Cross-device attribution ($55k/mo estimated) ... multi-sprint engineering investment\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs annotating the report history at each fix date, because the post-fix step-change is a discontinuity that would otherwise look like a defect next period.",
+        "evidence": "No mention anywhere in the transcript of annotating report history or step-change discontinuities after fixes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns an owner to each defect in the list.",
+        "evidence": "Only item #1 names an owner (\"Route to marketing ops/analytics, not the eng queue\"); items #2, #3, and #4 describe fixes without naming who executes them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hands the duplicate-tag and dedup work off to a dedicated conversion-tracking process rather than detailing tag surgery inside the reconciliation.",
+        "evidence": "The transcript only says to route the fix to \"marketing ops/analytics, not the eng queue\" with no mention of a dedicated conversion-tracking process or reconciliation workflow.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

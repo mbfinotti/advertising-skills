@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Redirects the bulk of the five months to demonstrable results: self-funded spend and/or a public written teardown",
+        "evidence": "The response's core structural criticism is that certs consume five months while 'portfolio and live applications \u2014 don't start until month 5'. It explicitly cuts Meta Blueprint ('Delete it from the plan now... That's $450 and 3-4 weeks recovered') and compresses the remaining four certs to 'a weekend, not a season' / 'the first 2-3 weeks'. The replacement plan puts both demanded items front and center: item 2 'Start a self-funded spend project \u2014 your own small budget, or a pro-bono local business. This is your actual portfolio' and item 4 'Write one public teardown of a brand's ad account.' I",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Redirects the bulk of the five months to demonstrable results: self-funded spend and/or a public written teardown",
+        "evidence": "The rewritten plan hands Months 2-4 (the majority of the timeline) to running real campaigns with '$300-500 of your own money as ad spend' via a small store, affiliate offer, or a local business/nonprofit, and Months 4-5 to applying with '2-3 documented case studies with real numbers.' Documentation is explicitly required ('Document everything: hypotheses, budget decisions, what you optimized, results. This becomes your portfolio/case studies'). Certification work is compressed to one free Google Ads Search cert (~1 week) with the rest ('skip Blueprint's paid exam stack, skip TikTok/Amazon/Lin",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

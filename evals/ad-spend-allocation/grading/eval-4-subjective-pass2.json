@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response frames any adopted ratio as operator policy recorded with its rationale, never as authorization or a proven optimum.",
+        "evidence": "Explicit and repeated: headline revised to \"We're adopting 70/20/10 as portfolio discipline \u2014 not a guaranteed-return formula\"; 70/20/10 described as \"a governance structure, not a marketing-science result... We're not claiming a return multiplier from it\"; the brand/activation bullet targets ~45-55% toward activation and states \"We'll state this as our chosen policy, not an industry-proven optimum\"; the 60/40 anchor is demoted to \"a B2C cross-category average from the IPA Databank\" and explicitly not a \"proven per-brand optimum\"; the \"Why now\" bullet demands a Quintarra-specific rationale (\"s",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response frames any adopted ratio as operator policy recorded with its rationale, never as authorization or a proven optimum.",
+        "evidence": "The response explicitly attacks the 'proven optimum' framing: it flags 60/40 as 'Real, but overstated as \"proven optimum\"', notes it is 'an average, not \"the optimum\" for any given company', and recommends 'soften \"proven optimum\" / rule-of-7-as-proof language to heuristic framing.' The polished copy consistently presents the numbers as the team's own decision with stated reasoning rather than external authorization: 70/20/10 is framed as 'borrowing the 70/20/10 logic,' explicitly not 'McKinsey proved 70/20/10 marketing budgets deliver 2.7x returns'; the 60/40 line becomes 'we're targeting rou",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

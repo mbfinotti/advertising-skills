@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses both blanket positions (stop all brand bidding, and 'brand always pays')",
+        "evidence": "\"Neither the CEO nor the agency. Both are stating a universal rule where only a measurement exists.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the eBay finding as an upper bound driven by exceptional brand strength, not a general law",
+        "evidence": "\"eBay's finding is real but it's an upper bound, not a universal law... eBay's result reflects eBay's exceptional brand strength, not a general property of brand search.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the replication that found the opposite (Edmunds: substitution under 50%, paid brand traffic economically meaningful)",
+        "evidence": "\"the Edmunds.com replication found the opposite, under 50% substitution, with paid brand traffic economically meaningful.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the operative instruction as 'test, don't assume'",
+        "evidence": "\"The instruction from the published research is 'test, don't assume,' never 'cut brand because eBay did.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a holdout or geo test as the way to detect non-incremental buying",
+        "evidence": "\"A holdout or geo test is the only thing that actually tells you if brand clicks are incremental on *your* traffic\" and the detailed \"Brand search holdout\" / \"Retargeting holdout\" sections.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a bidder rewarded on attributed conversions will buy conversions that would have happened anyway",
+        "evidence": "The transcript discusses non-incremental spend (e.g. retargeting 'mostly re-charging people who'd have converted anyway') but never frames it in terms of a bidder/algorithm being rewarded on attributed conversions and thus optimizing toward buying already-happening conversions. No mention of bidding algorithm incentive structure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States a strategy can perform well against its own objective while destroying money (platform metrics healthy, lift near zero)",
+        "evidence": "\"This is flagged directly as a failure mode: platform metrics healthy, holdout test shows near-zero lift.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the same incrementality gate to retargeting before doubling its budget, treating the 5.8x attributed ROAS as unproven lift",
+        "evidence": "\"The 5.8x ROAS on retargeting doesn't automatically justify doubling it... High ROAS there is consistent with genuine incremental lift and consistent with mostly re-charging people who'd have converted anyway. In-platform ROAS can't distinguish the two cases.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises scaling decisions on marginal return, not average return",
+        "evidence": "\"The rule to apply before scaling any channel is: scale on marginal return, not average.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes average return can hold high while the marginal return on the next dollar sits below break-even",
+        "evidence": "\"A channel can hold a strong average return while the marginal return on the next dollar has already fallen below break-even, because you've saturated the pool of users who were already going to convert.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires incrementality or attribution measurement before any budget move rather than deciding this week from platform reporting alone",
+        "evidence": "\"We don't have the evidence to do either move yet, in either direction... Before we cut brand to zero or double retargeting, we run a two-week holdout test on both\" and \"Then we move budget based on what the test says, not on a blog post about eBay.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses both blanket positions (stop all brand bidding, and 'brand always pays')",
+        "evidence": "\"neither is fully right. Cutting brand entirely because of the eBay study is a misread of that study; the agency's 'brand always pays' is also dogma.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the eBay finding as an upper bound driven by exceptional brand strength, not a general law",
+        "evidence": "\"that's because eBay is one of the most universally recognized brands on earth with near-total organic dominance for its own name... That's an artifact of eBay's brand strength, not a general law of paid search.\" (Frames it as brand-strength-specific, though doesn't explicitly use the term 'upper bound'.)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the replication that found the opposite (Edmunds: substitution under 50%, paid brand traffic economically meaningful)",
+        "evidence": "No mention of Edmunds or any replication study contradicting eBay; only the eBay study is discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the operative instruction as 'test, don't assume'",
+        "evidence": "\"it says 'test whether your brand ads are incremental,' not 'brand ads are always waste.'\" and \"rather than making an irreversible call off someone else's data.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a holdout or geo test as the way to detect non-incremental buying",
+        "evidence": "\"Run a brand incrementality test first: pause brand bids in a subset of markets/geos (or on alternating days) for 2\u20134 weeks, and measure the change in organic clicks/bookings for brand terms vs. paid loss.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a bidder rewarded on attributed conversions will buy conversions that would have happened anyway",
+        "evidence": "\"Retargeting ROAS is structurally inflated in last-click attribution \u2014 you're measuring people who already visited the site... Much of that 'conversion' would have happened anyway through direct/organic return visits; the ad just claimed credit.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a strategy can perform well against its own objective while destroying money (platform metrics healthy, lift near zero)",
+        "evidence": "The transcript discusses inflated ROAS and diminishing returns but never explicitly frames it as 'the platform's own objective/metrics can look healthy while actual incremental lift is near zero/negative' \u2014 it stays at the level of attribution bias and scaling risk, not this specific framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the same incrementality gate to retargeting before doubling its budget, treating the 5.8x attributed ROAS as unproven lift",
+        "evidence": "\"Why the 5.8x retargeting ROAS is also not the slam-dunk it looks like\" and \"Don't blind-double retargeting either. Scale it in steps... watching marginal ROAS and frequency per user as spend increases.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises scaling decisions on marginal return, not average return",
+        "evidence": "\"Scale it in steps (e.g. +25\u201330% at a time), watching marginal ROAS and frequency per user as spend increases. If ROAS holds as you scale, keep going; if it decays sharply, you've found the ceiling of the warm audience.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes average return can hold high while the marginal return on the next dollar sits below break-even",
+        "evidence": "The transcript discusses diminishing returns generally (\"exhaust the warm pool... start buying impressions on colder audiences at declining efficiency\") but never explicitly states that average ROAS can remain high (e.g. still show 5.8x overall) while the marginal/incremental return on the next dollar spent falls below break-even.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires incrementality or attribution measurement before any budget move rather than deciding this week from platform reporting alone",
+        "evidence": "\"That gives him a concrete, time-boxed way to get what he actually wants (proof, not a guess) without walking away from a channel that may be protecting real revenue,\" combined with recommending both a brand holdout test and stepped retargeting scaling with marginal-ROAS monitoring before committing to either budget change.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

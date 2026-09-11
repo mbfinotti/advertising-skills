@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response does not green-light the MMM: the readiness bar is roughly 2 years of clean weekly data (3 for national-level models) plus a dedicated analyst, and Nordvale has 9 months and no analyst.",
+        "evidence": "\"2+ years of clean weekly data (3 for national-scope models) plus a dedicated analyst. Nordvale has ~9 months of order history and no in-house analyst. Both prerequisites fail\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "MMM is named as deleted from this account's menu with the failed prerequisite stated, not parked as a ranked-last option to budget for later.",
+        "evidence": "\"MMM, this cycle: deleted \u2014 data history and analyst headcount both miss the bar.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The default for this cycle is directional proxies on every line.",
+        "evidence": "\"pull three cheap numbers this week (near-zero effort, this is the 'directional proxies' rung...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response recommends a geo or incrementality test on the largest, least-trusted line (Meta at $58K) while proxies drive the rest of the split.",
+        "evidence": "\"Recommend instead: a geo-lift holdout test on Meta, this quarter\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The test design carries the figures: 10-15+ matched markets, roughly 10-20% of geography held out as control, and about 15 days minimum for fast-purchase products (4-6 weeks for longer cycles).",
+        "evidence": "\"10\u201315+ matched geographies, ~10\u201320% held out from Meta spend, 4\u20136 week read\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states the incrementality test leaves a reusable causal anchor for later cycles - a compounding asset, not a one-off read.",
+        "evidence": "No statement in the transcript describing the Meta test as a reusable or compounding asset for future cycles.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response states that an unvalidated model is not evidence, and that even a future MMM's coefficients need holdout or geo validation before being trusted.",
+        "evidence": "\"even then, budget a validating geo test alongside it, don't skip that step\" and \"its coefficients need validation against a holdout or geo test before you trust them\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes MMM is observational and that a model with priors the buyer sets can be pointed at the conclusion they wanted.",
+        "evidence": "\"'a model with priors you set can be pointed at the conclusion you wanted.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proxy numbers are labeled as proxies: they buy direction and headroom, never magnitude.",
+        "evidence": "\"These are directional only \u2014 they tell you headroom, never magnitude\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response checks the incrementality prerequisites before commissioning: a holdable geography and appetite to withhold spend, whose absence would delete the test from the menu.",
+        "evidence": "No mention of checking whether holdable geographies exist or whether there is appetite to withhold spend before recommending the test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response explains why the test is promoted despite proxies winning on efficiency: a misread on a $58K line outweighs the design effort.",
+        "evidence": "\"biggest line, lowest confidence \u2014 is exactly the case where the skill says to promote incrementality testing above its normal rank, because a misread here costs real money\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Geo-lift testing is named the better first investment than MMM below MMM's readiness bar.",
+        "evidence": "\"an MMM would answer it too, eventually, but only after buying 15+ more months of data and an analyst you don't have\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The proxies are matched to channel type rather than ranked against each other: penetration bands for Meta and Pinterest, impression-share headroom for search.",
+        "evidence": "\"Meta \u2014 penetration band...\", \"Google non-brand \u2014 impression-share headroom...\", \"Pinterest \u2014 same penetration-band read as Meta\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response does not green-light the MMM: the readiness bar is roughly 2 years of clean weekly data (3 for national-level models) plus a dedicated analyst, and Nordvale has 9 months and no analyst.",
+        "evidence": "\"## Verdict: Don't green-light the $65K MMM \u2014 not yet... The field standard is 24+ months of weekly data... You have 9 months (~39 weeks)\" (no mention of the dedicated-analyst or 3-year-national-model specifics).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "MMM is named as deleted from this account's menu with the failed prerequisite stated, not parked as a ranked-last option to budget for later.",
+        "evidence": "\"Revisit MMM in 12\u201315 months, once you're sitting on ~18\u201324 months of weekly data\" explicitly parks MMM as a future option rather than deleting it from the menu.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The default for this cycle is directional proxies on every line.",
+        "evidence": "The response instead recommends specific tests (\"Run a Meta incrementality test now\", \"Test Pinterest too\") and holding search flat, not a stated 'directional proxy on every line' default.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response recommends a geo or incrementality test on the largest, least-trusted line (Meta at $58K) while proxies drive the rest of the split.",
+        "evidence": "\"Run a Meta incrementality test now (this is the actual fix for your stated problem)... geo holdout. Pick 10\u201320 matched DMAs, cut Meta spend 70\u2013100% there for 4\u20136 weeks\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The test design carries the figures: 10-15+ matched markets, roughly 10-20% of geography held out as control, and about 15 days minimum for fast-purchase products (4-6 weeks for longer cycles).",
+        "evidence": "\"Pick 10\u201320 matched DMAs, cut Meta spend 70\u2013100% there for 4\u20136 weeks\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states the incrementality test leaves a reusable causal anchor for later cycles - a compounding asset, not a one-off read.",
+        "evidence": "\"you arrive at the eventual MMM conversation with better data and more leverage on price\" and holdout variation is described as \"exactly the kind of variation that makes an MMM identifiable instead of guesswork\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states that an unvalidated model is not evidence, and that even a future MMM's coefficients need holdout or geo validation before being trusted.",
+        "evidence": "No statement that a future MMM's outputs would themselves need holdout/geo validation appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response notes MMM is observational and that a model with priors the buyer sets can be pointed at the conclusion they wanted.",
+        "evidence": "No discussion of MMM's observational nature or steerable priors appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proxy numbers are labeled as proxies: they buy direction and headroom, never magnitude.",
+        "evidence": "No proxy figures (e.g. penetration, impression share) are used or labeled as such in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response checks the incrementality prerequisites before commissioning: a holdable geography and appetite to withhold spend, whose absence would delete the test from the menu.",
+        "evidence": "The response recommends the geo holdout directly without checking whether holdable geography or appetite to withhold spend exists.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response explains why the test is promoted despite proxies winning on efficiency: a misread on a $58K line outweighs the design effort.",
+        "evidence": "No such efficiency trade-off explanation appears; the justification given is instead about the stated question being causal ('is Meta really working?'), not a proxies-vs-test efficiency comparison.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Geo-lift testing is named the better first investment than MMM below MMM's readiness bar.",
+        "evidence": "\"A geo or platform-native holdout test does exactly that, directly, faster, and cheaper.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The proxies are matched to channel type rather than ranked against each other: penetration bands for Meta and Pinterest, impression-share headroom for search.",
+        "evidence": "No penetration-band or impression-share-headroom proxy figures appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

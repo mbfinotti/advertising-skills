@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recommends bringing a prioritised point of view instead of a checklist walkthrough",
+        "evidence": "The response's central thesis is exactly this: 'Keep the tool. Change what you present... then build your own prioritized point of view on top of it. The deliverable they're grading is your judgment, not the tool's coverage.' It explicitly warns that reading a 40-point tool audit aloud 'reads as a lack of independent judgment.' The restructured agenda dedicates a section to 'Prioritised recommendation \u2014 8 min. Your top three changes, ranked by expected impact, each with the metric that would prove it worked,' and repeatedly instructs to 'collapse them into 2-3 dollar-weighted findings, not a s",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recommends bringing a prioritised point of view instead of a checklist walkthrough",
+        "evidence": "The core premise is explicitly this: 'A 40-point checklist read top-to-bottom in 45 minutes is a data dump, not an audit' and 'walk you through it by business impact, not by checklist order.' Section 4 gives a concrete triage into \ud83d\udd34 account-breaking / \ud83d\udfe0 meaningful / \ud83d\udfe2 hygiene buckets with time budgets proportional to impact, stating 'This sorting *is* the skill they're testing.' Section 6 closes with a prioritised action plan ('Close with a plan, not a list'), and the anti-patterns section names 'Reading the tool's output verbatim', 'Treating all 40 points as equal', and 'No point of view' as ",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects standardizing on Google Ads as the source of truth: platforms report claims on conversions, and the anchor must be the system that records the money (the order system).",
+        "evidence": "\"Push back on this specifically... Google Ads counts claims, not money. It has no visibility into refunds, cancellations, chargebacks, or whether the order ever actually shipped. Your order system is the only system in this conversation that reconciles to revenue recognized.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that board- or executive-facing numbers anchor on the finance-grade source of truth.",
+        "evidence": "\"order system anchors every board and finance number; Google Ads numbers stay labeled as an in-platform, non-incremental signal.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires that any platform ROAS shown in the deck be labeled non-incremental, with platform numbers reserved for in-platform bid optimization.",
+        "evidence": "\"Google Ads numbers stay labeled as an in-platform, non-incremental signal... The fix isn't \\\"distrust Google Ads instead\\\" \u2014 platform data is genuinely useful for in-platform bid optimization, that's what it's built for.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the explained share as roughly 67% (940 of 1,410) and states it falls below the roughly 80% pass threshold.",
+        "evidence": "\"Run the actual numbers: 940 / 1,410 = 66.7% explained. The bar for calling a residual \\\"acceptable and stop investigating\\\" is ~80% explained... You're at 67%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to present the reconciliation as fully explained, stating that claiming a clean tie-out fabricates a number.",
+        "evidence": "\"closing that gap to zero... launders 470 conversions you can't currently account for into a number that looks clean because it's fabricated, not because it's understood.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes iterating on the 470 unexplained conversions by walking the timing and definitional cause lists with the direction check (each candidate cause must push the gap the observed way).",
+        "evidence": "The checklist table of causes is followed by: \"Each of these has a direction: all of them push Google's count above the order system's, same direction as your observed gap, so each is a legitimate candidate \u2014 you're not casting around randomly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends re-running the comparison after attribution windows close to confirm suspected timing items actually resolved.",
+        "evidence": "The transcript mentions attribution window only as a normalization-basis line item to document (\"attribution window as currently configured in Google Ads settings (don't assume the default \u2014 read it)\") and never instructs re-running the comparison after the window closes to confirm timing items resolved.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that a residual of this size makes a real tracking defect the likely case (most audited accounts carry at least one), so known defect mechanisms should be checked before accepting the remainder.",
+        "evidence": "The transcript calls duplicate tag firing \"the single most common B2C cause of platform-high gaps\" but never states that a residual of this size makes a defect the likely case or that most audited accounts carry at least one such defect.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that if the share is still below the threshold at the deadline, the deck should carry the honest figure with named exclusions of what was ruled out, which beats a fabricated 100%.",
+        "evidence": "\"If you're still short of 80% in two weeks, say so \u2014 an honest 70-75% with named exclusions is a stronger board position than a fake 100%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Justifies the 80% threshold by reference to the officially published expected-discrepancy band, rather than presenting it as arbitrary.",
+        "evidence": "The transcript states \"The bar for calling a residual \\\"acceptable and stop investigating\\\" is ~80% explained *plus* the residual being stable, direction-consistent, and not resembling a known failure mode\" with no citation to any officially published discrepancy band or source.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Prescribes the reconciliation report shape: per-pair verdicts, a normalization basis, a variance table with bucket, direction check, and owner per cause line, a residual statement, and known deltas to carry forward.",
+        "evidence": "Section 4 lists \"Headline\" (verdict), \"Normalization basis\", \"Variance table \u2014 one row per cause... source pair | metric | amount | % of gross gap | bucket (timing/definitional/residual) | cause | direction check | evidence | owner | status\", \"Residual statement\", and \"Known deltas to carry forward\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sequences the two weeks with hour- and day-scale checks only, deferring anything that needs a full test period past the board date.",
+        "evidence": "\"You have enough runway to close real ground on the 470, not enough to run a holdout test (needs a full test period) or stand up self-reported attribution (needs a period to accrue after setup). Spend the two weeks on analyst-hours-scale decomposition instead\", followed by a table explicitly ranked \"near-zero to hours of effort\".",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects standardizing on Google Ads as the source of truth: platforms report claims on conversions, and the anchor must be the system that records the money (the order system).",
+        "evidence": "\"Google Ads is not a neutral measurement system \u2014 it's an interested party... Recommendation: order system (or a blended MMM/incrementality view, if you have the maturity for it) is source of truth for revenue and ROAS. Google Ads is a diagnostic/optimization tool, not a P&L input.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that board- or executive-facing numbers anchor on the finance-grade source of truth.",
+        "evidence": "\"Recommendation: order system (or a blended MMM/incrementality view, if you have the maturity for it) is source of truth for revenue and ROAS,\" applied directly to the board slide, which is built with the order system as the anchor for the gap/explained/unexplained figures.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires that any platform ROAS shown in the deck be labeled non-incremental, with platform numbers reserved for in-platform bid optimization.",
+        "evidence": "The closest statement is \"Google Ads numbers shown alongside as 'platform-reported' for context\" and \"Google Ads is a diagnostic/optimization tool, not a P&L input\" \u2014 there is no requirement to label ROAS specifically as 'non-incremental,' nor any statement restricting platform numbers to in-platform bid optimization use.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the explained share as roughly 67% (940 of 1,410) and states it falls below the roughly 80% pass threshold.",
+        "evidence": "The transcript computes \"940 of 1,410 conversions, i.e. ~67%\" but never mentions an 80% threshold anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to present the reconciliation as fully explained, stating that claiming a clean tie-out fabricates a number.",
+        "evidence": "\"Fabricating certainty in a board deck is the single fastest way to lose credibility as the first data hire... Don't present it as reconciled. Present it as reconciled to 66%, and say so on the slide.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes iterating on the 470 unexplained conversions by walking the timing and definitional cause lists with the direction check (each candidate cause must push the gap the observed way).",
+        "evidence": "The transcript lists candidate causes (\"consent-mode/cookie-loss under- or over-counting, coupon-code or affiliate-channel double-attribution, test/internal orders, refund timing mismatches... multi-touch households...\") but never describes checking that each candidate cause pushes the gap in the observed direction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends re-running the comparison after attribution windows close to confirm suspected timing items actually resolved.",
+        "evidence": "No mention of re-running the comparison after attribution windows close; the only follow-up timing reference is \"Update at next board meeting\" and \"investigating, next update in N weeks,\" with no tie to window closure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that a residual of this size makes a real tracking defect the likely case (most audited accounts carry at least one), so known defect mechanisms should be checked before accepting the remainder.",
+        "evidence": "The transcript does not state that most audited accounts carry a tracking defect or that this makes a defect the likely explanation for the residual; it only offers a list of \"likely candidates\" as hypotheses to investigate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that if the share is still below the threshold at the deadline, the deck should carry the honest figure with named exclusions of what was ruled out, which beats a fabricated 100%.",
+        "evidence": "There is no threshold or deadline framing anywhere in the transcript (no 80% figure exists), and the unexplained bucket is described with candidate hypotheses to investigate, not \"named exclusions of what was ruled out.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Justifies the 80% threshold by reference to the officially published expected-discrepancy band, rather than presenting it as arbitrary.",
+        "evidence": "No 80% threshold, official expected-discrepancy band, or any such justification appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Prescribes the reconciliation report shape: per-pair verdicts, a normalization basis, a variance table with bucket, direction check, and owner per cause line, a residual statement, and known deltas to carry forward.",
+        "evidence": "The transcript only proposes a simple three-row board slide table (Gross gap / Explained / Unexplained) \u2014 there is no per-pair verdict structure, normalization basis, direction check, owner-per-cause-line, or carry-forward known deltas.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sequences the two weeks with hour- and day-scale checks only, deferring anything that needs a full test period past the board date.",
+        "evidence": "The only time-scoped guidance is \"Spend a few hours on the 470 before the deck is final if you can\" and \"don't let this become a rabbit hole that delays the deck\" \u2014 there is no explicit two-week sequencing of hour/day-scale checks or deferral of full-test-period items past the board date.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

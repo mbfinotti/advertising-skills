@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects reported CTR as the campaign's success KPI",
+        "evidence": "\"First, the metric as briefed is wrong \u2014 say this before it ships...replace it as the gate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that reported CTR was found negatively correlated with pipeline in the largest published dataset (negative correlation stated; rho about -0.17 acceptable)",
+        "evidence": "\"found reported CTR negatively correlated with pipeline (rho = \u22120.170)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the denominator artifact: under an engagement objective, reported CTR counts reactions, comments, shares, and follows, not just clicks to a destination",
+        "evidence": "\"reported CTR on an engagement objective counts reactions, comments, shares and follows \u2014 not just clicks to a destination.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the 2.68% vs 0.42% comparison as vendor-published and self-serving rather than settled fact",
+        "evidence": "\"vendor-published, self-serving, 119 sponsored posts / ~$300k spend / 211 companies\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the headline CTR figure and the negative-correlation warning trace to the same vendor source, or that the CTR claim is not independently verified",
+        "evidence": "\"The same report, using the same dataset, found reported CTR negatively correlated with pipeline...The agency handed the VP the one number their own source shows doesn't predict revenue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets gate 1 as cost per landing-page click at or below the account's own $5.80 brand-ads baseline",
+        "evidence": "\"Cost per landing-page click \u2264 $5.80 \u2014 your own brand-campaign baseline to this same audience.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the $5.80 in-account baseline as the bar rather than a $3-5 provisional external figure, since the provisional bar is only for accounts with no baseline",
+        "evidence": "\"This beats any published external number (the vendor's own '~$3.06' figure is from the same self-serving report) because it's your account's real data\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets gate 2 as the engager retargeting pool crossing the downstream platform's minimum serveable audience floor (about 300 matched members, flagged for verification)",
+        "evidence": "\"commonly ~300 matched members \u2014 verify the current threshold before launch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves the review to about week 6 and pushes back on the week-4 read as too early",
+        "evidence": "\"Push back on the week-4 timing too...Week 6 is the earliest defensible read.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defines the lagging verdict on influenced pipeline, sales-accepted opportunities, and cost per opportunity over a 2-4 quarter window",
+        "evidence": "\"Metrics: influenced pipeline, sales-accepted opportunities from engaged accounts, cost per opportunity\" under \"The verdict: 2\u20134 quarter lagging review\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gets the pipeline-to-spend bar agreed now during planning (3-5x territory), not at review time",
+        "evidence": "\"a pipeline-to-spend ratio agreed now, not at review time \u2014 account-based programs commonly plan against 3\u20135x.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Specifies the fail branches: gate 1 failing alone means rotate in a different validated post before touching audience or budget; gate 2 failing alone means widen the list or raise spend",
+        "evidence": "\"Fails #1 only \u2192 the post is the problem. Rotate in a different top-quartile post...Fails #2 only \u2192 audience/budget is the problem. Widen the list or raise spend\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks engagement rate last, or explicitly demotes it, among the leading diagnostics",
+        "evidence": "Table ranks \"Engagement rate / reported CTR\" as #6, with note \"Track it for the VP's deck. Do not let it move a decision.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not adopt 'beat 2% CTR then scale' as the scaling rule",
+        "evidence": "\"keep 'beat 2% CTR' as a vanity number to report...but replace it as the gate.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects reported CTR as the campaign's success KPI",
+        "evidence": "'Primary success metric: Cost per Landing-Page Click (CPLPC), not CTR.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that reported CTR was found negatively correlated with pipeline in the largest published dataset (negative correlation stated; rho about -0.17 acceptable)",
+        "evidence": "No correlation statistic or dataset is cited anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains the denominator artifact: under an engagement objective, reported CTR counts reactions, comments, shares, and follows, not just clicks to a destination",
+        "evidence": "'LinkedIn's default CTR counts all clicks (reactions, comments, shares, profile visits, \"see more\"), not landing-page clicks.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the 2.68% vs 0.42% comparison as vendor-published and self-serving rather than settled fact",
+        "evidence": "'The 2.68% vs 0.42% comparison is an agency deck number \u2014 treat it as directional, not a target-setting input' plus 'Selection bias. Case-study decks show winning accounts, not typical ones.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the headline CTR figure and the negative-correlation warning trace to the same vendor source, or that the CTR claim is not independently verified",
+        "evidence": "No mention of a negative-correlation warning or independent verification status of the CTR claim.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets gate 1 as cost per landing-page click at or below the account's own $5.80 brand-ads baseline",
+        "evidence": "'Target: CPLPC materially below $5.80... This is the one number directly comparable to our existing $5.80 baseline on the same audience.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the $5.80 in-account baseline as the bar rather than a $3-5 provisional external figure, since the provisional bar is only for accounts with no baseline",
+        "evidence": "The only baseline used throughout is 'our existing $5.80 baseline on the same audience'; no $3-5 provisional figure appears.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets gate 2 as the engager retargeting pool crossing the downstream platform's minimum serveable audience floor (about 300 matched members, flagged for verification)",
+        "evidence": "No retargeting pool size or minimum-serveable-audience floor is discussed; gate 2 as defined is LP CTR \u2265 2%, not an audience-floor metric.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Moves the review to about week 6 and pushes back on the week-4 read as too early",
+        "evidence": "The timeline keeps 'Week 4: decision' as the decision point; it only allows extending 'if so' at the week-3 checkpoint rather than moving the review to week 6.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines the lagging verdict on influenced pipeline, sales-accepted opportunities, and cost per opportunity over a 2-4 quarter window",
+        "evidence": "No pipeline, sales-accepted-opportunity, or cost-per-opportunity metric over a multi-quarter window is defined; the entire framework operates on a 4-week window.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gets the pipeline-to-spend bar agreed now during planning (3-5x territory), not at review time",
+        "evidence": "No pipeline-to-spend ratio or 3-5x bar is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies the fail branches: gate 1 failing alone means rotate in a different validated post before touching audience or budget; gate 2 failing alone means widen the list or raise spend",
+        "evidence": "The decision rule given is generic ('if CTR clears but CPLPC or quality doesn't, treat as inconclusive and extend') with no per-gate fail-branch actions like rotating posts or widening lists.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks engagement rate last, or explicitly demotes it, among the leading diagnostics",
+        "evidence": "Engagement rate is not listed or ranked among the diagnostics at all; the metrics discussed are CPLPC, LP CTR, LP conversion rate, and lead quality.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not adopt 'beat 2% CTR then scale' as the scaling rule",
+        "evidence": "'Scale only if all three hold. Hitting the CTR number alone while CPLPC or lead quality misses is not a pass.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

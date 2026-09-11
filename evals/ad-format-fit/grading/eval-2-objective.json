@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags inbox/message ads to cold EU audiences as reaching opted-in members only",
+        "evidence": "\"inbox/message formats in the EU reach opted-in members only. Your list is cold \u2014 no opt-in exists.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies the EU inbox restriction as a legal/consent hard gate, not a performance preference",
+        "evidence": "\"Ineligible | Hard gate, legal not preference\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves the cold EU outreach to feed and/or document-style formats as the substitute",
+        "evidence": "\"Single image or document ad (gated content / nurture angle) to the same cold audience\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States thought-leader ads run only under awareness, engagement, and video-view objectives",
+        "evidence": "\"Thought Leader Ads run only under awareness/engagement/video-view objectives\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States thought-leader image and video variants carry no call-to-action button, so a Book-a-demo direct-response unit is structurally impossible with them",
+        "evidence": "\"carry no CTA button on image/video variants\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags connected TV as an awareness-only format unfit for demo generation (non-clickable, lean-back viewing)",
+        "evidence": "The CTV verdict reasoning cites only the $15K/month spend floor (\"Misfit \u2014 spend floor... CTV on LinkedIn is 'generally only worth funding above ~$15K/month'\"); no statement ties CTV to being non-clickable/lean-back or unfit for demo generation specifically",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States connected TV on the professional network is generally only worth funding above roughly $15K/month total spend, so at $9K/month it cannibalizes budget from measurable formats",
+        "evidence": "\"CTV on LinkedIn is 'generally only worth funding above ~$15K/month total spend; below that it cannibalizes budget from measurable-signal formats.' Your total program is $9K/month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions at least one further connected TV constraint: automated bidding only, a daily minimum around $50, or limited geographies",
+        "evidence": "appendix: \"Connected TV: awareness objective only, automated bidding only, ~$50/day minimum, limited geographies.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 210-member retargeting pool as below the 300-member minimum, so campaigns against it will not serve",
+        "evidence": "\"your 210-member retargeting pool sits below LinkedIn's 300-member campaign minimum\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the roughly 300,000 audience floor for sponsored content and inbox formats (or the ~50,000 general working floor) when sizing the cold audiences",
+        "evidence": "appendix: \"Sponsored content/inbox audience floor: ~300,000.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks each blocked format as ineligible with the specific gate named, instead of ranking it low",
+        "evidence": "\"Sponsored inbox messages... Ineligible\" and \"Thought Leader Ads... Ineligible as specified\" each with named gate",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a substitute format for every non-fit row",
+        "evidence": "Substitutes given for inbox (\"Single image or document ad\"), TLA (\"split into two units\"), CTV (\"Give the credibility job to the awareness-objective Thought Leader unit\")",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches a date and verification status (August 2026 snapshot or unverified-current) to the platform numbers relied on",
+        "evidence": "\"Dated-numbers appendix (Aug 2026 snapshot, all 'unverified-current'...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not include the sponsored inbox messages to the cold German, French, or Dutch audiences in any recommended plan",
+        "evidence": "\"Do not launch as designed. Fix: swap to a feed format\" \u2014 inbox format excluded from final plan",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags inbox/message ads to cold EU audiences as reaching opted-in members only",
+        "evidence": "The concern raised is deliverability/spam-complaint risk (\"trained to distrust unsolicited outreach and to flag it\"), not an opt-in reach restriction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Classifies the EU inbox restriction as a legal/consent hard gate, not a performance preference",
+        "evidence": "Message Ads are framed as a performance/reputation risk (\"hold, don't run cold\"), never as a legal or consent-based restriction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Moves the cold EU outreach to feed and/or document-style formats as the substitute",
+        "evidence": "\"Thought-leader ads (CEO posts, Book a Demo CTA) \u2014 primary format, ~75% of budget\" is recommended as the cold-audience substitute for Message Ads.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States thought-leader ads run only under awareness, engagement, and video-view objectives",
+        "evidence": "No objective restriction is mentioned for thought-leader ads.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States thought-leader image and video variants carry no call-to-action button, so a Book-a-demo direct-response unit is structurally impossible with them",
+        "evidence": "The transcript explicitly proposes \"Book a Demo CTA\" for thought-leader ads, contradicting this claim.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags connected TV as an awareness-only format unfit for demo generation (non-clickable, lean-back viewing)",
+        "evidence": "Reasoning given is budget dilution and lack of geographic targeting precision (\"You also can't target...precisely on CTV\"), not the non-clickable/lean-back mechanism.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States connected TV on the professional network is generally only worth funding above roughly $15K/month total spend, so at $9K/month it cannibalizes budget from measurable formats",
+        "evidence": "Only says CTV \"historically needs a much higher spend floor\" without citing a specific $15K figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Mentions at least one further connected TV constraint: automated bidding only, a daily minimum around $50, or limited geographies",
+        "evidence": "No such specific platform constraint is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the 210-member retargeting pool as below the 300-member minimum, so campaigns against it will not serve",
+        "evidence": "States pool is \"below LinkedIn's practical activation threshold\" but never cites the specific 300-member number.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the roughly 300,000 audience floor for sponsored content and inbox formats (or the ~50,000 general working floor) when sizing the cold audiences",
+        "evidence": "No such audience-size floor is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marks each blocked format as ineligible with the specific gate named, instead of ranking it low",
+        "evidence": "Formats are marked with performance-based verdicts (\"hold, don't run cold\", \"skip for now\") rather than named structural ineligibility gates.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a substitute format for every non-fit row",
+        "evidence": "CTV gets no substitute, only \"CTV: $0 \u2014 revisit once the retargeting pool and budget both scale.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Attaches a date and verification status (August 2026 snapshot or unverified-current) to the platform numbers relied on",
+        "evidence": "No date or verification caveat is attached to any cited threshold or number.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not include the sponsored inbox messages to the cold German, French, or Dutch audiences in any recommended plan",
+        "evidence": "\"Message Ads: ~$2,250, restricted to warm segments (site retargeting pool + engaged post viewers), not cold prospecting lists.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response identifies personal loans as a regulated offer (credit / financial products) triggering a restricted-targeting regime on the major social platform.",
+        "evidence": "\"Personal loans are a credit product. In the US, Meta requires Special Ad Category declaration for credit ads\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes that financial products and services require special-ad-category declaration in the US (a regime in force since January 2025).",
+        "evidence": "\"mandatory since it's a financial product/service, required in the US since Jan 21, 2025\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states age targeting gets locked to 18-65+, so the requested 25-45 narrowing is unavailable.",
+        "evidence": "\"Age locked to 18-65+ \u2014 no narrowing\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states ZIP-level precision is removed and a minimum geographic radius (roughly 15 miles) applies, so the high-income-ZIP plan is unavailable.",
+        "evidence": "\"ZIP-level precision removed \u2014 locked to a 15-mile minimum radius\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states lookalike audiences are replaced by a weaker special-audience tool, so the 1% lookalike plan is unavailable as described.",
+        "evidence": "\"Lookalike audiences are disabled \u2014 replaced by a weaker, broader \\\"Special Ad Audience\\\"\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states detailed-targeting exclusions (such as excluding renters) and demographic narrowing are stripped under the declaration.",
+        "evidence": "\"Detailed-targeting exclusions removed entirely \u2014 can't exclude anyone by housing status\" and \"(implicit) gender narrowing | Also removed\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response does not proceed to optimize or build the requested lookalike/ZIP targeting plan as-is.",
+        "evidence": "\"Meta becomes a broad-audience, creative-led channel here, not a precision-targeting one\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response evaluates paid search / demand capture explicitly for a category buyers actively search, rather than treating social as the default.",
+        "evidence": "\"huge existing search demand for 'personal loan,' 'debt consolidation,' etc.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response advises checking each candidate family's current policy for this exact offer and geography before scoring, noting policy pre-approval can add lead time.",
+        "evidence": "\"Certification can take days to a few weeks; start it now regardless of which channel you fund first\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response runs an affordability step (contribution economics, allowable CAC, payback) before or alongside the platform mix rather than jumping straight to channel names.",
+        "evidence": "Section 1 \"Economics\" precedes Section 2 \"Deleted channels\" and Section 3 ranking.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Output includes a deleted-or-weakened list naming which rule hit which channel family.",
+        "evidence": "Top table lists each targeting capability and \"What Special Ad Category does to it\"; Section 2 table lists gates for each deleted family.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response asks about or accounts for regulated-category exposure across every target geography, not just the one platform mentioned.",
+        "evidence": "\"state eligibility varies\" flagged for Google's Personal Loans certification alongside platform-specific rules.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response identifies personal loans as a regulated offer (credit / financial products) triggering a restricted-targeting regime on the major social platform.",
+        "evidence": "'Personal loans fall under Meta's Special Ad Category: Credit. Every credit-access campaign must be flagged as such.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes that financial products and services require special-ad-category declaration in the US (a regime in force since January 2025).",
+        "evidence": "The transcript cites the '2022 DOJ/HUD settlement' but never states a January 2025 effective date for the declaration requirement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response states age targeting gets locked to 18-65+, so the requested 25-45 narrowing is unavailable.",
+        "evidence": "'No age targeting. You cannot target 25-45... locked to the broadest available age range (18+, no upper bound).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states ZIP-level precision is removed and a minimum geographic radius (roughly 15 miles) applies, so the high-income-ZIP plan is unavailable.",
+        "evidence": "'No ZIP-code / pinpoint geo targeting... Meta enforces a minimum ~15-mile radius around a point.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states lookalike audiences are replaced by a weaker special-audience tool, so the 1% lookalike plan is unavailable as described.",
+        "evidence": "The transcript says lookalike/special audiences were 'discontinued' outright, not replaced by a weaker tool: 'Meta discontinued Lookalike/Special Ad Audiences for Special Ad Categories.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response states detailed-targeting exclusions (such as excluding renters) and demographic narrowing are stripped under the declaration.",
+        "evidence": "'Detailed-targeting options tied to housing status, income proxies, and similar attributes are removed from the picker entirely for these campaigns.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response does not proceed to optimize or build the requested lookalike/ZIP targeting plan as-is.",
+        "evidence": "'the current brief won't get past Ads Manager setup' \u2014 the response redirects instead of building the original plan.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response evaluates paid search / demand capture explicitly for a category buyers actively search, rather than treating social as the default.",
+        "evidence": "'Google Search \u2014 55% (~$22K). Primary channel. Bottom-funnel intent... converts on its own without needing the demographic targeting Meta just took off the table.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response advises checking each candidate family's current policy for this exact offer and geography before scoring, noting policy pre-approval can add lead time.",
+        "evidence": "'Start Google's personal loan advertiser certification this week \u2014 it's the longer pole' and 'Re-confirm current Meta/Google policy specifics directly in Ads Manager / Google's policy center before launch.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response runs an affordability step (contribution economics, allowable CAC, payback) before or alongside the platform mix rather than jumping straight to channel names.",
+        "evidence": "No contribution margin, allowable CAC, or payback calculation appears anywhere; the response moves straight to policy and channel-mix percentages.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Output includes a deleted-or-weakened list naming which rule hit which channel family.",
+        "evidence": "The bulleted list under 'The plan as described won't run on Meta' names each targeting feature removed and ties it to the Special Ad Category rule.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response asks about or accounts for regulated-category exposure across every target geography, not just the one platform mentioned.",
+        "evidence": "The response addresses only Austin-metro targeting on Meta/Google and never discusses state-level lending licensing exposure across other geographies.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

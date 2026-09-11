@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response removes the comparison/competitor angle from the candidate set entirely, naming it as deleted due to the legal constraint, not ranked at the bottom.",
+        "evidence": "\"Comparison | Legal has ruled out naming competitors.\" listed under 'Angles deleted, not demoted'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It removes the social-proof/testimonial angle entirely, named as deleted because no quotes are cleared.",
+        "evidence": "\"Social proof (testimonial-based) | Zero customer quotes cleared for external use.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It removes the urgency angle, named as deleted because no real deadline or promo exists.",
+        "evidence": "\"Urgency/stakes | No real promo or renewal deadline the reader experiences. A manufactured one fails platform review anyway.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each deleted angle carries its cause, so a later round re-tests the constraint rather than the angle.",
+        "evidence": "The 'Angles deleted, not demoted' table pairs each angle with its specific cause, and Contrarian is explicitly noted as 'Worth a slot in round two if you want to invest in that argument.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It promotes the quantified-outcome angle on the grounds that the proof asset already exists and its cost is already paid.",
+        "evidence": "\"The outcome asset already exists. The 31% number is measured, cleared, and sitting on your desk \u2014 its cost is already paid, so per the library's promotion rule it jumps the queue\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It carries the 31% and 90-day figures through accurately, without alteration or embellishment.",
+        "evidence": "\"31% reduction in duplicate-expense payouts in 90 days\" is repeated consistently, later as \"'One team cut duplicate payouts 31% in 90 days.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states its ranking of the remaining candidate angles explicitly in words, not implied by list order alone.",
+        "evidence": "\"Reasoning in one line each: Outcome first because... Mechanism second because... Pain third because... Identity held back...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It names how the 3-week deadline moved the ranking: angles that draft the same day (such as pain) are promoted.",
+        "evidence": "\"The 3-week deadline is a drafting-speed constraint, not a copy constraint. It doesn't argue for urgency-flavored copy... it argues for fewer angles, all cheap to draft right now.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It accounts for solution-aware traffic by promoting mechanism/differentiator framing over opening cold on the problem alone.",
+        "evidence": "\"Solution-aware traffic promotes mechanism. Readers already believe the problem is real; they're comparing how solutions solve it. Opening on 'why this works' earns more than opening on the pain they've already accepted.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It presents 2-3 candidate angle sets of roughly 3-5 angles each, with one recommendation and rationale.",
+        "evidence": "Set A (3 angles), Set B (4 angles, Set A + Identity), Set C (3 angles reordered) are presented, with Set A recommended.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states the ranking is a default that shifts with the account's own assets and constraints, not a law.",
+        "evidence": "\"This is a default ranking, not a fixed one \u2014 if you can tell me the buying-committee role... that could move Pain vs. Mechanism relative to each other.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It asks for explicit approval of an angle set before writing any full ad variants, and does not deliver finished headline/primary-text sets in this reply.",
+        "evidence": "\"Before I draft actual headline/primary-text/CTA copy, I need: (1) your approval of Set A as the angle set...\" \u2014 no finished headline/primary-text copy is delivered in this response.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response removes the comparison/competitor angle from the candidate set entirely, naming it as deleted due to the legal constraint, not ranked at the bottom.",
+        "evidence": "\"No competitor names, no testimonials \u2192 the only differentiation lever left is specificity\" treats comparison as unavailable, tied to the constraint.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It removes the social-proof/testimonial angle entirely, named as deleted because no quotes are cleared.",
+        "evidence": "Section header itself: \"Proof-led single-metric, not story-led social proof\"; \"you have zero cleared quotes, so keep it in third-person observational voice... never first-person attributed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It removes the urgency angle, named as deleted because no real deadline or promo exists.",
+        "evidence": "\"No deadline/promo \u2192 don't fabricate urgency ('limited spots,' 'ends Friday'). It'll read as false.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each deleted angle carries its cause, so a later round re-tests the constraint rather than the angle.",
+        "evidence": "Each bullet pairs the exclusion with its cause: 'No competitor names, no testimonials \u2192', 'No deadline/promo \u2192'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It promotes the quantified-outcome angle on the grounds that the proof asset already exists and its cost is already paid.",
+        "evidence": "\"the only differentiation lever left is specificity\" and \"that's the claim that's actually cleared\" \u2014 framing the 31% stat as the one asset already available.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It carries the 31% and 90-day figures through accurately, without alteration or embellishment.",
+        "evidence": "\"'31% in 90 days,' not 'up to 30%' or 'significant savings'\" and reused identically in both variants.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states its ranking of the remaining candidate angles explicitly in words, not implied by list order alone.",
+        "evidence": "\"Primary variant \u2014 the number as headline\" vs \"Secondary variant \u2014 reframe the sub-problem\" with explicit rationale for each.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It names how the 3-week deadline moved the ranking: angles that draft the same day (such as pain) are promoted.",
+        "evidence": "The deadline is used to justify optimizing for direct response and against a nurture arc, but no connection is drawn between the deadline and promoting quick-to-draft (e.g. pain) angles; pain-based problem education is instead explicitly skipped.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It accounts for solution-aware traffic by promoting mechanism/differentiator framing over opening cold on the problem alone.",
+        "evidence": "\"Solution-aware audience \u2192 skip problem education... Copy should compete on outcome clarity, not awareness\"; secondary variant \"narrow[s] the problem\" as differentiator.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It presents 2-3 candidate angle sets of roughly 3-5 angles each, with one recommendation and rationale.",
+        "evidence": "Only one recommended angle with two phrasing variants is presented; no candidate angle sets of 3-5 angles are shown.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states the ranking is a default that shifts with the account's own assets and constraints, not a law.",
+        "evidence": "\"This is the right call given your specific constraints, not a default preference\" \u2014 states the opposite framing, that it is NOT a default.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It asks for explicit approval of an angle set before writing any full ad variants, and does not deliver finished headline/primary-text sets in this reply.",
+        "evidence": "The reply delivers complete 'Primary variant' and 'Secondary variant' ad copy directly, without requesting approval first.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

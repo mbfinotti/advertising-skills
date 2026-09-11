@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to fill the unknown margin with a plausible number, naming it estimated or missing and giving any policy a provisional status.",
+        "evidence": "\"Contribution margin is a guess ('50\u201360%, probably') \u2014 confidence level 1, not finance-reviewed.\" Status header: \"PROVISIONAL\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gates on measurement: the 40% platform-versus-store revenue gap must be resolved before guardrails are set on that feed.",
+        "evidence": "\"Meta reports ~40% more revenue than Shopify... Shopify revenue is the source of truth below; Meta's Ads Manager numbers are not used to bind any floor.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to set a kill-switch or floor on platform-reported ROAS while the conversion feed is untrusted.",
+        "evidence": "\"Never set a threshold on platform-reported ROAS\" \u2014 all Layers use \"Threshold (true, Shopify-based)\" with a Meta figure only as a retirable proxy column.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why: a guardrail on an untrusted metric fires on data-quality noise and manufactures confident wrong decisions.",
+        "evidence": "\"a guardrail built on numbers nobody trusts manufactures confident wrong decisions.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks how confident the business is in its margin (a guess, finance-reviewed, or per-SKU) or otherwise interviews to pin the input down.",
+        "evidence": "Margin is explicitly labeled \"estimated, low confidence\" and the closing line asks for \"a finance-reviewed margin figure\" to make the policy real.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not substitute a published benchmark (4x ROAS, 3:1 LTV:CAC, 12-month payback) as the starter number.",
+        "evidence": "\"the common '4x ROAS' target floating around ad accounts is folklore with no traceable author... Don't adopt it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any interim number offered shows its derivation and is labeled provisional or estimated, never presented as measured.",
+        "evidence": "Derivation block shows \"Break-even ROSA = 1 / margin\" computed both ways, and layers are explicitly called \"placeholders, not benchmarks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends business-level accepted outcomes (store orders or CRM) as the guardrail data source rather than platform claimed revenue.",
+        "evidence": "\"source: Shopify order revenue \u00f7 total paid spend. Never Meta Ads Manager.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that platform numbers report claimed rather than caused revenue and push spend toward retargeting and brand search.",
+        "evidence": "The transcript does not use \"claimed vs. caused revenue\" language or explain platform bias toward retargeting/brand search anywhere; it only cites the raw 1.4x Meta-vs-Shopify discrepancy.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies fail-closed behavior while the feed is broken: hold spend flat rather than scale.",
+        "evidence": "\"Fail-closed 'No data' / feed broken / stale Meta-Shopify reconciliation counts as a blocking state... hold spend flat, don't scale on an unreconciled read\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels inputs measured, estimated, or missing in any drafted policy skeleton.",
+        "evidence": "Inputs table: \"Contribution margin (CM3) | 50\u201360% | estimated, low confidence\"; \"AOV / price | \u2014 | missing\"; \"Meta vs. Shopify revenue gap | Meta \u2248 1.4\u00d7 Shopify | measured but unreconciled\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks the user questions before proposing thresholds instead of assuming the missing facts.",
+        "evidence": "The document proposes concrete numeric thresholds immediately (\"Break-even floor MER 2.00x... Target floor MER 2.50x\") using worst-case binding rather than withholding numbers until questions are answered.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to fill the unknown margin with a plausible number, naming it estimated or missing and giving any policy a provisional status.",
+        "evidence": "\"contribution margin = 50% \u2014 the bottom of your 50\u201360% estimate... Revisit once you actually calculate it precisely.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gates on measurement: the 40% platform-versus-store revenue gap must be resolved before guardrails are set on that feed.",
+        "evidence": "\"Rule: Shopify is the only source of truth for revenue and CAC\" \u2014 guardrails are set on Shopify data, not on the untrusted Meta feed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to set a kill-switch or floor on platform-reported ROAS while the conversion feed is untrusted.",
+        "evidence": "The doc explicitly sets \"Meta-dashboard ROAS floor \u2248 3.5x (= 2.5 true floor \u00d7 1.4 inflation factor)\" \u2014 a numeric floor on platform-reported ROAS.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains why: a guardrail on an untrusted metric fires on data-quality noise and manufactures confident wrong decisions.",
+        "evidence": "The doc explains the over-reporting mechanism but never frames the consequence as guardrails firing on noise and manufacturing confident wrong decisions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks how confident the business is in its margin (a guess, finance-reviewed, or per-SKU) or otherwise interviews to pin the input down.",
+        "evidence": "No question is asked; the doc simply assumes 50% and proceeds.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not substitute a published benchmark (4x ROAS, 3:1 LTV:CAC, 12-month payback) as the starter number.",
+        "evidence": "The starter numbers (2.0x/2.5x ROAS, 40-50% CAC) are derived from the stated 50% margin, not from a published benchmark.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any interim number offered shows its derivation and is labeled provisional or estimated, never presented as measured.",
+        "evidence": "\"Math: breakeven ROAS = 1 \u00f7 CM% = 1 \u00f7 0.50 = 2.0x\" shown against the explicitly labeled conservative estimate.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends business-level accepted outcomes (store orders or CRM) as the guardrail data source rather than platform claimed revenue.",
+        "evidence": "\"Rule: Shopify is the only source of truth for revenue and CAC.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that platform numbers report claimed rather than caused revenue and push spend toward retargeting and brand search.",
+        "evidence": "The doc explains claimed-vs-caused ('crediting purchases that either happened via another channel or didn't happen at all') but never mentions retargeting/brand-search spend skew.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies fail-closed behavior while the feed is broken: hold spend flat rather than scale.",
+        "evidence": "No 'hold spend flat' fail-closed instruction appears; the doc proceeds directly to setting operating floors/ceilings.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels inputs measured, estimated, or missing in any drafted policy skeleton.",
+        "evidence": "There is no systematic measured/estimated/missing labeling scheme in the document, only a single mention of the margin as an 'estimate'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks the user questions before proposing thresholds instead of assuming the missing facts.",
+        "evidence": "The document proposes concrete thresholds immediately without asking any clarifying questions first.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

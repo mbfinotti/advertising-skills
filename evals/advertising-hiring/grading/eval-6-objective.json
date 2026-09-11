@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Overrides the IT policy: all tool access granted on day one, with delayed access named as an avoidable cause of a slow start",
+        "evidence": "Only a read-only exception is requested: 'request read-only access to ad accounts and analytics starting day 1, with write/edit access staying gated at day 30/60 per policy... If IT won't grant that, the ramp below assumes zero account visibility before day 30.' This is not a full override.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes staged authority from staged access - access is full from day one while authority is staged",
+        "evidence": "Access itself remains staged per policy (day 30/60) in the base case: 'Shadow | Weeks 1-4 | No account access (or read-only, if IT grants the exception).'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets an explicit spend-approval threshold in week one, written as a number rather than left as a vibe",
+        "evidence": "No numeric week-one spend threshold appears anywhere; the spend cap only appears later ('Cap is a written dollar figure, not a vibe \u2014 set it with the COO in week 8').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Stages weeks 1-2 as shadow: observe, ask, audit, no changes",
+        "evidence": "The shadow phase is defined as 'Weeks 1-4', not weeks 1-2, due to the access delay.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Stages weeks 3-6 as co-sign, or independent only under a small explicit cap",
+        "evidence": "Co-sign phase is set at 'Day 30 \u2013 day 59' (roughly weeks 5-8.5), not weeks 3-6.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Grants independent authority within a written cap by day 60",
+        "evidence": "'Independent within a cap | Day 60 \u2013 day 89 | Analytics/MMP live. Cap is a written dollar figure, not a vibe'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Grants full authority by day 90",
+        "evidence": "'Full authority | Day 90+ | Contingent on a validated measurement audit.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Makes full authority contingent on a validated measurement audit - no audit, no full authority",
+        "evidence": "'Contingent on a validated measurement audit... no audit, no full authority'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the week-2 CAC commitment: the measurement audit precedes any performance target",
+        "evidence": "'CAC target in week 2 \u2014 pull this... Replace it with: by end of week 2, the hire delivers a written measurement-audit plan'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the month-one 50% scaling win: the first win is a tracking fix or contained optimization, never a scaling bet",
+        "evidence": "'\"Scale the best campcampaign 50%\" as the month-1 win \u2014 pull this too... the first win is a tracking fix or a contained optimization, never a scaling bet'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes no day-30 milestone that requires a resolved experiment, on learning-phase and statistical-power grounds",
+        "evidence": "Day 30 deliverable is 'Account + creative audit complete; ranked optimization backlog; first co-signed change queued' \u2014 no resolved test required.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a day-one access checklist that covers the mobile measurement partner, since this is an app advertiser",
+        "evidence": "MMP access is listed as 'Day 60, same as analytics' in the access table, not granted or requested for day one.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ends the ramp with watch areas as a section distinct from the goals",
+        "evidence": "'## Watch areas (distinct from goals)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the authority ladder and milestone skeleton as this plan's own synthesis rather than a published standard",
+        "evidence": "'Milestone skeleton below is this skill's own synthesis, not a published standard'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Overrides the IT policy: all tool access granted on day one, with delayed access named as an avoidable cause of a slow start",
+        "evidence": "The plan works within the IT schedule (\"Days 1-30 \u2014 no ad or analytics access yet\") and only asks IT/COO whether earlier access is possible, rather than overriding the policy.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes staged authority from staged access - access is full from day one while authority is staged",
+        "evidence": "Access itself remains staged per IT (Day 30 ad accounts, Day 60 analytics); the plan does not propose full day-one access with only authority staged.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets an explicit spend-approval threshold in week one, written as a number rather than left as a vibe",
+        "evidence": "No specific dollar threshold for spend approval appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Stages weeks 1-2 as shadow: observe, ask, audit, no changes",
+        "evidence": "\"Week 1: stakeholder rounds... Week 1-2: audit tracking setup... secondhand via docs and the data team, not live login.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Stages weeks 3-6 as co-sign, or independent only under a small explicit cap",
+        "evidence": "Weeks 3-4 involve drafting a scale plan and getting sign-off, not a defined co-sign execution phase with a spend cap.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Grants independent authority within a written cap by day 60",
+        "evidence": "Day 60 is described only as when \"analytics access lands,\" with no independent-authority cap granted.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Grants full authority by day 90",
+        "evidence": "No explicit \"full authority\" grant is stated at day 90; day 90 activities are a retro and next-quarter roadmap.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Makes full authority contingent on a validated measurement audit - no audit, no full authority",
+        "evidence": "No authority-cap/tier concept exists in the transcript to make contingent on the audit.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the week-2 CAC commitment: the measurement audit precedes any performance target",
+        "evidence": "\"A CAC commitment in week 2 with zero data access is a guess dressed as a target... Convert to a committed target on Day 75.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the month-one 50% scaling win: the first win is a tracking fix or contained optimization, never a scaling bet",
+        "evidence": "The plan keeps the scaling bet as the month-1 \"win\" (\"the 'win' is a fully-built, pre-approved scaling plan ready to fire\"), rather than replacing it with a tracking-fix win.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Writes no day-30 milestone that requires a resolved experiment, on learning-phase and statistical-power grounds",
+        "evidence": "\"Day 30 checkpoint: scaling plan approved and ready to execute\" \u2014 not a resolved result; also flags learning-phase risk of a single 50% jump.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a day-one access checklist that covers the mobile measurement partner, since this is an app advertiser",
+        "evidence": "\"audit tracking setup (pixel/MMP \u2014 AppsFlyer, Adjust, etc.) secondhand via docs and the data team\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ends the ramp with watch areas as a section distinct from the goals",
+        "evidence": "The document ends with \"Questions worth putting to COO/IT before Day 1,\" not a distinct \"watch areas\" section separate from phase goals.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels the authority ladder and milestone skeleton as this plan's own synthesis rather than a published standard",
+        "evidence": "No such labeling appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

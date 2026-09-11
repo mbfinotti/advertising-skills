@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Routes the immediate task to mbfinotti/advertising-skills@ad-account-diagnostic as the single route.",
+        "evidence": "'## Route: mbfinotti/advertising-skills@ad-account-diagnostic \u2014 not all three'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to run the three layer skills in parallel before the diagnostic localises the failing layer.",
+        "evidence": "'Ship none of the three (new creative batch, tracking rebuild, page rollback) this sprint until the diagnostic returns a verdict.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the reason: running fixes in parallel hides which layer actually failed; the diagnostic names the layer first.",
+        "evidence": "'If you run all three in parallel and CPA recovers, you will never know which one worked ... you're back to three guesses instead of a method.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the follow-on as a conditional chain: the diagnostic first, then the named layer's skill.",
+        "evidence": "The tree diagram: 'ad-account-diagnostic \u251c\u2500 names creative as failing layer \u2500\u2500\u2192 ad-creative-fatigue \u251c\u2500 names tracking as failing layer \u2500\u2500\u2192 ad-conversion-tracking \u2514\u2500 names post-click as failing layer \u2500\u2192 paid-landing-page-audit'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Maps the creative-fatigue hypothesis to mbfinotti/advertising-skills@ad-creative-fatigue as a conditional next step.",
+        "evidence": "See diagram above: 'names creative as failing layer \u2500\u2500\u2192 ad-creative-fatigue'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Maps the double-firing pixel hypothesis to mbfinotti/advertising-skills@ad-conversion-tracking as a conditional next step.",
+        "evidence": "'names tracking as failing layer \u2500\u2500\u2192 ad-conversion-tracking (GO/NO-GO on event config, single-fire, dedup \u2014 the actual test of the dev's theory)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Maps the landing-page hypothesis to mbfinotti/advertising-skills@paid-landing-page-audit as a conditional next step.",
+        "evidence": "'names post-click as failing layer \u2500\u2192 paid-landing-page-audit (message match, friction, speed \u2014 the actual test of your theory)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not commit to any of the three fixes (new creative batch, tracking rebuild, page rollback) before the diagnostic verdict.",
+        "evidence": "'Don't run the three fixes.' stated explicitly at top of Route section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "'mbfinotti/advertising-skills@ad-account-diagnostic', '@ad-creative-fatigue', '@ad-conversion-tracking', '@paid-landing-page-audit' etc.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that the diagnostic implements nothing itself and runs on data already in hand.",
+        "evidence": "'ad-account-diagnostic implements nothing itself. It runs on the data you already have (spend, CPA trend, platform-vs-backend conversion counts...)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creates or updates the context artifact recording the CPA jump and the three competing hypotheses as open items.",
+        "evidence": "'CAC-ROAS position: CPA $80 \u2192 $190 over 3 weeks (+137%)' and 'Open: (1) is the creative genuinely fatigued ... (2) does the pixel double-fire ... (3) did the landing-page redesign break conversion'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Routes the immediate task to mbfinotti/advertising-skills@ad-account-diagnostic as the single route.",
+        "evidence": "'None of my available skills fit this... My skill set covers SEO/GEO audits, content writing, docs/decks/spreadsheets, and dev tooling \u2014 not paid-media CPA forensics.' No skill name is ever cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to run the three layer skills in parallel before the diagnostic localises the failing layer.",
+        "evidence": "'Don't ship all three changes in the same window again \u2014 you'll be back here in another three weeks with the same argument and less data than you have now.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the reason: running fixes in parallel hides which layer actually failed; the diagnostic names the layer first.",
+        "evidence": "'Launching creative + tracking + landing page in the same sprint means whatever happens next, you'll have zero idea which fix worked.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the follow-on as a conditional chain: the diagnostic first, then the named layer's skill.",
+        "evidence": "The numbered steps ('1. Rule tracking in/out first... 2. Find the timing... 3. Test the remaining hypotheses one at a time') form a conditional sequence gated on the tracking check's outcome.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Maps the creative-fatigue hypothesis to mbfinotti/advertising-skills@ad-creative-fatigue as a conditional next step.",
+        "evidence": "Creative fatigue is described only generically ('Creative fatigue is testable independently via frequency/CTR decay in the ad platform itself') with no skill name cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps the double-firing pixel hypothesis to mbfinotti/advertising-skills@ad-conversion-tracking as a conditional next step.",
+        "evidence": "No skill name is cited for the tracking-verification step; it's described only as pulling backend/CRM order counts and comparing to platform data.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps the landing-page hypothesis to mbfinotti/advertising-skills@paid-landing-page-audit as a conditional next step.",
+        "evidence": "The landing-page test is described generically ('A/B the landing page (old vs. new, split traffic)') with no skill name.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not commit to any of the three fixes (new creative batch, tracking rebuild, page rollback) before the diagnostic verdict.",
+        "evidence": "'A full rollback answers \"was the LP the problem\" with a yes/no you can't decompose from a blended metric' \u2014 explicitly avoids committing to rollback before testing.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "No skill names appear anywhere, so none are malformed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that the diagnostic implements nothing itself and runs on data already in hand.",
+        "evidence": "Step 1 only calls for pulling and comparing existing 'backend/CRM order count' against existing platform-reported conversions \u2014 no implementation action is proposed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creates or updates the context artifact recording the CPA jump and the three competing hypotheses as open items.",
+        "evidence": "No mention of advertising-context.md or any artifact update in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

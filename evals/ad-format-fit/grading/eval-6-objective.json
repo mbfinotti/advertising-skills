@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Advises against launching the fully-automated multi-surface shopping type as the account's first campaign",
+        "evidence": "\"Automated multi-surface types should never be an account's first campaign \u2014 there's no history for the algorithm to inherit.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the disqualifying conditions present: below the roughly $50/day comfort floor, a new account, and weak/unverified tracking",
+        "evidence": "Table rows: \"First-ever campaign... Fails\", \"$40/day budget... Fails\", \"Tracking state... Fails\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends starting with standard search/shopping campaigns and graduating later",
+        "evidence": "\"Run a standard, manually-structured Shopping/Search campaign first on this budget. Graduate to the automated multi-surface campaign once...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the 30+ products and 15+ creatives readiness numbers as practitioner defaults to flag, not platform minimums - does not declare 8 products or 6 creatives ineligible on those grounds",
+        "evidence": "\"Flag, not a block | Well under the 30+ product / 15+ creative readiness heuristic \u2014 this alone wouldn't kill the launch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks the never-verified pixel as a launch blocker requiring the conversion event to show recent, verified firing (browser-side and server-side) before spend",
+        "evidence": "\"[blocker] Pixel never tested... Fire and confirm test conversions, browser-side and server-side, before any spend optimizes on it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the silent-exclusion trap: an asset can be approved at upload yet silently excluded from mismatched placements",
+        "evidence": "\"A dimension that's technically valid can still be silently excluded from the specific placements it was bought against\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that upload acceptance proves neither policy approval nor delivery",
+        "evidence": "Transcript says the opposite for policy: \"'Approved at upload' proves the creative passed policy review. It proves nothing about delivery.\" \u2014 it explicitly states upload acceptance DOES prove policy approval, contradicting this item",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Re-diagnoses the barely-spending display campaign as a likely placement/dimension exclusion masquerading as a budget or bid problem, and advises against raising bids as the fix",
+        "evidence": "\"HOLD on raising bids \u2014 diagnose first... a bid increase won't move a creative that isn't being served at all\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 14-field lead form against the 12-field maximum on the professional network",
+        "evidence": "\"LinkedIn lead gen forms cap at 12 fields maximum (3\u20134 recommended). 14 fields exceeds the platform ceiling\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends 3-4 form fields and CRM field mapping for the lead form",
+        "evidence": "\"cut the form to 3\u20134 fields\" and \"CRM field mapping for whichever fields survive the cut\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the launch threshold explicitly: any single failing blocker item means do not launch (zero blockers is the threshold)",
+        "evidence": "\"Zero blockers = launch threshold \u2014 currently at 3\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a launch-blocker list with a fix attached to each failing item",
+        "evidence": "Consolidated table with columns \"# | Blocker | Fix\" for all three blockers",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes previewing the ad in every surface it will serve (feed, vertical, in-stream, partner network) among the blockers, checking truncation, cropping, and call-to-action",
+        "evidence": "No such preview-across-surfaces blocker item appears in the launch-blocker list or elsewhere in section 6",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies vertical safe zones - key elements out of roughly the top 14% and bottom 20-35% - or equivalent spec enforcement via export presets and a spec-bearing filename convention",
+        "evidence": "No mention of safe zones, top 14%/bottom 20-35%, export presets, or filename conventions anywhere in section 6",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Advises against launching the fully-automated multi-surface shopping type as the account's first campaign",
+        "evidence": "The transcript only conditions the campaign on fixing the pixel and bid strategy; it never advises against this campaign type as an inappropriate first campaign for a new account.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the disqualifying conditions present: below the roughly $50/day comfort floor, a new account, and weak/unverified tracking",
+        "evidence": "States \"$40/day is low\" and \"brand-new account + brand-new pixel\" but never cites a specific ~$50/day comfort floor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends starting with standard search/shopping campaigns and graduating later",
+        "evidence": "No such staged recommendation appears; the transcript works within the existing automated campaign structure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the 30+ products and 15+ creatives readiness numbers as practitioner defaults to flag, not platform minimums - does not declare 8 products or 6 creatives ineligible on those grounds",
+        "evidence": "\"\u26a0\ufe0f Thin inputs. 8 SKUs and 6 creative assets are below the volume this campaign type wants to diversify against; expect a longer, noisier learning phase\" \u2014 flagged as a caution (\u26a0\ufe0f), not marked ineligible (\ud83d\udd34).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks the never-verified pixel as a launch blocker requiring the conversion event to show recent, verified firing (browser-side and server-side) before spend",
+        "evidence": "Verification steps (\"Fire test events...Confirm Purchase/Lead events...\") never distinguish browser-side from server-side tracking.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the silent-exclusion trap: an asset can be approved at upload yet silently excluded from mismatched placements",
+        "evidence": "No such trap is described for creatives generally.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that upload acceptance proves neither policy approval nor delivery",
+        "evidence": "The transcript instead says \"'Approved' is a creative content check\" \u2014 implying it DOES confirm policy approval, just not delivery, which is a different (partial) claim.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Re-diagnoses the barely-spending display campaign as a likely placement/dimension exclusion masquerading as a budget or bid problem, and advises against raising bids as the fix",
+        "evidence": "\"Don't raise bids yet...Audience/placement size \u2014 970\u00d7250 (billboard) has less available inventory than standard IAB sizes...can genuinely starve delivery independent of bid.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 14-field lead form against the 12-field maximum on the professional network",
+        "evidence": "States \"completion drops sharply past 3\u20135 fields\" but never cites a 12-field platform maximum.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends 3-4 form fields and CRM field mapping for the lead form",
+        "evidence": "\"Cut to 3\u20135 fields...Test the lead \u2192 CRM handoff end-to-end, not just the form itself.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the launch threshold explicitly: any single failing blocker item means do not launch (zero blockers is the threshold)",
+        "evidence": "The verdict states \"NOT ready to launch\" due to blockers but never articulates the general rule that any single failing item bars launch.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a launch-blocker list with a fix attached to each failing item",
+        "evidence": "The Go/No-Go summary table lists each campaign with Status and a specific Action for each.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes previewing the ad in every surface it will serve (feed, vertical, in-stream, partner network) among the blockers, checking truncation, cropping, and call-to-action",
+        "evidence": "No mention of previewing ads across feed/vertical/in-stream/partner surfaces or checking truncation/cropping/CTA.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies vertical safe zones - key elements out of roughly the top 14% and bottom 20-35% - or equivalent spec enforcement via export presets and a spec-bearing filename convention",
+        "evidence": "No mention of vertical safe-zone percentages or spec-enforcement conventions.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

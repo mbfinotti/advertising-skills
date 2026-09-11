@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Judges cumulative spend against the prorated period budget ($4,500 expected by day 9 of 31) rather than judging yesterday's $970 against the $500 daily budget.",
+        "evidence": "\"expected to date $4,500 / spend to date $4,410\" and \"Judged cumulatively (the only correct way to judge it), spend-to-date is $4,410 against $4,500 expected \u2014 2% *under* plan, not over.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the cumulative pacing ratio as approximately 0.98 and concludes the campaign is on pace.",
+        "evidence": "\"pacing ratio 0.98\" paired with \"status : ON PACE (deviation suppressed)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that Google may deliberately spend up to 2x the average daily budget in a single day.",
+        "evidence": "\"inside Google's documented allowance to spend up to 2x average daily budget on a single day\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States Google's monthly billing cap of 30.4x the average daily budget, with overdelivery beyond it credited.",
+        "evidence": "\"billing capped at 30.4x the daily budget/month ($15,200) and any overdelivery past that credited automatically.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes no refund claim is needed because overdelivery past the cap is credited rather than billed, distinguishing served from billed spend.",
+        "evidence": "\"any spend past that ceiling is credited automatically \u2014 there's no manual refund request to file for standard Search/Shopping/PMax overdelivery... your monthly spend is projected at $15,190, under even that $15,200 cap, so there's nothing to credit and nothing to claim.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Suppresses the alert under the platform-overdelivery gate check and records the suppression reason in the report.",
+        "evidence": "\"suppression: gate check 1 \u2014 Oct 9's $970 is 1.94x the $500 daily budget, inside Google's documented allowance...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Still delivers a full report despite the suppression, with a status equivalent to ON PACE (deviation suppressed).",
+        "evidence": "Full report block with all pacing fields ends in \"status : ON PACE (deviation suppressed)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Makes no corrective recommendation while suppressed, and specifically does not endorse cutting the daily budget to $400.",
+        "evidence": "\"recommend : none \u2014 no alert survived the gate, so no budget change is warranted.\" and \"**1. Cutting the daily budget to $400 \u2014 reject.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that single-day overdelivery is designed platform behaviour and that only cumulative deviation counts.",
+        "evidence": "\"This is a normal single-day fluctuation, not an account problem\" and \"recompute if a couple more high-spend days show up back-to-back (which would actually move the cumulative ratio, unlike one day alone).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that the proposed budget edit would itself force the delivery system to relearn, adding volatility rather than fixing anything.",
+        "evidence": "\"It also triggers Google's relearning window on the campaign, which creates the kind of volatility that gets misread as a new pacing problem next week.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes report header fields (campaign, period, budget) and a status line rather than answering in loose prose.",
+        "evidence": "\"BUDGET PACING REPORT \u2014 Nordic Sleepwear (Google Ads), 2026-10-10 / period : calendar month 2026-10-01 \u2192 2026-10-31 ... / budget : $15,500 ... / status : ON PACE (deviation suppressed)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Judges cumulative spend against the prorated period budget ($4,500 expected by day 9 of 31) rather than judging yesterday's $970 against the $500 daily budget.",
+        "evidence": "\"Expected cumulative through Oct 9: 9 days \u00d7 $500 = $4,500\" and \"Actual cumulative through Oct 9: $4,410\" \u2014 compares cumulative actual vs cumulative expected, not the single day's $970 vs $500.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the cumulative pacing ratio as approximately 0.98 and concludes the campaign is on pace.",
+        "evidence": "\"You're $90 under expected pace (-2%), not over. The campaign is tracking essentially on-budget for the month.\" ($4,410/$4,500 = 0.98, expressed as -2% rather than the literal decimal, but equivalent and concludes on-pace).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that Google may deliberately spend up to 2x the average daily budget in a single day.",
+        "evidence": "\"Google is explicitly allowed to spend up to 2x your daily budget on a high-traffic day (your $970 is within the $1,000 ceiling)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States Google's monthly billing cap of 30.4x the average daily budget, with overdelivery beyond it credited.",
+        "evidence": "The transcript states the cap as \"daily budget \u00d7 number of days in that month\" (i.e., 31x for October), never mentioning the standard 30.4x average-days-per-month multiplier that Google actually uses.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Concludes no refund claim is needed because overdelivery past the cap is credited rather than billed, distinguishing served from billed spend.",
+        "evidence": "\"If overdelivery ever *would* cause that, Google auto-credits the difference \u2014 there's no manual overage to claim, and no refund process exists for this because there's nothing to refund.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Suppresses the alert under the platform-overdelivery gate check and records the suppression reason in the report.",
+        "evidence": "No mention of any gate check or suppression mechanism anywhere in the transcript; the text is a narrative analysis, not a gated alert system.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Still delivers a full report despite the suppression, with a status equivalent to ON PACE (deviation suppressed).",
+        "evidence": "There is no status field or 'ON PACE (deviation suppressed)' equivalent anywhere; the transcript is prose under markdown headers like \"## Pacing check\" and \"## Recommendation\".",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Makes no corrective recommendation while suppressed, and specifically does not endorse cutting the daily budget to $400.",
+        "evidence": "\"**Don't cut the daily budget to $400.**\" and \"**Leave the daily budget at $500.** The pacing algorithm is doing what it's designed to do.\" \u2014 explicitly rejects the $400 cut and recommends no change, only monitoring.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that single-day overdelivery is designed platform behaviour and that only cumulative deviation counts.",
+        "evidence": "\"That's exactly the compensation mechanism working as designed, not a billing error\" and \"only intervene if actual spend diverges meaningfully ... from the linear expectation later in the month, not off a single high-traffic day.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that the proposed budget edit would itself force the delivery system to relearn, adding volatility rather than fixing anything.",
+        "evidence": "No mention of the delivery/bidding algorithm needing to relearn or any volatility caused by changing the budget; the objection given is purely about being under-pace, not algorithmic relearning.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes report header fields (campaign, period, budget) and a status line rather than answering in loose prose.",
+        "evidence": "The response is organized only with narrative markdown section headers (\"## Pacing check\", \"## Why Oct 9 looks alarming but isn't\", \"## On your plan\", \"## Recommendation\") and bullet prose \u2014 no campaign/period/budget header fields or explicit status line appear.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

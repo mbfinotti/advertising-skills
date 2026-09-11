@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response declines to simply select 6 of the 12 headlines as the test set.",
+        "evidence": "The response's entire structure is 'My call: run these 6' with a table of 6 headlines drawn directly from the agency's 12 (e.g. 'Know your cycle before it knows you', 'Cycle predictions that don't miss') \u2014 it literally selects 6 of the 12 rather than declining to do so.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It identifies that all 12 headlines make the same single argument (the accuracy outcome claim) and are rewordings, not distinct variants.",
+        "evidence": "It only says 'almost all' and quantifies '9 of the 12' \u2014 not that all 12 make the same argument: \"The agency's 12 headlines are almost all one angle wearing different clothes \u2014 the phrase 'accurate' (or a synonym) appears in 9 of the 12.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It justifies that verdict with an interchangeability check: the headlines could be swapped between these lines without any argument breaking.",
+        "evidence": "\"You could swap any of these headlines with each other and the ad would argue nothing different. Testing them teaches you about adjective preference, not the market.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states that a shippable set must span at least two distinct problems, mechanisms, or audiences.",
+        "evidence": "\"Span: identity (1) + pain/trust (2) + outcome in three flavors (3). That's real coverage of problem vs. self-image vs. benefit-framing\" \u2014 the Set-level check explicitly validates the set against a multi-angle spanning standard.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It explains that testing rewordings against each other teaches only wording or synonym preference, not which argument wins the market.",
+        "evidence": "\"Testing them teaches you about adjective preference, not the market.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It proposes replacing the set with variants built on genuinely different angles (a different problem, mechanism, or audience).",
+        "evidence": "The response flags the mechanism/social-proof gap only for a future round ('mine the reviews for round 2 \u2014 that's where the real lift is') rather than proposing new angle-diverse variants now.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It asks to see the 200 app-store reviews (or otherwise requests the user's evidence) before drafting proof-bearing copy.",
+        "evidence": "\"Nobody mined the 200 reviews yet... Treat this round as a placeholder test and mine the reviews for round 2 \u2014 that's where the real lift is.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It contains no fabricated review quotes, statistics, awards, or user counts.",
+        "evidence": "No quotes, statistics, awards, or user counts are asserted anywhere in the transcript; claims are limited to headline text and process flags.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It flags 'The most accurate way to track your cycle' as a superlative requiring substantiation, noting platforms reject unsubstantiated superlatives.",
+        "evidence": "\"you haven't confirmed you can substantiate 'most accurate' \u2014 Meta routinely flags unsubstantiated superlatives, and I won't ship a claim without that confirmation\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It flags second-person phrasing that implies knowledge of the reader's health condition as a risk for this category.",
+        "evidence": "No mention of second-person health-condition phrasing risk appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It applies a generic test: notes that a direct competitor could run these headlines unchanged over their own logo.",
+        "evidence": "No competitor-logo or generic-swap test is mentioned; the only interchangeability test used is among the agency's own headlines.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that wording-level variation is legitimate only after an angle has won, labelled as V2/V3 of the same variant ID.",
+        "evidence": "No V2/V3 versioning concept or discussion appears anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any proposed replacement variants are labelled with angle, awareness stage, formula, and version.",
+        "evidence": "The table columns are only 'Headline / Angle / Awareness fit / Why it earns a slot' \u2014 no formula column and no version IDs (e.g. v1) are present.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response declines to simply select 6 of the 12 headlines as the test set.",
+        "evidence": "The 'Cut' list ('Your cycle, predicted accurately', 'The most accurate way to track your cycle', etc.) confirms the recommended 6 are literally drawn from the given 12 ('The 6 I'd run' table), not a rejection of that approach.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It identifies that all 12 headlines make the same single argument (the accuracy outcome claim) and are rewordings, not distinct variants.",
+        "evidence": "\"roughly 7 are variations on '[intensifier] + accurate + cycle predictions'\" \u2014 claims only ~7 of 12 are redundant, and explicitly treats #3 as 'the only genuinely different linguistic register in the batch', contradicting an all-12 finding.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It justifies that verdict with an interchangeability check: the headlines could be swapped between these lines without any argument breaking.",
+        "evidence": "No swap/interchangeability test is performed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that a shippable set must span at least two distinct problems, mechanisms, or audiences.",
+        "evidence": "No such requirement is stated; the closest is wanting 'different hypotheses (angle, emotion, voice)', not distinct problems/mechanisms/audiences.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It explains that testing rewordings against each other teaches only wording or synonym preference, not which argument wins the market.",
+        "evidence": "\"A 6-way test only tells you something if the variants are testing different hypotheses (angle, emotion, voice) \u2014 not just synonyms of the same claim.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It proposes replacing the set with variants built on genuinely different angles (a different problem, mechanism, or audience).",
+        "evidence": "All 6 recommended headlines are selected from the original 12 provided by the agency; none are newly proposed on a different problem, mechanism, or audience.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It asks to see the 200 app-store reviews (or otherwise requests the user's evidence) before drafting proof-bearing copy.",
+        "evidence": "The review-mining suggestion ('worth a follow-up pass mining the reviews') is floated only after the 6-headline recommendation was already delivered, not requested as a precondition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It contains no fabricated review quotes, statistics, awards, or user counts.",
+        "evidence": "No quotes, stats, awards, or user counts appear anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It flags 'The most accurate way to track your cycle' as a superlative requiring substantiation, noting platforms reject unsubstantiated superlatives.",
+        "evidence": "\"stacking unsubstantiated superlative health claims raises your Meta ad-review disapproval risk in a reproductive-health category \u2014 one is already a stretch without data to back 'most'.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It flags second-person phrasing that implies knowledge of the reader's health condition as a risk for this category.",
+        "evidence": "No mention of second-person health-condition-implying phrasing risk appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It applies a generic test: notes that a direct competitor could run these headlines unchanged over their own logo.",
+        "evidence": "No such competitor-substitution test is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that wording-level variation is legitimate only after an angle has won, labelled as V2/V3 of the same variant ID.",
+        "evidence": "No statement ties wording variation timing to a declared winner or version labels.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any proposed replacement variants are labelled with angle, awareness stage, formula, and version.",
+        "evidence": "The table only has an 'Angle' column; no awareness stage, formula, or version labels are given.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

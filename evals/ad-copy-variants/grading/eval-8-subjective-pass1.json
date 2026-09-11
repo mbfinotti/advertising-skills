@@ -1,0 +1,38 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "It includes a humanizing pass over headlines, primary text, and descriptions before final delivery, rather than shipping raw first-draft output.",
+        "evidence": "No humanizing/de-slop step is mentioned anywhere: the process notes cover assumptions, angle selection, character limits, compliance, and a six-check distinctness gate (generic test, one angle per variant, proof traceability, surface fit, message match, label completeness) \u2014 none of which is a voice/naturalness pass, and no 'read aloud', 'strip AI tells', or rewrite step is claimed. The delivered copy still carries first-draft AI tells: decorative emoji appended to every headline and several body lines (\ud83e\ude91 \u26a1 \ud83e\uddcd \ud83d\udcaa), an em-dash triad ('apps, sticky notes, willpower'), and near-identical parallel c",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "In drafted variants, the headline complements the primary text rather than repeating it.",
+        "evidence": "Most pairs divide labor cleanly: 'back pain isn't always a mattress problem' + body pivoting to the chair/eight hours; 'the 9-to-5 crowd who forgot to stand up straight' + 'You didn't choose to sit eight hours a day \u2014 your job did'; 'Peakform fixes posture while you forget it exists' + body explaining why reminder-based fixes fail. Two IG rows show mild echo rather than true complement: 'posture, auto-corrected' against a body ending 'so good posture becomes automatic', and 'stand taller, by default' against a body about being nudged 'back to straighter... posture'. No explicit complementarity",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "It includes a humanizing pass over headlines, primary text, and descriptions before final delivery, rather than shipping raw first-draft output.",
+        "evidence": "The transcript is a single delivery of finished copy with no sign of any revision or de-slop/humanizing stage: no before/after, no mention of rewriting for natural voice, no reference to a humanizer step. The 'Notes' section only justifies brand placement, the education hook, emoji count, and why the 60 Trustpilot reviews were omitted \u2014 all first-draft rationale, not evidence of a pass over the assets. Some lines do read conversationally ('You blame your chair, your mattress, your age'), but that is an attribute of the draft, not evidence of a humanizing pass; several assets still carry tellta",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "In drafted variants, the headline complements the primary text rather than repeating it.",
+        "evidence": "Mixed. Genuine complementarity in LinkedIn B (headline adds the 'no effort required' promise while intro runs the mattress/age reframe) and Instagram A (headline 'Peakform fixes posture, not just pain' adds a positioning claim the body's 'Back pain? Not your mattress' does not). But LinkedIn A repeats its own payoff \u2014 headline 'stops back pain before it starts' vs intro 'before the pain starts'; LinkedIn C echoes the literal phrase 'sit up straight' in both headline and intro; Instagram B's headline 'Peakform. The posture nudge. $79.' is a compressed restatement of the body's 'Peakform buzzes ",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

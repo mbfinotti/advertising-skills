@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Reads CPM rising while CTR holds flat as auction-side inflation, not creative wear-out",
+        "evidence": "\"auction CPM inflation : FAIL - CPM up 24% while CTR holds/improves is the exact telltale\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States CPM is diagnostic for fatigue only when paired with falling CTR",
+        "evidence": "\"There's no CTR decay to pin the gap on the ad\" and \"Fatigue requires at least two signals decaying together, with CTR usually first\", framing CPM as ambiguous without CTR decay.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the cost rise to seasonal Q4/Black Friday auction pressure raising the price of every impression",
+        "evidence": "\"mid-November is exactly when Q4 holiday-auction pressure hits \u2014 every advertiser in a gifting category... is bidding up the same inventory at once\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends comparing the creative's CPM trend against the account's other ad sets, and category benchmarks where available, over the same weeks",
+        "evidence": "Only account-level comparison is recommended (\"comparing this ad set's CPM trend against the account's other ad sets/campaigns\"); no category-benchmark comparison is recommended.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes stable CTR and CVR mean the audience responds exactly as before and each response simply costs more",
+        "evidence": "\"CPA \u2248 CPM / (CTR \u00d7 CVR). With CPM +24%, CTR flat, CVR flat, pure auction-price math predicts CPA up ~22%\", framing it as the auction getting more expensive, not creative wear-out.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a confounded verdict",
+        "evidence": "\"Verdict: confounded \u2014 auction CPM inflation (Q4 seasonal), not creative fatigue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to green-light the emergency creative sprint",
+        "evidence": "\"Green-light: No.\"; \"don't spend the two highest-value weeks of the year producing new creative for a problem the numbers say isn't there\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes auction inflation typically shows account-wide and industry-wide, not on one creative",
+        "evidence": "\"every advertiser in a gifting category (jewelry is a peak BF/CM vertical) is bidding up the same inventory at once\" plus the recommendation to check \"this ad set's CPM trend against the account's other ad sets/campaigns... (should move together)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks comparison-window composition for promo days and day-of-week match given the season",
+        "evidence": "No mention of checking day-of-week match or promo-day composition of the comparison window anywhere in this section.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and re-check fields",
+        "evidence": "\"confidence : medium-high...\" and \"re-check : ...within the next few days... Formal re-check... ~Dec 4, 2026\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats any fixed CPM-inflation percentage threshold as unsourced folklore rather than a decision rule",
+        "evidence": "No discussion of a fixed CPM-inflation percentage threshold as folklore appears anywhere in this section.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Reads CPM rising while CTR holds flat as auction-side inflation, not creative wear-out",
+        "evidence": "'CPM up 24%, CTR flat, CVR flat \u2192 CPA should rise ~24% from CPM alone... Most likely real cause: auction cost inflation, not creative decay'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States CPM is diagnostic for fatigue only when paired with falling CTR",
+        "evidence": "'If the creative were fatigued, CTR would be the first metric to break down. It hasn't moved.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the cost rise to seasonal Q4/Black Friday auction pressure raising the price of every impression",
+        "evidence": "'Mid-November CPM spikes are a well-known seasonal pattern... auction competition intensifies platform-wide, and CPMs climb for everyone'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends comparing the creative's CPM trend against the account's other ad sets, and category benchmarks where available, over the same weeks",
+        "evidence": "'Account-wide CPM: check CPM trend on other active campaigns/ads. If they're rising too, it's platform/seasonal'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes stable CTR and CVR mean the audience responds exactly as before and each response simply costs more",
+        "evidence": "'CPM up 24%, CTR flat, CVR flat... it's still converting efficiently on a per-click basis'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a confounded verdict",
+        "evidence": "Concludes the cause is 'auction cost inflation, not creative decay'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to green-light the emergency creative sprint",
+        "evidence": "'Don't green-light the emergency creative sprint \u2014 the data doesn't support the \"ad wore out\" diagnosis'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes auction inflation typically shows account-wide and industry-wide, not on one creative",
+        "evidence": "'CPMs climb for everyone, regardless of creative quality'; recommends account-wide CPM check to confirm",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks comparison-window composition for promo days and day-of-week match given the season",
+        "evidence": "Not addressed; no mention of promo-day or day-of-week composition checks",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block with confidence and re-check fields",
+        "evidence": "No structured verdict block with confidence/re-check date",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats any fixed CPM-inflation percentage threshold as unsourced folklore rather than a decision rule",
+        "evidence": "No fixed CPM-inflation threshold is invoked or discussed either way",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

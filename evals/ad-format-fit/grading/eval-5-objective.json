@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the 13% vs 4% form-versus-landing-page comparison as conflating different studies and audiences",
+        "evidence": "\"conflates different studies/audiences and ignores that qualified-opportunity rate frequently runs the opposite direction\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States qualified-opportunity rate frequently runs the other way because form friction filters for intent, and judges lead formats on downstream qualified-opportunity rate rather than cost per lead",
+        "evidence": "\"A lead form that doubles raw conversion while halving lead-to-opportunity rate hasn't improved anything\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps demo booking on the landing page: demo/trial offers get a page, because a form adds friction to a calendar-booking goal",
+        "evidence": "\"a form creates friction for calendar-booking goals \u2014 use a page with an embedded calendar. You already have the embedded calendar.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the measured threshold: a landing page converting at 5%+ (here 6.5%, with an embedded calendar) receives the traffic - a measured conversion rate decides, not taste",
+        "evidence": "\"landing page \u22655% \u2192 keep sending traffic to it. Yours converts at 6.5%. That alone settles it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Discards the 8-second/goldfish attention-span claim entirely as not describing real user behavior",
+        "evidence": "\"'8-second attention span, shorter than a goldfish' is the skill's first named discard-entirely metric \u2014 it doesn't describe real behavior\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags 6-second bumpers as structurally wrong for direct-response demo requests: a forced few seconds cannot carry a considered purchase",
+        "evidence": "\"a forced few seconds cannot carry a complex message. A demo request for B2B contract-review software is a considered, sales-assisted decision, not an impulse click.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If bumpers survive at all, restricts them to awareness and points direct-response interaction at click-priced in-feed video",
+        "evidence": "\"fix: reserve for awareness; use click-priced in-feed video for interaction\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the carousel 30-50% lower cost-per-conversion claim as unsupported by reliable independent evidence",
+        "evidence": "\"'Carousel delivers 30-50% lower cost per conversion' is the skill's other named discard: no reliable independent evidence supports it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions carousel as fitting consideration, multi-product, warm audiences rather than an all-in format",
+        "evidence": "\"carousel suits consideration, multi-product, warm audiences\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the counterweight: no format wins every time (video wins only around 60% of head-to-heads), so every per-format verdict is conditional, never absolute",
+        "evidence": "No mention of a win-rate statistic or \"no format wins every time\" framing anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reserves in-platform lead forms for content or webinar registration, or for a landing page converting under roughly 2% - not for demo booking",
+        "evidence": "\"use the in-platform form for a different CTA (content/webinar registration, not demo booking)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the qualitative test: collecting a lead versus starting a sales conversation",
+        "evidence": "No such qualitative test phrase appears in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends implementing none of the consultant's three claims as stated",
+        "evidence": "\"Bottom line: implement none of the three as written.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the 13% vs 4% form-versus-landing-page comparison as conflating different studies and audiences",
+        "evidence": "\"The comparison is apples-to-oranges: a lead form submit and a booked calendar slot are different outcomes...Our 6.5% is already booked meetings, not raw form fills.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States qualified-opportunity rate frequently runs the other way because form friction filters for intent, and judges lead formats on downstream qualified-opportunity rate rather than cost per lead",
+        "evidence": "No claim that form friction filters for intent or that quality often runs opposite to the deck's claim.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps demo booking on the landing page: demo/trial offers get a page, because a form adds friction to a calendar-booking goal",
+        "evidence": "\"Action: don't touch it. If anything, test adding an in-platform form as a secondary path for logged-in trial users, not a replacement for the calendar on the landing page.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the measured threshold: a landing page converting at 5%+ (here 6.5%, with an embedded calendar) receives the traffic - a measured conversion rate decides, not taste",
+        "evidence": "No explicit \"5%+\" threshold rule is stated; only the actual 6.5% figure is cited descriptively.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Discards the 8-second/goldfish attention-span claim entirely as not describing real user behavior",
+        "evidence": "\"'Human attention span is 8 seconds, shorter than a goldfish' is a zombie stat...has been debunked repeatedly. It's not a real basis for a media-buy decision.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags 6-second bumpers as structurally wrong for direct-response demo requests: a forced few seconds cannot carry a considered purchase",
+        "evidence": "\"bumpers are a reach/frequency format (unskippable, forced completion) built for brand recall, not direct response...Six seconds can't carry that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If bumpers survive at all, restricts them to awareness and points direct-response interaction at click-priced in-feed video",
+        "evidence": "Restricts bumpers to \"upper-funnel retargeting/awareness\" but never names click-priced in-feed video as the direct-response substitute.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the carousel 30-50% lower cost-per-conversion claim as unsupported by reliable independent evidence",
+        "evidence": "The challenge raised is about lead-quality implications (\"red flag for lead quality\"), not about the evidentiary reliability of the stat itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Positions carousel as fitting consideration, multi-product, warm audiences rather than an all-in format",
+        "evidence": "No such positioning is stated; only \"Run carousels as an incremental test alongside existing formats.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the counterweight: no format wins every time (video wins only around 60% of head-to-heads), so every per-format verdict is conditional, never absolute",
+        "evidence": "No such counterweight statistic or framing appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reserves in-platform lead forms for content or webinar registration, or for a landing page converting under roughly 2% - not for demo booking",
+        "evidence": "Reserves it instead for \"logged-in trial users\" as a secondary path, not tied to content/webinar registration or a specific conversion-rate threshold.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the qualitative test: collecting a lead versus starting a sales conversation",
+        "evidence": "No such qualitative framing is present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends implementing none of the consultant's three claims as stated",
+        "evidence": "\"Verdict: Reject all three recommendations as written.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

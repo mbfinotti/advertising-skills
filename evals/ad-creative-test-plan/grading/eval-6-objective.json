@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the stop-at-first-95% daily-checking rule and names peeking/early stopping as the failure being prevented",
+        "evidence": "\"Checking every morning and stopping the instant a number looks favorable is textbook peeking \u2014 it inflates false positives, it's not a safeguard against them.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why peeking fails: stopping on a favorable early number inflates false positives, and early data is systematically noisy",
+        "evidence": "Same quote: \"it inflates false positives, it's not a safeguard against them.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces it with a fixed stopping rule pre-registered as a date or a sample size, whichever comes first",
+        "evidence": "\"hard stop: day 7 or $2,250 spend/cell, whichever first\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets an earliest evaluation moment (day 3 or later plus a minimum volume floor) before which no judgment is made",
+        "evidence": "\"earliest evaluation: day 3 (screening only ...)\" is day-based only; no minimum volume floor is paired with the earliest-evaluation moment.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the one-full-week duration floor for day-of-week coverage and flags a day 3-4 decision as below it",
+        "evidence": "\"not reachable inside the 4\u20136 week test-freshness ceiling\" and the hard stop set at day 7 (one full week).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires all cells including the control to launch at the same time, rejecting the Thursday/Monday stagger",
+        "evidence": "\"**Preferred fix:** hold all three cells to Monday.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ties the stagger rejection to its reason: cells launched at different times pick up day-of-week/seasonality contamination and become incomparable",
+        "evidence": "\"a Thursday\u2192Monday split crosses a weekend, which contaminates day-of-week composition on top of that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the novelty effect: new creatives get an early boost that fades, so short reads over-credit new variants",
+        "evidence": "No mention of a novelty/early-boost effect for new creatives fading over time appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reframes 'our tests usually reach significance fast' as an artifact of unadjusted peeking rather than validating it",
+        "evidence": "No such user claim is referenced or reframed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-declares the inconclusive outcome as keep the control",
+        "evidence": "\"inconclusive -> keep control (champion)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $321/day per cell ($45 x 50 / 7) and flags the $250/day cells as delivery-limited or fixes them with a named lever",
+        "evidence": "\"the stable-delivery floor is \\`$45 \u00d7 50 \u00f7 7 \u2248 $321/day/cell\\`. $250/day sits below it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits an explicit per-cell read-standard verdict instead of implying significance is reachable",
+        "evidence": "\"**Verdict: this cannot be Powered on CPA at this spend, full stop.** It can be a clean Directional read if run correctly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale thresholds so no real-time judgment call is needed during the run",
+        "evidence": "\"kill: asset at $90 spend (2x CPA) with zero purchases ... scale: best cell +50-100% budget, done 2-3x\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the stop-at-first-95% daily-checking rule and names peeking/early stopping as the failure being prevented",
+        "evidence": "'Fix 1 \u2014 Stop checking every morning and stopping at the first 95%. Each daily peek is another chance to hit 95% by luck.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains why peeking fails: stopping on a favorable early number inflates false positives, and early data is systematically noisy",
+        "evidence": "'Check for four straight mornings and your real false-positive rate is well above the 5% that \"95%\" promises \u2014 often 20\u201330%+.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces it with a fixed stopping rule pre-registered as a date or a sample size, whichever comes first",
+        "evidence": "'First valid read \u2014 Mon, Oct 5 (Day 14)... Run the significance test once, here.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets an earliest evaluation moment (day 3 or later plus a minimum volume floor) before which no judgment is made",
+        "evidence": "'~78 conversions/cell by then \u2014 clears the ~50-conversion learning-phase threshold' as the gate for the first valid check at Day 14.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the one-full-week duration floor for day-of-week coverage and flags a day 3-4 decision as below it",
+        "evidence": "'Why \"day 3\u20134\" was never going to work: at $250/day and $45 CPA you're getting ~5.6 conversions/day/cell, so day 3\u20134 is only 17\u201322 conversions.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires all cells including the control to launch at the same time, rejecting the Thursday/Monday stagger",
+        "evidence": "The official protocol keeps the stagger ('Launch \u2014 Thu, Sep 17... Control joins \u2014 Mon, Sep 21'); simultaneous launch is only floated as an 'Open question' if feasible, not required.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ties the stagger rejection to its reason: cells launched at different times pick up day-of-week/seasonality contamination and become incomparable",
+        "evidence": "'Different days of week, different auction pressure, different point in each ad's learning phase. Any CPA gap measured before all three have run concurrently is comparing conditions, not creative.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the novelty effect: new creatives get an early boost that fades, so short reads over-credit new variants",
+        "evidence": "No mention of a novelty effect where new creatives get an early boost that fades.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reframes 'our tests usually reach significance fast' as an artifact of unadjusted peeking rather than validating it",
+        "evidence": "No such specific reframing statement appears in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-declares the inconclusive outcome as keep the control",
+        "evidence": "No statement that an inconclusive result at day 21 defaults to keeping Control.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $321/day per cell ($45 x 50 / 7) and flags the $250/day cells as delivery-limited or fixes them with a named lever",
+        "evidence": "No $/day floor calculation appears; only conversions/day (~5.6) and the 50-conversion learning-phase threshold are used.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Emits an explicit per-cell read-standard verdict instead of implying significance is reachable",
+        "evidence": "No Powered/Directional/Not-testable labeling is used per cell.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale thresholds so no real-time judgment call is needed during the run",
+        "evidence": "'Stop-loss... If a cell's trailing 3-day CPA tops $90 (2\u00d7 target) after logging at least 20 conversions, pause it' and the Day-14 decision rule reallocating to the leading cell.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

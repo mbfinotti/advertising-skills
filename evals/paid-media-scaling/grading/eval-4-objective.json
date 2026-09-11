@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags the falling CPL ($95 to $61 after scaling) as a possible broken proxy to verify, not as proof the scale-up is working.",
+        "evidence": "\"falling CPL reads as success while pipeline quality erodes \u2014 the proxy breaks, not the ads... your CPL of $61 is not a trustworthy number.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the sales team's 'discovery calls feel lighter' remark as a lead-quality decay signal to investigate rather than dismissing it.",
+        "evidence": "\"Discovery calls 'feeling lighter' is your lead-quality proxy breaking, not sales complaining.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires steps to be judged on cost per SQL and/or a lead-quality score, never on CPL alone.",
+        "evidence": "\"confirm at target on cost-per-SQL and quality score, not CPL alone\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the one-week evaluation window: holds must cover learning plus conversion lag, and B2B steps are judged on windows of a month or more using leading indicators.",
+        "evidence": "\"For a 4-month B2B cycle, hold windows extend to a month or more per step, judged on leading indicators, not last month's CPL (documented pattern for this vertical).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reverses the user's stated preference: when platform-reported conversions and the CRM disagree, the CRM wins.",
+        "evidence": "\"The standing rule for this exact situation is when platform and CRM disagree, the CRM wins \u2014 you're doing the opposite.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires the offline conversion loop (CRM stage changes fed back to the platform) closed before scaling further on any lead metric.",
+        "evidence": "\"Confirm/build the offline-conversion loop (CRM stage \u2192 platform import) - precondition for judging any future step on this channel.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends reconciling platform conversions against the CRM on a recurring monthly basis.",
+        "evidence": "The plan only calls for a one-time reconciliation in the fix sprint (\"Reconcile LinkedIn vs CRM conversion counts for the last 6 weeks\") and later tracks the gap as a monitor; no recurring monthly cadence is specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Freezes or gates the push to $45K on verifying lead quality first: the proxy check precedes the raise.",
+        "evidence": "\"Phase 0 - Fix sprint (Wks 1-3, spend held flat at $20K, no % step)\" precedes any budget increase.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the $20K-to-$45K move (more than doubling in one step) as oversized and replaces it with multiple held steps.",
+        "evidence": "\"$45K is +125% in one move and 2.25x your current spend \u2014 past the 2x line\", replaced by M1\u2013M5 stepped table.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks whether sales can absorb the added lead volume without speed-to-lead degrading.",
+        "evidence": "\"5. Business absorption (sales capacity) | UNKNOWN / at-risk | Discovery-call complaint may be early speed-to-lead or quality strain\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks cash absorption: ad spend bills in days while B2B pipeline revenue lags by months (up to the 60-281 day range), so working capital must cover the gap.",
+        "evidence": "The response only briefly lists \"cash/working-capital ceiling for the ramp\" as an open item; it never discusses the days-vs-months billing mismatch or a day-range figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines a per-step monitor set built on leading indicators (cost per SQL, lead-quality score) with closed-won as the lagging verdict.",
+        "evidence": "\"cost-per-SQL \u2264 boundary from gate 0, quality score \u2265 Phase-0 baseline, frequency <3, CRM/LinkedIn gap tracked\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-commits a lead-quality-keyed rollback, for example cost per qualified lead above 1.5x target triggering a 20-30% cut, stabilization, then a slower resume.",
+        "evidence": "\"cost-per-SQL >1.5x target across a full hold \u2192 cut 20-30%, stabilize 2 wks, resume +10%/step\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors affordability in a per-cohort or per-deal payback calculation from the $28K ACV and margin, or asks for the owner-approved CAC boundary, rather than inventing a target.",
+        "evidence": "\"Get owner-approved margin/refund/OpEx inputs from ACV $28K to compute a max-CAC boundary (gate 0).\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags the falling CPL ($95 to $61 after scaling) as a possible broken proxy to verify, not as proof the scale-up is working.",
+        "evidence": "\"CPL dropped $95\u2192$61 while budget went $12K\u2192$20K \u2014 that's the wrong direction... CPL falling while spend rises usually means the algorithm found a cheaper, broader, lower-intent segment \u2014 not that efficiency genuinely improved.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the sales team's 'discovery calls feel lighter' remark as a lead-quality decay signal to investigate rather than dismissing it.",
+        "evidence": "\"sales complaining plus a CPL drop plus an attribution gap is a corroborated signal, not noise. This needs to be checked before more budget goes in\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires steps to be judged on cost per SQL and/or a lead-quality score, never on CPL alone.",
+        "evidence": "\"Decision metric is CRM-confirmed SQL rate, not LinkedIn CPL. Track LinkedIn CPL for planning, but the gate to advance is CRM data.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the one-week evaluation window: holds must cover learning plus conversion lag, and B2B steps are judged on windows of a month or more using leading indicators.",
+        "evidence": "The redesigned ramp uses \"2-week windows, not 1-week\" per step, not windows of a month or more.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reverses the user's stated preference: when platform-reported conversions and the CRM disagree, the CRM wins.",
+        "evidence": "\"LinkedIn conversions vs. CRM \u2014 trust the CRM, not LinkedIn.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires the offline conversion loop (CRM stage changes fed back to the platform) closed before scaling further on any lead metric.",
+        "evidence": "Only a \"Weekly LinkedIn-vs-CRM reconciliation report\" is proposed; no mention of feeding CRM stage data back into the platform via an offline-conversion/API loop.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends reconciling platform conversions against the CRM on a recurring monthly basis.",
+        "evidence": "The cadence specified is \"Weekly LinkedIn-vs-CRM reconciliation report (automated if possible)\" \u2014 weekly, not monthly.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Freezes or gates the push to $45K on verifying lead quality first: the proxy check precedes the raise.",
+        "evidence": "\"Gate 0 \u2014 do this before touching budget (this week)... If SQL rate or fit score dropped materially at $20K, fix targeting/creative before adding more spend \u2014 don't scale a leak.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the $20K-to-$45K move (more than doubling in one step) as oversized and replaces it with multiple held steps.",
+        "evidence": "\"A 2.25x jump ($20K\u2192$45K) in one step is too large for LinkedIn.\" followed by a 4-step ramp table.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks whether sales can absorb the added lead volume without speed-to-lead degrading.",
+        "evidence": "No mention of sales team capacity or speed-to-lead anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Checks cash absorption: ad spend bills in days while B2B pipeline revenue lags by months (up to the 60-281 day range), so working capital must cover the gap.",
+        "evidence": "No discussion of billing cadence, cash flow, or working capital appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines a per-step monitor set built on leading indicators (cost per SQL, lead-quality score) with closed-won as the lagging verdict.",
+        "evidence": "Ramp table go/no-go metrics: \"CPL stable \u00b115%, SQL rate stable vs. baseline\" ... \"plus CRM-match rate holding\", with SQL rate as the advancing gate.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-commits a lead-quality-keyed rollback, for example cost per qualified lead above 1.5x target triggering a 20-30% cut, stabilization, then a slower resume.",
+        "evidence": "\"Roll back one step, don't pause in place, if SQL rate drops >20% relative or CRM-match rate drops materially\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors affordability in a per-cohort or per-deal payback calculation from the $28K ACV and margin, or asks for the owner-approved CAC boundary, rather than inventing a target.",
+        "evidence": "The $28K ACV is referenced only descriptively (\"a 4-month, $28K-ACV sales cycle\") with no payback calculation or CAC ceiling derived from it.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

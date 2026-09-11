@@ -1,0 +1,334 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-creative-fatigue",
+  "scenarios": 12,
+  "expectations_total": 145,
+  "expectations_subjective": 1,
+  "expectations_objective": 144,
+  "pass_rate_with_skill_pct": 91.0,
+  "pass_rate_without_skill_pct": 58.6,
+  "delta_pp": 32.4,
+  "uplift_multiplier": 1.55,
+  "trigger_accuracy_pct": 99.3,
+  "trigger_queries": 140,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Distinguishes cold from warm exposure tolerance before reading the frequency number, citing the higher warm tolerance as an attributed practitioner heuristic rather than a rule"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends handing the structural or tracking root cause to an account-level diagnostic follow-up"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States the fatigue signature for contrast: costs rise while conversion rate holds"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends gating this low-conversion account on leading engagement signals and saying so in the verdict's confidence line"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Uses a moving-average comparison against the creative's own trailing baseline instead of comparing single days"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes ABM and list-based audiences saturate by design, so B2B should expect saturating verdicts more often than fatigued"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Attributes the hook-fatigue framing to Ben Heath or labels it as a practitioner heuristic"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Instructs never to edit the live ad because edits reset learning and destroy the baseline; the swap launches alongside"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Recommends re-pulling the same windows after the attribution window closes to confirm the backfill"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Delivers a verdict block with confidence and re-check fields"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Recommends comparing the creative's CPM trend against the account's other ad sets, and category benchmarks where available, over the same weeks"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Checks comparison-window composition for promo days and day-of-week match given the season"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Treats any fixed CPM-inflation percentage threshold as unsourced folklore rather than a decision rule"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Refuses to brief or commission the two replacement UGC videos"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Recommends re-baselining the creative at the new spend level after delivery stabilises, rather than judging it against the pre-increase peak"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that some efficiency loss at higher spend is the normal cost of scale, not decay"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Delivers a structured verdict block containing at least verdict, confidence, action, and re-check fields"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States frequency is a lagging, confirming signal that never carries the fatigue call by itself"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Notes reported frequency is measured at ad or ad-set level while fatigue happens at creative level"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Notes reported frequency is a period average, not the marginal effect of the next impression"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Applies the two-signal rule requiring at least two signals, at least one leading, across two or more consecutive periods, and finds no decayed signal here"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Distinguishes cold from warm exposure tolerance before reading the frequency number, citing the higher warm tolerance as an attributed practitioner heuristic rather than a rule"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Delivers a verdict block including a next scheduled review or re-check date"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Refuses to develop the requested new creative angle"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends reconciling platform-reported conversions against the order system, checking for a stable ratio between the two rather than equality"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends handing the structural or tracking root cause to an account-level diagnostic follow-up"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States the fatigue signature for contrast: costs rise while conversion rate holds"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Delivers a verdict block with confidence and re-check fields"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends gating this low-conversion account on leading engagement signals and saying so in the verdict's confidence line"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Warns that retiring a healthy creative on an underpowered read is the expensive false positive to avoid"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Uses a moving-average comparison against the creative's own trailing baseline instead of comparing single days"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Delivers a verdict block with confidence marked low and the gate math given as its basis"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Reads conversion rate degrading alongside engagement as the saturation signature, contrasting it with fatigue where CVR typically holds"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Explicitly advises against briefing the approved new creative batch, stating creative work is wasted effort under saturation"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes ABM and list-based audiences saturate by design, so B2B should expect saturating verdicts more often than fatigued"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Gates confidence on leading engagement signals because single-digit weekly conversions cannot clear the conversion floor, and says so in the confidence line"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Promotes audience expansion to the first action under the saturating verdict"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Uses new-member reach or first-time-exposure trend as a leading saturation signal"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Delivers a verdict block including the confounder screen results"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Sets a re-check one full comparison window after the audience expansion"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Attributes the hook-fatigue framing to Ben Heath or labels it as a practitioner heuristic"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Because negative feedback is elevated, requires the swap to ship as a new ad/asset ID, since the algorithmic penalty rides the asset ID and a hook swap on the same ID does not clear it"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Instructs never to edit the live ad because edits reset learning and destroy the baseline; the swap launches alongside"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Keeps the current ad running while the swap ramps, never pausing a producer with nothing staged"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States expected recovery as hook rate and link CTR back toward baseline on the same audience, which also confirms fatigue over saturation"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Delivers a verdict block including the confounder screen and a confidence line"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Positions iterating the winner, not the new concept, as the fallback if the hook swap fails"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Cites Optmyzr's analysis finding 'Average'-strength ads with the best CPA/CVR as evidence"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Labels any replacement cadence such as 2-4 weeks as practitioner advice, not a Google rule"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Delivers a verdict block with confidence and re-check fields"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Identifies performance improving under repeated exposure as wear-in"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes Meta's 2023 research found no wear-in for direct-response objectives, so the verdict is available only because this objective is brand"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States the same improving read would be treated with suspicion if the objective were direct response"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Delivers a verdict block with confidence and a re-check or monitoring date"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Flags a creative silently losing budget share with no manual change as itself a decay signal to check per creative"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Refuses the blanket refresh of all 28 ads"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Builds each creative's own trailing baseline before judging any of them"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Scopes the output to identifying which creatives, if any, need action rather than scheduling a wholesale refresh"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Rejects CTR (all) and requires link/outbound CTR, because all-clicks counts reactions, comments, and expands and can flatter a dying ad"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Refuses to produce the requested refresh plan"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Requires the two-signal rule with at least one leading signal before any future fatigue call"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Delivers a verdict block with confidence and re-check fields"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Checks comparison-window composition for promo days and day-of-week match given the season"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Delivers a verdict block with confidence and re-check fields"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Treats any fixed CPM-inflation percentage threshold as unsourced folklore rather than a decision rule"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Deletes the rungs the constraints rule out rather than merely demoting them to the bottom of the list"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Rules out the hook swap, naming the departed video editor as the deleting constraint"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Rules out iterating and the new concept, naming the five-week agency lead time against the four-day deadline"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Rules out audience expansion, naming the unavailable legal/lawful-basis sign-off"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Treats rotation as limited to the single healthy static or rules it out for lack of a challenger bench"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Names every deleted rung with its deleting constraint on the verdict's ruled-out line"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Does not recommend editing the live video"
+      },
+      {
+        "eval_id": 12,
+        "expectation": "Delivers a verdict block with a re-check one full comparison window after the action"
+      }
+    ]
+  }
+}

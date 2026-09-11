@@ -1,0 +1,38 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "It includes a humanizing pass over headlines, primary text, and descriptions before final delivery, rather than shipping raw first-draft output.",
+        "evidence": "No humanizing/editing pass is mentioned or evidenced anywhere. The response walks through assumptions, angle selection, the matrix, a distinctness scorecard, and a handoff block \u2014 but there is no step reviewing copy for AI tells or naturalness, and no 'before/after' polish note. The delivered copy itself carries AI-writing markers that a humanizing pass would normally strip: decorative emoji appended to every headline (\ud83e\ude91, \u26a1, \ud83e\uddcd) and inside body text (\ud83d\udcaa), em-dash-heavy construction across nearly every line ('Posture reminders \u2014 apps, sticky notes, willpower \u2014 fail...', 'You didn't choose to sit ",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "In drafted variants, the headline complements the primary text rather than repeating it.",
+        "evidence": "No variant's headline duplicates its primary text. pain_ua_01_v1_li pairs 'back pain isn't always a mattress problem' with a body that pivots to a different culprit ('It's not your desk chair. It's the eight hours a day...'), so the headline raises the question the body answers. mechanism_ua_02_v1_li's 'fixes posture while you forget it exists' states the payoff while the body supplies the contrasting failure mode ('reminders... fail because they need you to notice first'). identity_ua_03_v1_ig's 'stand taller, by default' is the outcome; the body supplies the reframe ('You didn't choose to si",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "It includes a humanizing pass over headlines, primary text, and descriptions before final delivery, rather than shipping raw first-draft output.",
+        "evidence": "The transcript delivers the copy directly with no sign of a revision/humanizing step. The Notes section explains hook logic, emoji caps and character limits, but never mentions rewriting, de-slopping, or tightening phrasing for natural voice. Residual first-draft tells remain: the LinkedIn description 'Wearable posture trainer. Gentle nudges, real-time feedback. $79.' is pasted verbatim under both Variant A and B (and Variant C has no description at all, an inconsistency a review pass would catch), and '$79' is mechanically appended to nearly every line. Some lines do read conversationally ('Y",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "In drafted variants, the headline complements the primary text rather than repeating it.",
+        "evidence": "Mixed, with clear repetition in several variants. LinkedIn Variant A headline 'Peakform stops back pain before it starts' restates the intro's closing clause 'before the pain starts' almost word-for-word. LinkedIn Variant C headline 'turns \"sit up straight\" into a habit' reuses the exact phrase 'sit up straight' from its own intro text. Instagram Variant B headline 'Peakform. The posture nudge. $79.' repeats both the nudge concept and the price already stated in the primary text, adding nothing new. Only LinkedIn B ('no effort required') and Instagram A ('fixes posture, not just pain') add a g",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

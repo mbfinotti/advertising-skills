@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not delay the launch to build the purchaser export first",
+        "evidence": "don't wait on the CRM export. Build the Meta lookalike off checkout/add-to-cart events and video engagement",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the condition behind the consultant's rule: purchasers lead the ranking when the customer export already exists, and here it does not",
+        "evidence": "\"Purchasers are always strongest\" is true on exactly one axis: **value**. It ignores the other two axes ... Effort: purchasers need a unified export across three systems",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends platform-native engagement seeds for Friday: high-intent page viewers and/or checkout/add-to-cart initiators",
+        "evidence": "Build the Meta lookalike off checkout/add-to-cart events and video engagement, both of which the pixel has been capturing for a year.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the hard deadline and data-team unavailability as the interview answers that re-ranked the source menu",
+        "evidence": "your engineer is five weeks out ... the board date is fixed",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes platform-native audiences build inside the ad account in minutes and skip the customer-list upload and its consent gate entirely",
+        "evidence": "Platform-native audiences built from pixel events never leave the ad account and trigger none of that.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to drop below high-intent viewers/lead-form submitters on the ranking - no page-engagers or all-visitors seed, because past that point per-row quality falls faster than effort",
+        "evidence": "No discussion of refusing to drop to a page-engagers or all-visitors tier appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "If video viewers are used, requires the 75%+ completion tier rather than 3-second views",
+        "evidence": "definition : users at 75%+ completion on product videos, last 180 days",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the one judgment call for high-intent viewers: agreeing which pages count as intent",
+        "evidence": "No mention of a judgment call about which pages qualify as high-intent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes engagement-sourced audiences auto-refresh (Meta roughly every 3-7 days), removing the manual refresh burden",
+        "evidence": "the purchaser-based seed becomes v2, running in parallel over the next few weeks \u2014 it does not block Friday",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names what the efficiency order starves - the customer-identity asset (purchaser export / warehouse sync) - and schedules it as the compounding follow-up rather than dropping it",
+        "evidence": "refresh : automatic (Meta refreshes pixel-sourced audiences ~every 3-7 days) | owner: none needed",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a promote-it trigger for the export: a compounding-asset mandate, or the same account losing this round again",
+        "evidence": "No explicit trigger condition (e.g. compounding-asset mandate or losing again) is stated for promoting the purchaser export.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes platform-native audiences are durable against mobile-OS tracking loss, with retention windows up to 365 days",
+        "evidence": "No mention of mobile-OS tracking loss or a 365-day retention window.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Respects the learning phase after the Friday launch: no performance verdict before roughly 50 optimization events per ad set per week or 2-4 weeks",
+        "evidence": "re-check : 2026-10-16 (respect learning phase ~2-4 weeks, then read at 90-day cohort maturity for LTV)",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not delay the launch to build the purchaser export first",
+        "evidence": "\"Don't wait on the unified CRM export to launch \u2014 that's the correct target state, not the Friday deliverable.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the condition behind the consultant's rule: purchasers lead the ranking when the customer export already exists, and here it does not",
+        "evidence": "\"A pixel that's fired Purchase, InitiateCheckout, and AddToCart events for a year already is a purchaser list... The blocker only applies to the CRM-side export, which isn't the thing gating Friday.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends platform-native engagement seeds for Friday: high-intent page viewers and/or checkout/add-to-cart initiators",
+        "evidence": "Seed hierarchy lists \"Purchase event Custom Audience,\" \"InitiateCheckout,\" \"AddToCart,\" \"Video engagers.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the hard deadline and data-team unavailability as the interview answers that re-ranked the source menu",
+        "evidence": "\"the correct target state... once the engineer is free in 5 weeks\" and the Friday board-meeting deadline frame the whole plan.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes platform-native audiences build inside the ad account in minutes and skip the customer-list upload and its consent gate entirely",
+        "evidence": "Only states \"No unified export, no CSV, no data engineer required,\" no mention of consent gate being skipped.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to drop below high-intent viewers/lead-form submitters on the ranking - no page-engagers or all-visitors seed, because past that point per-row quality falls faster than effort",
+        "evidence": "Ranking stops at AddToCart and Video engagers (ThruPlay/95%), never invokes generic site visitors.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If video viewers are used, requires the 75%+ completion tier rather than 3-second views",
+        "evidence": "\"Video engagers (ThruPlay / 95% viewers)\" \u2014 a stricter completion tier than 75%.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the one judgment call for high-intent viewers: agreeing which pages count as intent",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes engagement-sourced audiences auto-refresh (Meta roughly every 3-7 days), removing the manual refresh burden",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names what the efficiency order starves - the customer-identity asset (purchaser export / warehouse sync) - and schedules it as the compounding follow-up rather than dropping it",
+        "evidence": "\"v2 is a CRM-verified, LTV-weighted purchaser seed... once the engineer is free in 5 weeks \u2014 swapped into the same campaign structure without a relaunch.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a promote-it trigger for the export: a compounding-asset mandate, or the same account losing this round again",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes platform-native audiences are durable against mobile-OS tracking loss, with retention windows up to 365 days",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Respects the learning phase after the Friday launch: no performance verdict before roughly 50 optimization events per ad set per week or 2-4 weeks",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

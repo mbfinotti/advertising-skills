@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response identifies the CTR decline (1.7% to 0.8%) and the frequency climb (2.2 to 5.9) as pre-click, ad-side evidence rather than evidence about the landing page.",
+        "evidence": "\"CTR is a pre-click metric. Nothing on the landing page can move CTR; CTR is decided entirely by the ad and the audience seeing it, before anyone reaches the page.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response names creative fatigue (or ad wear-out / audience saturation) as the likely cause of the CPA rise.",
+        "evidence": "\"Rising frequency + collapsing CTR + a flat offer, targeting, and page is the textbook signature of the same audience seeing the same creative too many times\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states that the evidence does not support a page-fault verdict, or explicitly declines to conclude the page is the problem.",
+        "evidence": "\"Verdict: This is not a landing-page problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not deliver a ranked landing-page fix list.",
+        "evidence": "No 'FIX NOW' ranked list is given; response hands off instead.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response recommends a creative-fatigue (or ad-side) diagnosis as the next step before any page work.",
+        "evidence": "\"Hand off to: `mbfinotti/advertising-skills@ad-creative-fatigue`\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains that a CPA rise alone cannot distinguish a page problem from an ad problem.",
+        "evidence": "\"a CPA chart alone cannot distinguish a page problem from an ad problem\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states the specific upstream signal that triggered the refusal (falling CTR and/or rising frequency), not just a generic 'check the ads first'.",
+        "evidence": "\"CTR decline | 1.7% \u2192 0.8% (\u221253%) ... Frequency | 2.2 \u2192 5.9 over 5 weeks\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not attribute the $52-to-$96 CPA change to any element of the described page.",
+        "evidence": "\"it's the one constant while CPA doubled\" (attributes cause to ad fatigue, not the page)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not recommend a page redesign or rebuild.",
+        "evidence": "No redesign recommendation appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The upstream verdict appears before any commentary on the page's content.",
+        "evidence": "The verdict heading is the first line of substantive content: \"Verdict: This is not a landing-page problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not present criticisms of the pasted page elements as the explanation for the performance decline.",
+        "evidence": "The only page-content remark ('Scheduling that runs itself... a strong, ownable headline') appears in the closing 'Come back here if' section, framed as future-check, not as cause.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage lift figure appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response identifies the CTR decline (1.7% to 0.8%) and the frequency climb (2.2 to 5.9) as pre-click, ad-side evidence rather than evidence about the landing page.",
+        "evidence": "\"CTR 1.7%\u21920.8%, frequency 2.2\u21925.9, nothing touched since March \u2014 is the textbook signature of audience/creative fatigue, not a landing page problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response names creative fatigue (or ad wear-out / audience saturation) as the likely cause of the CPA rise.",
+        "evidence": "\"is the textbook signature of audience/creative fatigue... Meta keeps re-serving the same ad to a shrinking pool of unique users\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states that the evidence does not support a page-fault verdict, or explicitly declines to conclude the page is the problem.",
+        "evidence": "\"...is the textbook signature of audience/creative fatigue, not a landing page problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not deliver a ranked landing-page fix list.",
+        "evidence": "The response includes a full \"## Ranked page fixes\" section with 7 numbered items (form fields, trust signal, headline, mobile check, secondary CTA, subhead, CTA copy).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response recommends a creative-fatigue (or ad-side) diagnosis as the next step before any page work.",
+        "evidence": "\"Before spending eng/design time on the page, pull one number: landing-page CVR (demo bookings \u00f7 landing page views) week-by-week over the five weeks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains that a CPA rise alone cannot distinguish a page problem from an ad problem.",
+        "evidence": "\"If CVR held flat \u2192 the problem is 100% upstream (creative/audience)... If CVR also declined \u2192 ... the page fixes below matter.\" \u2014 CVR, not CPA alone, is used to disambiguate.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states the specific upstream signal that triggered the refusal (falling CTR and/or rising frequency), not just a generic 'check the ads first'.",
+        "evidence": "\"CTR 1.7%\u21920.8%, frequency 2.2\u21925.9, nothing touched since March\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not attribute the $52-to-$96 CPA change to any element of the described page.",
+        "evidence": "\"That alone can double CPA with a page that hasn't changed at all.\" \u2014 the CPA change is attributed to fatigue, not page elements.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not recommend a page redesign or rebuild.",
+        "evidence": "The response lists discrete, targeted edits (form field cuts, headline rewrite, secondary CTA) rather than any redesign/rebuild instruction.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The upstream verdict appears before any commentary on the page's content.",
+        "evidence": "The diagnosis section and CVR test appear under '## Diagnosis before the fix list', preceding '## Ranked page fixes', introduced with \"Given you asked for the page audit specifically, here it is\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not present criticisms of the pasted page elements as the explanation for the performance decline.",
+        "evidence": "\"the actual problem \u2014 audience fatigue at frequency 5.9 \u2014 keeps eating your CPA untouched\" identifies fatigue, not the page criticisms, as the real explanation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage CVR lift figure is stated anywhere in the response.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

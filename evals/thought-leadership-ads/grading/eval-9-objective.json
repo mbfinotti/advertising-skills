@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Answers no: on consumer platforms this mechanic runs direct-response with conversion objectives from day one",
+        "evidence": "\"No, you don't wait quarters...Spark Ads (TikTok) and Partnership Ads (Meta) are a different product with the full objective set, including conversions/purchase\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the forced trust layer is structural only on professional networks; for B2C the sequencing collapses to a performance campaign",
+        "evidence": "\"this collapses to a single direct-response campaign from day one \u2014 no forced trust layer, no structural handoff\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses pixel-based CPA or ROAS on a short window as the measurement, not a multi-quarter pipeline window",
+        "evidence": "\"Judge it on pixel CPA/ROAS on a short window, same as any other paid social channel.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the B2B reported-CTR caution does not transfer to this purchase-conversion case",
+        "evidence": "\"no CTR taboo (the CTR warning is about an engagement-objective denominator that doesn't exist on a conversion campaign)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes a split test of Lucia's person-fronted creative against brand-account creative",
+        "evidence": "\"Split-test her founder-fronted ad against your brand-account creative as the standing structure, not a one-time check.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets the keep rule: retain the founder variant only while its CPA is at or below the brand-creative control",
+        "evidence": "\"Keep the person-fronted ad live only while its pixel CPA/ROAS is at or below your brand-account creative control. That's the entire gate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets creative refresh on the short-video cadence of 3-7 days, explicitly not the B2B two-week rotation",
+        "evidence": "\"Refresh creative on a 3\u20137 day short-video cadence, not the slower B2B two-week rotation \u2014 TikTok/IG creative fatigues fast.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Describes permission as per-video authorization codes with fixed terms (7/30/60/365 days)",
+        "evidence": "\"TikTok/Meta authorization is per-video with a fixed duration (7/30/60/365 days)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Plans continuity around expiry dates with a renewal calendar, instead of revocation risk",
+        "evidence": "\"pick 365 days by default and put renewal on a calendar; this is a licence-with-expiry to manage, not a revocable toggle.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Still requires a written agreement with Lucia covering usage rights and disclosure, beyond platform codes, since she is a non-employee contractor",
+        "evidence": "\"negotiate an assignment of rights (or a broad, brand-favorable perpetual license as a fallback) in her contractor agreement, covering: Ownership/license scope...Disclosure obligations\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Selects only videos already earning organic saves, shares, or watch-through for promotion",
+        "evidence": "\"Pull her trailing videos, rank by engagement rate against her own median (saves/shares/watch-through, not follower-count-normalized...). Promote from the top quartile.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a portfolio - Lucia plus at least one other creator - so the account is not hostage to one person's feed",
+        "evidence": "\"Flag as a single-person program...Mitigate over time by adding a second creator or UGC customer once one exists\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Answers no: on consumer platforms this mechanic runs direct-response with conversion objectives from day one",
+        "evidence": "'No, you don't owe B2B's patience... run conversion campaigns (Meta Advantage+ Shopping, TikTok conversion) from day one.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the forced trust layer is structural only on professional networks; for B2C the sequencing collapses to a performance campaign",
+        "evidence": "The explanation is framed around business-model differences (trust scarcity, sales cycle length, purchase-event volume) rather than a platform-structural limitation unique to professional networks.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses pixel-based CPA or ROAS on a short window as the measurement, not a multi-quarter pipeline window",
+        "evidence": "'Judge fast, on real numbers: hook rate (3s), CTR, CAC, and blended payback period \u2014 target payback inside one purchase cycle, not quarters. Kill or iterate weekly, not quarterly.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the B2B reported-CTR caution does not transfer to this purchase-conversion case",
+        "evidence": "'\"Ignore CTR\" makes sense when the ad's job is brand impression, not click. Yours isn't \u2014 you're running paid amplification of content designed to sell a $42 product.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes a split test of Lucia's person-fronted creative against brand-account creative",
+        "evidence": "No A/B or split test comparing Lucia's creative to brand-account creative is proposed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the keep rule: retain the founder variant only while its CPA is at or below the brand-creative control",
+        "evidence": "No keep/kill rule tied to a brand-creative control CPA is stated, consistent with no split test being proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets creative refresh on the short-video cadence of 3-7 days, explicitly not the B2B two-week rotation",
+        "evidence": "The transcript says 'Kill or iterate weekly, not quarterly' but never specifies a 3-7 day refresh cadence or contrasts it with a B2B two-week rotation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Describes permission as per-video authorization codes with fixed terms (7/30/60/365 days)",
+        "evidence": "Spark Ads/Partnership Ads codes are mentioned ('provide Spark Ads code within 5 days of posting') but no fixed-term durations like 7/30/60/365 days are specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Plans continuity around expiry dates with a renewal calendar, instead of revocation risk",
+        "evidence": "No renewal calendar or expiry-date continuity plan is discussed; the closest content is defining 'what happens to already-running ads if the relationship ends,' which is revocation-risk framing, not a renewal calendar.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Still requires a written agreement with Lucia covering usage rights and disclosure, beyond platform codes, since she is a non-employee contractor",
+        "evidence": "'Get a written Creator IP Assignment & Usage Rights Agreement covering: Copyright assignment... Publicity/likeness release... Platform ad-permission mechanics... Make this a contractual obligation with a deadline... not just an assumption.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Selects only videos already earning organic saves, shares, or watch-through for promotion",
+        "evidence": "No selection criterion based on organic saves, shares, or watch-through is mentioned for choosing which videos to promote.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a portfolio - Lucia plus at least one other creator - so the account is not hostage to one person's feed",
+        "evidence": "No recommendation for a multi-creator portfolio appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

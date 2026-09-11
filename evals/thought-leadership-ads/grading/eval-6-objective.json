@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the agency's trust-first sequence for this case",
+        "evidence": "\"reject the agency's sequencing as written. The fix isn't a tweak to their plan \u2014 trust-first is the wrong default here, full stop\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Chooses awareness-first because the brand outranks the featured person in recognition",
+        "evidence": "\"Novantis Grid is an established name with 40k company followers; your CTO is a week-one academic hire with 900...the brand carries far more trust equity than she does right now.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Says the recognition comparison out loud as the deciding criterion, not just a preference",
+        "evidence": "\"That's not a close call \u2014 the brand carries far more trust equity than she does right now.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the existing always-on cold brand layer means awareness-first requires no extra setup here",
+        "evidence": "\"You don't have that gap \u2014 your always-on cold brand campaigns are already doing that job and, by your own account, feeding healthy retargeting pools.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places the CTO's person-fronted ads mid-funnel, warming audiences the cold brand layer built",
+        "evidence": "\"Serve the CTO's person-fronted posts to the engagers of those existing cold campaigns...This is the mid-funnel trust layer\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reserves conversion-capable formats for engagers as the final stage",
+        "evidence": "\"3. Retarget engagers of her posts with conversion-capable brand ads for the direct ask.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the format cannot carry a conversion objective on the professional network, so a deliberate handoff is structural",
+        "evidence": "\"This format carries no conversion objective on professional networks...the bridge has to be deliberate or the pipeline math never closes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires every retargeting audience the sequence needs to exist before the first ad serves",
+        "evidence": "\"Build every retargeting audience (her post engagers, video viewers, site visitors) before the first paid impression serves. Anything not captured from day one is gone for good.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes prospects who engage with the person often never connect her to the company, and prescribes deliberate bridging (company references in posts, theme alignment across personal and brand streams)",
+        "evidence": "Only prescribes the bridging action ('Have her reference the company...keep themes aligned') without stating that engagers often fail to connect her to the company.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames trust-first as correct when the person outranks the brand - the ordering is context-dependent, not a law",
+        "evidence": "\"trust-first...is right when the featured person outranks the brand in recognition \u2014 the classic early-stage founder case.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that engagers become the retargeting pool feeding the later stages",
+        "evidence": "\"Serve the CTO's person-fronted posts to the engagers of those existing cold campaigns\" and \"Retarget engagers of her posts with conversion-capable brand ads\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the agency's trust-first sequence for this case",
+        "evidence": "'Verdict: No \u2014 the sequencing solves the wrong problem.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Chooses awareness-first because the brand outranks the featured person in recognition",
+        "evidence": "'40k company followers in a \"well-known name in the space\" means ICP trust in the brand already exists' versus 'a new academic CTO whose posts are sharp but unproven at scale.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Says the recognition comparison out loud as the deciding criterion, not just a preference",
+        "evidence": "Explicit comparison: 'A 900-follower academic voice, pushed cold with no brand context' versus the company's '40k company followers... well-known name in the space.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the existing always-on cold brand layer means awareness-first requires no extra setup here",
+        "evidence": "'Keep the always-on cold brand campaigns exactly as they are \u2014 that's your proven top-of-funnel, don't touch it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places the CTO's person-fronted ads mid-funnel, warming audiences the cold brand layer built",
+        "evidence": "'Feed her posts to your existing warm pools first: retargeting audiences, existing customers, and named ABM accounts.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reserves conversion-capable formats for engagers as the final stage",
+        "evidence": "The final stage described is 'narrow paid amplification (e.g., Thought Leader Ads)' of her own content targeted at existing pools \u2014 not a distinct conversion-format stage reserved for engagers.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the format cannot carry a conversion objective on the professional network, so a deliberate handoff is structural",
+        "evidence": "No mention of conversion-objective limitations for thought-leader/person-fronted ads anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires every retargeting audience the sequence needs to exist before the first ad serves",
+        "evidence": "No explicit requirement that all needed retargeting audiences exist before any ad serves is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes prospects who engage with the person often never connect her to the company, and prescribes deliberate bridging (company references in posts, theme alignment across personal and brand streams)",
+        "evidence": "No discussion of prospects failing to connect the CTO to the company or any bridging tactic.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames trust-first as correct when the person outranks the brand - the ordering is context-dependent, not a law",
+        "evidence": "'The \"cold thought-leader posts \u2192 retarget engagers with brand ads\" pattern exists to solve trust scarcity: nobody knows the company... Novantis Grid doesn't have that problem,' implying the pattern is correct precisely where that trust scarcity (unknown brand) exists.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that engagers become the retargeting pool feeding the later stages",
+        "evidence": "The described flow feeds her content INTO the pre-existing retargeting pool built by brand ads, rather than her post engagers becoming a new pool feeding subsequent stages.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

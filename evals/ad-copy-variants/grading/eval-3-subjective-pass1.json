@@ -1,0 +1,38 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "It organizes new assets into themed buckets, distinct across buckets and non-duplicative within them.",
+        "evidence": "Every new asset carries an explicit angle label (Proof, Identity, Objection/budget, CTA, Brand), reinforced by a variant matrix that groups assets by bucket with evidence sources, plus a 'Deleted angles' table naming Urgency, Comparison, Contrarian, Mechanism, Risk/compliance and 'more benefit/speed synonyms' as deliberately excluded. Buckets are clearly distinct from each other and from the saturated existing speed bucket. Deduction: within the Objection/budget bucket, H3 'Contract review, $89/user/mo' and H4 '$89 per user, per month' assert the same thing in two lengths, and D2 re-states the",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each new headline makes a distinct argument rather than a synonym rewrite of 'Review contracts 10x faster'.",
+        "evidence": "H2 (buyer identity: 'Built for legal ops leaders'), H3 (price transparency), H5 (CTA), and H6 (brand name) each make a genuinely different argument from the speed claim, and the response explicitly refuses to add more speed synonyms. Two weaknesses pull this down: H4 '$89 per user, per month' is not a distinct argument at all \u2014 it restates H3's price point verbatim in substance, defended only as a character-length variant; and H1 'Redlines: week to afternoon' is still fundamentally a speed claim, differentiated from 'Review contracts 10x faster' mainly by being sourced to a testimonial rather ",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "It organizes new assets into themed buckets, distinct across buckets and non-duplicative within them.",
+        "evidence": "The headline table carries an explicit \"Type it adds\" column mapping each asset to a distinct theme (brand+category, keyword/category, price, CTA, social proof, audience/ICP), and the opening section justifies the grouping by naming the missing message types. The two descriptions are also differentiated by theme (testimonial proof vs. audience+price) with an explicit note that #2 complements rather than repeats #1. Falls short of 5 because it is a one-asset-per-type matrix rather than true buckets, and there is mild cross-bucket overlap: \"Brivano Contract Software\" and \"Contract Review Softwar",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each new headline makes a distinct argument rather than a synonym rewrite of 'Review contracts 10x faster'.",
+        "evidence": "None of the six headlines restates the speed/outcome claim. \"Brivano Contract Software\" asserts brand identity, \"Contract Review Software\" targets keyword/category match, \"From $89 per User/Month\" makes a price argument, \"Book a Brivano Demo\" is an action request, \"See What Customers Say\" is social proof, and \"Built for Legal Teams\" is an audience-fit claim. The answer explicitly diagnoses the existing set as all outcome/benefit claims and deliberately avoids that register, and further refuses fabricated urgency and unverified \"AI-powered\"/\"#1\" claims rather than padding with more benefit rewr",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

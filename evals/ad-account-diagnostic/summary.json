@@ -1,0 +1,359 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-account-diagnostic",
+  "scenarios": 10,
+  "expectations_total": 129,
+  "expectations_subjective": 0,
+  "expectations_objective": 129,
+  "pass_rate_with_skill_pct": 82.9,
+  "pass_rate_without_skill_pct": 55.8,
+  "delta_pp": 27.1,
+  "uplift_multiplier": 1.49,
+  "trigger_accuracy_pct": 94.3,
+  "trigger_queries": 122,
+  "subjective_ac2": null,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Presents the per-layer screen with four states; targeting is not marked FAIL as an independent cause."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Explains that the most recent week under-reports because of attribution lag, so a trailing window looks like decline by construction."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes that roughly 6 conversions is far below any read that clears the noise band, and below the ~30-conversion evaluation reference for automated bidding."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Issues no quantified performance prediction on this data, saying why."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes that a single-step budget increase beyond roughly 20% counts as a significant edit and resets learning."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Verifies, or explicitly conditions the bidding read on, measurement/tracking passing first."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Runs, or explicitly conditions the verdict on, the tracking/reconciliation check before the targeting call."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes each platform self-attributes, so platform claims cannot be summed with each other or with GA4."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Specifies the comparability requirements for the rebuilt comparison: equal window lengths, equal attribution-lag maturity, matched day-of-week composition."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes the most recent days under-report due to attribution lag, so a month ending now reads artificially low."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Sets the re-check for when a clean, lag-mature comparison exists."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes consolidation costs a learning window of volatility, setting that expectation against the CEO's this-week demand."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Ranks budget and underspend moves last, with the reason: near-zero outcome while upstream layers fail, and significant edits reset learning."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Tags each finding with severity, confidence, outcome bought, effort, and owner."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The layer screen marks structure, targeting, and creative pass with the flat-metric evidence attached."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends checking backend conversion on the paid path specifically, noting that unchanged CVR from other traffic sources is not a full rule-out."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends no budget or bid changes."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Presents the verdict in a complete structured block covering window, volume/reconciliation, decomposition, localisation, layer screen, confidence, verdict, evidence, findings, prediction, handoff, and re-check."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Notes platform-reported ROAS is claimed revenue, not evidence of incremental revenue."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Recommends product-level contribution-margin reads as where a real opportunity review would start, since blended figures can hide margin-destroying products."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "States that with the backend unreachable every finding carries at most medium confidence, and says so in the verdict itself."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Provides concrete export steps and spreadsheet formulas for the user to run, including the delta formula (current - baseline) / baseline."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Uses the decomposition (CPM and CTR flat vs the 60-day baseline, CVR the only moved link) to rule out the auction and the ad before naming the cause."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Presents a per-layer screen giving each layer one of four states (pass, FAIL, unknown, not applicable) rather than only naming the winning cause."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Marks the creative layer pass with evidence (CTR flat against its own baseline)."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States a prediction: reported CVR and ROAS recover toward baseline within roughly one lag-mature week once the purchase event fires again."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Sets a re-check date one full comparison window (lag-mature) after the fix ships."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Names the optimization event (raw whitepaper form fill) as the root cause, recorded as a structure-layer FAIL."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Judges the account on cost per SQL (or cost per closed-won) rather than CPL, showing cost per SQL rose while CPL fell."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Evaluates over B2B-length windows (roughly 90-day or 4-6 week minimum reads), not week-over-week."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags that pushing CRM outcomes into ad platforms triggers a consent and data-processing review before the wiring ships."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Presents the per-layer screen with four states; targeting is not marked FAIL as an independent cause."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Predicts the post-fix shape: CPL rises while the lead-to-SQL rate and cost per SQL recover, over one to two mature windows."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Assigns an owner and an order-of-magnitude effort to the top fix (roughly a week of marketing-ops/CRM wiring)."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends no budget increase and defers any targeting redesign until the event fix has been judged at maturity."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Identifies the +50% budget change nine days ago as a significant edit that reset the learning phase."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Explains that the most recent week under-reports because of attribution lag, so a trailing window looks like decline by construction."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes that roughly 6 conversions is far below any read that clears the noise band, and below the ~30-conversion evaluation reference for automated bidding."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States the gate math: roughly how many more days or conversions are needed at current volume before a verdict is possible."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Sets a re-check date at a mature window, roughly two or more weeks after the edit."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Explains that 20-50% day-to-day swings during learning are expected volatility, not evidence of a defect."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Does not answer with a budget-increase amount; declines to size a raise on this evidence."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes that a single-step budget increase beyond roughly 20% counts as a significant edit and resets learning."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Reads the pattern through decomposition first (volume down while efficiency stable means delivery constrained) before naming the layer."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Verifies, or explicitly conditions the bidding read on, measurement/tracking passing first."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States a prediction tied to the rank fix (impression share recovers only if rank improves) with a re-check window."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Names the condition under which budget would have been the right answer (lost-to-budget dominating with efficiency holding at the margin) and shows this data does not meet it."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Runs, or explicitly conditions the verdict on, the tracking/reconciliation check before the targeting call."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Hands the audience redesign to a targeting workflow or owner rather than designing the new audiences inside this diagnosis."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States a prediction (that ad set's CPM and frequency normalise once the audience is broadened or rotated) and sets a re-check date."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes each platform self-attributes, so platform claims cannot be summed with each other or with GA4."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends reconciling against the backend order table as the source of truth."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Specifies the comparability requirements for the rebuilt comparison: equal window lengths, equal attribution-lag maturity, matched day-of-week composition."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes the most recent days under-report due to attribution lag, so a month ending now reads artificially low."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States exactly what would clear the gate: per-source side-by-side exports on consistent settings plus the backend join."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Sets the re-check for when a clean, lag-mature comparison exists."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Rejects the cheapest-first quick-wins ordering and ranks by outcome bought per unit of effort."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Promotes the creative work above its default rank because the retained studio with idle capacity collapses its effort cost, and says that is the reason."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Ranks budget and underspend moves last, with the reason: near-zero outcome while upstream layers fail, and significant edits reset learning."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Tags each finding with severity, confidence, outcome bought, effort, and owner."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that this diagnosis stops at the click and hands the page and offer work to a post-click/landing-page audit and the page owners."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Promotes offer and downstream to the top of the fix queue, citing the promotion conditions: CVR collapsed while CPM, CTR, and impression share held, and the page owners are in-house."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends checking backend conversion on the paid path specifically, noting that unchanged CVR from other traffic sources is not a full rule-out."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends no budget or bid changes."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States a prediction (paid CVR recovers toward baseline if the page/offer fix ships) and a re-check one mature window later."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Presents the verdict in a complete structured block covering window, volume/reconciliation, decomposition, localisation, layer screen, confidence, verdict, evidence, findings, prediction, handoff, and re-check."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Does not manufacture a fix list to close the benchmark gap - no creative, targeting, or bidding overhaul recommended off the benchmark deltas."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Recommends blended MER judged against the margin-derived break-even as the truth read, over raw platform-reported ROAS."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Recommends product-level contribution-margin reads as where a real opportunity review would start, since blended figures can hide margin-destroying products."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Sets a monitoring baseline and re-check rather than a fix plan."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Declines the yes/no format and answers per layer in four states (pass, FAIL, unknown, not applicable)."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Layers the available data cannot power are marked unknown and explicitly not treated as clean."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "States that with the backend unreachable every finding carries at most medium confidence, and says so in the verdict itself."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Reads the gradual, no-break-date CPA drift as the structural-erosion/fragmentation pattern, distinct from a single-event cause."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Asks for, or explicitly requires, the change and edit log - what changed and exactly when - before any verdict."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Provides concrete export steps and spreadsheet formulas for the user to run, including the delta formula (current - baseline) / baseline."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Does not issue a definitive single-layer root-cause verdict on this data."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Tags per-layer entries with severity and confidence as separate fields."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Emits a compact state block (baselines, screen states, open unknowns, re-check date) the user can carry into the next session."
+      }
+    ]
+  },
+  "conditions": {
+    "mcp_servers": "enabled",
+    "project_claude_md": "loaded",
+    "user_claude_md": "loaded",
+    "note": "measured before MCP servers and the project CLAUDE.md were removed from the subprocesses; not comparable to skills recorded with those disabled"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response rejects the equal five-way split of the budget.",
+        "evidence": "\"Stop splitting five ways \u2014 at $2,400/channel (~$80/day) you're already at the textbook anti-pattern\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response shows the arithmetic that $2,400/month per channel is roughly $80/day, below the learning thresholds of every major channel family.",
+        "evidence": "\"at $2,400/channel (~$80/day) you're already at the textbook anti-pattern this framework calls out by name\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response cites a concrete learning threshold as the reason the split cannot produce signal (e.g., ~50 optimization events per ad set per 7 days on paid social).",
+        "evidence": "\"$2,400 is nowhere near Meta's real learning threshold (~50 events/ad set/week at ~$38 CPA implies ~$8,200/month for one ad set alone)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response recommends concentrating roughly 80% of budget on one funded primary channel for the first ~90 days.",
+        "evidence": "\"~80% ($9,600/mo, ~$315/day) to paid search\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response computes break-even ROAS as 1 divided by the contribution margin rate, landing near 1.7x for a 58% margin.",
+        "evidence": "\"Break-even ROAS (1 \u00f7 0.58) | 1.72x \u2014 not 4x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response rejects the 4x ROAS target as a folk number not derived from this business's margin.",
+        "evidence": "\"4x ROAS is the wrong bar in both directions... it isn't derived from anything in Kelpwild's actual economics\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response supports the ROAS correction with the observation that median paid-social ROAS in large ecommerce datasets sits near 1.86-1.93x, or that paid social is profitable only above roughly a 50% margin.",
+        "evidence": "No mention of the 1.86-1.93x ecommerce ROAS statistic or the 50%-margin threshold anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response flags the two-week kill window as shorter than a valid test and a source of false negatives.",
+        "evidence": "\"A uniform two-week window is a false-negative trap for social and video regardless of what they cost\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Kill criterion is restated as roughly 2-3x target CPA spent with zero conversions after a readable sample, not a ROAS shortfall at two weeks.",
+        "evidence": "\"Kill: $34-51 spent (2-3x target CPA) with zero conversions after a readable sample\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pass criterion is CPA at or under allowable CAC at statistical significance (90-95% confidence), not a fixed ROAS multiple.",
+        "evidence": "\"Pass: CPA \u2264 ~$17 at 90-95% confidence\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response prescribes a deliberately tiny price-discovery spend (on the order of $100) to learn real CPC/CPM before the real test budget moves.",
+        "evidence": "\"Price discovery: ~$100 on exact/phrase-match reef-safe/ocean-safe sunscreen terms\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Second channel is added only on an explicit trigger (primary saturation or a budget breakpoint), one channel at a time.",
+        "evidence": "\"Add Meta as a real ... second channel only when either search CPA rises on saturation ... or total budget crosses toward $50K/month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connected TV is ruled out for a ~$24-contribution product, with the CPM plus production cost math named.",
+        "evidence": "\"$24 contribution can't clear $20-40 managed CPM plus $1,500-$15,000+ production\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Channels removed by a gate are named in a deleted list with the gate each failed, not kept as low-priority rows to revisit.",
+        "evidence": "\"## 2. Deleted channels\" table names Streaming TV (\"Affordability + funding floor + test design\") and Pinterest (\"Not gateable\")",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response rejects the equal five-way split of the budget.",
+        "evidence": "'Five channels, $2,400 each, two weeks \u2014 this won't produce a real signal' followed by an uneven reallocation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response shows the arithmetic that $2,400/month per channel is roughly $80/day, below the learning thresholds of every major channel family.",
+        "evidence": "The transcript computes '$2,400 over 14 days is ~$171/day per channel,' not the $80/day monthly framing the rubric specifies.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response cites a concrete learning threshold as the reason the split cannot produce signal (e.g., ~50 optimization events per ad set per 7 days on paid social).",
+        "evidence": "'Meta and TikTok algorithms need ~50 conversions per ad set to exit learning phase and optimize properly.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response recommends concentrating roughly 80% of budget on one funded primary channel for the first ~90 days.",
+        "evidence": "Recommended split is Google $3,000 / Meta $4,500 / TikTok $2,500 / Pinterest $1,500 \u2014 spread across four channels, none near 80%.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response computes break-even ROAS as 1 divided by the contribution margin rate, landing near 1.7x for a 58% margin.",
+        "evidence": "No break-even ROAS calculation of this form appears; only gross profit per order and CAC ceiling at 4x ROAS are computed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response rejects the 4x ROAS target as a folk number not derived from this business's margin.",
+        "evidence": "'That's actually fine as a floor \u2014 the real issue is the two-week window and the even split, not the 4x number itself.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response supports the ROAS correction with the observation that median paid-social ROAS in large ecommerce datasets sits near 1.86-1.93x, or that paid social is profitable only above roughly a 50% margin.",
+        "evidence": "No such benchmark figures appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response flags the two-week kill window as shorter than a valid test and a source of false negatives.",
+        "evidence": "'$2,400 over 14 days... not enough to trust a ROAS number' and the recommendation to 'Use a 4-week test window, not 2.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Kill criterion is restated as roughly 2-3x target CPA spent with zero conversions after a readable sample, not a ROAS shortfall at two weeks.",
+        "evidence": "'use week-2 data only to catch channels that are dramatically broken (e.g., >$40 CPA with zero conversions), not to make final kill/keep calls' \u2014 a CPA/zero-conversion trigger rather than a ROAS shortfall.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pass criterion is CPA at or under allowable CAC at statistical significance (90-95% confidence), not a fixed ROAS multiple.",
+        "evidence": "'Keep 4x ROAS as your blended target... the number the whole $12K needs to hit collectively' \u2014 pass criterion remains a fixed ROAS multiple.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response prescribes a deliberately tiny price-discovery spend (on the order of $100) to learn real CPC/CPM before the real test budget moves.",
+        "evidence": "No such price-discovery step is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Second channel is added only on an explicit trigger (primary saturation or a budget breakpoint), one channel at a time.",
+        "evidence": "The recommended plan funds Google, Meta, TikTok, and Pinterest simultaneously from the outset rather than adding channels on a trigger.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Connected TV is ruled out for a ~$24-contribution product, with the CPM plus production cost math named.",
+        "evidence": "Only reach/attribution reasoning is given for TV ('$2,400 for two weeks of streaming TV won't buy meaningful reach'); no CPM or production-cost math is shown.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Channels removed by a gate are named in a deleted list with the gate each failed, not kept as low-priority rows to revisit.",
+        "evidence": "'drop the TV test until you have Search+Meta running efficiently \u2014 meaning a real ad budget of $6K+/month freed up for it, run properly over 6-8 weeks with a lift methodology' names the specific gate TV failed.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

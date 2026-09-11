@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Replaces bare numeric anchors with a role-specific behavioral description per anchor point",
+        "evidence": "The packet states the rule but never delivers the anchors. It mandates 'A written behavioral anchor per competency, per score point, before round 1 starts. A bare number is banned.' and gives one cross-cutting descriptor ('No \"best practices\" answer scores above a 2 on any anchor \u2014 reasoning rooted in context and a test-and-learn approach is what separates a 4 from a 2'), plus two role-specific strong/weak pairs in Round 2 (ROAS-drop: 'Weak answer jumps straight to \"test new creative\". Strong answer starts with pixel/server-event dedup and platform-vs-backend gap'; MER vs ROAS: strong distingu",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Replaces bare numeric anchors with a role-specific behavioral description per anchor point",
+        "evidence": "The rubric table gives all 5 competencies a distinct written descriptor at every one of the 4 anchor points (e.g. Analytical judgment: 'Missed obvious issues' / 'Found surface issues only' / 'Found root causes, reasonable plan' / 'Found root causes + prioritized, quantified impact'), so no anchor is a bare number. It explicitly replaces the old unstructured 1\u201310 gut score with a 'behaviorally anchored 4-point scale' and requires a written sentence of evidence per score. Competencies are drawn from the paid-search role (Platform fluency, Client communication, Ownership) and tie to the account-a",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

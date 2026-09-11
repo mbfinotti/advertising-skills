@@ -1,0 +1,586 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-creative-brief",
+  "scenarios": 11,
+  "expectations_total": 143,
+  "expectations_subjective": 2,
+  "expectations_objective": 141,
+  "pass_rate_with_skill_pct": 77.6,
+  "pass_rate_without_skill_pct": 27.3,
+  "delta_pp": 50.3,
+  "uplift_multiplier": 2.84,
+  "trigger_accuracy_pct": 85.0,
+  "trigger_queries": 140,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Asks clarifying interview questions before drafting the brief rather than producing a finished document from the prompt alone"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Presents 2-3 candidate concept directions with trade-offs and one recommendation before hardening a single brief"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Limits the hook lineup to 3-5 options, rejecting the request for 8-10"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Keeps every hook option as direction (e.g. open inside the worst moment of the problem), never a scripted spoken line of finished copy"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Addresses sound-off design (key claims legible as on-screen text, captions) and/or notes the Reels sound-on skew (roughly 70-80% of viewers with audio) so the creative works both ways"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends practitioner-led talking-head video over polished brand video for the LinkedIn placement"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes that placement can veto the format pick: on Reels- or TikTok-first placements a static barely earns delivery"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that search/responsive ads have no hook because the system assembles the ad, and declines to write 'hooks' for them, briefing an asset pool concept instead"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends a demand-creating alternative format (static or video aimed at an unaware/problem-aware audience) instead of proceeding with the search plan unchanged"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Where an asset pool is still specified, sizes it to the format: up to 15 headlines at 30 characters and 4 descriptions at 90 characters, correcting the 6-headline plan"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Requires each headline to stand alone and work in any combination within a tightly themed ad group"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Advises testing as two ads per ad group differing by angle, not by CTA rephrasing"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Identifies the audience as unaware or problem-aware for a new category, so demand must be created rather than harvested"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes search's learning read is diluted because the system assembles the ad, placing it last on learning value per concept"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Specifies aspect ratios per placement rather than one generic spec, because placements crop, truncate and overlay differently"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Requires reviewing the asset at feed/mobile size, since a message that fails small fails everywhere"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Requires roughly 5-10 conversions or spend of 5-10x target CPA before any conversion-based kill or scale decision"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Positions hook rate as a leading signal read against the account's trailing average while the deciding KPI remains the conversion metric"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes persona and angle tie on value because a result at either level rewrites every brief downstream, separating only on effort"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Uses the case study as B2B-form proof: the quantified outcome (71% close-time cut) plus a badge or product screenshot"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Applies (or specifies) scored review mining on the reviews: score each 1-5 and discard the 1s"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Extracts surviving reviews into the five buckets: pain points, trigger moments, objections, transformations, and standout verbatim language"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Maps buckets to brief parts: pains feed the angle matrix, triggers and transformations feed hooks, objections feed the objection field"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Pulls the top recurring 1-2 star objections for the product and the category to fill the core-objection field"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Sets the revision gate: creative that addresses neither of the top objections goes back for revision"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Keeps the founder's 'vet-formulated science' as at most one candidate direction requiring evidence, presented alongside review-derived alternatives with a recommendation, never installed as the single message"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Flags pet-supplement compliance: health claims need substantiation and treatment-claim phrasing is off-limits"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Anchors the angle in pain rather than aspiration, since desire-anchoring is reserved for aspirational or luxury categories without a functional problem"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Briefs the creators on the same objective with different hook directions rather than identical scripts, treating round one as a learning round and rebriefing round two toward the winning direction"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Includes the send-back rule: creative goes back for revision when it addresses neither of the brief's top objections"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Cites the briefing stakes: roughly a third of marketing budget wasted through poor briefing and/or the gap where 80% of marketers think their briefs are good while only 10% of agencies agree"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Defines when a single brief counts done: every field carries real content with an evidence citation and the executor confirms zero clarification questions on read-through"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Asks clarifying interview questions before drafting the brief rather than producing a finished document from the prompt alone"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Refuses 'awareness and sales' as a combined goal and presses for one goal with one primary deciding KPI, or splits the work into separate briefs"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Rejects 'all adults 25-60 who care about wellness' and requires a single awareness level per brief chosen from unaware / problem-aware / solution-aware / product-aware / most-aware"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Treats the missing awareness level or 'all audiences' as a defect to fix (splitting briefs when levels genuinely differ), not as an acceptable audience definition"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Reduces the four claims to one messaging angle with exactly one proof point, moving the extra messages into separate concepts or briefs"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Writes the messaging angle as a conversational sentence a customer could plausibly say out loud, not a tagline or a feature list"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Includes a falsifiable hypothesis in the form 'If we lead with [pain] and [proof], then [audience] will [action]'"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Tags the hypothesis with a type from hook / proof / format / angle / persona"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Presents 2-3 candidate concept directions with trade-offs and one recommendation before hardening a single brief"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Keeps to one brief per concept rather than one brief carrying several distinct concepts"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Includes a test block naming the single variable that changes, what stays frozen, and a minimum evidence floor before any kill or scale call"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Stops at direction (hook directions, art direction) and does not write the finished ad copy lines themselves"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Limits the hook lineup to 3-5 options, rejecting the request for 8-10"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Tags each hook option with exactly one trigger type from the eight-type taxonomy"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Labels each video hook option across the three separate layers SPOKEN / VISUAL / TEXT OVERLAY"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Deletes social proof from this brief's trigger menu and names it as deleted, rather than including a testimonial hook or ranking social proof last"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Gates trigger selection on the awareness level first and only then ranks the survivors by marginal effort, rather than ranking purely by cheapness"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends a specific first-test hook with a stated rationale"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Keeps every hook option as direction (e.g. open inside the worst moment of the problem), never a scripted spoken line of finished copy"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Addresses sound-off design (key claims legible as on-screen text, captions) and/or notes the Reels sound-on skew (roughly 70-80% of viewers with audio) so the creative works both ways"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Attaches the required extra field to conditional triggers if offered: a resolution field for a curiosity-gap hook, or truth-of-claim gating for an urgency hook"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Rejects CTR as the deciding KPI for a B2B brief and sets SQL rate or cost per opportunity instead"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends parallel persona briefs for distinct buying-committee roles (economic buyer, technical evaluator, end user) instead of one generic 'IT decision makers' persona"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Grounds the committee recommendation in the buying reality of roughly 8-13 people and cycles near 10 months"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Replaces the before/after graphic with B2B-appropriate proof: a quantifiable customer outcome plus a badge or product screenshot"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends practitioner-led talking-head video over polished brand video for the LinkedIn placement"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Requires product marketing sign-off on ICP wording and differentiator accuracy"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Includes a committee-role field in the audience section naming which role this specific brief targets"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Plans the test read for low B2B volume: leading signals up front, with SQL-rate or opportunity judgment at a later window (e.g. 30/60/90 days), not a week-one conversion call"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Sources the core objection from lost-deal notes, call notes, or CRM comments rather than inventing one"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States the hypothesis in the falsifiable 'If we lead with [pain] and [proof], then [audience] will [action]' form with a type tag"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Freezes targeting and every non-test variable for the test window"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Pre-commits an on-win / on-loss decision, including that a CTR winner producing junk demos gets repurposed rather than scaled"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Distinguishes deferral (deadline pins this brief) from deletion (a constraint such as unobtainable creator rights removes the option from the menu)"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Ranks the format options (static / search / video-UGC) by learning bought per production hour rather than by trend or taste"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Names video/UGC as what the efficiency order starves (top of learning value, last on efficiency)"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States at least one condition that would promote video/UGC over the ratio: a compounding-learning mandate, a Reels/TikTok-first placement veto, plateaued statics, or an already-owned studio/creator roster/footage library"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes that placement can veto the format pick: on Reels- or TikTok-first placements a static barely earns delivery"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Asks about, or explicitly weighs, fastest at-bat now versus learning that compounds, since the format ordering depends on that answer"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States deliverables as arithmetic (e.g. N hooks x M edits = K files)"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Flags each deliverable iteration versus net-new, noting a resize is not a new design"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Assigns asset names in the brief using the four-level convention concept, iteration, format, test variable - ASCII with underscores - rather than leaving naming to whoever uploads"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that search/responsive ads have no hook because the system assembles the ad, and declines to write 'hooks' for them, briefing an asset pool concept instead"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Flags that search enters the format ranking only where keyword demand already exists, and with nobody searching the category it drops out of the menu entirely rather than ranking last"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Maps headlines across the three themes pain / product / proof as search's messaging-pillar equivalent"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Cites that pinning restricts combination testing sharply - a single pinned headline cuts testing by more than 75% per published analysis"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that Ad Strength is a content-quality signal with no direct effect on Ad Rank and refuses 'iterate until Excellent' as an objective"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Warns against adding loosely relevant headlines to chase an Ad Strength rating"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Requires each headline to stand alone and work in any combination within a tightly themed ad group"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Advises testing as two ads per ad group differing by angle, not by CTA rephrasing"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes search's learning read is diluted because the system assembles the ad, placing it last on learning value per concept"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Replaces 'premium, aspirational, authentic' with 2-3 in-category reference ads, each carrying a one-line note on what to take from it"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Removes the hardcoded safe-zone pixel values and requires an in-placement preview before export instead"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Justifies the removal because published safe-zone numbers disagree by tens of pixels, so any hardcoded number is a defect"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Caps brand do's and don'ts at about 2 each, cutting the 9-and-7 list"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Adds an enhancements field recording platform auto-enhancements on/off per type, because a toggle nobody set is an uncontrolled variable"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes undisclosed AI content is a commonly reported rejection reason, contradicting the 'nobody's business' assumption"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Includes accessibility fields: minimum 4.5:1 text contrast, captions on video, alt text, and no more than three flashes per second"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Requires reviewing the asset at feed/mobile size, since a message that fails small fails everywhere"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Rejects applying the TikTok 32% bar to Meta because hook rate is counted at 3-second plays over impressions on Meta but at 2 seconds on TikTok - never benchmark the metric across platforms"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets a minimum of roughly 2,000 impressions before reading a hook rate, so 600-900 impressions by Wednesday supports no kill call"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Requires roughly 5-10 conversions or spend of 5-10x target CPA before any conversion-based kill or scale decision"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Presents those floors as attributed starting points to adapt to the account's volume, not universal laws"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Prefers the account's own trailing history as the benchmark over published bands, with published reference bands labelled as attributed and never universal"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Rejects swapping the audience on losers mid-test: targeting stays frozen for the test window and targeting changes are their own test"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Explains that changing targeting mid-test means the test variable is no longer the only variable, making the result unreadable"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States the single variable that changes and lists what stays constant"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Routes the learning to a persistent written destination the whole team reads (angle bank or learning log), explicitly not only the end-of-month slide deck"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Positions hook rate as a leading signal read against the account's trailing average while the deciding KPI remains the conversion metric"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Lays out the five hypothesis types hook / proof / format / angle / persona with hook cheapest and persona/angle highest value"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that the efficiency order starves persona and angle, and that a flat concept family is the condition that promotes them - no hook rescues a wrong angle"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that a genuinely new angle is a new concept and gets its own brief, while hook cuts of one concept ride the original brief"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Writes the hypothesis in the falsifiable 'If we lead with [pain] and [proof], then [audience] will [action]' form with an explicit type tag"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes persona and angle tie on value because a result at either level rewrites every brief downstream, separating only on effort"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Flags the iteration-paralysis trap: a programme optimised purely for variable isolation produces creative that all looks alike, so a share of briefs stays reserved for genuinely fresh concepts"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Writes the learning destination (angle bank / persistent log) into the plan so wins and losses feed the next sprint"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that the hook default rung applies only when the angle has already won somewhere - a condition a quarter of flat results does not satisfy"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Applies (or specifies) scored review mining on the reviews: score each 1-5 and discard the 1s"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Extracts surviving reviews into the five buckets: pain points, trigger moments, objections, transformations, and standout verbatim language"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Maps buckets to brief parts: pains feed the angle matrix, triggers and transformations feed hooks, objections feed the objection field"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Pulls the top recurring 1-2 star objections for the product and the category to fill the core-objection field"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Sets the revision gate: creative that addresses neither of the top objections goes back for revision"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Rejects the launched-this-week competitor screenshots as validation and refilters competitor ads by longevity (30+ days, longest-running first), not recency"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Drops the past-winners mining method entirely because the account is new - it drops out of the ranking rather than moving down it"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Keeps the founder's 'vet-formulated science' as at most one candidate direction requiring evidence, presented alongside review-derived alternatives with a recommendation, never installed as the single message"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Writes the messaging angle as a conversational customer sentence, preferably using verbatim review language"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Anchors the angle in pain rather than aspiration, since desire-anchoring is reserved for aspirational or luxury categories without a functional problem"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Briefs the creators on the same objective with different hook directions rather than identical scripts, treating round one as a learning round and rebriefing round two toward the winning direction"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Specifies usage rights as three explicit terms: where the content runs, for how long, and in which geographies"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Warns that automated placement resizing can drop a disclosure tag in some formats, so disclosure is verified per placement"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Includes the send-back rule: creative goes back for revision when it addresses neither of the brief's top objections"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Gives hook direction per option across the three layers SPOKEN / VISUAL / TEXT OVERLAY, still as direction the creator interprets"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Declines to promise a winning ad: roughly 5% of creatives become winners at scale, a hit rate no brief can repeal"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Frames the brief's job as maximising the quality, cleanliness and diversity of every at-bat rather than promising outcomes"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Instruments the three KPIs in efficiency order, standing them up one at a time rather than all three at once"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Puts rebrief rate first: the share of briefs sent back for clarification before production starts, kept as a simple counter by whoever sends briefs back"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Gives the rebrief-rate target as under 20%, labelled a practical self-set target to tighten from the team's own history, not a researched constant"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Puts brief-to-launch cycle time second, measured as two dates per brief, with the published benchmark of 10 business days or less"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Puts the concepts-briefed-to-winner ratio third over a rolling 90-day window, warned to be noise until enough concepts ship - which two sprints at 4 concepts a month cannot provide"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Judges the winner ratio against the team's own history rather than an absolute bar, given the roughly 5% base rate"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Notes the re-rank condition: if a rolling results log already exists in the reporting stack, the ratio becomes free and moves to the top"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Provides the diagnostic reads: a rising rebrief rate is a brief problem; a collapsing winner ratio with clean briefs is a concept-diversity problem"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Cites the briefing stakes: roughly a third of marketing budget wasted through poor briefing and/or the gap where 80% of marketers think their briefs are good while only 10% of agencies agree"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Defines when a single brief counts done: every field carries real content with an evidence citation and the executor confirms zero clarification questions on read-through"
+      }
+    ]
+  }
+}

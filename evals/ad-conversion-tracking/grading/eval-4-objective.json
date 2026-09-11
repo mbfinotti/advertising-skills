@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Demotes Newsletter Signup and Pricing Page View from primary - micro and page-view actions go secondary, excluded from bidding",
+        "evidence": "\"Pricing Page View and Newsletter Signup in particular are engagement signals, not sales outcomes, and shouldn't be feeding bids at all. Fix: demote both to secondary.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that primary designation must map to business outcomes because bidding optimizes only against primary actions",
+        "evidence": "\"Smart Bidding optimizes across *every* primary action as one blended pool, not toward whichever one you care about most... Pricing Page View and Newsletter Signup in particular are engagement signals, not sales outcomes, and shouldn't be feeding bids at all.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Changes lead counting from 'Every' to count-once per click for the lead-gen actions",
+        "evidence": "\"Form Fill, Demo Booked, and Newsletter Signup are one-time-per-prospect actions... Switch these to 'One' per click/interaction.\" and fix-order item 2: \"Set Form Fill and Demo Booked counting to 'One'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 30-day click window as shorter than the 45-day sales cycle, so late-closing conversions are simply never counted",
+        "evidence": "\"click-through window (30 days) is shorter than your sales cycle (45 days)... something close to half your deals will close after the 30-day window has expired from the original click \u2014 Google Ads simply won't attribute them\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends extending the attribution window to cover the sales cycle",
+        "evidence": "\"Fix: extend the click-through conversion window to 90 days (Google Ads' max).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects optimizing Smart Bidding to Closed Won at roughly 7 conversions per month on volume grounds",
+        "evidence": "\"7 Closed Won/month is far below what Smart Bidding needs to learn from... Optimizing directly to it leaves the algorithm making bid decisions on a handful of data points a month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies a threshold of roughly 30 conversions in 30 days before optimizing to a funnel stage",
+        "evidence": "\"Google documents ~30 conversions in 30 days as the minimum for Target CPA to function; Closed Won is running at roughly a quarter of that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends optimizing to a higher-volume upstream event and importing downstream outcomes back into the platform",
+        "evidence": "\"make the sole bid-driving primary action the deepest stage that actually clears volume \u2014 most likely Demo Booked... keep Closed Won as secondary/import for reporting and future recalibration\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ties offline outcome import to the click identifier being captured and stored on the CRM record",
+        "evidence": "\"the GCLID has to be captured on the Form Fill, persist onto the Salesforce Lead, survive conversion to an Opportunity, and still be present on the record Salesforce exports back as Closed Won.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Verifies with a test lead carrying a unique QA value, confirmed to land on the CRM record",
+        "evidence": "The transcript only says \"have whoever owns the integration trace one real deal end-to-end before treating this as trustworthy\" \u2014 no unique QA test value or test lead is proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires deleting the QA test lead from the CRM as part of test-data cleanup",
+        "evidence": "No mention of a QA test lead or any test-data cleanup step anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that starved conversion volume traps the campaign below the platform's learning threshold (or cites Google's 15-conversions-per-30-days Target CPA minimum)",
+        "evidence": "\"Optimizing directly to it leaves the algorithm making bid decisions on a handful of data points a month \u2014 it won't exit learning, or it'll exit on noise,\" alongside the ~30-conversions-per-30-days threshold citation.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Demotes Newsletter Signup and Pricing Page View from primary - micro and page-view actions go secondary, excluded from bidding",
+        "evidence": "\"Demote Form Fill, Demo Booked, Newsletter Signup, and Pricing Page View to secondary \u2014 they still get tracked and reported in a separate column, but they stop feeding the bidding algorithm and stop counting in your headline \\\"Conversions\\\" number.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that primary designation must map to business outcomes because bidding optimizes only against primary actions",
+        "evidence": "\"Smart Bidding optimizes toward whatever primary conversions exist, pooled together... the algorithm will effectively optimize toward newsletter signups and pricing page views \u2014 not revenue \u2014 even though you *intended* to target Closed Won. Fix: only Closed Won should be primary.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Changes lead counting from 'Every' to count-once per click for the lead-gen actions",
+        "evidence": "\"Counting = \\\"Every\\\" on Form Fill/Newsletter Signup: worth switching to \\\"One\\\" per conversion action if the same person can resubmit a form multiple times \u2014 otherwise these (now-secondary) metrics get inflated\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 30-day click window as shorter than the 45-day sales cycle, so late-closing conversions are simply never counted",
+        "evidence": "\"30-day click-through window is shorter than your sales cycle... If the average deal takes 45 days from click to close, any deal that took longer than 30 days won't get attributed back to the original click at all \u2014 Google Ads simply won't count it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends extending the attribution window to cover the sales cycle",
+        "evidence": "\"Fix: extend the click-through conversion window to 60-90 days (90 is the max Google allows) to cover the full 45-day average cycle plus some tail.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects optimizing Smart Bidding to Closed Won at roughly 7 conversions per month on volume grounds",
+        "evidence": "\"~7 Closed Won/month is not enough data for Smart Bidding to work directly on Closed Won... At 7/month account-wide, split across however many campaigns you run, no individual campaign gets close. Optimizing straight to Closed Won today means the algorithm is flying mostly blind.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies a threshold of roughly 30 conversions in 30 days before optimizing to a funnel stage",
+        "evidence": "\"Google's own guidance is roughly 30+ conversions in a trailing 30-day window per campaign before Smart Bidding has enough signal to converge... Later, once Closed Won hits ~30+/month... switch primary to Closed Won\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends optimizing to a higher-volume upstream event and importing downstream outcomes back into the platform",
+        "evidence": "\"Now: bid toward Demo Booked as the primary target... In parallel: keep importing Closed Won (as secondary) with deal value, not just a binary count\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ties offline outcome import to the click identifier being captured and stored on the CRM record",
+        "evidence": "The transcript only mentions \"Enhanced conversions for leads... improves match rate between the Salesforce-imported Closed Won events and the original ad clicks\" \u2014 it never mentions a GCLID/click ID field being captured and stored on the CRM record.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Verifies with a test lead carrying a unique QA value, confirmed to land on the CRM record",
+        "evidence": "No mention of a test lead, QA value, or verification against the CRM record anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires deleting the QA test lead from the CRM as part of test-data cleanup",
+        "evidence": "No test lead or cleanup step is mentioned in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that starved conversion volume traps the campaign below the platform's learning threshold (or cites Google's 15-conversions-per-30-days Target CPA minimum)",
+        "evidence": "\"below that it stays in a perpetual learning state \u2014 volatile CPCs, erratic spend, no real optimization\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

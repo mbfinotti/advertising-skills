@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to schedule the six micro-variable single-variable tests as proposed, naming items like font, background hue, dash punctuation, CTA wording, and model direction as micro-variables not worth isolated spend at this budget",
+        "evidence": "\"Six items \u2014 CTA copy, a dash, beige vs off-white, model orientation, serif vs sans, price display \u2014 are all **copy/layout/typography micro-variables**.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Folds the micro-variations into concept-level executions or drops them, instead of testing them individually",
+        "evidence": "\"Fold all six backlog items into one bundled \\\"refresh\\\" cell vs. your current champion.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the high-leverage levers worth isolating (concept, angle, hook, format, creator/talent) and redirects the program there",
+        "evidence": "\"Reserve months 2\u20136 for real high-leverage levers \u2014 concept, angle, hook, format, talent.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $500/day per cell ($70 x 50 / 7) and shows $6,000/month (~$200/day total) cannot fund even a compliant two-cell test on the purchase event",
+        "evidence": "\"= 70 \u00d7 50 \u00f7 7 \u2248 **$500/day per cell**. A minimal 2-cell test ... needs **~$30,000/month** just to stop being delivery-limited \u2014 5\u00d7 your entire current spend.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects strict isolation on feasibility grounds despite the user's stated compounding-learning preference - the preference alone does not promote isolation without the power to read the lever",
+        "evidence": "\"you asked for rigor and for learnings that compound. At $6,000/mo, the six items you listed can't deliver either individually \u2014 they're too small to separate from noise\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the bundled-concept posture as the default at this budget, because it is the only posture producing a reliably detectable effect at normal budgets",
+        "evidence": "\"Bundling is the only posture that buys a *detectable* effect at this budget (the skill ranks bundled #1 on efficiency for exactly this reason).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels any bundled result 'unlearnable at element level' (or an equivalent explicit label) so no element-level insight is mined from it later",
+        "evidence": "\"Labeled honestly: \\`bundled \u2014 unlearnable at element level\\`.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the isolation trade-off explicitly (bundled buys detectability; strict isolation buys element-level learning only when powered) rather than treating single-variable testing as inherently more rigorous",
+        "evidence": "\"Revisit the original six items once the account can dedicate ... ~$60,000 total for one test if you want them significance-tested rather than directional.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the condition that would promote strict isolation later (feasibility returning Powered on the lever's own MDE, e.g. after volume grows)",
+        "evidence": "\"Revisit the original six items once the account can dedicate ~$15,000/mo to one test cell (stable-delivery floor)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits an explicit per-cell verdict (Powered, Directional read, or Not testable as designed) for whatever structure it does propose",
+        "evidence": "\"-> VERDICT: Powered on page-view rate\" and \"-> VERDICT: Directional read, judged as relative ranking + guardrails\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps one concept per cell with roughly 3-6 assets per cell in the proposed structure",
+        "evidence": "\"C02_PKG-refresh2026Q4_V01 (challenger) | $100/day | 3-6 assets\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale thresholds and writes a falsifiable hypothesis with direction and magnitude, not 'see which performs'",
+        "evidence": "\"will move landing-page-view rate ~30% vs champion, for cold prospecting, by day 10\" and \"kill: asset at $140 spend (2x CPA) with zero purchases\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to schedule the six micro-variable single-variable tests as proposed, naming items like font, background hue, dash punctuation, CTA wording, and model direction as micro-variables not worth isolated spend at this budget",
+        "evidence": "The plan proceeds to schedule all six variables sequentially in the 'Test order' table (price, CTA, model direction, headline dash, background, font) rather than refusing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Folds the micro-variations into concept-level executions or drops them, instead of testing them individually",
+        "evidence": "Each of the six variables is kept as its own individual month-long test in the schedule, not folded into concept-level executions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the high-leverage levers worth isolating (concept, angle, hook, format, creator/talent) and redirects the program there",
+        "evidence": "No mention of concept, angle, hook, format, or creator/talent as alternative higher-leverage levers; the original six variables are retained.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $500/day per cell ($70 x 50 / 7) and shows $6,000/month (~$200/day total) cannot fund even a compliant two-cell test on the purchase event",
+        "evidence": "No such $500/day floor calculation appears; only '~86 conversions/month... 43 per side' is computed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects strict isolation on feasibility grounds despite the user's stated compounding-learning preference - the preference alone does not promote isolation without the power to read the lever",
+        "evidence": "The plan instead accommodates strict single-variable isolation by switching primary metric to CTR for weak variables, rather than rejecting isolation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the bundled-concept posture as the default at this budget, because it is the only posture producing a reliably detectable effect at normal budgets",
+        "evidence": "No bundled-concept structure is proposed; single-variable isolation remains the default throughout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels any bundled result 'unlearnable at element level' (or an equivalent explicit label) so no element-level insight is mined from it later",
+        "evidence": "No bundling occurs, so no such label appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the isolation trade-off explicitly (bundled buys detectability; strict isolation buys element-level learning only when powered) rather than treating single-variable testing as inherently more rigorous",
+        "evidence": "No explicit statement contrasting bundled-detectability vs. isolated-learning trade-offs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the condition that would promote strict isolation later (feasibility returning Powered on the lever's own MDE, e.g. after volume grows)",
+        "evidence": "No such condition is named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Emits an explicit per-cell verdict (Powered, Directional read, or Not testable as designed) for whatever structure it does propose",
+        "evidence": "The learning-repository template includes a 'Confidence tier | Decision-grade / Directional' field applied per test.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps one concept per cell with roughly 3-6 assets per cell in the proposed structure",
+        "evidence": "The structure is single-variable A/B tests (one control vs. one variant), not a concept/asset cell structure with 3-6 assets.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale thresholds and writes a falsifiable hypothesis with direction and magnitude, not 'see which performs'",
+        "evidence": "Only a general instruction to 'Pre-register the hypothesis and primary metric before launch' is given, with no stated magnitude or kill/scale thresholds.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

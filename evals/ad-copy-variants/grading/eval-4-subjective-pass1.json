@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "It frames the B2B copy for a reader building an internal case: the quantified outcome as a line they can defend in a meeting.",
+        "evidence": "The answer leads with Outcome and the 31% stat, and it does surface the internal-case reader once \u2014 'if you can tell me the buying-committee role (AP manager building an internal case vs. a CFO signing off directly), that could move Pain vs. Mechanism' \u2014 plus listing the buying-committee role as an open item. But this is raised as an unresolved question that explicitly 'won't change the Outcome lead', not as a framing that shapes the recommendation. The justifications given for leading with the number are about asset cost and competitive defensibility ('the asset is already paid for and un-cop",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "It frames the B2B copy for a reader building an internal case: the quantified outcome as a line they can defend in a meeting.",
+        "evidence": "The response treats the 31%/90-days stat mainly as an attention/credibility device for the ad itself ('A precise, oddly-exact number ... reads as credible *because* it's specific \u2014 it does the trust-building work a quote or comparison would normally do'), and warns against rounding because 'precision is the credibility mechanism here.' It also notes the claim is 'the claim that's actually cleared' and that a finance/ops audience is 'allergic' to manufactured urgency \u2014 all adjacent to defensibility, but framed as persuasion of the individual viewer, never as arming a buyer with a number they wi",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

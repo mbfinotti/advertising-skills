@@ -1,0 +1,331 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-spend-guardrails",
+  "scenarios": 7,
+  "expectations_total": 88,
+  "expectations_subjective": 1,
+  "expectations_objective": 87,
+  "pass_rate_with_skill_pct": 70.5,
+  "pass_rate_without_skill_pct": 47.7,
+  "delta_pp": 22.8,
+  "uplift_multiplier": 1.48,
+  "trigger_accuracy_pct": 89.5,
+  "trigger_queries": 86,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Warns that publishing a single ROAS number gets read as all three layers at once, producing both over-reaction to one bad day and tolerated slow bleeds."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Recommends the scaling ceiling be set on marginal efficiency, with the blended figure reserved for the monthly report."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks clarifying interview questions, including what guardrails already exist, before finalizing numbers rather than delivering a finished target immediately."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Refuses a three-day kill window as shorter than the conversion lag, setting a minimum evidence window of 4-6 weeks or longer given the 75-day cycle."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Explains that cost per SQL or CAC read on a short window counts this period's spend against an earlier period's customers, so the two-week spike may be lag rather than economics."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Anchors any spend-based gate to attributed practitioner guidance (such as no activation by $500-1,000 of spend, or 3-4x CPA of spend before judging), labeled as guidance rather than measurement."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Includes both a per-period cap and a rolling cumulative cap so a slow bleed inside daily tolerance still trips."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Writes the restart condition alongside the halt condition: what must be true, over what window, approved by whom."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Includes a re-baselining cadence (quarterly) plus named event triggers such as margin, pricing, or measurement changes."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes that platform numbers report claimed rather than caused revenue and push spend toward retargeting and brand search."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Asks the user questions before proposing thresholds instead of assuming the missing facts."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rewrites exceptions as explicit, time-boxed, justified, and logged, including denied ones, and calls out standing self-approval as a new ceiling nobody agreed to."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rejects vague override rationales such as 'timing' or 'one-time' as insufficient justification."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Ends with an explicit approval gate: nothing finalized without sign-off, recording who approved the policy and when."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States the ranking out loud across axes (efficiency, value in false stops avoided and learning kept, effort) rather than presenting one option."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Flags that one flat threshold across all channels and audiences starves prospecting, which always looks worse than retargeting."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Argues the strongest case against its own recommended architecture before presenting it."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Waits for the user's choice of architecture rather than unilaterally imposing one."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Asks whether the mandate is a one-off fix or a compounding asset, and what effort ceiling exists for a standing review, before or while ranking."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Flags roughly 9 conversions a month as below meaningful volume and declines to set a hard CAC ceiling now."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets an activation threshold instead: a spend level or conversion count at which the CAC policy switches on."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Declines to inherit the investor's under-5-month rule as this business's target."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Explains payback tolerance through cost of capital rather than stage labels or someone else's portfolio."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that a bootstrapped business facing near-zero capital cost can sustain a longer payback, up to around 24 months where the math supports it, while venture-funded companies face roughly 35-50% implied equity cost."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States a cash cap as an absolute monthly number derived from the 15-month runway, sitting next to any efficiency guidance."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Recommends the single hard-floor architecture, or names the escalation ladder as deleted, because a two-founder account has no second approver or review chair."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Names 4x ROAS as folklore with no traceable author, not a measured standard."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Assigns each layer its own consequence: stop always at break-even, investigate at target, automatic halt plus escalation at the hard floor."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Warns that publishing a single ROAS number gets read as all three layers at once, producing both over-reaction to one bad day and tolerated slow bleeds."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks for cash runway and burn, or states a cash cap as an absolute monthly spend number that binds regardless of efficiency."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Recommends the scaling ceiling be set on marginal efficiency, with the blended figure reserved for the monthly report."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks clarifying interview questions, including what guardrails already exist, before finalizing numbers rather than delivering a finished target immediately."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Pairs the proposed ROAS/MER floor with a counter-metric such as new-customer share to expose retargeting and branded-search gaming."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Refuses a three-day kill window as shorter than the conversion lag, setting a minimum evidence window of 4-6 weeks or longer given the 75-day cycle."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags the 3x-CPA kill rule as untraceable folklore and declines to present it as a benchmark."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Anchors any spend-based gate to attributed practitioner guidance (such as no activation by $500-1,000 of spend, or 3-4x CPA of spend before judging), labeled as guidance rather than measurement."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Designs two independent halt conditions: a consecutive-period streak condition and a budget-burn rate condition, either firing alone."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Includes both a per-period cap and a rolling cumulative cap so a slow bleed inside daily tolerance still trips."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Routes breaches into three outcomes - allow, review, halt - instead of forcing every breach into an immediate stop."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Derives allowable CAC from contribution per deal, about $14,880 ($24,000 x 62%), instead of accepting the 3x-of-target framing as the ceiling."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Names a kill-decision owner and escalation path outside the team spending the money."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Specifies fail-closed handling: missing, stale, or broken data holds spend flat and blocks scaling, and is never treated as the number being fine."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Computes break-even near 1.43x from the 70% margin (1 divided by 0.70) and treats it as the floor for the marginal number."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Distinguishes the two roles: the marginal number authorizes the next dollar of spend, the blended number belongs in the monthly report."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Pairs the MER guardrail with a counter-metric such as new-customer share of orders."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Caps the guardrail set at two or three metrics."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Includes a re-baselining cadence (quarterly) plus named event triggers such as margin, pricing, or measurement changes."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Refuses to set a kill-switch or floor on platform-reported ROAS while the conversion feed is untrusted."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Explains why: a guardrail on an untrusted metric fires on data-quality noise and manufactures confident wrong decisions."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Asks how confident the business is in its margin (a guess, finance-reviewed, or per-SKU) or otherwise interviews to pin the input down."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes that platform numbers report claimed rather than caused revenue and push spend toward retargeting and brand search."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Specifies fail-closed behavior while the feed is broken: hold spend flat rather than scale."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Labels inputs measured, estimated, or missing in any drafted policy skeleton."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Asks the user questions before proposing thresholds instead of assuming the missing facts."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rewrites exceptions as explicit, time-boxed, justified, and logged, including denied ones, and calls out standing self-approval as a new ceiling nobody agreed to."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rejects vague override rationales such as 'timing' or 'one-time' as insufficient justification."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Splits the single $310 ceiling into break-even, target, and hard floors, each with its own consequence."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Presents all three guardrail architectures - single break-even floor, tiered ladder, and portfolio with ring-fenced exploration - before drafting numbers."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States the ranking out loud across axes (efficiency, value in false stops avoided and learning kept, effort) rather than presenting one option."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Promotes the portfolio model above its default rank because the efficiency bar has already strangled testing."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Asks where the 2.8x figure came from and re-derives break-even from the business's own margin, asking for the margin if unknown, rather than keeping 2.8x unexamined."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Argues the strongest case against its own recommended architecture before presenting it."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Waits for the user's choice of architecture rather than unilaterally imposing one."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Asks whether the mandate is a one-off fix or a compounding asset, and what effort ceiling exists for a standing review, before or while ranking."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Pairs whatever efficiency guardrail replaces the 2.8x bar with a counter-metric that exposes gaming."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Flags roughly 9 conversions a month as below meaningful volume and declines to set a hard CAC ceiling now."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Explains payback tolerance through cost of capital rather than stage labels or someone else's portfolio."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that a bootstrapped business facing near-zero capital cost can sustain a longer payback, up to around 24 months where the math supports it, while venture-funded companies face roughly 35-50% implied equity cost."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that payback under about 3 months usually signals underinvestment rather than health."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States a cash cap as an absolute monthly number derived from the 15-month runway, sitting next to any efficiency guidance."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Labels inputs measured, estimated, or missing rather than guessing the gaps."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Recommends the single hard-floor architecture, or names the escalation ladder as deleted, because a two-founder account has no second approver or review chair."
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Channels excluded from the plan get explicit rejection lines, and no channel is funded merely to keep a presence.",
+        "evidence": "All three excluded channels appear as explicit rows in the allocation table with '$0 \u2014 rejected this cycle' and a stated reason: TikTok ('Fails funding floor at any slice of remaining budget (~$7,500/mo needed; none left after Search + Meta)'), Pinterest ('Same floor failure. Qualitatively a strong long-term fit... but not affordable to test properly this cycle'), and YouTube ('No sourced floor... but same logic applies \u2014 $2,400 is very unlikely to buy enough weekly conversion volume to optimize'). None is silently dropped. The two funded lines are each justified against a floor (Search $4,500",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Channels excluded from the plan get explicit rejection lines, and no channel is funded merely to keep a presence.",
+        "evidence": "No channel is excluded or rejected: all five get an identical $2,400/mo (20%) slice, and the plan states \"the request was for the five-way split, so here it is, built to survive being thin.\" This is exactly presence-funding \u2014 the response itself concedes each channel gets ~16 conversions/week against a ~50/week learning-phase requirement, i.e. every channel is funded below the level at which it can work, purely to maintain coverage. Partial credit only for the one soft gesture toward sequencing (\"If it were my call, I'd run Google Search + Meta at full strength for the first 2-3 weeks... rathe",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

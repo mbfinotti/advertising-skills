@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Applies a tightened click gate of 10-12 clicks rather than the standard 15-20, because the average CPC is above roughly $3",
+        "evidence": "\"Click gate tightened to 10 clicks (avg CPC ~$7 is well above the $3 trigger for tightening)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks 'law firm consulting services' as a candidate via the spend gate ($410 sits in the 1.5-2x band of the $250 target CPA) despite only 9 clicks",
+        "evidence": "\"law firm consulting services | Phrase | ... | 9 clicks, $410, 0 conv (0 last 90d) \u2014 crosses the cost gate, not the click gate\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places 'legal case management pricing' on the do-not-negate list because it converted 4 times in the prior 90 days, even though it crosses the click gate this window",
+        "evidence": "\"legal case management pricing \u2014 11 clicks, $77, 0 conversions this window, but 4 conversions in the last 90 days. Fails the overblocking review\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats 'best legal software' as comparison intent to confirm with the user - a strategy call, not an automatic negative",
+        "evidence": "\"best legal software ... Recommend holding to watchlist rather than cutting on this pass.\" under \"Held pending your confirmation (strategy calls, not automatic junk)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats 'casehawk pricing' as a competitor-term strategy call to confirm before negating, since some accounts bid competitor terms deliberately",
+        "evidence": "\"casehawk pricing \u2014 ... Competitor terms are never auto-negated \u2014 some accounts bid them deliberately for conquesting.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Puts 'legal case tracker excel' (8 clicks) on a watchlist instead of negating it, and names the gate that would trip it",
+        "evidence": "\"legal case tracker excel \u2014 8 clicks, $56, 0 conv (0 last 90d). Below both gates (needs 2 more clicks to trip the click gate; cost is nowhere near the $375 cost gate).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends phrase as the match type for the theme negatives (job seeker, DIY/free, informational), not exact and not broad",
+        "evidence": "Additions table lists \"Phrase\" for legal software jobs, free legal case template, and what is case management software rows",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a weekly recurring pass with a 7-14 day lookback going forward, given monthly spend above roughly $10k",
+        "evidence": "\"$14,200/month non-brand puts this account above the $10k/month line \u2192 recommend weekly cadence going forward\" and \"Weekly cadence, 14-day lookback \u2014 next pass by 2026-09-19.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Expands plural, synonym, or stem variants manually for at least one added negative, because negative keywords do not match close variants",
+        "evidence": "\"legal software job, legal software careers, legal software hiring, legal case management jobs\" under Variants to add",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns recurring junk themes to a shared exclusion list and reserves account level for universal disqualifiers such as the job-seeker terms",
+        "evidence": "\"Job-seeker went to account level as a universal disqualifier... The two recurring themes (DIY/free, informational) went to shared lists\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Summary reports spend analyzed and wasted spend found as an amount and a percentage of analyzed spend",
+        "evidence": "\"Spend analyzed: $14,200 (30 days, non-brand)\" and \"Wasted spend confirmed for negation: $956 (6.7% of analyzed spend)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Output includes a do-not-negate section, a watchlist, and a next review date",
+        "evidence": "\"## 3. Do-not-negate\", \"## 5. Watchlist\", \"next pass by 2026-09-19\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the additions as a draft for approval rather than instructing a silent mass-apply",
+        "evidence": "The section header explicitly reads \"## 2. Additions \u2014 apply now\" and states \"everything else is ready to apply as-is\", instructing direct application rather than framing as a draft awaiting approval",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each addition carries its evidence (clicks, cost, conversions) and a taxonomy category",
+        "evidence": "Table columns include Evidence (e.g. \"34 clicks, $238, 0 conv\") and Category (e.g. \"Job seeker\")",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Applies a tightened click gate of 10-12 clicks rather than the standard 15-20, because the average CPC is above roughly $3",
+        "evidence": "The transcript explicitly rejects a click-count gate: 'Rule used: cut on intent mismatch, not on \"0 conversions\" alone... spend-based statistical proof is weak for most; the call has to come from query intent.' No 10-12 click threshold is ever stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marks 'law firm consulting services' as a candidate via the spend gate ($410 sits in the 1.5-2x band of the $250 target CPA) despite only 9 clicks",
+        "evidence": "'$410 spend = 1.6\u00d7 target CPA, 0 conv this window and last 90 days... Highest priority cut.' \u2014 explicitly uses the 1.6x-of-target-CPA spend gate to mark it as the top candidate.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places 'legal case management pricing' on the do-not-negate list because it converted 4 times in the prior 90 days, even though it crosses the click gate this window",
+        "evidence": "'`legal case management pricing` \u2014 0 conv this window but **4 conversions in the last 90 days**. This is a textbook false-positive trap... Keep, and if anything invest here.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats 'best legal software' as comparison intent to confirm with the user - a strategy call, not an automatic negative",
+        "evidence": "'`best legal software`... generic comparison query, could include people evaluating Lexon among others... Don't cut on this single window; re-evaluate after another 30 days combined data.' \u2014 held as a judgment call rather than negated.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats 'casehawk pricing' as a competitor-term strategy call to confirm before negating, since some accounts bid competitor terms deliberately",
+        "evidence": "'`casehawk pricing`... competitor-conquesting query. Whoever searches this is actively comparing vendors and is in-market... Recommend: don't negative it, instead build a dedicated \"vs CaseHawk\" ad group/landing page to convert this intent on purpose.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Puts 'legal case tracker excel' (8 clicks) on a watchlist instead of negating it, and names the gate that would trip it",
+        "evidence": "The term is listed under '\u274c Exclude now \u2014 add as negative keywords' with 'DIY/spreadsheet intent \u2014 actively avoiding software purchase,' not placed on the borderline/watchlist section, and no click count or gate is named for it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends phrase as the match type for the theme negatives (job seeker, DIY/free, informational), not exact and not broad",
+        "evidence": "'`legal software jobs` | Phrase', '`free legal case template` | Phrase', '`legal case tracker excel` | Phrase', and 'Use phrase/exact match for negatives, not broad single words.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a weekly recurring pass with a 7-14 day lookback going forward, given monthly spend above roughly $10k",
+        "evidence": "The transcript instead recommends: 'Re-pull the search terms report in 30 days for the two \"borderline\" terms with combined 60-day data before deciding' \u2014 a 30/60-day cadence, not weekly with a 7-14 day lookback.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Expands plural, synonym, or stem variants manually for at least one added negative, because negative keywords do not match close variants",
+        "evidence": "No mention of plural, synonym, or stem variant expansion appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns recurring junk themes to a shared exclusion list and reserves account level for universal disqualifiers such as the job-seeker terms",
+        "evidence": "All four confirmed terms, including the job-seeker term, are bundled into one undifferentiated shared list: 'Add the 4 confirmed negatives as a shared negative keyword list applied across all non-brand campaigns' \u2014 no account-level reservation distinct from the shared list is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Summary reports spend analyzed and wasted spend found as an amount and a percentage of analyzed spend",
+        "evidence": "'Recovers **~$886/mo** (6.2% of the $14,200 analyzed spend) immediately.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Output includes a do-not-negate section, a watchlist, and a next review date",
+        "evidence": "The transcript has '\u26a0\ufe0f Do NOT exclude' and '\ud83d\udfe0 Borderline \u2014 hold, don't cut yet' sections, plus 'Re-pull the search terms report in 30 days for the two \"borderline\" terms.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the additions as a draft for approval rather than instructing a silent mass-apply",
+        "evidence": "Implementation notes are phrased as direct instructions ('1. Add the 4 confirmed negatives as a shared negative keyword list applied across all non-brand campaigns') with no framing as a draft pending approval.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each addition carries its evidence (clicks, cost, conversions) and a taxonomy category",
+        "evidence": "Only 'law firm consulting services' carries quantitative evidence ($410 spend, CPC); 'legal software jobs', 'free legal case template', and 'legal case tracker excel' carry only qualitative reasoning with no cost/click/conversion figures listed.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats published frequency bands as starting points to recalibrate against the account's own decay curve, not as evidence-based constants",
+        "evidence": "The answer does soften the numbers by calling them a 'cap-proxy' rather than a settable cap ('there's no cap field to set... What you actually control is a cap-proxy: a frequency reading you act on'), and it does anchor the diagnosis in the account's own observed metrics (frequency 9, CTR 1.8%\u21921.1%, CPM $14\u2192$19) against decay triggers. But the bands themselves are handed down as fixed external constants and given evidentiary weight: 'Meta retargeting generally tolerates 5\u20137/week before fatigue; practitioner data shows CTR roughly halving between frequency ~2 and ~5, and cost-per-purchase ~2x b",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats published frequency bands as starting points to recalibrate against the account's own decay curve, not as evidence-based constants",
+        "evidence": "Partial. The answer does anchor on the account's own data: \"Your CTR/CPM data shows the fatigue curve kicked in well before freq 9 \u2014 CPM rising as CTR falls is Meta's relevance score penalizing repetition, not just 'market conditions,'\" and it explicitly subordinates the published band to observed decay \u2014 \"Single-video-creative retargeting on Sales objective typically holds up to freq 4\u20136/week before decay; you're already past that, so cap below where you broke, not at it.\" That is the correct move: benchmark as reference, account curve as the governing signal. Weaknesses pulling the score dow",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

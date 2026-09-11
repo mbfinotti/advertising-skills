@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response does not assert platform character limits from memory as authoritative; it asks the user to paste current limits from their ads manager or states that remembered limits go stale.",
+        "evidence": "\"I wasn't able to browse to re-verify current platform specs this session... I used the standard published figures below. Treat these as pending your ad preview, which is the actual final authority\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states that the user's own ad preview is the final authority on fit.",
+        "evidence": "\"Treat these as pending your ad preview, which is the actual final authority\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It warns that the professional-network placement clips headlines permanently with no expander, or asks the user to confirm truncation behaviour per placement.",
+        "evidence": "\"LinkedIn Single Image (feed): headline hard-clips ~70 chars, no expander\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It plans the key phrase to land before the fold or clip point on each placement.",
+        "evidence": "Primary text rows include markers like '\u2039fold ~150 lands here, hook already complete\u203a' placing the hook before the fold.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It warns that emojis can count as more than one character.",
+        "evidence": "No statement anywhere in the transcript addresses emoji character-counting behavior.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It pushes back on leading every headline with the product name, explaining that naming the product first to an unaware reader is wasted.",
+        "evidence": "\"You asked for Peakform first in every headline \u2014 I honored that as a deliberate brand-building override... Flagging the trade-off rather than silently picking one side\" combined with 'that means opening on an arresting truth, not the product.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It opens unaware-stage copy on the symptom or an arresting truth (e.g. the sitting-posture connection) rather than on the product.",
+        "evidence": "Primary text opens: \"It's not your desk chair. It's the eight hours a day you spend slouched into it. Most people never connect the two.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It avoids or flags second-person phrasing that asserts the reader has back pain, as implying knowledge of a health condition.",
+        "evidence": "\"avoided any second-person assertion of the reader's health condition ('you have back pain') \u2014 used general reframes instead\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It asks for the 60 Trustpilot reviews, or conditions any proof line on receiving them.",
+        "evidence": "\"Trustpilot reviews: you offered but didn't paste them... Paste the reviews and a social-proof variant (highest-value angle you're currently missing) becomes cheap to add.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any drafted copy contains no fabricated review quotes, ratings, or statistics.",
+        "evidence": "\"the bare fact '60+ reviews' is used, since that count is something you actually told me\" \u2014 no invented ratings or quotes appear in the matrix.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It re-checks surface fit after the humanizing pass because lengths change.",
+        "evidence": "The humanizer note only states 'no unlock/seamless/cutting-edge filler, every claim traces to a real number or a real quote' with no mention of re-checking surface fit after that pass.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response does not assert platform character limits from memory as authoritative; it asks the user to paste current limits from their ads manager or states that remembered limits go stale.",
+        "evidence": "\"Limits used: intro text ~150 characters before 'see more' truncation (hard cap 600), headline ~70 characters (hard cap 200)\" is stated as fact with no caveat about verifying or staleness.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that the user's own ad preview is the final authority on fit.",
+        "evidence": "No such statement appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It warns that the professional-network placement clips headlines permanently with no expander, or asks the user to confirm truncation behaviour per placement.",
+        "evidence": "No mention of permanent clipping or lack of an expander for the LinkedIn headline field.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It plans the key phrase to land before the fold or clip point on each placement.",
+        "evidence": "Intro texts are explicitly sized against the stated cutoff, e.g. Instagram \"Primary text (123 ch)\" measured against \"~125 characters before 'more' truncation.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It warns that emojis can count as more than one character.",
+        "evidence": "No mention of emoji character-counting behavior, despite emojis being used in several variants.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It pushes back on leading every headline with the product name, explaining that naming the product first to an unaware reader is wasted.",
+        "evidence": "\"Every headline leads with Peakform per your brand-building priority\" \u2014 states this as a followed instruction, not a pushback.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It opens unaware-stage copy on the symptom or an arresting truth (e.g. the sitting-posture connection) rather than on the product.",
+        "evidence": "\"8 hours at a desk hurts more than any workout\" and \"Back pain? Not your mattress \u2014 it's 8 hours of slouching\" open on symptom/truth before the product.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It avoids or flags second-person phrasing that asserts the reader has back pain, as implying knowledge of a health condition.",
+        "evidence": "\"You blame your chair, your mattress, your age\" asserts the reader's pain/condition in second person, with no flag raised about this risk.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It asks for the 60 Trustpilot reviews, or conditions any proof line on receiving them.",
+        "evidence": "\"Paste them if you want that retargeting variant drafted next.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any drafted copy contains no fabricated review quotes, ratings, or statistics.",
+        "evidence": "No quotes, ratings, or statistics are used in any of the drafted headlines or texts.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It re-checks surface fit after the humanizing pass because lengths change.",
+        "evidence": "No humanizing pass or subsequent length re-check occurs in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

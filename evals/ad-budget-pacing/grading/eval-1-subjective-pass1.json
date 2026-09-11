@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Keeps the correction to the smallest reversible change: a single variable and a modest step, not a campaign restructure.",
+        "evidence": "The recommendation is a single-variable, modest edit: \"loosen it a modest step (~10%), one variable, and let it resettle before judging (an edit itself triggers a relearning window, so don't stack this with anything else).\" Steps 2\u20133 are diagnostic reads, not additional edits. It explicitly declines the larger change (\"Daily budget stays $800 (not the constraint)\") and, if a cap raise is later warranted, caps it to a step (\"toward $900\u2013950 rather than jumping straight to $1,100 \u2014 the smallest reversible change, not the number the shortfall math happened to produce\"). Reversibility is operation",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Keeps the correction to the smallest reversible change: a single variable and a modest step, not a campaign restructure.",
+        "evidence": "Partial credit only. Restraint is present in places: it explicitly argues against the budget raise as the primary move, calls a bump to $900\u2013950 a harmless 'formality', and says to raise bids on the specific losing segments 'rather than blanket-raising'. But it never lands on a single variable with a modest step. Section 'What to actually change' offers a menu of four parallel levers under item 2 \u2014 loosen tCPA/tROAS, raise segment bids, improve Quality Score inputs (ad relevance, expected CTR, landing page experience), and fix 'eligibility gaps' including ad disapprovals, ad strength, 'sitelin",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

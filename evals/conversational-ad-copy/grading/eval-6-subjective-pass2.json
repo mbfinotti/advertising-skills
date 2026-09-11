@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The ask is matched to the conversation stage rather than a hard same-chat close.",
+        "evidence": "The transcript explicitly rejects the user's hard close: '\"Book a demo today, limited onboarding slots for Q4\" \u2014 this doesn't ship,' citing a 'mismatched ask (\"close the deal right there in the chat\" against a quarter-long, $120k-ACV enterprise cycle)' and reframing the slot's job: 'A response slot next to a $120k decision doesn't close anything; it opens a research thread.' The delivered copy carries no CTA \u2014 'Ask: none folded into the line. Early/mid-research register \u2014 the landing page carries the demo CTA' \u2014 and the stage assumption is made explicit and falsifiable: 'You supplied no signal",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The ask is matched to the conversation stage rather than a hard same-chat close.",
+        "evidence": "All three variants end with a soft, stage-appropriate ask ('Book a demo', 'See how it'd work for your team', 'Talk to us about your next audit cycle') rather than a purchase or hard close \u2014 correct for a ~$120k ACV, quarter-long cycle. The transcript explicitly reasons about funnel stage: 'don't wait for closed-won to judge the ad \u2014 demo bookings are the right 4-week signal', with click-through as an even earlier-stage read. It also actively refuses the pressure tactic that would constitute a hard close: the 'Limited onboarding slots for Q4' urgency line is deliberately withheld pending verifi",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

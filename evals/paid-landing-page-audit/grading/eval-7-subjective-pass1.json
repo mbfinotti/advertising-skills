@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Findings are verified or scoped mobile-first, since 81% of sessions and spend are mobile.",
+        "evidence": "Mobile is acknowledged in only two places, both peripheral to the findings themselves: the Could Not Check section notes that speed, accessibility (contrast, tap targets, keyboard focus), form field count and 'layout stability on the 81%-mobile traffic is unchecked', and one RE-CHECK line specifies 'land \u2192 product-page click-through rate on mobile paid social'. The four FIX NOW findings are written viewport-agnostically: fix 1 (CTA destination/price surfacing), fix 2 (headline), fix 3 (hero visual) and fix 4 (shipping cost timing) contain no mobile framing at all \u2014 no mention of what is above ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Findings are verified or scoped mobile-first, since 81% of sessions and spend are mobile.",
+        "evidence": "Mobile share is surfaced prominently and treated as a gap: 'This is your first fix, not a finding \u2014 you're flying blind on 4 in 5 dollars', plus a mobile-scoped secondary finding ('Mobile-heavy traffic + collage hero ... likely Largest Contentful Paint / load-time tax') and fix #6 'Split mobile vs desktop reporting'. However, the five critical findings (message match, CTA mismatch, hidden price, shipping surprise, no instrumentation) are stated device-agnostically \u2014 no mobile viewport/fold framing, tap targets, Meta in-app browser behavior, mobile checkout flow, or whether the LP renders well ",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

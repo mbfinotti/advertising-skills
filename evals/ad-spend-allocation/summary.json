@@ -1,0 +1,275 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-spend-allocation",
+  "scenarios": 8,
+  "expectations_total": 102,
+  "expectations_subjective": 2,
+  "expectations_objective": 100,
+  "pass_rate_with_skill_pct": 91.2,
+  "pass_rate_without_skill_pct": 52.0,
+  "delta_pp": 39.2,
+  "uplift_multiplier": 1.75,
+  "trigger_accuracy_pct": 90.0,
+  "trigger_queries": 100,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The response states that over-funding retargeting inflates blended ROAS while starving the prospecting that refills the retargeting pool."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response refuses the 60% single-step cut; any LinkedIn reduction is bounded to roughly 15-20% of the line, with moves of 30% or more in one step refused."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "If 70/20/10 survives in the deck, it is presented as maturity-dependent (phase-adjusted, e.g. roughly 40/30/30 with no proven channel, roughly 80/15/5 with a proven growth engine), not as a constant."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Changed lines carry rollback thresholds and verification dates."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Peak-season reweighting is set on rolling 60-day windows so noise doesn't drive the moves."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The response states the incrementality test leaves a reusable causal anchor for later cycles - a compounding asset, not a one-off read."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The response checks the incrementality prerequisites before commissioning: a holdable geography and appetite to withhold spend, whose absence would delete the test from the menu."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "If CTV enters the split, it is a bounded experiment with a hypothesis, minimum detectable effect, decision date, stop condition, and a budget checked against a funding floor."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Changed lines carry rollback thresholds and verification dates."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The response flags the 12x Google brand figure as platform-reported and untrustworthy for allocation, citing systematic overstatement of real return (on the order of 1.75-2.97x) and/or brand search collapsing under incrementality testing."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The response rejects the 100% step on brand search on step-size grounds: default increments are 15-20% of a line per cycle, and a move of 30% or more in one step is refused."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The response computes Meta prospecting reach against audience (about 410K of 2.4M, roughly 17%) and reads under-25% penetration as headroom, treating the line as a candidate for more budget despite its lower average ROAS."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The response refuses to kill the TikTok test before its day-60 decision date, and states the right comparison for the new channel is the incumbent's marginal efficiency (the last dollars being moved), not Meta's average."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Every changed line carries a rollback threshold and a verification date."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The response explicitly rejects the even $2,400 five-way split rather than writing it up."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The response derives a paid-social funding floor from the $35 target CPA, approximately CPA x 50 / 7, i.e. about $250/day or roughly $7,500/month per social channel."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The response states a floor for automated search of around $50/day."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The response concludes the budget clears the floor for at most search plus one social channel and recommends fewer channels, never a thinner spread."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Channels excluded from the plan get explicit rejection lines, and no channel is funded merely to keep a presence."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "If any test channel is kept, it is framed as a bounded experiment with a hypothesis, decision date, and stop condition, not a permanent presence line."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response refuses the 60% single-step cut; any LinkedIn reduction is bounded to roughly 15-20% of the line, with moves of 30% or more in one step refused."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response computes and carries break-even CPL of about $3,520 ($32,000 x 11%) into the plan."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Changed lines carry rollback thresholds and verification dates."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Marginal estimates are labeled as directional proxies, since no incrementality test or MMM is in evidence."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The response flags governance for the proposed cut: a move above roughly 25% of a channel's quarterly budget requires joint marketing-and-finance sign-off (or at minimum an approval workflow above roughly 10%)."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response attributes 70/20/10 to Eric Schmidt's Google resource-allocation rule (2005), not to any media study."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response labels 70/20/10 as folklore for media budgets, usable only as a portfolio-discipline device."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response notes the B2B reweighting of roughly 46/54 tilted toward activation (LinkedIn B2B Institute), relevant because Quintarra is B2B."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "If 70/20/10 survives in the deck, it is presented as maturity-dependent (phase-adjusted, e.g. roughly 40/30/30 with no proven channel, roughly 80/15/5 with a proven growth engine), not as a constant."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The response cites the peak-event evidence against reactive raises: brands raising spend about 17.4% into a spike got about 1.1% median incremental revenue while incremental ROAS fell about 14.3%, and flat-spend brands' incremental ROAS rose."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The response rejects the uniform +40% raise: increments default to 15-20% per line, and moves of 30% or more in one step are refused."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Any event reallocation is justified per line by a marginal signal (impression-share headroom, audience penetration), never applied uniformly across all campaigns."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The Q4 total stays fixed at $450K, and any proposed amounts sum to it."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The response flags governance for moves of this size: an approval workflow above roughly 10% of a channel's quarterly budget and joint marketing-and-finance sign-off above roughly 25%."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Changed lines carry rollback thresholds and verification dates."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Peak-season reweighting is set on rolling 60-day windows so noise doesn't drive the moves."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Estimates driving the event split carry evidence-class labels (directional proxy at minimum)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The response refuses to assign proportional weights to the two zero-history lines based on how promising each seems."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Missing data is handled by the named fallback: scenarios with the missing inputs named, or an explicit equal-weight split marked provisional - never a confident-looking invented weighting."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The two new sponsorship lines are structured as bounded experiments, each with a hypothesis, minimum detectable effect, decision date, stop condition, and budget."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The response declines to kill display prospecting on its $800/month CPA reading, explaining that near-zero spend readings do not predict scaled performance (a starved channel's efficiency is not its curve)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Before any line is defunded as weakest, the response rules out lag, tracking issues, small sample, or seasonality as the cause."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The plan is labeled provisional wherever only platform-reported numbers exist."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Each line's marginal estimate carries an evidence-class label: measured, tested, or directional proxy."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Each changed line carries a rollback threshold and a verification date."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The response asks for, or explicitly flags as missing, contribution margin or payback inputs rather than silently assuming them."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The output is presented section by section or as a proposal requiring the user's approval, not as a final executed split."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "MMM is named as deleted from this account's menu with the failed prerequisite stated, not parked as a ranked-last option to budget for later."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The default for this cycle is directional proxies on every line."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The response states that an unvalidated model is not evidence, and that even a future MMM's coefficients need holdout or geo validation before being trusted."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The response notes MMM is observational and that a model with priors the buyer sets can be pointed at the conclusion they wanted."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Proxy numbers are labeled as proxies: they buy direction and headroom, never magnitude."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The response checks the incrementality prerequisites before commissioning: a holdable geography and appetite to withhold spend, whose absence would delete the test from the menu."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The response explains why the test is promoted despite proxies winning on efficiency: a misread on a $58K line outweighs the design effort."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The proxies are matched to channel type rather than ranked against each other: penetration bands for Meta and Pinterest, impression-share headroom for search."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The conflict is resolved with the equimarginal rule: rank every line's marginal return on one comparable basis and fund down the ranking until the fixed total is spent."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Any increase is bounded to 15-20% of a line per cycle; the +30% Google recommendation is not taken as a single step."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Any proposed amounts sum exactly to $110,000."
+      }
+    ]
+  }
+}

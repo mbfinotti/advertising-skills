@@ -1,0 +1,499 @@
+{
+  "repo": "advertising-skills",
+  "skill": "advertising-radar",
+  "scenarios": 11,
+  "expectations_total": 149,
+  "expectations_subjective": 2,
+  "expectations_objective": 147,
+  "pass_rate_with_skill_pct": 79.2,
+  "pass_rate_without_skill_pct": 45.6,
+  "delta_pp": 33.6,
+  "uplift_multiplier": 1.74,
+  "trigger_accuracy_pct": 89.2,
+  "trigger_queries": 148,
+  "subjective_ac2": 0.529,
+  "subjective_pass_disagreements": [
+    {
+      "eval_id": 4,
+      "condition": "without_skill",
+      "expectation": "Genuinely independent options that exist (an independent ad-news roundup or trade press) are included without pretending they can carry the whole list",
+      "pass1": true,
+      "pass2": false
+    }
+  ],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 4,
+        "expectation": "The response does not comply with the no-conflicts filter as stated; it says filtering out everyone with something to sell would empty the list in this field"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The official Meta platform source is kept or argued back in because Meta is a bought channel and a missed platform change costs money"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The official TikTok platform source is likewise gated in for the bought TikTok channel"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Tool-vendor blogs are defended on freshness grounds rather than dropped"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Every entry carries a status and date, and nothing unverified is presented as verified"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "An explicit channel-coverage line confirms Meta and TikTok each have a verified-active source"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "An official TikTok platform source is added, gated to the newly bought channel"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Every URL on the list is re-resolved, including entries that worked in June, to catch renames and domain resale"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The Down Funnel redirect is checked for content, distinguishing renamed-but-alive from a resold domain, rather than trusting that it resolves"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The freshness check is re-run on surviving entries, with stale entries downgraded, dead ones removed, and previously unverified ones retried"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The community slot and the newest additions are asked for one discovery candidate each"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Discovery candidates are verified before joining the list or bench"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The full channel mix is re-confirmed with the user rather than assumed frozen"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "A replacement for the dropped blog comes from the bench or is verified before entry"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Refreshed entries carry new verification dates, not the June ones"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The consumption bar (at least two-thirds of entries actually consumed) is checked at the refresh"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Events are excluded because their payoff lands after the date (days plus travel for next-quarter value)"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "A roundup-archive binge (working back through past issues) replaces the standing community slot"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The first reply asks an interview question instead of delivering a source list"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Questions come one at a time, waiting for each answer, not as a full battery in one message"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Multiple-choice options are offered with the questions"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The channels the user buys on are asked for"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The weekly time budget is asked with banded options (under 30, 30-60, 60-120, 2+ hours) plus whether paid access is on the table"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "A hard current-by date is asked about"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "One-off catch-up versus standing habit is asked"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Preferred mediums are asked with a cap of two picks"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The segment sold into (B2B versus B2C/DTC) is asked"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The incentive question is framed as minimising, not removing, a conflict type, with the warning that removal would empty the list"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "No named source recommendations are given before the interview answers arrive"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "One community fills the reserve slot for the standing habit"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Only text sources appear; audio and video are struck and named as struck"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Podcasts and video are struck from the menu entirely rather than listed as low-priority rows, and the response names the struck mediums"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "A news roundup or daily-digest source holds a top slot in the weekly core"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Every entry carries a verification status and a date"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "An explicit channel-coverage statement confirms both LinkedIn and Google have at least one verified-active source"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "A bench of 2-3 verified substitutes is named"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The maribelquast.com person is classified unverified with the reason recorded, not declared inactive or dead from the parked domain"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The Halstrom on Ads channel is labelled corroborated via a companion surface with the channel itself unobserved, not verified-active and not dead"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "No source is presented as verified without a dated observation behind it"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "A news roundup or daily digest holds a top slot in the weekly core"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Roughly the last tenth of the budget is reserved for one community, justified as the slot that surfaces new sources"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "A bench of 2-3 substitutes is named"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Every entry carries a status and date"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The response does not comply with the no-conflicts filter as stated; it says filtering out everyone with something to sell would empty the list in this field"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "It states that nearly every strong paid-advertising source sells a tool, an agency, a course or community, or is the platform itself"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Per-entry incentive disclosure (a what-they're-selling flag) is proposed as the alternative to exclusion"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The user is offered minimising one incentive type rather than removing all of them"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The official Meta platform source is kept or argued back in because Meta is a bought channel and a missed platform change costs money"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The official TikTok platform source is likewise gated in for the bought TikTok channel"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Tool-vendor blogs are defended on freshness grounds rather than dropped"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Every entry carries a status and date, and nothing unverified is presented as verified"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "An explicit channel-coverage line confirms Meta and TikTok each have a verified-active source"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The response explains that ranking applies across mediums, while choice within a medium rests on channel and theme fit"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Audience size is rejected as the selection criterion; value is framed as what the source's output changes in the user's account"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The user's themes and bought channels are requested or used as the fit criteria for choosing among the five"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Freshness verification (finding the newest dated item on each blog) is required before any of the five makes the list"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The roughly-3-month active and roughly-6-month stale thresholds, or an equivalent observed-date classification, are stated for that check"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Homepage cadence claims are treated as aspirational until a dated item confirms them"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Non-selected blogs are proposed for a bench of substitutes rather than discarded"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "A what-they're-selling disclosure is requested or applied per blog"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Any picks made are justified by fit, not by a quality score between the five"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Every URL on the list is re-resolved, including entries that worked in June, to catch renames and domain resale"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The freshness check is re-run on surviving entries, with stale entries downgraded, dead ones removed, and previously unverified ones retried"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The community slot and the newest additions are asked for one discovery candidate each"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Discovery candidates are verified before joining the list or bench"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The full channel mix is re-confirmed with the user rather than assumed frozen"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "A replacement for the dropped blog comes from the bench or is verified before entry"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Refreshed entries carry new verification dates, not the June ones"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The refreshed output carries an explicit channel-coverage line covering Meta, Google, and TikTok"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The consumption bar (at least two-thirds of entries actually consumed) is checked at the refresh"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "A daily or weekly news roundup plus official release notes anchor the plan, promoted by the hard October 6 date"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Google's official ads blog is included for the bought Google channel"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Events are excluded because their payoff lands after the date (days plus travel for next-quarter value)"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "A roundup-archive binge (working back through past issues) replaces the standing community slot"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Depth is allocated to Microsoft Ads while Google coverage stays at maintenance weight (release-note and roundup skims)"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Every entry carries a what-they're-selling flag"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Every entry carries a status and date, with anything unverified labelled as such"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "An explicit channel-coverage line confirms Google and Microsoft each have a verified-active source"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The first reply asks an interview question instead of delivering a source list"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Questions come one at a time, waiting for each answer, not as a full battery in one message"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Multiple-choice options are offered with the questions"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The channels the user buys on are asked for"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The weekly time budget is asked with banded options (under 30, 30-60, 60-120, 2+ hours) plus whether paid access is on the table"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "A hard current-by date is asked about"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "One-off catch-up versus standing habit is asked"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Preferred mediums are asked with a cap of two picks"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The segment sold into (B2B versus B2C/DTC) is asked"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The incentive question is framed as minimising, not removing, a conflict type, with the warning that removal would empty the list"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "No named source recommendations are given before the interview answers arrive"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The response states that B2B and B2C paid advertising have largely separate source populations"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Podcasts and video are struck from the menu and the response names the struck mediums"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "An explicit channel-coverage line covers LinkedIn, Meta, and Google"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Entries are delivered with their recorded status and recorded verification date rather than presented as freshly checked"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "A manual verification procedure is given: open each URL and find the most recent dated item"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "The manual classification thresholds are given: active within roughly 3 months, stale past roughly 6 months, dead for parked or for-sale pages, unverified for blocked fetches"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "A blocked or 403 fetch is described as unverified, not dead, in the manual instructions"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "The header is date-stamped and carries the persona, bought channel, time budget, and verification date"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "The list is grouped by consumption rhythm (weekly core, monthly, annual, bench)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Each entry carries name, URL, medium, channel, estimated minutes, a why-line, a selling flag, and status plus date"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Closing totals include counts per section and a verified-active count"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "An explicit channel-coverage yes/no line appears for Meta"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The missing Google coverage is called a failed deliverable, not a partial one, because the brand buys Google daily"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Google's official ads blog is restored, with the vendor-PR removal rejected: platform release notes are a first-class category and a missed change costs money"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Meta's official business news is restored on the same grounds"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Cut entries move to a bench of substitutes instead of disappearing"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "drewfenwick.com is flagged as a same-name domain serving an unrelated business: never link it, and the person becomes unverified pending a live surface rather than dropped as inactive"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The response says to confirm a page's content is about advertising before trusting any resolving personal domain"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "A what-they're-selling flag is added or required per entry"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "A status plus date is added or required per entry"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The six same-medium Meta creative sources are consolidated by channel and theme fit without a 1-to-6 quality ranking"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The rebuilt weekly core leads with a news roundup and the restored release notes ahead of long-form sources"
+      },
+      {
+        "eval_id": 11,
+        "expectation": "An explicit channel-coverage line confirms Google and Meta each have a verified-active source"
+      }
+    ]
+  }
+}

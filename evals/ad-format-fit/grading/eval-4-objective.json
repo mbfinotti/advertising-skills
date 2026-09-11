@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the immediate format verdict and treats the suspected format failure as a hypothesis to confirm",
+        "evidence": "\"Every signal you've given points at creative execution and normal fatigue timing \u2014 not at vertical video as a format\"; \"raise a format verdict only when a signal specifically implicates the format\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the refresh priority order hook, visual treatment, format, then body copy/CTA - placing format third, not first",
+        "evidence": "\"the practitioner refresh priority is Hook \u2192 Visual treatment \u2192 Format \u2192 Body copy/CTA. The team jumped straight to rung 3 without ruling out rungs 1\u20132\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Localises the failure top-down through the delivery funnel stages: stop (thumbstop/3-second view), stay (hold), click (CTR), convert (post-click conversion)",
+        "evidence": "Table with rows Stop (3-sec view), Stay (Hold to 15s), Click (CTR), Convert (Purchases)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the 31% 3-second view with 4% hold as a clickbait opening / on-ramp problem in seconds 3-15 of the creative, not a format problem",
+        "evidence": "\"Stay | Hold to 15s: 4% | Collapse... | The on-ramp: seconds 3\u201315 of the creative, not the format\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the opening problem to hook-level analysis rather than a format swap",
+        "evidence": "\"Re-cut before you swap. The video test's fix sits on the cheapest rung: re-cut the on-ramp (seconds 3\u201315) and tighten the offer/CTA\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the day-26 decline as fatigue arriving within the short-video expected lifespan of 21-35 days",
+        "evidence": "\"Day 26 of decay \u2014 short video's expected creative lifespan is ~21\u201335 days. Day 26 is squarely inside that window.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands the fading hero video to a dedicated creative wear-out diagnosis instead of relitigating the format",
+        "evidence": "\"The correct move is a creative refresh (hand this to the creative-fatigue workflow), not a format verdict\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes frequency 2.1 on cold prospecting sits inside the comfortable ~1.0-2.5 band, so it does not implicate audience size or placement supply",
+        "evidence": "\"2.1 is inside it. This is not an audience-exhaustion signal.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns the video-versus-static dashboard comparison is contaminated: delivery optimises for marginal, not average, cost, and the delivery system chose who saw which asset",
+        "evidence": "\"delivery optimizes for marginal cost, not average, so the ad system chose who saw which asset under different objectives, budgets\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Orders confirmation methods placement-and-format breakdown first, then an isolated ad set, with a holdout last",
+        "evidence": "\"1. Placement/creative breakdown...\" then \"isolate vertical video vs. static in its own ad set\" then \"5. Escalate to a holdout only if\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the escalation rule: escalate one rung only when the previous method stays ambiguous, and reserve the holdout for a decision moving a whole budget line",
+        "evidence": "\"Escalate to a holdout only if the isolated ad set stays ambiguous... reserve it for a decision that moves the whole budget line, which 'kill vertical video entirely' is.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to move everything to carousels on current evidence",
+        "evidence": "\"Why 'move everything to carousels' is itself the wrong prescription\" section with structural rejection",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names at least one signal that would genuinely implicate the format (placement-breakdown divergence, or failure persisting across every creative variant in one surface)",
+        "evidence": "\"Placement-breakdown divergence \u2014 not checked\" and \"Failure persisting across every creative variant on one surface\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the immediate format verdict and treats the suspected format failure as a hypothesis to confirm",
+        "evidence": "\"Short answer: No \u2014 the data doesn't support 'vertical video doesn't work,' it supports 'this specific video has a hook/retention problem...'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the refresh priority order hook, visual treatment, format, then body copy/CTA - placing format third, not first",
+        "evidence": "No explicit ordered priority list of hook > visual treatment > format > body/CTA is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Localises the failure top-down through the delivery funnel stages: stop (thumbstop/3-second view), stay (hold), click (CTR), convert (post-click conversion)",
+        "evidence": "\"3-sec view rate 31%...Hold to 15s at 4%...CTR 0.3% and near-zero purchases are downstream of that collapse.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the 31% 3-second view with 4% hold as a clickbait opening / on-ramp problem in seconds 3-15 of the creative, not a format problem",
+        "evidence": "\"That's a promise-payoff mismatch \u2014 the hook sets up an expectation...that the next 12 seconds don't deliver on.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the opening problem to hook-level analysis rather than a format swap",
+        "evidence": "\"A/B test hooks, not format. Keep body/CTA constant, swap only the first 3 seconds...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the day-26 decline as fatigue arriving within the short-video expected lifespan of 21-35 days",
+        "evidence": "Calls it \"the textbook lifecycle of a winning creative\" but never cites a 21-35 day lifespan range.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hands the fading hero video to a dedicated creative wear-out diagnosis instead of relitigating the format",
+        "evidence": "\"The fix for fatigue is refreshing the creative (new hooks/cuts of the same proven concept)...not abandoning the format.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes frequency 2.1 on cold prospecting sits inside the comfortable ~1.0-2.5 band, so it does not implicate audience size or placement supply",
+        "evidence": "Instead it says \"on a narrower/smaller cold audience that's enough to start seeing diminishing returns as reach saturates,\" which points toward audience size as a factor rather than dismissing it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns the video-versus-static dashboard comparison is contaminated: delivery optimises for marginal, not average, cost, and the delivery system chose who saw which asset",
+        "evidence": "The confound raised is about different messages/funnel roles/audiences, not the marginal-vs-average delivery-algorithm mechanism.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Orders confirmation methods placement-and-format breakdown first, then an isolated ad set, with a holdout last",
+        "evidence": "The action list (diagnose hook, A/B test, re-cut, expand audience, check landing page) has no such escalating placement\u2192ad-set\u2192holdout structure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the escalation rule: escalate one rung only when the previous method stays ambiguous, and reserve the holdout for a decision moving a whole budget line",
+        "evidence": "No such escalation rule is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to move everything to carousels on current evidence",
+        "evidence": "\"Keep carousels as a complement, not a replacement...swapping out video entirely on this evidence would mean discarding your only format that's produced three straight weeks of strong results.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names at least one signal that would genuinely implicate the format (placement-breakdown divergence, or failure persisting across every creative variant in one surface)",
+        "evidence": "No hypothetical falsifying signal (e.g., placement-breakdown divergence or failure across all variants) is named.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

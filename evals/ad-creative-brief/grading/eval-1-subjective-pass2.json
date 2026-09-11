@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Writes the messaging angle as a conversational sentence a customer could plausibly say out loud, not a tagline or a feature list",
+        "evidence": "\u00a73 Message states the messaging angle as: *\"I don't want to pop a pill that makes me groggy the next day just to fall asleep.\"* \u2014 a first-person, spoken-sounding complaint, not a slogan or feature list. It is explicitly self-checked against the say-it-out-loud test ('Test: a customer could plausibly say this out loud \u2014 passes.'), and the adjacent Value prop field keeps the product-benefit phrasing separate from the angle, so the angle field is not contaminated by feature language. The completion test ('wait, melatonin might be the problem, not the fix...') is likewise written in customer voice",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Writes the messaging angle as a conversational sentence a customer could plausibly say out loud, not a tagline or a feature list",
+        "evidence": "The messaging is expressed almost entirely as taglines and claim tables, not customer-voice sentences. Section 5 'Message Architecture' is a pillar/claim/emotional-job grid ('No dependency, no grogginess, no messing with your hormones'; 'Independently verified, not just brand claims') \u2014 a feature list. Section 8 'Copy Toolkit' gives ad headlines in brand voice ('Sleep support, minus the melatonin hangover.', 'Every batch, third-party tested. No exceptions.', 'Prescription-level relief, without the prescription price.'), and Concept A's tone sample ('Everyone else uses melatonin. We didn't want",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

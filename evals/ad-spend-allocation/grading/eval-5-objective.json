@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response cites the peak-event evidence against reactive raises: brands raising spend about 17.4% into a spike got about 1.1% median incremental revenue while incremental ROAS fell about 14.3%, and flat-spend brands' incremental ROAS rose.",
+        "evidence": "\"brands that raised spend 17.4% into a known demand spike got a median 1.1% incremental revenue while incremental ROAS fell 14.3%; brands that held spend flat did better.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states that pre-committing the seasonal plan on marginal returns beats reacting the week before the event.",
+        "evidence": "\"pre-committing to a plan you don't chase mid-week if blended numbers 'look good.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the uniform +40% raise: increments default to 15-20% per line, and moves of 30% or more in one step are refused.",
+        "evidence": "\"a step size (40%) that exceeds the default max (15\u201320%, never 30%+ without an explicit experiment frame)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects shifting prospecting money into retargeting for the spike, explaining that over-funding retargeting inflates blended ROAS while starving the prospecting that refills the pool.",
+        "evidence": "\"This is the named failure mode 'over-funding retargeting' verbatim: it inflates blended ROAS while starving the prospecting that refills the retargeting pool.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains why last year's strong blended ROAS during the event is not evidence the prospecting-to-retargeting shift worked - inflated blended ROAS is exactly what that shift produces while total demand erodes afterwards.",
+        "evidence": "\"a blended number rising when you shift into retargeting is close to guaranteed regardless of whether the shift created any incremental revenue\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any event reallocation is justified per line by a marginal signal (impression-share headroom, audience penetration), never applied uniformly across all campaigns.",
+        "evidence": "\"Replace the flat 40% raise with a marginal-ranked bump. Rank current campaigns by headroom\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The Q4 total stays fixed at $450K, and any proposed amounts sum to it.",
+        "evidence": "\"Keep the $450K total and the two-week event window\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags governance for moves of this size: an approval workflow above roughly 10% of a channel's quarterly budget and joint marketing-and-finance sign-off above roughly 25%.",
+        "evidence": "\"~13% of the total moving in one step \u2014 above the ~10% threshold this process flags for a documented approval workflow\" plus \"route the full packet... through marketing+finance sign-off\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Changed lines carry rollback thresholds and verification dates.",
+        "evidence": "Explicitly deferred: \"Send those and I'll turn this from a mechanics review into an actual line-by-line allocation plan with dollar amounts, rollback thresholds, and verification dates.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Peak-season reweighting is set on rolling 60-day windows so noise doesn't drive the moves.",
+        "evidence": "No mention of a 60-day rolling window anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response does not sign off; the output is a proposal awaiting the user's approval.",
+        "evidence": "\"Verdict: Do not sign off as written.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Estimates driving the event split carry evidence-class labels (directional proxy at minimum).",
+        "evidence": "\"Treat every number below as a directional proxy, not a measurement.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response cites the peak-event evidence against reactive raises: brands raising spend about 17.4% into a spike got about 1.1% median incremental revenue while incremental ROAS fell about 14.3%, and flat-spend brands' incremental ROAS rose.",
+        "evidence": "No such statistics (17.4%, 1.1%, 14.3%) appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response states that pre-committing the seasonal plan on marginal returns beats reacting the week before the event.",
+        "evidence": "\"Build the retargeting pool before the event, not during it. Increase prospecting spend in the 2-3 weeks before the sale\" and \"stagger the increase over 5-7 days pre-event, not a single jump the week before.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the uniform +40% raise: increments default to 15-20% per line, and moves of 30% or more in one step are refused.",
+        "evidence": "The response objects to the flat 40% raise being applied \"all at once\" and unstaggered, but never states a 15-20% default increment or a 30%+ single-step refusal rule.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response rejects shifting prospecting money into retargeting for the spike, explaining that over-funding retargeting inflates blended ROAS while starving the prospecting that refills the pool.",
+        "evidence": "\"\ud83d\udd34 Shifting prospecting into retargeting during the event \u2014 this is backwards... Cutting prospecting during the event shrinks the very pool you're trying to convert\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains why last year's strong blended ROAS during the event is not evidence the prospecting-to-retargeting shift worked - inflated blended ROAS is exactly what that shift produces while total demand erodes afterwards.",
+        "evidence": "\"'Blended ROAS looked great' is the expected artifact of this exact move \u2014 it's not evidence the strategy worked, it's evidence the metric is easy to game.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any event reallocation is justified per line by a marginal signal (impression-share headroom, audience penetration), never applied uniformly across all campaigns.",
+        "evidence": "Recommendations like \"Shift retargeting weight modestly (e.g. +10-15pp of mix)\" are qualitative/general rather than tied to a quantified marginal signal (no impression-share or penetration figures appear in this transcript).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The Q4 total stays fixed at $450K, and any proposed amounts sum to it.",
+        "evidence": "No Q4 total figure or itemized budget amounts appear anywhere in the transcript beyond the mentioned \"$60K\" pull and \"40%\" raise.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response flags governance for moves of this size: an approval workflow above roughly 10% of a channel's quarterly budget and joint marketing-and-finance sign-off above roughly 25%.",
+        "evidence": "No governance/approval-threshold language appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Changed lines carry rollback thresholds and verification dates.",
+        "evidence": "Recommendations like \"Run a holdout or geo lift test during the event window\" carry no specific rollback threshold or verification date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Peak-season reweighting is set on rolling 60-day windows so noise doesn't drive the moves.",
+        "evidence": "No mention of a 60-day (or any) rolling window for peak-season reweighting appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response does not sign off; the output is a proposal awaiting the user's approval.",
+        "evidence": "\"**Not signing off as-is \u2014 the retargeting shift is the problem, not the budget pull.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Estimates driving the event split carry evidence-class labels (directional proxy at minimum).",
+        "evidence": "No estimate in the transcript is labeled with an evidence-class tag such as \"directional proxy.\"",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the study-only plan: from cross-channel allocation downward the roadmap step is negotiating access (budget, a second channel, enough spend to hold a geo out), not studying",
+        "evidence": "\"Years 2-3... are not more study. Per the skill: past cross-channel allocation, the roadmap step is negotiating access \u2014 budget, a second channel, spend to hold a geo out \u2014 not studying.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the access steps as asks with dates, not learning tasks",
+        "evidence": "\"Mar 2027: Director has agreed (or not) to sponsor even a lightweight holdout test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds the roadmap by diffing the user's current evidence against what the rung above is screened for, not as a generic curriculum",
+        "evidence": "\"Two thresholds gate the next two rungs \u2014 no course substitutes for either\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sequences unit economics first on efficiency, because a week of study changes how every answer is read at any employer",
+        "evidence": "\"it's the single highest-efficiency item on the whole ladder ('a week of study changes how every answer is read, at any employer')\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names incrementality as the option the efficiency order starves (first on value and on effort) and promotes it deliberately because the user targets head of growth and sits on real spend",
+        "evidence": "\"Starved option: MMM + incrementality... Per the skill's own rule \u2014 promote incrementality 'once the user is aiming at lead or head of growth' \u2014 that's you.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names budget and forecast responsibility as the senior-track signal: if the employer is not handing it over, the user is not on the senior track there whatever the title says",
+        "evidence": "\"Budget/forecast responsibility = the senior-track signal. If your director isn't handing this over, you're not on the senior track there\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names at least one completed incrementality test (geo holdout or conversion lift) as the lead or head-of-growth signal, expected above roughly $10M in spend",
+        "evidence": "\"the skill's own benchmark places this 'expected' above ~$10M/yr spend. You're at ~$2.16M/yr.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every recommended step names the observable signal that proves it happened",
+        "evidence": "benchmark section: \"Real forecast/budget ownership either granted or not\" and \"You should hold real forecast responsibility and have a completed... incrementality test\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a dated benchmark-to-change-course, such as no budget or forecast responsibility within the agreed window meaning the plan moves to changing seats",
+        "evidence": "\"Mar 2028 (6 months after courses complete): Real forecast/budget ownership either granted or not... the plan pivots to changing seats\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes what remains genuinely study-able (e.g. unit economics) from what requires negotiated access (incrementality, forecasting, cross-channel allocation)",
+        "evidence": "\"Team/hiring/vendor management \u2014 the one Lead-rung skill with no course. Not deletable, just not learnable this way: build it via reps\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ties the head-of-growth target to its screen: P&L ownership or accountability for the revenue number, cross-channel allocation, hiring, incrementality",
+        "evidence": "\"Maps to the lead screen: forecast ownership, incrementality, cross-channel allocation, P&L accountability.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the ordering out loud and names which of the user's answers (three-year horizon, compounding goal, existing spend) moved which item",
+        "evidence": "assumptions table: \"Compounding vs one-off (Q8)... Promotes MMM/incrementality over anything that only pays off once\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the study-only plan: from cross-channel allocation downward the roadmap step is negotiating access (budget, a second channel, enough spend to hold a geo out), not studying",
+        "evidence": "MMM (cross-channel allocation) is treated as a course to study in Q3 ('MMM | 70h | Bayesian MMM, adstock/saturation curves, cross-channel optimization'), not as an access-negotiation step.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Writes the access steps as asks with dates, not learning tasks",
+        "evidence": "Year 2 items are phrased as asks within a dated window: '1. Propose owning full-funnel measurement... 2. Take ownership of the quarterly budget planning process end-to-end' under 'Year 2 (Months 13\u201324)'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds the roadmap by diffing the user's current evidence against what the rung above is screened for, not as a generic curriculum",
+        "evidence": "The roadmap is structured as a four-course curriculum (attribution, incrementality, MMM, forecasting) rather than an explicit diff against Head of Growth hiring criteria.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sequences unit economics first on efficiency, because a week of study changes how every answer is read at any employer",
+        "evidence": "Unit economics is never mentioned as a topic anywhere in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names incrementality as the option the efficiency order starves (first on value and on effort) and promotes it deliberately because the user targets head of growth and sits on real spend",
+        "evidence": "Incrementality is given a full 60h course slot in Q2, not framed as being starved by an 'efficiency order'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names budget and forecast responsibility as the senior-track signal: if the employer is not handing it over, the user is not on the senior track there whatever the title says",
+        "evidence": "Budget ownership appears as a Year-2 goal but the explicit conditional ('not on the senior track whatever the title says') is never stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names at least one completed incrementality test (geo holdout or conversion lift) as the lead or head-of-growth signal, expected above roughly $10M in spend",
+        "evidence": "A test deliverable is included ('First test on your largest channel... Quantify incremental CAC vs. attributed CAC') but the $10M spend threshold framing is entirely absent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every recommended step names the observable signal that proves it happened",
+        "evidence": "The 'Applied deliverables' table lists a concrete deliverable and 'Target date' for each course, e.g. 'Attribution audit: expose blind spots... fix tracking gaps | End Mo 3'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a dated benchmark-to-change-course, such as no budget or forecast responsibility within the agreed window meaning the plan moves to changing seats",
+        "evidence": "'\u23f3 Month 15: reassess \u2014 if scope hasn't expanded despite the wins, start external search earlier than Year 3.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes what remains genuinely study-able (e.g. unit economics) from what requires negotiated access (incrementality, forecasting, cross-channel allocation)",
+        "evidence": "Incrementality, forecasting, and MMM are all treated uniformly as courses to study, not distinguished from access-requiring items.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ties the head-of-growth target to its screen: P&L ownership or accountability for the revenue number, cross-channel allocation, hiring, incrementality",
+        "evidence": "No explicit mapping of Head of Growth requirements to P&L/hiring/cross-channel screens is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the ordering out loud and names which of the user's answers (three-year horizon, compounding goal, existing spend) moved which item",
+        "evidence": "'Order matters. Each course should build credibility for the next... attribution and incrementality are prerequisites for MMM credibility (you'll triangulate MMM outputs against your incrementality test results...)'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

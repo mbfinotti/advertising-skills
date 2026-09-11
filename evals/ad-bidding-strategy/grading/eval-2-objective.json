@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Explains that Cost Per Result Goal is an average-based control: individual conversions can and will exceed the target while the average lands near it",
+        "evidence": "\"'Cost Per Result Goal' on Meta... is an average-based cost goal, not a hard per-result ceiling. Meta's own bidder is explicitly allowed to let individual auctions cost more than your target as long as the campaign average lands near it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the campaign is working as designed (average $29.50 near the $28 target), not malfunctioning",
+        "evidence": "\"Campaign average after 3 weeks: $29.50 \u2014 about 5% over target, which is normal noise for an average-control strategy, not a breach.\" and \"Average $29.50 against a $28 goal, three weeks in, is the strategy working within its normal variance band \u2014 not a failure state.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse opening a support ticket or the bug framing",
+        "evidence": "\"Open a ticket and you'll get told exactly what's below\" and \"There's nothing to report... You'd be spending a ticket to confirm the setting is working as specified.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes average-based cost goals from hard per-auction ceilings as two structurally different control types",
+        "evidence": "\"A hard per-auction ceiling that never bids above $28 on any single result is a different tool \u2014 Meta calls that one Bid Cap.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies Bid Cap as the hard per-auction ceiling that never bids above the cap in any single auction",
+        "evidence": "\"A hard per-auction ceiling that never bids above $28 on any single result is a different tool \u2014 Meta calls that one Bid Cap.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a hard cap at $28 carries under-delivery risk (delivery can drop sharply)",
+        "evidence": "\"Hard ceilings carry the highest under-delivery risk of any bidding mode... volume can drop sharply rather than cost coming down cleanly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that platforms position hard bid caps as expert-only controls",
+        "evidence": "\"Meta positions Bid Cap as expert-only for exactly this reason.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States this misreading ('my cost cap was exceeded') is a common conflation rather than a rare malfunction",
+        "evidence": "\"The confusion 'my cost cap was exceeded on this conversion' is common enough that it's a documented misreading, not an edge case \u2014 people hear 'cap' in the setting's old name and expect a ceiling, but average-based and hard-ceiling are genuinely different mechanisms wearing similar-sounding labels.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend switching to Bid Cap as the fix for the observed spread",
+        "evidence": "\"Leave the bidding archetype alone. Average $29.50 against a $28 goal, three weeks in, is the strategy working within its normal variance band\" is listed as the primary action; Bid Cap is framed only as a conditional, deliberate option \"if you genuinely want a hard ceiling anyway\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a strategy switch is a material change that restarts a learning period",
+        "evidence": "\"It's a real bid-strategy change, not a tweak: it restarts the campaign's learning phase, and you'd want at least 1-2 full conversion cycles of clean data afterward before judging it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises judging the target over an evaluation window expressed in conversion cycles, not on individual conversions",
+        "evidence": "\"you'd want at least 1-2 full conversion cycles of clean data afterward before judging it... it's still a deliberate evaluation window, not a snap verdict.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the platform label as an observed capability (noting label churn such as Cost Cap being renamed) rather than assuming the name describes a hard cap",
+        "evidence": "\"(this setting was literally called Cost Cap until the rename)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Explains that Cost Per Result Goal is an average-based control: individual conversions can and will exceed the target while the average lands near it",
+        "evidence": "\"It's a *campaign-level average target*, not a per-result ceiling... it explicitly does **not** guarantee that every individual result stays under the number. Some purchases will cost more, some will cost less\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the campaign is working as designed (average $29.50 near the $28 target), not malfunctioning",
+        "evidence": "\"Your campaign average is $29.50 against a $28 goal \u2014 that's about 5% over target. That's well within the normal range... This isn't a glitch, it's the tool working as designed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse opening a support ticket or the bug framing",
+        "evidence": "\"Meta support will point you to the same documentation... There's no 'broken' behavior to fix here, so a ticket will just cost you time.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes average-based cost goals from hard per-auction ceilings as two structurally different control types",
+        "evidence": "\"Bid Cap does something different and much blunter: it caps what you bid *into the auction itself*, not your average cost per result... Bid Cap doesn't have the pacing/smoothing behavior Cost Per Result Goal has.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies Bid Cap as the hard per-auction ceiling that never bids above the cap in any single auction",
+        "evidence": "The transcript says Bid Cap \"caps what you bid *into the auction itself*\" but never explicitly states it never bids above the cap in any single auction \u2014 it's implied but not stated as a firm guarantee.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that a hard cap at $28 carries under-delivery risk (delivery can drop sharply)",
+        "evidence": "\"Shrink your auction eligibility \u2014 you'll simply lose more auctions to competitors bidding higher... Reduce volume, often sharply, without proportionally improving average cost\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that platforms position hard bid caps as expert-only controls",
+        "evidence": "No mention anywhere in the transcript that platforms position hard bid caps (Bid Cap) as an expert-only or advanced control.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States this misreading ('my cost cap was exceeded') is a common conflation rather than a rare malfunction",
+        "evidence": "The transcript addresses the user's specific misreading but does not characterize it as a common/frequent conflation among advertisers generally \u2014 it only says 'this isn't a glitch, it's the tool working as designed.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not recommend switching to Bid Cap as the fix for the observed spread",
+        "evidence": "\"Leave Cost Per Result Goal in place \u2014 $29.50 vs a $28 goal is not a meaningful miss... Only consider Bid Cap if you specifically need a hard per-auction ceiling\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a strategy switch is a material change that restarts a learning period",
+        "evidence": "No mention of a 'learning period' or that switching bid strategies resets campaign learning/optimization phase anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises judging the target over an evaluation window expressed in conversion cycles, not on individual conversions",
+        "evidence": "The transcript advises looking at the campaign average rather than individual purchases, but does not frame an evaluation window in terms of 'conversion cycles' or a specific time/volume window for judging the target.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the platform label as an observed capability (noting label churn such as Cost Cap being renamed) rather than assuming the name describes a hard cap",
+        "evidence": "\"Meta's bidding system (this applies the same way under the older 'cost cap' naming) optimizes toward hitting that average\" \u2014 noting the rename from 'cost cap' to 'Cost Per Result Goal' while clarifying the underlying behavior, not the literal name, is what matters.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

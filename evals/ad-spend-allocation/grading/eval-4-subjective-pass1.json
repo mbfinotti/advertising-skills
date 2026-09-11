@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response frames any adopted ratio as operator policy recorded with its rationale, never as authorization or a proven optimum.",
+        "evidence": "The revised headline states \"We're adopting 70/20/10 as portfolio discipline \u2014 not a guaranteed-return formula,\" and calls it \"a governance structure, not a marketing-science result... we're not claiming a return multiplier from it.\" The brand/activation bullet says \"We'll state this as our chosen policy, not an industry-proven optimum,\" and the 60/40 figure is explicitly demoted to \"a cross-category average, not a proven per-brand optimum.\" The footer line makes it explicit: \"Ratios above are operator policy, recorded with rationale \u2014 not claimed as proven optima. We'll report marginal return",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response frames any adopted ratio as operator policy recorded with its rationale, never as authorization or a proven optimum.",
+        "evidence": "The response repeatedly converts the ratios from borrowed authority into the operator's own choice-with-reasons. It flags '60/40' as 'Real, but overstated as \"proven optimum\"' and notes 'Calling it \"proven optimum\" ... is the weak point a CFO will poke at'; the polished copy replaces it with 'we're targeting roughly a 60/40 brand-to-activation split ... adjusted toward activation given our B2B sales cycle,' with the aside '\"Proven optimum\" doesn't.' For 70/20/10 it explicitly instructs: 'frame this as \"borrowing the 70/20/10 logic,\" not \"McKinsey proved 70/20/10 marketing budgets deliver 2.7x ",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

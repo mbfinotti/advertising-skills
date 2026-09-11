@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Checks every proposed tier against LinkedIn's minimum matched-audience size (300 members), measured after exclusions are applied, not before",
+        "evidence": "Table column 'Projected pool (after exclusions)' with '\ud83d\udfe1 Above LinkedIn's 300-member floor, below the 1,000\u20135,000 practical floor.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a tier clearing the floor before exclusions can fall under it once fresher and deeper tiers and converters are carved out",
+        "evidence": "No statement in the transcript makes this before/after-exclusion contrast explicitly; pools are only ever presented post-exclusion.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not ship the five-tier plan as-is on 11k sessions: recommends merging tiers, and presents a two-stage or single-pool outcome as a correct result, not a failure",
+        "evidence": "\"Two tiers (S3, S4) are unbuildable as sized today ... plan on merging at least one pair going in rather than treating five standalone campaigns as guaranteed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Repairs under-floor tiers in the order: widen the window, then broaden the trigger, then merge adjacent stages, then collapse to one combined warm pool",
+        "evidence": "\"run the collapse rule (widen window \u2192 broaden trigger \u2192 merge adjacent stages \u2192 single pool) on whichever of S1\u2013S4 comes back thin\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the launch-day audience plan: LinkedIn audiences are non-retroactive, collection starts only at creation, so every audience should be created now, before launch",
+        "evidence": "\"LinkedIn Matched Audiences are non-retroactive ... Create all five audiences now, this week\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the lookalike request: LinkedIn lookalike audiences were discontinued (February 2024) and replaced by predictive audiences",
+        "evidence": "\"LinkedIn discontinued lookalikes in February 2024. Replaced by Predictive Audiences, which work differently\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the single combined broad warm pool as the legitimate default below the floor, moving to stratified tiers only once each stage clears its floor with room to spare",
+        "evidence": "The transcript only discusses merging pairs of tiers, not a framing of a single combined pool as the legitimate default state to build up from.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends automated bidding rather than the proposed manual bids, because small LinkedIn pools underdeliver on manual bidding",
+        "evidence": "\"small retargeting/ABM pools deliver better on automated bidding ... Recommend automated bidding (Maximum Delivery) at launch on every stage\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses a B2B ladder with no discount rung, ordered proof, then objection, then ROI content, then the direct ask",
+        "evidence": "S1 'Proof', S2 'Objection handling', S4 'ROI/committee content'; \"No discount rung \u2014 correctly absent ... The ladder's final rung ... should be the hardest direct ask you have\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes mutual exclusion between surviving stages and excludes current customers and converters on every stage",
+        "evidence": "Exclusion map: every RTG_ row excludes fresher/deeper stages plus 'EXCL_CUSTOMERS' and 'EXCL_DEMO_REQUESTED_90'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a small-pool creative discipline: 3-5 rotating creatives with refresh on the order of every 2-3 weeks",
+        "evidence": "Cap sheet: \"S1 Pricing | ~3/week/person | Every 2 weeks (small pool burns fast)\"; design gate: '3 creative concepts staged per tier'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Considers CRM deal stage or uploaded account lists as the depth signal for the long-window end rather than web recency alone",
+        "evidence": "\"S4 Webinar | Webinar attendee (registration platform / CRM), not a customer | 180d, list-based, not pixel\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for or derives time-to-conversion data instead of accepting the arbitrary 30/90/180-day windows",
+        "evidence": "\"Pull an analytics lag report or a CRM sales-cycle export before locking these windows in\"; S1/S2 marked 'provisional, likely too short; re-derive from lag data'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that an under-floor stage either serves nothing or serves at punitive CPMs while the learning phase never exits",
+        "evidence": "The transcript only says 'Expect elevated CPMs' for marginal tiers; it never mentions a learning phase failing to exit due to being under floor.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Checks every proposed tier against LinkedIn's minimum matched-audience size (300 members), measured after exclusions are applied, not before",
+        "evidence": "Tiers are checked against a floor ('near LinkedIn's ~300-member floor') using raw session/pageview estimates, with no indication the counts are computed after exclusions are applied.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a tier clearing the floor before exclusions can fall under it once fresher and deeper tiers and converters are carved out",
+        "evidence": "No such statement appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not ship the five-tier plan as-is on 11k sessions: recommends merging tiers, and presents a two-stage or single-pool outcome as a correct result, not a failure",
+        "evidence": "'Merge pricing + feature-page visitors into one \"high-intent\" campaign (vary the ad creative per segment, don't split the campaign) until each clears ~1,000.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Repairs under-floor tiers in the order: widen the window, then broaden the trigger, then merge adjacent stages, then collapse to one combined warm pool",
+        "evidence": "The fix jumps straight to combining pages/merging campaigns ('Combine all feature pages into one audience'; 'Merge pricing + feature-page visitors') without first proposing widening the window.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the launch-day audience plan: LinkedIn audiences are non-retroactive, collection starts only at creation, so every audience should be created now, before launch",
+        "evidence": "'Pixel-based audiences... only count forward from when the Insight Tag/URL rule goes live \u2014 no backfill... Install/verify the Insight Tag now and create the audience definitions now'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects the lookalike request: LinkedIn lookalike audiences were discontinued (February 2024) and replaced by predictive audiences",
+        "evidence": "'LinkedIn sunset classic Lookalike Audiences in 2023; the current feature is Predictive Audiences, seeded from a conversion signal, not raw traffic.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the single combined broad warm pool as the legitimate default below the floor, moving to stratified tiers only once each stage clears its floor with room to spare",
+        "evidence": "The 'Revised shape' table still keeps four separate tiers (merged pricing+feature, webinar, blog, video) rather than defaulting to one combined pool.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends automated bidding rather than the proposed manual bids, because small LinkedIn pools underdeliver on manual bidding",
+        "evidence": "The problem is flagged ('Manual bid on sub-1,000-person audiences usually just underspends') but no switch to automated/maximize-delivery bidding is recommended.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses a B2B ladder with no discount rung, ordered proof, then objection, then ROI content, then the direct ask",
+        "evidence": "No messaging ladder/content sequence is discussed anywhere in the transcript, which is focused solely on sizing/mechanics.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Writes mutual exclusion between surviving stages and excludes current customers and converters on every stage",
+        "evidence": "No mention of exclusion logic between stages or converter/customer suppression.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a small-pool creative discipline: 3-5 rotating creatives with refresh on the order of every 2-3 weeks",
+        "evidence": "No creative-count or refresh-cadence guidance is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Considers CRM deal stage or uploaded account lists as the depth signal for the long-window end rather than web recency alone",
+        "evidence": "No CRM or account-list based depth signal is proposed; audiences are purely web-behavior based.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks for or derives time-to-conversion data instead of accepting the arbitrary 30/90/180-day windows",
+        "evidence": "The 30d/90d/180d windows are accepted as given and never questioned against actual lag data.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that an under-floor stage either serves nothing or serves at punitive CPMs while the learning phase never exits",
+        "evidence": "The transcript says pricing audience will see 'fast frequency saturation' and manual bids 'usually just underspends,' but never frames this as punitive CPMs or a learning phase that never exits.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

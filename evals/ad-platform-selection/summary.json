@@ -1,0 +1,499 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-platform-selection",
+  "scenarios": 11,
+  "expectations_total": 144,
+  "expectations_subjective": 10,
+  "expectations_objective": 134,
+  "pass_rate_with_skill_pct": 81.9,
+  "pass_rate_without_skill_pct": 40.3,
+  "delta_pp": 41.6,
+  "uplift_multiplier": 2.03,
+  "trigger_accuracy_pct": 94.4,
+  "trigger_queries": 144,
+  "subjective_ac2": 0.902,
+  "subjective_pass_disagreements": [
+    {
+      "eval_id": 8,
+      "condition": "without_skill",
+      "expectation": "The verdict is honest about the economics: either one primary consistent with the math, or a statement that paid does not clear until margin or repeat-purchase economics improve.",
+      "pass1": false,
+      "pass2": true
+    }
+  ],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Response supports the ROAS correction with the observation that median paid-social ROAS in large ecommerce datasets sits near 1.86-1.93x, or that paid social is profitable only above roughly a 50% margin."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Response notes that a few hundred dollars a month on this family only proves engagement signal, never sales outcomes, so a smaller trial does not rescue the plan."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Response notes a professional-network test conventionally needs about a quarter of committed spend before a verdict, compounding the mismatch."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Response cites that social/creation channels are systematically under-reported in platform and last-click reads (practitioner estimates on the order of 70% under-reporting)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response states the podcast measurability floor (roughly $15,000+/month spread across 3+ shows in multi-episode flights) and that $9K sits below it."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response does not fund podcast as primary at $9K, including via a shrunk one-show version - an underfunded channel produces no readable signal."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Podcast is named in a deleted list with the floor it missed and the budget level that would clear it."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response walks down to the next-ranked fundable channel rather than spreading the $9K thinner or across several small bets."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response engages the promotion-against-rank conditions: buyer-on-surface evidence and no-capture-family both hold, but the promotion is refused specifically because the budget cannot clear the floor."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response recommends a creation family fundable at $9K (paid social prospecting or short-form video) as the primary."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response checks the chosen family's learning threshold against the budget (roughly 50 optimization events per ad set per 7 days, with the weekly spend implication worked for a stated target CPA)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Podcast is registered as a later candidate with an explicit re-entry condition tied to budget, not silently dropped."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Any future podcast plan described includes measurement designed before booking (promo codes, vanity URLs, self-reported attribution) and show selection above a minimum download threshold."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Plan concentrates roughly 80% of budget on the single funded primary."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Response explains retargeting's high apparent ROI comes from near-zero effort reusing existing traffic and creative, while it ranks last on value - not because it creates demand."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Response names CTV's real cost as front-loaded: video production (roughly $1,500-$5,000 to repurpose, $15,000+ for a new spot) plus a measurement build due before any result."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Response notes CTV takes about a quarter before a readable result and its click-level measurement is structurally weak, requiring incrementality planning."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Response notes paid social prospecting at scale needs 8-15+ meaningfully different variants per ad set with refreshes as frequency climbs, also beyond 2 statics/month."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The 'everyone says TikTok' rationale is treated as trend-following, not audience evidence; the response asks for or reasons from evidence of where webinar-software buyers actually concentrate."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Response prescribes a deliberately tiny price-discovery spend (on the order of $100) purely to learn the real CPC for this targeting before the real test, replacing published benchmarks with own numbers."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The test is specified to start and end on the same weekday."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Pass criterion is CPA/CPL at or under allowable CAC at 90-95% statistical confidence, not an eyeballed $150-per-demo after 10 days."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Allowable CAC is derived from payback math on roughly $600/month gross profit per customer, yielding a ceiling well above $700 (on the order of $1,800-$7,200 for a 3-12 month band), with the numbers shown."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The ~6-week (about 1.4-month) outbound payback is identified as a signal of underinvestment, not health, because it sits under the 3-month lower bound."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Response does not adopt 'match outbound's $700 CAC' as the paid ceiling; the ceiling comes from the payback target."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Response keeps bidding-method choice out of scope as a separate decision instead of answering it in depth."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Response recommends routing the Starter tier to organic or product-led motions instead of paid ads."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Response applies a discounted payback calculation (CAC divided by monthly gross profit times retention rate) using the stated 45% and/or 92% retention figures."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Response treats payback period, not LTV:CAC, as the primary affordability gate."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "If LTV:CAC is used at all, it appears only as a secondary sanity check after payback clears."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Response derives an allowable CAC from a payback target rather than accepting the agency's $200 quote as the ceiling."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Response references a target payback band of roughly 3-12 months (with a longer allowance only for enterprise motions)."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Recommendation names exactly one funded primary channel family, not a list of platforms to try in parallel."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Response works in channel-family vocabulary (paid search, paid social, B2B professional networks) rather than framing the decision inside one vendor's product names."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Response gathers or conditions on missing economics inputs (sales cycle, buyer concentration, existing channels) before or alongside naming the primary, rather than picking a platform from price alone."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Response shows the arithmetic that $2,400/month per channel is roughly $80/day, below the learning thresholds of every major channel family."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Response recommends concentrating roughly 80% of budget on one funded primary channel for the first ~90 days."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Response computes break-even ROAS as 1 divided by the contribution margin rate, landing near 1.7x for a 58% margin."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Response rejects the 4x ROAS target as a folk number not derived from this business's margin."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Response supports the ROAS correction with the observation that median paid-social ROAS in large ecommerce datasets sits near 1.86-1.93x, or that paid social is profitable only above roughly a 50% margin."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Pass criterion is CPA at or under allowable CAC at statistical significance (90-95% confidence), not a fixed ROAS multiple."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Response prescribes a deliberately tiny price-discovery spend (on the order of $100) to learn real CPC/CPM before the real test budget moves."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Second channel is added only on an explicit trigger (primary saturation or a budget breakpoint), one channel at a time."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Connected TV is ruled out for a ~$24-contribution product, with the CPM plus production cost math named."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Response notes that financial products and services require special-ad-category declaration in the US (a regime in force since January 2025)."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Response states lookalike audiences are replaced by a weaker special-audience tool, so the 1% lookalike plan is unavailable as described."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Response runs an affordability step (contribution economics, allowable CAC, payback) before or alongside the platform mix rather than jumping straight to channel names."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Response asks about or accounts for regulated-category exposure across every target geography, not just the one platform mentioned."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Response rules out B2B professional networks on the LTV floor (roughly $10,000-$15,000 minimum), showing Notchset's LTV is on the order of $400."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Response notes the roughly $5,000/month floor for pipeline-oriented professional-network campaigns in North America, which $3,500 does not clear."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Response notes that a few hundred dollars a month on this family only proves engagement signal, never sales outcomes, so a smaller trial does not rescue the plan."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Response names picking the channel the team already knows as a failure mode, treating familiarity as a scoring input rather than the decision."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The family is deleted from the candidate set and named in a deleted list with the gate it failed, not ranked at the bottom for later."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Allowable CAC is derived via a payback target, not a folk ROAS multiple."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Response does not recommend testing LinkedIn with a smaller budget to see what happens."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Response notes a professional-network test conventionally needs about a quarter of committed spend before a verdict, compounding the mismatch."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Response notes B2B professional networks conventionally warrant roughly a 3-month committed test before judging."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Response notes the spend pace (about $3K over three weeks) sits below the roughly $5,000/month floor for sales outcomes on that family."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Response cites that social/creation channels are systematically under-reported in platform and last-click reads (practitioner estimates on the order of 70% under-reporting)."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Response recommends adding self-reported attribution (a 'how did you hear about us' field on the demo form) as the cheap correction."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Response distinguishes 'search may legitimately be funded first if category search volume exists and capture is underfunded' from 'the dashboard proves it' - the decision is re-derived from economics and demand state."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response states the podcast measurability floor (roughly $15,000+/month spread across 3+ shows in multi-episode flights) and that $9K sits below it."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response does not fund podcast as primary at $9K, including via a shrunk one-show version - an underfunded channel produces no readable signal."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Podcast is named in a deleted list with the floor it missed and the budget level that would clear it."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response walks down to the next-ranked fundable channel rather than spreading the $9K thinner or across several small bets."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response engages the promotion-against-rank conditions: buyer-on-surface evidence and no-capture-family both hold, but the promotion is refused specifically because the budget cannot clear the floor."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response recognizes that with no category search volume, capture cannot be the primary and a demand-creation family must be."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response recommends a creation family fundable at $9K (paid social prospecting or short-form video) as the primary."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Response checks the chosen family's learning threshold against the budget (roughly 50 optimization events per ad set per 7 days, with the weekly spend implication worked for a stated target CPA)."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Podcast is registered as a later candidate with an explicit re-entry condition tied to budget, not silently dropped."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Any future podcast plan described includes measurement designed before booking (promo codes, vanity URLs, self-reported attribution) and show selection above a minimum download threshold."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The survey evidence is used to justify the audience-presence score but is not allowed to override the funding floor."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Plan concentrates roughly 80% of budget on the single funded primary."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Response explains retargeting's high apparent ROI comes from near-zero effort reusing existing traffic and creative, while it ranks last on value - not because it creates demand."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Response recommends a prospecting or capture primary that generates the traffic first, chosen through the economics and demand-state logic rather than asserted."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Response prescribes the starting measurement rung for a small-budget plan: UTM discipline plus last-non-direct attribution."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Self-reported attribution is added only when or if a demand-creation channel enters the mix."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Response computes the affordability inputs: contribution near $192 per sale and break-even ROAS near 1.6x for a 62% margin."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Connected TV is deleted for a sub-$50-contribution product, with the CPM range ($20-40) plus production cost math named."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Response names CTV's real cost as front-loaded: video production (roughly $1,500-$5,000 to repurpose, $15,000+ for a new spot) plus a measurement build due before any result."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Response notes CTV takes about a quarter before a readable result and its click-level measurement is structurally weak, requiring incrementality planning."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Response rejects copying Verdora's channel mix, naming the failure mode: the competitor's margin and LTV, not their taste, made their mix work."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Podcast is gated on its roughly $15K measurability floor relative to the $14K total budget."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Response flags that first-order contribution of ~$13 sits below common benchmark CPAs (e.g., paid social median CPA near $38) and asks about repeat purchase or LTV before approving any paid channel."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Break-even ROAS computed near 2.9x for a 34% margin."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Response notes that at the ecommerce median paid-social ROAS of roughly 1.86-1.93x, a 34% margin is unprofitable - below the ~50% margin line."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "The verdict is honest about the economics: either one primary consistent with the math, or a statement that paid does not clear until margin or repeat-purchase economics improve."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Before offering B2B professional networks as the alternative, the LTV floor (roughly $10,000-$15,000) is checked against what a $190/month product's retention implies."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The 'everyone says TikTok' rationale is treated as trend-following, not audience evidence; the response asks for or reasons from evidence of where webinar-software buyers actually concentrate."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "The 'when should we expect results' question is answered per the chosen family's time-to-effect (days from a cold start for paid search), not a generic timeline."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Response verifies or asks whether landing pages and conversion tracking are live before any launch."
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Final output names one funded primary with explicit pass/fail and kill criteria."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Response states the 2023 playbook cannot be rerun because those channel families no longer exist for this messaging in the EU - gone, not merely restricted."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Response does not propose relabeling or reclassifying the ads as non-political to slip past platform review."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Response proposes alternatives outside the exited families (for example podcast/audio, native/discovery, direct media buys) with honest caveats, rather than pretending search and social remain available."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "The disqualifier pass runs before any ranking, and removed families are named with the rule that removed them."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Response notes EU consent requirements degrade tracking signal (high consent-mode adoption but widespread non-compliant implementations) and plans measurement accordingly."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Response treats the regime as hard-blocking with serious penalties (fines up to a percentage of annual turnover), not a formality to risk."
+      },
+      {
+        "eval_id": 10,
+        "expectation": "The recommended awareness plan carries a measurement design suited to weak click-level reads (self-reported, incrementality-style, or equivalent)."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Response prescribes a deliberately tiny price-discovery spend (on the order of $100) purely to learn the real CPC for this targeting before the real test, replacing published benchmarks with own numbers."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The real test is budgeted at a minimum of 3x target CPA per concept (5x preferred), not a flat $500."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Test duration is set to at least the full ~6-week purchase cycle, explicitly overriding the 10-day window."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The 10-day judgment window is rejected as a false-negative risk because it is shorter than the sales cycle."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The test is specified to start and end on the same weekday."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Pass criterion is CPA/CPL at or under allowable CAC at 90-95% statistical confidence, not an eyeballed $150-per-demo after 10 days."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Kill criterion is 2-3x target CPA spent with zero conversions after a readable sample, followed by diagnosis before rerunning."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Allowable CAC is derived from payback math on roughly $600/month gross profit per customer, yielding a ceiling well above $700 (on the order of $1,800-$7,200 for a 3-12 month band), with the numbers shown."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "The ~6-week (about 1.4-month) outbound payback is identified as a signal of underinvestment, not health, because it sits under the 3-month lower bound."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Response does not adopt 'match outbound's $700 CAC' as the paid ceiling; the ceiling comes from the payback target."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Response applies the paid-search funding floor: budget must support roughly 10 clicks/day and a daily budget of 3-5x target CPA, delivering at least one conversion/day on paper - which $500 total cannot."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Response flags legal-vertical search CPCs as among the most expensive with a very wide published range, making own price discovery essential rather than trusting averages."
+      },
+      {
+        "eval_id": 11,
+        "expectation": "Response keeps bidding-method choice out of scope as a separate decision instead of answering it in depth."
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses learning churn: each edit re-enters a learning period, and the induced instability provoked the next edit",
+        "evidence": "\"That's the textbook \\\"learning churn\\\" pattern: an edit reads as instability, the instability triggers another edit, and the loop feeds itself.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs to stop editing and wait out a full window before any further change",
+        "evidence": "\"No target change before 2026-10-06 at the earliest (7 weeks from today, 2026-09-12), UNLESS the rollback trigger below fires first.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires batching pending changes into a single change to trigger one relearn instead of a chain of resets",
+        "evidence": "\"Batch any pending tracking or creative fixes into the next single change instead of drip-feeding edits.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prohibits concurrent confounding changes (target, creative, and audience moved in the same week)",
+        "evidence": "\"One variable at a time from here on: target, creative, and audience never move in the same window again.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defines the evaluation window in conversion cycles (click-to-conversion lag plus reporting delay), not calendar days",
+        "evidence": "\"Evaluation : 1-2 conversion cycles = 25-50 days (documented: vendor guidance after a target change).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Converts the window to days for this account (one cycle \u2248 3.5 weeks, so 1-2 cycles \u2248 4-7 weeks)",
+        "evidence": "\"Use the long end (50 days, ~7 weeks) given this account is also recovering from three stacked changes\" based on \"Full conversion cycle = ~3 weeks click-to-qualified-signup + a few days reporting delay \u2248 25 days.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites vendor guidance of 1-2 conversion cycles after a target change as the documented unit",
+        "evidence": "\"1-2 conversion cycles = 25-50 days (documented: vendor guidance after a target change).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses the hardcoded auto-pause rule based on a fixed CPA threshold alone",
+        "evidence": "\"A blind \\\"pause any ad set above $90 CPA\\\" rule is exactly the anti-pattern this policy exists to prevent: a fixed-cost trigger with no check on sample size, maturity, or confounding changes will pause ad sets on noise, not on a real problem\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lists the checks required before pausing on a spike: conversion lag, sample size, tracking health, seasonality, active experiments",
+        "evidence": "The gate table lists Ad set age, Sample size, Window, Recency, and Tracking health, but 'seasonality' is never mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a cost spike is a question, not a verdict",
+        "evidence": "\"On breach, default to flag-for-review, not silent pause. Route it to whoever owns the account (the \\\"Doctor\\\" job: someone decides whether it's a real problem or noise) within 24-48 hours.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the containment exception (runaway spend, policy exposure, broken destination, confirmed tracking corruption) where an immediate hold is right",
+        "evidence": "The text only says a hard automated pause \"restrict it to a containment ceiling, not a working-target multiple\" and references \"contain runaway cost\" generically \u2014 it never names distinct exception categories like policy exposure, broken destination, or confirmed tracking corruption as immediate-hold triggers.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Drafts the policy with a rollback trigger stated as an observable condition",
+        "evidence": "\"Rollback trigger : spend falls below ~60% of budget for a full evaluation window while impression share lost to rank is rising -> raise target back toward the last level that delivered\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a switch trigger and a named approver in the drafted rules",
+        "evidence": "Switch triggers are listed, but the approver field is left blank: \"Approver: name one person who signs off on any target move before it ships - unnamed here, fill in.\" No actual person is named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the policy sections for the user's validation/approval rather than finalizing unilaterally",
+        "evidence": "\"Working assumptions (confirm these before treating the policy as final)\" and \"I'm drafting this from what you gave me rather than a full back-and-forth interview... Two things are load-bearing and unconfirmed\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses learning churn: each edit re-enters a learning period, and the induced instability provoked the next edit",
+        "evidence": "\"Three CPA goal changes in two weeks ($60\u2192$48\u2192$55\u2192$50) were reactions to immature cohorts, not to real performance. Volatility is partly self-inflicted: changing inputs faster than the system can report outputs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs to stop editing and wait out a full window before any further change",
+        "evidence": "\"Minimum change interval: 28 days... No action on data younger than 28 days (except circuit breakers)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires batching pending changes into a single change to trigger one relearn instead of a chain of resets",
+        "evidence": "The document instead enforces isolating single-variable changes ('One lever per cycle, logged') rather than batching multiple pending changes into one combined change; no batching mechanism is described anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Prohibits concurrent confounding changes (target, creative, and audience moved in the same week)",
+        "evidence": "\"Never change creative, audience, and target CPA in the same week. If more than one lever moved, a later CPA read cannot be attributed to any single cause\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defines the evaluation window in conversion cycles (click-to-conversion lag plus reporting delay), not calendar days",
+        "evidence": "\"Define data maturity = 21 days (signup lag) + 5 days (reporting buffer) = 26 days from spend date.\" and later 'at least 2 full maturity cycles (56 days)' uses maturity cycles as the unit.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Converts the window to days for this account (one cycle \u2248 3.5 weeks, so 1-2 cycles \u2248 4-7 weeks)",
+        "evidence": "The transcript rounds the cycle to 28 days ('Round up: treat any ad set's data as immature until day 28') i.e. exactly 4 weeks, and requires 2 full cycles = 56 days (8 weeks) for evidence \u2014 not the 3.5-week cycle / 4-7 week range specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites vendor guidance of 1-2 conversion cycles after a target change as the documented unit",
+        "evidence": "No citation to Meta/vendor documentation appears anywhere in the transcript; the 28-day and 56-day figures are derived internally from lag+reporting buffer, not attributed to any vendor guidance.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses the hardcoded auto-pause rule based on a fixed CPA threshold alone",
+        "evidence": "\"Do not build a version of Rule B without the age/spend gates. An ungated '>$90 \u2192 pause' rule is the automation equivalent of what's been happening manually for two weeks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lists the checks required before pausing on a spike: conversion lag, sample size, tracking health, seasonality, active experiments",
+        "evidence": "Only age/spend gates (proxies for lag and sample size) are specified in Rule B; tracking health, seasonality, and active experiments are never mentioned anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a cost spike is a question, not a verdict",
+        "evidence": "\"A 'bad' CPA on a 10-day-old ad set is not evidence \u2014 it's an incomplete cohort.\" / \"the $90 pause rule is a safety net for genuinely broken ad sets, not a performance judgment\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the containment exception (runaway spend, policy exposure, broken destination, confirmed tracking corruption) where an immediate hold is right",
+        "evidence": "Only a runaway-spend-type exception is covered via Rule A ('Zero-result burn') and Rule B; policy exposure, broken destination, and confirmed tracking corruption are never named as exceptions anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Drafts the policy with a rollback trigger stated as an observable condition",
+        "evidence": "The document defines pause conditions (Rule A/B) but no rollback trigger to revert a target CPA or other change back to a prior value based on an observable condition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a switch trigger and a named approver in the drafted rules",
+        "evidence": "Section 3.5 only requires 'Log every change (date, old value, new value, reason, who approved)' \u2014 a log field, not a specifically named approver or a defined switch trigger.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the policy sections for the user's validation/approval rather than finalizing unilaterally",
+        "evidence": "The document ends with a finalized 'Bottom line:' statement and is written throughout as a completed policy ('Fix:', 'Rule A \u2014', 'Now') with no request for the user to review or approve it.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

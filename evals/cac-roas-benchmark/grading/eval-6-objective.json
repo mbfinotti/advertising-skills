@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes break-even ROAS as 1 / 0.55, approximately 1.82",
+        "evidence": "'Break-even ROAS (= break-even MER) | 1 \u00f7 margin | 1.82x'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the 4:1 rule's status: no traceable author, often misattributed to a 2016 Nielsen study, and mathematically just break-even at a 25% margin - not this business's 55%",
+        "evidence": "Transcript only says 'No traceable author, often misattributed to Nielsen; = break-even at 25% margin' \u2014 the specific '2016' study detail is never mentioned",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names 'MER above 4, 5-8 at scale' as a Taylor Holiday / Common Thread Collective stated heuristic never measured across a sample",
+        "evidence": "'MER > 4, 5-8x at scale \u2014 Taylor Holiday / Common Thread Collective, a stated heuristic, never measured across a sample.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows that the same ROAS means different profit at different margins (for example 4x yields about $1.40 profit per ad dollar at 60% margin and $0.00 at 25%, or the equivalent computation at 55%)",
+        "evidence": "'Profit per ad $ at 4x | $1.20' at 55% margin, contrasted with 'the same math at a 25% margin gives break-even 4.0x' (i.e. $0 profit at 4x)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not adopt the ~2 median as the target, and any median quoted carries publisher, year, sample, and the variant measured",
+        "evidence": "'Median ecommerce ROAS 2.04 \u2014 Triple Whale 2025, 18,000+ brands, platform-instrumented, measures blended ROAS'; 'Above median is not the same as healthy for you'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that an external median cannot know this business's margin or price point - which is why it cannot set the verdict",
+        "evidence": "'2.04x leaves only $0.12 profit per ad dollar... they're implicitly reasoning from thinner-margin businesses'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions the 1.82 break-even as the non-negotiable arithmetic floor: below it the spend loses money whatever any benchmark says",
+        "evidence": "'Break-even \u2014 1.82x. Non-negotiable. Below it you lose money by arithmetic regardless of what any benchmark says.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands off setting the actual target or floor as written policy to a spend-guardrails workflow instead of declaring a policy number itself",
+        "evidence": "'That's a recommendation, not a computed answer \u2014 the specific number... is a guardrail/policy decision (ad-spend-guardrails), not something this skill can derive from margin alone.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the business's own trailing history (4-8 prior periods, same definition) as the second reference and asks for it",
+        "evidence": "'Own trailing history \u2014 not available... This is the rung you're missing and the one I'd get before locking a number.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names each quoted folk target with its origin instead of deleting or ignoring it",
+        "evidence": "Folklore table lists all three quoted rules (agency 4x, podcast MER>4, blog median) each with origin",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not average the three quoted targets into a single number",
+        "evidence": "Each of the three sources is treated and evaluated separately in the folklore table, never averaged",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes blended ROAS from MER by their denominators (total paid spend versus total marketing spend) when discussing the quoted 4x targets",
+        "evidence": "Only a general caution is given ('confirm which ROAS variant you'll actually track (blended vs MER vs POAS \u2014 they're not interchangeable)') without ever stating the specific denominator distinction (total paid spend vs. total marketing spend) in relation to the 4x targets",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes break-even ROAS as 1 / 0.55, approximately 1.82",
+        "evidence": "'Break-even ROAS = 1 / contribution margin = 1 / 0.55 = 1.82x'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the 4:1 rule's status: no traceable author, often misattributed to a 2016 Nielsen study, and mathematically just break-even at a 25% margin - not this business's 55%",
+        "evidence": "The transcript connects 4x to '~25% contribution margin' but never mentions the Nielsen misattribution or lack of traceable authorship.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names 'MER above 4, 5-8 at scale' as a Taylor Holiday / Common Thread Collective stated heuristic never measured across a sample",
+        "evidence": "The transcript refers only to 'the podcast's MER >4, 5-8 at scale' without naming Taylor Holiday, CTC, or critiquing its evidentiary basis.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Shows that the same ROAS means different profit at different margins (for example 4x yields about $1.40 profit per ad dollar at 60% margin and $0.00 at 25%, or the equivalent computation at 55%)",
+        "evidence": "No profit-per-ad-dollar-at-fixed-ROAS calculation appears; the table instead shows required ROAS at different target margins, not the requested framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not adopt the ~2 median as the target, and any median quoted carries publisher, year, sample, and the variant measured",
+        "evidence": "The blog's '~2x' median is cited with no publisher, year, or sample, even though it is correctly not adopted as the target.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that an external median cannot know this business's margin or price point - which is why it cannot set the verdict",
+        "evidence": "'it's the median across all margin profiles, many far thinner than yours' explains why the blog's number doesn't reflect this business's margin.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions the 1.82 break-even as the non-negotiable arithmetic floor: below it the spend loses money whatever any benchmark says",
+        "evidence": "'Below 1.82x ROAS, every ad-attributed sale loses money on a contribution basis. That's your floor, not your target.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands off setting the actual target or floor as written policy to a spend-guardrails workflow instead of declaring a policy number itself",
+        "evidence": "The transcript itself declares a policy: 'Target range: 2.5x\u20133.5x ROAS as your steady-state paid-acquisition goal'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends the business's own trailing history (4-8 prior periods, same definition) as the second reference and asks for it",
+        "evidence": "No request for historical trailing data appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names each quoted folk target with its origin instead of deleting or ignoring it",
+        "evidence": "Each source is engaged with directly: 'Agency's \"4x minimum\"...', 'Podcast's \"MER >4, 5-8 at scale\"...', 'Blog's \"median ecommerce ROAS ~2\"...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not average the three quoted targets into a single number",
+        "evidence": "Each of the three is critiqued separately rather than averaged into one figure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes blended ROAS from MER by their denominators (total paid spend versus total marketing spend) when discussing the quoted 4x targets",
+        "evidence": "'MER is a different denominator (total revenue \u00f7 total spend, capturing organic/brand lift too)...Don't compare a channel-level ROAS target against a blended MER benchmark.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

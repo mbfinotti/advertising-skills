@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Scopes the output to identifying which creatives, if any, need action rather than scheduling a wholesale refresh",
+        "evidence": "The headline explicitly rejects the wholesale plan: \"don't replace all 28 next month. Replace by concept, on evidence, staggered.\" A full section argues why \"refresh all 28\" is the wrong default (wrong unit of analysis, learning-phase reset from mass swap, skipped cheaper rungs). Phase 0 is a confounder screen where \"Any FAIL here ends the fatigue inquiry and redirects the fix \u2014 it does not greenlight a refresh.\" Phase 1 issues a per-concept fatigue verdict including \"healthy\" and \"insufficient data\" as possible outcomes. Phase 2 routes each concept to distinct buckets \u2014 healthy \u2192 \"leave runni",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Scopes the output to identifying which creatives, if any, need action rather than scheduling a wholesale refresh",
+        "evidence": "Partial credit only. The response does open by challenging the brief (\"'Replace all 28 next month' treats symptom as if it were the diagnosis\") and adds a genuine diagnostic step: \u00a71 'Diagnose before building (Days 1-3)' pulls per-creative metrics (frequency, CPM, CTR, hook rate, spend share) and tiers the 6 concepts into \ud83d\udfe2 keep-live / \ud83d\udfe0 fatigued winner / \ud83d\udd34 dead weight, with an explicit 'Do NOT touch yet' for the healthy concept and 'Kill immediately, don't bother refreshing' for dead weight. That is the right instinct.\n\nHowever, the output is not scoped to that. The stated recommendation is '",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

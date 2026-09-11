@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that even the fully merged structure at roughly 6 conversions/month cannot clear the platform learning threshold",
+        "evidence": "\"Even the best-case, fully-merged structure (one LinkedIn campaign + one Google campaign) still won't clear either platform's practical volume floor.\" Table verdicts: \"Sitting right at the floor, not past it\" (LinkedIn) and \"Still 5-10x under the practitioner benchmark\" (Google).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Says plainly that consolidation alone will not fix this account; merging cannot create conversions that do not exist",
+        "evidence": "\"consolidation alone will not get you there... At 6 demos/month, you don't have a structure problem you can merge your way out of \u2014 you have a volume problem, and merging is necessary but not sufficient.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends moving the optimisation event up-funnel to a higher-volume proxy as the first move, ahead of pruning or merging",
+        "evidence": "Section header: \"1. `up-funnel` (promoted to first) \u2014 move the bid-optimization event off 'demo request'\", followed by \"2. `prune`\" and \"3. `merge`\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names concrete proxy events the platform can actually observe (e.g. qualified visit, form open, MQL)",
+        "evidence": "\"pick a higher-volume proxy up top of the funnel: qualified form-open, pricing-page view, a gated technical asset download, or a chatbot/qualification-flow completion.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires feeding CRM outcomes back to keep the proxy event honest against real pipeline outcomes",
+        "evidence": "\"Feed CRM outcomes (demo \u2192 SQL \u2192 closed-won) back into the platform so the proxy stays honest \u2014 this needs whoever owns your CRM/marketing-ops stack.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents manual or volume-independent bidding, judged on leading metrics, as the alternative to the proxy-event move",
+        "evidence": "\"If nobody currently owns that pipeline, fall back to manual bid strategies on both platforms and judge on leading metrics (CTR, cost/click, proxy-conversion rate) instead\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks the proxy-event move above manual bidding on value (it restores an optimisation signal; manual bidding only stops pretending there is one) while acknowledging its higher effort",
+        "evidence": "\"...fall back to manual bid strategies... instead \u2014 cheaper to start, but it's a settings change, not a fix that restores an automated signal.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the condition for choosing manual bidding first (no tracking/CRM owner to coordinate with, or an effort ceiling that rules the proxy work out)",
+        "evidence": "\"If nobody currently owns that pipeline, fall back to manual bid strategies on both platforms...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that LinkedIn documents no learning-phase conversion threshold, only minimum spend levels (around $10/day and $100 lifetime)",
+        "evidence": "Transcript says \"No documented conversion threshold; AJ Wilcox's practical floor is $3-5K/month for usable data\" \u2014 it correctly denies a documented conversion threshold but never cites the $10/day or $100 lifetime minimum spend figures; instead it substitutes an unrelated $3-5K/month practitioner floor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not apply a 50-conversions-per-week or Meta-style 50-per-7-days threshold to LinkedIn",
+        "evidence": "The LinkedIn row only cites \"AJ Wilcox's practical floor is $3-5K/month for usable data\" \u2014 no 50-conversions-per-week or Meta-style 50-per-7-days figure appears anywhere for LinkedIn.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Grounds the Google side in a documented figure (e.g. 15 conversions/30 days for Search) or explicitly flags that the live help page must be re-verified; imports no undocumented threshold",
+        "evidence": "\"No hard tCPA gate documented (the '15-30 conversions/30 days' rule is Target ROAS-by-campaign-type folklore when misapplied to tCPA) \u2014 but the practitioner starting point for merging search into automated bidding is ~15-30 conversions/month\" \u2014 explicitly labels the figure as undocumented folklore rather than presenting it as a verified platform rule.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not promise that combining campaigns will by itself exit Learning or fix delivery",
+        "evidence": "The plan repeatedly frames merging as necessary-but-insufficient and up-funnel as \"the only move in the whole ladder that works when the fully-merged structure still can't clear threshold\" \u2014 no line promises merging alone exits Learning or fixes delivery.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that even the fully merged structure at roughly 6 conversions/month cannot clear the platform learning threshold",
+        "evidence": "\"6 demos/month total will still starve even a single consolidated campaign on each platform. You need to fix the signal, not just the structure.\" and \"6 demos/month is too sparse for any algorithm regardless of campaign count, given your 4-month sales cycle.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Says plainly that consolidation alone will not fix this account; merging cannot create conversions that do not exist",
+        "evidence": "\"Consolidation without the signal fix will still leave you data-starved.\" and the heading \"The part consolidation alone won't fix: optimize for a higher-volume signal\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends moving the optimisation event up-funnel to a higher-volume proxy as the first move, ahead of pruning or merging",
+        "evidence": "The body is ordered '1. Consolidate by overlap...', '2. Fix the budget-per-campaign floor', '3. ...optimize for a higher-volume signal' \u2014 the proxy-event recommendation is presented third, after consolidation and budget fixes, and the sequencing section also lists 'Consolidate campaign structure' as step 1 before 'Add the micro-conversion event' as step 2, both nominally in Week 1 but consolidation ordered first.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names concrete proxy events the platform can actually observe (e.g. qualified visit, form open, MQL)",
+        "evidence": "\"Pricing page view, case study download, or a qualified content-gate fill \u2014 something happening 5\u201310x more often than a demo request.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires feeding CRM outcomes back to keep the proxy event honest against real pipeline outcomes",
+        "evidence": "\"Month 4+: Once deals start closing, import offline conversion data (closed-won) back into both platforms so bidding eventually optimizes toward pipeline quality, not just demo volume.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents manual or volume-independent bidding, judged on leading metrics, as the alternative to the proxy-event move",
+        "evidence": "\"In LinkedIn: same logic via a funnel-stage conversion event, or switch to manual/cost-cap bidding until conversion volume is sufficient for automated bidding to be trustworthy.\" and \"manual-to-automated transition (LinkedIn) while micro-conversion volume builds \u2014 avoid target CPA/ROAS until you're near the 15\u201330 conversions/30-days threshold\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks the proxy-event move above manual bidding on value (it restores an optimisation signal; manual bidding only stops pretending there is one) while acknowledging its higher effort",
+        "evidence": "The transcript presents the proxy event and manual/cost-cap bidding as parallel 'or' options (\"same logic via a funnel-stage conversion event, or switch to manual/cost-cap bidding\") without ever comparing their relative value or effort to each other.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the condition for choosing manual bidding first (no tracking/CRM owner to coordinate with, or an effort ceiling that rules the proxy work out)",
+        "evidence": "No such condition is mentioned anywhere; manual/cost-cap bidding is offered only as a volume-dependent fallback ('until conversion volume is sufficient'), with no stated trigger tied to tracking/CRM ownership or effort constraints.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that LinkedIn documents no learning-phase conversion threshold, only minimum spend levels (around $10/day and $100 lifetime)",
+        "evidence": "\"LinkedIn itself recommends \u226550 conversions/30 days per campaign for its delivery algorithm to optimize properly, plus a minimum daily budget floor (its stated minimum is ~$10/day...)\" \u2014 this asserts LinkedIn documents a conversion-volume threshold, contradicting the rubric's claim that LinkedIn only documents spend minimums.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not apply a 50-conversions-per-week or Meta-style 50-per-7-days threshold to LinkedIn",
+        "evidence": "The transcript's LinkedIn figure is stated as \"\u226550 conversions/30 days\", not a per-week or 50-per-7-days framing, so the specific Meta-style weekly threshold is not what is applied here.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Grounds the Google side in a documented figure (e.g. 15 conversions/30 days for Search) or explicitly flags that the live help page must be re-verified; imports no undocumented threshold",
+        "evidence": "\"Google Smart Bidding (Target CPA / Maximize Conversions) needs roughly 15\u201330 conversions in a trailing 30-day window per campaign to exit Learning and bid reliably.\" \u2014 the range explicitly includes and centers on the documented 15/30-day figure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not promise that combining campaigns will by itself exit Learning or fix delivery",
+        "evidence": "\"So: fewer campaigns concentrates spend and conversions, which is necessary \u2014 but 6 demos/month total will still starve even a single consolidated campaign on each platform. You need to fix the signal, not just the structure.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

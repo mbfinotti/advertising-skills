@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Corrects the boss's criterion: the outcome measure is rank agreement, not absolute accuracy or picking the exact winner",
+        "evidence": "\"The skill is explicit that the outcome measure is **rank agreement**, not exact-winner accuracy\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the pass threshold: over a rolling window of 5 batches, the top-ranked opening lands in the top half of the measured ranking at least 3 times",
+        "evidence": "\"sets the pass threshold at 'top-ranked pick lands in the top half at least 3 of 5 times'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Correctly classifies the batches against top-half: 1st of 5 yes, 4th of 6 no, 2nd of 4 yes, 5th of 5 no, 3rd of 6 yes - a 3-of-5 tally",
+        "evidence": "Table: \"1 | 1st of 5...Yes\", \"2 | 4th of 6...No\", \"3 | 2nd of 4...Yes\", \"4 | 5th of 5...No\", \"5 | 3rd of 6...Yes\" and \"Pooling all five naively gives 3/5 top-half hits\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defends the deliberately modest bar: it is what a useful shortlisting device clears and a coin flip does not",
+        "evidence": "\"deliberately modest, calibrated to beat a coin flip, not to be an oracle\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that batches 1-3 were measured on ThruPlays divided by impressions - a completion/hold-style construction, not the hook-rate definition",
+        "evidence": "\"Batches 1\u20133 (old dashboard): `ThruPlays \u00f7 impressions` \u2192 hold rate \u2014 reflects pacing, story, and offer across the whole video.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the two dashboards' numbers are different metrics, so a calibration series mixing them is contaminated rather than one comparable record",
+        "evidence": "\"it's comparing two different constructs, the exact 'two-dashboards trap'...that pooled number is built on contaminated data and shouldn't be trusted either way\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends recomputing batches 1-3's measured rank orders under the 3-second-plays definition (or excluding them) before trusting the 3-of-5 verdict",
+        "evidence": "\"Re-derive `3-second plays \u00f7 impressions` for batches 1\u20133 so all five batches share one construct.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends locking one hook-rate definition for the account and writing it on every scorecard",
+        "evidence": "\"Lock the denominator going forward: one hook-rate definition, written on every scorecard, per the skill's calibration rule\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not conclude the pre-ranking system failed based on the exact-winner standard",
+        "evidence": "\"**Verdict: unknown, not failing.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the below-threshold consequence: stop trusting the generic rubric and re-derive the dimension weighting from the account's own past winners",
+        "evidence": "This consequence is not stated anywhere in section 8; the recommendations focus on re-pulling data and locking the definition, not on re-deriving dimension weighting from past winners.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Conditions the verdict on same platform and placement (confirms all five batches ran Meta feed under one placement)",
+        "evidence": "The transcript never explicitly confirms or verifies that all five batches ran on the same Meta feed placement; it assumes Meta throughout without stating this check.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends recording the predicted rank order plus the dashboard's exact hook-rate definition at scoring time for every future batch",
+        "evidence": "Only the definition is recommended to be locked and written (\"one hook-rate definition, written on every scorecard\"); no explicit recommendation to also record the predicted rank order at scoring time for every future batch.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames pre-ranking as a shortlisting device deciding what gets test budget, with the market as the judge - not a predictor graded on picking winners",
+        "evidence": "",
+        "passed": false,
+        "graded": false
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Corrects the boss's criterion: the outcome measure is rank agreement, not absolute accuracy or picking the exact winner",
+        "evidence": "\"your boss's test ('exact winner every time or it's useless') isn't a valid way to evaluate this system\" followed by a normalized-rank alternative metric.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the pass threshold: over a rolling window of 5 batches, the top-ranked opening lands in the top half of the measured ranking at least 3 times",
+        "evidence": "No such threshold is stated; instead the transcript uses expected-exact-hits-by-chance (0.98) and a normalized-rank average (0.467) as its metrics.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Correctly classifies the batches against top-half: 1st of 5 yes, 4th of 6 no, 2nd of 4 yes, 5th of 5 no, 3rd of 6 yes - a 3-of-5 tally",
+        "evidence": "The transcript's table instead reports normalized ranks (0.00, 0.60, 0.33, 1.00, 0.40), not a top-half yes/no classification.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defends the deliberately modest bar: it is what a useful shortlisting device clears and a coin flip does not",
+        "evidence": "No such bar or defense of it appears; the transcript instead frames the system as 'unproven, not disproven' pending more data.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that batches 1-3 were measured on ThruPlays divided by impressions - a completion/hold-style construction, not the hook-rate definition",
+        "evidence": "'Batches 1\u20133 used ThruPlay \u00f7 impressions; batches 4\u20135 used 3-second plays \u00f7 impressions... ThruPlay (completion or 15s) is dominated by whole-video watch-through.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the two dashboards' numbers are different metrics, so a calibration series mixing them is contaminated rather than one comparable record",
+        "evidence": "'You can't pool all 5 batches into one verdict \u2014 you have two different experiments stitched together (n=3 and n=2).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends recomputing batches 1-3's measured rank orders under the 3-second-plays definition (or excluding them) before trusting the 3-of-5 verdict",
+        "evidence": "'if possible recompute batches 1\u20133 the same way from raw data'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends locking one hook-rate definition for the account and writing it on every scorecard",
+        "evidence": "'Standardize the outcome metric going forward (pick one hook-rate definition, ideally 3-second plays...)'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not conclude the pre-ranking system failed based on the exact-winner standard",
+        "evidence": "'Don't kill the pre-ranking system on this evidence \u2014 but don't defend it either, because you don't have a real test yet.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the below-threshold consequence: stop trusting the generic rubric and re-derive the dimension weighting from the account's own past winners",
+        "evidence": "No mention of re-deriving dimension weighting from past winners; recommendations focus on metric standardization and sample size instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Conditions the verdict on same platform and placement (confirms all five batches ran Meta feed under one placement)",
+        "evidence": "No discussion anywhere of confirming platform/placement consistency across the five batches.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends recording the predicted rank order plus the dashboard's exact hook-rate definition at scoring time for every future batch",
+        "evidence": "No such record-keeping recommendation appears; recommendations are standardize metric, replace pass/fail bar, and increase sample size.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames pre-ranking as a shortlisting device deciding what gets test budget, with the market as the judge - not a predictor graded on picking winners",
+        "evidence": "The transcript instead calls it a 'real-world predictive system' being graded on prediction accuracy, not reframed as a budget-shortlisting device.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

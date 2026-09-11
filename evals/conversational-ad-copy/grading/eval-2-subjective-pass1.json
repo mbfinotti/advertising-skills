@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Because no CTA field exists, the ask is folded into the copy line and matched to the inferred conversation stage.",
+        "evidence": "The transcript recognizes the constraint \u2014 the placement section states 'no CTA field (ask folds into the copy line)' \u2014 but then declines to deliver on it: 'Ask folded in: none needed \u2014 the claim itself is the pitch; no CTA field exists, and forcing \"Try free\" into the remaining 7 characters would bundle a second move into one slot.' No ask of any kind appears in the copy line ('Brightgale: 210 customers shipped their first project plan in under 20 minutes (2026 survey).'), so the fold never happens. Nor is any ask matched to an inferred conversation stage: the closest the transcript comes is ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Because no CTA field exists, the ask is folded into the copy line and matched to the inferred conversation stage.",
+        "evidence": "The copy line is purely declarative \u2014 `210 teams shipped their first plan in under 20 min. 30% off through Mar 31, 2026.` \u2014 two factual statements with no verb directing the reader to act (no 'start', 'try', 'claim', 'see plans'). The offer is stated, but an offer is not an ask. The transcript's framing notes discuss three topics (the false deadline, the unsupported #1 claim, the targeting field being audience-description) and nowhere observe that the schema lacks a CTA slot or that the ask therefore has to live in the copy. There is also no reasoning about where the reader sits in the convers",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

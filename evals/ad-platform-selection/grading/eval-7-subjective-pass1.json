@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response recommends a prospecting or capture primary that generates the traffic first, chosen through the economics and demand-state logic rather than asserted.",
+        "evidence": "Section 4 names paid social prospecting as the primary \u2014 a traffic-generating channel \u2014 and derives it rather than asserting it. The demand-state reasoning is explicit: 'Handmade lighting is a demand-creation category for a brand nobody's heard of yet \u2014 people aren't searching for \"Plumecraft,\" and category search volume for niche artisan lighting terms is real but thin. Social is the only surviving family whose value ceiling isn't bounded by your current trickle of traffic.' The economics precede and feed the choice (Section 1: $192 contribution, 1.61x break-even ROAS, ~$135 allowable CAC wit",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response recommends a prospecting or capture primary that generates the traffic first, chosen through the economics and demand-state logic rather than asserted.",
+        "evidence": "Prospecting is clearly made the primary: $4,000/67% of the $6K to 'Prospecting (Meta + Google, broad/interest/lookalike)' vs $1,000 to retargeting, with the explicit rationale 'At this traffic level, growing the top of funnel *is* the retargeting strategy \u2014 it's what grows the pool you'll retarget later,' and 'grow traffic and pixel pool first, retarget lightly.' Email/SMS capture flows (welcome, browse-abandon, cart-abandon) are named the highest-leverage channel and sequenced 'before any paid retargeting,' justified by being free of audience-size minimums. The derivation, however, is almost ",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

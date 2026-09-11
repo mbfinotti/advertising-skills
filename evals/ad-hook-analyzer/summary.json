@@ -1,0 +1,387 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-hook-analyzer",
+  "scenarios": 10,
+  "expectations_total": 124,
+  "expectations_subjective": 0,
+  "expectations_objective": 124,
+  "pass_rate_with_skill_pct": 84.7,
+  "pass_rate_without_skill_pct": 46.0,
+  "delta_pp": 38.7,
+  "uplift_multiplier": 1.84,
+  "trigger_accuracy_pct": 54.2,
+  "trigger_queries": 120,
+  "subjective_ac2": null,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 1,
+  "run_degraded": true,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Identifies A's fix as structural (a rebuild or new footage that must re-enter the gates), not an on-screen-text rewrite"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends locking one hook-rate definition per account, writing it on every scorecard, and calibrating only within it"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends calibrating this batch on completion or watch-time metrics rather than LinkedIn view counts"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes sound-off legibility still applies because LinkedIn autoplays muted, judging the candidates on visuals and on-screen text alone"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Refuses to produce one unified 1-to-5 ranking spanning the three placements, because candidates in different windows are not one comparison"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Requests the missing first-frame, visual, or on-screen-text information as the input that would resolve the ambiguous bands"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Keeps pairwise candidate ranking as the legitimate ranking and explains why: the same judge compares two concrete openings so the judge's bias applies to both sides and cancels"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Distinguishes what may legitimately be ranked - candidates pairwise, and revision options by cost - from the banned ordering of scoring dimensions"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends an on-screen-text rewrite (the cheapest rung) for G's generic 'smarter way to eat healthy' category language"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Mentions the compliance exposure of the relevant rungs: a reshoot reopens creator usage rights, and/or a rewrite adding a checkable claim triggers claim substantiation and platform ad review"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Recommends the next batch contain genuinely distinct concepts that qualify the buyer, meeting the 3-opening concept-distinct floor"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Explains the below-threshold consequence: stop trusting the generic rubric and re-derive the dimension weighting from the account's own past winners"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Conditions the verdict on same platform and placement (confirms all five batches ran Meta feed under one placement)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends recording the predicted rank order plus the dashboard's exact hook-rate definition at scoring time for every future batch"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Frames pre-ranking as a shortlisting device deciding what gets test budget, with the market as the judge - not a predictor graded on picking winners"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Frames brand timing as an objective-dependent tension: early distinctive-asset brand cues differ from a logo-card open, and withholding branding to the end carries a brand-linkage cost (the reported 17-point drop)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Cites the base rate that only roughly 5% of creatives become winners as the reason volume produces winners"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Recommends reaching at least 3 gate-clearing openings that differ on the concept axis before spending the budget"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "States that polishing or rewording the existing two openings cannot produce the missing concepts - new concepts are required, and they re-enter the gates"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Refuses to output numeric hook scores: no X/10 ratings, decimals, percentages, or composite score appears for any candidate"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Uses only qualitative strong/adequate/weak bands per scoring dimension"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Declines to predict an absolute hook-rate number for any candidate, framing the output as a relative shortlist valid within this batch only"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Merges C and D into a single test cell at the real-variation gate because they share the same opening visual and differ only in wording"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States the batch's real distinct-candidate count is lower than 4 after the C/D merge"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Derives the ranking by pairwise head-to-head comparison of candidates, not by tallying or summing bands into a total"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Places B at the top of the shortlist, on grounds including its specific checkable claim and price and its sound-off legibility"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Reports per-candidate gate results (pass/fail with a reason) for all four candidates"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Gives each non-top candidate a raise-the-rank note taken from the cheapest revision rung that removes its specific failure"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Identifies A's fix as structural (a rebuild or new footage that must re-enter the gates), not an on-screen-text rewrite"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States the batch sits below the 3-opening shipping floor (fewer than 3 gate-clearing, concept-distinct openings) and should not ship as-is"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States TikTok's common hook-rate construction as 2-second views divided by impressions"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States Meta's common hook-rate construction as 3-second video plays divided by impressions"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends locking one hook-rate definition per account, writing it on every scorecard, and calibrating only within it"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Cites the near-zero-to-negative correlation between hook rate and ROAS (approximately -0.19, hold rate -0.10)"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends judging openings by within-account calibration (predicted vs measured rank agreement on one definition) rather than external benchmarks"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States explicitly that the batch is scored in B2B mode"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Discounts the 40k LinkedIn view count because a LinkedIn view is only 2 continuous seconds with about 50% of the player on screen - an inflated, weak attention signal"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends calibrating this batch on completion or watch-time metrics rather than LinkedIn view counts"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes sound-off legibility still applies because LinkedIn autoplays muted, judging the candidates on visuals and on-screen text alone"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Delivers a pairwise ranking with reasons grounded in gate results and bands"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Refuses to produce one unified 1-to-5 ranking spanning the three placements, because candidates in different windows are not one comparison"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Normalises the two Meta feed candidates to roughly the first 3 seconds"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Scores or proposes to score the bumper only on continuity, branding, and audience qualification, and says so explicitly"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that transcript-only input cannot support a strong sound-off legibility band, banding it at best adequate"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Requests the missing first-frame, visual, or on-screen-text information as the input that would resolve the ambiguous bands"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Uses strong/adequate/weak bands with no numeric scores anywhere"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes the counting difference across formats (for example that a paid YouTube skippable view counts at 30 seconds, completion, or interaction) rather than proposing one hook-rate readout across all five"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Compares candidates head-to-head only within the same placement group (Meta pair against each other, skippable pair against each other)"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Gives per-candidate raise-the-rank notes or input requests instead of an absolute performance prediction for any candidate"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rejects the percentage weighting of the seven scoring dimensions, refusing to endorse any importance order or weights among them"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Gives the evidential reason: attention metrics correlate roughly -0.19 with ROAS (hold rate -0.10), so no evidence supports one dimension returning more performance per unit of effort than another"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that a printed weighting would steer real production hours and test budget on invented precision"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rejects the 0-100 composite sum: bands are evidence for pairwise comparison, never arithmetic to total"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States the only defensible dimension weighting is account-specific, re-derived from the account's own past winners after calibration fails - never a default written into a system"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Keeps pairwise candidate ranking as the legitimate ranking and explains why: the same judge compares two concrete openings so the judge's bias applies to both sides and cancels"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that hook taxonomies are naming and diagnostic vocabulary, never a scoring axis"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Cites poor inter-rater reliability and overlapping, non-falsifiable category boundaries as the reason taxonomy tagging cannot be scored"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Redirects the diversity question to the real-variation gate (distinct opening visuals, wording-only siblings merged) and the 3-opening concept-distinct shipping floor"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Does not offer a compromise such as adopting her weights as a starting point - the refusal to rank dimensions stands as the finding"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Distinguishes what may legitimately be ranked - candidates pairwise, and revision options by cost - from the banned ordering of scoring dimensions"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends an on-screen-text rewrite (the cheapest rung) for G's generic 'smarter way to eat healthy' category language"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States G and H are currently one test cell - a wording-only sibling merged at the real-variation gate because the opening visual is identical"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends a re-cut from the existing footage library to give H a genuinely different opening visual, or drops/merges H"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Checks the batch against the 3-opening shipping floor and states the result explicitly"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States hook rate measures attention rather than performance, citing the roughly -0.19 correlation with ROAS"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Recommends the next batch contain genuinely distinct concepts that qualify the buyer, meeting the 3-opening concept-distinct floor"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States or verifies the TikTok hook-rate construction (2-second views divided by impressions) when discussing the 41% figure"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States the pass threshold: over a rolling window of 5 batches, the top-ranked opening lands in the top half of the measured ranking at least 3 times"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Correctly classifies the batches against top-half: 1st of 5 yes, 4th of 6 no, 2nd of 4 yes, 5th of 5 no, 3rd of 6 yes - a 3-of-5 tally"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Defends the deliberately modest bar: it is what a useful shortlisting device clears and a coin flip does not"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Explains the below-threshold consequence: stop trusting the generic rubric and re-derive the dimension weighting from the account's own past winners"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Conditions the verdict on same platform and placement (confirms all five batches ran Meta feed under one placement)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Recommends recording the predicted rank order plus the dashboard's exact hook-rate definition at scoring time for every future batch"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Frames pre-ranking as a shortlisting device deciding what gets test budget, with the market as the judge - not a predictor graded on picking winners"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Corrects rule 1: the 0.25-second figure is a 2016 recall-at-exposure finding (people could recall feed content after 0.25 seconds of exposure), not an attention deadline"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Offers the well-sourced replacements: attention-decay data of roughly 80% of the audience present in second 1, 50% by second 2, 20% by second 3, and/or the roughly 2.5-second memory-encoding threshold (about 1.5 seconds with distinctive brand assets)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Frames brand timing as an objective-dependent tension: early distinctive-asset brand cues differ from a logo-card open, and withholding branding to the end carries a brand-linkage cost (the reported 17-point drop)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Cites the distinctive-brand-asset evidence (memory encoding in as little as 1.5 seconds when assets are deployed well) when discussing early branding"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "States the two openings are a single test cell: identical visual, wording-only difference, merged at the real-variation gate"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "States the plan is below the 3-opening shipping floor and should not launch as-is"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Cites the base rate that only roughly 5% of creatives become winners as the reason volume produces winners"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Recommends reaching at least 3 gate-clearing openings that differ on the concept axis before spending the budget"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "States that polishing or rewording the existing two openings cannot produce the missing concepts - new concepts are required, and they re-enter the gates"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Asks about, or conditions its recommendation on, what other footage and production capacity exist before prescribing how to produce the additional concepts"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Treats any preference between the two text lines as a wording choice inside one cell, not a ranking of two candidates"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Any text-level preference favours the '$3 a serving' line on specificity grounds - a concrete checkable claim versus a generic benefit statement"
+      }
+    ]
+  }
+}

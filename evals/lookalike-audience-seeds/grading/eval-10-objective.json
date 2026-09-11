@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses the 95% match assumption and estimates from Meta's documented 50-80% good-list band, explicitly labeling it an estimate",
+        "evidence": "picking 95% ... would make the effective-seed math ... fiction ... I used **65%**, labeled as an estimate per the platform range",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the evidence gate to 'ltv_score': a value column of unknown provenance means the seed is not value-based until someone can say what the column measures",
+        "evidence": "\"we have an LTV field\" is not evidence. If nobody can say whether it is revenue, margin, or a model output, the seed is not value-based until someone can.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not place 'ltv_score' in the spec as the value column - either specifies a flat seed or requests provenance first",
+        "evidence": "value column    : none (blocked - see flag 1)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits a Seed Specification block carrying the named fields: platform/audience type, definition, value column, row count, expected match, effective seed, fallback used, exclusions, consent basis, refresh, measurement, re-check",
+        "evidence": "SEED SPECIFICATION - purchasers-120d-standard v1, 2026-09-12 / platform ... definition ... value column ... row count ... expected match ... effective seed ... fallback used ... exclusions ... consent basis ... refresh ... measurement ... re-check",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the effective-seed line as rows x match vs floor: 6,200 x 0.50-0.80 is roughly 3,100-4,960 matched against Meta's 100 floor, so it clears (within the 1,000-5,000 recommended band)",
+        "evidence": "effective seed  : 6,200 x 0.65 = ~4,030 matched vs floor 100 -> clears (within Meta's 1,000-5,000 recommended band)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the expected-match basis on its line: platform documented range plus a list-quality adjustment",
+        "evidence": "basis: Meta good-list band 50-80%; fresh list, multi-identifier on 80% of rows pulls it mid-band; remaining 20% email-only drags it off the top",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fills the consent-basis line with the checkout consent and the nightly warehouse-enforced opt-out suppression",
+        "evidence": "consent basis   : checkout consent captured for ad-platform matching; opt-outs synced to warehouse nightly, enforced before any platform sync",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fills the refresh line with a cadence, a named owner, and the mechanism (manual CSV vs automated sync)",
+        "evidence": "refresh ... cadence/owner not yet named, assign before launch \u2014 owner is explicitly not filled in.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Fills the measurement line with the $28 new-customer CPA target and cohort-LTV checkpoints by seed version against the $54 account average",
+        "evidence": "measurement : new-customer CPA target <$28 ... cohort LTV at 90/180/365d by seed version vs $54 account avg",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets the re-check date one cohort window out (roughly 90 days)",
+        "evidence": "re-check : 2026-12-11 (90-day cohort checkpoint)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records the negative-selection pass in the exclusions line and delivers existing-customer suppression as a separate delivery-level audience, keeping purchasers in the seed",
+        "evidence": "existing customers kept IN the seed, suppressed from the acquisition campaign via a separate delivery-level exclusion audience",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Addresses the 120-day recency window against the guidance: acceptable only for pixel/CAPI-tracked buyers (default 30-90 days), otherwise tightened toward 90",
+        "evidence": "The spec states \"last purchase <= 120 days\" with no discussion of whether 120 days is acceptable relative to a 30-90 day default guideline.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the pass threshold: the seed version's 90-day acquired-customer cohort LTV must meet or beat the $54 account average at equal-or-better CPA",
+        "evidence": "this seed version passes if 90-day acquired-customer cohort LTV meets or beats $54 at CPA equal-to-or-better than the account's real current baseline",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses the 95% match assumption and estimates from Meta's documented 50-80% good-list band, explicitly labeling it an estimate",
+        "evidence": "Refuses 95% correctly but substitutes \"45\u201365%\" not the 50-80% band: \"Real-world Meta match rates... typically land 45\u201365%.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the evidence gate to 'ltv_score': a value column of unknown provenance means the seed is not value-based until someone can say what the column measures",
+        "evidence": "\"`ltv_score` \u2014 unknown provenance. Nobody can say whether it's revenue, margin, or a model output... Shipping it 'because it's there' means you can't explain to anyone later why the lookalike is finding who it's finding.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not place 'ltv_score' in the spec as the value column - either specifies a flat seed or requests provenance first",
+        "evidence": "\"launch with 120-day gross order revenue per customer as the value column instead... Treat `ltv_score` as a parallel test cell once someone confirms its definition.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits a Seed Specification block carrying the named fields: platform/audience type, definition, value column, row count, expected match, effective seed, fallback used, exclusions, consent basis, refresh, measurement, re-check",
+        "evidence": "Document has numbered sections covering Objective, Seed definition, Match rate, PII/hashing, Value column, Consent, Lookalike config, Refresh cadence, Targets, Open items.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the effective-seed line as rows x match vs floor: 6,200 x 0.50-0.80 is roughly 3,100-4,960 matched against Meta's 100 floor, so it clears (within the 1,000-5,000 recommended band)",
+        "evidence": "Uses 45-65% blend yielding \"~3,400 (range ~2,800\u20134,000)\" not the 50-80%-derived 3,100-4,960 figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the expected-match basis on its line: platform documented range plus a list-quality adjustment",
+        "evidence": "Table splits by PII coverage (\"Email + phone (~80%) ... 60\u201370%\" vs \"Email only/partial (~20%) ... 30\u201345%\") blending to a central estimate.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fills the consent-basis line with the checkout consent and the nightly warehouse-enforced opt-out suppression",
+        "evidence": "\"Ad-matching consent is captured at checkout... Rule: the seed export must be generated after the nightly opt-out sync completes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Fills the refresh line with a cadence, a named owner, and the mechanism (manual CSV vs automated sync)",
+        "evidence": "Cadence and mechanism given (\"re-export and re-upload weekly\") but no named owner is specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Fills the measurement line with the $28 new-customer CPA target and cohort-LTV checkpoints by seed version against the $54 account average",
+        "evidence": "States targets (\"CPA target: < $28\", \"90-day... LTV: $54\") but no checkpoint/versioning tracking process by seed version.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the re-check date one cohort window out (roughly 90 days)",
+        "evidence": "No explicit re-check date is set; only flags open items to revisit post-upload.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records the negative-selection pass in the exclusions line and delivers existing-customer suppression as a separate delivery-level audience, keeping purchasers in the seed",
+        "evidence": "Exclusions listed (refunders, staff, wholesale) but no mention of a separate delivery-level suppression audience for existing customers.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Addresses the 120-day recency window against the guidance: acceptable only for pixel/CAPI-tracked buyers (default 30-90 days), otherwise tightened toward 90",
+        "evidence": "120-day window is used without justifying it against a 30-90-day default or pixel/CAPI tracking rationale.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the pass threshold: the seed version's 90-day acquired-customer cohort LTV must meet or beat the $54 account average at equal-or-better CPA",
+        "evidence": "$54 is presented as a given benchmark/target, not framed as a pass threshold for grading seed versions.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Includes the official LinkedIn marketing/ads blog as a source because LinkedIn is a bought channel",
+        "evidence": "\"LinkedIn Marketing blog \u2014 linkedin.com/business/marketing/blog | text | LinkedIn | 5 | Official LinkedIn Ads / B2B marketing news \u2014 required for channel coverage\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes Google's official ads blog because Google is a bought channel",
+        "evidence": "\"Google Ads & Commerce blog ... Official Google Ads release notes \u2014 required for channel coverage, never dropped as 'vendor noise'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not include official platform sources for unbought channels (no Meta, TikTok, or Microsoft platform blogs)",
+        "evidence": "No Meta/TikTok/Microsoft blog appears anywhere in the weekly, monthly, annual, community, or bench tables.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends B2B-ecosystem sources and excludes the DTC/B2C ecosystem (no Foxwell Digital, Common Thread Collective, Dara Denney, Savannah Sanchez, or Nik Sharma)",
+        "evidence": "Sources are B2B-leaning (PPC Land, Search Engine Land, Zato, Optmyzr, Refine Labs 'useful context for a B2B fintech SaaS'); none of Foxwell, CTC, Dara Denney, Savannah Sanchez, or Nik Sharma appear.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Podcasts and video are struck from the menu entirely rather than listed as low-priority rows, and the response names the struck mediums",
+        "evidence": "\"Every source here is free, text-only (no podcast/video \u2014 deleted from the menu entirely, not demoted)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Events are deleted under the free-only constraint, with no conference or ticket entries anywhere on the list or bench",
+        "evidence": "\"**None.** You ruled out conference travel explicitly \u2014 every event in the source catalogue ... requires paid tickets and/or travel, so this section is intentionally empty\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No paid-membership communities appear given the free-only constraint",
+        "evidence": "#ppcchat is listed with selling 'none visible'; bench community substitute r/PPC is also free; no paid community appears.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A news roundup or daily-digest source holds a top slot in the weekly core",
+        "evidence": "\"PPC Land \u2014 ppc.land | text | ... | 7 | Daily roundup; restates the release notes below plus everything else, the single biggest budget compressor\" listed first in Weekly core.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a what-they're-selling flag (tool vendor, agency, course/community, platform-official, or equivalent)",
+        "evidence": "Every row in every table has a filled 'Selling' column (e.g. 'independent news site', 'platform-official', 'tool vendor', 'agency (ZATO)').",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a verification status and a date",
+        "evidence": "Every row has a 'Status + date' column entry, e.g. \"active, Aug 26, 2026\" or \"unverified at fetch (bot-blocked) \u2014 corroborated alive via host site\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 45",
+        "evidence": "\"**Estimated weekly minutes: ~42 of 45** (leaves a small buffer, doesn't run you to the wire).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage statement confirms both LinkedIn and Google have at least one verified-active source",
+        "evidence": "\"Channel coverage: LinkedIn \u2713 ... Google Search \u2713 ... every bought channel has a verified-active source: **yes**.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The list is grouped by consumption rhythm (weekly core, monthly, and similar sections) rather than delivered flat",
+        "evidence": "Sections are headed 'Weekly core', 'Monthly', 'Annual (events)', 'Community reserve', 'Bench'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A bench of 2-3 verified substitutes is named",
+        "evidence": "Bench section lists AdConversion, WordStream, b2linked.com, r/PPC, Search Engine Roundtable as named verified/flagged substitutes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No audience or subscriber figures are invented; unpublished figures are treated as not stated",
+        "evidence": "No audience or subscriber figures appear anywhere in the transcript, invented or otherwise.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Includes the official LinkedIn marketing/ads blog as a source because LinkedIn is a bought channel",
+        "evidence": "LinkedIn Marketing Solutions Blog (linkedin.com/business/marketing/blog) \u2014 official LinkedIn Ads product updates.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes Google's official ads blog because Google is a bought channel",
+        "evidence": "Google Ads & Commerce Blog (blog.google/products/ads-commerce) \u2014 official product/policy changes for Search Ads.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not include official platform sources for unbought channels (no Meta, TikTok, or Microsoft platform blogs)",
+        "evidence": "No Meta, TikTok, or Microsoft platform blog appears anywhere in the list.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends B2B-ecosystem sources and excludes the DTC/B2C ecosystem (no Foxwell Digital, Common Thread Collective, Dara Denney, Savannah Sanchez, or Nik Sharma)",
+        "evidence": "Sources are B2B Institute, Search Engine Land PPC, B2Linked, PPC Hero, Demand Curve, Marketing Examples, Fintech Brainfood \u2014 no Foxwell Digital, CTC, Dara Denney, Savannah Sanchez, or Nik Sharma.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Podcasts and video are struck from the menu entirely rather than listed as low-priority rows, and the response names the struck mediums",
+        "evidence": "Only says 'skip anything that funnels to a podcast (they also run one, ignore it per your no-audio rule)' for B2Linked specifically \u2014 no general statement striking podcasts and video across the whole list, and video is never named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Events are deleted under the free-only constraint, with no conference or ticket entries anywhere on the list or bench",
+        "evidence": "No conference, ticket, or event entry appears anywhere in the list.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No paid-membership communities appear given the free-only constraint",
+        "evidence": "All sources are described as free (e.g. 'Free blog + free email' for B2Linked); no paid-membership community appears.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A news roundup or daily-digest source holds a top slot in the weekly core",
+        "evidence": "The weekly block's top tiers are platform changelogs and B2B Institute research, not a news roundup/daily digest; no such source appears at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a what-they're-selling flag (tool vendor, agency, course/community, platform-official, or equivalent)",
+        "evidence": "'Google is obviously selling Google Ads; read as \"what changed,\" not advice.' and similar flags for every other entry (e.g. 'Agency content, selling PPC management.')",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a verification status and a date",
+        "evidence": "Only a general disclaimer is given ('this is built from my training knowledge, not a fresh crawl') with no per-entry status or date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 45",
+        "evidence": "'## The 45-minute weekly block' with a table summing to 45 minutes (5+10+20+10).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage statement confirms both LinkedIn and Google have at least one verified-active source",
+        "evidence": "No explicit coverage-confirmation statement appears; only the general unverified disclaimer is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The list is grouped by consumption rhythm (weekly core, monthly, and similar sections) rather than delivered flat",
+        "evidence": "Sections are 'Tier 1' through 'Tier 4' (weekly) and 'Optional, monthly not weekly'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A bench of 2-3 verified substitutes is named",
+        "evidence": "No bench or substitute list is provided anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No audience or subscriber figures are invented; unpublished figures are treated as not stated",
+        "evidence": "No subscriber or audience figures appear anywhere in the response.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

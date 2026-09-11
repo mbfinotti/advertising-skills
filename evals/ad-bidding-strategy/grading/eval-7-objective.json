@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects 4x as an industry standard: break-even return depends on margin, not convention",
+        "evidence": "\"'4x is industry standard' is folklore, and it happens to fit a business you're not... the agency's number isn't even derived from your own economics\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States or shows that the folk 4x figure is correct specifically for a 25%-margin business",
+        "evidence": "\"4x break-even corresponds to a 25% margin business. You're blended 40%, so your blended break-even is 2.5x, not 4x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes blended break-even ROAS as 1 \u00f7 0.40 = 2.5x",
+        "evidence": "Table: \"Blended | 40% | 1 \u00f7 0.40 = 2.5x | 1 \u00f7 (0.40 \u2212 0.10) = 3.33x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes per-line break-evens (premium \u2248 1.8x, basics \u2248 4.5x)",
+        "evidence": "Table: \"Premium | 55% | 1 \u00f7 0.55 = 1.82x ... Basics | 22% | 1 \u00f7 0.22 = 4.55x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that one blended target averages a high-margin and a near-break-even line into one meaningless number",
+        "evidence": "\"A shared target lets the bidder treat them as identical, migrate spend on blended signal, and silently drift the mix in either direction... pooling a high-margin and a low-margin line under one target is exactly the setup that produces it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends splitting the policy or campaign structure by margin band before tightening",
+        "evidence": "\"A. Split into two return-goal policies by product line (premium vs. basics)... This is the standard fix for the blended-margin trap and should be the default here.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the profit-goal form 1 \u00f7 (margin \u2212 desired net margin) = 1 \u00f7 0.30 \u2248 3.3x as the tightening destination",
+        "evidence": "The 3.33x blended figure is computed but explicitly excluded as the bidding destination: \"Keep 3.33x (blended, profit-goal-derived)... as reporting KPIs to sanity-check the account in aggregate \u2014 never as a live bid target.\" The actual tightening destinations used are the per-line values 2.22x and 8.33x, not the blended 3.3x.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the initial target at trailing actual (2.6x), not at 4x or the 3.3x goal",
+        "evidence": "The transcript explicitly rejects using the blended 2.6x as any live target: \"pull this - blended 2.6x is not a valid proxy for either line individually.\" It never sets an operative starting target at 2.6x; instead it defers to unpulled per-line trailing figures.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "For a return target, starts at or slightly below trailing actual (the looser-than-achieved direction)",
+        "evidence": "\"Target: set at premium line's OWN trailing 30-day ROAS\" and \"Target: set at basics line's OWN trailing 30-day ROAS\" \u2014 both policies start the live target at trailing actual.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the margin buffer between the live target and blended break-even (~0.1x) and flags it as thin",
+        "evidence": "The transcript only states \"You're roughly at blended break-even, not anywhere near the founder's 10% goal\" and computes a 1.5% implied net margin \u2014 it never explicitly quantifies the ~0.1x gap between 2.6x trailing and 2.5x break-even or labels it as a 'thin buffer.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Tightens toward the profit-goal number in modest steps with a full evaluation window per step",
+        "evidence": "\"Change rules : ~10-15% per step toward 2.22x, one full evaluation window between steps, never during a promo/sale window.\" (and equivalently for basics: \"~10-15% per step, one evaluation window between steps\")",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires values net of refunds (or checks refund materiality) before trusting a return target",
+        "evidence": "\"Value integrity: confirm values are net of refunds/returns (unconfirmed) and differentiated by line\" and in the final checklist: \"Confirmation purchase values are net of refunds/returns...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches a margin refresh trigger: re-derive on any pricing change and at least quarterly",
+        "evidence": "\"Refresh: re-derive if COGS, pricing, or discounting on premium SKUs changes, and at least quarterly.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects 4x as an industry standard: break-even return depends on margin, not convention",
+        "evidence": "\"Industry-standard ROAS benchmarks are built around industry-standard margins. Yours aren't standard \u2014 you have two lines 33 points apart (55% vs 22%). A blanket 4x ignores that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States or shows that the folk 4x figure is correct specifically for a 25%-margin business",
+        "evidence": "The transcript never explicitly connects 4x to a 25%-margin breakeven business; it only uses 25% as the ad-spend-to-revenue ratio implied by 4x ROAS in isolated calculations (e.g. \"net margin = 22% \u2212 25% = \u22123% net\"), without stating that 4x is the correct breakeven target for a business with a 25% contribution margin.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes blended break-even ROAS as 1 \u00f7 0.40 = 2.5x",
+        "evidence": "\"You're barely above the breakeven ROAS for your blended margin (breakeven = 1/0.40 = 2.5x).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes per-line break-evens (premium \u2248 1.8x, basics \u2248 4.5x)",
+        "evidence": "The per-line table only computes 10%-net-profit targets (Premium 2.2x, Basics 8.3x), not plain break-even ROAS per line (which would be 1/0.55\u22481.8x and 1/0.22\u22484.5x); no such break-even figures appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that one blended target averages a high-margin and a near-break-even line into one meaningless number",
+        "evidence": "\"A single 4x target simultaneously starves your best line and bankrolls losses on your worst one. That's the core flaw \u2014 not the number 4x itself, but applying one number to two businesses with different economics.\" combined with \"Basics at 4x ROAS \u2192 net margin = 22% \u2212 25% = \u22123% net. Basics loses money at the exact target the agency wants to apply account-wide.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends splitting the policy or campaign structure by margin band before tightening",
+        "evidence": "\"Reject the single account-wide target. Set it by product line, not by account.\" and \"run value-based/target-ROAS bidding split by product-line campaign or product set \u2014 not one account-wide tROAS.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the profit-goal form 1 \u00f7 (margin \u2212 desired net margin) = 1 \u00f7 0.30 \u2248 3.3x as the tightening destination",
+        "evidence": "\"ROAS = 1 / (0.40 \u2212 0.10) = 3.33x blended\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets the initial target at trailing actual (2.6x), not at 4x or the 3.3x goal",
+        "evidence": "No recommendation sets the initial/starting operating target at the trailing actual 2.6x; recommendations jump straight to computed targets (Premium floor ~2.2x, blended gate 3.33x) with no staged starting point at 2.6x.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "For a return target, starts at or slightly below trailing actual (the looser-than-achieved direction)",
+        "evidence": "There is no glide-path recommendation starting at or below the trailing 2.6x figure; the transcript moves directly to per-line and blended target numbers without a looser starting point.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the margin buffer between the live target and blended break-even (~0.1x) and flags it as thin",
+        "evidence": "\"Net margin at 2.6x blended = 40% \u2212 (1/2.6) = 1.5% net profit. You're barely above the breakeven ROAS for your blended margin (breakeven = 1/0.40 = 2.5x).\" \u2014 both 2.6x and 2.5x are given and explicitly flagged as \"barely above breakeven\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tightens toward the profit-goal number in modest steps with a full evaluation window per step",
+        "evidence": "No stepwise tightening plan or evaluation-window cadence is described anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires values net of refunds (or checks refund materiality) before trusting a return target",
+        "evidence": "Refunds are never mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Attaches a margin refresh trigger: re-derive on any pricing change and at least quarterly",
+        "evidence": "No recurring or trigger-based margin refresh cadence (e.g. quarterly, or on pricing change) is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

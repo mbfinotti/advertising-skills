@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States explicitly that the batch is scored in B2B mode",
+        "evidence": "\"audience: cold B2B | objective: pipeline (memory, not click)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the 95:5 rule (roughly 95% of B2B buyers out-of-market at any moment) when framing the objective",
+        "evidence": "\"Under the 95:5 rule, roughly 95% of your B2B buyers are out-of-market on any given day\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the opening should aim at memory and future buyers rather than an immediate click, given the 9-month cycle and pipeline objective",
+        "evidence": "\"a cold LinkedIn video's job is to be *remembered* by a future buyer, not to convert a click today\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects or bands weak the limited-time urgency angle of Z as a direct-response heuristic that transfers poorly to a mostly out-of-market B2B audience",
+        "evidence": "\"placement fit weak - countdown-timer urgency is a B2C/DR executional pattern; hard DR heuristics transfer poorly to a 95:5 out-of-market B2B audience\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks X top (or bands X strong on qualification) because it qualifies by role and situation - naming the 200+-contracts-in-spreadsheets buyer",
+        "evidence": "\"qualification strong (200+ contracts names the exact situation that disqualifies smaller orgs)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Bands Y weak on audience qualification because its universal curiosity stops viewers of every kind, not the buyer",
+        "evidence": "\"qualification FAIL (generic stock lawyer + undefined \\\"the mistake\\\" names no role, situation, or company size - stops everyone, qualifies no one)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pushes back on holding all branding to the end card under a memory objective, citing the brand-linkage cost of end-loaded branding (the TikTok-reported 17-point drop) or the early distinctive-asset evidence",
+        "evidence": "\"withholding all brand cues until the end costs brand linkage \u2014 TikTok reports a 17-point drop when branding is left to the close\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes early distinctive-asset brand cues (recommended here) from a logo-card opening (an anti-pattern), rather than treating branding as all-or-nothing",
+        "evidence": "\"Opening on a logo card is a real anti-pattern...But *withholding all brand cues* until the end costs brand linkage...X already threads this correctly: brand colour frames the shot in frame one with no logo card\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Discounts the 40k LinkedIn view count because a LinkedIn view is only 2 continuous seconds with about 50% of the player on screen - an inflated, weak attention signal",
+        "evidence": "\"LinkedIn views are a weak 2s/50%-on-screen signal\" combined with \"That number is evidence of reach, not qualification\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends calibrating this batch on completion or watch-time metrics rather than LinkedIn view counts",
+        "evidence": "The calibration note recommends checking against \"downstream pipeline/SQL rate,\" not completion or watch-time metrics, and only says to confirm the account's own view-rate definition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes sound-off legibility still applies because LinkedIn autoplays muted, judging the candidates on visuals and on-screen text alone",
+        "evidence": "The gate table applies a sound-off gate to all three candidates but never states the reason is that LinkedIn autoplays muted; only Y's row notes \"(text carries the claim muted)\" without tying it to the platform's autoplay behavior.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a pairwise ranking with reasons grounded in gate results and bands",
+        "evidence": "\"1. X - the only candidate with no gate failure; wins by default, not by comparison. Y and Z are gate-failed, so no pairwise comparison between them is meaningful\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Produces no numeric scores and no absolute view-rate or hook-rate prediction",
+        "evidence": "No numeric scores or absolute rate predictions appear anywhere in the scorecard.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States explicitly that the batch is scored in B2B mode",
+        "evidence": "No explicit statement labeling the evaluation as 'B2B mode'; the B2B framing is implicit throughout via content (contract management, buying committee) but never named as such.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the 95:5 rule (roughly 95% of B2B buyers out-of-market at any moment) when framing the objective",
+        "evidence": "'Brand colours in frame from second one starts building a category entry point... for the ~95% of viewers not currently in-market.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the opening should aim at memory and future buyers rather than an immediate click, given the 9-month cycle and pipeline objective",
+        "evidence": "'That's the mechanism that pays off \"pipeline over the next few quarters\" \u2014 mental availability now, recall when they enter the buying window.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects or bands weak the limited-time urgency angle of Z as a direct-response heuristic that transfers poorly to a mostly out-of-market B2B audience",
+        "evidence": "'\"Make the opening more urgent with limited-time offers\" \u2014 wrong tool for this funnel stage. Urgency/discounting is a short-cycle, low-consideration tactic; you're running long-cycle pipeline generation.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks X top (or bands X strong on qualification) because it qualifies by role and situation - naming the 200+-contracts-in-spreadsheets buyer",
+        "evidence": "'\"Managing 200+ contracts in spreadsheets?\" is a self-qualifying hook \u2014 it filters for your actual ICP.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Bands Y weak on audience qualification because its universal curiosity stops viewers of every kind, not the buyer",
+        "evidence": "'It'll pull in a broad, low-fit audience \u2014 cheap CPMs, weak downstream MQL-to-pipeline conversion.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pushes back on holding all branding to the end card under a memory objective, citing the brand-linkage cost of end-loaded branding (the TikTok-reported 17-point drop) or the early distinctive-asset evidence",
+        "evidence": "'this trades short-term CTR for weaker brand encoding... Distinctive brand assets (colour, wordmark, product UI) need early, repeated exposure to be learned \u2014 burying them until the end actively undercuts your stated goal.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes early distinctive-asset brand cues (recommended here) from a logo-card opening (an anti-pattern), rather than treating branding as all-or-nothing",
+        "evidence": "'you don't need a full logo lockup immediately, but don't hide it either.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Discounts the 40k LinkedIn view count because a LinkedIn view is only 2 continuous seconds with about 50% of the player on screen - an inflated, weak attention signal",
+        "evidence": "The critique of the 40k views is generic ('40k views tells you the footage is watchable, not that it attracts contract-management buyers') with no mention of LinkedIn's specific 2-second/50%-player view definition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends calibrating this batch on completion or watch-time metrics rather than LinkedIn view counts",
+        "evidence": "No recommendation to use completion or watch-time metrics instead of view counts anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes sound-off legibility still applies because LinkedIn autoplays muted, judging the candidates on visuals and on-screen text alone",
+        "evidence": "No mention of LinkedIn's muted autoplay or sound-off legibility anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a pairwise ranking with reasons grounded in gate results and bands",
+        "evidence": "Reasoning is given per-candidate in prose ('Why X wins', 'Why not Y', 'Why not Z') but not framed with explicit gate/band terminology.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Produces no numeric scores and no absolute view-rate or hook-rate prediction",
+        "evidence": "No numeric scores or percentage predictions appear anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

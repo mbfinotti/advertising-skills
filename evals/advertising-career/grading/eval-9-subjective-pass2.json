@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats agency and freelance effort as a tie in size only, costing different things: hours and burnout risk versus income stability and a standing sales job",
+        "evidence": "The two distinct cost *types* are named: freelance's cost is framed as \"its cost isn't the work, it's running a standing sales job for years before any track record exists,\" and one sentence juxtaposes the kinds of cost \u2014 \"In-house carries 'moderate' burnout risk against agency's 'highest \u2014 volume plus client demands' and freelance's self-managed income risk\" \u2014 plus \"Freelance doesn't fix overload, it adds a second axis of it (client-getting on top of delivery).\" But the equivalence-in-magnitude half is absent: nothing states or implies that agency and freelance effort are tied in size. Instea",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats agency and freelance effort as a tie in size only, costing different things: hours and burnout risk versus income stability and a standing sales job",
+        "evidence": "The two cost currencies are named explicitly and correctly. Agency cost = hours and burnout: \"You're fried from context-switching across 8 accounts\"; \"In-house collapses you to *one* brand, one stakeholder set, one campaign calendar.\" Freelance cost = income instability plus a permanent sales obligation: \"realistic utilisation for a new freelancer is 55\u201365%\"; \"Benefits, sick pay, holiday pay, pension \u2014 real money freelance quietly strips away\"; \"the first 3-6 months are spent selling, not billing\"; \"it usually adds a 9th 'account' (running your own business: invoicing, chasing payment, finding",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

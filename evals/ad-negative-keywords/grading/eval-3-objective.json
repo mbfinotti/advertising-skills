@@ -1,0 +1,94 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Identifies that adding negatives from the report screen used the pre-selected default of exact match, which blocks only the literal query - so the list looks maintained while the waste continues",
+        "evidence": "\"when you add negatives straight from the Search Terms Report screen, Google pre-selects Exact match by default... that alone explains why 'the same junk is back'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that negative keywords do not expand to close variants, so 'tent repair kits' must be added separately from 'tent repair kit'",
+        "evidence": "\"Negative keywords in Google Ads never expand to close variants... Plurals, synonyms, and word stems have to be added as their own separate negative entries.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a broad negative blocks only searches containing ALL of its words, so 'free camping checklist' cannot block 'free tent'",
+        "evidence": "\"A broad match negative blocks a search only when all its words are present (in any order)... 'free tent' has none of 'camping' or 'checklist,' so it sails through untouched.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends deliberately switching the report additions to phrase match",
+        "evidence": "\"manually switch match type to phrase by default (per-entry), reserving exact for surgical single-query blocks\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that casing and misspellings are matched automatically, so capitalized and typo variants are unnecessary",
+        "evidence": "\"Google Ads matches casing and common misspellings automatically for both positive and negative keywords... adding case/typo variants adds zero incremental blocking.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns against fixing the gap with a bare single-word broad negative 'free' without first running the overblocking and conflict check, since it could block converting free-trial-style queries",
+        "evidence": "\"before you add it: run the overblocking check first. ... Pull conversion history for anything containing 'free' before you flip this on account-wide.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the platform is applying the negatives exactly as entered - the observed behavior follows documented match mechanics, not a bug",
+        "evidence": "\"Google isn't ignoring your negatives \u2014 you've hit two documented mechanics gaps, not a bug.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Identifies that adding negatives from the report screen used the pre-selected default of exact match, which blocks only the literal query - so the list looks maintained while the waste continues",
+        "evidence": "'When you add a negative straight from the Search Terms report, Google Ads defaults it to **exact match** unless you explicitly choose otherwise... it's 45 negatives that were each narrower than intended.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that negative keywords do not expand to close variants, so 'tent repair kits' must be added separately from 'tent repair kit'",
+        "evidence": "'An exact-match negative only blocks that literal string (plus very close variants \u2014 but plural/singular is *not* guaranteed to be treated as a close variant for negatives the way it is for positive keywords).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a broad negative blocks only searches containing ALL of its words, so 'free camping checklist' cannot block 'free tent'",
+        "evidence": "'Broad match negative keywords only block a search if **ALL the words in the negative appear somewhere in the search term**... Search \"free tent\" \u2192 has \"free\" but not \"camping\" or \"checklist\" \u2192 **not blocked**.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends deliberately switching the report additions to phrase match",
+        "evidence": "'**Fix:** Use negative **phrase match** instead: `\"tent repair kit\"`... **Switch match type, don't just add more exact negatives.**'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that casing and misspellings are matched automatically, so capitalized and typo variants are unnecessary",
+        "evidence": "The transcript confirms casing is automatic ('capitalization never matters') but contradicts the misspelling half: 'Skip typo variants entirely for now. Typos are a long tail \u2014 you'll spend forever chasing them one by one,' implying typos are NOT automatically matched.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns against fixing the gap with a bare single-word broad negative 'free' without first running the overblocking and conflict check, since it could block converting free-trial-style queries",
+        "evidence": "'Add `free` (single word, broad match) as its own negative. Be careful though \u2014 this will also block legitimate queries like \"free shipping tent\" or \"free camping guide\"... broad single-word negatives are blunt instruments, so sanity-check against your Search Terms report first.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the platform is applying the negatives exactly as entered - the observed behavior follows documented match mechanics, not a bug",
+        "evidence": "'No, Google isn't ignoring your negatives \u2014 this is expected behavior based on how Google Ads matches negative keywords... the negatives aren't broken or ignored \u2014 exact match negatives are literal-string-only.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The missing Google coverage is called a failed deliverable, not a partial one, because the brand buys Google daily",
+        "evidence": "\"Google Shopping had none. All six entries are Meta-only creative sources. Under this skill, a channel-coverage gap this total isn't a partial miss, it's a failed list.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Google's official ads blog is restored, with the vendor-PR removal rejected: platform release notes are a first-class category and a missed change costs money",
+        "evidence": "\"'Removed Google's ads blog and Meta's business news: vendor PR, zero value' is the exact mistake this skill warns against. Platform release notes are first-class here specifically because a missed platform change costs money directly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Meta's official business news is restored on the same grounds",
+        "evidence": "\"Meta for Business news \u2014 facebook.com/business/news ... Official Meta release notes; wrongly cut by your predecessor as 'vendor PR'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The roughly 110-minute total is flagged against the 45-minute budget and the list is cut to fit rather than the budget stretched",
+        "evidence": "\"~110 min/week against a 45-min budget is more than double.\" and rebuilt totals \"45 of 45 (down from ~110)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cut entries move to a bench of substitutes instead of disappearing",
+        "evidence": "\"Any of the five pending-verification inherited blogs, once you send URLs and I confirm a dated item\" listed under Bench as future candidates.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Studio Pellworth and Cormorant Weekly are relabelled unverified with the reason, never left sitting as if verified",
+        "evidence": "\"Currently *unverified, reason: never successfully fetched* \u2014 not 'probably fine.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "drewfenwick.com is flagged as a same-name domain serving an unrelated business: never link it, and the person becomes unverified pending a live surface rather than dropped as inactive",
+        "evidence": "\"your teammate confirmed drewfenwick.com now serves a car-detailing shop ... this doesn't mean Drew Fenwick the person stopped writing about advertising ... Don't relink any 'Drew Fenwick' result without checking the content is actually about advertising.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response says to confirm a page's content is about advertising before trusting any resolving personal domain",
+        "evidence": "\"Don't relink any 'Drew Fenwick' result without checking the content is actually about advertising, the same trap as the Ben Heath furniture-site case.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A what-they're-selling flag is added or required per entry",
+        "evidence": "Rebuilt table has a 'Selling' column filled for every entry, e.g. \"agency + paid community + courses\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A status plus date is added or required per entry",
+        "evidence": "Rebuilt table has 'Status + date' filled for every entry, e.g. \"active, Aug 25, 2026 \u2014 not re-fetched this session\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The six same-medium Meta creative sources are consolidated by channel and theme fit without a 1-to-6 quality ranking",
+        "evidence": "No numeric ranking is applied; sources are instead individually diagnosed (dead, unverified, pending) and replaced by fit (\"Closest verified replacement for the 'Meta creative' niche\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The rebuilt weekly core leads with a news roundup and the restored release notes ahead of long-form sources",
+        "evidence": "Table order: PPC Land, then Google Ads & Commerce blog, then Meta for Business news, then Foxwell Digital, then Coach's Corner.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The rebuilt total is stated and is at or under 45 minutes",
+        "evidence": "\"**Estimated weekly minutes: 45 of 45**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage line confirms Google and Meta each have a verified-active source",
+        "evidence": "\"**Channel coverage: Google \u2713 (2 sources), Meta \u2713 (3 sources)** \u2014 every bought channel now has at least one source that was verified-active as of the last snapshot.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The missing Google coverage is called a failed deliverable, not a partial one, because the brand buys Google daily",
+        "evidence": "'Either that's a deliberate call ... or you're missing a blind spot on the channel that's half your spend' \u2014 hedged as one of two possibilities, not stated as a clear failure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Google's official ads blog is restored, with the vendor-PR removal rejected: platform release notes are a first-class category and a missed change costs money",
+        "evidence": "'Cutting Google's ads blog and Meta's business newsroom as vendor PR was the right call for creative inspiration ... Don't undo the removal; instead add a changelog-only feed.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Meta's official business news is restored on the same grounds",
+        "evidence": "Same passage: the newsroom removal is endorsed as 'the right call' rather than reversed, with a separate changelog feed proposed instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The roughly 110-minute total is flagged against the 45-minute budget and the list is cut to fit rather than the budget stretched",
+        "evidence": "'with Fenwick cut and roughly six sources over 110 minutes ... realistically you keep 2-3 of the confirmed-active ones at full depth and skim the rest.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cut entries move to a bench of substitutes instead of disappearing",
+        "evidence": "Fenwick is simply removed ('Remove the entry; don't leave it \"to check later.\"') with no bench or substitute offered.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Studio Pellworth and Cormorant Weekly are relabelled unverified with the reason, never left sitting as if verified",
+        "evidence": "'Treat both as unverified, not fine, until someone actually loads them this week.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "drewfenwick.com is flagged as a same-name domain serving an unrelated business: never link it, and the person becomes unverified pending a live surface rather than dropped as inactive",
+        "evidence": "'Delete Fenwick on Creative / drewfenwick.com now ... Remove the entry; don't leave it \"to check later.\"' \u2014 treated as a final drop, not as the person becoming unverified pending a new surface.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response says to confirm a page's content is about advertising before trusting any resolving personal domain",
+        "evidence": "No such general instruction appears anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A what-they're-selling flag is added or required per entry",
+        "evidence": "The rebuilt table has columns for Source, Type, Status, and Est. min/wk, but no selling-incentive flag column or requirement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A status plus date is added or required per entry",
+        "evidence": "The table includes a Status column (e.g. '\u2705 active') but no date column or date requirement anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The six same-medium Meta creative sources are consolidated by channel and theme fit without a 1-to-6 quality ranking",
+        "evidence": "No discussion of channel/theme fit is given; sources are simply grouped by verification status and depth ('keep 2-3 of the confirmed-active ones at full depth and skim the rest').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The rebuilt weekly core leads with a news roundup and the restored release notes ahead of long-form sources",
+        "evidence": "No news roundup appears anywhere, and the proposed changelog feeds are explicitly 'don't read them, just have them ready' rather than leading the core.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The rebuilt total is stated and is at or under 45 minutes",
+        "evidence": "'## This week, in your 45 minutes' heading with itemized minutes summing to roughly 44 minutes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage line confirms Google and Meta each have a verified-active source",
+        "evidence": "No such coverage-confirmation line appears; instead only a near-zero-reading changelog feed is added for policy awareness, not a verified-active source.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

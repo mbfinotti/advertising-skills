@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response instructs loading the page with the campaign's real ad parameters (actual utm_term values), not the bare URL the user opened.",
+        "evidence": "\"Load the live page with a real `utm_term` from the actual ad and confirm the personalized headline renders\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response names the silent failure mode: the generic fallback variant can serve while the page still 'works', so nobody notices.",
+        "evidence": "\"the dynamic headline silently falls back to its generic variant for real ad clickers \u2014 which you'd never notice by opening the page yourself\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response requires verifying that the personalised headline variant actually renders for the campaign's real terms.",
+        "evidence": "Fix 3: \"Load the live page with a real utm_term from the actual ad and confirm the personalized headline renders\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags the go.veldscript.com redirect as a place where the click ID (gclid) can be stripped, and requires verifying it survives through to the landing page.",
+        "evidence": "\"Verify click IDs and `utm_term` survive the `go.veldscript.com` redirect\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains that stripped click IDs break the platform's ability to attribute and optimise.",
+        "evidence": "The text only discusses GA4 attribution loss (\"GA4 loses the paid-source attribution on those sessions, undercounting conversions\"); it never discusses impact on the platform's bidding/optimization.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the averaged figure of 324, stating platform-reported and on-site conversion counts must never be mixed in one calculation.",
+        "evidence": "\"this skill's own failure-mode list calls out by name as never combinable \u2014 and then divides that invalid average by a GA4 session count that matches neither source\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains the 412-vs-236 divergence via attribution-window and view-through differences: two different measures of different things.",
+        "evidence": "\"two different measurement systems with different attribution windows and view-through rules\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not validate the 0.8% conversion-rate calculation built on the blended count.",
+        "evidence": "\"The 324/41,000 = 0.8% figure you've been reporting is not a real number.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response requires stating which of the two counts every subsequent observation uses (or picking one consistently).",
+        "evidence": "\"Report the two sources separately, each with its own consistent numerator/denominator.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The message-match check covers the visual axis (does the hero echo the ad's creative), not only the headline wording.",
+        "evidence": "Fix 3 only addresses the personalized headline; visual match is only mentioned as an unchecked gap ('the verbal/visual match axes... are unknown') under Could Not Check, never actually assessed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response requests or uses the analytics funnel segmented by device and traffic source.",
+        "evidence": "\"Device split and geo/language mix \u2014 not provided; mobile-weighting and localization checks are untouched.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage lift figure appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The report reserves a place for inputs not yet received or checks not yet possible (e.g. session recordings, rendered check pending the URL), rather than treating the audit as complete without them.",
+        "evidence": "Extensive \"## COULD NOT CHECK\" section listing page, ad, device split, etc.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response instructs loading the page with the campaign's real ad parameters (actual utm_term values), not the bare URL the user opened.",
+        "evidence": "\"Re-run with 2-3 different utm_term values matching real keywords in the ad group \u2014 confirm the headline actually changes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response names the silent failure mode: the generic fallback variant can serve while the page still 'works', so nobody notices.",
+        "evidence": "\"You may have been QA-ing the fallback state this whole time, never the actual personalization.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response requires verifying that the personalised headline variant actually renders for the campaign's real terms.",
+        "evidence": "\"2. Re-run with 2-3 different utm_term values matching real keywords in the ad group \u2014 confirm the headline actually changes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response flags the go.veldscript.com redirect as a place where the click ID (gclid) can be stripped, and requires verifying it survives through to the landing page.",
+        "evidence": "\"GA4 starts a new session on arrival and can lose the click ID / UTM parameters entirely\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains that stripped click IDs break the platform's ability to attribute and optimise.",
+        "evidence": "The response explains attribution breakage (\"GA4 stops crediting it as paid\") but does not connect stripped click IDs to the platform's optimization capability.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the averaged figure of 324, stating platform-reported and on-site conversion counts must never be mixed in one calculation.",
+        "evidence": "\"Stop reporting 324. It isn't a number \u2014 it's an artifact of averaging two unrelated measurements... Averaging them doesn't cancel noise\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains the 412-vs-236 divergence via attribution-window and view-through differences: two different measures of different things.",
+        "evidence": "The explanation given is cross-domain tracking/tag-firing based (\"two different instruments... using two different clocks\"), not framed via attribution-window or view-through conversion concepts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response does not validate the 0.8% conversion-rate calculation built on the blended count.",
+        "evidence": "\"The 41,000-session denominator is itself suspect... your 0.8% rate could be wrong in the denominator and the numerator simultaneously\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response requires stating which of the two counts every subsequent observation uses (or picking one consistently).",
+        "evidence": "The guidance is to \"Report both real numbers (412 Ads / 236 GA4)\", not to label which count each subsequent observation relies on.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The message-match check covers the visual axis (does the hero echo the ad's creative), not only the headline wording.",
+        "evidence": "All message-match checks concern only the headline-swap text logic (e.g. \"confirm the headline actually changes\"); no visual/creative check is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response requests or uses the analytics funnel segmented by device and traffic source.",
+        "evidence": "No device or traffic-source segmentation of the funnel is requested anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage lift figure is stated anywhere in the response.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The report reserves a place for inputs not yet received or checks not yet possible (e.g. session recordings, rendered check pending the URL), rather than treating the audit as complete without them.",
+        "evidence": "\"You didn't actually paste the URL or the ad... send them and I'll finish the technical half below.\" and closing: \"Paste the URL and the ad and I'll run the actual technical checks.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

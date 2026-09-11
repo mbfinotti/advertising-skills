@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Uses the ~7% reconciliation gap matching the historical norm to pass measurement/tracking before reading other layers.",
+        "evidence": "measurement/tracking : pass - reconciliation ratio (7%) is unchanged from its historical norm; a broken pixel from the new template would have widened this gap, not held it steady [-, high]\" is listed first in the layer screen, ahead of structure/targeting/creative/etc.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The decomposition isolates CVR as the only moved link, with CPM, CTR, and impression share flat.",
+        "evidence": "\"Three of your four levers didn't move: CPM +1%, CTR -1%, search impression share flat at 68%. Only CVR moved, and it moved by a lot (-41%)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the failure sits past the click (offer and downstream), tied to the March 3 release and price change, not account structure and not creative.",
+        "evidence": "\"verdict : offer & downstream - the Mar 3 product-page template and/or the 12% price increase. The two shipped together, so this is a compound *candidate*...\" with structure and creative both marked 'pass' above it.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against the planned restructure and creative refresh because no evidence implicates those layers.",
+        "evidence": "\"**Account restructure**: screened `pass`. Nothing in the evidence points at fragmentation, overlapping campaigns, or a bad optimization event\" and \"**Creative refresh**: screened `pass`. CTR is flat, not falling\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that this diagnosis stops at the click and hands the page and offer work to a post-click/landing-page audit and the page owners.",
+        "evidence": "\"Once isolated, this hands to `mbfinotti/advertising-skills@paid-landing-page-audit` for the page-fix list \u2014 that skill picks up exactly where this one stops, at the click.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes offer and downstream to the top of the fix queue, citing the promotion conditions: CVR collapsed while CPM, CTR, and impression share held, and the page owners are in-house.",
+        "evidence": "\"Two things push offer & downstream to the top of the queue instead of its usual rung 5: the decomposition localizes cleanly past the click (CPM/CTR/impression share all held), and the page/price owners sit on your own team next to you\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Separates the two March 3 candidates - the template change and the 12% price increase - as distinct hypotheses to isolate, not one blob.",
+        "evidence": "\"Isolate the two Mar-3 changes from each other. They shipped same-day, so right now you can't tell if it's the template, the price, or both. Cheapest test: revert the page template only, for a short window, keeping the price increase in place.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The layer screen marks structure, targeting, and creative pass with the flat-metric evidence attached.",
+        "evidence": "Targeting (\"CPM flat, impression share flat = no saturation\") and creative (\"CTR flat, not falling\") cite flat metrics, but structure's pass is justified by \"no structural edits reported in the window\" \u2014 an absence-of-change rationale, not a flat-metric one, so not all three share the cited evidence type.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends checking backend conversion on the paid path specifically, noting that unchanged CVR from other traffic sources is not a full rule-out.",
+        "evidence": "The action list only says \"Segment CVR by traffic source (paid vs. organic/email) \u2014 if the drop is sitewide and uniform, it implicates the template broadly; if it's concentrated in paid sessions specifically, check message-match\" \u2014 no statement that unchanged/uniform CVR elsewhere fails to fully rule out a paid-specific backend issue.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends no budget or bid changes.",
+        "evidence": "The bidding/budget layer is only marked \"pass - impression share stable at 68% ... no bid/budget edits reported [-, high]\" as a diagnostic status; the numbered action plan never explicitly recommends against changing budgets or bids.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends testing one falsifiable hypothesis at a time (for example isolating the template from the price change) rather than stacking fixes.",
+        "evidence": "\"Cheapest test: revert the page template only, for a short window, keeping the price increase in place. If CVR recovers, it's the page. If it doesn't, the price increase is the driver\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction (paid CVR recovers toward baseline if the page/offer fix ships) and a re-check one mature window later.",
+        "evidence": "\"Prediction to log: once the page/price cause is isolated and fixed, CVR should recover most of the way toward its pre-Mar-3 baseline within one lag-mature window (roughly 7-14 days for a DTC purchase cycle) of the fix shipping, and ROAS should follow back toward the 2.9-3.4 range\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the verdict in a complete structured block covering window, volume/reconciliation, decomposition, localisation, layer screen, confidence, verdict, evidence, findings, prediction, handoff, and re-check.",
+        "evidence": "The code block covers window, volume/reconciliation, decomposition, localisation, layer screen, confidence, verdict, and evidence, and prediction/handoff appear afterward \u2014 but the verdict text says \"see finding #1\" while no actual numbered findings entry or 'Findings' section is ever presented anywhere in the transcript, leaving that component dangling/incomplete.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Uses the ~7% reconciliation gap matching the historical norm to pass measurement/tracking before reading other layers.",
+        "evidence": "\"Platform-reported purchases within 7% of your order system, consistent with baseline \u2192 rules out tracking breakage (pixel misfire, consent-mode changes, deduped/inflated platform reporting) as the explanation.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The decomposition isolates CVR as the only moved link, with CPM, CTR, and impression share flat.",
+        "evidence": "\"CPM flat, CTR flat, impression share stable \u2192 traffic quality and auction dynamics haven't changed.\" combined with \"CVR -41% starting exactly March 3\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the failure sits past the click (offer and downstream), tied to the March 3 release and price change, not account structure and not creative.",
+        "evidence": "\"a same-day cliff in conversion rate with flat upstream metrics is the signature of something breaking or repelling users *after the click*, not a traffic or creative problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against the planned restructure and creative refresh because no evidence implicates those layers.",
+        "evidence": "\"Don't restructure the account or touch creatives yet\" and \"Restructuring the account or refreshing creatives would burn time and budget addressing metrics that aren't broken\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that this diagnosis stops at the click and hands the page and offer work to a post-click/landing-page audit and the page owners.",
+        "evidence": "The transcript itself dives into post-click diagnostics (QA the template, segment CVR, funnel drop-off) rather than explicitly stopping and handing off to a separate landing-page audit/page-owner team; no explicit handoff statement like 'this is outside media buying, hand to X team' is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes offer and downstream to the top of the fix queue, citing the promotion conditions: CVR collapsed while CPM, CTR, and impression share held, and the page owners are in-house.",
+        "evidence": "The transcript does promote the page/offer issue to top priority (\"Fix or isolate the March 3 change first\") and cites CVR collapse with flat CPM/CTR/impression share, but never mentions page owners being in-house as a condition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Separates the two March 3 candidates - the template change and the 12% price increase - as distinct hypotheses to isolate, not one blob.",
+        "evidence": "\"Isolate template vs. price. They shipped together, so right now you can't tell which one (or both) is responsible... or if you can split-test old vs. new template at the current price for a few days.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The layer screen marks structure, targeting, and creative pass with the flat-metric evidence attached.",
+        "evidence": "\"CPM flat, CTR flat, impression share stable \u2192 traffic quality and auction dynamics haven't changed. If creatives were fatiguing or the account structure were causing budget misallocation, you'd expect CTR to erode, CPMs to drift, or impression share to wobble... None of that moved.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends checking backend conversion on the paid path specifically, noting that unchanged CVR from other traffic sources is not a full rule-out.",
+        "evidence": "No mention of comparing paid CVR against other traffic sources (organic, direct, email) to check if the drop is channel-specific or site-wide; the transcript only segments by device and new/returning visitors and by product/landing page.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends no budget or bid changes.",
+        "evidence": "The transcript never explicitly states not to change budget or bids; it only advises against restructuring and creative refresh, and implicitly continues spending ($80K/month) but does not explicitly address budget/bid changes as a distinct recommendation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends testing one falsifiable hypothesis at a time (for example isolating the template from the price change) rather than stacking fixes.",
+        "evidence": "\"Isolate template vs. price... Ask the web team if the template can be rolled back independently of the price, or if you can split-test old vs. new template at the current price for a few days. This is the single highest-value thing you can do this week.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction (paid CVR recovers toward baseline if the page/offer fix ships) and a re-check one mature window later.",
+        "evidence": "No explicit prediction statement (e.g., 'if fixed, CVR should recover to baseline within X period') nor a specified re-check window is given anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the verdict in a complete structured block covering window, volume/reconciliation, decomposition, localisation, layer screen, confidence, verdict, evidence, findings, prediction, handoff, and re-check.",
+        "evidence": "The transcript is organized as prose sections ('Why the timing rules out your plan', 'What to check first, in order', 'Bottom line') rather than a structured block with explicit labeled fields like window, confidence, verdict, prediction, handoff, and re-check \u2014 several of these elements (confidence, prediction, re-check, explicit handoff) are absent entirely.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

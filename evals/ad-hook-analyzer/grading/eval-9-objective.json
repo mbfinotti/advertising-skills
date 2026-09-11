@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Corrects rule 1: the 0.25-second figure is a 2016 recall-at-exposure finding (people could recall feed content after 0.25 seconds of exposure), not an attention deadline",
+        "evidence": "\"The number traces to a 2016 Fors Marsh study, but it measured *recall*, not attention capture: people could recognize feed content at statistically significant rates after 0.25 seconds of exposure. It is not an attention deadline\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the logo-in-the-first-quarter-second rule: a logo-first opening signals 'this is an ad' at the worst moment and is a documented anti-pattern",
+        "evidence": "\"opening on a logo is a documented anti-pattern \u2014 it signals 'this is an ad' at the exact moment the viewer decides whether to leave\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects rule 2: the 85%-without-sound figure is a 2016 publisher self-reported snapshot that the platform never confirmed, not a current or verified number",
+        "evidence": "\"This is a 2016 Digiday report of a handful of publishers' self-reported numbers (LittleThings, Mic). Facebook never confirmed it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the sound-off design constraint still stands - grounded on muted autoplay on Meta and LinkedIn, not on the 85% figure",
+        "evidence": "\"You don't need this stat to justify sound-off design \u2014 Meta and LinkedIn autoplay muted by default, which is a verified platform mechanic on its own. Cite *that*, not the folklore number.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects rule 3: the 8-second attention span claim is debunked with no credible primary source",
+        "evidence": "\"No credible primary source exists for this claim...debunked, drop it entirely.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects rule 4: 1.7 seconds is a 2016 platform average for time spent with mobile content - a decade-old average, not a rule or a hook-length ceiling",
+        "evidence": "\"Facebook did publish this as a 2016 average time-spent-per-content figure. But it's a decade-old average, not a threshold\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers the well-sourced replacements: attention-decay data of roughly 80% of the audience present in second 1, 50% by second 2, 20% by second 3, and/or the roughly 2.5-second memory-encoding threshold (about 1.5 seconds with distinctive brand assets)",
+        "evidence": "\"~80% of viewers present at second 1, ~50% at second 2, ~20% at second 3 (Nelson-Field/Amplified Intelligence)\" and \"memory only reliably encodes after roughly 2.5 seconds of active attention, though distinctive brand assets used well can bring that down to ~1.5s\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps sound-off legibility as a hard pass/fail check in any rewritten checklist",
+        "evidence": "\"Gate on sound-off legibility, audience qualification, and promise-payoff continuity \u2014 not an arbitrary duration ceiling.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adopts none of the four memo rules unchanged into the rewritten checklist",
+        "evidence": "The \"What to put in the checklist instead\" section entirely replaces all four original rules with new sourced items.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames brand timing as an objective-dependent tension: early distinctive-asset brand cues differ from a logo-card open, and withholding branding to the end carries a brand-linkage cost (the reported 17-point drop)",
+        "evidence": "The transcript distinguishes logo-card opens from distinctive brand assets (\"weave in distinctive brand assets...early rather than a logo card\") but never mentions the brand-linkage cost of withholding branding to the end or the 17-point drop figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the distinctive-brand-asset evidence (memory encoding in as little as 1.5 seconds when assets are deployed well) when discussing early branding",
+        "evidence": "\"that can work in as little as 1.5s per the VCCP data, but as *distinctive-asset* branding, not a logo stamp\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds replacement checklist items as gates and anchored qualitative bands rather than numeric thresholds derived from the folklore figures",
+        "evidence": "\"Gate on sound-off legibility, audience qualification, and promise-payoff continuity \u2014 not an arbitrary duration ceiling. A hook can run longer than '1.7 seconds' and still win if it's specific...\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Corrects rule 1: the 0.25-second figure is a 2016 recall-at-exposure finding (people could recall feed content after 0.25 seconds of exposure), not an attention deadline",
+        "evidence": "The transcript states the opposite treatment: 'I can't trace this to any credible study. It reads like a game-of-telephone mutation...' \u2014 it does not identify the real 2016 recall-at-exposure source.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the logo-in-the-first-quarter-second rule: a logo-first opening signals 'this is an ad' at the worst moment and is a documented anti-pattern",
+        "evidence": "'Meta and YouTube creative-effectiveness research... generally advise against leading with a logo, because it reads as \"ad\" and gets scrolled past.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects rule 2: the 85%-without-sound figure is a 2016 publisher self-reported snapshot that the platform never confirmed, not a current or verified number",
+        "evidence": "'This traces to a 2016 Digiday piece, widely recirculated since... it's decade-old, platform-specific, and was largely an artifact of Facebook's *default autoplay-muted* setting at the time.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the sound-off design constraint still stands - grounded on muted autoplay on Meta and LinkedIn, not on the 85% figure",
+        "evidence": "'The underlying design principle survives even if the number doesn't: design hooks to work with captions/visuals alone. Keep that rule, drop the specific percentage.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects rule 3: the 8-second attention span claim is debunked with no credible primary source",
+        "evidence": "'This is one of the most thoroughly discredited stats in marketing... Attention researchers... have specifically refuted both the 8-second figure and the goldfish comparison.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects rule 4: 1.7 seconds is a 2016 platform average for time spent with mobile content - a decade-old average, not a rule or a hook-length ceiling",
+        "evidence": "'Facebook's own research (circa 2016) reported ~1.7s average time spent per piece of mobile News Feed content... It's dated and platform-specific, but not invented. The conclusion doesn't follow from the premise.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers the well-sourced replacements: attention-decay data of roughly 80% of the audience present in second 1, 50% by second 2, 20% by second 3, and/or the roughly 2.5-second memory-encoding threshold (about 1.5 seconds with distinctive brand assets)",
+        "evidence": "No such statistics appear anywhere in the replacement checklist or elsewhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps sound-off legibility as a hard pass/fail check in any rewritten checklist",
+        "evidence": "'Sound-off comprehension \u2014 hook must communicate its core idea via visuals/captions alone; verify by watching muted.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adopts none of the four memo rules unchanged into the rewritten checklist",
+        "evidence": "The replacement checklist skeleton generalizes all four ('not a fixed millisecond target', 'without requiring a specific stopwatch cutoff') rather than reusing the literal 0.25s/85%/8s/1.7s figures.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames brand timing as an objective-dependent tension: early distinctive-asset brand cues differ from a logo-card open, and withholding branding to the end carries a brand-linkage cost (the reported 17-point drop)",
+        "evidence": "Checklist item 3 only says 'test both early and delayed placement per format' with no mention of the 17-point brand-linkage drop or framing as an objective-dependent tension.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the distinctive-brand-asset evidence (memory encoding in as little as 1.5 seconds when assets are deployed well) when discussing early branding",
+        "evidence": "No such statistic is cited anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Builds replacement checklist items as gates and anchored qualitative bands rather than numeric thresholds derived from the folklore figures",
+        "evidence": "'Pattern interrupt in first 1\u20133s... (not a fixed millisecond target)' and 'Relevance signal fast... without requiring a specific stopwatch cutoff.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

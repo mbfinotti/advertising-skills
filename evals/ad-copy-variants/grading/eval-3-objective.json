@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response states that the Ad Strength / coverage score grades variety mechanics, not persuasion or message quality.",
+        "evidence": "\"Adding 6 more speed synonyms would make it worse, not better. The fix is angle variety, not volume\" combined with 'near-duplicate assets shrink the usable combination space \u2014 that's almost certainly why you're stuck at Average, not slot count.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It refuses to add generic filler assets purely to raise the score.",
+        "evidence": "All 6 new headlines/2 descriptions are tied to specific evidence (quote, role, price, brand, CTA) rather than generic filler, and the response explicitly avoids 'More benefit/speed synonyms' as a deleted angle.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It identifies the 9 benefit-only headlines as near-duplicates that shrink the usable combination space and waste slots.",
+        "evidence": "\"Your 9 live headlines are all one angle (benefit/outcome \u2014 speed) reworded six ways... near-duplicate assets shrink the usable combination space\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It uses the cleared legal-ops quote as a proof asset occupying a slot in the new set.",
+        "evidence": "Headline 1 'Redlines: week to afternoon' and Description 1 with the verbatim attributed quote both use the cleared testimonial.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states that proof assets are ones a competitor could not run unchanged, unlike benefit, brand, or urgency lines.",
+        "evidence": "No statement comparing proof assets to competitor-copyability appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It excludes urgency assets because no real deadline exists, and states that exclusion explicitly rather than silently omitting the theme.",
+        "evidence": "\"Urgency | No promo or deadline running \u2014 a manufactured one also fails Google's ad review\" in the Deleted angles table.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It notes a manufactured deadline would fail platform review.",
+        "evidence": "\"a manufactured one also fails Google's ad review\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "New assets cover objection-handling and/or CTA themes, not only more benefit lines.",
+        "evidence": "New headlines include Objection/budget (#3 '$89/user/mo', #4 '$89 per user, per month'), CTA (#5 'Get started with Brivano'), Brand (#6), and Identity (#2).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The proof quote keeps its attribution (the role and company size) so a committee reader can defend it internally.",
+        "evidence": "\"'Redlines that used to take a week now take an afternoon.' - Legal ops lead, 400-person co\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It advises verifying slot counts and character limits in the user's own ads interface or preview rather than trusting remembered numbers.",
+        "evidence": "The response states '9+6=15 headlines, 2+2=4 descriptions (Google RSA caps)' and uses a fixed '30-char limit' as settled fact without recommending the user verify current limits in their own ads interface.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It contains no invented statistics, customers, or quotes beyond the one supplied.",
+        "evidence": "Only the supplied testimonial quote, the supplied $89/user/month price, and the supplied brand name are used; no other statistics or customers are invented.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response states that the Ad Strength / coverage score grades variety mechanics, not persuasion or message quality.",
+        "evidence": "\"Google's Ad Strength grader rewards type diversity... as much as headline count.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It refuses to add generic filler assets purely to raise the score.",
+        "evidence": "\"I avoided claiming 'AI-powered' or '#1'/'leading' since those weren't confirmed facts \u2014 only verifiable claims... are used.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It identifies the 9 benefit-only headlines as near-duplicates that shrink the usable combination space and waste slots.",
+        "evidence": "\"All 9 live headlines are the same message type \u2014 outcome/benefit claims.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It uses the cleared legal-ops quote as a proof asset occupying a slot in the new set.",
+        "evidence": "Description 1 uses \"your cleared quote verbatim\" with attribution.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states that proof assets are ones a competitor could not run unchanged, unlike benefit, brand, or urgency lines.",
+        "evidence": "No such distinction is drawn anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It excludes urgency assets because no real deadline exists, and states that exclusion explicitly rather than silently omitting the theme.",
+        "evidence": "\"I did not add urgency/promo language ('today,' 'limited time,' 'sign up now') since none is running.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It notes a manufactured deadline would fail platform review.",
+        "evidence": "\"fabricating urgency risks a Google Ads policy flag and misleads users.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "New assets cover objection-handling and/or CTA themes, not only more benefit lines.",
+        "evidence": "\"Book a Brivano Demo | 19 | Direct CTA\" is a new CTA-type headline distinct from the existing benefit lines.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The proof quote keeps its attribution (the role and company size) so a committee reader can defend it internally.",
+        "evidence": "'\"Redlines that used to take a week now take an afternoon.\" - Legal Ops Lead, 400-person co'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It advises verifying slot counts and character limits in the user's own ads interface or preview rather than trusting remembered numbers.",
+        "evidence": "Character limits (30/90 char) and slot counts (15/4) are stated as fixed facts throughout with no suggestion to verify them in the Ads interface.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It contains no invented statistics, customers, or quotes beyond the one supplied.",
+        "evidence": "Only the supplied quote and the given $89/user price are used; no other stats or customers are invented.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

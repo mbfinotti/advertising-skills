@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Identifies the guaranteed IO buy type as changing both the target pacing curve and the available remedies, distinct from an auction buy.",
+        "evidence": "\"buy type          : guaranteed / IO-based\" combined with: \"The diagnostic checklist... is built for auction-bought delivery you can inspect account-side. You don't operate this account \u2014 it's Alpine's guaranteed inventory... the cause sits with them\" and \"that convention is built for auction pacing, where 90-110% is genuinely fine. On a guaranteed IO, the standing practice is to hold delivery slightly ahead of prorated.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the standing trader practice of pacing a guaranteed IO slightly ahead of even delivery, so 4.9M against a 5.33M prorated position is genuinely behind for this buy type.",
+        "evidence": "\"On a guaranteed IO, the standing practice is to hold delivery slightly ahead of prorated, not just inside a tolerance band, because there's no 'good enough' on a fixed impression commitment... Judge this one against the commitment, not the convention.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the required remaining rate: roughly 3.1M impressions over the final two weeks, about 1.55M/week versus the current 1.225M/week (an acceleration of roughly a quarter to a third).",
+        "evidence": "\"remaining commitment            3,100,000\", \"required daily (14 days left)   221,429 impr/day\", \"trailing daily (last 4 weeks)   175,000 impr/day\", \"adjust delivery by +46,429 impr/day (+26.5% over trailing rate)\" \u2014 221,429/day and 175,000/day equal ~1.55M/week and 1.225M/week respectively, and the +26.5% figure matches the 'quarter to a third' range.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks the three remedies with acceleration first, make-good second, and credit last.",
+        "evidence": "\"efficiency (= value): accelerate > make-good flight > credit\" and the numbered plan: \"1. Push acceleration first, today.\" ... \"2. If acceleration stalls, escalate to a make-good flight\" ... \"3. Only fall back to the credit if a make-good is operationally impossible\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends accelerating delivery while runway remains rather than accepting the offered credit.",
+        "evidence": "\"Not yet, and not as offered.\" and \"Bottom line: don't take the money yet. You have runway to get the impressions you actually bought \u2014 use it, hold Alpine to acceleration first.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that acceleration is a delivery setting already owned, reversible inside the flight, and triggers no negotiation or contract review.",
+        "evidence": "\"It buys back the actual inventory you contracted for... at zero renegotiation cost, reversible if it doesn't work\" and \"rationale: closes the full 650K shortfall inside the existing flight without a contract amendment\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that the credit returns money rather than the audience the campaign was bought for, and closes the flight instead of fixing it.",
+        "evidence": "\"You get cash back on undelivered inventory instead of the impressions you actually wanted delivered... It closes the flight instead of fixing it, foreclosing the 650K-impression recovery that's still achievable with 14 days left.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the 4A's/IAB Standard Terms (v3.0) remedy sequence: the parties negotiate a make-good flight, and only if that fails may the buyer take a credit.",
+        "evidence": "The transcript only says \"Credit is the fallback the terms guarantee when a make-good negotiation fails\" without ever naming or citing the '4A's/IAB Standard Terms (v3.0)' document; the only named/cited document is the 'IAB Direct Buy Addendum (effective Feb 2026)', used solely for the notification duty.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the IAB Direct Buy Addendum's seller duty to promptly notify the buyer of material under-delivery, so Alpine's silence breached a disclosure obligation.",
+        "evidence": "\"Under the IAB Direct Buy Addendum (effective Feb 2026), the seller carries a duty to promptly notify the buyer of material under-delivery. Silence until your analyst caught it... reads as Alpine already knowing the number and choosing the cheapest remedy for them.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the escalation condition: the make-good becomes the lead remedy once acceleration can no longer close the gap in the remaining runway.",
+        "evidence": "\"rollback trigger: if week 5 delivery doesn't move off the ~175K/day trailing rate, acceleration isn't happening \u2014 stop waiting and move to step 2\" paired with \"2. If acceleration stalls, escalate to a make-good flight\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises notifying and escalating with the publisher early rather than waiting until the flight ends.",
+        "evidence": "\"Negotiate it now, in parallel with monitoring acceleration, so you're not starting a negotiation cold with three days left.\" and \"Separately, put the disclosure lapse on record with Alpine, independent of which remedy you land on.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a mid-flight IO delivery checkpoint, states that it outranks the other check cadences on a guaranteed buy because it is contractually load-bearing, and names an owner such as ad ops.",
+        "evidence": "The transcript sets a \"verification date: end of week 5 (~Nov 8)\" with owner \"your analyst\" / \"Alpine's account rep\", but never frames this checkpoint as outranking other check cadences specifically because a guaranteed IO is contractually load-bearing, and never names an 'ad ops' owner.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Identifies the guaranteed IO buy type as changing both the target pacing curve and the available remedies, distinct from an auction buy.",
+        "evidence": "The transcript never contrasts a guaranteed IO against an auction buy or explains how the buy type changes the pacing curve/remedies; it only references 'guaranteed-impression clauses' in passing under 'Check the IO's own remedy language.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the standing trader practice of pacing a guaranteed IO slightly ahead of even delivery, so 4.9M against a 5.33M prorated position is genuinely behind for this buy type.",
+        "evidence": "No mention of any industry practice of pacing ahead of even delivery; the transcript only computes straight prorated pacing (8M/6 weeks = 1.333M/week) without discussing why guaranteed IOs are typically paced ahead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the required remaining rate: roughly 3.1M impressions over the final two weeks, about 1.55M/week versus the current 1.225M/week (an acceleration of roughly a quarter to a third).",
+        "evidence": "The transcript computes '3.1M impressions in 2 weeks = 1.55M/week, 16% above their own average pace to date' \u2014 it never states the current rate as 1.225M/week explicitly, and the '16%' figure appears to be miscalculated against the target pace (1.333M/week) rather than the actual average pace to date (4.9M/4=1.225M/week), which would yield ~26%, not the 'quarter to third' framing correctly derived.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks the three remedies with acceleration first, make-good second, and credit last.",
+        "evidence": "The 'What to do instead' section leads with verifying delivery and 'Demand a written catch-up plan, not just a credit' (acceleration), then step 4 states 'If a shortfall remains at Nov 15, negotiate a make-good, not a discount' with 'Preferred order: Bonus impressions delivered in a short extension... If extension isn't workable, a credit.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends accelerating delivery while runway remains rather than accepting the offered credit.",
+        "evidence": "\"Push Alpine for delivery, not a bill credit, in whatever's left of the flight window; only fall back to a credit... if delivery genuinely can't be made up.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that acceleration is a delivery setting already owned, reversible inside the flight, and triggers no negotiation or contract review.",
+        "evidence": "The transcript frames acceleration as requiring Alpine to produce 'a written catch-up plan' and explain 'what specifically changes in weeks 5\u20136' \u2014 it does not describe acceleration as an internally-owned, reversible delivery setting needing no negotiation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that the credit returns money rather than the audience the campaign was bought for, and closes the flight instead of fixing it.",
+        "evidence": "\"It substitutes money for exposure. A credit buys you future impressions with a vendor who just under-delivered... not the impressions you contracted for\" and \"Accepting a credit for 'undelivered impressions' implicitly writes off the flight before it's over.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the 4A's/IAB Standard Terms (v3.0) remedy sequence: the parties negotiate a make-good flight, and only if that fails may the buyer take a credit.",
+        "evidence": "No citation of 4A's/IAB Standard Terms or any named industry standard anywhere in the transcript; only a generic reference to 'the IO's own remedy language.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the IAB Direct Buy Addendum's seller duty to promptly notify the buyer of material under-delivery, so Alpine's silence breached a disclosure obligation.",
+        "evidence": "The transcript discusses non-disclosure only as a trust signal ('The non-disclosure is the bigger signal. Your analyst caught it, not their account team.') without citing the IAB Direct Buy Addendum or any specific disclosure obligation/breach.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the escalation condition: the make-good becomes the lead remedy once acceleration can no longer close the gap in the remaining runway.",
+        "evidence": "The transcript ties make-good consideration to the flight's end rather than a mid-flight determination: \"If a shortfall remains at Nov 15, negotiate a make-good, not a discount\" \u2014 this is a post-flight fallback, not a stated in-flight escalation trigger.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises notifying and escalating with the publisher early rather than waiting until the flight ends.",
+        "evidence": "\"Demand a written catch-up plan, not just a credit. Ask Alpine directly: what caused the shortfall...\" and \"Get it in writing now, regardless of which remedy you land on\" indicate pushing Alpine immediately rather than waiting until Nov 15.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a mid-flight IO delivery checkpoint, states that it outranks the other check cadences on a guaranteed buy because it is contractually load-bearing, and names an owner such as ad ops.",
+        "evidence": "No mention of establishing a recurring mid-flight delivery checkpoint or any named owner (e.g., ad ops) for future flights; the closest is a one-off 'Revisit future spend separately' suggestion about trust, with no checkpoint process described.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The failure is diagnosed at the body or hook-to-body transition stage (hook rate healthy against its own median, hold rate collapsed), not at the hooks.",
+        "evidence": "\"The actual failing stage: hold rate. 18% against a 35% median is roughly a 50% collapse... Rewriting hooks right now is fixing a stage that isn't broken.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "10 fresh hooks are not delivered as the fix; the rewrite effort is pointed at the body and transition instead.",
+        "evidence": "\"10 hook variants \u2014 for testing alongside the fixed body, not instead of it\" and \"Fix this before shooting new hooks: Rewrite the first body beat...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Broadening or changing targeting is advised against for this failure pattern.",
+        "evidence": "\"Should you broaden targeting? No... Hold targeting until hold rate is back near baseline.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The account's own trailing medians are used as the reference for pass/fail, not the published figure.",
+        "evidence": "\"A hook variant only counts as a win if it beats your 28%/35% trailing medians, not the 30% external figure.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The '30%+ is elite' benchmark is rejected as a target, noting vendor 'good' hook-rate figures conflict (roughly 18% to 40% for the same metric) and each vendor sells the analytics behind its number; external figures serve only as sanity checks.",
+        "evidence": "\"Published 'good hook rate' benchmarks range roughly 18\u201340% for the same metric, because each vendor sells the analytics the number justifies... discard the external number.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The TikTok-versus-Reels hook-rate comparison is called invalid because platforms count a view at different thresholds; a script is compared only against others on the same placement.",
+        "evidence": "\"Short-form feeds count a '3-second view' at different thresholds... Compare each placement only against its own trailing baseline for that placement \u2014 never cross-platform.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response warns hook rate measures attention, not value - ads at identical hook rates can differ several-fold in return - and never to scale on hook rate alone.",
+        "evidence": "No statement in the transcript addresses hook rate as an attention-only metric distinct from value, nor warns against scaling on hook rate alone.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The diagnostic sequence is walked in order and only the failing stage is fixed, with the later stages named (low CTR points at the CTA; healthy CTR with low conversion points at the offer or landing page).",
+        "evidence": "CTR is only mentioned as \"flat\" among the three symptoms; no diagnosis chain naming CTR\u2192CTA or conversion\u2192offer/landing-page is walked through.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The fix requires the first body line to extend each hook's premise, with the transition line rewritten per hook.",
+        "evidence": "\"Rewrite the first body beat so it explicitly extends the surviving hook's premise (the hook-to-body transition)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The plan changes one variable at a time and re-tests until the account's own median is beaten.",
+        "evidence": "\"Hold concept and offer fixed, vary hook only, one variable at a time... A hook variant only counts as a win if it beats your 28%/35% trailing medians.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The metric definitions are carried through correctly (hook rate = 3-second plays divided by impressions; hold rate = 15-second plays divided by 3-second plays).",
+        "evidence": "No explicit formula definitions (e.g. '3s plays \u00f7 impressions') appear anywhere in this transcript, unlike other sections that state them explicitly.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The failure is diagnosed at the body or hook-to-body transition stage (hook rate healthy against its own median, hold rate collapsed), not at the hooks.",
+        "evidence": "\"The thing that's actually broken is hold rate: 18% vs a 35% median \u2014 nearly cut in half... Something between second 3 and second 15 is failing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "10 fresh hooks are not delivered as the fix; the rewrite effort is pointed at the body and transition instead.",
+        "evidence": "Closing production note: \"deliver on it by second 8\u201310 \u2014 that's the fix for a 35%\u219218% hold-rate collapse, more than any new hook copy will be on its own.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Broadening or changing targeting is advised against for this failure pattern.",
+        "evidence": "\"Should you broaden targeting? **Not yet.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The account's own trailing medians are used as the reference for pass/fail, not the published figure.",
+        "evidence": "\"Your own trailing median is 28%. You're 3pts above *your own* baseline\"; \"18% vs a 35% median\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The '30%+ is elite' benchmark is rejected as a target, noting vendor 'good' hook-rate figures conflict (roughly 18% to 40% for the same metric) and each vendor sells the analytics behind its number; external figures serve only as sanity checks.",
+        "evidence": "The response rejects the benchmark generally (\"Cross-report benchmarks vary wildly by vertical, format, and platform mix\") but never cites a specific conflicting vendor range or notes vendors sell the analytics behind their numbers.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The TikTok-versus-Reels hook-rate comparison is called invalid because platforms count a view at different thresholds; a script is compared only against others on the same placement.",
+        "evidence": "\"even slightly different definitions of a '3-second play' between Meta and TikTok... The right comparison is each platform against **its own** trailing median.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response warns hook rate measures attention, not value - ads at identical hook rates can differ several-fold in return - and never to scale on hook rate alone.",
+        "evidence": "No language distinguishing 'attention vs value' or citing several-fold return differences appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The diagnostic sequence is walked in order and only the failing stage is fixed, with the later stages named (low CTR points at the CTA; healthy CTR with low conversion points at the offer or landing page).",
+        "evidence": "The checklist covers hook/hold/CTR splits but never names CTA, offer, or landing-page as separate diagnostic stages.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The fix requires the first body line to extend each hook's premise, with the transition line rewritten per hook.",
+        "evidence": "Hooks only carry a bracketed note of what should follow (e.g. \"(sets up: show the exact moment/behavior, then the treat)\"), not an actual rewritten transition line.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The plan changes one variable at a time and re-tests until the account's own median is beaten.",
+        "evidence": "The sequencing section describes diagnose\u2192fix\u2192small test steps but never frames it as single-variable iterative re-testing against the account's own median.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The metric definitions are carried through correctly (hook rate = 3-second plays divided by impressions; hold rate = 15-second plays divided by 3-second plays).",
+        "evidence": "No explicit formula for hook rate or hold rate is stated anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

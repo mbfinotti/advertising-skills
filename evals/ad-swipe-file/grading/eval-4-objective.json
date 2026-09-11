@@ -1,0 +1,130 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Judges the win rate against the user's own spend tier, roughly 4% under $10K per month, not against top-tier figures.",
+        "evidence": "\"Your spend tier: $7K/month \u2192 sits in the 'under $10K/month' bracket, benchmarked at ~4% win rate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes roughly 5% from 1 winner in 21 launches and concludes the result is within the expected band for the tier, so the swipe file is not failing.",
+        "evidence": "\"Your result: 1 winner / 21 launches = 4.8% \u2014 at or slightly above your tier's benchmark.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that win-rate judgment requires adequate volume, roughly 20 launches per winner, which the 21 launches just meets.",
+        "evidence": "\"the gate only trusts a win-rate reading at 'roughly 20 launches per winner.' You're at 21. Your sample is adequate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects collecting more competitor ads as the corrective lever for this situation.",
+        "evidence": "\"Short answer: No \u2014 don't increase collection volume... Collecting more raw competitor ads increases the size of the archive, not the odds a hypothesis converts to a winner.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the published win-rate benchmarks as directional and heavily weighted toward one vendor's DTC dataset.",
+        "evidence": "\"even those numbers are flagged as 'directional... heavily weighted toward one vendor's DTC dataset.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the expected creative win-rate range of roughly 5-9% varying by spend tier, with the top of the range reserved for very large spenders around $1M+ per month.",
+        "evidence": "\"~4% win rate\" for under $10K and \"This skill's benchmark table only reaches 8% at the $1M+/month tier\" \u2014 range varies by tier with top near $1M+ spend.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a near-zero win rate at adequate volume would indicate a strategy or product-market-fit problem, escalated to an account diagnostic rather than to more collection.",
+        "evidence": "\"The outcome gate is explicit: a near-zero win rate at adequate volume means escalate to ad-account-diagnostic (strategy/PMF problem).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends continuing or refining the current hypothesis pipeline rather than overhauling collection, given the gate passes.",
+        "evidence": "\"Keep the current weekly cadence (20-30 ads/competitor, classify, corroborate, 5-8 hypotheses/session) and redirect the energy the ramp-up would have cost into checking the pipeline-conversion gate and hypothesis scoring discipline instead.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks the pipeline gate separately: what share of saved entries reaches a test status, as its own health measure distinct from win rate.",
+        "evidence": "\"The pipeline gate, the other half of this skill's judgment criteria: at least half of your saved swipe-file entries should eventually reach a test status.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents every benchmark figure as directional inference, never as a fact about the user's account.",
+        "evidence": "\"even those numbers are flagged as 'directional... heavily weighted toward one vendor's DTC dataset.'\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Judges the win rate against the user's own spend tier, roughly 4% under $10K per month, not against top-tier figures.",
+        "evidence": "The analysis compares the observed rate against the podcast's 10-11% figure via confidence interval, not against a defined spend-tier benchmark of ~4%.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes roughly 5% from 1 winner in 21 launches and concludes the result is within the expected band for the tier, so the swipe file is not failing.",
+        "evidence": "It computes \"4.8% observed rate\" but concludes via statistical noise/CI ('this data point is too small to diagnose anything') rather than concluding it's within an expected tier band.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that win-rate judgment requires adequate volume, roughly 20 launches per winner, which the 21 launches just meets.",
+        "evidence": "It argues the opposite \u2014 that 21 is too small and 'roughly 60+ trials' are needed to reliably distinguish rates.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects collecting more competitor ads as the corrective lever for this situation.",
+        "evidence": "\"Ramping up competitor-ad collection increases the number of hypotheses to test, which \u2014 with a fixed budget \u2014 means less money per ad, worse statistical power, and a lower chance of clear winners, not higher.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the published win-rate benchmarks as directional and heavily weighted toward one vendor's DTC dataset.",
+        "evidence": "It flags the benchmark as unreliable podcast marketing/survivorship bias, but never attributes it to 'one vendor's DTC dataset'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the expected creative win-rate range of roughly 5-9% varying by spend tier, with the top of the range reserved for very large spenders around $1M+ per month.",
+        "evidence": "No such range or spend-tier scaling is mentioned anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that a near-zero win rate at adequate volume would indicate a strategy or product-market-fit problem, escalated to an account diagnostic rather than to more collection.",
+        "evidence": "No discussion of a near-zero-win-rate-at-adequate-volume scenario or escalation path.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends continuing or refining the current hypothesis pipeline rather than overhauling collection, given the gate passes.",
+        "evidence": "\"Keep hypothesis volume roughly flat. Concentrate spend on fewer creatives tested longer/deeper... so each test actually reaches significance.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks the pipeline gate separately: what share of saved entries reaches a test status, as its own health measure distinct from win rate.",
+        "evidence": "No mention of a saved-entries-to-test-status ratio as a distinct health metric.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents every benchmark figure as directional inference, never as a fact about the user's account.",
+        "evidence": "\"Treat it as marketing, not a benchmark. 'Best creative teams' is a survivorship-biased sample with unknown methodology.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

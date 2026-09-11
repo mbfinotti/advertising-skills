@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "A daily or weekly news roundup plus official release notes anchor the plan, promoted by the hard October 6 date",
+        "evidence": "\"Hard date: Oct 6 (24 days out) \u2192 promotes roundups/release notes, demotes events and communities.\" PPC Land and the Microsoft/Google blogs appear across all three weeks.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The official Microsoft Advertising blog is included for the bought Microsoft channel",
+        "evidence": "\"Microsoft Advertising blog (about.ads.microsoft.com/en-us/blog) ... platform-official\" appears in Week 1 and 2.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Google's official ads blog is included for the bought Google channel",
+        "evidence": "\"Google Ads & Commerce blog | text | 10 | You know Google, but confirm nothing shifted underneath you\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Events are excluded because their payoff lands after the date (days plus travel for next-quarter value)",
+        "evidence": "No event or conference is mentioned anywhere in the transcript, nor is any reasoning given about event payoff timing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The community reserve is dropped because this is a one-off catch-up, and the response says so",
+        "evidence": "\"Cadence: explicitly one-off ('crash program, not a forever reading habit') \u2192 the skill's standing community-renewal reserve is dropped.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A roundup-archive binge (working back through past issues) replaces the standing community slot",
+        "evidence": "No mention of working back through past roundup issues appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Long-form sources on Microsoft Ads are deliberately promoted against the efficiency ratio because the user holds no mental model of the channel and headlines cannot build one",
+        "evidence": "\"Depth vs. breadth: Microsoft gets depth (you have zero mental model there and headlines can't build one)\" \u2014 Paid Media Pros videos get 50 min/week.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "That promotion is stated as a deliberate exception, not applied silently",
+        "evidence": "Explicitly listed under \"Assumptions I made, stated so you can correct them\" as a deliberate depth-vs-breadth call.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No Meta, LinkedIn, or TikTok official platform sources appear",
+        "evidence": "No such sources appear in any week's table or the bench.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 120",
+        "evidence": "Weekly totals given as \"(~115 min)\", \"(~115 min)\", \"(~110 min)\" \u2014 all under the ~120 min/week (2hr) cap.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a what-they're-selling flag",
+        "evidence": "Every row has a 'Selling' column filled, e.g. \"consulting\", \"tool vendor\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a status and date, with anything unverified labelled as such",
+        "evidence": "\"Microsoft Advertising's own free certification ... **not verified this session**\" and other rows carry explicit dates.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage line confirms Google and Microsoft each have a verified-active source",
+        "evidence": "\"**Channel coverage:** Google \u2713 (5 verified-active sources) \u00b7 Microsoft \u2713 (1 verified-active + 2 flagged...) \u2014 every bought channel has at least one verified-active source: yes\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "A daily or weekly news roundup plus official release notes anchor the plan, promoted by the hard October 6 date",
+        "evidence": "No news roundup source appears anywhere in the plan; the weekly structure centers on Learning Lab modules, import tools, and policy checks instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The official Microsoft Advertising blog is included for the bought Microsoft channel",
+        "evidence": "'Skim the Microsoft Advertising blog/\"what's new\" page for anything shipped in the last few months.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Google's official ads blog is included for the bought Google channel",
+        "evidence": "No Google official blog or source appears anywhere in the crash program.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Events are excluded because their payoff lands after the date (days plus travel for next-quarter value)",
+        "evidence": "No mention of events or their exclusion appears anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The community reserve is dropped because this is a one-off catch-up, and the response says so",
+        "evidence": "'Community forums/blogs as an ongoing habit. You said this isn't a forever reading habit \u2014 treat r/PPC or industry blogs as a one-time ... search in week 3, not a subscription.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A roundup-archive binge (working back through past issues) replaces the standing community slot",
+        "evidence": "No archive-binge activity is proposed anywhere in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Long-form sources on Microsoft Ads are deliberately promoted against the efficiency ratio because the user holds no mental model of the channel and headlines cannot build one",
+        "evidence": "'Do the free Microsoft Advertising Learning Lab core certification modules ... Goal: leave with a \"same/different\" table in your head, not new PPC theory.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "That promotion is stated as a deliberate exception, not applied silently",
+        "evidence": "The Learning Lab is framed explicitly for 'exactly your situation: experienced Google advertiser, new to Microsoft,' distinguishing it from the 'skip PPC 101' instruction elsewhere.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No Meta, LinkedIn, or TikTok official platform sources appear",
+        "evidence": "No Meta, LinkedIn, or TikTok source appears; 'LinkedIn Profile targeting' is discussed only as a Microsoft Ads feature, not a source.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 120",
+        "evidence": "'Week-by-week (2h/week budget)' \u2014 2 hours equals 120 minutes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a what-they're-selling flag",
+        "evidence": "No selling-incentive flags appear on any item (Learning Lab, import tool, blog, editorial policy, etc.).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a status and date, with anything unverified labelled as such",
+        "evidence": "No per-entry status or date labels appear anywhere in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage line confirms Google and Microsoft each have a verified-active source",
+        "evidence": "No such coverage-confirmation line appears, and Google has no source included at all.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

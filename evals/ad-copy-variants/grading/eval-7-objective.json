@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response diagnoses the three-row split as caused by case and separator differences in the tracked values - the analytics tool treats differently-cased values as separate rows.",
+        "evidence": "\"GA4 (and most analytics tools) treat differently-cased or differently-separated values as distinct rows \u2014 that's exactly the failure mode the skill calls out.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It prescribes one identical identifier mirrored across the ad name, the tracking parameter, and the analytics label.",
+        "evidence": "\"That exact string is pasted, unedited, into all three places: the ad platform name, the click-tracking parameter, and the analytics label.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It prescribes all-lowercase values with one consistent separator.",
+        "evidence": "\"lowercase, underscore-separated, no other punctuation\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It separates the stable ID from the human-readable name, so renaming never breaks tracking history.",
+        "evidence": "Table columns: \"ID (canonical \u2014 use everywhere)\" and \"Human name (free to change)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It proposes an ID scheme encoding angle, awareness stage, sequence, and version (e.g. angle_awareness_seq_vN).",
+        "evidence": "\"<angle>_<awareness>_<seq>_v<N>\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It corrects the 'sleep_cool_v2' label: the luxury positioning is a new angle and gets its own new ID at V1, not a V2 of the old ad.",
+        "evidence": "\"sleep_cool_v2 is not a V2 of anything... A new angle gets a new ID at v1.\" leading to `identity_sa_01_v1`.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states that V2/V3 markers are reserved for wording iterations of the same angle after it wins.",
+        "evidence": "\"v2, v3 are wording iterations of that same angle after it wins \u2014 never new angles.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It recommends that one person approve any new tracking value before launch.",
+        "evidence": "\"One person signs off on the ID before it goes live in any of the three systems\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It recommends recording the set in a variant matrix, one row per variant, including a one-line hypothesis per variant.",
+        "evidence": "The Corrected IDs table has a 'Why this family' rationale column but no explicit hypothesis format or recommendation to include a one-line hypothesis per variant.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The matrix includes an evidence-source column tracing each proof point to user-supplied material.",
+        "evidence": "No evidence-source column appears in either the Corrected IDs table or the Rename mapping table.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that a matrix without version codes or tracking mapping is incomplete.",
+        "evidence": "No such statement appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It keeps the naming and tracking glossary (separator, casing, codes) with the matrix rather than in a separate document.",
+        "evidence": "\"Handoff block (keep this with your matrix): Naming/tracking glossary: lowercase, underscore-separated...\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response diagnoses the three-row split as caused by case and separator differences in the tracked values - the analytics tool treats differently-cased values as separate rows.",
+        "evidence": "\"Sleep_Cool_V1 vs sleep_cool_v1 is exactly this bug\" and \"sleep_cool_v1 and sleep-cool-v1 as 'different' ads.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It prescribes one identical identifier mirrored across the ad name, the tracking parameter, and the analytics label.",
+        "evidence": "\"One name, copy-pasted three times... not re-entered, not reformatted, not abbreviated.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It prescribes all-lowercase values with one consistent separator.",
+        "evidence": "\"Lowercase, always.\" and \"Underscore as the only separator... Pick one and ban the other.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It separates the stable ID from the human-readable name, so renaming never breaks tracking history.",
+        "evidence": "The template `{angle}_{variant}` is used identically as both the tracking value and display name; no separate stable ID is introduced.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It proposes an ID scheme encoding angle, awareness stage, sequence, and version (e.g. angle_awareness_seq_vN).",
+        "evidence": "The template is only `{angle}_{variant}` \u2014 no awareness-stage or sequence field.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It corrects the 'sleep_cool_v2' label: the luxury positioning is a new angle and gets its own new ID at V1, not a V2 of the old ad.",
+        "evidence": "\"sleep_cool_v2 (the new hotel-luxury ad) \u2192 luxury-hotel_v1... It's not iteration #2 of the cooling angle \u2014 it's iteration #1 of a brand-new angle.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states that V2/V3 markers are reserved for wording iterations of the same angle after it wins.",
+        "evidence": "Rule 4 only says \"'vN' means 'same angle, new execution' \u2014 never 'new angle'\", with no tie to a declared winner.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It recommends that one person approve any new tracking value before launch.",
+        "evidence": "No approval-gate recommendation appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It recommends recording the set in a variant matrix, one row per variant, including a one-line hypothesis per variant.",
+        "evidence": "No matrix or hypothesis-tracking structure is proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The matrix includes an evidence-source column tracing each proof point to user-supplied material.",
+        "evidence": "No matrix exists in the transcript, so no evidence-source column is present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that a matrix without version codes or tracking mapping is incomplete.",
+        "evidence": "No such statement, and no matrix is proposed at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It keeps the naming and tracking glossary (separator, casing, codes) with the matrix rather than in a separate document.",
+        "evidence": "No matrix exists to co-locate the glossary with; the rules stand alone as a naming convention document.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-bidding-strategy",
+  "scenarios": 10,
+  "expectations_total": 124,
+  "expectations_subjective": 1,
+  "expectations_objective": 123,
+  "pass_rate_with_skill_pct": 80.6,
+  "pass_rate_without_skill_pct": 49.2,
+  "delta_pp": 31.4,
+  "uplift_multiplier": 1.64,
+  "trigger_accuracy_pct": 94.9,
+  "trigger_queries": 118,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Applies the volume-budget derivation (required budget \u2248 target cost \u00d7 volume threshold \u00f7 period) to the account's own numbers, e.g. showing what $120/day at ~$370 supports"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Presents consolidation, optimizing an upstream event with downstream outcome import, and accepting slower diagnosis as the options for thin volume"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Ranks those thin-volume options rather than listing them flat, with consolidation leading on efficiency"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Notes that importing downstream outcomes requires consent/privacy/legal review before customer or deal data is sent to a platform"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Treats manual CPC as a durable strategy with legitimate long-term uses rather than dismissing it as only a bootstrapping phase"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Attaches a refresh cadence or date to the derived inputs (e.g. re-derive the close rate from CRM actuals quarterly)"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Distinguishes a temporary demand swing (loosen, then restore) from a permanent efficiency change (re-derive the target permanently)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Explains that a bidder rewarded on attributed conversions will buy conversions that would have happened anyway"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Attributes the framework to Frederick Vallaeys (or Optmyzr)"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends matching the conversion window to the ~4-month sales cycle rather than platform defaults"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Acknowledges legitimate durable homes for manual bidding (e.g. brand-defense terms, tiny audiences) while rejecting them as grounds in this case"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Applies the profit-goal form 1 \u00f7 (margin \u2212 desired net margin) = 1 \u00f7 0.30 \u2248 3.3x as the tightening destination"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets the initial target at trailing actual (2.6x), not at 4x or the 3.3x goal"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Names the margin buffer between the live target and blended break-even (~0.1x) and flags it as thin"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Applies the pooling compatibility test before any portfolio: same conversion event, comparable margins, same target"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Acknowledges pooling legitimately helps thin campaigns clear signal floors when the pooled goals are genuinely compatible"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Names the diagnostic for pooling gone wrong: blended target looks fine while per-campaign returns diverge, so incompatible campaigns get split out"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that LinkedIn does not offer value-based / return-goal bidding"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Treats bidding capabilities as observed per platform rather than assuming feature parity across platforms"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes Google's return-goal (Target ROAS) carries a documented minimum for Search (15 conversions in the past 30 days) with an as-of or re-verify caveat"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Lists the checks required before pausing on a spike: conversion lag, sample size, tracking health, seasonality, active experiments"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Names the containment exception (runaway spend, policy exposure, broken destination, confirmed tracking corruption) where an immediate hold is right"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Includes a switch trigger and a named approver in the drafted rules"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Recommends cross-checking platform-attributed return against MER or blended business revenue before trusting either team's number"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Attributes the '15 conversions in 30 days' minimum to Target ROAS (the return-goal strategy), not to Target CPA"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Distinguishes enablement thresholds from evaluation samples as two different kinds of published number that folklore merges"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Applies the volume-budget derivation (required budget \u2248 target cost \u00d7 volume threshold \u00f7 period) to the account's own numbers, e.g. showing what $120/day at ~$370 supports"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Presents consolidation, optimizing an upstream event with downstream outcome import, and accepting slower diagnosis as the options for thin volume"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Ranks those thin-volume options rather than listing them flat, with consolidation leading on efficiency"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Notes that importing downstream outcomes requires consent/privacy/legal review before customer or deal data is sent to a platform"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Recommends setting the initial Target CPA at or near the trailing actual (~$370), not at a goal or aspirational number"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Treats manual CPC as a durable strategy with legitimate long-term uses rather than dismissing it as only a bootstrapping phase"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Identifies Bid Cap as the hard per-auction ceiling that never bids above the cap in any single auction"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Notes that platforms position hard bid caps as expert-only controls"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States this misreading ('my cost cap was exceeded') is a common conflation rather than a rare malfunction"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Warns that a strategy switch is a material change that restarts a learning period"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Advises judging the target over an evaluation window expressed in conversion cycles, not on individual conversions"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Names the discriminating under-delivery signals to check, such as spend well below budget or impression share lost to rank"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends tightening only in modest steps (about 10-15%), labelled as practitioner convention rather than platform documentation"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Attaches a refresh cadence or date to the derived inputs (e.g. re-derive the close rate from CRM actuals quarterly)"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Sizes the seasonality adjustment to the expected conversion-rate lift, not the conversion-count multiple"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Explains that conversions tripling does not mean conversion rate triples, since traffic also rises during the sale"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Warns an oversized adjustment causes overspend or budget exhaustion early in the day"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Warns that frequent data exclusions degrade the bidder"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Flags that the 25% sitewide discount changes contribution margin and therefore the break-even/target derivation for the promo period"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Advises against other concurrent target changes during the promo window"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Cites the replication that found the opposite (Edmunds: substitution under 50%, paid brand traffic economically meaningful)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States a strategy can perform well against its own objective while destroying money (platform metrics healthy, lift near zero)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes average return can hold high while the marginal return on the next dollar sits below break-even"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Applies the automation-layering framework of the three human jobs: Pilot, Doctor, and Teacher"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Attributes the framework to Frederick Vallaeys (or Optmyzr)"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Reframes the manual-vs-automated debate into which of the three jobs the account is currently failing"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Diagnoses this account as failing the Teacher job: junk conversion signal feeding the bidder"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Identifies closing the offline loop - pushing CRM stage outcomes with real deal values back to the platform - as the highest-impact B2B move"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends matching the conversion window to the ~4-month sales cycle rather than platform defaults"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends monitoring rules layered on top of the automated bidder as a complement, not a competition"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Acknowledges legitimate durable homes for manual bidding (e.g. brand-defense terms, tiny audiences) while rejecting them as grounds in this case"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States or shows that the folk 4x figure is correct specifically for a 25%-margin business"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Computes per-line break-evens (premium \u2248 1.8x, basics \u2248 4.5x)"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets the initial target at trailing actual (2.6x), not at 4x or the 3.3x goal"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "For a return target, starts at or slightly below trailing actual (the looser-than-achieved direction)"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Tightens toward the profit-goal number in modest steps with a full evaluation window per step"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Requires values net of refunds (or checks refund materiality) before trusting a return target"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Attaches a margin refresh trigger: re-derive on any pricing change and at least quarterly"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Names the diagnostic for pooling gone wrong: blended target looks fine while per-campaign returns diverge, so incompatible campaigns get split out"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Suggests consolidation as the alternative fix for structurally thin campaigns"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States that LinkedIn does not offer value-based / return-goal bidding"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Treats bidding capabilities as observed per platform rather than assuming feature parity across platforms"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Notes Google's return-goal (Target ROAS) carries a documented minimum for Search (15 conversions in the past 30 days) with an as-of or re-verify caveat"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Requires legal/privacy/consent review before Salesforce deal values are sent to any platform"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Runs the value-integrity check (values differentiated, net of refunds/rejects, timely relative to lag) as a prerequisite"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Requires batching pending changes into a single change to trigger one relearn instead of a chain of resets"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Converts the window to days for this account (one cycle \u2248 3.5 weeks, so 1-2 cycles \u2248 4-7 weeks)"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Cites vendor guidance of 1-2 conversion cycles after a target change as the documented unit"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Lists the checks required before pausing on a spike: conversion lag, sample size, tracking health, seasonality, active experiments"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Names the containment exception (runaway spend, policy exposure, broken destination, confirmed tracking corruption) where an immediate hold is right"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Drafts the policy with a rollback trigger stated as an observable condition"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Includes a switch trigger and a named approver in the drafted rules"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Presents the policy sections for the user's validation/approval rather than finalizing unilaterally"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Normalizes the ROAS units before comparing: mobile-UA tooling reports a percentage, web platforms report a multiplier"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Converts 160% to 1.6x and compares like units (making the web store's 4.2x materially ahead on reported figures)"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Warns that comparing the two conventions raw produces a large misread"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Notes AI-default campaign types use automated bidding exclusively, so adoption is itself the bid-strategy decision"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Asks or answers what signal the platform gets under the delegation"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Requires a written exit criterion: what would justify taking control back"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Requires a clean, valid conversion signal as a precondition for delegating"
+      },
+      {
+        "eval_id": 10,
+        "expectation": "Recommends cross-checking platform-attributed return against MER or blended business revenue before trusting either team's number"
+      }
+    ]
+  },
+  "conditions": {
+    "mcp_servers": "enabled",
+    "project_claude_md": "loaded",
+    "user_claude_md": "loaded",
+    "note": "measured before MCP servers and the project CLAUDE.md were removed from the subprocesses; not comparable to skills recorded with those disabled"
+  }
+}

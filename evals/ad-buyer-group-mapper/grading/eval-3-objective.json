@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects exact job-title targeting as the primary proxy and recommends job function plus seniority instead",
+        "evidence": "\"Function + seniority instead of exact title roughly triples reach at similar engagement, and is the correct default proxy here.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States platforms understand only roughly 30-50% of job titles, so every title variant not listed is simply missed",
+        "evidence": "\"Titles also only resolve 30-50% of the real population (stale/inflated self-reported titles, unlisted variants), so title-only targeting misses more people than it catches.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States function plus seniority roughly triples the addressable audience at similar engagement",
+        "evidence": "\"Function + seniority instead of exact title roughly triples reach at similar engagement\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that on professional networks title targeting and seniority targeting are mutually exclusive and cannot be stacked",
+        "evidence": "\"Job Title and Seniority are mutually exclusive facets \u2014 the platform will not let you AND them together.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 2,500-3,500-member audiences as below the roughly 5,000 significance floor and far below the 20,000-50,000 practical floor",
+        "evidence": "\"the floor where results actually reach significance is ~5,000, and the practical floor for delivery at typical budgets is 20,000-50,000\" applied directly to the \"2,500-3,500 members\" audiences described as \"too narrow to spend against\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the audience floor before splitting roles, and merges roles whose proxy audiences collide or undershoot rather than shipping five sub-floor audiences",
+        "evidence": "Section 1 states the floor first, and section 4 concludes: \"Default should be a merged campaign structure \u2014 one or two audiences, role-aware creative variants rotating inside them \u2014 not five standalone campaigns each needing its own budget and delivery volume.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes each member gets exactly one job function on professional networks, so a cross-functional role like Revenue Operations straddles cells and requires targeting two functions to cover one role",
+        "evidence": "The transcript recommends \"Function: Sales AND Training/Sales Enablement (test both \u2014 cross-functional role straddles cells)\" and \"Function: Operations (test Sales too)\" for RevOps, but never explicitly states the underlying mechanism that each member has exactly one job function value, which is why two functions must be tested to cover one role.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that stacking AND conditions below roughly 50,000 members degrades delivery",
+        "evidence": "\"If so, don't stack further AND conditions \u2014 that's the point past which delivery degrades. Widen the seniority band or merge adjacent functions before adding another filter.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends account list plus function plus seniority as the default proxy given the enumerable 900-account market",
+        "evidence": "\"for the 900-account list specifically, account list + function + seniority (not exact title) is the strongest proxy available \u2014 the list is small enough to enumerate, which is exactly the condition where that combination outperforms everything else\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes function and seniority derive from self-reported profiles with no inference, inheriting stale or inflated titles",
+        "evidence": "The transcript attributes staleness/inflation only to titles (\"Titles also only resolve 30-50% of the real population (stale/inflated self-reported titles...)\") and never states that function/seniority fields themselves derive from self-reported data with no inference or inherit the same staleness issue.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the claim that the ABM list means people know the brand: list membership is an account signal and every individual on it is still cold",
+        "evidence": "\"The 900-account ABM list is a targeting signal, not a warm audience... Uploading the list tells the platform who to show ads to; it does not mean those people have engaged with Loopwell.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse demo-request ads as the first touch to the cold list audience",
+        "evidence": "\"Gate the demo ask on a second touch \u2014 someone who already clicked or engaged once \u2014 rather than opening with it.\" and \"Start everyone on the low-friction offer... Move an individual to the demo-request creative only after one engagement\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a narrow audience all seeing one generic ad is worse than a broader audience seeing role variants - creative variants first, filters second",
+        "evidence": "\"Default should be a merged campaign structure \u2014 one or two audiences, role-aware creative variants rotating inside them \u2014 not five standalone campaigns\"; Campaign B uses \"merged creative set covering RevOps Leader and Sales Enablement angles... with the three hypothesis roles as proof-point variants inside the same campaign rather than standalone campaigns\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects exact job-title targeting as the primary proxy and recommends job function plus seniority instead",
+        "evidence": "The transcript explicitly endorses exact-title targeting: \"What's actually right about the plan: exact-title + seniority stacking is the correct instinct for a 5-seat enterprise committee at this ACV... Keep that; just fix the mechanics above.\" It never recommends switching to job function instead of exact title.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States platforms understand only roughly 30-50% of job titles, so every title variant not listed is simply missed",
+        "evidence": "No statement about the percentage of job titles platforms recognize or about missed title variants appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States function plus seniority roughly triples the addressable audience at similar engagement",
+        "evidence": "No mention of function+seniority audience size multiplier exists; the transcript never proposes function-based targeting at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that on professional networks title targeting and seniority targeting are mutually exclusive and cannot be stacked",
+        "evidence": "The transcript does the opposite, repeatedly relying on stacked targeting: \"exact-title + seniority stacking is the correct instinct\" and \"At 2,500\u20133,500 with exact-title + seniority stacking, expect...\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the 2,500-3,500-member audiences as below the roughly 5,000 significance floor and far below the 20,000-50,000 practical floor",
+        "evidence": "The transcript flags the small audience size (\"Audience size is at the floor... LinkedIn Sponsored Content reliably needs 15K\u201350K+ for stable delivery\") but never mentions a ~5,000 significance floor, and its practical floor figure (15K-50K+) differs from and is not framed around the 20,000-50,000 threshold in the rubric.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the audience floor before splitting roles, and merges roles whose proxy audiences collide or undershoot rather than shipping five sub-floor audiences",
+        "evidence": "The revised budget table still ships five separate sub-floor role campaigns (~2,800, ~3,000, ~2,500, ~1,000 members each) rather than merging them to clear the floor; merging is only offered as a conditional option for two of the roles (\"Keep them separate only if the messaging genuinely differs... otherwise merge\"), not applied as the default fix.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes each member gets exactly one job function on professional networks, so a cross-functional role like Revenue Operations straddles cells and requires targeting two functions to cover one role",
+        "evidence": "The transcript discusses RevOps title overlap only in terms of messy self-reported title data (\"Head of Revenue Operations\" and \"VP Revenue Operations\" likely overlap... title data on LinkedIn is self-reported and messy\"), never mentioning a single-job-function-per-member constraint or the need to target two functions to cover one role.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that stacking AND conditions below roughly 50,000 members degrades delivery",
+        "evidence": "\"At 2,500\u20133,500 with exact-title + seniority stacking, expect: CPMs in the $80\u2013150+ range... Frequency cap hit within days... Slow, lumpy spend pacing\" directly ties the stacked title+seniority filters to degraded delivery below the stated 15K-50K+ stable-delivery threshold.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends account list plus function plus seniority as the default proxy given the enumerable 900-account market",
+        "evidence": "The transcript layers title/seniority filters onto the ABM list (\"Layer the same 5-role title/seniority filter onto the ABM list\") only as a fix for one segment, not as the overall default targeting proxy, and uses title rather than job function throughout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes function and seniority derive from self-reported profiles with no inference, inheriting stale or inflated titles",
+        "evidence": "The transcript only notes that \"title data on LinkedIn is self-reported and messy\" in the context of Head/VP RevOps overlap; it does not describe function and seniority fields specifically as self-reported with no inference, nor mention stale/inflated titles generally.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Corrects the claim that the ABM list means people know the brand: list membership is an account signal and every individual on it is still cold",
+        "evidence": "The transcript reinforces rather than corrects the brand-familiarity assumption: \"These 900 accounts know the brand, but 'known' \u2260 'ready to book a call' for a $45K considered purchase.\" It never states that individuals on the list are still cold to the brand.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse demo-request ads as the first touch to the cold list audience",
+        "evidence": "The transcript explicitly avoids a demo CTA as first touch: \"Run two creatives in rotation rather than one hard-CTA ad: Proof/relevance ad... \u2192 Demo-request ad (retarget same audience after 1+ impression).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a narrow audience all seeing one generic ad is worse than a broader audience seeing role variants - creative variants first, filters second",
+        "evidence": "The only creative-refresh guidance given (\"Refresh creative every 10\u201314 days (2\u20133 variants per campaign) and set an explicit frequency cap\") addresses fatigue within the same narrow filtered audience; there is no statement preferring a broader audience with creative variants over narrow filtering.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes the pacing ratio as approximately 0.75, from $10,800 spent against a $14,400 expected-to-date (18 of 30 days of $24,000).",
+        "evidence": "Table shows 'Expected to date | $14,400 | $14,400', 'Spend to date | $10,800 | $10,800', 'Pacing ratio | 0.75 | 0.75'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports a projected period spend of $18,000 if nothing changes.",
+        "evidence": "Table row: 'Projected period spend | $18,000 | $18,000'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports the required daily spend of $1,100 over the 12 remaining days alongside the projection, not the projection alone.",
+        "evidence": "Table row: 'Required daily (remaining) | $1,100 | $1,100' appears alongside 'Projected period spend | $18,000 | $18,000' in the same arithmetic table.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports a signed corrective figure of approximately +$540/day, the gap between the $1,100 required daily and the $560 trailing 7-day average.",
+        "evidence": "Table shows 'Trailing 7-day avg | $560 | $560' and 'Adjust spend by | +$540/day | +$540/day', consistent with $1,100 - $560 = $540.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies the deviation as urgent (ratio below 0.85) while labelling the on-pace/urgent bands a practitioner convention to recalibrate against this account's history, not a platform rule.",
+        "evidence": "\"Status: UNDER-PACING, urgent. 0.75 sits below the 0.85 urgent-band floor (0.90\u20131.10 is on-pace, both bands practitioner convention, not a platform rule \u2014 recalibrate against this account's own history rather than trusting the default).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States an explicit false-alarm gate result before alerting, confirming the deviation is not explained by a first/last partial day, a trivial denominator, a recent budget edit, or intra-day figures.",
+        "evidence": "Gate check table lists '2. First/last partial day | No \u2014 day 18 of 30', '3. Trivial denominator | No \u2014 18 elapsed days is a real sample', '5. Inside a post-edit relearning window | No \u2014 nothing touched in 2+ weeks', '6. Intra-day / unrestated figures | No \u2014 you're reading yesterday's finalized numbers', concluding 'Passes all six. This is a real deviation, worth acting on \u2014 not noise.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the 38% impression share lost to rank against 2% lost to budget as bid competitiveness or quality being the binding constraint, not budget.",
+        "evidence": "\"Impression share lost to rank: 38% \u2014 high\" and \"Impression share lost to budget: 2% \u2014 low\" ... \"it points squarely at bid-capped / target too tight, not budget-capped.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against raising the daily budget from $800 to $1,100, stating that adding budget will not close a rank-constrained gap.",
+        "evidence": "\"Short answer: no, don't raise the daily budget to $1,100. Your impression-share data already tells you budget isn't what's holding you back \u2014 Rank is. Raising the cap adds unused headroom on top of headroom you're already not using.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a bid-side remedy (bid or target adjustment) as the corrective action instead of a budget change.",
+        "evidence": "\"1. Pull the bidding strategy. If it's Target CPA/ROAS, the target is very likely set tighter than the current auction will clear at \u2014 loosen it a modest step (~10%)...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shapes the recommendation as a change packet showing current and proposed values with a rationale.",
+        "evidence": "Change packet table: 'Current \u2192 proposed | Daily budget stays $800 (not the constraint); Target CPA/ROAS or Max CPC loosened ~10% (pending strategy check)' and 'Rationale | Lost-to-rank 38% vs. lost-to-budget 2%; trailing spend already 30% under existing cap'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The change packet includes a verification date and a rollback trigger.",
+        "evidence": "'Verification date | 3\u20135 days after the bid change settles, before judging' and 'Rollback trigger | CPL rises materially with no lift in delivery \u2014 revert the target change'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names a specific owner role or person to execute the change and explicitly hands off rather than executing or promising to execute the change itself.",
+        "evidence": "'Owner | You (paid search lead)' \u2014 the packet assigns execution to the user, not the assistant.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes the pacing ratio as approximately 0.75, from $10,800 spent against a $14,400 expected-to-date (18 of 30 days of $24,000).",
+        "evidence": "Table states: 'Expected spend at even pace | $14,400' and 'Pace ratio | 45% spent \u00f7 60% of month elapsed = 0.75 \u2014 running at 75% of even pace', with Spend to date $10,800.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports a projected period spend of $18,000 if nothing changes.",
+        "evidence": "\"accept landing around $17,000\u201318,000 (\u2248 $10,800 + 12 \u00d7 $560, unchanged trajectory) rather than force full delivery\" \u2014 explicitly computed as the unchanged-trajectory projection, with $18,000 as the upper bound of the stated range.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports the required daily spend of $1,100 over the 12 remaining days alongside the projection, not the projection alone.",
+        "evidence": "Table: 'Daily spend needed to fully deliver $24k | $13,200 \u00f7 12 = $1,100/day', and later the projection '$17,000\u201318,000 (\u2248 $10,800 + 12 \u00d7 $560, unchanged trajectory)' appears in the same response as part of the same analysis, not the projection presented in isolation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports a signed corrective figure of approximately +$540/day, the gap between the $1,100 required daily and the $560 trailing 7-day average.",
+        "evidence": "The transcript reports '$1,100/day' and 'Trailing 7-day actual average | $560/day' separately but never computes or states the gap figure (e.g. '+$540/day') anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Classifies the deviation as urgent (ratio below 0.85) while labelling the on-pace/urgent bands a practitioner convention to recalibrate against this account's history, not a platform rule.",
+        "evidence": "No mention of an 'urgent' classification, a 0.85 threshold, or any discussion of on-pace/urgent bands being a practitioner convention anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States an explicit false-alarm gate result before alerting, confirming the deviation is not explained by a first/last partial day, a trivial denominator, a recent budget edit, or intra-day figures.",
+        "evidence": "Only a brief aside \u2014 'Given no seasonality and no settings changes in two weeks, this 38%/2% split is presumably the steady-state shape of the account' \u2014 touches on recent changes but never addresses partial-day effects, a trivial denominator, or intra-day figures, and is not framed as a gate check performed before alerting.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reads the 38% impression share lost to rank against 2% lost to budget as bid competitiveness or quality being the binding constraint, not budget.",
+        "evidence": "\"The actual constraint is Lost IS to rank: 38%. Over a third of the auctions you're eligible for, you're not winning because your ad rank (bid \u00d7 Quality Score \u00d7 expected impact) isn't competitive enough \u2014 not because you ran out of money. That's a bid/quality lever, not a budget lever.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against raising the daily budget from $800 to $1,100, stating that adding budget will not close a rank-constrained gap.",
+        "evidence": "\"Don't raise the daily budget as the primary move. It's a no-op given 2% lost-to-budget.\" and \"If the current $800 ceiling isn't binding, raising it to $1,100 raises a ceiling that isn't the thing stopping spend. Nothing changes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a bid-side remedy (bid or target adjustment) as the corrective action instead of a budget change.",
+        "evidence": "\"Attack the 38% lost-to-rank instead: ... Loosening the target (higher tCPA ceiling / lower tROAS) is the direct lever... raise bids on the segments... where you're losing rank\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shapes the recommendation as a change packet showing current and proposed values with a rationale.",
+        "evidence": "The recommendations are generic prose options (loosen tCPA, raise bids on losing segments, improve Quality Score inputs) without any specific current-value/proposed-value pairing structured as a change packet, aside from the informal budget aside '$900\u2013950 as a permissive ceiling'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The change packet includes a verification date and a rollback trigger.",
+        "evidence": "No verification date or rollback trigger is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names a specific owner role or person to execute the change and explicitly hands off rather than executing or promising to execute the change itself.",
+        "evidence": "The transcript addresses 'you' throughout with no named owner role/person and no explicit handoff statement (e.g. no 'the PPC manager should...').",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

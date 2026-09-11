@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not let the already-available blended number decide the variant choice for a finance-facing audience",
+        "evidence": "The transcript anchors its restatement on paid CAC ($95 \u2192 $100) rather than on the Q2 blended $62 that happened to be computable, and explicitly marks blended Q1 as 'not computable \u2014 Q1 total marketing spend and Q1 total new customers (organic included) weren't given', refusing to trend on the available-but-unmatched figure. It names the finance audience as the reason to raise rigor rather than lower it: 'promote fully-loaded/rung-1 rigor whenever the audience is finance or investors', and hands off getting margin/ACV for break-even plus Q1 blended components so blended can be trended 'on one ",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not let the already-available blended number decide the variant choice for a finance-facing audience",
+        "evidence": "The response refuses the blended-vs-paid mashup outright ('the numerator switched from paid spend to total spend, and the denominator switched from paid-attributed customers to all customers'), recomputes the like-for-like paid CAC ($95 \u2192 $100, +5.3%) as the headline comparison for the Series B deck, and explicitly blocks the convenience path: 'If you want one \"improvement\" number, use blended CAC vs blended CAC \u2014 but that requires Q1's total marketing spend and total new customers (organic included), which isn't in what you gave me. If Nivara didn't track organic customer count in Q1, say tha",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

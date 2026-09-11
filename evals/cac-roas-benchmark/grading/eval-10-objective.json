@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States up front, at intake, that without a contribution margin the verdict will be withheld - not discovered at the end of the run",
+        "evidence": "Headline (top of document): 'Blended spend efficiency (CAC + MER): \u26a0\ufe0f Insufficient evidence \u2014 rung 1 (break-even) can't be built without contribution margin.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Returns insufficient evidence as the final state, not healthy, despite the stable history",
+        "evidence": "'Verdict: Insufficient evidence to call spend healthy, watch, or unhealthy.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names contribution margin as the exact missing input and finance's margin number as what would unlock the verdict",
+        "evidence": "'Contribution margin | Unknown \u2014 finance mid-audit, unavailable until next month' and 'What unlocks a real verdict: contribution margin... from finance'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the Friday deadline's effect on scope: the run stays on the near-zero-effort variants (blended CAC, MER) and any fully-loaded CAC or margin rebuild is deleted from this run and said so",
+        "evidence": "'Deleted from this run (Friday deadline): fully-loaded CAC, marginal CAC, contribution-margin ROAS/POAS, cohort (closed-won) CAC'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Still computes and presents the blended CAC and MER figures, each labeled with variant, window, and source",
+        "evidence": "Metric table: 'Blended CAC | total marketing spend \u00f7 all new customers | ... | 6 monthly periods | your data' and 'MER | total revenue \u00f7 total marketing spend | ...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the 6-month history as direction and volatility context (stable/flat) while explicitly not issuing a health verdict from the trend alone",
+        "evidence": "'Own history \u2014 computable, flat... This is real evidence, but it answers \"is anything changing,\" not \"is this profitable.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not substitute an external published benchmark to stand in for the missing break-even",
+        "evidence": "'External \u2014 context only, and weak here' with no external figure used to reach the verdict",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly distinguishes insufficient evidence from unhealthy: unknown is not the same as failing",
+        "evidence": "'Treating \"stable\" as \"healthy\" here would be judging rung 3-adjacent folklore or a bare trend read as if it were a verdict, which is the exact failure this check exists to prevent.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not assume or invent a margin figure (for example a 'typical SaaS' 75-80%) to force a verdict out",
+        "evidence": "Contribution margin is marked 'Unknown' throughout; no substitute figure like a 'typical SaaS' margin is used",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the standing investment: contribution margin costs real effort once and near-zero every period after, scheduled for when finance frees up",
+        "evidence": "Transcript only notes 'That's an hour of work once it exists \u2014 this isn't a heavy ask, it's a blocked one' regarding computing off the margin, without framing contribution margin itself as a one-time-effort, near-zero-recurring standing investment",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a definitions record covering the intake answers and naming the variants this run deleted or deferred",
+        "evidence": "Definitions record table plus 'Deleted from this run (Friday deadline): fully-loaded CAC, marginal CAC, contribution-margin ROAS/POAS, cohort (closed-won) CAC'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames what happens next: the named missing input, who provides it, and when the verdict can be issued",
+        "evidence": "'Contribution margin from finance (next month) \u2192 re-run this check for a real rung-1 verdict.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States up front, at intake, that without a contribution margin the verdict will be withheld - not discovered at the end of the run",
+        "evidence": "Opening line: 'Verdict: Spend is stable, not a fire drill \u2014 but \"healthy\" cannot be certified yet. We're missing the one number that would prove it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Returns insufficient evidence as the final state, not healthy, despite the stable history",
+        "evidence": "'We can't yet certify the spend is profitable \u2014 that requires contribution margin, which finance can't produce until next month.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names contribution margin as the exact missing input and finance's margin number as what would unlock the verdict",
+        "evidence": "'Contribution margin per new customer (gross margin \u2212 variable cost-to-serve \u2212 onboarding cost)...requires contribution margin, which finance can't produce until next month.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the Friday deadline's effect on scope: the run stays on the near-zero-effort variants (blended CAC, MER) and any fully-loaded CAC or margin rebuild is deleted from this run and said so",
+        "evidence": "No mention of a Friday deadline or explicit scoping decision about what is excluded from this run.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Still computes and presents the blended CAC and MER figures, each labeled with variant, window, and source",
+        "evidence": "Table showing CAC and MER trend across 6 months with std dev and range noted.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the 6-month history as direction and volatility context (stable/flat) while explicitly not issuing a health verdict from the trend alone",
+        "evidence": "'the honest statement for Monday is: \"spend efficiency is stable\" \u2014 not \"spend is healthy.\" Don't let the room round the first into the second.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not substitute an external published benchmark to stand in for the missing break-even",
+        "evidence": "'PropTech/vertical SaaS B2B gross margins typically run 75\u201380%. At 78% gross margin, MER 3.1x \u2192 ~2.4x gross-profit-to-spend' substitutes an external category benchmark to produce a provisional figure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explicitly distinguishes insufficient evidence from unhealthy: unknown is not the same as failing",
+        "evidence": "'no red flag, pending confirmation' as opposed to 'green light' or a failing verdict.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not assume or invent a margin figure (for example a 'typical SaaS' 75-80%) to force a verdict out",
+        "evidence": "The transcript explicitly invents '75\u201380%' gross margin from category benchmarks to compute a provisional gross-profit-to-spend figure, matching the exact prohibited example.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends the standing investment: contribution margin costs real effort once and near-zero every period after, scheduled for when finance frees up",
+        "evidence": "The transcript only notes finance 'can't produce until next month' without framing this as a one-time investment with near-zero recurring cost thereafter.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a definitions record covering the intake answers and naming the variants this run deleted or deferred",
+        "evidence": "No structured definitions record listing deleted/deferred variants appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames what happens next: the named missing input, who provides it, and when the verdict can be issued",
+        "evidence": "'What unblocks a real verdict next month: Contribution margin per new customer...' names the input, source (finance), and timing (next month).",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

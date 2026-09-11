@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Routes ask (a), the three-way reporting mismatch, to mbfinotti/advertising-skills@ad-attribution-gap.",
+        "evidence": "'a | Meta 210 / GA4 150 / CRM 96 | mbfinotti/advertising-skills@ad-attribution-gap'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not route ask (a) to ad-conversion-tracking, since this is post-launch reconciliation across systems rather than pre-launch verification.",
+        "evidence": "'Not ad-conversion-tracking (that's pre-launch GO/NO-GO; here events are already live and just disagreeing).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes ask (b), choosing among video openings, to mbfinotti/advertising-skills@ad-hook-analyzer.",
+        "evidence": "'b | Pick the video opener from 3 cuts... | mbfinotti/advertising-skills@ad-hook-analyzer'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not route ask (b) to ugc-ad-scripts or ad-creative-test-plan.",
+        "evidence": "'Not ad-creative-test-plan (that sizes budget/duration for a test, doesn't pick the winner) or ugc-ad-scripts (that writes scripts, doesn't score existing cuts).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes ask (c), the stay-current sources request, to mbfinotti/advertising-skills@advertising-radar.",
+        "evidence": "'c | One newsletter + one podcast... | mbfinotti/advertising-skills@advertising-radar'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes ask (d), copy for a single response slot inside an AI assistant, to mbfinotti/advertising-skills@conversational-ad-copy.",
+        "evidence": "'d | Copy for a sponsored answer slot in an AI shopping assistant | mbfinotti/advertising-skills@conversational-ad-copy'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not route ask (d) to ad-copy-variants.",
+        "evidence": "'Not ad-copy-variants (that's feed/search/social copy, explicitly excludes this surface).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns exactly one skill per ask; no ask receives a bundle of skills.",
+        "evidence": "The routing table maps each of a/b/c/d to exactly one skill each.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection's 31 skills.",
+        "evidence": "'mbfinotti/advertising-skills@ad-attribution-gap', '@ad-hook-analyzer', '@advertising-radar', '@conversational-ad-copy' etc.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not fabricate an ordered chain across the four unrelated asks.",
+        "evidence": "'Only one real dependency exists among today's four items \u2014 the rest are independent asks, not a sequence' \u2014 explicitly avoids chaining b, c, d.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks for or proposes bootstrapping advertising-context.md, since the prompt names no existing artifact.",
+        "evidence": "Draft artifact block provided at the end with fields for Hollowbeam, plus 'point me at the actual Hollowbeam project path ... I can't write the artifact here.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Routes ask (a), the three-way reporting mismatch, to mbfinotti/advertising-skills@ad-attribution-gap.",
+        "evidence": "No skill name is cited for ask (a); it's answered with direct analysis and a manual CRM-matching recommendation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not route ask (a) to ad-conversion-tracking, since this is post-launch reconciliation across systems rather than pre-launch verification.",
+        "evidence": "'ad-conversion-tracking' is never mentioned in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes ask (b), choosing among video openings, to mbfinotti/advertising-skills@ad-hook-analyzer.",
+        "evidence": "No skill name is cited for ask (b); it recommends a generic 3-way split test instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not route ask (b) to ugc-ad-scripts or ad-creative-test-plan.",
+        "evidence": "Neither name appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes ask (c), the stay-current sources request, to mbfinotti/advertising-skills@advertising-radar.",
+        "evidence": "No skill name is cited; direct newsletter/podcast recommendations are given instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Routes ask (d), copy for a single response slot inside an AI assistant, to mbfinotti/advertising-skills@conversational-ad-copy.",
+        "evidence": "'No skill in your current set targets paid AI-answer-slot copy specifically... this was written from general GEO/AEO principles' \u2014 explicitly not routed to any mbfinotti skill.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not route ask (d) to ad-copy-variants.",
+        "evidence": "'ad-copy-variants' is never mentioned.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns exactly one skill per ask; no ask receives a bundle of skills.",
+        "evidence": "No mbfinotti skill is assigned to any ask, so no ask receives a bundle.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection's 31 skills.",
+        "evidence": "The only skill named at all is 'copywriting-hooks', explicitly identified as outside the current skill set, not in mbfinotti form and not claimed as part of that collection.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not fabricate an ordered chain across the four unrelated asks.",
+        "evidence": "Each ask is handled under its own lettered heading (a)-(d) with no claimed dependency or ordering between them.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks for or proposes bootstrapping advertising-context.md, since the prompt names no existing artifact.",
+        "evidence": "No mention of advertising-context.md or artifact creation anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

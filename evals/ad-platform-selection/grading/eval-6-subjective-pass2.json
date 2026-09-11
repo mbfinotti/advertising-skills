@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The survey evidence is used to justify the audience-presence score but is not allowed to override the funding floor.",
+        "evidence": "Section 3 ties the survey directly and only to the scoring: \"Podcast's value-5 on audience presence and reachability is direct evidence: 200-signup survey, top answer, buyer named the exact 2\u20133 shows.\" The starved-family promotion is gated on four conditions where evidence is just one, and the floor is a separate, independently-checked condition: \"(3) budget clears the family's floor *by concentrating on known-good shows* (math below)\". Section 5 then enforces the floor rather than letting evidence waive it: \"Start with one show, not two or three at once\", a full-quarter flight at ~$5,000\u20137,50",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The survey evidence is used to justify the audience-presence score but is not allowed to override the funding floor.",
+        "evidence": "The transcript does use the survey as audience evidence for show selection and explicitly privileges it there: 'You have real data I don't: the 2\u20133 shows your 200 survey respondents actually named. Use those as the anchor picks \u2014 survey data beats my guesswork every time,' and 'cross-check against what your survey turned up.' It separately states an economic floor: '$9K/month needs roughly 88 new paying customers/month to be self-funding purely from this channel. Track weekly signups-per-show against that number, not downloads or impressions.' So the two are kept distinct and the survey never ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

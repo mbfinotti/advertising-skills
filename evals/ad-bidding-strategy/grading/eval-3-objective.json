@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses the spend collapse as a target-too-aggressive delivery choke: the platform stops bidding rather than lose money",
+        "evidence": "\"under-delivery (spend near zero), not genuine efficiency... it's the bidder finding the handful of cheapest auctions that clear a floor no account of yours has ever sustained, and refusing to bid on everything else.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the reported ~$102 CPA on near-zero spend as the signature symptom of the choke (under-delivery with great-looking reported efficiency), not as success",
+        "evidence": "\"A $102 CPA that shows up only after spend collapses to a trickle is not the campaign getting more efficient... The 'beautiful' number is a survivorship artifact of a tiny, biased sample, not evidence the target works.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the discriminating under-delivery signals to check, such as spend well below budget or impression share lost to rank",
+        "evidence": "\"spend falling materially below budget for a full evaluation window, combined with impression share lost to rank, reverts the target to trailing actual automatically\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even cost per demo as $3,500 \u00d7 4% = $140",
+        "evidence": "\"break-even CPA = contribution per closed deal \u00d7 demo-to-close rate = $3,500 \u00d7 4% = $140\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Compares the $140 break-even against the $210-240 achieved history and states the account has never operated at or below break-even",
+        "evidence": "\"Break-even is $140. The account has never once, in its best month, gotten below $210.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declares this a unit-economics problem (offer, pricing, funnel conversion, or channel fit), not a bidding problem",
+        "evidence": "\"This is a unit-economics problem \u2014 offer, funnel, targeting, or the demo\u2192close rate \u2014 not a bidding-target problem, and no amount of target-tuning fixes it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to pursue the $95 target through any bid-strategy change",
+        "evidence": "\"There is no bidding policy that hits $95 profitably right now; the platform can't bid its way to an economic condition the account has never demonstrated it can reach.\" and \"$95 isn't a bidding target, it's a wish.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends restoring the target to or near the trailing actual ($240) to recover delivery",
+        "evidence": "\"Set it back to at/near trailing actual \u2014 **$240**, not $95, not even $210.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends tightening only in modest steps (about 10-15%), labelled as practitioner convention rather than platform documentation",
+        "evidence": "\"tighten from trailing actual toward the new economic boundary in small steps (~10-15% per step is practitioner convergent, not vendor-documented \u2014 derive step size from this account's own variance if you can)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires a full evaluation window between steps, expressed in conversion cycles",
+        "evidence": "\"Wait a full evaluation window \u2014 **1-2 conversion cycles** (click-to-demo lag plus reporting delay for this account) \u2014 before any further move\" and \"one full evaluation window per step\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names or quantifies a margin buffer between break-even and the live target",
+        "evidence": "\"the honest planning input is something derived from $210-240 with a margin buffer under $140, not $95.\" \u2014 this names a buffer conceptually but does not quantify a specific number/percentage for it; it references '$140' as the ceiling without stating what the buffer amount actually is.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects finance's reading rather than endorsing 'the target is working'",
+        "evidence": "\"Finance is reading the one metric an aggressive target is guaranteed to produce... as proof of success. It isn't.\" and \"the $102 CPA is not the target working, it's the target failing in a way that looks like success.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches a refresh cadence or date to the derived inputs (e.g. re-derive the close rate from CRM actuals quarterly)",
+        "evidence": "No mention of re-deriving the close rate, deal size, or break-even inputs on any periodic cadence (quarterly or otherwise) appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses the spend collapse as a target-too-aggressive delivery choke: the platform stops bidding rather than lose money",
+        "evidence": "\"Target CPA bidding algorithms don't find $95 demos \u2014 they throttle. When you drop the target that far below historical performance, the algorithm stops bidding on almost all auctions it previously won, because it predicts most of them won't clear $95.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the reported ~$102 CPA on near-zero spend as the signature symptom of the choke (under-delivery with great-looking reported efficiency), not as success",
+        "evidence": "Section header \"Why the 'beautiful $102 CPA' is fake evidence\" followed by: \"A tiny sample \u2014 near-zero spend means single-digit or low-double-digit conversions... it's what a bidding system does right before volume goes to zero.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the discriminating under-delivery signals to check, such as spend well below budget or impression share lost to rank",
+        "evidence": "The transcript only mentions 'near-zero spend' as an observed symptom, but never instructs checking specific diagnostic metrics like spend-vs-budget delivery or 'impression share lost to rank' anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even cost per demo as $3,500 \u00d7 4% = $140",
+        "evidence": "\"Expected value per demo = 4% \u00d7 $3,500 = $140. That's breakeven \u2014 the most you can pay per demo without losing money on it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Compares the $140 break-even against the $210-240 achieved history and states the account has never operated at or below break-even",
+        "evidence": "\"Trailing 60-day actual: $240/demo \u2192 losing ~$100 per demo. Best month ever: $210/demo \u2192 still losing money, even at your historical peak.\" and \"this channel has never been profitable on contribution alone.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declares this a unit-economics problem (offer, pricing, funnel conversion, or channel fit), not a bidding problem",
+        "evidence": "\"Set the real target using the unit economics, not a finance guess.\" and \"in which case the conversation with finance should be about the channel, not the bid.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to pursue the $95 target through any bid-strategy change",
+        "evidence": "\"Revert the target now.\" ... \"A sane target is below that with a margin buffer \u2014 something like $110\u2013125 \u2014 not a number nobody has ever hit.\" No path to $95 is offered anywhere.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends restoring the target to or near the trailing actual ($240) to recover delivery",
+        "evidence": "\"Go back to $240, or whatever the last stable target was, to stop the bleeding while you fix the plan.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends tightening only in modest steps (about 10-15%), labelled as practitioner convention rather than platform documentation",
+        "evidence": "\"Platform guidance (Google/Meta) is ~10\u201320% per change, then a full learning period...\" \u2014 this explicitly attributes the step-size rule to platform documentation, the opposite of the required 'practitioner convention' framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires a full evaluation window between steps, expressed in conversion cycles",
+        "evidence": "\"then a full learning period (roughly 2 weeks or ~50 conversions) before the next move. A cliff-edge cut is what caused the collapse.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names or quantifies a margin buffer between break-even and the live target",
+        "evidence": "\"A sane target is below that with a margin buffer \u2014 something like $110\u2013125 \u2014 not a number nobody has ever hit.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Corrects finance's reading rather than endorsing 'the target is working'",
+        "evidence": "\"Finance is reading noise from a starved algorithm as if it were a stable new equilibrium. It isn't one \u2014 it's what a bidding system does right before volume goes to zero.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches a refresh cadence or date to the derived inputs (e.g. re-derive the close rate from CRM actuals quarterly)",
+        "evidence": "No mention anywhere of periodically re-deriving the 4% close rate, $3,500 deal value, or any other input on a recurring cadence.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

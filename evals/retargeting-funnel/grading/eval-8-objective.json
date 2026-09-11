@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the before/after comparison and the spend regression as proof: observational methods overestimated experimentally measured lift by roughly 7x to 9.5x in large-scale randomized trials",
+        "evidence": "\"observational methods (the kind both your proposals are) overstated experimentally-measured lift by roughly 7x to 9.5x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the research base by name - the Gordon and Zettelmeyer et al. RCT comparison and/or the Blake, Nosko and Tadelis eBay brand-search result - rather than a vague studies-show",
+        "evidence": "\"Gordon, Zettelmeyer et al. (2019) ... Blake, Nosko and Tadelis (2015), eBay\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States why retargeting is the highest-risk case for inflated attribution: it targets exactly the people most likely to convert on their own",
+        "evidence": "\"it's exactly the failure mode retargeting is most exposed to: it targets exactly the people most likely to convert on their own.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the given pattern, 14x platform ROAS beside flat total revenue, as the signature of paying to intercept conversions that were coming anyway",
+        "evidence": "\"14x platform ROAS + flat total new revenue is the textbook signature of cannibalization\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes a randomized incrementality experiment with a named design as the proof the CFO gets",
+        "evidence": "Full 'The actual proof: a randomized incrementality test' section with holdout design specified.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Chooses the design correctly: a platform ghost-ad style lift test where the platform offers one, otherwise an audience holdout withholding a random 10-20% of each stage",
+        "evidence": "\"Platform ghost-ad/conversion-lift study, if your ad account has access ... If not available: randomized audience holdout ... withhold 15\u201320%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions the geo or matched-market design as the heavy option (roughly a quarter of coordination), not the default unless matched-market infrastructure already exists",
+        "evidence": "\"Geo/matched-market holdout \u2014 only if you already run geo tests for other channels; otherwise it's a quarter of coordination overhead you don't need to take on.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the blended-efficiency sanity metric: total revenue divided by total marketing spend, which drops the attribution layer entirely",
+        "evidence": "\"report a blended-efficiency metric every month: total new revenue \u00f7 total marketing spend.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers the decision rule: any stage whose holdout-measured lift is indistinguishable from zero is cut or restructured, no matter its platform ROAS",
+        "evidence": "\"if the holdout group's signup rate is statistically indistinguishable from the exposed group's, retargeting spend is cut or folded back into prospecting \u2014 regardless of what the platform ROAS says.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not use platform-reported conversions or ROAS as the success metric of the new measurement plan",
+        "evidence": "Metric specified as \"new signups (and ideally activated/paying accounts) ... tested for statistical significance\" in holdout vs exposed groups, not platform ROAS.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tracks new-vs-returning conversion share among the per-stage metrics",
+        "evidence": "Section 8 contains no stage-level measurement table and never mentions a new-vs-returning metric anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the expectation that the experiment needs weeks of elapsed time before it answers",
+        "evidence": "\"Duration: run for a full quarter ... a 6\u20138 week minimum would technically be enough statistically\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the before/after comparison and the spend regression as proof: observational methods overestimated experimentally measured lift by roughly 7x to 9.5x in large-scale randomized trials",
+        "evidence": "Both methods are rejected on causal-inference grounds, but no '7x to 9.5x' overestimation figure is cited anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the research base by name - the Gordon and Zettelmeyer et al. RCT comparison and/or the Blake, Nosko and Tadelis eBay brand-search result - rather than a vague studies-show",
+        "evidence": "No named study or researcher is cited; reasoning is presented generically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States why retargeting is the highest-risk case for inflated attribution: it targets exactly the people most likely to convert on their own",
+        "evidence": "'Retargeting by definition only serves people who already showed intent... That population converts at a much higher baseline rate than cold traffic with or without the ad.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the given pattern, 14x platform ROAS beside flat total revenue, as the signature of paying to intercept conversions that were coming anyway",
+        "evidence": "'The fact that total new revenue didn't move is a strong signal this is exactly what happened here'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes a randomized incrementality experiment with a named design as the proof the CFO gets",
+        "evidence": "'the only design that isolates causation is a randomized holdout (incrementality/lift test)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Chooses the design correctly: a platform ghost-ad style lift test where the platform offers one, otherwise an audience holdout withholding a random 10-20% of each stage",
+        "evidence": "'randomly withhold a slice \u2014 typically 10\u201320%... Meta and Google both support this natively (\"Conversion Lift Study\" / \"PSA holdout\")'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Positions the geo or matched-market design as the heavy option (roughly a quarter of coordination), not the default unless matched-market infrastructure already exists",
+        "evidence": "'If your platform doesn't support a native holdout, fall back to a geo-based experiment... Weaker than a randomized audience holdout, but far more defensible than before/after'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the blended-efficiency sanity metric: total revenue divided by total marketing spend, which drops the attribution layer entirely",
+        "evidence": "No such metric is proposed; comparison is holdout vs exposed conversion rate only.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers the decision rule: any stage whose holdout-measured lift is indistinguishable from zero is cut or restructured, no matter its platform ROAS",
+        "evidence": "No explicit pre-committed cut/restructure rule is stated for a null-lift result.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not use platform-reported conversions or ROAS as the success metric of the new measurement plan",
+        "evidence": "'Compare actual signup and revenue rate between holdout and exposed groups \u2014 not platform-attributed conversions, your own product/billing data.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tracks new-vs-returning conversion share among the per-stage metrics",
+        "evidence": "No new-vs-returning breakdown is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the expectation that the experiment needs weeks of elapsed time before it answers",
+        "evidence": "'Run it for at least one full sales cycle (long enough to cover your typical consideration-to-signup lag).'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

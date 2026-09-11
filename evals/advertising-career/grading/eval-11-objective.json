@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Promotes the lateral move to first choice because the user already sits in an adjacent seat (SEO)",
+        "evidence": "\"You already sit in an adjacent seat (SEO exec, same industry, same company or same sector). The skill promotes the lateral move to first choice exactly when that's true\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the lateral move's rationale: it keeps the salary, the employer, and the reversibility that every other entry path spends",
+        "evidence": "\"because it's the only path that keeps the salary, the employer, and the reversibility every other rung spends\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes freelance-first from the menu by name given the evenings-only reversible constraint, because its effort is a standing sales job that runs for years before proof exists",
+        "evidence": "\"Your answer to the effort question \u2014 evenings only, must stay reversible \u2014 deletes freelance-first and apprenticeship from your menu. Not demotes: deletes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes or removes the apprenticeship by name given the no-pay-cut constraint: low pay, 8-15 months, locked to one employer, and UK marketing apprenticeships in decline",
+        "evidence": "\"The Level 3 apprenticeship pays \u00a311,000\u2013\u00a311,500 (funding band, 8\u201315 months) and locks you to one employer for the duration \u2014 that's a direct pay cut\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States deleted options as off the menu rather than ranked last, so they do not return as scope later",
+        "evidence": "\"Deleted by name: freelance-first (standing sales job, income risk), UK Level 3 apprenticeship (pay cut, single-employer lock-in).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends self-funded own spend alongside the lateral move as evenings-compatible proof that doubles as the portfolio",
+        "evidence": "\"Run self-funded spend in evenings, starting now, regardless of whether #1 lands.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that no credible-minimum budget exists for self-funded spend: the full loop matters, not the size",
+        "evidence": "Transcript describes effort as \"a quarter of evenings plus a small budget\" but never states that no credible minimum budget exists because the full loop is what matters.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns of the self-funded path's risks: unmentored bad habits, and no title conferred on its own",
+        "evidence": "No mention of unmentored bad habits or the fact that self-funded work confers no title on its own.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the entry ordering out loud as a default, naming which constraint moved or deleted which option",
+        "evidence": "lists efficiency/value/effort orderings then \"Your answer to the effort question... deletes freelance-first and apprenticeship\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Expresses effort in hours, years committed, and reversibility, never in money",
+        "evidence": "\"Effort: a quarter of evenings plus a small budget of your own money \u2014 no pay-cut exposure\" explicitly mixes a money figure into the effort description.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains why the agency junior default is displaced here, referencing its pay level (UK postings clustering \u00a324,000-\u00a330,000) against the no-pay-cut constraint or the adjacent-seat promotion rule",
+        "evidence": "\"agency junior \u2014 UK postings cluster \u00a324,000\u2013\u00a330,000 (itjobswatch, 2025 postings). That's very likely a pay cut from your current level too.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the lateral move still requires proving platform execution despite the adjacent credibility",
+        "evidence": "\"'I've done SEO for two years' doesn't demonstrate you can run and optimise paid spend; a self-funded campaign does.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Promotes the lateral move to first choice because the user already sits in an adjacent seat (SEO)",
+        "evidence": "'SEO and paid media are adjacent, not separate \u2014 you already have transferable assets... push for an internal lateral move first'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the lateral move's rationale: it keeps the salary, the employer, and the reversibility that every other entry path spends",
+        "evidence": "'push for an internal lateral move first (no pay cut, since it's a transfer, not a new hire)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes freelance-first from the menu by name given the evenings-only reversible constraint, because its effort is a standing sales job that runs for years before proof exists",
+        "evidence": "'Freelancing is fastest \u2014 for someone who already has the skill. You don't yet... Flip the order: build proof first, freelance later'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes or removes the apprenticeship by name given the no-pay-cut constraint: low pay, 8-15 months, locked to one employer, and UK marketing apprenticeships in decline",
+        "evidence": "'the Level 3 apprenticeship builds real skill \u2014 but structurally conflicts with your constraints... otherwise this path is closed to you as stated.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States deleted options as off the menu rather than ranked last, so they do not return as scope later",
+        "evidence": "Freelancing reappears later as step 5 of the plan ('Freelancing, if you still want it, comes after step 3'), i.e. demoted/ranked, not deleted.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends self-funded own spend alongside the lateral move as evenings-compatible proof that doubles as the portfolio",
+        "evidence": "'Weeks 4\u20138, evenings. Run one small campaign with your own money... Spend \u00a3100\u2013300, track results, write it up as a case study.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that no credible-minimum budget exists for self-funded spend: the full loop matters, not the size",
+        "evidence": "A specific figure is given instead: 'Spend \u00a3100\u2013300', contradicting a 'no credible minimum' framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns of the self-funded path's risks: unmentored bad habits, and no title conferred on its own",
+        "evidence": "No such warning about unmentored bad habits or lack of conferred title appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the entry ordering out loud as a default, naming which constraint moved or deleted which option",
+        "evidence": "'Don't take either friend's advice as-is. Skip the apprenticeship unless your employer funds it without a pay cut. Treat freelancing as the last step, not the first.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Expresses effort in hours, years committed, and reversibility, never in money",
+        "evidence": "Effort is expressed partly in money ('Spend \u00a3100\u2013300') alongside hours, contradicting 'never in money'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains why the agency junior default is displaced here, referencing its pay level (UK postings clustering \u00a324,000-\u00a330,000) against the no-pay-cut constraint or the adjacent-seat promotion rule",
+        "evidence": "No agency-junior pay range (e.g. \u00a324,000-\u00a330,000) or comparison is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the lateral move still requires proving platform execution despite the adjacent credibility",
+        "evidence": "'With certs + a real case study, push for an internal lateral move first' \u2014 implies execution proof is still required.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

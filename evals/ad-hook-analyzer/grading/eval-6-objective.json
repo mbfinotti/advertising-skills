@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the 'most thorough fix' framing and picks each revision by rank movement per hour - the cheapest rung that actually removes the failure",
+        "evidence": "\"I'm giving you the cheapest fix that actually clears each candidate's failure, not the most elaborate one\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends an on-screen-text rewrite (the cheapest rung) for G's generic 'smarter way to eat healthy' category language",
+        "evidence": "Instead of rewriting G's line, the transcript retires it: \"G/H \u2014 rung 1 (text decision, already made above): Run H's line, retire G's.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a text/caption-layer fix for F: moving the text out of the TikTok safe-zone position that Meta feed crops",
+        "evidence": "\"F \u2014 rung 2 (caption/text-layer fix): Reposition the existing text line out of the TikTok bottom-safe-zone into Meta's visible frame.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records E as failing the sound-off legibility gate, with the reason that its meaning lives entirely in the founder's spoken words on a muted feed",
+        "evidence": "\"E | FAIL \u2014 first frame is a silent face, zero on-screen text; the entire promise lives in her voiceover, which never reaches a muted Meta viewer\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a re-cut for E that opens on the existing app screen-capture footage, rather than any fix requiring new footage",
+        "evidence": "\"Better version, still no reshoot: re-cut to flash a half-second of the app auto-building the meal week (already exists later in this same cut) into the first 3 seconds\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States G and H are currently one test cell - a wording-only sibling merged at the real-variation gate because the opening visual is identical",
+        "evidence": "\"G: ... FAIL \u2014 merged with H (identical lunchbox-packing footage, text-only difference; the platform won't register these as two variations)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a re-cut from the existing footage library to give H a genuinely different opening visual, or drops/merges H",
+        "evidence": "\"that's rung 3: re-cut a different beat from the same lunchbox-packing raw footage (different angle or moment)...that gets you a real visual delta\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the shoot-a-new-opening-beat and rebuild rungs from this batch's menu rather than listing them as lower-priority options",
+        "evidence": "\"Rungs deleted from this batch's menu: shoot a new opening beat, rebuild the concept \u2014 removed by the 3-week shoot lead time and the \u22652-week creator re-signing window\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the constraint that deleted them: the 6-day launch sits inside the 3-week shoot lead time and/or the expired creator contracts",
+        "evidence": "\"a 3-week shoot lead time and a minimum 2-week creator re-signing window don't fit inside 6 days no matter how the fix is framed\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the in-house editor and owned footage library collapse the effort of re-cuts, re-ranking the revision ladder against this account's reality",
+        "evidence": "\"None of these four opens has a footage-only problem; every failure below is fixable by your in-house editor without new footage.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions the compliance exposure of the relevant rungs: a reshoot reopens creator usage rights, and/or a rewrite adding a checkable claim triggers claim substantiation and platform ad review",
+        "evidence": "No mention of claim substantiation, ad review, or creator usage-rights compliance appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every delivered revision note comes from the text-rewrite, caption-fix, or re-cut rungs only - no recommendation requires new footage",
+        "evidence": "All raise-the-rank notes for E, F, and G/H use caption fixes and re-cuts from existing footage only; \"Rungs deleted from this batch's menu: shoot a new opening beat, rebuild the concept.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks the batch against the 3-opening shipping floor and states the result explicitly",
+        "evidence": "\"3 distinct concepts (talking-head, recipe montage, lunchbox-packing) once E and F clear their gates via the fixes above \u2014 meets the 3-opening floor\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the 'most thorough fix' framing and picks each revision by rank movement per hour - the cheapest rung that actually removes the failure",
+        "evidence": "'Fix (editor-only, no reshoot)' for E, 'a graphics-layer re-edit, not a recut' for F, and 'this costs nothing extra (same footage, swap-only text layer)' for G/H all consistently select minimal-effort fixes over thorough rebuilds.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends an on-screen-text rewrite (the cheapest rung) for G's generic 'smarter way to eat healthy' category language",
+        "evidence": "No text rewrite is proposed for G specifically; instead the recommendation is 'lead with H' and A/B test G against H as-is, not rewrite G's copy.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a text/caption-layer fix for F: moving the text out of the TikTok safe-zone position that Meta feed crops",
+        "evidence": "'Reposition the text layer into Meta's safe zone... using the same footage \u2014 a graphics-layer re-edit, not a recut.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records E as failing the sound-off legibility gate, with the reason that its meaning lives entirely in the founder's spoken words on a muted feed",
+        "evidence": "'The entire pitch lives in audio, but ~85% of Meta feed views start muted. A static face with no text in frame 1 gives cold traffic nothing to read.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a re-cut for E that opens on the existing app screen-capture footage, rather than any fix requiring new footage",
+        "evidence": "'Re-sequence the cut: open on 1\u20132 seconds of the app auto-building a week of meals... then cut to the founder with captions running under her... it's a re-timeline of footage you already have.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States G and H are currently one test cell - a wording-only sibling merged at the real-variation gate because the opening visual is identical",
+        "evidence": "G and H are instead treated as two legitimately distinct test candidates: 'launch G and H as two ads in the same ad set so the first days of delivery data settle it empirically', not merged into a single cell.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a re-cut from the existing footage library to give H a genuinely different opening visual, or drops/merges H",
+        "evidence": "No such recommendation; G and H keep the same footage and are both launched as-is with only copy differing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the shoot-a-new-opening-beat and rebuild rungs from this batch's menu rather than listing them as lower-priority options",
+        "evidence": "'None of these fixes require new footage \u2014 they're all edit/graphics-layer work your in-house editor can turn around in hours, not days.' No reshoot option is offered at all.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the constraint that deleted them: the 6-day launch sits inside the 3-week shoot lead time and/or the expired creator contracts",
+        "evidence": "'The expired creator contracts block a *new shoot* \u2014 that's the 2-week/3-week wall you already know about.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the in-house editor and owned footage library collapse the effort of re-cuts, re-ranking the revision ladder against this account's reality",
+        "evidence": "'they're all edit/graphics-layer work your in-house editor can turn around in hours, not days.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions the compliance exposure of the relevant rungs: a reshoot reopens creator usage rights, and/or a rewrite adding a checkable claim triggers claim substantiation and platform ad review",
+        "evidence": "'get legal to confirm, per asset, that the *usage license* on existing footage is still active for a new flight... it's the one thing that can kill all four options regardless of creative quality.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every delivered revision note comes from the text-rewrite, caption-fix, or re-cut rungs only - no recommendation requires new footage",
+        "evidence": "'None of these fixes require new footage.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks the batch against the 3-opening shipping floor and states the result explicitly",
+        "evidence": "No mention of a 3-opening shipping floor or whether the batch (E, F, G, H) meets it.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

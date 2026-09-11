@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The ROAS-drop answer opens by scoping the comparison window, noting a drop measured over a week or less is often noise",
+        "evidence": "\"Three weeks is enough to rule out noise, but I'd still confirm this against the same three weeks last month and against a longer trailing average\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The ROAS-drop diagnostic is presented as an ordered sequence, not an unordered list of possibilities",
+        "evidence": "\"I'd check these in order of hit-rate per minute spent checking, not just likelihood\" followed by numbered steps 1-5",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creative health comes first, citing fatigue as the cause roughly 60-70% of the time, checked via frequency and the age of the top-spending creatives",
+        "evidence": "\"Creative health (check first \u2014 causes ~60-70% of drops)... I'd pull frequency and the age of the top-spending ads.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Audience saturation comes second, identified by rising CPM against flat reach",
+        "evidence": "\"Audience saturation... Rising CPMs against flat or shrinking reach on the core segments.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Site-side conversion comes third: landing page, offer, price, or checkout changes the ad account cannot fix",
+        "evidence": "\"Did anything change on the landing page, offer, subscription pricing, or checkout... The ad account can't fix a site problem\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attribution or tracking accuracy comes last, with the note that a reporting artefact is not a performance drop",
+        "evidence": "Transcript places attribution last (\"I'd check this last precisely because it's the one people jump to first and it's rarely the answer\") but never states the concept that a reporting artefact is not a genuine performance drop.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the ordering's rationale: hit rate per minute of checking, not likelihood alone (in-account checks take minutes; site-side is a cross-team ask)",
+        "evidence": "\"Creative and audience are visible in the account in minutes; site-side and attribution mean pulling in other teams, so I check them last\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Closes the diagnosis with the business metric that decides it: blended MER or contribution, not the platform dashboard alone",
+        "evidence": "\"I'd report it against blended MER or contribution margin, not just platform ROAS\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The p=0.08 answer refuses the binary significant-or-not framing and answers with a decision frame",
+        "evidence": "\"Don't answer 'significant' or 'not significant' \u2014 that's the trap. Answer with a decision frame.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The decision frame weighs the cost of being wrong in each direction: cheap-to-keep with small downside means ship and keep measuring, expensive or irreversible means extend the test",
+        "evidence": "\"If this was a creative or copy variant \u2014 cheap to keep running... I'd ship it\" vs \"If it's something expensive or hard to reverse... I'd extend the test\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that naming the threshold as something that should have been agreed before the test reads as senior",
+        "evidence": "\"naming 'the threshold should have been set before the test' is the tell interviewers listen for\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The budget-doubling answer names audience saturation or diminishing marginal returns: the algorithm reaches beyond the efficient core of the audience to spend the larger budget",
+        "evidence": "\"That's audience saturation \u2014 diminishing marginal returns... it reaches past the efficient core into colder, more competitive, more expensive placements\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects the budget-doubling mechanics to the rising-CPM signal or identifies it as the saturation diagnosis in disguise",
+        "evidence": "\"CPM goes up because you're now bidding against more advertisers for scarcer attention within that audience\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The ROAS-drop answer opens by scoping the comparison window, noting a drop measured over a week or less is often noise",
+        "evidence": "The opening frame only asks whether it's blended vs platform ROAS and whether revenue or spend changed; no mention of comparison-window length or noise.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The ROAS-drop diagnostic is presented as an ordered sequence, not an unordered list of possibilities",
+        "evidence": "'Then walk the diagnosis top-down, ruling out layers in order: 1. Tracking/measurement first... 2. External/demand-side factors... 3. Supply-side/account structure... 4. Funnel breakdown'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creative health comes first, citing fatigue as the cause roughly 60-70% of the time, checked via frequency and the age of the top-spending creatives",
+        "evidence": "Creative fatigue is discussed under item 3 (supply-side), not first, and no 60-70% figure is cited; tracking is placed first instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Audience saturation comes second, identified by rising CPM against flat reach",
+        "evidence": "Audience saturation is bundled into item 3 (supply-side), not ranked second, and framed via 'exhausted lookalikes/interest stacks' rather than 'rising CPM against flat reach'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Site-side conversion comes third: landing page, offer, price, or checkout changes the ad account cannot fix",
+        "evidence": "'Landing page/offer changes' is one bullet buried inside item 3, not ranked as a distinct third category.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Attribution or tracking accuracy comes last, with the note that a reporting artefact is not a performance drop",
+        "evidence": "Tracking is placed first ('Tracking/measurement first (cheapest to check, most commonly the actual answer)'), the opposite order from the rubric.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the ordering's rationale: hit rate per minute of checking, not likelihood alone (in-account checks take minutes; site-side is a cross-team ask)",
+        "evidence": "The stated rationale is 'cheapest to check, most commonly the actual answer', not a 'minutes vs cross-team ask' framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Closes the diagnosis with the business metric that decides it: blended MER or contribution, not the platform dashboard alone",
+        "evidence": "The close only says to build a metrics table and present a fix list within 48 hours; it never returns to blended MER/contribution as the deciding metric.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The p=0.08 answer refuses the binary significant-or-not framing and answers with a decision frame",
+        "evidence": "'p=0.08 means \"inconclusive,\" not \"no.\" My job is to decide whether it's worth more time to find out, not to treat 0.05 as a magic line.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The decision frame weighs the cost of being wrong in each direction: cheap-to-keep with small downside means ship and keep measuring, expensive or irreversible means extend the test",
+        "evidence": "'I'd calculate what a false positive costs... versus what a false negative costs... In paid social, the cost of being wrong is usually low and reversible'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that naming the threshold as something that should have been agreed before the test reads as senior",
+        "evidence": "No mention of pre-agreeing a significance threshold before running the test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The budget-doubling answer names audience saturation or diminishing marginal returns: the algorithm reaches beyond the efficient core of the audience to spend the larger budget",
+        "evidence": "'It exhausts the highest-intent, cheapest-to-reach slice of the audience within hours...' and 'Frequency and diminishing returns on the existing audience.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects the budget-doubling mechanics to the rising-CPM signal or identifies it as the saturation diagnosis in disguise",
+        "evidence": "'the CPM/ROAS pattern here isn't a red flag that something's broken \u2014 it's the expected signature of scaling too fast into a limited audience.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

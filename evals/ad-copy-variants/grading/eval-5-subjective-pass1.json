@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recommended angles skew to B2B arguments (quantified outcome, risk or compliance reduction, peer proof, total cost of ownership) for a reader building an internal case.",
+        "evidence": "Only 1 of the 3 recommended angles is squarely a B2B internal-case argument: 'Risk/compliance reduction \u2014 Fewer incidents \u2192 fewer claims \u2192 lower exposure (insurance, liability, DOT)', with explicit internal-case rationale ('the angle a safety or ops buyer can carry into a budget conversation \u2014 a B2B ad has to arm the reader with a line they can repeat in a meeting'). The other two skew away from the rubric's families: 'Mechanism' (how the product works \u2014 scorecards, coaching triggers, alerts) and 'Pain' (the cost of not having visibility today), which is generic and not framed as TCO or quanti",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recommended angles skew to B2B arguments (quantified outcome, risk or compliance reduction, peer proof, total cost of ownership) for a reader building an internal case.",
+        "evidence": "The answer never recommends messaging angles at all \u2014 no peer proof, TCO, compliance/risk-reduction, or quantified-outcome creative angles are proposed. It only references the two angles already in play ('cost-savings ad', 'driver-safety' segment) as existing assets, and prescribes 'a different headline or CTA, same cost-savings angle' without specifying any angle content. The only quantified B2B-style argumentation appears in the 'What to tell your CMO' script (18 demos/month, 1.5 per variant, $14k sales-led product), which serves an internal case for test design rather than ad angles. Partia",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

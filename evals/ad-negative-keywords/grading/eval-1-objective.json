@@ -1,0 +1,106 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to name any specific candidate negative keyword for the live account before receiving its search term report",
+        "evidence": "\"I don't have (and haven't seen) a search term report for it. I'm not going to hand you a list of \\\"junk keywords\\\" invented from a general sense of what B2B payroll software attracts\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requests an export of the search term report (search query report) as the prerequisite for the live account",
+        "evidence": "\"Send me the search term report (Google Ads: Insights & reports \u2192 Search terms, or pull via API).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a list invented without query data has no evidence of what actually matches, and that its cost - blocked converting queries - is invisible",
+        "evidence": "\"a blind list has real odds of silently zeroing out a keyword that's actually paying for itself, and you'd have no way to see that it happened.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Allows a starter exclusion list only for the brand-new zero-history campaign",
+        "evidence": "\"New product line campaign \u2014 pre-launch starter list (exception, per no-history rule)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the starter list as pre-launch and says to review it against real queries after 7-14 days",
+        "evidence": "\"Label: pre-launch starter \u2014 review against real queries 7\u201314 days after launch (Mon Sept 14 \u2192 review window Sept 21\u201328, 2026).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks what counts as a conversion and for the target CPA, and asks for the account's CPC range",
+        "evidence": "\"What counts as a conversion, and what's your target CPA?\" / \"Average CPC range on this account?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks which queries or themes must never be blocked (brand terms, converting themes, deliberate competitor bidding)",
+        "evidence": "\"Any terms that must never be touched \u2014 brand terms, converting themes, or competitor names you deliberately bid on?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks whether this is a one-off cleanup or a standing maintenance job",
+        "evidence": "\"want me to set this up as a recurring 7\u201314 day pass rather than a one-off?\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to name any specific candidate negative keyword for the live account before receiving its search term report",
+        "evidence": "The transcript immediately provides an extensive, ready-to-paste list of specific negatives for the live account (sections A-J, e.g. '\"payroll jobs\"', '\"free payroll software\"', '\"adp login\"') without ever requesting the account's search term data first.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requests an export of the search term report (search query report) as the prerequisite for the live account",
+        "evidence": "No request for a search term report appears anywhere; the response opens with 'Here's a ready-to-paste negative keyword list for Brightpath HR' and proceeds directly to the list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that a list invented without query data has no evidence of what actually matches, and that its cost - blocked converting queries - is invisible",
+        "evidence": "There is no discussion anywhere in the transcript of the risk that an invented list has no evidentiary basis or that it could silently block converting queries.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Allows a starter exclusion list only for the brand-new zero-history campaign",
+        "evidence": "The transcript provides a full detailed list for 'ALL existing campaigns today' (Section 1) in addition to the new-campaign starter list (Section 2), so the starter-list treatment is not reserved only for the new campaign.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels the starter list as pre-launch and says to review it against real queries after 7-14 days",
+        "evidence": "The closest statement is '5. First 7 days: check the Search Terms report daily, not weekly' \u2014 this recommends daily checking for 7 days, not a 7-14 day review of the starter list against real queries, and the list is never labeled 'pre-launch.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks what counts as a conversion and for the target CPA, and asks for the account's CPC range",
+        "evidence": "No questions about conversion definition, target CPA, or CPC range appear; the transcript instead states baked-in assumptions ('You sell to SMB/mid-market...') and asks the reader to flag if wrong.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks which queries or themes must never be blocked (brand terms, converting themes, deliberate competitor bidding)",
+        "evidence": "The transcript only states an assumption to be corrected ('You're not running a competitor-conquesting strategy right now... if you *are* bidding on competitor names, ignore section F entirely') rather than actively asking what must never be blocked, and never asks about converting themes or brand terms at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks whether this is a one-off cleanup or a standing maintenance job",
+        "evidence": "No such question appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Judges the file by what it feeds into testing, not by its size or coverage.",
+        "evidence": "The answer's opening move is exactly this reframe: \"The real number isn't 240. It's 6.25%\" \u2014 15 of 240 saved ads ever reached a brief or a test \u2014 and it names the standard: \"Below a 50% floor, a swipe file is an archive, not a pipeline.\" It explicitly rejects the size/coverage framing (\"Doubling collection to 40 ads/week does not fix this \u2014 it makes it worse\"; \"The CMO's instinct ('more coverage') is solving for the wrong variable\"; \"40/week is a vanity metric\") and even cuts coverage from 6 competitors to a 3\u20135 direct set. The remedies are all conversion-oriented (mandatory `test_status`, ses",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Judges the file by what it feeds into testing, not by its size or coverage.",
+        "evidence": "The response opens by reframing the question away from volume: '240 ads / 6 months, 15 used = 6% hit rate' and argues doubling collection 'gets you ~10 useful ads/month buried in ~680 saved ones.' It explicitly replaces the metric \u2014 '\"Ads collected\" is a vanity number' \u2014 with utilization rate: 'curated ads referenced in a brief or test, divided by curated ads added, per month. Target 25-30%.' The whole structure (diagnose sourcing/surfacing/framing, mandatory hypothesis field, 'Close the loop to briefs', retire ads after ~90 days unused, cap human-touched promotion while letting automation abs",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects $30,000 as a valid CAC because April's 2 closed deals came from earlier lead cohorts while April's spend bought a cohort that closes months later - in-period division mixed two cohorts",
+        "evidence": "'the 2 deals that closed in April almost certainly came from leads generated ~4 months earlier (around December)... Dividing this month's spend by this month's closed-won count mixes two unrelated cohorts'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the window being shorter than the ~4-month sales cycle as an explicit evidence-gate condition",
+        "evidence": "'window \u2265 lag: no \u2014 1 month vs ~4-month sales cycle'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Returns insufficient evidence as the verdict state, not unhealthy or catastrophe",
+        "evidence": "'Verdict: insufficient evidence for any CAC or closed-won-based judgment this period.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the First Page Sage $239 as a combined organic-plus-paid figure from a sample the agency itself discloses as roughly 75% organic-weighted, making it a variant mismatch against paid-only spend",
+        "evidence": "'self-disclosed as 75% organic / 25% paid weighted. It's a combined organic+paid number'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse killing paid on the strength of the benchmark comparison",
+        "evidence": "'Don't use either number to decide whether to kill paid before May.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes CPL as 60,000 / 500 = $120, labeled with variant, window, and source",
+        "evidence": "'CPL | paid spend \u00f7 leads | $120 | April, in-period | paid platform + CRM'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even CPL as ACV x lead-to-close rate: 18,000 x 1.5% = $270",
+        "evidence": "'Break-even CPL | ACV \u00d7 historical lead-to-close (1.5%) | $270'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes cost per SQL as 60,000 / 40 = $1,500",
+        "evidence": "'Cost per SQL | paid spend \u00f7 SQLs | $1,500'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the CPL and cost-per-SQL reads as interim signals while the cohort is immature, explicitly not verdicts",
+        "evidence": "'Interim funnel read (CPL, cost/SQL): healthy... This is a leading indicator, not a verdict.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes cohort measurement: group leads by month generated and measure revenue at 90/180/365 days",
+        "evidence": "Only states 'Cohort tracking by lead-generation month, so April's cohort can be re-measured when it matures (~August, at the ~4-month mark)' \u2014 no 90/180/365-day measurement scheme is specified",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the allowable first-year CAC ceiling as ACV x gross margin: 18,000 x 0.75 = $13,500, for use once the cohort matures",
+        "evidence": "'Allowable CAC (first-year) | ACV \u00d7 gross margin = $18,000 \u00d7 0.75 | $13,500'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly distinguishes in-period CAC from lagged/cohort CAC",
+        "evidence": "'In-period \"CAC\" (invalid, shown for correction)' vs. 'Projected paid CAC at cohort maturity (estimate, not measured)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names exactly what would unlock the verdict: the April cohort reaching maturity",
+        "evidence": "'April's spend cohort won't finish closing until roughly August' and named gaps list cohort tracking as what would unlock a full verdict",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects $30,000 as a valid CAC because April's 2 closed deals came from earlier lead cohorts while April's spend bought a cohort that closes months later - in-period division mixed two cohorts",
+        "evidence": "'The 2 deals that closed in April were driven by leads generated back around December \u2014 not by the $60,000 you spent in April... Dividing this month's spend by this month's closes...is not a CAC.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the window being shorter than the ~4-month sales cycle as an explicit evidence-gate condition",
+        "evidence": "'You're attributing April spend to April closes, but your sales cycle is 4 months.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Returns insufficient evidence as the verdict state, not unhealthy or catastrophe",
+        "evidence": "The transcript issues a positive projected verdict instead: 'That's a healthy payback, not a channel to shut down' based on a projected $8,000 CAC.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the First Page Sage $239 as a combined organic-plus-paid figure from a sample the agency itself discloses as roughly 75% organic-weighted, making it a variant mismatch against paid-only spend",
+        "evidence": "The transcript only says 'I can't verify it right now (no search access)' and questions plausibility generically, without mentioning organic/paid composition.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse killing paid on the strength of the benchmark comparison",
+        "evidence": "'Don't kill paid on this basis.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes CPL as 60,000 / 500 = $120, labeled with variant, window, and source",
+        "evidence": "No CPL calculation appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even CPL as ACV x lead-to-close rate: 18,000 x 1.5% = $270",
+        "evidence": "No such break-even CPL calculation appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes cost per SQL as 60,000 / 40 = $1,500",
+        "evidence": "No cost-per-SQL calculation appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels the CPL and cost-per-SQL reads as interim signals while the cohort is immature, explicitly not verdicts",
+        "evidence": "Neither CPL nor cost-per-SQL figures are computed, so no such labeling occurs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposes cohort measurement: group leads by month generated and measure revenue at 90/180/365 days",
+        "evidence": "The transcript only vaguely proposes 'spend in month X vs. eventual closes from month X's leads, tracked forward' without specifying 90/180/365-day measurement points.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the allowable first-year CAC ceiling as ACV x gross margin: 18,000 x 0.75 = $13,500, for use once the cohort matures",
+        "evidence": "'ACV $18,000 \u00d7 75% margin = $13,500 gross profit in year one alone' used to check the $8,000 CAC against.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly distinguishes in-period CAC from lagged/cohort CAC",
+        "evidence": "Contrast drawn between 'the $30,000 figure is a math artifact' and 'Projected cohort CAC: $60,000 \u00f7 7.5 \u2248 $8,000'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names exactly what would unlock the verdict: the April cohort reaching maturity",
+        "evidence": "The transcript never frames cohort maturity as the specific condition unlocking a verdict; it already delivers a favorable verdict via projection instead.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

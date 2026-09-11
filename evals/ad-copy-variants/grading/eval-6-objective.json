@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response does not deliver 8 more free-consult headlines as requested, or makes any new copy conditional on resolving the mismatch first.",
+        "evidence": "\"Why I won't draft the 8 as asked\" followed by two paths and 'pick one and I'll draft immediately' \u2014 no headlines are drafted in this reply.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It diagnoses strong CTR with weak conversion as the ad overpromising relative to the page or offer - a message-match or destination problem.",
+        "evidence": "\"This is the exact 'strong CTR / weak conversion' pattern the skill calls out as a destination/message-match problem, not a copy problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states explicitly that this pattern is not a reason to write more headlines.",
+        "evidence": "quoted from the skill: \"the ad overpromised relative to the page or the offer... not a reason to write more headlines.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It identifies the specific mismatch: the ad promises a free consult that appears nowhere on the landing page.",
+        "evidence": "\"'Free plant doctor consult' isn't on the page at all.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It puts the decision to the user - add the consult offer to the page, or retire/adjust the angle - rather than silently shipping either way.",
+        "evidence": "\"Two real paths \u2014 pick one and I'll draft immediately\" followed by the two options and a closing question.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It reads the funnel top-down (attention, CTR, conversion rate, cost per result) and stops at the first broken gate.",
+        "evidence": "\"Per the skill's funnel read (attention \u2192 CTR \u2192 conversion \u2192 CPA), you stop at the first broken gate, not the strongest metric.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It disputes calling the consult ad the winner: overpromise buys clicks that never convert.",
+        "evidence": "\"The 2.1% CTR isn't fake, though \u2014 it proved something resonates. It's just not 'the box.'\" combined with framing it as an overpromise problem rather than a win.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It attributes the CTR result to the copy's promise and the conversion failure to the promise-page gap, not to bidding, audience, or tracking as the primary diagnosis.",
+        "evidence": "The entire diagnosis is framed around message-match/destination mismatch; no mention of bidding, audience targeting, or tracking issues as the cause.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any replacement copy it drafts promises only what the landing page actually offers (the subscription box).",
+        "evidence": "No replacement copy is drafted in this transcript, so there is no evidence to confirm this claim.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any replacement copy is labelled with angle, awareness stage, formula, and version.",
+        "evidence": "No replacement copy is drafted in this transcript, so there is no evidence to confirm this claim.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It does not produce sample-size or statistical-significance calculations for the next test.",
+        "evidence": "No sample-size or statistical-significance calculations appear anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response does not deliver 8 more free-consult headlines as requested, or makes any new copy conditional on resolving the mismatch first.",
+        "evidence": "\"Since you asked for headlines and Option B is the one that's safe to run without touching the landing page, here are 8 built on that\" \u2014 delivers Option B (not free-consult) copy, with Option A offered only conditionally.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It diagnoses strong CTR with weak conversion as the ad overpromising relative to the page or offer - a message-match or destination problem.",
+        "evidence": "\"This is a message-match failure, not a headline-quality win.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states explicitly that this pattern is not a reason to write more headlines.",
+        "evidence": "\"If you write 8 more variants of 'free consult'... you'll very likely repeat the pattern... Worth deciding this on purpose rather than by accident.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It identifies the specific mismatch: the ad promises a free consult that appears nowhere on the landing page.",
+        "evidence": "\"when those people land on a page that sells a $29/month box with zero mention of any consult.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It puts the decision to the user - add the consult offer to the page, or retire/adjust the angle - rather than silently shipping either way.",
+        "evidence": "\"Two ways to actually use this insight\" (Option A / Option B) followed by \"If you'd rather chase Option A instead... say so.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It reads the funnel top-down (attention, CTR, conversion rate, cost per result) and stops at the first broken gate.",
+        "evidence": "Walks CTR \u2192 conversion \u2192 CPA (\"2.1% CTR\" ... \"Conversion < half the others, CPA ~2x\") and stops the diagnosis at the message-match gate.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It disputes calling the consult ad the winner: overpromise buys clicks that never convert.",
+        "evidence": "\"CTR is not 'this ad is winning.' CTR is 'this ad's promise matches what a lot of clickers want.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It attributes the CTR result to the copy's promise and the conversion failure to the promise-page gap, not to bidding, audience, or tracking as the primary diagnosis.",
+        "evidence": "No mention of bidding, audience targeting, or tracking issues; attribution is entirely to the promise/page mismatch.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any replacement copy it drafts promises only what the landing page actually offers (the subscription box).",
+        "evidence": "Option B is framed as \"headlines around expertise/care-guarantee language that's actually true of the box you're selling today.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any replacement copy is labelled with angle, awareness stage, formula, and version.",
+        "evidence": "The 8 headlines are a plain numbered list (1-8) with no labels.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It does not produce sample-size or statistical-significance calculations for the next test.",
+        "evidence": "No sample-size or significance math appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

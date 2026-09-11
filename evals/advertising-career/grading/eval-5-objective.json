@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Challenges the 20-hour plan instead of sequencing it",
+        "evidence": "\"Your 20 blocked hours are the trap, not the resource.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends time-boxing the take-home to 2-4 hours",
+        "evidence": "\"Set the real time box: 4 hours, not 20.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the documented pattern: companies brief 'a few hours' while candidates report 12-30+ hours",
+        "evidence": "\"exactly the scenario candidates report inflating to 12\u201330+ unpaid hours\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the brief as a full go-to-market plan for an unlaunched product, the exact shape to push back on",
+        "evidence": "\"'A few hours' briefing a full go-to-market plan (channel strategy + budgets + audience research + creative concepts + launch calendar + 12-slide deck) for an unlaunched product line is exactly the scenario candidates report\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers a scoped alternative (e.g. focus the hours on the channel and measurement plan and name what a full plan would additionally need)",
+        "evidence": "\"Work order inside the 4 hours\" list with 5 time-boxed items",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises stating the time-box explicitly in the deliverable",
+        "evidence": "\"State this on slide 1 or 2 of the deck: Time-boxed to ~4 hours as briefed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises stating every assumption explicitly in the deliverable",
+        "evidence": "\"Assumptions: [target segment definition, no historical spend data, no access to Lumenmatic's CRM/analytics].\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises leading with reasoning rather than production polish, deprioritising the 12-slide deck",
+        "evidence": "\"lead every slide with the reasoning or the one number that matters... deliberately starved of design polish\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions the documented idea-theft risk around unpaid take-home work",
+        "evidence": "\"unpaid take-home ideas being implemented after a ghost is documented\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the take-home as the one interview format whose effort the candidate controls, with the freed hours redirected to higher-value rehearsal such as the live audit",
+        "evidence": "Transcript says only \"Reclaim the other ~16 hours\" / \"gets you back most of your weekend\" without redirecting freed hours to higher-value rehearsal like the live audit.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not produce or outline a full go-to-market plan sized to the user's 20-hour scope",
+        "evidence": "the plan caps work at ~4 hours and explicitly deletes primary research, full media plan, polished design, and full competitive teardown",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Challenges the 20-hour plan instead of sequencing it",
+        "evidence": "The transcript flags concern but then provides a full detailed 4-session, ~20h schedule, sequencing rather than challenging the time commitment.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends time-boxing the take-home to 2-4 hours",
+        "evidence": "Instead it validates the 20-hour plan: 'You've already priced this correctly by blocking 20 hours instead of trusting the \"few hours\" framing.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the documented pattern: companies brief 'a few hours' while candidates report 12-30+ hours",
+        "evidence": "No specific hour-range citation is given, only a general 'known pattern' remark.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the brief as a full go-to-market plan for an unlaunched product, the exact shape to push back on",
+        "evidence": "'asking for channel strategy + budgets + audience research + creative concepts + launch calendar + a 12-slide deck, for a real unlaunched product line, is a known pattern for extracting free strategic work'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers a scoped alternative (e.g. focus the hours on the channel and measurement plan and name what a full plan would additionally need)",
+        "evidence": "No reduced-scope alternative is offered; the full plan (channels, budget, creative, calendar, deck) is retained in the schedule.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises stating the time-box explicitly in the deliverable",
+        "evidence": "Only 'State your assumptions and scope cuts' is advised, not stating the time spent/time-box.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises stating every assumption explicitly in the deliverable",
+        "evidence": "'State your assumptions and scope cuts on slide 1 or 2 of the deck. It reads as seniority, not corner-cutting'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises leading with reasoning rather than production polish, deprioritising the 12-slide deck",
+        "evidence": "The plan dedicates significant time to deck building and a 'Polish pass' ('4h: Build the 12 slides... 1.5h: Polish pass'), not deprioritizing it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Mentions the documented idea-theft risk around unpaid take-home work",
+        "evidence": "No idea-theft framing is used, only 'extracting free strategic work'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames the take-home as the one interview format whose effort the candidate controls, with the freed hours redirected to higher-value rehearsal such as the live audit",
+        "evidence": "No hours are freed up or redirected; the full 20h remains allocated to the take-home itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not produce or outline a full go-to-market plan sized to the user's 20-hour scope",
+        "evidence": "The transcript produces exactly this: a detailed 4-session, ~20-hour schedule covering research, strategy, budget, creative, calendar, and a 12-slide deck.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

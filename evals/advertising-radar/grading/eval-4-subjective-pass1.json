@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Genuinely independent options that exist (an independent ad-news roundup or trade press) are included without pretending they can carry the whole list",
+        "evidence": "The list is built on genuinely independent options: PPC Land (explicitly noted as independent, Luis Rijo, no vendor/agency ownership), Digiday, Marketing Dive, Marketing Brew, and Ad Age \u2014 all ad-supported trade journalism rather than funnels. It also surfaces Search Engine Roundtable and r/PPC, r/FacebookAds on a bench with honest caveats (weak PPC fit; unverified fetch). Crucially it does not pretend these carry the whole load: the opening 'tension' section states the filter 'removes essentially the entire specialist tactical layer for Meta and TikTok'; a dedicated section names what is miss",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Genuinely independent options that exist (an independent ad-news roundup or trade press) are included without pretending they can carry the whole list",
+        "evidence": "The list is built on real, genuinely independent sources \u2014 Digiday ('Independent ad-industry trade press... without a stake in any tool or platform's success'), AdExchanger ('written by reporters, not by anyone selling a fix for them'), Modern Retail (with the ownership disclosure 'part of Digiday Media'), Marketing Brew ('Morning Brew, ad-supported, editorially independent'), plus Ehrenberg-Bass as academic research and WARC flagged honestly as paid ('Flag for the CMO as a possible paid add if budget allows; skip if not'). Funding models are stated rather than glossed, and borderline names ar",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

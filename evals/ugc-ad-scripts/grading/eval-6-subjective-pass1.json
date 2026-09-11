@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Hook wording pulls from the provided review language (fear of opening the bank app, chaos months, spiky income) rather than claims any budgeting competitor could make.",
+        "evidence": "Most of the 12 hooks lift the review vocabulary almost verbatim: C1 H2 \"I hadn't opened my bank app in four days\" and H3 \"I was genuinely scared of my own money\" (on-screen: \"4 days avoiding my bank app\", \"scared of my own money\") come straight from \"I stopped being scared to open my bank app\"; C2 H3 \"my chaos-fixer app\" and H1 \"three payments, three random days\" track \"it made my chaos months make sense\"; all three C3 hooks and C4 H2 use \"spiky income\" explicitly, and C4 H1/H3 (\"Fixed-paycheck budgets are\", \"built for one paycheck?\") are the same irregular-income wedge. The proof overlays als",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Hook wording pulls from the provided review language (fear of opening the bank app, chaos months, spiky income) rather than claims any budgeting competitor could make.",
+        "evidence": "Three of four hooks are clearly review-derived: A's 0\u20133s opener 'I used to open my banking app with my eyes half closed' is a direct paraphrase of the review 'I stopped being scared to open my bank app' (which is also reused verbatim as an overlay at 8\u201314s); B opens on 'Your income is spiky. Your budget shouldn't be.' using the reviewers' 'spiky' language; C opens on a near-verbatim quoted forum comment, 'first budget that gets that my income is spiky', attributed on screen. D's 8\u201314s testimonial cards also surface 'it made my chaos months make sense' and the bank-app line. The gap: D's actual",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

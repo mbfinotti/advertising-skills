@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Limits the hook lineup to 3-5 options, rejecting the request for 8-10",
+        "evidence": "\"5. HOOKS \u2014 9 options ... 9 fills the 'room to play' ask by doubling up the two near-zero-cost triggers\" \u2014 it complies with the expanded request instead of rejecting it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Tags each hook option with exactly one trigger type from the eight-type taxonomy",
+        "evidence": "Each option labeled e.g. \"1. Pain agitation\", \"5. Contrarian / myth-busting\", \"8. Credibility \u2014 formulation, not testimonial\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels each video hook option across the three separate layers SPOKEN / VISUAL / TEXT OVERLAY",
+        "evidence": "Every numbered option has SPOKEN / VISUAL / TEXT OVERLAY fields.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes social proof from this brief's trigger menu and names it as deleted, rather than including a testimonial hook or ranking social proof last",
+        "evidence": "\"Social proof / credibility (testimonial, before/after) \u2014 DELETED, not demoted.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Justifies the deletion by the absence of a cleared customer result, noting a ruled-out trigger left on the list gets briefed anyway by the next reader",
+        "evidence": "\"Legal has cleared zero customer outcomes this quarter... this trigger is struck from the menu entirely\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gates trigger selection on the awareness level first and only then ranks the survivors by marginal effort, rather than ranking purely by cheapness",
+        "evidence": "\"problem-aware audiences are agitated, not reassured \u2014 Schwartz's mapping puts agitation as the correct opening move at this level, and pain agitation is also the cheapest trigger to produce\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a specific first-test hook with a stated rationale",
+        "evidence": "\"Recommended first test: Option 1 (pain agitation \u2014 the plateau).\" with rationale given",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps every hook option as direction (e.g. open inside the worst moment of the problem), never a scripted spoken line of finished copy",
+        "evidence": "SPOKEN fields contain finished verbatim lines, e.g. \"You've tried eating better. Sleeping more. Nothing moved.\" \u2014 actual scripted copy, not direction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Chooses problem-aware-appropriate openings (agitation, making the viewer feel understood) rather than direct-offer, guarantee, or price-anchoring openings",
+        "evidence": "Options are pain agitation, identity call-out, contrarian, urgency (non-fear), curiosity, credibility, pattern interrupt \u2014 none are price/offer/guarantee openings.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Addresses sound-off design (key claims legible as on-screen text, captions) and/or notes the Reels sound-on skew (roughly 70-80% of viewers with audio) so the creative works both ways",
+        "evidence": "No explicit statement about sound-off design rationale or Reels' audio-on viewer percentage appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records regulated-category compliance mandatories: substantiation-required claims and permitted phrasing constraints",
+        "evidence": "\"flag for one round of legal read given the regulated category\" and Option 8's \"Compliance note: every specific claim here... needs its own substantiation check\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches the required extra field to conditional triggers if offered: a resolution field for a curiosity-gap hook, or truth-of-claim gating for an urgency hook",
+        "evidence": "Option 7: \"Resolution field: loop closes on-screen at second 8\u201310\"; Option 6: \"No scarcity/deadline claim is made here, so no offer-mechanics substantiation is owed.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not delegate hook choice to the editor's judgement or 'room to play' - options are recorded, tagged, and one is recommended",
+        "evidence": "All 9 options recorded, tagged, and one explicitly recommended as first test, with a second test also named.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Limits the hook lineup to 3-5 options, rejecting the request for 8-10",
+        "evidence": "The table lists exactly 10 hook options as requested, with no reduction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Tags each hook option with exactly one trigger type from the eight-type taxonomy",
+        "evidence": "Hooks are tagged with ad-hoc 'Angle' labels (Problem callout, Myth-bust, Curiosity gap, etc.) not drawn from any stated eight-type taxonomy.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels each video hook option across the three separate layers SPOKEN / VISUAL / TEXT OVERLAY",
+        "evidence": "Each hook is given only as a single 'Hook (0\u20133s line)' text string with no SPOKEN/VISUAL/TEXT OVERLAY breakdown.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes social proof from this brief's trigger menu and names it as deleted, rather than including a testimonial hook or ranking social proof last",
+        "evidence": "Social proof is kept via hook #4 'Community/aggregate proof': 'Over [X,000] people started their morning with this instead of coffee #3.' \u2014 not deleted.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Justifies the deletion by the absence of a cleared customer result, noting a ruled-out trigger left on the list gets briefed anyway by the next reader",
+        "evidence": "'A \"testimonial hook\" with no real, cleared testimonial behind it... sits in the brief as a placeholder nobody can actually shoot \u2014 which just wastes the editor's prep time.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gates trigger selection on the awareness level first and only then ranks the survivors by marginal effort, rather than ranking purely by cheapness",
+        "evidence": "Audience is labeled 'problem-aware' at the header but hooks are not subsequently ranked by marginal effort; the 'For the editor' note groups by legal sign-off need, not effort.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a specific first-test hook with a stated rationale",
+        "evidence": "Only a group recommendation is given ('hooks 1\u20133 and 7 need no legal sign-off... safe to storyboard first'), not a single named first-test hook.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps every hook option as direction (e.g. open inside the worst moment of the problem), never a scripted spoken line of finished copy",
+        "evidence": "Hooks are written as finished quoted lines, e.g. '\"If you're tired by 3pm no matter how much coffee you drink, watch this.\"'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Chooses problem-aware-appropriate openings (agitation, making the viewer feel understood) rather than direct-offer, guarantee, or price-anchoring openings",
+        "evidence": "Hooks lead with symptom callouts and myth-busts, e.g. '\"If you're tired by 3pm no matter how much coffee you drink, watch this.\"' rather than direct offers or guarantees.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Addresses sound-off design (key claims legible as on-screen text, captions) and/or notes the Reels sound-on skew (roughly 70-80% of viewers with audio) so the creative works both ways",
+        "evidence": "No mention of captions, on-screen text legibility, or Reels sound-on/off viewing behavior anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records regulated-category compliance mandatories: substantiation-required claims and permitted phrasing constraints",
+        "evidence": "'Compliance note: No customer testimonials, no before/after or outcome claims (zero approved this quarter, per Legal). Any stat, number, or claim in these hooks must go through claims-substantiation review before shoot.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches the required extra field to conditional triggers if offered: a resolution field for a curiosity-gap hook, or truth-of-claim gating for an urgency hook",
+        "evidence": "Hook #3 is tagged 'Curiosity gap' but carries only a generic compliance note, not a resolution field.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not delegate hook choice to the editor's judgement or 'room to play' - options are recorded, tagged, and one is recommended",
+        "evidence": "Each hook carries an explicit compliance note and sign-off guidance rather than being left to editor discretion, e.g. 'don't lock final VO/on-screen text until Legal confirms the specific wording.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

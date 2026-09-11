@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response refuses to compute a numeric MECLABS score, stating the heuristic is a thought tool, not an equation to solve.",
+        "evidence": "The response explicitly computes it: \"C = 4m + 3v + 2(i\u2212f) \u2212 2a \u2192 4(7) + 3(6) + 2(4\u22126) \u2212 2(5) = 28 + 18 \u2212 4 \u2212 10 = **32**\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response explains the coefficients express a thinking sequence (motivation first, then value, then incentive net of friction, then anxiety), not literal multipliers.",
+        "evidence": "\"the coefficients express 'reason about motivation, then value, then incentive-net-of-friction, then anxiety,' not literal multipliers\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes motivation is largely pre-existing and external: a page refers to it and cannot create it.",
+        "evidence": "\"Motivation is exogenous. The page can't move it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response declines ICE as the prioritisation scheme, naming its weakness: the proposer guesses two of the three inputs and scores their own idea.",
+        "evidence": "\"ICE (and PIE) let whoever proposes the fix guess two of the three inputs and usually score their own idea\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response recommends or applies evidence-weighted, mostly-binary scoring in the shape of PXL instead.",
+        "evidence": "\"the method this audit uses instead is PXL: evidence-weighted, mostly-binary questions nobody can fudge in their favor\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "At least two PXL-style binary questions appear (above the fold, noticeable within five seconds, on the paid entry path, backed by this page's data, backed by established research).",
+        "evidence": "Table columns: \"Above fold?\", \"Noticeable in 5s?\", \"On paid entry path?\", \"Obs.-backed?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response corrects the $300M button retelling: the verified lesson is removing forced-registration friction discovered through user research, not a headline or button word change.",
+        "evidence": "\"the '$300M button' is a single anecdote about removing forced-registration friction, discovered through user research \u2014 not a transferable template\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes the $300M case is a single anecdote, not a transferable lift template.",
+        "evidence": "\"not a transferable template for 'change a word, win big.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Headline word tweaks are not placed at the top of the backlog on the strength of the anecdote.",
+        "evidence": "\"I won't rank anything higher because of it... message match is the highest-efficiency family for paid traffic regardless of anecdotes\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the 3-click rule as having no supporting evidence.",
+        "evidence": "\"the 3-click rule has no supporting evidence \u2014 it's on the folklore list\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 4-click signup path is judged by information scent per step rather than by click count.",
+        "evidence": "\"What matters is whether each click loses information scent\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage lift figure appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The prioritisation ranks by funnel step unblocked per unit of effort, with effort bracketed as time and coordination rather than a currency amount.",
+        "evidence": "\"Ranked by family efficiency (message match > above-fold clarity > trust > form friction...)\" with \"effort: hours\", \"effort: hours\u2013days\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response refuses to compute a numeric MECLABS score, stating the heuristic is a thought tool, not an equation to solve.",
+        "evidence": "\"C = 4m + 3v + 2(i\u2212f) \u2212 2a; C = 4(7) + 3(6) + 2(4\u22126) \u2212 2(5) = 28 + 18 \u2212 4 \u2212 10 = 32\" \u2014 the score is explicitly computed, not refused.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response explains the coefficients express a thinking sequence (motivation first, then value, then incentive net of friction, then anxiety), not literal multipliers.",
+        "evidence": "\"the 4/3/2/2 weights encode a relative importance ranking (motivation > value > incentive/friction > anxiety), not measured elasticities. Treat C as a directional index, not a conversion-probability estimate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes motivation is largely pre-existing and external: a page refers to it and cannot create it.",
+        "evidence": "No statement anywhere addresses motivation as pre-existing/external to the page.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response declines ICE as the prioritisation scheme, naming its weakness: the proposer guesses two of the three inputs and scores their own idea.",
+        "evidence": "The response explicitly builds and uses \"## 2. Backlog \u2014 ICE Prioritized\" with a full ICE-scored table, rather than declining it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response recommends or applies evidence-weighted, mostly-binary scoring in the shape of PXL instead.",
+        "evidence": "No PXL-style scoring is used or recommended; ICE scoring (Impact/Confidence/Ease, 1-10) is used throughout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "At least two PXL-style binary questions appear (above the fold, noticeable within five seconds, on the paid entry path, backed by this page's data, backed by established research).",
+        "evidence": "No binary yes/no PXL-style questions appear anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response corrects the $300M button retelling: the verified lesson is removing forced-registration friction discovered through user research, not a headline or button word change.",
+        "evidence": "\"The site forced shoppers to register an account before checking out; swapping the mandatory 'Register' step for an optional 'Continue' flow \u2014 i.e., removing a friction/anxiety step, not changing headline words \u2014 is what produced the $300M lift.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes the $300M case is a single anecdote, not a transferable lift template.",
+        "evidence": "The story is instead leveraged as strong evidence: \"It's the strongest possible precedent for item #1 and #6 above\" \u2014 not framed as a non-transferable single anecdote.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Headline word tweaks are not placed at the top of the backlog on the strength of the anecdote.",
+        "evidence": "\"don't force headline tweaks to the top on the strength of a misattributed anecdote\"; headline testing is ranked #7 in the ICE table.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the 3-click rule as having no supporting evidence.",
+        "evidence": "\"the '3-click rule' itself is a debunked UX myth (UIE's own 2003 research found click count doesn't predict abandonment \u2014 perceived progress per click does)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 4-click signup path is judged by information scent per step rather than by click count.",
+        "evidence": "The response substitutes \"perceived progress per click\" and removing \"a real hop\" as the relevant factor, not the specific concept of information scent per step.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage conversion lift figure appears anywhere in the response.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The prioritisation ranks by funnel step unblocked per unit of effort, with effort bracketed as time and coordination rather than a currency amount.",
+        "evidence": "Effort is scored as an abstract \"Ease\" value 1-10 in the ICE table (e.g. \"Ease 6\"), not bracketed as time/coordination (hours/days/weeks).",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

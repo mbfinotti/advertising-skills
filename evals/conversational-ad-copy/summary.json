@@ -1,0 +1,287 @@
+{
+  "repo": "advertising-skills",
+  "skill": "conversational-ad-copy",
+  "scenarios": 7,
+  "expectations_total": 87,
+  "expectations_subjective": 2,
+  "expectations_objective": 85,
+  "pass_rate_with_skill_pct": 80.5,
+  "pass_rate_without_skill_pct": 51.7,
+  "delta_pp": 28.8,
+  "uplift_multiplier": 1.56,
+  "trigger_accuracy_pct": 88.1,
+  "trigger_queries": 84,
+  "subjective_ac2": 0.529,
+  "subjective_pass_disagreements": [
+    {
+      "eval_id": 6,
+      "condition": "without_skill",
+      "expectation": "The ask is matched to the conversation stage rather than a hard same-chat close.",
+      "pass1": false,
+      "pass2": true
+    }
+  ],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Landing-page passages are worked first and named as the highest-efficiency asset among the editable ones."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Reviews are named as the asset with the highest trust weight and no direct edit path, scoped as a quarter-scale programme with nothing expected inside this flight."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The response flags that the landing-page and feed rewrites may belong to whoever owns the site and feed, and routes or asks about ownership rather than assuming the user can ship them."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The response states that adjacency - what the model says beside the ad, including competitors it cites - is not controllable through copy, and that monitoring is the control for that risk."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Because no CTA field exists, the ask is folded into the copy line and matched to the inferred conversation stage."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "A quotability gate of 10 explicit checks is run on the shipped line with a stated pass bar of 9 out of 10."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "No line is silently truncated to fit: any over-limit draft is shown with its count alongside a trimmed alternative for the user to choose."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The copy uses the specific figure rather than adjectives like 'fast' or 'powerful'."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Re-framing the situation description is recommended before rewriting the copy line."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Delivery across situation descriptions is named as the first read because it is free and readable in days, with alternate situation descriptions suggested for the diagnosis."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "No sized variant test is proposed now; it is deferred until delivery and click-through stop moving."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Click-through is framed as a relative read only, since no query-level reporting sits behind it."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Any use of the returns figure is dated to the 2024 cohort with a review date, never presented as a current or ongoing result."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "A compliant alternative copy line is still drafted in the recommendation register rather than the response ending at refusal."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The drafted line names Mintbourne, carries one idea, and makes sense out of the thread."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "No manufactured urgency is added to the drafted line."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "A quotability gate result is included for the drafted line."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "The response does not deliver the requested 6 headlines and 4 descriptions as the solution, and states that editing headlines changes nothing on this surface."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The core deliverable is rewritten source material - landing-page passages and feed fields - shown as before/after, not ad copy."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Landing-page passages are worked first and named as the highest-efficiency asset among the editable ones."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The rewritten hero passage names Fernhollow in its first sentence."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Reviews are named as the asset with the highest trust weight and no direct edit path, scoped as a quarter-scale programme with nothing expected inside this flight."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Structured data is addressed as a dev-queue ticket that pins facts the model would otherwise infer."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The response flags that the landing-page and feed rewrites may belong to whoever owns the site and feed, and routes or asks about ownership rather than assuming the user can ship them."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The response states that adjacency - what the model says beside the ad, including competitors it cites - is not controllable through copy, and that monitoring is the control for that risk."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The shipped copy line names Brightgale explicitly, with no pronoun carrying the product reference."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The slot copy carries exactly one idea; the discount and the 20-minute onboarding claim are not bundled into a single line."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "The copy line leads with the claim, with support after."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Because no CTA field exists, the ask is folded into the copy line and matched to the inferred conversation stage."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "One or two alternate situation descriptions are supplied for delivery diagnosis."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "A quotability gate of 10 explicit checks is run on the shipped line with a stated pass bar of 9 out of 10."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The 6-minute claim is dated and assigned a review date."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "A grounding table or claim-to-source mapping covers every claim in the shipped copy."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "The copy uses the specific figure rather than adjectives like 'fast' or 'powerful'."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "A quotability gate result is included showing pass/fail per check for the shipped line."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Delivery is checked first: 214 impressions in six days is treated as a delivery problem, not evidence about the copy."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The near-minimum bid is raised as a likely cause, with the point that an under-bid campaign serves nothing and reads identically to bad copy."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The account's own trailing numbers on this same surface are named as the only valid baseline, and with none existing, the first 30 days are set as the baseline."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Re-framing the situation description is recommended before rewriting the copy line."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Delivery across situation descriptions is named as the first read because it is free and readable in days, with alternate situation descriptions suggested for the diagnosis."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The organic answer appearances are not credited to the ad: paid and organic are named as two separate systems on the same prompt, to be read separately."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Click-through is framed as a relative read only, since no query-level reporting sits behind it."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Beyond confirming the delivery threshold, bid and budget management is routed out of scope rather than turned into bidding advice."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Styling the ad as the assistant's own voice is named as the highest-risk version of this format, with borrowed authority raising the substantiation bar rather than lowering it."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The response states that existing advertising regulation applies to AI-answer ads unchanged - no new category of advertising exists for this surface."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Any use of the returns figure is dated to the 2024 cohort with a review date, never presented as a current or ongoing result."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "A compliant alternative copy line is still drafted in the recommendation register rather than the response ending at refusal."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The drafted line names Mintbourne, carries one idea, and makes sense out of the thread."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "No manufactured urgency is added to the drafted line."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "A quotability gate result is included for the drafted line."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The pick-a-winner-on-conversions plan is replaced with the reads that survive low volume: delivery, click-through against the account's own trailing numbers, and downstream lead quality."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The 4-week deadline is named as deleting the sized test outright rather than shrinking it."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The situation description is written as Persona + Intent + Scope prose about a hospital-network compliance evaluator, not a keyword string."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The ask is matched to the conversation stage rather than a hard same-chat close."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Reviews are scoped honestly: a solicitation programme is a quarter-scale job that pays into future campaigns, and nothing from it lands inside this flight."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The compounding mandate re-ranks the menu, with structured data and reviews named as the rows it promotes."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "The frozen agency-run landing page is deleted from the menu rather than demoted, converted into a routed request to the agency, and named as deleted in the package."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Structured data is likewise deleted and routed given zero developer availability, named with its constraint."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "'Best-in-class AI-powered price intelligence for winners' is rewritten: product named, unsupported superlative removed, natural problem-solving language describing what it does for whom."
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to average the 16, 18 and 20-month medians into one benchmark and presents them as a conflict instead",
+        "evidence": "'present as conflict, not an average... averaging them to \"18\" is exactly the move to avoid'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the medians disagree because the panels and definitions behind them differ",
+        "evidence": "'because they measure different panels on different definitions'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches publisher, year, and sample to any published payback median it cites",
+        "evidence": "'18 months, 2024 (Benchmarkit 2025 SaaS Performance Metrics Survey, n=583, self-reported)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the 3:1 LTV:CAC rule as David Skok's own figure from the early 2010s, a self-admitted guess, worth at most a secondary check",
+        "evidence": "'David Skok (Matrix Partners, ~2011\u20132013): on record at SaaStr as \"I guessed at that number.\" Not a study... it's still a secondary check'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prefers payback over LTV:CAC as the affordability lens, giving at least one stated reason (LTV:CAC inherits whichever CAC variant fed it, hides per-plan variance, or never asks when the cash comes back)",
+        "evidence": "'LTV:CAC 2.7 \u2014 secondary signal only, not verdict-driving... prefer the payback read above, which is directly grounded in your own ACV and margin'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the 8 quarters of same-definition history as the business's own trailing reference, noting the trend is flat/stable and that direction and volatility matter more than the level",
+        "evidence": "'Own history \u2014 the strong rung here. 21.5 \u2192 21 \u2192 20.5 \u2192 21 \u2192 20.5 \u2192 21 \u2192 21 \u2192 21... This is flat, not deteriorating'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Weighs the 118% NRR before flagging the 21-month payback: high net revenue retention can justify a longer acquisition payback",
+        "evidence": "'a below-median payback at a given ACV isn't automatically a red flag if NRR is high, since strong expansion can justify a longer upfront acquisition period. Corvid's 118% NRR is a real, favorable data point here'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the monthly gross profit per customer as roughly $1,950 (30,000 / 12 x 0.78) and/or the implied CAC of roughly $41,000, labeled",
+        "evidence": "'Monthly gross profit per customer | ACV \u00d7 gross margin \u00f7 12 = $30,000 \u00d7 0.78 \u00f7 12 | $1,950' and 'Implied CAC ... | 21 \u00d7 $1,950 | $40,950'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks which CAC variant and spend lines feed the payback figure before comparing it to any external median",
+        "evidence": "'Spend-line composition of the CAC numerator not stated (blended vs. paid vs. fully-loaded) \u2014 flagged, not fatal' noted in the Definitions record before the comparison ladder",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports external benchmarks as ranges or quartiles rather than a single point estimate",
+        "evidence": "Presents 16/18/20-month figures as separate points/conflict, and the ACV-segmented figure as '~14 months' / '14\u201318 months' range",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sizes the gap to external medians as context only, never as the basis of the verdict",
+        "evidence": "The headline explicitly ties the Watch verdict to the external gap: 'that's 7 months (\u224850%) above the properly ACV-matched external comparator' is cited as part of why it is 'Not healthy either' in the verdict section",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not declare the business unhealthy on the grounds of being above the averaged or individual published medians",
+        "evidence": "Verdict is 'Watch,' explicitly 'Not unhealthy,' not Unhealthy on benchmark grounds",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any verdict offered rests on the business's own economics and history, with the missing rung-1 inputs (allowable CAC versus actual CAC) either computed from the given ACV and margin or explicitly requested",
+        "evidence": "'Allowable CAC (first-year) | ACV \u00d7 gross margin | $23,400' computed; 'Gross/logo retention is the one input that would let rung 1 close definitively \u2014 get it before the next quarterly check' explicitly requested",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to average the 16, 18 and 20-month medians into one benchmark and presents them as a conflict instead",
+        "evidence": "'Your \"18\" benchmark is an average of three external medians (16/18/20)...Averaging heterogeneous published medians into a single number is a convenience, not a rigorous comparator'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the medians disagree because the panels and definitions behind them differ",
+        "evidence": "'from unknown methodology, segment, ACV band, and sales motion'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches publisher, year, and sample to any published payback median it cites",
+        "evidence": "The 16/18/20 figures are discussed with no publisher, year, or sample attached to any of them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the 3:1 LTV:CAC rule as David Skok's own figure from the early 2010s, a self-admitted guess, worth at most a secondary check",
+        "evidence": "No mention of Skok or origin of the 3x LTV:CAC benchmark anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Prefers payback over LTV:CAC as the affordability lens, giving at least one stated reason (LTV:CAC inherits whichever CAC variant fed it, hides per-plan variance, or never asks when the cash comes back)",
+        "evidence": "'Lead with the trend chart, not the single-quarter number' for payback, while LTV:CAC is flagged as potentially 'masking real logo/gross-dollar churn' and needing further validation before trusting it.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the 8 quarters of same-definition history as the business's own trailing reference, noting the trend is flat/stable and that direction and volatility matter more than the level",
+        "evidence": "'Trend over 8 quarters...flat, tight band (\u00b10.5mo)...Stability is the strongest data point you have; lead with it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Weighs the 118% NRR before flagging the 21-month payback: high net revenue retention can justify a longer acquisition payback",
+        "evidence": "'With NRR at 118%, that assumption is wrong for your business, and it's wrong in a way that flatters you' leading to the NRR-adjusted payback of ~18.5 months.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the monthly gross profit per customer as roughly $1,950 (30,000 / 12 x 0.78) and/or the implied CAC of roughly $41,000, labeled",
+        "evidence": "'monthly GM$ = $1,950...CAC \u2248 $40,950'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks which CAC variant and spend lines feed the payback figure before comparing it to any external median",
+        "evidence": "No question is raised about what costs feed the CAC/payback figure before comparing to the 18-month benchmark.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reports external benchmarks as ranges or quartiles rather than a single point estimate",
+        "evidence": "The three source medians (16/18/20) are presented rather than a single collapsed number.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sizes the gap to external medians as context only, never as the basis of the verdict",
+        "evidence": "Bottom line rests on 'strong economics' via NRR and trend, not the 3-month gap to 18.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not declare the business unhealthy on the grounds of being above the averaged or individual published medians",
+        "evidence": "'Verdict: Yellow, not red. Don't let this rattle the board.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any verdict offered rests on the business's own economics and history, with the missing rung-1 inputs (allowable CAC versus actual CAC) either computed from the given ACV and margin or explicitly requested",
+        "evidence": "Verdict grounded in computed implied CAC (~$40,950), monthly GM$ ($1,950), and the 8-quarter trend, all derived from the business's own ACV/margin/NRR.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

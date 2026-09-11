@@ -1,0 +1,130 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Corrects the premise: third-party cookies are not being deprecated in Chrome",
+        "evidence": "\"Google reversed course on deprecating third\u2011party cookies in Chrome\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites Google's July 2024 announcement that it would not phase out third-party cookies",
+        "evidence": "\"it announced on 22 July 2024 that it would not phase them out\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the April 2025 confirmation that Chrome would not add a user-choice prompt",
+        "evidence": "\"confirmed on 22 April 2025 that it wouldn't even add a user-choice prompt\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that cookies remain enabled by default in Chrome while other browsers already block them",
+        "evidence": "\"Cookies are still on by default in Chrome today\" ... \"Safari and Firefox already block third-party cookies by default\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that repeating the deprecation claim in an interview dates the candidate",
+        "evidence": "\"repeating it in an interview reads as dated rather than current\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Redirects the answer to Apple's ATT (2021) as the change that durably reduced signal",
+        "evidence": "\"What actually broke tracking was Apple's App Tracking Transparency in 2021\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that ATT drove the over-attribution problem and the industry move to blended metrics and incrementality",
+        "evidence": "\"platform-reported ROAS tends to run hot: each channel is grading its own homework... I'd anchor the team on blended MER... and run periodic incrementality tests\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the senior-level framing: being able to explain why platform-reported ROAS diverges from blended MER",
+        "evidence": "\"the real shift isn't 'prepare for cookies disappearing' \u2014 it's building measurement that assumes incomplete signal by default\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the autobidder optimises toward the conversions it can see, which is exactly the number the OS-level privacy change broke",
+        "evidence": "No statement in the transcript explains that the bidding algorithm optimizes toward the conversions it can see as the mechanism broken by the OS-level privacy change.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not polish or expand the cookieless-future claim as drafted; the false premise is replaced, not embellished",
+        "evidence": "the entire answer is structured as a correction (\"a fix that matters more than the polish itself\") rather than expansion of the original cookieless claim",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Corrects the premise: third-party cookies are not being deprecated in Chrome",
+        "evidence": "'Google actually reversed its plan to deprecate third-party cookies in Chrome in July 2024 \u2014 it now prompts users to choose instead of removing cookies outright.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites Google's July 2024 announcement that it would not phase out third-party cookies",
+        "evidence": "'Google actually reversed its plan to deprecate third-party cookies in Chrome in July 2024'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the April 2025 confirmation that Chrome would not add a user-choice prompt",
+        "evidence": "No April 2025 date or confirmation is mentioned; the transcript instead claims Chrome 'now prompts users to choose', contradicting this rubric item's fact.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that cookies remain enabled by default in Chrome while other browsers already block them",
+        "evidence": "The transcript instead says Chrome 'instead gives users a choice', not that cookies remain enabled by default; it does not use 'default-enabled' framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that repeating the deprecation claim in an interview dates the candidate",
+        "evidence": "'Opening with the old \"Chrome is killing cookies\" framing would read as slightly out of date to an interviewer who follows this closely'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Redirects the answer to Apple's ATT (2021) as the change that durably reduced signal",
+        "evidence": "ATT is mentioned only grouped with Safari and Firefox ('Safari, Firefox, and iOS's App Tracking Transparency have been restricting cross-site tracking for years already') without being singled out or dated to 2021.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that ATT drove the over-attribution problem and the industry move to blended metrics and incrementality",
+        "evidence": "The transcript recommends incrementality testing and MMM generally but never connects this need explicitly to ATT causing over-attribution.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes the senior-level framing: being able to explain why platform-reported ROAS diverges from blended MER",
+        "evidence": "The transcript says to stop relying 'solely on platform-reported ROAS' but never explains or names blended MER or the divergence mechanism.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the autobidder optimises toward the conversions it can see, which is exactly the number the OS-level privacy change broke",
+        "evidence": "This mechanism is never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not polish or expand the cookieless-future claim as drafted; the false premise is replaced, not embellished",
+        "evidence": "'I reframed the opening around the broader, already-in-motion privacy trend (Safari, Firefox, iOS ATT, regulation) instead \u2014 which is actually a stronger, more accurate hook.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

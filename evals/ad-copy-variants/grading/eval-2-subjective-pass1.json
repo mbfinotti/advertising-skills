@@ -1,0 +1,38 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Any drafted variants keep message match with the landing page promise of planning a week of meals in 10 minutes.",
+        "evidence": "All six rows carry the destination promise verbatim or near-verbatim: 'plans your whole week of meals in 10 minutes' (pain_pa_01_v1), 'Plan your whole week of meals in 10 minutes, once' (pain_ma_01_v1), 'Plan a week of meals in 10 min' (mechanism_sa_01_v1), 'Your week, planned in 10 minutes' (mechanism_ua_01_v1), 'your whole week planned in 10 minutes, for $4.99/month' (value_pa_01_v1), and 'one 10-minute setup' (value_ma_01_v1). The matrix explicitly states 'Destination page match: \"Plan your week of meals in 10 minutes\" (landing page headline, as supplied)' and the gate note lists message ma",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The drafted variants make genuinely different arguments rather than rewording one claim.",
+        "evidence": "Three distinct argument families are drafted and labelled in the angle bank \u2014 pain (nightly decision fatigue), mechanism/speed (one 10-minute sit-down replaces daily decisions), and price-value ($4.99/mo) \u2014 each doubled across a different awareness stage, with differing formulas (PAS, 4 Us, mechanism-led, symptom-led, BAB, offer-led). The price-value rows argue cost ('Less than one takeout order, all month'), clearly separate from the pain rows' takeout-loop framing, and mechanism_sa uniquely explains how it works ('answer a few quick questions'). Deduction: pain_ma_01_v1 ('10 minutes now beat",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Any drafted variants keep message match with the landing page promise of planning a week of meals in 10 minutes.",
+        "evidence": "Five of six variants state both halves of the promise explicitly (\"your full week, planned in 10 minutes, for $4.99/month\", \"literally 10 minutes, start to finish\", \"10 minutes, one week sorted\", \"Your week, planned in 10 minutes\", \"Plan your whole week of meals in 10 minutes\"). Variant 3 (\"Plan 7 days of meals in the time it takes to make coffee\") keeps the week but substitutes a vaguer, arguably faster-than-10-minutes benchmark, a minor drift from the exact landing-page claim.",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The drafted variants make genuinely different arguments rather than rewording one claim.",
+        "evidence": "All six restate the same core speed claim (10 minutes / one week) with varied metaphors rather than distinct arguments. Only two secondary angles appear: price ($4.99 in #2 and #6) and decision fatigue (#1 \"no decision fatigue\", #3 \"stop staring at your fridge\", #6 \"never ask 'what's for dinner'\"). Variants 4 and 5 add nothing beyond a rephrasing of speed (\"literally 10 minutes, start to finish\" vs \"less time than deciding what to watch tonight\"), and no variant argues from cost-of-groceries, waste reduction, nutrition, family/household fit, or any other independent benefit.",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

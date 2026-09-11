@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not scaffold directories, trackers, or working-tree structure beyond what this first session needs.",
+        "evidence": "Nothing was written to disk at all: the context file is shown under the heading \"Draft context artifact (not yet written to disk)\" as an inline fenced block, and the agent defers creation pending a location \u2014 \"Tell me where your actual Fernhollow repo root is (or confirm this sandbox is it) and I'll write this file for real, then patch it as your answers come in \u2014 never rewriting it wholesale.\" No directories, no tracker files, no branches/worktrees, no multi-file structure are proposed or created. The only proposed artifact is a single small advertising-context file that the session's workflo",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not scaffold directories, trackers, or working-tree structure beyond what this first session needs.",
+        "evidence": "The response creates nothing at all: it reports what it found in the repo, explicitly refuses to fabricate `advertising-context.md` on a false premise, and leaves `skill-wip/` untouched. No directories, trackers, or files are proposed or made; scaffolding is offered only conditionally ('tell me and I'll scaffold advertising-context.md fresh') pending the user's confirmation, and it asks for the correct working directory first.",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

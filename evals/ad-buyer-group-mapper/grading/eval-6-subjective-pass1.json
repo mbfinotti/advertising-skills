@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Gives the researcher partner and the contract-worried partner distinct messaging angles, neither of which could run unchanged against the other role",
+        "evidence": "The role map assigns the researcher-champion a 'Comparison/sizing transparency \u2014 show the math, don't just claim trust' angle with an ungated sizing/cost guide or comparison calculator, keyed to the objection 'How do I know this is actually the right system for our house, at a fair price?'. The contract-risk co-decider gets a categorically different angle: 'Risk-reduction, not urgency: no-pressure quote, plain-language contract terms, licensing/insurance, third-party review proof' with a warranty/terms one-pager and an explicit ban on high-friction demo-style offers, keyed to 'What's the catch",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Gives the researcher partner and the contract-worried partner distinct messaging angles, neither of which could run unchanged against the other role",
+        "evidence": "The answer repeatedly pairs role-specific angles that are clearly non-interchangeable: creative that gives 'comparison/efficiency numbers for the researcher, \"fixed-price, no-pressure, cancel-anytime consult\" language for the contract-wary one'; retargeting with a 'financing calculator to one, no-obligation-quote reassurance to the other'; and in-home handoffs where the tech gives 'the \"researcher\" a spec sheet and the \"risk-averse\" spouse a plain-language, fixed-price quote.' It also names the distinct vocabularies to mine ('efficiency ratings/financing terms vs. words like \"locked in,\" \"pres",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Compares Meta-reported purchases against the Shopify order figures (reconciliation) before diagnosing any other layer.",
+        "evidence": "The diagnostic explicitly runs 'measurement \u2192 structure \u2192 targeting \u2192 creative \u2192 bidding \u2192 offer \u2192 external, in that fixed order' and the measurement layer evidence cites '645 Shopify-attributed orders vs. 348 Meta-reported'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the reported-vs-backend gap (roughly 46%, against the ~8% historical norm) as beyond the roughly-40% stop threshold and records a measurement/tracking FAIL.",
+        "evidence": "'Right now it's ~46% (645 Shopify-attributed orders vs. 348 Meta-reported orders...)' and the layer screen states 'measurement/tracking : FAIL - reconciliation gap jumped ~8%\u219246% on the checkout-migration date... [critical, high]'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The verdict names measurement/tracking as the root cause, not creative fatigue.",
+        "evidence": "'verdict : measurement/tracking - the purchase event is not reliably firing/matching on the new checkout subdomain'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to confirm the fatigue read and does not recommend killing or refreshing creatives as the fix.",
+        "evidence": "'Don't ship new creative yet either... you'll burn a production cycle, \"confirm\" the fatigue story that isn't true' and 'Don't build that list from this data' regarding killing ads.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the drop appearing uniformly across cold, retargeting, and brand campaigns on a single start date as a tracking signature, noting fatigue does not synchronise across unrelated audiences on one date.",
+        "evidence": "'Yours broke identically, same day, across cold/retargeting/brand at once. Ads don't age in sync; systems break in sync.' Also 'localisation : uniform across every campaign type (cold, retargeting, brand), single common start date'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects the break to the checkout migration to a new subdomain in the same week.",
+        "evidence": "'the checkout migration to a new subdomain landed the same week: purchase-tracking (pixel/Conversions API, domain verification, cross-domain cookie continuity) is exactly what a subdomain move breaks'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the backend evidence (revenue only ~5% down versus a 38% reported CVR drop) to show demand is intact and the signal is broken.",
+        "evidence": "'Spend is flat. If ROAS genuinely fell from 2.9 to 1.6, revenue should have fallen ~45% too. It fell ~5%.' and 'revenue -5% vs an implied -45% if the reported numbers were real'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the decomposition (CPM and CTR flat vs the 60-day baseline, CVR the only moved link) to rule out the auction and the ad before naming the cause.",
+        "evidence": "'Yours: CPM +3%, CTR -2% \u2014 both essentially flat... The entire -44.8% ROAS collapse (2.9 \u2192 1.6) is concentrated in one link: reported CVR, down 38%.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents a per-layer screen giving each layer one of four states (pass, FAIL, unknown, not applicable) rather than only naming the winning cause.",
+        "evidence": "The 'layer screen' block lists measurement/tracking: FAIL, structure: pass, targeting: pass, creative: pass, bidding/budget: unknown, offer & downstream: pass (with caveat), external: n/a.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks the creative layer pass with evidence (CTR flat against its own baseline).",
+        "evidence": "'creative : pass - CTR essentially flat vs baseline (-2%); no concentration in oldest units; a synced, single-day account-wide break is not a fatigue curve [-, high]'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Avoids issuing verdicts on downstream layers through the broken signal, for example marking bidding unknown or deferring it until after the fix.",
+        "evidence": "'bidding/budget : unknown - budget unchanged, no edits logged, but delivery may re-enter learning as fewer real conversions get counted; re-screen after fix [medium, low]'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands the tracking repair to a dedicated conversion-tracking fix workflow or owner instead of treating the diagnosis as the fix.",
+        "evidence": "'handoff : fix the tracking break first (checklist: verify pixel + Conversions API install... owner: whoever owns the checkout deploy + Meta Events Manager access) \u2192 re-run this diagnostic once fixed \u2192 only then hand the creative question to a dedicated creative-decay read'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction: reported CVR and ROAS recover toward baseline within roughly one lag-mature week once the purchase event fires again.",
+        "evidence": "'prediction : once the purchase event fires correctly, reported CVR recovers toward baseline within one lag-mature window (~7-12 days); ROAS follows back toward ~2.9 without touching budget or creative'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check date one full comparison window (lag-mature) after the fix ships.",
+        "evidence": "'re-check : ~12-14 days after the fix ships, at full attribution-lag maturity'.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Compares Meta-reported purchases against the Shopify order figures (reconciliation) before diagnosing any other layer.",
+        "evidence": "The transcript opens its numeric analysis with \"The Meta/Shopify order gap blew out from a normal ~8% to ~46% (348 reported vs. 645 actual)\" as the first substantive comparison before discussing CPM/CTR or other layers.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the reported-vs-backend gap (roughly 46%, against the ~8% historical norm) as beyond the roughly-40% stop threshold and records a measurement/tracking FAIL.",
+        "evidence": "\"The Meta/Shopify order gap blew out from a normal ~8% to ~46% (348 reported vs. 645 actual)\" and the overall verdict frames this as a tracking failure, though no explicit numeric '40% threshold' language is used \u2014 it does treat the gap as decisive evidence of a FAIL state for measurement (\"Meta is simply failing to attribute roughly half of real purchases\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The verdict names measurement/tracking as the root cause, not creative fatigue.",
+        "evidence": "\"Verdict: reject the fatigue read. This is a broken pixel, not tired creative.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to confirm the fatigue read and does not recommend killing or refreshing creatives as the fix.",
+        "evidence": "\"Do not touch creatives yet. Killing or refreshing ads now would (a) burn budget/learning phase on a problem creative isn't causing...\" and \"Don't kill anything off this data\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the drop appearing uniformly across cold, retargeting, and brand campaigns on a single start date as a tracking signature, noting fatigue does not synchronise across unrelated audiences on one date.",
+        "evidence": "\"It never produces a synchronized, account-wide cliff on a single calendar day across cold, retargeting, and brand simultaneously \u2014 those have different creatives, different audiences, different frequencies, and would degrade at different rates. A same-Tuesday drop across the entire account is the signature of a technical/tracking event, not an audience wearing out on an ad.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects the break to the checkout migration to a new subdomain in the same week.",
+        "evidence": "\"You have that technical event: checkout moved to a new subdomain the same week.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the backend evidence (revenue only ~5% down versus a 38% reported CVR drop) to show demand is intact and the signal is broken.",
+        "evidence": "\"Shopify revenue is ~flat (-5%, within normal noise)... If the real story were fewer people converting, revenue would have cratered along with ROAS. It didn't. Demand didn't collapse \u2014 something stopped counting it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the decomposition (CPM and CTR flat vs the 60-day baseline, CVR the only moved link) to rule out the auction and the ad before naming the cause.",
+        "evidence": "The transcript states \"CPM +3% / CTR -2% are real but secondary\" and attributes these changes to the algorithm reacting to bad conversion data, rather than describing CPM and CTR as flat against a 60-day baseline; it does not use a flat-CPM/CTR-vs-baseline decomposition to isolate CVR as the only moved link \u2014 instead it treats CPM/CTR as themselves affected (moved) by the tracking failure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents a per-layer screen giving each layer one of four states (pass, FAIL, unknown, not applicable) rather than only naming the winning cause.",
+        "evidence": "No structured per-layer table or explicit pass/FAIL/unknown/not-applicable labeling scheme is present anywhere in the transcript; it discusses layers narratively (tracking, algorithm, creative) without assigning formal states to each.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marks the creative layer pass with evidence (CTR flat against its own baseline).",
+        "evidence": "The transcript does not mark creative as 'pass' with flat-CTR evidence; instead it says CTR is down 2% and attributes this to algorithmic drift from bad data, and recommends re-checking creative metrics only after the fix (\"CTR trend measured against each ad's own pre-migration baseline\" is proposed as future work, not presented as current pass evidence).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Avoids issuing verdicts on downstream layers through the broken signal, for example marking bidding unknown or deferring it until after the fix.",
+        "evidence": "\"Re-run the fatigue analysis only after tracking is confirmed fixed, and do it per-creative... not off account-level CVR \u2014 that metric is corrupted for the whole window and tells you nothing about any individual ad,\" deferring judgment on creative/bidding layers until after the fix.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands the tracking repair to a dedicated conversion-tracking fix workflow or owner instead of treating the diagnosis as the fix.",
+        "evidence": "\"Loop in whoever owns the migration \u2014 ask directly whether the Meta pixel/CAPI integration was carried over and re-validated post-migration. This is usually a one-line fix, not a rebuild,\" handing off repair to an owner/workflow rather than closing with the diagnosis alone.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction: reported CVR and ROAS recover toward baseline within roughly one lag-mature week once the purchase event fires again.",
+        "evidence": "No such recovery-timeline prediction appears anywhere in the transcript; the action plan ends with re-running fatigue analysis and monitoring bidding risk, without forecasting when CVR/ROAS would recover or specifying a 'lag-mature week' timeframe.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check date one full comparison window (lag-mature) after the fix ships.",
+        "evidence": "The transcript only says \"Re-run the fatigue analysis only after tracking is confirmed fixed\" without specifying a concrete re-check date or a defined comparison-window length (e.g., 7 days) after the fix ships.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

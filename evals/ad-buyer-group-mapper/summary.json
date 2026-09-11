@@ -1,0 +1,398 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-buyer-group-mapper",
+  "scenarios": 7,
+  "expectations_total": 87,
+  "expectations_subjective": 1,
+  "expectations_objective": 86,
+  "pass_rate_with_skill_pct": 70.1,
+  "pass_rate_without_skill_pct": 27.6,
+  "delta_pp": 42.5,
+  "uplift_multiplier": 2.54,
+  "trigger_accuracy_pct": 100.0,
+  "trigger_queries": 80,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "States that the 6-week deadline demotes buyer interviews (about a week of scheduling) in favor of evidence the team already owns"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Identifies title inference as the weakest evidence source, a floor never to stop on"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Gives effort in orders of magnitude: the won/lost diff about a day per deal-size segment, buyer interviews about a week of scheduling"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States that primary committee-size studies disagree by roughly a factor of two because each defines involvement differently and samples different deal sizes"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States that no published data segments committee composition by industry or purchase type, rather than extrapolating a dental-specific composition"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Treats the published committee-size figures as a sanity band without ranking the studies against each other"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes each member gets exactly one job function on professional networks, so a cross-functional role like Revenue Operations straddles cells and requires targeting two functions to cover one role"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes function and seniority derive from self-reported profiles with no inference, inheriting stale or inflated titles"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Cites the out-market argument: roughly 95% of B2B buyers are out-market at any time, so hyper-narrow targeting wastes the reach that builds future demand"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States the precision-versus-reach dispute is unresolved: no controlled test compares role-differentiated creative against a single strong message"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Steelmans the precision side (bounded reach in small named-account markets, high-ACV economics, activation for the in-market share) instead of dismissing it"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Gives effort in orders of magnitude: per-role campaigns about a quarter, the merged map about a week"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Includes the flip check: tightening further is justified only if CPM inflation and frequency on the narrow audiences are not degrading cost per opportunity"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States as a caveat that per-role creative outperforming a single strong message is unproven, framing the campaign KPIs as the test of which side of the dispute this market is on"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends reaching security, legal, and procurement before the validation stage, noting a security reviewer added late can reopen requirements and reset agreed work"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Calls reaching validation-stage roles before validation the cheapest insurance in the map"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Gates committee-wide multi-role targeting on account-level intent or engagement (surging or engaged accounts), not a cold industry-wide list"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Uses the consumer five-role vocabulary (initiator, influencer, decider, buyer, user) or an explicit subset of it for the household map"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States what carries over from organizational buying: the user often is not the approver, each decider needs a different message, and one unconvinced member can veto"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Distinguishes champion, coach, and mobilizer, and states a champion who cannot move the group calls for a consensus-driver, not a louder champion"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets the default offer rung per role to an ungated low-friction asset, escalating only after that role's proxy audience engages twice, never on the first touch"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Promotes the compliance/security pack given the SOC 2 Type II already held (about an hour to assemble), noting it removes a validation-stage veto"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes a demo or trial is a standing job because each one spends sales capacity again"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Runs the swap test on angles: flags, rewrites, or merges any angle that could run unchanged against another role"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sources verbatim customer language from the two years of call recordings for the messaging angles, stating exact phrases beat polished descriptions"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Marks any role or objection seeded from generic patterns as a hypothesis to verify against the user's own call notes, noting fine-grained per-role objection maps are weakly evidenced in published research"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Recommends diffing which roles appear in closed-won deals against closed-lost deals as the first evidence step, before any new data collection"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Uses the existing call recordings to fill gaps left by the won/lost diff rather than commissioning new research"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Does not endorse running the 15 buyer interviews as the first step; interviews are deferred until a specific role's presence remains ambiguous after the diff and the call notes"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that the 6-week deadline demotes buyer interviews (about a week of scheduling) in favor of evidence the team already owns"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that the intent feed resolves to accounts, not people, and therefore cannot confirm which roles sit on the committee"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Quantifies intent-data limits: roughly 81% account-level accuracy, or equivalently that about one in five surging accounts has no genuine near-term intent"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Labels every proposed committee role as evidenced or hypothesis instead of asserting the committee as fact"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Attaches a concrete disproof test to at least one hypothesis role, such as cutting it if absent from a stated number of upcoming won-deal notes"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Identifies title inference as the weakest evidence source, a floor never to stop on"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Gives effort in orders of magnitude: the won/lost diff about a day per deal-size segment, buyer interviews about a week of scheduling"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Flags a compliance cost on at least one source: per-participant recording consent for interviews, or a licensing and privacy review before first use of the intent feed"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States that primary committee-size studies disagree by roughly a factor of two because each defines involvement differently and samples different deal sizes"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Cites the SMB band of 2-3 committee members as consistent with the user's own data"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States that no published data segments committee composition by industry or purchase type, rather than extrapolating a dental-specific composition"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Treats the published committee-size figures as a sanity band without ranking the studies against each other"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends one consolidated campaign or merged map rather than per-role campaigns, since the case sits below both the roughly 500 named-account and roughly $100K ACV thresholds"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Rejects exact job-title targeting as the primary proxy and recommends job function plus seniority instead"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States platforms understand only roughly 30-50% of job titles, so every title variant not listed is simply missed"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States function plus seniority roughly triples the addressable audience at similar engagement"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that on professional networks title targeting and seniority targeting are mutually exclusive and cannot be stacked"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Flags the 2,500-3,500-member audiences as below the roughly 5,000 significance floor and far below the 20,000-50,000 practical floor"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States the audience floor before splitting roles, and merges roles whose proxy audiences collide or undershoot rather than shipping five sub-floor audiences"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes each member gets exactly one job function on professional networks, so a cross-functional role like Revenue Operations straddles cells and requires targeting two functions to cover one role"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends account list plus function plus seniority as the default proxy given the enumerable 900-account market"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes function and seniority derive from self-reported profiles with no inference, inheriting stale or inflated titles"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Corrects the claim that the ABM list means people know the brand: list membership is an account signal and every individual on it is still cold"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Warns that a narrow audience all seeing one generic ad is worse than a broader audience seeing role variants - creative variants first, filters second"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Tests both precision thresholds explicitly - roughly 500 named accounts and roughly $100K ACV - and states this case clears neither"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends the merged map, one primary angle plus role-aware proof points in a single campaign, shipped to a 20,000-50,000-sized audience, instead of six per-role campaigns"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Cites the out-market argument: roughly 95% of B2B buyers are out-market at any time, so hyper-narrow targeting wastes the reach that builds future demand"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Deletes per-role campaigns from the menu by name because a single generalist marketer cannot run six campaigns, rather than ranking them last as a stretch goal"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States the precision-versus-reach dispute is unresolved: no controlled test compares role-differentiated creative against a single strong message"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Steelmans the precision side (bounded reach in small named-account markets, high-ACV economics, activation for the in-market share) instead of dismissing it"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Gives effort in orders of magnitude: per-role campaigns about a quarter, the merged map about a week"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Includes the flip check: tightening further is justified only if CPM inflation and frequency on the narrow audiences are not degrading cost per opportunity"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Deletes both list-based targeting rungs for the roughly 40,000-company market and plans on function plus seniority"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Directs the role knowledge into proof-point variants inside the single campaign rather than into audience splits"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The committee summary states which precision-vs-reach posture the map takes and why"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "The output carries a named list of every option a stated constraint deleted from a menu"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States as a caveat that per-role creative outperforming a single strong message is unproven, framing the campaign KPIs as the test of which side of the dispute this market is on"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States 40-60% of deals end in no-decision and about 56% of those are lost to indecision (fear of messing up) rather than status-quo preference, which is why amplifying urgency backfires"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Calls reaching validation-stage roles before validation the cheapest insurance in the map"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Models the journey as six looping buying jobs that roughly 90% of buyers revisit, not a linear funnel"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Rejects gating the content behind forms, citing that fewer than 30% of eventual buyers ever fill a form on the winning vendor's site"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Cites that roughly 70% of the journey completes before any seller contact and/or that 81-84% of deals go to the first vendor contacted, so ungated content and paid reach must carry the pre-contact phase"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Maps arrival order: end users and the initiator at problem identification, the economic buyer at the business case, gatekeepers at validation"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Cites that 79% of purchases require CFO approval when placing the economic buyer"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Judges per-role creative defensible under the thresholds, since about 300 named accounts and $150K ACV clear both"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Uses the consumer five-role vocabulary (initiator, influencer, decider, buyer, user) or an explicit subset of it for the household map"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States what carries over from organizational buying: the user often is not the approver, each decider needs a different message, and one unconvinced member can veto"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States at least two things that do not transfer: no procurement, legal, or security review; no career risk (the fear is personal and financial); personal money rather than company money; reviews and peers instead of RFPs"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Grounds the roles in the 220 reviews and labels each role evidenced or hypothesis"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Distinguishes champion, coach, and mobilizer, and states a champion who cannot move the group calls for a consensus-driver, not a louder champion"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Rejects ending every ad with a demo CTA and matches offer friction to role warmth instead"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Cites the conversion bands: low-friction offers around 10-15% versus cold demo or trial requests around 1.5-4%"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States cold gatekeepers do not book demos at all"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets the default offer rung per role to an ungated low-friction asset, escalating only after that role's proxy audience engages twice, never on the first touch"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Promotes the compliance/security pack given the SOC 2 Type II already held (about an hour to assemble), noting it removes a validation-stage veto"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes a demo or trial is a standing job because each one spends sales capacity again"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Runs the swap test on angles: flags, rewrites, or merges any angle that could run unchanged against another role"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sources verbatim customer language from the two years of call recordings for the messaging angles, stating exact phrases beat polished descriptions"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Fills all six per-role fields: measured on, personal risk, likely objection, messaging angle, proof/offer type, targeting proxy"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Marks any role or objection seeded from generic patterns as a hypothesis to verify against the user's own call notes, noting fine-grained per-role objection maps are weakly evidenced in published research"
+      }
+    ]
+  }
+}

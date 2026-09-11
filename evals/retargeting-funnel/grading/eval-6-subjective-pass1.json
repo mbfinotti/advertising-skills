@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Treats the common 70/30 practice and the 50/50 move as conditional heuristics (justified only when traffic is high and conversion is the bottleneck), overridden here by the pool-bound ceiling",
+        "evidence": "The override half is strongly present: the 50/50 is labelled the 'Naive \"board\" ask' in the split table and rejected outright \u2014 '50/50 is not deliverable. The retargeting pool physically caps spend far below that', with explicit ceiling math ($768/week \u2192 \u2248$3,300/month \u2248 ~7% of spend) and the note that 'retargeting spend is bounded by pool \u00d7 frequency cap \u00d7 CPM, not by ambition \u2014 this is the binding constraint, not a target to negotiate.' However, the conditional-heuristic framing is missing: the 70/30 convention is never mentioned anywhere, and neither split is presented as a rule of thumb tha",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Treats the common 70/30 practice and the 50/50 move as conditional heuristics (justified only when traffic is high and conversion is the bottleneck), overridden here by the pool-bound ceiling",
+        "evidence": "The 70/30 industry convention is never mentioned anywhere in the transcript, so half the item is simply absent. The 50/50 move is addressed \u2014 'Why literal 50/50 is the wrong instrument, not the wrong instinct' concedes the board's efficiency instinct while rejecting the mechanism, and the pool-bound ceiling ($3,300/mo from 8,000 \u00d7 6 \u00d7 4.3 at $16 CPM) is correctly used as the binding constraint that overrides the percentage split. But the transcript never frames either split as a heuristic whose validity is *conditional* on specific circumstances (ample traffic, conversion as the bottleneck rat",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

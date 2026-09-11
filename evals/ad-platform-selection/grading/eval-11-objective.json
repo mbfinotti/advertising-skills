@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response prescribes a deliberately tiny price-discovery spend (on the order of $100) purely to learn the real CPC for this targeting before the real test, replacing published benchmarks with own numbers.",
+        "evidence": "Stage 1 explicitly keeps \"Your $500 stands\" as the price-discovery budget, not a ~$100 spend.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The real test is budgeted at a minimum of 3x target CPA per concept (5x preferred), not a flat $500.",
+        "evidence": "\"$450-750 (3-5x $150 target) at $150-250/day\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Test duration is set to at least the full ~6-week purchase cycle, explicitly overriding the 10-day window.",
+        "evidence": "\"that needs the full ~6-week cycle from Stage 2's first demos... Treat '$700 CAC confirmed' as a mid-November milestone, not a day-10 one\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 10-day judgment window is rejected as a false-negative risk because it is shorter than the sales cycle.",
+        "evidence": "\"Realistic outcome: 1-5 total demos over the full 10 days. That's not a 90-95%-confidence read on CPD\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The test is specified to start and end on the same weekday.",
+        "evidence": "No mention of matching start/end weekdays appears anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pass criterion is CPA/CPL at or under allowable CAC at 90-95% statistical confidence, not an eyeballed $150-per-demo after 10 days.",
+        "evidence": "No 'Pass:' criterion with a 90-95% confidence threshold is stated anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Kill criterion is 2-3x target CPA spent with zero conversions after a readable sample, followed by diagnosis before rerunning.",
+        "evidence": "\"Rollback: 2-3x target CPD spent ($300-450) with zero demos after a readable sample \u2192 pause, diagnose landing page/keywords/offer before rerunning\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Allowable CAC is derived from payback math on roughly $600/month gross profit per customer, yielding a ceiling well above $700 (on the order of $1,800-$7,200 for a 3-12 month band), with the numbers shown.",
+        "evidence": "The response derives only an $829 ceiling from a 6-week payback target (\"Derived ceiling: at a 6-week payback target, allowable CAC = 1.38 months \u00d7 $600 = $829\"), never computing a broader 3-12 month band.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The ~6-week (about 1.4-month) outbound payback is identified as a signal of underinvestment, not health, because it sits under the 3-month lower bound.",
+        "evidence": "The response instead validates it: \"Your $700 target sits $129 (18%) below that \u2014 a real margin buffer, not a razor's edge. Good.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response does not adopt 'match outbound's $700 CAC' as the paid ceiling; the ceiling comes from the payback target.",
+        "evidence": "\"Target for paid | Match outbound: $700 CAC\" is explicitly adopted as the target and validated, rather than independently derived from a standard payback band.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response applies the paid-search funding floor: budget must support roughly 10 clicks/day and a daily budget of 3-5x target CPA, delivering at least one conversion/day on paper - which $500 total cannot.",
+        "evidence": "\"daily budget should run 3-5x target CPA to plausibly clear \u22651 conversion/day and ~10 clicks/day. At a $150 target CPD, that's $450-750/day \u2014 you're proposing roughly 7-11% of that\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The cost-per-demo target is derived by carrying lead-to-customer conversion through to CAC, not left as a free-floating $150.",
+        "evidence": "\"$150 CPD \u00f7 $700 target CAC = 21.4% demo-to-close rate required for the gate to mean what you think it means\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response flags legal-vertical search CPCs as among the most expensive with a very wide published range, making own price discovery essential rather than trusting averages.",
+        "evidence": "\"Legal-vertical search CPC averages ~$9.87 (range $1.50-$50+, unverified-current, reverify live)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response keeps bidding-method choice out of scope as a separate decision instead of answering it in depth.",
+        "evidence": "The transcript includes a full detailed \"4. Bid strategy\" section with a complete BIDDING POLICY template, answering bidding strategy in depth rather than deferring it.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response prescribes a deliberately tiny price-discovery spend (on the order of $100) purely to learn the real CPC for this targeting before the real test, replacing published benchmarks with own numbers.",
+        "evidence": "No separate small price-discovery spend is proposed; the $500/10-day test is treated as the feasibility step itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The real test is budgeted at a minimum of 3x target CPA per concept (5x preferred), not a flat $500.",
+        "evidence": "The $500 test budget is kept and only extended by additional days/volume, not reframed as a multiple of target CPA.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Test duration is set to at least the full ~6-week purchase cycle, explicitly overriding the 10-day window.",
+        "evidence": "The initial test remains volume-gated ('if you get fewer than ~5 demos in 10 days, extend the test'), not set to a full 6 weeks up front.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The 10-day judgment window is rejected as a false-negative risk because it is shorter than the sales cycle.",
+        "evidence": "The critique of the 10-day window is about click/statistical noise ('the pass/fail decision is basically noise, not signal'), not framed as shorter than the sales cycle.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The test is specified to start and end on the same weekday.",
+        "evidence": "No such scheduling detail is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pass criterion is CPA/CPL at or under allowable CAC at 90-95% statistical confidence, not an eyeballed $150-per-demo after 10 days.",
+        "evidence": "Pass criterion is stated as '\u22655 demos in 10 days... under $150 each,' with no statistical confidence threshold.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Kill criterion is 2-3x target CPA spent with zero conversions after a readable sample, followed by diagnosis before rerunning.",
+        "evidence": "No such kill criterion is stated anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Allowable CAC is derived from payback math on roughly $600/month gross profit per customer, yielding a ceiling well above $700 (on the order of $1,800-$7,200 for a 3-12 month band), with the numbers shown.",
+        "evidence": "No monthly gross-profit-based payback derivation appears; the outbound $700 CAC is used directly as the benchmark instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The ~6-week (about 1.4-month) outbound payback is identified as a signal of underinvestment, not health, because it sits under the 3-month lower bound.",
+        "evidence": "No discussion of outbound payback speed as a red flag appears anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response does not adopt 'match outbound's $700 CAC' as the paid ceiling; the ceiling comes from the payback target.",
+        "evidence": "'Target CPA, set at $700 (your outbound benchmark) as a ceiling' directly adopts the outbound CAC as the paid ceiling.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response applies the paid-search funding floor: budget must support roughly 10 clicks/day and a daily budget of 3-5x target CPA, delivering at least one conversion/day on paper - which $500 total cannot.",
+        "evidence": "Only a general observation that '$50/day... roughly 1\u20133 clicks/day' is too low is given, without the specific 10-clicks/day or 3-5x-target-CPA floor rule.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The cost-per-demo target is derived by carrying lead-to-customer conversion through to CAC, not left as a free-floating $150.",
+        "evidence": "'$150 \u00f7 x = $700 \u2192 x \u2248 21%. So $150/demo only matches outbound CAC if paid demos close at ~21%+.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response flags legal-vertical search CPCs as among the most expensive with a very wide published range, making own price discovery essential rather than trusting averages.",
+        "evidence": "A CPC range ('$15\u201340+') is stated as an assumption to plug into the plan, not as a reason to conduct independent price discovery instead of trusting averages.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response keeps bidding-method choice out of scope as a separate decision instead of answering it in depth.",
+        "evidence": "Section 3 answers bidding strategy in detail (Manual CPC vs. Smart Bidding, Target CPA scaling plan), the opposite of keeping it out of scope.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

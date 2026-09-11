@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Replaces bare numeric anchors with a role-specific behavioral description per anchor point",
+        "evidence": "The packet mandates the practice but never delivers the artifact. It states: \"**A written behavioral anchor per competency, per score point**, before round 1 starts. A bare number is banned.\" \u2014 an instruction to the reader, with the actual anchor set deferred ('before round 1 starts'). No competency (of the five listed: technical execution, diagnostic reasoning, measurement literacy, client communication, pod collaboration) receives a written scale describing what a 1, 2, 3, 4, 5 looks like. What exists is fragmentary and role-specific but incomplete: one partial anchor distinction (\"No 'best ",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Replaces bare numeric anchors with a role-specific behavioral description per anchor point",
+        "evidence": "The transcript replaces the 1\u201310 gut score with a 5-competency table where every one of the 20 anchor cells (levels 1\u20134) carries a behavioral descriptor, e.g. Analytical judgment: 1 'Missed obvious issues' \u2192 4 'Found root causes + prioritized, quantified impact'; Client communication: 2 'Explains but avoids hard news' \u2192 4 'Delivers hard news + brings a solution'. It also states the rationale ('A behaviorally anchored 4-point scale forces the rater to justify the number with evidence') and adds an evidence-sentence requirement. Deduction: the anchors are only loosely role-specific \u2014 the compete",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

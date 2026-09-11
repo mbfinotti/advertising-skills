@@ -1,0 +1,279 @@
+{
+  "repo": "advertising-skills",
+  "skill": "paid-media-scaling",
+  "scenarios": 8,
+  "expectations_total": 107,
+  "expectations_subjective": 1,
+  "expectations_objective": 106,
+  "pass_rate_with_skill_pct": 86.9,
+  "pass_rate_without_skill_pct": 57.9,
+  "delta_pp": 29.0,
+  "uplift_multiplier": 1.5,
+  "trigger_accuracy_pct": 98.1,
+  "trigger_queries": 104,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Derives the recommended step size from the account's own change history (the January +30%, April +15%, June +25% responses) rather than defaulting to a universal percentage."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends reconciling platform conversions against the CRM on a recurring monthly basis."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Checks cash absorption: ad spend bills in days while B2B pipeline revenue lags by months (up to the 60-281 day range), so working capital must cover the gap."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Presents vertical ladder, measure-first, and horizontal expansion as named candidate approaches with trade-offs, and requests the user's pick."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Promotes measure-first given the target is over 2x current spend (about 3.2x) on platform-attributed evidence, and names which condition triggered the promotion."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Re-ranks using account specifics: the in-house studio shipping 10 creatives a month is cited as lowering horizontal expansion's effort."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The flat raise-and-judge-weekly cadence is not endorsed as-is: hold length is tied to learning window plus conversion lag, with longer evaluation windows noted where Google (for example Performance Max) is involved."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Rejects the one-fix-per-day sequence: drip-feeding edits across days can trigger repeated learning resets, and changes should be batched into one session."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Identifies the original single +100% jump as an oversized step likely to have reset learning and contributed to the instability."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Distinguishes the persistence-based rollback convention (an efficiency drop persisting about 5-7 days at adequate sample before reverting) from an instant same-day kill, labeling it practitioner convention rather than platform rule."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes each new horizontal unit runs its own learning phase and permanently multiplies creative demand, and checks the 6-new-ads-per-month pipeline against that demand."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Warns about audience overlap or cannibalization between new and existing units and calls for exclusions."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Grounds horizontal expansion in penetration-and-light-buyer growth evidence, citing Ehrenberg-Bass or labeling the rationale as research-supported."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Sets holds covering learning plus B2B conversion lag (weeks to a month or more), judged on leading indicators rather than closed revenue."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Distinguishes the real platform artifacts behind the folklore (Meta's 'Increase budget by 20%' automated-rule UI preset, and/or Google's 20% guidance applying to bids on Display campaigns only) from an actual budget rule."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Derives the recommended step size from the account's own change history (the January +30%, April +15%, June +25% responses) rather than defaulting to a universal percentage."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Sets the hold between steps to at least the learning window plus conversion lag (about a week or more on Meta), not a flat 72 hours."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Runs or requests readiness checks (marginal economics, creative supply, cash, measurement health) before committing to the step schedule."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Treats the failed marginal gate as stop-and-fix: names the failed gate and its fix rather than proposing a smaller budget increase as a consolation."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags the proposed $56K-to-$80K move (over 40% in one step) as an oversized single step that risks a learning-phase reset."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Asks whether the revenue figures are platform-attributed, triangulated with business data, or causally measured."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "References the eBay paid-search experiment (attributed returns in the thousands of percent versus measured negative ROI) as the research-grade warning case for scaling on attribution alone."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Says which condition promoted measure-first (target beyond 2x and/or attributed-only evidence) instead of presenting the choice unexplained."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes practitioner geo-holdout findings that reported cold ROAS around 3x often measures nearer 1.8-2.2x incrementally, labeled as vendor or practitioner data."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Labels cited figures by evidence class: platform numbers as attributed, the eBay result as research, holdout benchmarks as vendor or practitioner data."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Rejects the one-week evaluation window: holds must cover learning plus conversion lag, and B2B steps are judged on windows of a month or more using leading indicators."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Requires the offline conversion loop (CRM stage changes fed back to the platform) closed before scaling further on any lead metric."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends reconciling platform conversions against the CRM on a recurring monthly basis."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Checks whether sales can absorb the added lead volume without speed-to-lead degrading."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Checks cash absorption: ad spend bills in days while B2B pipeline revenue lags by months (up to the 60-281 day range), so working capital must cover the gap."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Anchors affordability in a per-cohort or per-deal payback calculation from the $28K ACV and margin, or asks for the owner-approved CAC boundary, rather than inventing a target."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Presents vertical ladder, measure-first, and horizontal expansion as named candidate approaches with trade-offs, and requests the user's pick."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States the candidate ordering explicitly rather than leaving the ranking implied by list position."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Promotes measure-first given the target is over 2x current spend (about 3.2x) on platform-attributed evidence, and names which condition triggered the promotion."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Re-ranks using account specifics: the in-house studio shipping 10 creatives a month is cited as lowering horizontal expansion's effort."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Applies the penetration bands: about 12% is under the 25% line, so vertical headroom remains available."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The flat raise-and-judge-weekly cadence is not endorsed as-is: hold length is tied to learning window plus conversion lag, with longer evaluation windows noted where Google (for example Performance Max) is involved."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "The plan names its exit condition and which ceiling is expected to bind first."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Numbers carry documented/research/folklore labels, and any default step percentage travels with a recalibrate-from-account-history instruction."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Rejects the one-fix-per-day sequence: drip-feeding edits across days can trigger repeated learning resets, and changes should be batched into one session."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "The re-approach plan uses smaller held steps with a slower resume (on the order of +10% per period after stabilization) rather than re-doubling."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "A rollback trigger, rollback action, and verification date are pre-committed before any renewed up-move."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Any judgment window for the re-approach covers the learning window plus the roughly 3-week lag, not another 5-day read."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Distinguishes the persistence-based rollback convention (an efficiency drop persisting about 5-7 days at adequate sample before reverting) from an instant same-day kill, labeling it practitioner convention rather than platform rule."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Reads 37% penetration against the saturation bands (under 25% headroom remains, 25-35% hold, 35%+ scale horizontally) and refuses the requested vertical ramp on this campaign."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes frequency 3.6 sits above the roughly 3.0 prospecting danger band, labeling the band as practitioner folklore rather than platform rule."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States that doubling budget grows penetration only about 50-70%, not 100%, so the target cannot be bought vertically on this audience."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Deletes the vertical ladder for this account rather than merely demoting it, and names the saturation constraint that deleted it."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Redirects the increase to horizontal expansion: new audiences, geos, placements, or channels at proven per-unit budgets."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes each new horizontal unit runs its own learning phase and permanently multiplies creative demand, and checks the 6-new-ads-per-month pipeline against that demand."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Warns about audience overlap or cannibalization between new and existing units and calls for exclusions."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Grounds horizontal expansion in penetration-and-light-buyer growth evidence, citing Ehrenberg-Bass or labeling the rationale as research-supported."
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Does not treat the campaign still hitting 2.2 blended MER as license to push vertically: asks for or computes marginal efficiency on the newest spend bands."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Runs the creative-supply gate arithmetic: roughly 15 proven ads needed at $75K/month (monthly budget divided by $5,000) against the 4 on hand."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Labels the budget-divided-by-$5,000 proven-ad ratio as folklore with an instruction to calibrate it to this account."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Shows the pipeline cannot close the creative gap on the three-month timeline: about 2 new ads per month against a deficit of roughly 11 proven ads."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Every step carries a pre-committed rollback trigger, rollback action, and verification date."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Step-size and cadence figures carry documented/research/folklore labels, with nothing presented as a platform rule."
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Names the exit condition and identifies creative supply as the first-binding ceiling given the arithmetic."
+      }
+    ]
+  }
+}

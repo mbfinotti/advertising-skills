@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Runs the creative-supply gate arithmetic: roughly 15 proven ads needed at $75K/month (monthly budget divided by $5,000) against the 4 on hand.",
+        "evidence": "\"4 proven ads support \u2248$20K/month... $75K needs \u224815 proven ads.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the budget-divided-by-$5,000 proven-ad ratio as folklore with an instruction to calibrate it to this account.",
+        "evidence": "\"Folklore ratio: proven ads \u2248 monthly budget \u00f7 $5,000.\" and Open item 8: \"is folklore - recalibrate against this account's actual fatigue rate once Steps 1-2 land.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows the pipeline cannot close the creative gap on the three-month timeline: about 2 new ads per month against a deficit of roughly 11 proven ads.",
+        "evidence": "\"At 2 new tests/month, even 100% hit rate only adds 6 over 3 months (\u219210, still 5 short).\" starting from a 4-vs-15 gap.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the failed creative gate as stop-and-fix (fix the creative pipeline, let creative supply set ramp speed) rather than silently shipping a smaller ramp.",
+        "evidence": "\"a failed gate stops the ramp and gets named with its fix \u2014 it doesn't get a smaller ramp as a consolation. Gate 4 fails outright for the full $75K scope.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the payment-terms mismatch (card billed weekly, customers pay net-60) as a business-absorption check, distinguishing CFO media sign-off from approval of the working capital the ramp consumes.",
+        "evidence": "\"Cash: weekly card billing vs. net-60 customer payment... CFO signing off on the media budget number is not the same as CFO modeling the cash-conversion gap \u2014 confirm which one happened.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the absorption principle that a profitable account can still break the company on cash, or quantifies the float the ramp consumes at the target spend.",
+        "evidence": "\"Tripling weekly card outflow before revenue catches up is a real working-capital ask.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Because the change log is empty, starts the step size from the concrete default (15-20% per step, never 30% or more in one move), explicitly because there is no account history to read.",
+        "evidence": "\"Rung 1 (account history) is unavailable... Using Rung 2: the 15\u201320% concrete default (folklore...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ships the default step with the instruction to recalibrate from the account's own response after the first few steps, moving to history-derived sizing.",
+        "evidence": "\"Shipped only with the standing instruction to recalibrate from real reset behavior after Step 1\u20132 land \u2014 this is an opening guess, not a rule.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets holds covering learning plus B2B conversion lag (weeks to a month or more), judged on leading indicators rather than closed revenue.",
+        "evidence": "\"Fitting 6 steps into 3 months forces 2-week holds instead \u2014 this is a deliberate compression below the recommended B2B default... Two weeks is enough to read cost-per-SQL and delivery stability; it is not enough to see the lead-quality decay\" \u2014 holds are explicitly shorter than the learning+lag standard, not covering it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every step carries a pre-committed rollback trigger, rollback action, and verification date.",
+        "evidence": "Ramp Plan Steps table gives dated weeks (Wk2, Wk4...) with hold periods, plus a Rollback section applying triggers/actions across all steps (\"cost per SQL > 1.5x target across a full hold -> cut 20-30%...\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Step-size and cadence figures carry documented/research/folklore labels, with nothing presented as a platform rule.",
+        "evidence": "\"15\u201320% concrete default (folklore...)\", \"60\u2013281 days, Dreamdata benchmark \u2014 research\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Steps are judged on lead quality or cost per qualified lead rather than raw cost-per-lead alone.",
+        "evidence": "\"Score lead quality every hold, not just cost-per-SQL.\" and \"Lead-quality score falling while CPL looks flat or improving -> freeze immediately\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the exit condition and identifies creative supply as the first-binding ceiling given the arithmetic.",
+        "evidence": "\"Ceilings : creative supply binds FIRST - the math above says you run out of proven ads well before Wk12\" and Exit section listing target/marginal-CM/creative-shortfall/lead-quality conditions.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Runs the creative-supply gate arithmetic: roughly 15 proven ads needed at $75K/month (monthly budget divided by $5,000) against the 4 on hand.",
+        "evidence": "The transcript states \"4 winning ads + 2 new/month is a cadence built for $25K\" but never computes a $75K/$5,000 = 15 proven-ad requirement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels the budget-divided-by-$5,000 proven-ad ratio as folklore with an instruction to calibrate it to this account.",
+        "evidence": "No such ratio or folklore label appears; the arithmetic itself is never performed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Shows the pipeline cannot close the creative gap on the three-month timeline: about 2 new ads per month against a deficit of roughly 11 proven ads.",
+        "evidence": "No deficit calculation is shown; only a qualitative statement that \"2 new/month is a cadence built for $25K.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the failed creative gate as stop-and-fix (fix the creative pipeline, let creative supply set ramp speed) rather than silently shipping a smaller ramp.",
+        "evidence": "\"The gating factor isn't the CFO's sign-off \u2014 it's creative velocity, audience depth, and cash timing. Sequence those three ahead of the dollars, and let each budget step earn the next one.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the payment-terms mismatch (card billed weekly, customers pay net-60) as a business-absorption check, distinguishing CFO media sign-off from approval of the working capital the ramp consumes.",
+        "evidence": "\"CFO approved the media budget \u2014 confirm they also modeled the working capital gap: 60-90+ days of spend committed before any of it converts to cash.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the absorption principle that a profitable account can still break the company on cash, or quantifies the float the ramp consumes at the target spend.",
+        "evidence": "\"At $75K/mo weekly card billing (~$17K/week), also check the card's credit limit.\" combined with \"60-90+ days of spend committed before any of it converts to cash.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Because the change log is empty, starts the step size from the concrete default (15-20% per step, never 30% or more in one move), explicitly because there is no account history to read.",
+        "evidence": "\"Zero elasticity data. Budgets never moved since March... 3x is a leap, not an extrapolation.\" followed by \"Increase daily budget 20-25% (standard threshold to avoid resetting delivery/learning phase...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ships the default step with the instruction to recalibrate from the account's own response after the first few steps, moving to history-derived sizing.",
+        "evidence": "\"Only proceed to the next step-up if marginal CPL stays within your target payback threshold.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets holds covering learning plus B2B conversion lag (weeks to a month or more), judged on leading indicators rather than closed revenue.",
+        "evidence": "\"Hold 2 weeks. Track CPL, CAC, and lead quality (not just volume) by platform and by ad.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every step carries a pre-committed rollback trigger, rollback action, and verification date.",
+        "evidence": "Rollback specifics are deferred rather than pre-set: \"Agree in advance what makes you pause or roll back a step (e.g., CPL rises >X% for 2 consecutive weeks) \u2014 decide this now, not mid-ramp.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Step-size and cadence figures carry documented/research/folklore labels, with nothing presented as a platform rule.",
+        "evidence": "\"20-25% (standard threshold to avoid resetting delivery/learning phase on Meta and LinkedIn)\" is presented as fact without a folklore/practitioner-convention label.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Steps are judged on lead quality or cost per qualified lead rather than raw cost-per-lead alone.",
+        "evidence": "\"Track CPL, CAC, and lead quality (not just volume) by platform and by ad.\" and \"report marginal, not blended, numbers... Track marginal CAC/CPL\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the exit condition and identifies creative supply as the first-binding ceiling given the arithmetic.",
+        "evidence": "Creative velocity is named as a top gating factor (\"it's creative velocity, audience depth, and cash timing\") but this is not derived from any computed arithmetic, since no ad-deficit calculation was performed.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

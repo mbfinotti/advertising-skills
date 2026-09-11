@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that search/responsive ads have no hook because the system assembles the ad, and declines to write 'hooks' for them, briefing an asset pool concept instead",
+        "evidence": "Definitions instead state \"Hook = the first-read element (for search: the headline)\" and section 5 is titled \"HOOKS \u2014 headline pool\", treating headlines as hooks rather than declining to write hooks.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that search enters the format ranking only where keyword demand already exists, and with nobody searching the category it drops out of the menu entirely rather than ranking last",
+        "evidence": "\"Search enters the ranking only where keyword demand already exists; where it does not, it drops out rather than ranking last.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a demand-creating alternative format (static or video aimed at an unaware/problem-aware audience) instead of proceeding with the search plan unchanged",
+        "evidence": "The response keeps the Search format and simply redirects keywords to adjacent-demand terms; no static/video demand-creation format is recommended.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Where an asset pool is still specified, sizes it to the format: up to 15 headlines at 30 characters and 4 descriptions at 90 characters, correcting the 6-headline plan",
+        "evidence": "\"Six tightly-mapped headlines against one clean ad-group theme beats fifteen loosely-relevant ones \u2014 do not pad the pool for the score.\" \u2014 pool kept at 6, not expanded.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps headlines across the three themes pain / product / proof as search's messaging-pillar equivalent",
+        "evidence": "Table 'Theme' column: Pain, Pain, Product, Product, Proof-substitute (offer), Proof-substitute (offer)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects pinning all six headlines: at most 1-2 pins, each with a stated reason such as a compliance line or mandated phrase",
+        "evidence": "\"This brief pins one headline (brand name, reason below) and leaves five live\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites that pinning restricts combination testing sharply - a single pinned headline cuts testing by more than 75% per published analysis",
+        "evidence": "\"One published analysis puts a single pin at >75% less combination testing\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that Ad Strength is a content-quality signal with no direct effect on Ad Rank and refuses 'iterate until Excellent' as an objective",
+        "evidence": "\"Ad Strength is a content-quality signal with no direct effect on Ad Rank; do not add loosely relevant headlines to chase 'Excellent.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns against adding loosely relevant headlines to chase an Ad Strength rating",
+        "evidence": "\"do not add loosely relevant headlines to chase 'Excellent'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires each headline to stand alone and work in any combination within a tightly themed ad group",
+        "evidence": "No explicit statement requiring standalone-combinability of headlines is present in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises testing as two ads per ad group differing by angle, not by CTA rephrasing",
+        "evidence": "Only one RSA is briefed ('Arithmetic: 1 ad group... = 1 RSA'); no two-ad-per-ad-group angle-testing structure is described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies the audience as unaware or problem-aware for a new category, so demand must be created rather than harvested",
+        "evidence": "Labels audience 'problem-aware / solution-aware' but targets it via harvesting adjacent-demand keywords ('This brief targets that demand'), not via demand creation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes search's learning read is diluted because the system assembles the ad, placing it last on learning value per concept",
+        "evidence": "No statement in the transcript ties search's learning value ranking to the system assembling the ad.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that search/responsive ads have no hook because the system assembles the ad, and declines to write 'hooks' for them, briefing an asset pool concept instead",
+        "evidence": "The brief explicitly writes '\ud83c\udfaf 3 hooks for the search ads' with three named, finished hook lines, contradicting the expected refusal.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that search enters the format ranking only where keyword demand already exists, and with nobody searching the category it drops out of the menu entirely rather than ranking last",
+        "evidence": "Search is kept as the deliverable format throughout ('Scoped this brief to Search only, per your ask') rather than being dropped from consideration.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a demand-creating alternative format (static or video aimed at an unaware/problem-aware audience) instead of proceeding with the search plan unchanged",
+        "evidence": "'Consider briefing a parallel Demand Gen/YouTube push to build category awareness \u2014 search then captures the demand that awareness creates.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Where an asset pool is still specified, sizes it to the format: up to 15 headlines at 30 characters and 4 descriptions at 90 characters, correcting the 6-headline plan",
+        "evidence": "'write 12\u201315 headlines, pin only 1... All \u226430 characters.' and '## Descriptions (4)' with four descriptions listed, correcting the original 6-headline pinned plan.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Maps headlines across the three themes pain / product / proof as search's messaging-pillar equivalent",
+        "evidence": "Headlines are grouped only as a flat pinned/unpinned pool with a note on 'distinct benefit', not tagged to pain/product/proof themes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects pinning all six headlines: at most 1-2 pins, each with a stated reason such as a compliance line or mandated phrase",
+        "evidence": "'Recommendation: write 12\u201315 headlines, pin only 1 (brand name, for consistency), leave the rest unpinned.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites that pinning restricts combination testing sharply - a single pinned headline cuts testing by more than 75% per published analysis",
+        "evidence": "No statistic about testing reduction percentage is cited anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that Ad Strength is a content-quality signal with no direct effect on Ad Rank and refuses 'iterate until Excellent' as an objective",
+        "evidence": "The brief instead builds an explicit '## Iteration loop to reach Excellent' section treating Excellent as the goal to hit.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns against adding loosely relevant headlines to chase an Ad Strength rating",
+        "evidence": "Step 3 of the iteration loop recommends 'add 2\u20133 more headline variants using each ad group's top keyword theme verbatim' specifically to raise the Ad Strength score.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires each headline to stand alone and work in any combination within a tightly themed ad group",
+        "evidence": "Only a general note that headlines should express distinct benefits is given; no explicit standalone/any-combination requirement is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Advises testing as two ads per ad group differing by angle, not by CTA rephrasing",
+        "evidence": "No multi-ad-per-group testing structure is described; only a single RSA with a headline pool per ad group is proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies the audience as unaware or problem-aware for a new category, so demand must be created rather than harvested",
+        "evidence": "'Casaverde is a new category with ~zero search volume... target the adjacent, already-searched problem space' and ad group 1 is explicitly labeled 'Problem-aware'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes search's learning read is diluted because the system assembles the ad, placing it last on learning value per concept",
+        "evidence": "No statement about search's learning-read value relative to other formats appears in the document.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

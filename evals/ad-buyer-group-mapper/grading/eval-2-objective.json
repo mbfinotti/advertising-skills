@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the 6-to-10 decision makers figure as universal, stating it describes complex purchases only",
+        "evidence": "\"That qualifier \u2014 complex solutions only \u2014 is almost always dropped when the stat gets cited... a $7K/year tool sold to a 1-3 location independent practice is about as far from a complex enterprise purchase as B2B software gets\" and in the closing section: \"'6 to 10 decision makers' describes complex enterprise solutions \u2014 not a $7K tool sold to a 1-3 location independent practice\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that primary committee-size studies disagree by roughly a factor of two because each defines involvement differently and samples different deal sizes",
+        "evidence": "The transcript only contrasts Gartner's 6-10 figure with TrustRadius's SMB 2-3 figure by attributing the gap to purchase complexity ('complex solutions only' qualifier), not to differing definitions of involvement across studies or a general factor-of-two disagreement among primary studies.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Derives committee size from the user's own CRM win notes (about two people) rather than from published figures",
+        "evidence": "\"Your CRM notes are the strongest evidence this method recognizes \u2014 a closed-won diff across 40 real deals beats published research, buyer interviews, or title inference by a wide margin... Two. This map is built from that, not from the 8-persona template.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the SMB band of 2-3 committee members as consistent with the user's own data",
+        "evidence": "\"TrustRadius's own SMB data (2,164 buyers) puts SMB committees at 2-3 people, which is exactly what your 40 closed-won deals show.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a two-role map - a champion-who-is-the-user (practice owner or office manager) plus an economic buyer - instead of eight personas",
+        "evidence": "Committee summary states \"Size: 2 evidenced roles, 1 hypothesis, 5 deleted. Not 8.\" and the role map lists exactly two evidenced roles: \"Practice Owner \u2014 economic buyer, often also champion/end user\" and \"Office Manager \u2014 champion + end user\", replacing the VP's 8-persona list.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cuts procurement, compliance, and finance as separate roles, noting those stages do not exist in a $7K purchase, and refuses to fill empty role slots for completeness",
+        "evidence": "Deletion table: \"Procurement | Doesn't exist as a function at $7K ACV in a practice this size.\" \"Finance | Owner is the sole budget holder. A finance campaign would target an empty seat.\" \"Compliance | ... Folded into their creative as a proof point, not a separate audience.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that no published data segments committee composition by industry or purchase type, rather than extrapolating a dental-specific composition",
+        "evidence": "The transcript never makes this claim; it cites generic Gartner and TrustRadius SMB figures alongside dental-specific CRM data without commenting on whether published data segments by industry or purchase type.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the published committee-size figures as a sanity band without ranking the studies against each other",
+        "evidence": "The transcript explicitly ranks evidence sources, favoring TrustRadius's SMB figure as applicable ('exactly what your 40 closed-won deals show') over Gartner's figure (whose complex-solution qualifier is said to be dropped when misapplied), and states CRM notes beat 'published research, buyer interviews, or title inference by a wide margin' \u2014 an explicit ranking, not an unranked sanity band.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes any proposed role that changes no targeting, creative, or offer decision",
+        "evidence": "The deletion table removes IT consultant, Procurement, Compliance, Finance, and Front-desk staff as separate audiences, e.g. \"Front-desk staff | No budget, no veto, absent from all 40 win notes as decision influencers. Matters for post-sale adoption, not ad targeting.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The committee summary names the evidence source behind the size estimate (the user's own win notes)",
+        "evidence": "\"Size: 2 evidenced roles, 1 hypothesis, 5 deleted... Your CRM notes are the strongest evidence this method recognizes \u2014 a closed-won diff across 40 real deals...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends one consolidated campaign or merged map rather than per-role campaigns, since the case sits below both the roughly 500 named-account and roughly $100K ACV thresholds",
+        "evidence": "\"Precision vs. reach posture: one merged campaign with role-aware creative, not eight per-role campaigns. Per-role campaigns are only defensible below ~500 named accounts or above ~$100K ACV. Denticor is at $7K ACV \u2014 nowhere near that ceiling \u2014 and independent 1-3 location dental practices... nowhere near that 500-account floor... Neither threshold clears.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the 6-to-10 decision makers figure as universal, stating it describes complex purchases only",
+        "evidence": "\"The VP's '6\u201310 stakeholders' stat is a Gartner enterprise-B2B average, typically observed on complex, high-ACV, multi-department rollouts. Denticor is a $7K/year tool sold to 1\u20133 location independent clinics \u2014 a small business, not an enterprise buyer.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that primary committee-size studies disagree by roughly a factor of two because each defines involvement differently and samples different deal sizes",
+        "evidence": "No mention of multiple studies disagreeing by a factor of two or differing definitions of involvement; only one Gartner figure is cited and contrasted with CRM data.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Derives committee size from the user's own CRM win notes (about two people) rather than from published figures",
+        "evidence": "\"Your 40 wins say the real committee has **2 active roles**, not 8\" with evidence column citing 'Present on ~all 40 calls' and 'Absent from 40/40 wins'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the SMB band of 2-3 committee members as consistent with the user's own data",
+        "evidence": "The transcript never cites a published '2-3 committee members SMB' figure/band; it only presents the user's own 2-role finding without referencing an external SMB benchmark.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a two-role map - a champion-who-is-the-user (practice owner or office manager) plus an economic buyer - instead of eight personas",
+        "evidence": "Table lists only 'Practice Owner' (economic buyer) and 'Office Manager' (champion) as active roles, and campaigns section is built around exactly these two: \"1. Practice Owner (Economic Buyer)\" and \"2. Office Manager (Champion/User)\", with \"3\u20138. ... no paid campaigns\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cuts procurement, compliance, and finance as separate roles, noting those stages do not exist in a $7K purchase, and refuses to fill empty role slots for completeness",
+        "evidence": "\"A 1\u20133 location clinic doesn't have a procurement department, a compliance officer, or a finance team reviewing a $7K SaaS line item... Procurement / Finance / Compliance / Front-desk: no dedicated asset \u2014 fold any question into the owner/office-manager sales deck.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that no published data segments committee composition by industry or purchase type, rather than extrapolating a dental-specific composition",
+        "evidence": "The transcript does not discuss whether published data segments by industry/purchase type at all; it moves directly from the Gartner average to the user's own CRM data without addressing this gap in published research.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the published committee-size figures as a sanity band without ranking the studies against each other",
+        "evidence": "Only a single Gartner figure is referenced (no plural studies), and it is not treated as a 'sanity band' \u2014 it is rejected as inapplicable to this segment, so there is no ranking or band framing to evaluate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes any proposed role that changes no targeting, creative, or offer decision",
+        "evidence": "\"No ad spend; building personas for roles absent from 40/40 wins burns budget without evidence they influence the deal.\" \u2014 the 6 other roles get no campaigns, only optional reactive collateral, effectively removing them from the targeting/creative plan.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The committee summary names the evidence source behind the size estimate (the user's own win notes)",
+        "evidence": "\"Your 40 wins say the real committee has 2 active roles\" and the Evidence column citing \"Present on ~all 40 calls\" / \"Absent from 40/40 wins\", explicitly sourcing the estimate to the user's own CRM win data.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends one consolidated campaign or merged map rather than per-role campaigns, since the case sits below both the roughly 500 named-account and roughly $100K ACV thresholds",
+        "evidence": "The transcript does the opposite: it recommends two separate per-role campaigns ('1. Practice Owner (Economic Buyer)' and '2. Office Manager (Champion/User)') with distinct channels and messages, rather than a single consolidated campaign, and never discusses named-account or ACV thresholds.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

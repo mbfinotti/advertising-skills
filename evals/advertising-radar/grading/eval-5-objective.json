@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The 1-to-5 force-rank of same-medium blogs is declined as false precision",
+        "evidence": "\"Ranking them against each other would be false precision dressed up as judgment.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains that ranking applies across mediums, while choice within a medium rests on channel and theme fit",
+        "evidence": "\"The skill's efficiency ranking ... compares *mediums*, not named sources inside the same medium ... Selection within a medium is supposed to rest on **channel and theme fit**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Subscriber-count estimates are refused; unpublished audience figures are recorded as not stated, never estimated",
+        "evidence": "\"'Inventing metrics. If a source doesn't publish audience figures, the value is 'not stated'. Never estimate one.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Audience size is rejected as the selection criterion; value is framed as what the source's output changes in the user's account",
+        "evidence": "\"'biggest audience' isn't the skill's selection criterion. Value here is defined as *what the source's output changes in your account*\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The user's themes and bought channels are requested or used as the fit criteria for choosing among the five",
+        "evidence": "\"**Themes** \u2014 are you deep on creative testing, PMax-adjacent Meta budget shifts, iOS/attribution, retention/LTV?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Freshness verification (finding the newest dated item on each blog) is required before any of the five makes the list",
+        "evidence": "\"**URLs for all five** \u2014 so I can run the freshness check before any of them qualifies for the list\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The roughly-3-month active and roughly-6-month stale thresholds, or an equivalent observed-date classification, are stated for that check",
+        "evidence": "\"classify: verified-active (\u2264~3 months), verified-stale (~6+ months, keep only if you accept the risk), dead ..., or unverified\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Homepage cadence claims are treated as aspirational until a dated item confirms them",
+        "evidence": "\"not the homepage's cadence claim, which is aspirational until a dated post confirms it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Non-selected blogs are proposed for a bench of substitutes rather than discarded",
+        "evidence": "\"the other three go to the **bench** as verified substitutes, not discarded\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A what-they're-selling disclosure is requested or applied per blog",
+        "evidence": "\"**What each is selling** \u2014 tool vendor, agency, course/community, or platform-official. Disclosed, not filtered out.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No figures of any kind (dates, audiences, scores) are fabricated for the five blogs",
+        "evidence": "No dates, audience figures, or scores are stated for any of the five named blogs anywhere in the response.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any picks made are justified by fit, not by a quality score between the five",
+        "evidence": "\"the two that best match your themes and pass the freshness check go on the list\" \u2014 no picks are actually made, and the stated criterion is fit.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The 1-to-5 force-rank of same-medium blogs is declined as false precision",
+        "evidence": "'I can't responsibly give you that ranking or those subscriber numbers, and I want to be upfront about why.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response explains that ranking applies across mediums, while choice within a medium rests on channel and theme fit",
+        "evidence": "No discussion of cross-medium ranking versus within-medium fit appears anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Subscriber-count estimates are refused; unpublished audience figures are recorded as not stated, never estimated",
+        "evidence": "'Inventing plausible-sounding numbers (e.g., \"Wrenfold Creative: ~8,200 subscribers\") would just be fabrication dressed up as analysis.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Audience size is rejected as the selection criterion; value is framed as what the source's output changes in the user's account",
+        "evidence": "No framing of value in terms of account impact appears; the response focuses solely on inability to verify the names exist.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The user's themes and bought channels are requested or used as the fit criteria for choosing among the five",
+        "evidence": "The response requests URLs, screenshots, or confirmation the names are placeholders \u2014 not the user's themes or bought channels.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Freshness verification (finding the newest dated item on each blog) is required before any of the five makes the list",
+        "evidence": "No freshness/dated-item check is proposed anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The roughly-3-month active and roughly-6-month stale thresholds, or an equivalent observed-date classification, are stated for that check",
+        "evidence": "No such thresholds are mentioned anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Homepage cadence claims are treated as aspirational until a dated item confirms them",
+        "evidence": "Not addressed; the response does not discuss homepage cadence claims at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Non-selected blogs are proposed for a bench of substitutes rather than discarded",
+        "evidence": "No bench or substitute list is proposed anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A what-they're-selling disclosure is requested or applied per blog",
+        "evidence": "No selling-disclosure request or flag appears anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No figures of any kind (dates, audiences, scores) are fabricated for the five blogs",
+        "evidence": "'I have no reliable knowledge of ... these actual Meta-focused DTC blogs ... I have no way to check whether they're real, what their content is, or what their subscriber counts are.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any picks made are justified by fit, not by a quality score between the five",
+        "evidence": "No picks are made at all; the response ends by asking for more information rather than selecting or justifying any of the five.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

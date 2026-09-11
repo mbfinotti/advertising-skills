@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Adding TikTok is treated as voiding channel coverage until a TikTok source is added",
+        "evidence": "\"Channel added: TikTok. You're now buying it with zero source covering it \u2014 this is a coverage gap until you add one.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An official TikTok platform source is added, gated to the newly bought channel",
+        "evidence": "\"**coverage gap** \u2014 the reference library's only TikTok entry ... was flagged off-topic ... Don't treat that as your TikTok source yet \u2014 find and verify TikTok's actual advertiser-facing blog before counting this slot as filled\" \u2014 no source is actually added.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every URL on the list is re-resolved, including entries that worked in June, to catch renames and domain resale",
+        "evidence": "\"both were blocked by permissions in this session, so **no live verification was possible**\" \u2014 nothing was re-resolved.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Saltgrass Media is dropped because the user never consumed it",
+        "evidence": "\"**Dropped \u2014 unconsumed:** Saltgrass Media blog (10 min/wk). You said you never opened it once all quarter. Removed, not benched \u2014 it wasn't a freshness failure, it was a fit failure.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The Down Funnel redirect is checked for content, distinguishing renamed-but-alive from a resold domain, rather than trusting that it resolves",
+        "evidence": "\"I can't tell which without fetching it, so it's held out of the committed budget until you confirm\" \u2014 no actual content check was performed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The freshness check is re-run on surviving entries, with stale entries downgraded, dead ones removed, and previously unverified ones retried",
+        "evidence": "\"Carried over, unverified this session: The Morning Auction, Meta for Business news, Google Ads & Commerce blog, Bidcraft Slack ... none were re-fetched.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The community slot and the newest additions are asked for one discovery candidate each",
+        "evidence": "Only Bidcraft Slack is asked for a discovery candidate (\"that's your 'one candidate discovery' for this quarter\"); no equivalent request is made of any newly added source.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Discovery candidates are verified before joining the list or bench",
+        "evidence": "No discovery candidate is actually surfaced or verified in this transcript; it is deferred to the user's future action.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Estimated weekly minutes are re-totalled against the 60-minute budget and overflow is trimmed",
+        "evidence": "\"Estimated weekly minutes: **~30 of 60 committed** (20 more available immediately once Down Funnel is resolved one way or the other).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The full channel mix is re-confirmed with the user rather than assumed frozen",
+        "evidence": "The response states \"Channel added: TikTok\" as a given fact but never asks the user to reconfirm whether Meta and Google are still both being bought.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A replacement for the dropped blog comes from the bench or is verified before entry",
+        "evidence": "No source is slotted in to replace Saltgrass Media; the freed 10 minutes are simply left unspent (\"~30 of 60 committed\").",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refreshed entries carry new verification dates, not the June ones",
+        "evidence": "\"Meta for Business news ... **carried over** \u2014 last confirmed dated item Jun 11, 2026 (per Aug 26, 2026 reference snapshot).\" \u2014 date is unchanged.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The refreshed output carries an explicit channel-coverage line covering Meta, Google, and TikTok",
+        "evidence": "\"Channel coverage \u2014 every bought channel has a verified-active source: **no.** Meta and Google carry unverified-but-recent reference data; TikTok has none yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The consumption bar (at least two-thirds of entries actually consumed) is checked at the refresh",
+        "evidence": "The response checks individual consumption per source (Saltgrass unused, others read weekly) but never states or applies an aggregate two-thirds consumption threshold.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Adding TikTok is treated as voiding channel coverage until a TikTok source is added",
+        "evidence": "'This is the one gap June's list has that today's spend doesn't cover.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An official TikTok platform source is added, gated to the newly bought channel",
+        "evidence": "'TikTok's official Business/Ads blog \u2014 5 min/week ... added because you're now actually buying on the platform.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every URL on the list is re-resolved, including entries that worked in June, to catch renames and domain resale",
+        "evidence": "'You said you read all of these weekly, which is stronger evidence than June's one-time \"verified active\" check. No action needed beyond noticing if any of them go quiet.' \u2014 kept entries are not re-resolved.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Saltgrass Media is dropped because the user never consumed it",
+        "evidence": "'zero opens in 3 months is the verification. Drop it, reclaim the 10 min.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The Down Funnel redirect is checked for content, distinguishing renamed-but-alive from a resold domain, rather than trusting that it resolves",
+        "evidence": "'Same show, new host/URL (legit rebrand) \u2192 keep it ... Show is dead, domain resold/expired \u2192 treat as gone ... Redirects to something unrelated or spammy ... \u2192 treat as compromised.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The freshness check is re-run on surviving entries, with stale entries downgraded, dead ones removed, and previously unverified ones retried",
+        "evidence": "Kept entries rely on 'you read all of these weekly' as evidence rather than a re-run freshness check on dated items.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The community slot and the newest additions are asked for one discovery candidate each",
+        "evidence": "Only the community slot is asked for a discovery candidate ('search Bidcraft Slack for a #tiktok channel'); the new TikTok blog addition is not asked to surface one.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Discovery candidates are verified before joining the list or bench",
+        "evidence": "No verification step is described for the suggested #tiktok Slack channel before it would join the list.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Estimated weekly minutes are re-totalled against the 60-minute budget and overflow is trimmed",
+        "evidence": "'**Total active** | **30 min / 60 min budget**'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The full channel mix is re-confirmed with the user rather than assumed frozen",
+        "evidence": "'One platform added (TikTok) since June' is stated as a given fact rather than a question re-confirming the full channel mix.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A replacement for the dropped blog comes from the bench or is verified before entry",
+        "evidence": "Saltgrass's freed 10 minutes are simply reclaimed ('Drop it, reclaim the 10 min') with no bench substitute offered.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refreshed entries carry new verification dates, not the June ones",
+        "evidence": "No per-entry verification dates are given anywhere in the table; only the document header carries 'Sept 2026.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The refreshed output carries an explicit channel-coverage line covering Meta, Google, and TikTok",
+        "evidence": "No explicit coverage-confirmation line lists Meta, Google, and TikTok together as covered.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The consumption bar (at least two-thirds of entries actually consumed) is checked at the refresh",
+        "evidence": "No overall consumption ratio across all entries is computed or stated; only Saltgrass's zero-opens is called out individually.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

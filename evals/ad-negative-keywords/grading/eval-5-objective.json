@@ -1,0 +1,118 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Explains that the platform hides a large share of search terms - practitioner measurements center around 40% of spend - so the missing $7k is expected, not a tracking bug",
+        "evidence": "\"Practitioner measurements put this at ~40% of spend on average, ranging 20-80%. $7k of $16k is 43.75%... This is the leading explanation, not a bug or a tracking error.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends token-level (n-gram) mining of the visible export to recover signal the report no longer shows",
+        "evidence": "\"### A. Mine the visible $9k harder (n-gram/token mining)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tokenizes queries into unigrams, bigrams, and trigrams",
+        "evidence": "\"Builds every 1-, 2-, and 3-word n-gram per query\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Aggregates cost and conversions per token across every query containing that token",
+        "evidence": "\"aggregates spend/conversions per token across the whole file\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sorts tokens by cost descending, filters to zero conversions, and applies the same candidate gates as the term-level workflow",
+        "evidence": "\"Outputs token_report.csv sorted by cost, flagged candidate=True/False\" and \"Applies the same gates as the manual workflow: zero conversions and (...) or spend \u22651.5-2x target CPA.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Negates bad tokens as phrase negatives",
+        "evidence": "No statement ties the mined tokens to phrase match; the text only says \"every flagged token still needs the overblocking review... before it becomes a negative\" without specifying match type",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags high-converting tokens as expansion leads for the account owner while declining to do the positive keyword research itself",
+        "evidence": "No mention of high-converting tokens as expansion leads appears anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Points this user to the script/tokenizer path given their stated Python ability, noting the spreadsheet pivot is the equivalent no-script alternative",
+        "evidence": "The transcript hands over \"mine_search_terms.py\" with a python command but never mentions a spreadsheet-pivot alternative anywhere in this section",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not promise to recover the hidden queries themselves - the mining works on the visible export only",
+        "evidence": "\"you cannot recover the literal query text. No tool, script, or API call gets it back; Google doesn't expose it, full stop.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Explains that the platform hides a large share of search terms - practitioner measurements center around 40% of spend - so the missing $7k is expected, not a tracking bug",
+        "evidence": "'for an ecommerce account any of these three can easily add up to ~40% of budget' and 'Bottom line: you're not missing $7k of \"junk\" \u2014 you're missing an entire *channel type's* worth of visibility.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends token-level (n-gram) mining of the visible export to recover signal the report no longer shows",
+        "evidence": "'Build an n-gram cost table in `pandas`: tokenize each search term, group by unigram/bigram, sum cost and conversions per token.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tokenizes queries into unigrams, bigrams, and trigrams",
+        "evidence": "The transcript only mentions 'group by unigram/bigram' \u2014 trigrams are never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Aggregates cost and conversions per token across every query containing that token",
+        "evidence": "'tokenize each search term, group by unigram/bigram, sum cost and conversions per token.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sorts tokens by cost descending, filters to zero conversions, and applies the same candidate gates as the term-level workflow",
+        "evidence": "'Tokens with high cost and zero conversions are your negative-keyword candidates... Flag terms with `cost > X` and `conversions == 0` over a rolling 30/60/90-day window as the actual negative-keyword queue, reviewed weekly.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Negates bad tokens as phrase negatives",
+        "evidence": "No match type (phrase/exact/broad) is specified for the token-level negatives; the transcript only says the tokens 'are your negative-keyword candidates' without stating how to add them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags high-converting tokens as expansion leads for the account owner while declining to do the positive keyword research itself",
+        "evidence": "There is no discussion of high-converting tokens as expansion leads anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Points this user to the script/tokenizer path given their stated Python ability, noting the spreadsheet pivot is the equivalent no-script alternative",
+        "evidence": "The transcript provides only the Python/pandas approach with no mention of a spreadsheet pivot-table alternative for non-coders.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not promise to recover the hidden queries themselves - the mining works on the visible export only",
+        "evidence": "The n-gram mining is scoped explicitly to 'Search / DSA campaigns (your visible $9k) \u2014 full row-level control,' while PMax/Shopping is separately described as a channel where 'you don't get search terms, so work around it, not through it.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

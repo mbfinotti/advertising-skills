@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response states that B2B and B2C paid advertising have largely separate source populations",
+        "evidence": "\"B2B SaaS and consumer hardware are genuinely separate ecosystems per the skill's B2B/C split\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each entry is labelled per segment (B2B, B2C/DTC, or both) rather than presented as one blended list",
+        "evidence": "Tables include a 'Segment' column, e.g. \"B2C-leaning\", \"B2B\", \"both\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "At least one B2B-ecosystem source appears for the LinkedIn/B2B line",
+        "evidence": "\"B2Linked blog (AJ Wilcox) ... Deepest independent LinkedIn Ads tactics ... agency (B2Linked)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "At least one DTC/B2C-ecosystem source appears for the consumer line",
+        "evidence": "\"Foxwell Digital blog ... Deepest Meta paid-social strategy available in text for the DTC gadget line\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sources serving both segments are labelled as both",
+        "evidence": "PPC Land and Google Ads & Commerce blog rows both list Segment as \"both\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The official LinkedIn marketing blog appears for the bought LinkedIn channel",
+        "evidence": "\"LinkedIn Marketing blog | linkedin.com/business/marketing/blog | text | LinkedIn | B2B\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An official Meta platform source appears for the bought Meta channel",
+        "evidence": "\"Meta for Business news | facebook.com/business/news | text | Meta | B2C-leaning\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Google's official ads blog appears for the bought Google channel",
+        "evidence": "\"Google Ads & Commerce blog | blog.google/products/ads-commerce/ | text | Google | both\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No Microsoft or TikTok official platform sources appear",
+        "evidence": "No such sources appear anywhere in the tables or bench.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Podcasts and video are struck from the menu and the response names the struck mediums",
+        "evidence": "\"every podcast (Perpetual Traffic, The LinkedIn Ads Show, Ecommerce Playbook) and every YouTube channel is dropped, not ranked low\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "One community fills the reserve slot for the standing habit",
+        "evidence": "\"**Two community slots instead of the default one.** ... I doubled it because...\" \u2014 explicitly two, not one.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 90",
+        "evidence": "\"**Totals: ~87 of 90 min/week** ...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage line covers LinkedIn, Meta, and Google",
+        "evidence": "\"**Channel coverage \u2014 every bought channel has a verified-active source: yes.** LinkedIn \u2713 ... Meta \u2713 ... Google \u2713\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response states that B2B and B2C paid advertising have largely separate source populations",
+        "evidence": "No explicit general statement to this effect appears; the split is only implicit in the table groupings (e.g. 'B2B SaaS-heavy' vs 'Consumer/DTC-heavy').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each entry is labelled per segment (B2B, B2C/DTC, or both) rather than presented as one blended list",
+        "evidence": "Sections are headed 'B2B SaaS-heavy (logistics SaaS line)', 'Consumer/DTC-heavy (label-printer line)', and 'LinkedIn/Meta specialist (both lines)'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "At least one B2B-ecosystem source appears for the LinkedIn/B2B line",
+        "evidence": "'Demand Gen Report | Free + paid | B2B demand gen trade press, LinkedIn/ABM-heavy'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "At least one DTC/B2C-ecosystem source appears for the consumer line",
+        "evidence": "'Modern Retail | Paid membership | independent | DTC/retail-specific trade press'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sources serving both segments are labelled as both",
+        "evidence": "Table header: '**LinkedIn/Meta specialist (both lines)**'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The official LinkedIn marketing blog appears for the bought LinkedIn channel",
+        "evidence": "'LinkedIn Marketing Solutions Blog | LinkedIn | Free | ... First place ... LinkedIn Campaign Manager [changes] land'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An official Meta platform source appears for the bought Meta channel",
+        "evidence": "'Meta for Business News | Meta | Free | ... Same, for Advantage+/Meta ads'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Google's official ads blog appears for the bought Google channel",
+        "evidence": "'Google Ads & Commerce Blog | Google | Free | ... First place PMax/Search policy and feature changes land'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No Microsoft or TikTok official platform sources appear",
+        "evidence": "No Microsoft or TikTok source appears anywhere in the tiered tables.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Podcasts and video are struck from the menu and the response names the struck mediums",
+        "evidence": "No mention of podcasts or video being excluded appears anywhere in the response; the list is simply composed of blogs, newsletters, and communities without addressing those mediums.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "One community fills the reserve slot for the standing habit",
+        "evidence": "'30 min \u2014 Tier 2. Drop into one or two live communities (rotate weekly).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 90",
+        "evidence": "'stay current on LinkedIn, Meta, and Google paid media ... in 90 minutes' with 15+30+45=90 minute breakdown.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage line covers LinkedIn, Meta, and Google",
+        "evidence": "No explicit summary line confirms coverage across all three channels; coverage is only implicit in the Tier 1 table rows.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

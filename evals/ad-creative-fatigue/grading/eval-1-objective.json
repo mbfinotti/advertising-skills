@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Runs a confounder screen before issuing any fatigue verdict",
+        "evidence": "The 'Confounder screen' code block (budget/bid change, learning-phase reset, etc.) appears before the 'Verdict' section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks the budget/bid change confounder as failing, tying the decline onset to the budget step from $600/day to $1,050/day eleven days ago",
+        "evidence": "\"budget/bid change : FAIL - ad-set budget +75% in one step, Sep 01; decline onset same day\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the budget step as a significant edit that reset the platform learning phase",
+        "evidence": "\"learning-phase reset : FAIL - a 75% single-step increase exceeds normal daily-budget tolerance and is a significant edit; delivery is volatile for ~7 days post-edit per Meta's own guidance\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites all three creatives in the ad set declining together as evidence against fatigue, because fatigue is creative-specific",
+        "evidence": "\"Lockstep decline across every creative in the ad set is the single strongest tell here: true fatigue is creature-specific; a scale/learning shock hits the whole ad set at once\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a verdict of confounded, not fatigued",
+        "evidence": "\"verdict : confounded (budget scale-up + learning-phase reset), NOT fatigued\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to brief or commission the two replacement UGC videos",
+        "evidence": "\"Kill the brief, or at minimum pause it. Commissioning two UGC videos now would burn production capacity...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends re-baselining the creative at the new spend level after delivery stabilises, rather than judging it against the pre-increase peak",
+        "evidence": "\"Re-baseline the ad set at the new $1,050/day spend level starting from stabilization (~Sep 08), then judge future decay against THAT baseline, not the pre-scale peak.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that some efficiency loss at higher spend is the normal cost of scale, not decay",
+        "evidence": "\"some efficiency loss at 1.75x spend is the normal cost of scale, not decay\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the frequency rise from 1.8 to 2.6 as a lagging, confirming signal that cannot carry the call",
+        "evidence": "signal block lists \"frequency : 2.6 vs 1.8 [lagging]\" and the verdict is built entirely on the budget/learning-phase confounder fails, never on frequency.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that the current comparison window overlaps post-edit volatility and requires a clean window after stabilisation before any future fatigue read",
+        "evidence": "\"11 days in, you're barely past that window, not into a clean re-stabilized read\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a structured verdict block containing at least verdict, confidence, action, and re-check fields",
+        "evidence": "Verdict block contains confidence, verdict, action, ruled out, expected, re-check fields.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check date one full comparison window after delivery stabilises",
+        "evidence": "\"re-check : 2026-09-22 (14-day clean window starting after Sep 08 stabilization)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies no universal frequency or CTR-drop threshold as justification for a verdict",
+        "evidence": "Verdict relies on computed noise bands and confounder fails, not fixed thresholds.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Runs a confounder screen before issuing any fatigue verdict",
+        "evidence": "Checks timing vs day-11 budget change, all-three-creatives pattern, frequency mechanics, and Meta's learning-phase threshold before concluding 'the fatigue read doesn't hold up'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks the budget/bid change confounder as failing, tying the decline onset to the budget step from $600/day to $1,050/day eleven days ago",
+        "evidence": "'What you have is a step change that lines up exactly with day 11, the day you moved the budget' and '$600\u2192$1,050/day step change (+75% in one move)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the budget step as a significant edit that reset the platform learning phase",
+        "evidence": "'Meta explicitly flags budget/bid changes above ~20\u201330% as likely to reset the ad set into (or back into) the learning phase'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites all three creatives in the ad set declining together as evidence against fatigue, because fatigue is creative-specific",
+        "evidence": "'All three creatives broke the same way, same day... Fatigue is creative-specific; this isn't.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Issues a verdict of confounded, not fatigued",
+        "evidence": "'this looks like a budget-shock misdiagnosis'; 'budget/learning-phase shock, not hero fatigue'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to brief or commission the two replacement UGC videos",
+        "evidence": "Contradicts the opening '\ud83d\udd34 Don't brief' line by later stating 'Brief the 2 UGC videos today anyway' with full angles and CTAs",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends re-baselining the creative at the new spend level after delivery stabilises, rather than judging it against the pre-increase peak",
+        "evidence": "The test steps budget DOWN to $750/day and compares to the old pre-change baseline, not re-baselining at the new $1,050 spend level",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that some efficiency loss at higher spend is the normal cost of scale, not decay",
+        "evidence": "No statement to this effect anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the frequency rise from 1.8 to 2.6 as a lagging, confirming signal that cannot carry the call",
+        "evidence": "'The frequency jump is mechanically explained by the budget, not by fatigue' \u2014 frequency treated as a downstream consequence, not primary evidence",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that the current comparison window overlaps post-edit volatility and requires a clean window after stabilisation before any future fatigue read",
+        "evidence": "'Hold for 5\u20137 days, let it exit learning, then compare CTR/CPA/frequency to baseline' implies current window is contaminated",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a structured verdict block containing at least verdict, confidence, action, and re-check fields",
+        "evidence": "No explicit confidence field appears anywhere in the transcript",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check date one full comparison window after delivery stabilises",
+        "evidence": "'Target dates from today (2026-09-12): drop budget today/tomorrow (9/12\u20139/13), read results (9/18\u20139/20)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies no universal frequency or CTR-drop threshold as justification for a verdict",
+        "evidence": "Only cites Meta's ~20\u201330% budget-change threshold, never a fixed frequency or CTR-drop number",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

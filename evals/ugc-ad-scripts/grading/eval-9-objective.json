@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The source order is re-ranked against what the user already holds: the tagged ticket export (and call library) outranks a week of public-review scraping, since its digging cost drops to near zero.",
+        "evidence": "\"a tagged ticket export or a call-recording library drops to near-zero and outranks public reviews... That's exactly your situation, named explicitly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Public reviews are noted as usually too thin for B2B products to carry a concept, which the 4 thin reviews confirm here.",
+        "evidence": "\"as it does for most B2B products, where public reviews are too thin to carry a concept\" and \"4 reviews won't carry a concept alone.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A named customer's words from support tickets are flagged as needing that customer's consent before they reach a script.",
+        "evidence": "\"Named-customer quotes from tickets or calls need their consent before they reach a script.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sales-call material is positioned as the source of objection language nothing else provides.",
+        "evidence": "\"this is the only source with objection language: what a finance director says when they're skeptical, mid-negotiation, or explaining why they churned a competitor.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each harvested quote is recorded in four columns: exact quote, source, underlying desire or problem, emotional tag.",
+        "evidence": "\"pull verbatim lines into the 4-column doc (quote / source / underlying desire / emotional tag)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The method is named and applied as review mining: pulling the customer's own language back out of their channels and mirroring it, not generic 'do research'.",
+        "evidence": "The entire revised plan is built around extracting verbatim customer language from tickets/calls/reviews into the evidence doc rather than generic research steps.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No quotes are invented; the response works only with supplied material or asks for the export/quotes before writing quote-dependent lines.",
+        "evidence": "The only illustrative phrase (\"I spend three days a month reconciling receipts nobody submitted\" -type language) is flagged as an example of what to look for, not asserted as a real quote.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The problem beat is built to name the moment the pain shows up, using the emotional tag from the evidence record, not a feature list.",
+        "evidence": "No problem beat or script content is drafted in this transcript; the response defers all scripting until the evidence doc is complete.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The concept is defined as one segment crossed with one motivation stated in the customer's own words and one format, with the offer fixed.",
+        "evidence": "No concept is defined; the response explicitly states the concept 'can't be defined yet' and defers to a later round.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Spoken lines restrict themselves to words found in the evidence, with no marketing paraphrase (such as 'revolutionary' or 'seamless') in a person's mouth.",
+        "evidence": "No spoken lines are written anywhere in this transcript to demonstrate this constraint being upheld.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The dozen past-ad comments are treated as equal in rank to public reviews (both already public, both in the customer's words) and harvested now at no cost.",
+        "evidence": "\"Public reviews and past-ad comments are tied \u2014 both already public, already in the customer's own words, free to pull.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The source order is re-ranked against what the user already holds: the tagged ticket export (and call library) outranks a week of public-review scraping, since its digging cost drops to near zero.",
+        "evidence": "\"800 tagged tickets and a call-recording library are unscripted, at-scale, and already partially structured. That's your actual voice-of-customer\" vs. \"A week scraping review sites for volume that doesn't exist is a week misspent.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Public reviews are noted as usually too thin for B2B products to carry a concept, which the 4 thin reviews confirm here.",
+        "evidence": "The transcript only states the specific case's thinness (\"4 reviews is not a corpus\") without generalizing this to B2B products as a category.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A named customer's words from support tickets are flagged as needing that customer's consent before they reach a script.",
+        "evidence": "No mention of consent requirements for ticket-derived customer quotes appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sales-call material is positioned as the source of objection language nothing else provides.",
+        "evidence": "\"Sales calls \u2014 prospects describing pain and relief in their own words, live. Closest thing you have to a testimonial script\"; Day 2-3 step: \"Log verbatim objections, pain descriptions...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each harvested quote is recorded in four columns: exact quote, source, underlying desire or problem, emotional tag.",
+        "evidence": "The plan only instructs to \"Extract verbatim phrases (not paraphrases)\" \u2014 no four-column recording structure is specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The method is named and applied as review mining: pulling the customer's own language back out of their channels and mirroring it, not generic 'do research'.",
+        "evidence": "\"Extract verbatim phrases (not paraphrases)\" and \"Log verbatim objections, pain descriptions\" apply concrete language-mirroring extraction rather than generic 'do research'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No quotes are invented; the response works only with supplied material or asks for the export/quotes before writing quote-dependent lines.",
+        "evidence": "The transcript is a sourcing/prioritization plan that proposes future verbatim extraction and never fabricates a customer quote itself.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The problem beat is built to name the moment the pain shows up, using the emotional tag from the evidence record, not a feature list.",
+        "evidence": "No problem beat or emotional-tag system is constructed anywhere in this sourcing-plan transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The concept is defined as one segment crossed with one motivation stated in the customer's own words and one format, with the offer fixed.",
+        "evidence": "Step 5 only says \"Draft one concept per angle (3-5 short concepts)\" without specifying the segment/motivation/format/offer-fixed structure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Spoken lines restrict themselves to words found in the evidence, with no marketing paraphrase (such as 'revolutionary' or 'seamless') in a person's mouth.",
+        "evidence": "No spoken script lines are written anywhere in this transcript to demonstrate this restriction being followed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The dozen past-ad comments are treated as equal in rank to public reviews (both already public, both in the customer's words) and harvested now at no cost.",
+        "evidence": "The ranked list places them at distinct ranks \u2014 \"3. Ad comments (~12)\" then \"4. Public reviews \u2014 last\" \u2014 not as equals.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

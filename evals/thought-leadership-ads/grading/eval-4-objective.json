@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States the advertiser cannot attach a CTA button, headline, or destination URL to the ad on this network",
+        "evidence": "\"no advertiser-supplied CTA button, headline, or URL field at all\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a link exists only if the author placed it, in the post or a comment",
+        "evidence": "\"A link exists in this format only if it's physically present in the post itself\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the three destination options: link in a pinned first comment, tracked link edited into the post, or no destination declared in writing as a retargeting-pool builder",
+        "evidence": "Numbered list: \"1. Tracked link edited into the live post...2. Tracked link in a pinned first comment...3. No link, declared in writing as a retargeting-pool builder\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the pinned first comment as the default for Marek's posts",
+        "evidence": "\"Recommendation: pinned first comment, on all three posts, as the default\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Justifies the default: the pinned comment never touches the approved post and repeats across posts without spending political capital",
+        "evidence": "\"not an edit, not a repost, nothing that touches his published feed...you're not spending political capital you'll need again next quarter.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the in-post link option from Marek's menu by name, with the reason that he will not edit live posts - rather than ranking it second or keeping it as a later fallback",
+        "evidence": "\"Tracked link edited into the live post \u2014 deleted from the menu for all three posts, reason: political-capital cost (Marek requires weeks of nagging...)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges the in-post link buys the most attributable clicks in the format even while removing it here",
+        "evidence": "\"1. Tracked link edited into the live post \u2014 most attributable clicks, but requires Marek to reopen and edit an already-published post.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the no-link option as legitimate only if declared in writing as a retargeting-pool builder",
+        "evidence": "\"'no link at all' is the fallback...it has to be a written, declared choice ('this post is a retargeting-pool builder, not a click campaign')\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that with no landing-page clicks the cost-per-click review gate cannot be computed, and the campaign is judged on pool growth alone",
+        "evidence": "\"you lose the ability to run the standard cost-per-landing-page-click gate entirely\" / \"the campaign is then judged on pool growth alone\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Calls a promoted post with no link and no written declaration a failure mode, not a minimalist choice",
+        "evidence": "\"a post with no link and no such declaration is a documented failure mode, not a minimalist choice\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Confirms pinned-comment clicks are fully trackable, so UTM-tagged attribution survives for demand gen",
+        "evidence": "\"Clicks are fully tracked with UTM parameters to the landing page, so Demand Gen gets a real, attributable link\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not promise demand gen a 'Book a demo' button or any advertiser-attached CTA workaround",
+        "evidence": "\"the 'Book a demo' button isn't on the table on this ad product, full stop \u2014 not a negotiation, a platform limitation.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States the advertiser cannot attach a CTA button, headline, or destination URL to the ad on this network",
+        "evidence": "The transcript states the opposite: 'Set the CTA button... Set the destination URL with your UTM parameters... This is the ad's landing URL field.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States a link exists only if the author placed it, in the post or a comment",
+        "evidence": "The transcript treats the destination URL as an independent ad-unit field set in Campaign Manager, 'fully independent of whatever link, if any, sits inside Marek's original post text.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the three destination options: link in a pinned first comment, tracked link edited into the post, or no destination declared in writing as a retargeting-pool builder",
+        "evidence": "No pinned-comment, in-post-link, or no-destination options are discussed; only the ad-unit's own destination URL field is described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends the pinned first comment as the default for Marek's posts",
+        "evidence": "The recommendation is to set the destination URL directly in the ad unit's landing URL field, not a pinned comment.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Justifies the default: the pinned comment never touches the approved post and repeats across posts without spending political capital",
+        "evidence": "No pinned-comment justification appears; the plan's argument is that the ad-wrapper URL 'never touches' the post, not that a pinned comment does.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the in-post link option from Marek's menu by name, with the reason that he will not edit live posts - rather than ranking it second or keeping it as a later fallback",
+        "evidence": "In-post link editing is not discussed as an option to rank or delete at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges the in-post link buys the most attributable clicks in the format even while removing it here",
+        "evidence": "No comparison of in-post link attribution value is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the no-link option as legitimate only if declared in writing as a retargeting-pool builder",
+        "evidence": "The transcript explicitly argues against a no-link option ('There's no scenario left where you'd actually want zero CTA') rather than treating it as conditionally legitimate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that with no landing-page clicks the cost-per-click review gate cannot be computed, and the campaign is judged on pool growth alone",
+        "evidence": "No such gate-computability statement appears; the plan assumes a CTA/URL is always attached.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Calls a promoted post with no link and no written declaration a failure mode, not a minimalist choice",
+        "evidence": "The no-link framing is dismissed as unnecessary ('that was solving for a problem... that TLA already solves for free') rather than labeled a failure mode requiring written declaration.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Confirms pinned-comment clicks are fully trackable, so UTM-tagged attribution survives for demand gen",
+        "evidence": "UTM tracking is attached to the ad unit's own destination URL field, not to a pinned comment, which is never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not promise demand gen a 'Book a demo' button or any advertiser-attached CTA workaround",
+        "evidence": "'LinkedIn's Sponsored Content CTA library includes \"Request Demo,\" which maps directly to your \"Book a demo\" ask \u2014 use it as-is' directly promises exactly this.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

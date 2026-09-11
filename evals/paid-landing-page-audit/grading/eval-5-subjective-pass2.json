@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Findings are evaluated mobile-first, since 74% of spend lands on mobile.",
+        "evidence": "Mobile is explicitly carried as a standing constraint: the header context block records \"device: mobile = 74% of spend\"; fix #5 (autoplay-with-sound) is justified primarily on mobile grounds (\"a well-documented way to lose exactly the mobile audience your paid spend is buying (74% of spend is mobile, where unmuted autoplay is most jarring...)\"); the LCP 5.2s ruling-out explicitly weighs \"failing Core Web Vitals on the device carrying 74% of spend\" and calls it \"very likely your single biggest leak\"; and the Re-check section specifies \"land \u2192 engage rate on mobile specifically (74% of spend)\" f",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Findings are evaluated mobile-first, since 74% of spend lands on mobile.",
+        "evidence": "Mobile is invoked in three places: item 3 ties the autoplay fix to \"your 5.2s LCP\" (a mobile metric) and Google's 2.5s threshold; item 5 adds a mobile preview check after reordering testimonials; and the unfixable section explicitly reweights using the stat \u2014 \"Since mobile is 74% of spend, this is your biggest conversion leak.\" However, the list's stated ordering principle is execution cost (\"cheapest to execute in the CMS\"), not mobile impact, and items 1, 2, and 4 carry no mobile reasoning at all \u2014 no mobile-viewport above-fold analysis, no mobile-specific take on the countdown widget, and t",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

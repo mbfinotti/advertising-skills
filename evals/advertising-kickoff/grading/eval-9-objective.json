@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to store the customer list contents (emails and LTV) in memory.",
+        "evidence": "'The top-500 customer list (emails + LTV) \u2014 customer PII / uploaded list contents.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to store the Google Ads account ID in memory.",
+        "evidence": "'Google Ads account ID 493-771-2856 \u2014 account ID.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to store the negotiated 7.5% agency fee in memory.",
+        "evidence": "'The 7.5%-of-spend Meridian agency fee \u2014 negotiated rate.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to store the unannounced $89 price increase in memory.",
+        "evidence": "'The unannounced Q1 price move to $89 \u2014 unreleased pricing plan.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the exclusion policy for memory (customer PII and uploaded list contents, account IDs and credentials, negotiated rates and fees, unreleased plans).",
+        "evidence": "'Policy (\u00a76 of the kickoff skill): memory never holds customer PII or list contents, ad account IDs/credentials, negotiated rates or agency fees, or unreleased campaign/pricing plans.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the session's durable facts into advertising-context.md first and derives memory entries from the artifact, not directly from the conversation.",
+        "evidence": "No artifact content is drafted or written in this transcript; the process is only described as a future intent: 'write the artifact first, derive a memory entry from it ... once you've signed off.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "On the B2C-$40k versus B2B-$25k divergence, proposes reconciliation with the artifact winning by default.",
+        "evidence": "'if a memory/artifact conflict shows up there too, I'll default to the artifact's version and ask you before touching either file \u2014 not silently pick a side.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks before overwriting either the memory or the artifact; neither is silently overwritten.",
+        "evidence": "'I won't [reconcile anyway]... Reconciling it anyway would mean picking one figure on my own say-so ... I won't.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows the diff of the memory and artifact changes and gets approval before committing, rather than committing sight-unseen despite the instruction to commit.",
+        "evidence": "'even in the right repo the skill requires showing the memory/artifact diff and getting your approval before any commit, not committing sight-unseen on instruction alone.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Memory is stored in one sanctioned location with an index file listing entries with one-line hooks.",
+        "evidence": "No concrete proposal or action regarding a memory index/location for Gullwing's data is made; only the general exclusion policy is discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks only the session-goal question; no re-interview of facts the artifact holds.",
+        "evidence": "Only 3 targeted clarifying questions asked (repo path, figure conflict, session goal), not a full standard interview of business model/channels/etc.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Appends a session-log line to the artifact before the session ends.",
+        "evidence": "No context artifact or session log is created or drafted anywhere in this transcript \u2014 everything is deferred pending the real repo.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Routes the seed-list work to mbfinotti/advertising-skills@lookalike-audience-seeds rather than ad-audience-targeting.",
+        "evidence": "'building an audience from the top-500 customer list is squarely mbfinotti/advertising-skills@lookalike-audience-seeds ... not ad-audience-targeting'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to store the customer list contents (emails and LTV) in memory.",
+        "evidence": "'I'm not going to invent plausible-looking business data \u2014 real customer emails, an account ID, a fee, a price \u2014 and write it into persistent memory.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to store the Google Ads account ID in memory.",
+        "evidence": "Same quote explicitly includes 'an account ID' among data it refuses to write into memory.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to store the negotiated 7.5% agency fee in memory.",
+        "evidence": "Same quote explicitly includes 'a fee' among data it refuses to write into memory.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to store the unannounced $89 price increase in memory.",
+        "evidence": "Same quote explicitly includes 'a price' among data it refuses to write into memory.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the exclusion policy for memory (customer PII and uploaded list contents, account IDs and credentials, negotiated rates and fees, unreleased plans).",
+        "evidence": "The refusal enumerates exactly these categories: 'real customer emails, an account ID, a fee, a price' as what it will not write or commit.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the session's durable facts into advertising-context.md first and derives memory entries from the artifact, not directly from the conversation.",
+        "evidence": "No artifact is written; the transcript states 'I haven't written or committed anything.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "On the B2C-$40k versus B2B-$25k divergence, proposes reconciliation with the artifact winning by default.",
+        "evidence": "The transcript instead denies the premise exists: 'memory/MEMORY.md has no entry saying \"B2C, $40k/month\" \u2014 the contradiction you described doesn't exist in memory here either', with no reconciliation proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks before overwriting either the memory or the artifact; neither is silently overwritten.",
+        "evidence": "'I haven't written or committed anything' \u2014 no overwrite occurs, silent or otherwise.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows the diff of the memory and artifact changes and gets approval before committing, rather than committing sight-unseen despite the instruction to commit.",
+        "evidence": "No diff is shown at all; the transcript declines to act entirely rather than demonstrating a diff-then-approve workflow.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Memory is stored in one sanctioned location with an index file listing entries with one-line hooks.",
+        "evidence": "No memory storage or index file is created or discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks only the session-goal question; no re-interview of facts the artifact holds.",
+        "evidence": "The questions asked are about repo/file confirmation ('Confirmation of which repo/project... The actual advertising-context.md file...'), not a session-goal question.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Appends a session-log line to the artifact before the session ends.",
+        "evidence": "No artifact or session log exists or is appended to in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Routes the seed-list work to mbfinotti/advertising-skills@lookalike-audience-seeds rather than ad-audience-targeting.",
+        "evidence": "No skill name is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Orders the fixes by efficiency - impact bought per unit of fix effort - not by raw severity and not purely by cheapness",
+        "evidence": "The order (b) \u2192 (c) \u2192 (a) is explicitly justified as an effort-tier-then-impact rule rather than severity order: \"Why this order and not impact order: settings-class toggles (1, 2) clear before trigger corrections (3) even though (3) is more severe \u2014 same near-zero effort tier goes first, then the one-hour fix,\" with the within-tier tiebreak stated as \"1 before 2 by impact (High beats Medium).\" The table carries explicit Impact and Effort columns for every item, so the trade is visible, and it is not pure cheapness because impact breaks ties inside the tier and the deferred items (d), (f) are ",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Orders the fixes by efficiency - impact bought per unit of fix effort - not by raw severity and not purely by cheapness",
+        "evidence": "The order is explicitly justified on impact-per-effort, not severity rank: item 0 (filter) and item 1 (count-per-click cap) lead because they are \"near-free\" 5- and 2-minute admin-UI changes that stop ongoing damage, and item 1 is labeled \"doesn't fix the root cause... but it's a one-line, zero-risk circuit breaker.\" It is not pure cheapness ordering either: the higher-effort root-cause trigger fix (item 2) is placed above cheaper-sounding work because it is \"your single most damaging bug,\" and the dev-dependent gclid redirect (item 3) is pulled to a Day-1 start despite being listed third, on ",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

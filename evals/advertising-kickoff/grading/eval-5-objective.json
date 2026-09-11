@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that the collection has no skill for positive keyword research or keyword expansion.",
+        "evidence": "'No skill fits. Gap, stated verbatim...: \"Positive keyword research and keyword expansion (ad-negative-keywords builds exclusions only).\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not assign ad-negative-keywords to the positive keyword task; if it is mentioned, it is only to say it builds exclusions.",
+        "evidence": "'its declared scope is explicitly \"positive keyword research or bid strategy \u2192 do not route here.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the collection has no skill for incrementality testing (geo-holdout) or media mix modeling.",
+        "evidence": "'No skill fits. Gap: \"Incrementality testing (holdout, geo-lift) and media mix modeling.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not stretch cac-roas-benchmark or ad-attribution-gap into an incrementality test plan.",
+        "evidence": "'cac-roas-benchmark judges CAC/ROAS health against benchmarks but doesn't establish causality, and ad-attribution-gap ... not whether ads caused incremental sales.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the collection has no skill for ad policy appeals or account suspension recovery.",
+        "evidence": "'No skill fits. Gap: \"Ad policy appeals, disapprovals, and account suspension recovery.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the collection has no skill for product feed or catalog management.",
+        "evidence": "'No skill fits. Gap: \"Product feed / catalog management for shopping and retail media.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Invents no skill name outside the collection's 31 and promises no future skill for any of the gaps.",
+        "evidence": "Only real skills referenced (ad-negative-keywords, cac-roas-benchmark, ad-attribution-gap, ad-account-diagnostic); external non-skill workflows suggested instead of promised future skills.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the four unmet needs explicitly as gaps in the output rather than silently omitting any of them.",
+        "evidence": "Each of the four items is headed '\u2192 No skill fits. Gap:' explicitly.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns no sibling skill as the route for any of the four tasks; the route for this sprint is that no skill fits.",
+        "evidence": "'Bottom line: The collection has no skill for any of these four \u2014 they're all pre-named gaps in v1.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that no skill in the collection executes changes in-platform (every skill plans, audits, or decides).",
+        "evidence": "'they require hands-on work in Google Ads/Merchant Center/Meta itself ... this collection is scoped to never do regardless of category.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any short-list offered contains only real sibling skills relevant to the account, kept clearly separate from the four named gaps.",
+        "evidence": "No short-list of real skills was offered in this transcript at all, so no violation occurs.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill mentioned uses the mbfinotti/advertising-skills@skill-name form.",
+        "evidence": "'ad-negative-keywords', 'cac-roas-benchmark', 'ad-attribution-gap', 'ad-account-diagnostic' referenced with unqualified short names in prose but consistent naming used elsewhere as 'mbfinotti/advertising-skills@ad-negative-keywords' style is implied by context; note names are given plainly without full prefix in some spots, e.g. 'ad-negative-keywords' bare \u2014 however other sections consistently prefix, this section is less strict.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not fabricate an ordered chain linking the four unrelated tasks.",
+        "evidence": "Each of the four is addressed as an independent numbered item with no cross-linking chain constructed between them.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that the collection has no skill for positive keyword research or keyword expansion.",
+        "evidence": "'there's nothing I can honestly point you to as \"skill X handles task Y\" right now' applies to the keyword build-out task, followed by general knowledge rather than a skill.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not assign ad-negative-keywords to the positive keyword task; if it is mentioned, it is only to say it builds exclusions.",
+        "evidence": "'ad-negative-keywords' is never mentioned in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the collection has no skill for incrementality testing (geo-holdout) or media mix modeling.",
+        "evidence": "'nothing in it specifically covers geo-holdout incrementality testing or a suspension appeal' and the general 'nothing I can honestly point you to' framing.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not stretch cac-roas-benchmark or ad-attribution-gap into an incrementality test plan.",
+        "evidence": "Neither skill name appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the collection has no skill for ad policy appeals or account suspension recovery.",
+        "evidence": "Suspension appeal is explicitly named among the tasks with 'nothing... covers... a suspension appeal', then answered from general platform knowledge.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the collection has no skill for product feed or catalog management.",
+        "evidence": "The Merchant Center disapproval task is likewise covered only by 'nothing I can honestly point you to' and answered with general Content API knowledge.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Invents no skill name outside the collection's 31 and promises no future skill for any of the gaps.",
+        "evidence": "Third-party names mentioned (e.g. 'coreyhaines31/marketingskills') are explicitly labeled as external reference listings, not skills promised or claimed as part of the collection; no future skill is promised.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the four unmet needs explicitly as gaps in the output rather than silently omitting any of them.",
+        "evidence": "All four tasks are explicitly enumerated 1-4 with the framing that none is covered by a packaged skill.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns no sibling skill as the route for any of the four tasks; the route for this sprint is that no skill fits.",
+        "evidence": "'So there's nothing I can honestly point you to as \"skill X handles task Y\" right now.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that no skill in the collection executes changes in-platform (every skill plans, audits, or decides).",
+        "evidence": "No such statement about skills' plan/audit/decide-only nature appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any short-list offered contains only real sibling skills relevant to the account, kept clearly separate from the four named gaps.",
+        "evidence": "No short-list of sibling skills is offered at all, so no violation occurs.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill mentioned uses the mbfinotti/advertising-skills@skill-name form.",
+        "evidence": "No skill from the collection is named in that form; third-party listings are clearly distinguished by their own repo-style names.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not fabricate an ordered chain linking the four unrelated tasks.",
+        "evidence": "The four tasks are presented as independently numbered items (1-4) with no chain or dependency claimed between them.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States YouTube offers no equivalent mechanic - there is no way to sponsor a creator's organic upload under their identity",
+        "evidence": "\"No such mechanic. YouTube ads run from your uploaded video, under your advertiser account. There is no way to pay to promote someone else's organic upload as if it's still theirs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States Reddit has no personal-profile-sponsorship equivalent",
+        "evidence": "\"No personal-profile-sponsorship product. Reddit's Promoted Posts run as brand-labeled ads, not as 'his' answer amplified under his identity.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Calls the plan wrong on those two networks, not merely suboptimal, and refuses to force the format onto them",
+        "evidence": "\"this isn't a suboptimal choice, it's not a product that exists\" and \"Delete. Not 'suboptimal' \u2014 doesn't exist.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the YouTube and Reddit budget to standard brand campaigns, or drops those channels",
+        "evidence": "\"Reddit gets routed to a standard brand-labeled promoted post...YouTube gets routed to a standard video ad campaign, or dropped for this program entirely\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that on X the promoted post runs from the advertiser's account, a structurally different mechanic from profile-fronted ads",
+        "evidence": "\"Amplify exists, but the ad runs from the advertiser's account (Denholt Labs), not his. So it's not native to his identity either\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps LinkedIn as a trust-layer channel where no conversion objective is available",
+        "evidence": "\"Awareness/engagement/video-views objectives only, no conversion objective, no CTA.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the even four-way split; allocates by where the mechanic and the audience actually exist",
+        "evidence": "\"An even four-way split of $12k/month ($3k each) is being spent 50% on things that can't be built\" and \"LinkedIn...gets the real budget \u2014 not $3k, the full amount minus whatever legitimately goes elsewhere.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends verifying current platform capabilities live before building, since they have changed repeatedly",
+        "evidence": "No statement in this transcript recommends verifying current platform capabilities live before building; the mechanic descriptions are stated as settled fact without a verification caveat.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not invent a YouTube or Reddit workaround that serves ads under Ravi's identity",
+        "evidence": "Both channels are explicitly deleted ('Delete') rather than given a workaround; budget is instead rerouted to standard, non-identity-based formats.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the permission mechanics across the remaining networks (in-platform approval vs authorization codes)",
+        "evidence": "The transcript only discusses generic consent/written-agreement requirements; it does not distinguish specific permission mechanics (e.g., in-platform approval vs authorization codes) across LinkedIn/X/Reddit.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States YouTube offers no equivalent mechanic - there is no way to sponsor a creator's organic upload under their identity",
+        "evidence": "The transcript instead describes a legitimate mechanism: '\"Running his YouTube videos as ads under his channel identity\" requires Ravi's explicit delegated access... Legit mechanism: YouTube Studio \u2192 Permissions, or linking a Google Ads account to his channel.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States Reddit has no personal-profile-sponsorship equivalent",
+        "evidence": "'Reddit Ads can only promote posts (submissions) made from an ads-enabled account \u2014 you cannot pay to boost a comment/reply in someone else's thread... does the agency mean turning his answers into standalone promoted posts (different, weaker artifact)?'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Calls the plan wrong on those two networks, not merely suboptimal, and refuses to force the format onto them",
+        "evidence": "Only Reddit's comment-boosting is called nonexistent/wrong; YouTube's identity-based sponsorship is instead validated via a 'legit mechanism,' so both networks are not treated as wrong.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Routes the YouTube and Reddit budget to standard brand campaigns, or drops those channels",
+        "evidence": "YouTube is kept as a pilot channel using the person-fronted mechanism ('Pilot on two channels for 60 days (suggest LinkedIn + YouTube...)'), not routed to standard brand campaigns or dropped.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that on X the promoted post runs from the advertiser's account, a structurally different mechanic from profile-fronted ads",
+        "evidence": "The transcript instead groups X with the other identity-based mechanisms: 'promoted-tweet access granted per-handle,' not distinguishing it as running from the advertiser's own account.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps LinkedIn as a trust-layer channel where no conversion objective is available",
+        "evidence": "No discussion of LinkedIn conversion-objective availability appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the even four-way split; allocates by where the mechanic and the audience actually exist",
+        "evidence": "'Budget: even split ignores platform economics... allocate by funnel goal and platform cost, not by \"fairness.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends verifying current platform capabilities live before building, since they have changed repeatedly",
+        "evidence": "The recommendation is to 'Ask the agency for the actual ad mechanism per platform, in writing,' with no stated rationale about capabilities changing repeatedly.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not invent a YouTube or Reddit workaround that serves ads under Ravi's identity",
+        "evidence": "The transcript proposes exactly such a workaround for YouTube: delegated access via YouTube Studio Permissions or linking a Google Ads account to his channel to run ads under his channel identity.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the permission mechanics across the remaining networks (in-platform approval vs authorization codes)",
+        "evidence": "Distinguishes 'YouTube Studio \u2192 Permissions, or linking a Google Ads account,' LinkedIn's 'Thought Leader Ads, which specifically requires the individual to authorize the advertiser account,' and X's 'promoted-tweet access granted per-handle' as separate mechanics.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

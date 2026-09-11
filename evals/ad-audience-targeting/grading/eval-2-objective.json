@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to switch the whole account to broad in one move",
+        "evidence": "\"Bottom line: not an all\u2011broad flip on Monday.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the parallel test: duplicate one campaign and switch only the duplicate to broad",
+        "evidence": "\"duplicate the strongest performer into a broad version, run it alongside the current structure\" and step 1: \"launch the broad duplicate (same creative/offer as your best interest ad set, open targeting, exclusions above, funded at ~$350/day)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the existing layered structure running as the control during the test",
+        "evidence": "\"run it alongside the current structure, and let Lumewick's own numbers decide\"; the target-tier table keeps Lookalike, Interest, and Retargeting tiers funded and running in parallel with the new Broad tier",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States broad is adopted only if the duplicate wins the test",
+        "evidence": "\"If broad wins convincingly: shift the bulk of prospecting budget into it\" vs. \"If broad doesn't clear the bar: revert the freed budget to the consolidated interest set and lookalike\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the account qualifies for the parallel test because ~380 conversions/week comfortably clears the learning threshold",
+        "evidence": "\"dense conversion data (380 purchases/week is well past the ~50 events/ad set/week learning threshold), a mature account, and blended CPA already beating target\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Retains the retargeting tier and the past-buyer suppression regardless of the broad decision (even broad-first accounts keep them)",
+        "evidence": "Exclusion matrix: \"Past buyers | All tiers (this is already running \u2014 keep it)\"; step 4: \"keep retargeting exactly where the skill puts it (a floor, never the growth lever)\" \u2014 stated even in the 'broad wins' branch",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps at least one manually-defined tier alive as a research instrument even if broad wins",
+        "evidence": "\"keep the consolidated interest set and lookalike funded as a standing research instrument and a hedge\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that broad hides who the buyer is (costs attribution knowledge of which segment responds)",
+        "evidence": "\"Broad hides who the buyer is; losing every manually-defined tier means losing your only read on that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames broad-vs-layered as conditional on account data density, not as doctrine",
+        "evidence": "\"That's exactly the condition that should move an account off the default \\\"explicit layers\\\" posture\" and \"mature accounts are worth re-testing broad periodically as data density keeps growing\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs the broad-vs-layered comparison as its own experiment with one variable changed (audience posture), identical creative",
+        "evidence": "\"launch the broad duplicate (same creative/offer as your best interest ad set, open targeting...)\" and \"One variable isolated: audience.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the test is reversible and buys an account-specific answer instead of someone else's general one",
+        "evidence": "\"The only honest way to move an account up a rung is a parallel test... let Lumewick's own numbers decide\"; reversibility shown via \"If broad doesn't clear the bar: revert the freed budget...keep a small broad line running as an ongoing calibration check rather than killing it outright\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects general advice (the YouTube videos) as sufficient grounds to change rungs wholesale",
+        "evidence": "\"What doesn't fit is skipping straight to a full switch on the strength of three videos. That's general advice, not account-specific evidence\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the five interest-stacked ad sets as over-narrowing or precision theater, recommending ICP knowledge be spent on creative variants per segment rather than more filters",
+        "evidence": "\"stacking interests shrinks the audience and raises cost without touching the actual lever... they're the weakest tier on intent quality even when they work\"; consolidated interest tier is \"not judged on CPA alone \u2014 reports which segment responds, for creative planning\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to switch the whole account to broad in one move",
+        "evidence": "\"Why I'd stop and reconsider the full swap:\" followed by \"A wholesale change on a winning structure is the highest-risk time to make it\" and \"Below is the structure I'd actually build \u2014 broad, phased in with a control, not flipped cold on Monday.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the parallel test: duplicate one campaign and switch only the duplicate to broad",
+        "evidence": "\"Campaign A \u2014 Control (existing structure, unchanged)\" runs alongside \"Campaign B \u2014 Broad Test (new) - 1 ad set, no interest/LAL targeting, broad audience... Budget: start at 20\u201330% of current prospecting spend\" \u2014 a new broad test campaign run in parallel to the untouched existing structure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the existing layered structure running as the control during the test",
+        "evidence": "\"Campaign A \u2014 Control (existing structure, unchanged) - 5 interest-stacked ad sets + 1 LAL, current budgets, current exclusion. Purpose: baseline to measure broad against. Do not touch for the test's duration.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States broad is adopted only if the duplicate wins the test",
+        "evidence": "\"Broad CPA \u2264 control blended CPA (or clearly trending there as it scales) \u2192 shift budget incrementally... Broad CPA worse \u2192 hold or kill the test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the account qualifies for the parallel test because ~380 conversions/week comfortably clears the learning threshold",
+        "evidence": "The 380/week figure is used only to argue interest targeting isn't the account's constraint (\"At 380 purchases/week you already feed the algorithm plenty of signal\"); it is never explicitly linked to the ~50 optimization events/week learning-phase threshold mentioned later (\"You need the ad set past learning phase (~50 optimization events/week)\") to justify test qualification.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Retains the retargeting tier and the past-buyer suppression regardless of the broad decision (even broad-first accounts keep them)",
+        "evidence": "\"Untouched (not part of the interest-vs-broad question): - Retargeting campaign \u2014 keep as-is. - Past-buyers exclusion list \u2014 keep applied everywhere, control and test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps at least one manually-defined tier alive as a research instrument even if broad wins",
+        "evidence": "The decision rule only addresses incremental budget shifting (\"shift budget incrementally, e.g. 70/30 next cycle, then reassess. Don't jump to 100% in one step even if it wins\") \u2014 it never states a manual tier is kept alive permanently as a research instrument.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that broad hides who the buyer is (costs attribution knowledge of which segment responds)",
+        "evidence": "The closest statement is \"broad shifts audience-qualifying work from targeting onto creative \u2014 Meta leans on hook/format diversity to find your buyer instead of an interest signal doing it,\" which is about creative substituting for targeting, not about losing attribution knowledge of which segment responds.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Frames broad-vs-layered as conditional on account data density, not as doctrine",
+        "evidence": "\"'Interest targeting is dead' videos are usually reacting to small/limited accounts where interest stacking throttles delivery. At 380 purchases/week you already feed the algorithm plenty of signal \u2014 the constraint those videos describe may not be your constraint.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs the broad-vs-layered comparison as its own experiment with one variable changed (audience posture), identical creative",
+        "evidence": "\"same creative currently running in Campaign A (don't introduce a creative variable at the same time as a targeting variable)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the test is reversible and buys an account-specific answer instead of someone else's general one",
+        "evidence": "\"Broad CPA worse \u2192 hold or kill the test. You've only spent the test budget's learning cost, not the account's.\" combined with the framing that generic \"videos\" advice may not apply (\"the constraint those videos describe may not be your constraint\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects general advice (the YouTube videos) as sufficient grounds to change rungs wholesale",
+        "evidence": "\"'Interest targeting is dead' videos are usually reacting to small/limited accounts... the constraint those videos describe may not be your constraint\" used as grounds to reject the wholesale switch the videos prompted.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the five interest-stacked ad sets as over-narrowing or precision theater, recommending ICP knowledge be spent on creative variants per segment rather than more filters",
+        "evidence": "No such characterization appears; the only related remark is the general creative note that \"broad shifts audience-qualifying work from targeting onto creative,\" which does not label the existing 5 interest-stacked ad sets as over-narrowing/precision theater nor recommend redirecting ICP knowledge into creative variants per segment.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

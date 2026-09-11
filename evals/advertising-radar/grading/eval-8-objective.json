@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The first reply asks an interview question instead of delivering a source list",
+        "evidence": "The transcript opens directly with \"# Advertising Radar \u2014 Freelance PPC Consultant\" and a full delivered list; no question is asked.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Questions come one at a time, waiting for each answer, not as a full battery in one message",
+        "evidence": "No questions appear anywhere in the transcript; assumptions are stated and inferred instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Multiple-choice options are offered with the questions",
+        "evidence": "No questions are asked, so no multiple-choice options are offered.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The channels the user buys on are asked for",
+        "evidence": "\"Channels bought: Google Ads ... + Meta + Microsoft Ads \u2014 the realistic spread for a generalist freelancer's client roster\" \u2014 this is inferred/assumed, not asked.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The weekly time budget is asked with banded options (under 30, 30-60, 60-120, 2+ hours) plus whether paid access is on the table",
+        "evidence": "\"Time ceiling: 30\u201360 min/week (used 45 as midpoint), **free-only**\" \u2014 stated as an assumption, not asked.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A hard current-by date is asked about",
+        "evidence": "\"No hard deadline \u2014 this is a standing-habit build, not a catch-up sprint.\" \u2014 assumed, not asked.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "One-off catch-up versus standing habit is asked",
+        "evidence": "\"Standing habit (you said 'sustainable') \u2192 community slot included\" \u2014 inferred from the initial request, not asked as a question.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Preferred mediums are asked with a cap of two picks",
+        "evidence": "\"Mediums: text, mostly \u2014 one community add-on. No audio/video (tell me if you have commute/dead time...)\" \u2014 assumed, not asked upfront.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The segment sold into (B2B versus B2C/DTC) is asked",
+        "evidence": "\"Segment: **both** B2C and B2B \u2014 freelancers typically carry mixed client books.\" \u2014 assumed, not asked.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The incentive question is framed as minimising, not removing, a conflict type, with the warning that removal would empty the list",
+        "evidence": "\"Incentive tolerance: flag everything, filter nothing \u2014 this field has no conflict-free sources.\" \u2014 stated as an assumption, never posed as a question to the user.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No named source recommendations are given before the interview answers arrive",
+        "evidence": "The full weekly/monthly/bench list with named sources is delivered immediately, without any interview having taken place.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The first reply asks an interview question instead of delivering a source list",
+        "evidence": "The response opens with '## Install it' and immediately delivers finished skill files, with no question asked.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Questions come one at a time, waiting for each answer, not as a full battery in one message",
+        "evidence": "No questions are asked anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Multiple-choice options are offered with the questions",
+        "evidence": "No questions or multiple-choice options appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The channels the user buys on are asked for",
+        "evidence": "Channels (Google, Meta, Microsoft, LinkedIn, Amazon) are hardcoded into the skill's Tier-1 list rather than asked about.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The weekly time budget is asked with banded options (under 30, 30-60, 60-120, 2+ hours) plus whether paid access is on the table",
+        "evidence": "A '20-min weekly slot' is assumed and built directly into the playbook without asking the user.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A hard current-by date is asked about",
+        "evidence": "No date question appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "One-off catch-up versus standing habit is asked",
+        "evidence": "A standing weekly ritual is assumed and built ('Weekly ritual \u2014 20 minutes ... Slot it Monday first thing') without asking.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Preferred mediums are asked with a cap of two picks",
+        "evidence": "No medium preference question appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The segment sold into (B2B versus B2C/DTC) is asked",
+        "evidence": "No B2B/B2C question appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The incentive question is framed as minimising, not removing, a conflict type, with the warning that removal would empty the list",
+        "evidence": "No incentive-framing question appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No named source recommendations are given before the interview answers arrive",
+        "evidence": "Named sources such as 'Jon Loomer Digital', 'Search Engine Land > PPC', and 'PPC Hero' are delivered directly in the playbook with no preceding interview.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

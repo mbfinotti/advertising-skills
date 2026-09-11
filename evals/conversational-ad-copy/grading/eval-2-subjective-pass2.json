@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Because no CTA field exists, the ask is folded into the copy line and matched to the inferred conversation stage.",
+        "evidence": "The transcript correctly identifies the constraint (\"no CTA field (ask folds into the copy line)\" in the placement section), but the delivered package does not fold any ask in: \"**Ask folded in:** none needed \u2014 the claim itself is the pitch; no CTA field exists, and forcing 'Try free' into the remaining 7 characters would bundle a second move into one slot.\" The shipped copy line (`Brightgale: 210 customers shipped their first project plan in under 20 minutes (2026 survey).`) is a pure claim with no next step for the reader. No conversation stage is ever inferred or named for the purpose of sh",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Because no CTA field exists, the ask is folded into the copy line and matched to the inferred conversation stage.",
+        "evidence": "The transcript never notes the absence of a CTA field, never reasons about conversation stage, and the copy line contains no ask: `210 teams shipped their first plan in under 20 min. 30% off through Mar 31, 2026.` is two claims (social proof + discount) with no action verb, no directive, and no next step for the reader. The only imperative-shaped text is in the title (`Plan Your First Project in 20 Min`), which reads as a benefit/outcome phrase rather than a deliberate CTA, and is in the title field, not the copy line. The commentary section discusses only the false deadline, the unsupported #",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

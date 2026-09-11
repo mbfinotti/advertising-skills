@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Routes the raise-the-total-on-a-proven-campaign ask to mbfinotti/advertising-skills@paid-media-scaling.",
+        "evidence": "'\"Should we put more into ads next quarter?\" | mbfinotti/advertising-skills@paid-media-scaling'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not route the raise-the-total ask to ad-spend-allocation or ad-budget-pacing.",
+        "evidence": "Table maps the scale-up ask only to paid-media-scaling; no misrouting occurs.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the written CAC ceiling and shut-off rule ask to mbfinotti/advertising-skills@ad-spend-guardrails.",
+        "evidence": "'\"Written rule for allowable CAC + kill switch\" | mbfinotti/advertising-skills@ad-spend-guardrails'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not route the written-policy ask to cac-roas-benchmark.",
+        "evidence": "Table keeps these separate; cac-roas-benchmark used only as step 3, not for the policy ask.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the weekly burning-too-fast-or-too-slow ask to mbfinotti/advertising-skills@ad-budget-pacing.",
+        "evidence": "'\"Each Friday: burning $45k too fast or slow?\" | mbfinotti/advertising-skills@ad-budget-pacing'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the tCPA target question to mbfinotti/advertising-skills@ad-bidding-strategy.",
+        "evidence": "'\"Is our tCPA target even right?\" | mbfinotti/advertising-skills@ad-bidding-strategy'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names a single skill as the route for the immediate task, with the rest sequenced rather than presented as a run-everything-now list.",
+        "evidence": "'## Order to run them' numbered list starts with ad-conversion-tracking as step 1, with remaining items sequenced 2-5.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sequences ad-spend-guardrails ahead of paid-media-scaling and ad-budget-pacing in the proposed order.",
+        "evidence": "Ranked short-list: '2. ad-spend-guardrails ... 5. paid-media-scaling ... 6. ad-budget-pacing' \u2014 guardrails clearly ahead of both.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the sequence as an ordered chain where each link states what it hands to the next.",
+        "evidence": "'buys trust in every number below' (step1) and 'consumes the other four's output' (step5) describe explicit handoffs.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the full mbfinotti/advertising-skills@skill-name form.",
+        "evidence": "All entries use 'mbfinotti/advertising-skills@skill-name', e.g. '@ad-spend-guardrails', '@cac-roas-benchmark'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No skill is named outside the collection's 31 (no invented names such as budget-optimizer or spend-manager).",
+        "evidence": "All named skills (paid-media-scaling, ad-spend-guardrails, ad-budget-pacing, ad-bidding-strategy, ad-conversion-tracking, cac-roas-benchmark, ad-spend-allocation, ad-account-diagnostic) are consistent with names used across other sections.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creates or proposes advertising-context.md capturing the fixed $45k/month and the December $18k incident as constraint or history fields.",
+        "evidence": "'Channels / spend: ... $45k/month fixed, Q4 2026 only' and 'Constraints: ... prior seasonal blowout Dec 2025 ($18k/weekend, no kill-switch)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The tCPA bidding work is ranked below the guardrails policy work, with tuning identified as buying little until the classes above it are in place.",
+        "evidence": "ad-bidding-strategy is ranked below guardrails, but the transcript never explicitly frames bidding/tuning as 'buying little' until higher classes are in place \u2014 it only says 'buys confidence the tCPA target itself isn't the problem.'",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Routes the raise-the-total-on-a-proven-campaign ask to mbfinotti/advertising-skills@paid-media-scaling.",
+        "evidence": "No skill name is ever cited in the transcript; the VP's #1 ask is answered with direct framework text, not a routed skill.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not route the raise-the-total ask to ad-spend-allocation or ad-budget-pacing.",
+        "evidence": "Neither name appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the written CAC ceiling and shut-off rule ask to mbfinotti/advertising-skills@ad-spend-guardrails.",
+        "evidence": "No skill name is cited for the CAC rule/kill switch section; it's presented as direct policy text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not route the written-policy ask to cac-roas-benchmark.",
+        "evidence": "'cac-roas-benchmark' never appears in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the weekly burning-too-fast-or-too-slow ask to mbfinotti/advertising-skills@ad-budget-pacing.",
+        "evidence": "The pacing section is answered directly with formulas, no skill name cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Routes the tCPA target question to mbfinotti/advertising-skills@ad-bidding-strategy.",
+        "evidence": "The tCPA calibration section gives direct diagnostic steps with no skill citation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names a single skill as the route for the immediate task, with the rest sequenced rather than presented as a run-everything-now list.",
+        "evidence": "No skill is named anywhere as 'the route' for anything.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sequences ad-spend-guardrails ahead of paid-media-scaling and ad-budget-pacing in the proposed order.",
+        "evidence": "'1. Kill switch first... 2. Weekly pacing cadence... 4. Scale-up case for next quarter \u2014 last' places the guardrail/kill-switch content ahead of pacing and scale-up.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the sequence as an ordered chain where each link states what it hands to the next.",
+        "evidence": "'4. Scale-up case for next quarter \u2014 last, because it depends on 1\u20133 actually holding' and 'that log is also your evidence base for the Q1 scale-up ask' tie the steps together.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the full mbfinotti/advertising-skills@skill-name form.",
+        "evidence": "No skill names appear at all, so none are malformed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No skill is named outside the collection's 31 (no invented names such as budget-optimizer or spend-manager).",
+        "evidence": "No skill names, invented or otherwise, appear anywhere in the text.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creates or proposes advertising-context.md capturing the fixed $45k/month and the December $18k incident as constraint or history fields.",
+        "evidence": "No mention of advertising-context.md or any artifact creation appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The tCPA bidding work is ranked below the guardrails policy work, with tuning identified as buying little until the classes above it are in place.",
+        "evidence": "tCPA calibration is step 3, after the kill-switch guardrail (step 1); 'calibration, do before touching budget' and warnings against loosening tCPA off a possibly-loose target support the buys-little framing.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Replaces 'premium, aspirational, authentic' with 2-3 in-category reference ads, each carrying a one-line note on what to take from it",
+        "evidence": "\"Pull 2-3 in-category reference ads... and attach one line each on what to take\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that adjectives decode differently per reader while a reference ad means the same thing to everyone",
+        "evidence": "\"'Premium, aspirational, authentic' decodes differently per reader.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Removes the hardcoded safe-zone pixel values and requires an in-placement preview before export instead",
+        "evidence": "\"Preview every export in-placement (Meta's placement preview tool) before it ships \u2014 do not trust a fixed pixel number.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Justifies the removal because published safe-zone numbers disagree by tens of pixels, so any hardcoded number is a defect",
+        "evidence": "\"Meta's published safe-zone guidance has changed and disagreed with itself by tens of pixels across placements and over time\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that Meta's 20% text rule was retired in 2020, with no hard limit and no auction penalty",
+        "evidence": "\"Meta retired the 20% text rule in 2020. There is no hard limit and no auction/delivery penalty tied to text coverage today.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats text density as a performance preference and labels claims of a persistent hidden delivery penalty as unverified vendor folklore rather than encoding them as a rule",
+        "evidence": "\"Treat as a performance preference, not a constraint\" and \"is exactly the kind of vendor-post folklore the skill flags explicitly\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Caps brand do's and don'ts at about 2 each, cutting the 9-and-7 list",
+        "evidence": "\"The brief template caps this at max 2 each.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds an enhancements field recording platform auto-enhancements on/off per type, because a toggle nobody set is an uncontrolled variable",
+        "evidence": "\"Enhancements on/off: Meta's auto-enhancements... default-on per placement \u2014 an unset toggle is an uncontrolled variable if you're running this as a test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds an AI-disclosure line: the Midjourney-generated plates are externally generated AI content that generally must be declared in the ads manager",
+        "evidence": "\"AI disclosure: 2 background plates generated via Midjourney... Will be declared under Meta's AI-content disclosure in Ads Manager.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes undisclosed AI content is a commonly reported rejection reason, contradicting the 'nobody's business' assumption",
+        "evidence": "\"undisclosed AI content is a commonly reported rejection reason\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes accessibility fields: minimum 4.5:1 text contrast, captions on video, alt text, and no more than three flashes per second",
+        "evidence": "\"Sound-off + accessibility: captions non-optional, 4.5:1 contrast minimum, alt text, \u22643 flashes/sec.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Specifies aspect ratios per placement rather than one generic spec, because placements crop, truncate and overlay differently",
+        "evidence": "No per-placement aspect-ratio specification appears anywhere in the review; only the (deleted) fixed 9:16 pixel numbers are discussed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires reviewing the asset at feed/mobile size, since a message that fails small fails everywhere",
+        "evidence": "No mention of reviewing creative at feed/mobile thumbnail size anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Replaces 'premium, aspirational, authentic' with 2-3 in-category reference ads, each carrying a one-line note on what to take from it",
+        "evidence": "The brief only recommends attaching references \u2014 'Attach 2-3 reference images (competitor ads, Pinterest board, or past Pattern & Pine creative you consider \"on-brand\")' \u2014 it does not itself supply the references with notes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that adjectives decode differently per reader while a reference ad means the same thing to everyone",
+        "evidence": "'adjectives without visual anchors get interpreted differently by every designer.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Removes the hardcoded safe-zone pixel values and requires an in-placement preview before export instead",
+        "evidence": "The brief asks for 'per-placement safe-zone numbers instead of one blended rule' \u2014 still hardcoded numbers, just split by placement, not an in-placement export-time preview requirement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Justifies the removal because published safe-zone numbers disagree by tens of pixels, so any hardcoded number is a defect",
+        "evidence": "No mention of published numbers disagreeing by 'tens of pixels' as justification; only 'plausible but suspicious as written' is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that Meta's 20% text rule was retired in 2020, with no hard limit and no auction penalty",
+        "evidence": "'Meta retired the strict 20%-text delivery penalty in 2020 \u2014 the old grading tool (low/medium/high) no longer gates reach or cost.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats text density as a performance preference and labels claims of a persistent hidden delivery penalty as unverified vendor folklore rather than encoding them as a rule",
+        "evidence": "'Replace the delivery-risk framing with a readability rule instead... re-label it as a design best practice, not a platform penalty' plus 'I can't verify this against a live source right now... have someone confirm current policy.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Caps brand do's and don'ts at about 2 each, cutting the 9-and-7 list",
+        "evidence": "Instead of capping, it asks for the full list: 'Paste the actual 16 items and I'll check them for: contradictions...'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds an enhancements field recording platform auto-enhancements on/off per type, because a toggle nobody set is an uncontrolled variable",
+        "evidence": "No mention of platform auto-enhancement toggles anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds an AI-disclosure line: the Midjourney-generated plates are externally generated AI content that generally must be declared in the ads manager",
+        "evidence": "'Meta requires an \"AI-generated\" / \"digitally created or altered\" disclosure on ads for realistic synthetic content... Recommendation: add one line to the brief telling the designer the backgrounds are Midjourney-generated plates.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes undisclosed AI content is a commonly reported rejection reason, contradicting the 'nobody's business' assumption",
+        "evidence": "The document challenges the 'nobody's business' assumption on three grounds but never states that undisclosed AI content is a commonly reported ad-rejection reason.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes accessibility fields: minimum 4.5:1 text contrast, captions on video, alt text, and no more than three flashes per second",
+        "evidence": "No accessibility fields (contrast ratio, captions, alt text, flash limits) appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies aspect ratios per placement rather than one generic spec, because placements crop, truncate and overlay differently",
+        "evidence": "'Meta's placements differ: Stories vs. Reels have different UI overlays... so a single \"9:16\" number can be wrong for one of the two... get per-placement safe-zone numbers instead of one blended rule.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires reviewing the asset at feed/mobile size, since a message that fails small fails everywhere",
+        "evidence": "No requirement to review assets at feed/mobile size appears in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

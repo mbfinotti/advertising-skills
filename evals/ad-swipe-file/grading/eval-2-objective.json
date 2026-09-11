@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to treat the 7-month run as proof of performance and labels any 'probably a winner' reading as inference, not fact.",
+        "evidence": "\"Longevity alone is never sufficient; it has to be corroborated.\" and record shows \"longevity_signal: inference ... confidence: low\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Raises the neglect explanation: under cost-cap or bid-cap buying, advertisers park 10-20 ads and never prune, so one long-running ad surrounded by stale ones can measure neglect rather than success.",
+        "evidence": "\"Advertisers load an ad set with 10-20 ads, let the auction decide, and never prune... Age now often measures neglect, not success.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Connects the 18 untouched ads in the same ad set to that neglect pattern explicitly.",
+        "evidence": "\"Your own observation \u2014 18 other ads in the same ad set sitting untouched \u2014 is the textbook signature of a cost-cap ad set nobody has pruned, not evidence this one ad is a proven winner.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Seeks corroboration starting with variant duplication and geographic or placement breadth, the signals readable off the listing already on screen.",
+        "evidence": "Table lists 'Variant duplication' and 'Geo/placement breadth' first, 'in order of effort-for-evidence'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names cross-competitor repetition as the strongest corroborator because a single advertiser's neglect cannot fake it, while noting it needs the classified file to check.",
+        "evidence": "Cross-competitor repetition is listed third in the table with only \"Is this same angle showing up at other bedding competitors too?\" \u2014 never called the strongest corroborator, nor linked to needing the classified file.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records the longevity read together with the threshold that produced it, for example 'active 200+ days with N variants', rather than a bare verdict.",
+        "evidence": "\"longevity_signal: inference \u2014 active 7mo, BUT 18 sibling ads in the same ad set show no turnover \u2192 neglect pattern, not corroborated as a winner.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States at least two structural caveats on the longevity inference, such as ad-object dating preserving the original start date after edits, large advertisers affording mediocre ads, brand-awareness campaigns running indefinitely, or wear-in.",
+        "evidence": "No mention of ad-object dating, large-advertiser affordability, brand-awareness indefinite runs, or wear-in appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that public surfaces expose nothing about spend or performance, so 'best performer' cannot be observed, only inferred.",
+        "evidence": "The transcript never states that public surfaces expose nothing about spend/performance; it only argues longevity isn't proof via the neglect explanation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses the same-script-same-look clone because reusing substantial verbatim copy and the ad's look reproduces expression.",
+        "evidence": "\"Together they reproduce the expression and look of the original, not its idea.\" ... \"I won't produce that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes what may be reused: the angle, offer mechanic, hook type, format, and layout structure.",
+        "evidence": "\"Reusable freely: the angle, hook type, the message structure, the format, the offer mechanic, the funnel shape.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the identity test: if a viewer who saw the competitor's ad would think the user's ad is that ad, expression was copied.",
+        "evidence": "\"Test to apply: if someone who saw the competitor's ad would think your ad is that ad, you copied expression.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recasts the request as a written hypothesis in the 'We believe [change] will produce [outcome] because [insight]' form instead of producing finished ad copy.",
+        "evidence": "\"Hypothesis, pending the real content: 'We believe adapting [MossWick's hook type / concept \u2014 TBD] into our own script, visuals, and brand voice will produce [outcome] because...'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to write the finished creative in this workflow and hands briefing or copy production to the sibling skills for briefs and test design.",
+        "evidence": "\"Send me the actual copy/visual and I'll write the adapted version \u2014 same idea, our own script, our own look, MossWick's name nowhere near it.\" \u2014 the assistant commits to writing the ad itself rather than handing off to ad-creative-brief/ad-creative-test-plan.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to treat the 7-month run as proof of performance and labels any 'probably a winner' reading as inference, not fact.",
+        "evidence": "\"The '7 months = best performer' logic is backwards... longevity alone isn't a performance signal.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Raises the neglect explanation: under cost-cap or bid-cap buying, advertisers park 10-20 ads and never prune, so one long-running ad surrounded by stale ones can measure neglect rather than success.",
+        "evidence": "It mentions a generic 'neglected account' and a budget test 'forgot to turn off', but never names cost-cap/bid-cap buying as the mechanism causing ads to be parked.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Connects the 18 untouched ads in the same ad set to that neglect pattern explicitly.",
+        "evidence": "\"An ad set with 19 untouched ads for months looks like a neglected account, not a battle-tested winner surrounded by scrubs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Seeks corroboration starting with variant duplication and geographic or placement breadth, the signals readable off the listing already on screen.",
+        "evidence": "No mention of checking variant duplication or geographic/placement breadth as corroborating signals.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names cross-competitor repetition as the strongest corroborator because a single advertiser's neglect cannot fake it, while noting it needs the classified file to check.",
+        "evidence": "Cross-competitor repetition is never discussed as a corroborating signal.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records the longevity read together with the threshold that produced it, for example 'active 200+ days with N variants', rather than a bare verdict.",
+        "evidence": "No such recording format or threshold notation is proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States at least two structural caveats on the longevity inference, such as ad-object dating preserving the original start date after edits, large advertisers affording mediocre ads, brand-awareness campaigns running indefinitely, or wear-in.",
+        "evidence": "\"It's evergreen 'always-on' brand/retargeting spend nobody's actively managing... It's a small-budget test the team forgot to turn off... it's actually performing poorly but sitting in a 'set and forget' campaign... hasn't gotten around to refreshing creative\" \u2014 multiple independent structural reasons longevity doesn't imply performance.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that public surfaces expose nothing about spend or performance, so 'best performer' cannot be observed, only inferred.",
+        "evidence": "\"Meta/Google ad libraries show everything an advertiser has running, not what's winning... You'd need actual performance data (impressions, spend, engagement...) to know if it's winning.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses the same-script-same-look clone because reusing substantial verbatim copy and the ad's look reproduces expression.",
+        "evidence": "\"copying the script and look, just swapping in your brand name, is straightforward ad plagiarism, not competitive inspiration.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes what may be reused: the angle, offer mechanic, hook type, format, and layout structure.",
+        "evidence": "Only mentions messaging angle, visual concept, and offer structure as reusable \u2014 hook type, format, and layout structure are not itemized.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the identity test: if a viewer who saw the competitor's ad would think the user's ad is that ad, expression was copied.",
+        "evidence": "No such identity/confusion test is articulated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recasts the request as a written hypothesis in the 'We believe [change] will produce [outcome] because [insight]' form instead of producing finished ad copy.",
+        "evidence": "No hypothesis-format recasting appears; the response ends with an offer to 'help you write an original ad'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Declines to write the finished creative in this workflow and hands briefing or copy production to the sibling skills for briefs and test design.",
+        "evidence": "It offers to directly write the ad itself ('I'll help you write an original ad in your own voice... Want to go that route?') rather than declining and handing off.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

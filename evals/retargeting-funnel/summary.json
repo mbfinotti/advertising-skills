@@ -1,0 +1,391 @@
+{
+  "repo": "advertising-skills",
+  "skill": "retargeting-funnel",
+  "scenarios": 9,
+  "expectations_total": 113,
+  "expectations_subjective": 2,
+  "expectations_objective": 111,
+  "pass_rate_with_skill_pct": 82.3,
+  "pass_rate_without_skill_pct": 40.7,
+  "delta_pp": 41.6,
+  "uplift_multiplier": 2.02,
+  "trigger_accuracy_pct": 92.7,
+  "trigger_queries": 110,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "States explicitly that stage boundaries come from Emberline's own lag distribution and that platform default retention windows are arbitrary relative to this specific business"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Collapses the five-stage plan to fewer conversion stages (a hot/warm/win-back shape) because 80%+ of converters buy within 7 days"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Gives the collapse reason: more stages than the conversion cycle supports produces empty or wasted stages"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Ranks the CRM sales-cycle export above an analytics lag report for this account, because a 4-6-month cycle outruns what the pixel can see"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States which mechanics stay identical to B2C (mutual exclusion, converter suppression, the after-exclusion size check) so the plan is not read as a softened B2C plan"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Fills the middle stages with non-price messages in the B2C slot order: social proof, then objection handling (shipping, returns, guarantee)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that un-training the coupon behaviour takes on the order of a quarter, while the ladder change itself takes minutes"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that a tier clearing the floor before exclusions can fall under it once fresher and deeper tiers and converters are carved out"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Presents the single combined broad warm pool as the legitimate default below the floor, moving to stratified tiers only once each stage clears its floor with room to spare"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Warns that an under-floor stage either serves nothing or serves at punitive CPMs while the learning phase never exits"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Lists rising negative feedback (hides, see-less-of-this) as a third breach signal to monitor"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that retargeting tolerates higher frequency than prospecting because the audience knows the brand, but tolerance is not immunity"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Treats published frequency bands as starting points to recalibrate against the account's own decay curve, not as evidence-based constants"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Connects budget to the pool: spend beyond reachable pool times capped weekly impressions times CPM only buys frequency past the cap, so the stage's budget is capped at that ceiling rather than raised"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Treats the common 70/30 practice and the 50/50 move as conditional heuristics (justified only when traffic is high and conversion is the bottleneck), overridden here by the pool-bound ceiling"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Brings in the reach-over-frequency objection (growth comes from reaching light and non-buyers) as a ceiling argument on the retargeting share of budget"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Adds catalogue-level exclusions (including out-of-stock items) so the catalogue cannot serve items the user already bought or cannot buy"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Names both failure directions of the window: too short re-ads recent buyers, too long silently chokes prospecting reach"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Tracks new-vs-returning conversion share among the per-stage metrics"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Offers the ranked privacy mitigations: enhanced or first-party conversion matching as the cheap first move, CRM-list audiences for long windows, server-side event delivery as the heaviest"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "States explicitly that stage boundaries come from Emberline's own lag distribution and that platform default retention windows are arbitrary relative to this specific business"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Collapses the five-stage plan to fewer conversion stages (a hot/warm/win-back shape) because 80%+ of converters buy within 7 days"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Gives the collapse reason: more stages than the conversion cycle supports produces empty or wasted stages"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Claims stages deepest-first along the depth order cart or checkout start above product page viewer above any visitor"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Names the self-competition mechanism: overlapping stages bid against each other in the same auction and inflate CPM with zero incremental reach"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Excludes converters from every stage and writes an explicit converter-exclusion window as a number of days, not an open-ended exclusion"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Proposes an auditable audience naming convention that distinguishes inclusion audiences from exclusion audiences (for example RTG_ and EXCL_ prefixes)"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Plans at least 3 distinct creative concepts per stage"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Gives each stage a distinct message job following the B2C slot order reminder, then social proof, then objection handling, then incentive, with any discount confined to the final stage"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Does not hand over generic industry-standard windows as the answer; states plainly it will not guess windows without time-lag data"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Offers the two-way choice: export a time-to-conversion or sales-cycle report, or proceed on a named proxy with every boundary flagged as provisional"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Ranks the CRM sales-cycle export above an analytics lag report for this account, because a 4-6-month cycle outruns what the pixel can see"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags every proxy-derived boundary as provisional, to be re-derived once real lag data exists"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Sizes windows to the multi-month cycle, on the order of 90/180/365 days, not 30-day defaults"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends list-based (CRM or first-party upload) audience membership rather than pixel-based at the long end, citing browser privacy limits on long cookie windows"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Suggests CRM deal stage (evaluation, proposal, negotiation) as a depth signal, since the CRM knows more about depth than the pixel"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Builds the B2B ladder with no discount rung; the incentive-equivalent rung is a lower-friction ask such as an assessment, audit, or tailored demo"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States which mechanics stay identical to B2C (mutual exclusion, converter suppression, the after-exclusion size check) so the plan is not read as a softened B2C plan"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Restricts the discount to the final stage of the sequence only"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Fills the middle stages with non-price messages in the B2C slot order: social proof, then objection handling (shipping, returns, guarantee)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Names the discount's structural costs: it spends margin every time it runs and is the hardest offer to withdraw once the market has learned it"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that un-training the coupon behaviour takes on the order of a quarter, while the ladder change itself takes minutes"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Adds converter exclusion on every stage with an explicit written window"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Makes the day-band stages mutually exclusive so one abandoner cannot sit in the 10%, 15%, and 20% pools at once"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Derives or requests the brand's own time-to-conversion data to set the stage boundaries instead of keeping the arbitrary 1/7/14-day rungs"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Checks every proposed tier against LinkedIn's minimum matched-audience size (300 members), measured after exclusions are applied, not before"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that a tier clearing the floor before exclusions can fall under it once fresher and deeper tiers and converters are carved out"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Repairs under-floor tiers in the order: widen the window, then broaden the trigger, then merge adjacent stages, then collapse to one combined warm pool"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Presents the single combined broad warm pool as the legitimate default below the floor, moving to stratified tiers only once each stage clears its floor with room to spare"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends automated bidding rather than the proposed manual bids, because small LinkedIn pools underdeliver on manual bidding"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Uses a B2B ladder with no discount rung, ordered proof, then objection, then ROI content, then the direct ask"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Writes mutual exclusion between surviving stages and excludes current customers and converters on every stage"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Sets a small-pool creative discipline: 3-5 rotating creatives with refresh on the order of every 2-3 weeks"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Considers CRM deal stage or uploaded account lists as the depth signal for the long-window end rather than web recency alone"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Asks for or derives time-to-conversion data instead of accepting the arbitrary 30/90/180-day windows"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Warns that an under-floor stage either serves nothing or serves at punitive CPMs while the learning phase never exits"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Names the decay thresholds: CTR falling 15-20% or more and CPM rising 10% or more, measured against a 7-day rolling baseline"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Applies the thresholds to the given numbers: the CTR drop (1.8% to 1.1%, about 39%) and the CPM rise ($14 to $19, about 36%) both breach them, so the cap is already breached in effect"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Warns that editing the live ad resets Meta's learning phase while pausing does not, so replacement creative launches alongside, not as an edit"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Lists rising negative feedback (hides, see-less-of-this) as a third breach signal to monitor"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States that retargeting tolerates higher frequency than prospecting because the audience knows the brand, but tolerance is not immunity"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Treats published frequency bands as starting points to recalibrate against the account's own decay curve, not as evidence-based constants"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Reads the combination of high platform ROAS and flat blended revenue as the cannibalisation signature: paying to intercept conversions that were coming anyway"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Cites the scale of overstatement from large-scale randomized experiments: observational or platform attribution overestimated measured lift by roughly 7x to 9.5x"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Selects the design by availability: a platform ghost-ad style lift test where offered, otherwise a randomized audience holdout withholding 10-20% of each stage"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Includes the blended-efficiency metric, total revenue divided by total marketing spend, as the account-level sanity metric that drops the attribution layer entirely"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States the decision rule: if holdout-measured lift is indistinguishable from zero, the retargeting budget folds back into prospecting regardless of platform ROAS"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Treats the common 70/30 practice and the 50/50 move as conditional heuristics (justified only when traffic is high and conversion is the bottleneck), overridden here by the pool-bound ceiling"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Brings in the reach-over-frequency objection (growth comes from reaching light and non-buyers) as a ceiling argument on the retargeting share of budget"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Adds catalogue-level exclusions (including out-of-stock items) so the catalogue cannot serve items the user already bought or cannot buy"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Connects the shrinkage to platform retention changes: Meta extended purchase-event audience retention to 730 days, auto-applied to existing audiences, so a purchaser exclusion built on it now suppresses about two years of buyers"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Names both failure directions of the window: too short re-ads recent buyers, too long silently chokes prospecting reach"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Adds a standing review note to re-audit exclusion windows whenever a platform extends its retention defaults"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Proposes an auditable naming convention separating inclusion and exclusion audiences so any stage reads as include X minus Y minus converters"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Rejects the before/after comparison and the spend regression as proof: observational methods overestimated experimentally measured lift by roughly 7x to 9.5x in large-scale randomized trials"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Cites the research base by name - the Gordon and Zettelmeyer et al. RCT comparison and/or the Blake, Nosko and Tadelis eBay brand-search result - rather than a vague studies-show"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Includes the blended-efficiency sanity metric: total revenue divided by total marketing spend, which drops the attribution layer entirely"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Pre-registers the decision rule: any stage whose holdout-measured lift is indistinguishable from zero is cut or restructured, no matter its platform ROAS"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Tracks new-vs-returning conversion share among the per-stage metrics"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Distinguishes Google's remarketing-list ceiling (540 days, so 365 is possible there) and/or instructs verifying each platform's current retention ceiling against official documentation before building"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Derives the horizon from the CRM lag data given: the 80th percentile near 150 days sets an active-evaluation window on that order, rather than 365 days chosen for width or a 30-day default"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Builds the B2B ladder in the order proof, objection handling, ROI content, then the direct ask, with no discount rung"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Splits the single audience into behavioural-depth tiers claimed deepest first (pricing or trial signals above feature pages above all visitors), or sequences by CRM deal stage"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Offers the ranked privacy mitigations: enhanced or first-party conversion matching as the cheap first move, CRM-list audiences for long windows, server-side event delivery as the heaviest"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Excludes current customers on every stage via a list-based exclusion, and makes the surviving stages mutually exclusive"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Schedules an incrementality check (for example a 10-20% holdout) as part of the delivered plan, not as an afterthought"
+      },
+      {
+        "eval_id": 9,
+        "expectation": "Warns that the plan needs the after-exclusion size check against each platform's delivery floor before shipping"
+      }
+    ]
+  }
+}

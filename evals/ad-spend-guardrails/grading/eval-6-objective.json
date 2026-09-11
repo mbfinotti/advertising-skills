@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Presents all three guardrail architectures - single break-even floor, tiered ladder, and portfolio with ring-fenced exploration - before drafting numbers.",
+        "evidence": "\"Normal ranking (efficiency: tiered ladder > single floor > portfolio; effort: single floor > ladder > portfolio) would put the portfolio model last on cost.\" \u2014 all three named before the numeric policy is drafted.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the ranking out loud across axes (efficiency, value in false stops avoided and learning kept, effort) rather than presenting one option.",
+        "evidence": "Only two axes are explicitly ranked (\"efficiency: tiered ladder > single floor > portfolio; effort: single floor > ladder > portfolio\"); a \"value\" axis (false stops avoided / learning kept) is never named as a ranked axis.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes the portfolio model above its default rank because the efficiency bar has already strangled testing.",
+        "evidence": "\"an efficiency bar has already strangled testing' (your media buyer's complaint, literally), the portfolio model is promoted above its default rank.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the in-house analyst who already tracks marginal returns to argue the portfolio model's effort cost collapses for this account.",
+        "evidence": "\"Your analyst already tracking marginal returns weekly is precisely that asset... you're not standing up new capability, just pointing existing capability at a carved-out budget.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ring-fences an exploration budget as a declared share of spend with its own separate kill rules, exempt from the main floor.",
+        "evidence": "\"Size 10-15% of the $85K core = $8,500-$12,750/month, ring-fenced, NOT counted against the core MER floor\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives exploration tests spend-based judgment rules (hypothesis, decision date, spend cap) instead of the production 2.8x bar.",
+        "evidence": "\"Rule spend-based evidence gate, not a ROAS floor: no kill before $1,000-$1,500 spent per new channel/audience AND 14 days live... Decision at the gate: keep... extend... or cut\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the failure mode explicitly: testing held to the production efficiency bar quietly stops testing.",
+        "evidence": "\"No separation between proven and exploratory spend. New channels/audiences are held to the same bar as your scaled Meta/Google core, which is exactly backwards\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks where the 2.8x figure came from and re-derives break-even from the business's own margin, asking for the margin if unknown, rather than keeping 2.8x unexamined.",
+        "evidence": "\"your existing 2.8x bar implies a break-even contribution margin of 1 \u00f7 2.8 = 35.7% ... Confirm which \u2014 if your real CM3 is higher, 2.8x has been over-tight this whole time; if lower, you've been losing money\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that one flat threshold across all channels and audiences starves prospecting, which always looks worse than retargeting.",
+        "evidence": "The three named faults (no evidence gate, no separation of proven/exploratory, blended-only measurement) do not include an explicit statement that a flat threshold structurally starves prospecting versus retargeting.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Waits for the user's choice of architecture rather than unilaterally imposing one.",
+        "evidence": "\"Recommendation: run both, on different pools of spend\" is delivered as a decided recommendation, and \"What to do next\" gives direct action steps rather than awaiting the user's architecture choice.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks whether the mandate is a one-off fix or a compounding asset, and what effort ceiling exists for a standing review, before or while ranking.",
+        "evidence": "No such question appears; the analyst's existing weekly cadence is simply assumed as the standing-review capacity.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pairs whatever efficiency guardrail replaces the 2.8x bar with a counter-metric that exposes gaming.",
+        "evidence": "\"Blended MER... counter-metric: new-customer share of orders\" and \"Contribution margin after ads... counter-metric: discount depth\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Presents all three guardrail architectures - single break-even floor, tiered ladder, and portfolio with ring-fenced exploration - before drafting numbers.",
+        "evidence": "The document goes straight into the 'Test \u2192 Prove \u2192 Scale Framework' without ever presenting or comparing alternative architectures.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the ranking out loud across axes (efficiency, value in false stops avoided and learning kept, effort) rather than presenting one option.",
+        "evidence": "No comparative ranking across axes is given; only a single recommended framework is presented.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes the portfolio model above its default rank because the efficiency bar has already strangled testing.",
+        "evidence": "No ranking of options exists from which the portfolio model could be 'promoted'; it is presented as the sole solution from the outset.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the in-house analyst who already tracks marginal returns to argue the portfolio model's effort cost collapses for this account.",
+        "evidence": "\"Metric: marginal ROAS on incremental spend within this test cell, using the analyst's existing methodology\" and \"Scale per the existing marginal-ROAS curve... same as any mature line item today.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ring-fences an exploration budget as a declared share of spend with its own separate kill rules, exempt from the main floor.",
+        "evidence": "\"Ring-fenced budget: 12% of monthly spend (~$10K/month)... This budget is never measured against the 2.8x bar.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives exploration tests spend-based judgment rules (hypothesis, decision date, spend cap) instead of the production 2.8x bar.",
+        "evidence": "\"Per-test minimum: don't evaluate any test below $1,500 spend or 40 purchase-equivalent events... Metric: leading indicators only, not ROAS.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the failure mode explicitly: testing held to the production efficiency bar quietly stops testing.",
+        "evidence": "\"You're not filtering out bad channels. You're filtering out anything new.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks where the 2.8x figure came from and re-derives break-even from the business's own margin, asking for the margin if unknown, rather than keeping 2.8x unexamined.",
+        "evidence": "The doc states \"Keep the 2.8x bar \u2014 it's fine for mature spend\" without ever questioning its origin or deriving it from margin.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that one flat threshold across all channels and audiences starves prospecting, which always looks worse than retargeting.",
+        "evidence": "\"new prospecting traffic structurally converts worse than an optimized, retargeting-heavy account average \u2014 before it's had time to build its own retargeting pool.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Waits for the user's choice of architecture rather than unilaterally imposing one.",
+        "evidence": "The document delivers a finished framework as the recommended fix without asking the user to choose among options.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks whether the mandate is a one-off fix or a compounding asset, and what effort ceiling exists for a standing review, before or while ranking.",
+        "evidence": "No such question is asked anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pairs whatever efficiency guardrail replaces the 2.8x bar with a counter-metric that exposes gaming.",
+        "evidence": "No counter-metric like new-customer share is paired with the marginal-ROAS or 2.8x bars; only an incrementality test is proposed.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

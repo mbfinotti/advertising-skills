@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to output numeric hook scores: no X/10 ratings, decimals, percentages, or composite score appears for any candidate",
+        "evidence": "\"You asked for a score out of 10 per hook. I'm not giving one\" \u2014 the only numeric decimals mentioned (7.4/7.1) appear solely as a hypothetical example of what NOT to do, never assigned to an actual candidate.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses only qualitative strong/adequate/weak bands per scoring dimension",
+        "evidence": "\"B: time-to-signal strong | sound-off strong | qualification adequate | specificity strong...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to predict an absolute hook-rate number for any candidate, framing the output as a relative shortlist valid within this batch only",
+        "evidence": "\"ranking (pairwise, valid within this batch only \u2014 not a performance prediction)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records candidate A as failing the sound-off legibility gate because its punchline lives in the shatter audio and Meta feed autoplays muted",
+        "evidence": "\"A: sound-off FAIL (the glass-shatter IS the punchline; \\\"enough.\\\" alone doesn't carry it muted)\" and later \"the punchline living entirely in the crash sound is the textbook audio-dependent failure on a platform that autoplays muted.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not rank A at the top of the batch despite its scroll-stopping power, because a gate-failing candidate cannot rank top",
+        "evidence": "\"3. A \u2014 cannot rank above a gate-clean candidate regardless of how visceral the smash is\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Merges C and D into a single test cell at the real-variation gate because they share the same opening visual and differ only in wording",
+        "evidence": "\"D: ... variation FAIL \u2014 merged with C (identical footage; text-only difference is not a test cell)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the batch's real distinct-candidate count is lower than 4 after the C/D merge",
+        "evidence": "\"2 openings (B, C) clear all gates cleanly as submitted \u2014 BELOW the 3-opening floor\" combined with the D/C merge statement implies only 3 real concepts (A, B, C), not 4.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the ranking by pairwise head-to-head comparison of candidates, not by tallying or summing bands into a total",
+        "evidence": "\"1. B \u2014 vs C: both land the promise instantly and survive muted. B wins because...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places B at the top of the shortlist, on grounds including its specific checkable claim and price and its sound-off legibility",
+        "evidence": "\"B wins because its promise is the payoff with nothing to prove later (10 seconds, $34, done)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports per-candidate gate results (pass/fail with a reason) for all four candidates",
+        "evidence": "Gate table lists reasoned pass/fail for A, B, C, and D individually.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives each non-top candidate a raise-the-rank note taken from the cheapest revision rung that removes its specific failure",
+        "evidence": "\"A: [rung 2, caption/text-layer fix]...\" and \"D: [rung 3, re-cut from footage already shot]...\" both tied to the cheapest rung that clears the specific gate failure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies A's fix as structural (a rebuild or new footage that must re-enter the gates), not an on-screen-text rewrite",
+        "evidence": "The transcript does the opposite: \"A: [rung 2, caption/text-layer fix] ... add or expand on-screen text that states what's being rejected and why\" \u2014 an explicit on-screen-text rewrite, not a structural rebuild.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the batch sits below the 3-opening shipping floor (fewer than 3 gate-clearing, concept-distinct openings) and should not ship as-is",
+        "evidence": "\"2 openings (B, C) clear all gates cleanly as submitted \u2014 BELOW the 3-opening floor. Do not launch as a 4-cell test yet\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to output numeric hook scores: no X/10 ratings, decimals, percentages, or composite score appears for any candidate",
+        "evidence": "The transcript has a scores table: 'D ... 8.5 | \ud83e\udd47 1', 'C ... 8.0 | 2', 'A ... 7.5 | 3', 'B ... 4.0 | 4' \u2014 explicit X/10 numeric scores.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses only qualitative strong/adequate/weak bands per scoring dimension",
+        "evidence": "Scoring is done via decimal /10 numbers (8.5, 8.0, 7.5, 4.0), not qualitative bands.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Declines to predict an absolute hook-rate number for any candidate, framing the output as a relative shortlist valid within this batch only",
+        "evidence": "The output presents confident absolute-style /10 scores and a 'Predicted winner: D' without framing the numbers as batch-relative only.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Records candidate A as failing the sound-off legibility gate because its punchline lives in the shatter audio and Meta feed autoplays muted",
+        "evidence": "'the payoff is audio (\"the punchline is the sound\") and Meta feed autoplays muted by default for most viewers \u2014 you keep the visual jolt but lose the punchline for the majority'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not rank A at the top of the batch despite its scroll-stopping power, because a gate-failing candidate cannot rank top",
+        "evidence": "A is ranked 3rd ('\ud83e\udd49' not shown but rank 3) behind D and C in the scores table, not top.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Merges C and D into a single test cell at the real-variation gate because they share the same opening visual and differ only in wording",
+        "evidence": "C and D are kept as two separately ranked/scored candidates (rank 1 and 2, 8.5 vs 8.0), never merged into one cell; instead recommended as 'a head-to-head pair'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the batch's real distinct-candidate count is lower than 4 after the C/D merge",
+        "evidence": "No statement anywhere that the batch has fewer than 4 distinct candidates.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Derives the ranking by pairwise head-to-head comparison of candidates, not by tallying or summing bands into a total",
+        "evidence": "Ranking is presented via a scored table (8.5/8.0/7.5/4.0) rather than described as pairwise comparisons.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Places B at the top of the shortlist, on grounds including its specific checkable claim and price and its sound-off legibility",
+        "evidence": "'B (4.0) \u2014 weakest, by a wide margin.' B is ranked last, not top.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reports per-candidate gate results (pass/fail with a reason) for all four candidates",
+        "evidence": "No pass/fail gate format is used; each candidate gets a prose score/critique instead (e.g. 'D (8.5) \u2014 winner.').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives each non-top candidate a raise-the-rank note taken from the cheapest revision rung that removes its specific failure",
+        "evidence": "No revision instructions are given to raise any candidate's rank; A is flagged as a 'wildcard' to potentially retire, B to 'repurpose' for retargeting \u2014 not cheapest-fix notes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies A's fix as structural (a rebuild or new footage that must re-enter the gates), not an on-screen-text rewrite",
+        "evidence": "No fix is proposed for A at all; it is only flagged as a wildcard risk to test, with no structural-fix recommendation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the batch sits below the 3-opening shipping floor (fewer than 3 gate-clearing, concept-distinct openings) and should not ship as-is",
+        "evidence": "No such statement; the recommended test plan proceeds to launch C, D, and A together without flagging an insufficient-openings floor.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

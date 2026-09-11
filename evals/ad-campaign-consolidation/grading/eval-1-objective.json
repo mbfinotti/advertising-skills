@@ -1,0 +1,130 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines to deliver the requested merge plan on the Friday deadline; no immediate restructuring plan is produced",
+        "evidence": "\"The literal ask \u2014 collapse all 11 ad sets into one campaign by Friday \u2014 fails the skill's Evidence Gate and shouldn't ship as written.\" and \"No structural rebuild goes live before Friday. That's the line to hold with the CEO.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the active cost spike / panic-driven request as the specific reason to delay restructuring",
+        "evidence": "\"Panic restructuring. The account is mid cost-spike *and* 2 ad sets are inside the learning phase right now. Restructuring on top of that is a reflex, not a diagnosis\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that resetting learning through a restructure often costs more than the spike itself",
+        "evidence": "\"a second learning reset stacked on an unresolved first one almost always costs more than the spike itself\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the two ad sets currently in the learning phase as an additional reason not to restructure now",
+        "evidence": "\"2 ad sets are inside the learning phase right now\" cited as part of the panic-restructuring reasoning, and later: \"The 2 relearning ad sets are `insufficient evidence` by default until they've run a clean, unedited 7-day window \u2014 judging them now, mid-reset, would misclassify them either way.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends diagnosing the root cause of the CPA jump before any consolidation work",
+        "evidence": "\"Before touching structure, get the split: pull daily CPA for the 2 relearning ad sets vs. the other 9, for the full 10 days.\" under the \"Diagnosis: what's actually driving $38 \u2192 $81\" section, explicitly placed before any merging.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States concretely what would clear the way to a plan (specific exports or access, additional days of data, or accumulated per-branch spend) rather than a vague 'need more data'",
+        "evidence": "The transcript provides a detailed table: \"Ad set name, parent campaign | Daily spend | Daily conversions... | Daily CPA | Optimization event, bid strategy, budget type... | Audience definition | Why it was split out... | Date of last significant edit\" plus a budget floor formula: \"daily budget \u2248 target CPA \u00d7 50 \u00f7 7... At a $38 target that's ~$271/day minimum...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pushes back on the single-campaign end state, warning that one undifferentiated pool lets the algorithm park on its easiest slice",
+        "evidence": "The transcript warns about budget starvation in merging ('Pool only comparable-cost ad sets. Merging a cheap and an expensive ad set into one budget typically sends 70-90% of spend to the cheaper one within days') but does not explicitly frame this as the algorithm parking on its 'easiest slice' across the whole undifferentiated single-campaign pool \u2014 it's framed as a cost-tier pooling risk within Phase 2 merges, not a direct rebuttal to the single-campaign end state itself. This is a related but distinct point from what the rubric item describes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames all output as a recommendation the account owner applies; never claims to have made or scheduled account changes",
+        "evidence": "The entire document uses conditional/recommendation language throughout: \"Send these and I'll turn them into the classification table\", \"Send the export and I'll fill in the classification table and give you exact phase dates.\" No claim of having made any live account changes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks at least one structured clarifying question before analysis (e.g. why each of the 11 ad sets was split out, or where the target CPA comes from)",
+        "evidence": "\"Is $38 CPA a real target derived from margin/AOV on cookware, or an inherited dashboard number?\" and the table row \"Why it was split out (best guess is fine) | Separates deliberate splits from archaeology \u2014 this is the single most load-bearing answer in the whole plan\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not present consolidation as a guaranteed fix for the CPA spike; treats it as a hypothesis to test",
+        "evidence": "\"Runs only after: (a) the export confirms genuine fragmentation, not just relearning noise\" and the Measuring it section sets a \"Rollback trigger, agreed before phase 1 goes live: blended CPA worse than ~1.5x baseline after the no-touch window\" \u2014 treating consolidation as tested and reversible, not guaranteed.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines to deliver the requested merge plan on the Friday deadline; no immediate restructuring plan is produced",
+        "evidence": "The transcript delivers a full merge plan ('Step 2 \u2014 The actual merge') with concrete structure (3-4 ad sets, CBO, spend limits) and a day-by-day 'Timeline to Friday' table that has the new campaign launching Tuesday \u2014 this is an immediate restructuring plan, not a decline.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the active cost spike / panic-driven request as the specific reason to delay restructuring",
+        "evidence": "The document frames the risk as 'doing this blind' and recommends a same-day 2-hour diagnosis, but restructuring is not actually delayed \u2014 the timeline still has the new campaign launching Tuesday, and the spike/panic-driven request is never named as the reason to hold off restructuring itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that resetting learning through a restructure often costs more than the spike itself",
+        "evidence": "The text says merging 'typically causes 3-7 days of worse CPA before it stabilizes' but never compares this cost quantitatively or qualitatively to the existing 2.1x CPA spike to claim the restructure costs more than the spike itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the two ad sets currently in the learning phase as an additional reason not to restructure now",
+        "evidence": "'If the jump is concentrated in the 2 reset ad sets: revert their bid strategy to what it was before the buyer's change, first, and watch 48 hours before deciding you also need a structural merge.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends diagnosing the root cause of the CPA jump before any consolidation work",
+        "evidence": "'Do a 2-hour diagnosis today. Then merge \u2014 but merge smart, not literal' and 'Step 1 \u2014 Diagnose today (before touching anything)'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States concretely what would clear the way to a plan (specific exports or access, additional days of data, or accumulated per-branch spend) rather than a vague 'need more data'",
+        "evidence": "'What to export for me to sanity-check this before you execute: Ads Manager: ad-set-level breakdown (spend, CPM, CTR, CPA, frequency), daily, last 30 days; Events Manager: conversion event match quality / diagnostics, last 30 days; The specific bid changes the media buyer made...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pushes back on the single-campaign end state, warning that one undifferentiated pool lets the algorithm park on its easiest slice",
+        "evidence": "'never merge retargeting into the same CBO as prospecting, or CBO will overspend on the cheap warm audience and starve new customer acquisition' and 'Blending retargeting/warm traffic into one CBO with cold prospecting usually starves prospecting of budget \u2014 CPA looks great, volume collapses.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames all output as a recommendation the account owner applies; never claims to have made or scheduled account changes",
+        "evidence": "The entire document is instructional advice to the reader ('Pull these from Ads Manager...', 'Kill the bottom 40-50% of ad sets...', 'Launch the new campaign, pause the old campaigns same-day') with no first-person claim of having executed or scheduled any change.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks at least one structured clarifying question before analysis (e.g. why each of the 11 ad sets was split out, or where the target CPA comes from)",
+        "evidence": "No question is posed anywhere in the transcript; it is written entirely as a declarative plan/report with no interrogative sentence directed at the user.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not present consolidation as a guaranteed fix for the CPA spike; treats it as a hypothesis to test",
+        "evidence": "'Merging campaigns won't fix a broken pixel.' and the CEO messaging guidance: 'consolidation is the right long-term move, but it triggers a fresh learning phase across the account, so CPA may look worse for the first 3-5 days before it improves.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

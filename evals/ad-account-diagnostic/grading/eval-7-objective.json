@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the cheapest-first quick-wins ordering and ranks by outcome bought per unit of effort.",
+        "evidence": "Item 3 (budget check) is flagged 'near-zero effort' yet explicitly pushed down: 'Diagnose before touching either budget... but do it last, not first, and only after step 1-2 give you real numbers to judge it against.' The queue instead leads with the critical-severity tracking fix (~a day of work) over the cheaper budget check.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The double-firing tracking fix is ranked first despite engineering being unavailable.",
+        "evidence": "'Fix the double-firing purchase event.' is item 1, while the constraints section notes 'Zero engineering this quarter (CTO-confirmed) \u2192 does not delete the tracking fix... Try that path first this week.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Handles the engineering constraint on the tracking fix as an escalation to whoever can lift it (CTO/CEO), not as a demotion or deletion, because it is the confirmed root-cause defect.",
+        "evidence": "'does not delete the tracking fix, because tracking is the confirmed root cause and root-cause fixes escalate rather than disappear... Only escalate to the CTO as a hard ask if you confirm the duplicate call is baked into the booking system's own page code.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that every other fix's results will be measured through the doubled signal until the tracking fix ships, making downstream reads untrustworthy.",
+        "evidence": "'decomposition : not yet run - CPM/CTR/CVR breakdown by campaign wasn't in the audit; do this once tracking is fixed, not before' and item 4: 'hold off judging whether it's working until you can read CTR against a tracking signal you actually trust (i.e., after step 1).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends consolidating the 11 sub-volume campaigns (below learning-volume gates), handed off as a consolidation plan rather than executed inside this diagnosis.",
+        "evidence": "'Consolidate the 11 sub-10-conversion campaigns... Group by shared audience/objective rather than by whatever logic created 14 in the first place... owner: you or your teammate' \u2014 described as an instruction to carry out, not something performed in the diagnostic itself.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes consolidation costs a learning window of volatility, setting that expectation against the CEO's this-week demand.",
+        "evidence": "The re-check note only says 'gives the tracking fix and campaign consolidation time to clear a lag-mature window, and the merged campaigns time to start re-accumulating volume before you judge anything by the new (correct) numbers' \u2014 there is no statement in the transcript tying this delay against a CEO 'this week' demand.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes the creative work above its default rank because the retained studio with idle capacity collapses its effort cost, and says that is the reason.",
+        "evidence": "'Creative studio on retainer, idle capacity \u2192 this is the one condition the skill explicitly calls out as promoting creative refresh ahead of its normal place in the queue. Use it \u2014 it's capacity you're already paying for.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks budget and underspend moves last, with the reason: near-zero outcome while upstream layers fail, and significant edits reset learning.",
+        "evidence": "The budget/underspend item is ranked 3rd of 4 ('3. Pull the lost-impression-share split...'), with creative work ranked last (item 4) \u2014 budget is not the final rung, and the stated reasoning is about uncertainty ('Underspend is not automatically a raise-the-budget problem') rather than 'near-zero outcome' or learning-reset from edits.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The offline/CRM-outcome feedback rung is deleted rather than parked at the bottom, naming the constraint (no CRM or export) and the revival condition (when an export exists).",
+        "evidence": "'Deleted, not deferred: offline-outcome feedback loop (booking system \u2192 ad platform). No export exists anywhere in scope this quarter. Revive when IT ships one.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tags each finding with severity, confidence, outcome bought, effort, and owner.",
+        "evidence": "Items 1 and 2 carry all five fields (e.g. item 1: 'critical severity, high confidence, restores every other number in the account, ~a day of marketing-ops/tag-manager work... owner: whoever has tag-manager/ads-platform admin access'), but items 3 and 4 omit an explicit outcome-bought field, e.g. item 3: '[medium severity, low confidence until pulled, near-zero effort \u2014 it's a native platform report, owner: whoever runs the account]' has no distinct outcome tag.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Expresses effort as an order of magnitude (hours, a week, a quarter, a standing job), not currency or precise estimates.",
+        "evidence": "Effort tags used: '~a day of marketing-ops/tag-manager work', 'a few hours inside the ad platform UI', 'near-zero effort', 'standing job not a one-time fix' \u2014 all order-of-magnitude, no currency or precise time figures.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Provides a CEO-visible action for this week without letting the visibility demand reorder the queue.",
+        "evidence": "'Brief the creative studio and start production now... Start the brief this week for visible motion' is kept at rank 4 (last) rather than promoted to the top despite being the visible, CEO-facing action.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands each finding to its owner or follow-on workflow in rung order.",
+        "evidence": "Each of the four ranked items names an owner in sequence: item 1 'owner: whoever has tag-manager/ads-platform admin access', item 2 'owner: you or your teammate', item 3 'owner: whoever runs the account', item 4 'owner: creative studio + you'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction for the top fix, for example platform-reported conversions falling by roughly half toward booking-system truth once deduplication ships.",
+        "evidence": "'One consequence to brace the CEO for: once you fix the double-count, reported conversions will roughly halve and reported CPA/ROAS will look like they got worse overnight.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects the cheapest-first quick-wins ordering and ranks by outcome bought per unit of effort.",
+        "evidence": "The transcript never frames or rejects a 'cheapest-first' ordering; it only states 'Order matters here' and justifies the sequence by data corruption ('The double-firing purchase event corrupts every other number in the account'), with no explicit outcome-per-effort framing or contrast against a cost-based ordering.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The double-firing tracking fix is ranked first despite engineering being unavailable.",
+        "evidence": "Item 1, 'Kill the duplicate purchase event (Day 1-2, no engineering needed)', is listed first and explicitly says 'This is the highest priority and the fastest fix,' while the doc elsewhere acknowledges engineering is largely unavailable ('a zero-availability quarter').",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Handles the engineering constraint on the tracking fix as an escalation to whoever can lift it (CTO/CEO), not as a demotion or deletion, because it is the confirmed root-cause defect.",
+        "evidence": "\"If you don't control GTM and can't touch the page at all, this is the one item worth a direct, narrowly-scoped ask to the CTO: 'one dedupe guard on one page' is a very different lift than 'build a CRM export.' Frame it that way \u2014 you may get 30 minutes even in a zero-availability quarter.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that every other fix's results will be measured through the doubled signal until the tracking fix ships, making downstream reads untrustworthy.",
+        "evidence": "\"The double-firing purchase event corrupts every other number in the account \u2014 CPA, ROAS, which campaigns 'work,' even the conversion-count problem in #2. Fix measurement before you touch budgets or campaign structure, or you'll be optimizing against fake data twice.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends consolidating the 11 sub-volume campaigns (below learning-volume gates), handed off as a consolidation plan rather than executed inside this diagnosis.",
+        "evidence": "\"Merge overlapping campaigns (same objective, same audience type) into 3-5 broader campaigns instead of 14 thin ones. Target getting each surviving campaign to 15-20+ conversions/month minimum\" \u2014 presented as a plan with 'Owner: you' rather than something executed within the response.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes consolidation costs a learning window of volatility, setting that expectation against the CEO's this-week demand.",
+        "evidence": "\"restructure live within the week; performance signal takes 2-3 weeks to stabilize post-consolidation \u2014 tell the CEO that upfront so the 'visible action' isn't mistaken for 'visible results.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes the creative work above its default rank because the retained studio with idle capacity collapses its effort cost, and says that is the reason.",
+        "evidence": "The stated reason for starting creative on Day 1 is lead time, not idle-capacity cost collapse: \"Kick this off same day as #1, not after \u2014 it's the longest lead time item (concepting + production), so starting it this week is itself the visible action\"; idle capacity is mentioned only as 'free upside' opportunity, not cited as the reason for reordering, and creative remains item 4 of 4.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks budget and underspend moves last, with the reason: near-zero outcome while upstream layers fail, and significant edits reset learning.",
+        "evidence": "Underspend fixes are item 3 of 4 (creative brief is item 4), and no reasoning about 'near-zero outcome' or 'resets learning' is given for the underspend item \u2014 its rationale is purely diagnostic ('Check delivery diagnostics first ... before changing anything \u2014 don't guess').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The offline/CRM-outcome feedback rung is deleted rather than parked at the bottom, naming the constraint (no CRM or export) and the revival condition (when an export exists).",
+        "evidence": "\"CRM/export-dependent optimization (lookalikes from booking data, LTV-based bidding, customer lists) \u2014 not available until IT ships an export, possibly next year. Don't let this block the four items above; none of them need it.\" \u2014 moved out of the four-item plan entirely into a separate 'NOT to chase' section.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tags each finding with severity, confidence, outcome bought, effort, and owner.",
+        "evidence": "Each section only carries 'Owner' and 'Visible by' fields (e.g. 'Owner: you or your teammate, via ad platform + GTM. Visible by: end of week...'); there are no severity, confidence, or outcome-bought tags anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Expresses effort as an order of magnitude (hours, a week, a quarter, a standing job), not currency or precise estimates.",
+        "evidence": "Effort is consistently given in coarse day/week/quarter terms: 'Takes minutes, no code touch', 'Day 1-2', 'Day 2-4', 'within the week', '2-3 weeks to stabilize', 'this quarter' \u2014 no currency or precise hour/dollar figures appear.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Provides a CEO-visible action for this week without letting the visibility demand reorder the queue.",
+        "evidence": "\"What to tell the CEO this week: All four actions are live or in motion by Friday... Frame the win as 'stopped bidding on fake data and cleared 11 campaigns' worth of a stalled learning phase' \u2014 that's the real story, not just activity.\" The four items keep their original 1-4 order in this summary.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hands each finding to its owner or follow-on workflow in rung order.",
+        "evidence": "Each of the four numbered items ends with an explicit 'Owner:' line (e.g. 'Owner: you or your teammate, via ad platform + GTM', 'Owner: you', 'Owner: you/teammate to write the brief today') presented in the same 1-4 sequence as the priority ranking.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a prediction for the top fix, for example platform-reported conversions falling by roughly half toward booking-system truth once deduplication ships.",
+        "evidence": "\"Visible by: end of week, reported conversions should roughly halve and finally track the booking system.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

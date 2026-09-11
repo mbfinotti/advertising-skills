@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Issues a saturating verdict, not fatigued",
+        "evidence": "\"verdict : saturating (the ABM pool, not the creative)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites all five creatives decaying together, including the fresh one, as pointing at the pool rather than the assets",
+        "evidence": "\"frequency : 7.8, lagging/confirming, all 5 ads converging together\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the fresh creative's failure to recover performance on the same audience as the discriminating test resolving toward saturation",
+        "evidence": "\"the ad launched 3 weeks ago fell to the pack's level within 2 weeks on the same list. That's Meta's own fatigue-vs-saturation test failing in the saturation direction.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads flat reach with climbing impressions as the platform recycling the same pool",
+        "evidence": "\"Reach flat for a month while impressions climb, frequency 7.8 on a 38k-member cold ABM list\" cited under the audience saturation FAIL.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads conversion rate degrading alongside engagement as the saturation signature, contrasting it with fatigue where CVR typically holds",
+        "evidence": "\"CVR (click->demo) : degrading ALONGSIDE CTR, not holding [lagging]\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends audience expansion, list refresh, or exclusions as the remedy instead of new creative",
+        "evidence": "\"Redirect it to list work first, not production. Refresh/expand the matched account list...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly advises against briefing the approved new creative batch, stating creative work is wasted effort under saturation",
+        "evidence": "\"do NOT commission a like-for-like creative batch against this same 38k list\"; \"A new creative batch fixes fatigue, not a depleted pool\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes ABM and list-based audiences saturate by design, so B2B should expect saturating verdicts more often than fatigued",
+        "evidence": "No statement anywhere in the section that B2B/ABM should expect saturating verdicts more often than fatigued verdicts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gates confidence on leading engagement signals because single-digit weekly conversions cannot clear the conversion floor, and says so in the confidence line",
+        "evidence": "\"confidence : medium - demo-request volume (single-digit-to-low-teens weekly) cannot clear the conversion floor on its own; call is gated on the leading engagement signals\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes audience expansion to the first action under the saturating verdict",
+        "evidence": "\"action : rung 6, promoted to rung 1 under a saturating verdict - expand/refresh the matched account list\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses new-member reach or first-time-exposure trend as a leading saturation signal",
+        "evidence": "\"reach (rolling) : flat ~1 month while impressions climb [leading]\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block including the confounder screen results",
+        "evidence": "A confounder screen table precedes the FATIGUE VERDICT block in the same response.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check one full comparison window after the audience expansion",
+        "evidence": "\"re-check : ~2026-10-10 (one full comparison window after the list refresh lands)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Issues a saturating verdict, not fatigued",
+        "evidence": "'the problem isn't \"the creative is stale,\" it's audience saturation'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites all five creatives decaying together, including the fresh one, as pointing at the pool rather than the assets",
+        "evidence": "'CTR drop (0.43% \u2192 0.29%) uniformly across all five ads, new one included'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the fresh creative's failure to recover performance on the same audience as the discriminating test resolving toward saturation",
+        "evidence": "'If this were normal creative wear-out, that ad should have significantly outperformed the tired four for longer. It didn't'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads flat reach with climbing impressions as the platform recycling the same pool",
+        "evidence": "'Reach flat + impressions climbing = LinkedIn's delivery system has stopped finding un-served members in your list and is now recycling impressions'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads conversion rate degrading alongside engagement as the saturation signature, contrasting it with fatigue where CVR typically holds",
+        "evidence": "States demo-request/click-to-demo decline 'confirms it's not just top-of-funnel fatigue' but never explicitly contrasts with fatigue's CVR-holds pattern",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends audience expansion, list refresh, or exclusions as the remedy instead of new creative",
+        "evidence": "'a bid increase may unlock the unreached ~15\u201320K rather than continuing to recycle on the reached ones' \u2014 though offered alongside, not instead of, creative",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly advises against briefing the approved new creative batch, stating creative work is wasted effort under saturation",
+        "evidence": "Contrary: the transcript builds a full 9-ad creative brief across 3 segments as the core recommendation",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes ABM and list-based audiences saturate by design, so B2B should expect saturating verdicts more often than fatigued",
+        "evidence": "Not stated anywhere",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gates confidence on leading engagement signals because single-digit weekly conversions cannot clear the conversion floor, and says so in the confidence line",
+        "evidence": "No confidence line or conversion-floor gating discussed",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Promotes audience expansion to the first action under the saturating verdict",
+        "evidence": "First action is retiring the five ads and building 9 segmented creatives, not audience expansion",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses new-member reach or first-time-exposure trend as a leading saturation signal",
+        "evidence": "Not explicitly used; only cumulative frequency (7.8) and flat reach/climbing impressions are cited",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a verdict block including the confounder screen results",
+        "evidence": "No structured verdict block appears",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a re-check one full comparison window after the audience expansion",
+        "evidence": "No re-check date tied to any audience-expansion action is given",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

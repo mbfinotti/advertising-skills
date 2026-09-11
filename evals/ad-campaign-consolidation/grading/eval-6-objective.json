@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recommends merging the 9 persona ad sets rather than preserving each as a structural split",
+        "evidence": "\"Merge the remaining persona ad sets into a small number of ad sets (default: one), each running one ad per persona as a creative variant \u2014 not one ad set per persona.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves the segmentation into creative: one creative variant per persona inside the merged structure, with delivery matching variant to viewer",
+        "evidence": "\"One ad per persona inside the merged ad set(s), each speaking that persona's language... delivery still matches ad variant to viewer, you just stop paying nine times over for nine separate audiences.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the current setup as the anti-pattern: generic identical creative propped up by a stack of narrow targeting filters, producing a small audience that all see the same undifferentiated ad",
+        "evidence": "\"all 9 ad sets serve the same product demo ad. That's the exact anti-pattern this method flags \u2014 a dozen stacked interest and job-title filters propping up one generic creative.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises spending the persona knowledge on the message rather than on the targeting filter",
+        "evidence": "\"where does the persona knowledge you already have actually pay off: in the targeting filters, or in the creative? Put it in the creative.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the contractually guaranteed $2,000/month Medlow line on its own per-branch budget",
+        "evidence": "\"Carve out Medlow first, untouched. The $2,000/month co-marketing guarantee is an externally mandated budget \u2014 the one preserve rule nothing else overrides. It keeps its own line with its own budget floor, reported separately, for the life of the contract.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that campaign-level budget pooling will not honour the contractual spend guarantee, and that removing the guarantee needs explicit finance or client approval",
+        "evidence": "The transcript only says Medlow \"stays structurally separate from the merge below; it just needs to be excluded from the shared pool\" \u2014 it never states that pooling would breach the guarantee, nor that removing the protection would require finance or client sign-off.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that creative variants cannot substitute for structural separation where the budget mandate applies",
+        "evidence": "No passage discusses applying the creative-variant consolidation model to Medlow or explains why creative variants would be insufficient there; Medlow is simply carved out entirely without that comparison being made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Preserves the CMO's weekly per-persona reporting through a keep-but-re-parent arrangement (separate reporting under a pooled budget and bid strategy) or verifies the report survives the merge before merging",
+        "evidence": "\"Meta reports at the ad level even inside a merged ad set, so your CMO's weekly 'spend and leads per persona' review survives untouched\"; fallback offered: \"keep but re-parent: pool budget and bid strategy under a shared structure while each persona keeps a separately reported line.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Debunks the 'raise daily budget to 10x CPA before merging' rule as a practitioner extrapolation, not platform documentation",
+        "evidence": "\"No platform documents a 10x multiplier. TikTok documents ad-group budget \u2265 5x target CPA \u2014 a different platform, different number. Meta documents no CPA-to-budget ratio at all; what it documents is a *volume* exit threshold.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Debunks the Target CPA gate: the platform's own documentation says the strategy works with no conversion history, and the 15-conversion figure is an evaluation sample, not a prerequisite",
+        "evidence": "\"Google's own documentation: Smart Bidding strategies including Target CPA work with no conversion history... The 15-conversions/30-days figure you've heard is the *Target ROAS* eligibility floor... not a Target CPA gate, and even that number is an evaluation checkpoint, not an on/off switch.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not advise waiting to accumulate a conversion minimum before using automated bidding",
+        "evidence": "\"**Turn Target CPA on now.** Waiting for a threshold that doesn't exist for this strategy is pure opportunity cost\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tests each split against preserve rules and treats 'keeping control' alone as comfort, not a business reason that protects a split",
+        "evidence": "\"check it against why segmentation is normally worth keeping: it's worth keeping when the *offer or message* genuinely differs per segment. Yours doesn't, yet\"; and on the re-parent fallback: \"it only pools funding, not ad-set-level learning... I don't recommend it as the primary move here; use it only if full merge is politically blocked.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the deliberate split (the contract-mandated Medlow line) from the unprotected persona splits",
+        "evidence": "\"The $2,000/month co-marketing guarantee is an externally mandated budget \u2014 the one preserve rule nothing else overrides\" contrasted with the persona ad sets which get merged by default: \"Absent that, default to the fewest groups: one merged ad set, nine creative variants.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recommends merging the 9 persona ad sets rather than preserving each as a structural split",
+        "evidence": "\"Cluster the 9 personas into 3\u20134 campaigns by buying-committee role or deal-stage proximity ... not 9.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves the segmentation into creative: one creative variant per persona inside the merged structure, with delivery matching variant to viewer",
+        "evidence": "\"Serve persona-specific creative (headline/copy naming their pain point) as multiple ads inside each ad set. Let Meta's creative-level delivery optimization route each creative toward the people who engage with it \u2014 this is where your 'who sees which message' control now lives.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the current setup as the anti-pattern: generic identical creative propped up by a stack of narrow targeting filters, producing a small audience that all see the same undifferentiated ad",
+        "evidence": "\"9 ad sets each with a dozen stacked interest/job-title filters, all shown the identical creative. Splitting a thin budget 9 ways starves every ad set of the ~50 weekly conversions Meta's algorithm needs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises spending the persona knowledge on the message rather than on the targeting filter",
+        "evidence": "\"Root cause: message differentiation is being forced through audience targeting (fragile, post-iOS14.5 signal-poor) instead of creative (which Meta's algorithm actually reads well).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the contractually guaranteed $2,000/month Medlow line on its own per-branch budget",
+        "evidence": "\"Preferred: keep the Medlow line as its own standalone campaign with Ad Set Budget Optimization (ABO), fixed at \u2265$2,000/month, entirely outside the consolidated CBO campaigns.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that campaign-level budget pooling will not honour the contractual spend guarantee, and that removing the guarantee needs explicit finance or client approval",
+        "evidence": "The transcript states \"A CBO campaign will happily reallocate spend away from an underperforming ad set \u2014 which breaks a contractual guarantee,\" but nowhere states that removing/overriding the guarantee would require explicit finance or client approval.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that creative variants cannot substitute for structural separation where the budget mandate applies",
+        "evidence": "The transcript treats Medlow's protection purely via budget-structure mechanisms (ABO or min-spend limit) but never explicitly states that creative-level differentiation is insufficient to satisfy a budget guarantee.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Preserves the CMO's weekly per-persona reporting through a keep-but-re-parent arrangement (separate reporting under a pooled budget and bid strategy) or verifies the report survives the merge before merging",
+        "evidence": "\"Tag every ad with a persona parameter via UTM ... independent of which ad set/campaign it lives in. Build the CMO's weekly view as a breakdown by ad/creative, not by campaign ... This gives the CMO the same 'spend and leads per persona' view they have today, even once the underlying ad set count drops from 9 to 3\u20134.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Debunks the 'raise daily budget to 10x CPA before merging' rule as a practitioner extrapolation, not platform documentation",
+        "evidence": "The transcript reclassifies the rule as applying to Target CPA readiness rather than merging (\"the '10x CPA before merging' rule is a Target CPA bidding readiness rule, not a consolidation rule\"), and later applies it as valid guidance in section 5 (\"apply the 10x rule: set the campaign's daily budget to at least 10x your intended target CPA\") rather than debunking it as unofficial practitioner lore.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Debunks the Target CPA gate: the platform's own documentation says the strategy works with no conversion history, and the 15-conversion figure is an evaluation sample, not a prerequisite",
+        "evidence": "The transcript instead treats 15 conversions/30 days as a threshold to be reached before switching: \"Once you're near 15 conversions/30 days, then apply the 10x rule ... before switching to Target CPA,\" rather than stating Target CPA works without prior conversion history.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not advise waiting to accumulate a conversion minimum before using automated bidding",
+        "evidence": "\"Once you're near 15 conversions/30 days: raise budget to \u226510x target CPA, then switch to Target CPA\" (step 5 of the sequencing) explicitly advises waiting for a conversion count before adopting Target CPA automated bidding.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Tests each split against preserve rules and treats 'keeping control' alone as comfort, not a business reason that protects a split",
+        "evidence": "The transcript never frames 'keeping control' as an insufficient justification; it only reassigns control to creative (\"this is where your 'who sees which message' control now lives, not in the targeting filters\") without discussing control-as-comfort versus a protected business reason.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the deliberate split (the contract-mandated Medlow line) from the unprotected persona splits",
+        "evidence": "\"Do not let 'consolidate the 9 ad sets' implicitly include Medlow. Treat it as a compliance line item, not a growth line item.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

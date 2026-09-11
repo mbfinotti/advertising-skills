@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response states that reposting the creator's organic video as a paid ad does not remove the disclosure requirement.",
+        "evidence": "\"'reposting a creator's organic content as a paid ad does not remove the disclosure requirement.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The free box through the gifting program is identified as a material connection requiring disclosure.",
+        "evidence": "\"creator received the box free (gifting program)\" tied throughout to disclosure requirements.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The platform paid-partnership toggle is treated as not adequate on its own; a disclosure line is written into the ad itself.",
+        "evidence": "\"a platform's paid-partnership label 'may not be adequate on its own'\" ... \"Keep the paid-partnership toggle on... it's necessary, just not sufficient on its own.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A caption or bio mention is called insufficient placement; the disclosure must be clear and hard to miss, spoken or on-screen.",
+        "evidence": "\"a caption/bio mention 'is not sufficient placement'\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "'merci Maisonry' is rejected as vague credit that does not communicate the relationship; the relationship itself is named in the disclosure.",
+        "evidence": "\"a vague credit like 'thanks to [brand]' 'does not communicate the relationship \u2014 name it.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The French-market version carries the label 'publicit\u00e9' or 'collaboration commerciale', in French, visible throughout the promotion.",
+        "evidence": "\"Collaboration commerciale avec Maisonry \u2014 box re\u00e7ue gratuitement\" with note \"French law requires the label visible throughout the promotion.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The US and EU/France regimes are described as stacking: an ad running in both must satisfy both.",
+        "evidence": "The transcript treats US and France as separate market cuts with parallel disclosures but never explicitly states the two regulatory regimes 'stack' when an ad runs in both markets.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each market's disclosure is written in that market's language, not as a translated afterthought.",
+        "evidence": "Distinct native-language disclosure lines are given per market, e.g. FR spoken line \"Maisonry m'a envoy\u00e9 cette box gratuitement \u2014 je vous montre.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The hired actor presented as a customer is disclosed in the ad as not an actual consumer.",
+        "evidence": "\"Dramatization \u00b7 paid actor, not an actual customer\" persistent label plus spoken line \"I'm a paid actor, not a real Maisonry customer.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concrete disclosure script lines are provided (for example spoken 'they sent it to me to try', on-screen paid-partnership wording), placed in an early beat.",
+        "evidence": "\"Maisonry sent me this box to try \u2014 here's what happened.\" as a new opening pickup line, plus 0\u20133s on-screen card.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes both the creator and the brand can be liable under EU rules on hidden advertising (or that undisclosed advertorial is unfair in all circumstances).",
+        "evidence": "No statement addresses joint creator/brand liability under EU rules or advertorial being 'unfair in all circumstances.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The compliance output lists which market(s) each disclosure line covers.",
+        "evidence": "Compliance tables are structured by \"Market | On-screen text\" rows explicitly labeled US / France.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The actor video is not scripted as an invented real-user testimonial: it is grounded in real customer evidence framed as dramatization, or reframed, alongside the non-consumer disclosure.",
+        "evidence": "The actor script is never labeled a testimonial and carries persistent \"Dramatization \u00b7 paid actor, not an actual customer\" disclosure throughout, with an explicit instruction: \"Never caption or label this 'testimonial,' 'review,' or 'real customer story.'\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response states that reposting the creator's organic video as a paid ad does not remove the disclosure requirement.",
+        "evidence": "Video 1 (\"gifted product, promoted as paid ad\") is given full on-screen and caption disclosure treatment for both markets despite already being organic content being repurposed as paid media.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The free box through the gifting program is identified as a material connection requiring disclosure.",
+        "evidence": "\"the creator's relationship is disclosable from the **gifting**, independent of whether it later runs paid \u2014 if the original organic post never disclosed the free product, that's a pre-existing gap worth closing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The platform paid-partnership toggle is treated as not adequate on its own; a disclosure line is written into the ad itself.",
+        "evidence": "\"Turn on Paid Partnership / Branded Content toggle (both markets) \u2014 keep, but treat as a supplement, not the disclosure\" alongside added on-screen supers.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A caption or bio mention is called insufficient placement; the disclosure must be clear and hard to miss, spoken or on-screen.",
+        "evidence": "\"Lead with '#ad' as the first characters \u2014 FTC guidance disfavors disclosures buried after hashtags or below a 'see more' fold.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "'merci Maisonry' is rejected as vague credit that does not communicate the relationship; the relationship itself is named in the disclosure.",
+        "evidence": "\"A thank-you caption doesn't satisfy this \u2014 it's not recognized as a disclosure term under the law... 'Merci Maisonry' can stay as a friendly aside later in the caption \u2014 it just can't be the disclosure.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The French-market version carries the label 'publicit\u00e9' or 'collaboration commerciale', in French, visible throughout the promotion.",
+        "evidence": "\"Persistent top-corner watermark: **'Collaboration commerciale avec Maisonry'** for the entire runtime.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The US and EU/France regimes are described as stacking: an ad running in both must satisfy both.",
+        "evidence": "The treatment table applies separate, concurrent US and France requirements to the same Video 1, with both fully implemented rather than one substituting for the other.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each market's disclosure is written in that market's language, not as a translated afterthought.",
+        "evidence": "US caption: \"#ad Maisonry sent me this box...\"; France caption: \"Publicit\u00e9 \u2013 Collaboration commerciale avec Maisonry\" \u2014 natively written per market.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The hired actor presented as a customer is disclosed in the ad as not an actual consumer.",
+        "evidence": "\"Dramatization. Not an actual customer.\" (US) / \"Mise en sc\u00e8ne, com\u00e9dien professionnel.\" (France).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concrete disclosure script lines are provided (for example spoken 'they sent it to me to try', on-screen paid-partnership wording), placed in an early beat.",
+        "evidence": "\"Add a lower-third super, first 3 seconds through end: 'Ad \u00b7 Maisonry sent me this box'\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes both the creator and the brand can be liable under EU rules on hidden advertising (or that undisclosed advertorial is unfair in all circumstances).",
+        "evidence": "\"DGCCRF has already sanctioned brands/creators for exactly this kind of soft phrasing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The compliance output lists which market(s) each disclosure line covers.",
+        "evidence": "The table's \"Market\" column explicitly lists \"US\" and \"France\" rows with matched requirements.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The actor video is not scripted as an invented real-user testimonial: it is grounded in real customer evidence framed as dramatization, or reframed, alongside the non-consumer disclosure.",
+        "evidence": "Guardrails keep dialogue to generic present-tense reactions (\"this is so satisfying\") and forbid implying real customer status, paired with the \"Not an actual customer\" super.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

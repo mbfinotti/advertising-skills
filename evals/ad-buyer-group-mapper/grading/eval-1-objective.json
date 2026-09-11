@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Recommends diffing which roles appear in closed-won deals against closed-lost deals as the first evidence step, before any new data collection",
+        "evidence": "\"Closed-won/lost diff (42 won vs. 30 lost) \u2014 same segment throughout, clean stage history. This is roughly a day of work and it is your primary source.\" listed as item 1 of the evidence plan, and Week 1 of the build sequence is \"Run the closed-won/lost diff on all 72 deals.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the existing call recordings to fill gaps left by the won/lost diff rather than commissioning new research",
+        "evidence": "\"Call recordings on most deals \u2014 an hour or two to pull notes once you know which roles the diff leaves ambiguous. Use these to fill gaps, not to start from scratch.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse running the 15 buyer interviews as the first step; interviews are deferred until a specific role's presence remains ambiguous after the diff and the call notes",
+        "evidence": "\"Buyer interviews (15, next quarter) \u2014 demoted, not deleted... Repurpose them as your post-launch confirmation pass: run them against whichever roles the diff and call notes leave as unresolved hypotheses.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the 6-week deadline demotes buyer interviews (about a week of scheduling) in favor of evidence the team already owns",
+        "evidence": "The transcript states interviews are demoted because \"They land after your 6-week deadline, so they can't inform launch,\" but nowhere quantifies buyer-interview effort as 'about a week of scheduling' or any comparable time estimate \u2014 only the diff (\"roughly a day of work\") and call notes (\"an hour or two\") get effort estimates.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that the intent feed resolves to accounts, not people, and therefore cannot confirm which roles sit on the committee",
+        "evidence": "\"Intent data resolves to accounts, not people... It tells you which mid-market healthcare accounts are actively researching workforce analytics right now. It cannot tell you who inside those accounts is involved, and licensing it doesn't change that.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Restricts the intent feed to ranking which accounts to cover, never to confirming roles or identifying committee members",
+        "evidence": "\"Its job in this plan is account selection, not role identification\" and the dedicated section states \"Build a mini account list... Gate your committee-wide, multi-role targeting on that warm list at launch.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quantifies intent-data limits: roughly 81% account-level accuracy, or equivalently that about one in five surging accounts has no genuine near-term intent",
+        "evidence": "\"roughly 81% account-level accuracy, and narrower topics only 60-70%\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels every proposed committee role as evidenced or hypothesis instead of asserting the committee as fact",
+        "evidence": "\"Every row is a hypothesis until your diff and call notes confirm it \u2014 none of this is evidenced yet, because the diff hasn't run.\" \u2014 and every row in the Role map table has an 'Evidence status' cell marked 'Hypothesis \u2014 disproof: ...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attaches a concrete disproof test to at least one hypothesis role, such as cutting it if absent from a stated number of upcoming won-deal notes",
+        "evidence": "Champion row: \"Hypothesis \u2014 disproof: cut if absent from >80% of the 42 won-deal stage histories\"; also Economic buyer: \"disproof: cut if finance sign-off appears in <50% of the 42 wins.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies title inference as the weakest evidence source, a floor never to stop on",
+        "evidence": "The transcript never mentions 'title inference' as an evidence source or discusses it as a weak floor; targeting proxies reference function/seniority for ad targeting, not as an evidence-quality ranking, and no such statement appears anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives effort in orders of magnitude: the won/lost diff about a day per deal-size segment, buyer interviews about a week of scheduling",
+        "evidence": "The diff is quantified (\"roughly a day of work\") but buyer interviews receive no time/effort quantification anywhere in the transcript \u2014 they are only described as '15, next quarter' with no scheduling estimate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags a compliance cost on at least one source: per-participant recording consent for interviews, or a licensing and privacy review before first use of the intent feed",
+        "evidence": "Week 1-2 of the build sequence: \"Confirm compliance sign-off on the feed's re-use terms if not already cleared at licensing.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Recommends diffing which roles appear in closed-won deals against closed-lost deals as the first evidence step, before any new data collection",
+        "evidence": "The won/lost diff appears only as Step 3 ('Layer in closed-lost as a distinct signal (Week 2\u20133)'), after Step 1 ('Mine the 72 deals for committee structure') and Step 2 ('Roll up into a role taxonomy'). It is not presented as the first evidence step.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the existing call recordings to fill gaps left by the won/lost diff rather than commissioning new research",
+        "evidence": "Call-recording mining happens in Step 1, before the won/lost diff in Step 3, not afterward to fill gaps the diff exposed. The diff in Step 3 draws on data already mined in Step 1 rather than prompting a return to the recordings to close specific gaps.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not endorse running the 15 buyer interviews as the first step; interviews are deferred until a specific role's presence remains ambiguous after the diff and the call notes",
+        "evidence": "Interviews are deferred to 'Week 5\u20136 and beyond' and to 'next quarter' as a calendar-based '90-day correction,' e.g. 'Launch the campaign on the CRM/call-derived map... Treat the interviews as a 90-day correction to the map, not a delay to launch.' The deferral is time-based, not conditioned on a specific role's presence remaining ambiguous after the diff/call notes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that the 6-week deadline demotes buyer interviews (about a week of scheduling) in favor of evidence the team already owns",
+        "evidence": "The transcript says '15 interviews won't return usable data before your ads go live next quarter. They're a v2 validation loop, not v1 input,' which demotes interviews due to the deadline, but it never quantifies interview effort as 'about a week of scheduling' or gives any comparable effort estimate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that the intent feed resolves to accounts, not people, and therefore cannot confirm which roles sit on the committee",
+        "evidence": "The transcript hedges rather than asserting this as fact: 'Check whether it's account-level only or contact-level (many \"account-intent\" feeds are account-level aggregate \u2014 confirm with the vendor before assuming you'll get named contacts and titles).' It explicitly allows for a contact-level case.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Restricts the intent feed to ranking which accounts to cover, never to confirming roles or identifying committee members",
+        "evidence": "'this tells you which roles are actively researching at specific target accounts right now, which is your targeting list, not your committee definition' and 'If account-level only: use it purely for account prioritization/tiering... Don't let the intent feed's coverage gaps quietly narrow your committee map.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quantifies intent-data limits: roughly 81% account-level accuracy, or equivalently that about one in five surging accounts has no genuine near-term intent",
+        "evidence": "No accuracy percentage or false-positive rate for intent data appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels every proposed committee role as evidenced or hypothesis instead of asserting the committee as fact",
+        "evidence": "Step 2 gives a blanket caveat ('expect a committee that clusters into roughly these functions \u2014 confirm the exact titles from your own data rather than assuming') but does not individually tag each role as 'evidenced' vs 'hypothesis'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Attaches a concrete disproof test to at least one hypothesis role, such as cutting it if absent from a stated number of upcoming won-deal notes",
+        "evidence": "The only numeric threshold given is a sample-size grouping rule in the closing caveat ('group anything with fewer than ~8\u201310 data points into a broader bucket'), not a disproof/cut test tied to future won-deal notes for a specific hypothesis role.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies title inference as the weakest evidence source, a floor never to stop on",
+        "evidence": "The transcript prefers call-stated titles over CRM fields ('Job title as stated on the call (not just CRM title field \u2014 CRM titles are stale/wrong often)') but never characterizes title inference generally as the weakest evidence source or as a floor to push past.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives effort in orders of magnitude: the won/lost diff about a day per deal-size segment, buyer interviews about a week of scheduling",
+        "evidence": "No effort estimates in days/weeks are given for either the won/lost diff or the interview scheduling anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags a compliance cost on at least one source: per-participant recording consent for interviews, or a licensing and privacy review before first use of the intent feed",
+        "evidence": "No mention of recording consent for interviews or a licensing/privacy review for the intent feed appears in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

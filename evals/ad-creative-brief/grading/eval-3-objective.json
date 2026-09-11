@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects CTR as the deciding KPI for a B2B brief and sets SQL rate or cost per opportunity instead",
+        "evidence": "\"KPI: not CTR alone... CTR stays as a leading signal, not the deciding KPI.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a CTR winner can produce fewer conversions at a higher CPA (expensive junk leads), so variant B's +38% CTR alone does not justify scaling",
+        "evidence": "\"Its worked example is a variant that won clicks by +35% while producing worse pipeline \u2014 nearly your exact number (+38%)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends parallel persona briefs for distinct buying-committee roles (economic buyer, technical evaluator, end user) instead of one generic 'IT decision makers' persona",
+        "evidence": "\"economic buyer (compliance/GRC budget owner) and end user... are DEFERRED, not cut\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Grounds the committee recommendation in the buying reality of roughly 8-13 people and cycles near 10 months",
+        "evidence": "\"the buying committee averages ~8-13 people over cycles near 10 months\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces the before/after graphic with B2B-appropriate proof: a quantifiable customer outcome plus a badge or product screenshot",
+        "evidence": "\"an actual metric overlaid on a real product screenshot, tested against a plain aesthetic version\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends practitioner-led talking-head video over polished brand video for the LinkedIn placement",
+        "evidence": "No mention of video/talking-head format anywhere; the brief format chosen is static throughout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires product marketing sign-off on ICP wording and differentiator accuracy",
+        "evidence": "\"Compliance mandatories: PMM sign-off required on ICP wording and any framework claim (SOC 2 / ISO 27001) before production.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a committee-role field in the audience section naming which role this specific brief targets",
+        "evidence": "\"Committee note: this is 1 of 3 planned parallel briefs - economic buyer... and end user... are DEFERRED\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Plans the test read for low B2B volume: leading signals up front, with SQL-rate or opportunity judgment at a later window (e.g. 30/60/90 days), not a week-one conversion call",
+        "evidence": "\"CTR read as a leading signal in week 1-2, SQL rate and cost per opportunity as the deciding call at 30/60/90 days\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sources the core objection from lost-deal notes, call notes, or CRM comments rather than inventing one",
+        "evidence": "\"Core objection: [pull top 1-2 recurring objection from lost-deal notes / sales-call CRM tags - not yet mined]\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the hypothesis in the falsifiable 'If we lead with [pain] and [proof], then [audience] will [action]' form with a type tag",
+        "evidence": "\"If we carry Variant B's winning message into a static execution with a quantified proof point... Type: proof.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Freezes targeting and every non-test variable for the test window",
+        "evidence": "\"Constant: hook (H1), audience, placement (targeting frozen)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-commits an on-win / on-loss decision, including that a CTR winner producing junk demos gets repurposed rather than scaled",
+        "evidence": "\"without the CTR-chasing trap the skill warns against\" plus explicit On win/On loss rows in \u00a78",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects CTR as the deciding KPI for a B2B brief and sets SQL rate or cost per opportunity instead",
+        "evidence": "'Recommend keeping CTR as the primary optimization metric (since that's the decision made) but adding landing page conversion rate and cost per MQL as guardrails' \u2014 CTR remains primary, not rejected.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that a CTR winner can produce fewer conversions at a higher CPA (expensive junk leads), so variant B's +38% CTR alone does not justify scaling",
+        "evidence": "'a creative can win CTR by attracting clicks from people who will never buy (wrong seniority, wrong company size, wrong industry) and still \"win\" the test.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends parallel persona briefs for distinct buying-committee roles (economic buyer, technical evaluator, end user) instead of one generic 'IT decision makers' persona",
+        "evidence": "'IT Decision Makers \u2014 one persona, one message.' The brief widens titles within the same single persona rather than creating parallel briefs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Grounds the committee recommendation in the buying reality of roughly 8-13 people and cycles near 10 months",
+        "evidence": "No mention of buying-committee size or cycle length anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Replaces the before/after graphic with B2B-appropriate proof: a quantifiable customer outcome plus a badge or product screenshot",
+        "evidence": "The brief keeps the before/after structure, just recommending it be 'compliance-specific' ('scattered spreadsheets/audit evidence \u2192 single audit trail') rather than replacing it with an outcome stat plus trust badge.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends practitioner-led talking-head video over polished brand video for the LinkedIn placement",
+        "evidence": "Video Ad is specified as 'before\u2192after transition, 10\u201315s cutdown' of the product UI, not a talking-head format.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires product marketing sign-off on ICP wording and differentiator accuracy",
+        "evidence": "No sign-off requirement from product marketing appears in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a committee-role field in the audience section naming which role this specific brief targets",
+        "evidence": "Section 3 lists target titles and firmographics but has no explicit 'committee role' field.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Plans the test read for low B2B volume: leading signals up front, with SQL-rate or opportunity judgment at a later window (e.g. 30/60/90 days), not a week-one conversion call",
+        "evidence": "Timeline includes 'Week 1 check-in (CTR + guardrails)' as an early read, with no later 30/60/90-day SQL judgment window specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sources the core objection from lost-deal notes, call notes, or CRM comments rather than inventing one",
+        "evidence": "No objection-sourcing process from CRM/call notes is described anywhere in the brief.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the hypothesis in the falsifiable 'If we lead with [pain] and [proof], then [audience] will [action]' form with a type tag",
+        "evidence": "No such hypothesis statement appears in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Freezes targeting and every non-test variable for the test window",
+        "evidence": "No explicit statement freezing targeting/variables for a test window; the plan is a full-market scale-up, not a controlled test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-commits an on-win / on-loss decision, including that a CTR winner producing junk demos gets repurposed rather than scaled",
+        "evidence": "The brief only says a lead-quality miss 'is a signal to revisit, not a reason to ignore the KPI you chose' \u2014 no concrete pre-committed action is specified.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

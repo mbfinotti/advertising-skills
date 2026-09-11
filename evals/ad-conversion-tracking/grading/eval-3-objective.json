@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects reading the 9.1/10 match quality score as proof of deduplication - identifies it as a completeness signal, not an accuracy signal",
+        "evidence": "\"Event Match Quality (Meta Events Manager) measures how well hashed customer data matches Meta's identity graph \u2014 payload *completeness*, not measurement *accuracy*.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that duplicate conversions can still score high on match quality, so the score alone never confirms dedup",
+        "evidence": "\"A duplicated event can score a beautiful EMQ.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Points to the dedup rate in the event manager as the check that actually answers whether dedup works",
+        "evidence": "\"If you want Meta's own dedup confirmed, pull the actual **dedup rate** in Events Manager (target ~90%+)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not spend the pre-launch window trying to improve the match quality score",
+        "evidence": "Treats EMQ as a separate, non-blocking check rather than something to improve: \"but that's a separate check from the Google/GA4 question and doesn't move this gate.\" No recommendation anywhere to raise the match-quality score.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies the ~15% platform-vs-analytics gap as inside the normal, structural 10-20% band",
+        "evidence": "Table row: \"Google Ads vs GA4 | 412 vs 486 | 15.2% | Platform-vs-analytics: 10\u201320% is normal | \ud83d\udfe2 Within band\"; and \"At 15.2%, Google Ads vs GA4 is inside that band already.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to hold the launch until the platform and analytics numbers match - names chasing a zero gap as wasted launch-window effort",
+        "evidence": "\"spending the pre-launch window eliminating it delays launch for nothing\" and \"DECISION: NO-GO on \\\"numbers must match\\\" as framed \u2014 that bar is wrong.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Evaluates the analytics-vs-backend gap (486 vs 502, roughly 3%) against the under-25% threshold and clears it",
+        "evidence": "Table row: \"GA4 vs backend | 486 vs 502 | 3.2% | Analytics-vs-backend: <25% healthy, >35% investigate | \ud83d\udfe2 Healthy \u2014 GA4 is basically tracking reality\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that an analytics-vs-backend gap above roughly 35% is what would warrant investigation before launch, and this is nowhere near it",
+        "evidence": "The threshold \">35% investigate\" is stated directly against the 3.2% actual gap, marked \ud83d\udfe2 Healthy, and summarized as \"GA4's 3.2% gap to backend is your real signal that tracking works\" \u2014 well below the 35% investigate line.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends tracking the platform-vs-backend ratio weekly after launch, with a stable ratio read as healthy even when nonzero",
+        "evidence": "No mention anywhere in the transcript of a post-launch weekly ratio-tracking recommendation; the only post-launch item mentioned is a deferred click-identifier chain check tied to the launch-date decision.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags a ratio swinging week to week as the real alarm condition, meaning the pipeline is dropping events",
+        "evidence": "The transcript contains no discussion of week-to-week ratio variability or an alarm condition tied to it; it focuses solely on the pre-launch gap snapshot and diagnostic steps 1-7.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marks ongoing cross-platform reconciliation after launch as a separate task outside this pre-launch verification's scope",
+        "evidence": "No statement scopes ongoing post-launch reconciliation as a separate task; the document's \"deferred\" line only covers the click-identifier chain pending the launch-date call, not a general post-launch reconciliation process.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects reading the 9.1/10 match quality score as proof of deduplication - identifies it as a completeness signal, not an accuracy signal",
+        "evidence": "The transcript says EMQ 'scores how well Meta can match your server-side events to a Facebook/Instagram user profile' and calls it 'a Meta health metric' unrelated to dedup, but it never frames EMQ as a 'completeness signal' vs an 'accuracy signal' \u2014 it simply says it's the wrong platform/metric entirely ('It says nothing about Google Ads, GA4, or your backend').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that duplicate conversions can still score high on match quality, so the score alone never confirms dedup",
+        "evidence": "The transcript does not mention that duplicates could still score high on match quality; it only argues EMQ is a different platform's metric and irrelevant, not that dupes could coexist with a high score.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Points to the dedup rate in the event manager as the check that actually answers whether dedup works",
+        "evidence": "No mention of an 'event manager' dedup rate or any specific dedup metric check anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not spend the pre-launch window trying to improve the match quality score",
+        "evidence": "The transcript never discusses EMQ as something to improve or not improve pre-launch; it only dismisses it as irrelevant to the discrepancy analysis, and no action item concerns EMQ score improvement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Classifies the ~15% platform-vs-analytics gap as inside the normal, structural 10-20% band",
+        "evidence": "The transcript instead states: 'GA4 (486) \u2192 Google Ads (412): ~15% missing. This is the real problem, and it's fixable' \u2014 explicitly treating it as a problem to fix, not as within a normal structural band.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses to hold the launch until the platform and analytics numbers match - names chasing a zero gap as wasted launch-window effort",
+        "evidence": "\"Perfect 1:1 parity across backend, GA4, and Google Ads is not a realistic bar \u2014 it doesn't happen even in mature, well-instrumented ecommerce stacks\" and the recommendation to replace 'the \"all three match\" gate with two concrete checks before scaling' shows refusal to require exact matching before launch/scaling.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Evaluates the analytics-vs-backend gap (486 vs 502, roughly 3%) against the under-25% threshold and clears it",
+        "evidence": "The transcript evaluates the gap against a '3-5%' normal ecommerce benchmark ('A 3\u20135% GA4-to-backend gap is normal for ecommerce') and a '~5%' threshold recommendation, never mentioning a 25% threshold.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that an analytics-vs-backend gap above roughly 35% is what would warrant investigation before launch, and this is nowhere near it",
+        "evidence": "No mention of a 35% threshold anywhere; the transcript's threshold guidance is 'GA4 vs. backend stays within ~5%.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends tracking the platform-vs-backend ratio weekly after launch, with a stable ratio read as healthy even when nonzero",
+        "evidence": "The transcript recommends 'Set up Offline Conversion Import... becomes your ongoing reconciliation tool post-launch' but does not describe tracking a weekly platform-vs-backend ratio or state that a stable nonzero ratio is healthy.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags a ratio swinging week to week as the real alarm condition, meaning the pipeline is dropping events",
+        "evidence": "No mention of week-to-week ratio swings or framing volatility as the alarm signal for pipeline event drops.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marks ongoing cross-platform reconciliation after launch as a separate task outside this pre-launch verification's scope",
+        "evidence": "The transcript blends pre-launch and post-launch actions together (e.g., 'Re-pull the Ads number in 5-7 days' and setting up Offline Conversion Import 'as your ongoing reconciliation tool post-launch') as part of the same action plan, rather than explicitly marking post-launch reconciliation as outside the scope of this pre-launch verification.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Frames the decision as whether the next dollar of spend still makes money, not how much the account can spend.",
+        "evidence": "The whole answer is built on marginal-vs-blended economics rather than capacity: \"Blended MER is the wrong metric to scale on... it's not the number that governs the next dollar.\" It computes marginal MER on each increment (June\u2192July 2.25, July\u2192August 1.50, whole band 1.875), compares them to the 2.0 break-even, and concludes \"The last dollars you've already added to this campaign are, on this evidence, losing money, while the average of all dollars still looks fine.\" It names gate 2 (marginal economics) as the blocking failure, explicitly refuses to offer a smaller ramp as a consolation (\"don",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Frames the decision as whether the next dollar of spend still makes money, not how much the account can spend.",
+        "evidence": "Opens by rejecting blended MER as the wrong lens: \"The number that matters here is what the *next dollar* of prospecting spend returns.\" Builds a marginal MER column ((140-122)/(48-40)=2.25, (152-140)/(56-48)=1.50) and notes 1.50 is already below the 2.0 break-even, so \"August's last $8K of spend lost money.\" Extrapolates the decay to show the $24K jump lands in unprofitable increments, recommends a step to $64-65K rather than a spend-capacity-based answer, and closes by instructing the user to monitor marginal MER weekly and pull back when an increment drops under ~2.5-3.0 \u2014 decision criterio",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

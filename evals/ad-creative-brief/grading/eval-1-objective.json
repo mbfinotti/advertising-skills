@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Asks clarifying interview questions before drafting the brief rather than producing a finished document from the prompt alone",
+        "evidence": "\"I resolved them with judgment calls rather than stall on questions, since you said you'd rather get the deliverable\" \u2014 the brief is produced in full, with confirms deferred to the end.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses 'awareness and sales' as a combined goal and presses for one goal with one primary deciding KPI, or splits the work into separate briefs",
+        "evidence": "\"Set Purchases/CPA as the one deciding KPI; awareness rides as a secondary reach/CPM read, not a decision metric.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects 'all adults 25-60 who care about wellness' and requires a single awareness level per brief chosen from unaware / problem-aware / solution-aware / product-aware / most-aware",
+        "evidence": "\"Set to solution-aware: people who already know they sleep badly and have tried something... 'All adults' isn't a targetable creative brief\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the missing awareness level or 'all audiences' as a defect to fix (splitting briefs when levels genuinely differ), not as an acceptable audience definition",
+        "evidence": "Table lists it as a 'Defect' with resolution: \"Set to solution-aware...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reduces the four claims to one messaging angle with exactly one proof point, moving the extra messages into separate concepts or briefs",
+        "evidence": "\"One hero angle, three supporting trust badges\"; \u00a73 lists a single \"One proof point\" (lab cert); other claims go to \"Roadmap \u2014 queued, not in this brief\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a falsifiable hypothesis in the form 'If we lead with [pain] and [proof], then [audience] will [action]'",
+        "evidence": "\"If we lead with the melatonin-grogginess pain point and the lab-tested proof, then solution-aware adults comparing sleep options will purchase at or under target CPA.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tags the hypothesis with a type from hook / proof / format / angle / persona",
+        "evidence": "\"Type: hook\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires an evidence citation before a claim such as 'loved by 40,000+ customers' may appear, rather than accepting leadership talking points as-is",
+        "evidence": "\"evidence citations below are placeholders marked [VERIFY]... no claim ships without a real citation\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags supplement-category compliance: claims needing substantiation and forbidden phrasing (no medical or treatment claims) recorded in the brief",
+        "evidence": "\"No disease claims (\"cures insomnia,\" \"treats anxiety\") \u2014 structure/function language only.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents 2-3 candidate concept directions with trade-offs and one recommendation before hardening a single brief",
+        "evidence": "The brief is hardened directly around MelatoninFree; alternate concepts only appear afterward under 'Roadmap \u2014 queued, not in this brief', not as pre-decision candidates with trade-offs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps to one brief per concept rather than one brief carrying several distinct concepts",
+        "evidence": "Single concept 'MelatoninFree_ContrarianLead'; others queued as Concepts 2-4 in the roadmap, not folded in.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a test block naming the single variable that changes, what stays frozen, and a minimum evidence floor before any kill or scale call",
+        "evidence": "\"Variable: hook. Constant: trust-bar layout, offer, audience, placements... Minimum evidence: ~5\u201310 conversions or spend of 5\u201310\u00d7 target CPA per hook\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Stops at direction (hook directions, art direction) and does not write the finished ad copy lines themselves",
+        "evidence": "Hooks table column is \"Direction (not script)\", e.g. \"Open by naming the thing everyone assumes is the fix, then undercut it\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Asks clarifying interview questions before drafting the brief rather than producing a finished document from the prompt alone",
+        "evidence": "The transcript delivers a complete finished brief immediately, only flagging assumptions retroactively: 'Two structural calls I made so I could deliver the brief now instead of stalling on questions.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Refuses 'awareness and sales' as a combined goal and presses for one goal with one primary deciding KPI, or splits the work into separate briefs",
+        "evidence": "Objective stays dual ('Dual: build awareness *and* drive purchases in Q2') and the brief just picks an optimization target without refusing or splitting: 'Optimize for purchase; awareness is a byproduct of a broad, high-frequency buy.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects 'all adults 25-60 who care about wellness' and requires a single awareness level per brief chosen from unaware / problem-aware / solution-aware / product-aware / most-aware",
+        "evidence": "'Stated target: all adults 25\u201360, wellness-minded \u2014 genuinely broad. Don't over-segment creative by age/gender... let Advantage+ targeting do the narrowing.' No single awareness level is required.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the missing awareness level or 'all audiences' as a defect to fix (splitting briefs when levels genuinely differ), not as an acceptable audience definition",
+        "evidence": "Personas are explicitly kept as 'loose reference personas for the designer's mental model (not separate campaigns)' rather than split into separate briefs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reduces the four claims to one messaging angle with exactly one proof point, moving the extra messages into separate concepts or briefs",
+        "evidence": "Each concept still carries three additional proof badges in the same ad: 'the other 3 as a compact proof row (small icons/badges: \ud83e\uddea 3rd-party tested \u00b7 \ud83d\udcb0 vs. Rx pricing \u00b7 \u2b50 40,000+ customers)' \u2014 not reduced to one proof point or moved to separate briefs.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a falsifiable hypothesis in the form 'If we lead with [pain] and [proof], then [audience] will [action]'",
+        "evidence": "No such hypothesis statement appears anywhere in the brief.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Tags the hypothesis with a type from hook / proof / format / angle / persona",
+        "evidence": "No hypothesis or type tag is present in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires an evidence citation before a claim such as 'loved by 40,000+ customers' may appear, rather than accepting leadership talking points as-is",
+        "evidence": "Section 11: '\"40,000+ customers\" must be a real, current, defensible number at time of launch.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags supplement-category compliance: claims needing substantiation and forbidden phrasing (no medical or treatment claims) recorded in the brief",
+        "evidence": "Section 11: 'No disease/condition treatment claims (\"cures insomnia,\" \"fixes sleep disorders\") \u2014 supplements can only support, not treat... No named prescription drugs in copy or imagery.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents 2-3 candidate concept directions with trade-offs and one recommendation before hardening a single brief",
+        "evidence": "All four concepts (A-D) are hardened directly into the deliverables checklist with no trade-off comparison or single recommendation among them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps to one brief per concept rather than one brief carrying several distinct concepts",
+        "evidence": "Section 7 bundles four distinct concepts (A, B, C, D) into a single document with a shared deliverables checklist.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a test block naming the single variable that changes, what stays frozen, and a minimum evidence floor before any kill or scale call",
+        "evidence": "No test/kill/scale block exists; Section 12 'Success Metrics' only lists KPIs without evidence floors or frozen variables.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Stops at direction (hook directions, art direction) and does not write the finished ad copy lines themselves",
+        "evidence": "Section 8 'Copy Toolkit' provides finished headline options and primary text starters verbatim, e.g. '\"Sleep support, minus the melatonin hangover.\"'",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

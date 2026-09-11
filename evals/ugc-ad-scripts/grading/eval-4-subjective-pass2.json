@@ -1,0 +1,23 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The framing leads with teaching or insight rather than a pitch, matched to a professional feed.",
+        "evidence": "",
+        "passed": false,
+        "graded": false
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The framing leads with teaching or insight rather than a pitch, matched to a professional feed.",
+        "evidence": "The creative is platform-aware for LinkedIn (1:1/4:5, burned-in captions for muted autoplay, hook on the first frame, ops/warehouse targeting, 'Book a Demo' over 'Learn More'), and the opening card leads with a customer outcome \u2014 '14 hours a week. Down to 3.' \u2014 rather than the product name. But the framing is direct-response, not teaching: at 0:04 it goes straight to 'I'm [Name], founder of Ostrafell. We build reconciliation software for 3PL warehouses,' then capability claims ('No rip-and-replace. It sits on top of your existing WMS'), a price card ('$900/mo \u2014 book a call'), a logo, an end ca",
+        "score": 2,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

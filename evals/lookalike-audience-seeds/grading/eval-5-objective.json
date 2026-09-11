@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to pad the seed with newsletter subscribers to hit the recommended size",
+        "evidence": "Short answer: No \u2014 don't pad the seed with the newsletter list or email openers.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the homogeneity principle: seed homogeneity affects audience effectiveness more than its size, per Meta's own guidance",
+        "evidence": "dilutes the signal cluster; homogeneity outweighs size",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the practitioner consensus that a few hundred high-value customers outperform thousands of undifferentiated subscribers, labeled directional rather than audited",
+        "evidence": "The consensus is cited (\"Stackmatix, Grow With Sakib\", \"500 paying customers beating 5,000 newsletter subscribers\") but never explicitly labeled as directional/not audited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes Meta's 100 matched floor from the 1,000-5,000 recommended band",
+        "evidence": "Meta's **matched-floor** is 100, not 1,000\u20135,000 \u2014 that range is Meta's *recommended* sweet spot, not a hard minimum.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the effective seed: 850 rows at Meta's 50-80% band is roughly 425-680 matched, which clears the 100 floor",
+        "evidence": "850 buyers \u00d7 50\u201380% ... = **~425\u2013680 matched** ... That clears the 100 floor on its own.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects email openers as a source because Apple Mail Privacy Protection (2021) inflated opens into noise, allowing clickers only",
+        "evidence": "Apple Mail Privacy Protection (2021) auto-pre-fetches images, so \"opens\" are mostly noise, not engagement.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If more volume is wanted, walks the fallback ladder instead of loosening selection quality",
+        "evidence": "What to do instead (fallback ladder, in order \u2014 never loosen selection quality first)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the documented ladder flip (rung 2 before rung 1) because no enrichment vendor is contracted and there is recency left to widen: 90 to 180 days first",
+        "evidence": "rung 1 (identity enrichment) is deleted outright ... Rung 2 \u2014 widen the recency window. You're at 90 days. Move to 180",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions stacking an adjacent segment of the same homogeneity (rung 3) as a later step, not the newsletter list",
+        "evidence": "Rung 3 \u2014 stack an adjacent segment of the same homogeneity. If you have RFM data, add \"Loyal\" to \"Champions\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If email clickers are ever exported, requires checking that ESP consent scope covers ad-platform upload rather than assuming it",
+        "evidence": "newsletter/ESP opt-in consent rarely covers ad-platform matching specifically. That's a separate lawful-basis question ... Before uploading *any* non-buyer list, confirm that basis exists \u2014 don't assume it.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs the negative-selection pass on the 850 buyers before export",
+        "evidence": "No mention of stripping refunders/chargebacks/employees etc. from the 850-buyer seed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps existing customers in the seed and suppresses them from the acquisition campaign at delivery level",
+        "evidence": "No mention of existing-customer suppression at delivery level in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends sizing the upload at 2-3x the matched target",
+        "evidence": "No 2-3x sizing recommendation appears in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to pad the seed with newsletter subscribers to hit the recommended size",
+        "evidence": "\"No \u2014 mixing in the newsletter and 'opened an email' pools will hurt the lookalike more than the small buyer count would.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the homogeneity principle: seed homogeneity affects audience effectiveness more than its size, per Meta's own guidance",
+        "evidence": "States \"seed quality matters more than seed size past the minimum\" but does not cite this as Meta's own documented guidance.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the practitioner consensus that a few hundred high-value customers outperform thousands of undifferentiated subscribers, labeled directional rather than audited",
+        "evidence": "No such labeling of the claim as directional/practitioner consensus is present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes Meta's 100 matched floor from the 1,000-5,000 recommended band",
+        "evidence": "\"Meta's Lookalike minimum is 100 people, not 1,000 \u2014 the 1,000-5,000 figure is a 'recommended for best results' range, not a hard floor.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the effective seed: 850 rows at Meta's 50-80% band is roughly 425-680 matched, which clears the 100 floor",
+        "evidence": "No match-rate-based effective-seed computation is performed; just asserts 850 is usable on its own.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects email openers as a source because Apple Mail Privacy Protection (2021) inflated opens into noise, allowing clickers only",
+        "evidence": "\"Since Apple's Mail Privacy Protection (iOS 15, Sept 2021)... If you use the email list at all, filter to clickers, not openers.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If more volume is wanted, walks the fallback ladder instead of loosening selection quality",
+        "evidence": "\"Better ways to grow it without diluting intent: 1. Extend the purchase window... 2. Add adjacent high-intent pixel/CAPI events...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies the documented ladder flip (rung 2 before rung 1) because no enrichment vendor is contracted and there is recency left to widen: 90 to 180 days first",
+        "evidence": "Recency-window extension (\"Extend the purchase window (180 or 365 days instead of 90)\") is listed first, before any enrichment suggestion.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Mentions stacking an adjacent segment of the same homogeneity (rung 3) as a later step, not the newsletter list",
+        "evidence": "\"Add adjacent high-intent pixel/CAPI events: add-to-cart, initiate-checkout... Closer in intent to 'buyer' than 'subscriber.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If email clickers are ever exported, requires checking that ESP consent scope covers ad-platform upload rather than assuming it",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the negative-selection pass on the 850 buyers before export",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps existing customers in the seed and suppresses them from the acquisition campaign at delivery level",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends sizing the upload at 2-3x the matched target",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

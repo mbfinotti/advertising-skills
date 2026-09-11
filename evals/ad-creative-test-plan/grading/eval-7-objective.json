@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to make hook rate the primary or deciding metric; assigns it as a gate metric used only to kill obvious losers early and cheaply",
+        "evidence": "\"Hook rate can't be the deciding metric \u2014 it can only be the gate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that gate metrics screen and never crown winners",
+        "evidence": "\"Hook rate screens out obvious losers cheaply; it doesn't crown a winner.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the evidence class: a multi-account analysis of roughly $1.47M in ad spend found no statistically significant correlation between hook rate and revenue",
+        "evidence": "\"A $1.47M multi-account analysis found no statistically significant correlation between hook (thumbstop) rate and revenue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes two ads at an identical hook rate can differ several-fold in return, because the gate says nothing about who survives to the call to action",
+        "evidence": "The transcript only says a video \"can hold a great 3-second view rate and lose people before the CTA\"; no several-fold return differential claim is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the published 30% bar and sets the gate threshold from the account's own trailing median, noting published 'good' bands conflict (roughly 18% to 40%)",
+        "evidence": "\"Published \\\"good\\\" hook-rate bands also conflict 18\u201340% across vendors, so 30% isn't a stable external bar\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires like-for-like gate comparison by placement, flagging that comparing Reels-heavy assets against feed assets on raw hook rate crowns accidental winners",
+        "evidence": "\"Ranking all five videos on one shared hook-rate number would just crown \\\"whichever video happened to run in Reels.\\\"\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names a conversion-level primary metric (purchase CPA or conversion rate) as the decision metric",
+        "evidence": "\"primary = cost per purchase (decision metric)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds guardrail metrics that must not degrade (e.g. frequency, cost inflation vs account baseline, refund/return rate)",
+        "evidence": "\"guardrails = frequency (<=2.5-3), CPM vs account baseline (+/-20%), add-to-cart rate ..., refund/return rate post-scale\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that high hook rate combined with low conversion usually signals an offer or landing-page problem, not a creative winner",
+        "evidence": "No mention of landing page or offer problems as an explanation for high-hook/low-conversion results appears in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the feasibility check anyway: projects conversion volume per cell (about 14/day at $400/day and $28 CPA) and emits an explicit Powered-or-Directional verdict for the purchase read",
+        "evidence": "\"Projected purchases/cell at $28 target CPA: $400 \u00f7 28 \u2248 14.3/day\" and \"VERDICT: Directional read on CPA\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the gate only after a minimum impression volume per asset (on the order of 1,000-2,000 impressions)",
+        "evidence": "\"at >=2,000 impressions/asset\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale rules and a fixed stop before launch",
+        "evidence": "\"kill: asset at $56 spend (2x CPA target), zero purchases\" and \"hard stop day 21 (2026-10-05) or 300 purchases/cell\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to make hook rate the primary or deciding metric; assigns it as a gate metric used only to kill obvious losers early and cheaply",
+        "evidence": "'using 3-second hook rate as the primary decision metric' \u2014 explicitly sets hook rate as primary, not a gate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that gate metrics screen and never crown winners",
+        "evidence": "'Among qualifying cells, the highest hook rate in each group wins that group's placement budget' \u2014 hook rate is used to crown a winner.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the evidence class: a multi-account analysis of roughly $1.47M in ad spend found no statistically significant correlation between hook rate and revenue",
+        "evidence": "No such study or evidence class is cited anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes two ads at an identical hook rate can differ several-fold in return, because the gate says nothing about who survives to the call to action",
+        "evidence": "Not stated anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the published 30% bar and sets the gate threshold from the account's own trailing median, noting published 'good' bands conflict (roughly 18% to 40%)",
+        "evidence": "'Primary gate: \u226530% hook rate to qualify as \"strong\"' \u2014 uses a fixed published bar, not derived from the account's trailing median.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires like-for-like gate comparison by placement, flagging that comparing Reels-heavy assets against feed assets on raw hook rate crowns accidental winners",
+        "evidence": "'Fix: run two separate leaderboards, not one... Cell group A \u2014 Reels... Cell group B \u2014 Feed.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names a conversion-level primary metric (purchase CPA or conversion rate) as the decision metric",
+        "evidence": "Hook rate remains the primary gate/decision metric; CPA is only a guardrail ('check two downstream signals before committing scale budget').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds guardrail metrics that must not degrade (e.g. frequency, cost inflation vs account baseline, refund/return rate)",
+        "evidence": "'Guardrail... Hold rate / 15-second view rate... CPA trend so far.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that high hook rate combined with low conversion usually signals an offer or landing-page problem, not a creative winner",
+        "evidence": "The guardrail language only says to 'flag it for the next round,' without diagnosing an offer/landing-page cause.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the feasibility check anyway: projects conversion volume per cell (about 14/day at $400/day and $28 CPA) and emits an explicit Powered-or-Directional verdict for the purchase read",
+        "evidence": "Only impression volume (5,000/cell) is projected for the hook-rate gate; no purchase-volume-per-day projection or Powered/Directional labeling is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reads the gate only after a minimum impression volume per asset (on the order of 1,000-2,000 impressions)",
+        "evidence": "'Minimum sample size before trusting a hook rate: \u22655,000 impressions per cell' \u2014 a threshold well above the specified 1,000-2,000 range.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale rules and a fixed stop before launch",
+        "evidence": "Section 6 'Success criteria' defines disqualification (<30%), scale-winner logic, and a Day 0-5 timeline set before launch.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response recommends against launching 12 variants at this conversion volume.",
+        "evidence": "\"Short answer: no, don't write 12.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It names at least two conflicting practitioner conventions on variant count (a hard cap of 3; 3-5 per ad group; a warning that 5+ dilutes traffic and inflates false positives).",
+        "evidence": "Only one convention is explicitly named, the CMO's '3\u20135 per ad group' rule; no second distinctly-named convention (e.g. a hard cap of 3, or a 5+ dilution warning) is cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It presents the trade-off - traffic dilution against hypothesis coverage - instead of endorsing one convention as settled best practice.",
+        "evidence": "\"18 demo requests a month is the entire account's signal... Split across 12 variants, that's ~1.5 conversions per variant per month. At that rate you can't separate a winner from noise\" weighed against needing '3 genuinely distinct angles.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states the default of about three genuinely distinct angles, and that this account's volume argues for moving down toward two, not up.",
+        "evidence": "The response settles on 3 angles ('given your volume, the low end of the convention is the right one') and never argues for moving down to two.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that B2B copy at this volume gets judged on upstream signals (CTR, lead quality) rather than conversion-level significance.",
+        "evidence": "\"In a low-volume B2B account, ads get judged on CTR and lead quality (upstream signals), not conversion-level significance\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It directs the next test slot at the untested driver-safety segment, on the grounds that a proven winner plus an obvious untested segment beats the convention.",
+        "evidence": "\"Spend your test budget on the driver-safety segment \u2014 that's the actual open question... That's the 'next slot' that outranks the generic 3\u20135 rule\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It ranks what one more slot buys: a new angle above a different awareness stage above a new formula above a new wording.",
+        "evidence": "No such hierarchy (new angle > awareness stage > formula > wording) is stated anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It explains that a reword costs near-zero and teaches near-zero - synonym preference, not market truth.",
+        "evidence": "The closest statement is 'that's a wording-iteration exercise \u2014 V2 of the same angle \u2014 not a new test,' which does not state the cost/teaching value explicitly.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It treats driver-safety copy as a new variant with its own ID at V1, not a V2 of the cost-savings winner, reserving V2/V3 for wording iterations of a declared winner.",
+        "evidence": "\"results stay attributable back to mechanism_pa_01_v1, risk_pa_01_v1, pain_pa_01_v1 rather than three unlabeled ads\" combined with treating cost-savings sharpening as 'V2 of the same angle.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It does not compute sample size, spend, or duration, deferring test design to a separate test-planning step.",
+        "evidence": "\"Sizing and duration are a separate exercise \u2014 worth a dedicated pass once these 3 are drafted.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It states that the account's own testable volume decides the count, since the published conventions conflict.",
+        "evidence": "The response uses volume math to justify staying at 3 but never frames this as resolving conflicting published conventions, since only one convention was cited.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any proposed variants are labelled with angle, awareness stage, formula, and version, or recorded in a matrix with stable IDs.",
+        "evidence": "IDs given at the end (`mechanism_pa_01_v1`, `risk_pa_01_v1`, `pain_pa_01_v1`) encode angle, awareness stage, sequence, and version.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response recommends against launching 12 variants at this conversion volume.",
+        "evidence": "\"No, don't write the 12.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It names at least two conflicting practitioner conventions on variant count (a hard cap of 3; 3-5 per ad group; a warning that 5+ dilutes traffic and inflates false positives).",
+        "evidence": "Only the \"3-5 variants per ad group\" rule is discussed; no alternate convention (hard cap of 3, or a 5+ dilution warning) is named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It presents the trade-off - traffic dilution against hypothesis coverage - instead of endorsing one convention as settled best practice.",
+        "evidence": "The argument is built purely on volume math against the single cited '3-5' rule, not a trade-off between competing conventions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states the default of about three genuinely distinct angles, and that this account's volume argues for moving down toward two, not up.",
+        "evidence": "The response concludes \"Total new variants: 2, not 12\" but never frames this as moving down from a stated default of ~3 angles.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that B2B copy at this volume gets judged on upstream signals (CTR, lead quality) rather than conversion-level significance.",
+        "evidence": "\"let demo requests (the real business metric) be the actual decision criterion \u2014 leading indicators alone will steer you wrong\" argues the opposite: rely on conversions, not upstream signals.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It directs the next test slot at the untested driver-safety segment, on the grounds that a proven winner plus an obvious untested segment beats the convention.",
+        "evidence": "\"One isolated test for driver-safety. Its own small campaign/budget, own ad, run for 4-6 weeks minimum.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "It ranks what one more slot buys: a new angle above a different awareness stage above a new formula above a new wording.",
+        "evidence": "No such hierarchy is stated anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It explains that a reword costs near-zero and teaches near-zero - synonym preference, not market truth.",
+        "evidence": "No statement about reword cost/teaching value appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It treats driver-safety copy as a new variant with its own ID at V1, not a V2 of the cost-savings winner, reserving V2/V3 for wording iterations of a declared winner.",
+        "evidence": "No V1/V2 ID scheme is applied to either the cost-savings winner or the driver-safety test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It does not compute sample size, spend, or duration, deferring test design to a separate test-planning step.",
+        "evidence": "\"To get even a weak read (~15-20 conversions per variant... you'd need 8-13 months \u2014 per variant\" is an explicit sample-size/duration computation done inline.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that the account's own testable volume decides the count, since the published conventions conflict.",
+        "evidence": "Volume is used to decide the count, but no conflict between multiple published conventions is referenced (only the single '3-5' rule is cited).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any proposed variants are labelled with angle, awareness stage, formula, and version, or recorded in a matrix with stable IDs.",
+        "evidence": "No labeling scheme or matrix is proposed for the new copy test or the driver-safety test.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

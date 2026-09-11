@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not scaffold directories, trackers, or working-tree structure beyond what this first session needs.",
+        "evidence": "No files or directories were created at all: the context artifact is shown inline in a fenced block explicitly labelled 'Draft context artifact (not yet written to disk)', and the assistant defers writing until the user confirms the repo root ('Tell me where your actual Fernhollow repo root is ... and I'll write this file for real, then patch it as your answers come in \u2014 never rewriting it wholesale'). The draft is a single flat markdown file with a modest session-log line \u2014 no directory tree, no tracker files, no boards, no per-channel scaffolding. It also correctly reports that the sandbox r",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not scaffold directories, trackers, or working-tree structure beyond what this first session needs.",
+        "evidence": "The transcript contains no file or directory creation at all. The assistant read/inspected the repo, found the premise false (no docs/, no Fernhollow references), and explicitly refused to create advertising-context.md on a false premise: 'I'm not going to fabricate an advertising-context.md on top of a false premise.' It notes it left skill-wip/ untouched per instruction, and defers any scaffolding to user confirmation ('tell me and I'll scaffold advertising-context.md fresh from what you tell me directly'). No trackers, no speculative directories, no working-tree changes.",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

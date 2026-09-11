@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response states that 640 sessions / 9 conversions sits below the volume threshold (around 1,000 sessions or 30 conversions) at which conversion data becomes readable.",
+        "evidence": "\"Session floor: 640 sessions is below the ~1,000-session floor... Conversion floor: 9 conversions is below the ~30-conversion floor.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to conclude mobile converts worse than desktop from the 1.1% vs 1.9% split, calling the comparison noise or statistically unreadable at this volume.",
+        "evidence": "\"Your \\\"clear\\\" device gap is one converted lead. Move a single lead from desktop to mobile and the ranking flips.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response declines to recommend an A/B test as the validation path at this conversion volume (below roughly 100 conversions per month).",
+        "evidence": "\"Below ~100 conversions/month, this skill does not recommend A/B testing as a validation path at all \u2014 you're at 9/month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response recommends shipping well-evidenced friction removals and monitoring, rather than testing, as the path forward.",
+        "evidence": "\"ship the well-evidenced friction removals below and monitor CPA/CVR trend for a full cycle.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The fix ranking is explicitly grounded in first-principles friction and established research rather than in this page's own conversion numbers.",
+        "evidence": "\"evidence: opinion | source: consensus\" labels attached to each fix item",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response still delivers an audit rather than refusing the task because the data is thin.",
+        "evidence": "Full 'FULL AUDIT' section with fix list is delivered despite thin data.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes that the volume thresholds are practitioner heuristics and that a proper sample-size calculation would supersede them.",
+        "evidence": "\"Revisit A/B testing once you're clearing ~100 conversions/month, with a sample-size calculation run first.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "No percentage lift figure appears anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Findings derived from the pasted copy are labelled as opinion (or explicitly distinguished from data-backed observations).",
+        "evidence": "\"evidence: opinion | source: consensus\" on items 1-4",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The report includes a section listing what could not be checked from pasted copy alone (e.g. rendering, load speed, layout, analytics funnel) and what that means for the findings.",
+        "evidence": "\"### COULD NOT CHECK\" section listing ad creative, rendered page, funnel breakdown, etc.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The report includes a section naming things that were checked and are fine, not only faults.",
+        "evidence": "\"### NOT A PROBLEM\" listing CTA copy and subhead as fine.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The fix list contains at most seven items.",
+        "evidence": "Five numbered fix items (1-5) are listed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The anonymous unattributed quotes are flagged as a trust weakness (attributable name, role, specific result required).",
+        "evidence": "\"Testimonials unattributed... anonymous filler reads as fake and costs more than it earns\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response states that 640 sessions / 9 conversions sits below the volume threshold (around 1,000 sessions or 30 conversions) at which conversion data becomes readable.",
+        "evidence": "\"You have 9 total conversions for the period. That's the number that matters more than the two percentages.\" and \"don't revisit this until you have at least ~25-30 conversions per device.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to conclude mobile converts worse than desktop from the 1.1% vs 1.9% split, calling the comparison noise or statistically unreadable at this volume.",
+        "evidence": "\"Running a two-proportion z-test on 4/395 vs 5/245: z \u2248 1.07, p \u2248 0.28. Nowhere near significant... With 9 conversions total, you don't have enough data to declare a device winner.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response declines to recommend an A/B test as the validation path at this conversion volume (below roughly 100 conversions per month).",
+        "evidence": "The response designs a full headline A/B test with variants and setup, concluding: \"run the headline test with CTA-click as your fast read, form-submit as your slow confirmation.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response recommends shipping well-evidenced friction removals and monitoring, rather than testing, as the path forward.",
+        "evidence": "\"Ship the form-field cut immediately (it doesn't need an A/B test to justify)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The fix ranking is explicitly grounded in first-principles friction and established research rather than in this page's own conversion numbers.",
+        "evidence": "\"Field-count-to-conversion is one of the best-evidenced relationships in landing page CRO \u2014 each additional field past 3-4 measurably drops completion\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response still delivers an audit rather than refusing the task because the data is thin.",
+        "evidence": "Full copy audit (headline, subhead, CTA, form, social proof, pricing) and priority order are delivered despite the data caveats.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes that the volume thresholds are practitioner heuristics and that a proper sample-size calculation would supersede them.",
+        "evidence": "No statement frames the ~25-30 conversion figure as a heuristic that a formal power calculation would supersede; it is presented as a fixed rule ('don't revisit this until you have at least ~25-30 conversions per device').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No specific percentage conversion lift is promised anywhere in the response.",
+        "evidence": "The lift figures in the sample-size table (e.g. \"1.4% \u2192 2.46%\") are framed as hypothetical inputs for a power calculation, not promised outcomes: \"Honest sample-size math \u2014 this is the part worth seeing before you commit to a timeline\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Findings derived from the pasted copy are labelled as opinion (or explicitly distinguished from data-backed observations).",
+        "evidence": "Copy critiques are stated as fact, e.g. \"Generic, could be any compliance vendor's tagline\", with no opinion/observation labeling.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The report includes a section listing what could not be checked from pasted copy alone (e.g. rendering, load speed, layout, analytics funnel) and what that means for the findings.",
+        "evidence": "No section addresses unverifiable aspects like rendering, load speed, or layout from pasted copy.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The report includes a section naming things that were checked and are fine, not only faults.",
+        "evidence": "\"Subhead \u2014 'Audit-ready in weeks, not months' The strongest line on the page \u2014 specific, time-bound, implies a real pain point.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The fix list contains at most seven items.",
+        "evidence": "\"## 4. Priority order\" lists exactly 4 items (form fields, headline, social proof, device allocation).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The anonymous unattributed quotes are flagged as a trust weakness (attributable name, role, specific result required).",
+        "evidence": "\"Social proof \u2014 two anonymous quotes... Actively counterproductive for a compliance product... Fix with named logo + role + company\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

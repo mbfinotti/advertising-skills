@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Gives the researcher partner and the contract-worried partner distinct messaging angles, neither of which could run unchanged against the other role",
+        "evidence": "The role map assigns the researcher-champion a 'Comparison/sizing transparency \u2014 show the math' angle with an ungated sizing/cost guide or comparison calculator, versus the contract-risk co-decider's 'Risk-reduction, not urgency: no-pressure quote, plain-language contract terms, licensing/insurance, third-party review proof' with a warranty/terms one-pager plus aggregate review score. The differentiation carries through every column \u2014 distinct measured-on ('objectively right system at a fair price' vs. 'not getting locked into bad terms'), distinct personal risk ('championing an overpriced pur",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Gives the researcher partner and the contract-worried partner distinct messaging angles, neither of which could run unchanged against the other role",
+        "evidence": "Section 1 splits creative explicitly: \"comparison/efficiency numbers for the researcher, 'fixed-price, no-pressure, cancel-anytime consult' language for the contract-wary one.\" Retargeting is likewise split (\"financing calculator to one, no-obligation-quote reassurance to the other\"), and section 2 carries it into the in-home moment (\"hand off the 'researcher' a spec sheet and the 'risk-averse' spouse a plain-language, fixed-price quote\"), plus a language-mining split (efficiency ratings/financing terms vs. \"locked in,\" \"pressured,\" \"fine print\"). The angles are genuinely non-interchangeable \u2014",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Tells the user they are wrong and does not build the termination case",
+        "evidence": "'## Verdict: Don't fire.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes struggle in the first 45 to 90 days to onboarding and scoping, not the candidate",
+        "evidence": "'The facts you listed are the textbook signature of an onboarding failure, not a performance failure'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the week-3 access delay as a known, avoidable onboarding failure",
+        "evidence": "'Meta admin access at week 3 \u2014 this is on you, not them... Delayed access is one of the most common, and most avoidable, causes of a slow start.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the missing spend-approval threshold as the cause of the constant sign-off pinging",
+        "evidence": "'\"They ping me for everything\" isn't a work-style problem \u2014 it's the predictable output of a spend-authority ladder that was never written down.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defends the tracking rebuild as the correct first win - a tracking fix, not stalling",
+        "evidence": "'Spending month one rebuilding conversion tracking \u2014 this is the correct move, not stalling.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the measurement audit must precede any performance target or commitment",
+        "evidence": "\"Don't ask a new growth leader to commit to a CAC or LTV target before they've validated your attribution setup...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the inconclusive tests via learning phases and statistical power, which cannot resolve inside 9 weeks",
+        "evidence": "'these tests ran for roughly 5-6 weeks under a budget nobody had explicitly authorized... \"Inconclusive\" at that stage... is close to the expected outcome'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the 3 to 6 month window before a channel verdict is possible",
+        "evidence": "'Channel/test verdicts need \"at least 3-6 months before concluding\" (AJ Wilcox)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes the fix: set the written spend threshold now and restart the staged authority ladder (co-sign, then independent within a cap, then full)",
+        "evidence": "'Write the spend-approval threshold now, retroactively, in the open... Put them on the staged ladder from here: co-sign within a cap... independent-within-cap by their day 60, full authority by their day 90'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Makes full spend authority contingent on the validated measurement audit",
+        "evidence": "'full authority by their day 90 \u2014 contingent on the tracking audit you already have, which is ahead of schedule.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a contained optimization as the next win, never a scaling bet",
+        "evidence": "The framework quote about contained optimization is used only to justify the past tracking-rebuild decision; no explicit forward-looking 'next win' recommendation is given.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposes a concrete later review point consistent with the 3 to 6 month window instead of an immediate decision",
+        "evidence": "'revisit with real data at the 3-6 month mark.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Tells the user they are wrong and does not build the termination case",
+        "evidence": "\"Verdict: Don't fire them yet. The evidence you have doesn't support the decision.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes struggle in the first 45 to 90 days to onboarding and scoping, not the candidate",
+        "evidence": "\"Right now you have a governance problem and an impatience problem, not a performance problem.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the week-3 access delay as a known, avoidable onboarding failure",
+        "evidence": "\"No admin access until week 3 | Your handover failure, not theirs. This alone erased a third of their tenure.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the missing spend-approval threshold as the cause of the constant sign-off pinging",
+        "evidence": "\"You get pinged for everything | You never defined a spend/change approval threshold.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defends the tracking rebuild as the correct first win - a tracking fix, not stalling",
+        "evidence": "\"Month spent on conversion tracking | This is the correct move, not stalling.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the measurement audit must precede any performance target or commitment",
+        "evidence": "\"Demanding revenue proof before the measurement system works is asking them to show you a number you already can't trust.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the inconclusive tests via learning phases and statistical power, which cannot resolve inside 9 weeks",
+        "evidence": "\"likely without even exiting Meta's learning phase, which needs ~50 conversions per ad set per week to stabilize. Two 'inconclusive' tests in that window isn't a red flag.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the 3 to 6 month window before a channel verdict is possible",
+        "evidence": "No 3-6 month window is cited; the recommended checkpoint is only 30 days out (day 40).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Prescribes the fix: set the written spend threshold now and restart the staged authority ladder (co-sign, then independent within a cap, then full)",
+        "evidence": "The fix given is a single written threshold (\"daily budget shifts under $X\"), not a staged co-sign\u2192independent\u2192full ladder.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Makes full spend authority contingent on the validated measurement audit",
+        "evidence": "No authority-tier concept tied to the audit appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a contained optimization as the next win, never a scaling bet",
+        "evidence": "The recommended path focuses on decision-rights and a checkpoint, with no explicit recommendation of a contained optimization as the next win.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposes a concrete later review point consistent with the 3 to 6 month window instead of an immediate decision",
+        "evidence": "The proposed checkpoint is \"an explicit 30-day checkpoint (day 40),\" far shorter than a 3-6 month window.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

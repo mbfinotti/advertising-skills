@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects cohorting by Q2 close date and requires cohorting by lead creation date instead.",
+        "evidence": "\"Lead-creation dates for the 23 deals, so the cohort is leads created (not deals closed) in the relevant window \u2014 a close-date pull like the one behind these 23 deals mixes cohorts LinkedIn saw at very different times, and structurally understates platform credit on long cycles regardless of any defect.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a close-date pull mixes cohorts the platforms saw months apart, because of lead-to-close lag.",
+        "evidence": "\"a close-date pull like the one behind these 23 deals mixes cohorts LinkedIn saw at very different times, and structurally understates platform credit on long cycles regardless of any defect\"; also \"their leads may have been created months earlier, given a ~$40k ACV deal typically runs a multi-month cycle\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 38% click-ID match rate as below the roughly 50% threshold that indicates a capture defect, not a normal loss.",
+        "evidence": "The transcript only compares 38% against a 75\u201385% practitioner range (\"38% is far below the 75\u201385% match rate practitioners typically see on healthy B2B click-ID capture\") \u2014 no mention of a ~50% threshold anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the normal practitioner-reported click-ID match-rate range as roughly 75-85%.",
+        "evidence": "\"38% is far below the 75\u201385% match rate practitioners typically see on healthy B2B click-ID capture, and low enough to suspect an active problem\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sends the low match rate to the residual/investigation bucket with named candidate mechanisms such as cookies blocked, the ID stripped by a redirect, or the CRM not saving the field on every submission.",
+        "evidence": "\"low enough to suspect an active problem (cookie loss, a redirect stripping the parameter, a form not saving the field on every variant) rather than an inevitable model-based writedown.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies deals closing after the platform's import-acceptance window, or general lead-to-close lag, as timing with a platform-low direction, rather than as evidence LinkedIn is not working.",
+        "evidence": "\"check how many of the 19 uncredited deals fall outside the window on timing alone (a real, expected, non-fixable floor) versus inside it and still missed\", framed against the CMO's \"isn't working\" claim being a misread.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to switch attribution models mid-analysis and treats the model question as out of scope, redirecting it rather than picking a model.",
+        "evidence": "\"'Rerun everything under a different model to see if it looks better.' Reject this... Keep the model conversation separate and later.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports absolute units alongside every percentage, refusing the percent-only answer the user asked for, given the 23-deal volume.",
+        "evidence": "\"LinkedIn claims 4 of your 23 Q2 closed-won deals (17%)\"; \"\u224814 deals (74% of the gap)\"; \"\u22485 deals (26% of the gap)\" \u2014 every percentage is paired with the underlying deal count.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends longer comparison windows because percentage gaps swing wildly on small denominators.",
+        "evidence": "No discussion of comparison-window length or denominator volatility appears anywhere; the requested fixes are lead-creation-date cohorting, sales-cycle/import-window data, and per-deal revenue, not a longer window.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names offline conversion upload lag or processing latency as a timing cause of the platform undercount.",
+        "evidence": "\"or the import itself has a processing lag at the quarter edge\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that last-touch under-reports platform contribution on long sales cycles, and records the model difference as a definitional line rather than proof of failure.",
+        "evidence": "\"last-touch is known to under-count exactly this kind of channel, since most B2B buyers don't convert on a single click\" and later \"that's the moment to talk about whether last-touch is the right lens... as a deliberate choice with a stated reason, not as a way to make this quarter's number look better.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends attributing at account level rather than contact level, so the form-filler does not absorb credit owed to a multi-person buying group.",
+        "evidence": "The transcript only notes as a possible cause of the residual: \"deals may be getting attributed to a contact who wasn't the one whose click carried the ID (LinkedIn credits accounts via the matched lead, and multi-person buying groups can break that link)\" \u2014 this flags a mechanism but never recommends switching to account-level attribution.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns the click-ID capture fix an owner (marketing ops or RevOps) and hands the tracking fix off rather than treating it as part of the reconciliation itself.",
+        "evidence": "\"it's an hour-to-days-scale fix (hidden form field, redirect audit, cookie/consent check) owned by whoever holds your lead-capture forms \u2014 not an engineering quarter and not a model debate.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects cohorting by Q2 close date and requires cohorting by lead creation date instead.",
+        "evidence": "The transcript never discusses cohort definition by close date vs. lead-creation date; it takes 'the 23 closed-won deals' as given without challenging the cohorting method.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that a close-date pull mixes cohorts the platforms saw months apart, because of lead-to-close lag.",
+        "evidence": "No discussion of a close-date pull mixing cohorts seen months apart; the transcript does not address this cohort-mixing issue at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the 38% click-ID match rate as below the roughly 50% threshold that indicates a capture defect, not a normal loss.",
+        "evidence": "The transcript treats 38% as structurally low ('LinkedIn is structurally blind to most of the funnel') but never states a ~50% threshold benchmark for distinguishing a capture defect from normal loss.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the normal practitioner-reported click-ID match-rate range as roughly 75-85%.",
+        "evidence": "No numeric benchmark range (e.g. 75-85%) for normal click-ID match rates is given anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sends the low match rate to the residual/investigation bucket with named candidate mechanisms such as cookies blocked, the ID stripped by a redirect, or the CRM not saving the field on every submission.",
+        "evidence": "\"find out why 62% of leads have no click ID (Insight Tag not firing on every form/page, cookie-consent blocking, cross-device sessions, manually created leads, click-ID field not mapped into the CRM sync)\" \u2014 names cookie-blocking and CRM-mapping mechanisms and routes the low rate to an instrumentation investigation rather than a channel-performance conclusion.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies deals closing after the platform's import-acceptance window, or general lead-to-close lag, as timing with a platform-low direction, rather than as evidence LinkedIn is not working.",
+        "evidence": "\"LinkedIn's click-ID window is short (default ~30 days, configurable up to 90) relative to a $40k-ACV B2B sales cycle that likely runs months... the real matchable population among your 23 deals is smaller than 9, and LinkedIn's true in-window credit rate is *higher* than 44%, not lower\" \u2014 frames the window/lag effect as biasing LinkedIn's number downward, not as proof LinkedIn underperforms.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to switch attribution models mid-analysis and treats the model question as out of scope, redirecting it rather than picking a model.",
+        "evidence": "The transcript does not treat the model question as out of scope; it actively recommends picking one: \"a multi-touch or time-decay model is the principled choice... choose a multi-touch model on its own merits for a business with this sales-cycle length.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reports absolute units alongside every percentage, refusing the percent-only answer the user asked for, given the 23-deal volume.",
+        "evidence": "\"LinkedIn claims 4 of 23 closed-won deals \u2192 17.4% of deals, ~$160k of the $920k\" and \"only ~9 of them even had a click ID to match against. Of those ~9 *matchable* deals, LinkedIn got credit for 4\" \u2014 percentages are consistently paired with raw counts/dollar figures rather than left as percent-only.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends longer comparison windows because percentage gaps swing wildly on small denominators.",
+        "evidence": "No recommendation to extend the comparison window to stabilize percentages against a small deal count; the transcript's only window-related point concerns the click-ID matching window, not the reporting/comparison period.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names offline conversion upload lag or processing latency as a timing cause of the platform undercount.",
+        "evidence": "The transcript cites click-ID window length and multi-stakeholder lead-to-record mismatch as timing causes, but never mentions offline conversion upload lag or processing latency specifically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that last-touch under-reports platform contribution on long sales cycles, and records the model difference as a definitional line rather than proof of failure.",
+        "evidence": "\"a long, multi-touch, multi-stakeholder B2B cycle is exactly the case where last-touch is known to undercount top-of-funnel/paid-social channels, and where a multi-touch or time-decay model is the principled choice. That's a decision you make *before* looking at which channel it flatters, not after.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends attributing at account level rather than contact level, so the form-filler does not absorb credit owed to a multi-person buying group.",
+        "evidence": "The transcript notes \"Multi-stakeholder deals mean the person who clicked the ad is often not the person whose email becomes the CRM lead record\" as a coverage-loss cause, but never recommends switching to account-level attribution.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Assigns the click-ID capture fix an owner (marketing ops or RevOps) and hands the tracking fix off rather than treating it as part of the reconciliation itself.",
+        "evidence": "The transcript calls the fix \"a data-engineering fix, not an attribution-model fix\" but never names an owning team such as marketing ops or RevOps to hand it off to.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

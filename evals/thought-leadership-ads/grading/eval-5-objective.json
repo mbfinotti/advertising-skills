@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses the core problem as budget-to-audience mismatch: $2,400/month against 310,000 people produces near-zero frequency",
+        "evidence": "\"the problem isn't spend \u2014 it's a ~24x audience-to-budget mismatch\" and \"At 0.13x monthly frequency, roughly 1 in 8 of your 310,000-person audience sees the ad once in a month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses or prescribes the frequency computation: budget divided by CPM divided by audience size",
+        "evidence": "Table derives \"Est. monthly frequency ~0.13x\" from \"$2,400\" budget, \"310,000\" audience, and footnote \"~$60 CPM implied\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends shrinking the audience to fit the budget rather than raising the budget",
+        "evidence": "\"Fix direction: shrink audience to fit budget, not raise budget to fit audience.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that doubling to $5k/month against 310,000 people still leaves frequency far too low",
+        "evidence": "\"Doubling to $5k still leaves frequency under 1x \u2014 you'd still be buying near-zero reach against the same oversized list.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Targets an audience in the 20,000-50,000 band for this budget level, or derives a similar size from the frequency rule",
+        "evidence": "\"Published guidance for sub-$10k/month budgets targets a 20,000\u201350,000-person audience.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rebuilds the audience as a matched account list layered with job function and seniority, rather than the whole ICP",
+        "evidence": "\"Start from a matched target-account list...Layer job function (ops/supply chain/procurement) + seniority...on top.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Puts existing customers and open pipeline at the top of the exclusion list",
+        "evidence": "\"1. Existing customers (1,900)...2. Open pipeline \u2014 same CRM export motion, same priority.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains customers and open pipeline tie because one CRM export produces both lists",
+        "evidence": "\"first two tie, need no platform involvement, ship today\" combined with \"2. Open pipeline \u2014 same CRM export motion, same priority.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes employees, competitors, and students in the exclusion list, with employees ahead of competitors and students",
+        "evidence": "\"3. Employees (40)...4. Competitors...5. Students \u2014 lowest priority\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the URL-based logged-in-user exclusion from the list and says so in the plan, since platform support withheld it - instead of leaving it as pending work",
+        "evidence": "\"Delete, don't wait on: site-visitor URL exclusion. Your rep says it's not enabled at your tier \u2014 that's a real capability ceiling, not a queue position. Take it off the plan now\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States an impression served to a customer or employee is wasted twice: spend and credibility",
+        "evidence": "\"wasted twice: spend, and credibility (showing a customer/employee a 'look at our impact' ad they already know is paid).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not propose fixing performance by widening the audience further or raising spend before the list is resized",
+        "evidence": "\"Only talk about more budget once that resized list is actually seeing meaningful frequency and gate 1/2 data says it's worth scaling.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses the core problem as budget-to-audience mismatch: $2,400/month against 310,000 people produces near-zero frequency",
+        "evidence": "'The core issue: 310K audience, $2,400/month... ~0.15 impressions per person, per month.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses or prescribes the frequency computation: budget divided by CPM divided by audience size",
+        "evidence": "'$2,400/month \u2192 ~48,000 impressions/month' then 'Spread across 310,000 people \u2192 ~0.15 impressions per person, per month' \u2014 budget/CPM then divided by audience.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends shrinking the audience to fit the budget rather than raising the budget",
+        "evidence": "'The fix is the audience, not the budget. Shrink the targeting to what your current spend can actually saturate.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that doubling to $5k/month against 310,000 people still leaves frequency far too low",
+        "evidence": "'Doubling to $5K/month \u2192 ~100,000 impressions \u2192 ~0.32 impressions/person/month. Still far too thin.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Targets an audience in the 20,000-50,000 band for this budget level, or derives a similar size from the frequency rule",
+        "evidence": "The transcript targets 'an audience of ~8,000-12,000 people,' not the 20,000-50,000 band.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rebuilds the audience as a matched account list layered with job function and seniority, rather than the whole ICP",
+        "evidence": "'Narrow from \"full ICP\" to actual buying-committee titles (Director+ in Ops/Supply Chain/Logistics...) Or go ABM-style: build a target account list from your ICP and layer seniority on top.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Puts existing customers and open pipeline at the top of the exclusion list",
+        "evidence": "Only customers and employees are listed for exclusion ('Upload your 1,900 customers... Upload your 40 employees'); open pipeline is never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains customers and open pipeline tie because one CRM export produces both lists",
+        "evidence": "No mention of open pipeline or a shared CRM export producing both lists.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes employees, competitors, and students in the exclusion list, with employees ahead of competitors and students",
+        "evidence": "Only customers and employees are named for exclusion; competitors and students are never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes the URL-based logged-in-user exclusion from the list and says so in the plan, since platform support withheld it - instead of leaving it as pending work",
+        "evidence": "No mention of a URL-based logged-in-user exclusion being deleted; instead the plan pursues 'Matched Audiences \u2013 list exclusion' as a separate feature to ask the rep about, leaving it as pending follow-up.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States an impression served to a customer or employee is wasted twice: spend and credibility",
+        "evidence": "The plan frames waste only in spend/vanity-metric terms ('No reason to pay to \"acquire\" people who already bought' and 'wasting spend on people who'll never buy') without a dual spend-and-credibility framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not propose fixing performance by widening the audience further or raising spend before the list is resized",
+        "evidence": "'Run that for 3-4 weeks before we talk about more budget. If that converts, budget is the next lever \u2014 not before.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

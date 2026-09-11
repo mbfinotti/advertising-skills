@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Redirects the bulk of the five months to demonstrable results: self-funded spend and/or a public written teardown",
+        "evidence": "The response's core verdict is that the plan is mis-sequenced because 'the two things that actually move the needle \u2014 a portfolio and live applications \u2014 don't start until month 5.' It explicitly compresses certs to 'a weekend, not a season' ('Do the four free certs in the first 2-3 weeks'), deletes the paid Meta Blueprint to recover '$450 and 3-4 weeks,' and states 'None of the six \u2014 including the four free ones \u2014 should occupy the space a results portfolio fills.' The 'What should fill months 1-5 instead' section makes self-funded spend item 2 ('This is your actual portfolio') and a public t",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Redirects the bulk of the five months to demonstrable results: self-funded spend and/or a public written teardown",
+        "evidence": "The rewritten plan gives Months 2-4 to running real campaigns with $300-500 of the user's own money (plus an earlier '$1,500 of self-funded ad spend' benchmark) and Months 4-5 to applying with '2-3 documented case studies with real numbers'; it explicitly reallocates the $450 cert budget away from Blueprint exams toward a course and ad spend, and the bottom line states the trade: 'one cert, one deep skill, real spend, documented results.' Documentation is required ('hypotheses, budget decisions, what you optimized, results') but stays a private portfolio asset \u2014 no public teardown, post, or pu",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

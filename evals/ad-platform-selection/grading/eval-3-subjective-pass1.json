@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response scores paid social's targeting reachability down (or disqualifies it) specifically because the plan depended on the stripped capabilities.",
+        "evidence": "Section 3's ranking table gives Meta a reachability sub-score of 2 (vs. 4 for search) with the explicit rationale: 'reachability drops hard because the ICP (homeowner, 25-45, specific ZIPs, renter-excluded) is *not* expressible once Special Ad Category strips those tools.' The causal link to the stripped capabilities is named precisely, and each stripped capability is mapped to the user's planned tactic in the opening table (lookalike, 25\u201345 age, ZIP codes, renter exclusion). It is reinforced after the table: 'the regulated category... specifically weakens social's reachability score, not sear",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response scores paid social's targeting reachability down (or disqualifies it) specifically because the plan depended on the stripped capabilities.",
+        "evidence": "The response first enumerates exactly which capabilities the plan depended on and which are stripped under Meta's Special Ad Category: Credit (no 25-45 age targeting, no ZIP-level geo, no Lookalike from the best-customer list, no homeowner/renter targeting or exclusions, customer list usable only for suppression). It then explicitly downgrades Meta on that basis rather than generically: 'Reframe its job: broad-reach prospecting and retargeting, not precision demographic sniping'; 'Expect Meta to underperform Search on a pure loan-application CPA basis; it's earning its keep on volume and retar",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

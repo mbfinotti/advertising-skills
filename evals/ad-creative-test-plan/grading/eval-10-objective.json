@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects mixing concepts within a cell and restructures to one concept per cell (a movie-night cell, a wake-up cell, a security cell)",
+        "evidence": "\"Mixing all three concepts into every ad set \\\"for fairness\\\" contaminates the read. One concept per cell is the rule\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the reason: more concepts than cells contaminates the read - results stop being attributable to any concept",
+        "evidence": "\"more concepts than cells means a result can't be attributed to any single concept.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps roughly 3-6 assets per cell and flags the 2-asset security concept as below the band (produce another asset or handle the shortfall explicitly)",
+        "evidence": "\"C03_CON-security | 2 assets | $220/day [BELOW band 3-6 - get one more security-angle asset...]\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the one-sentence decision statement ('Based on this test, we will ___') before anything else",
+        "evidence": "\"decision : the concept (movie night / wake-up naturally / security-away-mode) that wins on cost-per-purchase over the 2-week window gets scaled\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects 'launch and see what happens' and writes a falsifiable hypothesis containing direction, magnitude, named metric, audience, and a date or sample",
+        "evidence": "\"the security/away-mode concept will lower cost-per-purchase by roughly 15-20% ... for [prospecting / cold audience \u2014 confirm], and we will know by day 14.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces the ad-hoc file naming with a structured variant convention: fixed field order, one delimiter, encoding concept/angle and other tested levers plus a version",
+        "evidence": "\"naming : C##_CON-<concept>_HOOK-<type>_FMT-<format>_V##\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the mechanical reason naming matters: reporting tools parse names, and a naming failure silently destroys the roll-up by dimension",
+        "evidence": "\"Ad platforms and reporting tools parse names; without concept/version encoded in a fixed field order, you can't roll results up by concept later\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the multiple-comparisons problem of three concept cells against control: some variant wins by chance",
+        "evidence": "\"3 concept cells run simultaneously against the control = 3 comparisons at once; disclosed here per the skill's rule\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Quantifies or corrects it: roughly 30-40% more sample per cell at ~3 variants under a standard alpha-division correction, or fewer cells - and at minimum discloses the number of comparisons",
+        "evidence": "\"a standard correction would add ~30-40% more sample per cell if this were ever pushed toward Powered.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds a concurrent control cell (current champion) or asks whether one exists",
+        "evidence": "\"No control/champion cell. Is there a currently-running Tindra Home ad? ... If yes, it must run concurrently as a 4th cell at the same budget\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $171/day per cell ($24 x 50 / 7) and projected weekly conversions (~60-65 per cell), confirming stable delivery",
+        "evidence": "\"stable-delivery floor = $24 CPA x 50 / 7 \u2248 $171/day ... projected conversions \u2248 $220/$24 \u2248 9.2/day \u2248 64/week/cell\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits an explicit read-standard verdict per cell for the two-week window (Directional versus Powered, with the sample arithmetic) instead of implying a significant winner",
+        "evidence": "\"VERDICT (all 3 cells): Directional read on cost-per-purchase. Not Powered, not \\\"Not testable\\\"\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale thresholds, an earliest evaluation moment, a fixed stop, and inconclusive resolving to keep the control",
+        "evidence": "\"hard stop: day 14 (your decision date) ... inconclusive -> keep control [or: do not scale any concept and re-run with a champion added]\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects mixing concepts within a cell and restructures to one concept per cell (a movie-night cell, a wake-up cell, a security cell)",
+        "evidence": "'Recommended structure: One ad set per concept, not one of-each-type per ad set.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the reason: more concepts than cells contaminates the read - results stop being attributable to any concept",
+        "evidence": "'You can't attribute results to a concept... Randomly distributing types across ad sets is the opposite of a controlled test.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps roughly 3-6 assets per cell and flags the 2-asset security concept as below the band (produce another asset or handle the shortfall explicitly)",
+        "evidence": "'Watch frequency on the ad set with only 2 creatives (security) \u2014 least creative rotation, most fatigue risk at this spend level.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the one-sentence decision statement ('Based on this test, we will ___') before anything else",
+        "evidence": "No 'Based on this test, we will ___' statement appears anywhere in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects 'launch and see what happens' and writes a falsifiable hypothesis containing direction, magnitude, named metric, audience, and a date or sample",
+        "evidence": "No formal hypothesis statement with direction and magnitude is written; only a day-14 decision rule based on CPA ranking.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Replaces the ad-hoc file naming with a structured variant convention: fixed field order, one delimiter, encoding concept/angle and other tested levers plus a version",
+        "evidence": "'tindra_<concept-code>_<variant>_<yyyymmdd>.mp4... Examples: tindra_movienight_v1_20260912.mp4'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the mechanical reason naming matters: reporting tools parse names, and a naming failure silently destroys the roll-up by dimension",
+        "evidence": "'Keep ad names in Ads Manager matching this scheme so a breakdown by ad name doubles as a breakdown by concept.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the multiple-comparisons problem of three concept cells against control: some variant wins by chance",
+        "evidence": "No mention of multiple-comparisons risk, false-positive inflation, or a correction; and there is no control cell in the design to compare against.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Quantifies or corrects it: roughly 30-40% more sample per cell at ~3 variants under a standard alpha-division correction, or fewer cells - and at minimum discloses the number of comparisons",
+        "evidence": "Not addressed anywhere in the plan.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds a concurrent control cell (current champion) or asks whether one exists",
+        "evidence": "No control/champion cell is included, and no question is raised about whether one exists.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes the stable-delivery floor of roughly $171/day per cell ($24 x 50 / 7) and projected weekly conversions (~60-65 per cell), confirming stable delivery",
+        "evidence": "'$220/day \u00f7 $24 target CPA \u2248 9.2 conversions/day/ad set \u2192 ~64/week... Meta's learning phase wants ~50 optimization events/week/ad set \u2014 you clear that at the ad-set level.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits an explicit read-standard verdict per cell for the two-week window (Directional versus Powered, with the sample arithmetic) instead of implying a significant winner",
+        "evidence": "'128 conversions per concept is enough to spot a real gap (e.g. $18 vs $30 CPA) but not enough to call a close one (e.g. $23 vs $25) with confidence.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-registers kill and scale thresholds, an earliest evaluation moment, a fixed stop, and inconclusive resolving to keep the control",
+        "evidence": "A kill threshold ('CPA blows past ~2x target with real volume') and a fixed Day-14 stop exist, but there is no scale-budget rule and no control cell to fall back to on an inconclusive result.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

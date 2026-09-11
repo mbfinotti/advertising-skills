@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Depth is allocated to Microsoft Ads while Google coverage stays at maintenance weight (release-note and roundup skims)",
+        "evidence": "Microsoft clearly gets the depth: Week 1 (~105 of 115 min) is entirely Microsoft \u2014 platform blog orientation, 50 min of Paid Media Pros Microsoft tutorials, 40 min of Microsoft's own certification modules; Week 2 adds 50 more min of Microsoft video (import tool, UET tag/conversion tracking). The stated allocation rule is explicit: 'Microsoft gets depth (you have zero mental model there...); Google gets a breadth refresh only (you already have years of context),' and headers read 'Microsoft Ads: build the mental model' / 'Microsoft depth + Google refresh starts'. Google's core maintenance items",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Depth is allocated to Microsoft Ads while Google coverage stays at maintenance weight (release-note and roundup skims)",
+        "evidence": "The plan puts essentially all depth on Microsoft-specific divergences: the 'Skip entirely' list removes match types, negatives, ad rank/auction, Quality Score, RSAs and general PPC theory as already-known, and every budgeted hour goes to Microsoft-only mechanics (Learning Lab modules, Google Ads import drift, UET tag, Microsoft Advertising Editor, LinkedIn Profile targeting, Microsoft editorial policy for transportation, Microsoft call conversion tracking). Depth allocation to Microsoft is fully and clearly satisfied. The second half of the item is only weakly met: the one skim explicitly sche",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

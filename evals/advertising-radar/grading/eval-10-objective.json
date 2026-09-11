@@ -1,0 +1,190 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response states clearly that sources could not be re-verified live in this session",
+        "evidence": "\"\u26a0\ufe0f **This machine has no internet access right now.** I could not re-fetch or re-verify anything.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Entries are delivered with their recorded status and recorded verification date rather than presented as freshly checked",
+        "evidence": "\"Everything below is pulled as-is from this skill's last snapshot ... Statuses are the snapshot's recorded statuses, not fresh checks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A manual verification procedure is given: open each URL and find the most recent dated item",
+        "evidence": "\"do the manual check (5 min): open each URL, find the newest dated item, and reclassify\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The manual classification thresholds are given: active within roughly 3 months, stale past roughly 6 months, dead for parked or for-sale pages, unverified for blocked fetches",
+        "evidence": "\"<3 months = active, >6 months = stale, doesn't resolve = dead\" plus r/FacebookAds entry uses \"unverified\" for a blocked fetch.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A blocked or 403 fetch is described as unverified, not dead, in the manual instructions",
+        "evidence": "\"Don't declare Jon Loomer's blog dead if its homepage 403s \u2014 check jonloomer.com/feed/ instead\" and r/FacebookAds is labelled \"**unverified** \u2014 automated fetch ... was blocked\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An official Meta platform source is included; no Google, LinkedIn, TikTok, or Microsoft official sources appear",
+        "evidence": "\"Meta for Business news ... platform-official (Meta itself)\" is included; no other platform's official source appears.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Only text sources appear; audio and video are struck and named as struck",
+        "evidence": "All entries are text, but no statement anywhere names any specific podcast/video source as struck from the menu, unlike other sections' explicit callouts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Free-only is respected: no paid communities and no events or tickets",
+        "evidence": "\"0 monthly, 0 annual/events (deleted \u2014 you said free-only, which kills paid events and paid communities on the same terms; text-only, which kills podcast/video)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The header is date-stamped and carries the persona, bought channel, time budget, and verification date",
+        "evidence": "\"**Persona:** media buyer, Rooklane (B2C swimwear) \u00b7 **Channel:** Meta only \u00b7 **Budget:** 30 min/week, free-only \u00b7 ... verified **2026-08-26**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The list is grouped by consumption rhythm (weekly core, monthly, annual, bench)",
+        "evidence": "Sections are 'Weekly core', 'Standing-habit reserve', 'Bench', with totals explicitly noting \"0 monthly, 0 annual/events\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each entry carries name, URL, medium, channel, estimated minutes, a why-line, a selling flag, and status plus date",
+        "evidence": "Table columns: Source, URL, Medium, Channel, Min/wk, Why it earned the slot, Selling, Status + date \u2014 all filled.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 30",
+        "evidence": "\"**~30 of 30 min/week** (26 core + 4 reserve)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Closing totals include counts per section and a verified-active count",
+        "evidence": "\"**5 sources**: 4 weekly core + 1 community reserve, 0 monthly, 0 annual/events ... **Verified-active at snapshot: 4/5**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage yes/no line appears for Meta",
+        "evidence": "\"**Channel coverage: Meta \u2014 yes, on the 2026-08-26 snapshot.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Leftover candidates go to a bench instead of pushing the total past the 30-minute budget",
+        "evidence": "Bench lists Dara Denney, #ppcchat, The Social Savannah as candidates not slotted into the 30-minute core.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response states clearly that sources could not be re-verified live in this session",
+        "evidence": "'Caveat up front: I have no internet access this session, so the brand list below is built from general knowledge of the DTC swimwear space, not a live pull.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Entries are delivered with their recorded status and recorded verification date rather than presented as freshly checked",
+        "evidence": "No per-brand status or verification date is given anywhere in the Core/Bucket lists.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A manual verification procedure is given: open each URL and find the most recent dated item",
+        "evidence": "No such verification procedure appears anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The manual classification thresholds are given: active within roughly 3 months, stale past roughly 6 months, dead for parked or for-sale pages, unverified for blocked fetches",
+        "evidence": "No active/stale/dead/unverified thresholds are mentioned anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "A blocked or 403 fetch is described as unverified, not dead, in the manual instructions",
+        "evidence": "No discussion of blocked or 403 fetches appears anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "An official Meta platform source is included; no Google, LinkedIn, TikTok, or Microsoft official sources appear",
+        "evidence": "'Meta Ad Library \u2014 free, no login needed to browse' is the core tool, and no other platform's official source appears.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Only text sources appear; audio and video are struck and named as struck",
+        "evidence": "'Skim active ad count and creative thumbnails only \u2014 don't watch full videos.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Free-only is respected: no paid communities and no events or tickets",
+        "evidence": "'Meta Ad Library \u2014 free, no login needed to browse' and no paid community or event entries appear anywhere.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The header is date-stamped and carries the persona, bought channel, time budget, and verification date",
+        "evidence": "'# Rooklane \u2014 Meta Ads Watch List (30 min/week, standing habit)' carries persona, channel, and budget, but no verification date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The list is grouped by consumption rhythm (weekly core, monthly, annual, bench)",
+        "evidence": "Only a 'Core' weekly section and rotating Buckets A-D exist; there is no explicit monthly, annual, or bench section.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each entry carries name, URL, medium, channel, estimated minutes, a why-line, a selling flag, and status plus date",
+        "evidence": "Brand entries (e.g. 'Cupshe', 'Andie Swim') are listed as bare names with no URL, minutes, selling flag, or status/date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 30",
+        "evidence": "'# Rooklane \u2014 Meta Ads Watch List (30 min/week...)' with a 15+10+5=30 minute breakdown.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Closing totals include counts per section and a verified-active count",
+        "evidence": "No closing totals or verified-active counts appear anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage yes/no line appears for Meta",
+        "evidence": "No explicit coverage-confirmation line appears anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Leftover candidates go to a bench instead of pushing the total past the 30-minute budget",
+        "evidence": "'Pick one bucket per week (A \u2192 B \u2192 C \u2192 D \u2192 back to A), so the full list gets touched monthly' \u2014 non-core brands are deferred by rotation rather than added to the weekly time budget.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags that the Head of Growth both spends the budget and approves her own overages, and moves ceiling ownership or approval to a separate role.",
+        "evidence": "\"The Head of Growth sets the $310 ceiling and approves her own overages... Move override authority off the Head of Growth... Anything at or above the hard floor needs a second signer \u2014 CFO or founder.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the principle: whoever spends the money cannot raise their own ceiling, otherwise it is a preference rather than a control.",
+        "evidence": "\"whoever spends the budget cannot also be the one who raises the ceiling on it. Right now there is no threshold in this business that the spender doesn't also own... That's not a control, it's a preference with a dollar figure attached.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats three zero-breach quarters as a review trigger for a sandbagged or mis-set ceiling, not as evidence the rules work.",
+        "evidence": "\"Zero breaches is not proof of a healthy ceiling \u2014 it's one of the two things a working policy should trigger review on\" and \"Treat this zero-breach streak as a review trigger for the board meeting, not a talking point for it\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks headroom: persistent distance between actual efficiency and the $310 ceiling would mean the ceiling is throttling profitable growth or was set too loose.",
+        "evidence": "\"the $310 figure was set loose enough that it was never a real constraint (sandbagged), or spend never got close to the marginal cost where efficiency actually degrades\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Audits how the $310 ceiling was derived and requires it traced to contribution margin, payback, or cash rather than accepting it as-is.",
+        "evidence": "\"The skill is explicit: never state a threshold whose derivation can't be shown... I don't have any of the following from you yet, so I can't produce real numbers \u2014 only the shape of the document\" followed by a list including \"Contribution margin per sale\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires an escalating approval ladder by severity, each tier naming a real, notified person.",
+        "evidence": "\"Target-floor breaches can stay with her, time-boxed and logged. Anything at or above the hard floor needs a second signer \u2014 CFO or founder.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rewrites exceptions as explicit, time-boxed, justified, and logged, including denied ones, and calls out standing self-approval as a new ceiling nobody agreed to.",
+        "evidence": "Only brief mention that target-floor breaches stay \"time-boxed and logged\"; no mention of denied exceptions being logged, and self-approval is framed as a preference/control issue rather than explicitly as \"a new ceiling nobody agreed to.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects vague override rationales such as 'timing' or 'one-time' as insufficient justification.",
+        "evidence": "No mention of rejecting specific vague rationales like \"timing\" or \"one-time\" anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Splits the single $310 ceiling into break-even, target, and hard floors, each with its own consequence.",
+        "evidence": "\"Split $310 into three numbers, not one. Right now one figure is silently doing the job of break-even floor, target floor, and kill-switch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Adds a re-baselining cadence (quarterly) plus named event triggers such as pricing, margin, or measurement changes.",
+        "evidence": "\"Put a re-baselining date on it. Quarterly, plus triggers (pricing change, margin change, tracking change).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes judging the policy itself with KPIs read off the breach log, such as breach response rate, override concentration, headroom, or zero-breach quarters.",
+        "evidence": "The zero-breach streak and headroom analysis (\"sandbagged\", \"never got close to the marginal cost\") are explicitly proposed as signals for judging whether the policy works.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ends with an explicit approval gate: nothing finalized without sign-off, recording who approved the policy and when.",
+        "evidence": "The closing \"Next step\" asks the user to supply inputs so a draft can be produced, but does not state that nothing is finalized without recorded sign-off of who approved it and when.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags that the Head of Growth both spends the budget and approves her own overages, and moves ceiling ownership or approval to a separate role.",
+        "evidence": "\"the same person who sets the ceiling also approves every exception to it \u2014 that's a single point of control with no check\" with a tiered approval table introduced as the fix.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the principle: whoever spends the money cannot raise their own ceiling, otherwise it is a preference rather than a control.",
+        "evidence": "\"the number was set loose enough (or gets waived easily enough by the same person who set it) that it never functions as a real constraint\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats three zero-breach quarters as a review trigger for a sandbagged or mis-set ceiling, not as evidence the rules work.",
+        "evidence": "\"'we haven't breached it once in three quarters, so it clearly works': that's not actually evidence the ceiling is right \u2014 it's evidence it's either well-calibrated or never binding.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks headroom: persistent distance between actual efficiency and the $310 ceiling would mean the ceiling is throttling profitable growth or was set too loose.",
+        "evidence": "\"if it's consistently $180\u2013220, the ceiling is decorative, not operative; if it's consistently $295\u2013309, it's a live constraint that's holding.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Audits how the $310 ceiling was derived and requires it traced to contribution margin, payback, or cash rather than accepting it as-is.",
+        "evidence": "\"The $310 ceiling is derived from [ LTV, gross margin, and target payback period \u2014 insert the underlying math ]... this number should be traceable to unit economics, not fixed by convention\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires an escalating approval ladder by severity, each tier naming a real, notified person.",
+        "evidence": "Approval table: \"Up to [X]% over ceiling | Head of Growth\" ... \"Above [Y]%... | CEO or Board notification\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rewrites exceptions as explicit, time-boxed, justified, and logged, including denied ones, and calls out standing self-approval as a new ceiling nobody agreed to.",
+        "evidence": "The doc logs only 'approved exception[s]' and time-boxes them ('with an end date \u2014 not standing') but never mentions logging denied exceptions or frames self-approval as 'a new ceiling nobody agreed to'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects vague override rationales such as 'timing' or 'one-time' as insufficient justification.",
+        "evidence": "No specific vague rationale (e.g., 'timing', 'one-time') is discussed or rejected anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Splits the single $310 ceiling into break-even, target, and hard floors, each with its own consequence.",
+        "evidence": "The document keeps a single $310 ceiling with a tiered approval ladder for overages, not separate breakeven/target/hard-floor numbers.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Adds a re-baselining cadence (quarterly) plus named event triggers such as pricing, margin, or measurement changes.",
+        "evidence": "\"Ceiling reviewed quarterly, alongside LTV/margin inputs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes judging the policy itself with KPIs read off the breach log, such as breach response rate, override concentration, headroom, or zero-breach quarters.",
+        "evidence": "\"it's worth pulling how close actual CAC has run to $310 each quarter\" as the evidentiary basis for judging whether the policy 'works'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ends with an explicit approval gate: nothing finalized without sign-off, recording who approved the policy and when.",
+        "evidence": "Document is framed as \"(Formal draft for board approval \u2014 v1.0)\" with \"Approved by: [ CFO / Board ]\" and \"Effective date: [ ]\" left blank pending sign-off.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

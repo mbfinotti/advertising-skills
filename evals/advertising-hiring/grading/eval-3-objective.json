@@ -1,0 +1,190 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Reclassifies spend-under-management as a filter, never a seniority level or bar",
+        "evidence": "'\"$250k+/month\" as a bare must-have... Kept as a floor filter, but wired to the two probes below \u2014 never asked alone.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pairs the $250k/month screen with a walk-me-through-a-campaign-you-killed probe",
+        "evidence": "'Killed-campaign and incrementality probes (pairs with the $250k+/month spend filter \u2014 never ask the spend number alone)... \"Walk me through a campaign you killed, and why.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pairs the spend screen with an incrementality-versus-attribution probe",
+        "evidence": "'\"How do you separate incremental revenue from attribution-modeling noise?\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Removes both certifications from must-haves and from competence scoring, treating them as a floor rather than a signal",
+        "evidence": "'Deleted from must-haves and from competence scoring. Moved to nice-to-have.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes free certifications can be earned after hire in days, so a strong candidate is never rejected over a missing one",
+        "evidence": "No mention anywhere in the transcript of certifications being earnable 'in days' post-hire.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that if partner compliance genuinely requires a certification, the req must say so explicitly so it is not read as a skill bar",
+        "evidence": "'If you do have a partner-compliance reason, say so explicitly in the req \u2014 don't let it pass as a skill bar.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the favourite-bid-strategy question as having one right answer - the strong answer is it-depends reasoning, not the target-ROAS reply the user wants to hear",
+        "evidence": "'There is no single correct platform feature to name. Score: \"it depends, here's my reasoning\"... not which named strategy they land on.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Inverts the scoring rule: an answer citing best practices or default methods as its rationale fails rather than earning top marks",
+        "evidence": "'Scoring reversed: context-driven reasoning scores top; best-practices recitation scores 2/5 regardless of how clean it sounds.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces formula-recall questions with questions probing reasoning about relationships between metrics",
+        "evidence": "'CTR/ROAS relationship (replaces the formula question)... Score how they connect the two metrics... not whether they can recite either formula.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a ROAS-drop diagnostic filter expecting the fixed order: measurement first, then media, then creative, then post-click",
+        "evidence": "'Expect the fixed order unprompted: measurement... \u2192 media... \u2192 creative fatigue... \u2192 post-click.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the backend discriminator: low ROAS with stable backend sales points to tracking or attribution gaps, not true underperformance",
+        "evidence": "'Backend pipeline is flat while platform ROAS falls \u2014 what does that tell you?\" (Correct: tracking/attribution gap, not true underperformance.)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the second senior filter: translating platform ROAS into break-even ROAS and MER, noting platform ROAS is biased upward because platforms double-claim conversions",
+        "evidence": "The B2B version translates to CPL/cost-per-SQL/pipeline value, not explicitly to 'break-even ROAS and MER' \u2014 those terms never appear in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps every question to exactly one competency",
+        "evidence": "'Structured per competency; each question maps to exactly one.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes at least one exaggerator probe, such as who they admire in the field, what publications they read, or claimed mastery of the newest automated campaign types as a lying signal",
+        "evidence": "'\"Who do you admire or look up to in paid media, and why?\" (McGarry...)' and 'Note any claimed \"full mastery\" of PMax, Advantage+... as a yellow flag'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Weights commercial reasoning and communication over technical recall, with any numeric weighting labelled a house convention rather than a published standard",
+        "evidence": "'Weighting below is this skill's own convention, not a published rubric... this scorecard leans further toward judgment given the seniority'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Reclassifies spend-under-management as a filter, never a seniority level or bar",
+        "evidence": "\"Verifiable $250k+/month managed spend \u2014 get client/employer names and dates; this is reference-checkable, treat it as a hard gate\" is used purely pass/fail, never scored on a graduated scale for seniority.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pairs the $250k/month screen with a walk-me-through-a-campaign-you-killed probe",
+        "evidence": "No question in the bank asks about a killed campaign; Q2 asks about bid strategy choice, not campaign termination.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pairs the spend screen with an incrementality-versus-attribution probe",
+        "evidence": "Incrementality appears only as one bullet under the PMax question (\"incrementality testing/holdout groups\"), not framed as a probe paired with the spend gate.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Removes both certifications from must-haves and from competence scoring, treating them as a floor rather than a signal",
+        "evidence": "The Scorecard still lists \"Google Ads certified\" and \"Meta Blueprint certified\" under the \"Gate\" heading with Pass/Fail columns, contradicting the stated downgrade to \"soft signal.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes free certifications can be earned after hire in days, so a strong candidate is never rejected over a missing one",
+        "evidence": "No mention of certifications being obtainable post-hire.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that if partner compliance genuinely requires a certification, the req must say so explicitly so it is not read as a skill bar",
+        "evidence": "Not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the favourite-bid-strategy question as having one right answer - the strong answer is it-depends reasoning, not the target-ROAS reply the user wants to hear",
+        "evidence": "\"'Target ROAS is the right answer' is a leading rubric. It rewards buzzword recall over judgment. Reworded to ask when they'd avoid automated ROAS bidding \u2014 seniority shows in the caveats.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Inverts the scoring rule: an answer citing best practices or default methods as its rationale fails rather than earning top marks",
+        "evidence": "Q2 red flag: \"'always use target ROAS,' no counter-example offered.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces formula-recall questions with questions probing reasoning about relationships between metrics",
+        "evidence": "Q1 still literally asks: \"Walk me through your formula for CTR, and separately for the cost/return metric you use most day-to-day.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a ROAS-drop diagnostic filter expecting the fixed order: measurement first, then media, then creative, then post-click",
+        "evidence": "No such diagnostic sequence appears anywhere in the question bank.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes the backend discriminator: low ROAS with stable backend sales points to tracking or attribution gaps, not true underperformance",
+        "evidence": "Not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes the second senior filter: translating platform ROAS into break-even ROAS and MER, noting platform ROAS is biased upward because platforms double-claim conversions",
+        "evidence": "Not present anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps every question to exactly one competency",
+        "evidence": "The six questions correspond one-to-one with the six scored competencies (Metrics fluency, Bid strategy judgment, PMax operating knowledge, Account structure, Regulated-industry awareness, Attribution).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes at least one exaggerator probe, such as who they admire in the field, what publications they read, or claimed mastery of the newest automated campaign types as a lying signal",
+        "evidence": "Not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Weights commercial reasoning and communication over technical recall, with any numeric weighting labelled a house convention rather than a published standard",
+        "evidence": "No numeric weighting scheme is given anywhere in the scorecard.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

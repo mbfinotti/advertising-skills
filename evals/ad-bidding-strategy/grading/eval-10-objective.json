@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Normalizes the ROAS units before comparing: mobile-UA tooling reports a percentage, web platforms report a multiplier",
+        "evidence": "\"Mobile UA tooling typically reports ROAS as a percentage where 100% = breakeven (revenue equals spend). Web/ecommerce platforms report ROAS as a multiplier where 1x = breakeven.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Converts 160% to 1.6x and compares like units (making the web store's 4.2x materially ahead on reported figures)",
+        "evidence": "Table converts App 160% \u2192 1.6x and Web 4.2x \u2192 420%, then states \"Normalized honestly, web is still ahead \u2014 4.2x vs 1.6x, not a 100x misread.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that comparing the two conventions raw produces a large misread",
+        "evidence": "\"Normalized honestly, web is still ahead \u2014 4.2x vs 1.6x, not a 100x misread.\" \u2014 this explicitly flags that a raw (unnormalized) comparison would produce a large (100x-scale) misread.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats adopting Performance Max as delegating the bidding policy to the platform, not as a campaign-type checkbox",
+        "evidence": "\"PMax is a delegated bidding archetype, not a targeting option layered on top of your existing strategy. Turning it on **is** the bid-strategy decision \u2014 it hands the platform your optimization objective, targeting, creative selection, and placement jointly.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes AI-default campaign types use automated bidding exclusively, so adoption is itself the bid-strategy decision",
+        "evidence": "\"Turning it on **is** the bid-strategy decision \u2014 it hands the platform your optimization objective, targeting, creative selection, and placement jointly. There is no 'flip it on and see' version of this that isn't also 'hand over the wheel and see.'\" The transcript ties adoption directly to being the bid-strategy decision, though it doesn't explicitly state PMax \"uses automated bidding exclusively\" as a categorical fact about AI-default campaign types generally.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks or answers what signal the platform gets under the delegation",
+        "evidence": "\"**What signal does the platform get?** PMax bids on whatever conversion event and values you feed it. Given that web's own ROAS number isn't yet confirmed as incremental or margin-checked (see Q1), feeding an unverified/undifferentiated value signal into a fully automated bidder means PMax will optimize hard toward a number you don't yet trust.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks or answers what control is given up by delegating",
+        "evidence": "\"**What control does delegating give up?** Search-term visibility, placement-level attribution, and the ability to isolate what's actually driving results \u2014 all reduced.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires a written exit criterion: what would justify taking control back",
+        "evidence": "\"**What would justify taking it back?** If you can't write this down before switching on, you don't have a policy, you have a hope.\" Also reinforced later: \"Who owns the PMax rollback call if the experiment underperforms, and what specific number triggers it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires guardrails and exclusions configured before adoption",
+        "evidence": "\"**Set guardrails before spend moves**: brand-term exclusion or protection, a budget cap on the test slice, and a named approver for scaling past it.\" Also: \"with brand terms and any protected/manual campaigns excluded from the test.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires a clean, valid conversion signal as a precondition for delegating",
+        "evidence": "\"**Close the measurement gate first.** Confirm the web conversion event is the real business outcome and values are differentiated, net of refunds, and timely \u2014 same gate this skill requires before any value-based archetype. Don't hand PMax a value signal you haven't validated.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends cross-checking platform-attributed return against MER or blended business revenue before trusting either team's number",
+        "evidence": "The transcript recommends incrementality testing via holdout/geo tests (\"Until one geo/holdout test runs per channel, you're comparing two unverified numbers\") but never mentions MER (marketing efficiency ratio) or cross-checking against blended business revenue as a specific method.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Normalizes the ROAS units before comparing: mobile-UA tooling reports a percentage, web platforms report a multiplier",
+        "evidence": "The transcript never states that 160% and 4.2x are simply different unit conventions for the same ROAS metric. It attributes the incomparability entirely to 'attribution windows differ,' 'revenue isn't the same line,' and 'platform fees are invisible' \u2014 never to a percentage-vs-multiplier convention mismatch.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Converts 160% to 1.6x and compares like units (making the web store's 4.2x materially ahead on reported figures)",
+        "evidence": "No such conversion appears anywhere in the transcript. The only ratio given is the naive '26x' comparison ('the gap is real but much smaller than 26x'), which is exactly the unconverted, unit-mismatched figure (4.2/0.16) rather than the unit-normalized 4.2/1.6 \u2248 2.6x.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that comparing the two conventions raw produces a large misread",
+        "evidence": "The transcript warns generally that 'Comparing 160% (app) to 4.2x (web) as if they were on a shared scale is the actual mistake here' and that the 26x reading is 'not a finding, it's a measurement artifact,' but this warning is framed around attribution/fee/incentive differences, not around percentage-vs-multiplier notation as the two 'conventions' being conflated \u2014 that specific unit-convention framing never appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats adopting Performance Max as delegating the bidding policy to the platform, not as a campaign-type checkbox",
+        "evidence": "\"PMax isn't a campaign type, it's an automated budget/targeting reallocation across Search, Shopping, Display, YouTube, Discover, Gmail and Maps with a black box you can't see into\" and \"Not as 'just another campaign type,' and not for 'most of the web budget.' That framing is the thing to push back on.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes AI-default campaign types use automated bidding exclusively, so adoption is itself the bid-strategy decision",
+        "evidence": "The transcript never discusses automated bidding as an inherent, exclusive feature of PMax or frames adoption itself as a bid-strategy decision; its critique focuses on lack of placement visibility and reallocation across channels instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks or answers what signal the platform gets under the delegation",
+        "evidence": "The transcript describes PMax's targeting behavior ('It systematically over-indexes on your existing highest-intent inventory... because that's what's cheapest to \"win\"') but never addresses what conversion/tracking signal is fed to the platform's algorithm.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks or answers what control is given up by delegating",
+        "evidence": "\"no placement-level reporting, only partial search-term visibility, minimal exclusion control versus standard Search/Shopping\" directly enumerates the control/visibility surrendered by adopting PMax.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires a written exit criterion: what would justify taking control back",
+        "evidence": "The four-step plan (exclusions, budget slice, lift test, scale-if-successful) never specifies a written criterion for reverting away from PMax back to manual control; it only says 'Only scale if the lift test shows real incremental revenue.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires guardrails and exclusions configured before adoption",
+        "evidence": "\"Add brand exclusions / negative brand where the account allows it before ever turning PMax on, so it can't just eat your existing branded conversions.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires a clean, valid conversion signal as a precondition for delegating",
+        "evidence": "The transcript never mentions conversion tracking hygiene, enhanced conversions, or conversion-signal validity as a precondition; its precondition list is limited to brand exclusions and a controlled budget test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends cross-checking platform-attributed return against MER or blended business revenue before trusting either team's number",
+        "evidence": "The transcript recommends 'an incrementality check (geo holdout or conversion-lift study)' and a shared audited ROAS definition, but never mentions MER (marketing efficiency ratio) or blended/total business revenue as a cross-check against platform-reported numbers.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

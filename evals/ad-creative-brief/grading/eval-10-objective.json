@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Replaces the word-for-word script with talking points, beats, and hook direction delivered in the creator's own words, because over-scripting kills the natural delivery that makes UGC work",
+        "evidence": "\"Talking points, not a script: the beats the creator must hit, in their own words.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks exact spoken lines and shot-by-shot scripting as outside this brief's scope - the brief writes direction, never the script",
+        "evidence": "\"outputs are shot-by-shot scripts and belong downstream to ugc-ad-scripts once a direction here is picked; this brief stops at direction.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Briefs the creators on the same objective with different hook directions rather than identical scripts, treating round one as a learning round and rebriefing round two toward the winning direction",
+        "evidence": "The brief specifies four hook directions for round one but never describes a second round rebriefed toward the winning direction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies usage rights as three explicit terms: where the content runs, for how long, and in which geographies",
+        "evidence": "\"Paid social (Meta), 12 months from first air date, US only.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags unlimited perpetual rights as a negotiation failure, not a template default",
+        "evidence": "\"'An unlimited-perpetual default is a negotiation failure, not a template default.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires creator-level FTC disclosure such as '[Ad]' or '[Paid Partnership]' at the start of the caption",
+        "evidence": "\"Creator adds #ad or Paid partnership with Mielette at the start of the caption\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that platform ad labels ('Sponsored') do not satisfy creator-level disclosure obligations",
+        "evidence": "\"'platform ad labels do not satisfy creator-level FTC disclosure obligations.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that automated placement resizing can drop a disclosure tag in some formats, so disclosure is verified per placement",
+        "evidence": "\"Verify the tag survives automated placement resizing (Reels vs Feed vs Stories crop differently) \u2014 check per placement before launch.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets a revision cap as an agreed number in the brief, not discovered mid-project",
+        "evidence": "\"2 rounds per creator, agreed here \u2014 not discovered in round four\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces scattered notes from three leads with one approver and one consolidated feedback round per revision",
+        "evidence": "\"One approver, not three parallel senders... One consolidated round per revision\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the send-back rule: creative goes back for revision when it addresses neither of the brief's top objections",
+        "evidence": "The send-back rule given is \"if it misses the beat structure or the proof point\", not framed around addressing top objections.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives hook direction per option across the three layers SPOKEN / VISUAL / TEXT OVERLAY, still as direction the creator interprets",
+        "evidence": "Table with Creator A-D each showing 'Hook direction', SPOKEN (talking point), VISUAL, TEXT OVERLAY columns.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a b-roll list and/or the adaptable beat structure (cold open 0-2s visual hook, problem, demo/result, proof overlay, CTA) as beats rather than a script",
+        "evidence": "\"Cold open (0\u20132s, visual hook) \u2192 problem, named directly (2\u20135s) \u2192 unboxing/first-bite moment \u2192 proof overlay... \u2192 CTA\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Replaces the word-for-word script with talking points, beats, and hook direction delivered in the creator's own words, because over-scripting kills the natural delivery that makes UGC work",
+        "evidence": "'I've replaced the script with a shared messaging guide (required beats + must-say claims) that each creator delivers in their own words.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks exact spoken lines and shot-by-shot scripting as outside this brief's scope - the brief writes direction, never the script",
+        "evidence": "Section 3 header explicitly states '## 3. Messaging Guide (not a script)' with beats delivered 'in the creator's own words.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Briefs the creators on the same objective with different hook directions rather than identical scripts, treating round one as a learning round and rebriefing round two toward the winning direction",
+        "evidence": "Creators can 'pick one of the 3 hook options provided, or pitch your own,' but there is no round-one-learning/round-two-rebrief structure described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies usage rights as three explicit terms: where the content runs, for how long, and in which geographies",
+        "evidence": "Section 7 specifies platform ('Instagram, Facebook') and term length ('12 months, renewable') but never specifies geography.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags unlimited perpetual rights as a negotiation failure, not a template default",
+        "evidence": "'\"Unlimited perpetual rights\" isn't actually standard \u2014 it's a significant ask. Most creators either price it much higher or decline outright.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires creator-level FTC disclosure such as '[Ad]' or '[Paid Partnership]' at the start of the caption",
+        "evidence": "'Verbal or on-screen \"ad\" / \"sponsored\" mention in the first 3 seconds' and '#ad or #MielettePartner in the caption' plus 'Meta's Paid Partnership tag enabled.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that platform ad labels ('Sponsored') do not satisfy creator-level disclosure obligations",
+        "evidence": "'Meta's \"Sponsored\" label satisfies Meta's ad-transparency rule. It does not satisfy the FTC's material-connection disclosure requirement, which sits on the creator's own content.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that automated placement resizing can drop a disclosure tag in some formats, so disclosure is verified per placement",
+        "evidence": "No mention of automated resizing dropping disclosure tags anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a revision cap as an agreed number in the brief, not discovered mid-project",
+        "evidence": "'Maximum 2 revision rounds.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Replaces scattered notes from three leads with one approver and one consolidated feedback round per revision",
+        "evidence": "'Single point of contact... collects input from brand, product, and legal and issues one consolidated round of notes per draft.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes the send-back rule: creative goes back for revision when it addresses neither of the brief's top objections",
+        "evidence": "No objections field or send-back rule tied to objections exists in this brief.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives hook direction per option across the three layers SPOKEN / VISUAL / TEXT OVERLAY, still as direction the creator interprets",
+        "evidence": "Hook options are only referenced generically ('pick one of the 3 hook options provided') with no SPOKEN/VISUAL/TEXT OVERLAY breakdown shown.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a b-roll list and/or the adaptable beat structure (cold open 0-2s visual hook, problem, demo/result, proof overlay, CTA) as beats rather than a script",
+        "evidence": "Section 3 lists five required beats (Hook, Unboxing reaction, Product highlight, Fits routine, CTA) as an adaptable beat structure, not a script.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Tests both precision thresholds explicitly - roughly 500 named accounts and roughly $100K ACV - and states this case clears neither",
+        "evidence": "\"Per-role campaigns are defensible above ~$100K ACV. Corvine is $30K \u2014 roughly a third of that.\" and \"Per-role campaigns are defensible below ~500 named accounts. The Corvine ICP is 40,000 companies \u2014 two orders of magnitude too large to enumerate as an account list\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the merged map, one primary angle plus role-aware proof points in a single campaign, shipped to a 20,000-50,000-sized audience, instead of six per-role campaigns",
+        "evidence": "\"one campaign, two live roles, one primary angle + one proof-point variant, phased in at the pace you can actually produce creative\" and the champion role's proxy audience note: \"function+seniority pools on a professional network typically clear the 20K-50K practical floor easily\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites the out-market argument: roughly 95% of B2B buyers are out-market at any time, so hyper-narrow targeting wastes the reach that builds future demand",
+        "evidence": "No mention of out-market buyers, the 95% figure, or reach-for-future-demand reasoning anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes per-role campaigns from the menu by name because a single generalist marketer cannot run six campaigns, rather than ranking them last as a stretch goal",
+        "evidence": "\"Effort ceiling. One marketer producing ~1 ad concept/month cannot staff six creative sets plus six reviewer/optimization loops. This alone deletes the option\" and the menu entry \"Six separate per-role campaigns \u2014 effort ceiling + both thresholds, see \u00a70\" under \"Named deletions from the menu (not demoted \u2014 deleted)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the precision-versus-reach dispute is unresolved: no controlled test compares role-differentiated creative against a single strong message",
+        "evidence": "The transcript states a chosen posture (\"Precision-vs-reach posture: Merged map...\") and justifies it, but nowhere states the dispute itself is empirically unresolved or that no controlled test exists comparing role-differentiated creative to a single message.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Steelmans the precision side (bounded reach in small named-account markets, high-ACV economics, activation for the in-market share) instead of dismissing it",
+        "evidence": "Section 0 and the role map only state the thresholds Corvine fails and delete the option; there is no passage arguing for when precision/per-role targeting would be the right call (e.g., small named-account markets or high-ACV economics) beyond the bare threshold numbers used to disqualify Corvine.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives effort in orders of magnitude: per-role campaigns about a quarter, the merged map about a week",
+        "evidence": "\"a quarter\" appears only for the benchmark report (\"a quarter of data-collection effort a solo marketer doesn't have\") and the reviewer one-pager (\"a quarter if not\"), and \"a week\" appears only for the ROI calculator build (\"light build \u2014 a week\") \u2014 none of these compare the effort of six per-role campaigns as a whole against the merged map as a whole.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes the flip check: tightening further is justified only if CPM inflation and frequency on the narrow audiences are not degrading cost per opportunity",
+        "evidence": "No mention of CPM, ad frequency, or cost-per-opportunity degradation anywhere in the transcript; Month 6 only says to \"Re-run the committee-size sanity check against whatever closed-won or call-note evidence has accumulated.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes both list-based targeting rungs for the roughly 40,000-company market and plans on function plus seniority",
+        "evidence": "\"Account list and intent-ranked account list as targeting proxies \u2014 40,000 accounts is too large to enumerate or maintain a list against; falls back to function + seniority.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Directs the role knowledge into proof-point variants inside the single campaign rather than into audience splits",
+        "evidence": "\"ROI/savings calculator ... as a **second ad + landing page inside the same campaign**, not a new campaign\" and \"seniority-filtered ad set, not a new campaign\" in the Month 2 cadence entry",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The committee summary states which precision-vs-reach posture the map takes and why",
+        "evidence": "\"Precision-vs-reach posture: Merged map \u2014 one primary angle (champion/end-user) plus one role-aware proof-point variant (economic buyer), inside a single campaign. Not a single undifferentiated message, because the economic buyer's objection ... is different enough from the champion's to need its own proof, and your production cadence can support one added variant\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The output carries a named list of every option a stated constraint deleted from a menu",
+        "evidence": "The \"Named deletions from the menu (not demoted \u2014 deleted):\" list enumerating six separate per-role campaigns, account list/intent-ranked account list, exact job-title targeting, benchmark report, and demo/trial+sandbox access (parked)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States as a caveat that per-role creative outperforming a single strong message is unproven, framing the campaign KPIs as the test of which side of the dispute this market is on",
+        "evidence": "Month 4 only frames engagement as testing the economic-buyer role hypothesis (\"If the economic-buyer ad set isn't engaging, that's evidence against the hypothesis\"), not as a general test of whether role-differentiated creative outperforms a single strong message.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Tests both precision thresholds explicitly - roughly 500 named accounts and roughly $100K ACV - and states this case clears neither",
+        "evidence": "The transcript never mentions '500 named accounts' or '$100K ACV' thresholds. It cites a '40,000-company ICP' and '$30K ACV' but does not test these against any stated precision thresholds or explicitly state the case 'clears neither'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends the merged map, one primary angle plus role-aware proof points in a single campaign, shipped to a 20,000-50,000-sized audience, instead of six per-role campaigns",
+        "evidence": "The transcript recommends the opposite: 'Spotlight Rotation' with six sequential per-role campaigns, each with its own concept, CTA, and creative (see the 6-month calendar table), not a single merged campaign.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Cites the out-market argument: roughly 95% of B2B buyers are out-market at any time, so hyper-narrow targeting wastes the reach that builds future demand",
+        "evidence": "No mention of the 95% out-market statistic or any related concept anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes per-role campaigns from the menu by name because a single generalist marketer cannot run six campaigns, rather than ranking them last as a stretch goal",
+        "evidence": "The transcript does the opposite: it keeps and restructures the six per-role campaigns into a sequential 'Spotlight Rotation' rather than deleting the option ('The buying-committee logic is sound... Below: the plan built that way').",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the precision-versus-reach dispute is unresolved: no controlled test compares role-differentiated creative against a single strong message",
+        "evidence": "The transcript presents its sequential-spotlight approach as the settled solution ('The structure needs to be sequential, not parallel') without acknowledging any unresolved dispute between precision (role-differentiated) and reach (single message) strategies.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Steelmans the precision side (bounded reach in small named-account markets, high-ACV economics, activation for the in-market share) instead of dismissing it",
+        "evidence": "The transcript doesn't frame this as a precision-vs-reach debate at all; it assumes role-based precision targeting is correct and only critiques the parallel execution logistics, not the precision approach itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Gives effort in orders of magnitude: per-role campaigns about a quarter, the merged map about a week",
+        "evidence": "No comparison of effort magnitudes between a per-role approach and a merged approach is given; the plan only discusses a 6-month calendar for its own sequential structure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes the flip check: tightening further is justified only if CPM inflation and frequency on the narrow audiences are not degrading cost per opportunity",
+        "evidence": "No mention of CPM inflation, frequency metrics, or cost-per-opportunity degradation checks anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Deletes both list-based targeting rungs for the roughly 40,000-company market and plans on function plus seniority",
+        "evidence": "The transcript does not discuss list-based targeting rungs vs. function+seniority targeting at all; it organizes by 'role' (job title/function) but never addresses this specific targeting mechanics question.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Directs the role knowledge into proof-point variants inside the single campaign rather than into audience splits",
+        "evidence": "The opposite occurs: role knowledge is directed into separate sequential campaigns/audience splits (one role 'in spotlight' per month with its own concept), not proof-point variants within one campaign.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The committee summary states which precision-vs-reach posture the map takes and why",
+        "evidence": "The transcript never frames its recommendation in terms of a precision-vs-reach posture; it discusses parallel-vs-sequential execution logistics instead.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The output carries a named list of every option a stated constraint deleted from a menu",
+        "evidence": "No menu of options is presented with deletions; instead all six roles are retained and sequenced, with nothing removed from a menu.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States as a caveat that per-role creative outperforming a single strong message is unproven, framing the campaign KPIs as the test of which side of the dispute this market is on",
+        "evidence": "The transcript's KPI table (by role) is framed as measuring 'what working looks like' per role, not as a test of role-differentiated vs. single-message effectiveness; no such caveat is stated.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

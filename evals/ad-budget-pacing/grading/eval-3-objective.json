@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes the flat-curve expected-to-date of $7,800 (13 of 30 calendar days) and a flat pacing ratio of approximately 0.86.",
+        "evidence": "Table row: 'Elapsed share | 13/30 days = 43.3%' \u2192 'Expected to date | $7,800.00' \u2192 'Pacing ratio | 0.859 (85.9%)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes a business-day expected-to-date of approximately $7,360, from 9 elapsed business days out of 22 in the month.",
+        "evidence": "Table row: 'Elapsed share | 9/22 weekdays = 40.9%' \u2192 'Expected to date | $7,363.64'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the business-day pacing ratio as approximately 0.91, inside the 0.90-1.10 on-pace band.",
+        "evidence": "'Pacing ratio | 0.910 (91.0%)' and 'the ratio lifts to 91.0%, right at the bottom edge of the normal 0.90\u20131.10 on-pace band'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents both curves side by side in one metrics comparison rather than reporting only one.",
+        "evidence": "The 'Metrics: flat vs. weighted (business-day) curve' table has two columns 'Flat (calendar-day)' and 'Weighted (business-day)' shown together.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Bases the alert decision on the business-day curve and concludes the campaign is on pace, firing no under-pacing alert.",
+        "evidence": "'The weighted ratio (0.910) sits just inside the band... ON PACE (borderline) \u2014 no alert fires.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a weekday-skewed B2B account reads structurally behind on a calendar-day curve after every weekend, which is why the Monday check looks 14% behind.",
+        "evidence": "'That curve assumes every day of the month is worth the same, which is false for an account that \"delivers almost entirely on weekdays\" \u2014 every Monday looks artificially behind on it, purely mechanically.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against pushing bids up today to catch up.",
+        "evidence": "'**Don't push bids up today.**' under Recommendation, with three supporting reasons and 'Hold current bids and budget.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to judge pacing on the 4 period-to-date leads, citing the multi-week B2B conversion lag that makes them incomplete by construction, and paces against the spend trajectory instead.",
+        "evidence": "'Don't read this number yet \u2014 it fails gate check 4... pace against the spend trajectory, never against period-to-date conversions, since they're incomplete by construction.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the day weights or business-day expectation from the account's own three months of delivery history rather than a generic template.",
+        "evidence": "The report explicitly flags the business-day figure as generic, not history-derived: 'it's worth building the account's actual day-of-week weighted index rather than leaning on the business-day approximation used here \u2014 that closes the 5.1pp gap with a real number instead of an estimate. I can build that from your daily spend export if you pull it.' This is a recommendation for future work, not something done in this report.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels the 0.90-1.10 on-pace band a practitioner convention to recalibrate against this account's history, not a platform rule.",
+        "evidence": "The transcript only calls it 'the normal 0.90\u20131.10 on-pace band' without ever characterizing it as a practitioner convention that should be recalibrated against this account's own history; no such framing appears anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ships a report with a status line and an owner even though the verdict is an all-clear.",
+        "evidence": "'### Status\\n**ON PACE (borderline) \u2014 no alert fires.**' and '**Owner:** whoever runs the daily check on this account (performance marketer / growth lead per your setup) \u2014 no handoff needed...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reports the required daily spend of approximately $665 over the 17 remaining days and the small corrective figure of roughly +$55/day against the $610 trailing average.",
+        "evidence": "'Required daily to close gap | $664.71/calendar day' and 'adjust_spend_by | +$54.71/day (+9.0%)', with 'I inferred your weekday spend rate from the trailing 7-day average ($610/day blended across Sep 7\u201313...)' establishing the $610 comparison baseline.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes the flat-curve expected-to-date of $7,800 (13 of 30 calendar days) and a flat pacing ratio of approximately 0.86.",
+        "evidence": "The transcript computes '18,000 \u00f7 30 days \u00d7 13 days elapsed = $7,800 expected' but never derives or states a pacing ratio (e.g. 0.86); it only references the pre-existing '14% behind' figure from the user's own framing without recomputing it as a ratio against $6,700 actual spend.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes a business-day expected-to-date of approximately $7,360, from 9 elapsed business days out of 22 in the month.",
+        "evidence": "\"Budget per weekday: $18,000 \u00f7 22 = $818/weekday\" and \"Expected spend through 9 weekdays: 9 \u00d7 $818 = $7,364\", with '9 of those 22 weekdays have elapsed' stated explicitly.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes the business-day pacing ratio as approximately 0.91, inside the 0.90-1.10 on-pace band.",
+        "evidence": "The transcript computes 'Real gap: $664, or ~9% behind' (equivalent to a ~0.91 ratio) but never expresses this as a ratio nor mentions any 0.90-1.10 band or classifies the result as falling inside such a band.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents both curves side by side in one metrics comparison rather than reporting only one.",
+        "evidence": "Section 1 opens with the flat calc ('18,000 \u00f7 30 days \u00d7 13 days elapsed = $7,800 expected') immediately followed by the 'Weekday-adjusted target' bullet block ($818/weekday, $7,364 expected, $6,700 actual, ~9% behind), presenting both curves together for comparison.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Bases the alert decision on the business-day curve and concludes the campaign is on pace, firing no under-pacing alert.",
+        "evidence": "\"Budget pacing: roughly on track (~99% weekday-adjusted projection) once you correct for weekday-only delivery... Recommendation: don't push bids today.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a weekday-skewed B2B account reads structurally behind on a calendar-day curve after every weekend, which is why the Monday check looks 14% behind.",
+        "evidence": "\"The naive calc effectively charges you for two weekend days (Sept 12\u201313) where the campaign was never going to spend anything. That's most of your '14%.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises against pushing bids up today to catch up.",
+        "evidence": "\"### 4. Recommendation: don't push bids today\" ... \"Leave bids alone.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to judge pacing on the 4 period-to-date leads, citing the multi-week B2B conversion lag that makes them incomplete by construction, and paces against the spend trajectory instead.",
+        "evidence": "\"There is currently no valid read on whether September's spend is generating 25 leads' worth of pipeline or 5... Reacting to this number today means reacting to noise.\" combined with the spend-based pacing analysis used as the basis for the recommendation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the day weights or business-day expectation from the account's own three months of delivery history rather than a generic template.",
+        "evidence": "The transcript only asserts the account 'delivers almost entirely on weekdays' and uses a generic 22-weekday count for September; there is no reference to three months of historical delivery data being analyzed to derive day weights.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels the 0.90-1.10 on-pace band a practitioner convention to recalibrate against this account's history, not a platform rule.",
+        "evidence": "No mention of a 0.90-1.10 band, practitioner convention, or platform rule appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ships a report with a status line and an owner even though the verdict is an all-clear.",
+        "evidence": "The document is formatted as narrative sections with headers (e.g. '### 4. Recommendation: don't push bids today') and bullet points; there is no explicit status line (e.g. 'Status: On Track') or owner field anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Reports the required daily spend of approximately $665 over the 17 remaining days and the small corrective figure of roughly +$55/day against the $610 trailing average.",
+        "evidence": "The transcript computes a required weekday rate ('$11,300 \u00f7 13 remaining weekdays = ~$869/weekday') and mentions 'trailing $610/day \u00d7 17 remaining calendar days' for a projection, but never computes $11,300 \u00f7 17 \u2248 $665/day nor a +$55/day corrective figure against the $610 trailing average.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

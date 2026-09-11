@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects cumulative lifetime spend/revenue as the value column",
+        "evidence": "never select by cumulative lifetime revenue, and never feed it as the value column",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the reason: cumulative revenue tracks tenure, and high-revenue low-margin customers poison the model",
+        "evidence": "Lifetime spend tracks *tenure* ... a value-based lookalike trained on it will happily scale low-margin, high-frequency discount shoppers because they rack up totals",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends margin or predicted LTV as the value column instead",
+        "evidence": "Use **margin or predicted LTV** for both the cutoff and the uploaded value.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the $0 gift-recipient rows: the value column must contain positive values only",
+        "evidence": "\"positive values only \u2014 zero and negative values break or distort the build.\" These need to be dropped from the value-based file entirely",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the USD/EUR merge: one currency per list, since platforms do not normalize mixed currencies",
+        "evidence": "\"one currency per list\" (mixed currency breaks the value weighting \u2014 Meta doesn't FX-normalize for you)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends capping or winsorizing the 200x corporate whale so a few large accounts do not skew the model",
+        "evidence": "The 200x corporate account: cap or winsorize it.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires refunded amounts to be excluded from the value computation",
+        "evidence": "Whatever replaces it (margin/predicted LTV) needs refunds excluded from the computation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires confirming the value column is actually mapped at upload",
+        "evidence": "confirm the value mapping at upload (check that \"value-based\" actually appears as an option, not just standard lookalike)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that an unmapped value column silently builds a standard (not value-based) lookalike, and that the value-based option being absent at audience-build time means the mapping failed",
+        "evidence": "the value mapping will silently fail and Meta will build a standard lookalike with no warning",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that value-based audiences on Meta require a separate terms acceptance",
+        "evidence": "Value-based audiences need a separate Meta terms acceptance from your standard customer-list terms",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends selection via RFM Champions + Loyal cohorts, or the top 10-25% by predicted LTV or margin, rather than the top 15% by spend",
+        "evidence": "select top 10-25% by margin or predicted LTV (RFM Champions+Loyal cohort if you have that tooling), not lifetime spend",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies a recency window (30-90 days default, up to 180 for pixel-tracked buyers) instead of the full lifetime list",
+        "evidence": "No recency window is discussed anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the negative-selection pass: strip refunders, chargebacks, serial returners, discount-only buyers, employees, and wholesale accounts",
+        "evidence": "strip refunders, chargebacks, serial returners, discount-only buyers, employees, wholesale accounts, and the $0-spend gift-recipient rows",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps existing customers in the seed while suppressing them from the acquisition campaign at delivery level",
+        "evidence": "existing customers stay *in* the seed, just suppressed from the acquisition campaign at delivery level, not removed from the seed",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects cumulative lifetime spend/revenue as the value column",
+        "evidence": "Transcript treats spend/revenue as the value column throughout, only suggesting capping/log-transform or a trailing window, never switching off revenue.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains the reason: cumulative revenue tracks tenure, and high-revenue low-margin customers poison the model",
+        "evidence": "Only mentions tenure bias re: lifetime window (\"overweights your oldest/longest-tenured customers\"), never discusses margin/profitability distortion.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends margin or predicted LTV as the value column instead",
+        "evidence": "No recommendation of margin or predicted LTV; only recency-weighted value or capped/log spend are proposed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the $0 gift-recipient rows: the value column must contain positive values only",
+        "evidence": "\"$0 gift recipients shouldn't be in a spend-based seed at all... Filter them out entirely.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the USD/EUR merge: one currency per list, since platforms do not normalize mixed currencies",
+        "evidence": "\"Currency mixing is the biggest issue... Convert everything to one currency first... or better, run two separate value-based lookalikes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends capping or winsorizing the 200x corporate whale so a few large accounts do not skew the model",
+        "evidence": "\"Consider capping/winsorizing extreme values (e.g., cap at some percentile like p99) or using log-transformed spend as the value column instead of raw dollars.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires refunded amounts to be excluded from the value computation",
+        "evidence": "Refunds are never mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires confirming the value column is actually mapped at upload",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that an unmapped value column silently builds a standard (not value-based) lookalike, and that the value-based option being absent at audience-build time means the mapping failed",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that value-based audiences on Meta require a separate terms acceptance",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends selection via RFM Champions + Loyal cohorts, or the top 10-25% by predicted LTV or margin, rather than the top 15% by spend",
+        "evidence": "Only suggests uploading the full base and letting the algorithm weight by value instead of truncating \u2014 no RFM/LTV-percentile recommendation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies a recency window (30-90 days default, up to 180 for pixel-tracked buyers) instead of the full lifetime list",
+        "evidence": "Only suggests \"trailing 12/24-month spend window,\" not 30-90/180 days.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the negative-selection pass: strip refunders, chargebacks, serial returners, discount-only buyers, employees, and wholesale accounts",
+        "evidence": "Only wholesale/B2B outlier exclusion is discussed; refunders, chargebacks, serial returners, discount-only buyers, employees are not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps existing customers in the seed while suppressing them from the acquisition campaign at delivery level",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

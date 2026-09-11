@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The verdict is honest about the economics: either one primary consistent with the math, or a statement that paid does not clear until margin or repeat-purchase economics improve.",
+        "evidence": "The answer computes contribution per sale ($38 \u00d7 34% = $12.92), break-even ROAS (2.94x), and an allowable CAC of ~$9, then states the economic verdict plainly: 'granola at $38 AOV / 34% margin can't fund paid acquisition off a first purchase alone' and 'until you have that number, no paid channel plan (including a more sensible one) should get real budget.' It explicitly ties the unlock to repeat-purchase/LTV data ('Repeat purchase rate or any LTV estimate \u2014 even rough. This single number is what would unlock (or rule out) paid media entirely'). It also names a single conditional primary (reta",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The verdict is honest about the economics: either one primary consistent with the math, or a statement that paid does not clear until margin or repeat-purchase economics improve.",
+        "evidence": "The answer surfaces the actual unit math \u2014 \"$38 AOV \u00d7 34% margin = ~$13 gross profit/order\" \u2014 and ties the CAC ceiling explicitly to repeat-purchase rate for a consumable, then commits to a single primary lane: \"put the $14K where you can measure ROAS this month (Meta/TikTok/Google direct response) and prove a profitable CAC first,\" with CTV explicitly deferred until $8-10K/month is available and the $500 CTV test rejected on reach/attribution grounds ($25\u201340 CPM \u2192 ~15\u201320K impressions). This is consistent with the thin per-order margin. Points off because the verdict stays partly conditional: ",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

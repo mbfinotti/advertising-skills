@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not let the already-available blended number decide the variant choice for a finance-facing audience",
+        "evidence": "The transcript refuses to let the conveniently available Q2 blended figure ($62) anchor the analysis. It restates the comparison on the *paid* variant ($95 \u2192 $100, a 5.3% increase) rather than adopting blended because that's what Q2 happened to supply, and explicitly marks Q1 blended as 'not computable \u2014 Q1 total marketing spend and Q1 total new customers (organic included) weren't given' instead of quietly substituting the paid number. The blended $62 is kept as a separately labeled, separately defensible statement ('a genuine efficiency win worth its own line, not folded into a paid-performa",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not let the already-available blended number decide the variant choice for a finance-facing audience",
+        "evidence": "The response refuses to let the convenient blended Q2 figure drive the headline: it identifies that the numerator/denominator definitions switched mid-comparison, recomputes the like-for-like paid CAC ($95 \u2192 $100, +5.3%), and leads the recommended slide with that honest same-methodology number. It explicitly refuses the data-availability shortcut \u2014 'that requires Q1's *total* marketing spend and *total* new customers (organic included), which isn't in what you gave me. If Nivara didn't track organic customer count in Q1, say that explicitly rather than defaulting to the paid-only Q1 figure as ",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

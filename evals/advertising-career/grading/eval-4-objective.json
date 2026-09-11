@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects using raw ads-manager screenshots even with the logo blurred, naming them a legal risk",
+        "evidence": "\"A self-made chart carries zero legal exposure; a platform screenshot does even with the logo blurred.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags naming the real client as an NDA breach and replaces it with a descriptor that carries the credibility (e.g. 'DTC coffee brand')",
+        "evidence": "\"Never name the client, even if asked directly\" ... uses \"DTC coffee brand\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Converts the absolute figures ($62K/month spend, real ROAS values) into percentage change, indexed values (baseline = 100), or aggregated ranges, never absolutes",
+        "evidence": "\"Replace every [N] / [X] with your real numbers converted to index or percentage \u2014 never the dollar figures themselves.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies anonymise, index, and strip-screenshots together as a checklist, not as a pick-one menu",
+        "evidence": "all three are combined throughout, e.g. \"Client anonymised as 'DTC coffee brand'; figures indexed... don't screenshot Ads Manager\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises re-reading the NDA or client contract before publishing anything client-derived, because a breach cannot be undone",
+        "evidence": "\"reread your actual NDA/client contract once before publishing even this anonymized version; that check is cheap and a breach afterward isn't reversible\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that over-sharing confidential client data reads to interviewers as a preview of how the candidate would treat their data",
+        "evidence": "\"Interviewers read a leaked-client screenshot as a preview of how you'd treat their data \u2014 it costs you the interview, not just the NDA.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a public written teardown of a brand's ads as a lead or companion piece because it carries zero confidentiality risk",
+        "evidence": "No mention of a public written teardown anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the teardown doubles as rehearsal for the live-audit interview format",
+        "evidence": "Not present \u2014 transcript only references practicing on \"a public account or example account, never the NDA'd one,\" not a written teardown piece.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Structures the case study as problem, process, solution, indexed results, learnings",
+        "evidence": "template headers: \"## Problem\", \"## Process\", \"## Solution\", \"## Results (indexed...)\", \"## Learnings\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the process section carries the hiring signal: it shows judgment, not access to budget",
+        "evidence": "No statement in the transcript identifies the Process section specifically as showing judgment rather than access to budget.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a learnings element naming something that did not work",
+        "evidence": "\"[One thing that worked, one that didn't, one thing you'd do differently \u2014 the self-critical line is deliberate.]\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes an explicit statement in the deliverable that details are anonymised and figures indexed",
+        "evidence": "\"*Client anonymised as \"DTC coffee brand\"; figures indexed to protect confidential data.*\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Never invents figures to fill the template; every number is the candidate's own evidence in NDA-safe form",
+        "evidence": "\"Fill every ... with your real numbers... I've left them as placeholders rather than inventing numbers\" (analogous phrasing in the template instructions)",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects using raw ads-manager screenshots even with the logo blurred, naming them a legal risk",
+        "evidence": "'A blurred logo doesn't anonymize a Meta Ads Manager screenshot \u2014 the account name, campaign names, date ranges, and often the client's own text... are visible' and the NDA/legal framing throughout.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags naming the real client as an NDA breach and replaces it with a descriptor that carries the credibility (e.g. 'DTC coffee brand')",
+        "evidence": "'\"Fairwind Coffee Roasters\" is a real client name you're about to say out loud to interviewers' \u2014 replaced with 'a specialty coffee e-commerce client'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Converts the absolute figures ($62K/month spend, real ROAS values) into percentage change, indexed values (baseline = 100), or aggregated ranges, never absolutes",
+        "evidence": "The suggested replacement still uses absolute rounded figures ('~$60K/month spend', 'ROAS improved from ~1.6x to ~3.4x'), not percentage-change or index-to-100 values.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies anonymise, index, and strip-screenshots together as a checklist, not as a pick-one menu",
+        "evidence": "The three numbered recommendations ('1. Ask... 2. Rebuild the numbers as an original chart... 3. Write the case study around your decisions') are presented together as 'What I'd do instead'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Advises re-reading the NDA or client contract before publishing anything client-derived, because a breach cannot be undone",
+        "evidence": "The transcript assumes NDA content ('almost always includes a confidentiality clause') but never advises actually re-reading the contract.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that over-sharing confidential client data reads to interviewers as a preview of how the candidate would treat their data",
+        "evidence": "'it reads as a judgment red flag for a role that will hand you their client and their spend data. It undermines the exact thing you're trying to demonstrate.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a public written teardown of a brand's ads as a lead or companion piece because it carries zero confidentiality risk",
+        "evidence": "No teardown of another brand is suggested anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the teardown doubles as rehearsal for the live-audit interview format",
+        "evidence": "No teardown or rehearsal connection is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Structures the case study as problem, process, solution, indexed results, learnings",
+        "evidence": "Only a loose structure is suggested ('what you changed... and why'); no explicit problem/process/solution/indexed-results/learnings template.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that the process section carries the hiring signal: it shows judgment, not access to budget",
+        "evidence": "'Write the case study around your decisions, not the platform's data... which is what a growth marketer interviewer actually wants to probe anyway.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a learnings element naming something that did not work",
+        "evidence": "No 'what didn't work' element is included.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes an explicit statement in the deliverable that details are anonymised and figures indexed",
+        "evidence": "Only anonymization is proposed ('labeled \"illustrative, based on an anonymized client engagement\"'); indexing of figures is never proposed or stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Never invents figures to fill the template; every number is the candidate's own evidence in NDA-safe form",
+        "evidence": "'do you have the actual month-by-month numbers (or can you reconstruct them) so the chart is accurate rather than invented?'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

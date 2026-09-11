@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The $25-voucher-for-5-star-reviews scheme is flagged under endorsement and review-solicitation rules and sent for compliance review before it runs, not after - it is not endorsed as written.",
+        "evidence": "\"Route this specific mechanic to legal/compliance for sign-off before send, today \u2014 not after.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response objects to paying specifically for 5-star reviews, not merely to soliciting reviews.",
+        "evidence": "\"Pay the $25 for a **verified review, any rating** \u2014 not for a 5-star one.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reviews are scoped honestly: a solicitation programme is a quarter-scale job that pays into future campaigns, and nothing from it lands inside this flight.",
+        "evidence": "\"Reviews \u2014 start now, redesigned per \u00a70; expect nothing from it this flight, it pays into next year's.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The compounding mandate re-ranks the menu, with structured data and reviews named as the rows it promotes.",
+        "evidence": "\"Zero dev availability rules it out even though your 'compounding' goal would normally promote it\" (structured data); reviews are moved to position 2 ahead of the frozen landing page.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The frozen agency-run landing page is deleted from the menu rather than demoted, converted into a routed request to the agency, and named as deleted in the package.",
+        "evidence": "\"~~Landing-page passages~~ \u2014 **deleted, not demoted.** Agency-owned, frozen quarterly release... Routed: file the rewritten passage below as a request for the agency's next release window.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Structured data is likewise deleted and routed given zero developer availability, named with its constraint.",
+        "evidence": "\"~~Structured data~~ \u2014 **deleted, not demoted.** Zero dev availability rules it out... Routed: same request, next quarter, whoever owns the dev queue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states which interview answer or constraint moved which option in the ordering.",
+        "evidence": "\"Agency-owned, frozen quarterly release, you have no edit path this quarter\" ties the ranking directly to the stated constraint.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The feed is identified as the executable asset the user owns, and on a feed-driven shopping placement the feed is treated as the entire ad, first in the order.",
+        "evidence": "\"The feed is the entire ad. You own the feed directly, so it's the one asset you can change this quarter with zero dependency on the agency or a dev queue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The stale $149 price is corrected to the current $179, with the point that the price field is what the surface quotes.",
+        "evidence": "\"`$149/mo` \u2192 **`$179/mo`**. A stale price field isn't a messaging problem, it's an eligibility and trust problem on a shopping surface that quotes it directly\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "'Best-in-class AI-powered price intelligence for winners' is rewritten: product named, unsupported superlative removed, natural problem-solving language describing what it does for whom.",
+        "evidence": "\"Thornquist Analytics tracks competitor prices across your e-commerce catalog and flags every change in real time.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response notes that a malformed feed field drops eligibility entirely rather than degrading performance.",
+        "evidence": "\"a wrong price is closer to a malformed field than weak copy\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No invented statistics or claims are added to the rewritten feed description; anything unsupported is labelled UNSOURCED and held.",
+        "evidence": "\"'...so pricing teams catch changes before margin erodes.' ... Hold it `UNSOURCED`.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The $25-voucher-for-5-star-reviews scheme is flagged under endorsement and review-solicitation rules and sent for compliance review before it runs, not after - it is not endorsed as written.",
+        "evidence": "\"Illegal in the US \u2014 FTC's 2024 Reviews & Testimonials Rule bans compensation contingent on star rating or sentiment.\" \u2014 outright rejected, not endorsed as written.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response objects to paying specifically for 5-star reviews, not merely to soliciting reviews.",
+        "evidence": "\"Compliant swap: ... offer a small incentive... for *submitting any review regardless of rating*, disclosed as such.\" \u2014 distinguishes rating-contingent pay from solicitation generally.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reviews are scoped honestly: a solicitation programme is a quarter-scale job that pays into future campaigns, and nothing from it lands inside this flight.",
+        "evidence": "\"This week, in order: fix price \u2192 rewrite description \u2192 send compliant (non-contingent) review request \u2192 fill remaining feed attributes.\" \u2014 the review request is scheduled inside this week's flight, not scoped out of it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The compounding mandate re-ranks the menu, with structured data and reviews named as the rows it promotes.",
+        "evidence": "The 'Make it compound' section lists feed attributes, versioning, reviews, and cadence, but there is no prior menu being explicitly re-ranked in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The frozen agency-run landing page is deleted from the menu rather than demoted, converted into a routed request to the agency, and named as deleted in the package.",
+        "evidence": "No landing page or agency is mentioned anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Structured data is likewise deleted and routed given zero developer availability, named with its constraint.",
+        "evidence": "Structured data is not addressed as a separate deleted/routed item anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response states which interview answer or constraint moved which option in the ordering.",
+        "evidence": "\"Since the site is frozen and you have no dev time, the feed is your only lever\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The feed is identified as the executable asset the user owns, and on a feed-driven shopping placement the feed is treated as the entire ad, first in the order.",
+        "evidence": "\"the feed is your only lever \u2014 so make it a durable asset instead of a one-off edit\"; entire plan is structured around fixing the feed first.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The stale $149 price is corrected to the current $179, with the point that the price field is what the surface quotes.",
+        "evidence": "\"Feed says $149/mo, live price is $179/mo... `price`: `149.00 USD` \u2192 `179.00 USD`\"; flagged as causing feed suppression.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "'Best-in-class AI-powered price intelligence for winners' is rewritten: product named, unsupported superlative removed, natural problem-solving language describing what it does for whom.",
+        "evidence": "The rewritten description (\"Automated competitor price tracking for e-commerce brands...\") never names the product (Thornquist) despite removing the superlative.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response notes that a malformed feed field drops eligibility entirely rather than degrading performance.",
+        "evidence": "\"a landing-page/feed price mismatch is a **policy violation**... can get the whole feed suppressed, not just the one listing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No invented statistics or claims are added to the rewritten feed description; anything unsupported is labelled UNSOURCED and held.",
+        "evidence": "\"fill the brackets with real numbers \u2014 don't invent them, that's the same trust problem as fake reviews\" \u2014 uses [N] placeholders instead of invented figures.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

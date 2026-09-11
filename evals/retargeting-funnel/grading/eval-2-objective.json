@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not hand over generic industry-standard windows as the answer; states plainly it will not guess windows without time-lag data",
+        "evidence": "\"I'm not going to hand you generic 'what everyone uses' numbers. That skill explicitly bans it \u2014 platform default windows are arbitrary relative to any specific business\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Offers the two-way choice: export a time-to-conversion or sales-cycle report, or proceed on a named proxy with every boundary flagged as provisional",
+        "evidence": "\"When you get 20 minutes, a CRM export ... would let me replace 'provisional' with 'derived.'\" alongside using the stated deal cycle as a flagged proxy.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the proxy in the output rather than silently substituting it for real data",
+        "evidence": "\"use the one piece of client-specific data you already gave me \u2014 your stated deal cycle (4-6 months) with the security review sitting at the midpoint\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks the CRM sales-cycle export above an analytics lag report for this account, because a 4-6-month cycle outruns what the pixel can see",
+        "evidence": "The text only says the deal-cycle proxy is 'ranked below a CRM export or analytics lag report in evidentiary weight' \u2014 it never ranks the CRM export above the analytics lag report against each other.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags every proxy-derived boundary as provisional, to be re-derived once real lag data exists",
+        "evidence": "\"every window below is flagged provisional\" and the stage table column is literally headed 'Window (provisional)'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sizes windows to the multi-month cycle, on the order of 90/180/365 days, not 30-day defaults",
+        "evidence": "S1 0-90d, S2 90-180d, S4 0-180d \u2014 all sized to the multi-month cycle rather than 30-day defaults.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that a default-length window on a multi-month cycle silently drops most of the pipeline",
+        "evidence": "\"a default-length window on a 4-6 month cycle silently drops most of your pipeline\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends list-based (CRM or first-party upload) audience membership rather than pixel-based at the long end, citing browser privacy limits on long cookie windows",
+        "evidence": "\"CRM-list only (pixel won't survive this long \u2014 see caveat)\" for S2, and \"Pixel (degrades hard past ~7 days on Safari/iOS...)\" for S4.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Suggests CRM deal stage (evaluation, proposal, negotiation) as a depth signal, since the CRM knows more about depth than the pixel",
+        "evidence": "\"sequencing S2 by actual deal stage (post-review, in-negotiation) beats a flat 90-180 day calendar window and is a small edit once you have it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Builds the B2B ladder with no discount rung; the incentive-equivalent rung is a lower-friction ask such as an assessment, audit, or tailored demo",
+        "evidence": "\"there's no discount rung in this business (a tailored security-readiness assessment or a scoped pilot works as the B2B 'incentive equivalent')\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States which mechanics stay identical to B2C (mutual exclusion, converter suppression, the after-exclusion size check) so the plan is not read as a softened B2C plan",
+        "evidence": "The transcript states a B2B *departure* from B2C ('that's the B2B departure from the B2C \"deep = short and done\" pattern') but never explicitly states which mechanics (mutual exclusion, converter suppression, size check) remain identical to B2C.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not hand over generic industry-standard windows as the answer; states plainly it will not guess windows without time-lag data",
+        "evidence": "'No time-to-conversion report needed for this \u2014 these are the standard defaults used across B2B SaaS/compliance vendors' \u2014 hands over defaults directly as the answer.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Offers the two-way choice: export a time-to-conversion or sales-cycle report, or proceed on a named proxy with every boundary flagged as provisional",
+        "evidence": "No upfront choice is offered; defaults are given immediately, with only a closing suggestion to 'pull actual visitor-to-demo and demo-to-close timing' once more CRM data exists.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the proxy in the output rather than silently substituting it for real data",
+        "evidence": "'These are industry-standard defaults, not your funnel's actual decay curve.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Ranks the CRM sales-cycle export above an analytics lag report for this account, because a 4-6-month cycle outruns what the pixel can see",
+        "evidence": "No comparison between CRM export and analytics/pixel lag reporting is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags every proxy-derived boundary as provisional, to be re-derived once real lag data exists",
+        "evidence": "Only the feature-page window is flagged for tightening ('it's the one most likely to be over- or under-set'); the 30-day and 180-day windows are not flagged as provisional.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sizes windows to the multi-month cycle, on the order of 90/180/365 days, not 30-day defaults",
+        "evidence": "Site visitors window is kept at 30 days, explicitly justified as 'the universal default regardless of vertical' rather than resized to the cycle.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that a default-length window on a multi-month cycle silently drops most of the pipeline",
+        "evidence": "'a 90-day window would drop these people from remarketing before the deal even reaches the security-review stage.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends list-based (CRM or first-party upload) audience membership rather than pixel-based at the long end, citing browser privacy limits on long cookie windows",
+        "evidence": "No mention of CRM/first-party list uploads or cookie/browser privacy limits anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Suggests CRM deal stage (evaluation, proposal, negotiation) as a depth signal, since the CRM knows more about depth than the pixel",
+        "evidence": "No CRM deal-stage signal (evaluation/proposal/negotiation) is proposed; audiences are defined only by page-visit and demo-request behavior.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Builds the B2B ladder with no discount rung; the incentive-equivalent rung is a lower-friction ask such as an assessment, audit, or tailored demo",
+        "evidence": "No discount is present (good), but no explicit lower-friction ask (assessment/audit/tailored demo) is proposed as the incentive-equivalent rung.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States which mechanics stay identical to B2C (mutual exclusion, converter suppression, the after-exclusion size check) so the plan is not read as a softened B2C plan",
+        "evidence": "No discussion of mutual exclusion, converter suppression, or audience-size checks appears in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

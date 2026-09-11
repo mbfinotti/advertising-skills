@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Names the failure pattern: months of hook iterations inside a premise never tested - the documented failure of a testing programme that only iterates",
+        "evidence": "\"Four more hook flavors on a premise that's never been tested against an alternative teaches nothing new \u2014 it's the textbook 'iteration paralysis' failure mode.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lays out the five hypothesis types hook / proof / format / angle / persona with hook cheapest and persona/angle highest value",
+        "evidence": "Table rows: Proof, Hook, Angle, 'Format / Persona' with 'Skill default rank' column (cheapest to 4th).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the efficiency order starves persona and angle, and that a flat concept family is the condition that promotes them - no hook rescues a wrong angle",
+        "evidence": "\"'Hooks are cheapest' is true on effort but... hook is also the lowest-value rung \u2014 it can't rescue a wrong angle\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends against another hook-only sprint, noting rungs may be skipped outright when the flat family is the only family ever run",
+        "evidence": "\"don't spend the sprint on 6 hook cuts... 'when the flat family is the only family you have ever run (skip rungs outright)'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the cleared 71% case study as an unused proof asset that collapses the proof test's cost, re-ranking proof as the cheapest available rung",
+        "evidence": "\"A signed, legally-cleared customer case study (71% close-time reduction)... makes a proof test the cheapest rung rather than the third.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a concrete next test (proof and/or angle) with rationale tied to these account facts rather than a generic menu",
+        "evidence": "3 proof cuts + 2 hook cuts specified with concrete naming and rationale tied to the case study and trigger-type logs.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a genuinely new angle is a new concept and gets its own brief, while hook cuts of one concept ride the original brief",
+        "evidence": "\"that's a new-concept brief, new production, and shouldn't be squeezed into a sprint already carrying a proof test\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the hypothesis in the falsifiable 'If we lead with [pain] and [proof], then [audience] will [action]' form with an explicit type tag",
+        "evidence": "\"Proof type: 'If we lead with the close-process pain and the 71% verified close-time reduction, then finance/ops leaders...'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes persona and angle tie on value because a result at either level rewrites every brief downstream, separating only on effort",
+        "evidence": "No statement anywhere pairs persona and angle as tied on value; format/persona is only noted as 'Not addressed this sprint'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the iteration-paralysis trap: a programme optimised purely for variable isolation produces creative that all looks alike, so a share of briefs stays reserved for genuinely fresh concepts",
+        "evidence": "\"1\u00d7 Reserved / not built \u2014 capacity held back, spent on scoping the angle-test brief for next sprint... This is a planning slot, not a creative deliverable.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses the case study as B2B-form proof: the quantified outcome (71% close-time cut) plus a badge or product screenshot",
+        "evidence": "Only a text-overlay case-study number is described ('71% faster close \u2014 [Customer], verified'); no badge or product screenshot is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies what stays constant when the chosen variable changes",
+        "evidence": "Test block 'Constant' row for both proof and hook tests lists frozen elements.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the learning destination (angle bank / persistent log) into the plan so wins and losses feed the next sprint",
+        "evidence": "\"Learning destination: Angle bank + hook-performance-by-trigger-type log\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the hook default rung applies only when the angle has already won somewhere - a condition a quarter of flat results does not satisfy",
+        "evidence": "\"the flat family is the only family you have ever run (skip rungs outright)\" tied to the recommendation against another hook-only sprint",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Names the failure pattern: months of hook iterations inside a premise never tested - the documented failure of a testing programme that only iterates",
+        "evidence": "'10 sprints, 4 hook cuts each \u2248 40 hook variants tested. All 40 sit on one concept... Performance has been flat for a full quarter despite continuous hook iteration.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Lays out the five hypothesis types hook / proof / format / angle / persona with hook cheapest and persona/angle highest value",
+        "evidence": "The document only distinguishes 'concept' from 'hook' and does not lay out a five-type taxonomy or rank them by value/cost.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that the efficiency order starves persona and angle, and that a flat concept family is the condition that promotes them - no hook rescues a wrong angle",
+        "evidence": "No such 'efficiency order starves persona/angle' framing appears anywhere in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends against another hook-only sprint, noting rungs may be skipped outright when the flat family is the only family ever run",
+        "evidence": "'Cutting 6 more hooks next sprint tests the same variable that already produced 3 months of flat data \u2014 it won't tell leadership anything new.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the cleared 71% case study as an unused proof asset that collapses the proof test's cost, re-ranking proof as the cheapest available rung",
+        "evidence": "'Legal cleared a signed customer case study last month... It's sitting unused in a drive folder while the sprint plan proposes variant #41\u201346 of the same claim.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a concrete next test (proof and/or angle) with rationale tied to these account facts rather than a generic menu",
+        "evidence": "Section 4 builds a concrete Arm A vs Arm B (case study) test structure directly tied to the flat-hook data and the unused case study.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a genuinely new angle is a new concept and gets its own brief, while hook cuts of one concept ride the original brief",
+        "evidence": "No statement distinguishing that new angles require separate briefs while hook cuts ride the original brief appears in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Writes the hypothesis in the falsifiable 'If we lead with [pain] and [proof], then [audience] will [action]' form with an explicit type tag",
+        "evidence": "No hypothesis is written in this falsifiable form anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes persona and angle tie on value because a result at either level rewrites every brief downstream, separating only on effort",
+        "evidence": "No such persona/angle value-tie statement appears in the text.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the iteration-paralysis trap: a programme optimised purely for variable isolation produces creative that all looks alike, so a share of briefs stays reserved for genuinely fresh concepts",
+        "evidence": "No mention of an iteration-paralysis trap or reserving a share of briefs for fresh concepts.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses the case study as B2B-form proof: the quantified outcome (71% close-time cut) plus a badge or product screenshot",
+        "evidence": "'Base creative for arm B: customer name/logo (if cleared), the 71% stat as the visual headline, quote or clip if available.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Specifies what stays constant when the chosen variable changes",
+        "evidence": "'Hold platform, placement, and audience constant across both arms.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Writes the learning destination (angle bank / persistent log) into the plan so wins and losses feed the next sprint",
+        "evidence": "No persistent learning-log destination is specified; only the sprint-level next-step logic in Section 6 is described.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that the hook default rung applies only when the angle has already won somewhere - a condition a quarter of flat results does not satisfy",
+        "evidence": "No such explicit conditional statement about the hook rung's applicability appears in the text.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

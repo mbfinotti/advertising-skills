@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Picks substitute formats by efficiency inside the objective, not by cheapness",
+        "evidence": "The verdict table is explicitly \"Ordered by direct-response efficiency for this objective, then re-ranked against your interview answers,\" and the ranking logic is structural rather than cost-driven. The top rung (recut vertical video) is justified as \"structurally the row that carries awareness-through-conversion on full-screen mobile,\" with the mobile-first placement promoting it \"above cheaper rows (a static 'scores near zero' in Reels' video-native surface)\" \u2014 cheapness is named and explicitly subordinated. Single image, the cheapest row, is demoted inside Reels despite \"near-zero effort, ",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Picks substitute formats by efficiency inside the objective, not by cheapness",
+        "evidence": "Format choices are driven by fit-to-objective rather than cost: the matrix maps each placement to a source by what performs there (cold scroll wants native/UGC feel; warm/retargeting 'tolerates and often prefers polished brand footage'), and it explicitly warns 'don't over-index on UGC just because it's trendy.' The brand-film advice rejects a straight center-crop and dialogue-driven cuts because they fail sound-off \u2014 a performance rationale, not a budget one \u2014 and prescribes silent caption-led cutdowns at 4:5/9:16 with extended background. It recommends *paying* $150\u2013400/video for outsourced ",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

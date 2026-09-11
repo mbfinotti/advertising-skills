@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Does not route to re-auditing conversion tracking, since the artifact records tracking verified GO and the order system as authoritative.",
+        "evidence": "'No \u2014 don't re-audit tracking this month ... Re-running it without a trigger ... buys zero new information'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes the creative class to the top of the short-list despite its high effort.",
+        "evidence": "'Creative & audience is explicitly promoted above its normal efficiency ranking.' followed by short-list topped by ad-creative-brief.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names at least one condition that promoted creative past the default ratio (compounding with headcount/sign-off, diagnosis already naming creative as the failing layer, or creative not refreshed in a full flight).",
+        "evidence": "'All three promotion conditions in the kickoff skill are met at once: 1. Compounding + headcount available ... 2. Diagnosis already named creative ... 3. No refresh in a full flight'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the immediate task to mbfinotti/advertising-skills@ad-creative-brief.",
+        "evidence": "'## Route: mbfinotti/advertising-skills@ad-creative-brief \u2014 turn the July fatigue verdict + your audience insight into a brief...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not re-run ad-account-diagnostic or ad-creative-fatigue, since the log records both as concluded.",
+        "evidence": "'ad-account-diagnostic \u2014 only if a new symptom appears post-refresh' listed under Not now, not re-run.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes the post-verdict chain: ad-creative-brief, then ugc-ad-scripts and/or ad-copy-variants, justified by the recorded fatigue verdict.",
+        "evidence": "'## Chain: ad-creative-fatigue (done, 07-24) \u2192 ad-creative-brief \u2192 ugc-ad-scripts / ad-copy-variants \u2192 ad-hook-analyzer \u2192 ad-creative-test-plan'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents the chain in dependency order with handoffs, not as an efficiency-ranked list.",
+        "evidence": "'Each link hands the next one its input: fatigue verdict justifies the brief; the brief directs the scripts and copy...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Produces a state summary of exactly 5 lines.",
+        "evidence": "Five bullets: business model/channels, conversion source, CAC/guardrail, in-flight work, active constraint.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks only the session-goal question (or confirms the stated goal); no re-interview.",
+        "evidence": "'Session goal (given): decide what to do next.' \u2014 goal confirmed, not re-interviewed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Appends a session-log line for this session.",
+        "evidence": "'## Session log\\n- 2026-09-12 - decide what to do next -> mbfinotti/advertising-skills@advertising-kickoff -> routed to ad-creative-brief...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Honors the decided Q4 budget freeze: paid-media-scaling and budget-raise work are excluded or named as ruled out by the freeze, not ranked low.",
+        "evidence": "'Deleted, not ranked: paid-media-scaling and ad-spend-allocation \u2014 Q4 budget is decided, frozen at $30k/month; no total-spend or split decision is live.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "'mbfinotti/advertising-skills@ad-creative-brief', '@ugc-ad-scripts', '@cac-roas-benchmark' etc.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Does not route to re-auditing conversion tracking, since the artifact records tracking verified GO and the order system as authoritative.",
+        "evidence": "'Skip the tracking re-audit. That's the wrong read of \"fix measurement first\"... Measurement: verified GO in June, no drift signal since.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Promotes the creative class to the top of the short-list despite its high effort.",
+        "evidence": "'What this session should decide instead: Q4 creative direction' is presented as the central focus of the session.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names at least one condition that promoted creative past the default ratio (compounding with headcount/sign-off, diagnosis already naming creative as the failing layer, or creative not refreshed in a full flight).",
+        "evidence": "'two in-house creators hired last month, exec sign-off for compounding investment, and 14 points of CAC cushion' and prior diagnoses already naming creative decay/fatigue.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Routes the immediate task to mbfinotti/advertising-skills@ad-creative-brief.",
+        "evidence": "The skill name 'ad-creative-brief' with the required mbfinotti/advertising-skills@ prefix never appears; the session log says 'own judgment (no diagnostic skill needed...)'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not re-run ad-account-diagnostic or ad-creative-fatigue, since the log records both as concluded.",
+        "evidence": "'Diagnosis: done twice \u2014 ad-account-diagnostic (Jul 10)... ad-creative-fatigue (Jul 24) confirmed the verdict: fatigued' \u2014 both explicitly not re-run.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes the post-verdict chain: ad-creative-brief, then ugc-ad-scripts and/or ad-copy-variants, justified by the recorded fatigue verdict.",
+        "evidence": "No such named chain appears; the offer is generic ('I'll flesh out actual ad briefs (hooks, shot lists, CTAs)') without citing skill names.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents the chain in dependency order with handoffs, not as an efficiency-ranked list.",
+        "evidence": "No named skill chain exists to evaluate; the numbered plan (concept buckets, cadence, testing structure, tracking) is a general work plan, not a stated skill handoff chain.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Produces a state summary of exactly 5 lines.",
+        "evidence": "Only 3 bullet lines appear (Measurement, Diagnosis, Creative), not 5.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks only the session-goal question (or confirms the stated goal); no re-interview.",
+        "evidence": "The transcript redirects the stated goal ('Skip the tracking re-audit... What this session should decide instead') without re-asking any established facts.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Appends a session-log line for this session.",
+        "evidence": "'- 2026-09-12 - Q4 creative direction -> own judgment (no diagnostic skill needed...) -> briefed 4 concept buckets...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Honors the decided Q4 budget freeze: paid-media-scaling and budget-raise work are excluded or named as ruled out by the freeze, not ranked low.",
+        "evidence": "No mention of a budget freeze or of 'paid-media-scaling'/budget-raise work being excluded anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "Skills are cited as bare names in backticks ('ad-account-diagnostic', 'ad-creative-fatigue') without the required 'mbfinotti/advertising-skills@' prefix.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

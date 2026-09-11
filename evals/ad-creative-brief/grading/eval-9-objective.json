@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to build the message section on the founder's assertion alone: every claim in the brief must cite an evidence source, and a brief without evidence is a wish list",
+        "evidence": "\"[NEEDS FOUNDER INPUT \u2014 this is the field that makes or breaks the angle]: the actual credential behind 'vet-formulated.'... Until this exists as a checkable fact, 'vet-formulated' is a claim with no proof point\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies (or specifies) scored review mining on the reviews: score each 1-5 and discard the 1s",
+        "evidence": "\"No review mining happened (scored or objection-only)\" \u2014 mentions the term but never specifies or applies the 1-5 scoring/discard-1s methodology.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Extracts surviving reviews into the five buckets: pain points, trigger moments, objections, transformations, and standout verbatim language",
+        "evidence": "No bucket extraction occurs; review mining is explicitly not performed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps buckets to brief parts: pains feed the angle matrix, triggers and transformations feed hooks, objections feed the objection field",
+        "evidence": "No bucket-to-brief mapping is present since no mining occurred.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pulls the top recurring 1-2 star objections for the product and the category to fill the core-objection field",
+        "evidence": "Objection field not shown as filled with mined data in this excerpt; review mining explicitly skipped.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the revision gate: creative that addresses neither of the top objections goes back for revision",
+        "evidence": "No revision-gate rule is stated in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the launched-this-week competitor screenshots as validation and refilters competitor ads by longevity (30+ days, longest-running first), not recency",
+        "evidence": "\"your intern pulled ads that launched this week... run duration is the only public proxy for 'this is working'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Boards competitor ads by hook type and angle as a hypothesis pool and/or notes that ad libraries are public so competitors see yours too",
+        "evidence": "\"happy to board them by hook type and angle for hook-direction inspiration\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Drops the past-winners mining method entirely because the account is new - it drops out of the ranking rather than moving down it",
+        "evidence": "\"This account has no launch history, so nothing below is benchmarked against past performance \u2014 that field gets filled once you have data.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the founder's 'vet-formulated science' as at most one candidate direction requiring evidence, presented alongside review-derived alternatives with a recommendation, never installed as the single message",
+        "evidence": "No review-derived alternative angles are presented; the founder's 'vet-formulated' direction is the sole angle carried forward, only flagged for evidence.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags pet-supplement compliance: health claims need substantiation and treatment-claim phrasing is off-limits",
+        "evidence": "Only substantiation of the 'vet-formulated' claim is addressed; no mention of forbidden treatment-claim phrasing for the joint-health category.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Anchors the angle in pain rather than aspiration, since desire-anchoring is reserved for aspirational or luxury categories without a functional problem",
+        "evidence": "The angle/value prop centers on trust in formulation ('a dosing decision made by someone credentialed'), not on the dog's mobility pain itself.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to build the message section on the founder's assertion alone: every claim in the brief must cite an evidence source, and a brief without evidence is a wish list",
+        "evidence": "Section 6a-7 require evidence for every claim before launch: 'swap in exact formulator name/credentials and exact review count once confirmed; do not launch with placeholder numbers' and the full Evidence Asset Checklist gating production.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Applies (or specifies) scored review mining on the reviews: score each 1-5 and discard the 1s",
+        "evidence": "No scoring methodology or discarding of 1-star reviews is described; reviews are only characterized as 'aggregate proof' and mined for percentages/quotes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Extracts surviving reviews into the five buckets: pain points, trigger moments, objections, transformations, and standout verbatim language",
+        "evidence": "The evidence stack for Pillar B lists aggregate rating, % mentioning mobility, verbatim quotes, and before/after detail \u2014 not organized into the five specified buckets.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Maps buckets to brief parts: pains feed the angle matrix, triggers and transformations feed hooks, objections feed the objection field",
+        "evidence": "No bucket-to-brief-part mapping exists since the five-bucket extraction itself is absent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pulls the top recurring 1-2 star objections for the product and the category to fill the core-objection field",
+        "evidence": "No objection field derived from negative reviews appears anywhere in the brief.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the revision gate: creative that addresses neither of the top objections goes back for revision",
+        "evidence": "No such revision gate is present in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the launched-this-week competitor screenshots as validation and refilters competitor ads by longevity (30+ days, longest-running first), not recency",
+        "evidence": "No longevity filter or discussion of ad recency/duration is applied to the 12 competitor screenshots.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Boards competitor ads by hook type and angle as a hypothesis pool and/or notes that ad libraries are public so competitors see yours too",
+        "evidence": "The teardown grid columns 'Angle used' and 'Proof shown' plus 'Working hypothesis to test against the grid once filled' board competitor ads by angle as a hypothesis pool.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Drops the past-winners mining method entirely because the account is new - it drops out of the ranking rather than moving down it",
+        "evidence": "No explicit statement that past-winners mining is dropped due to the account being new; it's only implied by 'Brand-new ad account = no pixel data.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the founder's 'vet-formulated science' as at most one candidate direction requiring evidence, presented alongside review-derived alternatives with a recommendation, never installed as the single message",
+        "evidence": "Pillar A is explicitly installed as 'Hero claim' and the funnel-mapping scroll-stop is built on it: 'Pillar A \u2014 credibility hook. This is what earns the click,' making it the lead message rather than one candidate among equals.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags pet-supplement compliance: health claims need substantiation and treatment-claim phrasing is off-limits",
+        "evidence": "'Avoid disease/cure language (\"treats arthritis,\" \"cures joint pain\") \u2014 stay in structure/function territory (\"supports joint mobility\"...).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors the angle in pain rather than aspiration, since desire-anchoring is reserved for aspirational or luxury categories without a functional problem",
+        "evidence": "The hero pillar (A) is anchored in formulation credibility/trust rather than the dog's pain/mobility problem, which is instead relegated to Pillar B.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

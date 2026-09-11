@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Rejects '72% match so the seed is solid': match rate is a data-quality leading indicator only, never a grade of seed quality",
+        "evidence": "Match rate is a data-hygiene signal, not a quality signal \u2014 in either direction.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to judge the new seed at 5 days because the learning phase has not completed",
+        "evidence": "You're reading inside the learning phase. ... Five days is noise.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites roughly 50 optimization events per ad set per week, or 2-4 weeks at low volume, as the reading threshold",
+        "evidence": "Meta's own benchmark is ~50 optimization events/ad set/week, or 2\u20134 weeks at low volume, before a CPA read means anything.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the previous seed version as the documented low-CPA/weak-LTV pitfall: the seed scaled low-margin converters",
+        "evidence": "This is the named \"Churney\" pattern, verbatim: good CPA, but the seed scaled low-margin/discount-only converters, and 90-day LTV was weak.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes re-seeding on margin or predicted LTV and retiring that seed version",
+        "evidence": "re-seed on margin or predicted LTV, retire the seed version",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags discount-only buyers (the 40%-off welcome-code cohort) as a negative-selection exclusion for the next seed",
+        "evidence": "Confirm the negative-selection pass (refunders, discount-only buyers, employees, wholesale) was applied when this seed was built",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names cohort LTV at 90/180/365 days by seed version as the KPI to grade seeds on",
+        "evidence": "Only 90-day cohort LTV is discussed as the checkpoint; 180/365-day are not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the pass threshold: the seed version's 90-day acquired-customer cohort LTV meets or beats the account average at equal-or-better CPA",
+        "evidence": "90-day acquired-customer cohort LTV must meet or beat account-average LTV, at equal-or-better CPA",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Given no measured baseline, states the seed cannot be graded yet and sets the first cohort checkpoint as the baseline-building run",
+        "evidence": "an unknown baseline means **neither seed can be graded yet**. Treat the current run as the baseline-building run, not a verdict.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the naive two-ad-set head-to-head comparison because audience overlap contaminates it",
+        "evidence": "Two ad sets, naive comparison, will not give you a clean read \u2014 audience overlap between two lookalikes drawn from the same customer base contaminates it.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a user-level split test or a geo holdout as the valid comparison methods",
+        "evidence": "Use Meta's actual user-level A/B test (Experiments), not two co-running ad sets. ... escalating past even a proper split test toward a **geo holdout**",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defaults to the split test, escalating to the geo holdout when the decision is expensive to reverse or the split test's own read is disputed",
+        "evidence": "this decision ... is exactly the case the skill flags for escalating past even a proper split test toward a geo holdout: expensive to reverse, and the CPA read itself is what's in dispute",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the geo holdout's evidence advantage: it survives cross-device identity loss and measures incremental sales rather than platform-attributed ones",
+        "evidence": "No mention of cross-device identity loss or incremental-vs-attributed sales in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the seed as a versioned artifact with a re-check scheduled one cohort window out",
+        "evidence": "Set the first real checkpoint at **90-day cohort LTV**, launch + 90 days \u2192 **~Dec 6, 2026**.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Rejects '72% match so the seed is solid': match rate is a data-quality leading indicator only, never a grade of seed quality",
+        "evidence": "\"It's a data-hygiene metric (clean emails/phones), not a quality signal. It says nothing about whether those matched customers are good customers.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Refuses to judge the new seed at 5 days because the learning phase has not completed",
+        "evidence": "\"A fresh lookalike audience is still in (or just exiting) Meta's learning phase... A 40%-over-target CPA at day 5 is not yet a verdict.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Cites roughly 50 optimization events per ad set per week, or 2-4 weeks at low volume, as the reading threshold",
+        "evidence": "\"rule of thumb: ~50/week\" and \"Run long enough to clear learning phase on both ad sets (minimum ~2 weeks, ideally until each has 50+ conversions).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Diagnoses the previous seed version as the documented low-CPA/weak-LTV pitfall: the seed scaled low-margin converters",
+        "evidence": "\"Your old seed had 'amazing CPA' and turned out to attract one-time, discount-driven buyers \u2014 cheap to acquire, bad LTV.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Prescribes re-seeding on margin or predicted LTV and retiring that seed version",
+        "evidence": "No recommendation to build the next seed on margin/LTV value column or formally retire the version.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags discount-only buyers (the 40%-off welcome-code cohort) as a negative-selection exclusion for the next seed",
+        "evidence": "Welcome code is treated as a measurement confound to tag/exclude in the readout, not as a seed-construction exclusion.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names cohort LTV at 90/180/365 days by seed version as the KPI to grade seeds on",
+        "evidence": "Only mentions \"30/60/90-day repeat purchase rate\" and general cohort LTV, not the 90/180/365-day triplet by seed version.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the pass threshold: the seed version's 90-day acquired-customer cohort LTV meets or beats the account average at equal-or-better CPA",
+        "evidence": "No explicit numeric pass threshold like this is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Given no measured baseline, states the seed cannot be graded yet and sets the first cohort checkpoint as the baseline-building run",
+        "evidence": "Not stated explicitly.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the naive two-ad-set head-to-head comparison because audience overlap contaminates it",
+        "evidence": "Transcript endorses the two-ad-set plan: \"Your plan (two ad sets, old seed vs. new seed) is the right instinct. Fix the metric it's judged on.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a user-level split test or a geo holdout as the valid comparison methods",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defaults to the split test, escalating to the geo holdout when the decision is expensive to reverse or the split test's own read is disputed",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the geo holdout's evidence advantage: it survives cross-device identity loss and measures incremental sales rather than platform-attributed ones",
+        "evidence": "Not mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the seed as a versioned artifact with a re-check scheduled one cohort window out",
+        "evidence": "Not explicitly stated.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

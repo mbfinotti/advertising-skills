@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Orders the fixes by efficiency - impact bought per unit of fix effort - not by raw severity and not purely by cheapness",
+        "evidence": "The table carries explicit Impact and Effort columns and the ordering (1: counting method, High/near-zero; 2: internal filter, Medium/near-zero; 3: tag trigger, Critical/~1h) is justified in a dedicated paragraph: 'settings-class toggles (1, 2) clear before trigger corrections (3) even though (3) is more severe \u2014 same near-zero effort tier goes first, then the one-hour fix... 1 before 2 by impact (High beats Medium) within the same near-zero tier.' That is explicitly not raw-severity order (Critical is placed last, and the answer says so), and not pure cheapness either, since impact is the tie",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Orders the fixes by efficiency - impact bought per unit of fix effort - not by raw severity and not purely by cheapness",
+        "evidence": "The ordering is explicitly effort-vs-impact reasoned, not severity-ranked and not merely cheapest-first. Each item carries an effort tag ('No developer needed. 2 minutes', 'No developer needed (GTM)', 'likely needs the unavailable developer'), and the dedicated section 'Why this order, not severity order alone' states the logic: the near-free circuit breakers (0 and 1) come first because they are 'near-free and should be done in the same sitting to stop the bleeding immediately', while the single most damaging bug (item 2, the All-Pages trigger) is still placed on Day 1-2 rather than deferred ",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags that platform-attributed ROAS overstates incremental value most on retargeting and branded search, the two lines the user wants to scale.",
+        "evidence": "\"Branded search and retargeting are, structurally, the two channel types where platform-attributed ROAS overstates true incremental value the most\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a ramp to roughly 3x current spend on purely attributed evidence requires a causal measurement step (holdout or incrementality test) or an explicit user-acknowledged risk line.",
+        "evidence": "\"a ramp beyond ~2x current spend on purely attributed evidence requires a causal-measurement step or an explicit, user-acknowledged risk line. You're proposing 3x. That step is not optional here\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a geo-holdout or incrementality test on branded search and/or retargeting before the bulk of the increase lands there.",
+        "evidence": "\"Branded search: geo-based brand blackout... Retargeting: conversion-lift / ghost-ads holdout... Freeze branded search and retargeting budgets at current levels during design\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "References the eBay paid-search experiment (attributed returns in the thousands of percent versus measured negative ROI) as the research-grade warning case for scaling on attribution alone.",
+        "evidence": "\"naive attribution showed +1,400% to +4,100% ROI on non-brand paid search; the causal experiment measured -63%. (Blake, Nosko & Tadelis, 2015, Econometrica)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not claim the account's current branded or retargeting spend is wasted and assigns no percentage of waste: the evidence motivates a test, never substitutes for one.",
+        "evidence": "\"This doesn't mean branded/retargeting spend is 'wasted' \u2014 the skill is explicit that folklore/attribution skepticism licenses a test, never a waste percentage.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies the account's current evidence bar as attributed (the weakest tier) and names the upgrade path toward triangulated or causal.",
+        "evidence": "\"Attributed only... Planned upgrade: causal tests on branded search and retargeting, launched in parallel with the ramp\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Questions branded search's headroom on demand-capture grounds: search captures existing demand and cannot expand the number of people searching.",
+        "evidence": "\"branded query volume is close to a fixed pool \u2014 you can't buy meaningfully more people typing your brand name.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks retargeting expansion against its finite pool: audience size and frequency limits rather than treating it as freely scalable.",
+        "evidence": "\"redirect freed budget to prospecting and/or a horizontal test... consistent with the research that growth comes from penetration and light-buyer reach, not deeper retargeting frequency.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents approach candidates and promotes measure-first ahead of immediately laddering budgets, given the 3x target and attributed-only evidence.",
+        "evidence": "\"Measure-first \u2014 promoted to lead, against the default order, for three stacked reasons the skill treats as individually sufficient to promote it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Says which condition promoted measure-first (target beyond 2x and/or attributed-only evidence) instead of presenting the choice unexplained.",
+        "evidence": "\"(1) target is 3x, past the 2x line that mandates a causal step anyway; (2) all current evidence is platform-attributed; (3) you have a hard date/budget event\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes practitioner geo-holdout findings that reported cold ROAS around 3x often measures nearer 1.8-2.2x incrementally, labeled as vendor or practitioner data.",
+        "evidence": "\"folklore/vendor data \u2014 Haus geo-holdout benchmarks put a reported ~3x cold prospecting ROAS nearer 1.8\u20132.2x incremental.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any interim budget steps carry pre-committed hold periods and rollback triggers.",
+        "evidence": "Phase 1 table has 'Hold' column and rollback-style triggers, e.g. \"Cost/qualified lead >1.5x target for a full hold \u2192 cut 20\u201330%\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels cited figures by evidence class: platform numbers as attributed, the eBay result as research, holdout benchmarks as vendor or practitioner data.",
+        "evidence": "\"research \u2014 Blake, Nosko & Tadelis (2015...)\" and \"folklore/vendor data \u2014 Haus geo-holdout benchmarks\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The plan does not concentrate the entire increase on branded search and retargeting: some of the allocation logic accounts for the demand-capture ceiling or directs growth toward demand creation.",
+        "evidence": "\"Remainder of the $120K increase is explicitly not deployed yet \u2014 it sits in reserve pending the Phase 1 readout.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags that platform-attributed ROAS overstates incremental value most on retargeting and branded search, the two lines the user wants to scale.",
+        "evidence": "\"Branded search (11x) mostly captures demand that already exists... Retargeting (7.8x) re-engages visitors sourced by other channels. It's stealing credit\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that a ramp to roughly 3x current spend on purely attributed evidence requires a causal measurement step (holdout or incrementality test) or an explicit user-acknowledged risk line.",
+        "evidence": "\"Don't deploy the full increase on day one. Run a 4\u20136 week incrementality phase in parallel with a conservative first tranche of new budget.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a geo-holdout or incrementality test on branded search and/or retargeting before the bulk of the increase lands there.",
+        "evidence": "\"Branded search holdout \u2014 pause branded search bidding in a matched sample of geos/markets for 2\u20134 weeks\"; \"Retargeting conversion lift study \u2014 use Meta/Google's built-in ghost-ads/PSA holdout\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "References the eBay paid-search experiment (attributed returns in the thousands of percent versus measured negative ROI) as the research-grade warning case for scaling on attribution alone.",
+        "evidence": "No mention of eBay or any named research experiment appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not claim the account's current branded or retargeting spend is wasted and assigns no percentage of waste: the evidence motivates a test, never substitutes for one.",
+        "evidence": "The text questions credit attribution (\"'Proven winners' here means 'proven in a ledger that's biased...'\") but never asserts a wasted-spend percentage.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies the account's current evidence bar as attributed (the weakest tier) and names the upgrade path toward triangulated or causal.",
+        "evidence": "\"Platform-reported ROAS is not causal.\" followed by recommending lift tests to \"isolate true incremental lift from brand-term bidding.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Questions branded search's headroom on demand-capture grounds: search captures existing demand and cannot expand the number of people searching.",
+        "evidence": "\"Branded search volume is capped by brand awareness. Tripling spend into a near-fixed query volume means bidding up an exhausted auction\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks retargeting expansion against its finite pool: audience size and frequency limits rather than treating it as freely scalable.",
+        "evidence": "\"Retargeting pool size is capped by top-of-funnel traffic. Without more new visitors, 3x-ing retargeting spend just means more frequency on the same people\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Presents approach candidates and promotes measure-first ahead of immediately laddering budgets, given the 3x target and attributed-only evidence.",
+        "evidence": "\"Recommended approach: test, then scale by evidence... Don't deploy the full increase on day one.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Says which condition promoted measure-first (target beyond 2x and/or attributed-only evidence) instead of presenting the choice unexplained.",
+        "evidence": "The memo argues from attribution-bias and structural-ceiling mechanics but never states that the 3x target size or attributed-only evidence is the specific condition triggering the measure-first recommendation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes practitioner geo-holdout findings that reported cold ROAS around 3x often measures nearer 1.8-2.2x incrementally, labeled as vendor or practitioner data.",
+        "evidence": "No such practitioner benchmark figures (3x vs 1.8-2.2x) appear anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any interim budget steps carry pre-committed hold periods and rollback triggers.",
+        "evidence": "\"If lift is low (the likely outcome given the mechanics above): cap branded search and retargeting near their Phase 1 levels and push the remaining increase... into cold prospecting\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels cited figures by evidence class: platform numbers as attributed, the eBay result as research, holdout benchmarks as vendor or practitioner data.",
+        "evidence": "Platform ROAS is called \"not causal\" but no eBay result or holdout benchmark figures exist to be labeled.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The plan does not concentrate the entire increase on branded search and retargeting: some of the allocation logic accounts for the demand-capture ceiling or directs growth toward demand creation.",
+        "evidence": "\"Cold prospecting: majority of the new budget \u2014 new audiences/lookalikes, additional platforms... new creative angles.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

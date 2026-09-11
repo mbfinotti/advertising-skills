@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Identifies a holdout or geo test as the only causal answer that settles a two-platform ownership fight outright.",
+        "evidence": "\"A holdout or geo test is the only method that 'settles a two-platform ownership fight outright' \u2014 literally the skill's language for the situation you're in.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Given the CFO's refusal to withhold spend, deletes the holdout from the menu explicitly and states the causal option is off the menu, rather than parking it under 'later' or recommending it anyway.",
+        "evidence": "\"Your constraint deletes the one rung built for exactly this fight.\" ... \"given the current constraint, no method \u2014 including MMM \u2014 delivers the certainty they're asking for.\" and \"the one method built to answer that is currently off the table by CFO policy.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Challenges the media-mix-modeling purchase: MMM fits a portfolio spanning channels no conversion record covers and requires a permanent owner for a standing pipeline and refresh cadence, which a two-platform account is unlikely to justify.",
+        "evidence": "\"MMM's value proposition is portfolio allocation across channels no conversion record covers at all \u2014 offline, brand, channels with no click-level tracking. You have two channels, both fully digitally tracked...\" and \"MMM is a standing job: pipeline, modeling, a refresh cadence someone owns permanently.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends self-reported attribution ('how did you hear about us') as the default rung, running alongside the existing reconciliation.",
+        "evidence": "\"Self-reported attribution \u2014 the default rung, promote it now. Add 'How did you hear about us / what made you book this demo?' as a required field...\" listed as step 2 alongside step 1 (the platform split/reconciliation), not as a replacement for it.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States self-reported attribution's honest limits (coarse, self-report-biased) alongside its advantage of surviving consent loss and blocking entirely.",
+        "evidence": "The transcript states the limits: \"Coarse and self-report-biased,\" but the paired advantage given is \"unblockable by your constraint since it withholds nothing\" \u2014 referring to the CFO's no-holdout policy, not to surviving consent loss or ad-blocking of tracking. No mention of consent loss or technical tracking-blocking resilience is made for self-reported attribution.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents server-side collection with shared event IDs as the rung that closes double-counting at the source, at the cost of engineering weeks across two teams.",
+        "evidence": "Text says \"You spend: engineering weeks, one hidden form field, CRM schema work\" and \"this is what actually lets you see overlap directly instead of inferring it from a ratio\" \u2014 engineering weeks are mentioned but 'across two teams' is never stated, and the framing is 'seeing overlap directly' rather than 'closing double-counting at the source'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks the remaining options on more than one axis (such as value, effort, or efficiency) instead of a single blended list.",
+        "evidence": "\"Ranked against the deleted holdout, what's left: efficiency: ... value: ... effort: ...\" \u2014 three separate axis-specific rankings are given.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not sum the two platforms' claims: treats 118 claimed vs 74 CRM demos as overlapping claims on 74 demos.",
+        "evidence": "\"Never sum platforms: this isn't 44 phantom demos, it's two platforms each claiming credit for overlapping subsets of the same 74.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Describes the mature end state as triangulation - platform attribution for bid optimization, experiments for causal ground truth, mix modeling for portfolio allocation - with no single method trusted alone.",
+        "evidence": "The closest statement is \"Everything short of that (self-reported attribution, server-side stitching) gives triangulating evidence, not proof \u2014 useful for the reallocation decision, but label it as such when it reaches the board deck.\" This does not lay out the specific three-part mature end state (bid optimization / causal ground truth / portfolio allocation) required by the rubric \u2014 MMM is instead deleted from the menu entirely rather than assigned a portfolio-allocation role.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that platform reporting is structurally self-flattering, so the corrective signal must come from outside the platforms.",
+        "evidence": "The transcript repeatedly frames the issue as structural self-crediting (\"cross-platform self-crediting overlap \u2014 several platforms each claiming the same conversion\", \"Both platforms genuinely believe they drove the demo\") and then recommends external, off-platform correctives: self-reported attribution because \"the buyer, not either platform, states the answer\" and server-side click-ID capture to see overlap directly.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the obligation the recommended rung incurs (for example a privacy-notice line for a new form field, or consent and data-residency review for server-side collection).",
+        "evidence": "\"You owe: a privacy-notice line for the new field.\" listed under the self-reported attribution rung.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the steady 9% residual as documented and acceptable under the judgment test (stable, direction-consistent), not as a defect to chase to zero.",
+        "evidence": "\"Apply the judgment test: stable period over period, small, survives every known mechanism you've checked. That's a pass, not an open investigation.\" and \"Stop chasing it. Document it as a known delta, re-derive it next period... and move on.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Identifies a holdout or geo test as the only causal answer that settles a two-platform ownership fight outright.",
+        "evidence": "The transcript identifies experiments as the only causal answer: 'Multi-touch attribution (even done perfectly, fully deduplicated) tells you what channels were present... It cannot tell you what would have happened without that channel... only a causal experiment answers it.' It discusses geo-lift as 'the classical approach' but also offers platform-native lift studies (Conversion Lift, LinkedIn/Nielsen) and switchback as causal alternatives, not solely geo holdout.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Given the CFO's refusal to withhold spend, deletes the holdout from the menu explicitly and states the causal option is off the menu, rather than parking it under 'later' or recommending it anyway.",
+        "evidence": "The transcript does NOT delete causal experimentation from the menu. Instead it says: 'That rules out geo-lift, which is the classical approach \u2014 but it does not rule out the platform-native incrementality tools' and proceeds to recommend Google Ads Conversion Lift, LinkedIn/Nielsen lift studies, and switchback tests as 'the actual \"most rigorous next step\"' \u2014 actively recommending causal experimentation rather than taking it off the table.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Challenges the media-mix-modeling purchase: MMM fits a portfolio spanning channels no conversion record covers and requires a permanent owner for a standing pipeline and refresh cadence, which a two-platform account is unlikely to justify.",
+        "evidence": "The transcript does challenge MMM heavily ('$70k/month is thin for MMM', multicollinearity issues, etc.) but the specific reasoning about 'a portfolio spanning channels no conversion record covers' and 'requires a permanent owner for a standing pipeline and refresh cadence' is not present. The critique focuses on multicollinearity, cost/scale mismatch, and not fixing double-counting/9% residual \u2014 different reasoning than what's specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends self-reported attribution ('how did you hear about us') as the default rung, running alongside the existing reconciliation.",
+        "evidence": "There is no mention anywhere in the transcript of self-reported attribution, 'how did you hear about us' surveys, or any post-conversion self-report mechanism. The transcript's fixes are entirely click-ID capture, CRM persistence, deduplication, and lift studies.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States self-reported attribution's honest limits (coarse, self-report-biased) alongside its advantage of surviving consent loss and blocking entirely.",
+        "evidence": "Self-reported attribution is never discussed in the transcript, so its limits and advantages are not addressed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Presents server-side collection with shared event IDs as the rung that closes double-counting at the source, at the cost of engineering weeks across two teams.",
+        "evidence": "The transcript proposes click-ID capture into hidden form fields and CRM persistence (a client-side/form-based fix), not server-side event collection with shared event IDs. It describes this as 'build once, cheap' and a 'spreadsheet/SQL job,' not an engineering-weeks-across-two-teams effort.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Ranks the remaining options on more than one axis (such as value, effort, or efficiency) instead of a single blended list.",
+        "evidence": "The transcript presents a single sequential numbered plan ('Recommended sequence' 1-6) ordered by time/weeks, not a multi-axis ranking (e.g., separate value vs. effort comparisons). Options are presented as a linear roadmap, not ranked along distinct axes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not sum the two platforms' claims: treats 118 claimed vs 74 CRM demos as overlapping claims on 74 demos.",
+        "evidence": "The transcript explicitly states: 'A single prospect who saw a LinkedIn ad, later clicked a Google search ad, and then booked a demo gets counted as one full conversion by each... 118/74 = 60% overclaim' and proposes deduplication so that 'e.g. maybe 74 demos have 51 single-Google touches, 14 single-LinkedIn touches, 9 both' \u2014 treating the 118 as overlapping claims on the 74 actual demos, not additive counts.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Describes the mature end state as triangulation - platform attribution for bid optimization, experiments for causal ground truth, mix modeling for portfolio allocation - with no single method trusted alone.",
+        "evidence": "The transcript does not describe a triangulation end-state combining all three methods. Instead it recommends abandoning platform-reported conversions for allocation ('reallocate budget based on incremental-demo cost per platform from the lift study, not platform-reported conversions') and treats MMM as something to 'possibly not ever' adopt at this scale, not as a permanent complementary layer alongside the other two methods.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that platform reporting is structurally self-flattering, so the corrective signal must come from outside the platforms.",
+        "evidence": "The transcript states: 'platform-reported numbers will always overshoot true CRM demos once you run more than one paid channel \u2014 this isn't measurement error, it's structural double-attribution' and concludes the corrective must come from CRM-based deduplication and experiments 'not from platform-reported conversions,' i.e., outside platform self-reporting.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the obligation the recommended rung incurs (for example a privacy-notice line for a new form field, or consent and data-residency review for server-side collection).",
+        "evidence": "The transcript describes technical implementation steps (capturing click IDs, hidden form fields, CRM persistence) but never mentions any privacy-notice, consent, or data-residency obligation associated with this data capture.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the steady 9% residual as documented and acceptable under the judgment test (stable, direction-consistent), not as a defect to chase to zero.",
+        "evidence": "The transcript treats the 9% as a problem to be actively hunted down and fixed: 'a steady 9% unexplained gap is a plumbing leak, not noise... Run this as a two-week data audit before spending money on anything' and lists specific fixes to chase (click-ID loss, LinkedIn lead-gen forms, etc.) rather than accepting it as tolerable/documented.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

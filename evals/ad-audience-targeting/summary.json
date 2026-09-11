@@ -1,0 +1,379 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-audience-targeting",
+  "scenarios": 8,
+  "expectations_total": 105,
+  "expectations_subjective": 0,
+  "expectations_objective": 105,
+  "pass_rate_with_skill_pct": 80.0,
+  "pass_rate_without_skill_pct": 40.0,
+  "delta_pp": 40.0,
+  "uplift_multiplier": 2.0,
+  "trigger_accuracy_pct": 89.2,
+  "trigger_queries": 102,
+  "subjective_ac2": null,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "States that evidence source and date must be recorded next to each tier in the eventual plan"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Distinguishes attributes (what is true) from signals (why now) when describing what the ICP work must produce"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes that very small audiences also pay more per impression"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes that consolidation regularly halves cost per result on the same budget (over-segmentation failure mode)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends an overlap audit between the interest-based ad sets before launch, not only when troubleshooting"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that retargeting above ~40% of spend is a signal to grow prospecting, not evidence that retargeting works"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Cites the reference starting split: 70-80% prospecting, 15-25% retargeting, remainder experimental"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes the retargeting pool decays to nothing within weeks once the refill stops"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends moving the split back toward prospecting (inside the 15-25% retargeting band) rather than further away"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States ZIP-code targeting is unavailable (no ZIP targeting; minimum 15-mile radius applies)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes US financial-product advertisers fall under the platform's special ad category rules (in force since January 21, 2025)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes the interest layer adds little precision because platforms treat interest inputs as suggestions, not constraints"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States the condition that would revive the broad tier (the universe or the geography widening)"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes practitioners run 5,000-30,000-person audiences for B2B conversion campaigns despite the platform recommending 50,000+"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes title and seniority facets cannot be stacked together on the platform"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Applies the standard exclusion set (current customers, employees, competitors) and notes exclusions run before inclusions"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Judges tier success on downstream pipeline or lead quality, not on lead volume or cost per lead alone"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Explains the cost of overlap: two funded tiers bidding on the same person compete in the auction, inflating cost without adding reach"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Requires the customer list excluded from every tier, plus employees and known competitors"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Uses first-party suppression lists for the exclusions, noting interest-based exclusion features are deprecated or removed"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Records evidence source and date next to each tier in the plan"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Declines to invent buyer personas from the product description alone"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States the reason: a plan built on an imagined customer optimizes toward fiction (or equivalent statement that an unevidenced ICP invalidates the plan)"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Does not deliver a funded tier plan before ICP evidence exists"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Rejects the instruction to score gyms with missing member-count or revenue data negatively"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that unknown attributes score neutral, never negative"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks for (or lists as required inputs) the conversion definition and target CPA"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks about first-party assets beyond the customer list (site traffic volume, engaged followers, CRM)"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks for (or lists as a required input) the size of the addressable universe"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States that evidence source and date must be recorded next to each tier in the eventual plan"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Distinguishes attributes (what is true) from signals (why now) when describing what the ICP work must produce"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Notes the account qualifies for the parallel test because ~380 conversions/week comfortably clears the learning threshold"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Keeps at least one manually-defined tier alive as a research instrument even if broad wins"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States that broad hides who the buyer is (costs attribution knowledge of which segment responds)"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Flags the five interest-stacked ad sets as over-narrowing or precision theater, recommending ICP knowledge be spent on creative variants per segment rather than more filters"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Computes the per-ad-set daily budget floor as (target CPA x ~50 weekly optimization events) / 7, i.e. roughly $300/day at a $42 CPA"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Applies the fix order: merge tiers into their nearest neighbour first, before changing optimization events or cutting"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Presents optimizing to a cheaper higher-funnel proxy event as the second-choice fix, with purchases still tracked as the true KPI"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that even one fully consolidated ad set at $120/day cannot reach ~50 purchase events a week at a $42 CPA, so recommends the higher-funnel optimization event"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Notes that consolidation regularly halves cost per result on the same budget (over-segmentation failure mode)"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Recommends an overlap audit between the interest-based ad sets before launch, not only when troubleshooting"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Adds exclusions: existing customers excluded from prospecting, higher-intent pools excluded from lower-intent tiers"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Identifies interest and affinity targeting as the least efficient tier, treated by the platform as suggestions rather than constraints"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Identifies the current 42% retargeting share as already above the ~40% alarm threshold"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States that retargeting above ~40% of spend is a signal to grow prospecting, not evidence that retargeting works"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Cites the reference starting split: 70-80% prospecting, 15-25% retargeting, remainder experimental"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends moving the split back toward prospecting (inside the 15-25% retargeting band) rather than further away"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States retargeting must not be used to prove the plan works"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Names prospecting share of spend (hold at or above ~60%) as an ongoing KPI"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "States age narrowing to 28-50 is unavailable (age is fixed to the full 18-65+ range under the restricted mode)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes US financial-product advertisers fall under the platform's special ad category rules (in force since January 21, 2025)"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Recommends planning the campaign as broad-plus-creative from the start"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes the interest layer adds little precision because platforms treat interest inputs as suggestions, not constraints"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States that job titles are freeform text and the platform recognizes only about 30% of them, so title-only targeting misses most of the real audience"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes function plus seniority roughly triples the addressable audience"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States the condition that would revive the broad tier (the universe or the geography widening)"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Concludes layered, not broad: ~3 demos a week of conversion data plus a small universe put the account on the layered side of the conditional"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Checks matched audiences (customer list, retargeting) against the 300-member platform floor"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes practitioners run 5,000-30,000-person audiences for B2B conversion campaigns despite the platform recommending 50,000+"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Computes that a $310 CPA cannot reach ~50 optimization events a week on $9k/month, so recommends optimizing to a higher-funnel proxy event with demos tracked as the true KPI"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes title and seniority facets cannot be stacked together on the platform"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Applies the standard exclusion set (current customers, employees, competitors) and notes exclusions run before inclusions"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Judges tier success on downstream pipeline or lead quality, not on lead volume or cost per lead alone"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "38% pair: act by adding an exclusion, not by consolidating"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Justifies exclusion over consolidation in the 30-50% band: an exclusion is quick and reversible while consolidation destroys the per-tier read"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States the only condition to consolidate instead: when the exclusion would push either tier near or below its size floor"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "56% pair: merge the two tiers (over the 50% threshold)"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Requires the customer list excluded from every tier, plus employees and known competitors"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Uses first-party suppression lists for the exclusions, noting interest-based exclusion features are deprecated or removed"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Re-checks every tier's post-exclusion size against the platform floor, since stacked exclusions can silently halt delivery"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Sets the ongoing rule: audit overlap before launching any new tier, not only when troubleshooting"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes exclusions run before inclusions, so the exclusion matrix is built first"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Deletes the first-party custom tier (CRM list upload) entirely because no privacy review exists - not an option, not merely ranked last"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Deletes any customer-seeded lookalike tier for the same reason"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Names each deleted tier in the plan with the constraint that killed it and what would bring it back (privacy/legal review becoming available)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Distinguishes deletion from demotion: a low effort ceiling alone would only demote those tiers; the absent privacy review is what deletes them"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Promotes retargeting to run first: pixel-based, no data upload needed, returns readable evidence within days, fitting the 5-week hard date"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Treats the 4-6-month-old funding/acquisition list as context, never a trigger (signal older than ~90 days)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Uses the 3-week-old hiring-signal list as the priority prospecting signal (fresh signal sets tier priority)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States which answer moved which tier (hard date, missing privacy review, effort ceiling each attributed to a specific re-rank or deletion)"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Includes platform-native behavioral/in-market targeting as a viable prospecting tier requiring nothing to build or upload, fitting the 4-hour-a-week effort ceiling"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Applies signal expiry going forward: the hiring list is refreshed and entries age out at ~90 days"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "Records evidence source and date next to each tier in the plan"
+      },
+      {
+        "eval_id": 8,
+        "expectation": "States promote/hold/kill decision rules in the plan before launch"
+      }
+    ]
+  },
+  "conditions": {
+    "mcp_servers": "enabled",
+    "project_claude_md": "loaded",
+    "user_claude_md": "loaded",
+    "note": "measured before MCP servers and the project CLAUDE.md were removed from the subprocesses; not comparable to skills recorded with those disabled"
+  }
+}

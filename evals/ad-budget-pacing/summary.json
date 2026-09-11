@@ -1,0 +1,259 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-budget-pacing",
+  "scenarios": 6,
+  "expectations_total": 70,
+  "expectations_subjective": 1,
+  "expectations_objective": 69,
+  "pass_rate_with_skill_pct": 87.1,
+  "pass_rate_without_skill_pct": 35.7,
+  "delta_pp": 51.4,
+  "uplift_multiplier": 2.44,
+  "trigger_accuracy_pct": 98.5,
+  "trigger_queries": 68,
+  "subjective_ac2": 1.0,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 3,
+        "expectation": "Derives the day weights or business-day expectation from the account's own three months of delivery history rather than a generic template."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Labels the 0.90-1.10 on-pace band a practitioner convention to recalibrate against this account's history, not a platform rule."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Cites the 4A's/IAB Standard Terms (v3.0) remedy sequence: the parties negotiate a make-good flight, and only if that fails may the buyer take a credit."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends a mid-flight IO delivery checkpoint, states that it outranks the other check cadences on a guaranteed buy because it is contractually load-bearing, and names an owner such as ad ops."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes the pacing record is not immutable - spend gets restated and invalid-traffic credits can move history - so figures should be date-stamped and re-pulled before any escalation."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States that a period landing on budget via a last-days surge is a failed pace that hit its number."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Cites the no-dump success criterion: final-week spend share within about 5 percentage points of the expected curve's share."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "References the 95-105% utilization band for a hard-commitment budget, labelled a convention, noting a smoother ramp landing inside the band can beat hitting exactly $40,000 via a dump."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Notes that the $40,000 commitment is reconciled at period end on billed cost, not served cost."
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Reports a signed corrective figure of approximately +$540/day, the gap between the $1,100 required daily and the $560 trailing 7-day average."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Classifies the deviation as urgent (ratio below 0.85) while labelling the on-pace/urgent bands a practitioner convention to recalibrate against this account's history, not a platform rule."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "States an explicit false-alarm gate result before alerting, confirming the deviation is not explained by a first/last partial day, a trivial denominator, a recent budget edit, or intra-day figures."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Shapes the recommendation as a change packet showing current and proposed values with a rationale."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "The change packet includes a verification date and a rollback trigger."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Names a specific owner role or person to execute the change and explicitly hands off rather than executing or promising to execute the change itself."
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Keeps the correction to the smallest reversible change: a single variable and a modest step, not a campaign restructure."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "States Google's monthly billing cap of 30.4x the average daily budget, with overdelivery beyond it credited."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Suppresses the alert under the platform-overdelivery gate check and records the suppression reason in the report."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Still delivers a full report despite the suppression, with a status equivalent to ON PACE (deviation suppressed)."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Warns that the proposed budget edit would itself force the delivery system to relearn, adding volatility rather than fixing anything."
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Includes report header fields (campaign, period, budget) and a status line rather than answering in loose prose."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Computes the flat-curve expected-to-date of $7,800 (13 of 30 calendar days) and a flat pacing ratio of approximately 0.86."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Computes the business-day pacing ratio as approximately 0.91, inside the 0.90-1.10 on-pace band."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Derives the day weights or business-day expectation from the account's own three months of delivery history rather than a generic template."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Labels the 0.90-1.10 on-pace band a practitioner convention to recalibrate against this account's history, not a platform rule."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Ships a report with a status line and an owner even though the verdict is an all-clear."
+      },
+      {
+        "eval_id": 3,
+        "expectation": "Reports the required daily spend of approximately $665 over the 17 remaining days and the small corrective figure of roughly +$55/day against the $610 trailing average."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Identifies the guaranteed IO buy type as changing both the target pacing curve and the available remedies, distinct from an auction buy."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Notes the standing trader practice of pacing a guaranteed IO slightly ahead of even delivery, so 4.9M against a 5.33M prorated position is genuinely behind for this buy type."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Computes the required remaining rate: roughly 3.1M impressions over the final two weeks, about 1.55M/week versus the current 1.225M/week (an acceleration of roughly a quarter to a third)."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Explains that acceleration is a delivery setting already owned, reversible inside the flight, and triggers no negotiation or contract review."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Cites the 4A's/IAB Standard Terms (v3.0) remedy sequence: the parties negotiate a make-good flight, and only if that fails may the buyer take a credit."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Cites the IAB Direct Buy Addendum's seller duty to promptly notify the buyer of material under-delivery, so Alpine's silence breached a disclosure obligation."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "States the escalation condition: the make-good becomes the lead remedy once acceleration can no longer close the gap in the remaining runway."
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends a mid-flight IO delivery checkpoint, states that it outranks the other check cadences on a guaranteed buy because it is contractually load-bearing, and names an owner such as ad ops."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Corrects the 20% claim: the figure appears in no Meta documentation and is folklore; Meta's actual wording ties reset risk to the unquantified magnitude of the change."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Does not endorse keeping edits under 20% as a documented-safe pattern, while allowing that treating large edits cautiously is sound risk management."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Withholds the over-pacing client alert because the two recent budget edits landed inside the relearning window, so the post-edit volatility is the edits, not a pacing problem."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Flags that the $3,850 figure is intra-day: no alert should fire on this morning's live dashboard numbers, which lag and get restated; yesterday's finalized figures are the basis."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Computes the ratio of approximately 1.17 from $3,850 against the $3,300 expected by day 11, but reports it as suppressed rather than as an actionable over-pacing alert."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Advises waiting out the settle window before judging pacing on this account."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Advises against the third corrective edit now, because correcting through a relearning window makes the correction's own volatility read as a new anomaly inviting yet another correction."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Still ships a report with the suppression reason recorded rather than replying with either the requested alert or nothing."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Notes the pacing record is not immutable - spend gets restated and invalid-traffic credits can move history - so figures should be date-stamped and re-pulled before any escalation."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Frames any eventual correction as the smallest reversible change: one variable, a modest step, edits bundled rather than dripped."
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Does not draft or recommend sending a client-facing over-pacing alert today."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Computes the projected period spend of approximately $32,240 (roughly 81% utilization) if nothing changes."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Reports the corrective figure of approximately +$1,283/day against the $1,050 trailing 7-day average."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Does not simply validate the plan: warns that an end-of-period spend dump buys the worst inventory at the worst prices."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States that a period landing on budget via a last-days surge is a failed pace that hit its number."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Cites the no-dump success criterion: final-week spend share within about 5 percentage points of the expected curve's share."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "References the 95-105% utilization band for a hard-commitment budget, labelled a convention, noting a smoother ramp landing inside the band can beat hitting exactly $40,000 via a dump."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Shapes the recommendation as a change packet with current and proposed values, rationale, a verification date, and a rollback trigger."
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Names an owner and hands off, rather than executing or promising to execute the budget change."
+      }
+    ]
+  },
+  "conditions": {
+    "mcp_servers": "enabled",
+    "project_claude_md": "loaded",
+    "user_claude_md": "loaded",
+    "note": "measured before MCP servers and the project CLAUDE.md were removed from the subprocesses; not comparable to skills recorded with those disabled"
+  }
+}

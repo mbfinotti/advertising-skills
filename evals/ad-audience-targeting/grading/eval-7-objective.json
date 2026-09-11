@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "8% pair: ignore (under the 10% threshold)",
+        "evidence": "\"Lookalike vs interest | 8% | Under 10% | **Ignore.** No action. These are functioning as genuinely separate audiences.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "24% pair: monitor (10-30% band), no forced action",
+        "evidence": "\"Interest vs behavioral in-market | 24% | 10\u201330% | **Monitor.** No action now. Track it at your next overlap audit...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "38% pair: act by adding an exclusion, not by consolidating",
+        "evidence": "\"Lookalike vs behavioral in-market | 38% | 30\u201350% | **Act \u2014 exclude, don't merge.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Justifies exclusion over consolidation in the 30-50% band: an exclusion is quick and reversible while consolidation destroys the per-tier read",
+        "evidence": "\"the 30\u201350% band's rule is \\\"add an exclusion > consolidate\\\" \u2014 exclusion is an hour of reversible work, consolidation destroys the read your test budget is paying for.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the only condition to consolidate instead: when the exclusion would push either tier near or below its size floor",
+        "evidence": "\"Only escalate to a merge if, after the exclusion, either ad set's post-exclusion size falls near its platform or budget floor \u2014 check that before finalizing, don't assume it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "56% pair: merge the two tiers (over the 50% threshold)",
+        "evidence": "\"Behavioral in-market vs broad prospecting | 56% | Over 50% | **Merge.**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects the blanket 'merge everything that overlaps' instruction",
+        "evidence": "\"First, don't do what the marketing lead proposed. \\\"Merge everything that overlaps\\\" treats every overlap number the same... Only one of your four pairs actually clears the merge threshold.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the cost of overlap: two funded tiers bidding on the same person compete in the auction, inflating cost without adding reach",
+        "evidence": "The transcript only quotes the failure mode phrase \"tiers silently bid against each other and against the customer base\" once, without elaborating on auction dynamics or explaining how this inflates cost without adding reach; the closest statement is about retargeting exclusion (\"wasting spend re-competing for people the retargeting pool already owns\"), not a general explanation of the overlap-cost mechanism.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires the customer list excluded from every tier, plus employees and known competitors",
+        "evidence": "\"Upload the customer list as a suppression list and exclude it from all four funded ad sets... unless one of them is a deliberate winback/upsell campaign.\" \u2014 no mention of employees or known competitors anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires the retargeting pool excluded from every lower-intent tier so each person sits in exactly one tier",
+        "evidence": "\"Exclude the retargeting pool from all four ad sets. Retargeting sits above lookalike, interest, behavioral, and broad in intent, so right now each of those four is wasting spend re-competing for people the retargeting pool already owns.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses first-party suppression lists for the exclusions, noting interest-based exclusion features are deprecated or removed",
+        "evidence": "The transcript mentions uploading \"the customer list as a suppression list\" (first-party) but never states or notes that interest-based exclusion features are deprecated or removed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Re-checks every tier's post-exclusion size against the platform floor, since stacked exclusions can silently halt delivery",
+        "evidence": "\"After both exclusions land, re-check each ad set's size against its platform floor. Stacking exclusions can silently push a tier below the floor and halt delivery \u2014 that's the failure mode on the other side of this fix.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Sets the ongoing rule: audit overlap before launching any new tier, not only when troubleshooting",
+        "evidence": "\"Re-run the full overlap audit before launching any new tier, and again after Step 0 and Step 1 land, since the exclusion matrix and the lookalike exclusion will both move the remaining numbers.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes exclusions run before inclusions, so the exclusion matrix is built first",
+        "evidence": "\"That's the named top failure mode... and the rule is explicit: exclusions run before inclusions, before any pairwise fix below.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "8% pair: ignore (under the 10% threshold)",
+        "evidence": "\"Lookalike vs Interest \u2014 8%. No action. Below any meaningful threshold (industry rule of thumb: under ~15% is noise)... Leave it exactly as is.\" \u2014 the 8% pair (under 10%) is correctly left with no action, though the transcript cites a ~15% noise threshold rather than 10%.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "24% pair: monitor (10-30% band), no forced action",
+        "evidence": "\"Interest vs Behavioral in-market \u2014 24%. Watch, don't touch... Re-check this number after exclusions... No merge.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "38% pair: act by adding an exclusion, not by consolidating",
+        "evidence": "For the 38% pair the transcript recommends: \"don't merge the audience definitions \u2014 pull CPA/ROAS for both, and either (a) consolidate spend under Campaign Budget Optimization... or (b) pause the weaker one and redirect its budget\" \u2014 this is consolidation/pausing, not an added exclusion specific to this pair.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Justifies exclusion over consolidation in the 30-50% band: an exclusion is quick and reversible while consolidation destroys the per-tier read",
+        "evidence": "No such justification appears; the 38% pair section instead argues for CBO consolidation or pausing the weaker tier, with no comparison to exclusion as a reversible alternative.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the only condition to consolidate instead: when the exclusion would push either tier near or below its size floor",
+        "evidence": "The transcript never mentions audience size floors as a condition for choosing consolidation; consolidation criteria given are overlap percentage thresholds (e.g. \"if it's still above ~30%\") and CPA/ROAS comparison only.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "56% pair: merge the two tiers (over the 50% threshold)",
+        "evidence": "\"Behavioral in-market vs Broad prospecting \u2014 56%. Priority #1... Don't merge \u2014 run a real test: pause Behavioral in-market for 1\u20132 weeks... If Broad matches or beats it... retire Behavioral permanently... If Behavioral still clearly wins... keep both, but exclude the Behavioral audience from Broad specifically.\" The transcript explicitly rejects merging even at 56%.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects the blanket 'merge everything that overlaps' instruction",
+        "evidence": "Section header: \"Why 'just merge everything that overlaps' is the wrong instruction\" followed by reasons overlap \u2260 redundancy and merging resets learning phase.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the cost of overlap: two funded tiers bidding on the same person compete in the auction, inflating cost without adding reach",
+        "evidence": "\"Without this, prospecting and retargeting are bidding against each other in the same auctions for the same warm users \u2014 that alone inflates CPMs account-wide and steals conversion credit from whichever campaign happens to win the auction, independent of which one is actually better.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires the customer list excluded from every tier, plus employees and known competitors",
+        "evidence": "The transcript only requires \"Exclude your Customer List (all-time purchasers) from all four prospecting ad sets\" and conditionally from retargeting; it never mentions excluding employees or known competitors.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires the retargeting pool excluded from every lower-intent tier so each person sits in exactly one tier",
+        "evidence": "\"Exclude your Retargeting pool from all four prospecting ad sets. Without this, prospecting and retargeting are bidding against each other in the same auctions for the same warm users...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses first-party suppression lists for the exclusions, noting interest-based exclusion features are deprecated or removed",
+        "evidence": "No mention of first-party suppression lists or of interest-based exclusion features being deprecated/removed anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Re-checks every tier's post-exclusion size against the platform floor, since stacked exclusions can silently halt delivery",
+        "evidence": "The transcript's only post-exclusion re-check is for overlap percentages (\"Give it a few days of clean delivery post-exclusion... before re-running... Show Audience Overlap\"); it never checks audience size against a platform minimum or warns of delivery halting.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the ongoing rule: audit overlap before launching any new tier, not only when troubleshooting",
+        "evidence": "No ongoing/recurring audit rule for new tier launches is stated; the plan is framed as a one-time sequence (fix exclusions \u2192 re-measure \u2192 act per pair) tied to this specific troubleshooting situation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes exclusions run before inclusions, so the exclusion matrix is built first",
+        "evidence": "The transcript never discusses exclusion-vs-inclusion processing order or an \"exclusion matrix\" concept; it only sequences exclusions before re-measuring overlap, which is a different claim.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

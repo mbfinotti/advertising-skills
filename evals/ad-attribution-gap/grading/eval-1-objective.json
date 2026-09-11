@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to make the three systems agree on a single identical figure, and states that a perfect match would indicate a fabricated or hidden adjustment rather than rigor.",
+        "evidence": "\"No \u2014 Meta, your analytics tool, and Shopify will never show the same figure, and getting them to match would mean one of the three numbers was faked. That's not a caveat, it's how these systems work... A report that ties out perfectly is a report where someone forced an adjustment to hit zero.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors the conversion count and revenue on the Shopify order system, not on Meta or the analytics tool.",
+        "evidence": "\"Anchor: Shopify (order/billing system) \u2014 1,351 paid orders, $296,000 revenue\" and \"anchor the one board-facing number on Shopify, because it's the only one of the three that reflects money that actually moved.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the ad platform and analytics explain where conversions came from, never how many there were.",
+        "evidence": "The transcript calls Meta/analytics \"directional/in-platform signals only, not the number of record\" and \"in-platform bid-optimization signal\", but never frames this as the platforms explaining 'where conversions came from' versus 'how many there were' \u2014 that specific distinction is absent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires normalization to a common basis before comparing any numbers, naming at least date basis, timezone, and conversion definition as axes to align.",
+        "evidence": "Section 2 'Normalization basis' names Grain (calendar month), Date basis, and Conversion definition explicitly, but 'timezone' is never mentioned anywhere in the document as a normalization axis.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies the platform's ad-interaction-date (click-date) stamping vs the order system's event-date stamping as a specific cause of misalignment.",
+        "evidence": "\"Meta backdates conversions to the click/view date \u2014 if this pull was run in early April, late-March clicks converting in the first days of April are still landing and will keep changing the 1,912 figure.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends one revenue basis of net revenue excluding tax and shipping, applied to every system, to resolve the Meta-includes-shipping-and-tax mismatch.",
+        "evidence": "\"Meta revenue runs gross; Shopify anchor should be read net.\" and the recommendation to pull Shopify's 'Total Sales' to confirm the $296k is Net Sales (excludes tax/shipping) as the basis for comparison against Meta's gross figure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the $18k of refunds as a definitional line (source of truth records reversals the platform and analytics rarely reverse), not as a tracking defect.",
+        "evidence": "Variance table row: Bucket \"Definitional\", Cause \"Refunds recorded in Shopify, never reversed in Meta\", with the note \"Meta's $412k has no refund reversal mechanism.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Carries view-through conversions as a definitional line pushing the platform's count higher, to be segmented out or quantified rather than treated as a bug.",
+        "evidence": "\"Meta over-reports orders vs Shopify by roughly 30\u201345%, driven by view-through/modeled inclusion \u2014 expect this band to hold, not vanish\" and \"it's the normal shape of view-through + modeled conversions on an iOS-heavy Meta account, and it becomes a documented, non-closing delta.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags modeled or estimated conversions on the platform side and requires they never be compared to deterministic order counts without being labeled as modeled.",
+        "evidence": "Table lists needed evidence: \"Ads Manager breakdown: click-through vs view-through, observed vs modeled\" before treating the 561-order gap as explained, and the 1,912 figure is repeatedly flagged as needing this breakdown before comparison.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies gap causes into exactly three buckets: timing, definitional, and unexplained residual.",
+        "evidence": "The variance table uses bucket labels \"Unclassified\", \"Definitional\", \"Definitional (suspected)\", \"Definitional (expected)\", and \"Residual (suspected, top priority)\" \u2014 no row is ever labeled with a \"Timing\" bucket, so the three-bucket taxonomy (timing/definitional/residual) is not used as specified.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that an explicit unexplained residual must remain in the final report and must not be driven to zero.",
+        "evidence": "The Pixel+CAPI dedup gap is explicitly bucketed as \"Residual (suspected, top priority)\" and left unresolved/uninvented: \"I'm not putting a number on the tax/shipping split... inventing a percentage here would be exactly the fabrication this process exists to avoid.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes or sets up the gap per source pair (Meta vs orders, analytics vs orders) in absolute units and as a percentage of the anchor, rather than one blended three-way number.",
+        "evidence": "\"Conversions, Meta vs Shopify: gross gap 561 (41.5% of anchor)\" and \"Conversions, Analytics vs Shopify: gross gap \u2212247 (18.3%)\" \u2014 each pair computed separately in absolute units and as % of the 1,351 anchor.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the analytics undercount (1,104 below 1,351 orders) through analytics-low mechanisms such as consent loss, ad blockers, or cross-device breaks, rather than suggesting the order count is inflated.",
+        "evidence": "\"Consent-mode loss, ad-blockers, cross-device journeys the analytics tool can't stitch\" listed as the cause, with direction check \"analytics low \u2014 passes\".",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses to make the three systems agree on a single identical figure, and states that a perfect match would indicate a fabricated or hidden adjustment rather than rigor.",
+        "evidence": "\"Forcing them to show one identical number would mean overriding one of them with a fake value. What you actually want is: one number your CEO can trust, plus a clear explanation of why the other two differ.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors the conversion count and revenue on the Shopify order system, not on Meta or the analytics tool.",
+        "evidence": "\"Use Shopify as the system of record for the headline revenue/order KPI. It's the only one of the three counting actual completed, paid transactions rather than attributed or tracked events.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the ad platform and analytics explain where conversions came from, never how many there were.",
+        "evidence": "The transcript never frames Meta/analytics as answering 'where conversions came from' vs 'how many'; it only discusses why their counts diverge from Shopify's (e.g. 'This tool is useful for relative trends... but will always undercount absolute volume against Shopify'), not a where-vs-how-many framing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires normalization to a common basis before comparing any numbers, naming at least date basis, timezone, and conversion definition as axes to align.",
+        "evidence": "No mention of date basis or timezone anywhere in the transcript; only revenue definition (tax/shipping) and conversion definition (attribution) are discussed, and no explicit normalization requirement is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies the platform's ad-interaction-date (click-date) stamping vs the order system's event-date stamping as a specific cause of misalignment.",
+        "evidence": "No discussion of click-date vs order-date/event-date stamping appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends one revenue basis of net revenue excluding tax and shipping, applied to every system, to resolve the Meta-includes-shipping-and-tax mismatch.",
+        "evidence": "\"Meta's $412k includes tax and shipping; Shopify's $296k doesn't... I'll report Shopify net revenue as our single revenue KPI, and use blended MER (ad spend \u00f7 Shopify net revenue) instead of platform-reported ROAS to judge ad performance.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the $18k of refunds as a definitional line (source of truth records reversals the platform and analytics rarely reverse), not as a tracking defect.",
+        "evidence": "Refunds are only discussed in the context of computing Shopify's own net figure ('Minus refunds processed in March: \u2212$18,000') and a verification caveat; the transcript never states that Meta or the analytics tool fail to reverse purchases on refund, so the definitional-mismatch reasoning required by the item is absent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Carries view-through conversions as a definitional line pushing the platform's count higher, to be segmented out or quantified rather than treated as a bug.",
+        "evidence": "\"fall inside the view-through window from a scroll-past impression, not a real influence\" is listed as one of the structural, non-bug causes of Meta's overcount, and the text notes this is 'structural, not fixable by \"cleaning up tracking.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags modeled or estimated conversions on the platform side and requires they never be compared to deterministic order counts without being labeled as modeled.",
+        "evidence": "\"Meta's 'purchases' is a modeled attribution estimate... and Shopify is the ledger of money that actually changed hands\" \u2014 this modeled-vs-deterministic labeling is maintained throughout and used to justify never treating Meta's figure as the headline KPI.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies gap causes into exactly three buckets: timing, definitional, and unexplained residual.",
+        "evidence": "The transcript organizes causes as 'Revenue definition mismatch' and 'Purchase count inflation' for Meta and 'tracking loss' for the analytics tool \u2014 no timing bucket and no unexplained-residual bucket are named or used.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that an explicit unexplained residual must remain in the final report and must not be driven to zero.",
+        "evidence": "No statement anywhere instructs that a residual gap must be left unexplained in the report; instead the text attempts to attribute the full gaps to specific named causes (tax/shipping, attribution inflation, tracking loss).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes or sets up the gap per source pair (Meta vs orders, analytics vs orders) in absolute units and as a percentage of the anchor, rather than one blended three-way number.",
+        "evidence": "\"Purchase count inflation (1,912 vs 1,351, +41%)\" and \"1,104 vs 1,351 real orders (247 missing, ~18%)\" give per-pair absolute and percentage gaps rather than one blended three-way figure.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains the analytics undercount (1,104 below 1,351 orders) through analytics-low mechanisms such as consent loss, ad blockers, or cross-device breaks, rather than suggesting the order count is inflated.",
+        "evidence": "\"iOS 14.5+ App Tracking Transparency and Safari ITP block a meaningful slice of client-side pixels. Ad blockers and cookie-consent rejections drop events before they fire. If the tool is session/cookie-based, purchases from returning customers on a new device or cleared cookies won't tie back to a tracked session.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

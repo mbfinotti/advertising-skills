@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The first body line extends each hook's premise, with the transition line adjusted per hook where needed.",
+        "evidence": "The Body section explicitly states \"Beat 1 (transition) changes per hook to extend its specific premise. Beats 2-4 are identical across all three hooks,\" then gives three distinct, locked Beat 1 lines. Each genuinely extends its own hook rather than being a cosmetic reword: Hook 1's past-tense confession (\"I have killed every single plant I've ever owned\") continues into \"I wasn't checking on them. I was guessing.\"; Hook 2's self-blame premise (\"I really thought I just didn't have a green thumb\") is directly answered by \"Turns out it wasn't me \u2014 I just wasn't checking.\", which resolves the 'sk",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The first body line extends each hook's premise, with the transition line adjusted per hook where needed.",
+        "evidence": "The script offers only a single locked hook (\"If you've killed more plants than you can count... this one's for you.\") and a single first body line (\"I used to just water it and hope for the best.\"). No alternative hooks are provided, so there is no per-hook extension and no adjusted transition line anywhere in the deliverable \u2014 the requirement is effectively unaddressed. The lone body line does loosely follow the lone hook's premise (killing plants \u2192 watering and hoping), which is the only reason this is not a flat 0; but every beat is presented as one fixed option with no variants, and the d",
+        "score": 1,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

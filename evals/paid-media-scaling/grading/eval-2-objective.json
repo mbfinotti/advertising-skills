@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes marginal return per spend band as delta revenue divided by delta spend, rather than judging the campaign on blended MER alone.",
+        "evidence": "Table: \"June \u2192 July | +$8K | +$18K | 2.25\" and \"July \u2192 August | +$8K | +$12K | 1.50\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the June-to-July marginal band as approximately 2.25 ($18K additional revenue on $8K additional spend).",
+        "evidence": "\"June \u2192 July | +$8K | +$18K | 2.25\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the July-to-August marginal band as approximately 1.5 ($12K additional revenue on $8K additional spend).",
+        "evidence": "\"July \u2192 August | +$8K | +$12K | 1.50\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the most recent marginal band (about 1.5) is below the owner-approved 2.0 break-even boundary.",
+        "evidence": "\"Marginal MER (1.5, or 1.875 on the wider band) is below the 2.0 break-even boundary. This is the blocking gate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to give the go-ahead on the $80K jump despite blended MER of about 2.7 sitting above break-even.",
+        "evidence": "\"Verdict: NO GO on the straight jump to $80K in September.\" while August blended MER is listed as 2.71.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that blended metrics always trail marginal: marginal efficiency turns unprofitable before blended does.",
+        "evidence": "\"'Blended will always trail marginal \u2014 your marginal MER will become unprofitable before your blended MER' holds exactly here.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the declining trend across bands (about 2.25 down to about 1.5) as evidence efficiency is deteriorating as spend grows.",
+        "evidence": "\"The marginal MER dropping from 2.25 \u2192 1.5 over two $8K steps could be any of...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the failed marginal gate as stop-and-fix: names the failed gate and its fix rather than proposing a smaller budget increase as a consolation.",
+        "evidence": "\"a failed gate stops the ramp and names its fix \u2014 it never ships a smaller ramp as a consolation. So the answer isn't 'do $65K instead of $80K'; it's 'don't add budget to this line until gate 2 is understood.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the proposed $56K-to-$80K move (over 40% in one step) as an oversized single step that risks a learning-phase reset.",
+        "evidence": "\"That would also be a +43% single jump from $56K \u2014 on its own, independent of the marginal-MER problem, that's a magnitude no platform recommends... precisely because oversized jumps reset delivery learning\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks whether the revenue figures are platform-attributed, triangulated with business data, or causally measured.",
+        "evidence": "Open items: \"Whether this MER is platform-attributed only, or triangulated against blended P&L revenue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends diagnosing why marginal efficiency is falling (for example saturation signals: frequency, CPM, unique reach, penetration) before adding any budget.",
+        "evidence": "\"Diagnose before spending more: frequency trend, 30-day penetration, proven/non-fatigued ad count, and whether September's audience or seasonality differs from summer.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any stop or exit rule offered references marginal contribution or the marginal band crossing the boundary, not blended MER falling below 2.0.",
+        "evidence": "\"if a weekly marginal MER read stays under 2.0 for 2+ consecutive weeks, cut back to the last tier where marginal MER cleared break-even.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes marginal return per spend band as delta revenue divided by delta spend, rather than judging the campaign on blended MER alone.",
+        "evidence": "Table column \"Marginal MER (this month's added $ vs last)\" with formulas like \"(140-122)/(48-40) = 2.25\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the June-to-July marginal band as approximately 2.25 ($18K additional revenue on $8K additional spend).",
+        "evidence": "\"(140-122)/(48-40) = 2.25\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the July-to-August marginal band as approximately 1.5 ($12K additional revenue on $8K additional spend).",
+        "evidence": "\"(152-140)/(56-48) = 1.50\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that the most recent marginal band (about 1.5) is below the owner-approved 2.0 break-even boundary.",
+        "evidence": "\"1.50 is already below your 2.0 break-even. August's last $8K of spend lost money on a pure MER basis\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to give the go-ahead on the $80K jump despite blended MER of about 2.7 sitting above break-even.",
+        "evidence": "\"Cumulative MER looks fine (3.05 \u2192 2.92 \u2192 2.71, still well above the 2.0 break-even)... Don't approve $80K.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that blended metrics always trail marginal: marginal efficiency turns unprofitable before blended does.",
+        "evidence": "\"it's just being masked by the profitable spend that came before it... You'd only see this in the topline blended number weeks later, after the spend is committed\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the declining trend across bands (about 2.25 down to about 1.5) as evidence efficiency is deteriorating as spend grows.",
+        "evidence": "\"the marginal MER... has collapsed from 2.25 to 1.50 in one month\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Treats the failed marginal gate as stop-and-fix: names the failed gate and its fix rather than proposing a smaller budget increase as a consolation.",
+        "evidence": "The recommendation still approves a smaller increase: \"Go-ahead only for an incremental step consistent with the trend you've actually tested \u2014 e.g. $64-65K (another ~$8-9K step), not $80K.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the proposed $56K-to-$80K move (over 40% in one step) as an oversized single step that risks a learning-phase reset.",
+        "evidence": "The transcript never uses the phrase 'learning phase' or discusses a reset risk; the $56K\u2192$80K jump is only framed via marginal-return math, e.g. \"A jump straight to $80K adds $24K \u2014 three of those steps at once.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks whether the revenue figures are platform-attributed, triangulated with business data, or causally measured.",
+        "evidence": "No question about attribution methodology for the revenue figures appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends diagnosing why marginal efficiency is falling (for example saturation signals: frequency, CPM, unique reach, penetration) before adding any budget.",
+        "evidence": "\"pull CPM/CPA and frequency trends for August to confirm this is saturation (audience/creative fatigue) rather than a data blip\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any stop or exit rule offered references marginal contribution or the marginal band crossing the boundary, not blended MER falling below 2.0.",
+        "evidence": "\"pull back the moment a weekly increment's marginal MER drops under ~2.5-3.0 (leaving margin above the 2.0 floor)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

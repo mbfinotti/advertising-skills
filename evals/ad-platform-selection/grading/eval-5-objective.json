@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response flags the 3-week LinkedIn test as shorter than the ~4-month sales cycle and therefore a false negative, not a verdict.",
+        "evidence": "\"3 weeks against a 4-month cycle is an extreme mismatch, not a marginal one\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes B2B professional networks conventionally warrant roughly a 3-month committed test before judging.",
+        "evidence": "\"3 weeks vs. the ~3-month commitment norm for this family\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes the spend pace (about $3K over three weeks) sits below the roughly $5,000/month floor for sales outcomes on that family.",
+        "evidence": "\"$3K over 3 weeks \u2248 $4,300/month pace \u2014 under the 'don't run pipeline tests below ~$5,000/month' floor\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response refuses to accept the July kill as valid evidence and calls for a diagnose-then-rerun over a full cycle before any conclusion about the channel.",
+        "evidence": "\"Reverse the kill.\" and \"You killed it on the wrong axis.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response explains that last-click attribution structurally over-credits capture channels like search and under-credits creation channels.",
+        "evidence": "\"Platform-reported attribution systematically over-credits capture channels and undercounts creation channels\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response cites that social/creation channels are systematically under-reported in platform and last-click reads (practitioner estimates on the order of 70% under-reporting).",
+        "evidence": "No '70%' under-reporting statistic appears anywhere in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response warns against making the channel decision from the platform dashboard read alone.",
+        "evidence": "\"reading attribution artefacts as performance \u2014 over-crediting capture, then over-funding it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response recommends adding self-reported attribution (a 'how did you hear about us' field on the demo form) as the cheap correction.",
+        "evidence": "\"Add self-reported attribution ('How did you hear about us?') to the demo/RFQ form now\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states last-click breaks over long sales cycles and prescribes an attribution approach fit for them (self-reported plus modeled, or first- and last-touch side by side).",
+        "evidence": "\"Read CRM first-touch alongside last-click for the next cycle. Never judge a creation channel (LinkedIn) on last-click alone.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response does not endorse moving 100% of budget into search purely on the 9-of-11 last-click statistic.",
+        "evidence": "\"Split the $20K, don't zero anything out... ~$15K (75%) to search ... ~$5K (25%) to LinkedIn\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any prescribed re-test carries a duration of at least one full sales cycle (about a quarter).",
+        "evidence": "\"~3-month commitment (aligned with the sales cycle)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes the kill rule (2-3x target CPA spent with zero conversions after a readable sample) was not met - 2 MQLs is not zero signal - or that a kill verdict feeds the next-ranked candidate rather than a reallocation of everything.",
+        "evidence": "\"2 leads over 3 weeks isn't a readable sample in either direction \u2014 it's noise\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response flags the 3-week LinkedIn test as shorter than the ~4-month sales cycle and therefore a false negative, not a verdict.",
+        "evidence": "'3 weeks / $3K, with a 4-month sales cycle, is not a valid test window... you killed it before it had time to prove anything.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes B2B professional networks conventionally warrant roughly a 3-month committed test before judging.",
+        "evidence": "No generic 3-month test-duration rule is stated; only reference to the specific 4-month sales cycle.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes the spend pace (about $3K over three weeks) sits below the roughly $5,000/month floor for sales outcomes on that family.",
+        "evidence": "No $5,000/month floor figure appears; only the qualitative 'noise-level spend' framing is used.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response refuses to accept the July kill as valid evidence and calls for a diagnose-then-rerun over a full cycle before any conclusion about the channel.",
+        "evidence": "'Let the July LinkedIn MQLs run through the full 4-month cycle before scoring the channel \u2014 you don't have a verdict yet either way.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response explains that last-click attribution structurally over-credits capture channels like search and under-credits creation channels.",
+        "evidence": "'Last-click on 9/11 deals tells you which channel closed the deal, not which channel created the demand' plus the LinkedIn-then-branded-search scenario.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response cites that social/creation channels are systematically under-reported in platform and last-click reads (practitioner estimates on the order of 70% under-reporting).",
+        "evidence": "No such statistic is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response warns against making the channel decision from the platform dashboard read alone.",
+        "evidence": "'n=11 is also too small to lean on hard' combined with the call to pull first-touch/multi-touch data before deciding.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response recommends adding self-reported attribution (a 'how did you hear about us' field on the demo form) as the cheap correction.",
+        "evidence": "No self-reported attribution field is proposed; instead 'Pull first-touch (or any multi-touch) view for those 11 deals' is recommended.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response states last-click breaks over long sales cycles and prescribes an attribution approach fit for them (self-reported plus modeled, or first- and last-touch side by side).",
+        "evidence": "Recommends pulling 'first-touch (or any multi-touch) view' alongside the existing last-click data, addressing the long-cycle attribution gap.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response does not endorse moving 100% of budget into search purely on the 9-of-11 last-click statistic.",
+        "evidence": "'Don't execute the full reallocation as described' and 'Reallocate gradually, not all-or-nothing.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any prescribed re-test carries a duration of at least one full sales cycle (about a quarter).",
+        "evidence": "'Let the July LinkedIn MQLs run through the full 4-month cycle before scoring the channel.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes the kill rule (2-3x target CPA spent with zero conversions after a readable sample) was not met - 2 MQLs is not zero signal - or that a kill verdict feeds the next-ranked candidate rather than a reallocation of everything.",
+        "evidence": "'nowhere near enough for 2 MQLs vs. 0 to mean anything statistically' treats 2 MQLs as inconclusive rather than a valid zero-signal kill.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

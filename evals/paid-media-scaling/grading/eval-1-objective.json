@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that Meta has never published a budget-change percentage and that '20% every 72 hours' is not an official platform rule.",
+        "evidence": "\"Meta has never published a budget-change percentage.\" ... \"So 'official rule, safe to $2,000/day' isn't a thing you can rely on.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the 20%-every-72-hours figure as folklore or unverified practitioner lore, not documented platform guidance.",
+        "evidence": "\"The 20%/72-hour figure traces to Charlie Lawrance, Social Media Examiner, Sept 2021 \u2014 a second-hand relay of unverified account-rep advice. (folklore)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the 20%/72h claim to second-hand practitioner relay of unverified account-rep advice rather than to Meta documentation.",
+        "evidence": "\"a second-hand relay of unverified account-rep advice\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the real platform artifacts behind the folklore (Meta's 'Increase budget by 20%' automated-rule UI preset, and/or Google's 20% guidance applying to bids on Display campaigns only) from an actual budget rule.",
+        "evidence": "\"Meta's automated-rules UI has a preset literally called 'Increase budget by 20%' \u2014 a default button, not a law (documented). And Google really does document 20% cadence \u2014 but only for bids on Display campaigns, not budgets, not Meta (documented).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States what Meta actually documents: significant edits reset the learning phase, with no budget percentage named.",
+        "evidence": "\"Their documentation says significant edits can reset learning 'depending on the magnitude of the change' \u2014 no number given.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the recommended step size from the account's own change history (the January +30%, April +15%, June +25% responses) rather than defaulting to a universal percentage.",
+        "evidence": "The transcript explicitly does not derive a number from history: \"I need the actual before/after CPA numbers from those three events to use it (see Open items). Until then I'm shipping the 15\u201320% concrete default, which is explicitly a placeholder to be recalibrated, not a final answer.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the hold between steps to at least the learning window plus conversion lag (about a week or more on Meta), not a flat 72 hours.",
+        "evidence": "\"using 10 as a conservative placeholder over Meta's ~7-day learning exit; tighten or extend once you confirm click-to-purchase lag\" \u2014 steps held ~10 days apart.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs or requests readiness checks (marginal economics, creative supply, cash, measurement health) before committing to the step schedule.",
+        "evidence": "Gates table includes Affordability, Data maturity, Marginal economics (PROVISIONAL PASS), Measurement health (UNKNOWN), Creative supply (UNKNOWN\u2014likely binding), Business absorption (UNKNOWN\u2014likely binding).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pre-commits a rollback trigger, rollback action, and verification date before or alongside the first up-step.",
+        "evidence": "Steps table has 'Rollback trigger' and 'Rollback action' columns alongside each 'Hold until' date, e.g. \"CPA > $55 sustained through full hold\" \u2192 \"revert to $500, hold 2 wks, resume +10%\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No single step in the proposed schedule raises budget 30% or more in one move without an explicit learning-reset warning.",
+        "evidence": "All steps in the table are +20% or less (final step +11.6%), none reach 30%.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any cited step-size or cadence number carries an evidence label (documented, research, or folklore).",
+        "evidence": "Labels used throughout: \"(documented)\", \"(folklore)\", e.g. \"folklore ratio: proven ads \u2248 monthly budget \u00f7 $5,000\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If a concrete default percentage such as 15-20% appears, it travels with an explicit instruction to recalibrate from this account's own response data.",
+        "evidence": "\"I'm shipping the 15\u201320% concrete default, which is explicitly a placeholder to be recalibrated, not a final answer.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The schedule reaches $2,000/day through multiple held steps, and the response names what is monitored during each hold.",
+        "evidence": "Steps table runs from $500 to $2,000 across 9 dated steps, each with a 'Monitor' column listing \"CPA, freq, CPM, delivery status\".",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that Meta has never published a budget-change percentage and that '20% every 72 hours' is not an official platform rule.",
+        "evidence": "\"Meta has never published a formal policy stating 'raise budget 20% every 72 hours, guaranteed no learning-phase reset.'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the 20%-every-72-hours figure as folklore or unverified practitioner lore, not documented platform guidance.",
+        "evidence": "\"is a heuristic repeated by Meta account reps and performance marketers so widely it's become industry folklore \u2014 useful, but not contractual.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Attributes the 20%/72h claim to second-hand practitioner relay of unverified account-rep advice rather than to Meta documentation.",
+        "evidence": "\"repeated by Meta account reps and performance marketers so widely it's become industry folklore\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the real platform artifacts behind the folklore (Meta's 'Increase budget by 20%' automated-rule UI preset, and/or Google's 20% guidance applying to bids on Display campaigns only) from an actual budget rule.",
+        "evidence": "No mention of Meta's automated rule UI preset or Google's Display-specific 20% bid guidance anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States what Meta actually documents: significant edits reset the learning phase, with no budget percentage named.",
+        "evidence": "\"Meta's Business Help Center says learning phase can reset on 'significant edits,' and budget changes are one trigger \u2014 but Meta doesn't commit to a public numeric threshold.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the recommended step size from the account's own change history (the January +30%, April +15%, June +25% responses) rather than defaulting to a universal percentage.",
+        "evidence": "The schedule is built on the default '20% per 72h' cadence; the response only asks the user to 'pull' the historical CPA data rather than deriving the step size from it: \"I don't have those numbers... the schedule below should be treated as a draft to stress-test against that history.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets the hold between steps to at least the learning window plus conversion lag (about a week or more on Meta), not a flat 72 hours.",
+        "evidence": "The full 8-step schedule is built on a flat 72-hour cadence (e.g. \"Mon Sep 15\" to \"Thu Sep 18\"), never extended to a week or more.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs or requests readiness checks (marginal economics, creative supply, cash, measurement health) before committing to the step schedule.",
+        "evidence": "The only pre-checks requested are historical CPA peak/recovery numbers; no creative supply, cash, or measurement-health checks are requested.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pre-commits a rollback trigger, rollback action, and verification date before or alongside the first up-step.",
+        "evidence": "\"CPA > $55 for 2+ consecutive days: roll back one step (not to baseline), then hold 72h before trying again.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No single step in the proposed schedule raises budget 30% or more in one move without an explicit learning-reset warning.",
+        "evidence": "All steps in the table are +20% except the final capped step at \"+11.6% (capped)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any cited step-size or cadence number carries an evidence label (documented, research, or folklore).",
+        "evidence": "\"'~20% is safe, 72h is the reset window' is a heuristic repeated by Meta account reps and performance marketers so widely it's become industry folklore\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "If a concrete default percentage such as 15-20% appears, it travels with an explicit instruction to recalibrate from this account's own response data.",
+        "evidence": "\"treat 20%/72h as a starting cadence, not a guarantee \u2014 your own January/April/June data is a better predictor than the rule of thumb.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The schedule reaches $2,000/day through multiple held steps, and the response names what is monitored during each hold.",
+        "evidence": "The 8-step table reaches $2,000 with a per-step \"Decision gate\" monitoring \"trailing CPA\" before each bump.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

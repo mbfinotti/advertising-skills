@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response distinguishes 'search may legitimately be funded first if category search volume exists and capture is underfunded' from 'the dashboard proves it' - the decision is re-derived from economics and demand state.",
+        "evidence": "The response explicitly separates the two: \u00a72 rejects the last-click dashboard as evidence ('reading attribution artefacts as performance \u2014 over-crediting capture, then over-funding it', plus the thin 11-deal sample), yet \u00a74 still funds search as primary on independent grounds \u2014 '~$15K (75%) to search as primary \u2014 capture was legitimately underfunded before, this part of the instinct is right.' Demand state is directly interrogated in \u00a73: search's ceiling is bounded by existing category volume, 'industrial IoT monitoring' is a low-volume specialized category, $20K/month 'may simply exceed what",
+        "score": 4,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response distinguishes 'search may legitimately be funded first if category search volume exists and capture is underfunded' from 'the dashboard proves it' - the decision is re-derived from economics and demand state.",
+        "evidence": "The transcript does the negative half of this item well: it separates last-click attribution from demand creation ('tells you which channel closed the deal, not which channel created the demand'), flags n=11 as thin, and flags the July LinkedIn \u2192 branded-search timing overlap as evidence LinkedIn may have created demand search is now being credited for. It also opens a genuine demand-state line in section 3: 'Industrial IoT monitoring is a narrow keyword universe... it'll bid up your own CPCs against a fixed pool of searchers, with diminishing returns,' plus the step-3 instruction to 'test for",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

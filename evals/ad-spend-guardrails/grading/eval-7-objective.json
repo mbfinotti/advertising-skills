@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags roughly 9 conversions a month as below meaningful volume and declines to set a hard CAC ceiling now.",
+        "evidence": "The document sets explicit numeric ceilings immediately: \"Set the target CAC ceiling at $196... a hard floor at ~$310... treat ~$470... as the outer stage-guidance bound,\" despite separately noting low volume.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets an activation threshold instead: a spend level or conversion count at which the CAC policy switches on.",
+        "evidence": "No activation threshold is defined for the CAC ceiling itself; the closest is the exemptions note to \"Revisit this once monthly spend or conversions roughly triple,\" which concerns the testing carve-out, not the main policy's activation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes monthly gross profit per customer as about $39.20 ($49 x 80%) and frames payback as CAC divided by monthly gross profit.",
+        "evidence": "\"Contribution per customer/month = $49 \u00d7 80% = $39.20\" and \"Current payback = $44.44 / $39.20 = 1.1 months\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for or accounts for retention to churn-adjust payback (CAC divided by monthly gross profit times annual retention).",
+        "evidence": "\"Churn / retention | \u2014 | missing \u2014 needed for a true break-even (CAC recovered before the customer leaves)\" and \"get a churn number before this policy is final.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to inherit the investor's under-5-month rule as this business's target.",
+        "evidence": "The document adopts the investor's figure directly: \"Set the target CAC ceiling at $196 (5-month payback, your investor's ask)\" and \"I'd adopt it as your target, not treat it as gospel.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains payback tolerance through cost of capital rather than stage labels or someone else's portfolio.",
+        "evidence": "Reasoning is framed via \"subsidized runway\" and comparison to \"a venture-funded peer (who can defend 18\u201324 months),\" not via an explicit cost-of-capital calculation.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that a bootstrapped business facing near-zero capital cost can sustain a longer payback, up to around 24 months where the math supports it, while venture-funded companies face roughly 35-50% implied equity cost.",
+        "evidence": "The transcript argues the opposite: \"faster recovery than a venture-funded peer (who can defend 18\u201324 months) is the right instinct\" for the bootstrapped company, and no 35-50% equity-cost figure appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that payback under about 3 months usually signals underinvestment rather than health.",
+        "evidence": "\"At 1.1-month payback, you're recovering acquisition cost almost twice as fast as anyone would ask... you are not CAC-constrained, you are volume-constrained.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States a cash cap as an absolute monthly number derived from the 15-month runway, sitting next to any efficiency guidance.",
+        "evidence": "\"Cash cap: Not computable \u2014 I have your runway (15 months) but not total monthly burn, so I can't say what dollar level of ad spend the cash position actually tolerates.\" No absolute number is stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Shows the arithmetic behind every number proposed so it can be audited.",
+        "evidence": "\"Contribution per customer-month = $49 \u00d7 80% = $39.20 / Current CAC = $400 / 9 = $44.44 / Current payback = $44.44 / $39.20 = 1.1 months\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels inputs measured, estimated, or missing rather than guessing the gaps.",
+        "evidence": "Inputs table: \"Gross margin | 80% | estimated\"; \"Ad spend | ~$400/mo | estimated\"; \"Runway | 15 months | measured\"; \"Total monthly burn | \u2014 | missing\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not adopt 3:1 LTV:CAC or a 12-month payback rule as the answer; any such rule mentioned is labeled a heuristic with its origin.",
+        "evidence": "\"treat ~$470 (12-month payback) as the outer stage-guidance bound \u2014 not a literal break-even\" and attribution: \"David Skok's own commonly-cited bands put 5\u20137 months as healthy and call anything past 12 'anemic'\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the single hard-floor architecture, or names the escalation ladder as deleted, because a two-founder account has no second approver or review chair.",
+        "evidence": "The document keeps a full three-layer architecture (target/hard/outer bound) with an escalation path (\"target breach \u2192 discuss... hard-floor breach \u2192 automatic halt, same-day joint decision\") rather than collapsing to a single floor.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags roughly 9 conversions a month as below meaningful volume and declines to set a hard CAC ceiling now.",
+        "evidence": "The doc computes and states the $196 ceiling directly rather than flagging the 9-customer sample as too small to set a ceiling.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets an activation threshold instead: a spend level or conversion count at which the CAC policy switches on.",
+        "evidence": "\"The ceiling matters once you're testing whether scaled spend still pays back in time, not at your current volume\" plus \"keep new-channel tests under ~$100 until you have real retention data\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes monthly gross profit per customer as about $39.20 ($49 x 80%) and frames payback as CAC divided by monthly gross profit.",
+        "evidence": "\"Gross margin per customer per month = $49 \u00d7 80% = $39.20\" and \"Current payback = $44.44 / $39.20 = 1.1 months\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for or accounts for retention to churn-adjust payback (CAC divided by monthly gross profit times annual retention).",
+        "evidence": "\"payback period ignores churn... Before treating $196 as a real budget to spend up to, get a churn/retention number and check LTV:CAC\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to inherit the investor's under-5-month rule as this business's target.",
+        "evidence": "\"So 'set a $196 ceiling' is the literal answer, but it's not the binding constraint on your business right now\" and \"don't use $196 as a spending target \u2014 use it as a stop-loss.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains payback tolerance through cost of capital rather than stage labels or someone else's portfolio.",
+        "evidence": "No discussion of cost of capital appears anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that a bootstrapped business facing near-zero capital cost can sustain a longer payback, up to around 24 months where the math supports it, while venture-funded companies face roughly 35-50% implied equity cost.",
+        "evidence": "No such comparison of bootstrapped vs venture-funded payback tolerance appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes that payback under about 3 months usually signals underinvestment rather than health.",
+        "evidence": "The doc notes 4.4x headroom exists but never frames the current 1.1-month payback as a sign of underinvestment.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States a cash cap as an absolute monthly number derived from the 15-month runway, sitting next to any efficiency guidance.",
+        "evidence": "Runway is mentioned ('Runway (15 months)... you're constrained by whether $400/mo scales...') but no absolute monthly cash cap number is derived from it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Shows the arithmetic behind every number proposed so it can be audited.",
+        "evidence": "\"5-month payback ceiling = 5 \u00d7 $39.20 = $196\" and \"Current CAC = $400 / 9 customers = $44.44\" show full arithmetic.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels inputs measured, estimated, or missing rather than guessing the gaps.",
+        "evidence": "No formal measured/estimated/missing labeling is used; churn is simply flagged as unknown without a systematic tag.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not adopt 3:1 LTV:CAC or a 12-month payback rule as the answer; any such rule mentioned is labeled a heuristic with its origin.",
+        "evidence": "\"LTV:CAC, typically targeted at 3:1+, i.e., ~15 months of retention against a $196 CAC\" \u2014 mentioned as a typical reference check, not adopted as the final policy.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the single hard-floor architecture, or names the escalation ladder as deleted, because a two-founder account has no second approver or review chair.",
+        "evidence": "No discussion of approval architecture, escalation ladders, or governance structure appears anywhere in the document.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

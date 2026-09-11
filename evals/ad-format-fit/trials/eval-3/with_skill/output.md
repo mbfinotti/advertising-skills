@@ -1,0 +1,70 @@
+# Bruntveld Anniversary Sale — Format-Fit Report (Meta: Reels / Stories / Feed)
+
+## 1. Inputs echoed
+
+| Input | Value | Status |
+|---|---|---|
+| Objective | Conversions/sales (anniversary sale, direct response) | Given |
+| Platform | Meta (Instagram + Facebook) Ads Manager | **Assumed** — "Reels," "Stories," "Feed" are Meta's own placement names; confirm if you meant TikTok instead, the menu below doesn't transfer |
+| Funnel stage / audience | Mixed: existing customers + retargeting (warm), plus cold prospecting for the sale push | **Assumed** — typical for an anniversary sale; confirm split |
+| Offer / price band | Sitewide or category discount, impulse-to-considered kitchenware purchase | **Assumed** from "kitchenware DTC" |
+| B2B/B2C | B2C | Given |
+| Production capacity | ~2 new assets/month, solo operator. On hand: one 2-min 16:9 dialogue-driven brand film, a folder of product statics. **No dedicated 9:16 vertical master. No creator/UGC footage or cleared creator roster.** | Given |
+| Destination | Not stated | **Unknown — confirm before launch** |
+| Tracking | Not stated | **Unknown — confirm before launch** |
+| Conversion volume | Not stated | **Unknown — confirm before launch** |
+| Geography | Not stated | **Unknown** — doesn't gate anything below since no inbox/message format is in play; flag if you're pairing this with click-to-DM/Messenger promos |
+| Deadline | 10 days | Given — **hard deadline** |
+| One-off vs. compounding | Both: the sale itself is dated (10 days out), but "how should I set up the formats" reads as an ongoing placement setup | Given |
+| Effort ceiling | Solo marketer, no editor/agency on retainer mentioned, ~2 assets/month | Given |
+
+Two answers do the most work below: the **10-day deadline** kills anything that needs a shoot or a rights pass for *this* launch, and the **compounding framing** means UGC still belongs in the plan — just not in week one.
+
+## 2. Per-format verdict table
+
+Ordered by direct-response efficiency for this objective, then re-ranked against your interview answers (reasons in the last column say which answer moved which row).
+
+| Format | Verdict | Reason | Substitute / action |
+|---|---|---|---|
+| **Short vertical video — recut from the existing brand film + statics-to-motion** | **Fit — top rung for this launch** | Structurally the row that carries awareness-through-conversion on full-screen mobile, and the mobile-first Reels/Stories placement you asked for promotes it above cheaper rows (a static "scores near zero" in Reels' video-native surface). Re-cutting an asset you already own is the near-zero-effort rung, which the 10-day deadline requires. | Cut the 2-min film into 3-4 vertical (9:16) pieces, 15-30s each, built around the dialogue's strongest beats. **Caption every second** — it was shot for sound-on 16:9 dialogue; Feed autoplays muted (~85% of feed video is watched with sound off), so an uncaptioned dialogue cutdown is a structural misfit for Feed even though it's fine for Reels. |
+| **Single image (product statics)** | **Fit — Feed/Stories, weak in Reels** | Near-zero effort, you already own the assets, any-stage format. Demoted specifically inside the Reels sub-placement (video-native surface), fine in Feed and Stories cards. | Push existing product statics as Feed + Stories units with sale-specific overlay copy/pricing. Don't force them into Reels. |
+| **Collection / Instant storefront** | **Conditional** | Fits mobile shopping directly, but needs a live, healthy product catalog feed — not confirmed. | Confirm feed health before briefing. If healthy, use it in Feed for the "browse the sale" job; if not, skip rather than let it silently under-deliver. |
+| **Carousel** | **Conditional — warm/retargeting only** | Fits multi-product storytelling for existing customers browsing a sitewide sale; structurally wrong for cold first touch (demands sequential swipe attention a cold viewer won't give). | Run carousel only against your existing-customer/retargeting audience, not prospecting. |
+| **Creator/UGC-fronted vertical video** | **Misfit — production capacity, for this launch** | Structurally this *is* the format everyone's telling you works, and it's correctly the top row for full-screen mobile awareness-through-conversion long-term. It fails the 10-day window because it sits at the top of both the effort axis (shoot + edit) and the compliance axis (rights clearance, signed licence, pull risk mid-flight) — none of that closes in 10 days without a roster you don't have. Your compounding framing (this being about ongoing format setup, not just this sale) is exactly the condition the skill says should promote it — just not inside this deadline. | **Don't build it for launch day.** Start sourcing now (UGC marketplace, 1-2 creators, cleared usage rights) so a first UGC cut lands mid-sale or for the next cycle, spending one of your two monthly asset slots on it. |
+| Search text, Product/shopping (non-catalog), Document ads, Inbox/message, Bumper/non-skippable, Connected TV | **Ineligible / out of scope** | None of these are exposed on the Reels/Stories/Feed placement set under a sales objective — wrong surface or wrong objective lock. | Not applicable to this request. |
+| In-platform lead form | **Ineligible** | Runs under a leads objective; this is a checkout/purchase sale, not lead capture. | N/A. |
+
+**Effort line for the surviving rows** (highest first): creator-fronted UGC > short vertical video (recut) > collection > carousel > single image.
+**Compliance-cost line**: only creator-fronted UGC carries real weight here — rights clearance and a signed licence before anything ships; everything else on this list is near-zero.
+
+## 3. Launch-blocker list
+
+Zero blockers is the launch threshold — none of these are confirmed yet, so treat all as open until checked:
+
+- **[blocker]** Confirm the Sales/Conversions objective exposes Reels + Stories + Feed as selectable placements and the purchase event is selectable under it (Ads Manager, 5 min).
+- **[blocker]** Preview every recut clip and every static in every surface it'll serve — feed, stories, reels. Check specifically that the 16:9 film's cutdowns aren't letterboxed and that sale-price overlays don't truncate.
+- **[blocker]** Validate 9:16 + safe zones on every vertical export (keep key text/logo out of roughly the top 14% and bottom 20-35%). Enforce with an export preset and a filename convention, e.g. `bruntveld_annisale_9x16_v1.mp4`.
+- **[blocker]** Confirm the CTA (e.g., "Shop Now") is present on every format and that the purchase event is firing and was recently verified, browser-side and server-side.
+- **[blocker]** Confirm the sale's destination page matches the promise — a sale ad pointed at a slow or generic homepage collapses conversion regardless of format.
+- **[blocker]** If using Collection/Instant storefront: confirm the catalog feed is live and healthy before briefing it.
+
+## 4. Post-launch watch list
+
+- **Placement-breakdown divergence** — you're running one shared recut plan across three placements for the first time under a compressed build; watch for the film cutdown holding in Reels (video-native, sound-tolerant) while collapsing in Feed (muted, static-heavy). Confirmation step: pull the placement breakdown you already have (minutes, no spend) before touching budget.
+- **Hold-rate collapse on the recut brand film specifically** — it was built for sound-on 16:9 dialogue, not silent vertical attention; if 3s→15s hold drops hard on that asset while the statics hold fine, that's the format/context mismatch, not a creative-quality problem. Same confirmation step.
+- **Frequency out of band on the warm/retargeting segment** — a small existing-customer list against a compressed 10-day flight can hit frequency fast (retargeting is comfortable ~2.0-4.0). If it spikes past that early, throttle spend to that segment rather than reading it as ad fatigue.
+
+Given the one-person, 10-day setup, stop at the breakdown-level check for this launch — don't spend the time isolating formats into separate ad sets or running a holdout; that effort belongs to the *next* cycle once the UGC asset exists and you have something worth A/B-ing properly.
+
+## 5. Dated-numbers appendix
+
+All figures below are an **August 2026 snapshot per the skill's own sourcing**, not independently reverified against Meta's live documentation in this session (no browsing was available) — label them **unverified-current** and confirm in Ads Manager before spend:
+
+- Feed video watched muted: ~85% — cited 2026-08, unverified-current.
+- Retargeting frequency comfort band: ~2.0-4.0 — cited 2026-08, unverified-current, heuristic not a platform limit.
+- Vertical safe-zone guidance: keep key elements out of ~top 14% / bottom 20-35% — cited 2026-08, unverified-current.
+- Refresh cadence: statics 14-28 days, short video/carousel 21-35 days, creator-style 28-42 days — cited 2026-08, unverified-current, heuristics not hard limits.
+- Advantage+/automated multi-surface campaigns: poor fit below ~$50/day or on unverified tracking — cited 2026-08, unverified-current; only relevant if you're considering an automated campaign type rather than standard Sales.
+- Conversion-optimized delivery volume floor: ~50 events/ad set/7 days generally, ~10/week for purchase-optimized — cited 2026-08, unverified-current; check this against your account's actual weekly purchase volume before choosing Conversions objective vs. a Traffic/manual approach for the sale window, since it changes the recommendation above if volume is low.
+
+Keep this report as the canonical record for this launch — there's no persistent memory store wired up in this session to carry it forward automatically.

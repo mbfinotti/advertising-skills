@@ -1,0 +1,106 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses the account-level phrase negative 'project management' as conflicting with the ad group's own active keywords",
+        "evidence": "\"the account-level phrase negative project management your new hire added conflicts with Novapoint's own core non-brand keywords.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that negatives always beat positives: a blocked keyword still displays as active but never enters the auction",
+        "evidence": "\"Negatives always beat positives. A blocked active keyword still displays as active in the UI \u2014 it just never enters the auction.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends removing or narrowing the conflicting negative as the fix",
+        "evidence": "\"Remove it, or narrow it \u2014 this is the core conflict-check step this kind of change always needs\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends replacing it with narrower exclusions targeted at the actual informational queries (for example exact or phrase negatives on specific how-to searches), never a theme word that overlaps core keywords",
+        "evidence": "\"Replace it with negatives that target the actual junk (informational/how-to intent) without matching your core phrase, e.g. phrase negatives: what is project management, project management definition...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags account level as the wrong exclusion level for this term - widest reach, hardest to audit and reverse",
+        "evidence": "\"Account-level is the hardest rung to audit and reverse \u2014 reserve it for universal disqualifiers that can never legitimately match a real keyword\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a conflict check against active keywords anywhere in the account before every future negative is added",
+        "evidence": "\"Before any negative goes in at account level, run the conflict check: does it match any active keyword anywhere in the account?\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a quarterly conflict sweep as the standing safeguard, because this failure mode is silent",
+        "evidence": "\"Add a quarterly conflict sweep: a full check of the account's negative lists against active keywords... impressions just go to zero with no error, no alert\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not attribute the outage to bid strategy, budget, or a learning phase",
+        "evidence": "\"Budget and bids untouched: Irrelevant.\" and \"'Review your bid strategy' from platform support: A common, wrong first read\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Diagnoses the account-level phrase negative 'project management' as conflicting with the ad group's own active keywords",
+        "evidence": "'The account-level phrase-match negative \"project management\" is a self-inflicted keyword conflict... it's blocking the exact commercial queries your core non-brand ad group targets.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that negatives always beat positives: a blocked keyword still displays as active but never enters the auction",
+        "evidence": "'Keyword status stays \"active\" because a negative-keyword conflict doesn't disapprove or pause the keyword \u2014 it just prevents the auction from ever being entered for matching queries.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends removing or narrowing the conflicting negative as the fix",
+        "evidence": "'**Remove the phrase-match negative `project management`** from the account-level/shared list \u2014 it's too broad; it negates the head term your whole business is built on.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends replacing it with narrower exclusions targeted at the actual informational queries (for example exact or phrase negatives on specific how-to searches), never a theme word that overlaps core keywords",
+        "evidence": "'Replace it with negatives that target the informational intent specifically, not the core phrase: `how to project management`, `project management tutorial`... Use phrase match on these longer, intent-specific strings so they don't collide with your commercial head terms.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags account level as the wrong exclusion level for this term - widest reach, hardest to audit and reverse",
+        "evidence": "'Scope future broad negatives at the campaign or ad-group level first, not account-wide... only promote to the shared/account-level list once you've confirmed no other campaign's core keywords contain that phrase.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a conflict check against active keywords anywhere in the account before every future negative is added",
+        "evidence": "'**Process fix**: before adding anything to an account-level negative keyword list, cross-check it against every ad group's core positive keywords across the account (export keywords, search for the negative term as a substring). This is the step that was skipped.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a quarterly conflict sweep as the standing safeguard, because this failure mode is silent",
+        "evidence": "No recurring cadence such as a quarterly sweep is recommended anywhere in the transcript; only a one-time process fix before future additions is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not attribute the outage to bid strategy, budget, or a learning phase",
+        "evidence": "'Budget and bids are irrelevant because the ad never reaches the auction stage... there's no bid, budget, or Quality Score issue to fix.'",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Declines the yes/no format and answers per layer in four states (pass, FAIL, unknown, not applicable).",
+        "evidence": "The layer screen uses hybrid state labels rather than binary yes/no: 'tracking : unknown, leaning FAIL', 'structure : unknown, plausible', 'targeting : unknown', 'offer & downstream : n/a this pass', 'external : n/a'. The intro also explicitly rejects the yes/no framing: 'the skill this runs on explicitly bans collapsing findings to pass/fail when evidence is missing.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Layers the available data cannot power are marked unknown and explicitly not treated as clean.",
+        "evidence": "\"Nobody gets a clean \"yes\" today, because the Evidence Gate isn't cleared\" and the quoted skill rule: \"unknown is not pass \u2014 an unchecked layer silently marked clean is the most common way audits go wrong.\" Table entries are 'Can't tell yet' rather than pass.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that with the backend unreachable every finding carries at most medium confidence, and says so in the verdict itself.",
+        "evidence": "The medium-confidence-cap claim appears only in the Evidence Gate prose ('No CRM reconciliation \u2014 every finding here is capped at medium confidence at best until backend truth is reachable'), while the ROOT-CAUSE VERDICT block itself states 'confidence : low \u2014 Evidence Gate not cleared', not a 'medium at most' framing tied to backend unreachability.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the consent-banner swap five weeks ago as a tracking-layer suspect that must be reconciled before other layers are read.",
+        "evidence": "\"Consent-banner swap ~5 weeks ago sits almost exactly inside your 6-week drift window\" and the ranked action list puts the tracking check first: \"This is rung 1 and can't be skipped or demoted \u2014 every other number in the account reads through it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the gradual, no-break-date CPA drift as the structural-erosion/fragmentation pattern, distinct from a single-event cause.",
+        "evidence": "\"'CPA drifted up steadily, no single break day' is this skill's own textbook signature for fragmentation/erosion, not for a typical tracking break\" and in the verdict block: \"gradual, no-break-date drift is this skill's reference pattern for fragmentation/erosion pattern, not for a typical tracking-break signature.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the exact missing access that would clear each unknown: a CRM or backend export, and ad-set plus ad-level breakdowns.",
+        "evidence": "Evidence Gate lists \"No CRM reconciliation\" and \"No ad-set/ad breakdown \u2014 creative and fine-grained targeting can't be fully screened; this is a hard access gap, not a data-quality gap,\" and action #4 asks the agency for \"a one-time raw export of just the affected campaign's ad sets/ads.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that localisation cannot complete at campaign-only granularity, and what the finer breakdown would unlock.",
+        "evidence": "\"localisation : not run \u2014 campaign-level breakdown is available and unused; ad-set/ad breakdown blocked by portal\" combined with \"No ad-set/ad breakdown \u2014 creative and fine-grained targeting can't be fully screened.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for, or explicitly requires, the change and edit log - what changed and exactly when - before any verdict.",
+        "evidence": "\"No edit log \u2014 can't rule out a bid/budget/target/optimization-event change resetting delivery mid-window\" and action #3: \"Edit log \u2014 minutes. List every bid, budget, target, or optimization-event change in the window, per campaign, and date each one against the drift.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Provides concrete export steps and spreadsheet formulas for the user to run, including the delta formula (current - baseline) / baseline.",
+        "evidence": "The transcript describes what to pull (e.g. \"Pull daily impressions/clicks/cost/conversions per campaign for the drift window plus an equal prior window; compute CPM/CTR/CVR per campaign per week\") but never gives an explicit spreadsheet formula such as (current - baseline) / baseline.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not issue a definitive single-layer root-cause verdict on this data.",
+        "evidence": "\"verdict : insufficient evidence for a single root cause. Two internally-consistent candidates are open \u2014 tracking degradation ... and structural erosion/fragmentation.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tags per-layer entries with severity and confidence as separate fields.",
+        "evidence": "Each layer line ends with bracketed tags, e.g. \"tracking ... [severity: high, confidence: low-medium]\" and \"structure ... [severity: medium-high, confidence: low]\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Emits a compact state block (baselines, screen states, open unknowns, re-check date) the user can carry into the next session.",
+        "evidence": "The ROOT-CAUSE VERDICT code block bundles platform/window/volume, decomposition, localisation, per-layer screen states, confidence, verdict, evidence, prediction, and \"re-check : one full window after the two actions below are run and reported back.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends no fixes - no budget, bid, creative, or structural changes - before the unknowns are resolved.",
+        "evidence": "\"Don't reach for budget or bid changes yet \u2014 spend is flat and every rung above bidding is still unscreened, so a bid/budget move right now would just add a learning-window reset on top of an unresolved measurement question.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Declines the yes/no format and answers per layer in four states (pass, FAIL, unknown, not applicable).",
+        "evidence": "The transcript uses only three states per layer: '\u2705 fine' (Bids), '\u274c not fine (prime suspect)' (Tracking), and 'can't confirm (data blocked)' (Structure, Targeting, Creative). No layer is marked 'not applicable', so the four-state scheme is not present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Layers the available data cannot power are marked unknown and explicitly not treated as clean.",
+        "evidence": "Structure and Targeting are marked 'can't confirm (data blocked)' but then explicitly softened to clean: 'Provisionally fine; revisit once you get ad-set access' and 'Provisionally fine, but re-test once tracking is cleared' \u2014 the unknowns are treated as provisionally clean rather than left strictly unresolved.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that with the backend unreachable every finding carries at most medium confidence, and says so in the verdict itself.",
+        "evidence": "There is no mention of a confidence ceiling anywhere in the transcript; no line states findings are capped at 'medium confidence' due to unreachable backend/CRM data.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the consent-banner swap five weeks ago as a tracking-layer suspect that must be reconciled before other layers are read.",
+        "evidence": "'CPA drift started ~6 weeks ago; banner swap was ~5 weeks ago... Read tracking first; everything downstream depends on it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Reads the gradual, no-break-date CPA drift as the structural-erosion/fragmentation pattern, distinct from a single-event cause.",
+        "evidence": "The transcript instead ties the gradual drift directly to the single banner-swap event: 'a gradual signal-loss curve (not everyone hits the new banner on day one \u2014 it rolls in as sessions/cookies churn) explains the \"no single bad day\" shape perfectly' \u2014 this is a single-event explanation, not a distinct structural-erosion/fragmentation reading.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the exact missing access that would clear each unknown: a CRM or backend export, and ad-set plus ad-level breakdowns.",
+        "evidence": "'No ad-set/ad-level access, so structural issues... can't be ruled in or out directly.' and 'CRM access matters most as a tie-breaker between \"conversions are genuinely down\" vs \"conversions are fine, just invisible\"'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that localisation cannot complete at campaign-only granularity, and what the finer breakdown would unlock.",
+        "evidence": "'Push again for ad-set/ad breakdown or at minimum CTR/frequency at campaign level \u2014 needed to separate creative fatigue from targeting decay.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for, or explicitly requires, the change and edit log - what changed and exactly when - before any verdict.",
+        "evidence": "The transcript already issues a verdict ('this pattern... is a measurement problem... the timing points straight at the cookie banner') based on dates already given, rather than requiring a change/edit log before any verdict.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Provides concrete export steps and spreadsheet formulas for the user to run, including the delta formula (current - baseline) / baseline.",
+        "evidence": "No spreadsheet formulas or export steps are given; step 2 only says 'Decompose CPA into CPC \u00d7 (1/CVR) from whatever fields your campaign-level export has' with no delta/baseline formula.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not issue a definitive single-layer root-cause verdict on this data.",
+        "evidence": "'Bottom line up front: this pattern... is a measurement problem, not a performance problem \u2014 and the timing points straight at the cookie banner' and 'Tracking \u2014 \u274c not fine (prime suspect)' constitute a definitive single-layer (tracking) root-cause verdict.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Tags per-layer entries with severity and confidence as separate fields.",
+        "evidence": "Layers are tagged only with a status symbol/phrase (e.g. '\u274c not fine (prime suspect)', 'can't confirm (data blocked)') \u2014 there are no separate severity and confidence fields.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Emits a compact state block (baselines, screen states, open unknowns, re-check date) the user can carry into the next session.",
+        "evidence": "The transcript ends with a numbered 'Recommended order of attack' list; there is no compact state block covering baselines, screen states, open unknowns, and a re-check date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends no fixes - no budget, bid, creative, or structural changes - before the unknowns are resolved.",
+        "evidence": "The 'Recommended order of attack' only lists diagnostic actions (pull consent-grant data, decompose CPA, push for ad-set access, escalate CRM access) with no budget, bid, creative, or structural change recommended.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

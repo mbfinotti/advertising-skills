@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "States that conversion-optimised delivery needs roughly 50 optimisation events per ad set per rolling 7 days",
+        "evidence": "\"Optimization needs ~50 events/ad set/week to exit learning phase\" and appendix: \"~50 optimization events/ad set/rolling 7 days to exit learning phase\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the proposed campaign cannot clear that volume floor using the user's own figures ($25/day, ~$80 target CPA, 2-3 demo requests per week)",
+        "evidence": "\"At $80 CPA and $25/day (~$175/week), you're buying ~2.2 conversions/week \u2014 ~4% of the floor, and roughly in line with your current 2-3/week company-wide total.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the daily budget floor as (target CPA x 50) / 7, roughly $570/day at an $80 CPA",
+        "evidence": "\"the ~50-events/week floor needs roughly $571/day\"; appendix: \"Budget-floor formula: (target CPA \u00d7 50) / 7 per day.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends a traffic or website-visits objective with manual funnel measurement instead of forcing the conversions objective",
+        "evidence": "\"launch on Traffic/landing-page-view objective and track demo requests manually until spend or CPA moves\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that under-volume conversion optimisation is not neutral: the campaign pays more per click for a system that cannot learn",
+        "evidence": "\"An under-volume conversions objective doesn't fail gracefully; it pays more per click for a system that never learns.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags the 5-card carousel as structurally wrong for cold first touch",
+        "evidence": "\"Misfit \u2014 structural | Carousel's fit band is consideration, multi-product, warm audiences; it's explicitly wrong for cold first touch\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the structural reason: a carousel demands sequential swipe attention a cold audience does not give",
+        "evidence": "\"sequential swipe attention nobody cold gives\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends single image (or another eligible near-zero-effort format) as the substitute for cold prospecting",
+        "evidence": "\"Substitute: Single image, or short vertical video if you can produce one\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes hard gates that block a launch from soft practitioner preferences that never do",
+        "evidence": "\"Ineligible at this budget (hard-gate category: conversion-volume floor)\" vs \"Misfit for this specific goal\" labels used distinctly throughout table",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivers a per-format verdict table using fit / conditional / misfit / ineligible verdicts with a specific reason per row",
+        "evidence": "Section 2 table with columns Format/Verdict/Reason/Substitute, using Fit, Conditional, Misfit, Ineligible, Not applicable",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Labels the platform thresholds cited as an August 2026 snapshot or as unverified-current, and tells the user to confirm them in the ads interface before launch",
+        "evidence": "\"label them unverified-current and confirm in Ads Manager before spend commits\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Marks the conversions objective as conditional (fit once weekly conversion volume clears the ~50-event floor) rather than banning it permanently",
+        "evidence": "\"Traffic / landing-page-view objective with manual funnel tracking, until budget or a proxy event clears the floor (see \u00a73)\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "States that conversion-optimised delivery needs roughly 50 optimisation events per ad set per rolling 7 days",
+        "evidence": "\"Meta's...conversion optimization needs roughly 50 conversions of the optimization event per week to exit learning phase and deliver a stable CPA.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes the proposed campaign cannot clear that volume floor using the user's own figures ($25/day, ~$80 target CPA, 2-3 demo requests per week)",
+        "evidence": "\"Your numbers: $25/day \u00f7 $80 target CPA = ~2 conversions/week, best case. That's not a slow ramp to 50/week \u2014 it's a permanent ceiling roughly 25x below what the algorithm needs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives the daily budget floor as (target CPA x 50) / 7, roughly $570/day at an $80 CPA",
+        "evidence": "No such formula or $570/day figure appears; the transcript only suggests \"bump budget toward ~$50-70/day\" without deriving the 50-event floor mathematically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends a traffic or website-visits objective with manual funnel measurement instead of forcing the conversions objective",
+        "evidence": "The transcript suggests optimizing for \"a higher-funnel event you have real volume on (landing page views...)\" \u2014 still a conversion-style optimization event, not a Traffic objective with manual measurement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that under-volume conversion optimisation is not neutral: the campaign pays more per click for a system that cannot learn",
+        "evidence": "No statement about paying more per click; the transcript only says \"CPA to be unstable\" and delivery \"erratic.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the 5-card carousel as structurally wrong for cold first touch",
+        "evidence": "\"A 5-card feature-tour carousel is a consideration asset...Cold lookalikes don't know Fienzo exists yet.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Gives the structural reason: a carousel demands sequential swipe attention a cold audience does not give",
+        "evidence": "The stated reason is about funnel-stage assumption (\"assumes the viewer already knows they have the problem\"), not swipe-attention mechanics.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends single image (or another eligible near-zero-effort format) as the substitute for cold prospecting",
+        "evidence": "\"Swap the carousel for a single strong creative for this cold/bottom-funnel campaign.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes hard gates that block a launch from soft practitioner preferences that never do",
+        "evidence": "All recommendations are framed uniformly as advice; no explicit hard-gate vs soft-preference distinction is made.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivers a per-format verdict table using fit / conditional / misfit / ineligible verdicts with a specific reason per row",
+        "evidence": "No table with these verdict categories appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Labels the platform thresholds cited as an August 2026 snapshot or as unverified-current, and tells the user to confirm them in the ads interface before launch",
+        "evidence": "No date/verification label is attached to the 50-conversion threshold or any other cited number.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Marks the conversions objective as conditional (fit once weekly conversion volume clears the ~50-event floor) rather than banning it permanently",
+        "evidence": "\"Don't optimize for demo request yet...Layer in demo-request LAL later once volume exists\" implies a temporary, not permanent, restriction.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Computes the per-branch daily budget floor from target CPA x exit threshold / threshold period, landing near $286/day for a $40 CPA on Meta's ~50 events per 7 days",
+        "evidence": "'under its own budget floor ($180/day vs $286/day floor at $40 target CPA) even alone.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs the budget feasibility test as a separate check from the volume test, noting even Broad prospecting at $180/day sits under the floor despite being the biggest branch",
+        "evidence": "'Still under Meta's ~50/wk exit-learning threshold (9.6/wk) and under its own budget floor ($180/day vs $286/day floor at $40 target CPA) even alone.' \u2014 volume and budget presented as two distinct, separately-stated criteria.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Uses Meta's documented ~50 optimisation events per ad set per rolling 7 days as the volume threshold (a note to re-verify the live help page is acceptable)",
+        "evidence": "'Meta's ~50/wk exit-learning threshold (9.6/wk)' and 'the $40-target volume ... still sits well below Meta's ~50/week exit-learning threshold' \u2014 the ~50/7-day threshold is used consistently.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies the Podcast listeners test as insufficient evidence rather than merge, because its ~$90 spend is below roughly 3x the $40 target CPA, so zero conversions is plausibly noise",
+        "evidence": "The verdict given is 'Prune (pause, fold budget in)', not 'insufficient evidence': 'Spend is below the 3x-target minimum, so the zero-purchase reading alone would be inconclusive, but the budget test doesn't need it to be.' The transcript explicitly bypasses an insufficient-evidence classification by substituting the budget-starvation argument.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States what would clear the Podcast listeners verdict: more days, concentrated budget, or accumulated spend past the ~3x-CPA mark",
+        "evidence": "No such conditions are given for Podcast listeners \u2014 it is pruned outright ('Prune (pause, fold budget in)') with no discussion of what would need to change to reach a different verdict.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the Spring 2024 launch's zero conversions as real evidence, since its ~$750 spend comfortably exceeds 3x the target CPA",
+        "evidence": "'$750 spend = 6.25x the Evidence Gate's 3x-target-CPA minimum ($120) \u2014 zero purchases here is real signal, not noise.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the Spring 2024 launch as an archaeological split (nobody can justify it) and makes it the first, cheapest prune or merge",
+        "evidence": "'Archaeological (no one can state a live reason) ... Highest-confidence merge in the account.' It is listed first in the concrete merge steps: 'Pause Spring 2024 launch and Podcast listeners test today.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the Premium tier split, citing the unit-economics preserve rule (3x margin, its own target CPA)",
+        "evidence": "'Keep, structurally separate | Protected by two preserve rules at once: unit economics differ materially (3x margin \u2192 its own target CPA), and the offer/product genuinely differs.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the cost of keeping the Premium tier split: its own budget floor or the learning-signal price of the separation, stated in the plan",
+        "evidence": "The plan only defers this: 'Action item: nail down its actual target number from the 3x-margin figure (not just \"about 3x\") so its own budget floor and pass/fail can eventually be judged.' No actual budget floor or learning-signal cost is computed or stated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the mid-window attribution change on Interest stack 2023 and refuses to count its conversions alongside the others without re-windowing or excluding it",
+        "evidence": "'Attribution window changed mid-window (7-day \u2192 1-day click, day 12/30). That breaks the Evidence Gate's \"no tracking change mid-window\" rule ... Don't merge, keep, or count it against threshold yet.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns every branch exactly one of the four states (merge, keep, keep but re-parent, insufficient evidence) with a stated justification",
+        "evidence": "Podcast listeners test is assigned 'Prune', a fifth label not among the four specified states, alongside Keep (Broad, Premium), Insufficient evidence (Interest stack), and Merge (Spring 2024).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires each surviving branch in the target structure to clear its budget floor, concentrating spend into fewer branches",
+        "evidence": "After the merge, Broad prospecting is only raised to $208/day, still below the stated $286/day floor, and the plan explicitly flags this isn't resolved: 'Even fully merged, the $40-target volume ... still sits well below Meta's ~50/week exit-learning threshold. Structure alone likely won't clear it.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies prune mechanics to the unjustified branch: pause it and move its budget to survivors in steps of roughly 20%",
+        "evidence": "'Pause Spring 2024 launch and Podcast listeners test today. Don't delete...' and 'Raise Broad prospecting's budget $180 \u2192 $208/day (+15.6%). That's under Meta's ~20% significant-edit threshold, so it's a safe in-place bump.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not propose a whole-account big-bang rebuild",
+        "evidence": "'That's under Meta's ~20% significant-edit threshold, so it's a safe in-place bump, not a rebuild.' The plan uses staged, incremental pauses and budget shifts rather than a full restructure.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Computes the per-branch daily budget floor from target CPA x exit threshold / threshold period, landing near $286/day for a $40 CPA on Meta's ~50 events per 7 days",
+        "evidence": "The transcript never computes a daily budget floor figure like $286/day; it only cites weekly conversion rates (e.g. 'Broad \u22489.6/wk, Interest stack \u22481.4/wk, Premium \u22482.6/wk') without deriving any dollar budget threshold from target CPA \u00d7 exit threshold.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the budget feasibility test as a separate check from the volume test, noting even Broad prospecting at $180/day sits under the floor despite being the biggest branch",
+        "evidence": "No budget floor figure or feasibility test appears anywhere in the transcript; Broad prospecting's daily budget is never stated or compared against any floor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Uses Meta's documented ~50 optimisation events per ad set per rolling 7 days as the volume threshold (a note to re-verify the live help page is acceptable)",
+        "evidence": "'none of your campaigns individually hit Meta's ~50 conversions/week threshold to exit the learning phase (Broad \u22489.6/wk, Interest stack \u22481.4/wk, Premium \u22482.6/wk)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Classifies the Podcast listeners test as insufficient evidence rather than merge, because its ~$90 spend is below roughly 3x the $40 target CPA, so zero conversions is plausibly noise",
+        "evidence": "The transcript's verdict for Podcast listeners test is '\ud83d\udd34 Merge into Broad prospecting', not a distinct 'insufficient evidence, keep testing/hold' classification: 'Too small to ever reach significance on its own; fold it in rather than keep testing it in isolation.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States what would clear the Podcast listeners verdict: more days, concentrated budget, or accumulated spend past the ~3x-CPA mark",
+        "evidence": "The transcript merges Podcast listeners immediately and never discusses conditions (more days, more spend, concentrated budget) under which it could be evaluated on its own.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats the Spring 2024 launch's zero conversions as real evidence, since its ~$750 spend comfortably exceeds 3x the target CPA",
+        "evidence": "'At Broad's CPA, $750 of spend should have produced ~5\u20136 purchases; getting exactly zero has under a 1% chance of being random noise. That's real underperformance...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the Spring 2024 launch as an archaeological split (nobody can justify it) and makes it the first, cheapest prune or merge",
+        "evidence": "The transcript's reasoning for killing Spring 2024 launch is purely statistical underperformance ('This is the one genuine negative signal in the set'), not framed as an unjustified/archaeological structural split, and it is not explicitly ranked as the first or cheapest action.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Keeps the Premium tier split, citing the unit-economics preserve rule (3x margin, its own target CPA)",
+        "evidence": "'\ud83d\udfe1 Keep separate: Premium tier. Different product economics mean a different target CPA (~$120, not $40, given 3x margin).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the cost of keeping the Premium tier split: its own budget floor or the learning-signal price of the separation, stated in the plan",
+        "evidence": "The transcript notes Premium's weekly conversion rate ('Premium \u22482.6/wk') only as part of a general bonus point about all campaigns missing the learning-phase threshold, but never explicitly states this as the cost/tradeoff of keeping Premium tier separate in its verdict or net action.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags the mid-window attribution change on Interest stack 2023 and refuses to count its conversions alongside the others without re-windowing or excluding it",
+        "evidence": "'switching from 7-day click to 1-day click 12 days into the window mechanically undercounts attributed purchases... Don't compare it further until attribution is made consistent' and 'Before finalizing the Interest stack merge, ask your buyer to re-pull its data on one consistent attribution window.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns every branch exactly one of the four states (merge, keep, keep but re-parent, insufficient evidence) with a stated justification",
+        "evidence": "Spring 2024 launch is given a fifth state, '\u26ab Kill, don't merge', which is not one of the four listed states (merge/keep/keep-but-reparent/insufficient evidence).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires each surviving branch in the target structure to clear its budget floor, concentrating spend into fewer branches",
+        "evidence": "No budget floor concept is computed or applied to any surviving branch anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies prune mechanics to the unjustified branch: pause it and move its budget to survivors in steps of roughly 20%",
+        "evidence": "'Kill: Spring 2024 launch. Reallocate its $25/day into the merged Broad campaign.' \u2014 this is an immediate full reallocation, not a stepped ~20% ramp, and the branch itself is not described as 'unjustified' but as a proven underperformer.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Does not propose a whole-account big-bang rebuild",
+        "evidence": "The 'Net action' section proposes a targeted, incremental plan (merge two campaigns, kill one, keep two separate) rather than a full account restructuring.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

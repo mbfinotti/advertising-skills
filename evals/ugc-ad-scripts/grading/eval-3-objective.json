@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The before/after contrast archetype is removed for this health-category ad and the removal is stated explicitly in the deliverable as deleted/ruled out, not silently omitted or ranked last.",
+        "evidence": "\"Before/after contrast (exhausted-at-3am vs. glowing-in-the-morning) \u2014 deleted as a hook archetype.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No hook or beat contrasts an exhausted before state with a rested after state.",
+        "evidence": "\"the dramatic contrast survives only as a soft narrative beat in Concept C's body (tired \u2192 clear-headed, described in words, not staged as a split-screen transformation shot)\" \u2014 a tired-to-rested contrast is explicitly retained in narrative form.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The numeric sleep-score testimonial (61 to 89) is cut rather than softened, with the reason that specific numeric health testimonials are routinely rejected outright.",
+        "evidence": "\"'My sleep score went from 61 to 89 in three weeks' as the main hook \u2014 cut, not softened... the exact pattern FTC-adjacent ad review routinely rejects outright regardless of wording.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The 'Do you struggle with insomnia?' opener is rewritten out; no line uses second-person framing that implies the viewer's health condition.",
+        "evidence": "\"I rewrote every hook to describe the experience... 'Insomnia' doesn't appear in any spoken or on-screen line.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states a customer testimonial is not scientific evidence and efficacy claims need substantiation the advertiser independently holds, else the line is softened or cut.",
+        "evidence": "No statement in the transcript articulates that a testimonial is not scientific evidence or that the advertiser must independently hold substantiation; compliance notes only address disease claims and consent.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The whole package is flagged for the user's own legal review before filming.",
+        "evidence": "\"Regulated category: dietary supplement \u2014 flag this whole package for your own legal/regulatory review before filming...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Any endorser result that remains gets a generally-expected-result treatment, and a bare 'results not typical' disclaimer is not used as the fix.",
+        "evidence": "No 'generally expected result' or typicality treatment appears anywhere in the package despite Concept C retaining a real tracker-based result claim (hook 4).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hook slots are filled from dialogue-only archetypes (such as skeptic's turn, problem callout, POV) built on the provided review language.",
+        "evidence": "Each concept's hooks include Problem callout, POV, and Skeptic's turn variants tied to the concept's verbatim motivation quote.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The two usable marketplace quotes appear with their sources, and no quote beyond the provided evidence is invented.",
+        "evidence": "Evidence table lists both quotes with sources (\"Marketplace review, June\" / \"Marketplace review, May\"); quote 3 is explicitly excluded.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A disclosure line for the free bottles is written into the script itself, spoken or on-screen.",
+        "evidence": "\"Vantoria sent me a few bottles to actually try\" spoken, on-screen \"gifted by Vantoria \u00b7 mag glycinate\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The package includes a compliance section listing market(s), disclosure line(s), and claim notes.",
+        "evidence": "Compliance section lists Markets, Material connection, Performer status, Result claims, Health/efficacy claims, Regulated category.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Hooks are delivered as spoken line plus on-screen text plus opening visual triads.",
+        "evidence": "Each hook table has Spoken line / On-screen text / Opening visual columns across all three concepts.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Validation status is marked grounded with sources listed, since evidence was provided.",
+        "evidence": "\"Validation: grounded.\" stated for Concepts A and B, tied to the evidence table with sources.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The before/after contrast archetype is removed for this health-category ad and the removal is stated explicitly in the deliverable as deleted/ruled out, not silently omitted or ranked last.",
+        "evidence": "Concept 2, \"3am vs Morning (dramatic before/after)\", is fully scripted, not removed: \"3am me vs 7am me. Same night. One bottle.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No hook or beat contrasts an exhausted before state with a rested after state.",
+        "evidence": "Concept 2's script: \"3:14 AM... VO: 'Because I used to lie there for hours.'\" cut to \"7:02 AM... VO: 'Now I actually wake up feeling like this.'\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The numeric sleep-score testimonial (61 to 89) is cut rather than softened, with the reason that specific numeric health testimonials are routinely rejected outright.",
+        "evidence": "The number is kept and built into Concept 1's hook and script, softened only with \"individual results may vary; sleep score based on one customer's report\" rather than removed.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The 'Do you struggle with insomnia?' opener is rewritten out; no line uses second-person framing that implies the viewer's health condition.",
+        "evidence": "Concept 2 Hook 1 and full script use: \"Do you struggle to fall asleep?\" directly to camera, kept as the primary version of the concept.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response states a customer testimonial is not scientific evidence and efficacy claims need substantiation the advertiser independently holds, else the line is softened or cut.",
+        "evidence": "No such statement appears; testimonials are treated as usable content requiring only a disclaimer, e.g. \"pair it with 'individual results may vary'\".",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The whole package is flagged for the user's own legal review before filming.",
+        "evidence": "No instruction to route the package through the user's own legal/compliance review appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Any endorser result that remains gets a generally-expected-result treatment, and a bare 'results not typical' disclaimer is not used as the fix.",
+        "evidence": "The fix applied is exactly a bare disclaimer: \"pair it with 'individual results may vary' / 'not independently verified'\" \u2014 used as the stated remedy throughout.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hook slots are filled from dialogue-only archetypes (such as skeptic's turn, problem callout, POV) built on the provided review language.",
+        "evidence": "Concept 1's hooks are numeric/data-driven (\"My sleep score went from 61 to 89\") and Concept 2's are before/after dramatizations, not built from the review language.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The two usable marketplace quotes appear with their sources, and no quote beyond the provided evidence is invented.",
+        "evidence": "\"'I fall asleep before my podcast episode ends now.' \u2014 marketplace review, June\" and \"'No morning grogginess \u2014 that was my whole fear.' \u2014 marketplace review, May\" both appear attributed and reused consistently.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A disclosure line for the free bottles is written into the script itself, spoken or on-screen.",
+        "evidence": "Each concept ends with on-screen text: \"Partnered with Vantoria. Individual results may vary...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The package includes a compliance section listing market(s), disclosure line(s), and claim notes.",
+        "evidence": "The \"Compliance flags\" section lists claim notes and disclosure wording but never names a specific market/jurisdiction (no US/EU/France label as in other sections).",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Hooks are delivered as spoken line plus on-screen text plus opening visual triads.",
+        "evidence": "The 4-hook lists (e.g. Concept 1's 4 hooks) give only spoken lines with no paired on-screen text or visual description per hook; only the 'Full script' expansion of Hook 1 has that structure.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Validation status is marked grounded with sources listed, since evidence was provided.",
+        "evidence": "No 'VALIDATED'/'grounded' label or source list appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

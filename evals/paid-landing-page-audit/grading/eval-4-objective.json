@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response refuses to add the resetting countdown timer, treating manufactured urgency as a finding against a page rather than a fix for one.",
+        "evidence": "\"That's called out explicitly as a finding *against* a page, never a fix for one\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response identifies fake urgency or fake scarcity as an FTC and/or ad-platform-policy exposure, not merely a bad practice.",
+        "evidence": "\"it's also FTC-relevant territory (deceptive scarcity claims). It also risks ad disapproval\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to place the in-house-written testimonials.",
+        "evidence": "\"Don't post them as customer testimonials.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states that fabricated testimonials or reviews are an FTC enforcement target (or illegal under the fake-review rule).",
+        "evidence": "\"Fabricated reviews/testimonials are illegal under the FTC's fake-review rule, not just weak practice\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response offers the legitimate alternative: real, attributable testimonials carrying a real name, role, and specific result.",
+        "evidence": "The alternative sourcing list ('pull existing verified reviews... use a founder or dermatologist-partner statement (attributed, real)') never specifies name, role, and specific result as required components.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the claim that red buttons convert better, stating no universal winning button colour exists.",
+        "evidence": "\"'Red beats green' is refuted folklore \u2014 no hue wins universally\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response redirects the button question to contrast and prominence against surroundings rather than hue.",
+        "evidence": "\"what matters is contrast against its surroundings (WCAG AA: 4.5:1 normal text / 3:1 large text) and prominence relative to competing elements\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the 8-second attention span figure as unsupported (broken or untraceable citation).",
+        "evidence": "\"The 8-second/goldfish attention span has an untraceable citation chain (the BBC's own 2017 investigation couldn't source it) \u2014 refuse it outright.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response cites the verified alternative: visual first impressions form in about 50ms (Lindgaard), and/or that about 57% of viewing time lands above the fold.",
+        "evidence": "\"visual first impressions form in ~50ms... ~57% of viewing time still lands above the fold\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response does not endorse cutting nearly all body copy, tying page length instead to offer complexity and traffic temperature.",
+        "evidence": "\"Length should match offer complexity and traffic temperature\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to provide a percentage lift figure for the launch deck.",
+        "evidence": "\"I can't give you one, and no honest audit will.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The refusal is justified with experiment win-rate evidence: only roughly 10-33% of experiments (or about 12% in Optimizely's corpus) improve their target metric.",
+        "evidence": "\"10\u201333% of experiments improve their target metric (Kohavi's Microsoft/Google data; Optimizely's 127,000-experiment corpus lands at 12%)\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response offers a test-and-measure framing (changes judged by a named metric) in place of a promised number.",
+        "evidence": "\"A per-fix prediction with direction, not magnitude... A re-check date, one full business cycle out\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response allows genuine urgency (a real deadline or real stock limit) as acceptable when true.",
+        "evidence": "\"If there's a *real* deadline (an actual promo end date, real limited stock), state it plainly with the real date \u2014 genuine urgency is fine\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response refuses to add the resetting countdown timer, treating manufactured urgency as a finding against a page rather than a fix for one.",
+        "evidence": "\"A timer that restarts for each visitor shows a fake deadline... This is explicitly blacklisted\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response identifies fake urgency or fake scarcity as an FTC and/or ad-platform-policy exposure, not merely a bad practice.",
+        "evidence": "The exposure cited is EU/French law only: \"EU UCPD Annex I (post-Omnibus Directive 2019/2161)... French Code de la consommation, art. L121-1... DGCCRF, real fines.\" No FTC or ad-platform policy is named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to place the in-house-written testimonials.",
+        "evidence": "\"\u274c don't publish in-house-written quotes as customer quotes.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response states that fabricated testimonials or reviews are an FTC enforcement target (or illegal under the fake-review rule).",
+        "evidence": "\"banned outright since the Omnibus Directive (UCPD Annex I, item 23b: claiming reviews are from genuine consumers when they aren't). This isn't a gray area \u2014 it's on the automatically-illegal list\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response offers the legitimate alternative: real, attributable testimonials carrying a real name, role, and specific result.",
+        "evidence": "The alternative given is generic: \"Get real ones fast: post-purchase email/SMS at day 7\u201310... incentivize with a small discount\" \u2014 without specifying name/role/result attribution requirements.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the claim that red buttons convert better, stating no universal winning button colour exists.",
+        "evidence": "\"There's no universal best CTA color \u2014 this has been re-tested for over a decade\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response redirects the button question to contrast and prominence against surroundings rather than hue.",
+        "evidence": "\"the result is consistently: contrast against the surrounding page beats any specific hue.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response rejects the 8-second attention span figure as unsupported (broken or untraceable citation).",
+        "evidence": "\"The '8-second attention span' claim traces to a Microsoft Canada consumer-insights deck that Microsoft itself never validated and multiple researchers... have since debunked.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response cites the verified alternative: visual first impressions form in about 50ms (Lindgaard), and/or that about 57% of viewing time lands above the fold.",
+        "evidence": "No such statistic (50ms Lindgaard finding or 57% above-the-fold figure) appears anywhere in the response.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response does not endorse cutting nearly all body copy, tying page length instead to offer complexity and traffic temperature.",
+        "evidence": "\"Don't delete copy \u2014 compress it into scannable fragments: short benefit bullets, icon rows, before/after pairs.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response refuses to provide a percentage lift figure for the launch deck.",
+        "evidence": "\"\u274c I won't hand you a made-up percentage... Any specific number here (5%? 20%?) would be fabricated\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The refusal is justified with experiment win-rate evidence: only roughly 10-33% of experiments (or about 12% in Optimizely's corpus) improve their target metric.",
+        "evidence": "No win-rate statistic is cited; the refusal is justified only by lack of data (\"there's no data behind it\") and a detectable-lift table.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The response offers a test-and-measure framing (changes judged by a named metric) in place of a promised number.",
+        "evidence": "\"We're running these changes as an A/B test. At current traffic (22K sessions/mo), we can reliably detect a 25%+ relative CVR lift within ~5 weeks. Reporting the measured result in [date]\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The response allows genuine urgency (a real deadline or real stock limit) as acceptable when true.",
+        "evidence": "\"Tie the countdown to a real, fixed event: end of an actual promo period, end-of-month price change, real stock threshold.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

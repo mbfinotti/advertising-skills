@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Flags that editing targeting and the optimisation event inside the live keeper campaigns resets their learning",
+        "evidence": "\"Editing targeting *and* switching the optimisation event inside a live campaign resets its learning phase (both are named triggers, separately). You're not doing one edit, you're doing two, on the same entity, at once.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends building the 3 merged campaigns new alongside the existing structure instead of editing keepers in place",
+        "evidence": "\"Build the 3 target structures **fresh** \u2014 new campaigns/ad sets with the new targeting and the purchase objective \u2014 and shift budget into them. Never edit a live winner in place when you can build alongside it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Instructs pausing, never deleting, the 5 retired campaigns",
+        "evidence": "\"'Delete the other 5 on Monday' \u2014 do not do this. Pause, never delete.\" and later \"Pause the 5, don't delete them.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that deletion destroys learning history and reporting, or explicitly converts the delete request into a pause-or-archive decision",
+        "evidence": "\"Deletion destroys the learning history and reporting you'd need to (a) roll back if the new structure underperforms and (b) prove the consolidation actually worked.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that pausing does not reset learning, keeping the old structure available for rollback",
+        "evidence": "The transcript says \"Pausing costs nothing and keeps your only rollback path alive\" and contrasts pause vs. deletion of history, but never explicitly states that pausing itself does not reset/trigger the learning-phase reset the way editing does.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects executing the restructure in the run-up to Black Friday; recommends off-peak timing because the relearning dip costs most at peak volume and auction prices",
+        "evidence": "The transcript explicitly allows executing part of the plan within the run-up (\"Do the optimisation-event switch now, not next weekend... this week\") and concludes \"you don't need to slow down the timeline as much as you think if you start the optimisation-event switch now instead of next weekend,\" which does not reject in-run-up execution outright, even though it notes the relearning dip is worst at peak volume/auction prices for the 100% budget jump specifically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Phases the migration one merge group at a time, highest-confidence merges first, rejecting the single-weekend cutover",
+        "evidence": "The transcript rejects doing everything in one weekend and phases budget in 20% steps, but it treats the 3 keepers as a single merge group throughout and never proposes sequencing multiple merge groups by confidence level; it only distinguishes 'archaeological' vs. 'deliberate' splits as a preserve-rule question, not a phasing order.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires a written, pre-committed no-touch window signed off before phase one",
+        "evidence": "The only mention is the closing line \"do the real consolidation + event switch in the slower weeks after, with a proper no-touch window\" \u2014 there is no requirement that this window be written, pre-committed, or signed off before phase one begins.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies the no-touch window length: at least 7 days as a floor, around 14 for a reliable read, up to 30 or a full cycle for the verdict",
+        "evidence": "\"nowhere near the 7\u201314 day floor a merged/re-optimised campaign needs to stabilise, let alone the 14\u201330 days for a real read.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explicitly forecasts a transient performance dip while the merged campaigns relearn",
+        "evidence": "\"A full jump maximises the relearning dip exactly when auction prices and volume peak.\" and \"You'd be asking freshly-relearning campaigns to carry your peak week.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves budget in steps of roughly 20% or less every few days, rejecting the 100%-on-Sunday shift",
+        "evidence": "\"The skill's own budget-migration step: shift in steps of ~20% every 3\u20135 days, not 100% in one move.\" and later \"Shift budget in ~20% steps, watching each keeper's delivery, not one 100% jump.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps a control during migration (legacy structure at reduced budget, or the platform's experiment tooling)",
+        "evidence": "\"Pause the 5, don't delete them. Keep them at reduced/zero budget as your rollback and control through Black Friday weekend.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Defines a rollback trigger before phase one, e.g. blended cost per conversion worse than roughly 1.5x baseline after the no-touch window matures",
+        "evidence": "No numeric or metric-based rollback trigger (such as a CPA multiple vs. baseline) appears anywhere in the transcript; rollback is discussed only in terms of keeping the old campaigns available, not a defined trigger condition.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Flags that editing targeting and the optimisation event inside the live keeper campaigns resets their learning",
+        "evidence": "\"1. **New targeting** on the 3 keepers\" and \"2. **Optimization event change** (add-to-cart \u2192 purchase) \u2014 this alone is a full reset, always\" under the heading \"Meta's algorithm re-enters 'Learning Phase' on an ad set whenever you make a significant edit\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends building the 3 merged campaigns new alongside the existing structure instead of editing keepers in place",
+        "evidence": "The recommendation is to edit in place, not build new: \"Make the targeting + optimization event changes to the 3 keepers now (or as soon as possible this week)\" \u2014 this still modifies the existing keeper campaigns rather than creating new campaigns alongside them.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Instructs pausing, never deleting, the 5 retired campaigns",
+        "evidence": "\"**Pause, don't delete, the 5 non-keepers.** Zero cost to keep them paused through BFCM as a revert path. Delete in December once the new 3-campaign structure has a full sales cycle of proof behind it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that deletion destroys learning history and reporting, or explicitly converts the delete request into a pause-or-archive decision",
+        "evidence": "\"Deletion also destroys the historical learning data on those campaigns, so if the 3 keepers underperform during BFCM week, there's no quick revert.\" combined with the explicit pause-instead-of-delete recommendation.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes that pausing does not reset learning, keeping the old structure available for rollback",
+        "evidence": "The transcript only says pausing has \"Zero cost to keep them paused through BFCM as a revert path\" \u2014 it never explicitly states that pausing preserves/does not reset the learning phase status of those campaigns.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects executing the restructure in the run-up to Black Friday; recommends off-peak timing because the relearning dip costs most at peak volume and auction prices",
+        "evidence": "\"Move the whole consolidation earlier, not later... You want the ad sets to have already exited learning phase, on the final structure, *before* BFCM traffic hits, not during it\" and \"during the week traffic and competition both spike for Black Friday. That's the worst possible time to ask the algorithm to relearn anything.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Phases the migration one merge group at a time, highest-confidence merges first, rejecting the single-weekend cutover",
+        "evidence": "The transcript only splits the *type* of edit (optimization event vs. targeting) sequentially \u2014 \"Split the two edits. Change optimization event first... *then* change targeting\" \u2014 it does not phase the 3 merges one group/campaign at a time by confidence level.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Requires a written, pre-committed no-touch window signed off before phase one",
+        "evidence": "No mention of a written or signed-off no-touch window anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Specifies the no-touch window length: at least 7 days as a floor, around 14 for a reliable read, up to 30 or a full cycle for the verdict",
+        "evidence": "Only a target date is given \u2014 \"Aim for the new structure to be fully live and out of learning phase by ~Nov 18\u201320\" \u2014 with no explicit 7/14/30-day no-touch window specification.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explicitly forecasts a transient performance dip while the merged campaigns relearn",
+        "evidence": "\"you risk ad sets stuck in **\"Learning Limited\"** \u2014 inconsistent delivery, high CPA\" describes the transient degraded-performance state inherent to the relearning process.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Moves budget in steps of roughly 20% or less every few days, rejecting the 100%-on-Sunday shift",
+        "evidence": "\"**Ramp the budget, don't jump it.** Move budget over in steps of ~20\u201330%/day into the 3 keepers instead of 100% in one day.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps a control during migration (legacy structure at reduced budget, or the platform's experiment tooling)",
+        "evidence": "The transcript only proposes pausing the 5 non-keepers as a revert path, not keeping any campaign running at reduced budget as an active control, and never mentions experiment/A-B testing tooling.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Defines a rollback trigger before phase one, e.g. blended cost per conversion worse than roughly 1.5x baseline after the no-touch window matures",
+        "evidence": "No quantitative rollback trigger (e.g., a CPA threshold) is defined anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

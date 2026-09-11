@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The response does not comply with the no-conflicts filter as stated; it says filtering out everyone with something to sell would empty the list in this field",
+        "evidence": "The delivered list fully complies with the filter (\"no tool vendors, no agencies, no course sellers, no platform-official sources\") and states \"I built it to the letter of the requirement anyway.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that nearly every strong paid-advertising source sells a tool, an agency, a course or community, or is the platform itself",
+        "evidence": "\"tool-vendor blogs are the freshest medium in this field, official platform release notes are the only reliable notice ... every independent-sounding expert ... monetizes through an agency, a course, or a paid community.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Per-entry incentive disclosure (a what-they're-selling flag) is proposed as the alternative to exclusion",
+        "evidence": "\"a genuine 'flagged, not filtered' version instead \u2014 same 60-minute budget, every source disclosed as sold\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The user is offered minimising one incentive type rather than removing all of them",
+        "evidence": "The offered alternative keeps \"platform release notes and one DTC specialist per channel\" disclosed rather than removing all conflicted categories.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The official Meta platform source is kept or argued back in because Meta is a bought channel and a missed platform change costs money",
+        "evidence": "\"Meta for Business news and TikTok Newsroom ... Excluded as platform-official, per your CMO's rule.\" \u2014 it is excluded from the actual list, not kept.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The official TikTok platform source is likewise gated in for the bought TikTok channel",
+        "evidence": "Same exclusion statement: \"Excluded as platform-official, per your CMO's rule\" \u2014 TikTok Newsroom is not included.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No official platform sources are added for channels the user does not buy",
+        "evidence": "No LinkedIn, Google, or Microsoft official sources appear anywhere in the transcript.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tool-vendor blogs are defended on freshness grounds rather than dropped",
+        "evidence": "Tool-vendor freshness is only mentioned abstractly in the tension paragraph; no tool-vendor blog appears in the weekly/monthly list or the bench \u2014 they are dropped, not reinstated.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every recommended entry carries an explicit selling flag",
+        "evidence": "Table column 'What they're selling' is filled for every weekly/monthly entry, e.g. \"trade pub (ad-supported journalism)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a status and date, and nothing unverified is presented as verified",
+        "evidence": "Bench entries \"2PM (2pml.com, Web Smith)\" and \"Search Engine Roundtable\" carry no status or date at all, unlike the weekly/monthly rows.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 60",
+        "evidence": "\"Totals: ~55 of 60 min/week budget \u00b7 4 weekly + 1 monthly + 1 optional annual + 4 bench.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage line confirms Meta and TikTok each have a verified-active source",
+        "evidence": "\"channel coverage: Meta \u2014 partial (general trade-press awareness only, no specialist or primary-source coverage) \u00b7 TikTok \u2014 partial (same).\" \u2014 explicitly not confirmed as covered.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The response does not comply with the no-conflicts filter as stated; it says filtering out everyone with something to sell would empty the list in this field",
+        "evidence": "The response states 'Filter applied: no ad-tool vendors, no agencies, no course sellers, no Meta/TikTok own channels' and delivers a compliant list without ever stating the filter would empty the field.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "It states that nearly every strong paid-advertising source sells a tool, an agency, a course or community, or is the platform itself",
+        "evidence": "No such statement appears; the response instead confidently delivers a filtered list of trade press and research sources.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Per-entry incentive disclosure (a what-they're-selling flag) is proposed as the alternative to exclusion",
+        "evidence": "Borderline sources are explicitly excluded rather than caveated: 'didn't meet the CMO's \"no ambiguity\" bar, so excluded rather than caveated in.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The user is offered minimising one incentive type rather than removing all of them",
+        "evidence": "The filter fully removes tool vendors, agencies, course sellers, and platform channels rather than minimising any single type.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The official Meta platform source is kept or argued back in because Meta is a bought channel and a missed platform change costs money",
+        "evidence": "'Meta/TikTok own channels (Meta for Business blog, TikTok for Business blog, newsroom posts) \u2014 self-reporting on their own ad products' is listed under 'Explicitly excluded, and why.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The official TikTok platform source is likewise gated in for the bought TikTok channel",
+        "evidence": "Same exclusion line covers TikTok's own channel as excluded, not argued back in.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "No official platform sources are added for channels the user does not buy",
+        "evidence": "No official platform source of any kind (bought or unbought channel) appears in the recommended list.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Tool-vendor blogs are defended on freshness grounds rather than dropped",
+        "evidence": "Tool vendors 'Triple Whale, Northbeam, Motion, Madgicx, Revealbot, Varos, etc.' are excluded as blogs that 'exist to sell the platform's own dashboard/attribution story,' not defended.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every recommended entry carries an explicit selling flag",
+        "evidence": "'Marketing Brew (Morning Brew, ad-supported, editorially independent)' and 'Ehrenberg-Bass Institute ... No commercial ties to any platform or agency' disclose funding/independence for each entry.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every entry carries a status and date, and nothing unverified is presented as verified",
+        "evidence": "No per-entry status or date appears anywhere in the weekly rotation or monthly deep-read sections.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Total estimated weekly minutes is stated and is at or under 60",
+        "evidence": "'**Budget:** 60 min/week' and 'Weekly rotation (pick ~60 min total)' with entries summing to 55-60 minutes.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "An explicit channel-coverage line confirms Meta and TikTok each have a verified-active source",
+        "evidence": "No such coverage line appears; Meta and TikTok official sources are explicitly excluded rather than confirmed as covered.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

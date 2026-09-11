@@ -1,0 +1,23 @@
+## Karvela LinkedIn Audience Structure — Final
+
+**Core problem with the six-campaign draft:** your TAM is 24,000 people. Splitting it six ways means each campaign competes with the others in the same auction for the same pool of professionals, inflates CPMs through self-competition, and starves each campaign of the conversion volume LinkedIn needs to exit learning phase. Cut to **four campaigns**, organized by intent, not by audience-slicing.
+
+### Structure
+
+| Tier | Audience | Mechanism | Budget | Role |
+|---|---|---|---|---|
+| 1. Core matched | 600 named health systems + Director/VP+ seniority + Operations/Procurement function | Matched Audiences → Company List, layered with seniority/function filters | 45% ($4,050) | Cold pipeline. This *replaces* your separate "exact job titles" and "interest-based" campaigns — interest signals add noise on a TAM this precise; account+seniority+function match is the tighter version of the same audience. |
+| 2. Retargeting | Website visitors (90d), 50%+ video viewers, lead-form opens (non-converts), Page engagers | Matched Audiences → Website/Engagement | 20% ($1,800) | Warm, lowest CPA. Over-fund relative to reach — this is where you beat $310, subsidizing Tier 1. |
+| 3. Predictive | Seeded off actual demo-requesters and closed-won accounts | Predictive Audiences | 20% ($1,800) | This is your "lookalike" — LinkedIn retired Lookalike Audiences in Aug 2023. Seed off *converters*, not the raw customer list, or it degrades to a broad audience. |
+| 4. Account expansion | Customer list uploaded, targeting adjacent buying-committee roles (Finance, IT, Clinical Ops) inside existing accounts | Matched Audiences → Contact/Company List | 15% ($1,350) | Land-and-expand. Exclude existing champions. |
+
+**Drop entirely: broad prospecting with Audience Expansion on.** Audience Expansion exists to fix *under-delivery* by loosening your targeting criteria — title, seniority, company match. On a 24,000-person named TAM in a regulated niche (hospital procurement), that's precisely the criteria carrying your CPA. Turning it on means paying to reach people outside hospital systems entirely at the same bid you're using to reach VPs of Supply Chain. If delivery is genuinely a problem, fix it with wider seniority bands inside Tier 1 or higher bids — not expansion.
+
+### Required plumbing (not optional given TAM size)
+
+- **Exclusions between tiers.** With only 24k people, overlap across four campaigns is the default, not the exception. Exclude Tier 2/3/4 membership from Tier 1, and exclude existing customers from Tier 1/3. Without this you're bidding against yourself.
+- **Frequency cap and creative rotation.** At $9k/month against 24k people you will hit high frequency fast. Budget for 3-4 creative variants per tier refreshed every 2-3 weeks to avoid fatigue-driven CTR collapse, which is a bigger CPA risk here than audience size.
+
+### CPA reality check
+
+$9,000 ÷ $310 = ~29 demos/month needed; you're at ~13/month currently (3/week). Closing that gap on a cold, named-account audience alone is unrealistic — enterprise health-system cold clicks on LinkedIn typically convert under 1% to a demo request. The math only works if Tier 2 (retargeting) and Tier 3 (predictive-off-converters) carry CPA well below $310 to offset Tier 1 running above it. Treat $310 as a **blended** target across tiers, not a per-campaign bar — if you hold Tier 1 to that number in isolation, you'll either starve it of spend or force Audience Expansion back on to hit volume, which reintroduces the problem above.

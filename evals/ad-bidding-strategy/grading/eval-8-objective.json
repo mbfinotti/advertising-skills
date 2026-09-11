@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Applies the pooling compatibility test before any portfolio: same conversion event, comparable margins, same target",
+        "evidence": "The transcript argues incompatibility via 'different buyer intents at different funnel depths with different economics' but never frames the test as same conversion event / comparable margins / same target \u2014 no mention of conversion-event sameness at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Rejects pooling the brand campaign with prospecting campaigns",
+        "evidence": "\"Pooling a brand line with prospecting is the specific case this kind of policy exists to catch.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that pooled spend migrates on blended rather than per-campaign returns, distorting allocation when economics differ",
+        "evidence": "\"Pooling migrates spend toward whichever campaign's economics dominate the blended signal (almost always branded), silently starving or mispricing the other two.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges pooling legitimately helps thin campaigns clear signal floors when the pooled goals are genuinely compatible",
+        "evidence": "Pooling is only framed negatively as \"the agency's way to synthetically clear that floor\"; the transcript never states pooling can be a legitimate fix when campaigns are genuinely compatible \u2014 it instead offers 'volume-appropriate archetype' or 'structural consolidation' as the alternatives.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Names the diagnostic for pooling gone wrong: blended target looks fine while per-campaign returns diverge, so incompatible campaigns get split out",
+        "evidence": "No diagnostic of this kind appears anywhere in the transcript; the rejection is argued a priori from funnel-depth/economics differences, not via a blended-vs-per-campaign divergence check.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Suggests consolidation as the alternative fix for structurally thin campaigns",
+        "evidence": "\"or genuine structural consolidation if the segmentation is redundant \u2014 not blending unlike economics under one shared target.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that LinkedIn does not offer value-based / return-goal bidding",
+        "evidence": "The transcript treats LinkedIn value-based bidding as an available archetype merely lacking a data signal: \"value-based bidding optimizes toward deal value. With no Salesforce-to-LinkedIn pipe, there's no value signal to optimize toward \u2014 the archetype has nothing to run on yet.\" It never claims LinkedIn lacks the capability itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats bidding capabilities as observed per platform rather than assuming feature parity across platforms",
+        "evidence": "The two platforms are treated identically under one blanket rule (\"Same gate, no exception\") with no per-platform capability check distinguishing Google's and LinkedIn's actual bidding feature sets.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes Google's return-goal (Target ROAS) carries a documented minimum for Search (15 conversions in the past 30 days) with an as-of or re-verify caveat",
+        "evidence": "\"Target ROAS on Search documents a 15-conversions/30-days minimum.\" is stated, but no as-of date or re-verify caveat (e.g. 'confirm current threshold') accompanies it.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Blocks any return-goal recommendation until real differentiated values actually flow back, since nothing flows from the CRM yet",
+        "evidence": "\"no conversion values flow from Salesforce to Google or LinkedIn today... A Target ROAS or value-based strategy needs real deal values to optimize against... That's not a target-setting problem, it's a measurement problem, and it blocks both asks regardless of campaign size.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires legal/privacy/consent review before Salesforce deal values are sent to any platform",
+        "evidence": "\"sending deal values to Google and LinkedIn is a data-sharing decision, not just a technical one \u2014 expect a consent/data-processing review before that pipe goes live, and treat that review as part of the project, not an afterthought once the integration is built.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Runs the value-integrity check (values differentiated, net of refunds/rejects, timely relative to lag) as a prerequisite",
+        "evidence": "\"Build the CRM-to-platform value passback: differentiated deal values (not one flat number), net of lost/disqualified deals, timely enough relative to your sales cycle to matter to the bidder.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes the 9-14 conversion/month campaigns clear no documented return-goal minimum on their own",
+        "evidence": "\"Competitor prospecting (14/mo) sits right under that bar; generic demand (9/mo) is well under it.\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Applies the pooling compatibility test before any portfolio: same conversion event, comparable margins, same target",
+        "evidence": "\"Branded (120 conv/mo) has fundamentally different economics than the other two: near-100% purchase intent, low CPC, high win-rate. Competitor and generic campaigns are cold-intent, higher CPC, lower win-rate.\" \u2014 the transcript checks economics/intent compatibility before endorsing pooling.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Rejects pooling the brand campaign with prospecting campaigns",
+        "evidence": "\"Portfolio Target ROAS across branded + competitor + generic \u2014 reject\" and \"Split branded out of any pooled strategy permanently\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that pooled spend migrates on blended rather than per-campaign returns, distorting allocation when economics differ",
+        "evidence": "\"the portfolio's pacing and bid signal gets set by branded's cheap, easy conversions, then gets applied to prospecting traffic that behaves nothing like it. That's a way to overpay on competitor/generic\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Acknowledges pooling legitimately helps thin campaigns clear signal floors when the pooled goals are genuinely compatible",
+        "evidence": "\"If there's a legitimate portfolio case, it's competitor + generic together (similar funnel stage, similar intent), once combined volume and value data support it\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names the diagnostic for pooling gone wrong: blended target looks fine while per-campaign returns diverge, so incompatible campaigns get split out",
+        "evidence": "The transcript states the problem in advance (branded will dominate signal) but never describes a diagnostic for detecting divergence after the fact (e.g., monitoring per-campaign performance against a healthy-looking blended average) as a way to catch pooling going wrong and trigger a split.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Suggests consolidation as the alternative fix for structurally thin campaigns",
+        "evidence": "The transcript only mentions Google's 30-conversion guidance and notes competitor/generic don't clear it, but does not propose consolidating campaigns (e.g., merging ad groups/campaigns) as a fix for thin volume \u2014 the only volume-related fix offered is a competitor+generic portfolio, not campaign consolidation itself.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States that LinkedIn does not offer value-based / return-goal bidding",
+        "evidence": "The transcript treats LinkedIn value-based bidding as blocked only by missing CRM data (\"LinkedIn's CRM/Conversions API integration needs deal records matched back to click IDs. That pipe doesn't exist\"), never stating that LinkedIn lacks a value-based/return-goal bidding capability at all.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Treats bidding capabilities as observed per platform rather than assuming feature parity across platforms",
+        "evidence": "The transcript assumes LinkedIn has an equivalent value-based bidding mechanism (\"mirroring value-based bidding\") and treats it as implementable once data flows, rather than verifying/distinguishing platform capability differences.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes Google's return-goal (Target ROAS) carries a documented minimum for Search (15 conversions in the past 30 days) with an as-of or re-verify caveat",
+        "evidence": "The transcript cites \"~30 conversions/30 days\" as \"Google's own guidance\" without an as-of/re-verify caveat, and this figure does not match the specific 15-conversion Target ROAS Search minimum the rubric expects.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Blocks any return-goal recommendation until real differentiated values actually flow back, since nothing flows from the CRM yet",
+        "evidence": "\"nothing flows from the CRM to either platform yet. That's not a detail to sort out in parallel \u2014 it's the prerequisite... Build the pipe first\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Requires legal/privacy/consent review before Salesforce deal values are sent to any platform",
+        "evidence": "No mention anywhere in the transcript of legal, privacy, or consent review for sending Salesforce deal-value data to Google/LinkedIn.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Runs the value-integrity check (values differentiated, net of refunds/rejects, timely relative to lag) as a prerequisite",
+        "evidence": "The transcript's validation step (\"check value data volume, latency vs. attribution windows, and that proxy values actually correlate with real revenue\") covers latency and correlation but never mentions differentiation of values or netting out refunds/rejects.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes the 9-14 conversion/month campaigns clear no documented return-goal minimum on their own",
+        "evidence": "\"Competitor (14) and generic (9) don't clear that alone\" (referencing the ~30 conversions/30 days threshold it cites).",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

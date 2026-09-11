@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Frames the decision as whether the next dollar of spend still makes money, not how much the account can spend.",
+        "evidence": "The answer is built around marginal economics from the first line: \"Blended MER is the wrong metric to scale on... it's not the number that governs the next dollar.\" It computes marginal MER per increment (2.25 \u2192 1.50, and 1.875 across the wider band), compares each against the 2.0 break-even, and concludes \"the last dollars you've already added to this campaign are, on this evidence, losing money, while the average of all dollars still looks fine.\" It explicitly refuses to reframe the question as a sizing question \u2014 \"the answer isn't 'do $65K instead of $80K'; it's 'don't add budget to this l",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Frames the decision as whether the next dollar of spend still makes money, not how much the account can spend.",
+        "evidence": "Opens by rejecting blended MER as 'the wrong number' and states 'The number that matters here is what the *next dollar* of prospecting spend returns'. Builds a marginal MER column ((140-122)/(48-40)=2.25, (152-140)/(56-48)=1.50), notes 1.50 is already below the 2.0 break-even so 'August's last $8K of spend lost money', and projects the next increments toward ~0.75 and near-zero. The recommendation caps spend at the last increment that still clears the bar (~$64-65K) rather than at capacity, and the monitoring rule is explicitly marginal ('watch marginal MER weekly... not blended, not monthly c",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Asks only what the goal of this session is, and re-asks none of the business model, channel, spend, or conversion questions already answered in the pasted artifact.",
+        "evidence": "'Your message already states the session goal \u2014 \"run my advertising check-in\" \u2014 which matches the periodic check-in invocation exactly, so per \u00a72 no interview question is needed.' No other facts re-asked.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Produces a state summary of exactly 5 lines.",
+        "evidence": "Five bolded bullets: Business model & channels, Spend band, Conversion/source of truth, In-flight work, Active constraint.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The state summary covers business model and channels, spend band, conversion source of truth, in-flight work, and the active constraint.",
+        "evidence": "Bullets literally titled 'Business model & channels', 'Spend band', 'Conversion / source of truth', 'In-flight work', 'Active constraint'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Identifies the flight end date 2026-10-05 as a fixed date inside six weeks and states that it promotes fast-acting work.",
+        "evidence": "Text says 'Fixed date inside six weeks (Oct 1 flight start) promotes fast-acting work' \u2014 it names Oct 1 (flight start), not 2026-10-05 (flight end), as the trigger date.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Work that pays back over a quarter (for example guardrail re-baselining, consolidation, or hiring) is placed in a Not-now list with the flight date as its explicit unblocking condition, not silently dropped or ranked last.",
+        "evidence": "'ad-spend-guardrails re-baseline, ad-campaign-consolidation \u2014 demoted by the fixed-date rule (they pay out over a quarter, not before Oct 1).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Honors the decided item by keeping new-channel expansion off the short-list, naming the recorded decision as the reason.",
+        "evidence": "'Deleted, not ranked: new-channel exploration (ad-platform-selection) \u2014 killed outright by the decided item \"no new channels until the holiday flight ends.\"'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The short-list contains between 5 and 8 entries.",
+        "evidence": "Numbered list 1 through 6 (with #3 combining two skills) = 6 entries.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each short-list entry names both the bottleneck it attacks and what the session costs.",
+        "evidence": "e.g. '1. ad-conversion-tracking \u2014 pre-launch GO/NO-GO...; hours of work.' pattern repeated for most items.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The short-list ordering is stated as value returned per unit of effort, and the cheapest near-zero tuning items are not placed on top on cheapness grounds.",
+        "evidence": "'Ordered by value returned per unit of effort, highest first' \u2014 cheap ad-budget-pacing placed last at #6.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Appends exactly one new session-log line naming the session goal, the skill routed to, and the outcome.",
+        "evidence": "'- 2026-09-12 - periodic check-in -> mbfinotti/advertising-skills@advertising-kickoff -> re-ranked short-list ahead of 2026-10-01 flight...'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Patches only artifact fields that changed rather than regenerating the whole file.",
+        "evidence": "'save this over your current file' followed by the entire artifact re-rendered in full, not a targeted diff of changed fields.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "All skills prefixed 'mbfinotti/advertising-skills@...' e.g. '@cac-roas-benchmark', '@ad-hook-analyzer'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not propose re-running the full interview or rebuilding the artifact from scratch.",
+        "evidence": "No re-interview proposed; artifact presented as an update ('Updated advertising-context.md') to the existing session count (session 8).",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Asks only what the goal of this session is, and re-asks none of the business model, channel, spend, or conversion questions already answered in the pasted artifact.",
+        "evidence": "The transcript never asks a session-goal question; it proceeds directly to producing the check-in output without asking anything upfront.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Produces a state summary of exactly 5 lines.",
+        "evidence": "The output is organized into multiple headed sections (Bottom line, Timeline, Economics, Watch, Guardrails, What I need, Suggested log entry) rather than a discrete 5-line state summary.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The state summary covers business model and channels, spend band, conversion source of truth, in-flight work, and the active constraint.",
+        "evidence": "There is no single 5-line state-summary block covering all five elements; content is scattered across separate sections without a conversion source-of-truth statement.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Identifies the flight end date 2026-10-05 as a fixed date inside six weeks and states that it promotes fast-acting work.",
+        "evidence": "The date is listed ('Holiday flight ends: 2026-10-05 \u2192 23 days out') but no statement links this timeframe to promoting fast-acting/tactical work over strategic work.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Work that pays back over a quarter (for example guardrail re-baselining, consolidation, or hiring) is placed in a Not-now list with the flight date as its explicit unblocking condition, not silently dropped or ranked last.",
+        "evidence": "No Not-now list or mention of quarter-payback items like re-baselining, consolidation, or hiring appears anywhere.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Honors the decided item by keeping new-channel expansion off the short-list, naming the recorded decision as the reason.",
+        "evidence": "'No new channels until the flight ends \u2014 still holding, nothing suggests otherwise.' under Guardrails intact.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The short-list contains between 5 and 8 entries.",
+        "evidence": "No short-list of prioritized actions exists; only 3 open questions are listed under 'What I need from you'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each short-list entry names both the bottleneck it attacks and what the session costs.",
+        "evidence": "No short-list of work items with bottleneck/cost pairs is present.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The short-list ordering is stated as value returned per unit of effort, and the cheapest near-zero tuning items are not placed on top on cheapness grounds.",
+        "evidence": "No such ordering or effort/value framing appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Appends exactly one new session-log line naming the session goal, the skill routed to, and the outcome.",
+        "evidence": "'- 2026-09-12 - routine check-in -> manual (no skill run, skill-wip off-limits) -> flight pacing watch: creative batch status unconfirmed, 19 days to peak'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Patches only artifact fields that changed rather than regenerating the whole file.",
+        "evidence": "No artifact patch or diff is shown; only a suggested log line is proposed, with no demonstration of a targeted patch to advertising-context.md.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every skill named uses the mbfinotti/advertising-skills@skill-name form and belongs to the collection.",
+        "evidence": "No skill is invoked ('no skill run, skill-wip off-limits'), so no naming violation occurs.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not propose re-running the full interview or rebuilding the artifact from scratch.",
+        "evidence": "The transcript works directly from the pasted context and produces a check-in without proposing any re-interview or rebuild.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

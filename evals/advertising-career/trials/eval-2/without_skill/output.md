@@ -1,0 +1,13 @@
+Here's your polished two-minute answer. I corrected one factual issue in your draft: Google actually reversed its plan to deprecate third-party cookies in Chrome in July 2024 — it now prompts users to choose instead of removing cookies outright. Opening with the old "Chrome is killing cookies" framing would read as slightly out of date to an interviewer who follows this closely, so I reframed the opening around the broader, already-in-motion privacy trend (Safari, Firefox, iOS ATT, regulation) instead — which is actually a stronger, more accurate hook.
+
+---
+
+**The answer (~300 words, ~2 minutes at a natural pace):**
+
+"Privacy and measurement is one of the biggest shifts our industry has been through, and I think it's worth being precise about what's actually happening. Chrome hasn't fully deprecated third-party cookies — Google reversed that plan in 2024 and instead gives users a choice. But that almost doesn't matter, because Safari, Firefox, and iOS's App Tracking Transparency have been restricting cross-site tracking for years already. The signal loss is already here, and it's permanent, regardless of what Chrome does next.
+
+For a furniture retailer, this hits especially hard. Furniture is a considered purchase — customers research for weeks, compare across devices, maybe visit a showroom, then convert online, or the reverse. That long, fragmented path is exactly what cookie-based attribution was worst at measuring even before privacy changes, so we can't just patch the old model — we need to rebuild how we measure.
+
+Three things I'd prioritize. First, first-party and zero-party data: giving customers a reason to identify themselves early — style quizzes, room planners, financing pre-qualification, loyalty accounts — so we own the relationship instead of renting it from a cookie. Second, closing the measurement loop server-side: Conversions API integrations with Meta and Google, enhanced conversions, and CRM matching so in-store and delivery-stage conversions feed back into the platforms that spent the media dollars. Third, I'd stop relying solely on platform-reported ROAS and build incrementality testing and a lightweight marketing mix model in parallel — geo holdouts are cheap and honest, and they catch what click-based attribution overstates.
+
+Underneath all of it, I'd treat consent and transparency as a customer experience issue, not just a compliance checkbox — for a purchase this size, trust is part of the sale. Done well, this isn't just risk mitigation; it's a chance to build a measurement stack that's more accurate than the cookie-based one we're replacing."

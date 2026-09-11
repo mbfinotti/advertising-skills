@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response scores paid social's targeting reachability down (or disqualifies it) specifically because the plan depended on the stripped capabilities.",
+        "evidence": "Section 3's ranking table scores Paid social (Meta) value 13 (4/2/4/3) with the explicit rationale: \"reachability drops hard because the ICP (homeowner, 25-45, specific ZIPs, renter-excluded) is *not* expressible once Special Ad Category strips those tools\" \u2014 a 2/5 reachability tied directly to the stripped capabilities. Reinforced below the table: \"the regulated category reinforces it rather than changing it, because it specifically weakens social's reachability score, not search's.\" The opening table also maps each planned capability (1% lookalike, 25-45 age, ZIP targeting, renter exclusion)",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response scores paid social's targeting reachability down (or disqualifies it) specifically because the plan depended on the stripped capabilities.",
+        "evidence": "The response enumerates exactly which capabilities the plan relied on and that are stripped under Meta's Special Ad Category (no 25-45 age targeting, no ZIP-level geo, no 1% lookalike from the best-customer list, no homeowner/renter targeting or exclusion), then downgrades Meta on that basis: 'Reframe its job: broad-reach prospecting and retargeting, not precision demographic sniping' and 'Expect Meta to underperform Search on a pure loan-application CPA basis.' The causal link is explicit \u2014 Search gets the larger 55% share precisely because 'Search is where your original targeting instinct (i",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

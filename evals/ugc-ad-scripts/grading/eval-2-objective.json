@@ -1,0 +1,142 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "The full word-for-word teleprompter request is declined, with the reason that fully scripted delivery goes stiff and the audience senses an ad.",
+        "evidence": "\"...so I locked the entire script instead, per your ask.\" The request was granted, not declined.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Exactly two elements are locked word-for-word: the hook and the CTA.",
+        "evidence": "\"Body (locked word-for-word \u2014 full script, no ad-libbing)\" \u2014 the body is also locked, not left as beats.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The body is delivered as bullet-point beats with example phrasing the creator says in her own words.",
+        "evidence": "The body table is explicitly labeled locked word-for-word, not example phrasing beats.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The three provided review quotes are handed to the creator as talking points, with beat wording drawn from those quotes rather than marketing paraphrase.",
+        "evidence": "\"Quote traceability: quote #2 and #3 informed her own spoken lines (paraphrase, not verbatim attribution)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "3-5 hook variants are provided, each labeled with a distinct archetype.",
+        "evidence": "Three hooks listed: Problem callout, Skeptic's turn, POV.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Each hook specifies spoken line, on-screen text, and opening visual, and the on-screen text does not simply repeat the spoken line.",
+        "evidence": "Hook table has all three columns, e.g. hook 2 spoken \"I really thought I just didn't have a green thumb\" vs on-screen \"no green thumb here\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "2 CTA variants are provided.",
+        "evidence": "Two CTA rows given with distinct spoken/on-screen text.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The package notes that the hook and CTA variants cut against one fixed body yield 6 or more edit combinations from a single shoot.",
+        "evidence": "\"Volume note: one concept, 3 hooks, 2 CTAs (6 edit combos from one shoot)\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Delivery notes include beat timings, what is on screen each beat, and do's/don'ts.",
+        "evidence": "Body table has timed beats with on-screen text; Delivery notes section lists Do/Don't items.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No brand-voice vocabulary (such as 'revolutionary', 'game-changing', 'cutting-edge') appears in any spoken line.",
+        "evidence": "Scanning all spoken lines shows plain, conversational phrasing with no such marketing adjectives.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A paid-partnership disclosure is written into an early beat of the script as a spoken or on-screen line, in addition to (not replaced by) the platform label.",
+        "evidence": "\"Persistent disclosure label: on-screen text 'Paid partnership with Fernwell' \u2014 visible for the first 5 seconds minimum... Pair with the platform's own paid-partnership tag (the tag alone isn't enough).\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "The full word-for-word teleprompter request is declined, with the reason that fully scripted delivery goes stiff and the audience senses an ad.",
+        "evidence": "\"Every spoken line below is locked, word-for-word \u2014 reading it exactly as written from a teleprompter fits the 20-second runtime.\" The request is fulfilled, not declined.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Exactly two elements are locked word-for-word: the hook and the CTA.",
+        "evidence": "The intro states the entire script is locked: \"Every spoken line below is locked, word-for-word\" \u2014 not just hook and CTA.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The body is delivered as bullet-point beats with example phrasing the creator says in her own words.",
+        "evidence": "Problem, Solution, and Proof beats all carry fixed 'VO:' lines (e.g. \"Fernwell tells you exactly when to water, so you stop guessing\"), not bullet-point beats in her own words.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The three provided review quotes are handed to the creator as talking points, with beat wording drawn from those quotes rather than marketing paraphrase.",
+        "evidence": "The VO paraphrases instead of using review language directly: \"People are telling us their plants are finally surviving\" while the actual quote (\"My plants finally aren't dying and my friends noticed\") is relegated to an attributed on-screen caption, not given to her as a talking point.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "3-5 hook variants are provided, each labeled with a distinct archetype.",
+        "evidence": "Only one Hook section exists (\"[0:00\u20130:03] HOOK\"), with no variants or archetype labels.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Each hook specifies spoken line, on-screen text, and opening visual, and the on-screen text does not simply repeat the spoken line.",
+        "evidence": "The single hook has VO (\"If you've killed more plants than you can count... this one's for you\"), distinct on-screen text (\"KILLED ANOTHER PLANT? \ud83d\udc80\"), and a described opening visual (holding a droopy plant, exasperated).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "2 CTA variants are provided.",
+        "evidence": "Only one CTA block exists ([0:17\u20130:20] CTA), with no alternate version.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The package notes that the hook and CTA variants cut against one fixed body yield 6 or more edit combinations from a single shoot.",
+        "evidence": "No such note appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Delivery notes include beat timings, what is on screen each beat, and do's/don'ts.",
+        "evidence": "\"if she runs long on a take, the natural place to breathe is right after 'best' (end of Problem) and right after 'guessing' (end of Solution)\" ties notes to beats, and \"No line requires improvisation\" functions as a don't.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "No brand-voice vocabulary (such as 'revolutionary', 'game-changing', 'cutting-edge') appears in any spoken line.",
+        "evidence": "All VO lines (\"I used to just water it and hope for the best,\" \"Fernwell tells you exactly when to water, so you stop guessing,\" etc.) avoid buzzwords.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "A paid-partnership disclosure is written into an early beat of the script as a spoken or on-screen line, in addition to (not replaced by) the platform label.",
+        "evidence": "The disclosure is only a post-script flag: \"add **#ad** in the on-screen text or caption... and in the post caption itself\" \u2014 it is not written into any beat of the 20-second script itself.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

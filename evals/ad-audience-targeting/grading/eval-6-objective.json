@@ -1,0 +1,178 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Consolidates instead of finalizing six campaigns: a universe of a few tens of thousands runs better as one (or very few) consolidated campaign(s)",
+        "evidence": "\"Net: consolidate six campaigns into two funded tiers, plus the customer list running as suppression\" and \"That collapses several of your six campaigns into duplicates of the same population\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Broadens exact job titles to function plus seniority targeting",
+        "evidence": "\"switch title targeting to function+seniority\" (test sequence, Week 1); \"Matched company list of the 600 health systems + function (supply chain/procurement) + seniority (Director+) overlay\" (tier table)",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that job titles are freeform text and the platform recognizes only about 30% of them, so title-only targeting misses most of the real audience",
+        "evidence": "\"LinkedIn recognizes only ~30% of freeform job titles, so 'exact titles' alone quietly excludes most of your real audience.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes function plus seniority roughly triples the addressable audience",
+        "evidence": "\"Function + seniority targeting typically triples the matched audience at similar engagement \u2014 use that instead of exact titles.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Turns Audience Expansion off for this defined-ICP B2B account (letting the platform broaden to anybody and everybody wastes budget)",
+        "evidence": "Tier table: \"Audience Expansion off\"; and \"turn Audience Expansion off permanently\" in the test sequence; deleted-tiers section: \"Audience Expansion pushes spend toward people outside the 600 target accounts entirely.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the broad/algorithmic prospecting tier because the universe is too small, naming it as deleted rather than ranking it last",
+        "evidence": "\"Broad prospecting with Audience Expansion on \u2014 deleted, not demoted. For a defined ICP this small, Audience Expansion pushes spend toward people outside the 600 target accounts entirely.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the condition that would revive the broad tier (the universe or the geography widening)",
+        "evidence": "The only revival condition given is \"Revisit splitting the account-list tier from a broader prospecting tier only if it saturates \u2014 not before, per the default B2B rung for a universe this size,\" which ties revival to saturation of the existing tier, not to the universe or geography widening.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Concludes layered, not broad: ~3 demos a week of conversion data plus a small universe put the account on the layered side of the conditional",
+        "evidence": "\"Broad-vs-layered verdict: explicit layers. Every condition on that side of the ledger is met at once \u2014 a 24,000-person universe, a narrow two-title ICP, a $9k/month budget, and 3 demos/week (nowhere near a learning threshold).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Checks matched audiences (customer list, retargeting) against the 300-member platform floor",
+        "evidence": "\"Re-check both tiers' post-exclusion size against LinkedIn's 300-member floor once the customer count and site-traffic volume are known\" and \"If the retargeting pool doesn't clear 300 matched members, fall back to engagement audiences\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes practitioners run 5,000-30,000-person audiences for B2B conversion campaigns despite the platform recommending 50,000+",
+        "evidence": "No mention of a 5,000-30,000 practitioner range or a 50,000+ platform recommendation appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes that a $310 CPA cannot reach ~50 optimization events a week on $9k/month, so recommends optimizing to a higher-funnel proxy event with demos tracked as the true KPI",
+        "evidence": "\"daily budget \u2248 (target CPA \u00d7 50) \u00f7 7 = (310 \u00d7 50) \u00f7 7 \u2248 $2,214/day per ad set... Your total budget is $9,000/month\"; \"Optimize both tiers to a cheaper higher-funnel proxy event... Track demo requests as the true KPI offline\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes title and seniority facets cannot be stacked together on the platform",
+        "evidence": "The transcript recommends combining function+seniority and never states any platform limitation preventing title and seniority facets from being stacked together.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the standard exclusion set (current customers, employees, competitors) and notes exclusions run before inclusions",
+        "evidence": "The exclusion matrix (E1 customers, E2 employees+competitors, E3 recent demo requesters, E4 retargeting) is applied, but the transcript never states that exclusions are processed/run before inclusions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Judges tier success on downstream pipeline or lead quality, not on lead volume or cost per lead alone",
+        "evidence": "Success criteria are cost-based: \"Proxy-event CPA \u2264 ~$34\" and \"Cost/demo watched directly\"; the promote/hold/kill rule also evaluates \"cost/proxy-event against the ~$34 floor-adjusted target, and cost/demo\" \u2014 no downstream pipeline or lead-quality metric is used.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Consolidates instead of finalizing six campaigns: a universe of a few tens of thousands runs better as one (or very few) consolidated campaign(s)",
+        "evidence": "\"Your TAM is 24,000 people. Splitting it six ways means each campaign competes with the others in the same auction... Cut to **four campaigns**, organized by intent, not by audience-slicing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Broadens exact job titles to function plus seniority targeting",
+        "evidence": "\"Director/VP+ seniority + Operations/Procurement function... This *replaces* your separate \\\"exact job titles\\\" and \\\"interest-based\\\" campaigns \u2014 interest signals add noise on a TAM this precise; account+seniority+function match is the tighter version of the same audience.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States that job titles are freeform text and the platform recognizes only about 30% of them, so title-only targeting misses most of the real audience",
+        "evidence": "No mention of job titles being freeform text or a ~30% recognition rate anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes function plus seniority roughly triples the addressable audience",
+        "evidence": "The transcript never quantifies an audience-size multiplier from switching to function+seniority targeting.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Turns Audience Expansion off for this defined-ICP B2B account (letting the platform broaden to anybody and everybody wastes budget)",
+        "evidence": "\"Drop entirely: broad prospecting with Audience Expansion on... Turning it on means paying to reach people outside hospital systems entirely at the same bid you're using to reach VPs of Supply Chain.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Deletes the broad/algorithmic prospecting tier because the universe is too small, naming it as deleted rather than ranking it last",
+        "evidence": "\"**Drop entirely: broad prospecting with Audience Expansion on.**\" \u2014 explicitly named as dropped, not merely deprioritized, tied to the small 24,000-person TAM.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States the condition that would revive the broad tier (the universe or the geography widening)",
+        "evidence": "No condition is given for when broad prospecting could be reinstated; the transcript only says to fix delivery issues via \"wider seniority bands inside Tier 1 or higher bids \u2014 not expansion.\"",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Concludes layered, not broad: ~3 demos a week of conversion data plus a small universe put the account on the layered side of the conditional",
+        "evidence": "The transcript presents no explicit broad-vs-layered conditional framework weighing conversion-data volume against universe size; it simply drops the broad tier outright.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Checks matched audiences (customer list, retargeting) against the 300-member platform floor",
+        "evidence": "No mention of a minimum audience-size floor (e.g., 300 members) for Matched Audiences anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes practitioners run 5,000-30,000-person audiences for B2B conversion campaigns despite the platform recommending 50,000+",
+        "evidence": "No such practitioner benchmark or platform recommendation figure appears in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Computes that a $310 CPA cannot reach ~50 optimization events a week on $9k/month, so recommends optimizing to a higher-funnel proxy event with demos tracked as the true KPI",
+        "evidence": "The transcript computes \"$9,000 \u00f7 $310 = ~29 demos/month needed; you're at ~13/month currently (3/week)\" but never proposes optimizing to a higher-funnel proxy event or discusses ~50 events/week.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes title and seniority facets cannot be stacked together on the platform",
+        "evidence": "The transcript freely combines seniority and function filters (\"seniority/function filters\") without ever stating a platform limitation on stacking title and seniority facets.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Applies the standard exclusion set (current customers, employees, competitors) and notes exclusions run before inclusions",
+        "evidence": "Only customer and cross-tier exclusions are mentioned (\"Exclude Tier 2/3/4 membership from Tier 1, and exclude existing customers from Tier 1/3\"); employees and competitors are not mentioned, and there is no statement that exclusions run before inclusions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Judges tier success on downstream pipeline or lead quality, not on lead volume or cost per lead alone",
+        "evidence": "The success framing throughout is CPA/cost-based (\"Treat $310 as a **blended** target across tiers\"), with no mention of judging tiers by downstream pipeline or lead quality.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

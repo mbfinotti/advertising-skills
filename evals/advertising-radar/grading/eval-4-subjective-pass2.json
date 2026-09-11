@@ -1,0 +1,24 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Genuinely independent options that exist (an independent ad-news roundup or trade press) are included without pretending they can carry the whole list",
+        "evidence": "The list is built on genuinely independent options that do exist under the filter: PPC Land (explicitly noted as independent, Luis Rijo, no vendor/agency ownership) as the ad-news roundup, plus Digiday, Marketing Dive, Marketing Brew, and Ad Age as ad-supported trade press, each with a 'what they're selling' column making the monetization model transparent. Crucially, it does not pretend these carry the whole list: the opening 'tension, stated once' says cutting tool vendors/agencies/course sellers/platforms 'removes essentially the entire specialist tactical layer for Meta and TikTok, leaving",
+        "score": 5,
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Genuinely independent options that exist (an independent ad-news roundup or trade press) are included without pretending they can carry the whole list",
+        "evidence": "Real independent sources are named and correctly characterized: Digiday and AdExchanger as ad-industry trade journalism 'without a stake in any tool or platform's success', Modern Retail (disclosed as 'part of Digiday Media'), Marketing Brew ('Morning Brew, ad-supported, editorially independent'), plus Ehrenberg-Bass academic research and WARC. Funding models are stated for each, and the exclusions section is transparent about the vendor/agency/course/platform content being dropped, including a reasoned borderline call on Seufert and Garc\u00eda Mart\u00ednez. However, the answer then presents these sou",
+        "score": 3,
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

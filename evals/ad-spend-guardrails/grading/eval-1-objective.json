@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Derives break-even ROAS from the stated margin as 1 divided by 0.45, roughly 2.2x, rather than adopting 4x.",
+        "evidence": "\"Break-even ROAS = 1 \u00f7 0.45 = 2.22x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names 4x ROAS as folklore with no traceable author, not a measured standard.",
+        "evidence": "\"4x ROAS is not a benchmark \u2014 it's break-even math for a 25%-margin business, retroactively turned into folklore (no traceable author).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that 4x is simply break-even at a 25% contribution margin retroactively declared a target.",
+        "evidence": "\"4x reframed: a 4x floor implies a 25% margin (1 \u00f7 4 = 0.25).\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the 4x rule visible next to the business's own break-even instead of endorsing it or silently deleting it.",
+        "evidence": "The doc discusses 4x directly next to 2.22x in \"The short answer\" and \"4x reframed\" sections rather than omitting it.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes three distinct numbers: a break-even floor, a target floor, and a hard floor / kill-switch level.",
+        "evidence": "Layers table lists \"Break-even floor\", \"Target floor\", \"Hard floor / kill-switch\" as separate rows.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns each layer its own consequence: stop always at break-even, investigate at target, automatic halt plus escalation at the hard floor.",
+        "evidence": "\"Stop, always \u2014 not negotiable\" (break-even); \"Below this: investigate, don't panic-stop\" (target); \"Automatic halt + escalation + written restart condition\" (hard floor).",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Warns that publishing a single ROAS number gets read as all three layers at once, producing both over-reaction to one bad day and tolerated slow bleeds.",
+        "evidence": "No statement in the transcript describes a single published number being conflated across all three layers or causing both over-reaction and tolerated bleeds.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States break-even allowable CAC as contribution per order, about $30.60 ($68 x 45%).",
+        "evidence": "\"Contribution per order = AOV \u00d7 margin = $68 \u00d7 0.45 = $30.60\" and \"Break-even CAC (new-customer) = $30.60\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for cash runway and burn, or states a cash cap as an absolute monthly spend number that binds regardless of efficiency.",
+        "evidence": "\"Cash runway / burn | \u2014 | missing\" and \"Hard-dollar cap: missing \u2014 needs monthly cash runway to size. Do not finalize the kill-switch without it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends the scaling ceiling be set on marginal efficiency, with the blended figure reserved for the monthly report.",
+        "evidence": "The guardrail set only defines blended \"MER (blended)\"; no marginal-efficiency metric or distinction from a reporting-only blended figure appears anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks which ROAS variant is meant, or warns against setting the guardrail on platform-reported ROAS in favour of business-level outcomes.",
+        "evidence": "\"Never guardrail platform-reported ROAS directly \u2014 Meta/Google report claimed revenue, not caused revenue... Pull MER and CAC from your own order data.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks clarifying interview questions, including what guardrails already exist, before finalizing numbers rather than delivering a finished target immediately.",
+        "evidence": "The document delivers a specific finished number immediately: \"Recommendation for the annual plan: open at 3.0x ROAS / ~$22.67 CAC as the target floor\" rather than withholding it pending interview, and never asks what guardrails already exist.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pairs the proposed ROAS/MER floor with a counter-metric such as new-customer share to expose retargeting and branded-search gaming.",
+        "evidence": "Guardrail table pairs \"MER (blended)\" with counter-metric \"New-customer share of orders\".",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Derives break-even ROAS from the stated margin as 1 divided by 0.45, roughly 2.2x, rather than adopting 4x.",
+        "evidence": "\"Breakeven ROAS = 1 \u00f7 contribution margin = 1 \u00f7 0.45 = 2.2x\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Names 4x ROAS as folklore with no traceable author, not a measured standard.",
+        "evidence": "The doc calls 4x 'a rule of thumb that happens to fit businesses with a ~25% contribution margin' \u2014 it gives a traceable derivation rather than calling it untraceable folklore.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Explains that 4x is simply break-even at a 25% contribution margin retroactively declared a target.",
+        "evidence": "\"it's a rule of thumb that happens to fit businesses with a ~25% contribution margin\" ties 4x directly to a 25%-margin breakeven.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Keeps the 4x rule visible next to the business's own break-even instead of endorsing it or silently deleting it.",
+        "evidence": "The comparison table lists 2.2x (breakeven) alongside 4.0x row with margin implications, discussed rather than deleted.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes three distinct numbers: a break-even floor, a target floor, and a hard floor / kill-switch level.",
+        "evidence": "\"Blended ROAS target: 3.5x, with a 2.5x floor\" plus \"Breakeven ROAS = ... 2.2x\" gives three distinct numbers.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Assigns each layer its own consequence: stop always at break-even, investigate at target, automatic halt plus escalation at the hard floor.",
+        "evidence": "Only breakeven (unprofitable) and floor ('paused or restructured') get consequences; target (3.5x) has no 'investigate' consequence and there's no escalation language.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Warns that publishing a single ROAS number gets read as all three layers at once, producing both over-reaction to one bad day and tolerated slow bleeds.",
+        "evidence": "No such warning appears anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States break-even allowable CAC as contribution per order, about $30.60 ($68 x 45%).",
+        "evidence": "\"Contribution margin (after COGS + shipping): 45% \u2192 **$30.60 contribution profit per order**\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for cash runway and burn, or states a cash cap as an absolute monthly spend number that binds regardless of efficiency.",
+        "evidence": "No mention of runway, burn, or an absolute cash cap anywhere in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Recommends the scaling ceiling be set on marginal efficiency, with the blended figure reserved for the monthly report.",
+        "evidence": "The document only distinguishes blended MER from platform ROAS, never discusses marginal vs blended efficiency for scaling decisions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks which ROAS variant is meant, or warns against setting the guardrail on platform-reported ROAS in favour of business-level outcomes.",
+        "evidence": "\"Use blended MER, not platform-reported ROAS. Meta/Google dashboards over-credit themselves via last-click/view-through attribution.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks clarifying interview questions, including what guardrails already exist, before finalizing numbers rather than delivering a finished target immediately.",
+        "evidence": "The document opens with a finished 'Recommended target' and never asks the CFO/user any clarifying questions.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Pairs the proposed ROAS/MER floor with a counter-metric such as new-customer share to expose retargeting and branded-search gaming.",
+        "evidence": "No counter-metric like new-customer share is mentioned anywhere in the document.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}

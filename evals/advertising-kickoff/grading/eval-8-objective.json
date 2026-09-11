@@ -1,0 +1,190 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Reviews the existing automations first and flags stale ones (including the unread daily digest) for removal, deleting only with approval, before adding anything new.",
+        "evidence": "'Only one of the seven legacy automations is named: the daily \"ad tips\" digest. It fails the routine test outright ... Recommend killing it.' plus 'Name them and I'll audit each ... before you add anything new.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes at most 4 routines.",
+        "evidence": "Five distinct routine specs are given: Monthly spend health check, Monthly negative-keyword mining, Weekly creative wear-out check, Quarterly kickoff re-invocation, and Daily pacing bridge \u2014 exceeding 4 despite the text's claim of '4 standing... plus one temporary'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposes at least 2 routines.",
+        "evidence": "Multiple routine blocks given (5 total), well above 2.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows every proposed routine as a dry-run (name, trigger, what it does, output channel, first run) before anything recurring is created.",
+        "evidence": "Each routine block has 'Runs:', 'Does:', 'Outputs to:', 'First run:' fields all marked '(dry run only)'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Every proposed routine names an explicit output channel (a named chat channel, tracker, or document); no routine's output is a bare notify-me.",
+        "evidence": "All routines use placeholder '<name your team channel / doc \u2014 not yet known>' or '<name channel>' \u2014 no concrete channel is actually named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposes a monthly spend health check invoking mbfinotti/advertising-skills@cac-roas-benchmark, anchored before the allocation decision it feeds.",
+        "evidence": "'Monthly spend health check ... Does: cac-roas-benchmark against real spend/conversion data ... then monthly before the next budget cycle'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Demotes or skips the weekly pacing routine as a duplicate of the agency's Monday pacing report, naming the duplication.",
+        "evidence": "'Deleted, not ranked last: ad-budget-pacing's standing weekly cadence is deleted outright ... Meridian West's Monday email already covers it.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes monthly search term mining invoking mbfinotti/advertising-skills@ad-negative-keywords, justified by search being a meaningful share (~40%) of spend.",
+        "evidence": "'Does: ad-negative-keywords on the Search account's search-term report ($24k/mo, 40% of spend)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Flags that search term reports carry user-typed text that can identify a person, so the mining routine's output channel must be covered by the data-handling policy.",
+        "evidence": "'the negative-keyword routine's output channel needs to be one your data-handling policy already covers, since search-term reports can contain user-typed text.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a periodic re-invocation of the kickoff itself among the proposals.",
+        "evidence": "'Quarterly kickoff re-invocation ... Does: re-run advertising-kickoff to refresh advertising-context.md and re-route'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not propose the quarterly source refresh (advertising-radar) first or frame it as the quick win despite it being the cheapest.",
+        "evidence": "advertising-radar is never mentioned in this transcript at all.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors routine triggers to the media calendar (month-end reset, the October 10 flight end) rather than arbitrary dates.",
+        "evidence": "'first run 2026-10-13 (first Monday after flight close)' and 'first run 2026-10-02 (covers September Search data)'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records the surviving and new routines in advertising-context.md (or proposes creating it) so the next warm start knows what is running.",
+        "evidence": "'## Context artifact: Sent as a file: advertising-context.md ... save it at that project's root and commit it' \u2014 no actual content block with the routines list is shown, unlike other sections.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the routine ranking as attention cost per firing weighed against the decision each firing enables, not as setup cost.",
+        "evidence": "No explicit statement frames routine selection this way; reasoning given is bottleneck/cost for skills in the short-list, not attention-cost-per-firing for routines specifically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Creates nothing recurring without user approval of the dry-run output.",
+        "evidence": "'## Before anything goes live, I need from you' lists outstanding items before anything is finalized; all routines marked 'dry run only'.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Reviews the existing automations first and flags stale ones (including the unread daily digest) for removal, deleting only with approval, before adding anything new.",
+        "evidence": "'0. Audit before anything (do this first)... Kill anything with zero opens/replies in the last 30 days by default \u2014 the daily ad-tips digest included.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes at most 4 routines.",
+        "evidence": "Exactly four numbered routines are proposed: Weekly Pulse, Monthly Budget Review, Quarterly Program Review, Flight-specific checkpoints.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Proposes at least 2 routines.",
+        "evidence": "Four routines are proposed, satisfying the minimum of 2.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Shows every proposed routine as a dry-run (name, trigger, what it does, output channel, first run) before anything recurring is created.",
+        "evidence": "Routines list owner/input/look-at/decision but never an output channel or an explicit 'first run' dry-run preview.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Every proposed routine names an explicit output channel (a named chat channel, tracker, or document); no routine's output is a bare notify-me.",
+        "evidence": "No specific output channel is named for any routine; only a generic closing suggestion to use 'calendar as recurring invites (or Slack scheduled reminders)'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Proposes a monthly spend health check invoking mbfinotti/advertising-skills@cac-roas-benchmark, anchored before the allocation decision it feeds.",
+        "evidence": "The Monthly Budget & Channel Mix Review discusses CPL/CAC but never cites the skill name 'cac-roas-benchmark'.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Demotes or skips the weekly pacing routine as a duplicate of the agency's Monday pacing report, naming the duplication.",
+        "evidence": "'Input: Meridian West's existing Monday pacing email \u2014 this review runs off it, doesn't duplicate it. Don't ask the agency for a second report.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes monthly search term mining invoking mbfinotti/advertising-skills@ad-negative-keywords, justified by search being a meaningful share (~40%) of spend.",
+        "evidence": "Search-term review appears only under the weekly routine ('Search query/search-term report for waste'), not monthly, and 'ad-negative-keywords' is never named.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Flags that search term reports carry user-typed text that can identify a person, so the mining routine's output channel must be covered by the data-handling policy.",
+        "evidence": "No mention of search-term privacy/PII considerations anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Includes a periodic re-invocation of the kickoff itself among the proposals.",
+        "evidence": "Quarterly review: 'whether the review cadence itself is still being used (kill what isn't \u2014 repeat step 0 quarterly, don't let it re-grow to seven).'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not propose the quarterly source refresh (advertising-radar) first or frame it as the quick win despite it being the cheapest.",
+        "evidence": "'advertising-radar' is never mentioned or proposed anywhere.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Anchors routine triggers to the media calendar (month-end reset, the October 10 flight end) rather than arbitrary dates.",
+        "evidence": "'Sep 26 (T-2 weeks): wind-down decision' and 'Oct 17 (T+1 week): post-flight retro' are explicitly anchored to the Oct 10 flight end; monthly review is 'first week of month'.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Records the surviving and new routines in advertising-context.md (or proposes creating it) so the next warm start knows what is running.",
+        "evidence": "No mention of advertising-context.md or recording routines in any artifact.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "States the routine ranking as attention cost per firing weighed against the decision each firing enables, not as setup cost.",
+        "evidence": "Each routine ties directly to a 'Decision each week/month', and 'If there's no decision, cancel that week's meeting \u2014 don't meet to confirm nothing changed' frames cost against decision value.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Creates nothing recurring without user approval of the dry-run output.",
+        "evidence": "The plan is presented as a proposal to 'put these on the calendar as recurring invites... today', not as something already created by the assistant.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

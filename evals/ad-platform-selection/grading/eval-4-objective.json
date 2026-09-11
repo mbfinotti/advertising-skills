@@ -1,0 +1,166 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Response rules out B2B professional networks on the LTV floor (roughly $10,000-$15,000 minimum), showing Notchset's LTV is on the order of $400.",
+        "evidence": "\"Requires LTV ~$10,000\u201315,000 to recoup the CPL premium \u2014 Notchset's is ~$325\u2013400\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes the roughly $5,000/month floor for pipeline-oriented professional-network campaigns in North America, which $3,500 does not clear.",
+        "evidence": "\"plus the ~$5,000/month floor this plan doesn't clear\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes that a few hundred dollars a month on this family only proves engagement signal, never sales outcomes, so a smaller trial does not rescue the plan.",
+        "evidence": "No statement in the transcript addresses that a smaller LinkedIn trial would only prove engagement signal rather than sales outcomes.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response cites typical professional-network costs (CPL around $110, or CPC $8-16) against what a $29/month product can afford, with the arithmetic shown.",
+        "evidence": "\"Typical CPL ~$110... Realistic CAC ... lands at $370\u20132,200 \u2014 4x to 26x your $85 ceiling\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response names picking the channel the team already knows as a failure mode, treating familiarity as a scoring input rather than the decision.",
+        "evidence": "\"your instinct toward LinkedIn comes from platform fluency, not from this math. That's the named failure mode this framework flags explicitly\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response states that audience presence (recruiters live on LinkedIn) alone does not pass the affordability gate; economics decide what is affordable.",
+        "evidence": "\"It's the only surviving family whose benchmark economics can plausibly clear an $85 allowable CAC\" framing decisions strictly on economics despite recruiter presence on LinkedIn.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The family is deleted from the candidate set and named in a deleted list with the gate it failed, not ranked at the bottom for later.",
+        "evidence": "\"All four are out of the candidate set \u2014 not ranked low, gone.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response recommends an alternative consistent with low-ACV economics (paid search capture if search volume exists, or organic/product-led motions).",
+        "evidence": "\"Paid search. It's the only surviving family whose benchmark economics can plausibly clear an $85 allowable CAC\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response computes or requests contribution margin to derive allowable CAC from price, rather than skipping the economics.",
+        "evidence": "\"Monthly gross profit/customer | $29 \u00d7 0.80 = $23.20\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Allowable CAC is derived via a payback target, not a folk ROAS multiple.",
+        "evidence": "\"Allowable CAC (9-month discounted payback, mid-band) | 9 \u00d7 $23.20 \u00d7 0.41 \u2248 $85\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response does not recommend testing LinkedIn with a smaller budget to see what happens.",
+        "evidence": "LinkedIn is fully removed from the candidate set with no smaller-budget test proposed.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response notes a professional-network test conventionally needs about a quarter of committed spend before a verdict, compounding the mismatch.",
+        "evidence": "No mention of a quarter-length commitment norm for LinkedIn testing appears in this transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Final output names one funded primary channel with a test design carrying explicit pass/fail criteria.",
+        "evidence": "\"Paid search\" primary with \"Pass: cost per paying customer \u2264 ~$85\u2013115... Kill: $200\u2013300 spent... zero paid conversions\"",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Response rules out B2B professional networks on the LTV floor (roughly $10,000-$15,000 minimum), showing Notchset's LTV is on the order of $400.",
+        "evidence": "The bottom line explicitly keeps LinkedIn: 'LinkedIn as an audience \u2014 yes, you're right, recruiters live there,' recommending a different mechanism rather than ruling out the platform.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes the roughly $5,000/month floor for pipeline-oriented professional-network campaigns in North America, which $3,500 does not clear.",
+        "evidence": "No such floor figure is mentioned anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes that a few hundred dollars a month on this family only proves engagement signal, never sales outcomes, so a smaller trial does not rescue the plan.",
+        "evidence": "The response instead recommends a smaller trial as a fix: 'Put $1,000\u20131,500 in for 4\u20136 weeks, measure real cost-per-install and install\u2192paid conversion.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response cites typical professional-network costs (CPL around $110, or CPC $8-16) against what a $29/month product can afford, with the arithmetic shown.",
+        "evidence": "'CPCs commonly $6\u201312+ in B2B niches' and the CPL/close-rate table showing CAC of $417-$2,000 against a ~$115 affordable ceiling.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response names picking the channel the team already knows as a failure mode, treating familiarity as a scoring input rather than the decision.",
+        "evidence": "No discussion of familiarity bias or team-knowledge as a scoring input appears.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response states that audience presence (recruiters live on LinkedIn) alone does not pass the affordability gate; economics decide what is affordable.",
+        "evidence": "'LinkedIn as an audience \u2014 yes... LinkedIn Lead Gen Forms as the acquisition engine... no, the unit economics don't support it as designed.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The family is deleted from the candidate set and named in a deleted list with the gate it failed, not ranked at the bottom for later.",
+        "evidence": "LinkedIn is kept as the recommended channel with a different campaign type, not deleted: 'Keep LinkedIn, drop Lead Gen Forms.'",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response recommends an alternative consistent with low-ACV economics (paid search capture if search volume exists, or organic/product-led motions).",
+        "evidence": "'organic LinkedIn content... Chrome Web Store ASO; recruiter communities... G2/Capterra reviews; and a referral program.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Response computes or requests contribution margin to derive allowable CAC from price, rather than skipping the economics.",
+        "evidence": "'at a plausible ~85% margin... ~$345 in margin-adjusted LTV... you need CAC under ~$115.'",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Allowable CAC is derived via a payback target, not a folk ROAS multiple.",
+        "evidence": "CAC is derived from an LTV:CAC \u2265 3:1 rule ('Healthy paid acquisition wants LTV:CAC \u2265 3:1'), a ratio multiple rather than a payback-period target.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response does not recommend testing LinkedIn with a smaller budget to see what happens.",
+        "evidence": "'Don't commit the full $3,500 on day one. Put $1,000\u20131,500 in for 4\u20136 weeks' is exactly a smaller-budget LinkedIn test.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Response notes a professional-network test conventionally needs about a quarter of committed spend before a verdict, compounding the mismatch.",
+        "evidence": "No such duration/spend rule is mentioned.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Final output names one funded primary channel with a test design carrying explicit pass/fail criteria.",
+        "evidence": "'Run Website Conversion campaigns... scale only if CAC lands under ~$100\u2013150' gives one named primary with an explicit threshold.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Sets the scaling ceiling on marginal MER/ROAS, not on the blended 2.0 figure.",
+        "evidence": "\"Approve a gated ramp, and put the gate on marginal efficiency, not blended... Marginal MER on the incremental spend tranche\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a passing blended average can hide marginal spend below break-even, so the last dollars of the budget may already lose money while the average looks healthy.",
+        "evidence": "\"Blended MER 2.0 tells you the average dollar across your current $110K is profitable. It tells you nothing about whether the next dollar... is profitable.\" plus the Haus $337 account example where the last 25% of spend ran \"more than 2x its own average.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even near 1.43x from the 70% margin (1 divided by 0.70) and treats it as the floor for the marginal number.",
+        "evidence": "\"Break-even MER : 1 / 0.70 = 1.43x\" used as the \"Break-even floor\" -> \"Stop, always \u2014 no discretion\".",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the two roles: the marginal number authorizes the next dollar of spend, the blended number belongs in the monthly report.",
+        "evidence": "\"Blended account MER, monthly \u2014 this is the reporting number, not the scaling gate.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Declines to approve the $150K step on the blended figure alone and requires a marginal-efficiency read (such as MER on the last tranche of spend) as the scaling gate.",
+        "evidence": "\"Don't approve the $150K jump on the agency's number... Approve a gated ramp, and put the gate on marginal efficiency, not blended.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Structures the policy as three layers with three separate consequences rather than a single floor.",
+        "evidence": "Table lists Break-even floor (\"Stop, always\"), Target floor (\"Investigate, don't halt\"), Hard floor/kill switch (\"Auto-revert the tranche, escalate\").",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pairs the MER guardrail with a counter-metric such as new-customer share of orders.",
+        "evidence": "\"Counter-metric: new-customer share of the incremental spend.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Caps the guardrail set at two or three metrics.",
+        "evidence": "\"Guardrail set (2 metrics, each with a counter-metric):\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Asks for runway and burn, or states an absolute monthly cash cap next to the efficiency floors.",
+        "evidence": "\"Cash runway / burn | Missing \u2014 this sets an absolute dollar cap on top of the efficiency floors, independent of MER\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places ceiling ownership outside the agency spending the money, on separation-of-duties grounds.",
+        "evidence": "\"This ceiling has to be owned by someone at Torvale, not by the agency. The agency is the party whose revenue grows if spend grows... the agency executes against that ceiling, it doesn't set it.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a re-baselining cadence (quarterly) plus named event triggers such as margin, pricing, or measurement changes.",
+        "evidence": "No re-baseline cadence or event-trigger section appears anywhere in the transcript.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Shows the arithmetic behind every threshold so a finance reader can audit it.",
+        "evidence": "\"## Derivation (shown so finance can audit it)\" followed by explicit computed values.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Sets the scaling ceiling on marginal MER/ROAS, not on the blended 2.0 figure.",
+        "evidence": "\"Never approve a spend increase unless projected marginal MER on the increment \u2265 true breakeven MER \u00d7 1.3\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Explains that a passing blended average can hide marginal spend below break-even, so the last dollars of the budget may already lose money while the average looks healthy.",
+        "evidence": "\"The marginal MER on that incremental $40K could easily be 1.0\u20131.5, even while the blended average still reads 'healthy' for weeks.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Computes break-even near 1.43x from the 70% margin (1 divided by 0.70) and treats it as the floor for the marginal number.",
+        "evidence": "The doc computes 1.43 but explicitly rejects it: \"That's breakeven on COGS only\" and instead uses CM2-based 1.6-1.8 as the real floor.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Distinguishes the two roles: the marginal number authorizes the next dollar of spend, the blended number belongs in the monthly report.",
+        "evidence": "The doc argues marginal should gate scaling but never assigns the blended figure a distinct 'monthly report' role.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Declines to approve the $150K step on the blended figure alone and requires a marginal-efficiency read (such as MER on the last tranche of spend) as the scaling gate.",
+        "evidence": "\"Don't approve the full jump to $150K... Require a marginal-MER report after 1 week before authorizing the next step.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Structures the policy as three layers with three separate consequences rather than a single floor.",
+        "evidence": "Minimum marginal MER to proceed (~2.2), 'Freeze spend if marginal MER < threshold for 2 consecutive weeks', and 'Roll back immediately if marginal MER < 1.0' \u2014 three distinct thresholds with distinct actions.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Pairs the MER guardrail with a counter-metric such as new-customer share of orders.",
+        "evidence": "No new-customer-share or similar counter-metric is mentioned; only frequency/CPM trend and incrementality testing are used.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Caps the guardrail set at two or three metrics.",
+        "evidence": "The doc includes marginal MER threshold, step cap, freeze trigger, rollback trigger, frequency/CPM watch, incrementality test, and cash runway check \u2014 well beyond 2-3 metrics.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Asks for runway and burn, or states an absolute monthly cash cap next to the efficiency floors.",
+        "evidence": "\"Confirm you can carry the extra $40K/month in spend for 60\u201390 days of cash before repeat revenue comes back\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Places ceiling ownership outside the agency spending the money, on separation-of-duties grounds.",
+        "evidence": "\"Run ... a geo holdout / conversion lift test ... quarterly, minimum\" plus \"Require the real CM2/breakeven number and one incrementality test result before '2.0 blended, 1.4 breakeven' gets used as a scaling justification again.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Includes a re-baselining cadence (quarterly) plus named event triggers such as margin, pricing, or measurement changes.",
+        "evidence": "No discussion of who owns approval authority or separation from the agency appears in the document.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Shows the arithmetic behind every threshold so a finance reader can audit it.",
+        "evidence": "\"70% gross margin \u21d2 1 / 0.70 = 1.43\" and \"If true breakeven = 1.7 \u2192 minimum acceptable marginal MER = ~2.2\" show full arithmetic throughout.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "repo": "advertising-skills",
+  "skill": "ad-negative-keywords",
+  "scenarios": 7,
+  "expectations_total": 62,
+  "expectations_subjective": 0,
+  "expectations_objective": 62,
+  "pass_rate_with_skill_pct": 87.1,
+  "pass_rate_without_skill_pct": 50.0,
+  "delta_pp": 37.1,
+  "uplift_multiplier": 1.74,
+  "trigger_accuracy_pct": 94.8,
+  "trigger_queries": 58,
+  "subjective_ac2": null,
+  "subjective_pass_disagreements": [],
+  "concern_flag": false,
+  "concern_reason": null,
+  "models": {
+    "trial": "sonnet",
+    "objective_grader": "sonnet",
+    "subjective_grader": "opus",
+    "trigger": "sonnet"
+  },
+  "harness_version": "2.1.269 (Claude Code)",
+  "conditions": {
+    "mcp_servers": "disabled",
+    "project_claude_md": "not loaded (trials and grading)",
+    "user_claude_md": "loaded",
+    "dynamic_prompt_sections": "excluded"
+  },
+  "empty_trials": {
+    "with_skill": [],
+    "without_skill": []
+  },
+  "ungraded_expectations": 0,
+  "run_degraded": false,
+  "failed_expectations": {
+    "with_skill": [
+      {
+        "eval_id": 2,
+        "expectation": "Presents the additions as a draft for approval rather than instructing a silent mass-apply"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Negates bad tokens as phrase negatives"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Flags high-converting tokens as expansion leads for the account owner while declining to do the positive keyword research itself"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Points this user to the script/tokenizer path given their stated Python ability, noting the spreadsheet pivot is the equivalent no-script alternative"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends shifting effort to the conflict sweep and the watchlist instead of new exclusions"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Frames success against the pass threshold: wasted spend share under 10% of non-brand spend AND zero converting terms blocked, verified against the change log and conversion history"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States this platform's default negative match type is phrase, so report additions need no switch away from exact"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Recommends logging the change with date, terms, level, match type, and reason"
+      }
+    ],
+    "without_skill": [
+      {
+        "eval_id": 1,
+        "expectation": "Declines to name any specific candidate negative keyword for the live account before receiving its search term report"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Requests an export of the search term report (search query report) as the prerequisite for the live account"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Explains that a list invented without query data has no evidence of what actually matches, and that its cost - blocked converting queries - is invisible"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Allows a starter exclusion list only for the brand-new zero-history campaign"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Labels the starter list as pre-launch and says to review it against real queries after 7-14 days"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks what counts as a conversion and for the target CPA, and asks for the account's CPC range"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks which queries or themes must never be blocked (brand terms, converting themes, deliberate competitor bidding)"
+      },
+      {
+        "eval_id": 1,
+        "expectation": "Asks whether this is a one-off cleanup or a standing maintenance job"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Applies a tightened click gate of 10-12 clicks rather than the standard 15-20, because the average CPC is above roughly $3"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Puts 'legal case tracker excel' (8 clicks) on a watchlist instead of negating it, and names the gate that would trip it"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Recommends a weekly recurring pass with a 7-14 day lookback going forward, given monthly spend above roughly $10k"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Expands plural, synonym, or stem variants manually for at least one added negative, because negative keywords do not match close variants"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Assigns recurring junk themes to a shared exclusion list and reserves account level for universal disqualifiers such as the job-seeker terms"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Presents the additions as a draft for approval rather than instructing a silent mass-apply"
+      },
+      {
+        "eval_id": 2,
+        "expectation": "Each addition carries its evidence (clicks, cost, conversions) and a taxonomy category"
+      },
+      {
+        "eval_id": 3,
+        "expectation": "States that casing and misspellings are matched automatically, so capitalized and typo variants are unnecessary"
+      },
+      {
+        "eval_id": 4,
+        "expectation": "Recommends a quarterly conflict sweep as the standing safeguard, because this failure mode is silent"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Tokenizes queries into unigrams, bigrams, and trigrams"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Negates bad tokens as phrase negatives"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Flags high-converting tokens as expansion leads for the account owner while declining to do the positive keyword research itself"
+      },
+      {
+        "eval_id": 5,
+        "expectation": "Points this user to the script/tokenizer path given their stated Python ability, noting the spreadsheet pivot is the equivalent no-script alternative"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Cites that a large published study of account-level exclusions found near-zero CPA/ROAS difference versus accounts without them - where and how negatives are applied matters more than how many"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends shifting effort to the conflict sweep and the watchlist instead of new exclusions"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Recommends lengthening the review interval rather than moving to daily passes"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "Frames success against the pass threshold: wasted spend share under 10% of non-brand spend AND zero converting terms blocked, verified against the change log and conversion history"
+      },
+      {
+        "eval_id": 6,
+        "expectation": "States that every negative narrows reach: negate the clearly wrong, never the merely uncertain"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Notes that on this platform negative keyword lists attach to campaigns only, never ad groups, so the list must be attached to each of the 6 campaigns"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Rejects the broad match plan because this platform has no negative broad match at all - phrase and exact only"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States this platform's default negative match type is phrase, so report additions need no switch away from exact"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "States that close variants of a negative still match on this platform too, so plural and synonym variants must be added manually"
+      },
+      {
+        "eval_id": 7,
+        "expectation": "Recommends logging the change with date, terms, level, match type, and reason"
+      }
+    ]
+  }
+}

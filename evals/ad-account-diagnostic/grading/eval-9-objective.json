@@ -1,0 +1,154 @@
+{
+  "with_skill": {
+    "expectations": [
+      {
+        "text": "Refuses the industry benchmark as the baseline and judges the account against its own 12-month history.",
+        "evidence": "\"the diagnostic method this audit follows requires comparing the account against its own history, never against a purchased industry-benchmark report\" and \"the account's own history is the only valid baseline.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States why benchmarks mislead: different mix, geography, and definitions - directional context only.",
+        "evidence": "\"Industry averages blend unknown mixes of objective (traffic vs. conversion), placement (feed vs. Reels vs. Stories), funnel stage (cold prospecting vs. warm retargeting), CTR definition (link-click vs. all-click), attribution window, and even which advertisers chose to submit data to the report\" \u2014 mix and definitions covered, though geography is not explicitly named as a factor.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives a break-even ROAS from the 55% contribution margin (roughly 1/0.55, about 1.8) and judges the 2.4 ROAS against it as above break-even.",
+        "evidence": "\"Break-even ROAS \u2248 1 / contribution margin = 1 / 0.55 \u2248 1.82. Your ROAS (2.3\u20132.5) and blended MER (2.1) have both sat comfortably above break-even for 12 straight months.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes no defect is established: stable metrics against the account's own history plus above-break-even economics do not support a broken-account verdict.",
+        "evidence": "\"verdict : insufficient evidence to declare a defect - and the one number that IS gate-clean (12mo of stable ROAS/MER above break-even) argues against 'badly underperforming'\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not manufacture a fix list to close the benchmark gap - no creative, targeting, or bidding overhaul recommended off the benchmark deltas.",
+        "evidence": "\"What this list deletes, explicitly: a creative overhaul and a budget increase, both of which the 'CTR is low' framing invites by reflex. Deleted because a full year of non-decaying CTR is inconsistent with creative fatigue...\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Resists the audit-for-the-board pressure explicitly: findings require account evidence, not a count of red flags to fill a deck.",
+        "evidence": "\"a board mandate to 'identify everything that's broken next week' structurally biases toward manufacturing findings. I'm not going to hand you a list of red flags to satisfy that framing \u2014 only what the evidence actually supports.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends blended MER judged against the margin-derived break-even as the truth read, over raw platform-reported ROAS.",
+        "evidence": "The text cites \"blended MER (2.1)\" alongside ROAS against break-even, but never argues MER should be preferred over platform ROAS as the 'truth read' \u2014 both are just listed together as evidence of profitability, with no discussion of platform-reported ROAS being less trustworthy than MER.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Notes platform-reported ROAS is claimed revenue, not evidence of incremental revenue.",
+        "evidence": "No mention anywhere of platform-reported ROAS reflecting claimed/attributed revenue rather than incremental revenue; the reconciliation finding only asks to check platform revenue against backend truth (\"confirm platform-reported revenue against backend/order-table truth\"), not the incrementality distinction.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "The layer screen shows pass states with evidence rather than invented FAILs.",
+        "evidence": "The layer screen lists \"creative : pass-with-note\" and \"offer & downstream : pass\" with supporting evidence, and explicitly avoids FAIL verdicts elsewhere, marking most as \"unknown\" rather than inventing failures.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the board answer as growth versus defect: wanting better than 2.4 is an improvement program, not a defect repair, and the diagnostic will not invent a defect to justify one.",
+        "evidence": "\"replace 'underperforming vs. industry benchmark' with 'stable and profitable at 1.15-1.3x break-even for 12 months; investigating whether reallocation within the account can lift it further'\" and Finding 2 frames further gains as a \"reallocation opportunity\" rather than a defect fix.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends product-level contribution-margin reads as where a real opportunity review would start, since blended figures can hide margin-destroying products.",
+        "evidence": "The transcript recommends per-campaign/ad-set breakdowns (\"Pull the real per-campaign/ad-set breakdown\") to find budget misallocation, but never discusses product-level contribution margins or margin-destroying products specifically.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a monitoring baseline and re-check rather than a fix plan.",
+        "evidence": "\"re-check : after the data below is supplied and a first real per-layer screen runs\" and the findings list leads with a reconciliation check and data pull rather than a fix plan.",
+        "passed": true,
+        "graded": true
+      }
+    ]
+  },
+  "without_skill": {
+    "expectations": [
+      {
+        "text": "Refuses the industry benchmark as the baseline and judges the account against its own 12-month history.",
+        "evidence": "\"Profitability, not the benchmark, is the right yardstick.\" and \"12 months of flat performance is the strongest signal in this whole brief\" \u2014 the analysis pivots to the account's own trailing 12-month bands (ROAS 2.3\u20132.5, CTR ~0.9%, MER 2.1) as the diagnostic basis rather than the 3.5 benchmark.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "States why benchmarks mislead: different mix, geography, and definitions - directional context only.",
+        "evidence": "Section 1 lists \"Attribution mismatch,\" \"'Supplements' is not one business model\" (mix), and \"CTR is objective-dependent\" as reasons the benchmark doesn't transfer; it doesn't mention geography specifically, but covers mix/definitions thoroughly and frames the benchmark as unreliable rather than a rumor: \"the 3.5 isn't a number, it's a rumor.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Derives a break-even ROAS from the 55% contribution margin (roughly 1/0.55, about 1.8) and judges the 2.4 ROAS against it as above break-even.",
+        "evidence": "\"Breakeven ROAS = 1 / contribution margin = 1 / 0.55 = 1.82\" ... \"At a 2.4 ROAS, every $1 of ad spend returns $2.40 in revenue \u2192 $1.32 in contribution profit \u2192 $0.32 of net contribution profit per dollar spent\" \u2014 explicitly above breakeven.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Concludes no defect is established: stable metrics against the account's own history plus above-break-even economics do not support a broken-account verdict.",
+        "evidence": "\"the evidence you've given me points to a stable, profitable account, not a broken one\" and \"Nothing in 'ROAS 2.4 vs. benchmark 3.5' changes that arithmetic. You are not bleeding money on this channel \u2014 you're making money on it, consistently.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Does not manufacture a fix list to close the benchmark gap - no creative, targeting, or bidding overhaul recommended off the benchmark deltas.",
+        "evidence": "Section 3 recommends items like \"Creative testing velocity... Low velocity is fixable and is a legitimate, concrete board action item\" and \"Frequency and audience saturation... the algorithm may be quietly compensating\" \u2014 these are framed as tests/audits rather than benchmark-driven fixes, and are explicitly not justified by the benchmark gap, but they still constitute creative/targeting-adjacent recommendations presented as an action list, which risks reading as a fix list even though the text frames it as growth/elasticity testing rather than gap-closing.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Resists the audit-for-the-board pressure explicitly: findings require account evidence, not a count of red flags to fill a deck.",
+        "evidence": "\"Don't present this as 'the account is broken, here's the fix list.'\" and \"That version is defensible under questioning, doesn't overclaim a crisis you can't substantiate, and gives the board a concrete, fundable next step instead of a list of 'fixes' for an account that isn't actually failing.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends blended MER judged against the margin-derived break-even as the truth read, over raw platform-reported ROAS.",
+        "evidence": "The transcript computes breakeven only against platform ROAS 2.4 (\"At a 2.4 ROAS...\") and treats MER 2.1 mainly as a cross-check for a stable gap (\"~13%... suggests your measurement isn't the problem\"), but never explicitly re-runs or states the breakeven judgment using MER (2.1 vs 1.82) as the primary truth read over platform ROAS.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Notes platform-reported ROAS is claimed revenue, not evidence of incremental revenue.",
+        "evidence": "\"Meta's own reported ROAS is well known to overstate incrementality relative to blended/MMM numbers\" and recommendation #2: \"Run a geo-holdout or PSA-style incrementality test to see what fraction of that 2.4 ROAS is truly incremental vs. brand-search/organic cannibalization.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "The layer screen shows pass states with evidence rather than invented FAILs.",
+        "evidence": "The report states pass-like verdicts grounded in cited data, e.g. \"A small, stable gap over 12 months suggests your measurement isn't the problem\" and \"Twelve straight months of tight-banded stability... is the signature of an account that has settled into an equilibrium,\" without inventing failure findings.",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Frames the board answer as growth versus defect: wanting better than 2.4 is an improvement program, not a defect repair, and the diagnostic will not invent a defect to justify one.",
+        "evidence": "\"The real opportunity isn't 'fixing' underperformance \u2014 it's that we haven't tested this channel's ceiling in 12 months... to find out whether 2.4 is our floor or our plateau.\"",
+        "passed": true,
+        "graded": true
+      },
+      {
+        "text": "Recommends product-level contribution-margin reads as where a real opportunity review would start, since blended figures can hide margin-destroying products.",
+        "evidence": "The transcript uses a single blended 55% contribution margin figure throughout and never recommends breaking margin down by product/SKU; the closest related item is funnel-stage (cold vs warm) mix audit (#3), not product-level margin analysis.",
+        "passed": false,
+        "graded": true
+      },
+      {
+        "text": "Sets a monitoring baseline and re-check rather than a fix plan.",
+        "evidence": "The transcript proposes a set of structured tests (elasticity test, incrementality test, funnel-stage audit, creative velocity check, frequency/saturation pull) framed as \"a structured set of tests\" to run, rather than establishing an ongoing monitoring cadence or a scheduled re-check baseline against current stable metrics.",
+        "passed": false,
+        "graded": true
+      }
+    ]
+  }
+}
