@@ -9,7 +9,7 @@ metadata:
 
 # Landing Page Audit
 
-Audit the page paid traffic lands on, and return a fix list the media buyer can actually ship. Paid clicks are paid for whether or not the page converts, so every leak found here is a direct spend leak.
+Audit the page paid traffic lands on, and return a fix list the media buyer can actually ship. Every paid click costs money whether or not the page converts, so every leak found here is a direct spend leak.
 
 Experienced auditors do not start with the page - they start with the money trail:
 
