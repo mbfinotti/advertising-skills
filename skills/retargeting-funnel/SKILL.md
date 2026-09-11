@@ -93,7 +93,7 @@ Never ship a stage that will not deliver - an under-floor stage either serves no
 
 ### 5. Assign message intent and offer per stage
 
-Each stage gets a distinct job, not a louder version of the previous ad. Re-showing the identical offer harder is the weakest stage design - if they saw it and did not act, the offer or the angle was wrong for them, so change one of the two.
+Each stage gets a distinct job, not a louder version of the previous ad. Re-showing the identical offer harder is the weakest stage design - if they saw it and did not act, either the offer or the angle was wrong, so change one of the two.
 
 One menu of rungs, in build order: what each buys per unit of effort to produce it. Build top-down and fill the stages with whatever is ready.
 
