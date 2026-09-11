@@ -68,7 +68,7 @@ Do not produce a plan when any of these holds. Say which gate failed and what to
 
 - **No downstream capture layer.** Retargeting is not retroactive: audiences not being captured today are gone forever, and this format's main output is a warm pool. Build tracking and the retargeting scaffold first (`mbfinotti/advertising-skills@ad-conversion-tracking`, then `mbfinotti/advertising-skills@retargeting-funnel`), then return.
 - **The featured person has not consented.** Consent is per-post, personal, and revocable - marketing cannot run this unilaterally. Get explicit agreement (and the written agreement from Governance) before planning around anyone. Never treat "the CEO will probably say yes" as consent.
-- **Budget cannot sustain frequency against the audience.** If the budget spread over the audience yields near-zero frequency, nobody's mind changes. Shrink the audience to fit the budget (see Audience). If the user refuses both, decline the format.
+- **Budget cannot sustain frequency against the audience.** If the budget spread over the audience yields near-zero frequency, nobody changes their mind. Shrink the audience to fit the budget (see Audience). If the user refuses both, decline the format.
 - **B2B with low ACV.** This is a slow-payback trust layer. Practitioners cite roughly $25k+ ACV with a narrow ICP as the justification bar (practitioner-cited, not a law). Far below that, route the budget to direct-response and retargeting instead, where payback is measurable within the quarter.
 
 A single-person program is not a hard stop but flag it: one revocation or resignation ends it (see Governance).
