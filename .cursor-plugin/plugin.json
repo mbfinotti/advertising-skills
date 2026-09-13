@@ -15,12 +15,19 @@
         "paid-media",
         "media-buying",
         "performance-marketing",
+        "paid-advertising",
+        "ppc",
+        "marketing-automation",
         "ad-creative",
         "campaign-performance",
         "audience-targeting",
-        "ai-agent-skills",
-        "agentic",
-        "skills"
+        "agent-skills",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "cursor",
+        "gemini-cli-extension",
+        "skills-sh"
     ],
     "skills": "./skills/",
     "rules": "./rules/"

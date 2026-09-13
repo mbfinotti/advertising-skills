@@ -9,7 +9,7 @@ Built for **media buyers, performance marketers, PPC specialists, and growth lea
 
 ## Related Collections
 
-Other skills repositories I built for my colleague at Nativa Labs:
+Other skills repositories I built for my colleagues at Nativa Labs:
 
 - [`partnerships-skills`](https://github.com/mbfinotti/partnerships-skills): Partner ecosystem operations: _for partner managers, BD leads, ecosystem heads_
 - [`revops-skills`](https://github.com/mbfinotti/revops-skills): Revenue operations: _for RevOps managers, sales ops, marketing ops, CRM admins_
