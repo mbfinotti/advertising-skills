@@ -8,36 +8,38 @@ Built for **media buyers, performance marketers, PPC specialists, and growth lea
 
 ## Related Collections
 
-Other Nativa Labs skill repositories:
+Other skills repositories I built for my colleague at Nativa Labs:
 
-- [`partnerships-skills`](https://github.com/mbfinotti/partnerships-skills) — Partner ecosystem operations — _for partner managers, BD leads, ecosystem heads_
-- [`revops-skills`](https://github.com/mbfinotti/revops-skills) — Revenue operations — _for RevOps managers, sales ops, marketing ops, CRM admins_
-- [`sales-skills`](https://github.com/mbfinotti/sales-skills) — Sales execution — _for SDRs, AEs, sales managers, heads of sales_
+- [`partnerships-skills`](https://github.com/mbfinotti/partnerships-skills): Partner ecosystem operations: _for partner managers, BD leads, ecosystem heads_
+- [`revops-skills`](https://github.com/mbfinotti/revops-skills): Revenue operations: _for RevOps managers, sales ops, marketing ops, CRM admins_
+- [`sales-skills`](https://github.com/mbfinotti/sales-skills): Sales execution: _for SDRs, AEs, sales managers, heads of sales_
 
 ## Install
 
-Install every skill in this repo, not just one. Skills here are atomic by design and reference each other freely — picking a single skill leaves its sibling skills uninstalled, so cross-references and routed handoffs go nowhere.
+Install every skill in this repo, not just one. Skills here are atomic by design and reference each other freely: picking a single skill leaves its sibling skills uninstalled, so cross-references and routed handoffs go nowhere.
 
-**skills.sh (universal)** — works with any Agent Skills-compatible tool:
+**skills.sh (universal)**: works with any Agent Skills-compatible tool:
 
 ```bash
 npx skills add mbfinotti/advertising-skills
 ```
 
-**Claude Code** — install the plugin:
+**Claude.ai**: add as a plugin marketplace: open **Settings -> Capabilities -> Plugins**, click **Add -> Add marketplace -> Add from a repository**, enter `mbfinotti/advertising-skills`, then **Sync**.
+
+**Claude Code**: install the plugin:
 
 ```bash
 /plugin marketplace add mbfinotti/mbfinotti
 /plugin install advertising-skills@mbfinotti
 ```
 
-**Codex (OpenAI)** — install via the Codex CLI:
+**Codex (OpenAI)**: install via the Codex CLI:
 
 ```bash
 codex plugin add github:mbfinotti/advertising-skills
 ```
 
-**Cursor** — copy into Cursor's skills directory:
+**Cursor**: copy into Cursor's skills directory:
 
 ```bash
 git clone https://github.com/mbfinotti/advertising-skills.git ~/.cursor/skills/advertising-skills
@@ -45,7 +47,7 @@ git clone https://github.com/mbfinotti/advertising-skills.git ~/.cursor/skills/a
 
 Cursor auto-discovers skills from `.agents/skills/` and `.cursor/skills/`.
 
-**Gemini CLI** — install as a Gemini extension:
+**Gemini CLI**: install as a Gemini extension:
 
 ```bash
 gemini extensions install https://github.com/mbfinotti/advertising-skills
@@ -57,10 +59,10 @@ Update with `gemini extensions update advertising-skills`.
 
 This collection covers the full advertising surface. Start here:
 
-- [`advertising-kickoff`](./skills/advertising-kickoff) — Routes a paid advertising task to the right skill in this collection and bootstraps a shared project context artifact reused across sessions.
-- [`advertising-career`](./skills/advertising-career) — Plans a paid media career from the candidate side — the junior-to-lead ladder, interview formats, an NDA-safe portfolio, and pay conversations.
-- [`advertising-hiring`](./skills/advertising-hiring) — Builds the employer-side hiring packet for a paid advertising role — outcome scorecard, interview loop, work sample, and a 30-60-90 ramp.
-- [`advertising-radar`](./skills/advertising-radar) — Assembles a time-budgeted watch list of newsletters, podcasts, platform release notes, communities, and people, with a method for keeping it fresh.
+- [`advertising-kickoff`](./skills/advertising-kickoff): Routes a paid advertising task to the right skill in this collection and bootstraps a shared project context artifact reused across sessions.
+- [`advertising-career`](./skills/advertising-career): Plans a paid media career from the candidate side: the junior-to-lead ladder, interview formats, an NDA-safe portfolio, and pay conversations.
+- [`advertising-hiring`](./skills/advertising-hiring): Builds the employer-side hiring packet for a paid advertising role: outcome scorecard, interview loop, work sample, and a 30-60-90 ramp.
+- [`advertising-radar`](./skills/advertising-radar): Assembles a time-budgeted watch list of newsletters, podcasts, platform release notes, communities, and people, with a method for keeping it fresh.
 
 ### Strategy & planning
 
@@ -91,9 +93,9 @@ This collection covers the full advertising surface. Start here:
 | [`ad-hook-analyzer`](./skills/ad-hook-analyzer) | Scores and force-ranks candidate video ad openings to decide which hooks deserve test budget, returning a shortlist rather than a performance prediction. |
 | [`ad-creative-test-plan`](./skills/ad-creative-test-plan) | Designs a pre-launch creative test with a falsifiable hypothesis, per-cell budgets, required sample, and kill or scale rules registered in advance. |
 | [`ad-creative-fatigue`](./skills/ad-creative-fatigue) | Decides whether a creative is genuinely wearing out or a confounder explains the decline, returning a verdict with confidence and the highest-return remedy. |
-| [`ugc-ad-scripts`](./skills/ugc-ad-scripts) | Writes UGC-style short-form video scripts a creator can film — hook, body, CTA — with hook variants, delivery notes, and disclosure lines. |
+| [`ugc-ad-scripts`](./skills/ugc-ad-scripts) | Writes UGC-style short-form video scripts a creator can film - hook, body, CTA - with hook variants, delivery notes, and disclosure lines. |
 | [`conversational-ad-copy`](./skills/conversational-ad-copy) | Adapts messaging for one-shot ad slots inside AI assistant answers, covering recommendation register, situation targeting, grounding, and disclosure. |
-| [`thought-leadership-ads`](./skills/thought-leadership-ads) | Plans a campaign promoting an executive's existing organic posts as paid person-fronted ads — selection, exclusions, permission, budget, and measurement. |
+| [`thought-leadership-ads`](./skills/thought-leadership-ads) | Plans a campaign promoting an executive's existing organic posts as paid person-fronted ads: selection, exclusions, permission, budget, and measurement. |
 | [`ad-swipe-file`](./skills/ad-swipe-file) | Builds a queryable library of competitors' running ads classified by format, hook, offer, and funnel stage, then converts it into ranked test hypotheses. |
 
 ### Campaign operations
@@ -102,7 +104,7 @@ This collection covers the full advertising surface. Start here:
 | --- | --- |
 | [`ad-bidding-strategy`](./skills/ad-bidding-strategy) | Chooses the bidding policy per platform and goal, written up with an evaluation window, change discipline, and a rollback trigger. |
 | [`ad-budget-pacing`](./skills/ad-budget-pacing) | Tracks spend against budget and flags under-pacing or over-pacing early, reporting the pacing ratio, projected spend, and the corrective daily spend. |
-| [`ad-spend-guardrails`](./skills/ad-spend-guardrails) | Sets top-level spend policy — allowable CAC, ROAS floor, kill-switch thresholds, owners, overrides — derived from margin, payback, and runway. |
+| [`ad-spend-guardrails`](./skills/ad-spend-guardrails) | Sets top-level spend policy - allowable CAC, ROAS floor, kill-switch thresholds, owners, overrides - derived from margin, payback, and runway. |
 | [`ad-campaign-consolidation`](./skills/ad-campaign-consolidation) | Recommends which campaigns and ad sets to merge, which splits to preserve, and how to migrate without resetting learning across the account. |
 
 ### Measurement & diagnostics
