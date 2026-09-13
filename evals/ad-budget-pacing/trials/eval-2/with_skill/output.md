@@ -1,6 +1,6 @@
 ## Budget pacing check — Nordic Sleepwear, October Google Ads campaign
 
-**Short answer: don't do either part of the plan.** The Oct 9 spike is inside Google's own delivery mechanics, cumulative spend is *not* ahead of plan, and there's no overage to refund. Below is the full check.
+**Short answer: don't do either part of the plan.** The Oct 9 spike is inside Google's own delivery mechanics, cumulative spend is _not_ ahead of plan, and there's no overage to refund. Below is the full check.
 
 ```
 BUDGET PACING REPORT — Nordic Sleepwear (Google Ads), 2026-10-10
@@ -41,7 +41,7 @@ owner      : you | next check: tomorrow's daily pacing review
 You're not over budget; you're marginally *under* it. Projected month-end spend at current pace is $15,190 against a $15,500 budget (98% utilization) — almost exactly on target. Cutting to $400/day for the remaining 22 days delivers only $8,800 more ($13,210 total), which is $2,290 — nearly 15% — under budget. That's real under-delivery you'd be manufacturing to fix a problem that doesn't exist. It also triggers Google's relearning window on the campaign, which creates the kind of volatility that gets misread as a new pacing problem next week.
 
 **2. Filing for a $470 refund — reject, wrong mechanism too.**
-$970 − $500 = $470 is just yesterday's overage against the *daily* budget, which isn't how Google bills. Google's guarantee is monthly: it won't bill more than 30.4× the daily budget in a calendar month (30.4 × $500 = $15,200), and any spend past that ceiling is credited automatically — there's no manual refund request to file for standard Search/Shopping/PMax overdelivery. More to the point: your monthly spend is projected at $15,190, under even that $15,200 cap, so there's nothing to credit and nothing to claim.
+$970 − $500 = $470 is just yesterday's overage against the _daily_ budget, which isn't how Google bills. Google's guarantee is monthly: it won't bill more than 30.4× the daily budget in a calendar month (30.4 × $500 = $15,200), and any spend past that ceiling is credited automatically — there's no manual refund request to file for standard Search/Shopping/PMax overdelivery. More to the point: your monthly spend is projected at $15,190, under even that $15,200 cap, so there's nothing to credit and nothing to claim.
 
 ### What to actually do
 

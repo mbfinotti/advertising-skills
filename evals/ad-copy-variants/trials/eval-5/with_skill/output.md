@@ -1,6 +1,6 @@
 ## Short answer: no, don't write 12.
 
-Your CMO is quoting a real convention, but applying it to the wrong lever. "Test 3–5 per ad group" assumes you're testing *within* an audience you already understand. You're not in that situation — you have one proven ad group (cost-savings) and one completely untested audience (driver-safety). Those need different treatment, and neither needs 12 variants.
+Your CMO is quoting a real convention, but applying it to the wrong lever. "Test 3–5 per ad group" assumes you're testing _within_ an audience you already understand. You're not in that situation — you have one proven ad group (cost-savings) and one completely untested audience (driver-safety). Those need different treatment, and neither needs 12 variants.
 
 ## The volume math the CMO's rule ignores
 
@@ -14,11 +14,11 @@ Your CMO is quoting a real convention, but applying it to the wrong lever. "Test
 
 **3. Inside that new ad group, write 3 genuinely distinct angles, not 5 and not 12.** Given your volume, the low end of the convention is the right one — and each angle has to make a different argument, not reword the same claim:
 
-| # | Angle family | The argument | Why this one |
-|---|---|---|---|
-| 1 | Mechanism | *How* the product reduces risk (driver scorecards, coaching triggers, behavior alerts) | You have no measured safety outcome yet, so mechanism is the strongest claim you can make without an unsubstantiated number |
-| 2 | Risk/compliance reduction | Fewer incidents → fewer claims → lower exposure (insurance, liability, DOT) | This is the angle a safety or ops buyer can carry into a budget conversation — a B2B ad has to arm the reader with a line they can repeat in a meeting |
-| 3 | Pain | The specific cost of *not* having visibility today — near-miss patterns, coaching that only happens after an incident | Cheapest to write, mined straight from whatever sales-call notes or CS feedback you already have on safety-motivated prospects |
+| #   | Angle family              | The argument                                                                                                          | Why this one                                                                                                                                           |
+| --- | ------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | Mechanism                 | _How_ the product reduces risk (driver scorecards, coaching triggers, behavior alerts)                                | You have no measured safety outcome yet, so mechanism is the strongest claim you can make without an unsubstantiated number                            |
+| 2   | Risk/compliance reduction | Fewer incidents → fewer claims → lower exposure (insurance, liability, DOT)                                           | This is the angle a safety or ops buyer can carry into a budget conversation — a B2B ad has to arm the reader with a line they can repeat in a meeting |
+| 3   | Pain                      | The specific cost of _not_ having visibility today — near-miss patterns, coaching that only happens after an incident | Cheapest to write, mined straight from whatever sales-call notes or CS feedback you already have on safety-motivated prospects                         |
 
 That's 3 new ads to write. Total ads in flight: 1 (proven, untouched) + 3 (new segment) = 4 — not 12.
 

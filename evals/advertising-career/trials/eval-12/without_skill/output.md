@@ -5,11 +5,13 @@ This is a career/strategy question, not a coding task, so I'll answer directly r
 Drop it. A "head of performance" role at a DTC cookware brand and seven years running LinkedIn/Google demand-gen for B2B software have less overlap than the job titles suggest, but the gap isn't a reason to hide — it's a reason to be upfront in the interview. Concretely, what transfers and what doesn't:
 
 **Transfers cleanly:**
+
 - Auction mechanics, bid strategy logic, attribution modeling, incrementality testing — the math doesn't care what's in the cart.
 - Funnel diagnosis discipline: knowing whether a problem is traffic, landing page, offer, or sales-cycle.
-- Long-sales-cycle patience and multi-touch attribution — arguably a *harder* skill than DTC's shorter, more transactional cycles.
+- Long-sales-cycle patience and multi-touch attribution — arguably a _harder_ skill than DTC's shorter, more transactional cycles.
 
 **Doesn't transfer, and you should say so out loud:**
+
 - Creative velocity. DTC lives or dies on constant creative testing (UGC, video hooks, iteration speed) — B2B creative is comparatively glacial. This is your real skill gap, not the channels.
 - Inventory/margin-aware bidding (blended CAC vs. contribution margin, not CAC vs. LTV on a 6-month sales cycle).
 - Platform mix — you'll need to get fluent in Meta/TikTok fast; LinkedIn is nearly irrelevant in DTC.
@@ -24,7 +26,7 @@ Partially justified, wrongly scoped. Automated bidding (Performance Max, Advanta
 - **Reading the machine**: incrementality testing, geo-holdouts, MMM — because platform-reported ROAS is increasingly unreliable and someone has to catch it.
 - **Strategy the machine can't do**: budget allocation across channels, offer/pricing tests, LTV modeling, translating business goals into what to even optimize for.
 
-So the framing "hand-optimization skills" is the wrong bet — that layer is exactly what's being automated away. The valuable specialization is shifting from *bid management* to *measurement and experimentation design*. If you want to future-proof yourself, go deep on incrementality testing, MMM, and first-party data/conversion API work rather than doubling down on manual campaign craftsmanship.
+So the framing "hand-optimization skills" is the wrong bet — that layer is exactly what's being automated away. The valuable specialization is shifting from _bid management_ to _measurement and experimentation design_. If you want to future-proof yourself, go deep on incrementality testing, MMM, and first-party data/conversion API work rather than doubling down on manual campaign craftsmanship.
 
 ## Bottom line
 

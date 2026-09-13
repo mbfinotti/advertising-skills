@@ -4,7 +4,7 @@
 
 ### Why match rate doesn't back your "seed is solid" claim
 
-72% match rate tells you Meta matched 72% of your uploaded customer records to real profiles. It's a data-hygiene metric (clean emails/phones), not a quality signal. It says nothing about whether those matched customers are *good* customers to look alike. Don't let it anchor your read of what's wrong.
+72% match rate tells you Meta matched 72% of your uploaded customer records to real profiles. It's a data-hygiene metric (clean emails/phones), not a quality signal. It says nothing about whether those matched customers are _good_ customers to look alike. Don't let it anchor your read of what's wrong.
 
 ### Why 5 days of CPA is not evidence
 
@@ -12,7 +12,7 @@
 
 ### The confound you must control for: this is the same trap as last time
 
-Your old seed had "amazing CPA" and turned out to attract one-time, discount-driven buyers — cheap to acquire, bad LTV. If the new seed's CPA is *higher*, that is equally consistent with two opposite explanations:
+Your old seed had "amazing CPA" and turned out to attract one-time, discount-driven buyers — cheap to acquire, bad LTV. If the new seed's CPA is _higher_, that is equally consistent with two opposite explanations:
 
 - 🔴 the new seed is genuinely worse (less predictive audience), or
 - 🟢 the new seed is finding less discount-motivated, higher-LTV customers who cost more to acquire but are worth more.

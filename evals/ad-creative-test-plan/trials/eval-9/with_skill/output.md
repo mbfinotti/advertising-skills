@@ -4,10 +4,10 @@
 
 Two claims in your framing don't hold, and the board deck should not repeat them:
 
-1. **"Deterministic assignment means no contamination."** Not proven. Braun & Schwartz (*Journal of Marketing*, 2025) show that even platform-native deterministic splits suffer **divergent delivery**: the ad algorithm still shows each cell a differently-optimized mix of users, which can confound the magnitude of a result — and even flip its sign. Deterministic assignment removes *audience overlap*. It does not remove *delivery bias*. Only a geo-holdout / incrementality design gets you actual causal proof, and that's a different (and much more expensive) test.
+1. **"Deterministic assignment means no contamination."** Not proven. Braun & Schwartz (_Journal of Marketing_, 2025) show that even platform-native deterministic splits suffer **divergent delivery**: the ad algorithm still shows each cell a differently-optimized mix of users, which can confound the magnitude of a result — and even flip its sign. Deterministic assignment removes _audience overlap_. It does not remove _delivery bias_. Only a geo-holdout / incrementality design gets you actual causal proof, and that's a different (and much more expensive) test.
 2. **"The result will be causal proof."** At $150/day this claim is not available regardless of structure — see the math below. The platform-native tool also runs a week-plus longer than manual cells and, per Meta's own guidance, frequently returns "no winner" at normal budgets. That's the wrong structure for a 12-day clock.
 
-What you *can* honestly tell the board: a pre-registered, bias-aware screening test with a named decision rule — which is a legitimate and common outcome, not a downgrade, as long as it's labeled correctly.
+What you _can_ honestly tell the board: a pre-registered, bias-aware screening test with a named decision rule — which is a legitimate and common outcome, not a downgrade, as long as it's labeled correctly.
 
 ## Assumptions I'm flagging, not burying
 
@@ -26,11 +26,12 @@ I don't have full answers to the standard intake here, so I've made the calls be
 
 Your budget: $150/day total ÷ 2 cells = **$75/day/cell** — about **33% of the floor**. Both cells are delivery-limited from day one; the optimization algorithm never gets enough purchase events to stabilize, so the numbers stay noisy regardless of how long you run it.
 
-**Verdict on the purchase event: Not testable as designed** (Section 4.5) — this is a stable-delivery failure, not a sample-size failure, so it applies to *any* structure, native split included.
+**Verdict on the purchase event: Not testable as designed** (Section 4.5) — this is a stable-delivery failure, not a sample-size failure, so it applies to _any_ structure, native split included.
 
 **Fix applied** (Section 4, ranked levers — up-funnel > widen MDE > fewer cells > raise budget):
-- *Raise budget to ~$460/day total* would clear the floor but isn't stated as available — ask the CEO if the board would fund a temporary bump; if yes, this is the clean fix.
-- *Move the read up-funnel* (e.g., Add-to-Cart) would help, but I don't have your ATC volume/rate to confirm it clears the floor — pull that number before launch; if it's unverified, get it checked against `ad-conversion-tracking` first, since a test on a broken event measures nothing.
+
+- _Raise budget to ~$460/day total_ would clear the floor but isn't stated as available — ask the CEO if the board would fund a temporary bump; if yes, this is the clean fix.
+- _Move the read up-funnel_ (e.g., Add-to-Cart) would help, but I don't have your ATC volume/rate to confirm it clears the floor — pull that number before launch; if it's unverified, get it checked against `ad-conversion-tracking` first, since a test on a broken event measures nothing.
 - Absent either, the only honest move is **widen the MDE and declare Directional** — i.e., stop trying to detect a small edge and only claim a result if the gap between concepts is large.
 
 **What a real Powered/significant read would cost, for context**: per the sizing reference table, even a generous 10% baseline conversion rate detecting a large 50% relative lift needs ~700 sessions/cell; a more realistic 2-3% baseline needs 2,500-14,000+ sessions/cell. Lewis & Rao (2015) found informative ad experiments routinely need spend far beyond normal test budgets — this is that finding showing up in your numbers. Getting genuine statistical power here would run into four figures per day over 4-6 weeks, not $150/day over 12 days. That's a decision for the board to make with eyes open, not something to quietly promise now.
@@ -105,16 +106,17 @@ decision-rule anchor: Dara Denney (named per Section 6) - budget-per-test
 
 **One paragraph, if the CEO wants a single honest sentence to open with:**
 
-> "We ran a pre-registered 10-day screening test between our two new creative concepts, spending $1,500 total. At this budget, the ad platform cannot produce a statistically significant winner — no test at this spend level can, and we said so before launch rather than after. What it *can* produce, and did, is a directional ranking on cost-per-purchase, backed by a documented decision rule set before we saw any data, with return rate and frequency tracked as guardrails so we're not just chasing a cheap-but-risky metric."
+> "We ran a pre-registered 10-day screening test between our two new creative concepts, spending $1,500 total. At this budget, the ad platform cannot produce a statistically significant winner — no test at this spend level can, and we said so before launch rather than after. What it _can_ produce, and did, is a directional ranking on cost-per-purchase, backed by a documented decision rule set before we saw any data, with return rate and frequency tracked as guardrails so we're not just chasing a cheap-but-risky metric."
 
 **Slide bullets:**
+
 - Test structure: 2 concepts, $75/day each, manual concurrent cells (chosen over the platform's native split — it would've taken longer and wasn't more valid at this budget; details in appendix).
 - Result standard, declared before launch: **Directional read**, not statistical significance — this budget/timeline can't support the latter, and we're not going to claim what we can't back.
 - Decision rule, pre-registered: kill at 2× CPA with zero purchases; concept with the better CPA (guardrails holding) gets next-quarter production budget.
 - What it would take for a statistically airtight, causally clean result: roughly 4 figures/day over 4-6 weeks, or a dedicated incrementality/holdout study — a separate investment decision for the board, not something this test claims to deliver.
 - Guardrail watch: return rate (fit/style overselling risk specific to eyewear), frequency, blended account CPA.
 
-**If a board member pushes back with "isn't the platform's built-in A/B test the gold standard?"** — the honest answer, in one line: *"It removes audience overlap, but not delivery bias, and at our budget it would've missed the board date without buying us anything the manual test doesn't already give us — happy to walk through the math."*
+**If a board member pushes back with "isn't the platform's built-in A/B test the gold standard?"** — the honest answer, in one line: _"It removes audience overlap, but not delivery bias, and at our budget it would've missed the board date without buying us anything the manual test doesn't already give us — happy to walk through the math."_
 
 ## Before you launch — action items
 

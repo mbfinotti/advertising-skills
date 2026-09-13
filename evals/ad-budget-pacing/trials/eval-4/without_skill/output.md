@@ -6,7 +6,7 @@
 
 - **It's premature.** Two weeks remain. Accepting a credit for "undelivered impressions" implicitly writes off the flight before it's over, when full delivery may still be achievable.
 - **It substitutes money for exposure.** A credit buys you future impressions with a vendor who just under-delivered and stayed silent about it — not the impressions you contracted for, when you contracted for them. If your campaign has any date sensitivity (holiday camping/gift-buying season closing out by mid-November), a same-window make-good is worth more than a bill credit redeemable later.
-- **It skips root cause.** You don't know *why* delivery is behind — inventory shortage, overly narrow targeting, a technical pacing issue, or something being throttled deliberately to protect margin on other clients. Without that answer, you can't judge whether the remaining two weeks will actually catch up, credit or not.
+- **It skips root cause.** You don't know _why_ delivery is behind — inventory shortage, overly narrow targeting, a technical pacing issue, or something being throttled deliberately to protect margin on other clients. Without that answer, you can't judge whether the remaining two weeks will actually catch up, credit or not.
 - **The non-disclosure is the bigger signal.** Your analyst caught it, not their account team. Offering a credit the moment they're caught reads as damage control, not account management. That changes how much you should trust their own delivered-impression reporting.
 
 ## What to do instead

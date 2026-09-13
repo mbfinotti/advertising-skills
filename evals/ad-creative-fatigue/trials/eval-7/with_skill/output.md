@@ -1,8 +1,8 @@
 # Answer: No — do not rewrite the ad this sprint.
 
-The account manager's diagnosis is built on a signal that doesn't diagnose fatigue. Ad Strength is not a performance metric — it scores asset *diversity and completeness* (headline/description variety, keyword repetition, pinning), not how the ad is actually performing. Optmyzr's analysis of live accounts found "Average"-strength RSAs posting the best CPA/CVR in the set, and "Poor"-strength ads posting the best ROAS. A Good→Average drop tells you Google's diversity checker is less satisfied with the asset mix — it says nothing about wear-out. This is the single most common RSA misread this discipline sees, and it's exactly what happened here.
+The account manager's diagnosis is built on a signal that doesn't diagnose fatigue. Ad Strength is not a performance metric — it scores asset _diversity and completeness_ (headline/description variety, keyword repetition, pinning), not how the ad is actually performing. Optmyzr's analysis of live accounts found "Average"-strength RSAs posting the best CPA/CVR in the set, and "Poor"-strength ads posting the best ROAS. A Good→Average drop tells you Google's diversity checker is less satisfied with the asset mix — it says nothing about wear-out. This is the single most common RSA misread this discipline sees, and it's exactly what happened here.
 
-The signals that *do* measure performance say the opposite of "fatiguing":
+The signals that _do_ measure performance say the opposite of "fatiguing":
 
 - **CTR flat for two months** — fatigue's signature is a gradual, sustained decline in a leading signal across multiple periods. Flat for eight-plus weeks is the shape of a healthy, stable ad, not a decaying one.
 - **CVR flat for two months** — the ad's job on click-through is doing what it always did once someone lands.
@@ -12,7 +12,7 @@ Nothing here clears even the first bar of a fatigue call: at least two signals d
 
 ## What's actually true in the data
 
-One real, narrow finding: a single headline stuck at **Low** for five weeks. Google's Low/Good/Best label is the legitimate per-asset performance signal, and letting a persistent Low sit for five weeks is past the common 2–4 week replacement cadence practitioners use. That's a genuine, actionable item — but it's a one-asset swap, not evidence the ad is fatiguing. Nothing indicates that headline *used to* perform and decayed; "stuck at Low" describes a consistently weak variant, not a wearing-out one. Treat it like a hook swap: replace that one headline, leave the other nine assets and the ad structure untouched.
+One real, narrow finding: a single headline stuck at **Low** for five weeks. Google's Low/Good/Best label is the legitimate per-asset performance signal, and letting a persistent Low sit for five weeks is past the common 2–4 week replacement cadence practitioners use. That's a genuine, actionable item — but it's a one-asset swap, not evidence the ad is fatiguing. Nothing indicates that headline _used to_ perform and decayed; "stuck at Low" describes a consistently weak variant, not a wearing-out one. Treat it like a hook swap: replace that one headline, leave the other nine assets and the ad structure untouched.
 
 ## Fatigue Verdict
 

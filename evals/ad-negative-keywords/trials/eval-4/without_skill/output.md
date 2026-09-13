@@ -12,7 +12,7 @@ The account-level phrase-match negative **"project management"** is a self-infli
 
 ### Why it went unnoticed at creation time
 
-Google Ads warns you about conflicts when you add a positive keyword that collides with an *existing* negative in the same ad group/campaign. It does **not** reliably warn you the other way around — when you add a negative to a shared, account-level list that collides with positive keywords living in a completely different ad group. That gap is exactly what let this slip through.
+Google Ads warns you about conflicts when you add a positive keyword that collides with an _existing_ negative in the same ad group/campaign. It does **not** reliably warn you the other way around — when you add a negative to a shared, account-level list that collides with positive keywords living in a completely different ad group. That gap is exactly what let this slip through.
 
 ### How to confirm it in the account (do this first)
 
@@ -33,8 +33,9 @@ Google Ads warns you about conflicts when you add a positive keyword that collid
    - `learn project management`
    - `project management jobs` / `salary` / `certification`
    - `free project management templates`
-   
+
    Use phrase match on these longer, intent-specific strings so they don't collide with your commercial head terms.
+
 3. **Scope future broad negatives at the campaign or ad-group level first**, not account-wide. If a negative is meant to clean up search terms for one campaign's irrelevant traffic, apply it there — only promote to the shared/account-level list once you've confirmed no other campaign's core keywords contain that phrase.
 4. **Process fix**: before adding anything to an account-level negative keyword list, cross-check it against every ad group's core positive keywords across the account (export keywords, search for the negative term as a substring). This is the step that was skipped.
 

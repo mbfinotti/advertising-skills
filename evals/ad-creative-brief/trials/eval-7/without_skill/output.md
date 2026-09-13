@@ -1,4 +1,5 @@
 # Klarawave — Creative Test Block
+
 **Channels:** Meta, TikTok · **Launch:** Monday, Sep 14, 2026 · **First checkpoint:** Wednesday, Sep 16 (AM)
 
 ## 1. Test setup
@@ -9,10 +10,10 @@
 
 ## 2. Hook rate definition
 
-| Platform | Hook rate formula | Source |
-|---|---|---|
-| TikTok | 3-second video views ÷ impressions | TikTok Ads Manager |
-| Meta | 3-second video plays ÷ impressions | Meta Ads Manager (video metrics) |
+| Platform | Hook rate formula                  | Source                           |
+| -------- | ---------------------------------- | -------------------------------- |
+| TikTok   | 3-second video views ÷ impressions | TikTok Ads Manager               |
+| Meta     | 3-second video plays ÷ impressions | Meta Ads Manager (video metrics) |
 
 Pull both from platform-native dashboards so the 32% bar is measured the same way on each side.
 
@@ -45,4 +46,4 @@ Pull both from platform-native dashboards so the 32% bar is measured the same wa
 
 ---
 
-**Flag for you to confirm before Monday:** the audience-swap step above is my interpretation of "gets killed" + "fair second chance" — if you actually meant something looser (e.g. swap audience *instead of* killing, or swap only applies to a softer underperformance tier below 32% but above some lower floor), say so and I'll rewrite §5.
+**Flag for you to confirm before Monday:** the audience-swap step above is my interpretation of "gets killed" + "fair second chance" — if you actually meant something looser (e.g. swap audience _instead of_ killing, or swap only applies to a softer underperformance tier below 32% but above some lower floor), say so and I'll rewrite §5.

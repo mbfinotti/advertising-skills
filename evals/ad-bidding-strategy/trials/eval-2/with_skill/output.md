@@ -2,7 +2,7 @@ Neither. Open a ticket and you'll get told exactly what's below, and switching t
 
 ## What's actually happening
 
-"Cost Per Result Goal" on Meta (this setting was literally called **Cost Cap** until the rename) is an **average-based cost goal**, not a hard per-result ceiling. Meta's own bidder is explicitly allowed to let individual auctions cost more than your target as long as the *campaign average* lands near it. A hard per-auction ceiling that never bids above $28 on any single result is a *different* tool — Meta calls that one **Bid Cap**.
+"Cost Per Result Goal" on Meta (this setting was literally called **Cost Cap** until the rename) is an **average-based cost goal**, not a hard per-result ceiling. Meta's own bidder is explicitly allowed to let individual auctions cost more than your target as long as the _campaign average_ lands near it. A hard per-auction ceiling that never bids above $28 on any single result is a _different_ tool — Meta calls that one **Bid Cap**.
 
 Your numbers confirm the strategy is doing what it's designed to do, not malfunctioning:
 
@@ -18,7 +18,7 @@ There's nothing to report. Meta support will tell you the same thing: the campai
 
 ## Why Bid Cap isn't the fix, at least not yet
 
-Switching to Bid Cap *would* stop any individual purchase from costing more than $28 — that's the honest trade a hard ceiling gives you. But it's not a free correction to "make Meta respect the number," it's a **different archetype with its own costs**:
+Switching to Bid Cap _would_ stop any individual purchase from costing more than $28 — that's the honest trade a hard ceiling gives you. But it's not a free correction to "make Meta respect the number," it's a **different archetype with its own costs**:
 
 - Hard ceilings carry the highest under-delivery risk of any bidding mode — Meta positions Bid Cap as expert-only for exactly this reason. If the auction clears above $28 for a chunk of your audience, the bidder simply won't compete for those results, and volume can drop sharply rather than cost coming down cleanly.
 - It's a real bid-strategy change, not a tweak: it restarts the campaign's learning phase, and you'd want at least 1-2 full conversion cycles of clean data afterward before judging it — with a fast e-commerce purchase lag that's probably days, not weeks, but it's still a deliberate evaluation window, not a snap verdict.

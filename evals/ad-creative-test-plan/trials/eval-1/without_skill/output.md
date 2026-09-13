@@ -4,10 +4,10 @@
 
 Your three numbers don't reconcile:
 
-| Relationship | Math | Implies |
-|---|---|---|
-| CPC ÷ stated CVR | $1.25 ÷ 2.5% | $50 CPA (not $20) |
-| Stated CPA ÷ CPC | $20 ÷ $1.25 | 16 clicks/purchase = **6.25% CVR** (not 2.5%) |
+| Relationship     | Math         | Implies                                       |
+| ---------------- | ------------ | --------------------------------------------- |
+| CPC ÷ stated CVR | $1.25 ÷ 2.5% | $50 CPA (not $20)                             |
+| Stated CPA ÷ CPC | $20 ÷ $1.25  | 16 clicks/purchase = **6.25% CVR** (not 2.5%) |
 
 That's a ~2.5x gap. It changes every number below, and it also changes whether "95% confidence in 5 weeks" is realistic or not. Pull the actual trailing 30-day **click-to-purchase rate** for your current best ad from Ads Manager before locking this. I've run the plan under both assumptions so you can drop in whichever is correct.
 
@@ -34,11 +34,11 @@ Second flag: 700 purchases/month at $20 CPA implies ~$14,000/month total current
 
 $15,000/mo → **$3,462/week** (15,000 × 12/52) → **$17,308 total test budget**.
 
-| Arm | Weekly budget | Weekly clicks (@ $1.25 CPC) | Total clicks (5 wk) |
-|---|---|---|---|
-| Control | $1,154 | ~923 | ~4,615 |
-| Packing-Hack | $1,154 | ~923 | ~4,615 |
-| Lost-Luggage | $1,154 | ~923 | ~4,615 |
+| Arm          | Weekly budget | Weekly clicks (@ $1.25 CPC) | Total clicks (5 wk) |
+| ------------ | ------------- | --------------------------- | ------------------- |
+| Control      | $1,154        | ~923                        | ~4,615              |
+| Packing-Hack | $1,154        | ~923                        | ~4,615              |
+| Lost-Luggage | $1,154        | ~923                        | ~4,615              |
 
 **Week 1 is a kill-switch gate, not a stats checkpoint:** watch CPC, frequency, CTR, and negative feedback for a genuinely broken creative (wrong aspect ratio, policy flag, thumbnail killing CTR). If one arm is obviously malfunctioning technically, fix or pause it — don't let a production bug eat your statistical power. Otherwise, let all three run untouched through week 5.
 
@@ -48,21 +48,21 @@ Two-proportion z-test, α=0.025 two-sided per comparison (Bonferroni for 2 compa
 
 **Scenario A — stated CVR = 2.5%**
 
-| Relative lift to detect | Clicks needed/arm | Total test cost |
-|---|---|---|
-| 20% | 20,292 | $76,095 |
-| 30% | 9,414 | $35,303 |
-| **40%** | **4,613** | **$17,300 (your budget)** |
-| 50% | 3,671 | $13,766 |
+| Relative lift to detect | Clicks needed/arm | Total test cost           |
+| ----------------------- | ----------------- | ------------------------- |
+| 20%                     | 20,292            | $76,095                   |
+| 30%                     | 9,414             | $35,303                   |
+| **40%**                 | **4,613**         | **$17,300 (your budget)** |
+| 50%                     | 3,671             | $13,766                   |
 
 **Scenario B — CVR back-solved from CPA/CPC = 6.25%**
 
-| Relative lift to detect | Clicks needed/arm | Total test cost |
-|---|---|---|
-| 15% | 13,524 | $50,715 |
-| 20% | 7,768 | $29,130 |
-| **25%** | **4,613** | **$17,300 (your budget)** |
-| 30% | 3,594 | $13,478 |
+| Relative lift to detect | Clicks needed/arm | Total test cost           |
+| ----------------------- | ----------------- | ------------------------- |
+| 15%                     | 13,524            | $50,715                   |
+| 20%                     | 7,768             | $29,130                   |
+| **25%**                 | **4,613**         | **$17,300 (your budget)** |
+| 30%                     | 3,594             | $13,478                   |
 
 Your $17,300 / 4,615-clicks-per-arm plan sits exactly at the "just barely detectable" line for a 40% lift (Scenario A) or 25% lift (Scenario B). Anything smaller than that line will not read as significant at week 5, even if it's real and would matter commercially.
 

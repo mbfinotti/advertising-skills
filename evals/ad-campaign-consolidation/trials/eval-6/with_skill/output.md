@@ -9,16 +9,16 @@ Two of the "rules" you've been given are folklore, not platform documentation �
 ## 1. Two rules to drop before doing anything else
 
 **"Raise each ad set's daily budget to 10x CPA before merging."**
-No platform documents a 10x multiplier. TikTok documents ad-group budget ≥ 5x target CPA — a different platform, different number. Meta documents no CPA-to-budget ratio at all; what it documents is a *volume* exit threshold (~50 optimization events per ad set per rolling 7 days). Funding 9 structurally overlapping ad sets to hit an arbitrary multiplier before merging is the worst order of operations available: you'd pour budget into 9 audiences that already compete with each other for the same HR/CFO/IT-admin buyers at the same target accounts, instead of merging first and funding the survivor. Drop the 10x step. Fund the *merged* structure to clear the real threshold instead (math in §4).
+No platform documents a 10x multiplier. TikTok documents ad-group budget ≥ 5x target CPA — a different platform, different number. Meta documents no CPA-to-budget ratio at all; what it documents is a _volume_ exit threshold (~50 optimization events per ad set per rolling 7 days). Funding 9 structurally overlapping ad sets to hit an arbitrary multiplier before merging is the worst order of operations available: you'd pour budget into 9 audiences that already compete with each other for the same HR/CFO/IT-admin buyers at the same target accounts, instead of merging first and funding the survivor. Drop the 10x step. Fund the _merged_ structure to clear the real threshold instead (math in §4).
 
 **"Holding off on Target CPA until we hit 15 conversions in 30 days."**
-Google's own documentation: Smart Bidding strategies including Target CPA work with no conversion history — they just get less certain early on. The 15-conversions/30-days figure you've heard is the *Target ROAS* eligibility floor for Search/Shopping/Display specifically, not a Target CPA gate, and even that number is an evaluation checkpoint, not an on/off switch. **Turn Target CPA on now.** Waiting for a threshold that doesn't exist for this strategy is pure opportunity cost — and the fact that you're this far under 15/30 days at all is itself a useful data point (see §5): it says your bottom-funnel event may be too sparse for this account, on any bid strategy, until you either consolidate or move up-funnel.
+Google's own documentation: Smart Bidding strategies including Target CPA work with no conversion history — they just get less certain early on. The 15-conversions/30-days figure you've heard is the _Target ROAS_ eligibility floor for Search/Shopping/Display specifically, not a Target CPA gate, and even that number is an evaluation checkpoint, not an on/off switch. **Turn Target CPA on now.** Waiting for a threshold that doesn't exist for this strategy is pure opportunity cost — and the fact that you're this far under 15/30 days at all is itself a useful data point (see §5): it says your bottom-funnel event may be too sparse for this account, on any bid strategy, until you either consolidate or move up-funnel.
 
 ---
 
 ## 2. What's actually going on, structurally
 
-Your 9 ad sets are split by persona, which sounds like a defensible segmentation — but check it against why segmentation is normally worth keeping: it's worth keeping when the *offer or message* genuinely differs per segment. Yours doesn't, yet: all 9 ad sets serve the same product demo ad. That's the exact anti-pattern this method flags — a dozen stacked interest and job-title filters propping up one generic creative. You're paying the fragmentation cost (signal split 9 ways, likely real audience overlap between HR Director, CFO, and IT Admin at the same target accounts) without collecting the benefit (nobody is actually seeing a message written for them).
+Your 9 ad sets are split by persona, which sounds like a defensible segmentation — but check it against why segmentation is normally worth keeping: it's worth keeping when the _offer or message_ genuinely differs per segment. Yours doesn't, yet: all 9 ad sets serve the same product demo ad. That's the exact anti-pattern this method flags — a dozen stacked interest and job-title filters propping up one generic creative. You're paying the fragmentation cost (signal split 9 ways, likely real audience overlap between HR Director, CFO, and IT Admin at the same target accounts) without collecting the benefit (nobody is actually seeing a message written for them).
 
 That reframes the real question. It's not "consolidate vs. keep 9 ad sets" — it's "where does the persona knowledge you already have actually pay off: in the targeting filters, or in the creative?" Put it in the creative.
 
@@ -26,7 +26,7 @@ That reframes the real question. It's not "consolidate vs. keep 9 ad sets" — i
 
 ## 3. Target structure
 
-**Carve out Medlow first, untouched.** The $2,000/month co-marketing guarantee is an externally mandated budget — the one preserve rule nothing else overrides. It keeps its own line with its own budget floor, reported separately, for the life of the contract. *Confirm one thing: is the Medlow line one of the 9 persona ad sets today, or a separate 10th line?* Either way it stays structurally separate from the merge below; it just needs to be excluded from the shared pool.
+**Carve out Medlow first, untouched.** The $2,000/month co-marketing guarantee is an externally mandated budget — the one preserve rule nothing else overrides. It keeps its own line with its own budget floor, reported separately, for the life of the contract. _Confirm one thing: is the Medlow line one of the 9 persona ad sets today, or a separate 10th line?_ Either way it stays structurally separate from the merge below; it just needs to be excluded from the shared pool.
 
 **Merge the remaining persona ad sets into a small number of ad sets (default: one), each running one ad per persona as a creative variant — not one ad set per persona.**
 
@@ -60,22 +60,22 @@ I can't yet certify a numbers-backed "merge exactly these branches" table, becau
 - Confirmation the target CPA is unit-economics-derived.
 - Sales cycle length and whether there's a hard deadline or upcoming peak season (shapes how aggressive the migration phasing can be).
 
-None of that changes §1–§4 — the folklore corrections and the creative-variant consolidation model hold regardless of the exact numbers. What it *does* gate is the precise count of surviving ad sets and the exact budget floor. Send the export (per-branch daily spend + conversions, 30–60 days, same attribution window throughout) and I'll finish the branch-by-branch classification.
+None of that changes §1–§4 — the folklore corrections and the creative-variant consolidation model hold regardless of the exact numbers. What it _does_ gate is the precise count of surviving ad sets and the exact budget floor. Send the export (per-branch daily spend + conversions, 30–60 days, same attribution window throughout) and I'll finish the branch-by-branch classification.
 
-One flag worth taking seriously in the meantime: your Google side is already under 15 conversions in 30 days *account-wide*. If the fully-merged social structure and a consolidated Google structure still can't clear a reasonable per-branch threshold on "demo completed," consolidation alone won't fix it — no amount of merging conjures conversions that don't exist. The next move in that case is optimizing to a higher-funnel proxy event (demo *requested*, form started) and retargeting through it with CRM-fed outcomes, not more restructuring. Keep this on the table; don't act on it until the export confirms it's needed.
+One flag worth taking seriously in the meantime: your Google side is already under 15 conversions in 30 days _account-wide_. If the fully-merged social structure and a consolidated Google structure still can't clear a reasonable per-branch threshold on "demo completed," consolidation alone won't fix it — no amount of merging conjures conversions that don't exist. The next move in that case is optimizing to a higher-funnel proxy event (demo _requested_, form started) and retargeting through it with CRM-fed outcomes, not more restructuring. Keep this on the table; don't act on it until the export confirms it's needed.
 
 ---
 
 ## 6. Migration sequence
 
-| Phase | What happens |
-|---|---|
-| 0 | Carve out Medlow's line at its own $2,000/month floor. No other change to it. |
-| 1 — prune | Pause any social ad set with clearly duplicated audience and near-zero results; do not raise anyone's budget yet. |
-| 2 — merge | Build the new merged ad set(s) fresh, with the persona creative variants, broader targeting. Do not edit the old 9 ad sets in place — editing resets learning, pausing doesn't. |
-| 3 — control | Run the old structure at reduced budget alongside the new one for a few days as a comparison point, then pause (not delete) it once the new structure is live. |
+| Phase               | What happens                                                                                                                                                                                                               |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0                   | Carve out Medlow's line at its own $2,000/month floor. No other change to it.                                                                                                                                              |
+| 1 — prune           | Pause any social ad set with clearly duplicated audience and near-zero results; do not raise anyone's budget yet.                                                                                                          |
+| 2 — merge           | Build the new merged ad set(s) fresh, with the persona creative variants, broader targeting. Do not edit the old 9 ad sets in place — editing resets learning, pausing doesn't.                                            |
+| 3 — control         | Run the old structure at reduced budget alongside the new one for a few days as a comparison point, then pause (not delete) it once the new structure is live.                                                             |
 | 4 — no-touch window | Pre-commit in writing: no significant edits for at least 14 days (30, or a full sales cycle, for a real verdict on a B2B buying cycle this long). Expect a transient dip — that's normal, not a signal to revert on day 3. |
-| 5 — Google | In parallel: turn on Target CPA now; once the branch export is in, collapse any single-keyword ad groups into few intent-themed campaigns (Hagakure method). |
+| 5 — Google          | In parallel: turn on Target CPA now; once the branch export is in, collapse any single-keyword ad groups into few intent-themed campaigns (Hagakure method).                                                               |
 
 Time phase 2 off any peak hiring/budgeting season you know is coming.
 

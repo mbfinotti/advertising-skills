@@ -11,7 +11,7 @@ $150 ÷ x = $700  →  x ≈ 21%
 
 So $150/demo only matches outbound CAC **if paid demos close at ~21%+**. You don't know that number yet — and you won't, for 6 weeks, because that's your sales cycle. Outbound leads are pre-qualified (research, personalization); cold search clicks self-select on an ad and a landing page. Their close rate could easily be lower.
 
-**Implication:** cost-per-demo is a good *leading* gate (fast, cheap signal). It is not a substitute for CAC. Don't let a good cost-per-demo alone trigger $10K/month — that's committing $10K/month before you know if the channel produces customers, not just meetings.
+**Implication:** cost-per-demo is a good _leading_ gate (fast, cheap signal). It is not a substitute for CAC. Don't let a good cost-per-demo alone trigger $10K/month — that's committing $10K/month before you know if the channel produces customers, not just meetings.
 
 ### 2. The $500 / 10-day test won't produce a trustworthy number
 
@@ -36,7 +36,7 @@ This costs you a few extra weeks but avoids committing $10K/month on a metric (c
 - **Manual CPC**, or **Maximize Clicks with a manual max-CPC cap** — not Smart Bidding.
 - Reason: Target CPA / Maximize Conversions need ~15–30 conversions per campaign in a rolling window to exit "learning" mode. At 1–3 demos over 10 days, Smart Bidding never learns — it either underspends or bids erratically.
 - Search Network only. No Display expansion, no Performance Max (both are black-box and unsuitable for a tiny, unproven budget).
-- Track **"demo booked"** (booking-tool completion, e.g. Calendly/HubSpot) as the *only* primary conversion action — not clicks, not form starts.
+- Track **"demo booked"** (booking-tool completion, e.g. Calendly/HubSpot) as the _only_ primary conversion action — not clicks, not form starts.
 
 **Once you scale (Phase 2/3, $2K+/month):**
 

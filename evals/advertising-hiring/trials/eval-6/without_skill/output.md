@@ -4,10 +4,10 @@
 
 Two of the COO's asks collide with IT's access schedule. Worth surfacing before locking the plan:
 
-| Ask | Requires | Available on |
-|---|---|---|
-| CAC target commitment, week 2 | Live/historical performance data | Day 60 (analytics) |
-| Scale best campaign 50%, month 1 | Ad account access | Day 30 (ad accounts) |
+| Ask                              | Requires                         | Available on         |
+| -------------------------------- | -------------------------------- | -------------------- |
+| CAC target commitment, week 2    | Live/historical performance data | Day 60 (analytics)   |
+| Scale best campaign 50%, month 1 | Ad account access                | Day 30 (ad accounts) |
 
 - Day 30 is when ad access **starts** — not enough runway left in "month 1" to scale and show a result.
 - A CAC commitment in week 2 with zero data access is a guess dressed as a target. Holding someone accountable to a number they can't yet see or influence isn't real accountability.

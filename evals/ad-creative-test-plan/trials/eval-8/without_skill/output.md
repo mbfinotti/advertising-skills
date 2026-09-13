@@ -2,36 +2,36 @@
 
 ## Bottom line
 
-"Run it 10 weeks instead of 4" doesn't fix your actual problem. It trades one blind spot (not enough budget) for another (not enough *purchase* events, no matter how long you run it). The add-to-cart event you mentioned almost as an afterthought — "not sure that matters" — is the thing that actually makes this test work. Here's the math and the fix.
+"Run it 10 weeks instead of 4" doesn't fix your actual problem. It trades one blind spot (not enough budget) for another (not enough _purchase_ events, no matter how long you run it). The add-to-cart event you mentioned almost as an afterthought — "not sure that matters" — is the thing that actually makes this test work. Here's the math and the fix.
 
 ## The math nobody ran
 
 $500/day ÷ 4 cells = **$125/day/cell**.
 
-| Metric | Rate | Volume/day/cell | 4 weeks (28d) | 10 weeks (70d) |
-|---|---|---|---|---|
-| Purchases | $180 CPA | 0.69 | **19 purchases/cell** | **49 purchases/cell** |
-| Add-to-carts | $12/ATC | 10.4 | **292 ATC/cell** | **729 ATC/cell** |
+| Metric       | Rate     | Volume/day/cell | 4 weeks (28d)         | 10 weeks (70d)        |
+| ------------ | -------- | --------------- | --------------------- | --------------------- |
+| Purchases    | $180 CPA | 0.69            | **19 purchases/cell** | **49 purchases/cell** |
+| Add-to-carts | $12/ATC  | 10.4            | **292 ATC/cell**      | **729 ATC/cell**      |
 
 Standard practice for a reliable read on a binary conversion event (used by every CRO platform — Optimizely, VWO, CXL): **~100 conversions/arm is the bare floor**, below which you can't distinguish signal from noise except for huge effects; **250–400/arm** is where you get a defensible read on a realistic 15–25% lift.
 
 Run the purchase-level math forward at $125/day/cell:
 
-| Target purchases/cell | Days needed | Time needed |
-|---|---|---|
-| 100 (bare floor) | 144 | **~21 weeks** |
-| 200 (workable) | 288 | **~41 weeks** |
-| 350 (robust) | 504 | **~72 weeks** |
+| Target purchases/cell | Days needed | Time needed   |
+| --------------------- | ----------- | ------------- |
+| 100 (bare floor)      | 144         | **~21 weeks** |
+| 200 (workable)        | 288         | **~41 weeks** |
+| 350 (robust)          | 504         | **~72 weeks** |
 
 Ten weeks gets you 49 purchases/cell — still below the bare floor. **You could triple your proposed timeline and still not have a real purchase-CPA read.** This isn't a duration problem, it's a starved-metric problem: at this spend level, "purchase" as the read metric doesn't work at any reasonable timeline.
 
 Now run the same math on add-to-cart:
 
-| Target ATC/cell | Days needed | Time needed |
-|---|---|---|
-| 100 (bare floor) | 9.6 | **1.4 weeks** |
-| 250 (workable) | 24 | **3.4 weeks** |
-| 350 (robust) | 33.6 | **~5 weeks** |
+| Target ATC/cell  | Days needed | Time needed   |
+| ---------------- | ----------- | ------------- |
+| 100 (bare floor) | 9.6         | **1.4 weeks** |
+| 250 (workable)   | 24          | **3.4 weeks** |
+| 350 (robust)     | 33.6        | **~5 weeks**  |
 
 That's the whole plan in one line: **swap your primary decision metric from purchase to add-to-cart, and you get a robust, statistically defensible read in 5 weeks instead of never.**
 
@@ -47,7 +47,7 @@ That's the whole plan in one line: **swap your primary decision metric from purc
 - **Multiple comparisons correction:** 3 pairwise tests → Bonferroni-adjusted α = 0.05/3 ≈ **0.017** (or Benjamini-Hochberg FDR if you want less conservatism).
 - **One formal read-out, at week 5.** Monitor dashboards weekly if you want, but don't act on interim numbers — no stopping/killing before the pre-committed checkpoint. Peeking and reacting early is how you talk yourself into noise.
 - **Decision rule at week 5:**
-  - Kill a concept only if it's *significantly worse* than control (p < 0.017). Don't kill on "not significant" — 5 weeks isn't enough to safely conclude a concept that's merely inconclusive is actually bad (false-negative risk).
+  - Kill a concept only if it's _significantly worse_ than control (p < 0.017). Don't kill on "not significant" — 5 weeks isn't enough to safely conclude a concept that's merely inconclusive is actually bad (false-negative risk).
   - Flag anything with a materially lower ATC→purchase rate than control, even if ATC itself is up.
 
 ### Phase 2 — Confirmatory (4–5 weeks, ~Oct 19 – Nov 15ish)

@@ -8,11 +8,11 @@ $93,000 marketing spend ÷ 300 "new customers" = $310. But 60 of those 300 are r
 
 Of 240 new customers: 160 Basic, 80 Pro.
 
-| Plan | Count | Price | Revenue |
-|---|---|---|---|
-| Basic | 160 | $15 | $2,400 |
-| Pro | 80 | $99 | $7,920 |
-| **Total** | **240** | | **$10,320** |
+| Plan      | Count   | Price | Revenue     |
+| --------- | ------- | ----- | ----------- |
+| Basic     | 160     | $15   | $2,400      |
+| Pro       | 80      | $99   | $7,920      |
+| **Total** | **240** |       | **$10,320** |
 
 Blended ARPU = $10,320 / 240 = **$43.00/month**
 

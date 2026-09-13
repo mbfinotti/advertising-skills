@@ -10,7 +10,7 @@ A generic list bought off a forum has zero evidence of what Meltbury's own buyer
 
 - **No evidence gate passed.** The list wasn't built from Meltbury's search term report, so there's no way to know which of the 2,300 terms overlap with queries that convert here.
 - **Account level = widest blast radius, worst reversibility.** It suppresses every campaign, including ones built later by someone who never saw the list — and it's the hardest rung to audit or reverse.
-- **A published finding on account-level exclusions**: volume of negatives shows near-zero CPA/ROAS improvement — *where* and *how* negatives are applied matters more than list size. 2,300 terms added at once is volume worship, not evidence-based cleanup.
+- **A published finding on account-level exclusions**: volume of negatives shows near-zero CPA/ROAS improvement — _where_ and _how_ negatives are applied matters more than list size. 2,300 terms added at once is volume worship, not evidence-based cleanup.
 - **Highest odds of the single worst mistake**: negating a term that quietly converts for Meltbury (e.g. "cheap [category]" converts for plenty of home-goods stores even though it looks like junk elsewhere — taxonomy signals are priors, not verdicts).
 
 **What to do with it instead**, if she still wants to use it as a source:
@@ -32,15 +32,15 @@ A generic list bought off a forum has zero evidence of what Meltbury's own buyer
 Four months of weekly passes at a $40k/month account is already the correctly-sized top rung for this account size — weekly is the recommended cadence for $10k+/month accounts, and Meltbury is well past that. Daily reviews add standing cost without adding real signal:
 
 - The click/cost gates (15-20 clicks, or 1.5-2x target CPA) need days to accumulate meaningfully. A daily lookback window is too thin to clear those gates reliably, so daily passes either find nothing (wasted analyst time) or start gating on noise (overblocking risk).
-- Several consecutive near-empty passes is the playbook's own signal to *lengthen* the interval, not shorten it — and a 6%-wasted account four months in is exactly that signal.
+- Several consecutive near-empty passes is the playbook's own signal to _lengthen_ the interval, not shorten it — and a 6%-wasted account four months in is exactly that signal.
 
 **Instead, add the two cadence rungs Meltbury is likely missing, not a faster version of the one it already has:**
 
-| Rung | Frequency | Why it fits now |
-|---|---|---|
-| Quarterly conflict sweep | 4x/year | Four months of weekly additions is exactly when a negative silently zeroing an active keyword starts to accumulate risk. This hasn't been mentioned as running — check. |
-| Monthly list audit | Monthly | Hygiene pass on shared lists: prune stale entries, merge duplicates. Cheap, and keeps the shared lists doing the compounding work instead of drifting. |
-| Query mining (n-gram) | Fold into the existing weekly pass | Platforms hide roughly 40% of search term spend from the standard report. Token-level mining recovers signal the weekly pass structurally can't see — a better use of "let's find more waste" energy than a bought list. |
+| Rung                     | Frequency                          | Why it fits now                                                                                                                                                                                                          |
+| ------------------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Quarterly conflict sweep | 4x/year                            | Four months of weekly additions is exactly when a negative silently zeroing an active keyword starts to accumulate risk. This hasn't been mentioned as running — check.                                                  |
+| Monthly list audit       | Monthly                            | Hygiene pass on shared lists: prune stale entries, merge duplicates. Cheap, and keeps the shared lists doing the compounding work instead of drifting.                                                                   |
+| Query mining (n-gram)    | Fold into the existing weekly pass | Platforms hide roughly 40% of search term spend from the standard report. Token-level mining recovers signal the weekly pass structurally can't see — a better use of "let's find more waste" energy than a bought list. |
 
 ## What I need to actually run a pass
 

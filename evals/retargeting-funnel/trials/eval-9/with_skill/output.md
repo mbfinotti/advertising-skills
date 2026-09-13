@@ -5,7 +5,7 @@
 ### What's wrong
 
 **1. The 365-day Meta window doesn't do what you think it does.**
-Meta's retention ceiling for standard website custom audiences is **180 days**, not 365 (365 is only for Page/IG *engagement* audiences). Ask for 365 and Meta silently truncates to 180. Not fatal by itself, but it means your "one 365-day audience" claim is already false on one of your two platforms.
+Meta's retention ceiling for standard website custom audiences is **180 days**, not 365 (365 is only for Page/IG _engagement_ audiences). Ask for 365 and Meta silently truncates to 180. Not fatal by itself, but it means your "one 365-day audience" claim is already false on one of your two platforms.
 
 **2. Safari/iOS at 55% makes the pixel windows mostly fiction anyway.**
 Safari caps first-party JS cookies at **7 days** (24 hours if there's a click-tracking parameter). With 55% of your traffic on Safari/iOS, over half your visitors functionally disappear from a pixel-based audience after about a week — regardless of what window you configure. A "365-day" (or even 180-day) pixel-based Meta audience on this traffic mix is quietly built on the 45% of visitors who aren't Safari, while claiming to represent everyone. Given your cycle (95-day median, 150-day p80), this is the core mismatch: **your long-tail retargeting needs to be CRM-list-based, not pixel-based.** Google's remarketing list ceiling (540 days) survives this better technically, but suffers the same Safari undercounting on the pixel side.
@@ -31,15 +31,15 @@ I don't have your traffic volume, which events are tracked (pricing page? trial/
 
 **Stage table**
 
-| Stage | Inclusion | Window / source | Message intent | Concepts |
-|---|---|---|---|---|
-| S1 High-intent | Pricing-page view *(confirm this is tracked)* | 0-14d, pixel | Proof — case study or named-customer result | 3 |
-| S2 Evaluators | Any product/feature page view, no pricing view | 0-30d, pixel (accept Safari undercount) | Objection handling — security, integrations, data-accuracy comparison | 3 |
-| S3 Open-deal air cover | CRM deals in evaluation/proposal | List, weekly refresh, runs to ~150d | ROI content — aimed at the buying committee, not one visitor | 3 |
-| S4 Direct ask | S1/S2 aged 15-150d, no open deal | CRM-matched list + pixel remainder | The "book a demo" ask — this is where it belongs, not everywhere | 3 |
-| S5 Win-back | Any past visitor/lead, 150-365d, no purchase, no open deal | List-based only (pixel is useless here on Safari) | Fresh proof/new-feature angle, not a repeat of the same ad | 2-3 |
+| Stage                  | Inclusion                                                  | Window / source                                   | Message intent                                                        | Concepts |
+| ---------------------- | ---------------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------- | -------- |
+| S1 High-intent         | Pricing-page view _(confirm this is tracked)_              | 0-14d, pixel                                      | Proof — case study or named-customer result                           | 3        |
+| S2 Evaluators          | Any product/feature page view, no pricing view             | 0-30d, pixel (accept Safari undercount)           | Objection handling — security, integrations, data-accuracy comparison | 3        |
+| S3 Open-deal air cover | CRM deals in evaluation/proposal                           | List, weekly refresh, runs to ~150d               | ROI content — aimed at the buying committee, not one visitor          | 3        |
+| S4 Direct ask          | S1/S2 aged 15-150d, no open deal                           | CRM-matched list + pixel remainder                | The "book a demo" ask — this is where it belongs, not everywhere      | 3        |
+| S5 Win-back            | Any past visitor/lead, 150-365d, no purchase, no open deal | List-based only (pixel is useless here on Safari) | Fresh proof/new-feature angle, not a repeat of the same ad            | 2-3      |
 
-Note what this fixes: "book a demo" now runs only on S4, aimed at people who've shown depth *and* aged past their hot window without an open deal — exactly the segment a direct ask converts, per the skill's rung logic. S1-S3 build belief first.
+Note what this fixes: "book a demo" now runs only on S4, aimed at people who've shown depth _and_ aged past their hot window without an open deal — exactly the segment a direct ask converts, per the skill's rung logic. S1-S3 build belief first.
 
 **Exclusion map**
 

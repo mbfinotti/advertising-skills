@@ -19,7 +19,8 @@ Don't wait for the algorithm to keep bleeding spend away from the video — real
 Pausing kills your only other live channel's diversification and resets delivery/learning. Throttling frequency (or letting the static absorb more spend) reduces repeat-impression fatigue without giving up the format entirely.
 
 **3. Force a creative reset without new footage.**
-You don't need a new video to reset the algorithm's freshness signal — you need a new *variant*:
+You don't need a new video to reset the algorithm's freshness signal — you need a new _variant_:
+
 - Swap primary text, headline, and CTA on the existing video. Meta treats copy changes as a distinct creative test and this alone often revives hook rate/CTR.
 - Change the thumbnail/cover frame.
 - If any alternate cuts, b-roll, or unused footage exist from the original shoot, do a quick re-trim (Ads Manager's built-in editor, or any freelancer, 24-48h turnaround) for a new opening 3 seconds — the hook is what's fatigued, so a new hook is the highest-leverage low-effort fix.

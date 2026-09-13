@@ -37,7 +37,7 @@ The skill is explicit: never state a threshold whose derivation can't be shown, 
 - **Add a counter-metric.** A CAC ceiling with no counter-metric is met most easily by shifting spend into retargeting/branded search, which just harvests demand that was already coming. New-customer share or SQL-to-closed-won (pick per motion) closes that gap for near-zero extra effort.
 - **Add an evidence gate and a restart condition to the kill-switch**, if one doesn't already exist informally — a pause with no floor on duration and no written way back tends to cost more than the overspend it prevents, especially on algorithmic platforms.
 - **Put a re-baselining date on it.** Quarterly, plus triggers (pricing change, margin change, tracking change). A ceiling that's never revisited is exactly how a sandbagged $310 survives unnoticed for three quarters.
-- **Treat this zero-breach streak as a review trigger for the board meeting**, not a talking point *for* it — "we haven't breached it, so it works" is the line most likely to get challenged by a board member who's seen this pattern before.
+- **Treat this zero-breach streak as a review trigger for the board meeting**, not a talking point _for_ it — "we haven't breached it, so it works" is the line most likely to get challenged by a board member who's seen this pattern before.
 
 ## Next step
 

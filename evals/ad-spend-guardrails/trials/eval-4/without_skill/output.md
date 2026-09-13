@@ -17,10 +17,10 @@ Do this weekly. Never size budget decisions off the Ads Manager "Purchase ROAS" 
 
 ### The two numbers to operate with
 
-| Metric | Breakeven | **Operating floor/ceiling (20% profit buffer)** |
-|---|---|---|
-| **ROAS floor** (blended, Shopify revenue) | 2.0x | **2.5x** |
-| **CAC ceiling** (blended, Shopify revenue) | 50% of AOV | **40% of AOV** |
+| Metric                                     | Breakeven  | **Operating floor/ceiling (20% profit buffer)** |
+| ------------------------------------------ | ---------- | ----------------------------------------------- |
+| **ROAS floor** (blended, Shopify revenue)  | 2.0x       | **2.5x**                                        |
+| **CAC ceiling** (blended, Shopify revenue) | 50% of AOV | **40% of AOV**                                  |
 
 Math: breakeven ROAS = 1 ÷ CM% = 1 ÷ 0.50 = 2.0x. CAC breakeven = CM% × AOV = 50% of AOV. The buffer (÷1.25) leaves ~20 points of margin above breakeven for overhead and actual profit rather than just covering variable costs.
 
@@ -30,7 +30,7 @@ Since Meta shows ~1.4x the revenue Shopify actually books, its dashboard ROAS ne
 
 - **Meta-dashboard ROAS floor ≈ 3.5x** (= 2.5 true floor × 1.4 inflation factor)
 
-Don't try to correct Meta's reported CPA/CAC the same way — you don't yet know whether the gap comes from inflated conversion *count* (which would make Meta's CPA falsely low) or inflated *order value* (which wouldn't touch CPA at all), and guessing the wrong direction is worse than not adjusting. **For CAC, use the blended Shopify number only; treat Meta's own CPA column as directional noise, not a target.**
+Don't try to correct Meta's reported CPA/CAC the same way — you don't yet know whether the gap comes from inflated conversion _count_ (which would make Meta's CPA falsely low) or inflated _order value_ (which wouldn't touch CPA at all), and guessing the wrong direction is worse than not adjusting. **For CAC, use the blended Shopify number only; treat Meta's own CPA column as directional noise, not a target.**
 
 ### Bottom line to start operating today
 

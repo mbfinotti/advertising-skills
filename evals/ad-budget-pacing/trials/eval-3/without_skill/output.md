@@ -5,6 +5,7 @@
 Straight-line calendar pacing (18,000 ÷ 30 days × 13 days elapsed = $7,800 expected) is the wrong yardstick for an account that **delivers almost entirely on weekdays**. September has 22 weekdays and 8 weekend days. Through Sunday the 13th, 9 of those 22 weekdays have elapsed — not 13/30 of the month.
 
 **Weekday-adjusted target:**
+
 - Budget per weekday: $18,000 ÷ 22 = **$818/weekday**
 - Expected spend through 9 weekdays: 9 × $818 = **$7,364**
 - Actual spend: $6,700
@@ -39,6 +40,7 @@ Reacting to this number today means reacting to noise.
 - Pushing bids up on the strength of both readings risks **double-correcting**: LinkedIn's own delivery pacing already smooths spend across the month, and layering a manual bid increase on top of a false "behind" signal is the classic way to overshoot budget in the back half of the month, chase CPL up, and still not know until October whether it bought you real pipeline.
 
 **What to actually do instead:**
+
 - Re-run this pacing check using the weekday-adjusted method going forward (worth baking into your standard Monday report so the 14%-style false alarm doesn't recur).
 - Leave bids alone. If you want a lever to pull, watch **leading indicators** you don't have to wait 3 weeks for — CTR, cost-per-click, lead-form open rate — as a real-time read on interest/quality.
 - Put a real check-in on the calendar for **~Sept 22**, when September-driven leads start clearing the reporting lag, and a fuller one in **early-to-mid October** once most of the month's spend has had time to convert. That's when "way behind on leads" becomes an answerable question.

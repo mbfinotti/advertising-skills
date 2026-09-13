@@ -6,15 +6,15 @@ I ran this through `advertising-kickoff` (the router for the 31-skill advertisin
 
 No `advertising-context.md` exists for Quillbrook yet, so this is a cold start. I don't have interactive turns here, so instead of a 5-7 question interview I inferred what I could and flagged the rest — confirm these before I'd lock anything into the artifact:
 
-| Field | Value | Source |
-|---|---|---|
-| Business model | B2C, self-serve, $12/mo subscription | stated |
-| Spend | $0 today → $3k/mo starting next month | stated |
-| Conversion event / source of truth | **unknown** | ⚠️ not stated — biggest open item |
-| Creative capacity | **assumed none** (2-person, bootstrapped) | inferred, unconfirmed |
-| Hard date / regulated vertical | none stated | assumed none |
-| Effort ceiling | assumed "compounding, a few hours/week" — a recurring monthly budget implies an ongoing program, not a one-off | inferred |
-| Decided | launch paid ads next month, $3k/mo | stated |
+| Field                              | Value                                                                                                          | Source                            |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Business model                     | B2C, self-serve, $12/mo subscription                                                                           | stated                            |
+| Spend                              | $0 today → $3k/mo starting next month                                                                          | stated                            |
+| Conversion event / source of truth | **unknown**                                                                                                    | ⚠️ not stated — biggest open item |
+| Creative capacity                  | **assumed none** (2-person, bootstrapped)                                                                      | inferred, unconfirmed             |
+| Hard date / regulated vertical     | none stated                                                                                                    | assumed none                      |
+| Effort ceiling                     | assumed "compounding, a few hours/week" — a recurring monthly budget implies an ongoing program, not a one-off | inferred                          |
+| Decided                            | launch paid ads next month, $3k/mo                                                                             | stated                            |
 
 ## Route
 
@@ -22,12 +22,12 @@ No `advertising-context.md` exists for Quillbrook yet, so this is a cold start. 
 
 Not `cac-roas-benchmark`: it computes CAC from **real spend data**, and you have none. Not `ad-budget-pacing`: it tracks spend against an **already-live** budget, and no campaign exists yet. Both are correctly-named goals, just premature — see "Not now" below.
 
-## Short-list (ordered by value ÷ effort, for *this* project right now)
+## Short-list (ordered by value ÷ effort, for _this_ project right now)
 
 Re-rank note: "not spending yet" empties the normal diagnosis/tuning rungs and promotes platform-selection + conversion-tracking to the top regardless of the default class order. Assumed-no-creative-capacity pushes creative work off the list except the two entries that need no production capacity.
 
-1. ✅ **`ad-platform-selection`** — which channels fit the economics. Costs one session, no data needed. *(promoted: no live account to diagnose or tune yet)*
-2. ✅ **`ad-conversion-tracking`** — GO/NO-GO that the trial-start / subscription event fires once and dedupes, before dollar one spends. Costs hours, one engineer. *(promoted for the same reason)*
+1. ✅ **`ad-platform-selection`** — which channels fit the economics. Costs one session, no data needed. _(promoted: no live account to diagnose or tune yet)_
+2. ✅ **`ad-conversion-tracking`** — GO/NO-GO that the trial-start / subscription event fires once and dedupes, before dollar one spends. Costs hours, one engineer. _(promoted for the same reason)_
 3. 🎯 **`ad-spend-guardrails`** — turn "$12/mo, 2-person bootstrap" into a written max-CAC ceiling and min-ROAS floor from margin and payback. This is what makes "is my CAC too high" answerable later — run it before you can benchmark anything. Costs one session; needs churn/margin inputs from you.
 4. **`ad-copy-variants`** — search headline variants. One of two creative-cluster entries that need zero production capacity, so it survives the "no creative capacity" cut.
 5. **`ad-swipe-file`** — pull competitor journaling-app ads into ranked test hypotheses while you wait on the three steps above. Also needs no capacity.
@@ -36,7 +36,7 @@ Re-rank note: "not spending yet" empties the normal diagnosis/tuning rungs and p
 
 This merges two of the collection's reference chains — "launch a new channel" and "the budget stack" — because Quillbrook is doing both simultaneously for the first time:
 
-`ad-platform-selection` → `ad-spend-guardrails` → `ad-conversion-tracking` → *(spend launches)* → `ad-budget-pacing` → `cac-roas-benchmark`
+`ad-platform-selection` → `ad-spend-guardrails` → `ad-conversion-tracking` → _(spend launches)_ → `ad-budget-pacing` → `cac-roas-benchmark`
 
 Each hands the next something concrete: platform pick narrows format and tracking work; guardrails give the benchmark a target to judge against later; verified tracking is what makes any later CAC number trustworthy; pacing then benchmark only make sense once real spend exists.
 

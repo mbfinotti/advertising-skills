@@ -10,19 +10,19 @@ I couldn't run this as a live interview (single-shot task), so I derived what th
 
 ## Inputs
 
-| Input | Value | Status |
-|---|---|---|
-| Price | $49/mo, one plan | measured |
-| Gross margin | 80% | **estimated** (no confidence level given — is this net of processor fees/refunds?) |
-| Contribution per customer/month | $39.20 (49 × 0.80) | derived |
-| Ad spend | ~$400/mo | **estimated** ("roughly") |
-| New customers from ads | ~9/mo | **estimated** ("about") |
-| CAC (paid, new-customer, blended) | $44.44 | derived — **not fully-loaded** (excludes founder time, tools) |
-| Runway | 15 months | measured |
-| Total monthly burn | — | **missing** — needed to set a $ cash cap on ad spend specifically |
-| Churn / retention | — | **missing** — needed for a true break-even (CAC recovered before the customer leaves) |
-| Measurement trust | — | **missing** — is the 9/$400 a clean attribution read, or platform-reported? |
-| Approvers | — | **missing** — who at Lanternfish can pause spend vs. raise the ceiling? |
+| Input                             | Value              | Status                                                                                |
+| --------------------------------- | ------------------ | ------------------------------------------------------------------------------------- |
+| Price                             | $49/mo, one plan   | measured                                                                              |
+| Gross margin                      | 80%                | **estimated** (no confidence level given — is this net of processor fees/refunds?)    |
+| Contribution per customer/month   | $39.20 (49 × 0.80) | derived                                                                               |
+| Ad spend                          | ~$400/mo           | **estimated** ("roughly")                                                             |
+| New customers from ads            | ~9/mo              | **estimated** ("about")                                                               |
+| CAC (paid, new-customer, blended) | $44.44             | derived — **not fully-loaded** (excludes founder time, tools)                         |
+| Runway                            | 15 months          | measured                                                                              |
+| Total monthly burn                | —                  | **missing** — needed to set a $ cash cap on ad spend specifically                     |
+| Churn / retention                 | —                  | **missing** — needed for a true break-even (CAC recovered before the customer leaves) |
+| Measurement trust                 | —                  | **missing** — is the 9/$400 a clean attribution read, or platform-reported?           |
+| Approvers                         | —                  | **missing** — who at Lanternfish can pause spend vs. raise the ceiling?               |
 
 ## Derivation
 
@@ -40,11 +40,11 @@ At 1.1-month payback, you're recovering acquisition cost almost twice as fast as
 
 ## Layers
 
-| Layer | CAC ceiling | Payback | Consequence |
-|---|---|---|---|
-| Target floor | **$196** | 5 months (investor's ask, adopted) | Investigate at your next weekly check-in |
-| Hard floor | **~$310** (DECISION) | 8 months | Automatic halt on the channel |
-| Outer bound | **~$470** (stage guidance, not break-even) | 12 months | Full stop + re-derive the whole policy, since this is guidance not arithmetic |
+| Layer        | CAC ceiling                                | Payback                            | Consequence                                                                   |
+| ------------ | ------------------------------------------ | ---------------------------------- | ----------------------------------------------------------------------------- |
+| Target floor | **$196**                                   | 5 months (investor's ask, adopted) | Investigate at your next weekly check-in                                      |
+| Hard floor   | **~$310** (DECISION)                       | 8 months                           | Automatic halt on the channel                                                 |
+| Outer bound  | **~$470** (stage guidance, not break-even) | 12 months                          | Full stop + re-derive the whole policy, since this is guidance not arithmetic |
 
 The $310 hard floor is a judgment call, not a benchmark: it sits between your target and the outer bound, giving room to test scaling spend before anything auto-halts, while stopping well short of the "anemic" zone. Move it if it doesn't match how much testing risk you two actually want.
 

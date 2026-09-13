@@ -7,6 +7,7 @@
 This is the highest priority and the fastest fix. It also means your real numbers are worse than reported: if the platform is counting ~2x bookings, your 11 "under-10-conversions" campaigns are actually closer to 5 or fewer real conversions each. The learning-phase problem in #2 is bigger than the audit shows.
 
 **Do this week:**
+
 - Check if the ad platform's conversion action is set to count "every" fire vs "unique" — most platforms (Meta, Google Ads) have a per-conversion-action toggle for unique/one-per-session counting. Flip it as an immediate stopgap. Takes minutes, no code touch.
 - Open the booking confirmation page in GTM Preview mode (or browser dev tools network tab) and watch what fires on page load. Classic causes, all fixable by marketing/ops without an engineer:
   - Two tags firing the same event (legacy pixel never removed + newer one added).
@@ -30,6 +31,7 @@ This is the highest priority and the fastest fix. It also means your real number
 ## 3. Fix the two underspending campaigns (Day 3-5)
 
 Likely one of three causes, all diagnosable from the ad platform UI alone:
+
 - Bid cap or target CPA/ROAS set too aggressively low for current auction pricing — loosen it.
 - Audience too narrow / already exhausted — broaden or fold into the consolidation in #2.
 - Creative fatigue suppressing delivery (ties directly to #4) — stale creative can tank relevance/quality scores and choke spend even with budget available.

@@ -2,7 +2,7 @@
 
 ## Before the scripts — 3 flags
 
-**1. I did not write a fabricated "happy customer" testimonial.** The skill this is built on is explicit: *"Never invent a hook, pain point, claim, or testimonial line. Fabricated reviews and testimonials are a regulatory violation, not just weak writing"* — and under the 2024 FTC fake-reviews rule this carries real per-violation penalties, not just a style ding. You have zero reviews and 40 boxes shipped a week ago — there is no "happy customer" to quote yet.
+**1. I did not write a fabricated "happy customer" testimonial.** The skill this is built on is explicit: _"Never invent a hook, pain point, claim, or testimonial line. Fabricated reviews and testimonials are a regulatory violation, not just weak writing"_ — and under the 2024 FTC fake-reviews rule this carries real per-violation penalties, not just a style ding. You have zero reviews and 40 boxes shipped a week ago — there is no "happy customer" to quote yet.
 
 What I did instead: since your creator is a named, disclosed person (not an invented "Sarah from Ohio"), the line "this changed my mornings" is scripted as **her own first-person reflection**, to be said only if it's genuinely true for her — not locked as guaranteed copy. That's the compliant version of what you're asking for. Once real customers exist, swap this for an actual sourced quote and the package upgrades out of `UNVALIDATED`.
 
@@ -17,27 +17,27 @@ Archetypes **deleted** from this round, named per the skill's rule so they don't
 ## Concept A — "The 7:42 problem"
 
 - **Segment**: commuters who make coffee at home but are always racing the clock.
-- **Motivation** (from brief, unvalidated): *not enough time to prep real coffee before leaving for the train/car.*
+- **Motivation** (from brief, unvalidated): _not enough time to prep real coffee before leaving for the train/car._
 - **Format**: single creator, POV, home kitchen → out the door. Talent-to-camera + quick product handling shots.
 - **Offer**: direct purchase, $24/month subscription, no discount code.
 - **Duration**: 20s, ~55 words.
 
 **Hook variants** (body stays fixed; first line of body adjusted per hook to extend its premise)
 
-| # | Archetype | Spoken line | On-screen text | Opening visual |
-|---|---|---|---|---|
-| 1 | Problem callout | "The two minutes I spend making coffee are the two minutes I don't have." | no time, no coffee | Creator glancing at phone/clock while fumbling with an old drip machine |
-| 2 | Skeptic's turn | "I thought 'cold brew concentrate' just meant more steps. It's the opposite." | 1 pour. done. | Creator holding the Brewlane box, one eyebrow raised |
-| 3 | POV | "POV: it's 7:42, your train's at 7:50, and you still want real coffee." | 7:42 am energy | Quick phone-clock close-up, cut to creator grabbing keys and bag |
-| 4 | Silent review (product footage exists) | *(none — no dialogue)* | water. concentrate. ice. done. | Fast cuts: pour concentrate, add water/milk, ice, lid clicks, out the door |
+| #   | Archetype                              | Spoken line                                                                   | On-screen text                 | Opening visual                                                             |
+| --- | -------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------------------------- |
+| 1   | Problem callout                        | "The two minutes I spend making coffee are the two minutes I don't have."     | no time, no coffee             | Creator glancing at phone/clock while fumbling with an old drip machine    |
+| 2   | Skeptic's turn                         | "I thought 'cold brew concentrate' just meant more steps. It's the opposite." | 1 pour. done.                  | Creator holding the Brewlane box, one eyebrow raised                       |
+| 3   | POV                                    | "POV: it's 7:42, your train's at 7:50, and you still want real coffee."       | 7:42 am energy                 | Quick phone-clock close-up, cut to creator grabbing keys and bag           |
+| 4   | Silent review (product footage exists) | _(none — no dialogue)_                                                        | water. concentrate. ice. done. | Fast cuts: pour concentrate, add water/milk, ice, lid clicks, out the door |
 
 **Body** (fixed across hooks)
 
-| Time | Spoken (example phrasing) | On-screen text | Visual |
-|---|---|---|---|
-| 3-7s | "Brewlane sent me three months of this to actually try — this is cold brew concentrate, no overnight steeping, no machine." | partner · gifted 3 months | Creator holds box up, label facing camera |
-| 7-14s | "You just pour it over ice with water or milk — that's it, that's the whole routine now." | pour. shake. go. | Real-time demo: concentrate into travel mug, ice, lid shut |
-| 14-18s | "Honestly? This changed my mornings — I'm not standing at a machine anymore." *(only if genuinely true for her — see delivery notes)* | — | Creator walking out the door, mug in hand, natural smile |
+| Time   | Spoken (example phrasing)                                                                                                             | On-screen text            | Visual                                                     |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------------------------------------------------------- |
+| 3-7s   | "Brewlane sent me three months of this to actually try — this is cold brew concentrate, no overnight steeping, no machine."           | partner · gifted 3 months | Creator holds box up, label facing camera                  |
+| 7-14s  | "You just pour it over ice with water or milk — that's it, that's the whole routine now."                                             | pour. shake. go.          | Real-time demo: concentrate into travel mug, ice, lid shut |
+| 14-18s | "Honestly? This changed my mornings — I'm not standing at a machine anymore." _(only if genuinely true for her — see delivery notes)_ | —                         | Creator walking out the door, mug in hand, natural smile   |
 
 **CTA variants** (18-20s, locked)
 
@@ -45,6 +45,7 @@ Archetypes **deleted** from this round, named per the skill's rule so they don't
 2. Spoken: "If mornings are the problem, this is the two-second fix. Link's below." / On-screen: `no prep · link below`
 
 **Delivery notes**
+
 - Read direction: rushed-but-real, mildly breathless, not presenter energy. This is venting-to-a-friend, not a pitch.
 - Setting: real kitchen/entryway, morning light if possible. Actual clutter is fine — don't stage a clean set.
 - Hold the box label to camera clearly at beat 1 (7-14s demo) so packaging is legible with sound off.
@@ -56,27 +57,27 @@ Archetypes **deleted** from this round, named per the skill's rule so they don't
 ## Concept B — "Skip the line"
 
 - **Segment**: commuters who currently buy coffee out (coffee shop stop on the way to work/train).
-- **Motivation** (from brief, unvalidated): *doesn't want to lose commute time standing in a coffee-shop line.*
+- **Motivation** (from brief, unvalidated): _doesn't want to lose commute time standing in a coffee-shop line._
 - **Format**: single creator, real commute setting, home pour → walks past a coffee line.
 - **Offer**: same — direct purchase, $24/month.
 - **Duration**: 20s, ~55 words.
 
 **Hook variants**
 
-| # | Archetype | Spoken line | On-screen text | Opening visual |
-|---|---|---|---|---|
-| 1 | Problem callout | "I used to budget ten minutes just for the coffee line." | 10 minutes. every morning. | Creator checking phone in a real (or staged) coffee-shop queue |
-| 2 | Skeptic's turn | "I didn't believe cold brew concentrate could replace my coffee run. It did, day one." | replaced my coffee run | Creator holds Brewlane box next to an empty to-go cup, skeptical look |
-| 3 | POV | "POV: you skip the line and you're still holding real cold brew." | skip the line | Creator walks past the queue holding her own mug, confident |
-| 4 | Silent review | *(none — no dialogue)* | no line. no wait. | Box at door → pour → travel mug → walks past the coffee shop |
+| #   | Archetype       | Spoken line                                                                            | On-screen text             | Opening visual                                                        |
+| --- | --------------- | -------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------- |
+| 1   | Problem callout | "I used to budget ten minutes just for the coffee line."                               | 10 minutes. every morning. | Creator checking phone in a real (or staged) coffee-shop queue        |
+| 2   | Skeptic's turn  | "I didn't believe cold brew concentrate could replace my coffee run. It did, day one." | replaced my coffee run     | Creator holds Brewlane box next to an empty to-go cup, skeptical look |
+| 3   | POV             | "POV: you skip the line and you're still holding real cold brew."                      | skip the line              | Creator walks past the queue holding her own mug, confident           |
+| 4   | Silent review   | _(none — no dialogue)_                                                                 | no line. no wait.          | Box at door → pour → travel mug → walks past the coffee shop          |
 
 **Body** (fixed across hooks)
 
-| Time | Spoken (example phrasing) | On-screen text | Visual |
-|---|---|---|---|
-| 3-7s | "Brewlane sent me three months of this to try instead of my usual coffee run." | partner · gifted 3 months | Creator pours concentrate at home counter |
-| 7-14s | "Cold water or oat milk, ice, fifteen seconds — done before I even leave the apartment." | pour over ice · 15 sec | Demo: pour, ice, stir, lid on |
-| 14-18s | "Honestly? This changed my mornings — I stopped budgeting time for coffee at all." *(only if true — see delivery notes)* | — | Creator walks confidently past the coffee shop line, mug in hand |
+| Time   | Spoken (example phrasing)                                                                                                | On-screen text            | Visual                                                           |
+| ------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------- | ---------------------------------------------------------------- |
+| 3-7s   | "Brewlane sent me three months of this to try instead of my usual coffee run."                                           | partner · gifted 3 months | Creator pours concentrate at home counter                        |
+| 7-14s  | "Cold water or oat milk, ice, fifteen seconds — done before I even leave the apartment."                                 | pour over ice · 15 sec    | Demo: pour, ice, stir, lid on                                    |
+| 14-18s | "Honestly? This changed my mornings — I stopped budgeting time for coffee at all." _(only if true — see delivery notes)_ | —                         | Creator walks confidently past the coffee shop line, mug in hand |
 
 **CTA variants** (18-20s, locked)
 
@@ -84,6 +85,7 @@ Archetypes **deleted** from this round, named per the skill's rule so they don't
 2. Spoken: "If the coffee line's eating your mornings, this fixes that. Link's below." / On-screen: `skip the line · link below`
 
 **Delivery notes**
+
 - Read direction: confident, slightly smug-but-warm — she's in on something, not selling something.
 - Do NOT script a specific savings/price comparison against coffee-shop prices ("cheaper than a week of coffee runs") — that's a comparative numeric claim you can't substantiate across markets. Price is stated plainly; let the viewer do the math.
 - If filming near a real coffee shop, get location/bystander consent as needed — don't show identifiable strangers without release.
@@ -94,7 +96,7 @@ Archetypes **deleted** from this round, named per the skill's rule so they don't
 
 ## Compliance (run before filming, both concepts)
 
-1. **Material connection**: creator received a free 3-month subscription → disclosed spoken *and* on-screen in beat 1 of both scripts, plus the platform's paid-partnership/gifted label. Don't rely on the platform toggle alone.
+1. **Material connection**: creator received a free 3-month subscription → disclosed spoken _and_ on-screen in beat 1 of both scripts, plus the platform's paid-partnership/gifted label. Don't rely on the platform toggle alone.
 2. **No fabricated testimonial**: the "changed my mornings" line is the disclosed creator's own stated opinion, not attributed to an unnamed third party. Confirm with her before filming that it's genuinely how she feels — if not, replace it, don't force it.
 3. **No health/efficacy claims**: nothing about energy, focus, or health benefits — unsubstantiated for a caffeinated product and not needed for this angle.
 4. **No fake urgency**: neither CTA uses a false deadline.

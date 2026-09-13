@@ -12,14 +12,14 @@ inputs         : ad creative: no | analytics: no | recordings: no | page: not fe
 
 ## Verdict
 
-Working from the seven issues you already identified, not a fresh render. Nothing here points upstream (no creative-fatigue or tracking signal was given, but I couldn't check for one either — see *Could not check*). Proceeding as a page-side prioritization.
+Working from the seven issues you already identified, not a fresh render. Nothing here points upstream (no creative-fatigue or tracking signal was given, but I couldn't check for one either — see _Could not check_). Proceeding as a page-side prioritization.
 
-**On "cheapest quick wins first":** the skill this audit follows ranks by *efficiency* (funnel-step-unblocked per unit of effort), not raw cost — cheapest-first and efficiency-first are different orderings, and it flags that distinction rather than silently substituting one for the other. In your case they land in almost the same order anyway: your constraint (CMS copy/image edits only, no dev, no agency) makes every *eligible* fix cost roughly the same — an hour or two — so effort stops discriminating between them and the ranking below is driven by leak size, not price. The two exceptions that would jump any ranking regardless (compliance exposure) also happen to be your two cheapest edits, so "cheapest first" and "priority first" agree here almost by coincidence, not by design.
+**On "cheapest quick wins first":** the skill this audit follows ranks by _efficiency_ (funnel-step-unblocked per unit of effort), not raw cost — cheapest-first and efficiency-first are different orderings, and it flags that distinction rather than silently substituting one for the other. In your case they land in almost the same order anyway: your constraint (CMS copy/image edits only, no dev, no agency) makes every _eligible_ fix cost roughly the same — an hour or two — so effort stops discriminating between them and the ranking below is driven by leak size, not price. The two exceptions that would jump any ranking regardless (compliance exposure) also happen to be your two cheapest edits, so "cheapest first" and "priority first" agree here almost by coincidence, not by design.
 
 ## Fix now (ranked, max 7)
 
 **1. Delete the resetting countdown timer**
-Failure: a timer that resets every page load is fabricated urgency — not a design opinion, a documented failure mode (fake-scarcity urgency is treated as a finding *against* a page, never a fix for it, in every practitioner source this audit trusts). "It's been there a year and converts well" is an anecdote from one person watching one uncontrolled period — not evidence, and irrelevant to the compliance exposure, which accrues daily regardless of conversion rate.
+Failure: a timer that resets every page load is fabricated urgency — not a design opinion, a documented failure mode (fake-scarcity urgency is treated as a finding _against_ a page, never a fix for it, in every practitioner source this audit trusts). "It's been there a year and converts well" is an anecdote from one person watching one uncontrolled period — not evidence, and irrelevant to the compliance exposure, which accrues daily regardless of conversion rate.
 → Remove it. Don't replace it with another synthetic urgency device.
 funnel step: trust at first impression, and standing platform/FTC exposure | evidence: opinion | source: established (FTC fake-scarcity enforcement + ad-platform claims policy)
 severity: critical | effort: hours (delete a CMS block)
@@ -40,7 +40,7 @@ severity: major | effort: hours (copy edit)
 Failure: proof placed where nobody scrolls to doesn't counter the objection it exists to answer. The content already exists — this is a placement problem, not a content problem, which is why it's cheap.
 → Move 1–2 attributable testimonials (real name, role, specific result) near the signup CTA or wherever the "is this for someone like me / worth it" doubt actually arises on the page.
 funnel step: engage → convert (objection handling at the friction point) | evidence: opinion | source: consensus
-severity: major | effort: hours (assumes your CMS supports reordering sections without a dev — confirm; see *Could not check*)
+severity: major | effort: hours (assumes your CMS supports reordering sections without a dev — confirm; see _Could not check_)
 
 **5. Kill autoplay-with-sound on the hero video**
 Failure: unexpected audio on a video that autoplays is a well-documented way to lose exactly the mobile audience your paid spend is buying (74% of spend is mobile, where unmuted autoplay is most jarring and most often triggers an immediate bounce or mute-and-leave). This is filed as an accessibility/conversion check, not a nice-to-have.

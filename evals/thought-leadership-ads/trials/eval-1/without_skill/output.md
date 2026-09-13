@@ -11,7 +11,7 @@ The artifact publish needs your approval and didn't go through — here's the co
 ⚠️ Two things in the brief will sink the board's "did it work" conversation if I don't flag them now:
 
 1. **No tracking = no provable pipeline.** The board asked for "pipeline from a new channel." Pipeline is a CRM concept — it only exists if a lead carries a source. If this launches untracked and $150k of opportunities close in December, nobody can prove Dana's posts caused it. This isn't a v2 item — it's the entire measurement of the initiative. Fix: UTM parameters + one CRM lead-source field, before the first dollar spends. About a day of ops work.
-2. **"This quarter" is nearly over.** Today is Sep 12; Q3 closes Sep 30. With a 6-month sales cycle, nothing launched in the next 2.5 weeks produces closed pipeline by quarter-end — that was never physically possible, independent of execution quality. What you *can* show the board by Sep 30 is a funded, instrumented, live channel with early engagement/lead data. First qualified pipeline becomes visible in Q4/Q1. Recommend re-anchoring the board ask now — "channel live and instrumented this quarter, pipeline visible next" — rather than after Q3 closes with zero closed deals.
+2. **"This quarter" is nearly over.** Today is Sep 12; Q3 closes Sep 30. With a 6-month sales cycle, nothing launched in the next 2.5 weeks produces closed pipeline by quarter-end — that was never physically possible, independent of execution quality. What you _can_ show the board by Sep 30 is a funded, instrumented, live channel with early engagement/lead data. First qualified pipeline becomes visible in Q4/Q1. Recommend re-anchoring the board ask now — "channel live and instrumented this quarter, pipeline visible next" — rather than after Q3 closes with zero closed deals.
 
 Everything below assumes #1 is fixed before launch. It's built around LinkedIn's actual product for this exact case: **Thought Leader Ads (TLA)** — sponsoring an individual's organic post so it runs as a "Promoted" ad to a targeted audience, in Dana's voice, without her needing to post to a Page.
 
@@ -28,25 +28,27 @@ Everything below assumes #1 is fixed before launch. It's built around LinkedIn's
 
 Treat this quarter as instrumentation and leading indicators, not revenue — the sales cycle makes revenue attribution impossible this quarter regardless of ad performance.
 
-| KPI | Target | Note |
-|---|---|---|
-| Spend pacing | $6,000/mo ±10% | even weekly pacing, not front-loaded |
-| CTR | 0.45–0.65% | typical LinkedIn B2B range |
-| CPC | $6–11 | Director+ legal/procurement titles run high |
-| Landing page → lead | 12–20% | gated offer, warm-ish TLA traffic |
-| Cost per lead (MQL) | $60–110 | derived from the rows above |
-| Pipeline, tagged | tracked, not targeted | first real read in Q4/Q1 |
+| KPI                 | Target                | Note                                        |
+| ------------------- | --------------------- | ------------------------------------------- |
+| Spend pacing        | $6,000/mo ±10%        | even weekly pacing, not front-loaded        |
+| CTR                 | 0.45–0.65%            | typical LinkedIn B2B range                  |
+| CPC                 | $6–11                 | Director+ legal/procurement titles run high |
+| Landing page → lead | 12–20%                | gated offer, warm-ish TLA traffic           |
+| Cost per lead (MQL) | $60–110               | derived from the rows above                 |
+| Pipeline, tagged    | tracked, not targeted | first real read in Q4/Q1                    |
 
 ## 3. Post picks: boost the winner, don't pre-pick
 
 I can't see Dana's drafts or posting calendar, so this isn't "sponsor these four specific posts" — it's a standing weekly rule applied to whatever she actually publishes. This also matches how TLA performs best: on proven organic signal, not a prediction.
 
 **Boost when the post:**
+
 - Clears her trailing 8-week median engagement rate within 24–48h of posting
 - Teaches something or takes a position — not an announcement
 - Is text-only or a native document/carousel
 
 **Skip when the post:**
+
 - Is a job post, company news, or generic "grateful/blessed" content
 - Links out — LinkedIn suppresses link posts, and TLA inherits that penalty
 - Already reads like an ad — the point of TLA is that it doesn't
@@ -56,12 +58,14 @@ Cadence: 1–2 boosted posts/week — more spreads budget too thin for any one p
 ## 4. Audience
 
 **Who:**
+
 - Seniority: Director and above
 - Titles: General Counsel, Head of Legal Ops, Director/VP Contract Management, VP Procurement, Head of Sourcing, plus CFO if positioning touches spend visibility
 - Company size: 500–5,000 employees — matches a $48k ACV deal
 - Industry: financial services, insurance, healthcare, manufacturing, technology, professional services
 
 **Exclude / constrain:**
+
 - Current customers and Kelvane employees (CRM suppression list)
 - Competitors, where identifiable
 - Audience Network — off for this test; feed only, quality over reach while unproven
@@ -80,6 +84,7 @@ Bid strategy: Maximum Delivery (auto) for the first two weeks to gather data, th
 ## 6. Campaign structure
 
 Campaign group: **"Dana TLA — Pipeline Gen"**
+
 - Campaign A — Cold ICP (starts month 1)
 - Campaign B — Retargeting: site visitors, 90-day window (starts month 2)
 - Campaign C — Retargeting: post engagers who didn't click (starts month 2)

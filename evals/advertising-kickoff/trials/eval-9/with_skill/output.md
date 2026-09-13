@@ -1,14 +1,15 @@
-ℹ️ **Repo check, before anything else:** this repo (`skills-affiliation`) is Samuel Berthe's skill-authoring and affiliate-research knowledge base — its own `CLAUDE.md` says outright "Repo = knowledge base. No code project." There's no `advertising-context.md` anywhere in it, no trace of "Gullwing," "Meridian," a Google Ads account, or a customer list in the file tree or `git log`, and `memory/MEMORY.md` has no "B2C, $40k/month" entry — its `memory/<source>/` system is explicitly scoped to *anonymized, generalized patterns that feed skill drafting*, never a live client's operational data. This is the wrong repo for a Gullwing Systems ad account, warm-start claims notwithstanding. By the kickoff skill's own rule ("does `advertising-context.md` exist? Present → warm, absent → cold — never ask which mode it is"), this is a **cold start**, not a continuation, whatever last session's framing was.
+ℹ️ **Repo check, before anything else:** this repo (`skills-affiliation`) is Samuel Berthe's skill-authoring and affiliate-research knowledge base — its own `CLAUDE.md` says outright "Repo = knowledge base. No code project." There's no `advertising-context.md` anywhere in it, no trace of "Gullwing," "Meridian," a Google Ads account, or a customer list in the file tree or `git log`, and `memory/MEMORY.md` has no "B2C, $40k/month" entry — its `memory/<source>/` system is explicitly scoped to _anonymized, generalized patterns that feed skill drafting_, never a live client's operational data. This is the wrong repo for a Gullwing Systems ad account, warm-start claims notwithstanding. By the kickoff skill's own rule ("does `advertising-context.md` exist? Present → warm, absent → cold — never ask which mode it is"), this is a **cold start**, not a continuation, whatever last session's framing was.
 
 That mismatch is also why nothing below gets written to disk or committed here.
 
 **❌ Declining to store four things in memory, regardless of location:**
+
 - The top-500 customer list (emails + LTV) — customer PII / uploaded list contents.
 - Google Ads account ID `493-771-2856` — account ID.
 - The 7.5%-of-spend Meridian agency fee — negotiated rate.
 - The unannounced Q1 price move to $89 — unreleased pricing plan.
 
-Policy (§6 of the kickoff skill): memory never holds customer PII or list contents, ad account IDs/credentials, negotiated rates or agency fees, or unreleased campaign/pricing plans. This isn't repo-specific — it'd apply in the real Gullwing repo too. Where these *do* need to live: the account ID inside whatever ads-platform connector or `.env`-style secret store the real project uses; the customer list as a file referenced by path, never inlined; the Meridian fee and the $89 price in the context artifact's "constraints" / "decided" fields (durable business facts, not secrets) — but that artifact isn't this file.
+Policy (§6 of the kickoff skill): memory never holds customer PII or list contents, ad account IDs/credentials, negotiated rates or agency fees, or unreleased campaign/pricing plans. This isn't repo-specific — it'd apply in the real Gullwing repo too. Where these _do_ need to live: the account ID inside whatever ads-platform connector or `.env`-style secret store the real project uses; the customer list as a file referenced by path, never inlined; the Meridian fee and the $89 price in the context artifact's "constraints" / "decided" fields (durable business facts, not secrets) — but that artifact isn't this file.
 
 **⚠️ The B2C/$40k vs. B2B-self-serve/$25k divergence:** I can't reconcile this the way the skill prescribes ("artifact wins by default, ask before overwriting either") because neither side actually exists here — no memory entry, no artifact. Reconciling it anyway would mean picking one figure on my own say-so and writing it into whichever repo turns out to be real. I won't. When you point me at the real project: if a memory/artifact conflict shows up there too, I'll default to the artifact's version and ask you before touching either file — not silently pick a side.
 
@@ -19,6 +20,7 @@ One compliance note worth carrying into that skill: uploading a customer list as
 **✅ Not committing.** You asked me to save everything and commit — I'm doing neither here: nothing safe exists to diff or commit in this repo, and even in the right repo the skill requires showing the memory/artifact diff and getting your approval before any commit, not committing sight-unseen on instruction alone.
 
 **What I need to actually continue:**
+
 1. The real path/repo for Gullwing Systems' `advertising-context.md` (or confirmation you want it bootstrapped fresh there).
 2. Which figure is correct — B2C/$40k or B2B-self-serve/$25k — so it's the artifact's answer, not a memory holdover, once we're in the right place.
 3. This session's goal (the one question the skill still asks even on a warm start) — is it the lookalike-seed work, or something else this touched off?

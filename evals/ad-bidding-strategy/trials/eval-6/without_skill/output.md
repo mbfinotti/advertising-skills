@@ -1,6 +1,6 @@
 ## The framing is wrong — this isn't a manual-vs-automated fight
 
-Both camps are debating the bidding *mechanism*. The actual problem is the *optimization signal*. Automated bidding does exactly what you told it: get cheap form fills. It has no idea a form fill from a job seeker is worthless and one from a facilities director is worth $80K ARR. Manual bidding wouldn't fix that either — a human bidding manually on the same "form fill" goal, across the same broad keywords/placements, would drift toward the same junk traffic over time, just slower and more expensively. Reverting throws away a real 30% CPA gain to solve a problem manual bidding doesn't actually solve.
+Both camps are debating the bidding _mechanism_. The actual problem is the _optimization signal_. Automated bidding does exactly what you told it: get cheap form fills. It has no idea a form fill from a job seeker is worthless and one from a facilities director is worth $80K ARR. Manual bidding wouldn't fix that either — a human bidding manually on the same "form fill" goal, across the same broad keywords/placements, would drift toward the same junk traffic over time, just slower and more expensively. Reverting throws away a real 30% CPA gain to solve a problem manual bidding doesn't actually solve.
 
 ## What's really happening
 

@@ -1,14 +1,14 @@
 ## Sanity check: don't jump to $80K
 
-**The blended MER is the wrong number to justify this.** It's averaging in retention/email/branded spend that has nothing to do with prospecting's marginal economics. The number that matters here is what the *next dollar* of prospecting spend returns — and that number is deteriorating fast, hidden underneath a still-healthy average.
+**The blended MER is the wrong number to justify this.** It's averaging in retention/email/branded spend that has nothing to do with prospecting's marginal economics. The number that matters here is what the _next dollar_ of prospecting spend returns — and that number is deteriorating fast, hidden underneath a still-healthy average.
 
 ### What the trend actually shows
 
-| Month | Spend | Revenue | Cumulative MER | **Marginal MER (this month's added $ vs last)** |
-|---|---|---|---|---|
-| June | $40K | $122K | 3.05 | — |
-| July | $48K | $140K | 2.92 | (140-122)/(48-40) = **2.25** |
-| August | $56K | $152K | 2.71 | (152-140)/(56-48) = **1.50** |
+| Month  | Spend | Revenue | Cumulative MER | **Marginal MER (this month's added $ vs last)** |
+| ------ | ----- | ------- | -------------- | ----------------------------------------------- |
+| June   | $40K  | $122K   | 3.05           | —                                               |
+| July   | $48K  | $140K   | 2.92           | (140-122)/(48-40) = **2.25**                    |
+| August | $56K  | $152K   | 2.71           | (152-140)/(56-48) = **1.50**                    |
 
 Cumulative MER looks fine (3.05 → 2.92 → 2.71, still well above the 2.0 break-even). But the marginal MER — the return on each incremental $8K — has collapsed from 2.25 to 1.50 in one month. **1.50 is already below your 2.0 break-even.** August's last $8K of spend lost money on a pure MER basis; it's just being masked by the profitable spend that came before it.
 

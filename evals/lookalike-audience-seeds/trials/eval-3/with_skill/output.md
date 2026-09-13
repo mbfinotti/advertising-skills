@@ -4,12 +4,12 @@
 
 ### What's actually causing 9%, ranked by likely impact
 
-| # | Issue | Why it kills match rate |
-|---|---|---|
-| 1 | **Salted SHA-256 on emails before upload** | Meta hashes plaintext on ingest and compares hash-to-hash against its own index. A per-customer salt means your hash can never equal Meta's hash of the same email — not "worse," *impossible*, regardless of upload path (UI or API). This almost certainly zeroes out email as a matching identifier entirely. |
-| 2 | **Phone format `+44 07911 123456`** | Has spaces, a literal `+`, and a leading `0` retained after the country code. Meta wants E.164-style digits only, no `+`, no leading zero — e.g. `447911123456`. Malformed phones don't partially match; they mostly fail to normalize at all. |
-| 3 | **Mixed-case emails with trailing spaces** | Never normalized before hashing (lowercase + trim is required *before* the hash, otherwise the hash of `John@X.com ` ≠ hash of `john@x.com`). |
-| 4 | **~⅓ of rows from 2021–2022** | 3–5 years old. Contact data past 12–18 months measurably degrades match rate on its own, independent of the format issues above. |
+| #   | Issue                                      | Why it kills match rate                                                                                                                                                                                                                                                                                          |
+| --- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Salted SHA-256 on emails before upload** | Meta hashes plaintext on ingest and compares hash-to-hash against its own index. A per-customer salt means your hash can never equal Meta's hash of the same email — not "worse," _impossible_, regardless of upload path (UI or API). This almost certainly zeroes out email as a matching identifier entirely. |
+| 2   | **Phone format `+44 07911 123456`**        | Has spaces, a literal `+`, and a leading `0` retained after the country code. Meta wants E.164-style digits only, no `+`, no leading zero — e.g. `447911123456`. Malformed phones don't partially match; they mostly fail to normalize at all.                                                                   |
+| 3   | **Mixed-case emails with trailing spaces** | Never normalized before hashing (lowercase + trim is required _before_ the hash, otherwise the hash of `John@X.com ` ≠ hash of `john@x.com`).                                                                                                                                                                    |
+| 4   | **~⅓ of rows from 2021–2022**              | 3–5 years old. Contact data past 12–18 months measurably degrades match rate on its own, independent of the format issues above.                                                                                                                                                                                 |
 
 Given #1, your 9% is probably coming almost entirely from whatever fraction of the phone numbers happen to still parse despite the formatting problem — email is likely contributing close to nothing.
 
@@ -27,11 +27,11 @@ Re-upload after 1–4 and remeasure before touching rung 1 (enrichment).
 
 ### Expected outcome
 
-Meta's documented range for a clean list is **50–80% matched**; below 40% signals a poor/outdated list. Fenwright Home sounds like a genuine B2C customer file (real personal emails + mobile phones), not a B2B work-email list on a consumer platform — that's the one case where enrichment is the *only* rung that moves the needle. Nothing in what you've described points to that case. Fixing #1–#4 should land you solidly in Meta's normal range without spending on a vendor.
+Meta's documented range for a clean list is **50–80% matched**; below 40% signals a poor/outdated list. Fenwright Home sounds like a genuine B2C customer file (real personal emails + mobile phones), not a B2B work-email list on a consumer platform — that's the one case where enrichment is the _only_ rung that moves the needle. Nothing in what you've described points to that case. Fixing #1–#4 should land you solidly in Meta's normal range without spending on a vendor.
 
 ### When enrichment would actually be the right call
 
-Only if, after all four fixes, you're still stuck near single digits *and* the underlying problem is identifier scarcity (e.g., only email, no phone/name at all) rather than format/hashing. That's not what's described here — don't skip to it.
+Only if, after all four fixes, you're still stuck near single digits _and_ the underlying problem is identifier scarcity (e.g., only email, no phone/name at all) rather than format/hashing. That's not what's described here — don't skip to it.
 
 ### One thing to flag while you're in here
 

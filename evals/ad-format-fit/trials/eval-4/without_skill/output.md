@@ -6,6 +6,7 @@
 The hero video crushed it for three weeks. One format, two outcomes (one great, one bad) means the variable is the creative, not the format. "Format doesn't work" requires ruling out creative quality first — you haven't.
 
 **2. The new video's own numbers point to a specific, fixable failure — not a format failure.**
+
 - 3‑sec view rate 31% is actually fine — roughly in line with typical Meta/TikTok hook benchmarks (20–30%+). The hook is stopping thumbs.
 - Hold to 15s at 4% is the real signal: of people who watched 3 seconds, ~87% bailed before 15s. That's a **promise-payoff mismatch** — the hook sets up an expectation (curiosity, problem, visual) that the next 12 seconds don't deliver on. Classic causes: slow pacing after the cold open, branding/logo slammed in too early, message doesn't arrive until second 10+, or a jump-cut/tonal shift that breaks the hook's spell.
 - CTR 0.3% and near-zero purchases are downstream of that collapse — if 96% of people leave before 15s, there's barely anyone left to click. This is consistent with a broken middle, not a broken medium.

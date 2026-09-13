@@ -1,7 +1,8 @@
 Here's the ad copy, ready to plug into Ads Manager.
 
 ## LinkedIn Feed Ad (Single Image/Video)
-*Limits used: intro text ~150 characters before "see more" truncation (hard cap 600), headline ~70 characters (hard cap 200), description ~70 characters.*
+
+_Limits used: intro text ~150 characters before "see more" truncation (hard cap 600), headline ~70 characters (hard cap 200), description ~70 characters._
 
 **Variant A — pain-first hook**
 
@@ -23,7 +24,8 @@ Here's the ad copy, ready to plug into Ads Manager.
 ---
 
 ## Instagram Feed Ad
-*Limits used: primary text ~125 characters before "more" truncation (hard cap 2200), headline ~40 characters (shown below the image).*
+
+_Limits used: primary text ~125 characters before "more" truncation (hard cap 2200), headline ~40 characters (shown below the image)._
 
 **Variant A — pain-first hook**
 

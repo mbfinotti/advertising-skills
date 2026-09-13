@@ -11,16 +11,16 @@ I don't have the 30 call recordings/win-loss notes in front of me, so the commit
 
 ## 1. Buying Committee Map
 
-| Role | Who | Enters deal | Core question | Veto power | What kills the deal if mishandled | Proof they need |
-|---|---|---|---|---|---|---|
-| **Economic Buyer** | CFO (sometimes COO) | Should be month 1–2; often actually month 4+ | "What's the payback period and what's my risk if this fails?" | Yes — budget sign-off | Deal fizzles: no EB ever engaged, champion negotiating alone, no forcing deadline | ROI model tied to their own numbers, peer reference from a similar-size manufacturer |
-| **Champion / Initiator** | VP/Director Supply Chain or Planning | Month 0 | "Can I build a business case that survives the committee?" | No, but deal dies without one | Loses internal credibility if security/legal surprises appear late — you're currently doing this to them at month 5 | Internal business-case toolkit, ROI calculator, committee sign-off checklist |
-| **Security Reviewer** | CISO or delegated IT security lead | **Should be month 1; currently month 5** | "Does this vendor introduce risk I have to own?" | Yes — hard blocker, resets the clock | Late entry = re-litigating scope, timeline, sometimes price, after everyone else is already sold | SOC2 report, subprocessor list, architecture/data-flow diagram, pen-test summary |
-| **IT / Integration Owner** | ERP/IT architecture lead | Month 2–3 | "Does this fit our ERP and who maintains the integration?" | Soft veto (can stall indefinitely) | Ambiguity on integration effort surfaces late, adds unplanned IT budget ask | API docs, integration case study with similar ERP stack |
-| **End Users** | Planning managers/analysts | Month 2–4 | "Will this actually be usable day to day?" | No formal veto, but weak bottom-up validation reads as risk to the CFO | Champion can't point to user buy-in when challenged | Demo/sandbox access, workflow walkthrough |
-| **Procurement** | Procurement/sourcing lead | Month 4–5 | "Are terms competitive, is paper standard?" | Yes — can stall close indefinitely | Enters after security review reopens things, compounding delay | Standard MSA/DPA ready in advance, no surprises on contract terms |
-| **Legal** | Legal/compliance | Month 4–5 (should overlap with security, not follow it) | "Data residency, liability, export control exposure?" | Yes | Sequenced after security instead of parallel, adding weeks | DPA, data residency statement |
-| **Executive Sponsor** | CEO/COO on transformation-scale deals | Variable, often absent | "Does this matter to the business, not just to Ops?" | Tiebreaker on stalled deals | Absence is exactly why "no decision" deals fizzle — no one above the champion is accountable for a decision | Business case framed as strategic initiative, not a tool purchase |
+| Role                       | Who                                   | Enters deal                                             | Core question                                                 | Veto power                                                             | What kills the deal if mishandled                                                                                   | Proof they need                                                                      |
+| -------------------------- | ------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **Economic Buyer**         | CFO (sometimes COO)                   | Should be month 1–2; often actually month 4+            | "What's the payback period and what's my risk if this fails?" | Yes — budget sign-off                                                  | Deal fizzles: no EB ever engaged, champion negotiating alone, no forcing deadline                                   | ROI model tied to their own numbers, peer reference from a similar-size manufacturer |
+| **Champion / Initiator**   | VP/Director Supply Chain or Planning  | Month 0                                                 | "Can I build a business case that survives the committee?"    | No, but deal dies without one                                          | Loses internal credibility if security/legal surprises appear late — you're currently doing this to them at month 5 | Internal business-case toolkit, ROI calculator, committee sign-off checklist         |
+| **Security Reviewer**      | CISO or delegated IT security lead    | **Should be month 1; currently month 5**                | "Does this vendor introduce risk I have to own?"              | Yes — hard blocker, resets the clock                                   | Late entry = re-litigating scope, timeline, sometimes price, after everyone else is already sold                    | SOC2 report, subprocessor list, architecture/data-flow diagram, pen-test summary     |
+| **IT / Integration Owner** | ERP/IT architecture lead              | Month 2–3                                               | "Does this fit our ERP and who maintains the integration?"    | Soft veto (can stall indefinitely)                                     | Ambiguity on integration effort surfaces late, adds unplanned IT budget ask                                         | API docs, integration case study with similar ERP stack                              |
+| **End Users**              | Planning managers/analysts            | Month 2–4                                               | "Will this actually be usable day to day?"                    | No formal veto, but weak bottom-up validation reads as risk to the CFO | Champion can't point to user buy-in when challenged                                                                 | Demo/sandbox access, workflow walkthrough                                            |
+| **Procurement**            | Procurement/sourcing lead             | Month 4–5                                               | "Are terms competitive, is paper standard?"                   | Yes — can stall close indefinitely                                     | Enters after security review reopens things, compounding delay                                                      | Standard MSA/DPA ready in advance, no surprises on contract terms                    |
+| **Legal**                  | Legal/compliance                      | Month 4–5 (should overlap with security, not follow it) | "Data residency, liability, export control exposure?"         | Yes                                                                    | Sequenced after security instead of parallel, adding weeks                                                          | DPA, data residency statement                                                        |
+| **Executive Sponsor**      | CEO/COO on transformation-scale deals | Variable, often absent                                  | "Does this matter to the business, not just to Ops?"          | Tiebreaker on stalled deals                                            | Absence is exactly why "no decision" deals fizzle — no one above the champion is accountable for a decision         | Business case framed as strategic initiative, not a tool purchase                    |
 
 **The two failure modes mapped onto this table directly:**
 
@@ -43,29 +43,34 @@ I don't have the 30 call recordings/win-loss notes in front of me, so the commit
 Because this is 300 named accounts, paid media plays a support role at each stage of an ABM motion — it doesn't drive the motion. Countdown/urgency creative is used exactly once, in Phase 3, and only against a verified real deadline, not a manufactured one.
 
 ### Phase 0 — Committee intelligence (Weeks 1–3, before any ad spend)
+
 - Mine the 30 call recordings/win-loss notes against the committee map above: which roles were present/absent in wins vs. losses, when security actually entered each deal, whether an EB was ever named.
 - Segment the 300 accounts by likely committee shape (discrete vs. process manufacturing tends to differ on who owns security sign-off — IT vs. a dedicated CISO).
 - Output: a validated, evidence-backed version of the table above, plus a per-segment "who to find first" playbook for sales.
 
 ### Phase 1 — Pre-engagement trust building (all 300 accounts, top of funnel)
+
 - **Channel:** LinkedIn account-based ads targeting Champion + Economic Buyer titles at the 300 named accounts.
 - **Message:** category/ROI thought leadership. No urgency, no countdown — there's no relationship yet, so pressure reads as spam.
 - **Gating:** none. Security trust page (SOC2 badge, security overview, architecture summary) live and crawlable — this is the single highest-leverage move against the month-5 problem, because it lets a security reviewer self-serve before they're ever formally looped in.
 - **Success metric:** account-level engagement (site visits, security page views) from target accounts, not raw form fills.
 
 ### Phase 2 — Active opportunity enablement (accounts in open pipeline)
+
 - **Channel:** retargeting ads + direct outreach to named committee members.
 - **Champion track:** gated ROI calculator / internal business-case toolkit — legitimate value exchange with a known contact, progressive profiling not a cold form.
 - **Security-reviewer track, starting here (not month 5):** architecture whitepaper and compliance packet served directly once the reviewer is identified per the Stage 1 qualification rule above. Deeper technical doc can be lightly gated (known contact, one field); the core SOC2/subprocessor material stays ungated from Phase 1.
 - **Sales motion, not ads:** rep explicitly asks "who signs off on security" and "who owns budget" as qualification questions — this is the actual fix, ad spend just supports it.
 
 ### Phase 3 — Decision-forcing (accounts with a live proposal, confirmed EB engaged)
+
 - This is the only phase where urgency creative is appropriate, and it must be tied to a **real, confirmed deadline** — the account's own fiscal year-end or budget cycle, gathered from champion/EB conversations — never a generic countdown.
 - **Message to CFO:** cost-of-delay framed against their own numbers (from the ROI calculator they already used in Phase 2), tied to their actual budget cycle date.
 - **Message to security reviewer:** none — by this stage they should already be signed off from Phase 2. If they're not, that's a qualification failure, not a targeting opportunity.
 - **Gating:** none. This is one-to-one selling supported by ads, not lead capture — you already have every contact on the committee by this stage.
 
 ### Phase 4 — Stalled / no-decision recovery
+
 - Ads play a minor, warm-retargeting role only.
 - Primary motion: executive sponsor letter (your exec to their exec), re-qualification of whether an EB still exists and whether budget still exists.
 - **Trigger rule:** if a deal has had no committee movement in 45 days, it moves here automatically rather than staying in generic nurture — this directly targets the "embarrassing share that just fizzle out" problem by forcing an explicit re-qualify-or-close-lost decision instead of letting it drift.
@@ -75,6 +80,7 @@ Because this is 300 named accounts, paid media plays a support role at each stag
 ## 4. Gating policy (single rule, applies across all phases)
 
 Gate by **funnel depth and relationship**, never by role:
+
 - Top-of-funnel trust content (security overview, SOC2 summary) — **always ungated**. This is the direct fix for the month-5 blowup.
 - Mid-funnel tools with a known contact (ROI calculator, benchmark report) — **gated with progressive profiling**, not a fresh form every time.
 - Late-funnel — **no gates**. By Phase 3 you have the full committee identified; a form at this stage only adds friction to people you already know.

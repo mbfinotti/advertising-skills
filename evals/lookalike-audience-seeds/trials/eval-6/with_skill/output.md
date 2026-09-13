@@ -23,6 +23,7 @@ Meta lookalikes are country-scoped by construction — there's no such thing as 
 - Floor is 100 matched. **This fails even in the optimistic case**, and it fails the 1,000–5,000 recommended range badly.
 
 Fallback ladder, walked in order:
+
 - **Rung 1 (enrich):** delete it — a vendor contract and DPA for 120 customers in one market isn't proportionate, and you're a solo operator with no procurement bandwidth.
 - **Rung 2 (widen recency):** empty — 120 is already your entire Swedish customer base, there's no older cohort to add.
 - **Rung 3 (stack adjacent segment):** the one real lever — don't split Sweden by product line at all, keep furniture+lighting combined for SE only. It still likely lands under 100 matched, so it delays the failure, doesn't fix it.
@@ -34,14 +35,15 @@ Fallback ladder, walked in order:
 
 The skill's own guidance: "two splits is fine, six is a part-time job nobody was assigned," and refresh here is manual ("whenever I remember") — no automated sync, no second person. Reconciling that against your ask:
 
-| Split | Recommendation | Why |
-|---|---|---|
-| Country | **Do it — mandatory** | Not optional; lookalikes are country-scoped |
-| Product line (furniture/lighting) | **Phase 2, not launch** | Real signal value, but doubles your audience count (4 countries × 2 = 8) and doubles refresh load on day one |
-| High-AOV | **A one-time split test, not a standing audience** | Run it once the country seeds are live and stable, keep whichever wins, don't run both permanently |
-| Language | **Drop it** | Your five markets already map ~1:1 to language; it duplicates the country split for no new signal |
+| Split                             | Recommendation                                     | Why                                                                                                          |
+| --------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Country                           | **Do it — mandatory**                              | Not optional; lookalikes are country-scoped                                                                  |
+| Product line (furniture/lighting) | **Phase 2, not launch**                            | Real signal value, but doubles your audience count (4 countries × 2 = 8) and doubles refresh load on day one |
+| High-AOV                          | **A one-time split test, not a standing audience** | Run it once the country seeds are live and stable, keep whichever wins, don't run both permanently           |
+| Language                          | **Drop it**                                        | Your five markets already map ~1:1 to language; it duplicates the country split for no new signal            |
 
 **Staged rollout:**
+
 1. **Now:** 4 country lookalikes (DE, FR, NL, UK) from combined furniture+lighting seeds, Sweden excluded per above. This is the "one splits" tier — sustainable manually.
 2. **Once refresh is reliably happening on schedule:** add the product-line split (8 audiences total). Don't add it before the cadence is proven, or you'll be maintaining 8 stale lists instead of 4 fresh ones.
 3. **Separately, once the country seeds have a cohort's worth of data:** run the high-AOV split as a test against the full-country seed for one market, not all four at once. If it's a real change (a different model, a retired seed version), it's expensive enough to consider a geo holdout rather than a same-platform split test.

@@ -4,11 +4,11 @@ Funnel: B2B lead gen. Launch: hard, T-9 days. Dev: unavailable until next quarte
 
 ## Fix these 3, in this order, before launch
 
-| # | Defect | Fix | Impact | Effort |
-|---|--------|-----|--------|--------|
-| 1 | (b) Lead action counts "every" instead of once per click | Flip counting method to "one" on that conversion action | High | Near-zero — one setting |
-| 2 | (c) Internal traffic filter stuck in "testing" | Flip filter state from testing → active | Medium | Near-zero — one toggle |
-| 3 | (a) Lead tag fires on every page load, not just submission | Re-trigger the tag in the tag manager on the actual submit/success event | Critical | ~1 hour — no dev needed |
+| #   | Defect                                                     | Fix                                                                      | Impact   | Effort                  |
+| --- | ---------------------------------------------------------- | ------------------------------------------------------------------------ | -------- | ----------------------- |
+| 1   | (b) Lead action counts "every" instead of once per click   | Flip counting method to "one" on that conversion action                  | High     | Near-zero — one setting |
+| 2   | (c) Internal traffic filter stuck in "testing"             | Flip filter state from testing → active                                  | Medium   | Near-zero — one toggle  |
+| 3   | (a) Lead tag fires on every page load, not just submission | Re-trigger the tag in the tag manager on the actual submit/success event | Critical | ~1 hour — no dev needed |
 
 Why this order and not impact order: settings-class toggles (1, 2) clear before trigger corrections (3) even though (3) is more severe — same near-zero effort tier goes first, then the one-hour fix. Do 2 before... 1 before 2 by impact (High beats Medium) within the same near-zero tier.
 

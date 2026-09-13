@@ -8,7 +8,7 @@ That "kill at 3.0" number is folklore, not a platform rule — Ben Heath's own d
 
 ## What your actual response signals say
 
-- **Link CTR: 1.24% vs 1.21% trailing month → +2.5%.** That's *up*, not decaying. The leading signal that should move first in true fatigue hasn't moved against it.
+- **Link CTR: 1.24% vs 1.21% trailing month → +2.5%.** That's _up_, not decaying. The leading signal that should move first in true fatigue hasn't moved against it.
 - **CVR: 3.1% vs 3.2% → -3%.** Directionally flat; almost certainly inside noise, though I can't confirm without your impression/click volume.
 - **CPA: +~4%.** Modest, and fully explainable by normal auction movement (CPM drift) given CTR and CVR are essentially flat — this is not the "costs rise while CVR holds and CTR falls" fatigue signature.
 
@@ -71,4 +71,4 @@ re-check      : 2026-09-19 (one week out - your video runs fast on cold traffic,
 4. **Check if Meta's own "Creative fatigue" / "Creative limited" delivery status is firing** on this ad — if it is, that's a backstop confirming signal (though by the time it fires you're already late).
 5. **Re-check in ~1 week** with a real two-period, day-matched comparison. If hook rate has decayed while hold rate held, that's a hook-swap problem, not a full-creative-replacement problem, and would change what you ship next.
 
-If it turns out the new video *does* outperform on the same audience, you've validated the swap with real data instead of a frequency number, and you can retire the old one without wondering later if you killed a healthy ad. Producing the replacement asset itself is outside this skill — that's `ad-copy-variants` / `ugc-ad-scripts` territory — but you already have that in hand, which is exactly why the "run it as a challenger, not a replacement" move costs you nothing.
+If it turns out the new video _does_ outperform on the same audience, you've validated the swap with real data instead of a frequency number, and you can retire the old one without wondering later if you killed a healthy ad. Producing the replacement asset itself is outside this skill — that's `ad-copy-variants` / `ugc-ad-scripts` territory — but you already have that in hand, which is exactly why the "run it as a challenger, not a replacement" move costs you nothing.

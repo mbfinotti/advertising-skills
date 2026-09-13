@@ -1,6 +1,6 @@
 ## Two questions, one root cause
 
-Both worries come from the same place: you're benchmarking yourself against the *manual* parts of the job, and those are exactly the parts disappearing. Once you re-anchor on what's actually scarce, the automation question and the DTC question answer each other.
+Both worries come from the same place: you're benchmarking yourself against the _manual_ parts of the job, and those are exactly the parts disappearing. Once you re-anchor on what's actually scarce, the automation question and the DTC question answer each other.
 
 I don't have your seniority level, geography, or whether you currently hold budget/forecast ownership — I'm flagging assumptions inline below rather than stopping to ask, since you want the full deliverable now. Correct anything that's wrong and I'll re-cut it.
 
@@ -9,23 +9,26 @@ I don't have your seniority level, geography, or whether you currently hold budg
 No — and doubling down on it is the wrong bet. The role is shifting "from keyword manager to system optimizer" (Search Engine Land, 3 June 2026): upstream in the inputs, mid-campaign in the signals, downstream in the measurement.
 
 **Commoditised — don't build a career case on these:**
+
 - Keyword-by-keyword bidding, manual audience building, manual bid adjustments, routine reporting assembly.
 - Concretely, for you: hand-tuned LinkedIn bid caps and Google Search manual CPC are being absorbed by Predictive Audiences/CBO and Smart Bidding/PMax. That absorption is the reason the role feels precarious — it's correctly reading the signal, wrongly diagnosing the fix.
 
 **Appreciating — build here instead:**
+
 - Creative strategy and testing (practitioner consensus: no AI replacement yet).
 - Measurement and incrementality.
 - First-party data and feed/catalogue work.
 - AI-creative and prompt workflows.
-- System judgment — knowing what the automated system *should* be doing and whether it is.
+- System judgment — knowing what the automated system _should_ be doing and whether it is.
 
 **Which one first** (effort measured in years/hours/reversibility, never money):
-- *Fastest to pick up:* AI-creative workflows (an evening) → feed/catalogue work (a week) → creative testing (a quarter of live tests) → measurement/incrementality (needs a seat with spend to hold a geo out) → system judgment (years).
-- *Most durable payoff:* creative strategy/testing → measurement/incrementality → system judgment → feed/catalogue work → AI-creative workflows.
 
-These contradict on purpose: the cheap skill commoditises fastest too. Given you're holding both a near-term signal (the recruiter conversation) and a long-term worry (three years), split it: lean on AI-creative/prompt fluency as the thing you can credibly claim in a conversation this quarter, but commit your actual study hours to creative strategy and testing — it's both the highest-durability appreciating skill *and* the exact gap a DTC move exposes (see below). That's not a coincidence; it's why this is the right first bet for you specifically.
+- _Fastest to pick up:_ AI-creative workflows (an evening) → feed/catalogue work (a week) → creative testing (a quarter of live tests) → measurement/incrementality (needs a seat with spend to hold a geo out) → system judgment (years).
+- _Most durable payoff:_ creative strategy/testing → measurement/incrementality → system judgment → feed/catalogue work → AI-creative workflows.
 
-**One thing to strike from your vocabulary before any interview:** third-party cookies are not being deprecated in Chrome. Google confirmed this on 22 April 2025, after announcing it on 22 July 2024. A lot of career content still asserts the opposite, and repeating it dates a candidate faster than any DTC-knowledge gap would. What *did* durably break attribution is Apple's ATT (2021) — that's why senior conversations run on blended MER and CAC payback rather than platform-reported ROAS. If you can explain *that* divergence, you're already past where "found out" fear thinks you are.
+These contradict on purpose: the cheap skill commoditises fastest too. Given you're holding both a near-term signal (the recruiter conversation) and a long-term worry (three years), split it: lean on AI-creative/prompt fluency as the thing you can credibly claim in a conversation this quarter, but commit your actual study hours to creative strategy and testing — it's both the highest-durability appreciating skill _and_ the exact gap a DTC move exposes (see below). That's not a coincidence; it's why this is the right first bet for you specifically.
+
+**One thing to strike from your vocabulary before any interview:** third-party cookies are not being deprecated in Chrome. Google confirmed this on 22 April 2025, after announcing it on 22 July 2024. A lot of career content still asserts the opposite, and repeating it dates a candidate faster than any DTC-knowledge gap would. What _did_ durably break attribution is Apple's ATT (2021) — that's why senior conversations run on blended MER and CAC payback rather than platform-reported ROAS. If you can explain _that_ divergence, you're already past where "found out" fear thinks you are.
 
 ## 2. Can you make the B2B → DTC jump, and is "Head of Performance" real?
 
@@ -56,6 +59,7 @@ If both are yes, the recruiter conversation is a lateral-seniority move with a c
 4. **Benchmark-to-change-course:** if budget/forecast ownership isn't granted in your current role within this window, treat that as the signal the senior track is blocked where you are — and re-weight toward taking the external move rather than waiting.
 
 **Pay anchors, dated and graded — geography unknown, so both markets, don't average them:**
+
 - UK, survey-grade: Marketing Week 2026 Career & Salary Survey (2,350 respondents, 16 Apr 2026) — CMO/Director/VP £111,082, down from £117,623 in 2025. Read the decline as real, not a data blip.
 - US, aggregate: Growth.Talent benchmark (refreshed 12 Aug 2026) puts Head of Growth at $180,000–$280,000 base plus equity; Seed-to-Series-A specifically, $130,000–$180,000 with 0.5–1.5% equity.
 - DTC brands often weight bonus/revenue-share differently than B2B SaaS equity — get the full comp structure, not just base, before comparing it to what you have now.

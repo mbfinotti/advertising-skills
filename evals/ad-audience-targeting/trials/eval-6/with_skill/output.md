@@ -28,10 +28,10 @@ ICP evidence for now rests on your own sales-defined titles and the account's li
 
 ## 3. Tier table
 
-| Tier | Defining signal (evidence) | Est. size | Exclusions applied | Budget | Success criterion |
-|---|---|---|---|---|---|
-| **Target-account list** (cold/prospecting, consolidated) | Matched company list of the 600 health systems + function (supply chain/procurement) + seniority (Director+) overlay, Audience Expansion **off** | ~24,000 minus exclusions (net TBD pending customer count) | E1, E2, E3, E4 | $240/day (~$7,200/mo, 80%) | Proxy-event CPA ≤ ~$34 (floor math below); demo CPA tracked as true KPI, not optimized to directly yet |
-| **Retargeting pool** | Site visitors + LinkedIn page/content engagers, warm | Unknown — verify against Insight Tag data; likely thin for a niche B2B audience this size | E1, E2, E3 | $60/day (~$1,800/mo, 20%) | Cost/demo watched directly, not forced through the 50/week learning floor |
+| Tier                                                     | Defining signal (evidence)                                                                                                                       | Est. size                                                                                 | Exclusions applied | Budget                     | Success criterion                                                                                      |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | ------------------ | -------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Target-account list** (cold/prospecting, consolidated) | Matched company list of the 600 health systems + function (supply chain/procurement) + seniority (Director+) overlay, Audience Expansion **off** | ~24,000 minus exclusions (net TBD pending customer count)                                 | E1, E2, E3, E4     | $240/day (~$7,200/mo, 80%) | Proxy-event CPA ≤ ~$34 (floor math below); demo CPA tracked as true KPI, not optimized to directly yet |
+| **Retargeting pool**                                     | Site visitors + LinkedIn page/content engagers, warm                                                                                             | Unknown — verify against Insight Tag data; likely thin for a niche B2B audience this size | E1, E2, E3         | $60/day (~$1,800/mo, 20%)  | Cost/demo watched directly, not forced through the 50/week learning floor                              |
 
 Rows sit in efficiency order (retargeting > cold prospecting), with budget weighted the opposite way — prospecting gets the larger share because it's the slower, less efficient signal that needs the volume to say anything. This is the same pattern as any B2B plan in this posture, not a re-rank.
 
@@ -61,12 +61,12 @@ For context: your current $9,000/month against 3 demos/week (~13/month) works ou
 
 ## 5. Exclusion matrix
 
-| List | Source | Applied to |
-|---|---|---|
-| E1 Current customers | Customer list upload, refreshed monthly | All funded tiers |
-| E2 Employees + known competitors | Company exclusion list | All funded tiers |
-| E3 Recent demo requesters, 90 days | CRM upload, weekly | All funded tiers (don't re-solicit a warm lead as cold) |
-| E4 Retargeting pool | First-party audience | Prospecting tier only (higher-intent tier suppressed from the lower-intent one) |
+| List                               | Source                                  | Applied to                                                                      |
+| ---------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------- |
+| E1 Current customers               | Customer list upload, refreshed monthly | All funded tiers                                                                |
+| E2 Employees + known competitors   | Company exclusion list                  | All funded tiers                                                                |
+| E3 Recent demo requesters, 90 days | CRM upload, weekly                      | All funded tiers (don't re-solicit a warm lead as cold)                         |
+| E4 Retargeting pool                | First-party audience                    | Prospecting tier only (higher-intent tier suppressed from the lower-intent one) |
 
 Re-check both tiers' post-exclusion size against LinkedIn's 300-member floor once the customer count and site-traffic volume are known — this is the first thing to verify before spend goes live, not after.
 

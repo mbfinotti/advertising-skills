@@ -4,7 +4,7 @@
 
 ### Why geo-lift + retargeting is the wrong combination
 
-Geo-lift works by turning ads off in some regions (DMAs) and comparing sales trends against regions where ads stay on. It's designed for channels you can independently control *by geography and reach broadly* — prospecting, YouTube, podcast, OOH, direct mail. Retargeting doesn't fit that shape: it targets a specific pool of people who already visited your site (via pixel/cookie match), not a geography. You can't meaningfully "hold out a region" from a pixel-matched audience — the audience *is* the targeting logic, not the map. The standard incrementality method for retargeting is a **user-level holdout** (a % of the pixel-matched audience gets no ads, or gets PSA/ghost ads), not a geo experiment. Meta calls this a Conversion Lift study; it's the tool for this job, not geo-lift.
+Geo-lift works by turning ads off in some regions (DMAs) and comparing sales trends against regions where ads stay on. It's designed for channels you can independently control _by geography and reach broadly_ — prospecting, YouTube, podcast, OOH, direct mail. Retargeting doesn't fit that shape: it targets a specific pool of people who already visited your site (via pixel/cookie match), not a geography. You can't meaningfully "hold out a region" from a pixel-matched audience — the audience _is_ the targeting logic, not the map. The standard incrementality method for retargeting is a **user-level holdout** (a % of the pixel-matched audience gets no ads, or gets PSA/ghost ads), not a geo experiment. Meta calls this a Conversion Lift study; it's the tool for this job, not geo-lift.
 
 ### Why geo-lift doesn't work yet regardless of channel
 
@@ -16,12 +16,12 @@ The traffic side is worse. 900 visits/month is roughly 600-700 unique visitors. 
 
 ### Budget split for $6K/month
 
-| Bucket | $/mo | Why |
-|---|---|---|
-| Prospecting (Meta + Google, broad/interest/lookalike) | $4,000 (67%) | At this traffic level, growing the top of funnel *is* the retargeting strategy — it's what grows the pool you'll retarget later. |
-| Paid retargeting (Meta DPA + Google Display/YouTube remarketing) | $1,000 (17%) | More than this is wasted — you don't have enough people to absorb it without frequency fatigue. |
-| Creative production / testing reserve | $600 (10%) | Small pool = creative burns out fast; budget to refresh it monthly. |
-| Pinterest test | $400 (7%) | Handmade lighting is a visually-led, high-intent-shopping niche; Pinterest CPMs are typically cheap here and it doubles as prospecting + retargeting. Worth a real test, not just Meta/Google by default. |
+| Bucket                                                           | $/mo         | Why                                                                                                                                                                                                       |
+| ---------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Prospecting (Meta + Google, broad/interest/lookalike)            | $4,000 (67%) | At this traffic level, growing the top of funnel _is_ the retargeting strategy — it's what grows the pool you'll retarget later.                                                                          |
+| Paid retargeting (Meta DPA + Google Display/YouTube remarketing) | $1,000 (17%) | More than this is wasted — you don't have enough people to absorb it without frequency fatigue.                                                                                                           |
+| Creative production / testing reserve                            | $600 (10%)   | Small pool = creative burns out fast; budget to refresh it monthly.                                                                                                                                       |
+| Pinterest test                                                   | $400 (7%)    | Handmade lighting is a visually-led, high-intent-shopping niche; Pinterest CPMs are typically cheap here and it doubles as prospecting + retargeting. Worth a real test, not just Meta/Google by default. |
 
 Email/SMS (Klaviyo or similar) isn't in the media budget but is the highest-leverage "retargeting" channel you have at this scale — it's nearly free, isn't capped by minimum audience thresholds, and directly reaches cart-abandoners. Set up before any paid retargeting: welcome flow, browse-abandon, cart-abandon, post-purchase/replenishment. This will outperform paid retargeting per dollar until your pixel pool is much bigger.
 

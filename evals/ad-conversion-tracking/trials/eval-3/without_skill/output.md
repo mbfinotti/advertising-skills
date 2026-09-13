@@ -6,6 +6,7 @@
 
 **Backend (502) → GA4 (486): ~3.2% missing. This one is healthy, don't chase it.**
 Causes, roughly in order of likely impact:
+
 - Consent Mode denials (GDPR/CCPA "reject") — no cookies, no GA4 hit, purchase still completes and hits backend. Unfixable by design, and expected.
 - Purchases via iOS in-app browsers (Instagram/FB in-app WebView) where gtag often fails to fire.
 - Ad blockers / ITP stripping the GA4 tag.
@@ -31,13 +32,14 @@ This gap is almost never "tracking is broken" — it's usually one of these:
 3. **Pull a live session through DebugView**: click a real Google Ad, complete a real purchase, and verify the gclid survives every redirect/domain hop to the confirmation page. This single test usually reveals cross-domain breakage immediately.
 4. **Check Ads' conversion diagnostics** (Tools → Conversions → diagnostics) for Enhanced Conversions match rate and for "modeled vs observed" split under Consent Mode.
 5. **Re-pull the Ads number in 5–7 days** on the same soft-launch window to see how much the gap closes from modeling backfill alone.
-6. **Set up Offline Conversion Import** from your backend (matched on gclid + order ID) as a third, independent Ads-side data source. It'll show you the "true" number Ads *can* attribute once cross-domain and consent issues are fixed, and becomes your ongoing reconciliation tool post-launch.
+6. **Set up Offline Conversion Import** from your backend (matched on gclid + order ID) as a third, independent Ads-side data source. It'll show you the "true" number Ads _can_ attribute once cross-domain and consent issues are fixed, and becomes your ongoing reconciliation tool post-launch.
 
 ## What to tell your CMO
 
 Perfect 1:1 parity across backend, GA4, and Google Ads is not a realistic bar — it doesn't happen even in mature, well-instrumented ecommerce stacks, because the three systems measure fundamentally different things (server truth vs. client-side session vs. ad-attributed and partly modeled conversions). A 3% backend-to-GA4 gap is healthy. A 15% GA4-to-Ads gap is worth explaining, but the right test isn't "do the numbers match" — it's "can we explain the gap by attribution model + consent modeling, or is it real tracking loss (cross-domain, missing gclid)."
 
 Recommend replacing the "all three match" gate with two concrete checks before scaling:
+
 - GA4 vs. backend stays within ~5%.
 - The GA4-to-Ads gap is fully accounted for by (a) GA4's attribution crediting those purchases to non-Ads channels and (b) Consent Mode modeling lag — verified via the DebugView test in step 3, not just assumed.
 

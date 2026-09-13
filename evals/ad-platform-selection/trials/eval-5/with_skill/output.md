@@ -7,7 +7,7 @@
 Run the numbers against the B2B-professional-networks gate:
 
 - **Spend rate**: $3K over 3 weeks ≈ $4,300/month pace — under the "don't run pipeline tests below ~$5,000/month" floor. This test was never funded to produce a real signal.
-- **Duration**: 3 weeks vs. the ~3-month commitment norm for this family, and against a 4-month sales cycle. This is the textbook false-negative trap: *"a test shorter than the sales cycle reads as zero lift even when the channel works... never judge before one full cycle has elapsed."* 3 weeks against a 4-month cycle is an extreme mismatch, not a marginal one.
+- **Duration**: 3 weeks vs. the ~3-month commitment norm for this family, and against a 4-month sales cycle. This is the textbook false-negative trap: _"a test shorter than the sales cycle reads as zero lift even when the channel works... never judge before one full cycle has elapsed."_ 3 weeks against a 4-month cycle is an extreme mismatch, not a marginal one.
 - **Sample size**: 2 MQLs total. The realistic signal threshold for this family is 15-25 conversions/month. 2 leads over 3 weeks isn't a readable sample in either direction — it's noise.
 - **What the number actually says**: $3,000 / 2 MQLs = $1,500 CPL, against a typical benchmark of ~$110. That's a real anomaly worth diagnosing (audience sized outside the 5,000-50,000 working range, weak creative, wrong titles) — but it's an execution signal, not evidence the channel is dead. You killed it on the wrong axis.
 
@@ -15,7 +15,7 @@ Economics were never the problem here, whatever your exact margin turns out to b
 
 ## 2. The search reallocation is built on the exact bias this framework warns about
 
-*"Platform-reported attribution systematically over-credits capture channels and undercounts creation channels — last-click favors the channels people pass through when already ready to buy."* That's precisely what "9 of 11 closed-won deals as last-click" is measuring. For a $60K ACV, 4-month, presumably-committee sale, the realistic path is: someone finds Ferrostat via LinkedIn/content/referral weeks or months earlier, then does one final high-intent branded Google search right before booking a demo. Last-click hands 100% of the credit to that final search and erases everything upstream — including the exact touch you just killed. Moving the whole budget to search on this evidence is the failure mode named directly in this framework: *"reading attribution artefacts as performance — over-crediting capture, then over-funding it."*
+_"Platform-reported attribution systematically over-credits capture channels and undercounts creation channels — last-click favors the channels people pass through when already ready to buy."_ That's precisely what "9 of 11 closed-won deals as last-click" is measuring. For a $60K ACV, 4-month, presumably-committee sale, the realistic path is: someone finds Ferrostat via LinkedIn/content/referral weeks or months earlier, then does one final high-intent branded Google search right before booking a demo. Last-click hands 100% of the credit to that final search and erases everything upstream — including the exact touch you just killed. Moving the whole budget to search on this evidence is the failure mode named directly in this framework: _"reading attribution artefacts as performance — over-crediting capture, then over-funding it."_
 
 There's also an 11-deal sample size here — thin enough that "9 of 11" could reasonably read differently at 20 or 30 deals.
 

@@ -11,14 +11,15 @@ Mixing all three concepts into every ad set feels "fair" but it destroys the one
 
 **One ad set per concept**, not one of-each-type per ad set:
 
-| Ad set | Ads | Budget (ABO) |
-|---|---|---|
-| Movie night | 3 variations | $220/day |
-| Wake up naturally | 4 variations | $220/day |
-| Security / away mode | 2 variations | $220/day |
+| Ad set               | Ads          | Budget (ABO) |
+| -------------------- | ------------ | ------------ |
+| Movie night          | 3 variations | $220/day     |
+| Wake up naturally    | 4 variations | $220/day     |
+| Security / away mode | 2 variations | $220/day     |
 
 Rules to keep it a real test:
-- **Same audience, placements, optimization event, and CTA across all three ad sets.** Concept is the only thing that should differ. If you use interest/lookalike targeting, use the *same* audience in all three — don't let ad set 1 target one audience and ad set 3 another, or you're testing audience, not creative.
+
+- **Same audience, placements, optimization event, and CTA across all three ad sets.** Concept is the only thing that should differ. If you use interest/lookalike targeting, use the _same_ audience in all three — don't let ad set 1 target one audience and ad set 3 another, or you're testing audience, not creative.
 - **Use ABO (ad set budget), not CBO.** You've already specified $220/day per ad set — stick to that. CBO would let Meta reallocate budget across ad sets mid-test and cannibalize your ability to compare concepts cleanly.
 - **Avoid audience overlap between the three ad sets.** If they can bid against each other in the same auction, delivery and CPA get distorted for reasons that have nothing to do with creative quality.
 - Treat ad-level results (which of the 3/4/2 variations wins) as **secondary/directional**, not the primary readout — especially in the "wake up naturally" ad set, where 4 ads splitting one ad set's budget means less volume per ad than in the security ad set's 2.
@@ -37,6 +38,7 @@ Replace `tindra_final_v2_new1.mp4` with something that survives being seen out o
 ```
 tindra_<concept-code>_<variant>_<yyyymmdd>.mp4
 ```
+
 Examples: `tindra_movienight_v1_20260912.mp4`, `tindra_wakeup_v3_20260912.mp4`, `tindra_security_v2_20260912.mp4`
 
 Concept codes: `movienight`, `wakeup`, `security`. Keep ad names in Ads Manager matching this scheme so a breakdown by ad name doubles as a breakdown by concept — you shouldn't need to open the creative to know what you're looking at.

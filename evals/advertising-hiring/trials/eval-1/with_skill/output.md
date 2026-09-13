@@ -4,7 +4,7 @@
 
 You asked for requirements on a Meta media buyer. I'm not writing that req. Walking through this skill's rung logic, your situation maps almost exactly onto its documented mis‑hire pattern:
 
-> *"First hire runs one channel well but tracking never gets built | Channel specialist hired for a first‑hire generalist brief | Rerun the rung decision — the first hire owns measurement and channel choice."*
+> _"First hire runs one channel well but tracking never gets built | Channel specialist hired for a first‑hire generalist brief | Rerun the rung decision — the first hire owns measurement and channel choice."_
 
 Three facts push this off the Meta‑specialist track and onto **performance marketer**:
 
@@ -12,16 +12,17 @@ Three facts push this off the Meta‑specialist track and onto **performance mar
 2. **You're going to 3 channels next quarter, not staying at 1.** Meta + Google + TikTok. A Meta specialist leaves Google's 30% and the TikTok launch either unowned or back on your plate — the opposite of what you said you want.
 3. **"Conversion tracking is mostly right, I think — never reconciled against Shopify" is the single biggest red flag in this packet.** That's not a footnote, it's a gating condition: nobody should get spend authority against numbers nobody has validated.
 
-The $80k/month spend *does* clear this skill's ~$50k/month breakpoint where a dedicated Meta buyer starts paying for themselves — but that condition **adds a buyer alongside an existing generalist**, it doesn't replace one on a first hire. Correct sequencing: hire the performance marketer now; once measurement is owned and three channels are stable, a dedicated Meta buyer becomes a well‑justified *second* hire, not your first. I've flagged that as the deliberate next move, not a rejected idea.
+The $80k/month spend *does* clear this skill's ~$50k/month breakpoint where a dedicated Meta buyer starts paying for themselves — but that condition **adds a buyer alongside an existing generalist**, it doesn't replace one on a first hire. Correct sequencing: hire the performance marketer now; once measurement is owned and three channels are stable, a dedicated Meta buyer becomes a well‑justified _second_ hire, not your first. I've flagged that as the deliberate next move, not a rejected idea.
 
 **Gate check (should you hire at all):** budget is far above the $5k/month don't‑hire floor, fundamentals are plainly in place at $9M/year, and you explicitly want compounding capability, not a one‑off fix. Gate passes — proceed to hire, in‑house, permanent.
 
 **Assumptions/gaps I filled in rather than pausing on** (correct any of these and the packet below shifts):
+
 - Company headcount/stage: not stated — assumed lean team (founder still runs paid media personally), doesn't materially change this packet.
 - 12‑month spend target: not stated — assumed continued growth past $80k/month as TikTok comes online; comp banding below reflects that.
 - Candidate pool skew (agency vs. brand‑trained): not stated — loop below screens for it either way.
 - Paid‑trial budget/approval: not mentioned — **deleted from the work‑sample menu by name**, not ranked last (see Work Sample).
-- "Producing this quarter" vs. TikTok "next quarter": read literally, Q3 2026 has ~2 weeks left — not enough runway for hire + ramp. I've treated "this quarter" as *start hiring now, first contained win inside 30 days of start*, and flagged the compression risk below rather than silently absorbing it.
+- "Producing this quarter" vs. TikTok "next quarter": read literally, Q3 2026 has ~2 weeks left — not enough runway for hire + ramp. I've treated "this quarter" as _start hiring now, first contained win inside 30 days of start_, and flagged the compression risk below rather than silently absorbing it.
 
 ---
 
@@ -38,6 +39,7 @@ Not a media buyer: nobody owns measurement yet, and the funnel can't be called "
 **Mission:** Own paid media performance and measurement truth across Meta, Google, and TikTok — from validated tracking to a defensible ROAS/MER read the founder can trust without checking it themselves.
 
 **Outcomes (ranked, dated from start date — flag the Q3 compression to the candidate up front):**
+
 1. Platform‑vs‑Shopify revenue reconciliation documented and conversion tracking validated, by **day 30**.
 2. TikTok stood up (tracking, first campaigns live, creative‑testing cadence started) and Meta/Google creative‑testing cadence running with win/loss documentation, by **day 60**.
 3. Blended MER held at or above an agreed break‑even floor while total spend scales toward the 12‑month target, by **day 120** — deliberately past day 90, because learning phases and attribution validation don't resolve faster than that regardless of skill.
@@ -47,7 +49,8 @@ Not a media buyer: nobody owns measurement yet, and the funnel can't be called "
 ## 3. Requirements
 
 **Must‑haves (6):**
-- 4+ years running paid social *and* paid search, with demonstrated ownership of measurement/attribution — not pure execution (screened via the two senior filters below, not by resume claim).
+
+- 4+ years running paid social _and_ paid search, with demonstrated ownership of measurement/attribution — not pure execution (screened via the two senior filters below, not by resume claim).
 - Has personally reconciled platform‑reported revenue against backend order data (Shopify or equivalent) on at least one past account.
 - Has managed $50k–$250k/month across 2+ concurrent channels — this figure is a **filter, never a level**, and never asked without the kill‑decision + incrementality pairing below.
 - Has stood up or scaled a channel from zero (maps directly to your TikTok launch).
@@ -66,20 +69,21 @@ Best available source: Take Some Risk / Duane Brown anonymous PPC salary survey,
 
 ## 5. Stage map — 2 rounds, panel = founder + head of ops
 
-| Stage | Length | Owner | Competencies owned |
-|---|---|---|---|
-| **Round 1 — Screen** | 30–45 min | Head of ops | Context/fit, 2 exaggerator probes, spend‑under‑management filter paired with kill‑decision + incrementality probe, 1 named situational (attribution‑understanding evolution) |
-| **Round 2a — Live audit** | 45–60 min | Founder (you've run this account) | Cross‑channel media judgment: live screen‑share audit of a **sanitized copy** of the Meta account |
-| **Round 2b — Data‑table case** | 20–30 min | Head of ops (answer key pre‑built) | Cross‑/new‑channel reasoning: synthetic TikTok‑launch performance table, weeks 1–4, with a deliberately missing attribution‑window note |
-| **Round 2c — Senior filters + close** | 15–20 min | Founder | Measurement/commercial judgment (the two senior filters), 5‑year commitment question |
+| Stage                                 | Length    | Owner                              | Competencies owned                                                                                                                                                           |
+| ------------------------------------- | --------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Round 1 — Screen**                  | 30–45 min | Head of ops                        | Context/fit, 2 exaggerator probes, spend‑under‑management filter paired with kill‑decision + incrementality probe, 1 named situational (attribution‑understanding evolution) |
+| **Round 2a — Live audit**             | 45–60 min | Founder (you've run this account)  | Cross‑channel media judgment: live screen‑share audit of a **sanitized copy** of the Meta account                                                                            |
+| **Round 2b — Data‑table case**        | 20–30 min | Head of ops (answer key pre‑built) | Cross‑/new‑channel reasoning: synthetic TikTok‑launch performance table, weeks 1–4, with a deliberately missing attribution‑window note                                      |
+| **Round 2c — Senior filters + close** | 15–20 min | Founder                            | Measurement/commercial judgment (the two senior filters), 5‑year commitment question                                                                                         |
 
 Rounds 2a–2c run back‑to‑back as one ~90‑minute session, matching the loop shape you asked for (2 rounds, realistic panel time).
 
 ## 6. Question bank
 
 **The two senior filters (highest‑value, most expensive to ask and grade — reserve for the founder):**
-- *ROAS‑drop diagnosis*, fixed order: measurement (pixel/server dedup, platform‑vs‑backend gap) → media (CPM/frequency/saturation) → creative fatigue (hook/hold rate) → post‑click. Weak answers skip straight to creative or media.
-- *MER vs. platform ROAS*: does the candidate translate to break‑even ROAS and MER unprompted, or cite platform ROAS as business truth (structurally inflated — every platform claims the same conversion)?
+
+- _ROAS‑drop diagnosis_, fixed order: measurement (pixel/server dedup, platform‑vs‑backend gap) → media (CPM/frequency/saturation) → creative fatigue (hook/hold rate) → post‑click. Weak answers skip straight to creative or media.
+- _MER vs. platform ROAS_: does the candidate translate to break‑even ROAS and MER unprompted, or cite platform ROAS as business truth (structurally inflated — every platform claims the same conversion)?
 
 **Exaggerator probes** (1 minute each, gradeable by anyone — promote these into the screen since this is an unvetted pool, not a referral bench): "Who do you admire in paid media and why?" / "What industry publications do you read?" / watch for unprompted claims of full mastery of brand‑new automated campaign types.
 
@@ -95,7 +99,7 @@ Behavioral anchors per competency, written before the first interview — a bare
 
 Weighting (**house convention, borrowed from one vendor's internal rubric — Pare, Oct 2025 — not a published industry standard**): Technical 40 / Communication 30 / Commercial insight 30. That already puts 60% of the weight on judgment and reporting over tool fluency, which matches this skill's reasoning‑over‑recall principle.
 
-Sample anchor (Measurement & Attribution, 3/5): *"Can name the platform‑vs‑backend gap as a concept but has not personally run a reconciliation; describes it in the abstract rather than walking through a specific account."*
+Sample anchor (Measurement & Attribution, 3/5): _"Can name the platform‑vs‑backend gap as a concept but has not personally run a reconciliation; describes it in the abstract rather than walking through a specific account."_
 
 ## 8. Work sample
 
@@ -114,6 +118,7 @@ Rubric is written before the first candidate sits it. The TikTok table's missing
 **Week‑one spend threshold:** self‑serve up to **$750/day** (≈$80k/month ÷ 30, rounded down for a new hire); anything above requires co‑sign.
 
 **Spend‑authority ladder** (synthesis — not a published standard, labelled as such):
+
 - Weeks 1–2: shadow, no changes.
 - Weeks 3–6: co‑sign, or independent under the $750/day cap.
 - By day 60: independent within a **$3,000/day** cap.

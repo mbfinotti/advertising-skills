@@ -1,6 +1,6 @@
 ## Test plan (revised: 3 variants, not 6)
 
-Sablewood gets ~8 demo requests/month across *all* channels today. This sponsored slot is a new, unproven source — you don't yet know its volume. Splitting into 6 variants from day one means each arm could see single-digit conversions after 4 weeks: not enough to call a statistically meaningful winner, only noise dressed up as a decision.
+Sablewood gets ~8 demo requests/month across _all_ channels today. This sponsored slot is a new, unproven source — you don't yet know its volume. Splitting into 6 variants from day one means each arm could see single-digit conversions after 4 weeks: not enough to call a statistically meaningful winner, only noise dressed up as a decision.
 
 - Run **3 variants** (below), equal split, concurrent.
 - Primary metric: demo-request rate. Secondary/early-read metric: click-through on the sponsored card — higher volume, gives you a week-1/2 sanity check without letting it alone crown a winner.

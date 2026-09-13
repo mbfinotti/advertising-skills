@@ -39,7 +39,7 @@ A pixel that's fired Purchase, InitiateCheckout, and AddToCart events for a year
 
 ### What not to ship
 
-- Don't wait on the unified CRM export to launch — that's the correct *target state*, not the Friday deliverable.
+- Don't wait on the unified CRM export to launch — that's the correct _target state_, not the Friday deliverable.
 - Don't present this as the final audience. It's v1: pixel-seeded, live today. v2 is a CRM-verified, LTV-weighted purchaser seed (with refunds/fraud excluded) once the engineer is free in 5 weeks — swapped into the same campaign structure without a relaunch.
 
 ### For the board, one line

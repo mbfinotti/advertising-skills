@@ -19,12 +19,14 @@ Fix: separate a **fast, automated safety net** (protects spend, can act early) f
 This is the only rule allowed to act on **immature** data, because it exists to stop runaway spend, not to judge performance.
 
 **Rule A — Zero-result burn:**
+
 - **Condition:** Lifetime amount spent ≥ $200 AND qualified signups = 0.
 - **Action:** Pause ad set.
 - **Why $200:** roughly 4x the $50 target CPA — enough spend that zero signups even accounting for lag is a real red flag, not noise.
 - **Check frequency:** daily.
 
 **Rule B — Hard CPA ceiling ($90):**
+
 - **Condition:** Lifetime cost per result (28-day click) > $90 AND lifetime spend ≥ $450 (≈5 conversions' worth at target) AND ad set age ≥ 28 days.
 - **Action:** Pause ad set + Slack/email alert to team.
 - **Why gate on age and spend:** without these, the $90 rule will fire on immature cohorts and kill ad sets that are actually fine — reproducing the exact whipsaw this doc exists to stop.
@@ -35,7 +37,7 @@ Do not build a version of Rule B without the age/spend gates. An ungated ">$90 �
 ## 3. Goal-setting rules (target CPA)
 
 1. **One target CPA at a time.** Current target: $50.
-2. **Minimum change interval: 28 days.** Do not adjust the target CPA more than once per maturity cycle. If it's been changed in the last 28 days, the next data point to react to is the day-28 mark of the *most recent* change — not today's feed.
+2. **Minimum change interval: 28 days.** Do not adjust the target CPA more than once per maturity cycle. If it's been changed in the last 28 days, the next data point to react to is the day-28 mark of the _most recent_ change — not today's feed.
 3. **Evidence required to change the target:** at least 2 full maturity cycles (56 days) of stable spend showing consistent over/under-shoot, across at least 3 ad sets, before permanently moving the target. A single volatile cycle is not evidence.
 4. **Direction of change is capped:** ±$10 per adjustment. No jumping $12 in one move ($60→$48).
 5. **Log every change** (date, old value, new value, reason, who approved) in a shared doc — not just in Meta. Anyone about to change the target checks the log first for "haven't we just done this."
@@ -54,13 +56,13 @@ Do not build a version of Rule B without the age/spend gates. An ungated ">$90 �
 
 ## 6. What "improvising" looked like vs. what changes now
 
-| Before | Now |
-|---|---|
-| CPA target changed 3x in 2 weeks | Max 1 change per 28-day cycle |
-| Reacted to <2-week-old ad set data | No action on data younger than 28 days (except circuit breakers) |
-| Creative + audience + target all touched near-simultaneously | One lever per cycle, logged |
-| Manual pause on "looks bad" | Automated pause only on Rule A (zero-result burn) or Rule B (mature $90 ceiling) |
-| No record of what changed when | Every change logged with date/reason/owner |
+| Before                                                       | Now                                                                              |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| CPA target changed 3x in 2 weeks                             | Max 1 change per 28-day cycle                                                    |
+| Reacted to <2-week-old ad set data                           | No action on data younger than 28 days (except circuit breakers)                 |
+| Creative + audience + target all touched near-simultaneously | One lever per cycle, logged                                                      |
+| Manual pause on "looks bad"                                  | Automated pause only on Rule A (zero-result burn) or Rule B (mature $90 ceiling) |
+| No record of what changed when                               | Every change logged with date/reason/owner                                       |
 
 ---
 

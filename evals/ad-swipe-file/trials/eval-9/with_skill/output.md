@@ -1,9 +1,10 @@
 ## Two changes to the plan before you touch anything
 
-**Don't delete last month's pull folder.** This isn't a tidiness call — it's a hard rule in `ad-swipe-file`: *"Dated raw pulls live separately from this synthesized file and are never overwritten... re-runs create a new dated pull."* Deleting is strictly worse than overwriting.
+**Don't delete last month's pull folder.** This isn't a tidiness call — it's a hard rule in `ad-swipe-file`: _"Dated raw pulls live separately from this synthesized file and are never overwritten... re-runs create a new dated pull."_ Deleting is strictly worse than overwriting.
 
 Why it matters concretely here, not just as a rule:
-- Most ad-library surfaces **purge a paused ad's disclosure the moment it stops running** (Meta Ad Library does this for non-political ads). Your dated pull is likely the *only remaining record* that those 3 Vantiro ads ever existed. Delete the folder and you can't re-verify, re-classify, or screenshot-cite them again — ever.
+
+- Most ad-library surfaces **purge a paused ad's disclosure the moment it stops running** (Meta Ad Library does this for non-political ads). Your dated pull is likely the _only remaining record_ that those 3 Vantiro ads ever existed. Delete the folder and you can't re-verify, re-classify, or screenshot-cite them again — ever.
 - The "2 ads relaunched from spring" read is a **relaunch-recency signal**, the skill's weakest-but-real corroborator — and it only exists because you can compare two dated snapshots. Deleting the folder that made that comparison possible undercuts the exact inference you just used it for, and blocks the same comparison next month.
 - Storage isn't actually the cost people think it is: the guardrails already forbid bulk-archiving creative assets (images/video/full copy) — you're only supposed to be storing structured records and short paraphrases. A folder like that is tiny. There's no real tidiness gain from deleting it.
 

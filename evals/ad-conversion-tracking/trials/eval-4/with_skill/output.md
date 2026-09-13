@@ -5,7 +5,7 @@
 ## Findings, in fix order
 
 **🔴 Critical — 5 conversion actions marked primary dilutes "optimize to Closed Won."**
-Smart Bidding optimizes across *every* primary action as one blended pool, not toward whichever one you care about most. Right now "optimize to Closed Won" isn't actually configured — the algorithm is chasing Form Fill, Demo Booked, Newsletter Signup, Pricing Page View, and Closed Won together. Pricing Page View and Newsletter Signup in particular are engagement signals, not sales outcomes, and shouldn't be feeding bids at all. Fix: demote both to secondary. One toggle each in the Ads UI, reversible instantly.
+Smart Bidding optimizes across _every_ primary action as one blended pool, not toward whichever one you care about most. Right now "optimize to Closed Won" isn't actually configured — the algorithm is chasing Form Fill, Demo Booked, Newsletter Signup, Pricing Page View, and Closed Won together. Pricing Page View and Newsletter Signup in particular are engagement signals, not sales outcomes, and shouldn't be feeding bids at all. Fix: demote both to secondary. One toggle each in the Ads UI, reversible instantly.
 
 **🔴 Critical — 7 Closed Won/month is far below what Smart Bidding needs to learn from.**
 Even after fixing the primary-action list, Closed Won alone won't clear it. Google documents ~30 conversions in 30 days as the minimum for Target CPA to function; Closed Won is running at roughly a quarter of that. Optimizing directly to it leaves the algorithm making bid decisions on a handful of data points a month — it won't exit learning, or it'll exit on noise.
@@ -13,7 +13,7 @@ Even after fixing the primary-action list, Closed Won alone won't clear it. Goog
 Recommendation: keep Closed Won as your north star for reporting, but make the sole bid-driving primary action the deepest stage that actually clears volume — most likely **Demo Booked** (confirm its monthly count). Assign it a calculated value: (Demo Booked → Closed Won rate) × $15k ACV. If roughly 1 in 12 booked demos closes, that's ~$1,250 of value per Demo Booked — bid on that with value-based Smart Bidding today, and revisit moving Closed Won itself to primary once its volume grows.
 
 **🟠 High — click-through window (30 days) is shorter than your sales cycle (45 days).**
-By definition, something close to half your deals will close after the 30-day window has expired from the original click — Google Ads simply won't attribute them, undercounting Closed Won and understating what paid search is actually driving. And 45 days is the *sales* cycle from lead, not from ad click, so real click-to-close time is likely longer still. Fix: extend the click-through conversion window to 90 days (Google Ads' max). Same-day settings change.
+By definition, something close to half your deals will close after the 30-day window has expired from the original click — Google Ads simply won't attribute them, undercounting Closed Won and understating what paid search is actually driving. And 45 days is the _sales_ cycle from lead, not from ad click, so real click-to-close time is likely longer still. Fix: extend the click-through conversion window to 90 days (Google Ads' max). Same-day settings change.
 
 **🟠 High — "Every" counting on lead-gen actions.**
 Form Fill, Demo Booked, and Newsletter Signup are one-time-per-prospect actions. "Every" lets a resubmitted form or a rescheduled demo count as a second conversion, inflating exactly the signals you're about to rely on for bidding. Switch these to "One" per click/interaction. Also worth a check with whoever owns the Salesforce export: if an Opportunity re-syncs, does Closed Won risk importing twice on "Every"? A single $15k deal double-counting would meaningfully skew a 7/month sample.
@@ -33,6 +33,7 @@ Consent banner / regulated-traffic handling — no information given on audience
 Doubling spend into a bidding target that's both diluted by noise actions and too thin on volume to learn from doesn't fix the signal quality — it just buys more of the wrong data, faster. That's the exact failure mode this kind of audit exists to catch.
 
 **Fix order (ship as one batch, let Smart Bidding relearn once — serial fixes reset learning each time):**
+
 1. Demote Pricing Page View and Newsletter Signup to secondary
 2. Set Form Fill and Demo Booked counting to "One"
 3. Extend click-through window to 90 days

@@ -6,7 +6,7 @@
 
 ## Your colleague's theory is directionally wrong
 
-View-through and modeled conversions are a **platform-high** cause — they add conversions the store never sees, so they push the platform's number *above* the anchor, never below it. Your platform number is *below* the anchor (41 vs 67). A cause that inflates the platform's count cannot explain a count that's too low. Apply the direction rule and strike it.
+View-through and modeled conversions are a **platform-high** cause — they add conversions the store never sees, so they push the platform's number _above_ the anchor, never below it. Your platform number is _below_ the anchor (41 vs 67). A cause that inflates the platform's count cannot explain a count that's too low. Apply the direction rule and strike it.
 
 If anything, a campaign that launched yesterday has too little history for the platform's modeled-conversion engine to have kicked in yet, so today's 41 is probably closer to bare click-tracked conversions than a modeled/inflated number. That makes the real gap, not smaller than 26, but a fact you can't fully see yet.
 
@@ -16,10 +16,10 @@ If anything, a campaign that launched yesterday has too little history for the p
 Store day (UTC-8): Tue 08:00 UTC → Wed 08:00 UTC.
 Platform day (UTC): Tue 00:00 UTC → Wed 00:00 UTC.
 
-These windows overlap for only 16 of 24 hours. The platform's "Tuesday" pulls in 8 hours of orders the store books as *Monday* (Tue 00:00–08:00 UTC), and the store's "Tuesday" runs 8 hours into what the platform will book as *Wednesday* (Wed 00:00–08:00 UTC). A same-labeled-day comparison across two different clocks is comparing two different windows, not the same day — this alone can account for a meaningful slice of the 26-unit gap, in either direction, without any tracking defect. Single-day comparisons are the worst case for exactly this reason.
+These windows overlap for only 16 of 24 hours. The platform's "Tuesday" pulls in 8 hours of orders the store books as _Monday_ (Tue 00:00–08:00 UTC), and the store's "Tuesday" runs 8 hours into what the platform will book as _Wednesday_ (Wed 00:00–08:00 UTC). A same-labeled-day comparison across two different clocks is comparing two different windows, not the same day — this alone can account for a meaningful slice of the 26-unit gap, in either direction, without any tracking defect. Single-day comparisons are the worst case for exactly this reason.
 
 **2. The attribution window hasn't closed — and this is a brand-new campaign.**
-The new campaign launched Monday with a 7-day click window. Ad platforms stamp conversions on the *click* date and backdate them as they land, not on the purchase date. So a person who clicked Monday or Tuesday and buys on Thursday will eventually get counted back onto Monday or Tuesday — but not yet, because it hasn't happened.
+The new campaign launched Monday with a 7-day click window. Ad platforms stamp conversions on the _click_ date and backdate them as they land, not on the purchase date. So a person who clicked Monday or Tuesday and buys on Thursday will eventually get counted back onto Monday or Tuesday — but not yet, because it hasn't happened.
 
 In a mature, steady-running campaign this washes out: today's under-count from immature recent clicks is offset by older cohorts finally landing. This campaign has no such backlog — it's one day old. There is no prior cohort feeding today's number, so the platform's Tuesday count is structurally at its most incomplete right now and will keep rising for up to 7 days as Monday's and Tuesday's clicks finish converting.
 
@@ -44,4 +44,4 @@ Neither can be distinguished from the timing effects using a single day's totals
 
 ## Known delta to carry forward
 
-Once the timezone alignment is fixed, expect a small, stable, *platform-low* delta on any given day going forward, driven purely by attribution-window lag (a purchase from an old click lands days after the click was originally tracked). That's expected and not a "missing third of your sales" — it's the same mechanism that made today's 26-unit gap look worse than it likely is, just at steady-state size instead of new-campaign size.
+Once the timezone alignment is fixed, expect a small, stable, _platform-low_ delta on any given day going forward, driven purely by attribution-window lag (a purchase from an old click lands days after the click was originally tracked). That's expected and not a "missing third of your sales" — it's the same mechanism that made today's 26-unit gap look worse than it likely is, just at steady-state size instead of new-campaign size.

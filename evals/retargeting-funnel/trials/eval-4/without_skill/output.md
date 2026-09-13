@@ -35,15 +35,15 @@ LinkedIn sunset classic Lookalike Audiences in 2023; the current feature is **Pr
 Pixel-based audiences (pricing, feature, blog, video) only count forward from when the Insight Tag/URL rule goes live — **no backfill**.
 
 - If you create them "the day we go live," pricing/feature audiences won't reach usable size for ~2–4 weeks, and blog for ~90 days.
-- ✅ Install/verify the Insight Tag now and create the audience *definitions* now (free to sit unused in Campaign Manager) so they're pre-populated at launch.
+- ✅ Install/verify the Insight Tag now and create the audience _definitions_ now (free to sit unused in Campaign Manager) so they're pre-populated at launch.
 - Webinar list audience is unaffected — upload-based, fine to build same-day.
 
 ## Revised shape
 
-| Tier | Window | Status |
-|---|---|---|
-| Pricing + feature visitors (merged) | 30d | ✅ build now, launch when clearing ~1,000 |
-| Webinar attendees | 180d | ✅ own campaign, build day-of is fine |
-| Blog readers (BOFU subset or firmographic-filtered) | 90d | ⚠️ own campaign, lowest budget, nurture creative |
-| Video viewers | 30d | ⚠️ clarify source first |
-| Predictive audience | — | seed from demo-requesters or customers, not raw pricing visits |
+| Tier                                                | Window | Status                                                         |
+| --------------------------------------------------- | ------ | -------------------------------------------------------------- |
+| Pricing + feature visitors (merged)                 | 30d    | ✅ build now, launch when clearing ~1,000                      |
+| Webinar attendees                                   | 180d   | ✅ own campaign, build day-of is fine                          |
+| Blog readers (BOFU subset or firmographic-filtered) | 90d    | ⚠️ own campaign, lowest budget, nurture creative               |
+| Video viewers                                       | 30d    | ⚠️ clarify source first                                        |
+| Predictive audience                                 | —      | seed from demo-requesters or customers, not raw pricing visits |

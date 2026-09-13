@@ -8,7 +8,7 @@ Your numbers: $25/day ÷ $80 target CPA = **~2 conversions/week, best case**. Th
 
 ## Second problem: you're optimizing for an event you almost have no data on
 
-2-3 demo requests/week *across all channels* means your pixel has seen maybe 100-150 of these events total, ever, if you've been running a while — likely far fewer. Meta needs volume to model who converts. You're asking it to learn a rare event from a rare event.
+2-3 demo requests/week _across all channels_ means your pixel has seen maybe 100-150 of these events total, ever, if you've been running a while — likely far fewer. Meta needs volume to model who converts. You're asking it to learn a rare event from a rare event.
 
 This also poisons your lookalike: a "demo requesters" LAL built from a tiny, low-volume seed is noisy and won't resemble your real buyer profile well.
 

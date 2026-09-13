@@ -18,16 +18,16 @@ Everything below assumes both check out. If either doesn't, stop here and fix th
 
 ## Root cause: frequency math, not budget size
 
-| | Current | CEO's fix ($5k/mo) | Recommended |
-|---|---|---|---|
-| Audience | 310,000 (full ICP) | 310,000 | ~20,000–40,000 (layered) |
-| Monthly budget | $2,400 | $5,000 | $2,400 (unchanged) |
-| Est. monthly impressions* | ~40,000 | ~83,000 | ~40,000 |
-| Est. monthly frequency | **~0.13x** | **~0.27x** | **~1.3–2x** |
+|                           | Current            | CEO's fix ($5k/mo) | Recommended              |
+| ------------------------- | ------------------ | ------------------ | ------------------------ |
+| Audience                  | 310,000 (full ICP) | 310,000            | ~20,000–40,000 (layered) |
+| Monthly budget            | $2,400             | $5,000             | $2,400 (unchanged)       |
+| Est. monthly impressions* | ~40,000            | ~83,000            | ~40,000                  |
+| Est. monthly frequency    | **~0.13x**         | **~0.27x**         | **~1.3–2x**              |
 
 *Illustrative only, built from published CPC/CTR figures (~$60 CPM implied) — replace with your account's actual delivered-impressions and frequency numbers from Campaign Manager, which outrank any published estimate.
 
-At 0.13x monthly frequency, roughly 1 in 8 of your 310,000-person audience sees the ad *once* in a month — most never see it at all. This is the textbook failure mode for this format: "spending $2k/month against 300k people, no one's seeing your stuff." Doubling to $5k still leaves frequency under 1x — you'd still be buying near-zero reach against the same oversized list. **Widen-the-list-before-adding-budget only applies once a list is saturated; you're nowhere near that. Shrink first.**
+At 0.13x monthly frequency, roughly 1 in 8 of your 310,000-person audience sees the ad _once_ in a month — most never see it at all. This is the textbook failure mode for this format: "spending $2k/month against 300k people, no one's seeing your stuff." Doubling to $5k still leaves frequency under 1x — you'd still be buying near-zero reach against the same oversized list. **Widen-the-list-before-adding-budget only applies once a list is saturated; you're nowhere near that. Shrink first.**
 
 Published guidance for sub-$10k/month budgets targets a 20,000–50,000-person audience. Get there by layering, not by picking a random slice:
 
@@ -56,7 +56,7 @@ Build in this order — first two tie, need no platform involvement, ship today:
 - **Link/CTA plan.** LinkedIn's format carries no advertiser-added link — a click destination only exists if the COO put one in the post (pinned comment, or an edited-in tracked link). If nothing's there, "basically nothing" includes zero attributable clicks by design, independent of the frequency problem. Confirm which of the two exists; if neither, that's the "no link anywhere" failure mode and needs fixing regardless of audience/budget changes.
 - **Single-person program.** Only the COO is featured — flag, not a blocker: one revocation, one busy quarter, or a departure ends the whole program. Consider adding a second voice (another exec, or a customer champion) so it isn't hostage to one person's calendar.
 - **Written agreement.** Confirm there's something beyond platform click-to-approve covering term, spend caps, who can edit the post, and revocation handling — not just informal buy-in.
-- **How "basically nothing" was measured.** If that verdict came from reported CTR or engagement rate, that's the wrong signal — the largest published dataset found reported CTR *negatively* correlated with pipeline (rho = -0.170). Re-check cost per landing-page click and retargeting-pool growth instead; those are what should actually decide this.
+- **How "basically nothing" was measured.** If that verdict came from reported CTR or engagement rate, that's the wrong signal — the largest published dataset found reported CTR _negatively_ correlated with pipeline (rho = -0.170). Re-check cost per landing-page click and retargeting-pool growth instead; those are what should actually decide this.
 
 ## Measurement going forward
 

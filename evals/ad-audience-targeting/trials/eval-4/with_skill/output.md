@@ -10,8 +10,8 @@ Retargeting is also explicitly not the tier you use to prove a plan is working, 
 
 ## The math the request doesn't show you
 
-| | Current | Proposed |
-|---|---|---|
+|             | Current      | Proposed   |
+| ----------- | ------------ | ---------- |
 | Retargeting | 42% ($25.2k) | 65% ($39k) |
 | Prospecting | 58% ($34.8k) | 35% ($21k) |
 

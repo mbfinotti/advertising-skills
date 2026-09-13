@@ -6,11 +6,11 @@ You can't get a valid over-reporting rate by summing three platforms' self-repor
 
 Each platform runs its **own** attribution model, independently, with no knowledge of what the others are doing:
 
-- **Overlapping windows, not disjoint events.** If a customer sees a TikTok ad, later clicks a Meta ad, then clicks a Google ad and buys — Google, Meta, and TikTok can *all three* claim that single order inside their own attribution window. Summing platform numbers doesn't give you total paid orders, it gives you total *claims*, with heavy double- and triple-counting baked in. This is expected behavior, not a bug — it's a structural property of siloed, self-reported attribution.
-- **View-through and modeled conversions.** Google (and Meta) count people who never clicked at all — just saw the ad and converted later — plus statistically *modeled* conversions to fill gaps from iOS ATT/consent-mode signal loss. Neither of those requires a matching click in your order system's tracking, so they inflate the platform number without any corresponding row for the order system to attribute.
-- **Different attribution logic than your order system.** Your 780 almost certainly comes from a single-touch, deduplicated model (e.g., last non-direct click across *all* channels, one order = one credited source). The platforms are each doing "any touch we saw, within our own window, gets full credit." Comparing a deduplicated ground-truth count against the sum of three inflated, overlapping self-reports isn't an apples-to-apples inflation rate — it's two different measurement systems.
+- **Overlapping windows, not disjoint events.** If a customer sees a TikTok ad, later clicks a Meta ad, then clicks a Google ad and buys — Google, Meta, and TikTok can _all three_ claim that single order inside their own attribution window. Summing platform numbers doesn't give you total paid orders, it gives you total _claims_, with heavy double- and triple-counting baked in. This is expected behavior, not a bug — it's a structural property of siloed, self-reported attribution.
+- **View-through and modeled conversions.** Google (and Meta) count people who never clicked at all — just saw the ad and converted later — plus statistically _modeled_ conversions to fill gaps from iOS ATT/consent-mode signal loss. Neither of those requires a matching click in your order system's tracking, so they inflate the platform number without any corresponding row for the order system to attribute.
+- **Different attribution logic than your order system.** Your 780 almost certainly comes from a single-touch, deduplicated model (e.g., last non-direct click across _all_ channels, one order = one credited source). The platforms are each doing "any touch we saw, within our own window, gets full credit." Comparing a deduplicated ground-truth count against the sum of three inflated, overlapping self-reports isn't an apples-to-apples inflation rate — it's two different measurement systems.
 
-So "paid is over-reporting by 74%" isn't defensible as written. What *is* defensible: platform self-reported numbers are not additive and cannot be trusted as a combined total — full stop, independent of any specific percentage.
+So "paid is over-reporting by 74%" isn't defensible as written. What _is_ defensible: platform self-reported numbers are not additive and cannot be trusted as a combined total — full stop, independent of any specific percentage.
 
 ### The Google gap (640 vs ~330) is the one worth digging into
 
@@ -26,7 +26,7 @@ A ~2x gap on a single platform is larger than what cross-platform overlap alone 
 Lead with what's actually solid:
 
 - **Blended paid CPA (defensible):** $96,000 / 780 orders = **~$123 per order**. This is the number to anchor the report on — it's grounded in your order system, not platform self-reports.
-- **Blended ROAS caveat:** $402,000 revenue / $96,000 spend = 4.19x, but flag clearly that this is *total revenue over total spend*, not paid's isolated contribution — organic, direct, and email are mixed into that $402k too.
+- **Blended ROAS caveat:** $402,000 revenue / $96,000 spend = 4.19x, but flag clearly that this is _total revenue over total spend_, not paid's isolated contribution — organic, direct, and email are mixed into that $402k too.
 - **Platform numbers:** present them labeled explicitly as "platform-reported, self-attributed, not deduplicated across channels" — useful for relative trend/optimization signal within a single platform, not for a combined "total paid conversions" figure.
 
 ### Suggested client-facing paragraph
@@ -37,4 +37,4 @@ Lead with what's actually solid:
 
 - Pull Google's click-through/view-through/modeled split for last month before finalizing the report.
 - Run a UTM/gclid tagging audit to rule out order-system under-counting.
-- If you want a genuinely deduplicated cross-channel figure, feed all three platforms' raw conversion exports into GA4 (or a similar cross-channel model) rather than trusting each platform's own dashboard — or run a holdout/geo incrementality test if the client wants to know paid's *causal* lift rather than just attributed orders.
+- If you want a genuinely deduplicated cross-channel figure, feed all three platforms' raw conversion exports into GA4 (or a similar cross-channel model) rather than trusting each platform's own dashboard — or run a holdout/geo incrementality test if the client wants to know paid's _causal_ lift rather than just attributed orders.

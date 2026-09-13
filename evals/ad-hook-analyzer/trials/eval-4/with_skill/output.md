@@ -15,13 +15,13 @@ One more thing the skill is explicit about: your five openings span **three diff
 
 ## Gates (pass/fail, all candidates)
 
-| # | Sound-off | Promise-payoff | Qualification | Variation |
-|---|---|---|---|---|
-| 1 | pass (assumed caption match) | pass (assumed) | **pass** — "week to update" is a specific situational filter | pass vs. 2 |
-| 2 | pass (assumed) | pass (assumed) | pass — broad but relevant | pass vs. 1 |
-| 3 | pass (assumed; YouTube isn't muted-by-default like Meta, so real risk is lower here) | pass (assumed) | **pass** — "data warehouse bill" narrowly hits cost/data owners | pass vs. 4 |
-| 4 | pass (as text, though content is empty) | pass trivially — **no promise stated, so nothing to check continuity against** | **FAIL** — names nothing about role, situation, or problem; a "meet the company" open qualifies no one | pass vs. 3 |
-| 5 | pass (assumed) | pass (assumed; a trust claim, low risk) | **pass** — "your CFO" names the buyer role directly | pass (no sibling bumper) |
+| #   | Sound-off                                                                            | Promise-payoff                                                                 | Qualification                                                                                          | Variation                |
+| --- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------ |
+| 1   | pass (assumed caption match)                                                         | pass (assumed)                                                                 | **pass** — "week to update" is a specific situational filter                                           | pass vs. 2               |
+| 2   | pass (assumed)                                                                       | pass (assumed)                                                                 | pass — broad but relevant                                                                              | pass vs. 1               |
+| 3   | pass (assumed; YouTube isn't muted-by-default like Meta, so real risk is lower here) | pass (assumed)                                                                 | **pass** — "data warehouse bill" narrowly hits cost/data owners                                        | pass vs. 4               |
+| 4   | pass (as text, though content is empty)                                              | pass trivially — **no promise stated, so nothing to check continuity against** | **FAIL** — names nothing about role, situation, or problem; a "meet the company" open qualifies no one | pass vs. 3               |
+| 5   | pass (assumed)                                                                       | pass (assumed; a trust claim, low risk)                                        | **pass** — "your CFO" names the buyer role directly                                                    | pass (no sibling bumper) |
 
 Candidate 4 fails a gate and cannot rank top of the batch regardless of production polish. (Caveat: if your real objective for #4 is brand/awareness rather than direct response, this gate call could soften — but on the cold-prospecting assumption, it fails.)
 
@@ -41,11 +41,11 @@ Pattern: Offer-only / Bold claim — Motion 2026's top hit-rate category, though
 time-to-signal `strong` · sound-off `adequate` (lower real risk than Meta, per platform notes) · qualification `strong` (cost/data-owner specific) · specificity `strong` · brand timing `weak` — no brand lands before the viewer's skip decision; real risk in a 5s skippable window, not just an "unconfirmed" gap · continuity `adequate` · placement fit `strong` — directly uses the skip mechanic, the single most placement-native move in the batch.
 Pattern: Curiosity Gap + Loss Aversion.
 
-**4 — YouTube skippable, "Meet Copperleaf... founded in 2019"** *(fails a gate — banded for the raise-the-rank note only, cannot rank top)*
+**4 — YouTube skippable, "Meet Copperleaf... founded in 2019"** _(fails a gate — banded for the raise-the-rank note only, cannot rank top)_
 time-to-signal `weak` · sound-off `adequate` · qualification `weak`/FAIL · specificity `weak` — "a simple idea" is category wallpaper · brand timing `weak` under a DR objective (brand-first open is the accidental extreme the rubric flags) · continuity unscoreable — no promise to check · placement fit `weak` — reads like a 30s brand film cold-open transplanted into a 5s skip window.
 Pattern: Logo-first + Slow build.
 
-**5 — Bumper, "Analytics your CFO trusts"** *(forced view — only continuity, branding, qualification apply; scroll-stop logic is off the table by design)*
+**5 — Bumper, "Analytics your CFO trusts"** _(forced view — only continuity, branding, qualification apply; scroll-stop logic is off the table by design)_
 continuity `strong` (a reinforcement line, nothing to contradict) · brand timing `strong` (name first word, exactly right for a memory-objective forced view) · qualification `strong` (names the buyer role directly)
 
 ---

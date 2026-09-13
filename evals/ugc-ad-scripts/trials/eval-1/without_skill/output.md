@@ -4,15 +4,16 @@ A quick flag before the concepts: you mentioned there are no reviews yet and ask
 
 ## Concept 1 — "The 6am Math"
 
-**Hook (0–3s):** Creator, still in pajamas, holds up phone timer. On-screen text: *"How long does your coffee actually take?"* She starts the timer, walks to a normal coffee setup (grinder, filter, pour-over, waiting) — sped up, chaotic, timer ticking loud.
+**Hook (0–3s):** Creator, still in pajamas, holds up phone timer. On-screen text: _"How long does your coffee actually take?"_ She starts the timer, walks to a normal coffee setup (grinder, filter, pour-over, waiting) — sped up, chaotic, timer ticking loud.
 
 **Beat (3–12s):** Cut — timer stops at an exaggerated number (e.g. "6:42"). Groan/eye-roll to camera. Cut to her opening the fridge, pouring Brewlane concentrate + water/milk over ice in one motion. New timer starts.
 
-**Testimonial beat (12–16s):** She looks at the camera, casual and unscripted-sounding, mid-sip: *"Ok not gonna lie, this actually changed my mornings."* Timer freezes on something tiny like "0:14."
+**Testimonial beat (12–16s):** She looks at the camera, casual and unscripted-sounding, mid-sip: _"Ok not gonna lie, this actually changed my mornings."_ Timer freezes on something tiny like "0:14."
 
-**CTA (16–20s):** Split screen of both times side by side. Text overlay: *"$24/mo. Cancel anytime."* She points at the product, shrugs like "why wouldn't you."
+**CTA (16–20s):** Split screen of both times side by side. Text overlay: _"$24/mo. Cancel anytime."_ She points at the product, shrugs like "why wouldn't you."
 
 **Delivery notes:**
+
 - Keep it messy/handheld, not polished — phone-in-hand energy, not a tripod ad.
 - The timer bit only works if it's a real stopwatch app on screen, visibly running — that's what sells the "no acting" feel.
 - Let the testimonial line land as an aside, not a pitch — she should say it while doing something else (pouring, walking), not looking dead into the lens like a spokesperson.
@@ -22,15 +23,16 @@ A quick flag before the concepts: you mentioned there are no reviews yet and ask
 
 ## Concept 2 — "POV: You Almost Missed Your Train"
 
-**Hook (0–3s):** Handheld, first-person POV running through an apartment, half-dressed, bag half-packed. Text overlay: *"POV: 7 minutes to leave and you need coffee."*
+**Hook (0–3s):** Handheld, first-person POV running through an apartment, half-dressed, bag half-packed. Text overlay: _"POV: 7 minutes to leave and you need coffee."_
 
 **Beat (3–10s):** POV grabs Brewlane concentrate straight from the fridge door, no measuring, dumps into a to-go cup with ice, screws lid on, already walking to the door. Fast cuts, real rush energy.
 
-**Testimonial beat (10–15s):** Front camera flip, she's now walking outside/on the way to transit, sipping, slightly out of breath, talking to camera like texting a friend: *"I used to skip coffee half the time because it was too much of a whole thing. This genuinely changed my mornings."*
+**Testimonial beat (10–15s):** Front camera flip, she's now walking outside/on the way to transit, sipping, slightly out of breath, talking to camera like texting a friend: _"I used to skip coffee half the time because it was too much of a whole thing. This genuinely changed my mornings."_
 
-**CTA (15–20s):** She holds the can up near the camera, taps it twice. Text overlay: *"Cold brew concentrate. $24/mo, delivered."* End on a freeze frame of the product label, legible for 1-2 seconds.
+**CTA (15–20s):** She holds the can up near the camera, taps it twice. Text overlay: _"Cold brew concentrate. $24/mo, delivered."_ End on a freeze frame of the product label, legible for 1-2 seconds.
 
 **Delivery notes:**
+
 - Vertical, one continuous "day in the life" feel — no cuts to studio shots or packaging close-ups except the final 2 seconds.
 - The "used to skip coffee" line does double duty as pain point + soft testimonial — keep it in first person, present tense, no superlatives ("best," "life-changing") that read as ad copy.
 - Since this is a paid/gifted collab, disclose per platform rules — #ad or #gifted in the caption, and if posting to TikTok/Meta, mark it as a paid partnership in-platform, not just in the caption text.

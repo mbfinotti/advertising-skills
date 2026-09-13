@@ -1,4 +1,4 @@
-Quick flag before the deliverable: what you described is, almost word-for-word, the negative example this skill's portfolio reference warns against — real client name, real absolute spend figure, raw ads-manager screenshot. Blurring the logo doesn't fix it: the account name, campaign names, and dates typically still sit elsewhere in the Ads Manager chrome, and if you "walk interviewers through the full story," you'll say "Fairwind Coffee Roasters" out loud anyway, which defeats the blur entirely. Interviewers read a leaked-client screenshot as a preview of how you'd treat *their* data — it costs you the interview, not just the NDA.
+Quick flag before the deliverable: what you described is, almost word-for-word, the negative example this skill's portfolio reference warns against — real client name, real absolute spend figure, raw ads-manager screenshot. Blurring the logo doesn't fix it: the account name, campaign names, and dates typically still sit elsewhere in the Ads Manager chrome, and if you "walk interviewers through the full story," you'll say "Fairwind Coffee Roasters" out loud anyway, which defeats the blur entirely. Interviewers read a leaked-client screenshot as a preview of how you'd treat _their_ data — it costs you the interview, not just the NDA.
 
 You don't need the screenshots. $62K/month at a 1.6→3.4 ROAS lift is a strong, credible story on its own — it just needs to travel anonymized. Below is the NDA-safe version, ready to paste into Notion, plus how to talk through it live, plus how to spend your two weeks. (Assumptions I made, since you didn't specify: mid-level "growth marketer" generalist target, Meta paid social as the lead channel, B2C. Adjust the bracketed placeholders before you publish — and reread your actual NDA/client contract once before publishing even this anonymized version; that check is cheap and a breach afterward isn't reversible.)
 
@@ -46,7 +46,7 @@ differently — the self-critical line is deliberate.]
 confidential data.*
 ```
 
-Replace every `[N]` / `[X]` with your real numbers *converted to index or percentage* — never the dollar figures themselves. If you want a visual, don't screenshot Ads Manager: rebuild the ROAS trend as a simple line chart from the indexed numbers yourself. A self-made chart carries zero legal exposure; a platform screenshot does even with the logo blurred.
+Replace every `[N]` / `[X]` with your real numbers _converted to index or percentage_ — never the dollar figures themselves. If you want a visual, don't screenshot Ads Manager: rebuild the ROAS trend as a simple line chart from the indexed numbers yourself. A self-made chart carries zero legal exposure; a platform screenshot does even with the logo blurred.
 
 ## How to say it out loud in the interview
 

@@ -8,14 +8,14 @@ The skill's discriminator for external vs. internal causes is the **uniformity t
 
 Your own numbers fail that test hard:
 
-| Ad set | CPM move | Signal |
-|---|---|---|
-| Main prospecting (narrow stacked-interest) | **+85%** | Frequency 2.1 → 4.8, unique reach flat for a month |
-| Other four ad sets | **+2% to +6%** | — |
+| Ad set                                     | CPM move       | Signal                                             |
+| ------------------------------------------ | -------------- | -------------------------------------------------- |
+| Main prospecting (narrow stacked-interest) | **+85%**       | Frequency 2.1 → 4.8, unique reach flat for a month |
+| Other four ad sets                         | **+2% to +6%** | —                                                  |
 
 An 85% spike sitting next to four sibling ad sets moving 2–6% isn't "the auction went up" — if it were, all five would have moved together, because they're bidding in the same overall Meta auction during the same weeks. Instead, one specific audience is behaving completely differently from its neighbors.
 
-The second piece of evidence points at exactly *why*: frequency climbing from 2.1 to 4.8 while unique reach has been flat for a month is the textbook signature of **audience saturation** — you've stopped reaching new people and are now just paying more to show the same shrinking pool of users the ad again and again. A "narrow, stacked-interest audience" is precisely the structure that runs out of new impressions first: stack enough interest layers and the addressable pool shrinks to the point where the algorithm is bidding against your own prior impressions to find anyone left. That's an internal targeting design problem, not a market condition.
+The second piece of evidence points at exactly _why_: frequency climbing from 2.1 to 4.8 while unique reach has been flat for a month is the textbook signature of **audience saturation** — you've stopped reaching new people and are now just paying more to show the same shrinking pool of users the ad again and again. A "narrow, stacked-interest audience" is precisely the structure that runs out of new impressions first: stack enough interest layers and the addressable pool shrinks to the point where the algorithm is bidding against your own prior impressions to find anyone left. That's an internal targeting design problem, not a market condition.
 
 The blended +34% CPM and the 30% CPA increase are consistent with this: CPM is the one link that moved (CPA tracks CPM almost 1:1 here, which suggests CTR/CVR held — no independent creative or landing-page collapse layered on top). The blended number is just the saturating ad set dragging the account average up; the other four ad sets show what the market is actually doing to you this quarter, and it's a mild 2–6%, not 34%.
 

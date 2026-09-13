@@ -6,7 +6,7 @@ Before the plan itself: **your stated reading plan and launch sequencing both br
 
 1. **Delivery-limited at $250/day/cell.** At a $45 CPA, the stable-delivery floor is `$45 × 50 ÷ 7 ≈ $321/day/cell`. $250/day sits below it — the cell never reaches stable delivery and the numbers stay noisy regardless of how long you wait. This isn't a sample-size problem, it's a floor problem. **Raise each cell to ~$325/day** (see budget math below), or the test is `Not testable as designed` on CPA from day one.
 2. **No day-3/4 significance call.** At $250/day ÷ $45 CPA you get **~5.6 conversions/day/cell**. By day 4 that's ~22 conversions/cell. The rigorous two-proportion test needs low thousands per cell for any realistic lift (see table below); even the loose, non-authoritative "100–400 conversions" screening convention isn't cleared. **A 95%-confidence winner is mathematically unreachable this week at this spend.** Checking every morning and stopping the instant a number looks favorable is textbook peeking — it inflates false positives, it's not a safeguard against them. Replace it with one pre-registered check at a fixed date (below).
-3. **Control must launch with the variants, not 4 days later.** Comparing new cells to the champion's historical numbers is invalid (different seasonality, different delivery history) — the whole point of a control cell is that it runs *concurrently*. Staggering also means the two new concepts get a 4-day head start with no baseline to gate against, and a Thursday→Monday split crosses a weekend, which contaminates day-of-week composition on top of that.
+3. **Control must launch with the variants, not 4 days later.** Comparing new cells to the champion's historical numbers is invalid (different seasonality, different delivery history) — the whole point of a control cell is that it runs _concurrently_. Staggering also means the two new concepts get a 4-day head start with no baseline to gate against, and a Thursday→Monday split crosses a weekend, which contaminates day-of-week composition on top of that.
    - **Preferred fix:** hold all three cells to Monday. Four extra days to cut the control's new post IDs is cheap; a broken read is not.
    - **If Thursday is truly fixed:** launch the control Thursday too, on a placeholder post ID, and do not swap the "real" post ID in later — swapping creative under a live cell resets delivery learning mid-test (see Failure modes). Treat the whole week as one clean run on whatever post ID the control launches with.
 
@@ -14,14 +14,14 @@ Before the plan itself: **your stated reading plan and launch sequencing both br
 
 These weren't in your message. I've flagged them rather than inventing numbers:
 
-| Missing | Why it matters |
-|---|---|
-| Baseline purchase/landing conversion rate and CPC | Needed to compute an exact required sample (the table below is decision-relevant even without it, but a precise "Powered" line needs it) |
-| Hypothesis evidence ("because [X]...") and predicted magnitude | Section 1 of the underlying method requires this before launch — a test with no falsifiable prediction isn't a test, it's a screen with no target |
-| Assets per concept | Denney's default is ~6 per cell; confirm how many video cuts exist for each new concept |
-| Monthly test budget and whether it's protected from scaling spend | Determines whether the $325/day floor is affordable alongside the rest of the account |
-| Is Advantage+ Creative / any automated creative optimization on for this campaign? | Must be off in test cells or the platform picks winners, not the test |
-| Any claim-substantiation constraint on the two new concepts? | Standard for outdoor/gear DTC (durability, performance claims) — flag now, not at review |
+| Missing                                                                            | Why it matters                                                                                                                                    |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Baseline purchase/landing conversion rate and CPC                                  | Needed to compute an exact required sample (the table below is decision-relevant even without it, but a precise "Powered" line needs it)          |
+| Hypothesis evidence ("because [X]...") and predicted magnitude                     | Section 1 of the underlying method requires this before launch — a test with no falsifiable prediction isn't a test, it's a screen with no target |
+| Assets per concept                                                                 | Denney's default is ~6 per cell; confirm how many video cuts exist for each new concept                                                           |
+| Monthly test budget and whether it's protected from scaling spend                  | Determines whether the $325/day floor is affordable alongside the rest of the account                                                             |
+| Is Advantage+ Creative / any automated creative optimization on for this campaign? | Must be off in test cells or the platform picks winners, not the test                                                                             |
+| Any claim-substantiation constraint on the two new concepts?                       | Standard for outdoor/gear DTC (durability, performance claims) — flag now, not at review                                                          |
 
 ## Feasibility math
 
@@ -29,7 +29,7 @@ These weren't in your message. I've flagged them rather than inventing numbers:
 - Stable-delivery floor: `45 × 50 ÷ 7 ≈ $321/day/cell`. Recommended cell budget: **$325/day**.
 - New daily conversions/cell at $325/day: `325 ÷ 45 ≈ 7.2` → ~51/week, clears the floor.
 - Total test spend: 3 cells × $325/day = **$975/day** (up from $750/day), **$6,825** over a 7-day window. Denney's own budgeting rule (`avg CPA × 50` per cell = `$45 × 50 = $2,250`/cell) lands at the same $321/day — the floor and the practitioner default agree, which is why $250/day was under-built, not just under-cautious.
-- Required sample for a *significance-tested* CPA winner: at a plausible 2–5% baseline purchase rate and a 50% relative lift, the two-proportion formula needs **~1,500–3,800 per cell** (denominator: clicks/landing views, not raw conversions — we don't yet have that baseline). At ~7 conversions/day this is not reachable inside the 4–6 week test-freshness ceiling.
+- Required sample for a _significance-tested_ CPA winner: at a plausible 2–5% baseline purchase rate and a 50% relative lift, the two-proportion formula needs **~1,500–3,800 per cell** (denominator: clicks/landing views, not raw conversions — we don't yet have that baseline). At ~7 conversions/day this is not reachable inside the 4–6 week test-freshness ceiling.
 - **Verdict: this cannot be Powered on CPA at this spend, full stop.** It can be a clean Directional read if run correctly.
 
 ## The plan

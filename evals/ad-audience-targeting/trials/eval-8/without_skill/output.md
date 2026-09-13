@@ -9,6 +9,7 @@
 ## Tier plan
 
 ### 🎯 Tier 0 — CRM ∩ Signal lists (runs first)
+
 - **Who:** The subset of your 3,100 CRM contacts whose company also appears in either the 45-company funding/M&A list or the 28-company hiring-signal list.
 - **Why first:** Known relationship + live buying trigger = warmest combination you have. Compliance risk is near-zero — you already have a business relationship with these contacts.
 - **Channel:** 1:1 personal email/LinkedIn, referencing the specific trigger ("saw the Series B" / "saw the supply-chain analyst req").
@@ -17,6 +18,7 @@
 - **Board metric:** Meetings booked, opportunities created — your first and best pipeline number.
 
 ### Tier 1 — CRM reactivation (rest of the list)
+
 - **Who:** Remaining ~3,065 CRM contacts, segmented: active customers, touched-in-12mo prospects, stale/cold.
 - **Why:** Second-warmest audience, lowest compliance risk (existing relationship or prior opt-in), fastest to execute at volume.
 - **Channel:** Segmented email campaign via your CRM's own send tool. Customers → expansion/referral ask tied to the funding news. Prospects → re-engagement tied to relevant signal-list logic ("chains like yours are hiring for this problem right now").
@@ -25,6 +27,7 @@
 - **Board metric:** Reply rate, meetings booked, pipeline $ from existing relationships.
 
 ### Tier 2 — Signal-list ABM (non-overlap)
+
 - **Who:** The remaining ~40-55 companies from the two signal lists not already in Tier 0.
 - **Why:** No existing relationship, but strong timing signal. Needs real personalization, so it's expensive in hours — ration it.
 - **Channel:** Hand-picked top 15-20 accounts (favor the M&A/funding list — cash in hand beats a single job req as a buying signal) get 1:1 outreach + a small direct-mail/gift touch. The rest get a lighter templated-but-personalized sequence.
@@ -33,6 +36,7 @@
 - **Board metric:** Meetings booked from cold-but-triggered outreach.
 
 ### Tier 3 — Site traffic reveal + retarget
+
 - **Who:** Company-level identification of your 25k monthly visits, filtered to mid-size grocery-chain ICP.
 - **Why:** Passive asset you're not using. Contributes volume and a "we have real top-of-funnel interest" chart for the board, not fast 1:1 pipeline.
 - **Channel:** A company-level (not person-level) visitor-ID tool → filtered account list → LinkedIn/programmatic ABM retargeting ads.
@@ -41,20 +45,21 @@
 - **Board metric:** Identified ICP accounts visiting, ad-influenced pipeline (directional, not precise — say so to the board).
 
 ### Tier 4 — Broad paid demand gen: **cut for this sprint**
+
 Not enough runway for cold paid awareness to mature into board-visible pipeline in 5 weeks with a niche ICP. Revisit after the funding announcement.
 
 ---
 
 ## Budget ($14,000)
 
-| Line | Amount |
-|---|---|
-| Visitor-ID tool (company-level only) | $1,000 |
-| LinkedIn Sales Navigator (1 seat) | $130 |
-| ABM/retargeting ad spend (Tier 3) | $8,000 |
+| Line                                           | Amount |
+| ---------------------------------------------- | ------ |
+| Visitor-ID tool (company-level only)           | $1,000 |
+| LinkedIn Sales Navigator (1 seat)              | $130   |
+| ABM/retargeting ad spend (Tier 3)              | $8,000 |
 | Direct mail/gifting, top 15-20 signal accounts | $1,500 |
-| Email deliverability/tooling | $500 |
-| Contingency | $2,870 |
+| Email deliverability/tooling                   | $500   |
+| Contingency                                    | $2,870 |
 
 Tiers 0 and 1 cost $0 — they run on your time, not the budget. Protect the hours for those two before spending anything on Tier 3.
 

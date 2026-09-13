@@ -2,13 +2,13 @@
 
 ## Why this needs a different shape than "3x CPA for 3 days"
 
-True CPA (spend ÷ closed-won deals) lags spend by ~75 days — your sales cycle. A 3-day CPA reading isn't CPA, it's noise; you'd be measuring deals that closed from spend placed months ago. The fix isn't to abandon the CMO's instinct — it's to run the rule on a leading proxy (Cost per SQL) translated into an *implied* CPA, so you catch the LinkedIn-style spike in days, not quarters.
+True CPA (spend ÷ closed-won deals) lags spend by ~75 days — your sales cycle. A 3-day CPA reading isn't CPA, it's noise; you'd be measuring deals that closed from spend placed months ago. The fix isn't to abandon the CMO's instinct — it's to run the rule on a leading proxy (Cost per SQL) translated into an _implied_ CPA, so you catch the LinkedIn-style spike in days, not quarters.
 
 ## Definitions
 
 1. **Target CPA** — fully-loaded cost to acquire one customer, sized to your LTV:CAC target. Record the number here explicitly: `[Target CPA = $____]`, owner: Finance/RevOps.
 2. **SQL→Won rate** — trailing 90-day conversion rate from SQL to closed-won. Recompute quarterly; a stale rate silently breaks the whole rule.
-3. **CPSQL (cohort)** — spend ÷ SQLs, matched by *spend date cohort*, not same-day count. Leads convert to SQL over 1–3 weeks; same-day ratios punish yesterday's spend for pipeline that hasn't landed yet.
+3. **CPSQL (cohort)** — spend ÷ SQLs, matched by _spend date cohort_, not same-day count. Leads convert to SQL over 1–3 weeks; same-day ratios punish yesterday's spend for pipeline that hasn't landed yet.
 4. **Implied CPA** = CPSQL (cohort) ÷ SQL→Won rate.
 
 ## Trigger condition

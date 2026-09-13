@@ -11,20 +11,21 @@ dashboard    : hook rate assumed = 3-second video plays / impressions (Meta's do
 ```
 
 **Assumptions I made to score without a full Interview** (confirm before you ship):
+
 - Who's disqualified and what "wrong viewer" looks like — not given, so qualification bands below are provisional.
-- What the rest of each ad (beyond the opening) actually shows for F, G, H — only E's cut tells us the payoff (the auto-build screen capture). I've scored promise-payoff for F/G/H as *adequate/unverified*, not strong, until you confirm the body matches.
+- What the rest of each ad (beyond the opening) actually shows for F, G, H — only E's cut tells us the payoff (the auto-build screen capture). I've scored promise-payoff for F/G/H as _adequate/unverified_, not strong, until you confirm the body matches.
 - None of these four is already live or previously tested — if one is, the real-variation gate needs re-checking against it too.
 
 ---
 
 ## Gates
 
-| Candidate | Sound-off | Promise-payoff | Qualification | Real variation |
-|---|---|---|---|---|
-| **E** | **FAIL** — first frame is a silent face, zero on-screen text; the entire promise lives in her voiceover, which never reaches a muted Meta viewer | pass (assumed — her pitch presumably sets up the app-demo beat later in the cut) | adequate/unverified | pass — visually distinct from the others |
-| **F** | **FAIL** — the claim text exists in the file but sits in TikTok's safe zone; Meta's crop removes it, so for this placement it's functionally the same as no text at all | adequate/unverified | adequate/unverified | pass — visually distinct |
-| **G** | pass — text visible, not cropped | adequate/unverified | **weak** — "the smarter way to eat healthy" is close to universal, doesn't disqualify anyone | **FAIL — merged with H** (identical lunchbox-packing footage, text-only difference; the platform won't register these as two variations) |
-| **H** | pass | adequate/unverified, plausibly strong if the body pays off the "no Sunday marathon" promise — confirm | pass — names a specific situation (Sunday batch-prep fatigue), self-selects people who've felt that pain | same footage as G — **this is the cell that should stay live** (see note below) |
+| Candidate | Sound-off                                                                                                                                                               | Promise-payoff                                                                                        | Qualification                                                                                            | Real variation                                                                                                                           |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **E**     | **FAIL** — first frame is a silent face, zero on-screen text; the entire promise lives in her voiceover, which never reaches a muted Meta viewer                        | pass (assumed — her pitch presumably sets up the app-demo beat later in the cut)                      | adequate/unverified                                                                                      | pass — visually distinct from the others                                                                                                 |
+| **F**     | **FAIL** — the claim text exists in the file but sits in TikTok's safe zone; Meta's crop removes it, so for this placement it's functionally the same as no text at all | adequate/unverified                                                                                   | adequate/unverified                                                                                      | pass — visually distinct                                                                                                                 |
+| **G**     | pass — text visible, not cropped                                                                                                                                        | adequate/unverified                                                                                   | **weak** — "the smarter way to eat healthy" is close to universal, doesn't disqualify anyone             | **FAIL — merged with H** (identical lunchbox-packing footage, text-only difference; the platform won't register these as two variations) |
+| **H**     | pass                                                                                                                                                                    | adequate/unverified, plausibly strong if the body pays off the "no Sunday marathon" promise — confirm | pass — names a specific situation (Sunday batch-prep fatigue), self-selects people who've felt that pain | same footage as G — **this is the cell that should stay live** (see note below)                                                          |
 
 **G/H merge, explicit call:** these are one test cell, not two. Rather than defaulting to "whichever was listed first," run **H's copy**, because it clears the qualification and specificity bands G doesn't (see below) — G's line is the textbook generic-category anti-pattern, near word-for-word the example this skill's own pattern list uses ("the smarter way to X").
 
@@ -33,6 +34,7 @@ dashboard    : hook rate assumed = 3-second video plays / impressions (Meta's do
 ## Bands (gate-passing cell only — E and F are unbanded per the skill's rule that gate-failers don't get scored on the seven dimensions, only ranked and given a fix)
 
 **G/H (running H's text):**
+
 - Time-to-signal: **strong** — visual + text together land the promise in-frame.
 - Sound-off legibility: **strong** — text carries it, not cropped.
 - Qualification: **strong** — "Sunday marathon" names a real, specific fatigue only batch-preppers recognize; the wrong viewer has no reason to stay.

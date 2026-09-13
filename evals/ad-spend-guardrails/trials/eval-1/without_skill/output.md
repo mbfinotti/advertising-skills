@@ -17,13 +17,13 @@ Do not adopt the generic "4x" benchmark. It isn't derived from our unit economic
 
 Below 2.2x, every order loses money before fixed overhead is even considered. Above 2.2x, each incremental point of ROAS converts directly to profit margin on ad-driven revenue:
 
-| ROAS | Ad spend per order | Profit margin after COGS/shipping/ad spend |
-|---|---|---|
-| 2.2x (breakeven) | $30.60 | 0% |
-| 2.5x | $27.20 | 4.6% |
-| 3.0x | $22.67 | 11.6% |
-| **3.5x (target)** | **$19.43** | **16.4%** |
-| 4.0x | $17.00 | 20.0% |
+| ROAS              | Ad spend per order | Profit margin after COGS/shipping/ad spend |
+| ----------------- | ------------------ | ------------------------------------------ |
+| 2.2x (breakeven)  | $30.60             | 0%                                         |
+| 2.5x              | $27.20             | 4.6%                                       |
+| 3.0x              | $22.67             | 11.6%                                      |
+| **3.5x (target)** | **$19.43**         | **16.4%**                                  |
+| 4.0x              | $17.00             | 20.0%                                      |
 
 So "4x" isn't wrong, exactly — it's just a choice to run paid media at a 20% profit margin. That's a legitimate number to pick, but it should be picked deliberately as a growth/profit tradeoff, not imported as an industry default. At $60K/month in spend, moving the target from 4.0x to 3.5x is the difference between requiring ~$240K/mo in attributed revenue vs. ~$210K/mo — a meaningful lever on how much of the account we can keep scaling profitably.
 

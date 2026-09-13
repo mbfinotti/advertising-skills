@@ -22,15 +22,16 @@ I don't have your time-to-conversion lag distribution, so I can't derive exact d
 
 ## The corrected ladder
 
-| Stage | Trigger | Window (proxy) | Message intent / offer | Concepts |
-|---|---|---|---|---|
-| S1 Reminder | Cart/checkout start, no purchase | 0–2 d | Dynamic ad, exact item, **no discount** | 3 |
-| S2 Objection | S1 aged out, still no purchase | 3–7 d | Shipping/returns/guarantee, materials/quality proof (cookware-specific: induction-compatible, oven-safe temp, warranty) | 3 |
-| S3 Social proof | S1/S2 aged out, still no purchase | 8–14 d | Reviews, UGC, before/after cooking content | 3 |
-| S4 Last-call | Any above, aged out, still no purchase | 15–21 d | **The only discount rung** — one offer, not an escalating one (e.g. flat 15%), plus urgency | 3 |
-| Win-back | Purchasers | 30–90+ d post-purchase | Replenishment/complementary cross-sell — separate budget, not part of this ladder | 3 |
+| Stage           | Trigger                                | Window (proxy)         | Message intent / offer                                                                                                  | Concepts |
+| --------------- | -------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------- |
+| S1 Reminder     | Cart/checkout start, no purchase       | 0–2 d                  | Dynamic ad, exact item, **no discount**                                                                                 | 3        |
+| S2 Objection    | S1 aged out, still no purchase         | 3–7 d                  | Shipping/returns/guarantee, materials/quality proof (cookware-specific: induction-compatible, oven-safe temp, warranty) | 3        |
+| S3 Social proof | S1/S2 aged out, still no purchase      | 8–14 d                 | Reviews, UGC, before/after cooking content                                                                              | 3        |
+| S4 Last-call    | Any above, aged out, still no purchase | 15–21 d                | **The only discount rung** — one offer, not an escalating one (e.g. flat 15%), plus urgency                             | 3        |
+| Win-back        | Purchasers                             | 30–90+ d post-purchase | Replenishment/complementary cross-sell — separate budget, not part of this ladder                                       | 3        |
 
 Notes:
+
 - Collapse to fewer stages if your real lag data shows 80%+ of converters buy inside 7 days (likely, for cookware) — you may only need Reminder → Objection → Last-call.
 - Vary the S4 offer over time (e.g. rotate between % off, free shipping, a bundled accessory) so it isn't a fixed, learnable trigger.
 
@@ -49,6 +50,7 @@ If your current 10/15/20 ladder doesn't already exclude purchasers, some share o
 ## Cap sheet
 
 Meta/Google don't expose a hard cap field on conversion objectives — use decay proxies against a 7-day rolling baseline:
+
 - S1–S3: act at >5–6/week per person, or CTR down 15–20%+, or CPM up 10%+
 - S4: tighter, 3–4/week — it's the smallest, most fatigue-prone pool
 

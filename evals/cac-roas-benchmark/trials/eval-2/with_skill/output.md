@@ -2,7 +2,7 @@
 
 ## Short answer
 
-No — the $30,000 CAC and the comparison to the $239 First Page Sage benchmark are both invalid, for two independent reasons. Don't use either number to decide whether to kill paid before May. What follows is what the numbers *do* support.
+No — the $30,000 CAC and the comparison to the $239 First Page Sage benchmark are both invalid, for two independent reasons. Don't use either number to decide whether to kill paid before May. What follows is what the numbers _do_ support.
 
 ## Headline
 
@@ -14,6 +14,7 @@ No — the $30,000 CAC and the comparison to the $239 First Page Sage benchmark 
 Model: B2B SaaS · Window: April 2026 (single month; sales cycle ~4 months → **window < lag, cohort immature**) · Spend line: paid media + agency ($60,000) — **this is a Paid CAC variant, not blended** (no organic/total marketing spend given) · New customer = closed-won deal — **assumed net-new logo, not renewal/expansion; not confirmed** · Contribution margin: gross margin 75%, used per this skill's B2B convention (allowable CAC = ACV × gross margin) · History: **one summary statistic only** — a historical lead-to-close rate of 1.5%, not a period-by-period paid-CAC/cost-per-SQL series. Rung 2 (4-8 trailing periods, same definition) is not available.
 
 **Named gaps that would unlock a full verdict:**
+
 - Are all 500 April leads paid-attributed, or is this actually a blended figure?
 - Do the 2 April closed-won deals exclude renewals/expansions?
 - A trailing 4-8 month series of paid CPL and cost-per-SQL, same definition — currently only one aggregate rate exists.
@@ -21,14 +22,14 @@ Model: B2B SaaS · Window: April 2026 (single month; sales cycle ~4 months → *
 
 ## Metric table
 
-| Metric | Variant | Value | Window | Source |
-|---|---|---|---|---|
-| CPL | paid spend ÷ leads | $120 | April, in-period | paid platform + CRM |
-| Cost per SQL | paid spend ÷ SQLs | $1,500 | April, in-period | CRM |
-| Lead→SQL rate | SQLs ÷ leads | 8% | April, in-period | CRM |
-| In-period "CAC" (invalid, shown for correction) | paid spend ÷ closed-won *in the same month* | $30,000 | April, in-period | as reported by cofounder |
-| Break-even CPL | ACV × historical lead-to-close (1.5%) | $270 | — | own economics |
-| Allowable CAC (first-year) | ACV × gross margin = $18,000 × 0.75 | $13,500 | — | own economics |
+| Metric                                                         | Variant                                                         | Value   | Window               | Source                                                      |
+| -------------------------------------------------------------- | --------------------------------------------------------------- | ------- | -------------------- | ----------------------------------------------------------- |
+| CPL                                                            | paid spend ÷ leads                                              | $120    | April, in-period     | paid platform + CRM                                         |
+| Cost per SQL                                                   | paid spend ÷ SQLs                                               | $1,500  | April, in-period     | CRM                                                         |
+| Lead→SQL rate                                                  | SQLs ÷ leads                                                    | 8%      | April, in-period     | CRM                                                         |
+| In-period "CAC" (invalid, shown for correction)                | paid spend ÷ closed-won _in the same month_                     | $30,000 | April, in-period     | as reported by cofounder                                    |
+| Break-even CPL                                                 | ACV × historical lead-to-close (1.5%)                           | $270    | —                    | own economics                                               |
+| Allowable CAC (first-year)                                     | ACV × gross margin = $18,000 × 0.75                             | $13,500 | —                    | own economics                                               |
 | Projected paid CAC at cohort maturity (estimate, not measured) | paid spend ÷ (leads × historical lead-to-close) = $60,000 ÷ 7.5 | ≈$8,000 | projected to ~August | derived, historical conversion rate applied to April cohort |
 
 ## Comparison ladder
@@ -47,10 +48,10 @@ Gate: variant established (yes, paid CPL/cost-per-SQL) · margin known (yes, 75%
 
 ## Handoffs
 
-- Deciding a hard rule for *when* to pause or scale paid (a CAC ceiling, a kill-switch trigger) is policy, not this check → `mbfinotti/advertising-skills@ad-spend-guardrails`.
-- If, once the April cohort matures, the verdict comes back unhealthy and the question becomes *why* → `mbfinotti/advertising-skills@ad-account-diagnostic`.
+- Deciding a hard rule for _when_ to pause or scale paid (a CAC ceiling, a kill-switch trigger) is policy, not this check → `mbfinotti/advertising-skills@ad-spend-guardrails`.
+- If, once the April cohort matures, the verdict comes back unhealthy and the question becomes _why_ → `mbfinotti/advertising-skills@ad-account-diagnostic`.
 - If the decision is to shift budget rather than cut it entirely → `mbfinotti/advertising-skills@ad-spend-allocation`.
 
 ## Bottom line for the cofounder conversation
 
-Both anchors behind "kill paid" are broken: the $30,000 figure mixes April's spend with a cohort of leads generated months earlier, and the $239 benchmark measures a different, mostly-organic mix from a different company's clients — even its own paid-only number is $341, not $239. The one thing this data *can* say is that April's top-of-funnel cost (CPL $120 vs. a $270 break-even) looks fine. The real answer on whether $60,000 in April paid spend was worth it won't exist until that cohort finishes closing, around August. If a decision is needed before then, it has to be made explicitly as a bet under uncertainty, not as a read of numbers that aren't ready yet — and the two figures being waved around currently don't support "catastrophe" any more than they'd support "healthy."
+Both anchors behind "kill paid" are broken: the $30,000 figure mixes April's spend with a cohort of leads generated months earlier, and the $239 benchmark measures a different, mostly-organic mix from a different company's clients — even its own paid-only number is $341, not $239. The one thing this data _can_ say is that April's top-of-funnel cost (CPL $120 vs. a $270 break-even) looks fine. The real answer on whether $60,000 in April paid spend was worth it won't exist until that cohort finishes closing, around August. If a decision is needed before then, it has to be made explicitly as a bet under uncertainty, not as a read of numbers that aren't ready yet — and the two figures being waved around currently don't support "catastrophe" any more than they'd support "healthy."

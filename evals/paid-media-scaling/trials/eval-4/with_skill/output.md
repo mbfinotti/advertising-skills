@@ -5,25 +5,25 @@
 ## Why the ask as stated doesn't ship
 
 **1. Your measurement-health gate is failing, and the fix you picked is backward.**
-LinkedIn overcounting vs. CRM is the single most common B2B paid-media failure this skill tracks: *falling CPL reads as success while pipeline quality erodes — the proxy breaks, not the ads.* The standing rule for this exact situation is **when platform and CRM disagree, the CRM wins** — you're doing the opposite. Trusting LinkedIn "because CRM lags" conflates two different problems: CRM *timing* lag (real, expected) vs. CRM *count* disagreement (a tracking/definition bug — duplicate leads, gated-form conversions firing before CRM qualification, etc.). Until that gap is diagnosed, your CPL of $61 is not a trustworthy number.
+LinkedIn overcounting vs. CRM is the single most common B2B paid-media failure this skill tracks: _falling CPL reads as success while pipeline quality erodes — the proxy breaks, not the ads._ The standing rule for this exact situation is **when platform and CRM disagree, the CRM wins** — you're doing the opposite. Trusting LinkedIn "because CRM lags" conflates two different problems: CRM _timing_ lag (real, expected) vs. CRM _count_ disagreement (a tracking/definition bug — duplicate leads, gated-form conversions firing before CRM qualification, etc.). Until that gap is diagnosed, your CPL of $61 is not a trustworthy number.
 
 **2. Discovery calls "feeling lighter" is your lead-quality proxy breaking, not sales complaining.**
 Sales always complains — true, and also the exact line a real signal hides behind. You cut spend efficiency (CPL $95→$61) at the same moment sales flags softer calls. That correlation is the textbook pattern for creative/targeting broadening to reach weaker prospects as spend rises. It needs a number (a quality score on discovery calls), not a dismissal.
 
 **3. The math doesn't fit "next month."**
-$45K is +125% in one move and 2.25x your current spend — past the 2x line where attribution-only evidence stops being sufficient on its own. Your sales cycle is ~4 months; you have 6 weeks of history on the *current* tier. You cannot have "working great" verified by anything but CPL yet — closed-won on this cohort doesn't exist. Evaluating weekly compounds this: a week is far short of learning-phase-plus-conversion-lag for a 4-month deal cycle, even on leading indicators.
+$45K is +125% in one move and 2.25x your current spend — past the 2x line where attribution-only evidence stops being sufficient on its own. Your sales cycle is ~4 months; you have 6 weeks of history on the _current_ tier. You cannot have "working great" verified by anything but CPL yet — closed-won on this cohort doesn't exist. Evaluating weekly compounds this: a week is far short of learning-phase-plus-conversion-lag for a 4-month deal cycle, even on leading indicators.
 
 ## Readiness gates
 
-| Gate | Status | Basis |
-|---|---|---|
-| 0. Affordability (nCAC ceiling from LTV/margin) | **UNKNOWN** | Have ACV ($28K) only — no gross margin, refunds, or OpEx to derive a max-CAC boundary |
-| 1. Data maturity | **FAIL** | 6 weeks doesn't cover one learning cycle + 4-month lag; "working" = CPL only |
-| 2. Marginal economics | **FAIL** | No approved CAC/margin boundary to compare against; CPL itself is disputed |
-| 3. Measurement health | **FAIL** | Unresolved LinkedIn-vs-CRM conflict; CRM should arbitrate and currently doesn't |
-| 4. Creative supply | **UNKNOWN** | Not provided — need proven-ad count vs. ~budget÷$5,000 (folklore ratio, calibrate) |
-| 5. Business absorption (sales capacity) | **UNKNOWN / at-risk** | Discovery-call complaint may be early speed-to-lead or quality strain |
-| 6. Rollback pre-committed | **FAIL as proposed** | No named trigger or down-move exists in the current plan |
+| Gate                                            | Status                | Basis                                                                                 |
+| ----------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------- |
+| 0. Affordability (nCAC ceiling from LTV/margin) | **UNKNOWN**           | Have ACV ($28K) only — no gross margin, refunds, or OpEx to derive a max-CAC boundary |
+| 1. Data maturity                                | **FAIL**              | 6 weeks doesn't cover one learning cycle + 4-month lag; "working" = CPL only          |
+| 2. Marginal economics                           | **FAIL**              | No approved CAC/margin boundary to compare against; CPL itself is disputed            |
+| 3. Measurement health                           | **FAIL**              | Unresolved LinkedIn-vs-CRM conflict; CRM should arbitrate and currently doesn't       |
+| 4. Creative supply                              | **UNKNOWN**           | Not provided — need proven-ad count vs. ~budget÷$5,000 (folklore ratio, calibrate)    |
+| 5. Business absorption (sales capacity)         | **UNKNOWN / at-risk** | Discovery-call complaint may be early speed-to-lead or quality strain                 |
+| 6. Rollback pre-committed                       | **FAIL as proposed**  | No named trigger or down-move exists in the current plan                              |
 
 One passing/unknown-but-fixable gate does not offset three fails. Per the gate discipline: name the failure and fix it — don't ship a smaller jump instead.
 

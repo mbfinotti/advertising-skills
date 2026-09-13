@@ -9,9 +9,10 @@ Once installed, say "ppc watch" or "what changed this week" in any Claude Code s
 ## The system: 3 layers, not 1 automation
 
 Automation alone decays — nothing forces a decision on what it finds. This has:
+
 1. **Capture** — the skill searches Google/Meta/Microsoft/LinkedIn/Amazon Ads for recent official changes, filters out noise, rates impact.
 2. **Triage** — a fixed 20-min weekly slot (Monday, first thing) where you only look at High-impact items and decide: notify a client, act in-account, or ignore.
-3. **Compound** — every kept item lands in `~/ppc-changelog/CHANGELOG.md`, a running table that doubles as searchable memory *and* client-facing proof you're actively monitoring their platforms.
+3. **Compound** — every kept item lands in `~/ppc-changelog/CHANGELOG.md`, a running table that doubles as searchable memory _and_ client-facing proof you're actively monitoring their platforms.
 
 Quarterly (2h), you do a deeper pass: read each platform's full update page for the quarter (weekly search is deliberately shallow), catch what was missed, renew lapsing certs (Google Ads certs expire yearly), and re-check whether your Tier-1/Tier-2 platform split still matches your actual client mix.
 
@@ -92,9 +93,10 @@ Rate for a solo consultant running SMB and mid-market accounts. Enterprise-only 
 ## Changelog row format
 
 Append to the table in `~/ppc-changelog/CHANGELOG.md`:
-
 ```
+
 | YYYY-MM-DD | Platform | Change in one line | High/Medium/Low | Source name | Y/N — one-line note |
+
 ```
 
 - Date: the announcement date, not the run date
@@ -178,22 +180,27 @@ Weekly search coverage is shallow by design; the quarterly pass is where anythin
 Locate every source by name through search at run time. Platform blogs are re-slugged and merged regularly, so a stored URL is a future dead link — this is why the skill searches by name and why no URLs appear here.
 
 **Google Ads**
+
 - Primary: Google Ads Help > What's New
 - Independent: Search Engine Land > PPC
 
 **Meta Ads**
+
 - Primary: Meta for Business news page
 - Independent: Jon Loomer Digital
 
 **Microsoft Advertising**
+
 - Primary: Microsoft Advertising Blog > release notes
 - Independent: Search Engine Roundtable
 
 **LinkedIn Ads**
+
 - Primary: LinkedIn Marketing Solutions Blog
 - Independent: Search Engine Journal > PPC
 
 **Amazon Ads**
+
 - Primary: Amazon Ads Advertising API release notes
 - Independent: PPC Hero
 
@@ -202,11 +209,13 @@ Cross-check a High-impact item against the independent source before notifying a
 ## Scheduling the weekly run
 
 Option A — Claude Code `/loop`:
+
 - Run `/loop 7d ppc-platform-watch` in a session left open.
 - Read the digest whenever the session is next opened.
 - Accept that a closed laptop or ended session stops the loop.
 
 Option B — calendar reminder:
+
 - Create a recurring Monday event titled "PPC watch — 20 min".
 - Open Claude Code and invoke the skill manually from the event.
 - Keep the reminder even after the habit sets, as the recovery path after holidays.
@@ -233,7 +242,7 @@ Columns:
 This file doubles as client-facing proof of active monitoring, so keep every row defensible and never backfill a change that was not published.
 
 | Date | Platform | Change | Impact | Source | Client action |
-| --- | --- | --- | --- | --- | --- |
+| ---- | -------- | ------ | ------ | ------ | ------------- |
 ```
 
 **One caveat**: the source names in the playbook (e.g. "Jon Loomer Digital", "PPC Hero") are from memory, not verified live — web search was unavailable in this sandbox. Sanity-check that list once before relying on it; everything else (the skill's search-by-name approach, the ritual, the changelog format) doesn't depend on those specific names being current.

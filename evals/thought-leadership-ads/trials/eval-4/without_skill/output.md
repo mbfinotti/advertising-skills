@@ -1,8 +1,9 @@
 ## Run them as LinkedIn Thought Leader Ads, not boosted posts
 
-The conflict is false. LinkedIn's Thought Leader Ads (TLA) format sponsors an employee's *already-published* organic post while attaching the CTA button and destination URL as a separate ad-wrapper element — the underlying post is never touched, edited, or duplicated.
+The conflict is false. LinkedIn's Thought Leader Ads (TLA) format sponsors an employee's _already-published_ organic post while attaching the CTA button and destination URL as a separate ad-wrapper element — the underlying post is never touched, edited, or duplicated.
 
 **Why this resolves both camps:**
+
 - Marek's feed post stays exactly as published — no nagging, no re-approval cycle.
 - Demand Gen gets a CTA button + UTM-tagged landing URL, because those live in the ad unit, not in the post.
 - RevOps's "brand lift is the point" concern is a non-issue: the CTA is a small footer button under the creative, not a swap of the post for landing-page copy. Comments, likes, and reactions on the sponsored version still roll up to Marek's real post, so organic social proof and reach both survive.

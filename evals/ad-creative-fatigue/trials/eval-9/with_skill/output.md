@@ -2,7 +2,7 @@
 
 ## The headline call: don't replace all 28 next month. Replace by concept, on evidence, staggered.
 
-A campaign-level CPA rising 22% over three weeks is one lagging, aggregate number. It cannot tell you whether 1 of 6 concepts is dying and dragging the average, whether all 6 are fatigued, or whether nothing creative is wrong at all. Before any production brief gets written, run the diagnosis this way — it changes both *what* gets replaced and *how fast*.
+A campaign-level CPA rising 22% over three weeks is one lagging, aggregate number. It cannot tell you whether 1 of 6 concepts is dying and dragging the average, whether all 6 are fatigued, or whether nothing creative is wrong at all. Before any production brief gets written, run the diagnosis this way — it changes both _what_ gets replaced and _how fast_.
 
 ---
 
@@ -20,16 +20,16 @@ A campaign-level CPA rising 22% over three weeks is one lagging, aggregate numbe
 
 The prompt gives platform, campaign type, ad/concept count, and a 3-week CPA trend — enough to route the plan, not enough to issue a verdict yet. Before Phase 1 below runs, get:
 
-| Missing input | Why it matters |
-|---|---|
-| Funnel stage (cold prospecting vs retargeting) — Advantage+ shopping is usually broad/prospecting, but confirm | Tolerated exposure and the saturation read differ sharply by stage |
-| Daily spend & conversion volume per creative | Decides whether the confidence gate can clear on CPA, or has to run on engagement signals only |
-| Change log: any budget, bid, audience, or optimization-event edits in the last 3 weeks, with exact dates | Single biggest false-positive generator — a learning-phase reset alone can produce this exact pattern |
-| Audience size / broad vs narrowed targeting | Sets the saturation read (first-time impression ratio, reach trend) |
-| How many of the 28 sit in the same ad set, and whether any sibling was added/removed in-window | Sibling-mix shift can produce this same CPA move with zero creative decay |
-| Target CPA/ROAS | Sets how far "22% up" actually is from the line that matters |
-| Effort ceiling: in-house editing capacity, brief lead time, who signs off | Deletes rungs from the ladder — this is what makes "next month" realistic or not |
-| B2C confirmed (assumed here — outdoor apparel D2C ecommerce) | Sets which signals carry the call; assumed correct, flag if wrong |
+| Missing input                                                                                                  | Why it matters                                                                                        |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Funnel stage (cold prospecting vs retargeting) — Advantage+ shopping is usually broad/prospecting, but confirm | Tolerated exposure and the saturation read differ sharply by stage                                    |
+| Daily spend & conversion volume per creative                                                                   | Decides whether the confidence gate can clear on CPA, or has to run on engagement signals only        |
+| Change log: any budget, bid, audience, or optimization-event edits in the last 3 weeks, with exact dates       | Single biggest false-positive generator — a learning-phase reset alone can produce this exact pattern |
+| Audience size / broad vs narrowed targeting                                                                    | Sets the saturation read (first-time impression ratio, reach trend)                                   |
+| How many of the 28 sit in the same ad set, and whether any sibling was added/removed in-window                 | Sibling-mix shift can produce this same CPA move with zero creative decay                             |
+| Target CPA/ROAS                                                                                                | Sets how far "22% up" actually is from the line that matters                                          |
+| Effort ceiling: in-house editing capacity, brief lead time, who signs off                                      | Deletes rungs from the ladder — this is what makes "next month" realistic or not                      |
+| B2C confirmed (assumed here — outdoor apparel D2C ecommerce)                                                   | Sets which signals carry the call; assumed correct, flag if wrong                                     |
 
 Treat these as day-1 asks to your growth/media team — they cost nothing to pull and gate everything downstream.
 
@@ -39,16 +39,16 @@ Treat these as day-1 asks to your growth/media team — they cost nothing to pul
 
 Run before touching any creative. Any FAIL here ends the fatigue inquiry and redirects the fix — it does **not** greenlight a refresh.
 
-| Confounder | Check | Priority given this case |
-|---|---|---|
-| Budget/bid change | Overlay ad-set change history on the CPA series | Check first — cheapest, biggest false-positive source |
-| Learning-phase reset | Last significant edit date on the campaign/ad sets | Advantage+ is edit-sensitive; check first |
-| Sibling-mix shift | Any of the 28 added/removed/resized in the window | Check first — free from the same change log |
-| Seasonality / auction CPM | CPM trend vs account's other campaigns; fall apparel season starting now | Outdoor apparel enters peak intent in Sept–Oct — real risk of CPM-driven cost rise with flat CTR |
-| Audience saturation | First-time-impression ratio, reach trend | Advantage+ broad delivery can plateau reach without anyone noticing |
-| Attribution-window skew | Compare only lag-mature windows | 3-week trailing window is exactly where this artifact shows up |
-| Tracking breakage | Platform-reported conversions vs order system, ratio stability | Standard check, low cost |
-| Landing page/offer | Any site/offer change in the window; CVR from other traffic to the same pages | Rules creative in or out fast |
+| Confounder                | Check                                                                         | Priority given this case                                                                         |
+| ------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Budget/bid change         | Overlay ad-set change history on the CPA series                               | Check first — cheapest, biggest false-positive source                                            |
+| Learning-phase reset      | Last significant edit date on the campaign/ad sets                            | Advantage+ is edit-sensitive; check first                                                        |
+| Sibling-mix shift         | Any of the 28 added/removed/resized in the window                             | Check first — free from the same change log                                                      |
+| Seasonality / auction CPM | CPM trend vs account's other campaigns; fall apparel season starting now      | Outdoor apparel enters peak intent in Sept–Oct — real risk of CPM-driven cost rise with flat CTR |
+| Audience saturation       | First-time-impression ratio, reach trend                                      | Advantage+ broad delivery can plateau reach without anyone noticing                              |
+| Attribution-window skew   | Compare only lag-mature windows                                               | 3-week trailing window is exactly where this artifact shows up                                   |
+| Tracking breakage         | Platform-reported conversions vs order system, ratio stability                | Standard check, low cost                                                                         |
+| Landing page/offer        | Any site/offer change in the window; CVR from other traffic to the same pages | Rules creative in or out fast                                                                    |
 
 If nothing fails here, proceed to Phase 1. If something fails, the fix targets that cause — not the creative — and this roadmap pauses on the affected scope.
 

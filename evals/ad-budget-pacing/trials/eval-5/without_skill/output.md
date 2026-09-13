@@ -16,7 +16,7 @@ You're hotter than you think. Worth fixing the internal number before it goes in
 - Nov 3 (8 days ago): +18% → $354.00/day
 - Nov 9 (2 days ago): −15% → $300.90/day (current active daily budget)
 
-Daily-budget-implied spend through Nov 10 (2 days @ $300 + 6 days @ $354 + 2 days @ $300.90) = $3,325.80 vs. actual $3,850 — so even against your *adjusted* budgets you're running ~15.8% hot, on top of the 18%-then-15% moves already made. The choppy delivery you saw after the Nov 3 raise likely never fully settled before you cut on Nov 9, so the account's been chasing itself for over a week.
+Daily-budget-implied spend through Nov 10 (2 days @ $300 + 6 days @ $354 + 2 days @ $300.90) = $3,325.80 vs. actual $3,850 — so even against your _adjusted_ budgets you're running ~15.8% hot, on top of the 18%-then-15% moves already made. The choppy delivery you saw after the Nov 3 raise likely never fully settled before you cut on Nov 9, so the account's been chasing itself for over a week.
 
 ## Recommended cut
 

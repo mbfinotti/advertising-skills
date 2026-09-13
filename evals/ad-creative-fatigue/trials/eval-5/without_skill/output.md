@@ -2,7 +2,7 @@
 
 The fresh ad decaying to pack-level performance within two weeks is the key data point. If this were normal creative wear-out, that ad should have significantly outperformed the tired four for longer. It didn't — which means the problem isn't "the creative is stale," it's **audience saturation**. On a fixed matched list of 38K:
 
-- **Reach flat + impressions climbing** = LinkedIn's delivery system has stopped finding un-served members in your list and is now recycling impressions onto people it has already reached. Effective addressable inventory inside a 38K matched audience is typically 40–60% (LinkedIn active-member coverage, not the full list) — so your real reached pool is likely closer to 15–22K, and *those* people are absorbing all the frequency.
+- **Reach flat + impressions climbing** = LinkedIn's delivery system has stopped finding un-served members in your list and is now recycling impressions onto people it has already reached. Effective addressable inventory inside a 38K matched audience is typically 40–60% (LinkedIn active-member coverage, not the full list) — so your real reached pool is likely closer to 15–22K, and _those_ people are absorbing all the frequency.
 - **Freq 7.8 cumulative** on that smaller effectively-reached pool is high enough to produce banner blindness, which explains the CTR drop (0.43% → 0.29%) uniformly across all five ads, new one included.
 - **Demo requests and click-to-demo both down** confirms it's not just top-of-funnel fatigue — the same narrow slice of people is clicking repeatedly out of familiarity/curiosity rather than net-new prospects converting.
 
@@ -17,16 +17,19 @@ Ask your ABM/RevOps team to split the 38K matched list by persona before the bri
 ## The angles (one cluster per segment)
 
 **1. Economic buyer (CFO) — "Business case" angle**
+
 - Quantified ROI/cost-of-inaction hook, not feature talk. Lead with the number ("$X reclaimed per quarter," "N hours cut per close cycle").
 - Format: static image or short (15–20s) data-forward video.
 - CTA: lighter-weight than "Request a demo" — an ROI calculator or benchmark report. This also diversifies your CTA mix, which should help the click-to-demo decay since not every click is being forced into the same high-friction offer.
 
 **2. Champion (Controller/Finance Ops) — "Pain agitation + proof" angle**
+
 - Open on the specific daily friction (manual reconciliation, month-end close pain, spreadsheet risk), then a named-customer proof point with a concrete outcome.
 - Format: customer logo/quote carousel or short testimonial clip — social proof reads as less "ad-like," which helps against banner blindness.
 - CTA: "See how [similar company] did it" → case study, not straight to demo.
 
 **3. Technical evaluator (Risk/Compliance/IT) — "Category/trust" angle**
+
 - Compliance, security, integration, auditability angle — the objection-handling content this persona actually needs before they'll champion internally.
 - Format: could be a contrarian/POV or educational carousel (pattern-interrupts well against fatigue because it doesn't look like a typical demo ad).
 - CTA: guide/whitepaper download — keep demo CTA reserved for retargeting warmer engagers only.

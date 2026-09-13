@@ -6,38 +6,39 @@ No web access granted, so per the skill's fallback I'll label the gating numbers
 
 ### 0. Before you build this — two mandatory unknowns
 
-The skill this audit follows won't rank formats until objective *and platform* are fixed, and it flags destination/tracking readiness as launch blockers. You didn't name the platform, so I'm running this as a **Meta (Facebook/Instagram) audit** — "lookalike audience," "carousel," "conversions campaign," and a $25/day budget are Meta Ads Manager's vocabulary and its typical testing scale, not LinkedIn's (LinkedIn CPCs would make $25/day barely buy a handful of clicks, and LinkedIn calls the objective "Website Conversions"). **Confirm this before you build** — if it's actually LinkedIn, everything below gets worse (spend floor problem *and* format problem compound), not different.
+The skill this audit follows won't rank formats until objective _and platform_ are fixed, and it flags destination/tracking readiness as launch blockers. You didn't name the platform, so I'm running this as a **Meta (Facebook/Instagram) audit** — "lookalike audience," "carousel," "conversions campaign," and a $25/day budget are Meta Ads Manager's vocabulary and its typical testing scale, not LinkedIn's (LinkedIn CPCs would make $25/day barely buy a handful of clicks, and LinkedIn calls the objective "Website Conversions"). **Confirm this before you build** — if it's actually LinkedIn, everything below gets worse (spend floor problem _and_ format problem compound), not different.
 
 Also unconfirmed, needed before launch regardless of the format verdict:
+
 - Is there a dedicated demo-request landing page, and do you know its conversion rate? (Decides in-platform form vs. landing page — see §2.)
 - Is the demo-request event verified firing (pixel/browser-side and Conversions API/server-side)?
 - Any EU or consent-regulated geography in the lookalike source?
 
 ### 1. Inputs echoed
 
-| Input | Value |
-|---|---|
-| Objective | Conversions, optimizing for demo-request submission |
-| Platform | Assumed Meta (Facebook/Instagram) — **unconfirmed** |
-| Funnel stage / audience | Cold prospecting, lookalike |
-| Offer | Demo request — sales-assisted, considered B2B deal |
-| B2B/B2C | B2B |
-| Production capacity | 5-card carousel built; other asset types not stated |
-| Destination / tracking | Unconfirmed |
-| Budget / volume | $25/day, target CPA ~$80 → ~2.2 conversions/week implied |
-| Geography | Unconfirmed |
+| Input                   | Value                                                    |
+| ----------------------- | -------------------------------------------------------- |
+| Objective               | Conversions, optimizing for demo-request submission      |
+| Platform                | Assumed Meta (Facebook/Instagram) — **unconfirmed**      |
+| Funnel stage / audience | Cold prospecting, lookalike                              |
+| Offer                   | Demo request — sales-assisted, considered B2B deal       |
+| B2B/B2C                 | B2B                                                      |
+| Production capacity     | 5-card carousel built; other asset types not stated      |
+| Destination / tracking  | Unconfirmed                                              |
+| Budget / volume         | $25/day, target CPA ~$80 → ~2.2 conversions/week implied |
+| Geography               | Unconfirmed                                              |
 
 ### 2. Per-format verdict table
 
-| Format | Verdict | Reason | Substitute |
-|---|---|---|---|
-| **Carousel (5-card, cold lookalike)** | **Misfit — structural** | Carousel's fit band is *consideration, multi-product, warm audiences*; it's explicitly wrong for *cold first touch* — sequential swipe attention nobody cold gives. A 5-card feature walkthrough is an awareness-shaped format pointed at a direct-response outcome on people who've never heard of Fienzo. This is the single most common format error in B2B paid social. | Single image, or short vertical video if you can produce one |
-| **Conversions objective @ $25/day, $80 target CPA** | **Ineligible at this budget** (hard-gate category: conversion-volume floor) | Optimization needs ~50 events/ad set/week to exit learning phase and deliver efficiently. At $80 CPA and $25/day (~$175/week), you're buying ~2.2 conversions/week — ~4% of the floor, and roughly in line with your current 2-3/week *company-wide* total. An under-volume conversions objective doesn't fail gracefully; it pays more per click for a system that never learns. | Traffic / landing-page-view objective with manual funnel tracking, until budget or a proxy event clears the floor (see §3) |
-| Single image | **Fit** | "Any stage, fast testing, direct response" — exactly this situation: cold, direct-response, low production budget. Pull one strong card from the carousel set or shoot one static. | — |
-| Short vertical video | **Conditional — fit if produced** | Fits awareness-through-conversion and is the one format built to *show* a workflow, which a static can't. Promotable here because "a workflow that needs demonstrating" is a named reason to move up a rung. Costs a shoot/screen-record, not just a re-crop. | — |
-| In-platform lead form | **Misfit for this specific goal** | Fits volume lead capture / content registration; structurally wrong for "high-value qualified pipeline, demo booking" — it removes the landing-page qualification step you need for a sales-assisted deal. | Landing page with an embedded calendar |
-| Display / retargeting | Ineligible for this brief | Fits cheap awareness/retargeting on warm audiences; wrong for cold direct conversion — passive, low-intent context. | — |
-| Document ads | Not applicable | Fits B2B nurture/gated long-form; this is a top-of-funnel prospecting push, not a nurture sequence. | — |
+| Format                                              | Verdict                                                                     | Reason                                                                                                                                                                                                                                                                                                                                                                              | Substitute                                                                                                                 |
+| --------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Carousel (5-card, cold lookalike)**               | **Misfit — structural**                                                     | Carousel's fit band is _consideration, multi-product, warm audiences_; it's explicitly wrong for _cold first touch_ — sequential swipe attention nobody cold gives. A 5-card feature walkthrough is an awareness-shaped format pointed at a direct-response outcome on people who've never heard of Fienzo. This is the single most common format error in B2B paid social.         | Single image, or short vertical video if you can produce one                                                               |
+| **Conversions objective @ $25/day, $80 target CPA** | **Ineligible at this budget** (hard-gate category: conversion-volume floor) | Optimization needs ~~50 events/ad set/week to exit learning phase and deliver efficiently. At $80 CPA and $25/day (~~$175/week), you're buying ~2.2 conversions/week — ~4% of the floor, and roughly in line with your current 2-3/week _company-wide_ total. An under-volume conversions objective doesn't fail gracefully; it pays more per click for a system that never learns. | Traffic / landing-page-view objective with manual funnel tracking, until budget or a proxy event clears the floor (see §3) |
+| Single image                                        | **Fit**                                                                     | "Any stage, fast testing, direct response" — exactly this situation: cold, direct-response, low production budget. Pull one strong card from the carousel set or shoot one static.                                                                                                                                                                                                  | —                                                                                                                          |
+| Short vertical video                                | **Conditional — fit if produced**                                           | Fits awareness-through-conversion and is the one format built to _show_ a workflow, which a static can't. Promotable here because "a workflow that needs demonstrating" is a named reason to move up a rung. Costs a shoot/screen-record, not just a re-crop.                                                                                                                       | —                                                                                                                          |
+| In-platform lead form                               | **Misfit for this specific goal**                                           | Fits volume lead capture / content registration; structurally wrong for "high-value qualified pipeline, demo booking" — it removes the landing-page qualification step you need for a sales-assisted deal.                                                                                                                                                                          | Landing page with an embedded calendar                                                                                     |
+| Display / retargeting                               | Ineligible for this brief                                                   | Fits cheap awareness/retargeting on warm audiences; wrong for cold direct conversion — passive, low-intent context.                                                                                                                                                                                                                                                                 | —                                                                                                                          |
+| Document ads                                        | Not applicable                                                              | Fits B2B nurture/gated long-form; this is a top-of-funnel prospecting push, not a nurture sequence.                                                                                                                                                                                                                                                                                 | —                                                                                                                          |
 
 Efficiency ranking driving the order above (cold, direct-response, B2B): single image > short vertical video (promoted for the demo-workflow reason) > carousel/lead form (both knocked out for this specific job). Carousel's effort is moderate (a card set, not a shoot) but that's irrelevant here — it's ineligible on structural fit, not on effort.
 

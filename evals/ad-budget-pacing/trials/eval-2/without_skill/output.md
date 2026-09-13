@@ -13,7 +13,7 @@ Google Ads daily budgets are not a hard per-day cap — they're an **average**. 
 
 Check the math: if Oct 9 = $970 and days 1–8 total = $4,410 − $970 = $3,440, that's an average of **$430/day** for those 8 days — under budget. That's exactly the compensation mechanism working as designed, not a billing error.
 
-Google also guarantees this contractually: it will never charge you more in a calendar month than (daily budget × number of days in that month). If overdelivery ever *would* cause that, Google auto-credits the difference — there's no manual overage to claim, and no refund process exists for this because there's nothing to refund.
+Google also guarantees this contractually: it will never charge you more in a calendar month than (daily budget × number of days in that month). If overdelivery ever _would_ cause that, Google auto-credits the difference — there's no manual overage to claim, and no refund process exists for this because there's nothing to refund.
 
 ## On your plan
 

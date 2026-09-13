@@ -5,15 +5,17 @@
 A flat **2.8x ROAS on everything** collapses three things that need to stay separate: the point where spend loses money, the level you actually want to run at, and the point where you pull the plug. When one number does all three jobs, every new channel or audience — which starts cold, thin on data, and naturally below any steady-state ROAS — reads as a "breach" from day one and gets killed before it had a fair chance to prove out. That's the mechanism behind "dies within a week," not bad luck with channels.
 
 Three concrete faults in the current rule:
+
 - **No evidence gate.** Nothing stops a kill decision before enough spend or enough time has passed to be meaningful. A week is shorter than most platforms' learning phase (Meta typically needs ~50 optimization events in a rolling week to exit learning) — you are very likely judging cold, unstable delivery, not the audience's real economics.
 - **No separation between proven and exploratory spend.** New channels/audiences are held to the same bar as your scaled Meta/Google core, which is exactly backwards — testing should have a looser, spend-based rule, not the tightest one in the account.
-- **Blended-only measurement.** A single ROAS number hides whether the *marginal* dollar (the one a new channel represents) is profitable, versus the *average* dollar across a mature account. You already have the fix for this sitting in-house.
+- **Blended-only measurement.** A single ROAS number hides whether the _marginal_ dollar (the one a new channel represents) is profitable, versus the _average_ dollar across a mature account. You already have the fix for this sitting in-house.
 
 ## Architecture: why the portfolio model is the right call here
 
-Normal ranking (efficiency: tiered ladder > single floor > portfolio; effort: single floor > ladder > portfolio) would put the portfolio model last on cost. But the skill's own override condition is your exact situation: *"An account that already owns the expensive parts — a live margin feed, an analyst who reads marginal efficiency — collapses its effort axis and promotes it on cost."* Your analyst already tracking marginal returns weekly is precisely that asset. Combined with "an efficiency bar has already strangled testing" (your media buyer's complaint, literally), the portfolio model is promoted above its default rank.
+Normal ranking (efficiency: tiered ladder > single floor > portfolio; effort: single floor > ladder > portfolio) would put the portfolio model last on cost. But the skill's own override condition is your exact situation: _"An account that already owns the expensive parts — a live margin feed, an analyst who reads marginal efficiency — collapses its effort axis and promotes it on cost."_ Your analyst already tracking marginal returns weekly is precisely that asset. Combined with "an efficiency bar has already strangled testing" (your media buyer's complaint, literally), the portfolio model is promoted above its default rank.
 
 **Recommendation: run both, on different pools of spend.**
+
 - **Tiered ladder** governs the proven $85K core (existing Meta/Google campaigns at steady state).
 - **Portfolio model with a ring-fenced exploration budget** governs every new channel and new audience launch, exempt from the core ROAS/MER floor and judged on its own spend-based rule instead.
 
@@ -23,7 +25,7 @@ This is cheaper to run than it looks precisely because your analyst already does
 
 ## Gate on measurement — what's missing before the numeric floors can be finalized
 
-Following the skill's rule against fabricating inputs: I do not have your contribution margin, AOV/price bands, current CAC variant, payback target, cash runway, growth stage, named approvers, or what happened the last time performance dropped. **The numeric floors below are formulas and provisional placeholders, not final numbers — do not operate against them until margin is confirmed.** One usable signal: your existing 2.8x bar implies a break-even contribution margin of **1 ÷ 2.8 = 35.7%** *if* it was ever derived from your margin rather than picked as a round-ish number. Confirm which — if your real CM3 is higher, 2.8x has been over-tight this whole time; if lower, you've been losing money on a chunk of "passing" spend.
+Following the skill's rule against fabricating inputs: I do not have your contribution margin, AOV/price bands, current CAC variant, payback target, cash runway, growth stage, named approvers, or what happened the last time performance dropped. **The numeric floors below are formulas and provisional placeholders, not final numbers — do not operate against them until margin is confirmed.** One usable signal: your existing 2.8x bar implies a break-even contribution margin of **1 ÷ 2.8 = 35.7%** _if_ it was ever derived from your margin rather than picked as a round-ish number. Confirm which — if your real CM3 is higher, 2.8x has been over-tight this whole time; if lower, you've been losing money on a chunk of "passing" spend.
 
 ```
 SPEND GUARDRAIL POLICY - Ostrena, effective <pending sign-off>, review <90 days after effective>

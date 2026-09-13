@@ -66,6 +66,6 @@ re-check      : confirm the open items (budget/bid log, FTIR/reach, CPM vs. othe
                 on a lag-mature window after Cyber Monday closes (~Dec 4, 2026).
 ```
 
-**On the team's plan specifically:** don't spend the two highest-value weeks of the year producing new creative for a problem the numbers say isn't there. If leadership wants insurance, stage one challenger asset *alongside* the current ad (never edit it) so you have something ready if real decay shows up post-BF — but that's a hedge, not this week's emergency, and it shouldn't come out of the same lead time you'd need for actual Black Friday assets.
+**On the team's plan specifically:** don't spend the two highest-value weeks of the year producing new creative for a problem the numbers say isn't there. If leadership wants insurance, stage one challenger asset _alongside_ the current ad (never edit it) so you have something ready if real decay shows up post-BF — but that's a hedge, not this week's emergency, and it shouldn't come out of the same lead time you'd need for actual Black Friday assets.
 
 If you can pull the missing pieces (change log, spend/impression volume, FTIR or reach trend, CPM broken out by ad set), send them over and I'll tighten the confidence line and close the loop properly — but nothing in what's missing looks likely to flip this verdict, because the one signal that would have to move to support fatigue (CTR) is moving the wrong way.

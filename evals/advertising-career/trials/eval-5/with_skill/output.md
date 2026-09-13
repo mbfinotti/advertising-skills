@@ -6,7 +6,7 @@
 
 ## Step 0 — Push back, before doing any work (10 min)
 
-Message Lumenmatic now: *"I'll time-box this to a few hours as briefed and focus on the channel/budget reasoning — a fully-realized 12-slide GTM plan with researched audiences and a launch calendar would normally be a paid scope. Here's what I'll cover in that window: [list below]."*
+Message Lumenmatic now: _"I'll time-box this to a few hours as briefed and focus on the channel/budget reasoning — a fully-realized 12-slide GTM plan with researched audiences and a launch calendar would normally be a paid scope. Here's what I'll cover in that window: [list below]."_
 
 This is the single highest-leverage move available and it costs 10 minutes. It also signals seniority — a senior hire is expected to scope, not absorb.
 

@@ -18,17 +18,17 @@ Copying a competitor's channels without matching their economics is the single m
 
 Break-even ROAS at 34% margin is **2.94x** — that's a high bar. With no LTV/repeat-purchase data given, allowable CAC falls back to first-order contribution: roughly **$9** (the conservative ~70%-of-contribution convention, leaving room for variable costs). Stack that against realistic benchmarks:
 
-| Channel | Realistic CPA/CPL | Your ceiling |
-|---|---|---|
-| Paid search (cross-industry avg) | ~$67 CPL | ~$9 |
-| Paid social prospecting (ecommerce median) | ~$38 CPA | ~$9 |
-| Paid social ROAS at median (1.86–1.93x) | needs >50% margin to be profitable | you're at 34% |
+| Channel                                    | Realistic CPA/CPL                  | Your ceiling  |
+| ------------------------------------------ | ---------------------------------- | ------------- |
+| Paid search (cross-industry avg)           | ~$67 CPL                           | ~$9           |
+| Paid social prospecting (ecommerce median) | ~$38 CPA                           | ~$9           |
+| Paid social ROAS at median (1.86–1.93x)    | needs >50% margin to be profitable | you're at 34% |
 
 Almost everything with a published benchmark sits well above what you can afford on a single order. That's the real finding here — not "CTV vs. podcast vs. something else," but that **granola at $38 AOV / 34% margin can't fund paid acquisition off a first purchase alone.** Granola is a repeat category, so true LTV is probably a lot better than this — but until you have that number, no paid channel plan (including a more sensible one) should get real budget.
 
 ## What I'd actually do with $14K/month right now
 
-- **Retail media**, if you sell on Amazon/Instacart/Target+/etc. — capture-at-shelf, buyers already in a purchase session, floor is $2,000–3,000/month (or $100/day self-serve on the #2 network), near-zero creative burden. This is the channel that fits a granola brand's actual buying moment far better than CTV does. *I don't know if you're on any of these — that's the first thing to confirm.*
+- **Retail media**, if you sell on Amazon/Instacart/Target+/etc. — capture-at-shelf, buyers already in a purchase session, floor is $2,000–3,000/month (or $100/day self-serve on the #2 network), near-zero creative burden. This is the channel that fits a granola brand's actual buying moment far better than CTV does. _I don't know if you're on any of these — that's the first thing to confirm._
 - **A small paid search price-discovery test** (~$100) on category/branded terms to get your *real* CPC before committing anything — the $67 CPL figure above is a cross-industry blended number, not CPG-specific, so don't trust it either way until you've bought real clicks.
 - **Hold CTV and podcast entirely.** Revisit both only once you have (a) real LTV/repeat-rate data that moves your CAC ceiling well past $9–13, and (b) budget that clears their actual floors (~$5K/month sustained for CTV, ~$15K+ across 3 shows for podcast) — concentrating, not splitting your current $14K.
 

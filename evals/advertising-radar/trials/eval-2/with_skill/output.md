@@ -18,15 +18,15 @@ No search access was granted, so I'm applying the skill's freshness-check rules 
 
 **Summary table**
 
-| # | Source | Status | Action |
-|---|---|---|---|
-| 1 | thepacedclick.com | Verified-active | Keep |
-| 2 | quietauction.fm | Pending — check feed/directory, not homepage | Keep, re-verify via feed |
-| 3 | maribelquast.com | Domain dead; person unverified | Drop the URL, keep hunting for her live surface |
-| 4 | adspendweekly.com | Unverified (403) | Keep as unverified — do not retry overnight |
-| 5 | bidlathe.com | Renamed but alive → verified-active | Keep, relabel URL to thebidlathe.co |
-| 6 | crestpond.com | Dead (domain resold) | Drop |
-| 7 | Halstrom on Ads (YouTube) | Active, corroborated via companion surface | Keep, relabel verification note |
-| 8 | veldtmarketing.io | Verified-stale (9 months) | Flag/bench — keep only if risk accepted |
+| #   | Source                    | Status                                       | Action                                          |
+| --- | ------------------------- | -------------------------------------------- | ----------------------------------------------- |
+| 1   | thepacedclick.com         | Verified-active                              | Keep                                            |
+| 2   | quietauction.fm           | Pending — check feed/directory, not homepage | Keep, re-verify via feed                        |
+| 3   | maribelquast.com          | Domain dead; person unverified               | Drop the URL, keep hunting for her live surface |
+| 4   | adspendweekly.com         | Unverified (403)                             | Keep as unverified — do not retry overnight     |
+| 5   | bidlathe.com              | Renamed but alive → verified-active          | Keep, relabel URL to thebidlathe.co             |
+| 6   | crestpond.com             | Dead (domain resold)                         | Drop                                            |
+| 7   | Halstrom on Ads (YouTube) | Active, corroborated via companion surface   | Keep, relabel verification note                 |
+| 8   | veldtmarketing.io         | Verified-stale (9 months)                    | Flag/bench — keep only if risk accepted         |
 
 Two open follow-ups before this list is final: pull the actual episode date from Quiet Auction's feed, and find Maribel Quast's current publishing surface. Everything else above is resolved.

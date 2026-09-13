@@ -18,7 +18,7 @@ Run these before spending budget on new creative — they take an afternoon and 
 
 # Use "fresh creative" as a diagnostic, not just a hail-mary
 
-Since you want a new angle anyway, launch it as a **controlled test**, not a replacement: same landing page and checkout, new ad, running alongside the original. If the new ad's CVR is *also* stuck around 1.1%, that's independent confirmation the problem is downstream, not creative. If it recovers to ~3%, you've learned something real about this specific creative-to-page match. Either outcome is useful, and you don't burn your still-functioning original ad in the meantime.
+Since you want a new angle anyway, launch it as a **controlled test**, not a replacement: same landing page and checkout, new ad, running alongside the original. If the new ad's CVR is _also_ stuck around 1.1%, that's independent confirmation the problem is downstream, not creative. If it recovers to ~3%, you've learned something real about this specific creative-to-page match. Either outcome is useful, and you don't burn your still-functioning original ad in the meantime.
 
 # Three fresh angles to test
 
@@ -26,6 +26,7 @@ Your current winner is presumably transformation/results-driven (that's the defa
 
 **1. "The Label Audit" — proof over promise**
 Use this one first if checkout/promo turns out to be the real issue: removing a 20%-off code raises price-scrutiny, and this angle directly rebuilds value perception at full price.
+
 - Hook A: "I read every ingredient on my [pre-workout] out loud. Here's what I found."
 - Hook B: "We sent our own product to an independent lab. This is the certificate."
 - Body: name the industry problem (proprietary blends hiding real dosages), show your label next to a competitor's, cite third-party testing.
@@ -33,6 +34,7 @@ Use this one first if checkout/promo turns out to be the real issue: removing a 
 
 **2. "The Plateau Callout" — problem-agitate**
 Targets a pain point your results-focused ad likely doesn't lead with.
+
 - Hook A: "If your last rep always feels like your worst rep, it's not your training."
 - Hook B: "Spike, then crash. That's not energy, that's a sugar rush."
 - Body: name the specific frustration (crash, jitters, bloat, plateau), reframe the cause, position the product as the mechanism-level fix.
@@ -40,6 +42,7 @@ Targets a pain point your results-focused ad likely doesn't lead with.
 
 **3. "Why We Built This" — founder/insider authenticity**
 Useful if trust took a hit alongside the price change; a person, not a product shot, rebuilds credibility fast.
+
 - Hook A: "I got tired of supplement brands lying about dosages, so I built the label I wished existed."
 - Body: founder-to-camera or UGC, the mission, direct contrast with "bro-science" competitors.
 - CTA: direct, no discount-dependent language.

@@ -1,6 +1,6 @@
 # Prioritized growth plan — Aldergate Health
 
-Your instinct to start with negative keywords and bid tweaks is reasonable but misplaced as the *first* move. Here's why, and what to do instead.
+Your instinct to start with negative keywords and bid tweaks is reasonable but misplaced as the _first_ move. Here's why, and what to do instead.
 
 ## The core problem with "quick wins" first
 
@@ -24,7 +24,7 @@ Given a state AG inquiry last year, this is the actual fire, not a growth item.
 
 You're flying on pixel data alone. Fix this without needing a full EHR integration:
 
-- Stand up server-side conversion tracking (Meta CAPI, Google Enhanced Conversions) using hashed, non-clinical identifiers only (email/phone hash) — improves match rate and survives iOS/cookie signal loss, and is *more* private than client-side pixel firing, which helps your compliance posture too.
+- Stand up server-side conversion tracking (Meta CAPI, Google Enhanced Conversions) using hashed, non-clinical identifiers only (email/phone hash) — improves match rate and survives iOS/cookie signal loss, and is _more_ private than client-side pixel firing, which helps your compliance posture too.
 - Get one non-PHI status flag out of your intake/scheduling system — "qualified lead" or "booked appointment" — even a manual CSV export weekly. Feed that back as an offline conversion event. You don't need billing data; a binary "did this become a real appointment" signal is enough to redirect both platforms' optimization.
 - This is the single highest-leverage move on the list — it improves every dollar of the $35k, not just the next campaign tweak.
 

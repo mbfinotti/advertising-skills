@@ -14,14 +14,14 @@ There's also a denominator problem: reported CTR on an engagement objective coun
 
 Ranked by decisions changed per minute spent reading them:
 
-| Rank | Metric | Why it's here |
-|---|---|---|
-| 1 | **Cost per landing-page click** | The only leading number with a defensible link to pipeline. Never reported CTR. |
-| 2 | **Retargeting-pool growth** (engagers captured) | This format's actual product is a warm audience, not the click itself. |
-| 3 | Comment volume | Highest-intent engagement signal short of a click. |
-| 4 | Account-level engagement (named-account coverage) | Tells you if you're reaching the list, not just generating volume. |
-| 5 | Frequency | Diagnoses budget-vs-audience mismatch, not performance. |
-| 6 | Engagement rate / reported CTR | Track it for the VP's deck. Do not let it move a decision. It's the closest cousin of the metric this format artificially wins, and it's the one number in the whole report proven to point the wrong way. |
+| Rank | Metric                                            | Why it's here                                                                                                                                                                                              |
+| ---- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | **Cost per landing-page click**                   | The only leading number with a defensible link to pipeline. Never reported CTR.                                                                                                                            |
+| 2    | **Retargeting-pool growth** (engagers captured)   | This format's actual product is a warm audience, not the click itself.                                                                                                                                     |
+| 3    | Comment volume                                    | Highest-intent engagement signal short of a click.                                                                                                                                                         |
+| 4    | Account-level engagement (named-account coverage) | Tells you if you're reaching the list, not just generating volume.                                                                                                                                         |
+| 5    | Frequency                                         | Diagnoses budget-vs-audience mismatch, not performance.                                                                                                                                                    |
+| 6    | Engagement rate / reported CTR                    | Track it for the VP's deck. Do not let it move a decision. It's the closest cousin of the metric this format artificially wins, and it's the one number in the whole report proven to point the wrong way. |
 
 ## The real gate: Week 6, not Week 4
 
@@ -43,7 +43,7 @@ Push back on the week-4 timing too — two weeks of live data is inside the lear
 CTR has no seat here either. B2B pipeline from a trust-layer channel takes a sales cycle to show up, not two weeks.
 
 - **Metrics:** influenced pipeline, sales-accepted opportunities from engaged accounts, cost per opportunity.
-- **Bar:** a pipeline-to-spend ratio agreed *now*, not at review time — account-based programs commonly plan against 3–5x. **This number isn't in your brief yet — get the VP to commit to one before launch,** or the 2-quarter review has nothing to be judged against and becomes a re-litigation of the CTR argument all over again.
+- **Bar:** a pipeline-to-spend ratio agreed _now_, not at review time — account-based programs commonly plan against 3–5x. **This number isn't in your brief yet — get the VP to commit to one before launch,** or the 2-quarter review has nothing to be judged against and becomes a re-litigation of the CTR argument all over again.
 
 ## What this replaces, and why it's worth the VP conversation
 

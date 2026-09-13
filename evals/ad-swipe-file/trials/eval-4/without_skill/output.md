@@ -3,7 +3,7 @@
 **The stat doesn't support the conclusion**
 
 - 1 winner out of 21 is a 4.8% observed rate. But with only 21 trials, that number is extremely noisy.
-- If your *true* win rate matched the podcast's 10-11% "best teams" benchmark, you'd still get 0 or 1 winners out of 21 tests about **34% of the time** — purely from chance.
+- If your _true_ win rate matched the podcast's 10-11% "best teams" benchmark, you'd still get 0 or 1 winners out of 21 tests about **34% of the time** — purely from chance.
 - The 95% confidence interval around "1 winner out of 21" is roughly **1% to 23%**. That interval comfortably contains 10-11%. You cannot statistically distinguish your quarter from a "best team" quarter with this sample size.
 
 Conclusion: this data point is too small to diagnose anything. Don't restructure your process off one quarter.
@@ -11,12 +11,12 @@ Conclusion: this data point is too small to diagnose anything. Don't restructure
 **A more likely bottleneck than sourcing volume: per-ad statistical power**
 
 - $7K/month × 3 months = ~$21K total, split across 21 ads ≈ **$1K per ad**.
-- That's a thin budget to reach a statistically confident "win" against a control, especially at typical DTC supplement conversion rates. Many of your 20 "non-winners" were probably never run long enough or spent enough to be distinguishable from the winner — they're *inconclusive*, not *disproven*.
-- Ramping up competitor-ad collection increases the number of hypotheses to test, which — with a fixed budget — means **less money per ad**, **worse statistical power**, and a *lower* chance of clear winners, not higher. You'd be optimizing the wrong stage of the funnel.
+- That's a thin budget to reach a statistically confident "win" against a control, especially at typical DTC supplement conversion rates. Many of your 20 "non-winners" were probably never run long enough or spent enough to be distinguishable from the winner — they're _inconclusive_, not _disproven_.
+- Ramping up competitor-ad collection increases the number of hypotheses to test, which — with a fixed budget — means **less money per ad**, **worse statistical power**, and a _lower_ chance of clear winners, not higher. You'd be optimizing the wrong stage of the funnel.
 
 **Before touching swipe-file volume, get this breakdown for the quarter:**
 
-1. Of the 20 non-winners, how many were *clearly worse* vs. *never reached significance* (inconclusive)?
+1. Of the 20 non-winners, how many were _clearly worse_ vs. _never reached significance_ (inconclusive)?
 2. What sample size/spend/conversions did each ad actually get before a call was made?
 3. What's your working definition of "clear winner" (lift %, confidence threshold, conversions needed)?
 

@@ -9,13 +9,13 @@ Before the report: two things you asked for directly, answered first.
 - **Session floor**: 640 sessions is below the ~1,000-session floor.
 - **Conversion floor**: 9 conversions is below the ~30-conversion floor.
 
-Below either floor, a conversion-rate comparison can't separate a real effect from noise — and you're below *both*. Splitting an already-thin 9 conversions by device makes it thinner still. Back-solving your own numbers shows why: if mobile converts at 1.1% and desktop at 1.9%, and together they sum to 9 conversions across 640 sessions, mobile share works out to ~62% of sessions (~395 mobile, ~245 desktop) — which lands at **roughly 4 mobile conversions vs. 5 desktop conversions**. Your "clear" device gap is one converted lead. Move a single lead from desktop to mobile and the ranking flips.
+Below either floor, a conversion-rate comparison can't separate a real effect from noise — and you're below _both_. Splitting an already-thin 9 conversions by device makes it thinner still. Back-solving your own numbers shows why: if mobile converts at 1.1% and desktop at 1.9%, and together they sum to 9 conversions across 640 sessions, mobile share works out to ~62% of sessions (~395 mobile, ~245 desktop) — which lands at **roughly 4 mobile conversions vs. 5 desktop conversions**. Your "clear" device gap is one converted lead. Move a single lead from desktop to mobile and the ranking flips.
 
 Don't reallocate spend or effort by device from this data. If device prioritization matters operationally, the right question per this skill isn't "which converts higher" on 9 conversions — it's **which device carries the spend** (mobile is weighted by where the money is, not just where the sessions are). You haven't told me the spend split; get that instead of trusting these rates.
 
 ## 2. "Set up an A/B test on the headline."
 
-**No — also refuse this, on a separate floor.** Below ~100 conversions/month, this skill does not recommend A/B testing as a validation path at all — you're at 9/month, an order of magnitude short. A headline test at this volume would run for months to reach significance, and any "win" that emerged early would very likely be a Type S/M error (wrong sign or wildly overstated magnitude per Gelman & Carlin) — Kohavi's and Optimizely's data already say only ~10–33% of tests win *at proper power*; underpowered ones are worse than a coin flip at telling you anything true.
+**No — also refuse this, on a separate floor.** Below ~100 conversions/month, this skill does not recommend A/B testing as a validation path at all — you're at 9/month, an order of magnitude short. A headline test at this volume would run for months to reach significance, and any "win" that emerged early would very likely be a Type S/M error (wrong sign or wildly overstated magnitude per Gelman & Carlin) — Kohavi's and Optimizely's data already say only ~10–33% of tests win _at proper power_; underpowered ones are worse than a coin flip at telling you anything true.
 
 What to do instead: ship the well-evidenced friction removals below and monitor CPA/CVR trend for a full cycle. You will not get statistical proof this way — say that plainly to whoever needs to sign off — but it's the honest path at this volume. Revisit A/B testing once you're clearing ~100 conversions/month, with a sample-size calculation run first.
 
@@ -34,7 +34,7 @@ inputs         : ad creative: NO | analytics: aggregate CVR/CPA + device split o
 
 ### VERDICT
 
-Can't fully confirm the page is the problem — CTR/frequency trend, conversion-tracking validity, and whether targeting or offer changed alongside the CPA rise are all unprovided, so an ad-account root cause isn't ruled out. That said, the page copy shows several real opinion-class issues independent of the device question: a generic, audience-less headline, unattributed testimonials, no visible trust cues from a company selling *compliance*, no risk reversal. These are worth fixing regardless of what's happening upstream. Proceeding as a page audit, with the upstream gap flagged below rather than hidden.
+Can't fully confirm the page is the problem — CTR/frequency trend, conversion-tracking validity, and whether targeting or offer changed alongside the CPA rise are all unprovided, so an ad-account root cause isn't ruled out. That said, the page copy shows several real opinion-class issues independent of the device question: a generic, audience-less headline, unattributed testimonials, no visible trust cues from a company selling _compliance_, no risk reversal. These are worth fixing regardless of what's happening upstream. Proceeding as a page audit, with the upstream gap flagged below rather than hidden.
 
 Note: a normal run of this skill interviews before opening anything (ad copy, funnel breakdown, prior tests, deadline, effort ceiling, spend-by-device). None of that was available here, so it's logged under "Could not check" instead, and the fix ranking below uses default ordering, unadjusted for any of those answers.
 
@@ -71,8 +71,8 @@ None. Effort ceiling, dev access, page ownership, deadline, and mandate (fast wi
 
 ### TEST, DON'T GUESS
 
-- **Headline rewrite**, once real ad copy is available *and* volume clears the floor — judged on land→engage and form-start rate, ideally with an SQL-quality read given the pipeline lag. Not to be run at the current 9 conversions/month.
-- **Form-field trim (item 5)** — judged on form completion rate *and* downstream lead quality (SQL rate), because a shorter form can lift fills while lowering pipeline value — the B2B trap this skill flags explicitly.
+- **Headline rewrite**, once real ad copy is available _and_ volume clears the floor — judged on land→engage and form-start rate, ideally with an SQL-quality read given the pipeline lag. Not to be run at the current 9 conversions/month.
+- **Form-field trim (item 5)** — judged on form completion rate _and_ downstream lead quality (SQL rate), because a shorter form can lift fills while lowering pipeline value — the B2B trap this skill flags explicitly.
 
 ### NOT A PROBLEM
 
@@ -93,4 +93,7 @@ None. Effort ceiling, dev access, page ownership, deadline, and mandate (fast wi
 ### RE-CHECK
 
 - Fixes 1–5: expect engage→form-start and form-start→completion to move up, checked one full business cycle out (**2026-10-12**) — but at ~9 conversions/month, read this directionally only, not as a statistically resolved result. Given the B2B pipeline lag, also check SQL rate at 30–60 days out to confirm the shorter form (fix 5) didn't trade volume for quality.
+
+```
+
 ```

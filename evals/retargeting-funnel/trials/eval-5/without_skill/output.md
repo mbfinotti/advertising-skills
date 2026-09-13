@@ -1,6 +1,7 @@
 **Frequency cap: 3 per week** (hard cutoff), not per campaign lifetime — with a 3,200-person warm audience, "per week" is the only window that matters since you'll blow past any 30-day number in days.
 
 **Why 3, not lower or higher:**
+
 - Your CTR/CPM data shows the fatigue curve kicked in well before freq 9 — CPM rising as CTR falls is Meta's relevance score penalizing repetition, not just "market conditions."
 - Single-video-creative retargeting on Sales objective typically holds up to freq 4–6/week before decay; you're already past that, so cap below where you broke, not at it.
 - 3/week ≈ 9,600 impressions/week max against this pool — still enough delivery to convert, but you stop the spiral before CPM eats the campaign.

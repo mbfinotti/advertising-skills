@@ -3,7 +3,7 @@ Don't restructure the account or touch creatives yet — the data you've given p
 **Why the timing rules out your plan**
 
 - CPM flat, CTR flat, impression share stable → traffic quality and auction dynamics haven't changed. If creatives were fatiguing or the account structure were causing budget misallocation, you'd expect CTR to erode, CPMs to drift, or impression share to wobble as spend shifts around. None of that moved.
-- CVR -41% starting exactly March 3, the same day the new product-page template and the 12% price increase shipped. Two changes landed on the same day, which is itself a problem (see below), but a same-day cliff in conversion rate with flat upstream metrics is the signature of something breaking or repelling users *after the click*, not a traffic or creative problem.
+- CVR -41% starting exactly March 3, the same day the new product-page template and the 12% price increase shipped. Two changes landed on the same day, which is itself a problem (see below), but a same-day cliff in conversion rate with flat upstream metrics is the signature of something breaking or repelling users _after the click_, not a traffic or creative problem.
 - Platform-reported purchases within 7% of your order system, consistent with baseline → rules out tracking breakage (pixel misfire, consent-mode changes, deduped/inflated platform reporting) as the explanation. The drop is real, not a measurement artifact.
 
 Restructuring the account or refreshing creatives would burn time and budget addressing metrics that aren't broken, while the actual cause keeps suppressing every dollar you spend.

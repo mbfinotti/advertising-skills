@@ -4,12 +4,12 @@
 
 ## Scores
 
-| Hook | Score /10 | Rank |
-|---|---|---|
-| **D** — watery coffee close-up + "Stop drinking watered-down coffee." | **8.5** | 🥇 1 |
-| **C** — watery coffee close-up + "Your cold brew is watered down. Here's why." | **8.0** | 2 |
-| **A** — French press slammed into trash can, glass shatter, "enough." | **7.5** | 3 |
-| **B** — bottle pouring over ice, "Cold brew in 10 seconds. $34 kit." | **4.0** | 4 |
+| Hook                                                                           | Score /10 | Rank |
+| ------------------------------------------------------------------------------ | --------- | ---- |
+| **D** — watery coffee close-up + "Stop drinking watered-down coffee."          | **8.5**   | 🥇 1 |
+| **C** — watery coffee close-up + "Your cold brew is watered down. Here's why." | **8.0**   | 2    |
+| **A** — French press slammed into trash can, glass shatter, "enough."          | **7.5**   | 3    |
+| **B** — bottle pouring over ice, "Cold brew in 10 seconds. $34 kit."           | **4.0**   | 4    |
 
 ## Predicted winner: D
 
@@ -19,9 +19,9 @@
 
 **C (8.0) — close second.** Same strong visual as D. "Your cold brew is watered down. Here's why." is diagnostic rather than accusatory — slightly less reactance risk with cold, untrusted traffic ("who's telling me to stop?" vs. "huh, is mine like that?"), and the open loop ("here's why") pulls into second 4+ well. Costs a hair on hook rate itself because it's two clauses instead of one — more to read in under a second.
 
-**A (7.5) — strong but riskier.** Destruction/shock is a legitimate scroll-stopper (motion + implied conflict), but two structural weaknesses hurt it against C/D specifically for *this* metric: (1) the payoff is audio ("the punchline is the sound") and Meta feed autoplays muted by default for most viewers — you keep the visual jolt but lose the punchline for the majority; (2) "enough." gives zero category cue, so the viewer needs an extra beat to connect French press → coffee → relevance to them. That inferential lag works against you inside a 3-second window. It'll likely still post a solid hook rate, but expect it to pull in more low-relevance stops (people intrigued by destruction, not coffee) — a real risk if you're optimizing the campaign on hook rate as a proxy for good creative.
+**A (7.5) — strong but riskier.** Destruction/shock is a legitimate scroll-stopper (motion + implied conflict), but two structural weaknesses hurt it against C/D specifically for _this_ metric: (1) the payoff is audio ("the punchline is the sound") and Meta feed autoplays muted by default for most viewers — you keep the visual jolt but lose the punchline for the majority; (2) "enough." gives zero category cue, so the viewer needs an extra beat to connect French press → coffee → relevance to them. That inferential lag works against you inside a 3-second window. It'll likely still post a solid hook rate, but expect it to pull in more low-relevance stops (people intrigued by destruction, not coffee) — a real risk if you're optimizing the campaign on hook rate as a proxy for good creative.
 
-**B (4.0) — weakest, by a wide margin.** Opens with the product and the price. That's a bottom-funnel/retargeting frame, not a cold-traffic hook — feed users pattern-recognize "this is an ad" in the first frame and the thumb keeps moving before second 3. Don't spend cold-traffic budget testing this as a hook; it's a strong *asset* for retargeting or as a mid-roll product reveal, not an opener.
+**B (4.0) — weakest, by a wide margin.** Opens with the product and the price. That's a bottom-funnel/retargeting frame, not a cold-traffic hook — feed users pattern-recognize "this is an ad" in the first frame and the thumb keeps moving before second 3. Don't spend cold-traffic budget testing this as a hook; it's a strong _asset_ for retargeting or as a mid-roll product reveal, not an opener.
 
 ## Caveat
 

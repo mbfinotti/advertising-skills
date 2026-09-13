@@ -6,13 +6,13 @@ This is a marketing analytics question, not something requiring repo access — 
 
 You're summing three attribution windows that measure fundamentally different things:
 
-| Source | Window | What changed |
-|---|---|---|
-| Meta | 7-day click → **1-day click as of the 12th** | Window cut by 85% mid-month |
-| Google Ads | 30-day click | Unchanged |
-| GA4 | Last-click | Unchanged |
+| Source     | Window                                       | What changed                |
+| ---------- | -------------------------------------------- | --------------------------- |
+| Meta       | 7-day click → **1-day click as of the 12th** | Window cut by 85% mid-month |
+| Google Ads | 30-day click                                 | Unchanged                   |
+| GA4        | Last-click                                   | Unchanged                   |
 
-Shrinking Meta's attribution window from 7 days to 1 day doesn't mean fewer people converted — it means Meta now *credits* far fewer of the same conversions to itself. Someone who clicks a Meta ad on Monday and buys Thursday used to count as a Meta conversion; since the 12th, it doesn't. That conversion doesn't disappear — it typically resurfaces as GA4 "direct" or "organic," or under Google Ads if there was a later branded search click. It's a reporting shift, not a demand shift.
+Shrinking Meta's attribution window from 7 days to 1 day doesn't mean fewer people converted — it means Meta now _credits_ far fewer of the same conversions to itself. Someone who clicks a Meta ad on Monday and buys Thursday used to count as a Meta conversion; since the 12th, it doesn't. That conversion doesn't disappear — it typically resurfaces as GA4 "direct" or "organic," or under Google Ads if there was a later branded search click. It's a reporting shift, not a demand shift.
 
 Since the 12th, Meta's reported conversions are structurally undercounted relative to the rest of the month and relative to Google Ads/GA4. Any campaign-level total that blends pre-12th and post-12th days, or blends Meta with the other two sources, will show a fake decline concentrated in whatever ran on Meta — even for campaigns whose real performance is flat or improving. That's very likely most or all of your "bottom 20%," since Meta campaigns are the ones mechanically penalized.
 

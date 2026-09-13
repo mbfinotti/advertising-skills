@@ -12,7 +12,7 @@ Don't adopt it as-is. Unbounce's benchmark blends lead-gen forms (one email fiel
 
 Directionally right, magnitude wrong. "Submit" is dead microcopy — no value reinforcement, no clarity on what happens next. Fix it.
 
-But it's a cheap, low-variance test. Expect low single-digit relative lift, not a path to 10.9%. Don't let it be the *only* thing in flight — ship it alongside higher-leverage tests below, and don't credit it if a bundled test moves the number.
+But it's a cheap, low-variance test. Expect low single-digit relative lift, not a path to 10.9%. Don't let it be the _only_ thing in flight — ship it alongside higher-leverage tests below, and don't credit it if a bundled test moves the number.
 
 # On the speed sprint
 
@@ -42,14 +42,14 @@ Don't rely on landing page work alone to close a $52 gap. Pair CRO with campaign
 
 # Copy audit
 
-| Element | Verdict | Why |
-|---|---|---|
-| Headline "Dinner, solved" | ⚠️ Risky for cold paid search | Emotionally fine, but doesn't confirm to a non-branded searcher they landed on the right thing. Pair with a subhead that echoes the ad/keyword ("Fresh meal kits delivered weekly") for message match and Quality Score. |
-| 3 benefit bullets | ⚠️ Unverified | Structure is right. Content must hit real objections (time saved, cancel anytime, dietary flexibility) — not generic "fresh, healthy, easy." |
-| One box photo | ❌ Weak | A sealed box doesn't sell food. Appetite appeal (plated meals, people eating) converts better than packaging shots for a food product. Add real food imagery, ideally above the fold. |
-| CTA "Submit" | ❌ Fix now | Covered above — cheap, correct, low-impact-alone fix. |
-| FAQ accordion | ⚠️ Misplaced | Fine as objection-handling depth, but if pricing/cancellation/commitment terms only live inside a collapsed accordion, you're hiding trust signals behind an extra click — costly on mobile. |
-| No price before checkout | 🔴 Primary suspect | This is your highest-probability conversion killer, ahead of button text and page speed. Meal kits are a comparison-shopped category (HelloFresh, Blue Apron, etc.); a paid-search visitor who can't see a price will price-check a competitor instead of starting your multi-step signup. |
+| Element                   | Verdict                       | Why                                                                                                                                                                                                                                                                                        |
+| ------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Headline "Dinner, solved" | ⚠️ Risky for cold paid search | Emotionally fine, but doesn't confirm to a non-branded searcher they landed on the right thing. Pair with a subhead that echoes the ad/keyword ("Fresh meal kits delivered weekly") for message match and Quality Score.                                                                   |
+| 3 benefit bullets         | ⚠️ Unverified                 | Structure is right. Content must hit real objections (time saved, cancel anytime, dietary flexibility) — not generic "fresh, healthy, easy."                                                                                                                                               |
+| One box photo             | ❌ Weak                       | A sealed box doesn't sell food. Appetite appeal (plated meals, people eating) converts better than packaging shots for a food product. Add real food imagery, ideally above the fold.                                                                                                      |
+| CTA "Submit"              | ❌ Fix now                    | Covered above — cheap, correct, low-impact-alone fix.                                                                                                                                                                                                                                      |
+| FAQ accordion             | ⚠️ Misplaced                  | Fine as objection-handling depth, but if pricing/cancellation/commitment terms only live inside a collapsed accordion, you're hiding trust signals behind an extra click — costly on mobile.                                                                                               |
+| No price before checkout  | 🔴 Primary suspect            | This is your highest-probability conversion killer, ahead of button text and page speed. Meal kits are a comparison-shopped category (HelloFresh, Blue Apron, etc.); a paid-search visitor who can't see a price will price-check a competitor instead of starting your multi-step signup. |
 
 # Priority order
 

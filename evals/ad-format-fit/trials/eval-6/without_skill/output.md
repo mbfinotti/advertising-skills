@@ -52,10 +52,10 @@
 
 ## Go / No-Go summary
 
-| Campaign | Status | Action |
-|---|---|---|
+| Campaign                 | Status               | Action                                                               |
+| ------------------------ | -------------------- | -------------------------------------------------------------------- |
 | Shopping (multi-surface) | 🔴 Hold auto-bidding | Verify pixel end-to-end first; launch on traffic objective meanwhile |
-| Retail-media display | 🟠 Hold bid increase | Run delivery diagnostics before touching bids |
-| LinkedIn lead form | 🔴 Hold publish | Cut to 3–5 fields; test CRM handoff |
+| Retail-media display     | 🟠 Hold bid increase | Run delivery diagnostics before touching bids                        |
+| LinkedIn lead form       | 🔴 Hold publish      | Cut to 3–5 fields; test CRM handoff                                  |
 
 **Next step:** verify the pixel today. Everything else — bidding strategy, bid increases, form field count — is downstream of trusting that data.

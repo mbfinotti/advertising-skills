@@ -3,6 +3,7 @@
 The pattern you're describing — CTR 1.7%→0.8%, frequency 2.2→5.9, nothing touched since March — is the textbook signature of **audience/creative fatigue**, not a landing page problem. Meta keeps re-serving the same ad to a shrinking pool of unique users; CTR craters as the novel audience is exhausted, and the auction raises your CPMs/CPCs to maintain delivery. That alone can double CPA with a page that hasn't changed at all.
 
 **Before spending eng/design time on the page, pull one number: landing-page CVR (demo bookings ÷ landing page views) week-by-week over the five weeks.**
+
 - If CVR held flat → the problem is 100% upstream (creative/audience), and page work won't move CPA. Refresh creative and expand/rotate audience instead.
 - If CVR also declined → traffic composition has likely shifted (you're now reaching colder, lower-intent people as the core audience saturates), and the page fixes below matter.
 

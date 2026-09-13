@@ -1,22 +1,23 @@
 # SPEND GUARDRAIL POLICY — Maribel Home Goods
+
 **Effective:** 2026-09-12 · **Status:** PROVISIONAL — see Assumptions · **Review:** 2026-12-12 (quarterly)
 
 ## The short answer for your CFO
 
-**Don't use 4x.** 4x ROAS is not a benchmark — it's break-even math for a 25%-margin business, retroactively turned into folklore (no traceable author). Maribel runs a 45% contribution margin, so Maribel's break-even is **2.22x ROAS**, not 4x. If you wrote "4x" into the annual plan, you'd be rejecting every dollar of ad spend that returns between 2.22x and 4x — and that dollar is *profitable*. At $60K/month, that's real growth left on the table for no reason grounded in your own economics.
+**Don't use 4x.** 4x ROAS is not a benchmark — it's break-even math for a 25%-margin business, retroactively turned into folklore (no traceable author). Maribel runs a 45% contribution margin, so Maribel's break-even is **2.22x ROAS**, not 4x. If you wrote "4x" into the annual plan, you'd be rejecting every dollar of ad spend that returns between 2.22x and 4x — and that dollar is _profitable_. At $60K/month, that's real growth left on the table for no reason grounded in your own economics.
 
 ## Inputs
 
-| Input | Value | Status |
-|---|---|---|
-| AOV | $68 | measured |
-| Contribution margin | 45% (after COGS + shipping) | measured, but scope-limited — see Assumptions |
-| Monthly paid spend | $60K (Meta + Google, blended) | measured |
-| Payback target | — | **missing** |
-| Cash runway / burn | — | **missing** |
-| Growth stage / funding posture | — | **missing** |
-| Measurement trust (feed reliability, incrementality) | — | **missing** |
-| Who can pause spend / approve overage | — | **missing** |
+| Input                                                | Value                         | Status                                        |
+| ---------------------------------------------------- | ----------------------------- | --------------------------------------------- |
+| AOV                                                  | $68                           | measured                                      |
+| Contribution margin                                  | 45% (after COGS + shipping)   | measured, but scope-limited — see Assumptions |
+| Monthly paid spend                                   | $60K (Meta + Google, blended) | measured                                      |
+| Payback target                                       | —                             | **missing**                                   |
+| Cash runway / burn                                   | —                             | **missing**                                   |
+| Growth stage / funding posture                       | —                             | **missing**                                   |
+| Measurement trust (feed reliability, incrementality) | —                             | **missing**                                   |
+| Who can pause spend / approve overage                | —                             | **missing**                                   |
 
 ## Derivation
 
@@ -31,21 +32,21 @@ Show your CFO this line directly: at 45% margin, every order acquired for less t
 
 ## Layers
 
-| Layer | Value | Consequence |
-|---|---|---|
-| Break-even floor | **2.22x ROAS / $30.60 CAC** | Below this line: spend is destroying value. Stop, always — not negotiable. |
-| Target floor | **Not yet set — see below** | Below this: investigate, don't panic-stop. |
-| Hard floor / kill-switch | **Not yet set — needs cash cap** | Automatic halt + escalation + written restart condition. |
+| Layer                    | Value                            | Consequence                                                                |
+| ------------------------ | -------------------------------- | -------------------------------------------------------------------------- |
+| Break-even floor         | **2.22x ROAS / $30.60 CAC**      | Below this line: spend is destroying value. Stop, always — not negotiable. |
+| Target floor             | **Not yet set — see below**      | Below this: investigate, don't panic-stop.                                 |
+| Hard floor / kill-switch | **Not yet set — needs cash cap** | Automatic halt + escalation + written restart condition.                   |
 
 ### Target floor — three options, pending your input
 
 I can't hand you one "official" target floor number honestly — it depends on how much profit-per-order you need to fund overhead and how fast you need cash back, neither of which I have. What I can give you is the menu, each derived from your own margin, so you and your CFO pick the posture rather than inherit someone else's:
 
-| Posture | Target ROAS | Contribution left per order after ad cost* | Fits when |
-|---|---|---|---|
-| Growth-max | 2.5x | ~$3.44 | Cash is not tight, priority is customer count / market share |
-| Balanced (**default recommendation**) | 3.0x | ~$7.87 | Standard annual-plan posture absent other constraints |
-| Profit-focused | 3.5–4.0x | ~$13–15 | Cash-constrained or already profitable, want margin protection over volume |
+| Posture                               | Target ROAS | Contribution left per order after ad cost* | Fits when                                                                  |
+| ------------------------------------- | ----------- | ------------------------------------------ | -------------------------------------------------------------------------- |
+| Growth-max                            | 2.5x        | ~$3.44                                     | Cash is not tight, priority is customer count / market share               |
+| Balanced (**default recommendation**) | 3.0x        | ~$7.87                                     | Standard annual-plan posture absent other constraints                      |
+| Profit-focused                        | 3.5–4.0x    | ~$13–15                                    | Cash-constrained or already profitable, want margin protection over volume |
 
 *Contribution left per order = ($68 × 0.45) − (68 ÷ target ROAS), illustrative only — it doesn't yet net out overhead, returns, or payment processing (see Assumptions).
 
@@ -53,11 +54,11 @@ I can't hand you one "official" target floor number honestly — it depends on h
 
 ## Guardrail set (2–3 metrics, each with a counter-metric)
 
-| Guardrail | Variant | Window | Source | Counter-metric |
-|---|---|---|---|---|
-| MER (blended) | platform-agnostic, business revenue ÷ total spend | rolling 7-day | GA/order platform, not ad-platform ROAS | New-customer share of orders |
-| Contribution margin after ads | CM3 if available, else current CM2 | rolling 14-day | Finance/order data | New-customer share of orders |
-| New-customer CAC | first-order, not blended | rolling 14-day | Order platform, new vs. returning tagged | Prospecting share of spend |
+| Guardrail                     | Variant                                           | Window         | Source                                   | Counter-metric               |
+| ----------------------------- | ------------------------------------------------- | -------------- | ---------------------------------------- | ---------------------------- |
+| MER (blended)                 | platform-agnostic, business revenue ÷ total spend | rolling 7-day  | GA/order platform, not ad-platform ROAS  | New-customer share of orders |
+| Contribution margin after ads | CM3 if available, else current CM2                | rolling 14-day | Finance/order data                       | New-customer share of orders |
+| New-customer CAC              | first-order, not blended                          | rolling 14-day | Order platform, new vs. returning tagged | Prospecting share of spend   |
 
 Never guardrail platform-reported ROAS directly — Meta/Google report claimed revenue, not caused revenue, and optimizing to it pushes budget into retargeting and branded search that would have converted anyway. Pull MER and CAC from your own order data.
 
@@ -86,7 +87,7 @@ No exploration/testing budget carve-out defined yet. If you want new-channel or 
 
 ## Assumptions — what would invalidate this policy
 
-1. **45% margin scope.** Stated as "after COGS and shipping." If payment processing fees, returns/refunds, discounts, or customer service costs aren't yet netted out, true contribution margin is lower than 45% — which pushes break-even ROAS *above* 2.22x. Confirm this is fully-loaded CM before locking any floor.
+1. **45% margin scope.** Stated as "after COGS and shipping." If payment processing fees, returns/refunds, discounts, or customer service costs aren't yet netted out, true contribution margin is lower than 45% — which pushes break-even ROAS _above_ 2.22x. Confirm this is fully-loaded CM before locking any floor.
 2. **Payback target and cash runway are unknown** — the target-floor menu above is derived from margin alone; it hasn't been checked against how fast you actually need cash back.
 3. **Architecture assumed:** this draft uses a tiered-ladder structure (break-even / target / hard floor with escalating response) as the default fit for a $60K/month account past solo-operator scale. If nobody can realistically chair a recurring review of these numbers, collapse to a single break-even floor instead — say so and I'll redraft.
 4. **Measurement trust unconfirmed** — if your Meta/Google conversion feed has known gaps (iOS/ATT, cookie loss), the guardrail set above should sit on your order-platform numbers only, which this draft already assumes but hasn't verified with you.

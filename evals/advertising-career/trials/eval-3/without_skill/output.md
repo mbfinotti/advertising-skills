@@ -5,6 +5,7 @@ Honest take: it's not a good plan as written. Here's why, and what I'd do instea
 Certifications don't get media buyer jobs — a portfolio of live campaigns does. Hiring managers (and the agencies/brands who actually pay media buyer salaries) know that Google Ads and Meta Blueprint exams are multiple-choice tests you can pass by memorizing an afternoon of study material. They signal "I read the docs," not "I can manage spend." Five months spent stacking six certification logos with zero campaign experience is going to produce a CV that looks like everyone else's bootcamp graduate — and there are a lot of those.
 
 What actually gets you hired as a media buyer:
+
 - **Real ad spend under your management** — even $500-1000 of your own money run through Meta/Google, with before/after metrics (CPA, ROAS, CTR trends), beats a stack of certificates.
 - **Case studies** — 2-3 campaigns where you can explain the strategy, what broke, what you changed, and the result. This is what interviews actually probe.
 - **One platform mastered deeply**, not six shallow ones.
@@ -23,15 +24,17 @@ What actually gets you hired as a media buyer:
 
 ## A better 5-month plan
 
-**Month 1** — Pick ONE primary platform based on where you want to work (Meta if targeting ecommerce/DTC agencies, Google if targeting search-heavy/B2B agencies). Do Google Ads *Search* certification (free, ~1 week) as a baseline regardless — it's free and quick, so keep it, just don't over-invest in exam volume.
+**Month 1** — Pick ONE primary platform based on where you want to work (Meta if targeting ecommerce/DTC agencies, Google if targeting search-heavy/B2B agencies). Do Google Ads _Search_ certification (free, ~1 week) as a baseline regardless — it's free and quick, so keep it, just don't over-invest in exam volume.
 
 **Month 1-2** — Take one paid, practitioner-led course (not just the vendor's own certification) on your primary platform. Use $150-200 of your $450 budget here instead of on redundant Blueprint exams.
 
 **Month 2-4** — Run real campaigns:
+
 - Set up a small ecommerce store, an affiliate offer, or volunteer to run ads for a local business/nonprofit for free or cheap, using $300-500 of your own money as ad spend (or partner with a friend's small business).
 - Document everything: hypotheses, budget decisions, what you optimized, results. This becomes your portfolio/case studies.
 
 **Month 4-5** — Apply, using:
+
 - 1 primary certification (the one matching your target platform)
 - 2-3 documented case studies with real numbers
 - Your retail management story reframed around funnel/conversion/budget ownership

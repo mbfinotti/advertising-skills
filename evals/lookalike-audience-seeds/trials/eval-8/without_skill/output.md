@@ -13,6 +13,7 @@ Google fully sunset Similar Audiences (Similar Segments) in 2023 — it's not bu
 LinkedIn has been sunsetting Lookalike Audiences in favor of AI-driven **Predictive Audiences** inside Matched Audiences. Confirm in their live Campaign Manager account that classic Lookalike is still available before this becomes a line item you're paying for — don't take the doc's word for it.
 
 Separate issue, independent of the tooling: those 2,400 contacts are wholesale/B2B records, almost certainly collected for order and account management, not marketing. Before they get hashed and uploaded to LinkedIn:
+
 - Confirm your privacy notice or wholesale contract terms actually cover using this data for ad-audience matching.
 - Confirm a Data Processing Agreement is in place with LinkedIn for this use.
 - Don't let this become "we had the emails, so we used them" — that's the kind of thing that gets flagged in a GDPR complaint, not a hypothetical.
@@ -21,7 +22,7 @@ Also set expectations: LinkedIn's match rate on non-LinkedIn-registered business
 
 ## 3. TikTok lookalike from 400 best customers — 🟢 minimum is real, but "meets the minimum" ≠ "good idea"
 
-Verify the exact current minimum in TikTok's own docs rather than trusting the doc's number, but the bigger issue is upstream of the minimum: list-matching typically drops 40–60% of rows (hashing mismatches, non-TikTok users), so a 400-row CSV could land you *at* or *under* the functional floor after matching, not comfortably above it. Push for a bigger, less arbitrarily-curated seed — e.g. top 1,000–2,000 customers by spend rather than a hand-picked "best 400" — for a stabler, higher-quality lookalike.
+Verify the exact current minimum in TikTok's own docs rather than trusting the doc's number, but the bigger issue is upstream of the minimum: list-matching typically drops 40–60% of rows (hashing mismatches, non-TikTok users), so a 400-row CSV could land you _at_ or _under_ the functional floor after matching, not comfortably above it. Push for a bigger, less arbitrarily-curated seed — e.g. top 1,000–2,000 customers by spend rather than a hand-picked "best 400" — for a stabler, higher-quality lookalike.
 
 ## 4. "Google Demand Gen lookalike, 100 minimum" — 🔴 this feature doesn't exist as described
 
@@ -37,6 +38,6 @@ Meta has spent two-plus years pushing advertisers toward Advantage+ Audience and
 
 - **This reads recycled.** Two dead/mislabeled features in a five-item doc isn't a typo pattern — ask directly whether this was written for Calloway or adapted from another client's plan. Their answer tells you a lot about whether to trust the rest of the account setup.
 - **Consent chain, all four lists.** Converters, wholesale contacts, best-400 customers — confirm for each that your privacy notice/terms support ad-platform matching use, and that upload happens via a proper hashed/API integration, not a raw CSV passed around.
-- **B2B vs. B2C mismatch.** Your wholesale-buyer list is a business-purchasing audience; building consumer-platform lookalikes (TikTok, Meta) off *your best customers* is fine, but don't let wholesale contacts bleed into consumer-facing lookalikes — different buying motion, likely to misfire.
+- **B2B vs. B2C mismatch.** Your wholesale-buyer list is a business-purchasing audience; building consumer-platform lookalikes (TikTok, Meta) off _your best customers_ is fine, but don't let wholesale contacts bleed into consumer-facing lookalikes — different buying motion, likely to misfire.
 - **Overlapping seed pools, four platforms.** Converters, wholesale buyers, and best-400 customers likely overlap heavily. Ask how they'll avoid the same people getting hit (and bid against each other) across all four campaigns simultaneously, and whether there's a suppression/frequency plan.
 - **Ask for effective audience size, not list size.** For every one of these, get the post-match, post-hash number they expect to actually activate — not the row count of the source file.

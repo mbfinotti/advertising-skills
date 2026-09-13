@@ -1,29 +1,31 @@
 # Quillbird — 4-Concept UGC Shoot Package
 
 **Assumptions made to keep this a one-shot deliverable** (brief already answered product, offer, audience, platform, duration; these weren't specified, so I've flagged defaults instead of asking round-by-round):
+
 - **Performer**: paid creators, one per concept (4 different people/styles = 4 different "feels" in one shoot day). If any of these are actually real customers or founder-led, the disclosure line changes — see Compliance.
 - **Markets**: US only assumed (FTC). Confirm if this runs in EU/France — labeling requirements differ and stack.
 - **Trial length, QUILL20 discount value, and the new feature's name** were never given. I have **not invented numbers** for these (that's a fabrication risk, not just a style one) — placeholders are marked `[CONFIRM: …]` below.
 
 **Two things I changed from your brief, and why** — both are pass/fail items in this skill's compliance checklist, not style opinions:
-1. **"Before Sunday" is dropped.** The code runs all month, so "before Sunday" is a false deadline — the FTC and EU both treat fake urgency as a deceptive claim, and Quillbird is a financial app (a listed regulated category), which raises the stakes. I used the *true* deadline instead: **"live all month."** Still creates urgency, just an honest one.
-2. **The close is split into a spoken CTA + a silent on-screen end-card**, instead of one spoken line doing download + follow + code. Stacking three asks into one spoken line is this skill's #1 named failure mode ("every ask dilutes the others") — it's also literally the negative example in this skill's own reference doc. Splitting it means: the *spoken* CTA is the one thing being tested (single ask, matches each concept's actual offer), and the **compound line you asked for is preserved word-for-word on-screen**, at the very end, every video. You get exactly what you asked for; the measurable part of the script stays clean.
 
-**Strategic flag, not a fix**: you're bundling concept *and* offer together across these four (trial / code / waitlist / download), so a performance gap between videos won't tell you if it was the concept or the offer. Fine for a first exploratory shoot — just don't read "Concept 3 beat Concept 1" as "waitlist beats trial" yet. Next round, hold the offer fixed and vary only concept, or vice versa.
+1. **"Before Sunday" is dropped.** The code runs all month, so "before Sunday" is a false deadline — the FTC and EU both treat fake urgency as a deceptive claim, and Quillbird is a financial app (a listed regulated category), which raises the stakes. I used the _true_ deadline instead: **"live all month."** Still creates urgency, just an honest one.
+2. **The close is split into a spoken CTA + a silent on-screen end-card**, instead of one spoken line doing download + follow + code. Stacking three asks into one spoken line is this skill's #1 named failure mode ("every ask dilutes the others") — it's also literally the negative example in this skill's own reference doc. Splitting it means: the _spoken_ CTA is the one thing being tested (single ask, matches each concept's actual offer), and the **compound line you asked for is preserved word-for-word on-screen**, at the very end, every video. You get exactly what you asked for; the measurable part of the script stays clean.
+
+**Strategic flag, not a fix**: you're bundling concept _and_ offer together across these four (trial / code / waitlist / download), so a performance gap between videos won't tell you if it was the concept or the offer. Fine for a first exploratory shoot — just don't read "Concept 3 beat Concept 1" as "waitlist beats trial" yet. Next round, hold the offer fixed and vary only concept, or vice versa.
 
 ---
 
 ## Evidence base
 
-| Quote | Source | Underlying desire/problem | Emotional tag |
-|---|---|---|---|
-| "I stopped being scared to open my bank app" | App Store review | Relief from money-shame | Fear → relief |
-| "It made my chaos months make sense" | App Store review | Order out of unpredictability | Confusion → clarity |
-| "First budget that gets that my income is spiky" | Forum comment | Feeling understood, not judged | Validation |
+| Quote                                            | Source           | Underlying desire/problem      | Emotional tag       |
+| ------------------------------------------------ | ---------------- | ------------------------------ | ------------------- |
+| "I stopped being scared to open my bank app"     | App Store review | Relief from money-shame        | Fear → relief       |
+| "It made my chaos months make sense"             | App Store review | Order out of unpredictability  | Confusion → clarity |
+| "First budget that gets that my income is spiky" | Forum comment    | Feeling understood, not judged | Validation          |
 
 **Regulated category flag**: Quillbird is a financial app. Flag this whole package for your legal/compliance sign-off before filming — see Compliance section.
 
-**Archetypes deleted this round** (not ranked last — genuinely off the menu until an asset exists): *proof-first, silent review, bold claim, before/after contrast*. No confirmed screen recording, no cleared quantified result, no "before" state described. If you have app-screen footage or a hard number (e.g. "freelancers save X hours/month"), promote proof-first or silent review next round — they carry the strongest evidence on the list.
+**Archetypes deleted this round** (not ranked last — genuinely off the menu until an asset exists): _proof-first, silent review, bold claim, before/after contrast_. No confirmed screen recording, no cleared quantified result, no "before" state described. If you have app-screen footage or a hard number (e.g. "freelancers save X hours/month"), promote proof-first or silent review next round — they carry the strongest evidence on the list.
 
 ---
 
@@ -35,20 +37,20 @@
 
 **Hook variants**
 
-| # | Archetype | Spoken | On-screen text | Opening visual |
-|---|---|---|---|---|
-| 1 | Skeptic's turn | "I thought this was another app I'd delete." | was so wrong | Creator on couch, phone face-down, unimpressed look at camera |
-| 2 | Problem callout | "I hadn't opened my bank app in four days." | 4 days avoiding my bank app | Locked phone screen, thumb hovering, doesn't tap |
-| 3 | First-person confession | "I was genuinely scared of my own money." | scared of my own money | Extreme close-up, flat expression, phone screen-down in hand |
+| #   | Archetype               | Spoken                                       | On-screen text              | Opening visual                                                |
+| --- | ----------------------- | -------------------------------------------- | --------------------------- | ------------------------------------------------------------- |
+| 1   | Skeptic's turn          | "I thought this was another app I'd delete." | was so wrong                | Creator on couch, phone face-down, unimpressed look at camera |
+| 2   | Problem callout         | "I hadn't opened my bank app in four days."  | 4 days avoiding my bank app | Locked phone screen, thumb hovering, doesn't tap              |
+| 3   | First-person confession | "I was genuinely scared of my own money."    | scared of my own money      | Extreme close-up, flat expression, phone screen-down in hand  |
 
 **Body** (fixed across hooks; opening line of Problem adjusted per hook to extend its premise)
 
-| Time | Spoken (example phrasing) | On-screen text | Visual |
-|---|---|---|---|
-| 3–9s | "My income's never the same two months in a row, so every normal budget just guilt-trips me." | same budget ≠ same income | Quick cuts: payment notifications of different amounts; creator's tired reaction |
-| 9–14s | "Quillbird builds the budget around whatever actually came in this month — every dollar gets a job, even when the number's different." | every dollar, every month, however it looks | Screen recording: assigning income to categories after a payment lands |
+| Time  | Spoken (example phrasing)                                                                                                              | On-screen text                              | Visual                                                                           |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | -------------------------------------------------------------------------------- |
+| 3–9s  | "My income's never the same two months in a row, so every normal budget just guilt-trips me."                                          | same budget ≠ same income                   | Quick cuts: payment notifications of different amounts; creator's tired reaction |
+| 9–14s | "Quillbird builds the budget around whatever actually came in this month — every dollar gets a job, even when the number's different." | every dollar, every month, however it looks | Screen recording: assigning income to categories after a payment lands           |
 
-**Proof** (overlay during 9–14s beat, on-screen only): *"I stopped being scared to open my bank app" — App Store review*
+**Proof** (overlay during 9–14s beat, on-screen only): _"I stopped being scared to open my bank app" — App Store review_
 
 **CTA variants** (14–17s, spoken, locked, single ask)
 
@@ -69,20 +71,20 @@
 
 **Hook variants**
 
-| # | Archetype | Spoken | On-screen text | Opening visual |
-|---|---|---|---|---|
-| 1 | POV | "POV: three payments, three random days this month." | freelance income, explained | Fast cuts of payment notifications, different amounts |
-| 2 | Reverse psychology | "Don't get this app if you like guessing." | don't download this if... | Creator smirks, holds phone up, quick zoom |
-| 3 | Ironic list | "Three reasons not to try my chaos-fixer app." | 3 reasons NOT to try this | Creator holds up one finger, whip-pan cut |
+| #   | Archetype          | Spoken                                               | On-screen text              | Opening visual                                        |
+| --- | ------------------ | ---------------------------------------------------- | --------------------------- | ----------------------------------------------------- |
+| 1   | POV                | "POV: three payments, three random days this month." | freelance income, explained | Fast cuts of payment notifications, different amounts |
+| 2   | Reverse psychology | "Don't get this app if you like guessing."           | don't download this if...   | Creator smirks, holds phone up, quick zoom            |
+| 3   | Ironic list        | "Three reasons not to try my chaos-fixer app."       | 3 reasons NOT to try this   | Creator holds up one finger, whip-pan cut             |
 
 **Body**
 
-| Time | Spoken (example phrasing) | On-screen text | Visual |
-|---|---|---|---|
-| 3–9s | "Every month looks different, and most budget apps assume it doesn't." | built for the same paycheck, not mine | Messy desk, spreadsheet full of red numbers, creator sighs |
-| 9–14s | "Quillbird just rebuilds the plan every time money actually lands." | rebuilds itself, every payment | Screen recording: dragging a new payment into categories, clean UI |
+| Time  | Spoken (example phrasing)                                              | On-screen text                        | Visual                                                             |
+| ----- | ---------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------ |
+| 3–9s  | "Every month looks different, and most budget apps assume it doesn't." | built for the same paycheck, not mine | Messy desk, spreadsheet full of red numbers, creator sighs         |
+| 9–14s | "Quillbird just rebuilds the plan every time money actually lands."    | rebuilds itself, every payment        | Screen recording: dragging a new payment into categories, clean UI |
 
-**Proof** (overlay, 9–14s): *"It made my chaos months make sense" — App Store review*
+**Proof** (overlay, 9–14s): _"It made my chaos months make sense" — App Store review_
 
 **CTA variants** (14–17s, spoken)
 
@@ -103,20 +105,20 @@
 
 **Hook variants**
 
-| # | Archetype | Spoken | On-screen text | Opening visual |
-|---|---|---|---|---|
-| 1 | Curiosity gap | "Building something for spiky income. Can't show you yet." | coming soon — can't show you yet | Creator tilts phone away from camera, screen blurred |
-| 2 | Question | "What if your budget flexed like your income does?" | what if your budget could flex too? | Creator tilts head, blurred UI mockup visible |
-| 3 | POV | "POV: Quillbird is building this for spiky income." | something's coming for spiky income | Creator raises eyebrows at angled-away phone screen |
+| #   | Archetype     | Spoken                                                     | On-screen text                      | Opening visual                                       |
+| --- | ------------- | ---------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------- |
+| 1   | Curiosity gap | "Building something for spiky income. Can't show you yet." | coming soon — can't show you yet    | Creator tilts phone away from camera, screen blurred |
+| 2   | Question      | "What if your budget flexed like your income does?"        | what if your budget could flex too? | Creator tilts head, blurred UI mockup visible        |
+| 3   | POV           | "POV: Quillbird is building this for spiky income."        | something's coming for spiky income | Creator raises eyebrows at angled-away phone screen  |
 
 **Body**
 
-| Time | Spoken (example phrasing) | On-screen text | Visual |
-|---|---|---|---|
-| 3–9s | "Quillbird already gets that my income isn't steady — that's the whole reason I use it." | it gets spiky income already | Creator gestures at app, current (non-teaser) UI briefly visible |
-| 9–14s | "Now they're building something that goes even further for exactly this — I've seen it, I can't say more yet." | more coming, this month | Blurred screen glimpse, creator half-covers phone, playful |
+| Time  | Spoken (example phrasing)                                                                                      | On-screen text               | Visual                                                           |
+| ----- | -------------------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------- |
+| 3–9s  | "Quillbird already gets that my income isn't steady — that's the whole reason I use it."                       | it gets spiky income already | Creator gestures at app, current (non-teaser) UI briefly visible |
+| 9–14s | "Now they're building something that goes even further for exactly this — I've seen it, I can't say more yet." | more coming, this month      | Blurred screen glimpse, creator half-covers phone, playful       |
 
-**Proof** (overlay, 3–9s): *"First budget that gets that my income is spiky" — forum comment*
+**Proof** (overlay, 3–9s): _"First budget that gets that my income is spiky" — forum comment_
 
 **CTA variants** (14–17s, spoken)
 
@@ -137,20 +139,20 @@
 
 **Hook variants**
 
-| # | Archetype | Spoken | On-screen text | Opening visual |
-|---|---|---|---|---|
-| 1 | Contrarian | "Budgeting isn't broken. Fixed-paycheck budgets are." | budgeting isn't the problem | Creator direct to camera, arms crossed, confident |
-| 2 | Problem callout | "A fixed budget can't survive a spiky income." | fixed budgets don't survive spiky income | Creator holds phone showing a calendar, deposits of different sizes circled |
-| 3 | Question | "Why are budget apps built for one paycheck?" | built for salaries, not freelancers | Creator shrugs, walks into frame |
+| #   | Archetype       | Spoken                                                | On-screen text                           | Opening visual                                                              |
+| --- | --------------- | ----------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------- |
+| 1   | Contrarian      | "Budgeting isn't broken. Fixed-paycheck budgets are." | budgeting isn't the problem              | Creator direct to camera, arms crossed, confident                           |
+| 2   | Problem callout | "A fixed budget can't survive a spiky income."        | fixed budgets don't survive spiky income | Creator holds phone showing a calendar, deposits of different sizes circled |
+| 3   | Question        | "Why are budget apps built for one paycheck?"         | built for salaries, not freelancers      | Creator shrugs, walks into frame                                            |
 
 **Body**
 
-| Time | Spoken (example phrasing) | On-screen text | Visual |
-|---|---|---|---|
-| 3–9s | "Every 'best' budgeting app assumes the same number lands on the same day. Freelancers don't get that." | one paycheck ≠ your reality | Creator counts on fingers: "same day, same amount" — shakes head |
-| 9–14s | "Quillbird starts from zero every time and builds the plan around whatever actually came in." | zero-based, every single month | Screen recording: quick demo, income entered, categories fill in |
+| Time  | Spoken (example phrasing)                                                                               | On-screen text                 | Visual                                                           |
+| ----- | ------------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------- |
+| 3–9s  | "Every 'best' budgeting app assumes the same number lands on the same day. Freelancers don't get that." | one paycheck ≠ your reality    | Creator counts on fingers: "same day, same amount" — shakes head |
+| 9–14s | "Quillbird starts from zero every time and builds the plan around whatever actually came in."           | zero-based, every single month | Screen recording: quick demo, income entered, categories fill in |
 
-**Proof** (overlay, 9–14s, reused quote — flagged): *"I stopped being scared to open my bank app" — App Store review*
+**Proof** (overlay, 9–14s, reused quote — flagged): _"I stopped being scared to open my bank app" — App Store review_
 
 **CTA variants** (14–17s, spoken)
 
@@ -176,7 +178,7 @@ Silent by design — this is the beat where your compound ask lives, so it doesn
 Run this against your own legal review before filming — flagged as a regulated category (finance).
 
 1. **Markets**: assumed US-only (FTC 16 CFR 255) since none were named. If this runs in the EU or France, add the market-specific label (France requires "publicité"/"collaboration commerciale" in French, visible throughout) before filming.
-2. **Material connection**: assumed paid creators. Fold a spoken disclosure into beat 1 of each script (e.g. "Quillbird sent me the app to try") *and* keep the on-screen "Paid partnership with Quillbird" label up throughout — the platform toggle alone isn't enough per this skill's checklist. If any of these four are actually real unpaid customers, this line drops — confirm performer type per script before filming.
+2. **Material connection**: assumed paid creators. Fold a spoken disclosure into beat 1 of each script (e.g. "Quillbird sent me the app to try") _and_ keep the on-screen "Paid partnership with Quillbird" label up throughout — the platform toggle alone isn't enough per this skill's checklist. If any of these four are actually real unpaid customers, this line drops — confirm performer type per script before filming.
 3. **Quote attribution**: all three review quotes are real, but none came from the performer. Show them as on-screen quote cards credited to their real source ("App Store review" / "forum comment") — never have the performer speak them as their own experience. That would read as a fabricated first-person testimonial, which is the one thing this skill's checklist treats as a hard stop, not a style note.
 4. **Second-person/financial-status framing**: hooks were kept in POV/self-description form rather than "you have irregular income and can't budget" — direct second-person claims about a viewer's financial status are the usual trigger for ad-platform rejection and for the EU/FTC framing rules. Worth a specific legal/ad-policy check given the category.
 5. **Fake urgency — fixed, not just flagged**: "before Sunday" is not used anywhere in this package; "live all month" replaces it because it's actually true. Don't restore the original wording without also making the deadline real.

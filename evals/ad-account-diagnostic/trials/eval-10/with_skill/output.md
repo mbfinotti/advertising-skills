@@ -2,13 +2,13 @@
 
 Straight answers first, full reasoning below — but note upfront: the skill this runs on explicitly bans collapsing findings to pass/fail when evidence is missing ("unknown is not pass — an unchecked layer silently marked clean is the most common way audits go wrong"). So a few of these are "can't tell yet," not "yes."
 
-| Layer | Fine? | Why |
-|---|---|---|
-| **Tracking** | **No — leading suspect, not confirmed** | Consent-banner swap ~5 weeks ago sits almost exactly inside your 6-week drift window. That's a real mechanism (consent-gated tag firing, modeled-vs-observed conversion drift), but you haven't yet run the one check that would confirm it. |
-| **Structure** | **Can't tell yet — but this is the pattern's other best fit** | "CPA drifted up steadily, no single break day" is this skill's own textbook signature for fragmentation/erosion, not for a typical tracking break. You have the data to check this and haven't pulled it yet. |
-| **Targeting** | **Can't tell yet** | Needs per-campaign CPM/frequency trend. You have campaign-level access — just not pulled. |
-| **Creative** | **Can't tell yet, and partly unresolvable right now** | Real creative-decay diagnosis needs per-ad CTR trend, which your portal blocks. Campaign-level aggregate CTR/CPM direction is a partial substitute you haven't pulled either. |
-| **Bids/budget** | **Can't tell yet** | Needs the edit log (any bid/budget/target changes in the window) and the lost-impression-share split. Spend being flat rules out "we just have less money," nothing more. |
+| Layer           | Fine?                                                         | Why                                                                                                                                                                                                                                          |
+| --------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Tracking**    | **No — leading suspect, not confirmed**                       | Consent-banner swap ~5 weeks ago sits almost exactly inside your 6-week drift window. That's a real mechanism (consent-gated tag firing, modeled-vs-observed conversion drift), but you haven't yet run the one check that would confirm it. |
+| **Structure**   | **Can't tell yet — but this is the pattern's other best fit** | "CPA drifted up steadily, no single break day" is this skill's own textbook signature for fragmentation/erosion, not for a typical tracking break. You have the data to check this and haven't pulled it yet.                                |
+| **Targeting**   | **Can't tell yet**                                            | Needs per-campaign CPM/frequency trend. You have campaign-level access — just not pulled.                                                                                                                                                    |
+| **Creative**    | **Can't tell yet, and partly unresolvable right now**         | Real creative-decay diagnosis needs per-ad CTR trend, which your portal blocks. Campaign-level aggregate CTR/CPM direction is a partial substitute you haven't pulled either.                                                                |
+| **Bids/budget** | **Can't tell yet**                                            | Needs the edit log (any bid/budget/target changes in the window) and the lost-impression-share split. Spend being flat rules out "we just have less money," nothing more.                                                                    |
 
 Nobody gets a clean "yes" today, because the Evidence Gate isn't cleared — see below. That's a real finding, not a non-answer.
 
@@ -47,7 +47,7 @@ re-check      : one full window after the two actions below are run and reported
 
 ### Why this isn't "it's the consent banner"
 
-You handed me that detail as an aside, and it's tempting to anchor on it — that's exactly the trap this skill's method exists to catch: the first story offered becomes the hypothesis everything gets fitted to. The timing is suggestive, not proof. The *shape* of your drift (gradual, no cliff) fits the fragmentation/erosion pattern at least as well as it fits a tracking break. Both stay open until you run the checks below.
+You handed me that detail as an aside, and it's tempting to anchor on it — that's exactly the trap this skill's method exists to catch: the first story offered becomes the hypothesis everything gets fitted to. The timing is suggestive, not proof. The _shape_ of your drift (gradual, no cliff) fits the fragmentation/erosion pattern at least as well as it fits a tracking break. Both stay open until you run the checks below.
 
 ### What's actually blocking a verdict (Evidence Gate)
 

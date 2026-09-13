@@ -16,9 +16,9 @@ Sable & Fir's bottleneck — "4 concepts/month, win rate falling" — is exactly
 
 ## Why Plan B is close but scoped wrong
 
-- **"Mid-level creative" is the wrong rung.** If that means a designer/editor who produces assets, you'll reproduce the same named failure mode from the other direction: production without strategy ownership. Your actual gap is someone who owns *win rate* — reads hook rate, hold rate, CTR-by-unit, and briefs from that, not just makes more assets. Retitle the req: **Creative Strategist**, not "creative."
+- **"Mid-level creative" is the wrong rung.** If that means a designer/editor who produces assets, you'll reproduce the same named failure mode from the other direction: production without strategy ownership. Your actual gap is someone who owns _win rate_ — reads hook rate, hold rate, CTR-by-unit, and briefs from that, not just makes more assets. Retitle the req: **Creative Strategist**, not "creative."
 - **Reporting to the buyer inverts the role's purpose.** The whole point of this rung is sitting at the intersection of research, creative direction, and performance — as a peer, testing and killing concepts together with the buyer. Subordinate it to the buyer and you've just added headcount under the same bottleneck decision-maker, not new judgment.
-- **"Portfolios all look amazing, screening should be easy" is backwards — and this skill flags this exact trap by name:** *"AI-generated portfolios have made portfolio screening unreliable for judging creative-strategy skill."* Easy-looking portfolios in 2026 are a red flag for this rung, not a green light. Screen on a live/paid work sample, not the deck.
+- **"Portfolios all look amazing, screening should be easy" is backwards — and this skill flags this exact trap by name:** _"AI-generated portfolios have made portfolio screening unreliable for judging creative-strategy skill."_ Easy-looking portfolios in 2026 are a red flag for this rung, not a green light. Screen on a live/paid work sample, not the deck.
 - **$75k is unverified against any sourced band for this rung.** The only creative-strategy comp figure in this skill's sources is the $180k–$250k+ *director* band — not the right comparison for a mid-level hire, but also not evidence that $75k is fine. Flag it for a local market check before you finalize (HR/legal, outside this skill's scope).
 
 ---

@@ -8,22 +8,22 @@ Every source here is free, text-only (no podcast/video — deleted from the menu
 
 ## Weekly core (~33 min/week)
 
-| Source | Medium | Channel(s) | Min/wk | Why it earned the slot | Selling | Status + date |
-|---|---|---|---|---|---|---|
-| **PPC Land** — ppc.land | text | Google Search, LinkedIn, broad field | 7 | Daily roundup; restates the release notes below plus everything else, the single biggest budget compressor for a 45-min ceiling | independent news site | active, Aug 26, 2026 |
-| **Google Ads & Commerce blog** — blog.google/products/ads-commerce/ | text | Google Search | 5 | Official Google Ads release notes — required for channel coverage, never dropped as "vendor noise" | platform-official | active, Jul 2026 (exact day not captured — verify) |
-| **LinkedIn Marketing blog** — linkedin.com/business/marketing/blog | text | LinkedIn | 5 | Official LinkedIn Ads / B2B marketing news — required for channel coverage | platform-official | active, Aug 11, 2026 |
-| **Search Engine Land** — searchengineland.com | text | Google Search, broad field | 5 | Daily B2B-leaning PPC/SEO trade coverage, second signal after PPC Land in case a story breaks there first | trade pub (owned by Semrush, a tool vendor) | active, Aug 25, 2026 |
-| **Zato Marketing blog** — zatomarketing.com/blog | text | Google Search | 4 | Named practitioner (Kirk Williams) commentary on Google Ads feature changes | agency (ZATO) | active, Jul 10, 2026 ⚠️ ~2 months old today — recheck soon |
-| **Optmyzr blog** — optmyzr.com/blog | text | Google Search | 4 | PPC automation / AI-in-paid-search tactics, from a vendor whose whole business is watching Google Ads closely | tool vendor | active, Aug 19, 2026 |
-| **Refine Labs blog** — refinelabs.com/blog | text | B2B (demand-gen, adjacent to paid) | 3 | B2B GTM/demand-gen strategy — the one non-channel-specific slot, useful context for a B2B fintech SaaS | agency | active, Jun 18, 2026 ⚠️ ~3 months old today — closest to the staleness cutoff, recheck before relying on it |
+| Source                                                              | Medium | Channel(s)                           | Min/wk | Why it earned the slot                                                                                                          | Selling                                     | Status + date                                                                                               |
+| ------------------------------------------------------------------- | ------ | ------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **PPC Land** — ppc.land                                             | text   | Google Search, LinkedIn, broad field | 7      | Daily roundup; restates the release notes below plus everything else, the single biggest budget compressor for a 45-min ceiling | independent news site                       | active, Aug 26, 2026                                                                                        |
+| **Google Ads & Commerce blog** — blog.google/products/ads-commerce/ | text   | Google Search                        | 5      | Official Google Ads release notes — required for channel coverage, never dropped as "vendor noise"                              | platform-official                           | active, Jul 2026 (exact day not captured — verify)                                                          |
+| **LinkedIn Marketing blog** — linkedin.com/business/marketing/blog  | text   | LinkedIn                             | 5      | Official LinkedIn Ads / B2B marketing news — required for channel coverage                                                      | platform-official                           | active, Aug 11, 2026                                                                                        |
+| **Search Engine Land** — searchengineland.com                       | text   | Google Search, broad field           | 5      | Daily B2B-leaning PPC/SEO trade coverage, second signal after PPC Land in case a story breaks there first                       | trade pub (owned by Semrush, a tool vendor) | active, Aug 25, 2026                                                                                        |
+| **Zato Marketing blog** — zatomarketing.com/blog                    | text   | Google Search                        | 4      | Named practitioner (Kirk Williams) commentary on Google Ads feature changes                                                     | agency (ZATO)                               | active, Jul 10, 2026 ⚠️ ~2 months old today — recheck soon                                                  |
+| **Optmyzr blog** — optmyzr.com/blog                                 | text   | Google Search                        | 4      | PPC automation / AI-in-paid-search tactics, from a vendor whose whole business is watching Google Ads closely                   | tool vendor                                 | active, Aug 19, 2026                                                                                        |
+| **Refine Labs blog** — refinelabs.com/blog                          | text   | B2B (demand-gen, adjacent to paid)   | 3      | B2B GTM/demand-gen strategy — the one non-channel-specific slot, useful context for a B2B fintech SaaS                          | agency                                      | active, Jun 18, 2026 ⚠️ ~3 months old today — closest to the staleness cutoff, recheck before relying on it |
 
 ## Monthly (~5 min/week averaged)
 
-| Source | Medium | Channel(s) | Min/wk | Why | Selling | Status + date |
-|---|---|---|---|---|---|---|
-| **Digiday** — digiday.com | text | broad field (ad tech, media buying, agency) | 3 | Monthly skim for the bigger B2B ad-industry stories PPC Land won't carry | trade pub | active, Aug 25, 2026 |
-| **Adalysis blog** — adalysis.com/blog | text | Google Search | 2 | Deeper Google Ads feature-analysis than the vendor blogs above, worth a monthly pass | tool vendor | active, Aug 20, 2026 |
+| Source                                | Medium | Channel(s)                                  | Min/wk | Why                                                                                  | Selling     | Status + date        |
+| ------------------------------------- | ------ | ------------------------------------------- | ------ | ------------------------------------------------------------------------------------ | ----------- | -------------------- |
+| **Digiday** — digiday.com             | text   | broad field (ad tech, media buying, agency) | 3      | Monthly skim for the bigger B2B ad-industry stories PPC Land won't carry             | trade pub   | active, Aug 25, 2026 |
+| **Adalysis blog** — adalysis.com/blog | text   | Google Search                               | 2      | Deeper Google Ads feature-analysis than the vendor blogs above, worth a monthly pass | tool vendor | active, Aug 20, 2026 |
 
 ## Annual (events)
 
@@ -31,9 +31,9 @@ Every source here is free, text-only (no podcast/video — deleted from the menu
 
 ## Community reserve (~4 min/week)
 
-| Source | Medium | Channel(s) | Min/wk | Why | Selling | Status + date |
-|---|---|---|---|---|---|---|
-| **#ppcchat** — ppcchat.co | text (short-post network) | Google Search, broad PPC | 4 | Your one renewal slot — the reserve that surfaces new sources over time, which a fixed list can't. Free, no membership, no travel | none visible (host runs an agency, Neptune Moon) | unverified at fetch (bot-blocked) — corroborated alive via host site neptunemoon.com, posts dated Aug 5 / Jul 1 / May 19, 2026 |
+| Source                    | Medium                    | Channel(s)               | Min/wk | Why                                                                                                                               | Selling                                          | Status + date                                                                                                                  |
+| ------------------------- | ------------------------- | ------------------------ | ------ | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| **#ppcchat** — ppcchat.co | text (short-post network) | Google Search, broad PPC | 4      | Your one renewal slot — the reserve that surfaces new sources over time, which a fixed list can't. Free, no membership, no travel | none visible (host runs an agency, Neptune Moon) | unverified at fetch (bot-blocked) — corroborated alive via host site neptunemoon.com, posts dated Aug 5 / Jul 1 / May 19, 2026 |
 
 ## Bench (verified substitutes)
 

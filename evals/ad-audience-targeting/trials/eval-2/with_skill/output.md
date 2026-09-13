@@ -12,30 +12,30 @@ Two things I'm flagging rather than assuming: (1) $95k/month against 380 purchas
 
 ## What's already wrong, independent of broad vs. layered
 
-Five *interest-stacked* ad sets is the named failure mode here regardless of what you do about broad: stacking interests shrinks the audience and raises cost without touching the actual lever, and major platforms treat interest inputs as soft suggestions, not hard constraints — they're the weakest tier on intent quality even when they work. Audit overlap across the five before anything else; if any pair overlaps >50%, merge; 30-50%, exclude. Consolidate down to one interest ad set kept alive as a research instrument, not a volume driver.
+Five _interest-stacked_ ad sets is the named failure mode here regardless of what you do about broad: stacking interests shrinks the audience and raises cost without touching the actual lever, and major platforms treat interest inputs as soft suggestions, not hard constraints — they're the weakest tier on intent quality even when they work. Audit overlap across the five before anything else; if any pair overlaps >50%, merge; 30-50%, exclude. Consolidate down to one interest ad set kept alive as a research instrument, not a volume driver.
 
 ## Target tier structure
 
 Re-ranked from the default order: this account already has a proven lookalike and retargeting pool, so the open question is entirely on the cold-prospecting side, which is why broad leads the table.
 
-| Tier | Defining signal | Est. size | Exclusions | Test budget/day | Success criterion |
-|---|---|---|---|---|---|
-| Broad/algorithmic (new) | None — delivery model runs on the purchase event | Large (confirm geo/universe) | past buyers, retargeting pool, lookalike audience | ~$350 (clears the ~50/wk floor with room to read) | ≤$28 CPA at volume comparable to current interest tiers |
-| Lookalike (existing) | Resemblance to seed, unchanged for now | Millions | past buyers, retargeting pool | current run rate | within 15% of broad's CPA, else fold into broad |
-| Interest — consolidated (was 5 sets) | Best-surviving interest cluster(s) after overlap audit | Post-merge, smaller | past buyers, retargeting pool, lookalike | reduced vs. current combined 5-set spend, kept above $200/day floor | not judged on CPA alone — reports which segment responds, for creative planning |
-| Retargeting (existing) | Site visitors + cart abandoners | Not provided — confirm against platform floor | past buyers | 15-25% of total spend | watch for inflated ROAS; not proof of incrementality |
-| Past-buyer suppression | Customer list | Not provided | applied everywhere except any future win-back campaign | n/a (suppression only) | n/a |
+| Tier                                 | Defining signal                                        | Est. size                                     | Exclusions                                             | Test budget/day                                                     | Success criterion                                                               |
+| ------------------------------------ | ------------------------------------------------------ | --------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Broad/algorithmic (new)              | None — delivery model runs on the purchase event       | Large (confirm geo/universe)                  | past buyers, retargeting pool, lookalike audience      | ~$350 (clears the ~50/wk floor with room to read)                   | ≤$28 CPA at volume comparable to current interest tiers                         |
+| Lookalike (existing)                 | Resemblance to seed, unchanged for now                 | Millions                                      | past buyers, retargeting pool                          | current run rate                                                    | within 15% of broad's CPA, else fold into broad                                 |
+| Interest — consolidated (was 5 sets) | Best-surviving interest cluster(s) after overlap audit | Post-merge, smaller                           | past buyers, retargeting pool, lookalike               | reduced vs. current combined 5-set spend, kept above $200/day floor | not judged on CPA alone — reports which segment responds, for creative planning |
+| Retargeting (existing)               | Site visitors + cart abandoners                        | Not provided — confirm against platform floor | past buyers                                            | 15-25% of total spend                                               | watch for inflated ROAS; not proof of incrementality                            |
+| Past-buyer suppression               | Customer list                                          | Not provided                                  | applied everywhere except any future win-back campaign | n/a (suppression only)                                              | n/a                                                                             |
 
 Retargeting above ~40% of spend is a red flag, not evidence retargeting "works" — check current allocation against that before scaling anything.
 
 ## Exclusion matrix
 
-| List | Applies to |
-|---|---|
-| Past buyers | All tiers (this is already running — keep it) |
-| Retargeting pool | Broad, lookalike, interest |
-| Lookalike audience | Broad |
-| Interest audience | Broad, lookalike (so consolidated interest keeps its own read) |
+| List               | Applies to                                                     |
+| ------------------ | -------------------------------------------------------------- |
+| Past buyers        | All tiers (this is already running — keep it)                  |
+| Retargeting pool   | Broad, lookalike, interest                                     |
+| Lookalike audience | Broad                                                          |
+| Interest audience  | Broad, lookalike (so consolidated interest keeps its own read) |
 
 ## What launches Monday vs. what waits
 

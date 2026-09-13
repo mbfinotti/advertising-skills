@@ -3,17 +3,17 @@
 **platform(s):** Google Ads | **funnel:** B2B lead gen | **server-side:** unknown — not stated, needs confirming
 **launch:** Monday | **budget at risk:** $38,000 (first month)
 
-| # | check | result | impact | fix effort | evidence |
-|---|---|---|---|---|---|
-| 1 | settings & designation | pass (reported, not independently reviewed here) | — | — | "Demo Request" created, set primary; count-once vs count-every not confirmed from your description |
-| 2 | tag debug / preview | pass | — | — | Tag Assistant shows tag green on demo confirmation page |
-| 3 | real test conversion, end to end | **not done** | critical | near-zero | no test lead submitted with a unique QA value, no confirmation it landed in the CRM |
-| 4 | payload inspection | **not done** | critical | near-zero | event name/value/currency/event ID never read from the actual request |
-| 5 | platform UI + status | **fail** | critical | — | conversion action status: **"No recent conversions"** |
-| 6 | deduplication | unknown | — | — | depends on whether a server-side/Conversions API path exists — not stated |
-| 7 | test-data exclusion | n/a yet | — | — | nothing to exclude — no test conversion has run |
-| 8 | soak | n/a yet | — | — | blocked upstream |
-| 9 | sign-off | blocked | — | — | blocked by checks 3, 4, 5 |
+| #   | check                            | result                                           | impact   | fix effort | evidence                                                                                           |
+| --- | -------------------------------- | ------------------------------------------------ | -------- | ---------- | -------------------------------------------------------------------------------------------------- |
+| 1   | settings & designation           | pass (reported, not independently reviewed here) | —        | —          | "Demo Request" created, set primary; count-once vs count-every not confirmed from your description |
+| 2   | tag debug / preview              | pass                                             | —        | —          | Tag Assistant shows tag green on demo confirmation page                                            |
+| 3   | real test conversion, end to end | **not done**                                     | critical | near-zero  | no test lead submitted with a unique QA value, no confirmation it landed in the CRM                |
+| 4   | payload inspection               | **not done**                                     | critical | near-zero  | event name/value/currency/event ID never read from the actual request                              |
+| 5   | platform UI + status             | **fail**                                         | critical | —          | conversion action status: **"No recent conversions"**                                              |
+| 6   | deduplication                    | unknown                                          | —        | —          | depends on whether a server-side/Conversions API path exists — not stated                          |
+| 7   | test-data exclusion              | n/a yet                                          | —        | —          | nothing to exclude — no test conversion has run                                                    |
+| 8   | soak                             | n/a yet                                          | —        | —          | blocked upstream                                                                                   |
+| 9   | sign-off                         | blocked                                          | —        | —          | blocked by checks 3, 4, 5                                                                          |
 
 ## DECISION: NO-GO
 
@@ -21,7 +21,7 @@ I can't sign this off. Here's why "we haven't launched yet" doesn't cover it, in
 
 - **A green tag in Tag Assistant is not proof of measurement.** It tells you the tag fires — it tells you nothing about whether the value, currency, or event ID are correct, or whether Google actually received and is recording it. Screenshots of settings screens are the same category of non-evidence: reviewed, not traced.
 - **"No recent conversions" is an automatic NO-GO**, independent of everything else — the skill treats a primary action in a misconfigured or waiting status as a hard blocker, full stop.
-- The one exception that would let a status like this slide — a brand-new property with no traffic yet — still requires debug-mode evidence **plus a correct payload**, and even then only earns a *provisional* PASS, not a GO. You don't have the payload check, so the exception doesn't apply as-is.
+- The one exception that would let a status like this slide — a brand-new property with no traffic yet — still requires debug-mode evidence **plus a correct payload**, and even then only earns a _provisional_ PASS, not a GO. You don't have the payload check, so the exception doesn't apply as-is.
 - The action being 6 days old with zero recorded conversions most likely means: no one has actually walked the funnel and confirmed the event lands, not that Google just hasn't gotten around to updating a status page.
 
 ## Fix order (near-zero effort, fits before Monday)

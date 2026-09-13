@@ -4,21 +4,21 @@
 
 - Competitors: 3 direct rivals, unnamed — tagged Rival A / B / C below. Channel, geography, and exact run dates weren't specified, so those fields are `unknown` rather than guessed, per the schema's hard rule.
 - Spend tier and paid channel: not given — flagged `unknown`. Doesn't block hypothesis ranking, but you'll want it before sizing sample for the test plan.
-- Decision context, effort ceiling, and mandate *were* given inline: no agency, no in-house editor, no hard deadline, and explicitly "a durable creative library, not a one-off" (compounding asset). That re-ranks the list below — noted where it applies.
+- Decision context, effort ceiling, and mandate _were_ given inline: no agency, no in-house editor, no hard deadline, and explicitly "a durable creative library, not a one-off" (compounding asset). That re-ranks the list below — noted where it applies.
 
 ## Competitor pulse — entries from this month's pull
 
-| Field | Rival A | Rival B | Rival C |
-|---|---|---|---|
-| competitor_tier | direct | direct | direct |
-| format | video, UGC-style testimonial | video, UGC-style testimonial | video, motion graphic |
-| hook_type | proof-first (expert authority) | proof-first (expert authority) | countdown/gamified |
-| concept | vet-testimonial endorsement | vet-testimonial endorsement | urgency/scarcity timer |
-| longevity_signal | inference — active 40+ days | inference — active 40+ days | inference — pulled within ~2 weeks |
-| variant_count | 4 concept variants | 3 concept variants | unknown, appears single-shot |
-| confidence | high | high | medium (single advertiser, no repetition) |
-| why_it_might_work | Hypothesis — vet authority lowers safety-purchase anxiety | Hypothesis — same insight | Hypothesis — urgency mechanic underperforms in this category |
-| test_status | hypothesized | hypothesized | saved |
+| Field             | Rival A                                                   | Rival B                        | Rival C                                                      |
+| ----------------- | --------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------ |
+| competitor_tier   | direct                                                    | direct                         | direct                                                       |
+| format            | video, UGC-style testimonial                              | video, UGC-style testimonial   | video, motion graphic                                        |
+| hook_type         | proof-first (expert authority)                            | proof-first (expert authority) | countdown/gamified                                           |
+| concept           | vet-testimonial endorsement                               | vet-testimonial endorsement    | urgency/scarcity timer                                       |
+| longevity_signal  | inference — active 40+ days                               | inference — active 40+ days    | inference — pulled within ~2 weeks                           |
+| variant_count     | 4 concept variants                                        | 3 concept variants             | unknown, appears single-shot                                 |
+| confidence        | high                                                      | high                           | medium (single advertiser, no repetition)                    |
+| why_it_might_work | Hypothesis — vet authority lowers safety-purchase anxiety | Hypothesis — same insight      | Hypothesis — urgency mechanic underperforms in this category |
+| test_status       | hypothesized                                              | hypothesized                   | saved                                                        |
 
 Provenance gap: `first_seen`, `last_seen`, `channel`, `placement`, `geography`, and `landing_destination` are all `unknown` for these three — the description you gave carries longevity and variant counts but not the underlying dated fields. Worth a rung-1 (surface, EU-filtered) or rung-3 (manual pull) pass next session to backfill dates and anchor the longevity read properly rather than resting on "40+ days" as reported.
 
@@ -32,12 +32,12 @@ Provenance gap: `first_seen`, `last_seen`, `channel`, `placement`, `geography`, 
 
 ## Ranked hypotheses
 
-| # | Hypothesis | Signal | Gap | Ease | Value |
-|---|---|---|---|---|---|
-| H1 | We believe a vet-testimonial UGC concept will outperform our current creative on trust/safety objections, because 2 of our 3 direct rivals have run it 40+ days with 3–4 concept variants each, it topped last month's review too, and we've never tested testimonial anything. | 3 | 3 | 1 | 6 |
-| H1b | We believe an ingredient/formulation-credential proof static (same "reduce safety anxiety" insight, no vet required) will beat our current creative while the vet deal is being negotiated, because it borrows H1's insight and ships from existing assets this week. | 2 | 3 | 3 | 5 |
-| H2 | We believe a "picky eater" objection-first static will open an untapped angle, because no rival in the pulled set addresses it and we haven't either — flagged as a guess: no competitor has proven this converts, this is whitespace, not a signal. | 1 | 3 | 3 | 4 |
-| H3 | We believe a countdown-timer urgency hook will underperform here, because the one rival who tried it pulled it inside two weeks — worth a cheap disconfirming test only if capacity ever frees up; not this sprint. | 2 | 3 | 3 | 5 (held, not queued) |
+| #   | Hypothesis                                                                                                                                                                                                                                                                      | Signal | Gap | Ease | Value                |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --- | ---- | -------------------- |
+| H1  | We believe a vet-testimonial UGC concept will outperform our current creative on trust/safety objections, because 2 of our 3 direct rivals have run it 40+ days with 3–4 concept variants each, it topped last month's review too, and we've never tested testimonial anything. | 3      | 3   | 1    | 6                    |
+| H1b | We believe an ingredient/formulation-credential proof static (same "reduce safety anxiety" insight, no vet required) will beat our current creative while the vet deal is being negotiated, because it borrows H1's insight and ships from existing assets this week.           | 2      | 3   | 3    | 5                    |
+| H2  | We believe a "picky eater" objection-first static will open an untapped angle, because no rival in the pulled set addresses it and we haven't either — flagged as a guess: no competitor has proven this converts, this is whitespace, not a signal.                            | 1      | 3   | 3    | 4                    |
+| H3  | We believe a countdown-timer urgency hook will underperform here, because the one rival who tried it pulled it inside two weeks — worth a cheap disconfirming test only if capacity ever frees up; not this sprint.                                                             | 2      | 3   | 3    | 5 (held, not queued) |
 
 **H1 is explicitly promoted past its Ease=1 score.** Two separate promotion conditions both hold — say which: (a) it survived two consecutive sessions in the top band, and (b) you told me the mandate is a durable creative library, and the shoot you'd commission also produces reusable vet-authority footage for every later hypothesis in that family. Either alone would promote it; having both makes it unambiguous.
 

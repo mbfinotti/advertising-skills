@@ -260,4 +260,3 @@ Each failure mode has a discriminating diagnostic - run it before touching the s
 - "Our agency wants to move us from a cost target to a return target. What has to be true first?"
 - "I set the target to our goal CPA and spend fell off a cliff. What happened?"
 - "Black Friday is in three weeks - should I change my bid targets for it?"
-

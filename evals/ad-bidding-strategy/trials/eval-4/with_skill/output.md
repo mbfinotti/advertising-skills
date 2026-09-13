@@ -5,6 +5,7 @@ Ran your plan against the bidding-strategy skill's Seasonality section and Failu
 Seasonality/conversion-rate adjustments are documented for short spikes (roughly 1-7 days), not month-long stretches. Applying +200% across all of November stretches a short-spike tool past its window.
 
 **Fix — split it in two:**
+
 - **BFCM weekend only** (the actual 3-4 day spike): scheduled conversion-rate adjustment, dated to just those days.
 - **Rest of November** ("runs hot vs. October" generally): that's a long seasonal pattern, not a spike. Re-derive your bid target from November's own trailing actuals (last year's Nov numbers, or the Oct→Nov delta), then restore the normal target in December. Don't cover it with a stretched adjustment.
 
@@ -13,6 +14,7 @@ Seasonality/conversion-rate adjustments are documented for short spikes (roughly
 Tripling conversions → +200% treats the adjustment field as if it controls conversion **count**. It doesn't — it tells the bidder to expect a shift in conversion **rate** per click. This exact mistake has a documented failure case: a 100% adjustment for an expected doubling of conversions blew a full day's budget by late morning, because rate rose far less than count.
 
 Your 3x is two things stacked together:
+
 - More traffic (more shoppers searching/clicking because it's BFCM) — the auction already absorbs this on its own; you don't need to tell the bidder about it.
 - A genuine rate lift (25% off converts a given visitor more often than full price) — this is the only part that belongs in the adjustment.
 
@@ -42,11 +44,11 @@ Don't ask one tool to cover both jobs.
 
 ## Net change to your plan
 
-| Piece | Your plan | Fix |
-|---|---|---|
-| +200% seasonality adj. | All of November | BFCM weekend only, sized to rate lift (not the 3x count) |
-| Rest of November | Not addressed | Re-derive target from Nov trailing actuals, restore in December |
-| Data exclusion | Over sale weekend | Remove — this isn't broken tracking, don't exclude real demand data |
-| 25% discount | Not connected to bidding | Check value tracking reflects real discounted price; consider a separate, temporary target move for margin compression if on tCPA/tROAS |
+| Piece                  | Your plan                | Fix                                                                                                                                     |
+| ---------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| +200% seasonality adj. | All of November          | BFCM weekend only, sized to rate lift (not the 3x count)                                                                                |
+| Rest of November       | Not addressed            | Re-derive target from Nov trailing actuals, restore in December                                                                         |
+| Data exclusion         | Over sale weekend        | Remove — this isn't broken tracking, don't exclude real demand data                                                                     |
+| 25% discount           | Not connected to bidding | Check value tracking reflects real discounted price; consider a separate, temporary target move for margin compression if on tCPA/tROAS |
 
 Also: batch these as one coordinated change going into the weekend rather than editing piecemeal during it — a single relearn beats a chain of resets — and evaluate afterward in conversion cycles (click-to-conversion lag plus reporting delay), not calendar days.

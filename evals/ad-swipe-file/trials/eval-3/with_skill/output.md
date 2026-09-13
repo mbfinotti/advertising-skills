@@ -17,15 +17,16 @@
 **2. Cut competitor scope to the direct set.** Six competitors in one pass is over the useful core (3–5 direct). Tier them now: keep 3–5 direct competitors on the weekly cadence, push the rest to an occasional adjacent/aspirational pass.
 
 **3. Split into three collections, in this priority order:**
-   - **Competitor pulse** (the direct set, weekly) — the only collection that feeds decisions.
-   - **Pattern library** — repeatable mechanisms promoted out of the pulse at near-zero extra effort.
-   - **Vertical imports** — adjacent-category ideas, ad hoc, lowest hit rate.
+
+- **Competitor pulse** (the direct set, weekly) — the only collection that feeds decisions.
+- **Pattern library** — repeatable mechanisms promoted out of the pulse at near-zero extra effort.
+- **Vertical imports** — adjacent-category ideas, ad hoc, lowest hit rate.
 
 **4. Make `test_status` mandatory on every entry, retroactively.** Go back through the 240 saved ads and tag each one. Anything that can't honestly be tagged past `saved` after six months is dead weight — archive it separately, don't count it toward the file.
 
 **5. Enforce the schema, not just the count.** Every entry needs advertiser + tier, format, offer/angle, a longevity read (or `unknown`), one sentence of "why it might work," and a `test_status`. No entry without all five.
 
-**6. Close every session with 5–8 written hypotheses**, format: *"We believe [change] will produce [outcome] because [insight, citing which competitor and which signal]."* Take the top 3 forward to a brief. This step is what was missing — it's the only thing that moves ads from "saved" to "influenced a brief."
+**6. Close every session with 5–8 written hypotheses**, format: _"We believe [change] will produce [outcome] because [insight, citing which competitor and which signal]."_ Take the top 3 forward to a brief. This step is what was missing — it's the only thing that moves ads from "saved" to "influenced a brief."
 
 ## Right-size the volume — replace the "40 ads/week" target
 
@@ -33,7 +34,7 @@
 
 - **20–30 ads per competitor** collected before classifying anything (not per week, per pull) — across a 3–5-competitor direct set, that's 60–150 ads for a full pulse, not 40/week forever.
 - **Weekly 30–45 minute session per competitor**, hunting specifically for ads running 2+ weeks — longevity is the signal that matters, not raw count.
-- Prioritize DTC-appropriate emphasis: hook and format variety, weekly refresh (fatigue is fast in apparel), high creative volume *downstream in testing*, not upstream in collection.
+- Prioritize DTC-appropriate emphasis: hook and format variety, weekly refresh (fatigue is fast in apparel), high creative volume _downstream in testing_, not upstream in collection.
 
 Volume should scale only after the pipeline-conversion rate recovers past 50%. Until then, the right move is to **hold or cut** collection volume and force every session to end in hypotheses, per the file's own recovery rule.
 

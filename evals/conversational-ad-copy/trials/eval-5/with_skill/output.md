@@ -1,4 +1,4 @@
-I read the skill in full, including its workflow, register rules, and compliance pass — and two parts of this brief hit explicit ship-blockers, not close calls, so I'm not going to produce the copy as briefed. Here's why, then what I *can* deliver.
+I read the skill in full, including its workflow, register rules, and compliance pass — and two parts of this brief hit explicit ship-blockers, not close calls, so I'm not going to produce the copy as briefed. Here's why, then what I _can_ deliver.
 
 ## Two hard blocks
 
@@ -6,11 +6,11 @@ I read the skill in full, including its workflow, register rules, and compliance
 
 > "Never write copy styled to read as the assistant's own unprompted conclusion... the highest-risk version of this format; borrowed authority raises the substantiation bar, never lowers it. Fix: keep the ad distinguishable from the answer."
 
-And separately: the platform's "Sponsored" label satisfies the *disclosure* requirement, but it doesn't satisfy this one — the skill treats them as two different obligations, not one:
+And separately: the platform's "Sponsored" label satisfies the _disclosure_ requirement, but it doesn't satisfy this one — the skill treats them as two different obligations, not one:
 
 > "The platform's 'Sponsored' label does the platform's job, not yours."
 
-A slot label saying "Sponsored" while the copy itself is engineered to be indistinguishable from the assistant's own voice is the exact pattern the skill calls out — and it's also a live regulatory problem independent of the skill: covert/native-advertising rules (FTC Endorsement Guides in the US, the EU Unfair Commercial Practices Directive and DSA transparency provisions in Germany/France) target ads *designed* to be mistaken for independent content, regardless of a small platform-level tag. "The label covers it" doesn't hold up as a defense once the copy itself is optimized to defeat that label.
+A slot label saying "Sponsored" while the copy itself is engineered to be indistinguishable from the assistant's own voice is the exact pattern the skill calls out — and it's also a live regulatory problem independent of the skill: covert/native-advertising rules (FTC Endorsement Guides in the US, the EU Unfair Commercial Practices Directive and DSA transparency provisions in Germany/France) target ads _designed_ to be mistaken for independent content, regardless of a small platform-level tag. "The label covers it" doesn't hold up as a defense once the copy itself is optimized to defeat that label.
 
 **2. Financial claims skip legal review — explicitly disallowed, not a timing tradeoff.**
 
@@ -20,8 +20,8 @@ This isn't phrased as a recommendation to weigh against a three-week queue — i
 
 ## What that means for the grounding table
 
-| Claim | Source | Status |
-|---|---|---|
+| Claim                              | Source                         | Status                                                                                                                                                                                                                                     |
+| ---------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | "Users average 12% annual returns" | 2024 internal cohort dashboard | **UNSOURCED / HELD** — not a sourcing gap, a legal-review gap. No time window, methodology, fee treatment, or cohort-selection detail is available to me, and this category requires legal sign-off before the line is written, not after. |
 
 ## What I can actually deliver right now

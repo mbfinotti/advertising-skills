@@ -17,7 +17,7 @@ A cart abandoner who knows (or learns) that waiting gets them 10% tomorrow, 15% 
 1. **Repeat vs. first-time abandonment rate.** If repeat customers/emails abandon at a meaningfully higher rate than first-timers, that's the game being played, not cooling interest.
 2. **Time-to-purchase clustering.** Pull the distribution of "time from abandon to purchase" for converted abandoners. If you see spikes right at +24h, +7d, +14d instead of a smooth decay curve, people are waiting for the code, not forgetting and reconsidering.
 3. **AOV and gross margin per recovered order, pre- vs. post-launch.** If AOV crept up (padding the cart to "make the discount worth it") while margin per order fell faster than the discount rate alone explains, that's cannibalization.
-4. **A real holdout.** Take 15–20% of abandoners and give them zero discount — just a plain reminder. Compare their organic recovery rate and the net margin per abandoner (treated vs. holdout) after 30 days. This is the only way to know the ladder's *incremental* lift instead of its gross conversion rate, which is currently lying to you.
+4. **A real holdout.** Take 15–20% of abandoners and give them zero discount — just a plain reminder. Compare their organic recovery rate and the net margin per abandoner (treated vs. holdout) after 30 days. This is the only way to know the ladder's _incremental_ lift instead of its gross conversion rate, which is currently lying to you.
 
 ### What to actually do
 

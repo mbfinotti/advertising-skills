@@ -3,12 +3,13 @@ No — three separate things in that plan will either get the audience rejected,
 ## What's wrong
 
 **1. Lifetime spend as both the selection basis and the value column.**
-The skill is explicit: never select by cumulative lifetime revenue, and never feed it as the value column. Lifetime spend tracks *tenure* (a 4-year customer looks great even with mediocre margins), not worth — and a value-based lookalike trained on it will happily scale low-margin, high-frequency discount shoppers because they rack up totals. Use **margin or predicted LTV** for both the cutoff and the uploaded value. If finance can't produce margin per customer, predicted LTV is the fallback — but "lifetime spend" as you've described it is neither.
+The skill is explicit: never select by cumulative lifetime revenue, and never feed it as the value column. Lifetime spend tracks _tenure_ (a 4-year customer looks great even with mediocre margins), not worth — and a value-based lookalike trained on it will happily scale low-margin, high-frequency discount shoppers because they rack up totals. Use **margin or predicted LTV** for both the cutoff and the uploaded value. If finance can't produce margin per customer, predicted LTV is the fallback — but "lifetime spend" as you've described it is neither.
 
 **2. Merging USD and EUR into one file.**
 Two rules hit this at once: "one currency per list" (mixed currency breaks the value weighting — Meta doesn't FX-normalize for you), and Meta lookalikes are **country-scoped by construction** regardless of currency. So you need two seeds either way: a US/USD seed and an EU/EUR seed, each with its own audience and its own lookalike. Merging them wouldn't just violate the currency rule, it'd produce one seed averaged across two markets that serves neither well.
 
 **3. The $0 gift recipients and the whale.**
+
 - Zero-value rows: "positive values only — zero and negative values break or distort the build." These need to be dropped from the value-based file entirely, not just left to fall out of a top-15% cut.
 - The 200x corporate account: cap or winsorize it. Left as-is, it dominates the value weighting and the model over-indexes on whatever that one account looks like instead of learning your actual customer distribution.
 
@@ -16,7 +17,7 @@ Two rules hit this at once: "one currency per list" (mixed currency breaks the v
 
 - **Consent/lawful basis for the EU rows.** GDPR treats hashed customer-list uploads as personal data (Bavarian DPA / Munich court precedent — hashing doesn't anonymize). Do you have documented consent or another lawful basis for pushing EU customers into Meta's Custom Audience tool? This is a hard stop on the EU seed until confirmed.
 - **Value-based audiences need a separate Meta terms acceptance** from your standard customer-list terms — confirm that's done on both ad accounts (US and EU), or the value mapping will silently fail and Meta will build a standard lookalike with no warning.
-- **Negative-selection pass**: has this list already had refunders, chargebacks, serial returners, discount-only buyers, employees, and wholesale/reseller accounts stripped? None of that was mentioned — all five need to come out before export (existing customers stay *in* the seed, just suppressed from the acquisition campaign at delivery level, not removed from the seed).
+- **Negative-selection pass**: has this list already had refunders, chargebacks, serial returners, discount-only buyers, employees, and wholesale/reseller accounts stripped? None of that was mentioned — all five need to come out before export (existing customers stay _in_ the seed, just suppressed from the acquisition campaign at delivery level, not removed from the seed).
 - **Provenance of "lifetime spend"**: is this gross revenue, net of refunds, or something else? Whatever replaces it (margin/predicted LTV) needs refunds excluded from the computation.
 - **Per-store row counts.** 62,000 total x ~15% is roughly 9,300 combined, but I don't know the US/EU split. Each split seed needs to independently clear Meta's 100-matched floor (recommended band 1,000-5,000) — check both before committing, not after.
 

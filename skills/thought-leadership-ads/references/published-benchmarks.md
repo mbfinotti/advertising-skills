@@ -21,17 +21,17 @@ The largest disclosed dataset (ZenABM, 119 sponsored person-fronted posts, ~$300
 
 ## Performance claims
 
-| Claim                                    | Value                                                                              | Provenance                                                                        |
-| ---------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| Median CTR, person-fronted vs brand-page | 2.68% vs 0.42% single image (0.32% carousel, 0.24% video)                          | ZenABM 2026 (vendor, self-serving; same report as the correlation figure above)   |
-| Median CPC                               | $2.29 vs $13.23 single image, $15.61 video                                         | ZenABM 2026 (vendor; same report as the correlation figure above)                 |
-| Cost per landing-page click              | ~$3.06 (~77% cheaper than brand single image)                                      | ZenABM 2026 (vendor; same report as the correlation figure above)                 |
-| CTR lift                                 | 1.7x in the platform's 2023 pilot; "~2x" in later statements                       | Platform's own claim; pilot has early-adopter bias                                |
-| CTR lift                                 | 155% (0.87% vs 0.34%), 2M+ impressions                                             | Single practitioner                                                               |
-| CTR lift                                 | 6.9x, 15-month B2B SaaS portfolio                                                  | Fractional Demand 2026 (vendor; independent of ZenABM)                            |
+| Claim                                    | Value                                                                              | Provenance                                                                                                          |
+| ---------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Median CTR, person-fronted vs brand-page | 2.68% vs 0.42% single image (0.32% carousel, 0.24% video)                          | ZenABM 2026 (vendor, self-serving; same report as the correlation figure above)                                     |
+| Median CPC                               | $2.29 vs $13.23 single image, $15.61 video                                         | ZenABM 2026 (vendor; same report as the correlation figure above)                                                   |
+| Cost per landing-page click              | ~$3.06 (~77% cheaper than brand single image)                                      | ZenABM 2026 (vendor; same report as the correlation figure above)                                                   |
+| CTR lift                                 | 1.7x in the platform's 2023 pilot; "~2x" in later statements                       | Platform's own claim; pilot has early-adopter bias                                                                  |
+| CTR lift                                 | 155% (0.87% vs 0.34%), 2M+ impressions                                             | Single practitioner                                                                                                 |
+| CTR lift                                 | 6.9x, 15-month B2B SaaS portfolio                                                  | Fractional Demand 2026 (vendor; independent of ZenABM)                                                              |
 | Best allocation tier                     | 25-50% of channel budget → 5.08% CTR at $0.84 CPC (17.4M impressions, $3.5M spend) | Fractional Demand 2026 (same source as the CTR-lift row above; warns to widen the account list before passing ~40%) |
-| Objective economics                      | Engagement objective ≈ $4.80 landing-page CPC vs $7.90-12+ for awareness objective | Practitioner ($300k spend analysis)                                               |
-| Single-deal anecdote                     | $120k ACV closed from $2,035 spend                                                 | Single practitioner, n=1                                                          |
+| Objective economics                      | Engagement objective ≈ $4.80 landing-page CPC vs $7.90-12+ for awareness objective | Practitioner ($300k spend analysis)                                                                                 |
+| Single-deal anecdote                     | $120k ACV closed from $2,035 spend                                                 | Single practitioner, n=1                                                                                            |
 
 Vendor lift claims relayed through platform interviews (33% more leads for frequently posting founders, 24% and 120% deal-size lifts on committee engagement, 6x conversion lift preceding sponsored messaging, 20-30% ROI lift) are correlations presented as causal, near-certainly confounded by pre-existing buyer interest. Do not repeat them as outcomes.
 

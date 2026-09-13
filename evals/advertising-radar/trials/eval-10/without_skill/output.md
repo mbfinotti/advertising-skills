@@ -3,6 +3,7 @@
 Caveat up front: I have no internet access this session, so the brand list below is built from general knowledge of the DTC swimwear space, not a live pull. Some pages may have rebranded, gone quiet, or been replaced by new entrants since — the routine below is designed to catch that drift itself (see Step 2), so it self-corrects even though the seed list is static.
 
 ## Tool
+
 - Meta Ad Library — **free**, no login needed to browse: `facebook.com/ads/library`
 - Filters to set once and reuse: **Ad category = All ads**, **Country = [Rooklane's market]**, keep default "Active" status but occasionally flip to "All" to see what got pulled (a dropped ad after days is a weak-offer signal).
 
@@ -17,6 +18,7 @@ Caveat up front: I have no internet access this session, so the brand list below
 ## The Watch List
 
 **Core — check every week (8, mix of scale + positioning proxies for Rooklane):**
+
 - Cupshe
 - Andie Swim
 - Summersalt
@@ -27,6 +29,7 @@ Caveat up front: I have no internet access this session, so the brand list below
 - SHEIN (swim category)
 
 **Bucket A — Mass / fast-fashion swim:**
+
 - Boohoo Swim
 - PrettyLittleThing Swim
 - Missguided Swim
@@ -34,6 +37,7 @@ Caveat up front: I have no internet access this session, so the brand list below
 - Old Navy Swim
 
 **Bucket B — Mid-market DTC swim:**
+
 - Beach Riot
 - Solid & Striped
 - Same Swim
@@ -41,6 +45,7 @@ Caveat up front: I have no internet access this session, so the brand list below
 - Bikini.com
 
 **Bucket C — Premium / aspirational swim:**
+
 - ViX Paula Hermanny
 - PatBO
 - Devon Windsor
@@ -48,6 +53,7 @@ Caveat up front: I have no internet access this session, so the brand list below
 - Baiia
 
 **Bucket D — Performance / adjacent (fabric-tech and surf-culture ads worth stealing angles from):**
+
 - Speedo
 - TYR
 - Rip Curl
@@ -66,6 +72,7 @@ Caveat up front: I have no internet access this session, so the brand list below
 ```
 
 ## Flag Rules (what actually warrants a note, not everything)
+
 - 🔴 Same offer type appears on 3+ brands in one week → category-wide seasonal push, worth matching or countering.
 - 🟠 A single brand's active ad count jumps sharply vs. last check → they found a winner, worth knowing what it is.
 - 🟢 A keyword-search page you don't recognize shows up with a high ad count → new entrant scaling fast, add to next month's bucket rotation.

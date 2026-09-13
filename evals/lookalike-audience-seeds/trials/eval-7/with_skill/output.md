@@ -10,7 +10,7 @@
 
 ## The real problem: you don't have a baseline
 
-⏳ Cohort LTV has never been measured on this account. Per the pass rule this skill runs on — *90-day acquired-customer cohort LTV must meet or beat account-average LTV, at equal-or-better CPA* — an unknown baseline means **neither seed can be graded yet**. Treat the current run as the baseline-building run, not a verdict.
+⏳ Cohort LTV has never been measured on this account. Per the pass rule this skill runs on — _90-day acquired-customer cohort LTV must meet or beat account-average LTV, at equal-or-better CPA_ — an unknown baseline means **neither seed can be graded yet**. Treat the current run as the baseline-building run, not a verdict.
 
 ## The old seed is not a safe fallback — it already failed
 
@@ -25,7 +25,7 @@ This is the named "Churney" pattern, verbatim: good CPA, but the seed scaled low
 ## What to actually do
 
 1. **Leave the new seed live.** No swap tomorrow.
-2. Confirm the negative-selection pass (refunders, discount-only buyers, employees, wholesale) was applied when this seed was built — if it wasn't, that's a real, fixable issue, independent of the CPA number. 40%-off-code buyers polluting the *old* seed is documented; nobody has checked whether they're in the *new* one.
+2. Confirm the negative-selection pass (refunders, discount-only buyers, employees, wholesale) was applied when this seed was built — if it wasn't, that's a real, fixable issue, independent of the CPA number. 40%-off-code buyers polluting the _old_ seed is documented; nobody has checked whether they're in the _new_ one.
 3. Let it clear the learning phase (~2–4 weeks from launch, ~Sept 7) before reading CPA as signal — earliest honest read: **~Sept 21–Oct 5**.
 4. Don't build a two-ad-set test against the old seed. It's already retired per the Churney rule. Testing against it just re-risks the thing finance already caught.
 5. If you want a real comparison, test the current seed against a **new, value-based re-seed** (margin or predicted LTV, never cumulative revenue) — a legitimate second candidate, not the disqualified one.

@@ -8,12 +8,12 @@
 
 **Layered structure (4 lists max, to stay manageable solo):**
 
-| List | Seed size (pre-match) | Use |
-|---|---|---|
-| EU-5 combined | ~18,000 | Master Custom Audience → master Lookalike |
-| Furniture only | subset of 18,000 | Product-line Lookalike |
-| Lighting only | subset of 18,000 | Product-line Lookalike |
-| High-AOV tier | top-spend subset | Value-based Lookalike |
+| List           | Seed size (pre-match) | Use                                       |
+| -------------- | --------------------- | ----------------------------------------- |
+| EU-5 combined  | ~18,000               | Master Custom Audience → master Lookalike |
+| Furniture only | subset of 18,000      | Product-line Lookalike                    |
+| Lighting only  | subset of 18,000      | Product-line Lookalike                    |
+| High-AOV tier  | top-spend subset      | Value-based Lookalike                     |
 
 Each split still draws from all 5 countries — Sweden stays folded in, it's just never large enough to be its own row.
 

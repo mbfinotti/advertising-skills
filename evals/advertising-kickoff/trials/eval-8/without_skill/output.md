@@ -15,7 +15,7 @@ I also can't see the seven existing automations from here (not in this session, 
 ### 1. Weekly — Creative & Channel Pulse (20 min, Mondays, after Meridian West's pacing email lands)
 
 - **Owner:** growth lead + creative studio lead.
-- **Input:** Meridian West's existing Monday pacing email — this review runs *off* it, doesn't duplicate it. Don't ask the agency for a second report.
+- **Input:** Meridian West's existing Monday pacing email — this review runs _off_ it, doesn't duplicate it. Don't ask the agency for a second report.
 - **Look at:** Meta/LinkedIn creative frequency & CTR decay (studio ships weekly, so fatigue is the fast-moving variable — Search isn't); Search query/search-term report for waste.
 - **Decision each week:** refresh or pause a specific creative; add negative keywords. If there's no decision, cancel that week's meeting — don't meet to confirm nothing changed.
 

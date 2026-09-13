@@ -11,12 +11,12 @@ LinkedIn is the most expensive paid social platform per interaction (CPCs common
 
 Your product is self-serve at $29/mo. Run the numbers both ways:
 
-| Scenario | CPL | Lead→paid | CAC |
-|---|---|---|---|
-| Conservative | $100 | 5% | **$2,000** |
-| Optimistic | $50 | 12% | **$417** |
+| Scenario     | CPL  | Lead→paid | CAC        |
+| ------------ | ---- | --------- | ---------- |
+| Conservative | $100 | 5%        | **$2,000** |
+| Optimistic   | $50  | 12%       | **$417**   |
 
-Even your *best case* lands right at LTV, with zero margin for support, churn, or refunds — and that's before accounting for the fact that Lead Gen Form fills are low-intent (one click, no commitment) and convert worse than people who actually land on a page and evaluate the product. There's no SDR in your funnel to rescue those low-intent leads either. On paper, this loses money.
+Even your _best case_ lands right at LTV, with zero margin for support, churn, or refunds — and that's before accounting for the fact that Lead Gen Form fills are low-intent (one click, no commitment) and convert worse than people who actually land on a page and evaluate the product. There's no SDR in your funnel to rescue those low-intent leads either. On paper, this loses money.
 
 ### What I'd do instead
 

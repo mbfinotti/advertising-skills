@@ -22,24 +22,24 @@ Build a Meta value-based Lookalike Audience from Vellum Coffee's recent-purchase
 
 ## 2. Seed audience definition
 
-| Step | Rule | Result |
-|---|---|---|
-| Base | Purchasers, last 120 days | — |
-| Exclude | Refunders | — |
-| Exclude | Staff accounts | — |
-| Exclude | Wholesale accounts (2) | — |
-| **Seed size** | | **6,200 rows** |
+| Step          | Rule                      | Result         |
+| ------------- | ------------------------- | -------------- |
+| Base          | Purchasers, last 120 days | —              |
+| Exclude       | Refunders                 | —              |
+| Exclude       | Staff accounts            | —              |
+| Exclude       | Wholesale accounts (2)    | —              |
+| **Seed size** |                           | **6,200 rows** |
 
 - Geography: US-only (matches DTC footprint — no multi-country hashing/currency handling needed).
 - Rolling window: because "last 120 days" moves daily, this list is **not a one-time export** — see §6 for refresh cadence.
 
 ## 3. Match rate & expected matched audience
 
-| PII coverage | Rows (approx.) | Planning match rate | Matched users (approx.) |
-|---|---|---|---|
-| Email + phone (~80% of file) | ~4,960 | 60–70% | ~3,300 |
-| Email only / partial (~20% of file) | ~1,240 | 30–45% | ~465 |
-| **Blended total** | **6,200** | **~55% central (range 45–65%)** | **~3,400 (range ~2,800–4,000)** |
+| PII coverage                        | Rows (approx.) | Planning match rate             | Matched users (approx.)         |
+| ----------------------------------- | -------------- | ------------------------------- | ------------------------------- |
+| Email + phone (~80% of file)        | ~4,960         | 60–70%                          | ~3,300                          |
+| Email only / partial (~20% of file) | ~1,240         | 30–45%                          | ~465                            |
+| **Blended total**                   | **6,200**      | **~55% central (range 45–65%)** | **~3,400 (range ~2,800–4,000)** |
 
 - Meta's recommended floor for a stable lookalike source is roughly 1,000 matched users; even the low end of this range clears it by a wide margin. Seed viability is **not** a concern here — accuracy of the assumption was the issue, not the outcome.
 - **Action:** after upload, replace this table's estimate with the actual Ads Manager-reported match rate and re-check downstream CPA assumptions against it.

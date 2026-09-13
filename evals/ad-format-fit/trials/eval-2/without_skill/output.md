@@ -10,9 +10,11 @@ Cold-DMing a demo pitch to compliance officers is a bad match: this exact audien
 $9K/month split three ways leaves nothing meaningful for CTV, which historically needs a much higher spend floor to get real delivery. You also can't target "compliance leaders in NL" precisely on CTV — you'd be buying broad reach with no attribution path back to a niche B2B title. It's a brand-credibility play for a later stage with 3-5x this budget, not a Q4 test.
 
 ## Suggested $9K/month split
+
 - **Thought-leader ads: ~$6,750** — weight by market size, e.g. DE $3,000 / FR $2,250 / NL $1,500
 - **Message Ads: ~$2,250**, restricted to warm segments (site retargeting pool + engaged post viewers), not cold prospecting lists
 - **CTV: $0** — revisit once the retargeting pool and budget both scale
 
 ## Why the pool size matters here
+
 210 members is below LinkedIn's practical activation threshold for Matched Audiences. Treat pool-building as the Q4 priority — thought-leader ads are your growth engine for it — before leaning on any format that depends on a warm audience to work.

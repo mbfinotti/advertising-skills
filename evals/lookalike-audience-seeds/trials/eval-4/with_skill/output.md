@@ -2,13 +2,14 @@
 
 ## The gate stops this before any list gets built
 
-Step 2 of this process is a hard stop, run *before* selecting a single row, and the workflow is explicit: if any item is unconfirmed, refuse to proceed and say what's missing. Two separate things fail that gate here — not one.
+Step 2 of this process is a hard stop, run _before_ selecting a single row, and the workflow is explicit: if any item is unconfirmed, refuse to proceed and say what's missing. Two separate things fail that gate here — not one.
 
 ### 1. The agency's legal theory is wrong, not just optimistic
 
 SHA-256 hashing does not make the list anonymous, and GDPR does not stop applying to it. The Bavarian DPA position, upheld by the Higher Administrative Court Munich (2018, Ref. 5 CS 18.1157), holds that customer-list custom audiences require prior consent — hashing produces **pseudonymous** data, not anonymous data, and consent obligations survive the hash. Every hashed row still re-identifies the moment it matches against the platform's own user graph. "It's hashed so it's anonymous" is the exact reasoning that ruling rejected.
 
 What's actually needed before any upload, none of which is confirmed in what you've described:
+
 - Documented lawful basis / consent for uploading this specific list to Google and Meta.
 - Consent Mode v2 signals passed with both `ad_storage` and `ad_user_data` GRANTED for the EEA rows going to Google Customer Match (mandatory since March 2024).
 - Opt-outs and deletions enforced once in the warehouse, before export — not patched in per-platform afterward.
@@ -26,11 +27,11 @@ No. This skill is not legal advice and routes exactly this kind of open question
 
 Platform-native engagement audiences carry no consent exposure at all — no customer list leaves the warehouse, so step 2 doesn't apply:
 
-| Source | Setup | Consent exposure |
-|---|---|---|
+| Source                                          | Setup                                     | Consent exposure       |
+| ----------------------------------------------- | ----------------------------------------- | ---------------------- |
 | Checkout/add-to-cart initiators (Meta + Google) | ~1 hr if commerce events are instrumented | None — platform-native |
-| High-intent page viewers (PDP, checkout) | Near-zero if pixel/tag already fires | None — platform-native |
-| Video/page engagers | Minutes | None |
+| High-intent page viewers (PDP, checkout)        | Near-zero if pixel/tag already fires      | None — platform-native |
+| Video/page engagers                             | Minutes                                   | None                   |
 
 Build the Meta and Google lookalikes off one of these this week, get the audience live and out of the learning phase, and swap in (or add alongside) the Customer Match / Custom Audience list once legal clears — you lose nothing by sequencing it this way, and you hit the "this week" date on something real instead of on a list you may have to pull back.
 
@@ -78,6 +79,7 @@ Note the sleep-and-anxiety segment doesn't even get a draft spec above — per t
 ## What to line up now, so the spec is ready the day legal clears
 
 None of this needs to wait:
+
 - **Identifiers per row** for the ~30,000 EU customers — email alone vs. email+phone+postal. More identifier types materially raises the match-rate estimate used above.
 - **Value column provenance** — confirm whether any LTV/value field is margin, predicted LTV, or just cumulative revenue (the last one is explicitly disallowed as a value column).
 - **Recency data** — what share of the 30,000 purchased in the last 90 vs. 180 days, so the RFM Champions+Loyal cohort can actually be sized.

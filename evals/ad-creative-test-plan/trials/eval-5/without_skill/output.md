@@ -3,20 +3,21 @@
 **Context:** CPA target $30 · ~$18k/mo account spend · solo operator, checks ~2×/week · winning batch locked in 4 weeks for App Store feature window.
 
 ## Confirm before Monday
+
 - Assuming test budget ≈ $20–30/day per ad (6 ads ≈ $120–180/day, ~$3.6–5.4k/mo of your $18k). Adjust if you want it tighter or looser.
 - Rules below are **spend-milestone-based**, not calendar-based — they work regardless of your exact budget split.
 - Which platform(s)? Rules are written generically (Meta / Google UAC / Apple Search Ads / TikTok all support automated rules) — say which one(s) if you want exact click-paths.
 
 ## 1. Core rule table
 
-| Spend vs. CPA target ($30) | Installs | Action |
-|---|---|---|
-| < 1× ($30) | any | **No judgment.** Sample too small — let it run. |
-| ≥ 1× ($30) | ≥ 1 | Provisional read only. Watch CPA trend, don't act. |
-| **≥ 2× ($60)** | **0** | **Hard kill.** Automated, no exceptions. |
-| ≥ 3× ($90) | CPA ≤ $45 (1.5×) | Extend to 5× ($150) — it's trending toward target, give it room. |
-| ≥ 3× ($90) | CPA > $45 | **Kill.** |
-| ≥ 5× ($150) | CPA still > $30 | **Kill**, regardless of trend. Hard ceiling. |
+| Spend vs. CPA target ($30) | Installs         | Action                                                           |
+| -------------------------- | ---------------- | ---------------------------------------------------------------- |
+| < 1× ($30)                 | any              | **No judgment.** Sample too small — let it run.                  |
+| ≥ 1× ($30)                 | ≥ 1              | Provisional read only. Watch CPA trend, don't act.               |
+| **≥ 2× ($60)**             | **0**            | **Hard kill.** Automated, no exceptions.                         |
+| ≥ 3× ($90)                 | CPA ≤ $45 (1.5×) | Extend to 5× ($150) — it's trending toward target, give it room. |
+| ≥ 3× ($90)                 | CPA > $45        | **Kill.**                                                        |
+| ≥ 5× ($150)                | CPA still > $30  | **Kill**, regardless of trend. Hard ceiling.                     |
 
 This is Barry Hott's 1×/3× framework plus two additions you asked for: a zero-install hard stop at 2×, and a bounded extension (capped at 5×) for ads that are clearly converging on target instead of a binary miss.
 
@@ -32,6 +33,7 @@ Set platform-native automated rules so losers get paused without you watching:
 4. **Rule D — Notify only:** IF spend ≥ $30 (1×) → email/push notification, no action. This is your cue to glance at it on your next check, not a trigger.
 
 Notes:
+
 - Meta Ads Manager and Google Ads (UAC) both support spend + CPA compound conditions natively under "Automated Rules" — set frequency to check every few hours, not daily, so you're not exposed on the days you don't log in.
 - Apple Search Ads and TikTok have thinner native rule engines — if you're on either, set Rule D notifications and treat A–C as manual actions to execute on your twice-weekly check (budget caps at the campaign level as a partial substitute for A/C in the meantime).
 - These rules are a **floor**, not a replacement for your judgment on the trend-extension case (3×–5× zone) — that one stays manual since it needs a look at creative/CTR context.
@@ -46,12 +48,12 @@ Notes:
 
 ## 4. 4-week timeline
 
-| Week | Target state |
-|---|---|
-| 1 | Most ads cross 1×–3× spend. First kills land (mostly via automation). |
-| 2 | Survivors pushed toward 5× ceiling. Clear losers all gone by end of week. |
-| 3 | Only real contenders left. Scale winners' budget up for volume. |
-| 4 | **No new kill decisions** — this week is for confirming the pick has enough volume, not for testing. Lock the batch with margin before the feature-window deadline, don't cut it to the wire. |
+| Week | Target state                                                                                                                                                                                  |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | Most ads cross 1×–3× spend. First kills land (mostly via automation).                                                                                                                         |
+| 2    | Survivors pushed toward 5× ceiling. Clear losers all gone by end of week.                                                                                                                     |
+| 3    | Only real contenders left. Scale winners' budget up for volume.                                                                                                                               |
+| 4    | **No new kill decisions** — this week is for confirming the pick has enough volume, not for testing. Lock the batch with margin before the feature-window deadline, don't cut it to the wire. |
 
 ## 5. One caveat on picking the final winner
 
@@ -59,11 +61,11 @@ CPA alone tells you acquisition cost, not whether those users convert to paying 
 
 ## 6. Tracking log template
 
-| Ad | Launch date | Spend | Installs | CPA | Threshold hit | Action | Date |
-|---|---|---|---|---|---|---|---|
-| Ad 1 | Mon 9/15 | | | | | | |
-| Ad 2 | Mon 9/15 | | | | | | |
-| Ad 3 | Mon 9/15 | | | | | | |
-| Ad 4 | Mon 9/15 | | | | | | |
-| Ad 5 | Mon 9/15 | | | | | | |
-| Ad 6 | Mon 9/15 | | | | | | |
+| Ad   | Launch date | Spend | Installs | CPA | Threshold hit | Action | Date |
+| ---- | ----------- | ----- | -------- | --- | ------------- | ------ | ---- |
+| Ad 1 | Mon 9/15    |       |          |     |               |        |      |
+| Ad 2 | Mon 9/15    |       |          |     |               |        |      |
+| Ad 3 | Mon 9/15    |       |          |     |               |        |      |
+| Ad 4 | Mon 9/15    |       |          |     |               |        |      |
+| Ad 5 | Mon 9/15    |       |          |     |               |        |      |
+| Ad 6 | Mon 9/15    |       |          |     |               |        |      |

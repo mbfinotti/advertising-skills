@@ -8,7 +8,7 @@
 - Floor: **300 matched**
 - **Fails, across the entire documented range** — not a marginal case.
 
-LinkedIn's own recommendation reinforces this independently: they suggest uploading **10,000+ emails** to *reliably* clear 300 matched. 700 is well under that even before you touch the match-rate math.
+LinkedIn's own recommendation reinforces this independently: they suggest uploading **10,000+ emails** to _reliably_ clear 300 matched. 700 is well under that even before you touch the match-rate math.
 
 (Side note, unprompted but worth flagging: "lookalike" is the pre-Feb-2024 name. LinkedIn sunset Lookalike Audiences and replaced them with **Predictive Audiences** — same 300-matched floor, max 30 per ad account. If any deck or brief in your org still says "Lookalike," it's stale.)
 
@@ -39,12 +39,12 @@ I don't have answers to these yet, and none of them are optional:
 
 Never loosen selection quality first — walk the ladder:
 
-| Rung | Applies here? | Why |
-|---|---|---|
-| **1 — Enrich identifiers** | **Likely your fix** | Identity resolution appends personal emails/phones, and/or expands each closed-won *account* into multiple buying-committee contacts via title/seniority/function. This is the standard B2B move precisely because you're in the pattern where the cheap rungs are structurally empty (see below). Cost: real — vendor selection, DPA, security review, a week+ of coordination before a row moves. |
-| 2 — Widen recency window | Probably empty | Only works if #1 above says your 700 isn't already all-time. If it is (typical for "we exported closed-won"), there's nothing left to widen. |
-| 3 — Stack an adjacent segment | Probably empty | The only adjacent segments for closed-won are lost deals or MQLs — both forbidden as a first move for exactly the dilution reason above. |
-| 4 — Switch source | Last resort, not a top-up | SQL-only (never all-MQL) if 1–3 are genuinely exhausted. Lowest value on the ranking — changes what the model learns. |
+| Rung                          | Applies here?             | Why                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ----------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1 — Enrich identifiers**    | **Likely your fix**       | Identity resolution appends personal emails/phones, and/or expands each closed-won _account_ into multiple buying-committee contacts via title/seniority/function. This is the standard B2B move precisely because you're in the pattern where the cheap rungs are structurally empty (see below). Cost: real — vendor selection, DPA, security review, a week+ of coordination before a row moves. |
+| 2 — Widen recency window      | Probably empty            | Only works if #1 above says your 700 isn't already all-time. If it is (typical for "we exported closed-won"), there's nothing left to widen.                                                                                                                                                                                                                                                        |
+| 3 — Stack an adjacent segment | Probably empty            | The only adjacent segments for closed-won are lost deals or MQLs — both forbidden as a first move for exactly the dilution reason above.                                                                                                                                                                                                                                                            |
+| 4 — Switch source             | Last resort, not a top-up | SQL-only (never all-MQL) if 1–3 are genuinely exhausted. Lowest value on the ranking — changes what the model learns.                                                                                                                                                                                                                                                                               |
 
 This is structurally the same shape as a documented case: a 410-contact B2B closed-won list matched ~144 people natively (fails 300), enrichment took it to ~1,240 contacts at ~70% match → ~868 matched, clears comfortably. Your 700 at $42K ACV is the same pattern at slightly larger scale — enrichment is very likely to clear 300 outright, probably without needing rungs 2–4 at all.
 

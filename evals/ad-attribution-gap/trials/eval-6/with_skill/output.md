@@ -2,13 +2,13 @@
 
 ## Headline
 
-Anchor: CRM, 74 demo bookings/month. Google + LinkedIn combined self-report 118 — a 1.59x combined multiplier, not a 44-unit gap to explain. **Never sum platforms**: this isn't 44 phantom demos, it's two platforms each claiming credit for overlapping subsets of the same 74. Verdict: **structural, not a defect** — but it can't be *settled* by reconciliation math alone, and your constraint (no holdout, anywhere) removes the one method that would settle it outright. The 9% residual is a separate, smaller problem, and it's already solved: stop working it.
+Anchor: CRM, 74 demo bookings/month. Google + LinkedIn combined self-report 118 — a 1.59x combined multiplier, not a 44-unit gap to explain. **Never sum platforms**: this isn't 44 phantom demos, it's two platforms each claiming credit for overlapping subsets of the same 74. Verdict: **structural, not a defect** — but it can't be _settled_ by reconciliation math alone, and your constraint (no holdout, anywhere) removes the one method that would settle it outright. The 9% residual is a separate, smaller problem, and it's already solved: stop working it.
 
 Bottom line on your actual question: **no, don't buy an MMM platform, not for this.** Wrong tool for both problems you named. Details and what to do instead follow.
 
 ## Problem 1 — the 118-vs-74 platform fight
 
-This is Bucket 2 (definitional), specifically the line the skill names directly: *cross-platform self-crediting overlap — several platforms each claiming the same conversion.* Expected mechanism: Google Ads and LinkedIn Ads each apply their own last-touch (or their own attribution window) against their own click, blind to the other platform's touch in the same buyer journey. A B2B demo booking that saw both a LinkedIn ad and a Google search ad gets claimed in full by both. That alone can produce numbers like yours with zero tracking defect anywhere.
+This is Bucket 2 (definitional), specifically the line the skill names directly: _cross-platform self-crediting overlap — several platforms each claiming the same conversion._ Expected mechanism: Google Ads and LinkedIn Ads each apply their own last-touch (or their own attribution window) against their own click, blind to the other platform's touch in the same buyer journey. A B2B demo booking that saw both a LinkedIn ad and a Google search ad gets claimed in full by both. That alone can produce numbers like yours with zero tracking defect anywhere.
 
 Before treating this as fully explained, run the ratio check the skill specifies — you're missing one input:
 
@@ -18,13 +18,13 @@ Before treating this as fully explained, run the ratio check the skill specifies
 
 This is a 10-minute pull from each platform's own dashboard. Do it before anything else below — it changes which of the next steps even apply.
 
-**What reconciliation cannot do, no matter how well you run it**: prove *which* platform's claim is more real. Both platforms genuinely believe they drove the demo. The CRM can prove the demo happened and can show which touches occurred (if you're capturing click IDs), but it cannot arbitrate causal credit between two channels that both touched the same buyer. That's not a math problem — it's a causal-inference problem, and reconciliation, however rigorous, is not a causal-inference method.
+**What reconciliation cannot do, no matter how well you run it**: prove _which_ platform's claim is more real. Both platforms genuinely believe they drove the demo. The CRM can prove the demo happened and can show which touches occurred (if you're capturing click IDs), but it cannot arbitrate causal credit between two channels that both touched the same buyer. That's not a math problem — it's a causal-inference problem, and reconciliation, however rigorous, is not a causal-inference method.
 
 ## Problem 2 — the 9% residual
 
 Apply the judgment test: stable period over period, small, survives every known mechanism you've checked. That's a **pass**, not an open investigation. Your own framing ("steady at that level," "survives every explanation") is the pass condition stated in your own words. Officially published tolerance (GA4's own docs) treats up to 10-20% as expected and not a concern; 9% sits inside that band.
 
-Stop chasing it. Document it as a known delta, re-derive it next period (it will drift with consent rates and mix, don't treat it as a fixed correction), and move on. Continuing to investigate a stable, in-band, already-decomposed residual is the specific failure mode the skill calls out: *driving the residual to zero is evidence of fabrication, not rigor.*
+Stop chasing it. Document it as a known delta, re-derive it next period (it will drift with consent rates and mix, don't treat it as a fixed correction), and move on. Continuing to investigate a stable, in-band, already-decomposed residual is the specific failure mode the skill calls out: _driving the residual to zero is evidence of fabrication, not rigor._
 
 ## The actual decision: is MMM the next rigorous step?
 
@@ -34,7 +34,7 @@ Run it against what each method actually buys, given your one hard constraint.
 
 **Why MMM specifically doesn't fit, independent of the holdout question:**
 
-- MMM's value proposition is *portfolio allocation across channels no conversion record covers at all* — offline, brand, channels with no click-level tracking. You have two channels, both fully digitally tracked, both feeding a CRM with named-account resolution available. There's no coverage gap for MMM to fill here.
+- MMM's value proposition is _portfolio allocation across channels no conversion record covers at all_ — offline, brand, channels with no click-level tracking. You have two channels, both fully digitally tracked, both feeding a CRM with named-account resolution available. There's no coverage gap for MMM to fill here.
 - MMM is a standing job: pipeline, modeling, a refresh cadence someone owns permanently. At $70k/month across what reads as essentially two paid channels, there isn't enough spend variance across enough independent channels/geos over time to identify stable coefficients — a model with that few degrees of freedom returns wide, unstable confidence intervals, which is the opposite of the certainty leadership is asking for.
 - It doesn't resolve the specific dispute you have. MMM outputs portfolio-level elasticity, not "which platform gets credit for this cohort of demos." Even a well-built MMM here would not tell you whether Google or LinkedIn drove a given batch of the 74 — it would tell you aggregate revenue response to spend shifts, at a scale too small to trust the read.
 

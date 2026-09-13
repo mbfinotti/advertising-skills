@@ -4,15 +4,15 @@ No `advertising-context.md` for this account anywhere in this repo, and no proje
 
 ## Interview — answered from your message, rest flagged open
 
-| # | Item | Status |
-|---|---|---|
-| Q1 business model | B2B legal-billing SaaS, sales-led assumed (LinkedIn spend) | **open — confirm** |
-| Q2 session goal | Set up recurring reviews | given |
-| Q3 channels/spend | $60k/mo — Search $24k (40%), Meta+LinkedIn $36k combined; split between the two not given | **partially open** |
-| Q4 conversion source of truth | not stated | **open — blocking** |
-| Q5 constraints | agency contract (Meridian West); flight ends 2026-10-10 (inside 6 weeks); creative capacity ample (in-house studio of 3, weekly); regulated-vertical status unknown | mostly given |
-| Q6 effort ceiling | compounding, assumed "a few hours/week" | **open — confirm** |
-| Q7 decided/open | flight date and agency relationship are decided; the other 6 legacy automations are undescribed | **open** |
+| #                             | Item                                                                                                                                                                | Status              |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Q1 business model             | B2B legal-billing SaaS, sales-led assumed (LinkedIn spend)                                                                                                          | **open — confirm**  |
+| Q2 session goal               | Set up recurring reviews                                                                                                                                            | given               |
+| Q3 channels/spend             | $60k/mo — Search $24k (40%), Meta+LinkedIn $36k combined; split between the two not given                                                                           | **partially open**  |
+| Q4 conversion source of truth | not stated                                                                                                                                                          | **open — blocking** |
+| Q5 constraints                | agency contract (Meridian West); flight ends 2026-10-10 (inside 6 weeks); creative capacity ample (in-house studio of 3, weekly); regulated-vertical status unknown | mostly given        |
+| Q6 effort ceiling             | compounding, assumed "a few hours/week"                                                                                                                             | **open — confirm**  |
+| Q7 decided/open               | flight date and agency relationship are decided; the other 6 legacy automations are undescribed                                                                     | **open**            |
 
 Q4 is the one that gates everything else: per the skill's own rule, nothing ranks above measurement integrity while the conversion source of truth is unconfirmed — so it sits at the top of the short-list below, not as a footnote.
 
@@ -33,12 +33,13 @@ The immediate task — "set up recurring reviews" — is this skill's own §7 pr
 **Starved and not promoted**: class 4 (creative & audience — briefs, scripts, copy, hook analysis) is first on value and first on effort at once, so it ranks below measurement and diagnosis by the ratio every time. Not promoting it this session: nothing has named creative as a failing layer yet, and weekly studio output means no staleness signal either. It promotes when `ad-account-diagnostic` or `ad-creative-fatigue` names creative as the problem, or when a full flight passes with no refresh.
 
 **Not now** (fixed date inside 6 weeks demotes anything that pays out past the flight):
+
 - `ad-spend-guardrails` — unblocks 2026-10-10 (no written CAC/ROAS ceiling exists, but writing one now competes with flight-critical work)
 - `ad-campaign-consolidation` — unblocks 2026-10-10, no fragmentation signal given anyway
 
 **Deleted, not ranked last**: `ad-budget-pacing`'s standing weekly cadence is deleted outright, not parked at the bottom — Meridian West's Monday email already covers it. The constraint that killed it: an existing agency deliverable, not low value.
 
-**Gap**: none new for this task. Standing gaps from the collection: no skill audits *existing* automations for relevance — that's this skill's own §7 cleanup step, done manually below.
+**Gap**: none new for this task. Standing gaps from the collection: no skill audits _existing_ automations for relevance — that's this skill's own §7 cleanup step, done manually below.
 
 ## Cleanup — before adding anything
 

@@ -27,6 +27,7 @@ Creator sourcing and program setup start immediately, in parallel, with no depen
 ## Deliverables
 
 ### Track 1 — App Store launch set (due Day 6)
+
 - 6–10 static ad variants testing distinct hooks/angles (budgeting pain points, savings goals, social proof)
 - Each variant cut to core paid social ratios: 1:1, 4:5, 9:16
 - 2–3 light-motion variants (simple animated versions of top static concepts) if designer bandwidth allows — static is the guaranteed baseline, motion is upside
@@ -34,6 +35,7 @@ Creator sourcing and program setup start immediately, in parallel, with no depen
 - Copy variants (headline + primary text) per creative, for message testing independent of visual testing
 
 ### Track 2 — UGC program (kicks off now, delivers ~week 3–4)
+
 - Creator sourcing brief and casting criteria (audience fit, aesthetic, budgeting-app credibility)
 - Shortlist and outreach to 6–10 candidate creators; target 3–5 contracted
 - Content brief/script framework per creator (problem → app moment → outcome), left loose enough for authentic delivery

@@ -1,22 +1,22 @@
 ## Pacing picture
 
-| Metric | Value |
-|---|---|
-| Month | September, 30 days |
-| Days elapsed (through Sep 18) | 18 days = 60% of month |
-| Budget target | $24,000 |
-| Spend to date | $10,800 = **45%** of budget |
-| Pace ratio | 45% spent ÷ 60% of month elapsed = **0.75** — running at 75% of even pace |
-| Expected spend at even pace | $14,400 |
-| Shortfall vs. even pace | $3,600 |
-| Days remaining | 12 |
-| Remaining budget | $13,200 |
-| Daily spend needed to fully deliver $24k | $13,200 ÷ 12 = **$1,100/day** |
-| Trailing 7-day actual average | $560/day |
-| Current daily budget cap | $800/day |
-| Cap utilization (trailing 7d) | $560/$800 = **70%** |
-| Lost IS (budget) | 2% |
-| Lost IS (rank) | 38% |
+| Metric                                   | Value                                                                     |
+| ---------------------------------------- | ------------------------------------------------------------------------- |
+| Month                                    | September, 30 days                                                        |
+| Days elapsed (through Sep 18)            | 18 days = 60% of month                                                    |
+| Budget target                            | $24,000                                                                   |
+| Spend to date                            | $10,800 = **45%** of budget                                               |
+| Pace ratio                               | 45% spent ÷ 60% of month elapsed = **0.75** — running at 75% of even pace |
+| Expected spend at even pace              | $14,400                                                                   |
+| Shortfall vs. even pace                  | $3,600                                                                    |
+| Days remaining                           | 12                                                                        |
+| Remaining budget                         | $13,200                                                                   |
+| Daily spend needed to fully deliver $24k | $13,200 ÷ 12 = **$1,100/day**                                             |
+| Trailing 7-day actual average            | $560/day                                                                  |
+| Current daily budget cap                 | $800/day                                                                  |
+| Cap utilization (trailing 7d)            | $560/$800 = **70%**                                                       |
+| Lost IS (budget)                         | 2%                                                                        |
+| Lost IS (rank)                           | 38%                                                                       |
 
 You're right that you're behind — 25 points off even pace, and closing the gap mechanically requires $1,100/day for the rest of the month. That's exactly the number you proposed. But look at where that number came from: it's `remaining budget ÷ remaining days`, not a number derived from what the account can actually deliver.
 

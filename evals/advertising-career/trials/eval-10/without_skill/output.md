@@ -15,23 +15,23 @@ Don't reorder to "easiest first" beyond this — attribution and incrementality 
 
 ## Year 1: Study phase (Months 1–12, ~240h, ~5h/week average)
 
-| Quarter | Course | Hours | Study focus |
-|---|---|---|---|
-| Q1 (Mo 1-3) | Attribution | 50h | Multi-touch models, data-driven attribution, dark funnel, B2B multi-stakeholder buying committees, privacy-era tracking |
-| Q2 (Mo 4-6) | Incrementality | 60h | Geo holdouts, PSA/ghost ads, conversion lift, synthetic control |
-| Q3 (Mo 7-9) | MMM | 70h | Bayesian MMM, adstock/saturation curves, cross-channel optimization, triangulation with incrementality |
-| Q4 (Mo 10-12) | Forecasting | 60h | Pipeline/revenue forecasting, scenario planning, RevOps/Finance collaboration |
+| Quarter       | Course         | Hours | Study focus                                                                                                             |
+| ------------- | -------------- | ----- | ----------------------------------------------------------------------------------------------------------------------- |
+| Q1 (Mo 1-3)   | Attribution    | 50h   | Multi-touch models, data-driven attribution, dark funnel, B2B multi-stakeholder buying committees, privacy-era tracking |
+| Q2 (Mo 4-6)   | Incrementality | 60h   | Geo holdouts, PSA/ghost ads, conversion lift, synthetic control                                                         |
+| Q3 (Mo 7-9)   | MMM            | 70h   | Bayesian MMM, adstock/saturation curves, cross-channel optimization, triangulation with incrementality                  |
+| Q4 (Mo 10-12) | Forecasting    | 60h   | Pipeline/revenue forecasting, scenario planning, RevOps/Finance collaboration                                           |
 
 Rule: don't start a new course until the previous one has produced an applied artifact (below). Theory without application doesn't move you toward Head of Growth.
 
 ## Applied deliverables — one per course, each is a visibility event with your director
 
-| Course | Deliverable | Target date |
-|---|---|---|
-| Attribution | Attribution audit: expose blind spots (dark funnel, offline/sales-assisted conversions), fix tracking gaps | End Mo 3 |
-| Incrementality | First test on your largest channel (likely paid search brand or LinkedIn ABM). Quantify incremental CAC vs. attributed CAC | End Mo 6 |
-| MMM | Lightweight MMM on 12-24 months of the $180K/month spend, validated against your incrementality results. Budget reallocation proposal | End Mo 9 |
-| Forecasting | Spend → pipeline → revenue model with scenarios (+20%/-20% budget). Feed into annual planning with Finance | End Mo 12 |
+| Course         | Deliverable                                                                                                                           | Target date |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| Attribution    | Attribution audit: expose blind spots (dark funnel, offline/sales-assisted conversions), fix tracking gaps                            | End Mo 3    |
+| Incrementality | First test on your largest channel (likely paid search brand or LinkedIn ABM). Quantify incremental CAC vs. attributed CAC            | End Mo 6    |
+| MMM            | Lightweight MMM on 12-24 months of the $180K/month spend, validated against your incrementality results. Budget reallocation proposal | End Mo 9    |
+| Forecasting    | Spend → pipeline → revenue model with scenarios (+20%/-20% budget). Feed into annual planning with Finance                            | End Mo 12   |
 
 Each deliverable should be positioned as strategy, not reporting: "here's $X/month misallocated" beats "here's a dashboard."
 
@@ -60,4 +60,4 @@ Skill gaps outside these 240h (lifecycle/retention marketing, product-led growth
 
 ## Risk
 
-If work spikes and study time gets squeezed, protect the *order*, not the pace — slipping the schedule is fine, skipping incrementality to jump to MMM is not, since it breaks the triangulation story that makes the MMM deliverable credible.
+If work spikes and study time gets squeezed, protect the _order_, not the pace — slipping the schedule is fine, skipping incrementality to jump to MMM is not, since it breaks the triangulation story that makes the MMM deliverable credible.

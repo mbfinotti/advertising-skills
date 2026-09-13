@@ -37,6 +37,7 @@ Scoping note: I've deliberately kept this at **campaign level only** (a negative
 All match type = **phrase**, since that's the best waste-blocked-per-risk ratio for a set with no conflict check run yet. In the Google Ads UI, remember it defaults new negatives to **exact** — switch each one to phrase before saving.
 
 **Job seeker**
+
 ```
 payroll jobs
 payroll job
@@ -51,6 +52,7 @@ payroll intern
 ```
 
 **DIY / free intent**
+
 ```
 free payroll software
 free payroll calculator
@@ -63,6 +65,7 @@ open source payroll software
 ```
 
 **Informational**
+
 ```
 what is payroll software
 what is payroll
@@ -75,21 +78,27 @@ payroll definition
 ```
 
 **Wrong segment (B2B tool, not a personal/household payroll tool)**
+
 ```
 personal payroll
 individual payroll calculator
 household payroll
 ```
+
 Flag: if Brightpath's new line ever serves nanny/household employers, drop these — tell me and I'll pull them.
 
 ### Flagged, not included — need your call first
+
 Per the taxonomy, competitor and comparison terms are strategy decisions, not automatic junk:
+
 - **Competitor names** (ADP, Gusto, Paychex, Rippling, QuickBooks Payroll, OnPay, Justworks, etc.) — do you want to bid on these deliberately, or block them? I left them out either way; say the word and I'll add them as negatives or confirm you're targeting them.
 - **Comparison terms** (`best payroll software`, `payroll software reviews`, `payroll software vs`, `[competitor] alternative`) — often early-funnel research, not junk. Recommend leaving these open until you see whether they convert.
 
 ### Open questions that would tighten this list further
+
 - Which countries/regions does the new product line serve? (Wrong-geography negatives need this — I haven't guessed at any.)
 - Anything else specific to this product line I should know before Monday (e.g. a name close to an unrelated common term, a vertical you're explicitly not targeting)?
 
 ### Before you go live
+
 Check this list against the actual keyword list you've built for the new campaign — I don't have visibility into it, and a phrase negative sitting one word away from a keyword you're bidding on will silently zero it out. That's the single most expensive mistake on this list, and it's on you to catch it since I can't see your ad groups.

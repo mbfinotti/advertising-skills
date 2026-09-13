@@ -3,7 +3,7 @@
 ## Starting numbers
 
 - Spend: $6,000/month → ~86 conversions/month at $70 CPA (43 per side of a 50/50 split).
-- No incremental budget needed. Each test *is* your existing monthly spend, split 50/50 between control and variant.
+- No incremental budget needed. Each test _is_ your existing monthly spend, split 50/50 between control and variant.
 - Total program: $36,000 over 6 months — your current run rate, restructured, not increased.
 
 ## The honest power problem
@@ -24,25 +24,25 @@ I don't have your actual CTR/impression volume, so the CTR side of this is a fra
 
 ## Test order — biggest hypothesized effect first, one exception for seasonality
 
-| # | Variable | Primary metric | Why this slot |
-|---|---|---|---|
-| 1 | Price shown vs. hidden | CPA (funnel-critical, self-selection) | Largest expected business impact — run first |
-| 2 | 'Shop Now' vs. 'Shop the Collection' | CTR, CPA guardrail | Moderate-large, well-documented lever |
-| 3 | Model facing left vs. right | CTR, CPA guardrail | Moderate, normal-volume month |
-| 4 | Headline with vs. without a dash | CTR, CPA guardrail | Weakest hypothesis — placed in the Dec/holiday slot to exploit the seasonal volume spike for extra power |
-| 5 | Beige vs. off-white background | CTR, CPA guardrail | Subtle |
-| 6 | Serif vs. sans-serif overlay font | CTR, CPA guardrail | Subtle, brand-perception more than performance — closes the program |
+| #   | Variable                             | Primary metric                        | Why this slot                                                                                            |
+| --- | ------------------------------------ | ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 1   | Price shown vs. hidden               | CPA (funnel-critical, self-selection) | Largest expected business impact — run first                                                             |
+| 2   | 'Shop Now' vs. 'Shop the Collection' | CTR, CPA guardrail                    | Moderate-large, well-documented lever                                                                    |
+| 3   | Model facing left vs. right          | CTR, CPA guardrail                    | Moderate, normal-volume month                                                                            |
+| 4   | Headline with vs. without a dash     | CTR, CPA guardrail                    | Weakest hypothesis — placed in the Dec/holiday slot to exploit the seasonal volume spike for extra power |
+| 5   | Beige vs. off-white background       | CTR, CPA guardrail                    | Subtle                                                                                                   |
+| 6   | Serif vs. sans-serif overlay font    | CTR, CPA guardrail                    | Subtle, brand-perception more than performance — closes the program                                      |
 
 ## Schedule (starting Mon Sep 14, 2026)
 
-| Test | Dates | Spend split | Arm A conv. (est.) | Arm B conv. (est.) |
-|---|---|---|---|---|
-| 1. Price shown/hidden | Sep 14 – Oct 11 | $3,000 / $3,000 | ~43 | ~43 |
-| 2. CTA text | Oct 12 – Nov 8 | $3,000 / $3,000 | ~43 | ~43 |
-| 3. Model direction | Nov 9 – Dec 6 | $3,000 / $3,000 | ~43 | ~43 |
-| 4. Headline dash | Dec 7 – Jan 3 | $3,000 / $3,000 | above baseline (holiday volume) | above baseline |
-| 5. Background color | Jan 4 – Jan 31 | $3,000 / $3,000 | ~43 | ~43 |
-| 6. Font | Feb 1 – Feb 28 | $3,000 / $3,000 | ~43 | ~43 |
+| Test                  | Dates           | Spend split     | Arm A conv. (est.)              | Arm B conv. (est.) |
+| --------------------- | --------------- | --------------- | ------------------------------- | ------------------ |
+| 1. Price shown/hidden | Sep 14 – Oct 11 | $3,000 / $3,000 | ~43                             | ~43                |
+| 2. CTA text           | Oct 12 – Nov 8  | $3,000 / $3,000 | ~43                             | ~43                |
+| 3. Model direction    | Nov 9 – Dec 6   | $3,000 / $3,000 | ~43                             | ~43                |
+| 4. Headline dash      | Dec 7 – Jan 3   | $3,000 / $3,000 | above baseline (holiday volume) | above baseline     |
+| 5. Background color   | Jan 4 – Jan 31  | $3,000 / $3,000 | ~43                             | ~43                |
+| 6. Font               | Feb 1 – Feb 28  | $3,000 / $3,000 | ~43                             | ~43                |
 
 Finishes Feb 28, 2027 — two-week buffer inside your six-month window. If test 1 or 2 wins and you implement it, baseline CPA drops, so later tests get more conversions per $3,000 arm than shown here — treat these as floor estimates.
 
@@ -57,7 +57,7 @@ SE = √[p̂(1−p̂) / n]
 - CI excludes 50/50 → **ship the winner**.
 - CI doesn't exclude 50/50 but point estimate is ≥58/42 → **directional lean**, bank it, optionally extend 2 weeks if cheap to confirm.
 - CI centered near 50/50 → **documented null**. Write it down, stop debating it internally. A null is a real result, not a failed test.
-- No correction needed across the 6 tests — each answers an independent question. Do apply discipline *within* a test: no early stopping on a good-looking week-1 number (optional stopping inflates false positives).
+- No correction needed across the 6 tests — each answers an independent question. Do apply discipline _within_ a test: no early stopping on a good-looking week-1 number (optional stopping inflates false positives).
 
 ## Guardrails — hold everything else constant
 
@@ -72,17 +72,17 @@ SE = √[p̂(1−p̂) / n]
 
 One row per test, kept forever, independent of whether the test "won":
 
-| Field | Capture |
-|---|---|
-| Test # / Variable | |
-| Hypothesis (stated before launch) | |
-| Dates / Spend | |
-| Conversions A / B, CTR A / B | |
-| Split + 95% CI | |
-| Verdict | Ship / Kill / Directional lean / Documented null |
-| Confidence tier | Decision-grade / Directional |
-| Surprises | anything that contradicts the hypothesis |
-| Follow-up flag | re-test later at higher volume? feed into a future multivariate test? |
+| Field                             | Capture                                                               |
+| --------------------------------- | --------------------------------------------------------------------- |
+| Test # / Variable                 |                                                                       |
+| Hypothesis (stated before launch) |                                                                       |
+| Dates / Spend                     |                                                                       |
+| Conversions A / B, CTR A / B      |                                                                       |
+| Split + 95% CI                    |                                                                       |
+| Verdict                           | Ship / Kill / Directional lean / Documented null                      |
+| Confidence tier                   | Decision-grade / Directional                                          |
+| Surprises                         | anything that contradicts the hypothesis                              |
+| Follow-up flag                    | re-test later at higher volume? feed into a future multivariate test? |
 
 After all 6, write one summary paragraph: which axis (copy specificity, funnel qualification, visual attention) moved CPA, which didn't, and what that implies about where Cartelle's ad performance actually lives. That summary — not any single winning ad — is the deliverable that compounds.
 

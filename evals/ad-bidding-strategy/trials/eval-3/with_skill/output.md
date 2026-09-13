@@ -9,6 +9,7 @@ Finance is reading the one metric an aggressive target is guaranteed to produce 
 Two derivations, both required, and they disagree with Finance's plan:
 
 **From economics (the affordable ceiling):**
+
 ```
 break-even CPA = contribution per closed deal × demo-to-close rate
                = $3,500 × 4%
@@ -16,6 +17,7 @@ break-even CPA = contribution per closed deal × demo-to-close rate
 ```
 
 **From history (the achievable start):**
+
 - Trailing 60-day actual: $240/demo
 - Best month ever: $210/demo
 
@@ -24,20 +26,21 @@ break-even CPA = contribution per closed deal × demo-to-close rate
 ## What to actually do
 
 **1. Revert the target immediately, as the smallest reversible change.**
-Set it back to at/near trailing actual — **$240**, not $95, not even $210. The rule is directional: for a cost target, start at or slightly *above* trailing actual, never at the aspirational number. If your platform has a bid-strategy experiment/simulation tool, use it for the next attempt instead of a hard cutover — it isolates the target's effect instead of confounding it with a fresh learning reset.
+Set it back to at/near trailing actual — **$240**, not $95, not even $210. The rule is directional: for a cost target, start at or slightly _above_ trailing actual, never at the aspirational number. If your platform has a bid-strategy experiment/simulation tool, use it for the next attempt instead of a hard cutover — it isolates the target's effect instead of confounding it with a fresh learning reset.
 
 **2. Don't re-tighten from panic.** Every edit restarts a learning/exploration period; editing daily "when CPA looks high" is the loop that causes the instability that then justifies the next edit. Wait a full evaluation window — **1-2 conversion cycles** (click-to-demo lag plus reporting delay for this account) — before any further move, and batch any other pending fixes into that single change rather than layering edits.
 
 **3. Take the real gap to Finance as a funnel problem, framed in their own numbers:**
 
-| | CPA |
-|---|---|
+|                          | CPA  |
+| ------------------------ | ---- |
 | Break-even (zero margin) | $140 |
 | Best month ever achieved | $210 |
-| Trailing 60-day actual | $240 |
-| Finance's plan target | $95 |
+| Trailing 60-day actual   | $240 |
+| Finance's plan target    | $95  |
 
 $95 isn't a bidding target, it's a wish. If the plan needs to hold, the $95-vs-$210 gap has to close through:
+
 - **Contribution per deal or close rate** — the break-even math is the lever with the most headroom: raising demo-to-close from 4% to 6% moves break-even from $140 to $210 on its own, no acquisition change needed. Same for average deal size.
 - **Everything upstream of the bidder** — landing page, offer, targeting, creative, demo-show-up rate. Bid strategy is a late lever; changing it when the campaign is already the most efficient it's ever been ($210 best month) masks a symptom, it doesn't fix a cause. Push this to an account-level diagnostic before touching the target again.
 - **A revised plan number** — if none of the above moves fast enough, the honest planning input is something derived from $210-240 with a margin buffer under $140, not $95.

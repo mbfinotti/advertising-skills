@@ -22,14 +22,14 @@ One cross-account analysis (11 brands, 3,859 ads) found hook rate correlates **-
 Two mechanical mismatches to flag before rebuilding:
 
 - **Sound-off legibility.** Both platforms autoplay muted in feed, but TikTok's native style leans more on sound-on/voiceover-carried jokes and pacing than Meta creative typically can afford. If a TikTok-style opening's meaning lives in the audio, it fails cold on Meta feed for a large share of viewers regardless of how well it "hooks" on TikTok.
-- **Brand-timing tension.** TikTok-native opens often withhold branding to avoid looking like an ad — but end-loaded branding is associated with a reported 17-point drop in brand linkage. For cold B2C prospecting, where you need the click *and* the buyer to remember whose ad it was, that's a real tradeoff the rebuild brief should address explicitly, not import silently because "TikTok does it."
+- **Brand-timing tension.** TikTok-native opens often withhold branding to avoid looking like an ad — but end-loaded branding is associated with a reported 17-point drop in brand linkage. For cold B2C prospecting, where you need the click _and_ the buyer to remember whose ad it was, that's a real tradeoff the rebuild brief should address explicitly, not import silently because "TikTok does it."
 
 ## What I'd actually approve
 
 Not a full-budget rebuild of "all Meta openings" chasing a benchmark that hasn't been verified. Instead:
 
 1. Have the agency state, in writing, the exact hook-rate formula behind each of the 31%/22%/30% numbers and their sources. If they can't, the rebuild case is unsupported as presented.
-2. Pull your own Meta account history: do higher-hook-rate creatives in your account actually run at better ROAS, or is the correlation flat/negative like the broader data suggests? That tells you whether hook rate is even a lever worth pulling for *this* account.
+2. Pull your own Meta account history: do higher-hook-rate creatives in your account actually run at better ROAS, or is the correlation flat/negative like the broader data suggests? That tells you whether hook rate is even a lever worth pulling for _this_ account.
 3. If you still want to test TikTok-style opens, treat it as **one candidate concept among several** in a normal creative test batch — scored against sound-off legibility, audience qualification, and promise-payoff continuity, not against a cross-platform percentage — and judge it on measured ROAS/conversion after launch, not on whether it moves hook rate.
 4. Size the spend to a real test (minimum 3 differentiated openings, not a wholesale "rebuild all openings"), and calibrate: only trust hook rate as a signal for this account after it's shown, over several batches, that your top-ranked opening actually lands in the upper half of measured results.
 

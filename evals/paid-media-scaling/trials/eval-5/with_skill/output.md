@@ -1,6 +1,6 @@
 # Media Scaling Ramp Plan — Board Briefing
 
-*Prepared per `paid-media-scaling` methodology. This runs the skill's Interview only to the extent the brief already answers it — every unanswered input below is flagged as an **open item**, not guessed. Present this to the board section by section; each section names what would change your recommendation if the missing input comes back differently.*
+_Prepared per `paid-media-scaling` methodology. This runs the skill's Interview only to the extent the brief already answers it — every unanswered input below is flagged as an **open item**, not guessed. Present this to the board section by section; each section names what would change your recommendation if the missing input comes back differently._
 
 ---
 
@@ -21,17 +21,17 @@ There is no safe ramp mechanic — 20%/week, 15%/week, or any documented platfor
 
 ## 1. Readiness gates — run before any budget moves
 
-| # | Gate | Status | Why |
-|---|------|--------|-----|
-| 0 | Affordability (LTV → margin → max CAC) | 🔴 **FAIL — blocking** | No contribution margin, refund rate, or fulfilment cost given. "Blended ROAS 3.1" is a *revenue* multiple, not a *profit* signal — a 3.1 ROAS at 25% margin can already be underwater. **This must be fixed in week 1**, before step 2 fires. |
-| 1 | Data maturity | ⚠️ Open item | How long has $95K held at ROAS 3.1? One good month isn't a baseline. |
-| 2 | Marginal economics | 🔴 **FAIL — no data** | Only blended ROAS given. **documented/folklore note:** blended always trails marginal (Common Thread Collective) — the real question, "does the next $1 still make money," is unanswered. |
-| 3 | Measurement health (5-area, 1–3 each) | 🟠 ~11/15, **estimated pending your confirmation** | GA4 (3) + platform dashboards (3) + assumed standard conversion tracking (2) + no unified blended dashboard (2) + no documented attribution/incrementality process (1). Clears the numeric floor but the **evidence bar is pure attribution** — see §2. |
-| 4 | Creative supply | 🔴 **Likely the true binding ceiling** | See §4. |
-| 5 | Business absorption (cash, inventory, fulfilment) | ⚠️ Open item — unanswered | A 3.16x spend increase means ~3x order volume. Nobody has confirmed the warehouse/fulfilment/cash float survives that. |
-| 6 | Rollback pre-committed | 🔴 **FAIL under your plan** | "Raise 20%/week until we hit the number" has no down-move. Per this skill's failure-mode table, a scaling rule with no rollback trigger is the single most reliable marker of an unsafe plan. |
+| #   | Gate                                              | Status                                             | Why                                                                                                                                                                                                                                                     |
+| --- | ------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0   | Affordability (LTV → margin → max CAC)            | 🔴 **FAIL — blocking**                             | No contribution margin, refund rate, or fulfilment cost given. "Blended ROAS 3.1" is a _revenue_ multiple, not a _profit_ signal — a 3.1 ROAS at 25% margin can already be underwater. **This must be fixed in week 1**, before step 2 fires.           |
+| 1   | Data maturity                                     | ⚠️ Open item                                       | How long has $95K held at ROAS 3.1? One good month isn't a baseline.                                                                                                                                                                                    |
+| 2   | Marginal economics                                | 🔴 **FAIL — no data**                              | Only blended ROAS given. **documented/folklore note:** blended always trails marginal (Common Thread Collective) — the real question, "does the next $1 still make money," is unanswered.                                                               |
+| 3   | Measurement health (5-area, 1–3 each)             | 🟠 ~11/15, **estimated pending your confirmation** | GA4 (3) + platform dashboards (3) + assumed standard conversion tracking (2) + no unified blended dashboard (2) + no documented attribution/incrementality process (1). Clears the numeric floor but the **evidence bar is pure attribution** — see §2. |
+| 4   | Creative supply                                   | 🔴 **Likely the true binding ceiling**             | See §4.                                                                                                                                                                                                                                                 |
+| 5   | Business absorption (cash, inventory, fulfilment) | ⚠️ Open item — unanswered                          | A 3.16x spend increase means ~3x order volume. Nobody has confirmed the warehouse/fulfilment/cash float survives that.                                                                                                                                  |
+| 6   | Rollback pre-committed                            | 🔴 **FAIL under your plan**                        | "Raise 20%/week until we hit the number" has no down-move. Per this skill's failure-mode table, a scaling rule with no rollback trigger is the single most reliable marker of an unsafe plan.                                                           |
 
-**Two gates fail outright (0 and 2).** The plan below is the *provisional* ramp — it runs using blended 3.1 as a stand-in floor (labeled **folklore/proxy**, not a real boundary) until finance supplies the real max-CAC. Do not let step 3 fire without gate 0 closed.
+**Two gates fail outright (0 and 2).** The plan below is the _provisional_ ramp — it runs using blended 3.1 as a stand-in floor (labeled **folklore/proxy**, not a real boundary) until finance supplies the real max-CAC. Do not let step 3 fire without gate 0 closed.
 
 ---
 
@@ -39,9 +39,9 @@ There is no safe ramp mechanic — 20%/week, 15%/week, or any documented platfor
 
 **Current: attributed only** — platform reporting + GA4. No CRM/blended-revenue triangulation, no holdout, no incrementality study.
 
-This matters specifically *because* the target is 3.16x current spend. Per this skill's pass threshold: **any ramp past ~2x current spend on purely attributed evidence needs a causal-measurement step, or an explicit board-acknowledged risk line.** Your target clears 2x at **~$190K**.
+This matters specifically _because_ the target is 3.16x current spend. Per this skill's pass threshold: **any ramp past ~2x current spend on purely attributed evidence needs a causal-measurement step, or an explicit board-acknowledged risk line.** Your target clears 2x at **~$190K**.
 
-The two documented cases this skill exists to warn about — Meta/Google retargeting and branded search overstating incremental return — are exactly where blended ROAS 3.1 is most likely propped up. **research:** eBay's own experimental non-brand search test measured **–63% incremental ROI** against **+1,400% to +4,100%** from naive attribution (Blake, Nosko & Tadelis, *Econometrica*, 2015). **vendor data (Haus):** geo-holdout tests routinely show a "3x" attributed ROAS is closer to 1.8–2.2x incremental. Nobody's saying your 3.1 is fake — nobody knows, and that's the point.
+The two documented cases this skill exists to warn about — Meta/Google retargeting and branded search overstating incremental return — are exactly where blended ROAS 3.1 is most likely propped up. **research:** eBay's own experimental non-brand search test measured **–63% incremental ROI** against **+1,400% to +4,100%** from naive attribution (Blake, Nosko & Tadelis, _Econometrica_, 2015). **vendor data (Haus):** geo-holdout tests routinely show a "3x" attributed ROAS is closer to 1.8–2.2x incremental. Nobody's saying your 3.1 is fake — nobody knows, and that's the point.
 
 **Plan includes:** a geo-holdout (or platform-native lift study) launched at the ~$150K tier, reading out before the $190K (2x) line, gating whether the ladder continues past it.
 
@@ -53,7 +53,7 @@ Default order for this skill: vertical ladder → measure-first → horizontal, 
 
 - **30-day penetration ~12%** sits well under the ~25% saturation band — real headroom remains on the existing audience. This **keeps vertical ladder as the base engine.**
 - **Target is 3.16x current spend and evidence is attribution-only** — both conditions that this skill says should promote measure-first. It is **not promoted to lead**, because you have no live incrementality program today (instrumenting one from scratch costs a week you don't have before step 1). Instead it's **folded in as a gate**, not a leader: launched early, read out before the 2x line, and treated as a stop/go check rather than the thing that sets the target.
-- **Horizontal expansion is rejected for now** — penetration is nowhere near the ~35% band that would force it, and your creative studio (10/month) can't currently feed a *second* set of new audiences without starving the primary line (see §4). If the creative ceiling ends up capping vertical velocity anyway, horizontal becomes the fallback — flagged, not deleted.
+- **Horizontal expansion is rejected for now** — penetration is nowhere near the ~35% band that would force it, and your creative studio (10/month) can't currently feed a _second_ set of new audiences without starving the primary line (see §4). If the creative ceiling ends up capping vertical velocity anyway, horizontal becomes the fallback — flagged, not deleted.
 
 **Argument against this choice, stated out loud:** if the geo holdout comes back closer to eBay/Haus territory (1.8–2.2x incremental) than 3.1x attributed, the entire ladder above is oversized and should be re-cut to a lower target before the 2x gate, not after. That is the whole reason the holdout gates continuation instead of being a nice-to-have.
 
@@ -63,11 +63,11 @@ Default order for this skill: vertical ladder → measure-first → horizontal, 
 
 **folklore ratio (calibrate to this account):** proven, non-fatigued ad inventory ≈ monthly budget ÷ $5,000.
 
-| Spend tier | Proven ads needed | You have / add |
-|---|---|---|
-| $95K (today) | ~19 | unknown starting count — **open item** |
-| $190K (2x line) | ~38 | |
-| $300K (target) | ~60 | studio ships **10 new creatives/month, total, across both platforms** — even at a generous 50% win rate, that's ~5 *proven* ads/month |
+| Spend tier      | Proven ads needed | You have / add                                                                                                                        |
+| --------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| $95K (today)    | ~19               | unknown starting count — **open item**                                                                                                |
+| $190K (2x line) | ~38               |                                                                                                                                       |
+| $300K (target)  | ~60               | studio ships **10 new creatives/month, total, across both platforms** — even at a generous 50% win rate, that's ~5 _proven_ ads/month |
 
 Getting from wherever you sit today to 60 proven ads at a net add rate of ~5/month, while old ads fatigue and roll off, is **the actual pace-setter here — slower than any budget mechanic in this memo.** This is very likely the first-binding ceiling, ahead of penetration and ahead of cash. **Open item, high priority:** confirm current proven-ad count per platform and the studio's real win rate; if it's below what's modeled, the Oct 31 date in §5 slips, full stop, regardless of what the auction lets you spend.
 
@@ -77,22 +77,23 @@ Getting from wherever you sit today to 60 proven ads at a net add rate of ~5/mon
 
 Step size: no account change-history was given, so this uses the **concrete default (folklore): 15–20%/step, weekly cadence**, not the validate-then-push rung — you don't have a trusted causal target yet to push toward. **Recalibrate after step 3** once you have three real data points on how this account's efficiency responds.
 
-| Step | Date | New budget | Δ | Hold until | Gate to advance |
-|---|---|---|---|---|---|
-| 0 | Sep 12–19 | *(no change)* | — | Sep 19 | **Gate 0 fix**: finance delivers margin → max-CAC / min-ROAS floor. No step 1 without this. |
-| 1 | Sep 19 | $112K | +18% | Sep 26 | Marginal ROAS ≥ floor (proxy: 3.1 until gate 0 lands), frequency <3.0, delivery stable |
-| 2 | Sep 26 | $132K | +18% | Oct 3 | Same, + launch geo holdout here |
-| 3 | Oct 3 | $156K | +18% | Oct 10 | Same, + **recalibrate step size from steps 1–2's actual response** |
-| — | **Sep 30 board checkpoint** | **~$150–165K interim run-rate** — report this against the original date, honestly | | | |
-| 4 | Oct 10 | $184K | +18% | Oct 17 | Same + creative count check (≥30 proven) |
-| **2x gate** | Oct ~17 | **$190K** | — | — | **Holdout readout required before advancing.** Incremental ≈ attributed → continue. Incremental materially lower → re-cut target, don't advance blind. |
-| 5 | Oct 17 | $217K | +18% | Oct 24 | Marginal floor holds |
-| 6 | Oct 24 | $256K | +18% | Oct 31 | Marginal floor holds, creative ≥50 proven |
-| 7 | Oct 31 | $300K | +17% | Oct 31 | Target |
+| Step        | Date                        | New budget                                                                        | Δ    | Hold until | Gate to advance                                                                                                                                        |
+| ----------- | --------------------------- | --------------------------------------------------------------------------------- | ---- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0           | Sep 12–19                   | _(no change)_                                                                     | —    | Sep 19     | **Gate 0 fix**: finance delivers margin → max-CAC / min-ROAS floor. No step 1 without this.                                                            |
+| 1           | Sep 19                      | $112K                                                                             | +18% | Sep 26     | Marginal ROAS ≥ floor (proxy: 3.1 until gate 0 lands), frequency <3.0, delivery stable                                                                 |
+| 2           | Sep 26                      | $132K                                                                             | +18% | Oct 3      | Same, + launch geo holdout here                                                                                                                        |
+| 3           | Oct 3                       | $156K                                                                             | +18% | Oct 10     | Same, + **recalibrate step size from steps 1–2's actual response**                                                                                     |
+| —           | **Sep 30 board checkpoint** | **~$150–165K interim run-rate** — report this against the original date, honestly |      |            |                                                                                                                                                        |
+| 4           | Oct 10                      | $184K                                                                             | +18% | Oct 17     | Same + creative count check (≥30 proven)                                                                                                               |
+| **2x gate** | Oct ~17                     | **$190K**                                                                         | —    | —          | **Holdout readout required before advancing.** Incremental ≈ attributed → continue. Incremental materially lower → re-cut target, don't advance blind. |
+| 5           | Oct 17                      | $217K                                                                             | +18% | Oct 24     | Marginal floor holds                                                                                                                                   |
+| 6           | Oct 24                      | $256K                                                                             | +18% | Oct 31     | Marginal floor holds, creative ≥50 proven                                                                                                              |
+| 7           | Oct 31                      | $300K                                                                             | +17% | Oct 31     | Target                                                                                                                                                 |
 
 All edits batched once per week per platform — **documented:** platforms flag grouped changes as minimizing cumulative relearning versus drip-feeding several edits across the week.
 
 **Rollback (practitioner convention, pre-committed now):**
+
 - Marginal ROAS below the floor for a **full hold period** (not one bad day) → revert to prior step, hold 2 weeks flat, resume at +10%/week.
 - Cost per acquisition >1.5x target after a step → cut 20–30%, stabilize 2 weeks, resume at +10%/week.
 - **Before acting on either trigger**, check: sample size, GA4/platform tracking outages, seasonality, any concurrent test — a bad number on low volume with 5–7 days of purchase lag is noise, not a signal.
@@ -112,6 +113,7 @@ All edits batched once per week per platform — **documented:** platforms flag 
 ## 7. Exit condition
 
 Ramp stops, permanently or pending replan, on the **first** of:
+
 - $300K/month reached and holding through one full cycle, **or**
 - Marginal contribution margin crosses ≤$0 on a spend band (even if blended still looks fine — blended always trails marginal), **or**
 - Geo-holdout readout shows incremental return materially below the attributed 3.1 (eBay/Haus territory) — target gets re-cut, not abandoned silently, **or**

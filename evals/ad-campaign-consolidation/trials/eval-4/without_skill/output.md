@@ -40,10 +40,10 @@ Targeting + optimization event + budget are three independent variables, all cha
 
 ## What I'd do instead
 
-1. **Move the whole consolidation earlier, not later.** Make the targeting + optimization event changes to the 3 keepers now (or as soon as possible this week) — not "next weekend." You want the ad sets to have already exited learning phase, on the final structure, *before* BFCM traffic hits, not during it.
-2. **Split the two edits.** Change optimization event first, let it stabilize (watch for learning-phase exit, ~50 purchases/week/ad set), *then* change targeting — or vice versa. Don't do both simultaneously.
+1. **Move the whole consolidation earlier, not later.** Make the targeting + optimization event changes to the 3 keepers now (or as soon as possible this week) — not "next weekend." You want the ad sets to have already exited learning phase, on the final structure, _before_ BFCM traffic hits, not during it.
+2. **Split the two edits.** Change optimization event first, let it stabilize (watch for learning-phase exit, ~50 purchases/week/ad set), _then_ change targeting — or vice versa. Don't do both simultaneously.
 3. **Ramp the budget, don't jump it.** Move budget over in steps of ~20–30%/day into the 3 keepers instead of 100% in one day. Gives the algorithm room to hold delivery stable while it absorbs more spend.
 4. **Pause, don't delete, the 5 non-keepers.** Zero cost to keep them paused through BFCM as a revert path. Delete in December once the new 3-campaign structure has a full sales cycle of proof behind it.
 5. **Give yourself a real observation window.** Aim for the new structure to be fully live and out of learning phase by ~Nov 18–20, so you have a genuine stability check before Black Friday week starts, not a same-weekend leap of faith.
 
-Bottom line: the *direction* of the plan (consolidate to 3 strong campaigns, optimize for purchase) is right. The *sequencing* — bundle three resets into one weekend, judge it during Black Friday, delete the fallback the next day — is what turns a good idea into unnecessary risk during the account's most important two weeks of the year. Pull the timeline forward and add a real buffer instead.
+Bottom line: the _direction_ of the plan (consolidate to 3 strong campaigns, optimize for purchase) is right. The _sequencing_ — bundle three resets into one weekend, judge it during Black Friday, delete the fallback the next day — is what turns a good idea into unnecessary risk during the account's most important two weeks of the year. Pull the timeline forward and add a real buffer instead.

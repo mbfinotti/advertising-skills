@@ -1,6 +1,6 @@
 ## Sanity check: Halyard Swim hook evaluation system
 
-I don't have the spreadsheet or the 9-hook batch itself (nothing under that name exists in this repo outside the folder I was told to leave alone), so this is a review of the *system's design* — the weighting model and the diversity claim — as described. Two real problems, one presentational nit.
+I don't have the spreadsheet or the 9-hook batch itself (nothing under that name exists in this repo outside the folder I was told to leave alone), so this is a review of the _system's design_ — the weighting model and the diversity claim — as described. Two real problems, one presentational nit.
 
 ### 1. The weighted score is compensatory — and that's the wrong shape for this decision
 
@@ -20,9 +20,9 @@ A second, quieter issue: time-to-signal (30%) and specificity (25%) are likely c
 
 This is the more important catch, because it's being used as a ship/no-ship justification. Two problems:
 
-**Pigeonhole issue.** 9 openings mapped onto 8 categories means at least one type repeats no matter what. "Covers 7 of 8" is consistent with, say, 3 hooks all being "curiosity gap," 5 other types getting one hook each, and one type getting zero — which is a lopsided batch, not a diverse one. Coverage (did we touch it, yes/no) says nothing about *distribution* (how concentrated is the batch). The number that actually tells you about diversity is the count per type, not the count of types touched.
+**Pigeonhole issue.** 9 openings mapped onto 8 categories means at least one type repeats no matter what. "Covers 7 of 8" is consistent with, say, 3 hooks all being "curiosity gap," 5 other types getting one hook each, and one type getting zero — which is a lopsided batch, not a diverse one. Coverage (did we touch it, yes/no) says nothing about _distribution_ (how concentrated is the batch). The number that actually tells you about diversity is the count per type, not the count of types touched.
 
-**Sample size kills the stated purpose.** If the point of tagging by type is to *learn* which psychological mechanism performs best for Halyard Swim's audience, most types here have n=1. You can't attribute a hook's performance to its "type" versus its specific wording, visuals, or placement with a sample of one — any read on "curiosity gap beat social proof" from this batch is noise, not signal. Diversity-for-learning requires replicates per type, not maximum type coverage.
+**Sample size kills the stated purpose.** If the point of tagging by type is to _learn_ which psychological mechanism performs best for Halyard Swim's audience, most types here have n=1. You can't attribute a hook's performance to its "type" versus its specific wording, visuals, or placement with a sample of one — any read on "curiosity gap beat social proof" from this batch is noise, not signal. Diversity-for-learning requires replicates per type, not maximum type coverage.
 
 **The missing type deserves more scrutiny, not less.** The framing treats the 1 uncovered type as a rounding error ("7 of 8, good enough"). It might instead be the mechanism best suited to this funnel stage or platform (e.g., authority/proof-based hooks for a considered purchase like swim gear) — omitting it could be the actual gap, and "7/8" makes that easy to wave off.
 

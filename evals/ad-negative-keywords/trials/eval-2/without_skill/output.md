@@ -4,12 +4,12 @@
 
 ### ❌ Exclude now — add as negative keywords
 
-| Term | Match type to add | Why |
-|---|---|---|
+| Term                           | Match type to add     | Why                                                                                                                                                                                                                      |
+| ------------------------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `law firm consulting services` | Exact, campaign-level | $410 spend = **1.6× target CPA**, 0 conv this window *and* last 90 days. $45.6 CPC vs $7 account avg — check which broad-match keyword is pulling this in, it's leaking budget disproportionately. Highest priority cut. |
-| `legal software jobs` | Phrase | Job-seeker intent, not buyer intent. 0 conv in 90 days too — no ambiguity. |
-| `free legal case template` | Phrase | Wants a free static template, not paid case management software. |
-| `legal case tracker excel` | Phrase | DIY/spreadsheet intent — actively avoiding software purchase. |
+| `legal software jobs`          | Phrase                | Job-seeker intent, not buyer intent. 0 conv in 90 days too — no ambiguity.                                                                                                                                               |
+| `free legal case template`     | Phrase                | Wants a free static template, not paid case management software.                                                                                                                                                         |
+| `legal case tracker excel`     | Phrase                | DIY/spreadsheet intent — actively avoiding software purchase.                                                                                                                                                            |
 
 Also add a small negative list (phrase match, not single broad words — to avoid blocking things like "free demo" or "excel data migration"): `"legal software jobs"`, `"case template"`, `"tracker excel"`, `"consulting services"`.
 

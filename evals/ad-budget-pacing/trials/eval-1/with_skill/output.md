@@ -8,14 +8,14 @@
 
 Before trusting the "behind" read at all:
 
-| Gate check | Result |
-|---|---|
-| 1. Single-day overdelivery allowance | N/A — this is a cumulative 18-day read, not a single day vs. daily cap |
-| 2. First/last partial day | No — day 18 of 30 |
-| 3. Trivial denominator | No — 18 elapsed days is a real sample |
-| 4. Too young to read | No — account has run since spring, well past any cold-start window |
-| 5. Inside a post-edit relearning window | No — nothing touched in 2+ weeks |
-| 6. Intra-day / unrestated figures | No — you're reading yesterday's finalized numbers |
+| Gate check                              | Result                                                                 |
+| --------------------------------------- | ---------------------------------------------------------------------- |
+| 1. Single-day overdelivery allowance    | N/A — this is a cumulative 18-day read, not a single day vs. daily cap |
+| 2. First/last partial day               | No — day 18 of 30                                                      |
+| 3. Trivial denominator                  | No — 18 elapsed days is a real sample                                  |
+| 4. Too young to read                    | No — account has run since spring, well past any cold-start window     |
+| 5. Inside a post-edit relearning window | No — nothing touched in 2+ weeks                                       |
+| 6. Intra-day / unrestated figures       | No — you're reading yesterday's finalized numbers                      |
 
 **Passes all six. This is a real deviation, worth acting on — not noise.**
 
@@ -23,17 +23,17 @@ Before trusting the "behind" read at all:
 
 Calendar month, Sept 1–30 (30 days), day 18 elapsed, 12 remaining.
 
-| Metric | Flat curve | Weighted curve |
-|---|---|---|
-| Expected to date | $14,400 | $14,400 |
-| Spend to date | $10,800 | $10,800 |
-| Pacing ratio | **0.75** | **0.75** |
-| Budget utilization | 45% | 45% |
-| Projected period spend | $18,000 | $18,000 |
-| Remaining budget | $13,200 | $13,200 |
-| Required daily (remaining) | $1,100 | $1,100 |
-| Trailing 7-day avg | $560 | $560 |
-| **Adjust spend by** | **+$540/day** | **+$540/day** |
+| Metric                     | Flat curve    | Weighted curve |
+| -------------------------- | ------------- | -------------- |
+| Expected to date           | $14,400       | $14,400        |
+| Spend to date              | $10,800       | $10,800        |
+| Pacing ratio               | **0.75**      | **0.75**       |
+| Budget utilization         | 45%           | 45%            |
+| Projected period spend     | $18,000       | $18,000        |
+| Remaining budget           | $13,200       | $13,200        |
+| Required daily (remaining) | $1,100        | $1,100         |
+| Trailing 7-day avg         | $560          | $560           |
+| **Adjust spend by**        | **+$540/day** | **+$540/day**  |
 
 The two curves converge here — no daily reweighting needed. Normally a B2B account gets paced on business days (weekday skew), but you've told me delivery is empirically even across weekday/weekend with no seasonality over a full spring-to-fall history, so the flat calendar-day curve isn't an approximation error in this case — it's confirmed by the account's own delivery shape.
 
@@ -60,20 +60,20 @@ Ranked by the skill's remedy order — fix the binding constraint before inflati
 2. **Check Quality Score components** (expected CTR, ad relevance, landing page experience) on the keywords driving the rank loss. Ad Rank is bid × quality × auction-time factors — if QS is the drag, a bid increase alone won't fully close 38%, and the fix is creative/landing-page, not budget.
 3. **If 1–2 don't fully explain it, run the auction-cost read**: has CPC/CPM trended up across the flight with no edit on your side? That would point to a new competitor entering the auction rather than anything wrong on the account — a market move, not a setting to fix.
 
-**Only after that fix lands and holds a few days** — recheck lost-to-budget. If it starts climbing as delivery improves, *that's* the trigger to raise the cap, and even then, step it modestly (e.g. toward $900–950) rather than jumping straight to $1,100 — the smallest reversible change, not the number the shortfall math happened to produce.
+**Only after that fix lands and holds a few days** — recheck lost-to-budget. If it starts climbing as delivery improves, _that's_ the trigger to raise the cap, and even then, step it modestly (e.g. toward $900–950) rather than jumping straight to $1,100 — the smallest reversible change, not the number the shortfall math happened to produce.
 
 One more thing worth naming explicitly: this is a **target, not a hard commitment**, on **auction-bought performance media**. Under-utilizing $24k isn't inherently a problem here — efficiency outranks utilization on a target budget. The real finding isn't "you're $3,600 short of the goal," it's "you're being priced/quality-scored out of auctions you'd otherwise win," which is a lead-volume problem worth fixing on its own merits — not something a budget-cap edit touches. And whatever you do, don't let the last 12 days turn into a spend dump to hit $24k on the nose — that buys the worst inventory at the worst prices and is the specific failure mode this kind of pacing gap invites.
 
 ## Change packet
 
-| | |
-|---|---|
-| **Current → proposed** | Daily budget stays $800 (not the constraint); Target CPA/ROAS or Max CPC loosened ~10% (pending strategy check) |
-| **Affected objects** | The campaign's bid strategy / bid settings — not the daily budget field |
-| **Rationale** | Lost-to-rank 38% vs. lost-to-budget 2%; trailing spend already 30% under existing cap |
-| **Expected effect** | Delivery should climb toward the $800 cap before that cap itself becomes binding; uncertain how much of the 38% is bid vs. QS until step 2 is checked |
-| **Owner** | You (paid search lead) |
-| **Verification date** | 3–5 days after the bid change settles, before judging |
-| **Rollback trigger** | CPL rises materially with no lift in delivery — revert the target change |
+|                        |                                                                                                                                                       |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Current → proposed** | Daily budget stays $800 (not the constraint); Target CPA/ROAS or Max CPC loosened ~10% (pending strategy check)                                       |
+| **Affected objects**   | The campaign's bid strategy / bid settings — not the daily budget field                                                                               |
+| **Rationale**          | Lost-to-rank 38% vs. lost-to-budget 2%; trailing spend already 30% under existing cap                                                                 |
+| **Expected effect**    | Delivery should climb toward the $800 cap before that cap itself becomes binding; uncertain how much of the 38% is bid vs. QS until step 2 is checked |
+| **Owner**              | You (paid search lead)                                                                                                                                |
+| **Verification date**  | 3–5 days after the bid change settles, before judging                                                                                                 |
+| **Rollback trigger**   | CPL rises materially with no lift in delivery — revert the target change                                                                              |
 
 **Next check:** tomorrow's daily pacing review, recomputing `required_daily` / `adjust_spend_by` against fresh finalized numbers rather than waiting for another mid-month checkpoint — small daily corrections beat one large one at the end.

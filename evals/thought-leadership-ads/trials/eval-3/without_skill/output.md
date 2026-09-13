@@ -1,6 +1,6 @@
 # Mossvale Robotics — LinkedIn Promotion Campaign: Post Selection
 
-**Criteria used:** relevance to the ICP (warehouse ops/logistics buyers, not investors/talent), engagement *quality* (comments > reactions as a resonance signal), performance vs. the 120-reaction median, and fit as a *paid* unit (native-feeling formats beat company-news formats as ads).
+**Criteria used:** relevance to the ICP (warehouse ops/logistics buyers, not investors/talent), engagement _quality_ (comments > reactions as a resonance signal), performance vs. the 120-reaction median, and fit as a _paid_ unit (native-feeling formats beat company-news formats as ads).
 
 ## Verdict by post
 
@@ -24,11 +24,11 @@ Strong early velocity (5x median in one day) but it serves employer brand/recrui
 
 ## Campaign roster
 
-| Asset | Role |
-|---|---|
-| (c) Picking-error story | Paid social proof — pain-point resonance |
-| (e) Cost teardown PDF | Paid social proof — ROI/authority |
-| Ghostwritten post #1 | Primary conversion asset (purpose-built CTA) |
-| Ghostwritten post #2 | Primary conversion asset (purpose-built CTA) |
+| Asset                   | Role                                         |
+| ----------------------- | -------------------------------------------- |
+| (c) Picking-error story | Paid social proof — pain-point resonance     |
+| (e) Cost teardown PDF   | Paid social proof — ROI/authority            |
+| Ghostwritten post #1    | Primary conversion asset (purpose-built CTA) |
+| Ghostwritten post #2    | Primary conversion asset (purpose-built CTA) |
 
 Treat the two ghostwritten posts as the campaign's primary assets, not supplements — they're built for a paid CTA from the start, which organic posts weren't. Brief the content lead to draw on (b)'s poll findings and (c)'s pain-point framing so both new posts target the same ICP problem, not a fourth unrelated topic. (a), (d), and (f) stay out of this campaign.

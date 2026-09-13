@@ -10,14 +10,14 @@ Below: the plan built that way.
 
 ## The six roles, for Corvine specifically
 
-| # | Role | Who | Pain angle |
-|---|------|-----|-----------|
-| 1 | Technical Champion | Head of Data Engineering / Data Platform Lead | Firefighting broken pipelines, alert fatigue, false positives |
-| 2 | Economic Buyer | VP Data / Chief Data Officer | Cost of bad data — revenue leakage, rework, compliance exposure |
-| 3 | End User | Data Analyst / Analytics Engineer | Doesn't trust the dashboard, no way to self-serve root cause |
-| 4 | Governance Influencer | Data Governance Lead | No lineage, no audit trail, can't prove data quality to auditors |
-| 5 | Risk / Compliance Gatekeeper | Security / Compliance Officer | Vendor risk review, SOC2, data residency — can kill a deal late |
-| 6 | Executive Sponsor | CIO / CDO | Board-level narrative: data as a trusted, governed asset |
+| #   | Role                         | Who                                           | Pain angle                                                       |
+| --- | ---------------------------- | --------------------------------------------- | ---------------------------------------------------------------- |
+| 1   | Technical Champion           | Head of Data Engineering / Data Platform Lead | Firefighting broken pipelines, alert fatigue, false positives    |
+| 2   | Economic Buyer               | VP Data / Chief Data Officer                  | Cost of bad data — revenue leakage, rework, compliance exposure  |
+| 3   | End User                     | Data Analyst / Analytics Engineer             | Doesn't trust the dashboard, no way to self-serve root cause     |
+| 4   | Governance Influencer        | Data Governance Lead                          | No lineage, no audit trail, can't prove data quality to auditors |
+| 5   | Risk / Compliance Gatekeeper | Security / Compliance Officer                 | Vendor risk review, SOC2, data residency — can kill a deal late  |
+| 6   | Executive Sponsor            | CIO / CDO                                     | Board-level narrative: data as a trusted, governed asset         |
 
 ## Structure: Spotlight Rotation, not six parallel campaigns
 
@@ -26,21 +26,21 @@ One role is "in spotlight" per month, funded and creatively fresh. The other fiv
 **Monthly budget split ($15K):**
 
 - **$10K — Spotlight campaign.** This month's role, full-funnel LinkedIn (Sponsored Content + Conversation Ads), your one new concept of the month.
-- **$3.5K — Retargeting/warm layer.** Site visitors and engaged prospects from *previously* spotlighted roles, reusing their existing creative. Keeps pipeline from earlier months alive without new production.
+- **$3.5K — Retargeting/warm layer.** Site visitors and engaged prospects from _previously_ spotlighted roles, reusing their existing creative. Keeps pipeline from earlier months alive without new production.
 - **$1.5K — Always-on search.** Branded + category intent terms on Google Search, evergreen text ad copy (write once, barely touches your production capacity). Catches high-intent buyers regardless of which role is in spotlight.
 
 This means every dollar of new-creative spend concentrates on ~800–1,600 clicks instead of 200–400 — enough to actually learn something.
 
 ## 6-month calendar
 
-| Month | Spotlight role | Concept angle | Primary CTA |
-|---|---|---|---|
-| 1 | Technical Champion | "Stop firefighting pipelines at 2am" | Technical guide / demo |
-| 2 | Economic Buyer | "What bad data actually costs you" (ROI framing) | ROI calculator / SQL |
-| 3 | End User | "Trust your dashboard again" | Free trial / product tour |
-| 4 | Governance Influencer | "Prove your data quality, don't just claim it" | Lineage/audit whitepaper |
-| 5 | Risk/Compliance | "Vetted, certified, low-risk to add" | Trust center / security page |
-| 6 | Executive Sponsor | "Data trust is a board-level metric now" | Exec briefing / meeting request |
+| Month | Spotlight role        | Concept angle                                    | Primary CTA                     |
+| ----- | --------------------- | ------------------------------------------------ | ------------------------------- |
+| 1     | Technical Champion    | "Stop firefighting pipelines at 2am"             | Technical guide / demo          |
+| 2     | Economic Buyer        | "What bad data actually costs you" (ROI framing) | ROI calculator / SQL            |
+| 3     | End User              | "Trust your dashboard again"                     | Free trial / product tour       |
+| 4     | Governance Influencer | "Prove your data quality, don't just claim it"   | Lineage/audit whitepaper        |
+| 5     | Risk/Compliance       | "Vetted, certified, low-risk to add"             | Trust center / security page    |
+| 6     | Executive Sponsor     | "Data trust is a board-level metric now"         | Exec briefing / meeting request |
 
 After month 6: loop back to Technical Champion with a refreshed concept informed by five months of data — don't invent six new angles, iterate on what worked.
 
@@ -56,14 +56,14 @@ This keeps you at true 1 concept/month while still populating every channel and 
 
 ## KPIs by role (what "working" looks like)
 
-| Role | Primary metric |
-|---|---|
-| Technical Champion | Demo requests, technical guide downloads |
-| Economic Buyer | ROI calculator completions, SQLs |
-| End User | Trial signups, product tour completions |
-| Governance | Whitepaper downloads, webinar registrations |
-| Risk/Compliance | Trust center visits, security doc requests |
-| Executive Sponsor | Exec meeting requests, LinkedIn engagement from CxO titles |
+| Role               | Primary metric                                             |
+| ------------------ | ---------------------------------------------------------- |
+| Technical Champion | Demo requests, technical guide downloads                   |
+| Economic Buyer     | ROI calculator completions, SQLs                           |
+| End User           | Trial signups, product tour completions                    |
+| Governance         | Whitepaper downloads, webinar registrations                |
+| Risk/Compliance    | Trust center visits, security doc requests                 |
+| Executive Sponsor  | Exec meeting requests, LinkedIn engagement from CxO titles |
 
 ## Why not just thin-slice all six anyway
 

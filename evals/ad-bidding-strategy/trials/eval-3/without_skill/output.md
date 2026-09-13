@@ -2,7 +2,7 @@
 
 - Expected value per demo = 4% × $3,500 = **$140**. That's breakeven — the most you can pay per demo without losing money on it.
 - Trailing 60-day actual: $240/demo → losing ~$100 per demo.
-- Best month *ever*: $210/demo → still losing money, even at your historical peak.
+- Best month _ever_: $210/demo → still losing money, even at your historical peak.
 - New target: $95/demo → **32% below breakeven**, and **55% below the best result you've ever produced**, from a channel that has apparently never once beaten breakeven.
 
 So $95 isn't an optimization target, it's a number nobody has evidence the channel can hit. That's the root cause of everything downstream.
@@ -12,6 +12,7 @@ So $95 isn't an optimization target, it's a number nobody has evidence the chann
 Target CPA bidding algorithms don't find $95 demos — they throttle. When you drop the target that far below historical performance, the algorithm stops bidding on almost all auctions it previously won, because it predicts most of them won't clear $95. What's left is a handful of the cheapest, easiest, most-likely-to-convert impressions — not a repeatable $95 audience, a sliver of the distribution's left tail.
 
 The $102 you're seeing is:
+
 - **A tiny sample** — near-zero spend means single-digit or low-double-digit conversions. Standard error at that volume is enormous; $102 could easily swing to $180+ with three more data points.
 - **Survivorship-biased** — it's the cheapest fraction of what used to be a much bigger, more representative pool.
 - **Possibly conversion-lag-inflated** — recent conversions often haven't fully attributed yet, making very recent CPA look artificially good regardless of target.
