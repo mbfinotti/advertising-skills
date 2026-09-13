@@ -2,7 +2,6 @@ I checked the repo before acting on this, and the premises in the request don't 
 
 **What I found:**
 
-- This repository (`skills-affiliation`) is Samuel Berthe's knowledge base for building and publishing Claude Code skill packages (affiliate programs, sponsor prospects, naomakers event-ops memory, and an in-progress `advertising-skills` skill collection under `skill-wip/`). It has nothing to do with a company called "Gullwing Systems."
 - There is no `advertising-context.md` anywhere in the repo (I searched the full tree, excluding `skill-wip/` as instructed).
 - There's no trace of "Gullwing," a Google Ads account, a "Meridian" agency, or any customer/LTV list in this repo, in `memory/MEMORY.md`, or in git history.
 - `memory/MEMORY.md` has no entry saying "B2C, $40k/month" — the contradiction you described doesn't exist in memory here either.

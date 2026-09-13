@@ -63,9 +63,14 @@ Update with `gemini extensions update advertising-skills`.
 
 ## Skills
 
-This collection covers the full advertising surface. Start here:
+This collection covers the full advertising surface.
 
-- [`advertising-kickoff`](./skills/advertising-kickoff): Routes a paid advertising task to the right skill in this collection and bootstraps a shared project context artifact reused across sessions.
+### Start here
+
+[`advertising-kickoff`](./skills/advertising-kickoff): Routes a paid advertising task to the right skill in this collection and bootstraps a shared project context artifact reused across sessions.
+
+### Meta
+
 - [`advertising-career`](./skills/advertising-career): Plans a paid media career from the candidate side: the junior-to-lead ladder, interview formats, an NDA-safe portfolio, and pay conversations.
 - [`advertising-hiring`](./skills/advertising-hiring): Builds the employer-side hiring packet for a paid advertising role: outcome scorecard, interview loop, work sample, and a 30-60-90 ramp.
 - [`advertising-radar`](./skills/advertising-radar): Assembles a time-budgeted watch list of newsletters, podcasts, platform release notes, communities, and people, with a method for keeping it fresh.
