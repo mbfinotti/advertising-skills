@@ -41,7 +41,7 @@ Consolidating delivery structure doesn't have to consolidate reporting structure
 
 - The 15-conversions/30-days threshold gates **Smart Bidding**, not manual budget levels — don't wait passively.
 - Interim step: switch to **Maximize Conversions** now (no historical conversion minimum required). It still automates bidding and, unlike your current manual CPC, actively helps you accumulate the conversion volume needed to graduate to Target CPA faster.
-- Once you're near 15 conversions/30 days, *then* apply the 10x rule: set the campaign's daily budget to at least 10x your intended target CPA before switching to Target CPA, so the algorithm has room to spend and isn't budget-throttled during its own learning phase.
+- Once you're near 15 conversions/30 days, _then_ apply the 10x rule: set the campaign's daily budget to at least 10x your intended target CPA before switching to Target CPA, so the algorithm has room to spend and isn't budget-throttled during its own learning phase.
 - This is a **search-only** step. Do not apply it to the Meta consolidation — different mechanism, different guarantee threshold, different platform.
 
 ## 6. Sequencing

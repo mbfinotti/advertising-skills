@@ -9,7 +9,7 @@
 
 ## 2. Blended MER hides the decay curve — scale on marginal, not blended
 
-- 2.0 is the *average* return across $110K. The next dollar spent is never as efficient as the first — that's diminishing returns, not a flat line.
+- 2.0 is the _average_ return across $110K. The next dollar spent is never as efficient as the first — that's diminishing returns, not a flat line.
 - $110K → $150K is a +36% jump. The **marginal MER on that incremental $40K** could easily be 1.0–1.5, even while the blended average still reads "healthy" for weeks.
 - Approving off the blended number is approving off the wrong number.
 

@@ -1,6 +1,6 @@
 ## Bottom line
 
-This is **not** creative fatigue. The data you gave me fails the fatigue call on two independent grounds, and it matches one of this skill's known trap patterns almost exactly. Don't brief a new ad yet — there's a funnel/tracking problem to run down first, and it likely explains both the checkout release *and* the expired promo code you mentioned as an afterthought.
+This is **not** creative fatigue. The data you gave me fails the fatigue call on two independent grounds, and it matches one of this skill's known trap patterns almost exactly. Don't brief a new ad yet — there's a funnel/tracking problem to run down first, and it likely explains both the checkout release _and_ the expired promo code you mentioned as an afterthought.
 
 ## Why fatigue doesn't fit
 
@@ -10,7 +10,7 @@ Fatigue's signature (per the skill's own decision rule) is **leading signals dec
 - Hook rate: hasn't moved — leading signal, flat
 - CVR: 3.2% → 1.1% (-66% relative) — lagging signal, collapsed
 
-The skill's two-signal rule requires at least two signals moving together, one of them leading. You have **zero leading signals moving** — only one lagging signal. That alone disqualifies `fatigued` regardless of how big the CVR drop is. This exact pattern has its own row in the skill's failure-mode table: *"Reading CVR collapse with healthy CTR as fatigue → that pattern is landing page, offer, or tracking — no creative will fix it."*
+The skill's two-signal rule requires at least two signals moving together, one of them leading. You have **zero leading signals moving** — only one lagging signal. That alone disqualifies `fatigued` regardless of how big the CVR drop is. This exact pattern has its own row in the skill's failure-mode table: _"Reading CVR collapse with healthy CTR as fatigue → that pattern is landing page, offer, or tracking — no creative will fix it."_
 
 Seven weeks old isn't diagnostic by itself — age is a plausible-sounding prior, not a signal.
 
@@ -75,7 +75,7 @@ Note on the noise gate: even at a fairly low volume — say 2,000 clicks in the 
 ## Two checks, do these before touching creative (hours, not days)
 
 1. **Reconcile platform-reported conversions against your order system** (Shopify/whatever sits behind checkout) for Sep 2–12 vs the prior window. If the ratio of platform-reported to actual orders has shifted, that's tracking breakage from the checkout release — full stop, fix the tag/event, no creative work needed. "Minor" release notes don't clear this; ask specifically whether the purchase event, its trigger URL/step, or consent defaults changed.
-2. **Pull CVR for *other* traffic hitting the same checkout in the same window** — other ads, other channels, email, direct. If everyone's CVR fell together, it's funnel-wide (tracking or checkout UX), not this creative. If only this ad's CVR fell while other traffic to the same page is fine, that points specifically at message-mismatch (i.e., this ad's audience specifically expected the 20%-off and the others didn't).
+2. **Pull CVR for _other_ traffic hitting the same checkout in the same window** — other ads, other channels, email, direct. If everyone's CVR fell together, it's funnel-wide (tracking or checkout UX), not this creative. If only this ad's CVR fell while other traffic to the same page is fine, that points specifically at message-mismatch (i.e., this ad's audience specifically expected the 20%-off and the others didn't).
 3. **Pull the actual ad creative and check for any discount reference** — headline, primary text, overlay text, even an implied "today only" urgency cue. This is the fastest single check and directly disambiguates.
 
 ## If it comes back as offer-message mismatch (not tracking)

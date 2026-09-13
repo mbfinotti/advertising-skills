@@ -17,6 +17,7 @@ Here's what I can do instead, using only what's actually true about Cartwheel to
 6. "$4.99/month to never ask 'what's for dinner' again. Your week, planned in 10 minutes."
 
 **What would actually earn you real social proof fast, cheaper than the legal exposure:**
+
 - Ship a **TestFlight/beta cohort now** (even 50-100 users) — 2 weeks gets you real quotes and a real "X people planned Y meals" stat.
 - Add an in-app **prompt after the 3rd completed week** asking for a rating/quote — this is the standard way apps like yours get their first honest testimonials within a month.
 - If you want a dietitian claim, that means **actually contracting one** to review the meal logic — after that it's a real, defensible claim you can lead with.

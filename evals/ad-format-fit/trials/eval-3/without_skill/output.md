@@ -10,12 +10,12 @@
 
 ## Format matrix by placement
 
-| Placement | Spec | Best source |
-|---|---|---|
-| Reels/Stories (cold scroll) | 9:16, full-bleed, 3–10s hook baked into first frame, captions burned in | UGC or templated statics — not the brand film |
-| Feed (in-app, sound-off default) | 4:5 or 1:1, captions mandatory | Brand film cutdowns work here |
-| Stories (retargeting/warm) | 9:16, can be more polished/branded | Brand film cutdowns work here too |
-| Reels (retargeting/warm) | 9:16, still needs a hook but can be product-forward not UGC | Brand film cutdowns or statics-to-video |
+| Placement                        | Spec                                                                    | Best source                                   |
+| -------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------- |
+| Reels/Stories (cold scroll)      | 9:16, full-bleed, 3–10s hook baked into first frame, captions burned in | UGC or templated statics — not the brand film |
+| Feed (in-app, sound-off default) | 4:5 or 1:1, captions mandatory                                          | Brand film cutdowns work here                 |
+| Stories (retargeting/warm)       | 9:16, can be more polished/branded                                      | Brand film cutdowns work here too             |
+| Reels (retargeting/warm)         | 9:16, still needs a hook but can be product-forward not UGC             | Brand film cutdowns or statics-to-video       |
 
 The split that matters: **cold traffic wants native/UGC-feel, warm traffic (your followers, past customers, retargeting) tolerates and often prefers polished brand footage.** Your anniversary sale audience is mostly warm — don't over-index on UGC just because it's trendy.
 
@@ -24,6 +24,7 @@ The split that matters: **cold traffic wants native/UGC-feel, warm traffic (your
 Dialogue-driven 16:9 doesn't survive a straight center-crop to 9:16 — you'll lose framing and the dialogue does nothing sound-off. Don't force it into Reels cold-scroll slots.
 
 Instead:
+
 1. Pull 3–5 strongest visual beats (product in use, texture, hero shots) — no dialogue needed.
 2. Re-edit as silent, caption-led cutdowns: text does the selling, footage is texture/proof.
 3. Export at 4:5 for feed and 9:16 with blurred/extended background (not crop) for Stories.
@@ -34,6 +35,7 @@ This gets you 3–5 "new" assets in an afternoon of editing, zero new shooting.
 ## UGC that fits a 1-person team
 
 Don't shoot it yourself. Brief it out:
+
 - Platforms: Billo, Insense, JoinBrands, or Backdoor — pay per video ($150–400/video), turnaround 3–7 days, fits your 10-day window if ordered today.
 - Brief: 1 core script (problem → unboxing/use → reaction → offer), 15–30s, ask for 2 hook variants per creator so you get testable variants for free.
 - Order 2 creators minimum — one video isn't enough to know if the format works, and creator variance is high.

@@ -16,4 +16,5 @@ Well-built for its job — name + one crisp positioning line fits 6 non-skippabl
 Weakest by a clear margin: a founder-story/brand-intro opener in the one format engineered to lose the viewer in 5 seconds. No pain point, no benefit, no reason to stay — highest risk of paying for impressions that never finish playing.
 
 ## Budget takeaway
+
 Put the largest share behind Ad 3, then Ad 1. Ad 2 is a safe number-two feed spend. Ad 5 plays a support role (don't judge it against the response-driven ads — it's doing a different job). Ad 4's opening needs a rewrite before it earns real spend; as written, it's the one most likely to waste impressions to the skip button.

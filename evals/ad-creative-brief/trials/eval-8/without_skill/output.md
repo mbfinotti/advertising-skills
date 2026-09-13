@@ -6,7 +6,7 @@
 - All 40 sit on one concept: "close the books in 3 days."
 - Performance has been flat for a full quarter despite continuous hook iteration.
 
-**Diagnosis:** hooks are a message-framing lever *within* a concept. When 40 framings of the same concept all plateau at the same ceiling, the constraint is the concept, not the framing. Cutting 6 more hooks next sprint tests the same variable that already produced 3 months of flat data — it won't tell leadership anything new, it will just confirm the ceiling again at extra cost.
+**Diagnosis:** hooks are a message-framing lever _within_ a concept. When 40 framings of the same concept all plateau at the same ceiling, the constraint is the concept, not the framing. Cutting 6 more hooks next sprint tests the same variable that already produced 3 months of flat data — it won't tell leadership anything new, it will just confirm the ceiling again at extra cost.
 
 ## 2. The unforced error
 
@@ -18,10 +18,10 @@ Reallocate next sprint from 6 hooks-on-one-concept to a **concept-level test**, 
 
 ## 4. Test structure
 
-| Arm | Concept | Creative units | Hook cuts |
-|---|---|---|---|
-| A (control) | Close the books in 3 days | 1 base ad | 3 hooks (continuation of current line) |
-| B (new) | Case study — 71% close-time reduction | 1 base ad (testimonial-led) | 3 hooks |
+| Arm         | Concept                               | Creative units              | Hook cuts                              |
+| ----------- | ------------------------------------- | --------------------------- | -------------------------------------- |
+| A (control) | Close the books in 3 days             | 1 base ad                   | 3 hooks (continuation of current line) |
+| B (new)     | Case study — 71% close-time reduction | 1 base ad (testimonial-led) | 3 hooks                                |
 
 - Total: 6 cuts, same sprint budget/output leadership asked for — just split 3/3 across two concepts instead of 6/0 on one.
 - Base creative for arm B: customer name/logo (if cleared), the 71% stat as the visual headline, quote or clip if available, CTA matched to arm A for clean comparison.

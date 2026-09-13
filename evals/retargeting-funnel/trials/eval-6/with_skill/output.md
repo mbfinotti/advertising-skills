@@ -17,18 +17,18 @@
 
 Your symptom — **11x platform ROAS on retargeting, flat blended revenue all year** — is the named failure mode for exactly this setup ("Cannibalisation: great platform ROAS, flat blended revenue → the fix is an incrementality test, not more budget"). An audience already running at ~3.6x its intended frequency is the classic way to manufacture a high last-touch ROAS: you're re-intercepting people who were converting anyway and the platform claims the credit.
 
-Illustrative, not a claim about your account specifically: the best available RCT evidence (Gordon, Zettelmeyer et al. 2019, 15 large-scale experiments) found observational/platform-reported lift overstates true incremental lift by roughly 7-9.5x depending on funnel position. Apply even the low end to your 11x and the *true* incremental ROAS on retargeting could be sitting close to or below prospecting's 1.9x. **You cannot know which channel is actually better until you run the holdout below.** Giving the board a bigger number for retargeting before that test would be handing them a number you don't yet believe.
+Illustrative, not a claim about your account specifically: the best available RCT evidence (Gordon, Zettelmeyer et al. 2019, 15 large-scale experiments) found observational/platform-reported lift overstates true incremental lift by roughly 7-9.5x depending on funnel position. Apply even the low end to your 11x and the _true_ incremental ROAS on retargeting could be sitting close to or below prospecting's 1.9x. **You cannot know which channel is actually better until you run the holdout below.** Giving the board a bigger number for retargeting before that test would be handing them a number you don't yet believe.
 
 ## The drafted split
 
-| | Current | Naive "board" ask | **Recommended (ceiling-bound)** |
-|---|---|---|---|
-| Prospecting | $36,000 (75%) | $24,000 (50%) | **≈$44,700 (~93%)** |
-| Retargeting | $12,000 (25%) | $24,000 (50%) | **≈$3,300 (~7%)** |
+|             | Current       | Naive "board" ask | **Recommended (ceiling-bound)** |
+| ----------- | ------------- | ----------------- | ------------------------------- |
+| Prospecting | $36,000 (75%) | $24,000 (50%)     | **≈$44,700 (~93%)**             |
+| Retargeting | $12,000 (25%) | $24,000 (50%)     | **≈$3,300 (~7%)**               |
 
 Quarterly: retargeting **≈$10,000/quarter**, prospecting **≈$134,000/quarter**.
 
-This moves *less* into retargeting than today, not more — the opposite direction of the board's instinct, so it needs to be delivered as a finding, not a compromise. Framing for the room: the 25%→50% conversation was based on a ROAS number that hasn't been checked for incrementality; the pool math caps retargeting near 7% regardless of what that number turns out to be; the growth lever this quarter is fixing prospecting and proving what retargeting actually contributes, not moving the split.
+This moves _less_ into retargeting than today, not more — the opposite direction of the board's instinct, so it needs to be delivered as a finding, not a compromise. Framing for the room: the 25%→50% conversation was based on a ROAS number that hasn't been checked for incrementality; the pool math caps retargeting near 7% regardless of what that number turns out to be; the growth lever this quarter is fixing prospecting and proving what retargeting actually contributes, not moving the split.
 
 Don't just pour the freed ~$8,700/month into prospecting as-is — a full year of flat blended revenue under the current prospecting structure suggests it's stale too. Route the freed budget toward new prospecting audience/creative tests (`ad-audience-targeting`, `ad-creative-fatigue`) rather than scaling the existing setup 1:1.
 
@@ -38,10 +38,10 @@ Don't just pour the freed ~$8,700/month into prospecting as-is — a full year o
 
 With only 8,000 total reachable people, splitting into 4-5 depth tiers risks under-floor stages (Meta/Google practical floor ≈1,000 each) once exclusions are applied. Collapsing to two stages is the right call at this size (Ben Heath's single-warm-pool position, applied via the collapse rule) until volume or CRM data justifies more granularity:
 
-| Stage | Inclusion | Window (provisional) | Message intent / offer | Concepts |
-|---|---|---|---|---|
-| **S1 Hot** | Cart/checkout start, no purchase | 0-7 d | Reminder — exact item, no incentive | 3 |
-| **S2 Warm** | Product view, no cart + aged S1 members | 0-30 d | Social proof → objection handling; no discount yet | 3 |
+| Stage       | Inclusion                               | Window (provisional) | Message intent / offer                             | Concepts |
+| ----------- | --------------------------------------- | -------------------- | -------------------------------------------------- | -------- |
+| **S1 Hot**  | Cart/checkout start, no purchase        | 0-7 d                | Reminder — exact item, no incentive                | 3        |
+| **S2 Warm** | Product view, no cart + aged S1 members | 0-30 d               | Social proof → objection handling; no discount yet | 3        |
 
 Discount/incentive rung: hold in reserve for a future "last-call" stage only once volume supports a 3rd tier — don't add it to S1/S2, and don't add it at all until it's confirmed the account has a discount policy to use (unconfirmed here).
 

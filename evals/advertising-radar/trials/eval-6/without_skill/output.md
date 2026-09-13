@@ -30,18 +30,19 @@ Budget unchanged: 60 min/week. One platform added (TikTok) since June, one sourc
 
 ### New weekly total
 
-| Source | Time | Status |
-|---|---|---|
-| The Morning Auction | 10 min | kept |
-| Meta official business news | 5 min | kept |
-| Google official ads blog | 5 min | kept |
-| TikTok official Business/Ads blog | 5 min | **new** |
-| Bidcraft Slack community | 5 min | kept |
-| Saltgrass Media blog | — | **cut** |
-| Down Funnel podcast | 0 min (was 20) | **on hold, pending your 2-min check** |
-| **Total active** | **30 min / 60 min budget** | |
+| Source                            | Time                       | Status                                |
+| --------------------------------- | -------------------------- | ------------------------------------- |
+| The Morning Auction               | 10 min                     | kept                                  |
+| Meta official business news       | 5 min                      | kept                                  |
+| Google official ads blog          | 5 min                      | kept                                  |
+| TikTok official Business/Ads blog | 5 min                      | **new**                               |
+| Bidcraft Slack community          | 5 min                      | kept                                  |
+| Saltgrass Media blog              | —                          | **cut**                               |
+| Down Funnel podcast               | 0 min (was 20)             | **on hold, pending your 2-min check** |
+| **Total active**                  | **30 min / 60 min budget** |                                       |
 
 You're carrying 30 min/week of unspent headroom right now. Once you resolve Down Funnel, it goes one of two ways:
+
 - **Legit rebrand:** restore its 20 min, you're back to 50/60, done.
 - **Dead:** you have 30 min free — worth using on a TikTok-specific deep-dive (a podcast or Slack/Discord equivalent to what Bidcraft gives you for Meta/Google), not just parking it unused.
 

@@ -3,11 +3,12 @@
 ### 🔴 Kill the $25-for-5-star voucher
 
 Rewards conditioned on a positive rating are:
+
 - **Illegal in the US** — FTC's 2024 Reviews & Testimonials Rule bans compensation contingent on star rating or sentiment.
 - **A platform ToS violation** — Google, Trustpilot, G2, Capterra, Amazon all prohibit gated/incentivized-for-positive reviews; detection risk is real, spikes in 5-star volume tied to an email blast are exactly the pattern review-fraud detection looks for.
 - **Anti-compounding** — a suspended Merchant Center / review-platform account resets you to zero, worse than doing nothing. It also poisons the very signal you're trying to feed the AI model with reviews that get discounted or purged later.
 
-**Compliant swap:** email the same list asking for an honest review, offer a small incentive ($5–10 gift card or a raffle entry) for *submitting any review regardless of rating*, disclosed as such. Legal, keeps the volume goal, doesn't blow up the account.
+**Compliant swap:** email the same list asking for an honest review, offer a small incentive ($5–10 gift card or a raffle entry) for _submitting any review regardless of rating_, disclosed as such. Legal, keeps the volume goal, doesn't blow up the account.
 
 ### ✅ Fix the price field today
 

@@ -8,13 +8,13 @@ Ran this through `ad-platform-selection` (channel/test design) and `ad-bidding-s
 
 ## 1. Economics
 
-| Input | Value |
-|---|---|
-| ACV | $9,600 (assumed ~$800/mo recognized, not paid upfront — see check below) |
-| Gross margin | 75% |
-| Monthly gross profit/customer | $9,600 ÷ 12 × 0.75 = **$600** |
-| Outbound CAC / payback | $700 / ~6 weeks |
-| Target for paid | Match outbound: **$700 CAC** |
+| Input                         | Value                                                                    |
+| ----------------------------- | ------------------------------------------------------------------------ |
+| ACV                           | $9,600 (assumed ~$800/mo recognized, not paid upfront — see check below) |
+| Gross margin                  | 75%                                                                      |
+| Monthly gross profit/customer | $9,600 ÷ 12 × 0.75 = **$600**                                            |
+| Outbound CAC / payback        | $700 / ~6 weeks                                                          |
+| Target for paid               | Match outbound: **$700 CAC**                                             |
 
 **Cross-check:** $700 CAC ÷ $600 monthly GP = 1.17 months ≈ **5.1 weeks** payback. You said "about 6 weeks" — close enough that it confirms the $800/mo-recognized assumption rather than an upfront-annual model. If Solvenne actually bills annually upfront, say so — the math changes a lot (payback would be near-instant).
 
@@ -44,11 +44,11 @@ At $9.87 avg CPC that's ~5 clicks/day; even at a cheap niche CPC of ~$3–5 it's
 
 **Recommended fix — split it into two stages instead of one:**
 
-| Stage | Budget | Window | Goal |
-|---|---|---|---|
-| 1. Price discovery | Your $500 stands | Mon Sept 14 – Wed Sept 23 (as planned) | Learn real CPC/CTR/landing-page conversion for this niche. Directional CPD only. |
-| 2. Real test | $450–750 (3–5x $150 target) at $150–250/day | ~2–4 weeks after Stage 1 (through mid-late Oct) | A CPD number you can actually act on. |
-| 3. Scale decision | Step to $3–5K/mo first, not straight to $10K | After Stage 2, before full $10K commit | Confirm CPD holds *and* first Stage-2 demos are progressing to opportunities in CRM before betting the full $10K/mo. |
+| Stage              | Budget                                       | Window                                          | Goal                                                                                                                 |
+| ------------------ | -------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| 1. Price discovery | Your $500 stands                             | Mon Sept 14 – Wed Sept 23 (as planned)          | Learn real CPC/CTR/landing-page conversion for this niche. Directional CPD only.                                     |
+| 2. Real test       | $450–750 (3–5x $150 target) at $150–250/day  | ~2–4 weeks after Stage 1 (through mid-late Oct) | A CPD number you can actually act on.                                                                                |
+| 3. Scale decision  | Step to $3–5K/mo first, not straight to $10K | After Stage 2, before full $10K commit          | Confirm CPD holds _and_ first Stage-2 demos are progressing to opportunities in CRM before betting the full $10K/mo. |
 
 Full CAC parity (the $700 number) can't be confirmed until closed-won data exists — that needs the full ~6-week cycle from Stage 2's first demos, independent of the CPD read. Treat "$700 CAC confirmed" as a mid-November milestone, not a day-10 one.
 
@@ -83,7 +83,7 @@ Switch trig.: Target ROAS (return-goal) only once deal values flow back to Googl
               — not close at current volume. Revisit once CRM close data is piped back.
 ```
 
-**Why not jump straight to Target CPA:** Google documents no conversion-volume minimum for it, so it's *technically* eligible even at zero history — but with an expected 1–5 conversions over your Stage 1 window, a tight cost target has nothing to learn from and risks choking delivery (spend far under budget while looking "efficient"). Maximize Conversions accumulates the trailing actual Target CPA needs; that's the whole point of Stage 2.
+**Why not jump straight to Target CPA:** Google documents no conversion-volume minimum for it, so it's _technically_ eligible even at zero history — but with an expected 1–5 conversions over your Stage 1 window, a tight cost target has nothing to learn from and risks choking delivery (spend far under budget while looking "efficient"). Maximize Conversions accumulates the trailing actual Target CPA needs; that's the whole point of Stage 2.
 
 **Why not Target ROAS:** no deal values are flowing back to the platform yet, and you're nowhere near the documented 15-conversions/30-days minimum for Search. Revisit once CRM close data is piped back — that's also the moment value-based bidding becomes possible.
 

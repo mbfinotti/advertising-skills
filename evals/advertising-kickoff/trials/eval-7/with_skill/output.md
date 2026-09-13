@@ -12,14 +12,14 @@ No skill in this collection audits legal exposure — that's a named gap (see be
 
 This should normally be a capped interview (5-7 questions, one per message). Since you asked for the complete deliverable in one shot, I inferred what I could from your message and flagged what I couldn't:
 
-| # | Question | Answer used | Confidence |
-|---|---|---|---|
-| 1 | Selling to whom | B2C (patients) | assumed — confirm if there's a B2B2C/payer channel too |
-| 3 | Channels / spend band | Google + Meta, $35k/mo → **$5k-50k** band | stated |
-| 4 | Conversion source of truth | Meta pixel + Google tag only, **no CRM/EHR/billing wired** | stated |
-| 5 | Constraints | regulated vertical + legal review-everything (AG inquiry); no creative capacity for a quarter (designer left); no fixed landing date given | stated |
-| 6 | One-off vs compounding, effort ceiling | **not stated** | unknown — assumed "compounding, a few hours/week" for ranking below; confirm, it reorders classes 3-4 |
-| 7 | Decided vs open | nothing marked decided; your negative-keywords/bid-tweaks instinct is a *proposal*, not a decision | inferred |
+| #   | Question                               | Answer used                                                                                                                                | Confidence                                                                                            |
+| --- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| 1   | Selling to whom                        | B2C (patients)                                                                                                                             | assumed — confirm if there's a B2B2C/payer channel too                                                |
+| 3   | Channels / spend band                  | Google + Meta, $35k/mo → **$5k-50k** band                                                                                                  | stated                                                                                                |
+| 4   | Conversion source of truth             | Meta pixel + Google tag only, **no CRM/EHR/billing wired**                                                                                 | stated                                                                                                |
+| 5   | Constraints                            | regulated vertical + legal review-everything (AG inquiry); no creative capacity for a quarter (designer left); no fixed landing date given | stated                                                                                                |
+| 6   | One-off vs compounding, effort ceiling | **not stated**                                                                                                                             | unknown — assumed "compounding, a few hours/week" for ranking below; confirm, it reorders classes 3-4 |
+| 7   | Decided vs open                        | nothing marked decided; your negative-keywords/bid-tweaks instinct is a _proposal_, not a decision                                         | inferred                                                                                              |
 
 ## Route
 
@@ -29,7 +29,7 @@ Q4's answer ("a platform pixel named as the only source of truth") pins measurem
 
 ## Short-list — ordered by value returned per unit of effort
 
-🟢 **1. `mbfinotti/advertising-skills@ad-conversion-tracking`** — Bottleneck: nobody knows if the pixel/tag numbers are even real. Cost: hours, one person, done once. *(promoted to rung 1 by Q4 — platform pixel is your only source of truth)*
+🟢 **1. `mbfinotti/advertising-skills@ad-conversion-tracking`** — Bottleneck: nobody knows if the pixel/tag numbers are even real. Cost: hours, one person, done once. _(promoted to rung 1 by Q4 — platform pixel is your only source of truth)_
 
 🟢 **2. `mbfinotti/advertising-skills@ad-account-diagnostic`** — Bottleneck: you're guessing negative keywords/bids are the problem without having named the actual failing layer (could be creative decay, bidding, structure, offer — not search waste). Cost: one session, reads data you already have, implements nothing. Caveat: read its output knowing the underlying numbers weren't yet verified in step 1 — run these two close together.
 
@@ -45,7 +45,7 @@ Q4's answer ("a platform pixel named as the only source of truth") pins measurem
 
 ## Chain
 
-`ad-conversion-tracking` → `ad-account-diagnostic` → *(the layer diagnostic names — could land on `ad-negative-keywords`, `ad-bidding-strategy`, `ad-campaign-consolidation`, or elsewhere)*
+`ad-conversion-tracking` → `ad-account-diagnostic` → _(the layer diagnostic names — could land on `ad-negative-keywords`, `ad-bidding-strategy`, `ad-campaign-consolidation`, or elsewhere)_
 
 Verify the numbers are real and legal first; only then does "why is this account underperforming" mean anything, and only then does its answer tell you which of items 6-7 (or something else entirely) is actually the fix.
 

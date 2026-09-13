@@ -5,6 +5,7 @@
 ## Diagnose first
 
 Before adding volume, find out what made those 15 count:
+
 - Pull them. What do they share — format, hook, offer, competitor, funnel stage?
 - Ask whoever briefed against them: found it themselves, or did someone surface it at the right moment?
 - Check timing: were they used within days of saving, or resurfaced months later?
@@ -20,6 +21,7 @@ Volume is cheap and doesn't need a human. Use Meta Ad Library (free, API-accessi
 
 **Curation — keep small, make it a real job, not a side task.**
 A human (or one clearly-owned rotating role) reviews the raw pull weekly and promotes maybe 10-15% into the working library, each tagged with:
+
 - Competitor + format + hook/angle
 - Hypothesis: "why would this work for us" (one sentence, mandatory)
 - Funnel stage / campaign objective it maps to
@@ -29,6 +31,7 @@ An ad with no hypothesis attached doesn't get promoted — it's exactly the kind
 ## Close the loop to briefs
 
 The missing link is almost certainly this: nothing pushes curated ads into the brief process; someone has to go pull them. Fix it structurally, not by asking people to try harder:
+
 - Weekly 20-min ritual, tied to the brief/test calendar, not a passive review: "3 angles from competitor library to consider this cycle."
 - Tag by upcoming test slot/campaign theme, so briefs pull from a filtered view, not the full 200+.
 - Retire ads after ~90 days unused — a swipe file that only grows becomes unsearchable, which is exactly the trap you're in with the spreadsheet today.

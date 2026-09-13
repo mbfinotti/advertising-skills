@@ -8,25 +8,25 @@ B2B conversion volume on a lead-gen ad is almost never enough to clear the conve
 
 ## Confounder screen — all eleven, all pass
 
-| Confounder | Verdict | Basis |
-|---|---|---|
-| Budget/bid change | pass | Budget flat, no manual change |
-| Learning-phase reset | pass | No edits since June — well outside any reset window |
-| Audience saturation | pass | FTIR 71% sits in the healthy 65–80% prospecting band, nowhere near the ~50% saturation warning line; CVR steady is the key separator — saturation degrades CVR alongside engagement, this doesn't |
-| Auction CPM inflation | pass | CPM in line with your other ad sets |
-| Seasonality/window mix | pass | 4 consecutive weekly reads, consistent direction — not a single-window artifact |
-| Tracking breakage | pass | Reconciles with CRM |
-| Attribution-window skew | pass | Decline is sustained across 4 periods, not concentrated in the newest days |
-| Placement/device mix | pass (assumed — not supplied) | No signal pointing elsewhere; cheap to double-check but wouldn't change the call given everything else |
-| Statistical noise | pass | Deltas 5–6x the noise band at this volume |
-| Landing page/offer | pass | Untouched, CVR steady confirms it |
-| Sibling-mix shift | pass | Only 2 ads live (this video + the static), no additions/removals — the spend-share loss is the algorithm deprioritizing this asset on its own merits, not a new sibling stealing share |
+| Confounder              | Verdict                       | Basis                                                                                                                                                                                             |
+| ----------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Budget/bid change       | pass                          | Budget flat, no manual change                                                                                                                                                                     |
+| Learning-phase reset    | pass                          | No edits since June — well outside any reset window                                                                                                                                               |
+| Audience saturation     | pass                          | FTIR 71% sits in the healthy 65–80% prospecting band, nowhere near the ~50% saturation warning line; CVR steady is the key separator — saturation degrades CVR alongside engagement, this doesn't |
+| Auction CPM inflation   | pass                          | CPM in line with your other ad sets                                                                                                                                                               |
+| Seasonality/window mix  | pass                          | 4 consecutive weekly reads, consistent direction — not a single-window artifact                                                                                                                   |
+| Tracking breakage       | pass                          | Reconciles with CRM                                                                                                                                                                               |
+| Attribution-window skew | pass                          | Decline is sustained across 4 periods, not concentrated in the newest days                                                                                                                        |
+| Placement/device mix    | pass (assumed — not supplied) | No signal pointing elsewhere; cheap to double-check but wouldn't change the call given everything else                                                                                            |
+| Statistical noise       | pass                          | Deltas 5–6x the noise band at this volume                                                                                                                                                         |
+| Landing page/offer      | pass                          | Untouched, CVR steady confirms it                                                                                                                                                                 |
+| Sibling-mix shift       | pass                          | Only 2 ads live (this video + the static), no additions/removals — the spend-share loss is the algorithm deprioritizing this asset on its own merits, not a new sibling stealing share            |
 
 No fail. The fatigue inquiry stays open.
 
 ## Fatigue vs. saturation
 
-Fatigue signature: costs rising, CVR holding. Saturation signature: CVR degrading *with* engagement, falling FTIR, flattening reach. You have the first pattern exactly — CVR steady, FTIR healthy at 71%. This is fatigue, not a depleting pool. (Wear-in doesn't apply either — these are declines, and this is a DR objective where Meta's own research found no wear-in effect anyway.)
+Fatigue signature: costs rising, CVR holding. Saturation signature: CVR degrading _with_ engagement, falling FTIR, flattening reach. You have the first pattern exactly — CVR steady, FTIR healthy at 71%. This is fatigue, not a depleting pool. (Wear-in doesn't apply either — these are declines, and this is a DR objective where Meta's own research found no wear-in effect anyway.)
 
 ```
 FATIGUE VERDICT - Mapleworks Meta lead-gen video, 2026-09-12
@@ -74,7 +74,7 @@ re-check      : CPL pulse 2026-09-15 (day before the board demo); full fatigue r
 
 Why this and not a hook swap: your video editor left, so rung 1 (the normally cheapest, fastest fix — hook fatigue is exactly what this data shows: hook rate down, CTR down, CVR untouched) is off the table. Budget shift is the highest rung your actual capacity supports right now.
 
-**2. Today — brief the agency, in parallel, not on the demo's clock.** The decay pattern (hook rate down, CVR untouched) says the *concept* isn't spent, just its opening. That means an iteration — new hook/opening on the same proven body — not a full new-concept rebuild, is the right ask, and practitioner-reported recovery on element-level iteration runs 60–80% of original performance. At a 5-week minimum lead time this won't touch the board demo, but starting it today is the only way it lands before the *next* board cycle instead of after it.
+**2. Today — brief the agency, in parallel, not on the demo's clock.** The decay pattern (hook rate down, CVR untouched) says the _concept_ isn't spent, just its opening. That means an iteration — new hook/opening on the same proven body — not a full new-concept rebuild, is the right ask, and practitioner-reported recovery on element-level iteration runs 60–80% of original performance. At a 5-week minimum lead time this won't touch the board demo, but starting it today is the only way it lands before the _next_ board cycle instead of after it.
 
 **3. Before the demo — have the number ready, not a promise.** Pull a CPL read on 2026-09-15, one day out. You won't have a full clean window by then, but you'll have 2–3 days of the shifted mix, enough to show the board the bleeding has stopped, with the honest framing: "root cause diagnosed as creative wear-out, immediate mix change is holding CPL, full replacement is in production, lands mid-October."
 

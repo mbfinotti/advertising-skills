@@ -1,4 +1,4 @@
-No — don't mark it verified. What you did proves the tag *fired in the browser*; it doesn't prove Meta (or GA4, for that matter) actually *received* the event. Those are two different failure points, and the gap between them is exactly why Events Manager is empty.
+No — don't mark it verified. What you did proves the tag _fired in the browser_; it doesn't prove Meta (or GA4, for that matter) actually _received_ the event. Those are two different failure points, and the gap between them is exactly why Events Manager is empty.
 
 ## Why GTM preview passing ≠ tracking working
 

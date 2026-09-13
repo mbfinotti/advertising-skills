@@ -1,6 +1,6 @@
 ## Short answer
 
-The agency is **directionally right to hold off on Target CPA, but wrong on the specifics**. "15 conversions in 30 days" is not a Google-enforced gate — you can flip Target CPA on today with zero conversion history, Google will not stop you. It's a *recommendation*, and even Google's own recommendation is usually stated as **~30 conversions/30 days for Target CPA**, not 15 — and ~50 is the number Google cites for **Target ROAS**, not for tCPA "working properly." It sounds like your agency has blended the two thresholds. That doesn't make their caution wrong, but it changes how urgently you should chase the number.
+The agency is **directionally right to hold off on Target CPA, but wrong on the specifics**. "15 conversions in 30 days" is not a Google-enforced gate — you can flip Target CPA on today with zero conversion history, Google will not stop you. It's a _recommendation_, and even Google's own recommendation is usually stated as **~30 conversions/30 days for Target CPA**, not 15 — and ~50 is the number Google cites for **Target ROAS**, not for tCPA "working properly." It sounds like your agency has blended the two thresholds. That doesn't make their caution wrong, but it changes how urgently you should chase the number.
 
 ## Why the caution is still valid, even if the number's off
 
@@ -10,7 +10,7 @@ Target CPA is a machine-learning bid strategy: it needs enough conversion events
 
 - Current: ~$3,600/month spend → 9 conversions → ~$400 CPA (roughly matches your $370 figure).
 - To reach 15/month at the same efficiency: ~$6,000/month (~$200/day) — a ~65% budget increase, and that's optimistic since you're already buying the highest-intent traffic; marginal conversions from more budget typically cost more, not the same.
-- To reach 50/month: ~$20,000/month at current efficiency — over 5x your budget. For a niche B2B compliance buyer search volume, that ceiling may simply not exist — you could raise budget indefinitely and never get there because the *search demand itself* is capped, not your spend.
+- To reach 50/month: ~$20,000/month at current efficiency — over 5x your budget. For a niche B2B compliance buyer search volume, that ceiling may simply not exist — you could raise budget indefinitely and never get there because the _search demand itself_ is capped, not your spend.
 
 Worth explicitly checking with the agency: is 50/month even reachable via Search for this vertical, or are they quoting a generic Google benchmark without checking your addressable search volume?
 
@@ -20,7 +20,7 @@ Worth explicitly checking with the agency: is 50/month even reachable via Search
 
 2. **Consolidate conversion volume instead of fragmenting it.** If conversions are split across multiple campaigns/ad groups, each node individually has even less data than the 9/month total. Merge into fewer, tightly-themed campaigns so whichever bidding strategy you use has one denser pool to learn from.
 
-3. **Feed the algorithm secondary signals without corrupting your real KPI.** Set up secondary conversion actions (form starts, pricing-page views, content downloads, chat opens) as *secondary* (observation-only) conversions in Google Ads, keep "demo request" as the sole *primary* conversion driving bidding. This gives Smart Bidding more data points to correlate against without diluting what you're actually optimizing for.
+3. **Feed the algorithm secondary signals without corrupting your real KPI.** Set up secondary conversion actions (form starts, pricing-page views, content downloads, chat opens) as _secondary_ (observation-only) conversions in Google Ads, keep "demo request" as the sole _primary_ conversion driving bidding. This gives Smart Bidding more data points to correlate against without diluting what you're actually optimizing for.
 
 4. **Turn on Enhanced Conversions** if not already — improves match rate on the conversions you do have, which matters more when volume is thin.
 

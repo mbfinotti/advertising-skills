@@ -14,10 +14,13 @@ These four problems are one problem: **you're measuring impression, not evidence
 ## New loop: 3 stages, target 8 business days screen-to-offer
 
 ### Stage 1 — Recruiter screen (30 min, async-scheduled within 48h of applying)
+
 Logistics, comp range, availability, basic qualification. No scoring beyond pass/fail gate. Recruiter tells the candidate the full loop and timeline **up front** — what's coming, how long each step takes, when they'll hear back. Uncertainty about the process is itself a top driver of drop-off.
 
 ### Stage 2 — Work sample (async take-home, capped at 90 min, paid a flat $150 if not hired)
+
 Give a real (anonymized) or realistic account snapshot: search terms report, a client brief, and 2–3 months of performance data. Ask the candidate to:
+
 - Flag the 3 biggest issues they see
 - Propose a restructuring or optimization plan
 - Write the 5-line update they'd send the client that week
@@ -29,14 +32,15 @@ Score independently (see rubric below) by one PPC lead **before** that person ev
 ### Stage 3 — Two interviews, split by competency, same day if possible
 
 **3a. Technical/strategy interview (50 min, 1 PPC lead)**
-Walks the work sample live ("tell me why you'd cut that campaign"), plus 2–3 structured behavioral questions on budget ownership, testing discipline, and handling an underperforming account. Owns competencies: *Analytical judgment, Platform fluency, Ownership.*
+Walks the work sample live ("tell me why you'd cut that campaign"), plus 2–3 structured behavioral questions on budget ownership, testing discipline, and handling an underperforming account. Owns competencies: _Analytical judgment, Platform fluency, Ownership._
 
 **3b. Client/collaboration interview (40 min, 1 account lead or ops — not another PPC person)**
-Structured behavioral questions on client pushback, cross-team handoffs, giving bad news. Owns competencies: *Communication, Collaboration/culture-add.*
+Structured behavioral questions on client pushback, cross-team handoffs, giving bad news. Owns competencies: _Communication, Collaboration/culture-add._
 
 No overlap in what's being scored. Each interviewer only rates what they're positioned to actually observe.
 
 ### Stage 4 — Optional meet-the-team (30 min, finalists only, during business hours)
+
 Two-way conversation, unscored, no decision weight. Purpose is candidate experience and their questions — not evaluation. Kill the dinner: an evening meal filters for people with flexible evenings (excludes caregivers, second-jobbers, people who don't drink socially) and adds a full extra scheduling round-trip that's exactly where you're losing people. If you want a values read, that's already covered in 3b with a rubric attached, which a dinner never had.
 
 **Total candidate-facing rounds: 1 async task + 2 interviews (+1 optional unscored chat).** Down from 5 live synchronous rounds to 2.
@@ -45,19 +49,20 @@ Two-way conversation, unscored, no decision weight. Purpose is candidate experie
 
 ## Scoring: evidence before consensus
 
-**The core fix:** every interviewer submits a written, independent score **within 4 hours of their interview**, before seeing anyone else's notes or attending any group call. The calibration conversation happens *after* scores exist on paper — its job is to interrogate disagreement, not manufacture agreement.
+**The core fix:** every interviewer submits a written, independent score **within 4 hours of their interview**, before seeing anyone else's notes or attending any group call. The calibration conversation happens _after_ scores exist on paper — its job is to interrogate disagreement, not manufacture agreement.
 
 **Rubric — 5 competencies, each owned by exactly one interview stage:**
 
-| Competency | Scored in | 1 | 2 | 3 | 4 |
-|---|---|---|---|---|---|
-| Analytical judgment | Work sample | Missed obvious issues | Found surface issues only | Found root causes, reasonable plan | Found root causes + prioritized, quantified impact |
-| Platform fluency | Technical interview | Vague on mechanics | Knows basics | Fluent, cites specifics | Fluent + knows edge cases/workarounds |
-| Ownership/bias to action | Technical interview | Passive, waits for direction | Acts but doesn't own outcomes | Owns outcomes, has a process | Owns outcomes + proactively flags risk early |
-| Client communication | Client interview | Can't explain plainly | Explains but avoids hard news | Delivers hard news clearly | Delivers hard news + brings a solution |
-| Collaboration/culture-add | Client interview | Rigid, defensive to feedback | Cooperative | Adapts well, cites specific example | Adapts + actively improves how the team works |
+| Competency                | Scored in           | 1                            | 2                             | 3                                   | 4                                                  |
+| ------------------------- | ------------------- | ---------------------------- | ----------------------------- | ----------------------------------- | -------------------------------------------------- |
+| Analytical judgment       | Work sample         | Missed obvious issues        | Found surface issues only     | Found root causes, reasonable plan  | Found root causes + prioritized, quantified impact |
+| Platform fluency          | Technical interview | Vague on mechanics           | Knows basics                  | Fluent, cites specifics             | Fluent + knows edge cases/workarounds              |
+| Ownership/bias to action  | Technical interview | Passive, waits for direction | Acts but doesn't own outcomes | Owns outcomes, has a process        | Owns outcomes + proactively flags risk early       |
+| Client communication      | Client interview    | Can't explain plainly        | Explains but avoids hard news | Delivers hard news clearly          | Delivers hard news + brings a solution             |
+| Collaboration/culture-add | Client interview    | Rigid, defensive to feedback | Cooperative                   | Adapts well, cites specific example | Adapts + actively improves how the team works      |
 
 Rules:
+
 - **1–4 scale, not 1–10.** A 10-point "gut" scale invents precision nobody has. A behaviorally anchored 4-point scale forces the rater to justify the number with evidence, not a feeling.
 - **Every score requires one written sentence of evidence** citing what the candidate actually said or did. No evidence, no score — send it back.
 - **No interviewer sees another's score until they've submitted their own.**

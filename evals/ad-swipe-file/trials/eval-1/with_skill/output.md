@@ -6,14 +6,16 @@ Before setup, three parts of your plan need to change. They're not stylistic pre
 
 **1. Country filter: use EU, not US — even though you only sell in the US.**
 The EU Digital Services Act forces platforms to disclose, for EU-served ads only, run dates, targeting, and reach — fields every other country view hides. A US filter shows you the creative, nothing else. Run it in two passes per competitor:
-- **US filter** — confirms the actual creative/offer/landing page shown to *your* market (this is what you'll classify).
-- **EU filter, same advertiser** — mines start dates, variant breadth, and (on LinkedIn especially) audience targeting, *if* that competitor also runs any EU ads. Most VC-backed DTC coffee brands do run at least token EU/UK spend, so check before skipping it. If an advertiser genuinely has zero EU presence, mark `first_seen`/`last_seen` as `unknown` rather than guessing from the US view.
+
+- **US filter** — confirms the actual creative/offer/landing page shown to _your_ market (this is what you'll classify).
+- **EU filter, same advertiser** — mines start dates, variant breadth, and (on LinkedIn especially) audience targeting, _if_ that competitor also runs any EU ads. Most VC-backed DTC coffee brands do run at least token EU/UK spend, so check before skipping it. If an advertiser genuinely has zero EU presence, mark `first_seen`/`last_seen` as `unknown` rather than guessing from the US view.
 
 **2. Don't tag on first sight — collect 20–30 ads per competitor before classifying anything.**
-Classifying as you go anchors your taxonomy to whatever you saw first, and you'll rename categories halfway through. Pull the full batch per competitor into a raw, dated folder first, *then* run the classification pass in one sitting.
+Classifying as you go anchors your taxonomy to whatever you saw first, and you'll rename categories halfway through. Pull the full batch per competitor into a raw, dated folder first, _then_ run the classification pass in one sitting.
 
 **3. Drop the personal login. Public library only, always logged off.**
-This skill's hard guardrail: *"Never bypass authentication or scrape behind a login... the login wall is the dividing line."* Using a personal account to see ads a public library hides isn't a workaround, it's out of bounds — it creates contract-terms liability regardless of who's doing the clicking. If a competitor's ads are genuinely invisible on a given platform's public surface (geo-gated, not verified, etc.), that's a real coverage gap. Handle it by:
+This skill's hard guardrail: _"Never bypass authentication or scrape behind a login... the login wall is the dividing line."_ Using a personal account to see ads a public library hides isn't a workaround, it's out of bounds — it creates contract-terms liability regardless of who's doing the clicking. If a competitor's ads are genuinely invisible on a given platform's public surface (geo-gated, not verified, etc.), that's a real coverage gap. Handle it by:
+
 - Checking whether the platform has an official API instead of a login (preferred).
 - If not, **name the gap explicitly** in your source list as "unavailable — public surface has no coverage for [competitor] on [platform]" rather than working around it. That gap gets re-tested next session, not silently bypassed today.
 
@@ -21,7 +23,7 @@ This skill's hard guardrail: *"Never bypass authentication or scrape behind a lo
 
 The skill asks these before any collection starts — a few materially change the setup, so answer before your first pull:
 
-- **Tiering**: which ~3–5 of the 12 are *direct* competitors (same subscription mechanic, same price band)? Push back on classifying all 12 in one pass — start with the direct set, queue the rest.
+- **Tiering**: which ~3–5 of the 12 are _direct_ competitors (same subscription mechanic, same price band)? Push back on classifying all 12 in one pass — start with the direct set, queue the rest.
 - **Channels**: which paid channels actually matter (Meta, Google, TikTok, Pinterest)? This determines which transparency surfaces you touch.
 - **Spend tier**: sets your realistic win-rate expectation later (~4% at <$10K/mo vs ~8% at $1M+/mo).
 - **Decision at stake + deadline**: "start a swipe file today" — is this feeding a specific creative sprint, or is it the start of a standing weekly pulse? Changes whether today's session should end in hypotheses or just a populated file.
@@ -45,6 +47,7 @@ Keep each session's raw pull in a **dated folder per competitor**, separate from
 4. Only after that: classify.
 
 Known surface coverage (verify before asserting — drifts fast):
+
 - Meta Ad Library — broad, EU-rich, non-political ads vanish on pause.
 - Google Ads Transparency Center — verified advertisers only, ~1yr retention.
 - TikTok Commercial Content Library — EEA/UK/Switzerland only.

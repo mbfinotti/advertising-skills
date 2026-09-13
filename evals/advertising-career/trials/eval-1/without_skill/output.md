@@ -15,6 +15,7 @@ Three gaps between your source and your actual situation:
 ## What to actually anchor on
 
 Build your number from three inputs, not one survey:
+
 - **Your current base salary** + the realistic increase for a lateral-to-upward move (typically 10–20%, more if you're closing a scope gap).
 - **Live Manchester job postings** for equivalent titles (paid media, performance marketing, PPC — senior level) — these show what employers are actually budgeting, not just what current post-holders self-report.
 - **The specific scope of this role** — team size, budget under management, channels owned. A £2m media budget with 2 direct reports justifies a different number than a solo contributor role.
@@ -28,6 +29,7 @@ Don't lead with a bare number — frame it, then give the range, then open it ba
 > "Based on my research into paid media leadership roles in Manchester and my current package, I'm looking at a base in the region of **£X–£Y**, though I'd want to understand the full picture — bonus structure, benefits, and how the role's scope is defined — before pinning that down. What range has the business budgeted for this position?"
 
 Why this works:
+
 - **Anchors with a range, not a point** — harder to negotiate down, easier to defend.
 - **Cites your own research explicitly** — signals you've done your homework and aren't just guessing.
 - **Immediately asks total comp, not just base** — retail roles often have meaningful bonus/discount/benefits that change the real number.

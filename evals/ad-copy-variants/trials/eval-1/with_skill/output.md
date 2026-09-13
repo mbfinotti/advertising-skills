@@ -2,14 +2,14 @@
 
 The agency's 12 headlines are almost all one angle wearing different clothes — the phrase "accurate" (or a synonym) appears in 9 of the 12. Per the distinctness gate, headlines that make the identical argument are rewords, not variants: swap them and nothing breaks. I picked the 6 that actually test different arguments, not just different adjectives.
 
-| # | Headline | Angle | Awareness fit | Why it earns a slot |
-|---|---|---|---|---|
-| 1 | **"Know your cycle before it knows you"** | Identity / mastery | Problem-aware | Only headline that isn't a restatement of "accurate." Argument is personal foresight/control, not a product spec. |
-| 2 | **"Finally, cycle predictions you can trust"** | Pain (skepticism relief) | Problem-aware ✅ best awareness fit in the set | "Finally" names the reader's frustration with unreliable trackers before pitching the product — textbook PAS opener for problem-aware traffic. |
-| 3 | **"Trust your cycle predictions again"** | Pain (relapse/win-back) | Problem-aware | Close cousin of #2, but "again" targets someone who *specifically* got burned before — a real audience-level distinction, worth the cheap second wording. |
-| 4 | **"Predict your cycle with confidence"** | Outcome — emotional payoff | Problem-aware | The benefit here is peace of mind, not the accuracy stat itself. Distinct enough from the others to teach something about which payoff resonates. |
-| 5 | **"Cycle tracking that's actually accurate"** | Outcome + implicit comparison | Problem-aware | "Actually" quietly contrasts against every app that failed them, without naming a competitor or making an unsubstantiated superlative claim. |
-| 6 | **"Cycle predictions that don't miss"** | Outcome — colloquial register | Problem-aware | Same core claim as #4/#5 but a different voice (slangy, confident) — legitimate as a tone/formula test, cheapest slot to fill. |
+| #   | Headline                                       | Angle                         | Awareness fit                                  | Why it earns a slot                                                                                                                                       |
+| --- | ---------------------------------------------- | ----------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **"Know your cycle before it knows you"**      | Identity / mastery            | Problem-aware                                  | Only headline that isn't a restatement of "accurate." Argument is personal foresight/control, not a product spec.                                         |
+| 2   | **"Finally, cycle predictions you can trust"** | Pain (skepticism relief)      | Problem-aware ✅ best awareness fit in the set | "Finally" names the reader's frustration with unreliable trackers before pitching the product — textbook PAS opener for problem-aware traffic.            |
+| 3   | **"Trust your cycle predictions again"**       | Pain (relapse/win-back)       | Problem-aware                                  | Close cousin of #2, but "again" targets someone who _specifically_ got burned before — a real audience-level distinction, worth the cheap second wording. |
+| 4   | **"Predict your cycle with confidence"**       | Outcome — emotional payoff    | Problem-aware                                  | The benefit here is peace of mind, not the accuracy stat itself. Distinct enough from the others to teach something about which payoff resonates.         |
+| 5   | **"Cycle tracking that's actually accurate"**  | Outcome + implicit comparison | Problem-aware                                  | "Actually" quietly contrasts against every app that failed them, without naming a competitor or making an unsubstantiated superlative claim.              |
+| 6   | **"Cycle predictions that don't miss"**        | Outcome — colloquial register | Problem-aware                                  | Same core claim as #4/#5 but a different voice (slangy, confident) — legitimate as a tone/formula test, cheapest slot to fill.                            |
 
 ## Cut, and why
 

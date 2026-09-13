@@ -4,13 +4,13 @@
 
 Personal loans are a **credit** product. In the US, Meta requires **Special Ad Category** declaration for credit ads (mandatory since it's a financial product/service, required in the US since Jan 21, 2025). Once declared, Meta strips exactly the capabilities your plan depends on:
 
-| You planned | What Special Ad Category does to it |
-|---|---|
+| You planned                          | What Special Ad Category does to it                                                                                          |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
 | 1% lookalike from best-customer list | Lookalike audiences are disabled — replaced by a weaker, broader "Special Ad Audience" (seed-list based, no precise % match) |
-| 25–45 age targeting | Age locked to 18-65+ — no narrowing |
-| Specific high-income ZIP codes | ZIP-level precision removed — locked to a 15-mile minimum radius |
-| Exclude renters | Detailed-targeting exclusions removed entirely — can't exclude anyone by housing status |
-| (implicit) gender narrowing | Also removed |
+| 25–45 age targeting                  | Age locked to 18-65+ — no narrowing                                                                                          |
+| Specific high-income ZIP codes       | ZIP-level precision removed — locked to a 15-mile minimum radius                                                             |
+| Exclude renters                      | Detailed-targeting exclusions removed entirely — can't exclude anyone by housing status                                      |
+| (implicit) gender narrowing          | Also removed                                                                                                                 |
 
 So Meta isn't disqualified as a channel — but the audience-surgery plan is. If you build it as described, Meta will reject it at ad-set creation. Budget accordingly: Meta becomes a **broad-audience, creative-led** channel here, not a precision-targeting one. (Verified against Meta's advertising policies as of this reporting period — reconfirm on the current policy page before campaign build, since these rules shift.)
 
@@ -30,22 +30,22 @@ Lending economics don't map cleanly onto the skill's default AOV×margin math (r
 
 ## 2. Deleted channels
 
-| Family | Gate failed | Reason, dated 2026-09-12 |
-|---|---|---|
-| Retail media | Disqualifier | Not applicable — no marketplace shelf presence for a lending product |
-| B2B professional networks | Disqualifier | Consumer product, not B2B |
-| Connected TV | Affordability / effort | $50K+ direct or $5K+ DSP entry, $1,500–$15K production, a full quarter before a readable result — doesn't fit a $40K/month budget that also needs to fund search, or a first-campaign timeline |
-| Podcast/audio | Funding floor | ~$15K+ across 3+ shows to be measurable; would eat ~40% of total budget alone, starving search |
-| Short-form video | Capacity | No stated in-house video production capacity for a first campaign — revisit once search + social are validated and a creative pipeline exists |
+| Family                    | Gate failed            | Reason, dated 2026-09-12                                                                                                                                                                       |
+| ------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Retail media              | Disqualifier           | Not applicable — no marketplace shelf presence for a lending product                                                                                                                           |
+| B2B professional networks | Disqualifier           | Consumer product, not B2B                                                                                                                                                                      |
+| Connected TV              | Affordability / effort | $50K+ direct or $5K+ DSP entry, $1,500–$15K production, a full quarter before a readable result — doesn't fit a $40K/month budget that also needs to fund search, or a first-campaign timeline |
+| Podcast/audio             | Funding floor          | ~$15K+ across 3+ shows to be measurable; would eat ~40% of total budget alone, starving search                                                                                                 |
+| Short-form video          | Capacity               | No stated in-house video production capacity for a first campaign — revisit once search + social are validated and a creative pipeline exists                                                  |
 
 Personal-finance podcasts are a genuinely strong topical fit for this buyer (worth naming) — but they fail the funding-floor gate at this budget and don't meet the "concentrate, don't spread" rule for a first campaign. Reconsider as a second- or third-quarter add once search is proven and budget scales toward the ~$50K/month breakpoint.
 
 ## 3. Candidates ranked by value ÷ effort — survivors only
 
-| Rank | Family | Value (presence / reachability / reach / measurability) | Effort (creative burn / skill+coordination / reversibility) | Value ÷ Effort |
-|---|---|---|---|---|
-| 1 | Paid search | 17 (5/4/4/4) — huge existing search demand for "personal loan," "debt consolidation," etc.; Google's geo-targeting still works down to postal code, unlike Meta's stripped ZIP precision | 5 (1/3/1) — text + landing page, but finance-vertical compliance review (APR disclosures) adds setup weight | **3.4** |
-| 2 | Paid social (Meta), run broad | 13 (4/2/4/3) — reachability drops hard because the ICP (homeowner, 25-45, specific ZIPs, renter-excluded) is *not* expressible once Special Ad Category strips those tools | 9.5 (4/4/1.5) — first Meta campaign for the team, special-ad-category setup, and creative now has to do the audience-qualifying work targeting can't | **1.4** |
+| Rank | Family                        | Value (presence / reachability / reach / measurability)                                                                                                                                  | Effort (creative burn / skill+coordination / reversibility)                                                                                          | Value ÷ Effort |
+| ---- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| 1    | Paid search                   | 17 (5/4/4/4) — huge existing search demand for "personal loan," "debt consolidation," etc.; Google's geo-targeting still works down to postal code, unlike Meta's stripped ZIP precision | 5 (1/3/1) — text + landing page, but finance-vertical compliance review (APR disclosures) adds setup weight                                          | **3.4**        |
+| 2    | Paid social (Meta), run broad | 13 (4/2/4/3) — reachability drops hard because the ICP (homeowner, 25-45, specific ZIPs, renter-excluded) is _not_ expressible once Special Ad Category strips those tools               | 9.5 (4/4/1.5) — first Meta campaign for the team, special-ad-category setup, and creative now has to do the audience-qualifying work targeting can't | **1.4**        |
 
 Both survive affordability and funding-floor checks at $40K/month (see Section 5). No departure from the default B2C ordering (search > social) — the regulated category reinforces it rather than changing it, because it specifically weakens social's reachability score, not search's.
 

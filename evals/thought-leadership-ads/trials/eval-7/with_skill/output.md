@@ -5,7 +5,7 @@
 Both "yes" answers are the wrong kind of yes:
 
 - **Client's DM "go for it"** — informal, not per-post, not written. It's not a licence, has no term, no revocation mechanism, no usage-fee terms, no rights for you to keep running the ad if they go quiet or change their mind.
-- **Head of Advisory's platform click-approve** — that's the in-platform switch (revocable instantly, by them, at any time). It is explicitly *not* a commercial agreement. It says nothing about spend caps, who can edit the live post, or what happens if he leaves the firm (on LinkedIn, departure breaks eligibility — the ad turns off and the creative can't be re-hosted).
+- **Head of Advisory's platform click-approve** — that's the in-platform switch (revocable instantly, by them, at any time). It is explicitly _not_ a commercial agreement. It says nothing about spend caps, who can edit the live post, or what happens if he leaves the firm (on LinkedIn, departure breaks eligibility — the ad turns off and the creative can't be re-hosted).
 
 **Fix before launch:** a short written agreement per person — usage fee (if any), term (30/60/90 days), spend cap, who may edit the post, pause/revocation handling, disclosure obligations. For the client specifically, add licensed usage rights, since they're not an employee.
 
@@ -13,7 +13,7 @@ Both "yes" answers are the wrong kind of yes:
 
 You're a regulated UK/EU wealth-management platform, so neither post can go into paid distribution on approvals alone:
 
-- **Market commentary post**: this is investment-adjacent content from your Head of Advisory. It needs pre-publication compliance/financial-promotion sign-off *as an ad*, independent of his platform click. Ask your compliance function directly — this is a legal question, not a marketing one, and it should happen before ad spend, not after.
+- **Market commentary post**: this is investment-adjacent content from your Head of Advisory. It needs pre-publication compliance/financial-promotion sign-off _as an ad_, independent of his platform click. Ask your compliance function directly — this is a legal question, not a marketing one, and it should happen before ad spend, not after.
 - **Client testimonial**: an unprompted client endorsement of a wealth manager is itself the kind of content regulators have gone after (a 2024 enforcement action fined a firm $850k specifically over unsupervised endorsement posts). It needs the same review, plus a **partnership label** in addition to LinkedIn's paid-promotion label, since the client isn't an employee.
 - **Retention**: keep records of both the live post content and the ad creative at time of approval — you need to prove what was actually running if either post gets edited later.
 
@@ -59,7 +59,7 @@ You have exactly two featured people. One revocation, one departure, or one comp
 
 - **In-post tracked link on the client's post** — deleted for launch-next-week, not merely deprioritized: you have no written agreement and no confirmed willingness from the client to re-edit a post they wrote unprompted. Pinned comment is the live option; revisit the in-post edit once a licence is signed.
 - **Launching without compliance sign-off** — deleted outright given the regulatory exposure; this isn't a menu item, it's a stop condition.
-- **Judging success on reported CTR** — take it off the table now, in writing, before anyone builds a week-2 report around it. The largest published dataset found reported CTR *negatively* correlated with pipeline (rho = -0.170); judge on cost-per-landing-page-click and retargeting-pool growth instead.
+- **Judging success on reported CTR** — take it off the table now, in writing, before anyone builds a week-2 report around it. The largest published dataset found reported CTR _negatively_ correlated with pipeline (rho = -0.170); judge on cost-per-landing-page-click and retargeting-pool growth instead.
 
 ### Bottom line
 

@@ -16,14 +16,14 @@
 **Why not Z, and why to say no to your agency's urgency instinct**
 
 - "Book a demo this week — 20% off" assumes an in-market, single-decision-maker buyer making a fast call. You have a 9-month cycle with a buying committee and procurement. Nobody accelerates a $40k contract-tooling decision because of a LinkedIn countdown timer.
-- Manufactured urgency on a considered enterprise purchase reads as low-quality/desperate, especially to buyers evaluating a *contract management* tool — they are professionally trained to spot fake terms and pressure tactics. That's a credibility own-goal specific to this category.
+- Manufactured urgency on a considered enterprise purchase reads as low-quality/desperate, especially to buyers evaluating a _contract management_ tool — they are professionally trained to spot fake terms and pressure tactics. That's a credibility own-goal specific to this category.
 - A public blanket discount also creates downstream friction: sales now has to honor, explain, or walk back a term they didn't set.
 - Kill Z outright. Don't test it.
 
 **On the agency's two structural asks**
 
-1. *"Make the opening more urgent with limited-time offers"* — wrong tool for this funnel stage. Urgency/discounting is a short-cycle, low-consideration tactic; you're running long-cycle pipeline generation. Optimize the opening for relevance (does this person have the pain?), not for panic-clicking.
-2. *"Hold the logo to the end card so it doesn't look like an ad"* — this trades short-term CTR for weaker brand encoding, and brand encoding is exactly what a multi-quarter pipeline objective depends on. Distinctive brand assets (colour, wordmark, product UI) need early, repeated exposure to be learned — burying them until the end actively undercuts your stated goal. Keep the brand colour framing in the first 3 seconds like X already does; you don't need a full logo lockup immediately, but don't hide it either.
+1. _"Make the opening more urgent with limited-time offers"_ — wrong tool for this funnel stage. Urgency/discounting is a short-cycle, low-consideration tactic; you're running long-cycle pipeline generation. Optimize the opening for relevance (does this person have the pain?), not for panic-clicking.
+2. _"Hold the logo to the end card so it doesn't look like an ad"_ — this trades short-term CTR for weaker brand encoding, and brand encoding is exactly what a multi-quarter pipeline objective depends on. Distinctive brand assets (colour, wordmark, product UI) need early, repeated exposure to be learned — burying them until the end actively undercuts your stated goal. Keep the brand colour framing in the first 3 seconds like X already does; you don't need a full logo lockup immediately, but don't hide it either.
 
 **Test plan**
 

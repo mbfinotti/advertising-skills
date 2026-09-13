@@ -1,19 +1,19 @@
 ## Q2 Budget Allocation — $200,000 across 6 lines
 
-| Line | Q2 Budget | vs. Q1 |
-|---|---:|---|
-| Search | **$70,000** | flat |
-| LinkedIn | **$55,000** | flat |
-| Review-site listings | **$28,000** | flat |
-| Retargeting | **$24,000** | flat |
-| Niche-community sponsorship (new) | **$14,000** | new |
-| Podcast sponsorship (new) | **$9,000** | new |
-| Display prospecting | **$0** | killed |
-| **Total** | **$200,000** | |
+| Line                              |    Q2 Budget | vs. Q1 |
+| --------------------------------- | -----------: | ------ |
+| Search                            |  **$70,000** | flat   |
+| LinkedIn                          |  **$55,000** | flat   |
+| Review-site listings              |  **$28,000** | flat   |
+| Retargeting                       |  **$24,000** | flat   |
+| Niche-community sponsorship (new) |  **$14,000** | new    |
+| Podcast sponsorship (new)         |   **$9,000** | new    |
+| Display prospecting               |       **$0** | killed |
+| **Total**                         | **$200,000** |        |
 
 ### Why the four proven lines are held flat, not reallocated among themselves
 
-You gave me two hard signals in this data — a CPA outlier on display, and an attribution gap on search. You gave me zero comparative signal on LinkedIn, review-site listings, or retargeting (no CPA, no CRM revenue). Reallocating dollars *between* those three off of vibes would be exactly the kind of unsupported move a RevOps function shouldn't make. So they stay at last quarter's spend, and I fund the two new lines entirely from money freed up elsewhere — see below.
+You gave me two hard signals in this data — a CPA outlier on display, and an attribution gap on search. You gave me zero comparative signal on LinkedIn, review-site listings, or retargeting (no CPA, no CRM revenue). Reallocating dollars _between_ those three off of vibes would be exactly the kind of unsupported move a RevOps function shouldn't make. So they stay at last quarter's spend, and I fund the two new lines entirely from money freed up elsewhere — see below.
 
 ### Why search stays flat instead of scaling to the $310K number
 

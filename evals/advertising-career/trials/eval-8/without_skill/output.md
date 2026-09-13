@@ -15,7 +15,7 @@ Three of your four points are weak as written:
 
 **Pillar 1 — Scale, run reliably**
 "This year I managed [X in ad spend] across [X] accounts and 240+ live campaigns, with a 100% on-time launch record — zero missed deadlines. At that volume, reliability is itself a skill: [mention if you built any process, checklist, QA step, or tool that made this possible]."
-*→ Fill in spend, and ideally one performance number: blended ROAS, CPA trend, or revenue attributed to paid media this year.*
+_→ Fill in spend, and ideally one performance number: blended ROAS, CPA trend, or revenue attributed to paid media this year._
 
 **Pillar 2 — Already carrying senior-level scope**
 "When two teammates left in March, I absorbed their accounts with no ramp-up period and no drop in performance — [add: campaign count taken on / spend / any account that grew or held steady under your management]. That's not covering a gap temporarily; that's been the operating reality for [X months] now. I've effectively been doing a senior manager's scope of ownership since March."
@@ -29,6 +29,7 @@ Three of your four points are weak as written:
 ## Before the meeting
 
 Get these two numbers — without them, "240 campaigns" is the only concrete figure in the whole pitch, and it's the weakest one:
+
 1. Total spend or revenue you're accountable for.
 2. Any efficiency or growth metric (ROAS, CPA, conversion rate, YoY revenue) you can point to.
 

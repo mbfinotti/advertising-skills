@@ -1,51 +1,51 @@
 # Kestrel Shield — Campaign Consolidation Plan
 
-*(via `ad-campaign-consolidation` skill)*
+_(via `ad-campaign-consolidation` skill)_
 
 ## Headline answer first, because it's not what you asked for
 
 You asked how to combine 11 campaigns so the algorithms get enough data. The honest answer, from the arithmetic below: **consolidation alone will not get you there.** Even the best-case, fully-merged structure (one LinkedIn campaign + one Google campaign) still won't clear either platform's practical volume floor. At 6 demos/month, you don't have a structure problem you can merge your way out of — you have a volume problem, and merging is necessary but not sufficient.
 
-So the plan below leads with the move the skill this runs on calls `up-funnel`, normally ranked *last* for efficiency — promoted to first because your numbers trigger the one condition that overrides the default order.
+So the plan below leads with the move the skill this runs on calls `up-funnel`, normally ranked _last_ for efficiency — promoted to first because your numbers trigger the one condition that overrides the default order.
 
 ## The math that decides this
 
-| | |
-|---|---|
-| Total spend | $7,000/month |
-| Total conversions (demo requests) | ~6/month |
-| Campaigns | 11 |
-| **Current blended cost/demo** | **≈ $1,167** |
-| **Avg conversions per campaign** | **≈ 0.55/month** (one demo every ~2 months, per campaign) |
+|                                   |                                                           |
+| --------------------------------- | --------------------------------------------------------- |
+| Total spend                       | $7,000/month                                              |
+| Total conversions (demo requests) | ~6/month                                                  |
+| Campaigns                         | 11                                                        |
+| **Current blended cost/demo**     | **≈ $1,167**                                              |
+| **Avg conversions per campaign**  | **≈ 0.55/month** (one demo every ~2 months, per campaign) |
 
 Now the best case — full consolidation to 2 campaigns, one per platform, rough even split of spend:
 
-| | LinkedIn (merged) | Google Search (merged) |
-|---|---|---|
-| Est. monthly spend | ~$3,500 | ~$3,500 |
-| Est. monthly demos | ~3 | ~3 |
-| Platform's own benchmark | No documented conversion threshold; AJ Wilcox's practical floor is **$3-5K/month for usable data** | No hard tCPA gate documented (the "15-30 conversions/30 days" rule is Target *ROAS*-by-campaign-type folklore when misapplied to tCPA) — but the practitioner starting point for merging search into automated bidding is **~15-30 conversions/month** |
-| Verdict at merged scale | Sitting right at the *floor*, not past it | Still 5-10x under the practitioner benchmark |
+|                          | LinkedIn (merged)                                                                                  | Google Search (merged)                                                                                                                                                                                                                                 |
+| ------------------------ | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Est. monthly spend       | ~$3,500                                                                                            | ~$3,500                                                                                                                                                                                                                                                |
+| Est. monthly demos       | ~3                                                                                                 | ~3                                                                                                                                                                                                                                                     |
+| Platform's own benchmark | No documented conversion threshold; AJ Wilcox's practical floor is **$3-5K/month for usable data** | No hard tCPA gate documented (the "15-30 conversions/30 days" rule is Target _ROAS_-by-campaign-type folklore when misapplied to tCPA) — but the practitioner starting point for merging search into automated bidding is **~15-30 conversions/month** |
+| Verdict at merged scale  | Sitting right at the _floor_, not past it                                                          | Still 5-10x under the practitioner benchmark                                                                                                                                                                                                           |
 
-That's the trigger condition from the skill: *"the volume test shows that even the fully merged structure would not clear the platform's threshold."* When that's true, `up-funnel` gets promoted straight to first, ahead of `prune`. That's your situation.
+That's the trigger condition from the skill: _"the volume test shows that even the fully merged structure would not clear the platform's threshold."_ When that's true, `up-funnel` gets promoted straight to first, ahead of `prune`. That's your situation.
 
 ## Evidence Gate status ⚠️
 
 Before this becomes a fully numbered merge plan, a few things are missing — this is a real, named state ("insufficient evidence"), not me stalling:
 
-| Gate criterion | Status |
-|---|---|
-| Per-branch conversion/spend export | ❌ Not provided — I only have account totals |
-| Real target CPA from unit economics | ❌ Not provided — your current blended $1,167/demo is a *fact*, not a target |
-| Which of the 11 splits are deliberate vs. archaeological | ❌ Not provided |
-| LinkedIn vs. Google spend split | ❌ Not provided (assumed ~even above) |
-| Active cost spike or reactive panic right now | ❌ Unconfirmed |
-| Tracking/CRM owner available for an up-funnel proxy event | ❌ Unconfirmed |
-| Hard deadline / peak season | ❌ Unconfirmed |
+| Gate criterion                                            | Status                                                                       |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Per-branch conversion/spend export                        | ❌ Not provided — I only have account totals                                 |
+| Real target CPA from unit economics                       | ❌ Not provided — your current blended $1,167/demo is a _fact_, not a target |
+| Which of the 11 splits are deliberate vs. archaeological  | ❌ Not provided                                                              |
+| LinkedIn vs. Google spend split                           | ❌ Not provided (assumed ~even above)                                        |
+| Active cost spike or reactive panic right now             | ❌ Unconfirmed                                                               |
+| Tracking/CRM owner available for an up-funnel proxy event | ❌ Unconfirmed                                                               |
+| Hard deadline / peak season                               | ❌ Unconfirmed                                                               |
 
 None of this blocks the structural and up-funnel recommendations below — those follow from totals alone. It does block a precise per-branch classification table. Send me, per campaign/ad set: daily budget, bid strategy, optimization event, audience/keyword theme, and 30-60 day conversions, and I'll turn the table below into exact merge groups.
 
-One thing *is* already dispositive without an export: **100% of your branches are symptomatic** (every LinkedIn campaign, "terrible delivery"; every Google campaign, stuck in Learning). Normally I'd worry about restructuring reflexively mid-learning-phase — but nothing here is stable to begin with, so there's no stable baseline a merge would be resetting. This isn't a panic reflex; it's a chronic never-exits account. Restructuring is warranted, not premature.
+One thing _is_ already dispositive without an export: **100% of your branches are symptomatic** (every LinkedIn campaign, "terrible delivery"; every Google campaign, stuck in Learning). Normally I'd worry about restructuring reflexively mid-learning-phase — but nothing here is stable to begin with, so there's no stable baseline a merge would be resetting. This isn't a panic reflex; it's a chronic never-exits account. Restructuring is warranted, not premature.
 
 ## Recommended moves, in order
 
@@ -68,9 +68,9 @@ One thing *is* already dispositive without an export: **100% of your branches ar
 **4. Keep segmentation, lose the structure**
 
 - If those 11 campaigns encode persona or ICP-tier targeting (a common B2B pattern), don't preserve that as campaign splits. Move it into creative variants inside the merged campaigns — one variant per persona, same budget pool, let delivery match variant to viewer. Stacked narrow filters on thin B2B audiences are a big part of why delivery is "terrible" right now.
-- Exception: if you run account-based marketing against a named target-account list, that *does* need structural separation (guaranteed frequency), not a creative variant — tell me if that's the case.
+- Exception: if you run account-based marketing against a named target-account list, that _does_ need structural separation (guaranteed frequency), not a creative variant — tell me if that's the case.
 
-**5. What's explicitly *not* on the table**
+**5. What's explicitly _not_ on the table**
 
 - `big-bang` (whole-account rebuild at once) — ruled out. It relearns everything simultaneously and the outcome can't be attributed to anything. You have a 4-month sales cycle; you cannot afford to lose the ability to read what worked.
 

@@ -6,12 +6,12 @@
 
 ## Gates — status
 
-| Gate | Status |
-|---|---|
-| Affordability (payback) | Not run — no CAC/margin/retention supplied. Needed before any line gets more money, not just the event lines. |
-| Measurement maturity | Not scored. Given the justification offered is blended ROAS only, I'd guess this lands low — treat every number below as a directional proxy, not a measurement. |
-| Funding floor | Not checked, but a 40% blanket raise makes this moot — no line is being pushed toward its floor, so this gate isn't the risk here. |
-| **Data basis** | **Fails.** "Last year blended ROAS looked great" is a platform-reported, blended metric — the one input this process explicitly excludes from justifying a move. |
+| Gate                    | Status                                                                                                                                                           |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Affordability (payback) | Not run — no CAC/margin/retention supplied. Needed before any line gets more money, not just the event lines.                                                    |
+| Measurement maturity    | Not scored. Given the justification offered is blended ROAS only, I'd guess this lands low — treat every number below as a directional proxy, not a measurement. |
+| Funding floor           | Not checked, but a 40% blanket raise makes this moot — no line is being pushed toward its floor, so this gate isn't the risk here.                               |
+| **Data basis**          | **Fails.** "Last year blended ROAS looked great" is a platform-reported, blended metric — the one input this process explicitly excludes from justifying a move. |
 
 Total stays $450K — this respects the one hard rule that never bends (this skill splits a fixed pot; it doesn't raise it). That part of the mechanics is fine.
 
@@ -23,10 +23,10 @@ Total stays $450K — this respects the one hard rule that never bends (this ski
 A uniform percentage lift applied to every line regardless of its own headroom is the average-ROAS mistake wearing a seasonal costume: no campaign-level marginal evidence, no differentiation between a saturated line and one with headroom, and a step size (40%) that exceeds the default max (15–20%, never 30%+ without an explicit experiment frame) with none of the compensating structure — no per-line hypothesis, decision date, or rollback threshold. Some of those campaigns are plausibly already near saturation; feeding them 40% more buys expensive impressions, not incremental orders.
 
 **2. Pulling $60K forward and front-loading a demand spike**
-This is the textbook case the playbook cites Measured's Prime Day data for: brands that raised spend 17.4% into a known demand spike got a median 1.1% incremental revenue while *incremental* ROAS fell 14.3%; brands that held spend flat did better. The mechanism is the same here — during a high-intent event window, auctions get more competitive (everyone bids the sale), and a chunk of the extra spend rides demand that would have converted anyway rather than creating new demand. Planning it a week in advance doesn't fix this; the fix is sizing the event bump off marginal headroom per line, not a blanket raise, and pre-committing to a plan you don't chase mid-week if blended numbers "look good."
+This is the textbook case the playbook cites Measured's Prime Day data for: brands that raised spend 17.4% into a known demand spike got a median 1.1% incremental revenue while _incremental_ ROAS fell 14.3%; brands that held spend flat did better. The mechanism is the same here — during a high-intent event window, auctions get more competitive (everyone bids the sale), and a chunk of the extra spend rides demand that would have converted anyway rather than creating new demand. Planning it a week in advance doesn't fix this; the fix is sizing the event bump off marginal headroom per line, not a blanket raise, and pre-committing to a plan you don't chase mid-week if blended numbers "look good."
 
 **3. Shifting most prospecting budget into retargeting**
-This is the named failure mode "over-funding retargeting" verbatim: it inflates blended ROAS while starving the prospecting that refills the retargeting pool. The reasoning offered — "purchase intent will be sky-high, so retarget harder" — has it backwards for a sale event: intent is elevated across *new* visitors too (people actively shopping for deals, not just warm returning traffic), so prospecting is plausibly the higher-marginal line during the event, not the one to cut. Compounding the problem: gutting prospecting for two weeks starves the pool right when you also pulled December's budget forward — December retargeting will be running on a thinner pool with less money to fix it.
+This is the named failure mode "over-funding retargeting" verbatim: it inflates blended ROAS while starving the prospecting that refills the retargeting pool. The reasoning offered — "purchase intent will be sky-high, so retarget harder" — has it backwards for a sale event: intent is elevated across _new_ visitors too (people actively shopping for deals, not just warm returning traffic), so prospecting is plausibly the higher-marginal line during the event, not the one to cut. Compounding the problem: gutting prospecting for two weeks starves the pool right when you also pulled December's budget forward — December retargeting will be running on a thinner pool with less money to fix it.
 
 **4. The evidence itself**
 "Blended ROAS looked great last year" is precisely the metric this process bans as a basis for a move — platform-reported and blended overstate real return 1.75–2.97x, and a blended number rising when you shift into retargeting is close to guaranteed regardless of whether the shift created any incremental revenue: retargeting is disproportionately credited for conversions prospecting already set up. It's also consistent with last year's sale having pulled December demand into November rather than created new demand — the plan can't currently tell those apart.
@@ -52,7 +52,7 @@ $60K on a $450K quarterly budget is ~13% of the total moving in one step — abo
 - Current per-campaign spend and contribution margin (sets break-even ROAS and actual payback per line).
 - Penetration/impression-share data per campaign, to rank marginal headroom for the event bump.
 - Current prospecting/retargeting split in dollars, and pool refill rate (new-visitor volume feeding retargeting week over week).
-- What exactly last year's "similar" move consisted of, and whether *incremental* revenue (not blended ROAS) was ever measured for it.
+- What exactly last year's "similar" move consisted of, and whether _incremental_ revenue (not blended ROAS) was ever measured for it.
 - Which December lines specifically absorb the $60K pull, and their own headroom/saturation status.
 
 Send those and I'll turn this from a mechanics review into an actual line-by-line allocation plan with dollar amounts, rollback thresholds, and verification dates.

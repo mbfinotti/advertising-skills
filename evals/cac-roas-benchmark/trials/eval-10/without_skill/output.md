@@ -4,10 +4,10 @@
 
 ## What the data shows
 
-| Metric | Trend | Range | Read |
-|---|---|---|---|
-| CAC | 410 → 395 → 402 → 398 → 405 → 400 | $395–$410 (3.7% spread) | Flat. No drift up or down. |
-| MER | 3.1 → 3.2 → 3.1 → 3.15 → 3.1 → 3.1 | 3.1–3.2 (3% spread) | Flat. No drift up or down. |
+| Metric | Trend                              | Range                   | Read                       |
+| ------ | ---------------------------------- | ----------------------- | -------------------------- |
+| CAC    | 410 → 395 → 402 → 398 → 405 → 400  | $395–$410 (3.7% spread) | Flat. No drift up or down. |
+| MER    | 3.1 → 3.2 → 3.1 → 3.15 → 3.1 → 3.1 | 3.1–3.2 (3% spread)     | Flat. No drift up or down. |
 
 - Std dev on CAC is ~$5 (1.2% of mean) — that's noise, not a trend.
 - First-half vs second-half average: CAC $402 → $401, MER 3.13 → 3.12. No inflection either direction.
@@ -37,7 +37,7 @@ If you want a directional number to say out loud, not to defend:
 ## What to tell the exec team
 
 1. Spend is stable for 6 straight months — no efficiency crisis, no case for an emergency cut.
-2. We can't yet certify the spend is *profitable* — that requires contribution margin, which finance can't produce until next month.
+2. We can't yet certify the spend is _profitable_ — that requires contribution margin, which finance can't produce until next month.
 3. Directionally, using standard SaaS margin benchmarks (not our actuals), the math likely clears — best framed as "no red flag, pending confirmation," not "green light."
 4. Recommendation: hold spend flat through the audit. A flat trend gives no urgency to move budget either way before we have real numbers.
 

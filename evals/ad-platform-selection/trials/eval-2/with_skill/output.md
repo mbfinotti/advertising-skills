@@ -4,18 +4,18 @@
 
 ## 1. Economics
 
-| | |
-|---|---|
-| AOV | $42 |
-| Gross margin | 58% |
-| Contribution per sale | $24.36 |
-| Break-even ROAS (1 ÷ 0.58) | **1.72x** — not 4x |
-| Allowable CAC (first-order; no LTV/retention given) | **~$17** |
+|                                                     |                    |
+| --------------------------------------------------- | ------------------ |
+| AOV                                                 | $42                |
+| Gross margin                                        | 58%                |
+| Contribution per sale                               | $24.36             |
+| Break-even ROAS (1 ÷ 0.58)                          | **1.72x** — not 4x |
+| Allowable CAC (first-order; no LTV/retention given) | **~$17**           |
 
 Two corrections to the stated plan:
 
 - **4x ROAS is the wrong bar in both directions.** Break-even is 1.72x. A blended target should sit near AOV ÷ allowable CAC = 42/17 ≈ **2.5x ROAS (≈$17 CPA)**, not 4x — a 4x floor kills channels that are still profitable, and it isn't derived from anything in Kelpwild's actual economics.
-- **$17 is a thin ceiling**, thinner than either worked example in this framework. At that ceiling, most channel benchmarks below sit *above* it, which is the real problem with the five-way split — not which five channels were picked.
+- **$17 is a thin ceiling**, thinner than either worked example in this framework. At that ceiling, most channel benchmarks below sit _above_ it, which is the real problem with the five-way split — not which five channels were picked.
 
 **Open question that changes everything: is sunscreen a repeat purchase for you (subscription, seasonal reorder, multi-tube households)?** This plan uses first-order CAC because no retention data was given. If Kelpwild customers reorder even 2-3x/year, real allowable CAC is materially higher than $17 and several deleted/starved channels re-open. Get this number before locking budget.
 
@@ -23,18 +23,18 @@ Also unconfirmed and worth flagging before spend: primary geography (assumed US)
 
 ## 2. Deleted channels
 
-| Family | Gate failed | Specifics |
-|---|---|---|
+| Family           | Gate failed                                 | Specifics                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ---------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Streaming TV** | Affordability + funding floor + test design | $24 contribution can't clear $20-40 managed CPM plus $1,500-$15,000+ production. Even the cheapest self-serve tier's own guidance (~$165/day, ~$5,000/month) exceeds the proposed $2,400 — production alone would eat most of that budget before a single spot airs. On top of that, CTV needs a full quarter (production + incrementality build) before a readable result; a 2-week kill on this family is a guaranteed false negative, not a verdict. |
-| **Pinterest** | Not gateable | Doesn't map to a benchmarked family in this framework — it belongs in the deliberately-unranked price-discovery bucket (wide, unverified cost range, like native/discovery). Never fund it as one of several equal lanes on a first plan; it's a second-channel candidate *after* a small standalone price-discovery test returns a real number. |
+| **Pinterest**    | Not gateable                                | Doesn't map to a benchmarked family in this framework — it belongs in the deliberately-unranked price-discovery bucket (wide, unverified cost range, like native/discovery). Never fund it as one of several equal lanes on a first plan; it's a second-channel candidate _after_ a small standalone price-discovery test returns a real number.                                                                                                        |
 
 ## 3. Candidates ranked by value ÷ effort — survivors only
 
-| Rank | Family | Value (presence/reach/reachability/measurability) | Effort (burn/skill/reversibility) | Ratio |
-|---|---|---|---|---|
-| 1 | **Paid search** | 16/20 — precise intent, strong measurability, category search volume for "reef-safe sunscreen" plausible but unconfirmed | 4/15 — text + landing page, pausable in minutes | **4.0** |
-| 2 | Paid social (Meta) | 15/20 — DTC/skincare buyers demonstrably here | 8/15 — standing 8-15+ variant creative job | 1.9 |
-| 3 | Short-form video (TikTok) | 13/20 — weaker measurability, less precise targeting | 10/15 — heaviest creative burn, days-level fatigue | 1.3 |
+| Rank | Family                    | Value (presence/reach/reachability/measurability)                                                                        | Effort (burn/skill/reversibility)                  | Ratio   |
+| ---- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- | ------- |
+| 1    | **Paid search**           | 16/20 — precise intent, strong measurability, category search volume for "reef-safe sunscreen" plausible but unconfirmed | 4/15 — text + landing page, pausable in minutes    | **4.0** |
+| 2    | Paid social (Meta)        | 15/20 — DTC/skincare buyers demonstrably here                                                                            | 8/15 — standing 8-15+ variant creative job         | 1.9     |
+| 3    | Short-form video (TikTok) | 13/20 — weaker measurability, less precise targeting                                                                     | 10/15 — heaviest creative burn, days-level fatigue | 1.3     |
 
 No departure from the default ordering — nothing in what's known about Kelpwild (no confirmed in-house video team, no owned audience, no answers to Q15-17) earns a promotion against rank.
 

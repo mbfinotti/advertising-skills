@@ -4,7 +4,7 @@
 
 The literal ask — collapse all 11 ad sets into one campaign by Friday — fails the skill's Evidence Gate and shouldn't ship as written. Two independent rules both trip:
 
-- **Panic restructuring.** The account is mid cost-spike *and* 2 ad sets are inside the learning phase right now. Restructuring on top of that is a reflex, not a diagnosis — a second learning reset stacked on an unresolved first one almost always costs more than the spike itself.
+- **Panic restructuring.** The account is mid cost-spike _and_ 2 ad sets are inside the learning phase right now. Restructuring on top of that is a reflex, not a diagnosis — a second learning reset stacked on an unresolved first one almost always costs more than the spike itself.
 - **Big-bang is explicitly ruled out for live accounts.** Merging all 11 at once resets every branch's learning simultaneously. If CPA moves afterward — better or worse — you won't be able to attribute it to anything. You'd be handing the CEO a number with no explanation next month, which is worse than this month's problem.
 
 That doesn't mean "do nothing by Friday." It means the fast, real fix and "one campaign" are two different things — see **This week** below.
@@ -16,7 +16,7 @@ Before merging anything, isolate how much of the CPA jump is fragmentation vs. t
 - Editing bids on a live ad set is a learning-resetting edit. Two ad sets relearning simultaneously will run visibly worse for 3-7 days on their own — smaller reach, higher cost-per-result, more volatile delivery — and that alone inflates blended CPA even if the other 9 ad sets didn't move at all.
 - Your 10-day panic window is barely one attribution cycle. It's too short to tell "structural fragmentation" apart from "two ad sets mid-relearn skewing the blend," and Meta counts conversions with lag, so the most recent 1-3 days aren't even fully counted yet.
 
-**Before touching structure, get the split:** pull daily CPA for the 2 relearning ad sets vs. the other 9, for the full 10 days. If the spike is concentrated in the 2 that got bid edits, the story is "we caused a relearning dip," not "the account is fragmented" — and the fix is *stop editing, wait it out*, not *merge everything*.
+**Before touching structure, get the split:** pull daily CPA for the 2 relearning ad sets vs. the other 9, for the full 10 days. If the spike is concentrated in the 2 that got bid edits, the story is "we caused a relearning dip," not "the account is fragmented" — and the fix is _stop editing, wait it out_, not _merge everything_.
 
 ## This week (Friday-compatible, doesn't reset anything)
 
@@ -30,16 +30,16 @@ This is the actual "stop the bleeding" move — `prune`, rung 1 of the ladder. N
 
 Send these and I'll turn them into the classification table below. Per ad set, for the last 30 days (not just the last 10 — the panic window is too short to judge against):
 
-| Field | Why it matters |
-|---|---|
-| Ad set name, parent campaign | Confirms whether these 11 are already under 1 campaign or spread across several — changes the whole plan |
-| Daily spend | Feeds the budget-floor test |
-| Daily conversions on the event it actually optimizes to | Feeds the volume test — never a downstream event Meta doesn't see |
-| Daily CPA | Isolates which ad sets are actually driving the spike |
-| Optimization event, bid strategy, budget type (ABO/CBO) | Determines what "merge" even means here |
-| Audience definition | Needed for the overlap and preserve-rule checks |
-| Why it was split out (best guess is fine) | Separates deliberate splits from archaeology — this is the single most load-bearing answer in the whole plan |
-| Date of last significant edit | Confirms which ad sets are clean vs. mid-relearn |
+| Field                                                   | Why it matters                                                                                               |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Ad set name, parent campaign                            | Confirms whether these 11 are already under 1 campaign or spread across several — changes the whole plan     |
+| Daily spend                                             | Feeds the budget-floor test                                                                                  |
+| Daily conversions on the event it actually optimizes to | Feeds the volume test — never a downstream event Meta doesn't see                                            |
+| Daily CPA                                               | Isolates which ad sets are actually driving the spike                                                        |
+| Optimization event, bid strategy, budget type (ABO/CBO) | Determines what "merge" even means here                                                                      |
+| Audience definition                                     | Needed for the overlap and preserve-rule checks                                                              |
+| Why it was split out (best guess is fine)               | Separates deliberate splits from archaeology — this is the single most load-bearing answer in the whole plan |
+| Date of last significant edit                           | Confirms which ad sets are clean vs. mid-relearn                                                             |
 
 Also answer these — short, one-line answers are enough:
 
@@ -53,12 +53,12 @@ Also answer these — short, one-line answers are enough:
 
 Every ad set gets exactly one state — `merge`, `keep`, `keep but re-parent`, or `insufficient evidence`. The 2 relearning ad sets are `insufficient evidence` by default until they've run a clean, unedited 7-day window — judging them now, mid-reset, would misclassify them either way.
 
-| Ad set | 30-day conversions | Clears 50/7-day threshold? | Clears budget floor? | Preserve rule applies? | State |
-|---|---|---|---|---|---|
-| (the 2 relearning) | — | — | — | — | `insufficient evidence` — wait for clean window |
-| (other 9) | pending export | pending export | pending export | pending export | pending |
+| Ad set             | 30-day conversions | Clears 50/7-day threshold? | Clears budget floor? | Preserve rule applies? | State                                           |
+| ------------------ | ------------------ | -------------------------- | -------------------- | ---------------------- | ----------------------------------------------- |
+| (the 2 relearning) | —                  | —                          | —                    | —                      | `insufficient evidence` — wait for clean window |
+| (other 9)          | pending export     | pending export             | pending export       | pending export         | pending                                         |
 
-Budget floor per ad set: **daily budget ≈ target CPA × 50 ÷ 7**. At a $38 target that's ~$271/day minimum to realistically reach the exit threshold; at $81 it's ~$579/day. Any ad set funded below its floor is fragmented by *money*, independent of what its audience looks like — that's usually the cheapest thing to fix and often explains more of the spike than audience overlap does.
+Budget floor per ad set: **daily budget ≈ target CPA × 50 ÷ 7**. At a $38 target that's ~$271/day minimum to realistically reach the exit threshold; at $81 it's ~$579/day. Any ad set funded below its floor is fragmented by _money_, independent of what its audience looks like — that's usually the cheapest thing to fix and often explains more of the spike than audience overlap does.
 
 ## Preserve-rule check (run before merging anything)
 

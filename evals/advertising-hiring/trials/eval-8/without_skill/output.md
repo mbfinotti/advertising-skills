@@ -4,14 +4,15 @@
 
 For a **Series B, US-remote, ~7 YOE performance marketer** (individual-contributor/senior-manager level running paid media):
 
-| Component | Range |
-|---|---|
-| Base salary | **$110k–$150k** |
-| Bonus (if any) | 0–10% of base (less common at this stage than at enterprise) |
-| Equity | Meaningful at Series B — often the difference vs. in-house offers |
-| **Total comp** | **~$130k–$175k** |
+| Component      | Range                                                             |
+| -------------- | ----------------------------------------------------------------- |
+| Base salary    | **$110k–$150k**                                                   |
+| Bonus (if any) | 0–10% of base (less common at this stage than at enterprise)      |
+| Equity         | Meaningful at Series B — often the difference vs. in-house offers |
+| **Total comp** | **~$130k–$175k**                                                  |
 
 Notes:
+
 - Series B budgets typically land **below big-tech/enterprise in-house** on base, offset by equity — don't try to match $170k base with cash alone unless the role is scoped as a lead/head-of-paid-media.
 - If this hire is expected to own strategy/budget ownership at a "Director, Performance Marketing" level rather than execution, push the range to **$150k–$190k total comp**.
 - US-remote slightly compresses vs. SF/NYC-anchored bands but 7 YOE performance marketing talent is in high demand — don't lowball on a geo-adjustment.

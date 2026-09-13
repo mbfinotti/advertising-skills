@@ -6,7 +6,7 @@ Meta's Custom Audience matching only works if your hash is **bit-for-bit identic
 
 ## Secondary issues (real, but smaller than the salt)
 
-- **Email normalization**: Meta requires lowercase + trimmed whitespace *before* hashing. Mixed case and trailing spaces, hashed as-is, produce a different hash than Meta's normalized version — each one an independent way to fail the match, stacking with the salt problem.
+- **Email normalization**: Meta requires lowercase + trimmed whitespace _before_ hashing. Mixed case and trailing spaces, hashed as-is, produce a different hash than Meta's normalized version — each one an independent way to fail the match, stacking with the salt problem.
 - **Phone format**: `+44 07911 123456` is wrong on two counts — spaces must be stripped, and the UK trunk `0` must be dropped after the country code (Meta wants digits only, e.g. `447911123456`). Uploaded as-is, phone match rate is near 0% too.
 - **Data staleness**: ~1/3 of rows from 2021–2022. People change emails/phones and Facebook accounts lapse, so match rate naturally decays with age — but this typically costs you single-digit-to-teens percentage points, not the ~90 points you're missing.
 
@@ -19,7 +19,7 @@ Buying enrichment now would mean paying to improve contact data that's never rea
 3. **Re-test on a small sample** (500–1,000 rows) before re-running all 22,000, to confirm match rate jumps into a normal range (typically 40–65% for reasonably fresh B2C lists with email+phone; lower end of that if a third of rows are 2–3 years stale).
 4. **Add more identifier columns if you have them** — first name, last name, city, state, zip, DOB, gender. Meta does combinatorial matching across all supplied keys, and each additional correctly-normalized key raises match rate independently of email/phone.
 
-Only revisit enrichment (appending updated emails/phones to the 2021–2022 rows) *after* the hashing fix, and only if match rate on that stale cohort specifically is still weak — at that point it's solving an actual data-recency gap, not masking a broken pipeline.
+Only revisit enrichment (appending updated emails/phones to the 2021–2022 rows) _after_ the hashing fix, and only if match rate on that stale cohort specifically is still weak — at that point it's solving an actual data-recency gap, not masking a broken pipeline.
 
 ## How to frame this with your security team
 

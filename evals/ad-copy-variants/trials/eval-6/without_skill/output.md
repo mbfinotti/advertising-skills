@@ -13,7 +13,7 @@ If you write 8 more variants of "free consult" and put them in front of the same
 
 ## Two ways to actually use this insight
 
-**Option A — make the promise real.** If "plant doctor" resonates this hard, it's a signal to *add* something like a "free care consult with every box" or "text a plant doctor anytime" perk to the subscription and land people on a page that says so. Then the CTR win becomes a conversion win too.
+**Option A — make the promise real.** If "plant doctor" resonates this hard, it's a signal to _add_ something like a "free care consult with every box" or "text a plant doctor anytime" perk to the subscription and land people on a page that says so. Then the CTR win becomes a conversion win too.
 
 **Option B — keep the resonance, drop the overpromise.** Reframe headlines around expertise/care-guarantee language that's actually true of the box you're selling today, so the ad and the landing page tell the same story.
 

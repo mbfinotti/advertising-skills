@@ -14,12 +14,12 @@ This is foundational and unconditional: do it regardless of the pairwise numbers
 
 ### Step 1 — the four pairs, by band
 
-| Pair | Overlap | Band | Action |
-|---|---|---|---|
-| Lookalike vs interest | 8% | Under 10% | **Ignore.** No action. These are functioning as genuinely separate audiences. |
-| Interest vs behavioral in-market | 24% | 10–30% | **Monitor.** No action now. Track it at your next overlap audit (before any new tier launch, or the weekly check during testing). |
-| Lookalike vs behavioral in-market | 38% | 30–50% | **Act — exclude, don't merge.** |
-| Behavioral in-market vs broad prospecting | 56% | Over 50% | **Merge.** |
+| Pair                                      | Overlap | Band      | Action                                                                                                                            |
+| ----------------------------------------- | ------- | --------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Lookalike vs interest                     | 8%      | Under 10% | **Ignore.** No action. These are functioning as genuinely separate audiences.                                                     |
+| Interest vs behavioral in-market          | 24%     | 10–30%    | **Monitor.** No action now. Track it at your next overlap audit (before any new tier launch, or the weekly check during testing). |
+| Lookalike vs behavioral in-market         | 38%     | 30–50%    | **Act — exclude, don't merge.**                                                                                                   |
+| Behavioral in-market vs broad prospecting | 56%     | Over 50%  | **Merge.**                                                                                                                        |
 
 **Lookalike vs behavioral (38%):** the 30–50% band's rule is "add an exclusion > consolidate" — exclusion is an hour of reversible work, consolidation destroys the read your test budget is paying for. Lookalike outranks behavioral in the tier model's efficiency order, so exclude the lookalike audience out of the behavioral ad set (higher-intent tier excluded from the lower-intent one), not the reverse. Only escalate to a merge if, after the exclusion, either ad set's post-exclusion size falls near its platform or budget floor — check that before finalizing, don't assume it.
 
@@ -28,7 +28,7 @@ This is foundational and unconditional: do it regardless of the pairwise numbers
 ### Order of execution
 
 1. **Exclusion matrix (Step 0)** — do this first, always. It's cheap, foundational, and changes what the pairwise numbers below actually mean.
-2. **Lookalike vs behavioral exclusion (38%)** — do this before the merge decision. It changes behavioral's audience composition, which can shift the behavioral-vs-broad overlap number. Re-measure behavioral vs broad *after* this exclusion lands, before committing to the merge.
+2. **Lookalike vs behavioral exclusion (38%)** — do this before the merge decision. It changes behavioral's audience composition, which can shift the behavioral-vs-broad overlap number. Re-measure behavioral vs broad _after_ this exclusion lands, before committing to the merge.
 3. **Behavioral vs broad merge (56%)** — execute last, using the re-measured overlap and current cost-per-result data to pick the survivor.
 4. **Interest vs behavioral (24%)** and **lookalike vs interest (8%)** — no action, no ordering priority. Just don't touch them.
 

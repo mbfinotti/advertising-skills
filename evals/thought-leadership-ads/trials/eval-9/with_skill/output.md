@@ -1,10 +1,10 @@
 ## Short answer to both questions
 
-**No, you don't wait quarters.** The playbook you read describes LinkedIn Thought Leader Ads specifically. That product structurally cannot carry a conversion objective — no lead form, no purchase objective, no link in the ad itself. That's *why* it needs a trust-layer-then-retarget sequence and a multi-quarter pipeline verdict: there's no other way to measure it.
+**No, you don't wait quarters.** The playbook you read describes LinkedIn Thought Leader Ads specifically. That product structurally cannot carry a conversion objective — no lead form, no purchase objective, no link in the ad itself. That's _why_ it needs a trust-layer-then-retarget sequence and a multi-quarter pipeline verdict: there's no other way to measure it.
 
 Lucia's videos live on TikTok/Instagram. Spark Ads (TikTok) and Partnership Ads (Meta) are a different product with the full objective set, including conversions/purchase, and the advertiser controls the CTA and destination. For a $42 AOV DTC brand, this collapses to a single direct-response campaign from day one — no forced trust layer, no structural handoff, no CTR taboo (the CTR warning is about an engagement-objective denominator that doesn't exist on a conversion campaign). Judge it on pixel CPA/ROAS on a short window, same as any other paid social channel.
 
-**Rights: treat her as a licensor, not an approver with a click-button.** A platform authorization code is not a commercial agreement, and "contractor" cuts against you here specifically: for an employee, work made in the course of employment is normally the company's by default; for a contractor, copyright defaults to *her* unless a written agreement assigns or licenses it. Absent that, she owns the videos and can pull authorization any time. Fix it with a written agreement before you spend another dollar amplifying her content — details below.
+**Rights: treat her as a licensor, not an approver with a click-button.** A platform authorization code is not a commercial agreement, and "contractor" cuts against you here specifically: for an employee, work made in the course of employment is normally the company's by default; for a contractor, copyright defaults to _her_ unless a written agreement assigns or licenses it. Absent that, she owns the videos and can pull authorization any time. Fix it with a written agreement before you spend another dollar amplifying her content — details below.
 
 ---
 
@@ -15,7 +15,7 @@ Lucia's videos live on TikTok/Instagram. Spark Ads (TikTok) and Partnership Ads 
 ### 1. Roster and consent
 
 - **Roster: Lucia only, for now.** Flag as a single-person program — the skill's governance rule applies regardless of platform: one revocation, dispute, or departure ends the whole thing. Mitigate over time by adding a second creator or UGC customer once one exists; don't block launch on it.
-- **Consent required per video, in writing, before spend** — not "she'll probably say yes," not a hallway nod. TikTok's authorization code and Meta's partnership code are the *technical* mechanism, not the *commercial* agreement.
+- **Consent required per video, in writing, before spend** — not "she'll probably say yes," not a hallway nod. TikTok's authorization code and Meta's partnership code are the _technical_ mechanism, not the _commercial_ agreement.
 
 ### 2. The rights problem — what "contractor" actually changes
 

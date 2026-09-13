@@ -6,14 +6,14 @@ Meta's ad-set learning threshold is ~50 optimization events/week. Budget floor p
 
 At your $42 CPA that floor is **$300/day per ad set**. Your six ad sets:
 
-| Ad set | Budget/day | Conversions/week *at target CPA* | vs. $300/day floor |
-|---|---|---|---|
-| Cast iron enthusiasts | $25 | ~4.2 | 8% funded |
-| Home chefs | $25 | ~4.2 | 8% funded |
-| Cooking show viewers | $20 | ~3.3 | 7% funded |
-| Wedding registry | $20 | ~3.3 | 7% funded |
-| 2% lookalike | $20 | ~3.3 | 7% funded |
-| Competitor brand fans | $10 | ~1.7 | 3% funded |
+| Ad set                | Budget/day | Conversions/week _at target CPA_ | vs. $300/day floor |
+| --------------------- | ---------- | -------------------------------- | ------------------ |
+| Cast iron enthusiasts | $25        | ~4.2                             | 8% funded          |
+| Home chefs            | $25        | ~4.2                             | 8% funded          |
+| Cooking show viewers  | $20        | ~3.3                             | 7% funded          |
+| Wedding registry      | $20        | ~3.3                             | 7% funded          |
+| 2% lookalike          | $20        | ~3.3                             | 7% funded          |
+| Competitor brand fans | $10        | ~1.7                             | 3% funded          |
 
 None gets close. This isn't fixable by reshuffling the split — even if you collapsed **all $120/day into one ad set**, that's still only 40% of the $300/day floor a $42 CPA needs. At this budget/CPA combination, the account will run "learning limited" almost regardless of structure. That's a budget-vs-CPA mismatch, not just a segmentation mistake — worth knowing before you fix the split.
 
@@ -37,14 +37,14 @@ Open question I can't answer without more info: do you have pixel traffic and a 
 
 Fix order for underfunded tiers, in order of effort: merge upward > cheaper proxy event > cut. Applied here:
 
-| Tier | What | Budget/day | Why |
-|---|---|---|---|
-| Retargeting | Site visitors / cart abandoners (up to 180 days) | ~$15–20 | New. Highest intent, cheapest to run, near-zero setup if pixel exists. |
-| First-party custom | Customer list, if one exists (email/orders) | fold into retargeting spend or keep tiny/near-free | New. Also seeds a better lookalike than a generic one. |
-| Consolidated interest prospecting | Merge "cast iron enthusiasts" + "home chefs" + "cooking show viewers" into **one** ad set, stacked as detailed-targeting suggestions | ~$55–65 | These are all attribute signals on the same core ICP (people who cook/buy cookware) — Meta doesn't reward splitting near-identical interests into separate learning pools, since detailed targeting already gets treated as a soft suggestion, not a hard filter. Three ad sets buying the same audience three times just triples your distance from the learning floor for no precision gained. |
-| 2% lookalike | Keep, but verify seed ≥1,000 (ideally an actual customer list, not a guess) | ~$25–30 | Verify seed quality — this is `lookalike-audience-seeds` territory (mbfinotti/advertising-skills@lookalike-audience-seeds), not this skill's job. |
-| Wedding registry | Keep *only if* you have evidence (past sales data) that gift-occasion buyers convert differently from self-purchasers — otherwise fold into the interest stack as a life-event layer | $0 or small | It's a genuinely different signal (occasion, not attribute) if real, but "6 different ad sets" is a persona list, not evidence any of them behaves differently in your funnel. Name the source if you're keeping it separate. |
-| Competitor brand fans | Cut as a standalone ad set | $0 | 900 people can't be funded to significance at any split of $120/day. If you want it at all, add it as one more detailed-targeting layer inside the interest stack — costs nothing extra, no dedicated learning pool wasted on it. |
+| Tier                              | What                                                                                                                                                                                 | Budget/day                                         | Why                                                                                                                                                                                                                                                                                                                                                                                              |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Retargeting                       | Site visitors / cart abandoners (up to 180 days)                                                                                                                                     | ~$15–20                                            | New. Highest intent, cheapest to run, near-zero setup if pixel exists.                                                                                                                                                                                                                                                                                                                           |
+| First-party custom                | Customer list, if one exists (email/orders)                                                                                                                                          | fold into retargeting spend or keep tiny/near-free | New. Also seeds a better lookalike than a generic one.                                                                                                                                                                                                                                                                                                                                           |
+| Consolidated interest prospecting | Merge "cast iron enthusiasts" + "home chefs" + "cooking show viewers" into **one** ad set, stacked as detailed-targeting suggestions                                                 | ~$55–65                                            | These are all attribute signals on the same core ICP (people who cook/buy cookware) — Meta doesn't reward splitting near-identical interests into separate learning pools, since detailed targeting already gets treated as a soft suggestion, not a hard filter. Three ad sets buying the same audience three times just triples your distance from the learning floor for no precision gained. |
+| 2% lookalike                      | Keep, but verify seed ≥1,000 (ideally an actual customer list, not a guess)                                                                                                          | ~$25–30                                            | Verify seed quality — this is `lookalike-audience-seeds` territory (mbfinotti/advertising-skills@lookalike-audience-seeds), not this skill's job.                                                                                                                                                                                                                                                |
+| Wedding registry                  | Keep _only if_ you have evidence (past sales data) that gift-occasion buyers convert differently from self-purchasers — otherwise fold into the interest stack as a life-event layer | $0 or small                                        | It's a genuinely different signal (occasion, not attribute) if real, but "6 different ad sets" is a persona list, not evidence any of them behaves differently in your funnel. Name the source if you're keeping it separate.                                                                                                                                                                    |
+| Competitor brand fans             | Cut as a standalone ad set                                                                                                                                                           | $0                                                 | 900 people can't be funded to significance at any split of $120/day. If you want it at all, add it as one more detailed-targeting layer inside the interest stack — costs nothing extra, no dedicated learning pool wasted on it.                                                                                                                                                                |
 
 Roughly: $15–20 retargeting / ~$60 prospecting-interest / ~$25–30 lookalike. Skews prospecting-heavy, which is right for a launch-stage account (80–90% prospecting is standard here, not the 70–80% steady-state default) — but this still won't clear the $300/day floor. Treat this as the best structure available at $120/day, not a structure that will exit learning cleanly. Two honest paths from here, not mutually exclusive:
 
@@ -52,6 +52,7 @@ Roughly: $15–20 retargeting / ~$60 prospecting-interest / ~$25–30 lookalike.
 2. **Optimize to a cheaper upstream event** temporarily (e.g. Add to Cart or Checkout Initiated instead of Purchase) to get ad sets out of "learning limited" faster, then switch back to Purchase once volume builds — accepting a softer proxy metric in the meantime that you reconcile against actual CPA afterward.
 
 ### Before launch
+
 - Build the exclusion matrix: retargeting/customer-list pool excluded from lookalike and prospecting; existing customers and employees excluded everywhere. None of this exists in the current plan.
 - Audit overlap between the lookalike and the consolidated interest stack once both are live — a 2% lookalike seeded from converters will likely share real overlap with "people who cook," and >30% overlap between funded tiers should trigger an exclusion, not coexistence.
 - No regulated-category flags here (cookware isn't a Special Ad Category), so no restricted-targeting mode to plan around.

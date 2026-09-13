@@ -6,9 +6,9 @@ No context artifact exists in this project, so this is a cold start. The routing
 
 Don't run the three fixes. **Ship none of the three (new creative batch, tracking rebuild, page rollback) this sprint until the diagnostic returns a verdict.**
 
-Here's why: your three team members aren't disagreeing about the fix, they're disagreeing about the diagnosis — and they've each independently named the layer they personally own. That's not evidence, that's priors. If you run all three in parallel and CPA recovers, you will never know which one worked, so the next time CPA drifts you're back to three guesses instead of a method. If you run all three and CPA *doesn't* fully recover, you won't know which fixes to keep and which to revert. Worse, two of the three changes (new creative + a page rollback) landing in the same window as a tracking rebuild means any read you take afterward is confounded by construction — exactly the kind of multi-variable mess `ad-account-diagnostic` exists to cut through instead of add to.
+Here's why: your three team members aren't disagreeing about the fix, they're disagreeing about the diagnosis — and they've each independently named the layer they personally own. That's not evidence, that's priors. If you run all three in parallel and CPA recovers, you will never know which one worked, so the next time CPA drifts you're back to three guesses instead of a method. If you run all three and CPA _doesn't_ fully recover, you won't know which fixes to keep and which to revert. Worse, two of the three changes (new creative + a page rollback) landing in the same window as a tracking rebuild means any read you take afterward is confounded by construction — exactly the kind of multi-variable mess `ad-account-diagnostic` exists to cut through instead of add to.
 
-`ad-account-diagnostic` implements nothing itself. It runs on the data you already have (spend, CPA trend, platform-vs-backend conversion counts, creative frequency/CPM, landing-page conversion rate — all segmented around the site-rebuild date) and localizes which layer actually broke, in a fixed check order: measurement first, because if the pixel is genuinely double-firing, every other number you're reading — creative frequency, page conversion rate, the CPA figure itself — is corrupted and any conclusion drawn from it is noise. Note the direction isn't obvious either: a double-fire that duplicates purchase events would typically *lower* reported CPA (double-counted conversions), not raise it to $190 — which is itself a reason to verify rather than accept the dev's theory on priors, same as the other two.
+`ad-account-diagnostic` implements nothing itself. It runs on the data you already have (spend, CPA trend, platform-vs-backend conversion counts, creative frequency/CPM, landing-page conversion rate — all segmented around the site-rebuild date) and localizes which layer actually broke, in a fixed check order: measurement first, because if the pixel is genuinely double-firing, every other number you're reading — creative frequency, page conversion rate, the CPA figure itself — is corrupted and any conclusion drawn from it is noise. Note the direction isn't obvious either: a double-fire that duplicates purchase events would typically _lower_ reported CPA (double-counted conversions), not raise it to $190 — which is itself a reason to verify rather than accept the dev's theory on priors, same as the other two.
 
 ## Conditional chain (dependency order — nothing here is optional or parallel)
 
@@ -33,14 +33,14 @@ The diagnostic can also name more than one layer at once (a rebuild is exactly t
 
 ## Short-list (value ÷ effort, highest first)
 
-| # | Skill | Bottleneck it attacks | Session cost |
-|---|---|---|---|
-| 1 | `mbfinotti/advertising-skills@ad-account-diagnostic` | Which layer actually broke, instead of three competing opinions | One session, data already in hand, implements nothing |
-| 2 | `mbfinotti/advertising-skills@cac-roas-benchmark` | Whether $190 CPA is "bad" against your own break-even/history, not just "up" | Hours, same data pull as #1 |
-| 3 | `mbfinotti/advertising-skills@ad-conversion-tracking` *(conditional)* | Confirms or kills the double-fire theory with a real GO/NO-GO instead of a hunch | Hours, mostly the dev's |
-| 4 | `mbfinotti/advertising-skills@ad-creative-fatigue` *(conditional)* | Genuine wear-out vs. a confounder the media buyer isn't accounting for | One session, no production yet |
-| 5 | `mbfinotti/advertising-skills@paid-landing-page-audit` *(conditional)* | Turns "I think the redesign killed it" into a prioritized, evidenced fix list | One session; page owner sets the pace |
-| 6 | `mbfinotti/advertising-skills@ad-spend-guardrails` | No kill-switch stopped a 137% CPA drift from running three full weeks unflagged | A session + sign-off, once the fire is out |
+| #   | Skill                                                                  | Bottleneck it attacks                                                            | Session cost                                          |
+| --- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| 1   | `mbfinotti/advertising-skills@ad-account-diagnostic`                   | Which layer actually broke, instead of three competing opinions                  | One session, data already in hand, implements nothing |
+| 2   | `mbfinotti/advertising-skills@cac-roas-benchmark`                      | Whether $190 CPA is "bad" against your own break-even/history, not just "up"     | Hours, same data pull as #1                           |
+| 3   | `mbfinotti/advertising-skills@ad-conversion-tracking` _(conditional)_  | Confirms or kills the double-fire theory with a real GO/NO-GO instead of a hunch | Hours, mostly the dev's                               |
+| 4   | `mbfinotti/advertising-skills@ad-creative-fatigue` _(conditional)_     | Genuine wear-out vs. a confounder the media buyer isn't accounting for           | One session, no production yet                        |
+| 5   | `mbfinotti/advertising-skills@paid-landing-page-audit` _(conditional)_ | Turns "I think the redesign killed it" into a prioritized, evidenced fix list    | One session; page owner sets the pace                 |
+| 6   | `mbfinotti/advertising-skills@ad-spend-guardrails`                     | No kill-switch stopped a 137% CPA drift from running three full weeks unflagged  | A session + sign-off, once the fire is out            |
 
 Ranking note: with the conversion source of truth actively disputed, measurement stays pinned above diagnosis by the collection's own default — but here the diagnostic itself checks measurement first, so #1 and #3 aren't competing, #3 is what #1 triggers if it confirms the tracking theory.
 
@@ -52,7 +52,7 @@ Ranking note: with the conversion source of truth actively disputed, measurement
 
 ## Gap
 
-None in-scope is missing here, but worth naming: once the diagnostic and the named-layer skill produce a fix list, this collection has no skill for *implementing* it (writing the tracking fix, editing the landing page, producing the creative asset) — that execution stays with your dev, page owner, and media buyer respectively.
+None in-scope is missing here, but worth naming: once the diagnostic and the named-layer skill produce a fix list, this collection has no skill for _implementing_ it (writing the tracking fix, editing the landing page, producing the creative asset) — that execution stays with your dev, page owner, and media buyer respectively.
 
 ## Context artifact (bootstrapping `advertising-context.md`)
 

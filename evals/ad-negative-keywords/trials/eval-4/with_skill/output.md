@@ -1,6 +1,6 @@
 ## Diagnosis: the new "project management" negative is blocking your own core ad group
 
-**Root cause:** the account-level phrase negative `project management` your new hire added conflicts with Novapoint's own core non-brand keywords. Since your core ad group is project-management software, its keywords almost certainly contain the phrase "project management" (e.g. *project management software*, *project management tool*, *best project management app*). A phrase negative blocks the words in that order with anything around them — so it silently blocks every query your own core keywords are supposed to match.
+**Root cause:** the account-level phrase negative `project management` your new hire added conflicts with Novapoint's own core non-brand keywords. Since your core ad group is project-management software, its keywords almost certainly contain the phrase "project management" (e.g. _project management software_, _project management tool_, _best project management app_). A phrase negative blocks the words in that order with anything around them — so it silently blocks every query your own core keywords are supposed to match.
 
 This is a known failure mode for this exact action (killing "how-to"/informational search terms with a bare `project management` negative) — it's flagged as the canonical mistake to avoid when negating that phrase.
 
@@ -23,4 +23,4 @@ This is a known failure mode for this exact action (killing "how-to"/information
 
 - Before any negative goes in at account level, run the conflict check: does it match any active keyword anywhere in the account? Account-level is the hardest rung to audit and reverse — reserve it for universal disqualifiers that can never legitimately match a real keyword (e.g. `jobs`, `salary`, `free template`), never for a phrase that's also your product category.
 - Add a **quarterly conflict sweep**: a full check of the account's negative lists against active keywords, specifically for this failure — "a negative silently zeroing a keyword that was serving" is the single most expensive mistake this kind of list produces, because impressions just go to zero with no error, no alert, and a support team that reads it as a bid problem.
-- When negating informational/how-to queries, don't negate the bare product-category phrase — negate the informational *modifiers* (what is, how to, meaning, tutorial, course) instead, so the block can't collide with buying-intent queries containing the same core phrase.
+- When negating informational/how-to queries, don't negate the bare product-category phrase — negate the informational _modifiers_ (what is, how to, meaning, tutorial, course) instead, so the block can't collide with buying-intent queries containing the same core phrase.

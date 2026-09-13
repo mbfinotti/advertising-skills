@@ -9,6 +9,7 @@ Re-running tracking this session burns a cycle restating what's already known an
 ## What this session should decide instead: Q4 creative direction
 
 **1. Concept buckets to brief the two creators on** (rotate across all four, don't bet on one):
+
 - UGC testimonial / transformation story — highest-signal angle for B2C fitness subscription, cheap to produce in-house
 - Trainer-POV / day-in-the-life — leans on the in-house team's access, hard for competitors to copy
 - Objection-busting hooks (time, cost, "I'm not fit enough") — direct-response angle for a $29 self-serve offer
@@ -18,7 +19,7 @@ Re-running tracking this session burns a cycle restating what's already known an
 
 **3. Testing structure**: carve a fixed share of the $30k (e.g. 15–20%) as a standing test budget for new concepts, scaling into the remaining budget only on ads that beat CAC $44 with margin. Anchor kill/scale calls to the existing guardrail policy — don't relitigate the CAC math, it's already decided.
 
-**4. Tracking touches only what's new**: when new landing pages or creative-specific events ship with these concepts, verify *those* pixel events — not a full account re-audit.
+**4. Tracking touches only what's new**: when new landing pages or creative-specific events ship with these concepts, verify _those_ pixel events — not a full account re-audit.
 
 ## Update to `advertising-context.md`
 

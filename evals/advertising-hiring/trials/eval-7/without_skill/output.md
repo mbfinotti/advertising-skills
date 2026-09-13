@@ -4,7 +4,7 @@ Both the VP and the CMO are half-right, and the way they're each framing it is w
 
 **Your CMO is right that "media buying skill" transfers.** Six years scaling $2M→$40M means this person has demonstrably done the hard part of paid media: built attribution systems, managed CAC/LTV tradeoffs under real budget pressure, scaled spend without cratering ROAS, ran creative testing at volume, and survived platform changes (iOS 14.5, cookie deprecation, rising CPMs) that killed less disciplined operators. That's rare and it's real. Someone who can do that is not a novice at media economics, testing rigor, or budget ownership.
 
-**Your VP of Sales is right that DTC and B2B enterprise motion are different disciplines** — but he's wrong about *why* it matters, and that's the part worth correcting before the final round. It's not that "ecommerce people don't get B2B" as some kind of intelligence or sophistication gap. It's that the two channels optimize for structurally different things:
+**Your VP of Sales is right that DTC and B2B enterprise motion are different disciplines** — but he's wrong about _why_ it matters, and that's the part worth correcting before the final round. It's not that "ecommerce people don't get B2B" as some kind of intelligence or sophistication gap. It's that the two channels optimize for structurally different things:
 
 - **DTC paid media**: single-touch or short-window attribution, one decision-maker (the buyer), success measured in days/weeks, creative-led (the ad IS the pitch), spend scales against a purchase signal that happens in the funnel itself.
 - **B2B infra paid media (6-month cycle)**: multi-touch attribution across a buying committee, success measured in quarters, the ad's job is to start a relationship not close a sale, "conversion" is a form fill or a demo request that then has to survive a sales cycle the media buyer doesn't control, and the real optimization target (pipeline influenced, not last-click ROAS) is much harder to instrument and often invisible for months.
@@ -14,12 +14,13 @@ So the VP's instinct is pointing at a real risk — but "reject" is an overcorre
 ## What this actually predicts
 
 People coming from DTC into long-cycle B2B tend to fail (when they fail) in specific, predictable ways:
+
 - They over-index on last-click/MER-style metrics and undervalue upper-funnel/brand or ABM spend because it doesn't show ROI in 30 days.
 - They get twitchy and reallocate budget too fast — DTC punishes patience, B2B infra punishes impatience.
 - They don't know how to partner with sales on lead handoff, SQL definitions, or account-based targeting because DTC has no SDR/AE layer to coordinate with.
 - They may not have run ABM, LinkedIn/intent-based targeting, or paid programs aimed at influencing a buying committee rather than an individual.
 
-None of that is disqualifying. All of it is *testable*.
+None of that is disqualifying. All of it is _testable_.
 
 ## What to do in the final round
 

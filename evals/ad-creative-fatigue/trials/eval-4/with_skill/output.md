@@ -18,7 +18,7 @@ Two more things independently block a verdict here, before noise is even conside
 - **Two-signal rule**: a fatigue call needs ≥2 signals moving together across ≥2 periods, at least one leading. You have one leading signal (CTR), one period (a 2-day aggregate, not even broken out day by day). That's the floor, not the gate cleared.
 - **Conversion floor**: 3 signups vs 5 is a B2B low-volume account by definition — this skill explicitly says accounts like yours can't use conversion counts to confirm anything and should gate on engagement signals instead. 3-vs-5 is not evidence either way; it's a rounding error dressed up as a trend.
 
-And the confounder screen — which this method runs *before* any fatigue talk, not after — hasn't been touched at all. I don't know if the ad or ad set was edited recently (learning-phase reset is the single biggest false-positive generator in this whole discipline), whether budget or bid moved, whether there's a sibling ad in the same set, or whether the 2-day window even matches the baseline's day-of-week mix. Any one of those alone could produce this exact pattern with the creative doing nothing wrong.
+And the confounder screen — which this method runs _before_ any fatigue talk, not after — hasn't been touched at all. I don't know if the ad or ad set was edited recently (learning-phase reset is the single biggest false-positive generator in this whole discipline), whether budget or bid moved, whether there's a sibling ad in the same set, or whether the 2-day window even matches the baseline's day-of-week mix. Any one of those alone could produce this exact pattern with the creative doing nothing wrong.
 
 ## Verdict
 
@@ -67,9 +67,10 @@ re-check      : once the comparison window has enough impressions/days that the 
 On the "by Monday" deadline specifically: that's two days away. That's not enough runway to responsibly gather what's actually missing (day-by-day CTR/signup breakdown, last-edit date, budget history, whether this is the only ad in the set). Killing a $70/day, low-volume creative on an underpowered two-day read — and eating the production cost and learning-phase reset of a replacement — is the expensive mistake to avoid here, not the safe default.
 
 **What I'd actually do before Monday:**
+
 - Pull the last-edit date on the ad/ad set — if it was touched in the last ~7 days, this whole read is void (learning-phase reset, not fatigue).
 - Pull day-by-day CTR and signups for the last 2 weeks (not the 2-day/14-day aggregates you have) so a real trend, if one exists, is visible.
 - Confirm whether any other ad shares this ad set — if so, check for a sibling launch/pause that could be redistributing spend share.
-- If your manager needs to show *something* moving by Monday, the reversible, near-zero-effort options are a budget check or a frequency-cap review — not retiring the only creative you have with nothing staged to replace it.
+- If your manager needs to show _something_ moving by Monday, the reversible, near-zero-effort options are a budget check or a frequency-cap review — not retiring the only creative you have with nothing staged to replace it.
 
 Set the real re-check for once you have a full matched week of data — at $70/day and ~4,000 impressions/day, that's the earliest point the noise band gets tight enough to say anything with confidence.

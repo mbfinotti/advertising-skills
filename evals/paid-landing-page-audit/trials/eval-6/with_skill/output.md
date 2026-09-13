@@ -12,7 +12,7 @@ inputs         : ad creative: NOT received | analytics: partial (two headline to
 
 ## VERDICT
 
-I can't verdict the page itself — the live URL and the ad were never actually included in this message, despite the stated intent to paste them, so none of the on-page checks (message match, above-the-fold, trust, form friction, speed, accessibility, policy, post-click path) can be run. What *is* checkable from the numbers you gave points at the click path and the measurement layer, not at page craft, and it has to be fixed before a page verdict would mean anything:
+I can't verdict the page itself — the live URL and the ad were never actually included in this message, despite the stated intent to paste them, so none of the on-page checks (message match, above-the-fold, trust, form friction, speed, accessibility, policy, post-click path) can be run. What _is_ checkable from the numbers you gave points at the click path and the measurement layer, not at page craft, and it has to be fixed before a page verdict would mean anything:
 
 The 324/41,000 = 0.8% figure you've been reporting is not a real number. It averages a Google Ads platform count (412) with a GA4 on-site count (236) — two different measurement systems with different attribution windows and view-through rules, which this skill's own failure-mode list calls out by name as never combinable — and then divides that invalid average by a GA4 session count that matches neither source. That's two independent errors stacked on top of each other, not one. Stop reporting it as-is.
 
@@ -38,7 +38,7 @@ None. The Interview's deadline, mandate (one-off recovery vs. compounding asset)
 
 ## TEST, DON'T GUESS
 
-- Once fixes 1–2 land and a single trustworthy conversion number exists: if the redirect turns out *not* to be the cause of the personalization gap, test a static, ad-matched headline against the dynamic `utm_term` system — judged on land→engage rate on a reconciled data source. Plausible (the contractor-built system is unverified and unowned), but not evidenced enough to rip out yet.
+- Once fixes 1–2 land and a single trustworthy conversion number exists: if the redirect turns out _not_ to be the cause of the personalization gap, test a static, ad-matched headline against the dynamic `utm_term` system — judged on land→engage rate on a reconciled data source. Plausible (the contractor-built system is unverified and unowned), but not evidenced enough to rip out yet.
 
 ## NOT A PROBLEM
 

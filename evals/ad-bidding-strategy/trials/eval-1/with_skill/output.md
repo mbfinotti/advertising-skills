@@ -4,11 +4,11 @@
 
 ## Fact-check on "15 to unlock, 50 to work properly"
 
-| Claim | Status | Source tier |
-|---|---|---|
-| "15 conversions in 30 days is required to use Target CPA" | ❌ False for Target CPA. Google Ads Help states Target CPA "can start with no conversion history" and is "effective for campaigns of all sizes." | documented |
-| "15 conversions in 30 days" figure exists | ✅ True, but it's the **Target ROAS** (return-goal) minimum for Search/Shopping campaigns — a different strategy than the one you'd actually want first | documented |
-| "50 conversions before it works properly" | ⚠️ Real number, wrong context — it's Meta's ~50-events-per-ad-set-per-week learning-phase guidance (and similar figures for Demand Gen/App/Video campaigns), not a Search Target CPA rule. Even where it applies, it's a *reliability recommendation*, not a gate. | documented, misapplied |
+| Claim                                                     | Status                                                                                                                                                                                                                                                             | Source tier            |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| "15 conversions in 30 days is required to use Target CPA" | ❌ False for Target CPA. Google Ads Help states Target CPA "can start with no conversion history" and is "effective for campaigns of all sizes."                                                                                                                   | documented             |
+| "15 conversions in 30 days" figure exists                 | ✅ True, but it's the **Target ROAS** (return-goal) minimum for Search/Shopping campaigns — a different strategy than the one you'd actually want first                                                                                                            | documented             |
+| "50 conversions before it works properly"                 | ⚠️ Real number, wrong context — it's Meta's ~50-events-per-ad-set-per-week learning-phase guidance (and similar figures for Demand Gen/App/Video campaigns), not a Search Target CPA rule. Even where it applies, it's a _reliability recommendation_, not a gate. | documented, misapplied |
 
 This is a textbook conflation of two different kinds of number: an **enablement gate** (am I allowed to turn this on) versus an **evaluation sample** (how confidently can I read the result once it's on). The agency merged them. Folklore travels this way because the two archetypes share a UI tab in some accounts and the "15" number is memorable.
 

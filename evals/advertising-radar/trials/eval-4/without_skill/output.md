@@ -11,14 +11,14 @@ DTC- and e-commerce-focused trade publication (part of Digiday Media, ad-support
 Independent ad-industry trade press, subscription + ad-supported. Reports critically on platform changes (Meta's Advantage+ shifts, TikTok algorithm/policy changes, iOS/attribution fallout) without a stake in any tool or platform's success. Read the Marketing or Platforms vertical.
 
 **3. AdExchanger — 15 min**
-Ad-tech trade journalism, subscription-supported. More technical than Digiday — good for understanding *why* Meta/TikTok bidding, measurement, and privacy changes happen, written by reporters, not by anyone selling a fix for them.
+Ad-tech trade journalism, subscription-supported. More technical than Digiday — good for understanding _why_ Meta/TikTok bidding, measurement, and privacy changes happen, written by reporters, not by anyone selling a fix for them.
 
 **4. Marketing Brew — 10–15 min**
 Free daily/weekly digest (Morning Brew, ad-supported, editorially independent). Fastest way to stay current if a week gets tight — treat as the fallback that always fits the hour.
 
 ## Monthly/occasional deep read (rotate in when the weekly news is quiet)
 
-**Ehrenberg-Bass Institute (marketingscience.info)** — University of South Australia's marketing science research center. Free published research on what actually drives advertising effectiveness (the *How Brands Grow* body of work). No commercial ties to any platform or agency — the most rigorously independent source on this list. Not weekly-cadence content, but worth a slot once a month; it's the best counterweight to whatever platform-reported "best practices" surface elsewhere.
+**Ehrenberg-Bass Institute (marketingscience.info)** — University of South Australia's marketing science research center. Free published research on what actually drives advertising effectiveness (the _How Brands Grow_ body of work). No commercial ties to any platform or agency — the most rigorously independent source on this list. Not weekly-cadence content, but worth a slot once a month; it's the best counterweight to whatever platform-reported "best practices" surface elsewhere.
 
 **WARC** — global marketing research body, subscription-funded, independent editorial. Publishes cross-platform benchmark and effectiveness studies. Flag for the CMO as a possible paid add if budget allows; skip if not — everything above is free.
 

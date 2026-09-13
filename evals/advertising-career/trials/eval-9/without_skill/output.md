@@ -10,14 +10,14 @@ One former client hinting at a project is not a contract. It's not even a verbal
 
 **Burnout is the actual problem, and only one option fixes it**
 
-You're fried from context-switching across 8 accounts. Freelance doesn't reduce that — it usually adds a 9th "account" (running your own business: invoicing, chasing payment, finding the next client) on top of delivery work, solo, with no team to absorb the load. In-house collapses you to *one* brand, one stakeholder set, one campaign calendar. That's a direct fix, not a hope.
+You're fried from context-switching across 8 accounts. Freelance doesn't reduce that — it usually adds a 9th "account" (running your own business: invoicing, chasing payment, finding the next client) on top of delivery work, solo, with no team to absorb the load. In-house collapses you to _one_ brand, one stakeholder set, one campaign calendar. That's a direct fix, not a hope.
 
 **What in-house actually gets you**
 
 - 17% pay rise, immediately, not "if utilisation holds"
 - Depth over breadth — you get to actually own a strategy instead of triaging 8 accounts shallowly, which is usually what "senior" growth looks like after agency-side generalist years
 - Benefits, sick pay, holiday pay, pension — real money freelance quietly strips away
-- A stable base from which freelancing later is a *choice*, not a bet made while exhausted
+- A stable base from which freelancing later is a _choice_, not a bet made while exhausted
 
 **Don't fully burn the freelance option — de-risk it instead**
 

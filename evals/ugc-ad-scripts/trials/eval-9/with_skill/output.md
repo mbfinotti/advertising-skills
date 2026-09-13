@@ -5,7 +5,7 @@ No — flip the priority. Scraping public reviews first is the wrong order for t
 The skill treats evidence sources by **quotes returned per unit of digging**, then re-ranks against what you already hold:
 
 - **Public reviews and past-ad comments are tied** — both already public, already in the customer's own words, free to pull. You have 4 reviews (thin) and ~12 ad comments (also thin). Mining both costs almost nothing, but neither is enough to carry a B2B concept on its own.
-- **Support tickets and sales-call recordings normally rank behind reviews only because they need internal access and time to dig out.** You already have both — an 800-ticket tagged export and a call-recording library. Per the skill's own re-ranking rule: *"a tagged ticket export or a call-recording library drops to near-zero and outranks public reviews — as it does for most B2B products, where public reviews are too thin to carry a concept."* That's exactly your situation, named explicitly.
+- **Support tickets and sales-call recordings normally rank behind reviews only because they need internal access and time to dig out.** You already have both — an 800-ticket tagged export and a call-recording library. Per the skill's own re-ranking rule: _"a tagged ticket export or a call-recording library drops to near-zero and outranks public reviews — as it does for most B2B products, where public reviews are too thin to carry a concept."_ That's exactly your situation, named explicitly.
 
 Spending a week scraping review sites optimizes the source you least need to dig for, while ignoring 800 tagged tickets and a call library sitting in your own systems — the two sources that will actually carry a B2B concept.
 
@@ -20,6 +20,7 @@ Named-customer quotes from tickets or calls need their consent before they reach
 ## The "one concept" part also skips steps
 
 Before drafting anything, the skill needs answers this plan doesn't have yet:
+
 - Offer (trial? demo? waitlist?)
 - Audience segment and awareness stage (unaware / problem-aware / solution-aware / product-aware) — likely varies a lot across 200- vs 2000-person finance teams
 - Platform/placement, target duration
@@ -31,12 +32,12 @@ Default volume once those are answered is **2-3 concepts × 3-5 hooks × 2 CTAs*
 
 ## Revised week plan
 
-| Day | Task |
-|---|---|
-| 1-2 | Pull and tag-cluster the 800-ticket export into the 4-column evidence doc |
-| 2-3 | Sample sales calls (weight toward near-churn and near-win moments) for objection language |
-| 3 | Quick pass on the 4 reviews + 12 ad comments, same 4-column doc |
-| 4 | Answer the outstanding interview questions (offer, audience/awareness stage, performer, platform, duration, regulated status, deadline, one-off vs compounding) |
-| 5 | Define 1-3 concepts from the evidence doc, pick hook archetypes, draft the first script package |
+| Day | Task                                                                                                                                                            |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1-2 | Pull and tag-cluster the 800-ticket export into the 4-column evidence doc                                                                                       |
+| 2-3 | Sample sales calls (weight toward near-churn and near-win moments) for objection language                                                                       |
+| 3   | Quick pass on the 4 reviews + 12 ad comments, same 4-column doc                                                                                                 |
+| 4   | Answer the outstanding interview questions (offer, audience/awareness stage, performer, platform, duration, regulated status, deadline, one-off vs compounding) |
+| 5   | Define 1-3 concepts from the evidence doc, pick hook archetypes, draft the first script package                                                                 |
 
 Once you've got the evidence doc and answers to those questions, come back and I'll run the full workflow — concept definition, 3-5 locked hooks per concept, body, CTA variants, delivery notes, and the compliance pass.

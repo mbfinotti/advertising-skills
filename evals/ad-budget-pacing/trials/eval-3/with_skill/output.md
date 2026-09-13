@@ -6,16 +6,16 @@ Your 14% number is real, but it's the wrong curve. Here's both.
 
 ### Metrics: flat vs. weighted (business-day) curve
 
-| | Flat (calendar-day) | Weighted (business-day) |
-|---|---|---|
-| Elapsed share | 13/30 days = 43.3% | 9/22 weekdays = 40.9% |
-| Expected to date | $7,800.00 | $7,363.64 |
-| **Pacing ratio** | **0.859 (85.9%)** | **0.910 (91.0%)** |
-| Budget utilization | 37.2% | — |
-| Projected month-end spend | $15,461.54 | — |
-| Remaining budget | $11,300 (both) | |
-| Required daily to close gap | $664.71/calendar day | $869.23/weekday |
-| **`adjust_spend_by`** | **+$54.71/day (+9.0%)** | **+~$15/weekday (+1.8%), estimated** |
+|                             | Flat (calendar-day)     | Weighted (business-day)              |
+| --------------------------- | ----------------------- | ------------------------------------ |
+| Elapsed share               | 13/30 days = 43.3%      | 9/22 weekdays = 40.9%                |
+| Expected to date            | $7,800.00               | $7,363.64                            |
+| **Pacing ratio**            | **0.859 (85.9%)**       | **0.910 (91.0%)**                    |
+| Budget utilization          | 37.2%                   | —                                    |
+| Projected month-end spend   | $15,461.54              | —                                    |
+| Remaining budget            | $11,300 (both)          |                                      |
+| Required daily to close gap | $664.71/calendar day    | $869.23/weekday                      |
+| **`adjust_spend_by`**       | **+$54.71/day (+9.0%)** | **+~$15/weekday (+1.8%), estimated** |
 
 The 14% figure is `1 − 0.859`, computed against a flat calendar-day curve. That curve assumes every day of the month is worth the same, which is false for an account that "delivers almost entirely on weekdays" — every Monday looks artificially behind on it, purely mechanically. Re-run on business days (skill's standard B2B convention) and the ratio lifts to 91.0%, right at the bottom edge of the normal 0.90–1.10 on-pace band. That's a 5.1pp gap between the two curves — real, but under the 10pp bar that would make it a slam dunk, so treat this as "on pace, no headroom" rather than a comfortable green.
 
@@ -23,14 +23,14 @@ The weekday-only `adjust_spend_by` is an estimate: I inferred your weekday spend
 
 ### False-alarm gate
 
-| Check | Result |
-|---|---|
-| Cumulative vs. single-day allowance | Judged cumulative — clean |
-| First/last partial day | Not applicable, mid-flight |
-| Trivial denominator | 13 days / 9 weekdays elapsed — not trivial, ratio is meaningful |
-| Period too young to read | Spend pacing: fine. **Lead count: fails this check** — see below |
-| Recent budget edit / relearning window | Unconfirmed — you didn't mention one; ask before trusting today's number if one happened this week |
-| Intra-day / unrestated figures | Clean — you gave me Sunday's *finalized* spend, not today's live number, which is correct. Note LinkedIn's day boundary is midnight UTC, not your local reporting day — worth confirming your $6,700 was pulled on that boundary if precision matters here |
+| Check                                  | Result                                                                                                                                                                                                                                                     |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cumulative vs. single-day allowance    | Judged cumulative — clean                                                                                                                                                                                                                                  |
+| First/last partial day                 | Not applicable, mid-flight                                                                                                                                                                                                                                 |
+| Trivial denominator                    | 13 days / 9 weekdays elapsed — not trivial, ratio is meaningful                                                                                                                                                                                            |
+| Period too young to read               | Spend pacing: fine. **Lead count: fails this check** — see below                                                                                                                                                                                           |
+| Recent budget edit / relearning window | Unconfirmed — you didn't mention one; ask before trusting today's number if one happened this week                                                                                                                                                         |
+| Intra-day / unrestated figures         | Clean — you gave me Sunday's _finalized_ spend, not today's live number, which is correct. Note LinkedIn's day boundary is midnight UTC, not your local reporting day — worth confirming your $6,700 was pulled on that boundary if precision matters here |
 
 ### Status
 
@@ -43,11 +43,13 @@ Don't read this number yet — it fails gate check 4 (too young to read), specif
 ### Recommendation
 
 **Don't push bids up today.** Three reasons stack against it:
+
 1. Properly measured, you're not meaningfully behind — the "14% behind" read is a flat-curve artifact.
 2. The corrective amount, even taken at face value, is small ($15–55/weekday) — not something that justifies a bid move; raising bids to close a gap this size is the textbook "chasing pacing at the expense of efficiency" failure mode the skill warns against, and it tends to buy worse leads at higher CPL for no real pacing benefit.
 3. The lead shortfall can't be diagnosed yet — reacting to it now risks a bid increase justified by a number that was never going to look good this early, regardless of true performance.
 
 **What to actually do:**
+
 - Hold current bids and budget.
 - Recompute `adjust_spend_by` daily rather than reacting to today's snapshot — this keeps any real correction small and continuous instead of piling into a late-month scramble.
 - Since this is a recurring Monday check-in and you have 3 full months of history (2–3 cycles), it's worth building the account's actual day-of-week weighted index rather than leaning on the business-day approximation used here — that closes the 5.1pp gap with a real number instead of an estimate. I can build that from your daily spend export if you pull it.

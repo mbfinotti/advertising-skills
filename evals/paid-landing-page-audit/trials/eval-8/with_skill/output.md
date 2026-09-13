@@ -1,13 +1,13 @@
 # Quick answers to your two direct questions
 
-**"Submit" → "Get my box"** — ship it. It's a one-line copy change, on the paid entry path, and it fixes a real, named anti-pattern (page-checks.md, section D: *"the submit button says what happens next, not 'Submit'"*). No reason to test it first or delay it behind anything else here.
+**"Submit" → "Get my box"** — ship it. It's a one-line copy change, on the paid entry path, and it fixes a real, named anti-pattern (page-checks.md, section D: _"the submit button says what happens next, not 'Submit'"_). No reason to test it first or delay it behind anything else here.
 
 But calibrate what it can do: your CPA gap is 2.3x target ($92 vs $40) and your conversion-rate gap is 2.8x target (3.9% vs the 10.9% you've set). A button-copy tweak does not close a multiple-of-target gap — no hour-scale fix does. Ship it this week as a freebie, then move on to the items below that actually sit on the leaking steps.
 
 **The 10.9% speed-sprint-and-target framing** — two separate pushbacks:
 
-1. *On the 10.9% target itself*: Unbounce's own report calls this a vendor, self-selected dataset where "conversion" is defined differently per page type — the source document explicitly frames it as **context, never a target**. Setting a team OKR to a cross-industry median is very likely to under- or over-shoot what this specific page, funnel, and traffic mix can actually do. Keep 10.9% as "there's real headroom," not as the number people are held to.
-2. *On the speed sprint*: your own field data says don't book it. Lighthouse 68/100 is a lab score under throttled conditions. Your CrUX field data at p75 — LCP 2.1s, INP 140ms, CLS 0.04 — clears the Core Web Vitals "good" bar on all three metrics with room to spare (thresholds: LCP ≤2.5s, INP ≤200ms, CLS ≤0.1). Per the checklist this audit runs on: *"If the page passes all three, say so in Not a problem and move on — speed work on a passing page steals priority from message and offer work."* Redirect that sprint's capacity to the items below.
+1. _On the 10.9% target itself_: Unbounce's own report calls this a vendor, self-selected dataset where "conversion" is defined differently per page type — the source document explicitly frames it as **context, never a target**. Setting a team OKR to a cross-industry median is very likely to under- or over-shoot what this specific page, funnel, and traffic mix can actually do. Keep 10.9% as "there's real headroom," not as the number people are held to.
+2. _On the speed sprint_: your own field data says don't book it. Lighthouse 68/100 is a lab score under throttled conditions. Your CrUX field data at p75 — LCP 2.1s, INP 140ms, CLS 0.04 — clears the Core Web Vitals "good" bar on all three metrics with room to spare (thresholds: LCP ≤2.5s, INP ≤200ms, CLS ≤0.1). Per the checklist this audit runs on: _"If the page passes all three, say so in Not a problem and move on — speed work on a passing page steals priority from message and offer work."_ Redirect that sprint's capacity to the items below.
 
 Full audit follows.
 

@@ -7,6 +7,7 @@ No `advertising-context.md` exists for this project (I only have this repo, whic
 ## What I could detect vs. what's still open
 
 **Answered by your message:**
+
 - Business model: B2B (scheduling tool)
 - Budget: $45k/month, fixed, Q4 only — committed, not discretionary
 - Hard date: Q4 starts Oct 1, 2026 — **19 days away**, inside the 6-week window that changes the ranking below
@@ -14,6 +15,7 @@ No `advertising-context.md` exists for this project (I only have this repo, whic
 - Session goals: (1) scale-up decision, (2) written CAC/kill-switch policy, (3) weekly pace check, (4) tCPA target doubt
 
 **Still open — confirm before I'd trust the numbers coming out of guardrails/benchmark:**
+
 1. Conversion event and its source of truth (platform pixel? CRM? demo-booked vs. paid?) — this gates everything else below.
 2. Channels beyond Google — is the $45k Google-only or split across others?
 3. Self-serve or sales-led motion (changes what "CAC" should even mean — trial vs. closed deal).
@@ -22,12 +24,12 @@ I'm not blocking on these; I'm routing around them and naming where they bite.
 
 ## Direct answer: which skill, for which ask
 
-| Your ask | Skill |
-|---|---|
-| "Should we put more into ads next quarter?" | `mbfinotti/advertising-skills@paid-media-scaling` |
+| Your ask                                       | Skill                                              |
+| ---------------------------------------------- | -------------------------------------------------- |
+| "Should we put more into ads next quarter?"    | `mbfinotti/advertising-skills@paid-media-scaling`  |
 | "Written rule for allowable CAC + kill switch" | `mbfinotti/advertising-skills@ad-spend-guardrails` |
-| "Each Friday: burning $45k too fast or slow?" | `mbfinotti/advertising-skills@ad-budget-pacing` |
-| "Is our tCPA target even right?" | `mbfinotti/advertising-skills@ad-bidding-strategy` |
+| "Each Friday: burning $45k too fast or slow?"  | `mbfinotti/advertising-skills@ad-budget-pacing`    |
+| "Is our tCPA target even right?"               | `mbfinotti/advertising-skills@ad-bidding-strategy` |
 
 None of these is a guess — each matches a declared scope line-for-line, not an adjacent skill stretched to fit.
 

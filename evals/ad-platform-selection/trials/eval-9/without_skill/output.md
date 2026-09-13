@@ -18,14 +18,15 @@
 - **Weeks 1-2:** learning phase noise. Ignore CPA data entirely.
 - **Weeks 3-6:** creative pool goes stale (you've only added 1 new asset), fatigue sets in, CPMs rise, performance likely degrades rather than improves.
 - **Weeks 8-12:** earliest point you'd have a statistically meaningful CAC read — and only if you've kept feeding creative, which the current production plan doesn't support.
-- **3-6 months:** the only honest timeline to know if this is *profitable*, not just cheap — you need to see trial→paid conversion and a few months of retention against a 78%-margin, $190/mo product to know if CAC payback actually works.
+- **3-6 months:** the only honest timeline to know if this is _profitable_, not just cheap — you need to see trial→paid conversion and a few months of retention against a 78%-margin, $190/mo product to know if CAC payback actually works.
 
 ## The real issue underneath "when"
 
 TikTok/Reels ROI is driven by creative iteration speed, not spend. Two people making 2 static graphics/month cannot feed that machine — you'd need closer to 8-15 new video-native assets/month to keep CPMs sane. Also worth naming: TikTok/Reels are consumer discovery platforms; a $190/mo B2B webinar tool is a considered purchase usually surfaced via search intent, LinkedIn, or content — not scroll-and-impulse. It's not impossible to make work, but it's the harder path for your buyer, not the easier one.
 
 **Recommendation:** don't judge this test at all until you fix creative supply. Two options:
+
 1. Cut the TikTok/Reels budget to a $1.5-2K/month pilot (one platform only, ideally Reels, which tolerates static/carousel better) and route the freed budget to a channel that matches your 2-assets/month capacity — LinkedIn ads or search, both of which work fine with static creative and match B2B buyer intent.
 2. Keep the $7K commitment but redirect production effort toward cheap, fast, unpolished vertical video (phone-shot, screen-recordings, founder-to-camera) instead of 2 "polished" graphics — volume and native format beat polish on these platforms.
 
-Either way: don't expect a real signal before week 8 minimum, and don't expect a *profitable* signal before month 3-4, and as currently scoped (static graphics, split budget, no video) I'd bet against seeing one at all.
+Either way: don't expect a real signal before week 8 minimum, and don't expect a _profitable_ signal before month 3-4, and as currently scoped (static graphics, split budget, no video) I'd bet against seeing one at all.

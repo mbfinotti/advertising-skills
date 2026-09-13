@@ -15,6 +15,7 @@ Above that, dollars don't convert to more impressions — they either break the 
 ## A flag before you present this
 
 Current retargeting spend is $12,000/month (25% of $36k... actually 25% of $48k). At $16 CPM that's ~750,000 impressions/month, or **~22 impressions/person/week** — nearly 4x the stated 6/week cap. Either:
+
 - the frequency cap isn't actually being enforced today (the 11x ROAS may be partly overexposure/last-click credit for people who'd have bought anyway), or
 - the "8,000 reachable" pool is a snapshot and the real audience rotates weekly (site visitors refreshing on a lookback window).
 
@@ -25,18 +26,18 @@ Get the platform's actual frequency distribution before the board meeting. If it
 The board is right that retargeting is more efficient and prospecting is dead weight at 1.9x. They're wrong that the fix is a bigger dollar percentage on the same 8,000 people. Two structural points:
 
 1. **Retargeting pool size is a function of prospecting.** Prospecting is what puts new visitors into the retargeting pool. Gutting prospecting to fund retargeting shrinks the pool it depends on — a slow-motion death spiral.
-2. **ROAS isn't comparable across funnel stages.** 11x retargeting vs 1.9x prospecting isn't "channel A is 6x better," it's comparing warm demand against cold acquisition. The honest fix is expanding the *warm* audience, not overloading the small one that exists.
+2. **ROAS isn't comparable across funnel stages.** 11x retargeting vs 1.9x prospecting isn't "channel A is 6x better," it's comparing warm demand against cold acquisition. The honest fix is expanding the _warm_ audience, not overloading the small one that exists.
 
 ## Recommended split
 
 Reframe "50/50" as warm vs. cold, not literally "retargeting line item vs. prospecting line item":
 
-| Bucket | Spend | % of $48k | What it is |
-|---|---|---|---|
-| Core retargeting (site visitors, 8k pool) | $3,300 | 7% | Held at current CPM/frequency ceiling — do not increase |
-| New: Warm expansion | $20,700 | 43% | Extended-window site visitors (30/60/90-day), cart abandoners, email/CRM customer match, past-purchaser win-back, lookalikes seeded from retargeting converters |
-| Prospecting (restructured, not just trimmed) | $24,000 | 50% | Cut the weakest segments/placements inside the current 1.9x spend first; reweight toward lookalikes and interest signals that historically fed the retargeting pool |
-| **Warm total (retargeting + expansion)** | **$24,000** | **50%** | Satisfies the board's ask without blowing the frequency cap |
+| Bucket                                       | Spend       | % of $48k | What it is                                                                                                                                                          |
+| -------------------------------------------- | ----------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Core retargeting (site visitors, 8k pool)    | $3,300      | 7%        | Held at current CPM/frequency ceiling — do not increase                                                                                                             |
+| New: Warm expansion                          | $20,700     | 43%       | Extended-window site visitors (30/60/90-day), cart abandoners, email/CRM customer match, past-purchaser win-back, lookalikes seeded from retargeting converters     |
+| Prospecting (restructured, not just trimmed) | $24,000     | 50%       | Cut the weakest segments/placements inside the current 1.9x spend first; reweight toward lookalikes and interest signals that historically fed the retargeting pool |
+| **Warm total (retargeting + expansion)**     | **$24,000** | **50%**   | Satisfies the board's ask without blowing the frequency cap                                                                                                         |
 
 This gets to genuine 50/50 — warm-intent audiences vs. cold acquisition — while keeping the literal retargeting line at the only number the audience math actually supports.
 

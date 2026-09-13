@@ -2,16 +2,16 @@
 
 This repo has no `advertising-context.md`, so this is a cold start for Hollowbeam. The prompt itself answers most of the interview, so I'm not blocking on questions — routing below, with the two still-open items flagged at the end instead of asked one-by-one.
 
-**Detected**: B2B (dev-tools), $18k/month = $5k–50k spend band, conversion source of truth currently *disputed* (that's item a itself).
+**Detected**: B2B (dev-tools), $18k/month = $5k–50k spend band, conversion source of truth currently _disputed_ (that's item a itself).
 
 ### Route
 
-| # | Task | Route | Why (per `skill-routing.md`) |
-|---|------|-------|-------------------------------|
-| a | Meta 210 / GA4 150 / CRM 96 | `mbfinotti/advertising-skills@ad-attribution-gap` | Exact match: "quantify and explain the discrepancy between ad platform reporting, an analytics tool, and the source of truth... 'the numbers don't match'." Not `cac-roas-benchmark` (that judges health once one number is trusted, doesn't reconcile three) or `ad-conversion-tracking` (that's pre-launch GO/NO-GO; here events are already live and just disagreeing). |
-| b | Pick the video opener from 3 cuts (differ only in first 4s) | `mbfinotti/advertising-skills@ad-hook-analyzer` | Exact match: "score and force-rank the openings of candidate video ads before launch... first 3 seconds, thumbstop." Not `ad-creative-test-plan` (that sizes budget/duration for a test, doesn't pick the winner) or `ugc-ad-scripts` (that writes scripts, doesn't score existing cuts). |
-| c | One newsletter + one podcast, no doomscrolling | `mbfinotti/advertising-skills@advertising-radar` | Exact match: "newsletter", "podcast", "stay current" is the named trigger list for this skill verbatim. |
-| d | Copy for a sponsored answer slot in an AI shopping assistant | `mbfinotti/advertising-skills@conversational-ad-copy` | Exact match: "the one-shot ad occupying a single response slot inside an assistant reply or answer-engine result." Not `ad-copy-variants` (that's feed/search/social copy, explicitly excludes this surface). |
+| #   | Task                                                         | Route                                                 | Why (per `skill-routing.md`)                                                                                                                                                                                                                                                                                                                                               |
+| --- | ------------------------------------------------------------ | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| a   | Meta 210 / GA4 150 / CRM 96                                  | `mbfinotti/advertising-skills@ad-attribution-gap`     | Exact match: "quantify and explain the discrepancy between ad platform reporting, an analytics tool, and the source of truth... 'the numbers don't match'." Not `cac-roas-benchmark` (that judges health once one number is trusted, doesn't reconcile three) or `ad-conversion-tracking` (that's pre-launch GO/NO-GO; here events are already live and just disagreeing). |
+| b   | Pick the video opener from 3 cuts (differ only in first 4s)  | `mbfinotti/advertising-skills@ad-hook-analyzer`       | Exact match: "score and force-rank the openings of candidate video ads before launch... first 3 seconds, thumbstop." Not `ad-creative-test-plan` (that sizes budget/duration for a test, doesn't pick the winner) or `ugc-ad-scripts` (that writes scripts, doesn't score existing cuts).                                                                                  |
+| c   | One newsletter + one podcast, no doomscrolling               | `mbfinotti/advertising-skills@advertising-radar`      | Exact match: "newsletter", "podcast", "stay current" is the named trigger list for this skill verbatim.                                                                                                                                                                                                                                                                    |
+| d   | Copy for a sponsored answer slot in an AI shopping assistant | `mbfinotti/advertising-skills@conversational-ad-copy` | Exact match: "the one-shot ad occupying a single response slot inside an assistant reply or answer-engine result." Not `ad-copy-variants` (that's feed/search/social copy, explicitly excludes this surface).                                                                                                                                                              |
 
 None of the four hit a named coverage gap — all four route cleanly, no stretching.
 
@@ -32,7 +32,7 @@ Only one real dependency exists among today's four items — the rest are indepe
 ### Not now
 
 - `mbfinotti/advertising-skills@ad-spend-allocation` / `paid-media-scaling` / `ad-spend-guardrails` — pointless to touch while the source of truth is contested; unblocked once `ad-attribution-gap` (task a) returns a verdict.
-- `mbfinotti/advertising-skills@ad-creative-test-plan` — natural next step *after* the hook-analyzer ranking (task b) picks a winner, if Hollowbeam wants a powered test rather than just shipping the top cut.
+- `mbfinotti/advertising-skills@ad-creative-test-plan` — natural next step _after_ the hook-analyzer ranking (task b) picks a winner, if Hollowbeam wants a powered test rather than just shipping the top cut.
 - `mbfinotti/advertising-skills@ad-account-diagnostic` — only worth running if (1) surfaces a deeper structural problem than a reporting gap.
 
 ### Gap

@@ -2,13 +2,13 @@
 
 ## 1. The gap math, run against actual thresholds (not "must match")
 
-| Comparison | Values | Gap | Skill threshold | Read |
-|---|---|---|---|---|
-| Google Ads vs GA4 | 412 vs 486 | 15.2% | Platform-vs-analytics: 10–20% is normal | 🟢 Within band |
-| GA4 vs backend | 486 vs 502 | 3.2% | Analytics-vs-backend: <25% healthy, >35% investigate | 🟢 Healthy — GA4 is basically tracking reality |
-| Google Ads vs backend | 412 vs 502 | 17.9% | (diagnostic — backend is ground truth) | 🟠 This is the real number to close, not GA4 |
+| Comparison            | Values     | Gap   | Skill threshold                                      | Read                                           |
+| --------------------- | ---------- | ----- | ---------------------------------------------------- | ---------------------------------------------- |
+| Google Ads vs GA4     | 412 vs 486 | 15.2% | Platform-vs-analytics: 10–20% is normal              | 🟢 Within band                                 |
+| GA4 vs backend        | 486 vs 502 | 3.2%  | Analytics-vs-backend: <25% healthy, >35% investigate | 🟢 Healthy — GA4 is basically tracking reality |
+| Google Ads vs backend | 412 vs 502 | 17.9% | (diagnostic — backend is ground truth)               | 🟠 This is the real number to close, not GA4   |
 
-**The CMO's "hold until they match" bar contradicts the benchmark this space runs on.** A 10–20% platform-vs-analytics discrepancy is structural — cookie loss, attribution-window mismatch, iOS/Safari ITP, consent differences between tags. Ruler Analytics' own guidance, and this skill's own failure-mode list, calls chasing a zero gap explicitly out: *"spending the pre-launch window eliminating it delays launch for nothing."* At 15.2%, Google Ads vs GA4 is inside that band already. Asking for parity is asking for a number that healthy setups don't produce.
+**The CMO's "hold until they match" bar contradicts the benchmark this space runs on.** A 10–20% platform-vs-analytics discrepancy is structural — cookie loss, attribution-window mismatch, iOS/Safari ITP, consent differences between tags. Ruler Analytics' own guidance, and this skill's own failure-mode list, calls chasing a zero gap explicitly out: _"spending the pre-launch window eliminating it delays launch for nothing."_ At 15.2%, Google Ads vs GA4 is inside that band already. Asking for parity is asking for a number that healthy setups don't produce.
 
 **What actually deserves attention:** GA4 (486) sits almost exactly on backend truth (502, 3.2% off — that residual is likely just refunds/cancellations/test orders, not a tracking defect). Google Ads (412) is the outlier, under-capturing ~18% of real orders. So the fix target isn't "make Google Ads = GA4," it's "find why Google Ads is undercounting against reality" — closing that closes the GA4 gap as a side effect.
 
@@ -16,7 +16,7 @@
 
 Two problems with citing the 9.1/10 match quality score as proof dedup is solid:
 
-- **Wrong metric, right platform or not.** Event Match Quality (Meta Events Manager) measures how well hashed customer data matches Meta's identity graph — payload *completeness*, not measurement *accuracy*. Per this skill's own ranking, match quality is the least useful of the three dedup confirmations and should never stand in for the dedup rate. A duplicated event can score a beautiful EMQ.
+- **Wrong metric, right platform or not.** Event Match Quality (Meta Events Manager) measures how well hashed customer data matches Meta's identity graph — payload _completeness_, not measurement _accuracy_. Per this skill's own ranking, match quality is the least useful of the three dedup confirmations and should never stand in for the dedup rate. A duplicated event can score a beautiful EMQ.
 - **Wrong platform, full stop.** EMQ is a Meta number. It says nothing about Google Ads' conversion tag, GA4's event stream, or the relationship between them. There is no cross-platform signal here at all — this is the "reading match quality as accuracy" failure mode, plus a category mismatch on top of it.
 
 If you want Meta's own dedup confirmed, pull the actual **dedup rate** in Events Manager (target ~90%+) — but that's a separate check from the Google/GA4 question and doesn't move this gate.
@@ -25,15 +25,15 @@ If you want Meta's own dedup confirmed, pull the actual **dedup rate** in Events
 
 The aggregate gap sitting in a "normal" band doesn't prove the setup is clean — it just means you don't need to force it to zero. You still owe the sequence real evidence on Google Ads, since that's the underperforming source:
 
-| # | Check | Result | Evidence needed |
-|---|---|---|---|
-| 1 | Settings — primary conversion action = Purchase, count-once | ❓ unknown | Confirm no secondary/micro-actions marked primary |
-| 2 | Tag debug/preview | ❓ unknown | Google Ads Tag Assistant / GTM preview, live site (not preview-only) |
-| 3 | Real test conversion, click ID (`gclid`) present end to end | ❓ unknown | Place a low-value test order from a real Google Ads click; capture the order ID |
-| 4 | Payload inspection | ❓ unknown | Confirm `transaction_id`, value, currency in the network request |
-| 5 | Platform UI status | ❓ unknown | Conversion action status = "Recording conversions," not "No recent conversions"/"Needs attention" |
-| 6 | Consent path — accept AND reject | ❓ unknown | Run test order on both paths; Google's tag is often the one silently dropped under Consent Mode, while GA4 keeps firing (analytics_storage granted, ad_storage denied) — this is the single most likely explanation for GA4 tracking near-perfectly while Ads doesn't |
-| 7 | Click-identifier persistence | ❓ unknown | Check that `gclid` survives your checkout redirect chain and any cross-domain hop |
+| #   | Check                                                       | Result     | Evidence needed                                                                                                                                                                                                                                                       |
+| --- | ----------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Settings — primary conversion action = Purchase, count-once | ❓ unknown | Confirm no secondary/micro-actions marked primary                                                                                                                                                                                                                     |
+| 2   | Tag debug/preview                                           | ❓ unknown | Google Ads Tag Assistant / GTM preview, live site (not preview-only)                                                                                                                                                                                                  |
+| 3   | Real test conversion, click ID (`gclid`) present end to end | ❓ unknown | Place a low-value test order from a real Google Ads click; capture the order ID                                                                                                                                                                                       |
+| 4   | Payload inspection                                          | ❓ unknown | Confirm `transaction_id`, value, currency in the network request                                                                                                                                                                                                      |
+| 5   | Platform UI status                                          | ❓ unknown | Conversion action status = "Recording conversions," not "No recent conversions"/"Needs attention"                                                                                                                                                                     |
+| 6   | Consent path — accept AND reject                            | ❓ unknown | Run test order on both paths; Google's tag is often the one silently dropped under Consent Mode, while GA4 keeps firing (analytics_storage granted, ad_storage denied) — this is the single most likely explanation for GA4 tracking near-perfectly while Ads doesn't |
+| 7   | Click-identifier persistence                                | ❓ unknown | Check that `gclid` survives your checkout redirect chain and any cross-domain hop                                                                                                                                                                                     |
 
 Per this skill's evidence gate: none of these clear on a settings screenshot alone. `unknown` is not `pass`.
 

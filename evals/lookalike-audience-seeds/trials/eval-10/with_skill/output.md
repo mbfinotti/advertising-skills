@@ -5,12 +5,12 @@ Before the spec: two of your inputs fail this skill's evidence gate, and I'm not
 ## Flags (read before using the spec)
 
 **1. `ltv_score` can't be the value column — provenance is unknown.**
-The skill's evidence gate is explicit: *"'we have an LTV field' is not evidence. If nobody can say whether it is revenue, margin, or a model output, the seed is not value-based until someone can."* Revenue, margin, and a model score all mean different things fed into a value-based lookalike — revenue trains the model toward high-spend/low-margin whales, margin trains it toward profit, an unvalidated model score could train it toward anything, including noise. I'm shipping this as a **standard** (non-value-based) purchaser lookalike instead. Get someone (whoever owns the BI layer, or check the dbt/SQL model definition) to confirm what `ltv_score` actually computes, then re-issue as v2 value-based once it's known.
+The skill's evidence gate is explicit: _"'we have an LTV field' is not evidence. If nobody can say whether it is revenue, margin, or a model output, the seed is not value-based until someone can."_ Revenue, margin, and a model score all mean different things fed into a value-based lookalike — revenue trains the model toward high-spend/low-margin whales, margin trains it toward profit, an unvalidated model score could train it toward anything, including noise. I'm shipping this as a **standard** (non-value-based) purchaser lookalike instead. Get someone (whoever owns the BI layer, or check the dbt/SQL model definition) to confirm what `ltv_score` actually computes, then re-issue as v2 value-based once it's known.
 
 **2. 95% match rate isn't a real number — I used a documented one instead.**
 Meta's own good-list band is 50–80%; above ~80% isn't achieved on customer-list uploads regardless of list quality, and picking 95% "so the numbers look safe" would make the effective-seed math (and therefore the CPA/LTV projections built on it) fiction. Your list is fresh (120-day window) with email+phone on 80% of rows — solidly good-list territory but not top-of-band because of the 20% email-only rows. I used **65%**, labeled as an estimate per the platform range. It still clears the floor with room to spare, so the correction costs you nothing except an honest number.
 
-**3. CPA baseline is missing.** You gave a CPA *target* ($28) and an LTV *baseline* ($54), but not the account's *current* acquired-customer CPA. The pass/fail grading in this skill compares the seed against the account's actual baseline on both metrics — a target isn't a baseline. Flagged below as an open item rather than assumed.
+**3. CPA baseline is missing.** You gave a CPA _target_ ($28) and an LTV *baseline* ($54), but not the account's _current_ acquired-customer CPA. The pass/fail grading in this skill compares the seed against the account's actual baseline on both metrics — a target isn't a baseline. Flagged below as an open item rather than assumed.
 
 ---
 

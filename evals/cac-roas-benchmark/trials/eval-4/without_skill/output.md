@@ -4,12 +4,12 @@
 
 ### Two versions of October MER
 
-| | Total spend | MER (Revenue ÷ Spend) |
-|---|---|---|
-| **As reported** (TikTok = $0) | $130,000 + $95,000 + $0 = **$225,000** | 520,000 / 225,000 = **2.31** |
+|                                                            | Total spend                                                    | MER (Revenue ÷ Spend)        |
+| ---------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------- |
+| **As reported** (TikTok = $0)                              | $130,000 + $95,000 + $0 = **$225,000**                         | 520,000 / 225,000 = **2.31** |
 | **Corrected** (TikTok imputed at its historical ~8% share) | $225,000 / 0.92 = **$244,565** (implies ~$19,565 TikTok spend) | 520,000 / 244,565 = **2.13** |
 
-Math for the imputation: if TikTok is normally 8% of *total* spend, then Meta+Google make up the other 92%. So total spend = (Meta+Google) / 0.92, and TikTok's share is the difference.
+Math for the imputation: if TikTok is normally 8% of _total_ spend, then Meta+Google make up the other 92%. So total spend = (Meta+Google) / 0.92, and TikTok's share is the difference.
 
 ### Is the downtrend real?
 

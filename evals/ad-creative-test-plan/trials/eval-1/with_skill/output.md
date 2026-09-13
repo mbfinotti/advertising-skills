@@ -4,14 +4,14 @@
 
 ## Assumptions (flagged because your interview answers weren't given — confirm before launch)
 
-| Item | Assumption used | Why it matters |
-|---|---|---|
-| Platform | Meta (Advantage+ Creative off in test cells) | Swap to TikTok Split Test / Google Experiments mechanics if wrong; math below is platform-agnostic |
-| Assets per new concept | 3–4 finished cutdowns/aspect ratios each | Fewer assets doesn't break the plan, just thins the cell |
-| Prior testing | Nothing already settled this question | If you've already tested "utility vs. fear" angles, say so — this may be re-litigating a closed question |
-| Auto creative optimization | Assumed currently on somewhere — **must be OFF in these 3 cells** | Otherwise the platform picks the winner, not the test |
-| Who monitors this | You, with budget authority inside the protected $15K | Drives the decision-rule choice below |
-| Regulatory | None (travel accessories, non-regulated) | Just don't claim the packing hack "prevents" lost luggage — that's a substantiation risk, not a compliance one |
+| Item                       | Assumption used                                                   | Why it matters                                                                                                 |
+| -------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Platform                   | Meta (Advantage+ Creative off in test cells)                      | Swap to TikTok Split Test / Google Experiments mechanics if wrong; math below is platform-agnostic             |
+| Assets per new concept     | 3–4 finished cutdowns/aspect ratios each                          | Fewer assets doesn't break the plan, just thins the cell                                                       |
+| Prior testing              | Nothing already settled this question                             | If you've already tested "utility vs. fear" angles, say so — this may be re-litigating a closed question       |
+| Auto creative optimization | Assumed currently on somewhere — **must be OFF in these 3 cells** | Otherwise the platform picks the winner, not the test                                                          |
+| Who monitors this          | You, with budget authority inside the protected $15K              | Drives the decision-rule choice below                                                                          |
+| Regulatory                 | None (travel accessories, non-regulated)                          | Just don't claim the packing hack "prevents" lost luggage — that's a substantiation risk, not a compliance one |
 
 **One thing I can't reconcile and you should, before trusting the numbers below:** your CPC ($1.25) and click→purchase rate (2.5%) imply a ~$50 CPA. Your stated CPA is $20. Those don't arithmetically agree — likely your $20 blends in retargeting/warm traffic or a different attribution window than a fresh 3-way prospecting test will see. I built this plan on the stated $20 CPA (it's the number you gave me for exactly this purpose), but **pull actual cold-prospecting CPA for the last 30 days before locking budget splits.** If real cold CPA is closer to $50, the stable-delivery floor below fails and the fix is "2 sequential challenger waves," not "3 simultaneous cells" — flagged again where it bites.
 
@@ -38,6 +38,7 @@ Replace the bracketed evidence — I don't have your customer research, and a hy
 ## 2. Isolation level: bundled concept-level
 
 Ranked deliberately, not by default: **bundled > tiered > strict isolation** here, because:
+
 - A single 5-week window before a hard decision date **deletes tiered** (no time for a second validation pass).
 - You want a one-off winner to fund production, not transferable element-level learning — **favors bundled** per the interview logic.
 - Packing-hack demo vs. horror story vary angle, format, and execution together — that's inherently bundled, not a clean single-variable swap.
@@ -46,17 +47,18 @@ Ranked deliberately, not by default: **bundled > tiered > strict isolation** her
 
 ## 3. Cell matrix and structure
 
-| Cell | Content | Daily budget | Assets |
-|---|---|---|---|
-| C01 (control) | Current champion, running concurrently | $167/day | existing |
-| C02 | Packing-hack demo | $167/day | 3-4 |
-| C03 | Lost-luggage horror story | $167/day | 3-4 |
+| Cell          | Content                                | Daily budget | Assets   |
+| ------------- | -------------------------------------- | ------------ | -------- |
+| C01 (control) | Current champion, running concurrently | $167/day     | existing |
+| C02           | Packing-hack demo                      | $167/day     | 3-4      |
+| C03           | Lost-luggage horror story              | $167/day     | 3-4      |
 
 **Structure: manual fixed-budget cells.** Native deterministic split test is the cleaner read but needs 7-30 days just to run, on top of setup — the hard date pushes it below manual. Automated budget allocation is never a test structure (it can dump 90% of spend on an early leader).
 
 **Known limitation, stated up front:** manual cells still compete in the same auction against overlapping audiences. Even a clean statistical read here is relative screening, not causal proof (see caveats).
 
 **Naming:**
+
 ```
 C01_ANG-champion_FMT-<current>_V01
 C02_ANG-packing-hack_FMT-demo-video_TAL-<creator>_V01...V04
@@ -66,17 +68,17 @@ C03_ANG-lost-luggage_FMT-horror-narrative_TAL-<creator>_V01...V04
 ## 4. Feasibility check — the actual math
 
 - $15,000/month ≈ $500/day ÷ 3 cells = **$167/day/cell**.
-- Stable-delivery floor (on stated $20 CPA): $20 × 50 ÷ 7 = **$143/day** minimum — $167 clears it, with only ~17% headroom. *(On the implied $50 CPA, the floor is $357/day and this fails outright — see the reconciliation flag above.)*
+- Stable-delivery floor (on stated $20 CPA): $20 × 50 ÷ 7 = **$143/day** minimum — $167 clears it, with only ~17% headroom. _(On the implied $50 CPA, the floor is $357/day and this fails outright — see the reconciliation flag above.)_
 - Projected clicks/cell: $167 ÷ $1.25 = **133.6/day** → 935/week.
 - Projected purchases/cell: $167 × 7 ÷ $20 = **58.4/week** (clears the ~50/week floor).
 
 **Required sample, primary metric = click→purchase rate, 2.5% baseline, alpha 0.05, 80% power, Bonferroni-corrected for 2 comparisons (2 challengers vs. 1 control, α=0.025 each — disclosed per the skill's multiple-comparison requirement):**
 
 | Relative lift (2.5% → X%) | Required n/cell (corrected) | Required spend/cell | Duration at projected pace |
-|---|---|---|---|
-| 50% (→3.75%) | ~3,680 clicks | ~$4,600 | **~28 days** |
-| 25% (→3.13%) | ~13,300 clicks | ~$16,600 | ~99 days |
-| 15% (→2.88%) | ~35,000+ clicks | ~$44,000+ | ~260+ days |
+| ------------------------- | --------------------------- | ------------------- | -------------------------- |
+| 50% (→3.75%)              | ~3,680 clicks               | ~$4,600             | **~28 days**               |
+| 25% (→3.13%)              | ~13,300 clicks              | ~$16,600            | ~99 days                   |
+| 15% (→2.88%)              | ~35,000+ clicks             | ~$44,000+           | ~260+ days                 |
 
 **Verdict: Powered only at ≥~50% relative lift, in ~28 days, on the current split.** Anything realistic (15-30%, what most concept swaps actually produce) is **Directional read** — not testable to significance in this budget or window, full stop.
 
@@ -91,22 +93,22 @@ C03_ANG-lost-luggage_FMT-horror-narrative_TAL-<creator>_V01...V04
 Hott needs a maintained best-ads library plus a weekly reviewer — not stated as available, **deleted**. Faris needs an evergreen no-manual-kill structure and returns a portfolio outcome, not a single winner — incompatible with "pick one concept in 5 weeks," **deleted**. Default rung, needing nothing extra: **Dara Denney's set.**
 
 - No evaluation before **day 3**.
-- Asset-level kill: **$40 spend (2× the stated $20 CPA) with zero purchases** — reallocate that asset's budget within its cell. *(If your reconciliation check finds real cold CPA closer to $50, raise this to ~$100.)*
+- Asset-level kill: **$40 spend (2× the stated $20 CPA) with zero purchases** — reallocate that asset's budget within its cell. _(If your reconciliation check finds real cold CPA closer to $50, raise this to ~$100.)_
 - Cell-level dead-cell kill: **zero purchases after 7 days at full budget** → flag, redistribute its budget across the remaining two cells (this is separate from the full statistical window below — it catches a cell that never activates at all).
 - Scale: winner gets the holiday production budget, plus an initial +50-100% budget step as its first paid scale-up (treat that first step as its own read — regression to the mean on a low-spend winner is real).
 - Iterate: a concept that wins the gate metric but not cost per purchase gets a landing-page/offer check before any further creative work — don't blame the creative for a funnel problem.
 
 ## 7. Schedule (calendar dates, from today 2026-09-12)
 
-| Date | Milestone |
-|---|---|
-| Mon 2026-09-14 | Launch, all 3 cells concurrently |
-| Thu 2026-09-17 (day 3) | Earliest evaluation — no judgment before this |
-| Day 3-28, ongoing | Asset kill checks (2× CPA, zero purchases), dead-cell checks (7 days, zero purchases) |
-| Mon 2026-10-12 (day 28) | **Hard stop** — pre-registered: 28 days or 3,680 clicks/cell, whichever comes first |
-| Oct 13-16 | Buffer: guardrail confirmation, CPA reconciliation sanity check, readout deck |
-| Fri 2026-10-16 (day 32) | All-hands readout — 3 days inside your 5-week (day-35) deadline |
-| Inconclusive → | **Keep control.** Champion retains the holiday budget by default. Decided now, not at readout. |
+| Date                    | Milestone                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------- |
+| Mon 2026-09-14          | Launch, all 3 cells concurrently                                                               |
+| Thu 2026-09-17 (day 3)  | Earliest evaluation — no judgment before this                                                  |
+| Day 3-28, ongoing       | Asset kill checks (2× CPA, zero purchases), dead-cell checks (7 days, zero purchases)          |
+| Mon 2026-10-12 (day 28) | **Hard stop** — pre-registered: 28 days or 3,680 clicks/cell, whichever comes first            |
+| Oct 13-16               | Buffer: guardrail confirmation, CPA reconciliation sanity check, readout deck                  |
+| Fri 2026-10-16 (day 32) | All-hands readout — 3 days inside your 5-week (day-35) deadline                                |
+| Inconclusive →          | **Keep control.** Champion retains the holiday budget by default. Decided now, not at readout. |
 
 ---
 

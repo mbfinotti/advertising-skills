@@ -12,11 +12,11 @@ That leaves roughly **2–3 weeks of actual paid campaign data** — likely with
 
 ### Reframe each fact
 
-| Fact cited | What it actually means |
-|---|---|
-| No admin access until week 3 | Your handover failure, not theirs. This alone erased a third of their tenure. |
-| You get pinged for everything | You never defined a spend/change approval threshold. Absent that, "ask first" is the *correct* default for a new hire on someone else's ad account — not a sign they can't operate independently. |
-| Two inconclusive tests | Expected result given insufficient runway and sample size. Not evidence of skill or effort. |
+| Fact cited                         | What it actually means                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| No admin access until week 3       | Your handover failure, not theirs. This alone erased a third of their tenure.                                                                                                                                                                                                                                                                                                                                                                      |
+| You get pinged for everything      | You never defined a spend/change approval threshold. Absent that, "ask first" is the _correct_ default for a new hire on someone else's ad account — not a sign they can't operate independently.                                                                                                                                                                                                                                                  |
+| Two inconclusive tests             | Expected result given insufficient runway and sample size. Not evidence of skill or effort.                                                                                                                                                                                                                                                                                                                                                        |
 | Month spent on conversion tracking | This is the correct move, not stalling. If tracking is broken, campaign data — including your two "inconclusive" tests — is unreliable regardless of what it shows. Optimizing spend on broken tracking is worse than spending nothing: Meta's algorithm optimizes against whatever signal it gets, garbage or not. Auditing and fixing tracking before scaling budget is standard practice for anyone taking over an account, not a delay tactic. |
 
 "Revenue is what matters" is true — and precisely why fixing tracking first was right. You can't trust revenue attribution from a broken pixel/CAPI setup. Demanding revenue proof before the measurement system works is asking them to show you a number you already can't trust.
@@ -37,6 +37,6 @@ That leaves roughly **2–3 weeks of actual paid campaign data** — likely with
 
 - They can't produce a clear, specific account of what the tracking rebuild involved (vague answers = red flag for competence, not workload).
 - No proactive roadmap or communication about ramp time — you've had to drag every update out of them.
-- At the day-40 checkpoint, campaigns are still inconclusive *despite* adequate spend and working tracking.
+- At the day-40 checkpoint, campaigns are still inconclusive _despite_ adequate spend and working tracking.
 
 Right now you have a governance problem and an impatience problem, not a performance problem.

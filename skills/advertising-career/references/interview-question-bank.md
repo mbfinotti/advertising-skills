@@ -81,6 +81,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 ## PPC / SEM interview questions (grouped by category)
 
 ### Platform and technical knowledge
+
 - What is the difference between PPC and SEO?
 - Explain Google Ads' auction mechanism and how Quality Score affects ad rank and cost.
 - What bidding strategies have you used, and when do you switch from manual to automated?
@@ -93,6 +94,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you set up conversion tracking: website events, app events, phone calls, imports?
 
 ### Campaign structure and strategy
+
 - Walk me through how you structure a new Google Ads account from scratch.
 - How do you decide campaign vs. ad-group granularity for a new client?
 - What's your approach to keyword match types and when do you use broad vs. exact?
@@ -105,6 +107,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you handle seasonal budget pacing?
 
 ### Optimization and analysis
+
 - What are the key metrics you track in a PPC campaign?
 - How do you ensure that your PPC ads comply with platform policies and guidelines?
 - How do you handle click fraud or invalid clicks?
@@ -117,6 +120,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you measure incrementality of paid search vs. organic?
 
 ### Client and account management
+
 - How do you communicate underperformance to a client?
 - Walk me through a client escalation you handled.
 - How do you set expectations around PPC results and timeline?
@@ -127,6 +131,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 ## Paid social interview questions (Meta, TikTok, LinkedIn, X)
 
 ### Platform and technical knowledge
+
 - Imagine you're explaining Meta Ads to your grandma. How would you describe it?
 - What are the main parts of a Meta Ad, and why is each part important?
 - What's a pixel, and how does it help with your ads?
@@ -139,6 +144,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How does X (Twitter) Ads targeting differ from Meta?
 
 ### Campaign strategy
+
 - If a client has a tiny budget, how would you suggest they spend it wisely on Meta Ads?
 - How would you figure out who a client's perfect customer is on Meta, even if they don't know themselves?
 - How do you ensure ads are showing to the right people on Meta?
@@ -151,6 +157,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - What's your experience with lead gen campaigns vs. traffic campaigns?
 
 ### Optimization and analysis
+
 - How do you measure if a Meta Ad is successful or not? What numbers do you look at?
 - How do you handle negative feedback or comments on your Meta Ads?
 - How would you use retargeting in Meta Ads to reach people who have previously interacted with a client's business?
@@ -163,6 +170,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you calculate CAC from paid social data?
 
 ### Behavioural and case
+
 - Tell me about a time you had to solve a problem, even a small one. How did you figure it out, and what did you learn?
 - How would you explain the Facebook Ads auction in simple terms?
 - How would you target ads for a client selling handmade jewelry on Meta?
@@ -173,6 +181,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 ## Programmatic / display advertising questions
 
 ### Platform and technical knowledge
+
 - What is programmatic advertising?
 - How does real-time bidding work?
 - What are the different types of programmatic buying? (Direct, Open Market, Private Marketplace, Preferred Deals)
@@ -185,6 +194,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - What's your experience with Google Ad Manager / DV360 / The Trade Desk?
 
 ### Campaign strategy
+
 - How do you optimize programmatic campaigns for better performance?
 - What data points are essential for programmatic targeting?
 - How would you explain programmatic advertising to a beginner?
@@ -195,6 +205,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you handle frequency capping in programmatic campaigns?
 
 ### Brand safety and quality
+
 - How do you ensure brand safety in programmatic campaigns?
 - What's your experience with ad verification tools in programmatic advertising?
 - How do you measure viewability and ensure ads are actually seen?
@@ -202,6 +213,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - What's your approach to data privacy and GDPR in programmatic targeting?
 
 ### Behavioural and case
+
 - Describe a successful programmatic campaign you've managed.
 - How have you adapted your programmatic strategies to new technologies like AI and machine learning?
 - Walk me through how you'd set up a brand awareness campaign programmatically.
@@ -209,6 +221,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 ## Ad operations / trafficking questions
 
 ### Platform and technical knowledge
+
 - What is your experience with ad servers like Google Ad Manager, Freestar, etc.?
 - What's your understanding of the trafficking process in advertising?
 - How do you ensure compliance with advertising regulations and policies?
@@ -219,6 +232,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - What's your understanding of VAST/VPAID tags for video?
 
 ### Campaign strategy
+
 - How do you ensure ads are placed in the right contexts?
 - How do you handle ad scheduling and rotation?
 - How do you ensure creative compliance in ad operations?
@@ -226,6 +240,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - What's your experience with programmatic direct sales?
 
 ### Optimization and analysis
+
 - What metrics do you track to measure ad operations performance?
 - How do you troubleshoot technical issues in ad operations?
 - How do you ensure data accuracy in trafficking?
@@ -233,6 +248,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you measure the effectiveness of your trafficking process?
 
 ### Behavioural and case
+
 - Describe a complex trafficking project you've managed.
 - How do you ensure your trafficking meets campaign objectives?
 - Walk me through a time you caught a trafficking error before it went live.
@@ -240,6 +256,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 ## Campaign manager / strategist questions
 
 ### Platform and technical knowledge
+
 - What's your experience with campaign management platforms like DoubleClick, Google Campaign Manager, etc.?
 - How do you approach cross-channel attribution?
 - How do you structure and organize large-scale campaigns?
@@ -250,6 +267,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - What's your experience with data studios / Looker / Tableau for reporting?
 
 ### Campaign strategy
+
 - How would you design a cross-channel attribution model?
 - What strategies do you use for scaling campaigns across markets?
 - How do you balance short-term results with long-term brand building?
@@ -259,6 +277,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you coordinate launch campaigns across paid, owned, and earned?
 
 ### Optimization and analysis
+
 - How do you measure and report campaign performance to stakeholders?
 - How do you use data to optimize campaign performance?
 - How do you approach testing and iteration in campaign strategy?
@@ -267,6 +286,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you build a campaign forecast?
 
 ### Behavioural and case
+
 - Can you walk me through a complete campaign lifecycle you managed?
 - Describe a campaign where you had to pivot strategy mid-flight.
 - How do you balance multiple competing priorities in campaign management?
@@ -275,6 +295,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 ## Performance marketing questions
 
 ### Platform and technical knowledge
+
 - What's your understanding of performance marketing KPIs?
 - How do you approach attribution in performance marketing?
 - What's your experience with performance marketing platforms and tools?
@@ -285,6 +306,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - What's your experience with affiliate marketing management?
 
 ### Campaign strategy
+
 - How do you structure a performance marketing funnel?
 - How do you approach audience targeting in performance marketing?
 - How do you balance acquisition cost with lifetime value?
@@ -294,6 +316,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you approach market entry with performance marketing?
 
 ### Optimization and analysis
+
 - How do you measure the true ROI of performance marketing campaigns?
 - How do you handle attribution modeling challenges?
 - How do you approach A/B testing in performance marketing?
@@ -302,6 +325,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you identify and scale winning creatives?
 
 ### Behavioural and case
+
 - Can you share an example of a high-performing performance marketing campaign you've managed?
 - How have you balanced short-term performance with long-term growth in performance marketing?
 - Describe a time you had to shut down a channel that wasn't performing.
@@ -309,6 +333,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 ## Agency-side vs. in-house interview questions
 
 ### Agency-side
+
 - How does client management differ between agency and in-house roles?
 - What are the main challenges of working on multiple client accounts?
 - How do you handle conflicting priorities from multiple clients?
@@ -321,6 +346,7 @@ Structure each as situation (1-2 sentences), task (1), action (2-3), result with
 - How do you onboard a new client account?
 
 ### In-house
+
 - How does your day-to-day work differ when working in-house vs. agency?
 - What are the main challenges of working only on one brand's campaigns?
 - How do you approach campaign strategy without the diverse client experience?

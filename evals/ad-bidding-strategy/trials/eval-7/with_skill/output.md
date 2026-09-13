@@ -10,18 +10,18 @@ Set two return-goal targets, split by margin band (premium / basics), not one bl
 Break-even ROAS = 1 ÷ contribution margin. 4x break-even corresponds to a 25% margin business. You're blended 40%, so your blended break-even is 2.5x, not 4x — the agency's number isn't even derived from your own economics, let alone your profit goal.
 
 **2. One target across two margin bands 55% apart is a structurally meaningless number.**
-A premium order and a basics order can produce the *same* ROAS while one is 2.5x more profitable per dollar of revenue. A shared target lets the bidder treat them as identical, migrate spend on blended signal, and silently drift the mix in either direction — you'd have no way to tell from the ROAS readout alone whether profit is improving or eroding. This is a named failure pattern, not a hypothetical: pooling a high-margin and a low-margin line under one target is exactly the setup that produces it.
+A premium order and a basics order can produce the _same_ ROAS while one is 2.5x more profitable per dollar of revenue. A shared target lets the bidder treat them as identical, migrate spend on blended signal, and silently drift the mix in either direction — you'd have no way to tell from the ROAS readout alone whether profit is improving or eroding. This is a named failure pattern, not a hypothetical: pooling a high-margin and a low-margin line under one target is exactly the setup that produces it.
 
 **3. It's aspirational, not history-anchored, and the jump size alone risks delivery collapse.**
 Trailing 30-day blended is 2.6x. 4x is +54% above that in one move. The standard discipline caps a single target move at ~10-15% and requires a full evaluation window before the next step. A +54% jump is the textbook cause of the most commonly documented bidding failure: reported efficiency looks great while delivery quietly falls off a cliff, because the bidder stops bidding rather than lose money at a target it can't clear.
 
 ## The math
 
-| | Contribution margin | Break-even ROAS | ROAS for 10% net profit |
-|---|---|---|---|
-| Premium | 55% | 1 ÷ 0.55 = **1.82x** | 1 ÷ (0.55 − 0.10) = **2.22x** |
-| Basics | 22% | 1 ÷ 0.22 = **4.55x** | 1 ÷ (0.22 − 0.10) = **8.33x** |
-| Blended | 40% | 1 ÷ 0.40 = **2.5x** | 1 ÷ (0.40 − 0.10) = **3.33x** |
+|         | Contribution margin | Break-even ROAS      | ROAS for 10% net profit       |
+| ------- | ------------------- | -------------------- | ----------------------------- |
+| Premium | 55%                 | 1 ÷ 0.55 = **1.82x** | 1 ÷ (0.55 − 0.10) = **2.22x** |
+| Basics  | 22%                 | 1 ÷ 0.22 = **4.55x** | 1 ÷ (0.22 − 0.10) = **8.33x** |
+| Blended | 40%                 | 1 ÷ 0.40 = **2.5x**  | 1 ÷ (0.40 − 0.10) = **3.33x** |
 
 Formula: `target_ROAS_for_profit = 1 ÷ (contribution_margin − desired_net_margin)`. Evidence tier: documented (standard contribution-margin derivation).
 
@@ -33,7 +33,7 @@ Formula: `target_ROAS_for_profit = 1 ÷ (contribution_margin − desired_net_mar
 
 **A. Split into two return-goal policies by product line (premium vs. basics).** Lower effort — it's a campaign/ad-set structure and reporting change, no new data plumbing. Prerequisite: confirm purchase events are (or can be) tagged by line so each gets its own conversion stream and its own target. This is the standard fix for the blended-margin trap and should be the default here.
 
-**B. Pass margin-adjusted (contribution-dollar) value back instead of gross order value, and run one target.** Higher effort (needs per-order COGS/shipping/fees available at the moment the server-side conversion fires) but higher value: once the *value itself* already encodes margin, a single target works correctly regardless of mix shift, and the bidder naturally reallocates toward whichever line is most profitable rather than needing you to manage two campaigns by hand. Worth scoping as a follow-on once (A) is running and if there's engineering capacity — don't let it block fixing the immediate problem.
+**B. Pass margin-adjusted (contribution-dollar) value back instead of gross order value, and run one target.** Higher effort (needs per-order COGS/shipping/fees available at the moment the server-side conversion fires) but higher value: once the _value itself_ already encodes margin, a single target works correctly regardless of mix shift, and the bidder naturally reallocates toward whichever line is most profitable rather than needing you to manage two campaigns by hand. Worth scoping as a follow-on once (A) is running and if there's engineering capacity — don't let it block fixing the immediate problem.
 
 Recommend (A) now, revisit (B) as the compounding upgrade once measurement/eng bandwidth allows.
 

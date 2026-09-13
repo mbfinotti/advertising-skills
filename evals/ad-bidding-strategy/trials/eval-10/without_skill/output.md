@@ -18,7 +18,7 @@ Not as "just another campaign type," and not for "most of the web budget." That 
 **Why the Google rep's framing is misleading:**
 
 - PMax isn't a campaign type, it's an automated budget/targeting reallocation across Search, Shopping, Display, YouTube, Discover, Gmail and Maps with a black box you can't see into — no placement-level reporting, only partial search-term visibility, minimal exclusion control versus standard Search/Shopping.
-- It systematically over-indexes on your *existing* highest-intent inventory — brand search, cart abandoners, people already in your remarketing lists — because that's what's cheapest to "win." That inflates reported ROAS the same way last-click already inflates your web number, compounding the exact measurement problem in question 1, not fixing it.
+- It systematically over-indexes on your _existing_ highest-intent inventory — brand search, cart abandoners, people already in your remarketing lists — because that's what's cheapest to "win." That inflates reported ROAS the same way last-click already inflates your web number, compounding the exact measurement problem in question 1, not fixing it.
 - Google's account team is compensated on spend growth and product adoption, not on your incremental profit. A rep pushing "just flip it on" for most of the budget is not a neutral signal.
 
 **What to do instead:**

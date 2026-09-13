@@ -4,15 +4,15 @@
 
 ### Verdict per post
 
-| Post | Engagement vs. median (120) | Format on LinkedIn Thought Leader Ads | Verdict |
-|---|---|---|---|
-| (a) Series B carousel — 3,100 reactions | Far above | **Ineligible** — multi-image carousels are excluded | **Deleted** |
-| (b) Warehouse-automation poll — 890 votes | Above | **Ineligible** — polls are excluded | **Deleted** |
-| (c) Picking-error customer story (text) — 210 reactions, 40 comments | Above (1.75x), and comment rate (~19%) signals real intent | Eligible — text-only | **In the campaign** |
-| (d) Robotic-arm launch pitch — 95 reactions | **Below** median | Eligible — single asset | **Excluded** (underperformed organically, and it's the lowest-priority content type) |
-| (e) Cost-teardown PDF document — 1,500 reactions | Far above | **Ineligible** — document posts are excluded | **Deleted** |
-| (f) Hiring-philosophy video — 600+ reactions, posted yesterday, still climbing | Above, decisively | Eligible — single video | **Hold, don't launch yet** |
-| Two ghost-written posts (not yet published) | N/A | N/A | **Excluded** |
+| Post                                                                           | Engagement vs. median (120)                                | Format on LinkedIn Thought Leader Ads               | Verdict                                                                              |
+| ------------------------------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| (a) Series B carousel — 3,100 reactions                                        | Far above                                                  | **Ineligible** — multi-image carousels are excluded | **Deleted**                                                                          |
+| (b) Warehouse-automation poll — 890 votes                                      | Above                                                      | **Ineligible** — polls are excluded                 | **Deleted**                                                                          |
+| (c) Picking-error customer story (text) — 210 reactions, 40 comments           | Above (1.75x), and comment rate (~19%) signals real intent | Eligible — text-only                                | **In the campaign**                                                                  |
+| (d) Robotic-arm launch pitch — 95 reactions                                    | **Below** median                                           | Eligible — single asset                             | **Excluded** (underperformed organically, and it's the lowest-priority content type) |
+| (e) Cost-teardown PDF document — 1,500 reactions                               | Far above                                                  | **Ineligible** — document posts are excluded        | **Deleted**                                                                          |
+| (f) Hiring-philosophy video — 600+ reactions, posted yesterday, still climbing | Above, decisively                                          | Eligible — single video                             | **Hold, don't launch yet**                                                           |
+| Two ghost-written posts (not yet published)                                    | N/A                                                        | N/A                                                 | **Excluded**                                                                         |
 
 ### What ships
 
@@ -35,5 +35,5 @@ Default to a **tracked link in Priya's pinned first comment**. It's the smallest
 ### Before this spends a dollar
 
 - Written agreement with Priya (term, spend cap, edit rights, revocation handling) — click-to-approve isn't it.
-- Confirm retargeting/engager audiences are built and capturing *before* the ad serves — engagement before that exists is gone for good.
+- Confirm retargeting/engager audiences are built and capturing _before_ the ad serves — engagement before that exists is gone for good.
 - Size budget and audience together, and set the week-6 gate (cost per landing-page click vs. Mossvale's own brand-ad baseline, plus pool size) now, not at review time.

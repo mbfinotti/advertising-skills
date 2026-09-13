@@ -12,18 +12,20 @@ Merging campaigns will help — but not because algorithms need "more campaigns 
 Don't merge everything into one campaign per platform blindly — merge where audiences/keywords already overlap and segmentation isn't buying you real reporting value.
 
 **Google Search** → target 2 campaigns:
+
 - Category/solution keywords (your core cybersecurity terms)
 - Brand/competitor keywords (different intent, worth isolating)
 
 Collapse everything else into ad groups within those two. Ad groups still give you granular reporting; separate campaigns just fragment the bid strategy's data.
 
 **LinkedIn** → target 1–2 Campaign Groups:
+
 - Merge overlapping audience segments (job title + company size + industry stacked narrowly is likely shrinking your reachable audience below LinkedIn's viable delivery threshold).
 - Standardize on one objective (Website Conversions or Lead Gen Forms — not both) so the algorithm isn't fragmenting learning across objective types too.
 
 ## 2. Fix the budget-per-campaign floor
 
-$7K/month ÷ 11 = ~$636/campaign/month (~$21/day). That's below functional delivery thresholds on both platforms, especially LinkedIn B2B. After consolidating to ~4 total campaigns (2 Google + 2 LinkedIn), each gets ~$1,750/month (~$58/day) — much closer to viable.
+$7K/month ÷ 11 = ~$636/campaign/month (~~$21/day). That's below functional delivery thresholds on both platforms, especially LinkedIn B2B. After consolidating to ~4 total campaigns (2 Google + 2 LinkedIn), each gets ~$1,750/month (~~$58/day) — much closer to viable.
 
 ## 3. The part consolidation alone won't fix: optimize for a higher-volume signal
 

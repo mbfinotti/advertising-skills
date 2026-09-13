@@ -5,7 +5,7 @@
 Two problems, one platform fact and one mechanics issue:
 
 - **Microsoft Advertising has no negative broad match at all** — only phrase and exact. There's nothing to add "broad match negatives" to; that option doesn't exist on this platform, full stop.
-- Even on a platform that did have it, broad match negatives aren't the right tool for "cover a whole theme." Broad blocks any query containing *all* the listed words in any order — it's the narrowest-intent, widest-blast-radius match type, reserved for terms that are wrong in *every* recombination, not a bulk-coverage tool. **Phrase is the one built for exactly what you want**: one phrase negative (e.g., `"certification"`) blocks every query containing that word sequence, so it already kills the theme with far less risk of silently zeroing a converting query.
+- Even on a platform that did have it, broad match negatives aren't the right tool for "cover a whole theme." Broad blocks any query containing _all_ the listed words in any order — it's the narrowest-intent, widest-blast-radius match type, reserved for terms that are wrong in _every_ recombination, not a bulk-coverage tool. **Phrase is the one built for exactly what you want**: one phrase negative (e.g., `"certification"`) blocks every query containing that word sequence, so it already kills the theme with far less risk of silently zeroing a converting query.
 
 So: reject the broad-match plan on platform grounds, and redirect the underlying goal (kill the theme in one move) to phrase match, which does that job natively.
 
@@ -28,11 +28,11 @@ One caveat to check before building: Microsoft allows **only one negative keywor
 
 Phrase negatives, one entry per stem, then manually expand — Microsoft doesn't filter close variants any more than Google does (plurals, synonyms, misspellings all still get through unless you list them):
 
-| Root term | Variants to add manually |
-|---|---|
-| `webinar` | webinars, web seminar, online seminar |
-| `course` | courses, training course, e-learning, online class |
-| `certification` | certifications, certified, certificate, cert |
+| Root term       | Variants to add manually                           |
+| --------------- | -------------------------------------------------- |
+| `webinar`       | webinars, web seminar, online seminar              |
+| `course`        | courses, training course, e-learning, online class |
+| `certification` | certifications, certified, certificate, cert       |
 
 Treat this as a **draft skeleton**, not a final list — I haven't seen the actual search term report yet, so these are theme-level placeholders from the informational-intent category, not evidenced candidates.
 

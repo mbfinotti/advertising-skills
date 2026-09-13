@@ -7,7 +7,7 @@
 "Purchasers are always strongest" is true on exactly one axis: **value**. It ignores the other two axes that decide what's actually buildable this week:
 
 - **Effort**: purchasers need a unified export across three systems — a data-engineering project, not a query, and your engineer is five weeks out.
-- **Compliance cost**: any list of real customers uploaded to Meta triggers a full consent gate (documented lawful basis, opt-out propagation, platform terms acceptance) *before* a single row moves. Platform-native audiences built from pixel events never leave the ad account and trigger none of that.
+- **Compliance cost**: any list of real customers uploaded to Meta triggers a full consent gate (documented lawful basis, opt-out propagation, platform terms acceptance) _before_ a single row moves. Platform-native audiences built from pixel events never leave the ad account and trigger none of that.
 
 Read all three axes together, purchasers lose this round — not on merit, on timeline. Building the export first and launching later is the wrong sequencing when the board date is fixed and the constraint is a person's calendar, not data quality. Ship the native audience now; run the export as background work so purchasers become the seed for v2 without ever blocking v1.
 

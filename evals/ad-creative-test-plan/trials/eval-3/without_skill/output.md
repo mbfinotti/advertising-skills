@@ -24,7 +24,7 @@ Comparing today's result to a number from a different quarter ignores seasonalit
 
 ## 5. Watch the winner-selection bias
 
-Picking the best of 3 and checking it against a fixed threshold inflates false positives — the more concepts you test, the likelier one beats $18 by chance even if none are actually better. Require the winner to beat the *concurrent* champion CPA with enough volume and a real margin, not just a nominal edge.
+Picking the best of 3 and checking it against a fixed threshold inflates false positives — the more concepts you test, the likelier one beats $18 by chance even if none are actually better. Require the winner to beat the _concurrent_ champion CPA with enough volume and a real margin, not just a nominal edge.
 
 ## Recommended structure
 

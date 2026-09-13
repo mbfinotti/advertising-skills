@@ -7,20 +7,20 @@
 
 ## Definitions record
 
-Model: B2B SaaS · Window: 8 trailing quarters (2 years), payback "computed the same way each quarter" — window/lag maturity assumed since these are realized, not projected, figures · **Spend-line composition of the CAC numerator not stated** (blended vs. paid vs. fully-loaded) — flagged, not fatal, because consistency across periods still makes the *trend* valid even with the *level* undefined · New-customer basis (renewals/reactivations excluded?) not stated · Revenue basis: ACV $30K, gross vs. net not specified · **Contribution margin: 78% gross margin, used as a proxy** — reasonable for SaaS (COGS ≈ hosting/support, few other variable costs), but not confirmed as true contribution margin · History: 8 quarters available (exceeds the 4–8 minimum).
+Model: B2B SaaS · Window: 8 trailing quarters (2 years), payback "computed the same way each quarter" — window/lag maturity assumed since these are realized, not projected, figures · **Spend-line composition of the CAC numerator not stated** (blended vs. paid vs. fully-loaded) — flagged, not fatal, because consistency across periods still makes the _trend_ valid even with the _level_ undefined · New-customer basis (renewals/reactivations excluded?) not stated · Revenue basis: ACV $30K, gross vs. net not specified · **Contribution margin: 78% gross margin, used as a proxy** — reasonable for SaaS (COGS ≈ hosting/support, few other variable costs), but not confirmed as true contribution margin · History: 8 quarters available (exceeds the 4–8 minimum).
 
 Given the Thursday deadline, I deleted from this run: a fully-loaded CAC rebuild, a cohort/segment breakdown by plan or ACV band, and a CM1/2/3 waterfall — all need raw spend and customer-level data I don't have, and none fits before Thursday. **Promote next period:** (1) fully-loaded CAC, because this is going to a board deck and blended/undefined-variant numbers won't hold up to a director's follow-up question; (2) gross logo retention (not just NRR), which is the one missing input that would let rung 1 be answered definitively instead of partially; (3) per-segment payback, since a blended $30K-ACV average likely hides very different economics across your accounts.
 
 ## Metric table
 
-| Metric | Variant | Value | Window | Source |
-|---|---|---|---|---|
-| CAC payback (current) | undefined spend-line composition, consistent methodology | 21 months | current quarter | user-provided, internal calc |
-| CAC payback (8-quarter trend, oldest→newest) | same | 21.5, 21, 20.5, 21, 20.5, 21, 21, 21 | trailing 2 years | user-provided, internal calc |
-| Monthly gross profit per customer | ACV × gross margin ÷ 12 = $30,000 × 0.78 ÷ 12 | $1,950 | — | derived from user-provided ACV/margin |
-| Implied CAC (backed out of payback) | payback × monthly gross profit = 21 × $1,950 | $40,950 | current quarter | derived |
-| Allowable CAC (first-year) | ACV × gross margin | $23,400 | — | derived, own economics |
-| LTV:CAC | as reported | 2.7 | current | user-provided |
+| Metric                                       | Variant                                                  | Value                                | Window           | Source                                |
+| -------------------------------------------- | -------------------------------------------------------- | ------------------------------------ | ---------------- | ------------------------------------- |
+| CAC payback (current)                        | undefined spend-line composition, consistent methodology | 21 months                            | current quarter  | user-provided, internal calc          |
+| CAC payback (8-quarter trend, oldest→newest) | same                                                     | 21.5, 21, 20.5, 21, 20.5, 21, 21, 21 | trailing 2 years | user-provided, internal calc          |
+| Monthly gross profit per customer            | ACV × gross margin ÷ 12 = $30,000 × 0.78 ÷ 12            | $1,950                               | —                | derived from user-provided ACV/margin |
+| Implied CAC (backed out of payback)          | payback × monthly gross profit = 21 × $1,950             | $40,950                              | current quarter  | derived                               |
+| Allowable CAC (first-year)                   | ACV × gross margin                                       | $23,400                              | —                | derived, own economics                |
+| LTV:CAC                                      | as reported                                              | 2.7                                  | current          | user-provided                         |
 
 The $40,950 "implied CAC" is arithmetic, not a new fact — it's what your 21-month payback and stated margin necessarily imply about dollars spent per customer, useful for translating "months" into a number the board reacts to more directly.
 
@@ -45,11 +45,11 @@ Gate: variant established — **partial** (composition undefined, but consistent
 
 ## Folklore appendix
 
-- **"LTV:CAC should be 3:1"** — David Skok (Matrix Partners, ~2011–2013): on record at SaaStr as "I guessed at that number." Not a study. Current descriptive medians run *above* 3, not at it (3.2:1, Optifai 2025–2026, n=939; 3.6:1, Benchmarkit 2025) — so by that lower bar Corvid's 2.7 is a bit further behind than "below the folklore rule" alone suggests, but it's still a secondary check; prefer the payback read above, which is directly grounded in your own ACV and margin.
+- **"LTV:CAC should be 3:1"** — David Skok (Matrix Partners, ~2011–2013): on record at SaaStr as "I guessed at that number." Not a study. Current descriptive medians run _above_ 3, not at it (3.2:1, Optifai 2025–2026, n=939; 3.6:1, Benchmarkit 2025) — so by that lower bar Corvid's 2.7 is a bit further behind than "below the folklore rule" alone suggests, but it's still a secondary check; prefer the payback read above, which is directly grounded in your own ACV and margin.
 - **The 16/18/20-month figures you collected** — correctly gathered as a range rather than a single number, which is the right instinct. The mistake was collapsing them to one average (18); the fix is the ACV-segmented figure above, not a better average of the three.
 
 ## Handoffs
 
-- Gap is structural and unexplained for two straight years → `mbfinotti/advertising-skills@ad-account-diagnostic` to find out *why* Corvid's payback sits ~50% above segment peers (channel mix, sales cycle, discounting, something else).
+- Gap is structural and unexplained for two straight years → `mbfinotti/advertising-skills@ad-account-diagnostic` to find out _why_ Corvid's payback sits ~50% above segment peers (channel mix, sales cycle, discounting, something else).
 - If next quarter's payback moves further from 14 months, or NRR softens (removing the offsetting justification), escalate to `mbfinotti/advertising-skills@ad-spend-guardrails` to set an explicit ceiling — this check doesn't set policy, it only reads the arithmetic.
 - Gross/logo retention is the one input that would let rung 1 close definitively — get it before the next quarterly check, not before Thursday.

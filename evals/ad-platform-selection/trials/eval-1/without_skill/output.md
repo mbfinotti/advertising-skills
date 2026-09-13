@@ -5,6 +5,7 @@ Your board's 3.2:1 is a **blended** average across two businesses with almost no
 ### Unit economics by plan (not blended)
 
 **Starter — $19/mo, 45% annual retention**
+
 - Monthly gross profit: $19 × 0.82 = **$15.58**
 - 45% annual retention → ~6.4% monthly churn → expected lifetime ≈ **15.5 months**
 - LTV (monthly GP ÷ monthly churn) ≈ **$242**
@@ -12,6 +13,7 @@ Your board's 3.2:1 is a **blended** average across two businesses with almost no
 - ⚠️ That's a customer who barely repays acquisition cost before the average one churns. No safety margin — and this ignores support cost, discounts, and time value of money, which would likely push it to breakeven or negative.
 
 **Scale — $549/mo, 92% annual retention**
+
 - Monthly gross profit: $549 × 0.82 = **$450**
 - 92% annual retention → ~0.7% monthly churn → expected lifetime ≈ **12 years**
 - LTV ≈ **$65,000**

@@ -4,7 +4,7 @@
 
 ### Why fatigue doesn't fit
 
-1. **Timing is wrong for fatigue.** Creative fatigue is a *gradual* decay curve — CTR erodes over weeks as the same audience sees the ad repeatedly. What you have is a *step change* that lines up exactly with day 11, the day you moved the budget. Five weeks of stable performance, then an overnight break — that's a delivery-mechanism signature, not a wear-out signature.
+1. **Timing is wrong for fatigue.** Creative fatigue is a _gradual_ decay curve — CTR erodes over weeks as the same audience sees the ad repeatedly. What you have is a _step change_ that lines up exactly with day 11, the day you moved the budget. Five weeks of stable performance, then an overnight break — that's a delivery-mechanism signature, not a wear-out signature.
 
 2. **All three creatives broke the same way, same day.** If the hero were specifically fatigued, you'd expect it to decline while the other two creatives (presumably fresher) held steady or declined less. Instead all three moved together — that's an **ad-set-level cause**, not a creative-level one. Fatigue is creative-specific; this isn't.
 
@@ -33,7 +33,7 @@
 Killing the hero ad now, mid-diagnosis, means you lose your best cell and still won't know what actually broke. Better sequencing:
 
 - **Brief the 2 UGC videos today anyway** — production lead time (creator sourcing, script, shoot, edit) is typically 1–2 weeks regardless of what the test shows, so there's no cost to starting now.
-- **Launch them in a separate testing ad set** at modest budget ($100–150/day), *not* folded into the scaled ad set — you don't want a second confound (new creative + budget-shocked ad set) stacked on top of the first.
+- **Launch them in a separate testing ad set** at modest budget ($100–150/day), _not_ folded into the scaled ad set — you don't want a second confound (new creative + budget-shocked ad set) stacked on top of the first.
 - **Angle the two videos to complement, not duplicate, the hero's before/after static**: e.g. (1) a real-customer testimonial walking through first-30-days results, spoken to camera; (2) a day-in-the-life/unboxing hook that gets to the before/after payoff by mid-video. Different format (video vs. static) and different hook mechanics reduce audience overlap with hero, so they're additive rather than cannibalizing.
 - Treat these as **new-creative tests**, scored against fresh baselines — not as "replacements" justified by a fatigue diagnosis that the data doesn't actually support yet.
 

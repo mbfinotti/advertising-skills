@@ -2,7 +2,7 @@
 
 ### What's actually broken
 
-The current final round is the one format the evidence says to never use. From the sourced practitioner consensus this skill runs on: *"test projects during the interviews are mostly hated by the community"* — Julia Vyse calls an unpaid take-home *"straight-up time-wasting, unpaid labor,"* Julie Bacchini: *"if you are asking someone to do work on an account... you should compensate them for their time."* Duane Brown, who runs a live version of this exact exercise: *"I wouldn't ask someone to take stuff home or do a 4-hour media plan for me."*
+The current final round is the one format the evidence says to never use. From the sourced practitioner consensus this skill runs on: _"test projects during the interviews are mostly hated by the community"_ — Julia Vyse calls an unpaid take-home _"straight-up time-wasting, unpaid labor,"_ Julie Bacchini: _"if you are asking someone to do work on an account... you should compensate them for their time."_ Duane Brown, who runs a live version of this exact exercise: _"I wouldn't ask someone to take stuff home or do a 4-hour media plan for me."_
 
 Your two withdrawals this month aren't a signal about this candidate pool — they're the documented failure mode. A 4-hour unpaid deliverable due in 3 days selects for candidates with uncommitted free time, which correlates inversely with seniority. You're filtering out the people you most want.
 
@@ -16,7 +16,7 @@ Per the constraint you gave (Finance: no budget for paid candidate work), two fo
 
 ### What replaces it: live screen-share account audit
 
-This is the top-signal format on the list *and* it costs you nothing Finance would object to — it consumes interview time you're already spending, not extra budget.
+This is the top-signal format on the list _and_ it costs you nothing Finance would object to — it consumes interview time you're already spending, not extra budget.
 
 It only wins here because of a constraint you already stated: your head of growth is a former agency buyer who's great at reading accounts live. The skill's own rule is that the live audit requires "a panelist able to grade an audit live" — without that, this format gets removed too, and you'd default to the data-table case instead. You have that panelist, so the top-ranked format is actually available to you, which is unusual.
 
@@ -24,12 +24,12 @@ You also already maintain a copy of your ad account for candidate access — tha
 
 **Session design — 75–90 minutes, inside the interview loop, no take-home, no 3-day window:**
 
-| Segment | Time | What happens |
-|---|---|---|
-| Live account audit | 40 min | Candidate screen-shares and audits the sanitized account copy live, thinking aloud. Head of growth grades in real time. This defeats both AI-generated audits and third-party audit tools — you're watching method, not output. |
-| Red-flag diagnostic | 10 min | Jason Parks' pairing question: *"A month into this campaign, what results would raise a red flag?"* Score for a specific number (e.g. ecommerce ROAS below break-even), not a vague answer. |
-| Kill-decision + incrementality probe | 10 min | Since this round also functions as your spend-under-management screen, pair it per the field's rule: *"walk me through a campaign you killed and why,"* plus how they separate incremental revenue from attribution noise. Never ask the spend question without this pairing — it's what stops a resume's "$X/month managed" claim from being someone else's strategy. |
-| Verbal restructure proposal | 15–20 min | This replaces the written "full restructure proposal" deliverable. Candidate proposes, out loud, how they'd restructure the account off what they just found — structure, budget allocation, what they'd kill first. You get the same judgment signal as the take-home's deliverable, with zero added candidate hours and full immunity to AI-drafted output. |
+| Segment                              | Time      | What happens                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------------------------ | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Live account audit                   | 40 min    | Candidate screen-shares and audits the sanitized account copy live, thinking aloud. Head of growth grades in real time. This defeats both AI-generated audits and third-party audit tools — you're watching method, not output.                                                                                                                                        |
+| Red-flag diagnostic                  | 10 min    | Jason Parks' pairing question: _"A month into this campaign, what results would raise a red flag?"_ Score for a specific number (e.g. ecommerce ROAS below break-even), not a vague answer.                                                                                                                                                                            |
+| Kill-decision + incrementality probe | 10 min    | Since this round also functions as your spend-under-management screen, pair it per the field's rule: _"walk me through a campaign you killed and why,"_ plus how they separate incremental revenue from attribution noise. Never ask the spend question without this pairing — it's what stops a resume's "$X/month managed" claim from being someone else's strategy. |
+| Verbal restructure proposal          | 15–20 min | This replaces the written "full restructure proposal" deliverable. Candidate proposes, out loud, how they'd restructure the account off what they just found — structure, budget allocation, what they'd kill first. You get the same judgment signal as the take-home's deliverable, with zero added candidate hours and full immunity to AI-drafted output.          |
 
 **Total candidate time: under 90 minutes, entirely inside a scheduled interview slot.** Duane Brown runs this shape at his agency and reports better hires for cutting to it.
 
@@ -62,7 +62,7 @@ The debrief carries more signal than anything written down, because reasoning wa
 
 ### Loop shape update
 
-This round now *is* your case/technical round — it doesn't need to be a separate 4th step. Recommended shape: screen (context + spend-under-management paired with the kill/incrementality probe) → this 90-minute live-audit round → a shorter founder/peer round if you want a third data point. That's 2–3 rounds total, no round longer than 90 minutes, nothing sent home.
+This round now _is_ your case/technical round — it doesn't need to be a separate 4th step. Recommended shape: screen (context + spend-under-management paired with the kill/incrementality probe) → this 90-minute live-audit round → a shorter founder/peer round if you want a third data point. That's 2–3 rounds total, no round longer than 90 minutes, nothing sent home.
 
 ### What this fixes vs. what it doesn't
 

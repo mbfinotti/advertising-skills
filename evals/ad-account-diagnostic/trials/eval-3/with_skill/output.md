@@ -63,4 +63,4 @@ Weekly consultation counts for a lead-gen account this size behave like a noisy 
 3. **Do nothing to bidding or budget until the re-check date.** Let the 9-day-old change finish playing out its own learning window before drawing any conclusion from it, let alone stacking a second change on top.
 4. **Calendar the re-check for 2026-09-26.** If requests haven't recovered toward 10-12/week by then, that's a real signal — and at that point the diagnostic proceeds with tracking and structure properly screened instead of both sitting at "unknown."
 
-If your partner needs something to *act* on today rather than *wait* on: the action is closing the CRM-access gap, not touching the ad account.
+If your partner needs something to _act_ on today rather than _wait_ on: the action is closing the CRM-access gap, not touching the ad account.

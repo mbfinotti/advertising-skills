@@ -5,8 +5,8 @@ Each one takes a generic industry stat and applies it without checking it agains
 ### (a) Move demo bookings from landing page to in-platform lead forms — **Reject**
 
 - The deck cites landing pages at 4%. Ours converts at **6.5%** — already 62% above their benchmark. The premise doesn't apply to us.
-- The comparison is apples-to-oranges: a lead form submit and a **booked calendar slot** are different outcomes. A form submit still needs a follow-up email/call to become a meeting, with its own drop-off (often 30-50% loss). Our 6.5% is already *booked meetings*, not raw form fills — comparing it to a form-fill rate understates our real conversion.
-- Action: don't touch it. If anything, test adding an in-platform form as a *secondary* path for logged-in trial users, not a replacement for the calendar on the landing page.
+- The comparison is apples-to-oranges: a lead form submit and a **booked calendar slot** are different outcomes. A form submit still needs a follow-up email/call to become a meeting, with its own drop-off (often 30-50% loss). Our 6.5% is already _booked meetings_, not raw form fills — comparing it to a form-fill rate understates our real conversion.
+- Action: don't touch it. If anything, test adding an in-platform form as a _secondary_ path for logged-in trial users, not a replacement for the calendar on the landing page.
 
 ### (b) 6-second bumper ads for demo requests — **Reject**
 

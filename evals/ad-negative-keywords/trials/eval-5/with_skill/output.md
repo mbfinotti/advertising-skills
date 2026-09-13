@@ -12,7 +12,7 @@ I need one fact to tell you which of these dominates: **what's your campaign typ
 
 Be precise about what's actually possible here, because two different problems get conflated under "hidden queries":
 
-- **Junk buried in the visible $9k** — real, fixable today. You *can* see these rows; you're just not going to spot every bad pattern by eyeball-scanning hundreds of one-off long-tail queries, especially ones that individually sit under the click/cost gate but repeat the same junk theme dozens of times.
+- **Junk buried in the visible $9k** — real, fixable today. You _can_ see these rows; you're just not going to spot every bad pattern by eyeball-scanning hundreds of one-off long-tail queries, especially ones that individually sit under the click/cost gate but repeat the same junk theme dozens of times.
 - **Spend Google suppressed from the report entirely (the $7k)** — you cannot recover the literal query text. No tool, script, or API call gets it back; Google doesn't expose it, full stop. Anyone selling you a way to "unhide" it is selling snake oil.
 
 So the approach splits in two:
@@ -37,7 +37,7 @@ python mine_search_terms.py search_terms_export.csv --target-cpa 40 --out token_
 
 You can't see the queries, but you can see where the money that generated them sits:
 
-1. **Break down cost by campaign/ad group**, compare it against search-term-report cost for the same container. The gap concentrates unevenly — a broad-match, top-of-funnel ad group leaks far more into the hidden bucket than a tight exact-match one. That tells you *where* to be aggressive even without literal query text.
+1. **Break down cost by campaign/ad group**, compare it against search-term-report cost for the same container. The gap concentrates unevenly — a broad-match, top-of-funnel ad group leaks far more into the hidden bucket than a tight exact-match one. That tells you _where_ to be aggressive even without literal query text.
 2. **Use PMax search category insights** if applicable — thematic, not literal, but it's the closest thing to visibility that surface has.
 3. **Apply the taxonomy proactively, not reactively**, on the ad groups the gap analysis flags: job-seeker, DIY/free, informational, wrong-product-tier phrase negatives at the shared-list level, based on what you already know is irrelevant to your catalog — you don't need to see the exact query "free stand mixer template" to know "free," "template," "diy," and "wholesale" are never going to buy kitchen appliances at your price point.
 4. **Re-measure the gap next pass.** If it shrinks, the shared-list negatives are catching hidden-bucket queries even though you never saw them individually — spend on a token moves whether or not the report itemizes the query.

@@ -2,13 +2,13 @@
 
 Your source and mine are the same one, just from different years: **Marketing Week's Career & Salary Survey**. Your "£72,000 senior marketing manager average" is the **2025** wave. The **2026** wave (2,350 respondents, published 16 April 2026) has already superseded it, and it shows senior-manager pay **fell** year-on-year:
 
-| Level | 2025 | 2026 |
-|---|---|---|
+| Level          | 2025    | 2026        |
+| -------------- | ------- | ----------- |
 | Senior manager | £72,434 | **£60,577** |
 
 That's a ~16% drop. Quoting last year's number as this year's anchor doesn't just risk being "a bit high" — a retail brand's HR/talent team running its own 2026 benchmarking will read it as citing outdated data, which costs credibility right when you're trying to build it.
 
-*(Note: I wasn't able to browse live to re-verify this against a fresher source today — web search wasn't available in this session. I'm flagging that gap rather than pretending the number is current-confirmed; treat it as survey-grade but re-check if you can before the final round.)*
+_(Note: I wasn't able to browse live to re-verify this against a fresher source today — web search wasn't available in this session. I'm flagging that gap rather than pretending the number is current-confirmed; treat it as survey-grade but re-check if you can before the final round.)_
 
 ## The other benchmark that matters more for your actual title
 
@@ -21,7 +21,7 @@ I have no Manchester-specific (vs. London-weighted) breakdown for either source 
 
 ## What this means for your number
 
-£75,000 sits above even the *stale* 2025 average, and meaningfully above both the current 2026 senior-manager figure and the top of the PPC-specific range. In a market the strongest available survey shows declining, that's an aggressive anchor built on a citation that's already wrong twice over (wrong year, and probably the wrong benchmark category for your actual role).
+£75,000 sits above even the _stale_ 2025 average, and meaningfully above both the current 2026 senior-manager figure and the top of the PPC-specific range. In a market the strongest available survey shows declining, that's an aggressive anchor built on a citation that's already wrong twice over (wrong year, and probably the wrong benchmark category for your actual role).
 
 A defensible range, given what's verifiable: **£62,000–£70,000 base**, positioned as a range tied to scope, not a single anchored point. If you have anything more current than these surveys — recent recruiter conversations, comparable live postings for this role/region — weight those above any of the above; a survey average is never a substitute for what your specific market is paying right now.
 
@@ -34,7 +34,7 @@ Don't lead with a point figure at all. Anchor to a range, tie it to scope, and m
 Why this works better than "£75,000, take it or leave it":
 
 - **A range, not a point** — signals you did the research without sounding rigid before you know their budget/scope.
-- **Ties the number to ownership** (budget, forecast responsibility) — the actual senior-track signal, and it invites *them* to justify a higher offer by expanding scope rather than you having to justify a high anchor.
+- **Ties the number to ownership** (budget, forecast responsibility) — the actual senior-track signal, and it invites _them_ to justify a higher offer by expanding scope rather than you having to justify a high anchor.
 - **Names total comp** — retail brands often carry bonus/revenue-share structures; a base-only anchor can leave money on the table or make you look inflexible if theirs is base-light.
 - **Dates itself implicitly** ("current market data") without you having to defend a specific stale citation if they push back.
 

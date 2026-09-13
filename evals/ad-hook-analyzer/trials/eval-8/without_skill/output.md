@@ -14,13 +14,13 @@ You observed **1 exact hit** (batch 1). That's statistically indistinguishable f
 
 "Exact #1 or nothing" throws away information — 2nd of 4 and 5th of 5 are very different misses, but a binary hit/miss test treats them the same. Score each batch instead by normalized rank (0 = picked the actual winner, 1 = picked the actual last place; chance average = 0.5):
 
-| Batch | Finish | n | Normalized rank |
-|---|---|---|---|
-| 1 | 1st | 5 | 0.00 |
-| 2 | 4th | 6 | 0.60 |
-| 3 | 2nd | 4 | 0.33 |
-| 4 | 5th | 5 | 1.00 |
-| 5 | 3rd | 6 | 0.40 |
+| Batch | Finish | n   | Normalized rank |
+| ----- | ------ | --- | --------------- |
+| 1     | 1st    | 5   | 0.00            |
+| 2     | 4th    | 6   | 0.60            |
+| 3     | 2nd    | 4   | 0.33            |
+| 4     | 5th    | 5   | 1.00            |
+| 5     | 3rd    | 6   | 0.40            |
 
 Average = **0.467**, vs. **0.500** expected under no skill. Slightly better than chance, but with n=5 that gap is well within noise — not a result you can act on.
 
@@ -28,12 +28,13 @@ Average = **0.467**, vs. **0.500** expected under no skill. Slightly better than
 
 Batches 1–3 used ThruPlay ÷ impressions; batches 4–5 used 3-second plays ÷ impressions. These aren't two versions of the same metric — they're different constructs:
 
-- **3-second plays** is close to a pure "did the hook stop the scroll" signal — arguably the *more* construct-valid definition of "hook rate."
+- **3-second plays** is close to a pure "did the hook stop the scroll" signal — arguably the _more_ construct-valid definition of "hook rate."
 - **ThruPlay** (completion or 15s) is dominated by whole-video watch-through — pacing, length, offer, CTA — not just the opening seconds.
 
 So for batches 1–3, "measured results" weren't cleanly validating hook performance in the first place; they were validating overall video engagement, of which the hook is only one input. That means:
+
 - You can't pool all 5 batches into one verdict — you have two different experiments stitched together (n=3 and n=2).
-- Batch 4's dead-last finish and batch 5's above-average finish are both on the *new*, arguably better, metric — and you don't have enough batches on that metric alone (n=2) to say anything.
+- Batch 4's dead-last finish and batch 5's above-average finish are both on the _new_, arguably better, metric — and you don't have enough batches on that metric alone (n=2) to say anything.
 
 ## Recommendation
 

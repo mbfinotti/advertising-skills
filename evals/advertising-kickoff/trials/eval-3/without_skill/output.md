@@ -2,9 +2,9 @@
 
 I checked `skills-affiliation` end to end (everything except `skill-wip/`, which I was told to leave untouched). Two things worth flagging before the actual answer:
 
-- **This repo doesn't contain skills at all.** Per its own README: *"This repository does not contain the skills themselves"* — it only tracks affiliate programs and which skill uses which. The actual skill content (including any advertising/paid-media skill) would live under `skill-wip/<owner>/<repo>/`.
+- **This repo doesn't contain skills at all.** Per its own README: _"This repository does not contain the skills themselves"_ — it only tracks affiliate programs and which skill uses which. The actual skill content (including any advertising/paid-media skill) would live under `skill-wip/<owner>/<repo>/`.
 - **I did not open `skill-wip/`**, as instructed, so I can't tell you whether a matching skill already exists there or is still a stub. If one does exist, it may already handle part of what you're asking.
-- Everything else I *can* see is unrelated: `memory/naomakers/` is event-ops knowledge (hackathons, sponsors, run-of-show) — nothing on CAC, pacing, or bid strategy. `research/2026-08-24-priority-skills-advertising-crm-sales.md` is just a list of third-party skills.sh listings (`ads-budget`, `paid-ads`, `google-ads-manager`, etc.) kept as a reference for *building* a future skill, not something usable today.
+- Everything else I _can_ see is unrelated: `memory/naomakers/` is event-ops knowledge (hackathons, sponsors, run-of-show) — nothing on CAC, pacing, or bid strategy. `research/2026-08-24-priority-skills-advertising-crm-sales.md` is just a list of third-party skills.sh listings (`ads-budget`, `paid-ads`, `google-ads-manager`, etc.) kept as a reference for _building_ a future skill, not something usable today.
 
 So: no skill in the accessible part of this repo handles any of your three asks. Ask the repo owner whether an advertising skill already exists in `skill-wip/`; if not, here's the framework directly, in the order I'd actually run it.
 
@@ -30,7 +30,7 @@ Write this down and get finance + VP sign-off — it's a policy, not a suggestio
   - Every campaign gets a **hard daily budget cap**, not just a monthly one — never rely on Google's monthly pacing alone.
   - **No unattended automated bid-strategy changes** (e.g., Target CPA auto-adjustments, Performance Max budget reallocation) run over Fri evening–Mon morning without a human checking Friday's pacing snapshot first (see #2).
   - A **standing calendar block** the Friday before any 3+ day weekend to explicitly set weekend caps low, or pause non-core campaigns, rather than trusting defaults.
-- **Who can override the pause, and how fast:** name a single owner (you, presumably) with pause/unpause authority, and require a second person's sign-off to *raise* the CAC ceiling — never to lower it.
+- **Who can override the pause, and how fast:** name a single owner (you, presumably) with pause/unpause authority, and require a second person's sign-off to _raise_ the CAC ceiling — never to lower it.
 
 ## 2. Weekly Friday pacing check (the VP's #3 ask)
 
@@ -53,7 +53,7 @@ tCPA targets drift wrong for one of three reasons — check in this order:
 
 1. **Not enough conversion volume.** Google's Target CPA bidding needs ~30 conversions/campaign in a rolling 30-day window to have a stable signal. Below that, the algorithm is guessing, and any CAC swing you see is noise, not signal — don't retarget off it.
 2. **Conversion lag mismatch.** If your sales cycle (demo → close) runs longer than your attribution/conversion window, tCPA is optimizing on a leading proxy (e.g., demo booked) that may not track close rate. Check: has your lead-to-close rate been stable, or has "cheap CAC" recently come with worse lead quality?
-3. **Target stale vs. reality.** Compare *actual trailing-30-day CAC* to the *tCPA you've set* — if actual has been running consistently 15%+ below target for 3+ weeks (which is what triggered the VP's question), the target is set too loose, and Google will spend up to meet it, not below it. Tighten the target down toward actual, in single-digit-percent steps, and watch volume — don't jump straight to the new number.
+3. **Target stale vs. reality.** Compare _actual trailing-30-day CAC_ to the _tCPA you've set_ — if actual has been running consistently 15%+ below target for 3+ weeks (which is what triggered the VP's question), the target is set too loose, and Google will spend up to meet it, not below it. Tighten the target down toward actual, in single-digit-percent steps, and watch volume — don't jump straight to the new number.
 
 **Do not use "beat target 2 months straight" alone as justification to loosen tCPA further** — that's exactly the instinct that leads to point 3 above. Beating target consistently means either the target's stale (fix it) or there's real headroom (test it deliberately, see #4) — not "raise the target and hope."
 
@@ -61,7 +61,7 @@ tCPA targets drift wrong for one of three reasons — check in this order:
 
 - **This quarter's $45k is fixed — don't treat "beat target 2 months" as license to overspend now.** The case you're building is for Q1 budget, not for bending the current cap.
 - Before recommending an increase, get three numbers from the pacing log and tCPA calibration above:
-  - Is the Google campaign's CAC stable *and* below your max-allowable CAC (from #1) with sufficient volume (from #3) — not just "under target," which could mean the target's loose?
+  - Is the Google campaign's CAC stable _and_ below your max-allowable CAC (from #1) with sufficient volume (from #3) — not just "under target," which could mean the target's loose?
   - What's the marginal CAC if you push 20% more budget into it — not the current blended CAC. Test this in-quarter with a small controlled budget bump (e.g., +$2-3k for one week, isolated from the rest of the $45k) before proposing a permanent increase; flat or rising marginal CAC as spend increases means you're near channel saturation, not "add more."
   - Is the win concentrated in one segment/keyword set that could hit a ceiling, or genuinely broad?
 - **Recommendation structure for the VP:** "Google is beating target with [X] margin of safety on CAC, marginal CAC at +20% spend held at [Y], so we're not yet saturated — propose +$Z/month for Q1, contingent on the CAC kill-switch rule above being in place first." That last clause matters — she won't (and shouldn't) fund more spend without the guardrail that stops another $18k weekend.

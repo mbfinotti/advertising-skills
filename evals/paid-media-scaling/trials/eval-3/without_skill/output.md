@@ -6,7 +6,7 @@ Platform-reported ROAS is not causal. Before allocating the $120K increase, this
 
 - **Branded search (11x)** mostly captures demand that already exists — people who already know Finchley and were going to convert via organic/direct anyway. The platform takes 100% credit for a conversion it didn't create.
 - **Retargeting (7.8x)** re-engages visitors sourced by other channels. It's stealing credit from whatever brought them to the site the first time, not generating new revenue.
-- **Cold prospecting (2.1x)** is the only channel creating *new* demand. Its reported ROAS is structurally understated because platform attribution doesn't credit it for the branded search and retargeting conversions it seeds downstream.
+- **Cold prospecting (2.1x)** is the only channel creating _new_ demand. Its reported ROAS is structurally understated because platform attribution doesn't credit it for the branded search and retargeting conversions it seeds downstream.
 
 "Proven winners" here means "proven in a ledger that's biased toward channels that harvest rather than create demand." Scaling on that basis will look great on the dashboard and be wrong in reality.
 
@@ -18,7 +18,7 @@ Even ignoring attribution bias, branded search and retargeting **cannot structur
 - Retargeting pool size is capped by top-of-funnel traffic. Without more new visitors, 3x-ing retargeting spend just means more frequency on the same people — ad fatigue and negative marginal returns, not more revenue.
 - Cold prospecting is the only channel with real headroom to absorb new budget at volume.
 
-Putting most of a 3x increase into the two channels least able to absorb it is close to a best case of wasted spend and a worst case of active harm (creative/audience fatigue, CPC inflation raising cost on your *existing* $60K base too).
+Putting most of a 3x increase into the two channels least able to absorb it is close to a best case of wasted spend and a worst case of active harm (creative/audience fatigue, CPC inflation raising cost on your _existing_ $60K base too).
 
 ## Recommended approach: test, then scale by evidence
 

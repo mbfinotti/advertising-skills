@@ -6,12 +6,12 @@ I couldn't hit live search this session (tool access was blocked), so this is bu
 
 Pick one fixed slot (Monday first coffee works well). Run it as a queue, not a browse session — open each source, skim, close.
 
-| Time | Tier | What |
-|---|---|---|
-| 5 min | 1 | Platform changelogs |
-| 10 min | 2 | B2B ad effectiveness research |
-| 20 min | 3 | Paid search + LinkedIn Ads tactics |
-| 10 min | 4 | B2B SaaS growth / creative swipe |
+| Time   | Tier | What                               |
+| ------ | ---- | ---------------------------------- |
+| 5 min  | 1    | Platform changelogs                |
+| 10 min | 2    | B2B ad effectiveness research      |
+| 20 min | 3    | Paid search + LinkedIn Ads tactics |
+| 10 min | 4    | B2B SaaS growth / creative swipe   |
 
 ## Tier 1 — Source of truth (5 min)
 

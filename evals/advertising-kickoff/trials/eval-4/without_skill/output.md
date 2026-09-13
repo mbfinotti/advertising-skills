@@ -26,12 +26,12 @@ Red flag across all of these: fluent in platform jargon, vague on plain-language
 
 Ramp it, don't hand it over day one — you also need to build trust that they won't blow the budget while you're not watching.
 
-| Phase | Weeks | Authority |
-|---|---|---|
-| Audit | 1–2 | No live changes. They audit tracking, account structure, and past performance; you approve their findings before anything ships. |
-| Test budget | 3–6 | Own ~15–20% of spend (~$10–14k/mo) for experiments. Core budget stays under your control. Any single change >$1–2k needs your sign-off. |
-| Ramp | 7–12 | If test-budget KPIs hit agreed targets (CAC, at minimum no regression vs. your baseline), hand over majority ownership of the $70k/mo. New channel launches or >20% MoM budget swings still need sign-off. |
-| Post-90 | ongoing | Full operational authority within a board/founder-set monthly ceiling. Monthly reporting, quarterly strategy review. |
+| Phase       | Weeks   | Authority                                                                                                                                                                                                  |
+| ----------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Audit       | 1–2     | No live changes. They audit tracking, account structure, and past performance; you approve their findings before anything ships.                                                                           |
+| Test budget | 3–6     | Own ~~15–20% of spend (~~$10–14k/mo) for experiments. Core budget stays under your control. Any single change >$1–2k needs your sign-off.                                                                  |
+| Ramp        | 7–12    | If test-budget KPIs hit agreed targets (CAC, at minimum no regression vs. your baseline), hand over majority ownership of the $70k/mo. New channel launches or >20% MoM budget swings still need sign-off. |
+| Post-90     | ongoing | Full operational authority within a board/founder-set monthly ceiling. Monthly reporting, quarterly strategy review.                                                                                       |
 
 Set a hard **daily spend ceiling per campaign** from day one regardless of phase — this is the actual failure mode that burns budgets overnight (a bad automated bid strategy running unattended), not strategic disagreement. Weekly 30-min syncs for the first month, biweekly after.
 

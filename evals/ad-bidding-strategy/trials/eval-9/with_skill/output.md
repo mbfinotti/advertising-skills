@@ -106,13 +106,13 @@ Here's a version that keeps your intent (contain runaway cost) without pausing w
 
 **Gate every check on all of the following before it's allowed to fire:**
 
-| Condition | Rule |
-|---|---|
-| Ad set age | Live at least 1 full conversion cycle (25 days) before it's eligible for this rule at all |
-| Sample size | At least 10-15 completed qualified signups in the lookback window (below that, one result swings the average too far to mean anything - derive a firmer number once you know weekly signup volume) |
-| Window | Rolling 25-50 day average, never a single day's or single week's figure |
-| Recency | No target, creative, or audience change inside the current evaluation window for that ad set (a fresh change hasn't stabilized yet) |
-| Tracking health | No known tracking gap or attribution-window issue active |
+| Condition       | Rule                                                                                                                                                                                               |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ad set age      | Live at least 1 full conversion cycle (25 days) before it's eligible for this rule at all                                                                                                          |
+| Sample size     | At least 10-15 completed qualified signups in the lookback window (below that, one result swings the average too far to mean anything - derive a firmer number once you know weekly signup volume) |
+| Window          | Rolling 25-50 day average, never a single day's or single week's figure                                                                                                                            |
+| Recency         | No target, creative, or audience change inside the current evaluation window for that ad set (a fresh change hasn't stabilized yet)                                                                |
+| Tracking health | No known tracking gap or attribution-window issue active                                                                                                                                           |
 
 **On breach, default to flag-for-review, not silent pause.** Route it to whoever owns the account (the "Doctor" job: someone decides whether it's a real problem or noise) within 24-48 hours. If the team genuinely wants a hard automated pause with no human in the loop, restrict it to a containment ceiling, not a working-target multiple - and $90 needs one more check: once you have break-even CPA from the economics derivation above, confirm $90 sits comfortably above it. If break-even turns out below $90, a $90 ceiling lets the account bleed money before it fires and should drop to break-even. If break-even is comfortably above $90, $90 remains a reasonable containment number.
 

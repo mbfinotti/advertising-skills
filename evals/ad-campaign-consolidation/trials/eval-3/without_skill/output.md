@@ -26,8 +26,8 @@ Merged or not, 30 days barely covers one purchase cycle for most home goods cate
 **What I'd suggest instead:**
 
 - Keep campaigns/budgets separated by intent type (brand, non-brand, prospecting, retargeting) — that structure exists precisely so each can be judged and optimized against the right metric.
-- If the consultant's actual goal is reducing manual bid-management overhead, that's better solved with automated bidding *within* each campaign (tROAS/tCPA per segment) rather than merging the campaigns themselves.
+- If the consultant's actual goal is reducing manual bid-management overhead, that's better solved with automated bidding _within_ each campaign (tROAS/tCPA per segment) rather than merging the campaigns themselves.
 - Set segment-appropriate targets: protect brand's efficiency, evaluate non-brand and prospecting on CAC vs. LTV over a longer window (60–90 days), and run an actual incrementality/holdout test on retargeting before trusting its reported ROAS.
-- If you want one combined view for leadership reporting, build it as a blended *dashboard* metric — not as the actual bid/budget optimization target. Reporting and optimization structure don't have to be the same thing.
+- If you want one combined view for leadership reporting, build it as a blended _dashboard_ metric — not as the actual bid/budget optimization target. Reporting and optimization structure don't have to be the same thing.
 
 I'd push back on this specific recommendation before implementing it — ask the consultant what problem they're trying to solve (usually "too many campaigns to manage manually"), since there's almost always a better fix for that than collapsing acquisition and retention spend into one undifferentiated bucket.

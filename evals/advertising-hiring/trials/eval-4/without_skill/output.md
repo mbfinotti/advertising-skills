@@ -32,7 +32,7 @@
 
 ## What to keep from the old process
 
-- Keep a short account-structure exercise as prep material — it's realistic and cheap. Just make it a *conversation starter*, not a graded deliverable.
+- Keep a short account-structure exercise as prep material — it's realistic and cheap. Just make it a _conversation starter_, not a graded deliverable.
 - If you still want an async component for candidates who interview better in writing, cap it at 30 minutes: "Here's a screenshot of one campaign — write 3 bullet points on what you'd change and why." That's a coffee-break ask, not a workday.
 
 ## One thing to flag to finance, separately

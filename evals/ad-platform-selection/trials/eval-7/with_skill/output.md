@@ -27,24 +27,24 @@ Not stated in the brief — I've assumed the conservative default and flagged wh
 
 ## 2. Deleted channels
 
-| Family | Gate failed | Reason, dated 2026-09-12 |
-|---|---|---|
-| Retargeting (as a funded, standalone day-one line) | Funding/signal floor | 900 visits/month → pool far below any platform's practical minimum; nothing to multiply yet |
-| Podcast/audio | Affordability / funding floor | $6K < ~$15K measurability floor across 3+ shows |
-| Connected TV | Affordability | $192 contribution can't clear $20–40 CPM + $1,500+ production reliably at this spend |
-| B2B professional networks | Disqualifier | Consumer product, no firmographic ICP |
-| Retail media | Disqualifier (conditional) | Only applies if sold on a marketplace — assumed DTC-only pending confirmation; revisit if you list on Etsy/Amazon Handmade |
-| Geo-lift/incrementality (as day-one measurement) | Funding floor | Spend too small and too new to withhold any without starving the primary; not a channel, deferred as a measurement rung |
+| Family                                             | Gate failed                   | Reason, dated 2026-09-12                                                                                                   |
+| -------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Retargeting (as a funded, standalone day-one line) | Funding/signal floor          | 900 visits/month → pool far below any platform's practical minimum; nothing to multiply yet                                |
+| Podcast/audio                                      | Affordability / funding floor | $6K < ~$15K measurability floor across 3+ shows                                                                            |
+| Connected TV                                       | Affordability                 | $192 contribution can't clear $20–40 CPM + $1,500+ production reliably at this spend                                       |
+| B2B professional networks                          | Disqualifier                  | Consumer product, no firmographic ICP                                                                                      |
+| Retail media                                       | Disqualifier (conditional)    | Only applies if sold on a marketplace — assumed DTC-only pending confirmation; revisit if you list on Etsy/Amazon Handmade |
+| Geo-lift/incrementality (as day-one measurement)   | Funding floor                 | Spend too small and too new to withhold any without starving the primary; not a channel, deferred as a measurement rung    |
 
 None of these come back into the table below. Retargeting specifically gets **layered back in as a near-zero-cost secondary** once a real pool exists — see Section 7.
 
 ## 3. Candidates ranked by value ÷ effort — survivors only
 
-| Rank | Family | Value (presence/reach/reachability/measurability) | Effort (creative burn/skill/reversibility) | Value ÷ Effort |
-|---|---|---|---|---|
-| 1 | Paid social prospecting | High — handmade/craftsmanship is genuinely strong visual content, ICP reachable via interest targeting, reach unbounded by your current 900-visit trickle | Medium — standing creative job, but scalable down to one consolidated ad set | Best ratio among channels whose ceiling isn't capped by existing traffic |
-| 2 | Paid search (small capture slice) | Low-moderate — real but thin category search volume ("handmade chandelier," "artisan floor lamp") for a new, low-awareness brand | Very low — week of setup, near-zero ongoing, pausable in minutes | High efficiency, low absolute ceiling — good as a slice, not a primary |
-| — | Retargeting | N/A day one (no pool) | Near-zero once a pool exists | Reintroduce at ~60–90 days, not scored here |
+| Rank | Family                            | Value (presence/reach/reachability/measurability)                                                                                                         | Effort (creative burn/skill/reversibility)                                   | Value ÷ Effort                                                           |
+| ---- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| 1    | Paid social prospecting           | High — handmade/craftsmanship is genuinely strong visual content, ICP reachable via interest targeting, reach unbounded by your current 900-visit trickle | Medium — standing creative job, but scalable down to one consolidated ad set | Best ratio among channels whose ceiling isn't capped by existing traffic |
+| 2    | Paid search (small capture slice) | Low-moderate — real but thin category search volume ("handmade chandelier," "artisan floor lamp") for a new, low-awareness brand                          | Very low — week of setup, near-zero ongoing, pausable in minutes             | High efficiency, low absolute ceiling — good as a slice, not a primary   |
+| —    | Retargeting                       | N/A day one (no pool)                                                                                                                                     | Near-zero once a pool exists                                                 | Reintroduce at ~60–90 days, not scored here                              |
 
 **Departure from the default ordering**: paid search normally leads step 4's default efficiency order, but Plumecraft's near-zero existing demand (900 visits/month, brand-new) caps its reach subscore hard enough that paid social prospecting — normally mid-table on efficiency — wins the ratio here. This is the same reasoning the skill uses in its own B2C worked example.
 
@@ -60,7 +60,7 @@ None of these come back into the table below. Retargeting specifically gets **la
 
 Budget: **$6,000/month**.
 
-- **$4,800 (80%)** → one consolidated paid-social prospecting ad set. At the ~50-events/ad-set/7-day learning threshold, $6K/month can't sustain 50 *purchases*/week at a $135 target CPA — so optimize to a higher-frequency proxy event (Add to Cart or Content View) rather than Purchase, and keep it as a single ad set. This is the standard fix when budget sits below the purchase-optimization threshold; splitting into multiple ad sets here would just re-create the "$10K split five ways" anti-pattern at smaller scale.
+- **$4,800 (80%)** → one consolidated paid-social prospecting ad set. At the ~50-events/ad-set/7-day learning threshold, $6K/month can't sustain 50 _purchases_/week at a $135 target CPA — so optimize to a higher-frequency proxy event (Add to Cart or Content View) rather than Purchase, and keep it as a single ad set. This is the standard fix when budget sits below the purchase-optimization threshold; splitting into multiple ad sets here would just re-create the "$10K split five ways" anti-pattern at smaller scale.
 - **$900 (15%)** → paid search, small always-on capture slice on exact-match category terms, sized after price discovery.
 - **$300 (5%)** → reserve. Fold back into prospecting until a real retargeting pool exists (Section 7); don't spend it on a third experiment.
 

@@ -12,21 +12,21 @@ Studio Pellworth and Cormorant Weekly carry the same note — "couldn't reach si
 
 Nothing on the list carries a type, a status, or a time cost, so there's no way to prioritize or trim it. Rebuild it as a table you maintain going forward:
 
-| Source | Type | Status | Est. min/wk |
-|---|---|---|---|
-| Loom & Ledger | blog | ✅ active | — |
-| The Ad Joinery | blog | ✅ active | — |
-| Marta Villanueva's blog | person | ✅ active | — |
-| Studio Pellworth | blog | ⚠️ unverified — check this week | — |
-| Cormorant Weekly | newsletter | ⚠️ unverified — check this week | — |
-| ~~Fenwick on Creative~~ | ~~blog~~ | ❌ dead domain, now unrelated business | 0 |
+| Source                  | Type       | Status                                 | Est. min/wk |
+| ----------------------- | ---------- | -------------------------------------- | ----------- |
+| Loom & Ledger           | blog       | ✅ active                              | —           |
+| The Ad Joinery          | blog       | ✅ active                              | —           |
+| Marta Villanueva's blog | person     | ✅ active                              | —           |
+| Studio Pellworth        | blog       | ⚠️ unverified — check this week        | —           |
+| Cormorant Weekly        | newsletter | ⚠️ unverified — check this week        | —           |
+| ~~Fenwick on Creative~~ | ~~blog~~   | ❌ dead domain, now unrelated business | 0           |
 
 Fill in the min/wk column as you actually read each one — you can't hit a 45-minute budget by guessing at it. With Fenwick cut and roughly six sources over 110 minutes, you're at ~18 min/source on average; realistically you keep 2-3 of the confirmed-active ones at full depth and skim the rest, rather than reading all six in full every week.
 
 ## Two things missing from the list, not on it
 
 - **No Google Shopping source at all.** The whole list is Meta-creative-only, but you buy both channels. Either that's a deliberate call (Shopping is feed/attribute-driven, not creative-driven, so it needs less editorial reading) — worth stating explicitly so the next person doesn't assume it was an oversight — or you're missing a blind spot on the channel that's half your spend.
-- **No official platform channel, after removing both.** Cutting Google's ads blog and Meta's business newsroom as vendor PR was the right call for creative inspiration — that content is marketing, not signal. But it leaves you with *no* channel that tells you when Shopping feed policy or Meta ad policy actually changes. Don't undo the removal; instead add a changelog-only feed (Google Merchant Center announcements, Meta for Business changelog) via RSS — near-zero reading time, and it's a different job than a "blog," so it doesn't reopen the PR-noise problem.
+- **No official platform channel, after removing both.** Cutting Google's ads blog and Meta's business newsroom as vendor PR was the right call for creative inspiration — that content is marketing, not signal. But it leaves you with _no_ channel that tells you when Shopping feed policy or Meta ad policy actually changes. Don't undo the removal; instead add a changelog-only feed (Google Merchant Center announcements, Meta for Business changelog) via RSS — near-zero reading time, and it's a different job than a "blog," so it doesn't reopen the PR-noise problem.
 
 ## This week, in your 45 minutes
 

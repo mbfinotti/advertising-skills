@@ -20,4 +20,4 @@ Since these get reassembled by the model from your site/feed, every claim below 
 
 ## Note on the underlying source content
 
-The hero line these get generated from still says "revolutionary, next-generation platform." I'd rewrite that on-page too — e.g. *"32 mid-market finance teams cut month-end reconciliation from 11 hours to 4 (2025 customer study)."* — so the model has a consistent, citable fact to pull from instead of marketing adjectives it has to either invent support for or drop.
+The hero line these get generated from still says "revolutionary, next-generation platform." I'd rewrite that on-page too — e.g. _"32 mid-market finance teams cut month-end reconciliation from 11 hours to 4 (2025 customer study)."_ — so the model has a consistent, citable fact to pull from instead of marketing adjectives it has to either invent support for or drop.

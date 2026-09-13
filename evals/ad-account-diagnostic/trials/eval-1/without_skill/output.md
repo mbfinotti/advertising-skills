@@ -22,7 +22,7 @@ Checkout domain changes routinely break Meta measurement in one of these ways â€
 
 ## Action plan
 
-1. **Do not touch creatives yet.** Killing or refreshing ads now would (a) burn budget/learning phase on a problem creative isn't causing, and (b) contaminate your read on the *new* creatives, since they'd inherit the same broken tracking and look "bad" too.
+1. **Do not touch creatives yet.** Killing or refreshing ads now would (a) burn budget/learning phase on a problem creative isn't causing, and (b) contaminate your read on the _new_ creatives, since they'd inherit the same broken tracking and look "bad" too.
 2. **Today: fire a real test purchase on the new checkout subdomain** and watch Meta Events Manager > Test Events. Confirm the Purchase event fires, check for cross-domain cookie warnings.
 3. **View-source / check GTM container on the new confirmation page** â€” verify the pixel base code and Purchase event tag actually exist there.
 4. **Check CAPI webhook target and event_id dedup** against the new domain.

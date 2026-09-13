@@ -7,16 +7,19 @@ Launching creative + tracking + landing page in the same sprint means whatever h
 ## Diagnose in this order
 
 **1. Rule tracking in/out first — before touching anything else** 🎯
+
 - Cheapest to check, fastest to check, and it can fully explain a 2.4x CPA jump on its own (missing/duplicated purchase events → platform under- or over-counts conversions → reported CPA diverges from real CPA).
 - Pull actual backend/CRM order count for the last 3 weeks and compare it line-by-line against what Meta/Google Ads reports as conversions for the same period.
 - Match: tracking is clean, the CPA move is real → go to step 2.
 - Mismatch: tracking is broken → fix it, then **re-baseline CPA for at least one full learning-phase cycle** before deciding creative or the landing page are actually the problem. Everything downstream depends on this being clean.
 
 **2. Find the timing, not just the symptom** ⏳
+
 - Plot weekly CPA against three dates: creative batch launch, tracking/pixel change from the rebuild, landing page redesign launch.
 - Whichever change's date lines up with the inflection point is your prime suspect. If all three landed in the same week, you have a confound you can't resolve retroactively — which is exactly why they shouldn't launch together again.
 
 **3. Test the remaining hypotheses one at a time, not simultaneously**
+
 - Once tracking is confirmed accurate: A/B the landing page (old vs. new, split traffic) before doing a full rollback. A full rollback answers "was the LP the problem" with a yes/no you can't decompose from a blended metric.
 - Creative fatigue is testable independently via frequency/CTR decay in the ad platform itself (rising frequency + falling CTR + flat CVR = fatigue; falling CVR on stable frequency/CTR points at the page, not the creative).
 

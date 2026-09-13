@@ -20,7 +20,7 @@ $89 is a considered purchase, not an impulse buy — someone reading a soil-test
 
 Brand starting to appear in organic answers about soil testing, in the same 6 days as the sponsored launch, is the more interesting result — plausibly a co-occurrence/entity-recognition effect where paid presence feeds the same retrieval signals that drive organic citation (a rough analogue to paid-search brand-lift on organic CTR). If that's real, this placement's value isn't "$89 kits sold per click" — it's AI-visibility/share-of-voice, and judging it on direct-response CTR is the wrong lens entirely.
 
-**Track it as its own KPI:** weekly, log whether Loamfield appears in the assistant's organic answers for a fixed set of soil-testing queries. If that keeps climbing, it changes what this campaign is *for*.
+**Track it as its own KPI:** weekly, log whether Loamfield appears in the assistant's organic answers for a fixed set of soil-testing queries. If that keeps climbing, it changes what this campaign is _for_.
 
 ### What to actually do
 

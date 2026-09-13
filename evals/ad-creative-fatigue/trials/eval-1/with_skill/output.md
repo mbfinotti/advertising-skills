@@ -9,6 +9,7 @@ I ran this through the fatigue-vs-confounder workflow below. Treat the verdict a
 ## Assumptions taken (confirm or correct these)
 
 Interview items you didn't specify, assumed for this pass:
+
 - **Funnel stage**: cold prospecting (typical for a DTC "hero" acquisition ad) — confirm; if this is retargeting, the frequency reading changes completely.
 - **Data granularity**: only aggregate before/after numbers, not per-creative-per-day — weakens the noise-band math below to an estimate.
 - **CPA/CTR figures**: read as the hero creative's own numbers, not ad-set blended.
@@ -92,7 +93,7 @@ re-check      : 2026-09-22 (14-day clean window starting after Sep 08 stabilizat
 2. **If you need a same-day, reversible move to show movement**: step the ad-set budget back down (e.g. to ~$800/day) rather than holding at the full +75% jump, or hold flat and stop touching it. That's zero-cost, reversible, and targets the actual cause instead of the symptom. Pacing/scaling mechanics for how to re-scale properly are outside this skill's scope — that's a `paid-media-scaling` / `ad-budget-pacing` call.
 3. **Don't edit the three live creatives.** Editing a creature you're trying to measure destroys the baseline mid-read.
 4. **Pull the real export** (per-creative-per-day CTR, CVR, impressions, CPM, first-time-impression ratio, negative-feedback rate) so the noise check and CVR-stability check stop being estimates.
-5. **Re-check 2026-09-22** on a clean 14-day window post-stabilization. If CTR/CPA are still degraded at that point *and* CVR has held stable while frequency keeps climbing, that's when a real fatigue case opens — and at that point, hook-swap on the hero ad (not a full new UGC concept) is the first rung to reach for, since a single tired hook is cheaper to fix and faster to ship than two ground-up videos.
+5. **Re-check 2026-09-22** on a clean 14-day window post-stabilization. If CTR/CPA are still degraded at that point _and_ CVR has held stable while frequency keeps climbing, that's when a real fatigue case opens — and at that point, hook-swap on the hero ad (not a full new UGC concept) is the first rung to reach for, since a single tired hook is cheaper to fix and faster to ship than two ground-up videos.
 
 ## What to tell your growth lead
 

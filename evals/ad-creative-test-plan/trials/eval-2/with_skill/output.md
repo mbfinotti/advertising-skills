@@ -4,21 +4,21 @@
 
 **You cannot get a statistically significant winner on form fills in three weeks at $9,000/month, and no honest version of this test can.** Two independent numbers force that, before any formula:
 
-1. **Stable-delivery floor.** LinkedIn's delivery algorithm needs ~50 optimization events/week/cell to deliver reliably. At $120 CPA, that floor is **$857/day per cell**. Your test budget, split across a control + one challenger, gives each cell **~$214/day** (front-loading the full $9k into 21 days) — **25% of the floor**. Both cells stay delivery-limited for the entire test; the numbers won't stabilize regardless of the sample math.
+1. **Stable-delivery floor.** LinkedIn's delivery algorithm needs ~~50 optimization events/week/cell to deliver reliably. At $120 CPA, that floor is **$857/day per cell**. Your test budget, split across a control + one challenger, gives each cell **~~$214/day** (front-loading the full $9k into 21 days) — **25% of the floor**. Both cells stay delivery-limited for the entire test; the numbers won't stabilize regardless of the sample math.
 2. **Sample math.** At your 30% form-fill→qualified rate, detecting even a large 50% relative lift (30%→45%) needs ~163 qualified-eligible form fills per cell. At projected volume (~1.8 form fills/day/cell), that's **~91 days — 13 weeks, not 3**. Detecting a more realistic 20-30% lift needs 245–540 days.
 
 The only way to buy significance inside 21 days is an ~$10k spend increase *and* an implausible effect (qualified rate roughly doubling). Real, defensible lifts (20-30%) would cost **$105k–$231k for the window** — 12-25x the test budget. That's not a negotiating position, it's arithmetic; see the table below.
 
-What you *can* honestly deliver in 3 weeks is a **directional screening read**: a ranked judgment call between the two angles on cost-per-qualified-lead, built on roughly 11 qualified leads per cell, clearly labeled as a ranking, not a "95% confidence" winner. If "form fills" is the number that goes upward regardless, report the **volume and CPA of form fills** as an operational fact, but do not let it be the metric that declares a winner — cheap form fills that sales rejects are a guardrail breach, not a win, and that's exactly the trap this budget/timeline sets.
+What you _can_ honestly deliver in 3 weeks is a **directional screening read**: a ranked judgment call between the two angles on cost-per-qualified-lead, built on roughly 11 qualified leads per cell, clearly labeled as a ranking, not a "95% confidence" winner. If "form fills" is the number that goes upward regardless, report the **volume and CPA of form fills** as an operational fact, but do not let it be the metric that declares a winner — cheap form fills that sales rejects are a guardrail breach, not a win, and that's exactly the trap this budget/timeline sets.
 
 Options to give your CRO, not just a "no":
 
-| Option | What changes | What you get |
-|---|---|---|
-| **A. Ship the directional plan below** | Nothing — run as designed | A ranked call by day 21, labeled Directional, with a real (Powered) qualified-lead read arriving ~13 weeks later if you keep both cells live |
-| **B. Extend the window, same budget** | Deadline moves to ~13 weeks | A real Powered read on qualified-lead rate, but only if the true lift is ≥50% (unlikely for a messaging swap) |
-| **C. Raise the budget, keep 3 weeks** | Budget → ~$40k-$105k for the window | A real Powered read at a defensible 30-50% MDE |
-| **D. Both — realistic ask** | ~6-8 weeks, ~2-3x current budget | Powered read at a 30-40% MDE, the honest middle ground |
+| Option                                 | What changes                        | What you get                                                                                                                                 |
+| -------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **A. Ship the directional plan below** | Nothing — run as designed           | A ranked call by day 21, labeled Directional, with a real (Powered) qualified-lead read arriving ~13 weeks later if you keep both cells live |
+| **B. Extend the window, same budget**  | Deadline moves to ~13 weeks         | A real Powered read on qualified-lead rate, but only if the true lift is ≥50% (unlikely for a messaging swap)                                |
+| **C. Raise the budget, keep 3 weeks**  | Budget → ~$40k-$105k for the window | A real Powered read at a defensible 30-50% MDE                                                                                               |
+| **D. Both — realistic ask**            | ~6-8 weeks, ~2-3x current budget    | Powered read at a 30-40% MDE, the honest middle ground                                                                                       |
 
 I've designed the plan below as **Option A**, since that's what your stated budget and deadline actually support. If the CRO picks B/C/D instead, the isolation and structure below don't change — only the feasibility numbers and stop date do; I'll recompute on request.
 
@@ -42,6 +42,7 @@ Flagging these so you can correct any before launch — the plan's cell budgets 
 **Decision:** Based on this test, the higher-cost-per-qualified-lead cell gets deprioritized for next testing cycle's budget; the winner (by ranking, not significance) gets a scale step. Neither angle is permanently retired off a 3-week read.
 
 **Hypothesis:**
+
 ```
 Because procurement software buying committees for $45k+ ACV deals typically
 include a budget-holder motivated by cost avoidance, changing the LinkedIn ad
@@ -65,30 +66,32 @@ current budget, not 3 weeks, so day-21 is a ranking, not a verdict.
 - **Automated creative optimization: off.**
 
 **Naming convention:**
+
 ```
 C02_ANG-cfo-costcutting_HOOK-fear-of-overspend_FMT-single-image_TAL-none_V01
 ```
+
 Concept ID — angle — hook — format — talent — version. Every asset name follows this exact field order; reporting rolls up by parsing it.
 
 ## 4. Feasibility check
 
-| | Control (C01) | Challenger (C02) |
-|---|---|---|
-| Daily budget | $214/day | $214/day |
-| Projected form fills | ~1.79/day (~12.5/wk) | ~1.79/day (~12.5/wk) |
-| Stable-delivery floor | $857/day | $857/day |
-| Floor met? | **No — 25% of floor, delivery-limited all 21 days** | **No — same** |
-| Projected qualified leads (21d, @30%) | ~11 | ~11 |
-| Total form fills (21d) | ~38 | ~38 |
+|                                       | Control (C01)                                       | Challenger (C02)     |
+| ------------------------------------- | --------------------------------------------------- | -------------------- |
+| Daily budget                          | $214/day                                            | $214/day             |
+| Projected form fills                  | ~1.79/day (~12.5/wk)                                | ~1.79/day (~12.5/wk) |
+| Stable-delivery floor                 | $857/day                                            | $857/day             |
+| Floor met?                            | **No — 25% of floor, delivery-limited all 21 days** | **No — same**        |
+| Projected qualified leads (21d, @30%) | ~11                                                 | ~11                  |
+| Total form fills (21d)                | ~38                                                 | ~38                  |
 
 **Required sample for Powered, on qualified-lead rate (30% baseline), per cell:**
 
-| Relative MDE | n required/cell | Total spend (both cells) | Days at current front-loaded pace |
-|---|---|---|---|
-| 20% (30%→36%) | ~962 | ~$231,000 | ~540 days |
-| 30% (30%→39%) | ~437 | ~$105,000 | ~244 days |
-| 50% (30%→45%) | ~163 | ~$39,100 | ~91 days |
-| 100% (30%→60%, implausible) | ~42 | ~$10,100 | ~24 days |
+| Relative MDE                | n required/cell | Total spend (both cells) | Days at current front-loaded pace |
+| --------------------------- | --------------- | ------------------------ | --------------------------------- |
+| 20% (30%→36%)               | ~962            | ~$231,000                | ~540 days                         |
+| 30% (30%→39%)               | ~437            | ~$105,000                | ~244 days                         |
+| 50% (30%→45%)               | ~163            | ~$39,100                 | ~91 days                          |
+| 100% (30%→60%, implausible) | ~42             | ~$10,100                 | ~24 days                          |
 
 **VERDICT: Directional read, delivery-limited, declared.** No MDE reachable at significance within the 21-day hard stop or even the standard 4-6 week ceiling at current budget. This mirrors the standard shape of B2B lead-gen tests at this volume — not a design flaw, a budget/volume reality that must be said out loud rather than hidden behind a peeked "95% confidence" number.
 

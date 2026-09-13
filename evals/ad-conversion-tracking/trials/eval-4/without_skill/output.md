@@ -6,7 +6,7 @@ Don't double the budget yet. The current setup will optimize spend toward the wr
 
 **1. Five primary conversions with wildly different volumes = bidding chases the wrong one**
 
-Smart Bidding optimizes toward whatever primary conversions exist, pooled together. Form Fill, Newsletter Signup, and Pricing Page View almost certainly outnumber Closed Won by 10-50x in volume. Given more signal from the cheap, high-frequency actions, the algorithm will effectively optimize toward newsletter signups and pricing page views — not revenue — even though you *intended* to target Closed Won.
+Smart Bidding optimizes toward whatever primary conversions exist, pooled together. Form Fill, Newsletter Signup, and Pricing Page View almost certainly outnumber Closed Won by 10-50x in volume. Given more signal from the cheap, high-frequency actions, the algorithm will effectively optimize toward newsletter signups and pricing page views — not revenue — even though you _intended_ to target Closed Won.
 
 Fix: only Closed Won should be primary. Demote Form Fill, Demo Booked, Newsletter Signup, and Pricing Page View to **secondary** — they still get tracked and reported in a separate column, but they stop feeding the bidding algorithm and stop counting in your headline "Conversions" number.
 
@@ -15,6 +15,7 @@ Fix: only Closed Won should be primary. Demote Form Fill, Demo Booked, Newslette
 Google's own guidance is roughly 30+ conversions in a trailing 30-day window per campaign before Smart Bidding has enough signal to converge; below that it stays in a perpetual learning state — volatile CPCs, erratic spend, no real optimization. At 7/month account-wide, split across however many campaigns you run, no individual campaign gets close. Optimizing straight to Closed Won today means the algorithm is flying mostly blind.
 
 Fix — a phased approach, not a single toggle:
+
 - **Now:** bid toward Demo Booked as the primary target. It's the best available proxy for a $15k ACV deal — much lower funnel than Form Fill or Newsletter Signup, high enough volume to give Smart Bidding real signal, and a strong historical predictor of Closed Won.
 - **In parallel:** keep importing Closed Won (as secondary) with **deal value**, not just a binary count, so you're building the value data you'll need later.
 - **Later, once Closed Won hits ~30+/month** (or you're comfortable with more variance at lower volume): switch primary to Closed Won, ideally on Target ROAS using actual deal values rather than Target CPA on a flat count.

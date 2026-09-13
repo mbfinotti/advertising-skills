@@ -15,14 +15,14 @@ A budget increase can only ever recover the budget-capped slice. Best case, full
 
 ## The "11 of 30 days" detail matters more than it looks
 
-If budget were truly the bottleneck, you'd expect to be capped almost every day. Instead, on 37% of days you *aren't even spending the current budget* — meaning on more than a third of days, demand/eligibility doesn't fill what you already have. That's a second independent signal pointing away from "we're outspent" and toward "we're losing auctions on rank even when budget isn't the limiter."
+If budget were truly the bottleneck, you'd expect to be capped almost every day. Instead, on 37% of days you _aren't even spending the current budget_ — meaning on more than a third of days, demand/eligibility doesn't fill what you already have. That's a second independent signal pointing away from "we're outspent" and toward "we're losing auctions on rank even when budget isn't the limiter."
 
 ## What's actually happening
 
 Stable CPA ($58) + ballooning Lost IS (rank) is the classic signature of one of these:
 
 1. **Competitors raised bids/quality aggressively** — check Auction Insights over the same 6 weeks for overlap rate and top-of-page rate shifts among competitors. This is the most likely story given a 6-week timeframe.
-2. **Automated bidding (tCPA/tROAS/Max Conv) is holding you back defensively** — if the algorithm sees CPA at risk from rising competitor bids, it protects your $58 target by bidding lower/less often, which shows up exactly as rank-based lost IS with flat CPA. Your stable CPA might be stable *because* the bidding system is sacrificing volume to defend it, not despite competition.
+2. **Automated bidding (tCPA/tROAS/Max Conv) is holding you back defensively** — if the algorithm sees CPA at risk from rising competitor bids, it protects your $58 target by bidding lower/less often, which shows up exactly as rank-based lost IS with flat CPA. Your stable CPA might be stable _because_ the bidding system is sacrificing volume to defend it, not despite competition.
 3. **Quality Score erosion** — expected CTR, ad relevance, or landing page experience degraded (seasonality in ad copy, LP changes, mobile speed, etc.), raising the bid needed to win the same rank.
 
 ## Recommendation

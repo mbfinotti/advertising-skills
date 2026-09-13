@@ -1,6 +1,6 @@
 ## The real answer: you can't make these three agree — and you shouldn't try
 
-Each system is measuring a different thing by design. Meta's "purchases" is a *modeled attribution estimate*, your analytics tool is a *client-side tracked estimate*, and Shopify is the *ledger of money that actually changed hands*. Forcing them to show one identical number would mean overriding one of them with a fake value. What you actually want is: **one number your CEO can trust, plus a clear explanation of why the other two differ.**
+Each system is measuring a different thing by design. Meta's "purchases" is a _modeled attribution estimate_, your analytics tool is a _client-side tracked estimate_, and Shopify is the _ledger of money that actually changed hands_. Forcing them to show one identical number would mean overriding one of them with a fake value. What you actually want is: **one number your CEO can trust, plus a clear explanation of why the other two differ.**
 
 ## The number to report
 
@@ -11,7 +11,7 @@ Each system is measuring a different thing by design. Meta's "purchases" is a *m
 - **= $278,000 net revenue**
 - Order count: 1,351 paid orders (see caveat below on refunded orders)
 
-Use Shopify as the system of record for the headline revenue/order KPI. It's the only one of the three counting actual completed, paid transactions rather than attributed or tracked events. Report this number up, and stop trying to reconcile Meta or the analytics tool's figures *to* it — reconcile the *gap*, not the number.
+Use Shopify as the system of record for the headline revenue/order KPI. It's the only one of the three counting actual completed, paid transactions rather than attributed or tracked events. Report this number up, and stop trying to reconcile Meta or the analytics tool's figures _to_ it — reconcile the _gap_, not the number.
 
 ## Why Meta shows 1,912 purchases / $412k (not wrong, just a different measurement)
 
@@ -22,20 +22,20 @@ Two separate inflation sources are stacking:
    - were influenced by another channel (email, organic, direct) but happened to also see or click a Meta ad
    - are double-counted between Pixel and Conversions API if dedup isn't configured correctly
    - fall inside the view-through window from a scroll-past impression, not a real influence
-   
+
    Every ad platform does this — if you added up "purchases" claimed by Meta + Google + TikTok + email, they'd sum to several multiples of your real order count. This is the well-known "attribution isn't additive" problem, not a Maren & Oak-specific bug.
 
 **Action, not reconciliation**: check your Meta attribution setting (Events Manager → Attribution Settings) and Conversions API dedup key. But even fixed, expect Meta to overcount by 15–25% vs. Shopify indefinitely — that's normal for last-touch/multi-touch ad platform reporting.
 
 ## Why the analytics tool shows 1,104 purchases (−18% vs Shopify)
 
-This is tracking *loss*, the opposite direction:
+This is tracking _loss_, the opposite direction:
 
 - iOS 14.5+ App Tracking Transparency and Safari ITP block a meaningful slice of client-side pixels
 - Ad blockers and cookie-consent rejections drop events before they fire
 - If the tool is session/cookie-based, purchases from returning customers on a new device or cleared cookies won't tie back to a tracked session
 
-1,104 vs 1,351 real orders (247 missing, ~18%) is a plausible, fairly typical tracking-loss rate for 2026 given privacy changes. This tool is useful for *relative* trends (is traffic/conversion rate up or down week over week) but will always undercount absolute volume against Shopify.
+1,104 vs 1,351 real orders (247 missing, ~18%) is a plausible, fairly typical tracking-loss rate for 2026 given privacy changes. This tool is useful for _relative_ trends (is traffic/conversion rate up or down week over week) but will always undercount absolute volume against Shopify.
 
 ## What to tell your CEO, in one paragraph
 

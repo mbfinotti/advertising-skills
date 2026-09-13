@@ -4,8 +4,8 @@
 
 **Running 10 weeks instead of 4 does not solve the problem you have, and it creates two new ones.**
 
-- Your $500/day ÷ 4 cells = **$125/day/cell**. The purchase event ($180 CPA) needs a stable-delivery floor of **target CPA × 50 ÷ 7 ≈ $1,286/day/cell** just to stop being delivery-limited. You're at **9.7% of that floor**. This is a *rate* problem (events/week), not a *volume* problem — stretching the calendar doesn't raise the weekly rate. At $125/day/cell you get ~4.9 purchases/week/cell no matter how many weeks you run. Even at 10 weeks that's only ~49 purchases/cell — still under even the loosest "100-400 conversions" screening convention, let alone a statistically powered read.
-- Separately, 10 weeks blows through the **4-6 week duration ceiling** the skill sets for a reason: past that window, novelty decay and creative fatigue contaminate the comparison between week-1 delivery and week-10 delivery on the *same static assets*. You'd be trading "underpowered" for "underpowered *and* contaminated."
+- Your $500/day ÷ 4 cells = **$125/day/cell**. The purchase event ($180 CPA) needs a stable-delivery floor of **target CPA × 50 ÷ 7 ≈ $1,286/day/cell** just to stop being delivery-limited. You're at **9.7% of that floor**. This is a _rate_ problem (events/week), not a _volume_ problem — stretching the calendar doesn't raise the weekly rate. At $125/day/cell you get ~4.9 purchases/week/cell no matter how many weeks you run. Even at 10 weeks that's only ~49 purchases/cell — still under even the loosest "100-400 conversions" screening convention, let alone a statistically powered read.
+- Separately, 10 weeks blows through the **4-6 week duration ceiling** the skill sets for a reason: past that window, novelty decay and creative fatigue contaminate the comparison between week-1 delivery and week-10 delivery on the _same static assets_. You'd be trading "underpowered" for "underpowered _and_ contaminated."
 
 **What actually rescues this test is the thing you weren't sure mattered: add-to-cart.** At $12/ATC, the stable-delivery floor is only $85.71/day/cell — your $125/day/cell clears it at 146%. Projected ~73 ATC/week/cell, and over a proper 6-week window (the ceiling, not 10) that's ~438 ATC/cell — squarely in the community-convention band for a legitimate **Directional** screening read. Purchase stays a lagging guardrail, not the decision metric. This is the "move the read up-funnel" fix, and it's the only lever available to you: raising budget is closed (finance, twice), and dropping to fewer cells wouldn't get purchase anywhere near its floor either (3 cells at ~$166/day is still ~13% of the $1,286 floor).
 
@@ -15,16 +15,16 @@ So: **keep the existing $500/day, run 6 weeks (not 10), decide on add-to-cart, t
 
 The skill wants these asked one at a time before designing; you asked for the deliverable directly, so here's what I assumed instead of asking, flagged so you can correct any of it before launch:
 
-| Missing input | Assumption used |
-|---|---|
-| Baseline click-through / landing-page session volume (CPC or CTR) | **Not available** — means I cannot run the formal two-proportion required-n-in-clicks formula for either metric. Verdicts below use cost-per-event volume math (stable-delivery floor, Denney-style thresholds) instead, which don't require it. If you can get me CPC or weekly sessions, I can upgrade the add-to-cart verdict from Directional toward Powered. |
-| Exact decision this test informs | Assumed: winning concept (by ATC ranking, guardrails intact) becomes the new control next cycle; losers retired. No budget increase implied or requested. |
-| Existing champion/control creative | Assumed it exists, since you said "3 concepts plus control." |
-| Assets per concept | Assumed 4 per cell (within the 3-6 range); confirm before launch. |
-| Automated creative optimization (Advantage+/dynamic creative) status | Assumed unknown — **must be verified off** in test cells regardless (see structure line). |
-| Refund / sleep-trial return window | Assumed premium-mattress-typical (often 90-365 nights) — long enough that the refund-rate guardrail will not have fully resolved by the day-42 stop. Scheduled a second look below; confirm your actual trial length. |
-| Prior tests / settled questions | Not provided — assumed none, so nothing here is a re-test of a settled question. |
-| Claim-substantiation constraints | Not provided — flag if any concept makes a health/orthopedic/sleep-quality claim; that needs a compliance pass this plan doesn't cover. |
+| Missing input                                                        | Assumption used                                                                                                                                                                                                                                                                                                                                                   |
+| -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Baseline click-through / landing-page session volume (CPC or CTR)    | **Not available** — means I cannot run the formal two-proportion required-n-in-clicks formula for either metric. Verdicts below use cost-per-event volume math (stable-delivery floor, Denney-style thresholds) instead, which don't require it. If you can get me CPC or weekly sessions, I can upgrade the add-to-cart verdict from Directional toward Powered. |
+| Exact decision this test informs                                     | Assumed: winning concept (by ATC ranking, guardrails intact) becomes the new control next cycle; losers retired. No budget increase implied or requested.                                                                                                                                                                                                         |
+| Existing champion/control creative                                   | Assumed it exists, since you said "3 concepts plus control."                                                                                                                                                                                                                                                                                                      |
+| Assets per concept                                                   | Assumed 4 per cell (within the 3-6 range); confirm before launch.                                                                                                                                                                                                                                                                                                 |
+| Automated creative optimization (Advantage+/dynamic creative) status | Assumed unknown — **must be verified off** in test cells regardless (see structure line).                                                                                                                                                                                                                                                                         |
+| Refund / sleep-trial return window                                   | Assumed premium-mattress-typical (often 90-365 nights) — long enough that the refund-rate guardrail will not have fully resolved by the day-42 stop. Scheduled a second look below; confirm your actual trial length.                                                                                                                                             |
+| Prior tests / settled questions                                      | Not provided — assumed none, so nothing here is a re-test of a settled question.                                                                                                                                                                                                                                                                                  |
+| Claim-substantiation constraints                                     | Not provided — flag if any concept makes a health/orthopedic/sleep-quality claim; that needs a compliance pass this plan doesn't cover.                                                                                                                                                                                                                           |
 
 ## 2. Decision and hypothesis
 
@@ -65,6 +65,7 @@ verify this before launch, not assumed from data given.
 ## 5. Feasibility math (shown for audit)
 
 **Purchase ($180 CPA):**
+
 - Stable-delivery floor: $180 × 50 ÷ 7 = **$1,286/day/cell** required. Available: $125/day/cell = **9.7% of floor**.
 - Projected: 125/180 = 0.69/day → **4.86/week/cell**.
 - Cumulative at 6 weeks (42d): **~29/cell**. At the rejected 10-week version: **~49/cell**.
@@ -72,6 +73,7 @@ verify this before launch, not assumed from data given.
 - **VERDICT: Not testable as designed on purchase, at any duration within (or even beyond) reasonable bounds.** This is a hard floor problem, not a sample-accumulation problem.
 
 **Add-to-cart ($12/event):**
+
 - Stable-delivery floor: $12 × 50 ÷ 7 = **$85.71/day/cell** required. Available: $125/day/cell = **146% of floor — clears it.**
 - Projected: 125/12 = 10.42/day → **72.9/week/cell**.
 - Cumulative at 6 weeks (42d): **~438/cell**.
@@ -82,10 +84,11 @@ verify this before launch, not assumed from data given.
 **Multiple comparisons:** 3 concepts vs. control = 3 comparisons, disclosed. If you later get budget to chase significance, apply a Bonferroni-style correction (~30-40% more sample) — moot for now since purchase is untestable regardless and ATC is being read directionally, not as a significance claim.
 
 **Lever check on the "Not testable" purchase cell** (fixes ranked: up-funnel > wider MDE > fewer cells > more budget):
-- *Raise the budget* — **deleted**, named explicitly: finance has closed this door twice this quarter.
-- *Move up-funnel* — **applied**: add-to-cart is the primary decision metric for exactly this reason.
-- *Widen the MDE* — doesn't help here: it lowers required sample, but does nothing to the weekly event *rate*, which is what's actually failing (delivery-limited, not underpowered).
-- *Fewer cells* — available but not worth it: even 2 cells (~$166-250/day) stays under 20% of the purchase floor. Not pursued; flag if you want the tradeoff spelled out.
+
+- _Raise the budget_ — **deleted**, named explicitly: finance has closed this door twice this quarter.
+- _Move up-funnel_ — **applied**: add-to-cart is the primary decision metric for exactly this reason.
+- _Widen the MDE_ — doesn't help here: it lowers required sample, but does nothing to the weekly event _rate_, which is what's actually failing (delivery-limited, not underpowered).
+- _Fewer cells_ — available but not worth it: even 2 cells (~$166-250/day) stays under 20% of the purchase floor. Not pursued; flag if you want the tradeoff spelled out.
 
 ## 6. Metric ladder
 

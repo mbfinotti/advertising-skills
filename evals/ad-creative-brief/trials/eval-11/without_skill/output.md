@@ -2,7 +2,7 @@
 
 "Briefs that produced winners" measures the campaign's outcome, not the brief's quality. At 4 concepts/month, two sprints will give you somewhere between 2 and 8 data points. A metric with that little volume is noise, not signal — and CMO-facing dashboards built on noise produce bad decisions (killing a good process because of bad luck, or greenlighting a bad one because of good luck).
 
-Quick sanity check: if the *true* long-run win rate a good briefing process produces is, say, 25% (a reasonable ballpark for ad testing), then with N=4 concepts, the probability of landing at 0 or 1 winners — i.e., "the process looks broken" — is over 70%, purely from binomial variance. The metric would fail the process almost by default even if it's working perfectly.
+Quick sanity check: if the _true_ long-run win rate a good briefing process produces is, say, 25% (a reasonable ballpark for ad testing), then with N=4 concepts, the probability of landing at 0 or 1 winners — i.e., "the process looks broken" — is over 70%, purely from binomial variance. The metric would fail the process almost by default even if it's working perfectly.
 
 So the fix isn't a better metric — it's separating two different things that are currently being conflated into one number.
 

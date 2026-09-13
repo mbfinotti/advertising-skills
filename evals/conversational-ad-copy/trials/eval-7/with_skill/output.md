@@ -5,6 +5,7 @@
 "$25 voucher for every 5-star review" conditions payment on the rating given. That's the exact pattern the US FTC's rule on fake/deceptive reviews (16 CFR Part 465), the UK CMA/ASA, and EU consumer-protection law all treat as a manipulated review — not a disclosure problem you can fix with a footnote, a ban on the mechanic itself. If this goes out as written this week, every review it generates is compromised at the source, and reviews are the one asset on this path with the highest trust weight and no edit path afterward — get this wrong now and you've poisoned the asset you most need to compound.
 
 **Compliant version, same budget, same week:**
+
 - Pay the $25 for a **verified review, any rating** — not for a 5-star one.
 - Disclose the incentive on/with the review ("received a $25 gift card for this review") per platform rule.
 - Don't filter, delay, or selectively publish based on the rating you get back — suppressing negative ones is the same rule violation from the other side.
@@ -30,6 +31,7 @@ Default order (feed-driven shopping placement, so feed jumps to first):
 ## 3. Feed field rewrites
 
 ### Price — fix regardless of copy quality
+
 `$149/mo` → **`$179/mo`**. A stale price field isn't a messaging problem, it's an eligibility and trust problem on a shopping surface that quotes it directly — a wrong price is closer to a malformed field than weak copy. Set a monthly reminder to reconcile the feed against billing; this has already drifted once for three months.
 
 ### Description — before
@@ -52,17 +54,17 @@ Fails on sight: no product name, an unsupported superlative sitting exactly wher
 
 I'm not silently picking one — I don't have your platform's actual character cap (interview question 8 unanswered), so ship whichever fits once you paste it from your ads manager.
 
-**Not shipping** (yet): *"...so pricing teams catch changes before margin erodes."* Reads well and is directionally true of the category, but it's an inferred benefit, not a sourced one — you gave me no case study or ticket data to back it. Hold it `UNSOURCED`. It's exactly the kind of line a real customer quote from the redesigned review program could unlock next quarter — that's the compounding payoff.
+**Not shipping** (yet): _"...so pricing teams catch changes before margin erodes."_ Reads well and is directionally true of the category, but it's an inferred benefit, not a sourced one — you gave me no case study or ticket data to back it. Hold it `UNSOURCED`. It's exactly the kind of line a real customer quote from the redesigned review program could unlock next quarter — that's the compounding payoff.
 
 ## 4. Grounding table
 
-| Claim | Source | Status |
-|---|---|---|
-| "tracks competitor prices across your e-commerce catalog" | Your own description of the product's function | Sourced |
-| "in real time" | Existing "AI-powered" framing in current copy, kept as functional descriptor, not superlative | Sourced |
-| "$179/mo" | User-supplied, effective June 2026 | Sourced, dated — review monthly |
-| "before margin erodes" | No supplied evidence | UNSOURCED — held |
-| "best-in-class" (original) | None | Dropped, not sourced, not recoverable as written |
+| Claim                                                     | Source                                                                                        | Status                                           |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| "tracks competitor prices across your e-commerce catalog" | Your own description of the product's function                                                | Sourced                                          |
+| "in real time"                                            | Existing "AI-powered" framing in current copy, kept as functional descriptor, not superlative | Sourced                                          |
+| "$179/mo"                                                 | User-supplied, effective June 2026                                                            | Sourced, dated — review monthly                  |
+| "before margin erodes"                                    | No supplied evidence                                                                          | UNSOURCED — held                                 |
+| "best-in-class" (original)                                | None                                                                                          | Dropped, not sourced, not recoverable as written |
 
 ## 5. Compliance note
 
@@ -72,18 +74,18 @@ I'm not silently picking one — I don't have your platform's actual character c
 
 ## 6. Quotability gate — shipped description
 
-| # | Check | Result |
-|---|---|---|
-| 1 | Full sense with zero context | Pass |
-| 2 | Product named, no pronoun | Pass |
-| 3 | One idea | Pass |
-| 4 | Claim first | Pass |
-| 5 | Specific over adjective | Pass |
-| 6 | Every claim sourced | Pass |
-| 7 | Time-bound claims dated | N/A, no time-bound claim in this line |
-| 8 | Recommendation register, no urgency | Pass |
-| 9 | Survives sitting next to the model's own assessment | Pass — no superlative left to contradict |
-| 10 | Inside today's platform limit | **Open** — unverified, paste your vendor's actual cap |
+| #   | Check                                               | Result                                                |
+| --- | --------------------------------------------------- | ----------------------------------------------------- |
+| 1   | Full sense with zero context                        | Pass                                                  |
+| 2   | Product named, no pronoun                           | Pass                                                  |
+| 3   | One idea                                            | Pass                                                  |
+| 4   | Claim first                                         | Pass                                                  |
+| 5   | Specific over adjective                             | Pass                                                  |
+| 6   | Every claim sourced                                 | Pass                                                  |
+| 7   | Time-bound claims dated                             | N/A, no time-bound claim in this line                 |
+| 8   | Recommendation register, no urgency                 | Pass                                                  |
+| 9   | Survives sitting next to the model's own assessment | Pass — no superlative left to contradict              |
+| 10  | Inside today's platform limit                       | **Open** — unverified, paste your vendor's actual cap |
 
 9/10. Ships; the one open check doesn't block it, per the gate's own rule — it just needs closing before the next iteration.
 

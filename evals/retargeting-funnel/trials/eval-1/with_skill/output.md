@@ -2,7 +2,7 @@
 
 ## Diagnosis of your sketch first
 
-Your 5-stage draft has the same shape as a documented failure pattern (uniform 0-30/0-60/0-180 windows regardless of depth): every stage overlaps every other stage (a cart abandoner sits in stages 1, 2 *and* 3 simultaneously → ad sets bid against themselves), no converter exclusion is stated, and the windows ignore your own lag data. With 86% of purchases landing inside 5 days, a 30-day "all visitors" window spends most of its budget on people who were never going to convert from that visit. That's fixable — here's the corrected version.
+Your 5-stage draft has the same shape as a documented failure pattern (uniform 0-30/0-60/0-180 windows regardless of depth): every stage overlaps every other stage (a cart abandoner sits in stages 1, 2 _and_ 3 simultaneously → ad sets bid against themselves), no converter exclusion is stated, and the windows ignore your own lag data. With 86% of purchases landing inside 5 days, a 30-day "all visitors" window spends most of its budget on people who were never going to convert from that visit. That's fixable — here's the corrected version.
 
 ## Basis for the windows (no proxy needed — you have real data)
 
@@ -16,16 +16,17 @@ This is a fast, impulse-leaning funnel (closer to your median online session beh
 
 ## Stage table
 
-| Stage | Inclusion rule | Window | Message intent / offer | Concepts |
-|---|---|---|---|---|
-| **S1 Deep-intent** | Cart or checkout start, no purchase | 0-4 days | **Reminder** — dynamic ad of the exact item(s) left behind. No discount. | 3 |
-| **S2 Product viewer** | Viewed a product page, no cart | 0-12 days | **Social proof** — reviews, scent-profile UGC, gifting angle | 3 |
-| **S3 General visitor** | Any session, no product view | 0-20 days | **Objection handling** — shipping cost/threshold, returns, clean-burn/soy-wax claims, burn-time guarantee | 3 |
-| **S4 Last-call** | Union of S1/S2/S3 members aged past their own window, no purchase | Aged-out, capped at day 30 total | **Incentive + urgency** — the only discount rung | 3 |
-| **S5 Win-back** | Purchasers | 45-120 days *after purchase date* | **Replenishment / new drops / referral** — separate budget, outside the acquisition ladder | 3 |
+| Stage                  | Inclusion rule                                                    | Window                            | Message intent / offer                                                                                    | Concepts |
+| ---------------------- | ----------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
+| **S1 Deep-intent**     | Cart or checkout start, no purchase                               | 0-4 days                          | **Reminder** — dynamic ad of the exact item(s) left behind. No discount.                                  | 3        |
+| **S2 Product viewer**  | Viewed a product page, no cart                                    | 0-12 days                         | **Social proof** — reviews, scent-profile UGC, gifting angle                                              | 3        |
+| **S3 General visitor** | Any session, no product view                                      | 0-20 days                         | **Objection handling** — shipping cost/threshold, returns, clean-burn/soy-wax claims, burn-time guarantee | 3        |
+| **S4 Last-call**       | Union of S1/S2/S3 members aged past their own window, no purchase | Aged-out, capped at day 30 total  | **Incentive + urgency** — the only discount rung                                                          | 3        |
+| **S5 Win-back**        | Purchasers                                                        | 45-120 days _after purchase date_ | **Replenishment / new drops / referral** — separate budget, outside the acquisition ladder                | 3        |
 
 Notes on the design:
-- **S1 optional split:** if you track checkout-start as a distinct GA4 event, you *can* split S1 into "Checkout abandoners" (0-3d, reminder + shipping/payment objection — checkout drop-off is usually a cost-surprise or payment-friction problem) and "Cart abandoners, no checkout" (0-4d, pure reminder). Only do this once you've checked the checkout-only pool clears ~1,000 people in a rolling 3-day window on your primary platform — on the volumes you've given me, that pool is plausibly thin (see size check below), so merged is the safer default.
+
+- **S1 optional split:** if you track checkout-start as a distinct GA4 event, you _can_ split S1 into "Checkout abandoners" (0-3d, reminder + shipping/payment objection — checkout drop-off is usually a cost-surprise or payment-friction problem) and "Cart abandoners, no checkout" (0-4d, pure reminder). Only do this once you've checked the checkout-only pool clears ~1,000 people in a rolling 3-day window on your primary platform — on the volumes you've given me, that pool is plausibly thin (see size check below), so merged is the safer default.
 - **S3 starts at day 0, not day 5** — the exclusion map (below), not a delayed start date, is what keeps it from double-targeting people already in S1/S2. Delaying the window just loses reach for no benefit.
 - **S5's 45-day start** is deliberate: candles take weeks to burn through, so hitting a buyer with "restock" messaging in week 1 is premature and reads as spammy. 45-120 days is a reasonable first pass — tighten it once you have actual repeat-purchase-interval data from your order history (this is a named assumption, not derived from data you gave me — replace it).
 
@@ -33,13 +34,13 @@ Notes on the design:
 
 Naming convention: `RTG_<depth>_<window>` / `EXCL_<what>_<window>`.
 
-| Stage | Excludes |
-|---|---|
-| `RTG_DEEP_0-4` | `EXCL_PURCH_90` |
-| `RTG_PRODUCT_0-12` | `RTG_DEEP_0-4` (fresher/deeper), `EXCL_PURCH_90` |
-| `RTG_VISITOR_0-20` | `RTG_DEEP_0-4`, `RTG_PRODUCT_0-12`, `EXCL_PURCH_90` |
+| Stage                     | Excludes                                                                                                                                                  |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `RTG_DEEP_0-4`            | `EXCL_PURCH_90`                                                                                                                                           |
+| `RTG_PRODUCT_0-12`        | `RTG_DEEP_0-4` (fresher/deeper), `EXCL_PURCH_90`                                                                                                          |
+| `RTG_VISITOR_0-20`        | `RTG_DEEP_0-4`, `RTG_PRODUCT_0-12`, `EXCL_PURCH_90`                                                                                                       |
 | `RTG_LASTCALL_AGEDOUT-30` | all three above (their fresh windows), `EXCL_PURCH_90`, `EXCL_REPEAT_ABANDON_2X` (2+ prior last-call exposures with no purchase — stops discount-farming) |
-| `RTG_WINBACK_45-120` | `EXCL_PURCH_45` (a repeat buyer inside 45 days shouldn't get a "come back" ad) |
+| `RTG_WINBACK_45-120`      | `EXCL_PURCH_45` (a repeat buyer inside 45 days shouldn't get a "come back" ad)                                                                            |
 
 **Converter exclusion window: 90 days**, sized as a candle-repurchase-cycle proxy (sector-typical, not derived from your data — confirm against your own repeat-purchase-interval report if you have one). Too short re-ads recent buyers; too long quietly shrinks your prospecting pool as the buyer list grows.
 
@@ -55,13 +56,13 @@ I don't have your page-type breakdown, so these are estimates from category-typi
 
 ## Cap sheet
 
-| Stage | Cap / proxy | Review cadence |
-|---|---|---|
-| S1 Deep-intent | Proxy 6-7/week (Meta has no cap field on conversion objectives) — act on CTR −15-20% or CPM +10% vs 7-day baseline | Every 2-3 days |
-| S2 Product viewer | Proxy 4-5/week | Weekly |
-| S3 General visitor | Proxy 3-4/week (lightest signal — avoid a "stalking" feel) | Weekly |
-| S4 Last-call | Proxy 4-5/week | Every 3-4 days (short-lived, discount-bearing — watch negative feedback closely) |
-| S5 Win-back | 1-2/week (paced over months, not days) | Monthly |
+| Stage              | Cap / proxy                                                                                                        | Review cadence                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| S1 Deep-intent     | Proxy 6-7/week (Meta has no cap field on conversion objectives) — act on CTR −15-20% or CPM +10% vs 7-day baseline | Every 2-3 days                                                                   |
+| S2 Product viewer  | Proxy 4-5/week                                                                                                     | Weekly                                                                           |
+| S3 General visitor | Proxy 3-4/week (lightest signal — avoid a "stalking" feel)                                                         | Weekly                                                                           |
+| S4 Last-call       | Proxy 4-5/week                                                                                                     | Every 3-4 days (short-lived, discount-bearing — watch negative feedback closely) |
+| S5 Win-back        | 1-2/week (paced over months, not days)                                                                             | Monthly                                                                          |
 
 ## Measurement plan
 

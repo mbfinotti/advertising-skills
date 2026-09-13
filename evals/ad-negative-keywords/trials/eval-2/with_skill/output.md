@@ -1,6 +1,7 @@
 # Lexon Legal Software — Negative Keyword Pass (Google Ads, first cleanup)
 
 **Two things to confirm before you apply this** (affects 2 of the 8 rows below — everything else is ready to apply as-is):
+
 1. Do you ever deliberately bid CaseHawk's brand (conquesting), or is that unintentional?
 2. Can you confirm edit access at account level and shared negative lists, not just campaign/ad group?
 
@@ -15,16 +16,16 @@ I assumed no deliberate competitor bidding and full edit access. Adjust the two 
 - Additional $259 held pending your answer to Q1 (CaseHawk) — not counted above
 - $14,200/month non-brand puts this account above the $10k/month line → recommend **weekly** cadence going forward, not this 30-day one-off
 
-6.7% confirmed waste is low for a *first-ever* pass (your typical first cleanup runs 10–15%). That's a good sign the account isn't badly managed, but Google only shows ~40% of actual search terms — real waste may be sitting in the hidden 60%. Worth a token-mining pass (see Next steps) before concluding this account is clean.
+6.7% confirmed waste is low for a _first-ever_ pass (your typical first cleanup runs 10–15%). That's a good sign the account isn't badly managed, but Google only shows ~40% of actual search terms — real waste may be sitting in the hidden 60%. Worth a token-mining pass (see Next steps) before concluding this account is clean.
 
 ## 2. Additions — apply now
 
-| Term | Match type | Level | Evidence | Category | Variants to add |
-|---|---|---|---|---|---|
-| legal software jobs | Phrase | Account | 34 clicks, $238, 0 conv (0 last 90d) | Job seeker | legal software job, legal software careers, legal software hiring, legal case management jobs |
-| free legal case template | Phrase | Shared list "DIY-free" | 26 clicks, $182, 0 conv (0 last 90d) | DIY/free | free legal case templates, free case management template, legal case template free, free legal case management template |
-| what is case management software | Phrase | Shared list "informational" | 18 clicks, $126, 0 conv (0 last 90d) | Informational | what's case management software, what is legal case management software, case management software meaning |
-| law firm consulting services | Phrase | Campaign (the non-brand campaign it appeared in) | 9 clicks, $410, 0 conv (0 last 90d) — crosses the **cost** gate, not the click gate | Off-target service (not software intent) | law firm consulting service, legal consulting services, law firm consultancy services |
+| Term                             | Match type | Level                                            | Evidence                                                                            | Category                                 | Variants to add                                                                                                         |
+| -------------------------------- | ---------- | ------------------------------------------------ | ----------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| legal software jobs              | Phrase     | Account                                          | 34 clicks, $238, 0 conv (0 last 90d)                                                | Job seeker                               | legal software job, legal software careers, legal software hiring, legal case management jobs                           |
+| free legal case template         | Phrase     | Shared list "DIY-free"                           | 26 clicks, $182, 0 conv (0 last 90d)                                                | DIY/free                                 | free legal case templates, free case management template, legal case template free, free legal case management template |
+| what is case management software | Phrase     | Shared list "informational"                      | 18 clicks, $126, 0 conv (0 last 90d)                                                | Informational                            | what's case management software, what is legal case management software, case management software meaning               |
+| law firm consulting services     | Phrase     | Campaign (the non-brand campaign it appeared in) | 9 clicks, $410, 0 conv (0 last 90d) — crosses the **cost** gate, not the click gate | Off-target service (not software intent) | law firm consulting service, legal consulting services, law firm consultancy services                                   |
 
 Job-seeker went to **account** level as a universal disqualifier — no non-brand campaign here should ever want it. The two recurring themes (DIY/free, informational) went to **shared lists** so every future campaign inherits them automatically. "Law firm consulting services" stayed at **campaign** level: it's a single non-recurring term, no evidence yet it's an account-wide pattern — if it resurfaces in another campaign next pass, promote it to account level.
 

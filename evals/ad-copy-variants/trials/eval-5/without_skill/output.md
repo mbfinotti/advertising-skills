@@ -2,14 +2,14 @@ No, don't write the 12. The "3-5 variants per ad group" rule is copied from a wo
 
 **The math that kills this plan**
 
-18 demo requests/month across your whole account. Split 12 ways, each variant averages **1.5 demos/month**. To get even a weak read (~15-20 conversions per variant, the rough floor for LinkedIn ad testing) on a single variant, you'd need 8-13 months — *per variant*, run in parallel with 11 others competing for the same small pool of impressions and budget. You will not reach significance on anything before your CMO forgets this was ever the plan. You'll have 12 rows of noise, not 12 learnings.
+18 demo requests/month across your whole account. Split 12 ways, each variant averages **1.5 demos/month**. To get even a weak read (~15-20 conversions per variant, the rough floor for LinkedIn ad testing) on a single variant, you'd need 8-13 months — _per variant_, run in parallel with 11 others competing for the same small pool of impressions and budget. You will not reach significance on anything before your CMO forgets this was ever the plan. You'll have 12 rows of noise, not 12 learnings.
 
 There's a second problem hiding in "12 variants": you're bundling two different experiments into one bucket.
 
 - **Ad copy testing** (which headline/angle converts better) — needs same audience, one variable changed, enough volume to compare.
 - **Segment testing** (does driver-safety even work as an audience) — a go/no-go question about a market, not a copy question.
 
-Mixed together across 12 ads, a bad result tells you nothing: you won't know if it failed because the *copy* was weak or the *segment* doesn't respond to LinkedIn ads at all. You need to isolate them.
+Mixed together across 12 ads, a bad result tells you nothing: you won't know if it failed because the _copy_ was weak or the _segment_ doesn't respond to LinkedIn ads at all. You need to isolate them.
 
 **What to actually launch**
 

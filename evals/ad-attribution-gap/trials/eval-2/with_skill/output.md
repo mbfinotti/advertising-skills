@@ -25,27 +25,27 @@ Verdicts:
 
 This is where a "quick sanity check" usually turns out to not be quick — none of the axes below were confirmed, and the Google ratio can't be called a defect with full confidence until they are. Recorded here as open, not assumed:
 
-| Axis | Status |
-|---|---|
-| Date basis (interaction-date vs. event-date) | Not confirmed — Google backdates to click date, order system presumably stamps on purchase date |
-| Timezone | Not confirmed |
-| Attribution window per platform | Not confirmed — do not assume defaults, pull from each platform's own settings |
-| Click-through vs. view-through conversions | Not confirmed — Google's 640 may include view-through, which the order system's click-ID match never sees |
-| Modeled vs. observed conversions | Not confirmed — Google's consent-mode modeling can inflate the platform number over a deterministic order count |
-| Counting rule ("every" vs. "one" per click) | Not confirmed |
-| Revenue basis | Not confirmed — assume net of tax/shipping/refunds unless told otherwise |
-| Lag maturity | **Likely issue** — "last month" data pulled now may still have an open attribution window on the tail days, inflating the platform-side number relative to a settled order count |
+| Axis                                         | Status                                                                                                                                                                           |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Date basis (interaction-date vs. event-date) | Not confirmed — Google backdates to click date, order system presumably stamps on purchase date                                                                                  |
+| Timezone                                     | Not confirmed                                                                                                                                                                    |
+| Attribution window per platform              | Not confirmed — do not assume defaults, pull from each platform's own settings                                                                                                   |
+| Click-through vs. view-through conversions   | Not confirmed — Google's 640 may include view-through, which the order system's click-ID match never sees                                                                        |
+| Modeled vs. observed conversions             | Not confirmed — Google's consent-mode modeling can inflate the platform number over a deterministic order count                                                                  |
+| Counting rule ("every" vs. "one" per click)  | Not confirmed                                                                                                                                                                    |
+| Revenue basis                                | Not confirmed — assume net of tax/shipping/refunds unless told otherwise                                                                                                         |
+| Lag maturity                                 | **Likely issue** — "last month" data pulled now may still have an open attribution window on the tail days, inflating the platform-side number relative to a settled order count |
 
-None of this changes the headline math, but it does change how confidently you can call the Google gap a *defect* rather than a *documented delta* in the client write-up. Right now it's provisional.
+None of this changes the headline math, but it does change how confidently you can call the Google gap a _defect_ rather than a _documented delta_ in the client write-up. Right now it's provisional.
 
 ### 3. Variance table
 
-| Source pair | Metric | Amount | % of gross gap | Bucket | Cause | Direction check | Evidence | Owner | Status |
-|---|---|---|---|---|---|---|---|---|---|
-| Google Ads (640) vs. Google-tagged orders (330) | conversions | +310 | — | **Residual, candidate defect** | Ratio 1.94x exceeds the ~1.5x double-counting heuristic; view-through, modeled conversions, and open attribution window are all candidate definitional/timing causes but none confirmed | platform high — passes | none collected yet | Analyst | **Investigate — see open questions** |
-| Meta (510) vs. orders | conversions | unknown | — | Unclassified | No Meta-tagged order figure exists to compare against | n/a | none | Analyst | **Blocked — need per-channel order breakdown** |
-| TikTok (210) vs. orders | conversions | unknown | — | Unclassified | Same | n/a | none | Analyst | **Blocked — need per-channel order breakdown** |
-| Google + Meta + TikTok (1,360) vs. orders (780) | conversions | +580 (the "74%") | — | **Not a valid comparison** | Cross-platform self-crediting overlap — several platforms claim the same conversion | n/a — invalid pairing | — | Analyst | Retracted from report |
+| Source pair                                     | Metric      | Amount           | % of gross gap | Bucket                         | Cause                                                                                                                                                                                   | Direction check        | Evidence           | Owner   | Status                                         |
+| ----------------------------------------------- | ----------- | ---------------- | -------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------ | ------- | ---------------------------------------------- |
+| Google Ads (640) vs. Google-tagged orders (330) | conversions | +310             | —              | **Residual, candidate defect** | Ratio 1.94x exceeds the ~1.5x double-counting heuristic; view-through, modeled conversions, and open attribution window are all candidate definitional/timing causes but none confirmed | platform high — passes | none collected yet | Analyst | **Investigate — see open questions**           |
+| Meta (510) vs. orders                           | conversions | unknown          | —              | Unclassified                   | No Meta-tagged order figure exists to compare against                                                                                                                                   | n/a                    | none               | Analyst | **Blocked — need per-channel order breakdown** |
+| TikTok (210) vs. orders                         | conversions | unknown          | —              | Unclassified                   | Same                                                                                                                                                                                    | n/a                    | none               | Analyst | **Blocked — need per-channel order breakdown** |
+| Google + Meta + TikTok (1,360) vs. orders (780) | conversions | +580 (the "74%") | —              | **Not a valid comparison**     | Cross-platform self-crediting overlap — several platforms claim the same conversion                                                                                                     | n/a — invalid pairing  | —                  | Analyst | Retracted from report                          |
 
 Non-Google paid orders (780 − 330 = **450**) is the only other real data point you have. Meta (510) and TikTok (210) individually claim more between them than that 450 total, but they can't be split out or ratio-checked individually without the order system's per-channel tagging — the 450 is a combined figure, and comparing either platform's raw number against it would repeat the same summing error at one level down.
 
@@ -57,9 +57,9 @@ Non-Google paid orders (780 − 330 = **450**) is the only other real data point
 
 ### 5. Defects and handoffs
 
-| # | Defect | Revenue/volume at stake | Fix effort | Position |
-|---|---|---|---|---|
-| 1 | Google Ads reporting 1.94x the Google-tagged order count | 310 conversions of ambiguous revenue impact (paid-attributed revenue per channel wasn't provided) | Hours: pull view-through/modeled breakdown from Google's own reporting, confirm attribution window setting, re-check after the window closes | **Top of the list** — cheapest possible checks, and the ratio is high enough that it's worth ruling out a dedup or duplicate-tag issue before anything else |
+| #   | Defect                                                   | Revenue/volume at stake                                                                           | Fix effort                                                                                                                                   | Position                                                                                                                                                    |
+| --- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Google Ads reporting 1.94x the Google-tagged order count | 310 conversions of ambiguous revenue impact (paid-attributed revenue per channel wasn't provided) | Hours: pull view-through/modeled breakdown from Google's own reporting, confirm attribution window setting, re-check after the window closes | **Top of the list** — cheapest possible checks, and the ratio is high enough that it's worth ruling out a dedup or duplicate-tag issue before anything else |
 
 If the checks below don't explain the gap, this becomes a Bucket 3 residual and should be handed to a conversion-tracking specialist to check for duplicate Google Ads tag firing or a browser/server dedup failure — both are the standard explanations for a ratio this far past 1.5x.
 
@@ -74,7 +74,7 @@ None yet — nothing here is confirmed enough to bank as an expected, recurring 
 Three things, all fast to get:
 
 1. **Google Ads: view-through share, modeled-conversion share, and the account's current attribution window setting**, pulled straight from Google's own reporting UI. This alone probably explains a meaningful chunk of the 1.94x.
-2. **Order system: per-channel breakdown for Meta and TikTok** (same tagging logic that got you the 330 Google figure), not just the combined 450. Without it, Meta and TikTok can't be reconciled at all — right now you only know they're *not verified*, not that they're fine.
+2. **Order system: per-channel breakdown for Meta and TikTok** (same tagging logic that got you the 330 Google figure), not just the combined 450. Without it, Meta and TikTok can't be reconciled at all — right now you only know they're _not verified_, not that they're fine.
 3. **Confirm the window is lag-mature** — if last month's data was pulled recently, Google's attribution window may still be open on the final days, which inflates the platform number relative to the order system's settled count. Re-pull after the window fully closes, or explicitly flag the tail days as immature.
 
 ## How to write this up for the client

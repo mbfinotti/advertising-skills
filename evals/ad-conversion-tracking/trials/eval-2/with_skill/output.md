@@ -10,7 +10,7 @@ You already found the break: pixel sends `Purchase`, server sends `purchase`. Th
 
 ## Tell the dev: don't turn off CAPI
 
-Turning off CAPI purchase events is the fix that looks obvious and is backwards. It doesn't fix measurement — it deletes the more resilient of your two signal sources (the one immune to iOS/ATT loss, ad blockers, and browser cookie limits) right before a holiday campaign, which is exactly when you want the algorithm getting the *most* complete signal, not less. If you cut CAPI now, you'll under-count real purchases the moment browser tracking degrades (ad blockers, Safari ITP, etc.), and nobody will notice until spend is already misallocated.
+Turning off CAPI purchase events is the fix that looks obvious and is backwards. It doesn't fix measurement — it deletes the more resilient of your two signal sources (the one immune to iOS/ATT loss, ad blockers, and browser cookie limits) right before a holiday campaign, which is exactly when you want the algorithm getting the _most_ complete signal, not less. If you cut CAPI now, you'll under-count real purchases the moment browser tracking degrades (ad blockers, Safari ITP, etc.), and nobody will notice until spend is already misallocated.
 
 The real fix costs less than what he's proposing:
 

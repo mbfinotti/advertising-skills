@@ -2,7 +2,7 @@
 
 **What the numbers actually say**
 
-- Hook rate falling (24%→19%→16%) while hold rate stays flat (9.1% vs 9.4% baseline) is the classic fatigue signature: the same people are seeing this ad again and again and scrolling past faster, but anyone who *does* stop still watches it the same way they always did. If the concept itself had gone stale, hold rate would sag too — it hasn't.
+- Hook rate falling (24%→19%→16%) while hold rate stays flat (9.1% vs 9.4% baseline) is the classic fatigue signature: the same people are seeing this ad again and again and scrolling past faster, but anyone who _does_ stop still watches it the same way they always did. If the concept itself had gone stale, hold rate would sag too — it hasn't.
 - CVR flat at 2.8% while CTR is down ~20% confirms the back half of the funnel is untouched. The offer, landing page, and audience-message fit are all still fine — this is a top-of-funnel/scroll-stopping problem, not a "this concept stopped working" problem.
 - Hide/report rate tripling is the tell. That metric moves almost exclusively with frequency — the same eyeballs getting hit too many times, not a general quality complaint. Nine weeks with no audience change is more than enough time for frequency to have crept way up on your core segment.
 
@@ -19,4 +19,4 @@ You'd be discarding a video that's still converting at 2.8% and holding attentio
 
 **Where the agency brief still belongs**
 
-Start it in parallel as insurance, not as the fix — creative eventually does wear out for real, and you don't want to be starting from zero when hook refreshes stop working. But don't treat it as the answer to *this* dataset; the numbers say "fatigued," not "broken."
+Start it in parallel as insurance, not as the fix — creative eventually does wear out for real, and you don't want to be starting from zero when hook refreshes stop working. But don't treat it as the answer to _this_ dataset; the numbers say "fatigued," not "broken."

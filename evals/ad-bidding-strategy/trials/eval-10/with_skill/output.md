@@ -6,10 +6,10 @@
 
 **Step 1 — fix the units.** Mobile UA tooling typically reports ROAS as a percentage where 100% = breakeven (revenue equals spend). Web/ecommerce platforms report ROAS as a multiplier where 1x = breakeven. Convert both to the same convention:
 
-| Team | Reported | Normalized |
-|---|---|---|
-| App (UA agency) | 160% | 1.6x |
-| Web | 4.2x | 420% |
+| Team            | Reported | Normalized |
+| --------------- | -------- | ---------- |
+| App (UA agency) | 160%     | 1.6x       |
+| Web             | 4.2x     | 420%       |
 
 Normalized honestly, web is still ahead — 4.2x vs 1.6x, not a 100x misread. So the web team isn't wrong that they're outperforming the app on a raw revenue-per-dollar basis. But "outperforming" isn't decided by the raw multiple — it's decided by each channel's own break-even return, which depends on contribution margin, and app and web economics are rarely the same shape:
 
@@ -18,6 +18,7 @@ Normalized honestly, web is still ahead — 4.2x vs 1.6x, not a 100x misread. So
 - 4.2x on web implies web only needs a ~24% margin to be at breakeven — plausible for retail, but "4.2x is strong" is only true if web's actual margin is in that range. On thin-margin SKUs, 4.2x could be closer to break-even than it looks.
 
 **What actually decides the winner: margin buffer, not raw ROAS.** Neither team has told you their contribution margin rate, so neither number can be judged yet. Pull both:
+
 - App: net contribution per install/subscriber after store fees, refunds, and support cost.
 - Web: contribution margin rate after COGS, shipping, payment fees, and returns.
 

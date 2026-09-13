@@ -7,13 +7,13 @@ Two time budgets, kept separate so neither creeps:
 
 Reading budget breakdown (fits in 60 min):
 
-| Time | Source | Why |
-|---|---|---|
-| 5 min | Google Ads & Merchant Center "what's new" + Meta for Business changelog | Direct account impact. Non-negotiable, check first. |
-| 15 min | Common Thread Collective content (blog/newsletter) | DTC-specific media buying tactics, closest to your actual job. |
-| 10 min | Marketing Brew | Broad B2C/ad-industry news, keeps you from tunnel vision. |
-| 15 min | Skim Meta Ad Library for 3–4 cookware/kitchen competitors | Free, no newsletter needed — literal 15-min ritual, not reading. |
-| 15 min | Buffer — whatever's loudest that week from the podcast queue or a swipe file | Flex slot, don't over-plan it. |
+| Time   | Source                                                                       | Why                                                              |
+| ------ | ---------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 5 min  | Google Ads & Merchant Center "what's new" + Meta for Business changelog      | Direct account impact. Non-negotiable, check first.              |
+| 15 min | Common Thread Collective content (blog/newsletter)                           | DTC-specific media buying tactics, closest to your actual job.   |
+| 10 min | Marketing Brew                                                               | Broad B2C/ad-industry news, keeps you from tunnel vision.        |
+| 15 min | Skim Meta Ad Library for 3–4 cookware/kitchen competitors                    | Free, no newsletter needed — literal 15-min ritual, not reading. |
+| 15 min | Buffer — whatever's loudest that week from the podcast queue or a swipe file | Flex slot, don't over-plan it.                                   |
 
 ## Reading list — with the pitch, as asked
 

@@ -1,6 +1,6 @@
 # Bramwell Software — Customer Acquisition Cost (CAC) Policy
 
-*(Formal draft for board approval — v1.0)*
+_(Formal draft for board approval — v1.0)_
 
 I don't have your existing rules document in this workspace, so I've formalized it from what you described (a $310 CAC ceiling, self-approved overages, zero breaches in three quarters) and built out the pieces a board-facing policy needs but an informal rule usually skips. Placeholders `[ ]` mark facts only you can fill in.
 
@@ -31,10 +31,10 @@ These three definitions are currently undefined in the informal version. A CAC c
 
 ## 5. Approval Authority
 
-| Overage size | Approver |
-|---|---|
-| Up to `[X]%` over ceiling | Head of Growth |
-| `[X–Y]%` over ceiling | Head of Growth + CFO |
+| Overage size                                                  | Approver                  |
+| ------------------------------------------------------------- | ------------------------- |
+| Up to `[X]%` over ceiling                                     | Head of Growth            |
+| `[X–Y]%` over ceiling                                         | Head of Growth + CFO      |
 | Above `[Y]%`, or cumulative overages exceeding `[$Z]`/quarter | CEO or Board notification |
 
 **This is the one substantive change I'd make before this goes to the board.** Today, the same person who sets the ceiling also approves every exception to it — that's a single point of control with no check, and a board reviewing this policy will likely ask about it directly. It doesn't mean the Head of Growth has done anything wrong; it means the policy as described has no structural separation between rule-setter and rule-waiver. A tiered table like the one above (or at minimum, a second signer above some threshold) fixes that without slowing down day-to-day approvals.
@@ -65,7 +65,7 @@ These three definitions are currently undefined in the informal version. A CAC c
 
 ## Worth adjusting — and one thing worth challenging
 
-**On "we haven't breached it once in three quarters, so it clearly works":** that's not actually evidence the ceiling is right — it's evidence it's either well-calibrated *or* never binding. A ceiling nobody bumps into for a year could mean acquisition spend is comfortably efficient, or it could mean the number was set loose enough (or gets waived easily enough by the same person who set it) that it never functions as a real constraint. Before this goes to the board as proof the policy "works," it's worth pulling how close actual CAC has run to $310 each quarter — if it's consistently $180–220, the ceiling is decorative, not operative; if it's consistently $295–309, it's a live constraint that's holding.
+**On "we haven't breached it once in three quarters, so it clearly works":** that's not actually evidence the ceiling is right — it's evidence it's either well-calibrated _or_ never binding. A ceiling nobody bumps into for a year could mean acquisition spend is comfortably efficient, or it could mean the number was set loose enough (or gets waived easily enough by the same person who set it) that it never functions as a real constraint. Before this goes to the board as proof the policy "works," it's worth pulling how close actual CAC has run to $310 each quarter — if it's consistently $180–220, the ceiling is decorative, not operative; if it's consistently $295–309, it's a live constraint that's holding.
 
 **Ranked, the adjustments that matter most:**
 

@@ -4,9 +4,10 @@ Both problems trace back to the same mistake: your exclusion logic is set at the
 
 ## Problem 1: Retargeting the exact grinder someone just bought
 
-**Root cause**: your past-purchasers exclusion suppresses *prospecting* campaigns at the account/customer level. It does nothing for Dynamic Product Ads (DPA), which retarget based on catalog-level events (viewed, added to cart) — not on whether that specific SKU was already purchased. Unless you explicitly wire product-level suppression into the DPA audience, Meta keeps showing that grinder.
+**Root cause**: your past-purchasers exclusion suppresses _prospecting_ campaigns at the account/customer level. It does nothing for Dynamic Product Ads (DPA), which retarget based on catalog-level events (viewed, added to cart) — not on whether that specific SKU was already purchased. Unless you explicitly wire product-level suppression into the DPA audience, Meta keeps showing that grinder.
 
 **Fix**:
+
 1. Split your catalog into two sets: **durables** (grinders, brewers, scales) and **consumables** (beans, filters, capsules).
 2. On durables DPA/Advantage+ Catalog campaigns, enable the native "exclude people who already purchased this product" setting, or build it manually: a custom audience of `Purchase` events with matching `content_ids`, excluded from that product's ad set — set the lookback window to the max (365 days, effectively permanent for a durable good).
 3. On consumables, do the opposite: suppress for ~50 days (just under your 2-month reorder cycle), then deliberately **let it lapse** so a reorder-reminder ad picks the customer back up around day 55–60. This turns your retargeting into a reorder engine instead of a nuisance.
@@ -15,11 +16,12 @@ Both problems trace back to the same mistake: your exclusion logic is set at the
 
 ## Problem 2: Prospecting reach shrinking every quarter for a year
 
-**Root cause**: the agency's past-purchasers exclusion is almost certainly an **unbounded, all-time list** that was set up once and never revisited. Every quarter you acquire new customers, so the excluded pool only grows. If your prospecting targeting (interests, geography, lookalikes) hasn't been widened to match, the *eligible* population inside a fixed targeting pool shrinks steadily — even though total site traffic (driven by returning customers, not new prospects) stays flat. This is consistent with a full year of decline with no other visible cause.
+**Root cause**: the agency's past-purchasers exclusion is almost certainly an **unbounded, all-time list** that was set up once and never revisited. Every quarter you acquire new customers, so the excluded pool only grows. If your prospecting targeting (interests, geography, lookalikes) hasn't been widened to match, the _eligible_ population inside a fixed targeting pool shrinks steadily — even though total site traffic (driven by returning customers, not new prospects) stays flat. This is consistent with a full year of decline with no other visible cause.
 
 A second-order effect: someone who bought once 18 months ago and never reordered is a **churned** customer, not an active one. If they're still sitting in that exclusion list forever, you're permanently locking real prospects out of your own acquisition funnel.
 
 **Fix**:
+
 1. Pull the audience size history for the past-purchasers exclusion in Ads Manager (Audiences tab). Confirm it's been climbing steadily — that's your smoking gun.
 2. Replace the all-time exclusion with a **rolling active-customer window**, e.g. trailing 12 months (roughly 6x your reorder cycle). Anyone who hasn't repurchased in that window drops out of the exclusion and re-enters the prospecting pool automatically.
 3. Check for **stacked exclusions**: ask the agency whether prospecting also excludes site visitors, email subscribers, or engaged-with-page audiences on top of purchasers. Overlapping exclusions compound the shrinkage — audit and trim to just what's needed.

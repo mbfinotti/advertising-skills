@@ -46,11 +46,11 @@ Fix: stop using one bar for everything. Use a staged framework where the bar and
 
 Same cadence, three columns instead of one:
 
-| Stage | Metric reviewed weekly | Action trigger |
-|---|---|---|
-| Test | CTR, CPC, cost/ATC vs. account benchmark | Kill only after spend/event minimum met |
+| Stage | Metric reviewed weekly                    | Action trigger                               |
+| ----- | ----------------------------------------- | -------------------------------------------- |
+| Test  | CTR, CPC, cost/ATC vs. account benchmark  | Kill only after spend/event minimum met      |
 | Prove | Marginal ROAS vs. that week's ramp target | Graduate/hold/kill after 2 consecutive weeks |
-| Scale | Marginal ROAS vs. 2.8x | Scale/hold/cut, same as today |
+| Scale | Marginal ROAS vs. 2.8x                    | Scale/hold/cut, same as today                |
 
 ## Bottom line
 

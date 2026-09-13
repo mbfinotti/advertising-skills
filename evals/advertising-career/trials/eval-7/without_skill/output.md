@@ -9,21 +9,25 @@ Here are full answers for all three, structured the way a strong candidate would
 **Then walk the diagnosis top-down, ruling out layers in order:**
 
 **1. Tracking/measurement first (cheapest to check, most commonly the actual answer)**
+
 - Any recent pixel, CAPI, or GA4 changes? iOS/Android privacy updates, browser cookie changes, a site replatform, or a tag manager update can silently break attribution without touching real sales.
 - Compare Shopify/backend revenue to platform-reported revenue over the same window — if backend revenue is flat but platform-attributed revenue dropped, it's a measurement problem, not a performance problem.
 
 **2. External/demand-side factors**
+
 - Seasonality: is this a known trough (e.g., post-New-Year drop-off in supplements, back-to-school lull)?
 - Competitive pressure: did a competitor launch a big promo or increase spend, driving up auction CPMs?
 - Macro: any change in iOS/Meta policy, platform algorithm updates, or broad CPM inflation across the account (check Meta's auction overlap/CPM benchmarks)?
 
 **3. Supply-side / account structure**
+
 - Creative fatigue: pull frequency and CTR trend by ad — for DTC supplements, creative fatigue is often the #1 cause of a slow 3-week bleed, since audiences are relatively small and frequency climbs fast. I'd check frequency >3-4 as a red flag.
 - Audience saturation: has the campaign exhausted lookalikes/interest stacks, forcing the algorithm into more expensive, lower-intent inventory?
 - Budget/bid changes: did anyone increase budgets, change bid strategy (e.g., cost cap to highest volume), or launch new campaigns that are cannibalizing budget from winners?
 - Landing page/offer changes: did CRO, pricing, subscription terms, or the offer change in that window? A site change can tank CVR while spend keeps flowing.
 
 **4. Funnel breakdown**
+
 - I'd segment the drop: is CPM up, CTR down, or CVR down? Each points somewhere different:
   - CPM up + CTR/CVR flat → auction/demand-side issue (seasonality, competition, budget scaling too fast).
   - CTR down → creative fatigue or audience mismatch.
@@ -55,7 +59,7 @@ This question is testing whether you understand statistical rigor without being 
 
 ## Q3: "We doubled a winning campaign's daily budget from $2K to $5K and ROAS fell while CPM nearly doubled — why?"
 
-This is a classic scaling-mechanics question — they want to see you understand *auction dynamics*, not just say "audience fatigue" vaguely.
+This is a classic scaling-mechanics question — they want to see you understand _auction dynamics_, not just say "audience fatigue" vaguely.
 
 **The core mechanism:**
 
@@ -67,7 +71,7 @@ This is a classic scaling-mechanics question — they want to see you understand
 
 4. **Frequency and diminishing returns on the existing audience.** If the "winning" campaign was already efficient at $2K partly because it was tightly targeted, more budget on the same audience raises frequency, and you start re-showing the same people who already converted or already said no — classic diminishing marginal returns.
 
-**What I'd say I'd have done differently, since that's the real point of this question:** Scale budget incrementally — roughly 20-30% every 2-3 days, giving the algorithm time to re-stabilize between increases — rather than 150% in one jump. If aggressive scale is genuinely needed fast, I'd do it by *duplicating* the ad set/campaign with fresh budget (a "horizontal" scale) instead of inflating the existing winner, so the proven ad set keeps its learning and efficiency intact while the new copy explores incremental volume. I'd also pre-check audience size/saturation and have backup creative ready, since scaling spend without scaling creative supply is one of the most common ways a "winning" campaign breaks.
+**What I'd say I'd have done differently, since that's the real point of this question:** Scale budget incrementally — roughly 20-30% every 2-3 days, giving the algorithm time to re-stabilize between increases — rather than 150% in one jump. If aggressive scale is genuinely needed fast, I'd do it by _duplicating_ the ad set/campaign with fresh budget (a "horizontal" scale) instead of inflating the existing winner, so the proven ad set keeps its learning and efficiency intact while the new copy explores incremental volume. I'd also pre-check audience size/saturation and have backup creative ready, since scaling spend without scaling creative supply is one of the most common ways a "winning" campaign breaks.
 
 **Close:** "So the CPM/ROAS pattern here isn't a red flag that something's broken — it's the expected signature of scaling too fast into a limited audience. The fix isn't to panic and cut budget back to $2K, it's to step the scale-up down to something the algorithm and the audience can actually absorb, and diversify how we reach incremental volume rather than just turning up the dial on the same audience."
 

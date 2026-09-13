@@ -39,7 +39,7 @@ At a 2.4 ROAS, every $1 of ad spend returns $2.40 in revenue → $1.32 in contri
 - Blended MER (all channels, all spend, no platform attribution inflation): 2.1
 - Gap: ~13%
 
-That's a modest, normal amount of platform over-claiming — not the 40–60% inflation you often see in accounts with broken tracking, heavy view-through attribution, or brand-search cannibalization. A large or widening gap would be a real red flag (Meta claiming credit for sales that would've happened anyway via brand search/organic). A small, *stable* gap over 12 months suggests your measurement isn't the problem.
+That's a modest, normal amount of platform over-claiming — not the 40–60% inflation you often see in accounts with broken tracking, heavy view-through attribution, or brand-search cannibalization. A large or widening gap would be a real red flag (Meta claiming credit for sales that would've happened anyway via brand search/organic). A small, _stable_ gap over 12 months suggests your measurement isn't the problem.
 
 **12 months of flat performance is the strongest signal in this whole brief, and it cuts against "broken."**
 
@@ -48,7 +48,7 @@ That's a modest, normal amount of platform over-claiming — not the 40–60% in
 - MER: steady at 2.1
 - No account changes
 
-Real breakage produces *drift*, not *flatness*: creative fatigue shows up as declining CTR and rising frequency over weeks; audience saturation shows up as rising CPMs and falling ROAS as you scale; tracking breaks show up as sudden discontinuities (iOS updates, CAPI misconfigurations, pixel changes) correlated to a date. Twelve straight months of tight-banded stability across every metric is the signature of an account that has settled into an **equilibrium given its current budget, targeting, and creative mix** — not one that's decaying.
+Real breakage produces _drift_, not _flatness_: creative fatigue shows up as declining CTR and rising frequency over weeks; audience saturation shows up as rising CPMs and falling ROAS as you scale; tracking breaks show up as sudden discontinuities (iOS updates, CAPI misconfigurations, pixel changes) correlated to a date. Twelve straight months of tight-banded stability across every metric is the signature of an account that has settled into an **equilibrium given its current budget, targeting, and creative mix** — not one that's decaying.
 
 **The real story to bring to the board is stagnation risk, not failure.** A channel that hasn't moved in 12 months despite no changes is also a channel nobody has stress-tested. That's a legitimate finding — just a different one than "broken."
 
@@ -59,7 +59,7 @@ Real breakage produces *drift*, not *flatness*: creative fatigue shows up as dec
 Reframe the audit from "why are we below benchmark" to "is this account budget-constrained or performance-constrained, and where's the real ceiling":
 
 1. **Elasticity test — has anyone actually tried to scale spend?** Twelve months flat with no changes could mean the ceiling was found, or it could mean budget was never pushed hard enough to find it. Run a structured 20–30% spend-up test on your best-performing campaigns for 2–3 weeks and watch marginal ROAS. If ROAS holds near 2.4 as spend rises, you're leaving profitable growth on the table — that's a much bigger board story than a benchmark gap.
-2. **Incrementality/holdout test.** Run a geo-holdout or PSA-style incrementality test to see what fraction of that 2.4 ROAS is truly incremental vs. brand-search/organic cannibalization. This tells you the *true* return on the channel, independent of both Meta's and MER's assumptions.
+2. **Incrementality/holdout test.** Run a geo-holdout or PSA-style incrementality test to see what fraction of that 2.4 ROAS is truly incremental vs. brand-search/organic cannibalization. This tells you the _true_ return on the channel, independent of both Meta's and MER's assumptions.
 3. **Funnel-stage mix audit.** Break down spend and ROAS by prospecting (cold) vs. retargeting (warm). A CTR/ROAS profile like yours is consistent with an account that's retargeting-heavy and prospecting-light — profitable but capped in reach. Check what % of spend is cold; if it's low, growth is available by expanding prospecting even at a lower per-campaign ROAS, since blended MER is what matters.
 4. **Creative testing velocity.** Flat CTR for 12 months with "nothing changed" often means creative refresh cadence has stalled too. Check: how many new ad concepts launched per month, not just new copy/image variants of the same concept. Low velocity is fixable and is a legitimate, concrete board action item.
 5. **Frequency and audience saturation.** Pull average frequency by campaign over the 12 months. If frequency has crept up while performance stayed flat, the algorithm may be quietly compensating (shifting budget to retargeting) and masking a prospecting-side problem.

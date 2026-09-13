@@ -4,9 +4,9 @@
 
 Shopping/PMax assets becoming eligible inside **Google's AI-generated answer summaries** matches Google AI Mode (Conversational Discovery ads / Highlighted Answers / AI-powered Shopping ads), which your rep's description confirms: copy is **model-generated from feed + landing page**, not rendered from your existing ad assets. That's a different mechanism from classic AI Overviews, where existing Search/Shopping/PMax assets surface as-is with no new copy fields. Practitioner read on this specific format: "zero control over your ad creative, and zero reporting on what ads showed where" — treat that as the honest starting constraint, not a solved problem.
 
-⚠️ **One thing to confirm with your rep before shipping this**: the same reference snapshot lists *finance* among verticals where AI Overviews shows "no ads at all." That line is written for classic Overviews, not confirmed for AI Mode Shopping ads — but Fernhollow sits close enough to "finance" that it's worth a direct question to your rep rather than an assumption either way.
+⚠️ **One thing to confirm with your rep before shipping this**: the same reference snapshot lists _finance_ among verticals where AI Overviews shows "no ads at all." That line is written for classic Overviews, not confirmed for AI Mode Shopping ads — but Fernhollow sits close enough to "finance" that it's worth a direct question to your rep rather than an assumption either way.
 
-**Reframe, one sentence:** new headline/description *ad copy* won't move this surface — the model reads your landing page and feed, so that's what gets rewritten below. I'm delivering it in the same 6-headline / 4-description shape you asked for, just mapped onto the assets that are actually eligible: 6 short claim-first lines for your landing-page H1/subhead and Shopping feed title field, and 4 longer passages for landing-page body copy, feed description, and meta description.
+**Reframe, one sentence:** new headline/description _ad copy_ won't move this surface — the model reads your landing page and feed, so that's what gets rewritten below. I'm delivering it in the same 6-headline / 4-description shape you asked for, just mapped onto the assets that are actually eligible: 6 short claim-first lines for your landing-page H1/subhead and Shopping feed title field, and 4 longer passages for landing-page body copy, feed description, and meta description.
 
 ## Source rewrites
 
@@ -24,20 +24,20 @@ Problems: no product category in sentence one, no specifics, four unsupported ad
 5. Fernhollow automates invoice reconciliation for mid-market finance teams.
 6. Fernhollow: reconciliation time cut by more than half — 11 hours to 4, in a 2025 study of 32 teams.
 
-(#5 is the one non-stat line, for category clarity when the model needs to establish *what Fernhollow is* before the number.)
+(#5 is the one non-stat line, for category clarity when the model needs to establish _what Fernhollow is_ before the number.)
 
 ### 2. Shopping feed fields (co-first priority — Shopping/PMax is feed-driven, so the feed is effectively the ad here)
 
 **4 description-style rewrites** (~35–40 words each — verify your Merchant Center description cap before pasting in, don't trust a remembered number):
 
-1. *Landing-page body/subhead:* "Fernhollow is B2B invoice-reconciliation software for mid-market finance teams. In a 2025 study of 32 customer teams, Fernhollow cut month-end reconciliation from an average of 11 hours to 4 — a 64% reduction — by automating invoice matching and exception flagging."
-2. *Shopping feed description:* "Fernhollow automates invoice reconciliation for finance teams. A 2025 study of 32 mid-market customers found average month-end reconciliation time dropped from 11 hours to 4. Built for teams closing the books faster, with fewer manual errors."
-3. *Research-stage framing:* "Month-end reconciliation eating your team's week? Fernhollow automates invoice matching so finance teams spend less time chasing discrepancies. A 2025 study of 32 mid-market customers found reconciliation time fell from 11 hours to 4 — a 64% cut."
-4. *Comparison-stage framing:* "Fernhollow replaces manual invoice reconciliation with automated matching built for mid-market finance teams. Customers in a 2025 study (n=32) cut average month-end reconciliation from 11 hours to 4, freeing finance staff for higher-value work."
+1. _Landing-page body/subhead:_ "Fernhollow is B2B invoice-reconciliation software for mid-market finance teams. In a 2025 study of 32 customer teams, Fernhollow cut month-end reconciliation from an average of 11 hours to 4 — a 64% reduction — by automating invoice matching and exception flagging."
+2. _Shopping feed description:_ "Fernhollow automates invoice reconciliation for finance teams. A 2025 study of 32 mid-market customers found average month-end reconciliation time dropped from 11 hours to 4. Built for teams closing the books faster, with fewer manual errors."
+3. _Research-stage framing:_ "Month-end reconciliation eating your team's week? Fernhollow automates invoice matching so finance teams spend less time chasing discrepancies. A 2025 study of 32 mid-market customers found reconciliation time fell from 11 hours to 4 — a 64% cut."
+4. _Comparison-stage framing:_ "Fernhollow replaces manual invoice reconciliation with automated matching built for mid-market finance teams. Customers in a 2025 study (n=32) cut average month-end reconciliation from 11 hours to 4, freeing finance staff for higher-value work."
 
 ### 3. AI Brief field (if your account has AI Max enabled)
 
-AI Max's setup field lets you hand the model a short steer directly. Seed it with the same grounded line rather than leaving it blank: *"Fernhollow is invoice-reconciliation software for mid-market finance teams. Independent customer study (2025, n=32): month-end reconciliation cut from 11 hours to 4."*
+AI Max's setup field lets you hand the model a short steer directly. Seed it with the same grounded line rather than leaving it blank: _"Fernhollow is invoice-reconciliation software for mid-market finance teams. Independent customer study (2025, n=32): month-end reconciliation cut from 11 hours to 4."_
 
 ### 4. Structured data — short ticket, file it
 
@@ -49,11 +49,11 @@ No solicitation program mentioned, and reviews are a quarter-scale asset, not a 
 
 ## Grounding table
 
-| Claim | Source |
-|---|---|
-| Reconciliation cut from 11 hours to 4 (64%) | 2025 Fernhollow customer study, n=32 mid-market finance teams |
-| "32 mid-market finance teams" | same study |
-| "revolutionary / next-generation / transforms" (old hero) | `UNSOURCED` — dropped, not carried into any rewrite |
+| Claim                                                     | Source                                                        |
+| --------------------------------------------------------- | ------------------------------------------------------------- |
+| Reconciliation cut from 11 hours to 4 (64%)               | 2025 Fernhollow customer study, n=32 mid-market finance teams |
+| "32 mid-market finance teams"                             | same study                                                    |
+| "revolutionary / next-generation / transforms" (old hero) | `UNSOURCED` — dropped, not carried into any rewrite           |
 
 Date every use of the stat as "2025 study" and set a review date — recommend re-verifying the figure is still current by **December 2026**.
 
@@ -66,18 +66,18 @@ Date every use of the stat as "2025 study" and set a review date — recommend r
 
 ## Quotability gate (run on lead candidates: headline #1, description #1)
 
-| Check | Headline #1 | Description #1 |
-|---|---|---|
-| Full sense with zero context | ✅ | ✅ |
-| Product named, no pronoun load-bearing | ✅ | ✅ |
-| Exactly one idea | ✅ | ✅ |
-| Claim first | ✅ | ✅ |
-| Specific, not adjective | ✅ | ✅ |
-| Traced to a source | ✅ | ✅ |
-| Time-bound claim dated | ⚠️ dated in body copy, not in this line alone | ✅ |
-| Colleague register, no manufactured urgency | ✅ | ✅ |
-| Survives sitting next to model's own assessment | ✅ | ✅ |
-| Inside current field limits | ⚠️ verify against Merchant Center today | ⚠️ verify against Merchant Center today |
+| Check                                           | Headline #1                                   | Description #1                          |
+| ----------------------------------------------- | --------------------------------------------- | --------------------------------------- |
+| Full sense with zero context                    | ✅                                            | ✅                                      |
+| Product named, no pronoun load-bearing          | ✅                                            | ✅                                      |
+| Exactly one idea                                | ✅                                            | ✅                                      |
+| Claim first                                     | ✅                                            | ✅                                      |
+| Specific, not adjective                         | ✅                                            | ✅                                      |
+| Traced to a source                              | ✅                                            | ✅                                      |
+| Time-bound claim dated                          | ⚠️ dated in body copy, not in this line alone | ✅                                      |
+| Colleague register, no manufactured urgency     | ✅                                            | ✅                                      |
+| Survives sitting next to model's own assessment | ✅                                            | ✅                                      |
+| Inside current field limits                     | ⚠️ verify against Merchant Center today       | ⚠️ verify against Merchant Center today |
 
 8/10 clean, two flagged for a field-limit check you'll need to run in your own Merchant Center/Ads Manager — not something I can verify from here.
 

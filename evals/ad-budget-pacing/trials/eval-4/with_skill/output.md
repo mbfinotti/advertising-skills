@@ -22,6 +22,7 @@ adjust delivery by              +46,429 impr/day (+26.5% over trailing rate)
 No weighted (day-of-week/seasonal) curve was run — there's no 2-3-cycle delivery history for this account, so the flat curve is the right tool here, not a shortcut (per the skill: default to flat alone when history is thin).
 
 **Gate check — does this deviation survive, or is it noise?**
+
 - Not a single-day overdelivery artifact — this is a 4-week cumulative trend.
 - Not a first/last partial day — you're at day 28 of 42.
 - Denominator isn't trivial — 28 elapsed days is a solid read.
@@ -31,11 +32,11 @@ No weighted (day-of-week/seasonal) curve was run — there's no 2-3-cycle delive
 
 It survives. This is a real gap, not something the delivery mechanics explain away.
 
-**One wrinkle on severity**: 0.92 sits just inside the generic 0.90-1.10 "on-pace" convention, so by that band alone this wouldn't even fire an alert. But that convention is built for auction pacing, where 90-110% is genuinely fine. On a **guaranteed IO**, the standing practice is to hold delivery slightly *ahead* of prorated, not just inside a tolerance band, because there's no "good enough" on a fixed impression commitment — either 8M lands by Nov 15 or it doesn't. Judge this one against the commitment, not the convention.
+**One wrinkle on severity**: 0.92 sits just inside the generic 0.90-1.10 "on-pace" convention, so by that band alone this wouldn't even fire an alert. But that convention is built for auction pacing, where 90-110% is genuinely fine. On a **guaranteed IO**, the standing practice is to hold delivery slightly _ahead_ of prorated, not just inside a tolerance band, because there's no "good enough" on a fixed impression commitment — either 8M lands by Nov 15 or it doesn't. Judge this one against the commitment, not the convention.
 
 ## Diagnosis
 
-The diagnostic checklist (budget-capped, bid-capped, audience size, disapprovals, billing, tracking, auction cost, schedule, frequency caps, learning phase) is built for auction-bought delivery you can inspect account-side. You don't operate this account — it's Alpine's guaranteed inventory — so the cause sits with them, not with a setting you can check. What you *can* diagnose is the process failure: Alpine let four weeks of a hard-commitment flight run 8% behind without flagging it. Under the IAB Direct Buy Addendum (effective Feb 2026), the seller carries a duty to promptly notify the buyer of material under-delivery. Silence until your analyst caught it, followed by an unprompted credit offer, reads as Alpine already knowing the number and choosing the cheapest remedy for them rather than the one that fulfills the buy.
+The diagnostic checklist (budget-capped, bid-capped, audience size, disapprovals, billing, tracking, auction cost, schedule, frequency caps, learning phase) is built for auction-bought delivery you can inspect account-side. You don't operate this account — it's Alpine's guaranteed inventory — so the cause sits with them, not with a setting you can check. What you _can_ diagnose is the process failure: Alpine let four weeks of a hard-commitment flight run 8% behind without flagging it. Under the IAB Direct Buy Addendum (effective Feb 2026), the seller carries a duty to promptly notify the buyer of material under-delivery. Silence until your analyst caught it, followed by an unprompted credit offer, reads as Alpine already knowing the number and choosing the cheapest remedy for them rather than the one that fulfills the buy.
 
 ## Should you take the credit?
 
@@ -47,8 +48,8 @@ effort:                make-good flight > credit > accelerate
 compliance cost:       make-good flight == credit > accelerate
 ```
 
-- **Accelerate** is the default while runway remains, and you have 14 days left — real runway, not the flight's final stretch. It buys back the *actual inventory you contracted for* (audience reach in front of camping-gear buyers ahead of the season you bought this flight for), at zero renegotiation cost, reversible if it doesn't work.
-- **Credit** is the fallback the terms guarantee *when a make-good negotiation fails* — not the first move, and not something you accept before acceleration has even been tried. Taking it now means:
+- **Accelerate** is the default while runway remains, and you have 14 days left — real runway, not the flight's final stretch. It buys back the _actual inventory you contracted for_ (audience reach in front of camping-gear buyers ahead of the season you bought this flight for), at zero renegotiation cost, reversible if it doesn't work.
+- **Credit** is the fallback the terms guarantee _when a make-good negotiation fails_ — not the first move, and not something you accept before acceleration has even been tried. Taking it now means:
   - You get cash back on undelivered inventory instead of the impressions you actually wanted delivered — the reason "clean and easy" is doing a lot of work in the framing. A DTC brand running a flight for seasonal reach doesn't want a rebate line item, it wants the eyeballs.
   - It closes the flight instead of fixing it, foreclosing the 650K-impression recovery that's still achievable with 14 days left.
   - You have no visibility yet into whether Alpine's offered credit is even priced at full contracted value per impression, or discounted.
@@ -58,6 +59,7 @@ The credit isn't "wrong" as an eventual fallback — it's premature as a first r
 ## What to do with the remaining two weeks
 
 **1. Push acceleration first, today.**
+
 - current → proposed: 175,000/day trailing → 221,429/day required
 - affected: all placements/line items under this IO
 - rationale: closes the full 650K shortfall inside the existing flight without a contract amendment

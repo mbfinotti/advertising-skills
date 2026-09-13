@@ -8,16 +8,16 @@ The honest Monday-morning line: **we don't yet know if $400 blended CAC is profi
 
 ## Definitions record
 
-| Field | Value |
-|---|---|
-| Model | B2B, property-management CRM |
-| Windows | 6 consecutive monthly periods, same "blended CAC = total marketing spend ÷ all new customers" definition throughout (your stated consistent definition — matches this skill's Blended CAC formula exactly) |
-| Spend lines | Total marketing spend (blended) — media/agency/tooling split not broken out, but immaterial to blended CAC itself |
-| New-customer basis | "All new customers" per your formula — renewals/reactivations exclusion not separately confirmed; flag for finance to verify once available |
-| Revenue basis | Not specified (MER numerator source — gross/net, billing vs platform) |
-| **Contribution margin** | **Unknown — finance mid-audit, unavailable until next month** |
-| History | 6 periods, consistent definition — inside this skill's 4–8 period recommendation |
-| Lag vs window | Sales cycle ~5 weeks vs monthly windows — a ~1-week overhang exists (this month's blended CAC pairs some of this month's spend against next month's closes). Applied consistently across all 6 months, so it's a minor, systematic offset, not a disqualifying one — you called this "covered," and I'm accepting that with this caveat on record. |
+| Field                   | Value                                                                                                                                                                                                                                                                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Model                   | B2B, property-management CRM                                                                                                                                                                                                                                                                                                                       |
+| Windows                 | 6 consecutive monthly periods, same "blended CAC = total marketing spend ÷ all new customers" definition throughout (your stated consistent definition — matches this skill's Blended CAC formula exactly)                                                                                                                                         |
+| Spend lines             | Total marketing spend (blended) — media/agency/tooling split not broken out, but immaterial to blended CAC itself                                                                                                                                                                                                                                  |
+| New-customer basis      | "All new customers" per your formula — renewals/reactivations exclusion not separately confirmed; flag for finance to verify once available                                                                                                                                                                                                        |
+| Revenue basis           | Not specified (MER numerator source — gross/net, billing vs platform)                                                                                                                                                                                                                                                                              |
+| **Contribution margin** | **Unknown — finance mid-audit, unavailable until next month**                                                                                                                                                                                                                                                                                      |
+| History                 | 6 periods, consistent definition — inside this skill's 4–8 period recommendation                                                                                                                                                                                                                                                                   |
+| Lag vs window           | Sales cycle ~5 weeks vs monthly windows — a ~1-week overhang exists (this month's blended CAC pairs some of this month's spend against next month's closes). Applied consistently across all 6 months, so it's a minor, systematic offset, not a disqualifying one — you called this "covered," and I'm accepting that with this caveat on record. |
 
 **Deleted from this run (Friday deadline):** fully-loaded CAC, marginal CAC, contribution-margin ROAS/POAS, cohort (closed-won) CAC — all need finance or CRM-stage data that isn't available before the exec review.
 
@@ -25,12 +25,12 @@ The honest Monday-morning line: **we don't yet know if $400 blended CAC is profi
 
 ## Metric table
 
-*Assuming left-to-right = oldest → most recent; confirm with whoever pulled the numbers, since it flips which end is "current." It doesn't change the read below either way — both directions land inside the same tight, flat band.*
+_Assuming left-to-right = oldest → most recent; confirm with whoever pulled the numbers, since it flips which end is "current." It doesn't change the read below either way — both directions land inside the same tight, flat band._
 
-| Metric | Variant | M1 | M2 | M3 | M4 | M5 | M6 | Mean | Window | Source |
-|---|---|---|---|---|---|---|---|---|---|---|
+| Metric      | Variant                                   | M1   | M2   | M3   | M4   | M5   | M6   | Mean    | Window            | Source    |
+| ----------- | ----------------------------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ------- | ----------------- | --------- |
 | Blended CAC | total marketing spend ÷ all new customers | $410 | $395 | $402 | $398 | $405 | $400 | $401.67 | 6 monthly periods | your data |
-| MER | total revenue ÷ total marketing spend | 3.1 | 3.2 | 3.1 | 3.15 | 3.1 | 3.1 | 3.125 | 6 monthly periods | your data |
+| MER         | total revenue ÷ total marketing spend     | 3.1  | 3.2  | 3.1  | 3.15 | 3.1  | 3.1  | 3.125   | 6 monthly periods | your data |
 
 Both series sit in a ~3–4% band around their mean, non-monotonic (up/down/up/down), no consecutive-period deterioration or improvement in either direction. Mix-shift check couldn't be run (no channel split provided) — flat blended aggregates are a good sign against a hidden mix shift, but not proof of one's absence.
 
@@ -57,10 +57,10 @@ Gate: variant established ✅ · margin known ❌ (rung 1 blocked) · window ≥
 
 Likely to come up in the room — put it on the table now rather than after someone quotes it:
 
-| Quoted rule | Origin | Worth here |
-|---|---|---|
-| MER > 4, 5–8 at scale | Taylor Holiday, CTC, 2022 — stated heuristic, never measured across a sample, DTC-ecommerce context | Verdala's 3.1–3.2 sits below it, but this rule wasn't built for a B2B SaaS CRM and has no traceable evidence base. Don't let it stand in for the missing break-even. |
-| 4:1 ROAS | No traceable author, often misattributed to Nielsen | It's break-even at exactly a 25% contribution margin, nothing more. We don't know Verdala's margin, so this number is arithmetic about a hypothetical business, not ours. |
+| Quoted rule           | Origin                                                                                              | Worth here                                                                                                                                                                |
+| --------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| MER > 4, 5–8 at scale | Taylor Holiday, CTC, 2022 — stated heuristic, never measured across a sample, DTC-ecommerce context | Verdala's 3.1–3.2 sits below it, but this rule wasn't built for a B2B SaaS CRM and has no traceable evidence base. Don't let it stand in for the missing break-even.      |
+| 4:1 ROAS              | No traceable author, often misattributed to Nielsen                                                 | It's break-even at exactly a 25% contribution margin, nothing more. We don't know Verdala's margin, so this number is arithmetic about a hypothetical business, not ours. |
 
 ## Handoffs
 
@@ -71,4 +71,4 @@ Likely to come up in the room — put it on the table now rather than after some
 
 ---
 
-**For Monday, in one sentence:** *"Spend efficiency has been flat and stable for six straight months — no warning signs in the trend — but we can't certify it as healthy or unhealthy until finance gives us contribution margin next month; anyone quoting a 4:1 or MER-of-4 target against these numbers is quoting a DTC ecommerce rule of thumb, not a fact about Verdala."*
+**For Monday, in one sentence:** _"Spend efficiency has been flat and stable for six straight months — no warning signs in the trend — but we can't certify it as healthy or unhealthy until finance gives us contribution margin next month; anyone quoting a 4:1 or MER-of-4 target against these numbers is quoting a DTC ecommerce rule of thumb, not a fact about Verdala."_

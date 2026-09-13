@@ -11,6 +11,7 @@ Read the skill (SKILL.md), the worked examples, and the sizing reference in full
 5. **The security cell only has 2 assets** — below the 3-6/cell band. Flagged below, not silently absorbed.
 
 Two inputs I don't have and am assuming — confirm or correct:
+
 - **Platform**: assumed Meta paid social (adjust naming/A+ creative note if it's TikTok/Google).
 - **Click-to-purchase / CVR and CPC**: not given. I've used the skill's community-convention purchase-count bands instead of inventing a CPC, and flagged where the real number would sharpen this.
 

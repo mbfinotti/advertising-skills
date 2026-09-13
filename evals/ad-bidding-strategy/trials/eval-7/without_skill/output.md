@@ -22,16 +22,16 @@ At the agency's proposed 4x: net margin = 40% − 25% = **15% net**, blended. Th
 
 Run the same formula per line at a 10% net profit bar:
 
-| Line | Contribution margin | Target ROAS for 10% net |
-|---|---|---|
-| Premium | 55% | **2.2x** |
-| Basics | 22% | **8.3x** |
-| Blended | 40% | **3.3x** |
+| Line    | Contribution margin | Target ROAS for 10% net |
+| ------- | ------------------- | ----------------------- |
+| Premium | 55%                 | **2.2x**                |
+| Basics  | 22%                 | **8.3x**                |
+| Blended | 40%                 | **3.3x**                |
 
 Now check what the agency's flat 4x actually does to each line:
 
 - **Premium at 4x ROAS** → net margin = 55% − 25% = **30% net**. You're way over-constraining premium — capping it at 4x throttles volume on your most profitable line for no reason.
-- **Basics at 4x ROAS** → net margin = 22% − 25% = **−3% net**. Basics *loses money* at the exact target the agency wants to apply account-wide.
+- **Basics at 4x ROAS** → net margin = 22% − 25% = **−3% net**. Basics _loses money_ at the exact target the agency wants to apply account-wide.
 
 A single 4x target simultaneously starves your best line and bankrolls losses on your worst one. That's the core flaw — not the number 4x itself, but applying one number to two businesses with different economics.
 

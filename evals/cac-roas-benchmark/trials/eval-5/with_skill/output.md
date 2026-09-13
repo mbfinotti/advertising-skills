@@ -10,22 +10,22 @@ Model: B2B SaaS · Window: Q1 vs Q2 (quarterly) — sales-cycle length not provi
 
 **The variant switch, made explicit:**
 
-| Quarter | Formula used | Numerator | Denominator | Result | Variant |
-|---|---|---|---|---|---|
-| Q1 | as reported | $190,000 paid spend | 2,000 paid-attributed customers | $95 | **Paid CAC** |
-| Q2 | as reported | $217,000 total marketing spend | 3,500 all new customers | $62 | **Blended CAC** |
+| Quarter | Formula used | Numerator                      | Denominator                     | Result | Variant         |
+| ------- | ------------ | ------------------------------ | ------------------------------- | ------ | --------------- |
+| Q1      | as reported  | $190,000 paid spend            | 2,000 paid-attributed customers | $95    | **Paid CAC**    |
+| Q2      | as reported  | $217,000 total marketing spend | 3,500 all new customers         | $62    | **Blended CAC** |
 
-Marketing's slide divides a paid-only number by a paid-only denominator in Q1, then divides an all-in spend number by an all-customer denominator in Q2. Those are two different metrics in the same family — this is the skill's own textbook case, near-verbatim: *"$84K spend, 2,000 new customers of which 1,200 from paid = $42 blended and $70 paid CAC for the same month. Silently switching variants makes CAC 'improve' with nothing changing."* Same mechanism here, larger stakes because it's headed to a board deck.
+Marketing's slide divides a paid-only number by a paid-only denominator in Q1, then divides an all-in spend number by an all-customer denominator in Q2. Those are two different metrics in the same family — this is the skill's own textbook case, near-verbatim: _"$84K spend, 2,000 new customers of which 1,200 from paid = $42 blended and $70 paid CAC for the same month. Silently switching variants makes CAC 'improve' with nothing changing."_ Same mechanism here, larger stakes because it's headed to a board deck.
 
 ## Metric table (restated on consistent variants)
 
-| Metric | Variant | Value | Window | Source |
-|---|---|---|---|---|
-| Paid CAC | paid spend ÷ paid-attributed customers | $95 | Q1 | sheet |
-| Paid CAC | paid spend ÷ paid-attributed customers | $100 | Q2 | sheet |
-| Blended CAC | total marketing spend ÷ all new customers | $62 | Q2 | sheet |
-| Blended CAC | total marketing spend ÷ all new customers | **not computable** — Q1 total marketing spend and Q1 total new customers (organic included) weren't given | Q1 | — |
-| Organic-attributed new customers (implied) | all new − paid-attributed | 1,650 (47% of Q2 new customers) | Q2 | derived: 3,500 − 1,850 |
+| Metric                                     | Variant                                   | Value                                                                                                     | Window | Source                 |
+| ------------------------------------------ | ----------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------ | ---------------------- |
+| Paid CAC                                   | paid spend ÷ paid-attributed customers    | $95                                                                                                       | Q1     | sheet                  |
+| Paid CAC                                   | paid spend ÷ paid-attributed customers    | $100                                                                                                      | Q2     | sheet                  |
+| Blended CAC                                | total marketing spend ÷ all new customers | $62                                                                                                       | Q2     | sheet                  |
+| Blended CAC                                | total marketing spend ÷ all new customers | **not computable** — Q1 total marketing spend and Q1 total new customers (organic included) weren't given | Q1     | —                      |
+| Organic-attributed new customers (implied) | all new − paid-attributed                 | 1,650 (47% of Q2 new customers)                                                                           | Q2     | derived: 3,500 − 1,850 |
 
 ## Comparison ladder
 
@@ -38,15 +38,15 @@ Marketing's slide divides a paid-only number by a paid-only denominator in Q1, t
 Gate: variant established **Y — but the two headline figures used different variants, which is the defect** · margin known **N** · window ≥ conversion lag **unconfirmed** · channels complete **N (Q1 blended components missing)**.
 
 - **On the "35% improvement" claim: rejected.** It's a Paid-CAC-vs-Blended-CAC comparison. The gap measures the definitions, not the quarter's performance.
-- **On overall paid-channel health: insufficient evidence** for a full verdict (no margin → no break-even; only one same-variant data point → no valid trend), but the one clean read available is a mild ~5% *increase* in paid CAC, the opposite direction of the claim.
+- **On overall paid-channel health: insufficient evidence** for a full verdict (no margin → no break-even; only one same-variant data point → no valid trend), but the one clean read available is a mild ~5% _increase_ in paid CAC, the opposite direction of the claim.
 - **What actually happened in Q2:** organic new customers jumped to ~47% of the total, plausibly the stated PR hit, and pulled the blended number down. That's a real, good thing — but it's a mix-shift, not a paid-spend efficiency gain, and mix-shift is exactly what Step 2 warns can move a blended number "while every segment is flat."
 
 ## For the board slide
 
 Don't ship "CAC improved 35%" — a diligence associate who asks for the paid/organic split (a routine question at Series B) will surface the switch in minutes, and that costs more credibility than a modest, correctly labeled number. Two honest, separately defensible statements instead:
 
-- *"Paid CAC held roughly flat quarter-over-quarter ($95 → $100)."*
-- *"Organic acquisition surged following [PR event], now ~47% of new customers, pulling blended CAC to $62 — a genuine efficiency win worth its own line, not folded into a paid-performance claim."*
+- _"Paid CAC held roughly flat quarter-over-quarter ($95 → $100)."_
+- _"Organic acquisition surged following [PR event], now ~47% of new customers, pulling blended CAC to $62 — a genuine efficiency win worth its own line, not folded into a paid-performance claim."_
 
 ## Handoffs
 

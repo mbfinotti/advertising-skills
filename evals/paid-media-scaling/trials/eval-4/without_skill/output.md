@@ -4,9 +4,9 @@
 LinkedIn's reported conversions use its own pixel/click-through and view-through attribution, which structurally over-counts (multi-touch inflation, view-through credit, delayed matchback errors). CRM lag is a timing issue, not an accuracy issue — a lead eventually lands in CRM or it didn't happen. "CRM always lags" is not a reason to discard it as the source of truth; it's a reason to compare on a delay, not to prefer LinkedIn's number.
 
 **2. CPL dropped $95→$61 while budget went $12K→$20K — that's the wrong direction.**
-On LinkedIn, a fixed-size B2B audience getting more expensive per lead as spend rises is the normal pattern (auction pressure, audience saturation). CPL *falling* while spend rises usually means the algorithm found a cheaper, broader, lower-intent segment — not that efficiency genuinely improved.
+On LinkedIn, a fixed-size B2B audience getting more expensive per lead as spend rises is the normal pattern (auction pressure, audience saturation). CPL _falling_ while spend rises usually means the algorithm found a cheaper, broader, lower-intent segment — not that efficiency genuinely improved.
 
-**Put 1 and 2 together with "discovery calls feel lighter" and the pattern reads as: LinkedIn is optimizing toward volume/cheap clicks, quality is degrading, and the platform's own conversion count is masking it.** Sales complaining is normal; sales complaining *plus* a CPL drop *plus* an attribution gap is a corroborated signal, not noise. This needs to be checked before more budget goes in, not after.
+**Put 1 and 2 together with "discovery calls feel lighter" and the pattern reads as: LinkedIn is optimizing toward volume/cheap clicks, quality is degrading, and the platform's own conversion count is masking it.** Sales complaining is normal; sales complaining _plus_ a CPL drop _plus_ an attribution gap is a corroborated signal, not noise. This needs to be checked before more budget goes in, not after.
 
 ## Why the plan as specified would make this worse
 
@@ -16,6 +16,7 @@ On LinkedIn, a fixed-size B2B audience getting more expensive per lead as spend 
 ## The ramp (redesigned)
 
 **Gate 0 — do this before touching budget (this week):**
+
 1. Pull last 6 weeks of LinkedIn-reported leads and match each to CRM by email/company, by week cohort.
 2. Compute the true match rate and the delta between LinkedIn's claimed conversions and CRM-confirmed leads.
 3. Ask sales for a structured (not anecdotal) read: SQL rate and avg. deal-fit score for leads from weeks 5-6 (the $20K period) vs. weeks 1-2 (the $12K period).
@@ -23,12 +24,12 @@ On LinkedIn, a fixed-size B2B audience getting more expensive per lead as spend 
 
 **Ramp cadence (only after Gate 0 is clean or fixed):**
 
-| Step | Budget | Duration | Go/no-go metric |
-|---|---|---|---|
-| 1 | $20K → $26K (+30%) | 2 weeks | CPL stable ±15%, SQL rate stable vs. baseline |
-| 2 | $26K → $33K (+27%) | 2 weeks | Same, plus CRM-match rate holding |
-| 3 | $33K → $40K (+21%) | 2 weeks | Same |
-| 4 | $40K → $45K (+12%) | 2 weeks | Same |
+| Step | Budget             | Duration | Go/no-go metric                               |
+| ---- | ------------------ | -------- | --------------------------------------------- |
+| 1    | $20K → $26K (+30%) | 2 weeks  | CPL stable ±15%, SQL rate stable vs. baseline |
+| 2    | $26K → $33K (+27%) | 2 weeks  | Same, plus CRM-match rate holding             |
+| 3    | $33K → $40K (+21%) | 2 weeks  | Same                                          |
+| 4    | $40K → $45K (+12%) | 2 weeks  | Same                                          |
 
 - **~25-30% steps, not 125%** — this is the range LinkedIn's delivery algorithm can absorb without falling off the efficient audience.
 - **2-week windows, not 1-week** — long enough to see a stable CPL and an early SQL signal, short enough to still move fast (full ramp ≈ 8 weeks vs. your "next month" ask, but reaching $45K in one month at this audience size is the change most likely to force you to reverse it later).

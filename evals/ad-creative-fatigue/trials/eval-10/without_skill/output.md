@@ -7,7 +7,7 @@ The 25%-CPA-spike-then-fades pattern is very likely a **measurement artifact, no
 ## Why this looks like conversion-lag, not fatigue
 
 1. **The "shrinks by next pull" pattern is the signature of conversion lag.** Trailing-7-day CPA pulled on Monday is immature — clicks from Thu–Sun haven't finished converting yet. A week later, that same period has "cooked" and CPA drops. This repeats every Monday because you're always comparing a fresh, unsettled week against a fully matured prior week.
-2. **The mid-month attribution change amplifies exactly this artifact.** Moving from 7-day to 1-day click shortens the attribution window, so more of the true conversion volume now depends on same-day clicks — making the dashboard *more* sensitive to lag and less able to "catch" multi-day purchase paths (typical for considered DTC purchases like books).
+2. **The mid-month attribution change amplifies exactly this artifact.** Moving from 7-day to 1-day click shortens the attribution window, so more of the true conversion volume now depends on same-day clicks — making the dashboard _more_ sensitive to lag and less able to "catch" multi-day purchase paths (typical for considered DTC purchases like books).
 3. **CTR (all) is flat.** Real creative fatigue shows up first as declining CTR (ad blindness) and rising frequency — not as CPA alone. Stable CTR argues against genuine fatigue and points to a downstream (conversion-side) measurement issue.
 4. **Timing lines up.** The fatigue narrative started being visible right around the same period as the attribution-window change — correlation, not evidence of creative wear-out.
 

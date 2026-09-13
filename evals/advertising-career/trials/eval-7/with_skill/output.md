@@ -22,7 +22,7 @@ All three questions are "metric-diagnosis" format — the skill's evidence says 
 
 **Close on the business metric, not the platform number:** "Whatever I find, I'd report it against blended MER or contribution margin, not just platform ROAS — with iOS ATT, platform-reported ROAS on a subscription supplements brand can move independently of what's actually landing in the bank, especially once you factor in first-purchase vs. subscription LTV."
 
-*Why this reads senior:* names the order, scopes the window before diagnosing, and closes on blended MER instead of vanity-metric ROAS — the skill flags "CTR/CPC talk without CPA/ROAS/MER" as a mid-level tell, and the fix here is the same instinct one level up: don't stop at platform ROAS either.
+_Why this reads senior:_ names the order, scopes the window before diagnosing, and closes on blended MER instead of vanity-metric ROAS — the skill flags "CTR/CPC talk without CPA/ROAS/MER" as a mid-level tell, and the fix here is the same instinct one level up: don't stop at platform ROAS either.
 
 ---
 
@@ -36,11 +36,11 @@ Don't answer "significant" or "not significant" — that's the trap. Answer with
 
 - "If this was a creative or copy variant — cheap to keep running, easy to reverse, low downside if the 'lift' turns out to be noise — I'd ship it and keep collecting data post-launch rather than block on significance. The cost of a false positive here is low."
 - "If it's something expensive or hard to reverse — a bidding strategy change, a landing page rebuild, a pricing test on a subscription SKU — I'd extend the test to reach the pre-agreed power/duration rather than call it early. Calling a coin-flip result on an irreversible decision is the actual mistake, not the p=0.08 itself."
-- "I'd also ask what the significance threshold and minimum runtime were set to *before* the test launched. If nobody set one, that's the process gap — not the 0.08."
+- "I'd also ask what the significance threshold and minimum runtime were set to _before_ the test launched. If nobody set one, that's the process gap — not the 0.08."
 
 **One line that lands well if asked to just decide:** "Given it's presented with no context on reversibility, I'd default to extending the test rather than shipping or killing — but tell me what the variant actually changes and I'll give you a real answer, not a rule of thumb."
 
-*Why this reads senior:* the skill is explicit that naming "the threshold should have been set before the test" is the tell interviewers listen for — it shows you think about test design, not just test results.
+_Why this reads senior:_ the skill is explicit that naming "the threshold should have been set before the test" is the tell interviewers listen for — it shows you think about test design, not just test results.
 
 ---
 
@@ -54,10 +54,10 @@ This is close to a textbook question, so answer it precisely and don't over-hedg
 
 1. "Check frequency and reach by segment before anything else — if reach barely moved and frequency spiked, that confirms saturation rather than, say, a tracking or landing-page issue that happened to coincide with the budget change."
 2. "I wouldn't jump straight back to $2K — I'd step the budget up gradually (e.g. 20% every 3-4 days) instead of a 2.5x jump, which gives the algorithm's learning phase time to actually find efficient incremental volume instead of dumping into broad reach overnight."
-3. "In parallel, I'd widen the *supply* of good audience rather than just the budget — new creative angles, expansion into adjacent lookalikes, a new prospecting segment — so the extra spend has somewhere efficient to go instead of spilling into low-intent inventory."
+3. "In parallel, I'd widen the _supply_ of good audience rather than just the budget — new creative angles, expansion into adjacent lookalikes, a new prospecting segment — so the extra spend has somewhere efficient to go instead of spilling into low-intent inventory."
 4. "If the goal is real scale, not just a budget line, I'd reframe the conversation from 'raise this campaign's budget' to 'where's the next efficient audience pool' — that's a creative and audience-expansion problem, not a bid-and-budget problem."
 
-*Why this reads senior:* the skill flags this exact scenario and its expected answer as "audience saturation / diminishing marginal returns — the algorithm reaches beyond the efficient core to spend the larger budget." Landing that cleanly, then pivoting to a concrete remediation plan (gradual ramp + audience expansion, not just "lower the budget back"), is what separates a correct answer from a strong one.
+_Why this reads senior:_ the skill flags this exact scenario and its expected answer as "audience saturation / diminishing marginal returns — the algorithm reaches beyond the efficient core to spend the larger budget." Landing that cleanly, then pivoting to a concrete remediation plan (gradual ramp + audience expansion, not just "lower the budget back"), is what separates a correct answer from a strong one.
 
 ---
 

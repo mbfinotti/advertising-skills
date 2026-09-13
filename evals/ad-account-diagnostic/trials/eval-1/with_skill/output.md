@@ -12,7 +12,7 @@ Three independent pieces of evidence point the same direction, away from creativ
 
 **3. The Meta-vs-Shopify gap blew through its normal band, on the exact break date.** Your platform-to-backend gap normally runs ~8%. Right now it's ~46% (645 Shopify-attributed orders vs. 348 Meta-reported — Meta is missing roughly every other real sale). A gap that jumps 6x isn't demand or creative decaying, it's a measurement pipe leaking. And the checkout migration to a new subdomain landed the same week: purchase-tracking (pixel/Conversions API, domain verification, cross-domain cookie continuity) is exactly what a subdomain move breaks, and it breaks uniformly across every campaign feeding that checkout — which is precisely the pattern you're seeing.
 
-Put together: your business didn't slow down. Meta's ability to *see* your business slowed down.
+Put together: your business didn't slow down. Meta's ability to _see_ your business slowed down.
 
 ## The verdict, formally
 
@@ -59,6 +59,6 @@ re-check       : ~12-14 days after the fix ships, at full attribution-lag maturi
 
 Don't build that list from this data. Every ad's reported ROAS/CVR right now is downstream of the same broken pixel — a "worst performer" ranking pulled from this window would just be ranking noise, and since the break hit every campaign type uniformly, there's no reason to think any single ad's number is more or less corrupted than another's. There's no safe signal to cut from yet.
 
-Once the fix ships and you have a lag-mature clean window, the right way to actually pick which of your 9-week-old ads to sunset is a per-ad differential, not a blanket "everything over 9 weeks goes": look at each ad's CTR against *its own* baseline (not the account average), check frequency (concern threshold is roughly >3 with declining CTR), and look for decay concentrated in your oldest units while newer ones hold. That's a genuinely different, narrower analysis than this diagnostic, and it's worth running deliberately once you're looking at real numbers — not as triage off a signal you now know is broken.
+Once the fix ships and you have a lag-mature clean window, the right way to actually pick which of your 9-week-old ads to sunset is a per-ad differential, not a blanket "everything over 9 weeks goes": look at each ad's CTR against _its own_ baseline (not the account average), check frequency (concern threshold is roughly >3 with declining CTR), and look for decay concentrated in your oldest units while newer ones hold. That's a genuinely different, narrower analysis than this diagnostic, and it's worth running deliberately once you're looking at real numbers — not as triage off a signal you now know is broken.
 
-One thing that *is* fine to keep planning independent of all this: your instinct that the creative is due for a refresh at 9 weeks is reasonable housekeeping regardless of what caused this specific 12-day dip. Just make that decision on its own timeline, against clean data, not as the emergency fix for a problem it isn't causing.
+One thing that _is_ fine to keep planning independent of all this: your instinct that the creative is due for a refresh at 9 weeks is reasonable housekeeping regardless of what caused this specific 12-day dip. Just make that decision on its own timeline, against clean data, not as the emergency fix for a problem it isn't causing.

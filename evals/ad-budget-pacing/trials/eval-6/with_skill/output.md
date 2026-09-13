@@ -4,20 +4,20 @@
 
 ## The arithmetic (flat curve)
 
-| Metric | Formula | Value |
-|---|---|---|
-| Days elapsed / in period | 25 / 31 | 0.806 (80.6%) |
-| `expected_to_date` | $40,000 × 0.806 | **$32,258** |
-| `spend_to_date` | given | $26,000 |
-| `pacing_ratio` | 26,000 / 32,258 | **0.806** (actual/expected) |
-| `budget_utilization` | 26,000 / 40,000 | 65.0% |
-| `remaining_budget` | 40,000 − 26,000 | $14,000 |
-| `projected_spend` (run rate) | (26,000/25) × 31 | **$32,240** |
-| Days remaining | Oct 26–31 | 6 |
-| `required_daily` | 14,000 / 6 | **$2,333.33/day** |
-| `adjust_spend_by` | 2,333.33 − 1,050 (trailing 7‑day avg) | **+$1,283.33/day** |
+| Metric                       | Formula                               | Value                       |
+| ---------------------------- | ------------------------------------- | --------------------------- |
+| Days elapsed / in period     | 25 / 31                               | 0.806 (80.6%)               |
+| `expected_to_date`           | $40,000 × 0.806                       | **$32,258**                 |
+| `spend_to_date`              | given                                 | $26,000                     |
+| `pacing_ratio`               | 26,000 / 32,258                       | **0.806** (actual/expected) |
+| `budget_utilization`         | 26,000 / 40,000                       | 65.0%                       |
+| `remaining_budget`           | 40,000 − 26,000                       | $14,000                     |
+| `projected_spend` (run rate) | (26,000/25) × 31                      | **$32,240**                 |
+| Days remaining               | Oct 26–31                             | 6                           |
+| `required_daily`             | 14,000 / 6                            | **$2,333.33/day**           |
+| `adjust_spend_by`            | 2,333.33 − 1,050 (trailing 7‑day avg) | **+$1,283.33/day**          |
 
-*Weighted curve: not computed. No day-of-week or seasonality history was given, and there's no time to build/validate a 2–3 cycle index before a same-week correction — flat alone is the right call here per the skill's own guidance (a deadline inside the period demotes the weighted curve).*
+_Weighted curve: not computed. No day-of-week or seasonality history was given, and there's no time to build/validate a 2–3 cycle index before a same-week correction — flat alone is the right call here per the skill's own guidance (a deadline inside the period demotes the weighted curve)._
 
 ## Status: **UNDER-PACING, urgent band**
 
@@ -50,22 +50,22 @@ The number that lands exactly on budget is `required_daily` = **$2,333.33/day**,
 You haven't given me platform status data, an edit log, or the impression-share-lost breakdown, so I can't tell you which of these it is — but this is the single highest-value check on the list before you touch the budget tomorrow, and it's near-zero effort:
 
 - **Status sweep** (one screen, each platform): budget-limited vs. learning-limited vs. rank-limited delivery status, any billing issues, any disapprovals.
-- **Constraint pair**: impression share lost to *budget* (money's the constraint — raising it works) vs. lost to *rank* (bid/targeting's the constraint — raising budget alone won't close the gap).
+- **Constraint pair**: impression share lost to _budget_ (money's the constraint — raising it works) vs. lost to _rank_ (bid/targeting's the constraint — raising budget alone won't close the gap).
 
 If any platform comes back bid- or rank-limited, the fix is loosening that constraint first, not just inflating the budget number — otherwise you'll set $2,333/day, it under-delivers again, and you're back here on Oct 29 with less runway and a bigger last-mile scramble.
 
 ## Recommendation (change packet)
 
-| | |
-|---|---|
-| **Current** | ~$1,050/day (trailing 7-day average across active paid social budgets) |
-| **Proposed** | $2,333/day for Oct 26–31, **recomputed daily** rather than set once — recalculate `required_daily` each morning against actual finalized spend from the prior day |
-| **Affected objects** | All active Bexley Home paid social campaigns/ad sets carrying October budget — reallocate toward whichever objects the constraint-pair check shows have room, rather than applying a flat +122% to every object uniformly (a uniform lift risks some objects hitting fair-share delivery limits while others merely convert overspend into worse CPMs) |
-| **Rationale** | Closes the $14,000 remaining gap exactly over 6 remaining days; current trailing pace projects to $32,240 — a $7,760 shortfall against the $40,000 hard commitment |
-| **Expected effect, with uncertainty** | Lands exactly on $40,000 utilization **if** delivery isn't itself the binding constraint. Unconfirmed until the status sweep / constraint-pair check runs — this is the load-bearing unknown in the plan |
-| **Owner** | Bexley Home media buyer / account manager |
-| **Verification date** | Daily, Oct 27–30 — recheck `pacing_ratio` and `required_daily` against actual (not projected) spend each morning |
-| **Rollback trigger** | If actual delivery underdelivers the new daily target for 2 consecutive days, stop pushing the number up further — that's the signature of a delivery constraint, not a budget-setting problem, and needs the constraint-pair fix instead |
+|                                       |                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Current**                           | ~$1,050/day (trailing 7-day average across active paid social budgets)                                                                                                                                                                                                                                                                                 |
+| **Proposed**                          | $2,333/day for Oct 26–31, **recomputed daily** rather than set once — recalculate `required_daily` each morning against actual finalized spend from the prior day                                                                                                                                                                                      |
+| **Affected objects**                  | All active Bexley Home paid social campaigns/ad sets carrying October budget — reallocate toward whichever objects the constraint-pair check shows have room, rather than applying a flat +122% to every object uniformly (a uniform lift risks some objects hitting fair-share delivery limits while others merely convert overspend into worse CPMs) |
+| **Rationale**                         | Closes the $14,000 remaining gap exactly over 6 remaining days; current trailing pace projects to $32,240 — a $7,760 shortfall against the $40,000 hard commitment                                                                                                                                                                                     |
+| **Expected effect, with uncertainty** | Lands exactly on $40,000 utilization **if** delivery isn't itself the binding constraint. Unconfirmed until the status sweep / constraint-pair check runs — this is the load-bearing unknown in the plan                                                                                                                                               |
+| **Owner**                             | Bexley Home media buyer / account manager                                                                                                                                                                                                                                                                                                              |
+| **Verification date**                 | Daily, Oct 27–30 — recheck `pacing_ratio` and `required_daily` against actual (not projected) spend each morning                                                                                                                                                                                                                                       |
+| **Rollback trigger**                  | If actual delivery underdelivers the new daily target for 2 consecutive days, stop pushing the number up further — that's the signature of a delivery constraint, not a budget-setting problem, and needs the constraint-pair fix instead                                                                                                              |
 
 ## One more thing on execution
 

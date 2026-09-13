@@ -6,7 +6,7 @@
 
 Run the **measurement gate** before any bid-strategy talk: does the tracked event (demo-request form fill) predict revenue? Your SDR team already answered that — most of the new leads are students and job seekers, not facilities directors. That's a fail on **event depth**, not a bidder malfunction.
 
-This matches the canonical B2B failure mode: *optimizing raw form-fills — cost per lead improves while pipeline dies.* Cost per form fill down 30% with volume up is exactly what an automated bidder does when told "get me more of this label," and the label is wrong. The bidder is doing its job faithfully on a bad instruction.
+This matches the canonical B2B failure mode: _optimizing raw form-fills — cost per lead improves while pipeline dies._ Cost per form fill down 30% with volume up is exactly what an automated bidder does when told "get me more of this label," and the label is wrong. The bidder is doing its job faithfully on a bad instruction.
 
 Use the three-job framework (Pilot / Doctor / Teacher) to name which job is actually failing:
 
@@ -18,7 +18,7 @@ Reframed this way, "go back to manual" and "never fight the machine" are both an
 
 ## Candidate policies
 
-1. **Re-point the optimization event to a qualified lead, feed automated bidding the corrected signal.** Push SDR qualification outcome (or the CRM stage where a lead is marked "ICP: facilities director, real opportunity") back to the platform as an offline conversion import, and switch the bid strategy to optimize toward *that* event instead of raw form fill.
+1. **Re-point the optimization event to a qualified lead, feed automated bidding the corrected signal.** Push SDR qualification outcome (or the CRM stage where a lead is marked "ICP: facilities director, real opportunity") back to the platform as an offline conversion import, and switch the bid strategy to optimize toward _that_ event instead of raw form fill.
 2. **Layer value differentiation on top.** Once qualification flows back, assign real or tiered values (qualified facilities-director lead high, student/job-seeker lead zero or filtered out entirely) and move toward a return-goal strategy once volume and value integrity clear the documented minimums.
 3. **Revert to manual bidding.** Regains a sense of control and legibility. Does nothing to the underlying signal — the same wrong audience keeps getting bid on, just without the platform's optimization pushing harder toward it. Also throws away the 30% cost efficiency and volume gains, which were real, just pointed at the wrong outcome.
 
@@ -41,7 +41,7 @@ SDR qualification sits in between — available within days, and it's the exact 
 Two derivations are required, and I don't have the inputs yet:
 
 - **Economics (affordable ceiling):** average deal size × lead-to-close rate → break-even cost per qualified lead. Need deal size and lead-to-close rate.
-- **History (achievable start):** trailing actual cost per *qualified* lead once the import is live and has 30-60 days plus conversion lag to mature. Doesn't exist yet — you're currently only measuring cost per raw form fill, which is the wrong denominator.
+- **History (achievable start):** trailing actual cost per _qualified_ lead once the import is live and has 30-60 days plus conversion lag to mature. Doesn't exist yet — you're currently only measuring cost per raw form fill, which is the wrong denominator.
 
 Also needed: monthly qualified-lead volume you'd realistically expect (sets whether cost-goal is viable on this narrower event, or whether volume-maximizing on the qualified event is the safer interim rung while volume builds), and who approves a target change.
 

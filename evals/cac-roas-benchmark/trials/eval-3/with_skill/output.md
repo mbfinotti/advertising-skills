@@ -14,20 +14,20 @@ Scoping: this is a fast, one-off "where do we stand" read, not a described stand
 
 ## Metric table
 
-| Metric | Variant | Value | Window | Source |
-|---|---|---|---|---|
-| Billing-reported CAC | blended, **uncorrected** (renewals/reactivations left in) | $310.00 | last month | billing, as given |
-| New-customer CAC | blended, corrected ($93,000 ÷ 240) | **$387.50** | last month | billing, corrected per Step 1 |
-| Monthly gross profit / customer — Basic | $15 × 70% | $10.50 | — | own plan economics |
-| Monthly gross profit / customer — Pro | $99 × 70% | $69.30 | — | own plan economics |
-| Payback — Basic | corrected CAC ÷ Basic gross profit | **36.9 months** | last month | derived |
-| Payback — Pro | corrected CAC ÷ Pro gross profit | **5.6 months** | last month | derived |
-| Payback — blended | corrected CAC ÷ mix-weighted gross profit ($30.10) | **12.9 months** | last month | derived |
-| Payback — blended (uncorrected, for comparison) | $310 ÷ $30.10 | 10.3 months | last month | derived, shown to expose the distortion |
+| Metric                                          | Variant                                                   | Value           | Window     | Source                                  |
+| ----------------------------------------------- | --------------------------------------------------------- | --------------- | ---------- | --------------------------------------- |
+| Billing-reported CAC                            | blended, **uncorrected** (renewals/reactivations left in) | $310.00         | last month | billing, as given                       |
+| New-customer CAC                                | blended, corrected ($93,000 ÷ 240)                        | **$387.50**     | last month | billing, corrected per Step 1           |
+| Monthly gross profit / customer — Basic         | $15 × 70%                                                 | $10.50          | —          | own plan economics                      |
+| Monthly gross profit / customer — Pro           | $99 × 70%                                                 | $69.30          | —          | own plan economics                      |
+| Payback — Basic                                 | corrected CAC ÷ Basic gross profit                        | **36.9 months** | last month | derived                                 |
+| Payback — Pro                                   | corrected CAC ÷ Pro gross profit                          | **5.6 months**  | last month | derived                                 |
+| Payback — blended                               | corrected CAC ÷ mix-weighted gross profit ($30.10)        | **12.9 months** | last month | derived                                 |
+| Payback — blended (uncorrected, for comparison) | $310 ÷ $30.10                                             | 10.3 months     | last month | derived, shown to expose the distortion |
 
 ## Comparison ladder
 
-1. **Own economics (rung 1).** Positive margin on both plans means CAC is arithmetically recoverable eventually — this isn't a "loses money by construction" case like a sub-break-even ROAS. The open question is *timing*: Pro clears in under 6 months; Basic takes over 3 years, which only pays off if a Basic customer actually sticks around that long. That's a retention question, not something this run's inputs can settle — no churn/tenure data was supplied. Gap named, not guessed around.
+1. **Own economics (rung 1).** Positive margin on both plans means CAC is arithmetically recoverable eventually — this isn't a "loses money by construction" case like a sub-break-even ROAS. The open question is _timing_: Pro clears in under 6 months; Basic takes over 3 years, which only pays off if a Basic customer actually sticks around that long. That's a retention question, not something this run's inputs can settle — no churn/tenure data was supplied. Gap named, not guessed around.
 2. **Own trailing history.** Not available — only one month was given. No trend direction can be reported. This is the single biggest thing missing from a confident verdict; a 4–8 month per-plan series would tell you within a quarter whether Basic's payback is stable, worsening, or was always this shape.
 3. **External, provenance-labeled, context only:**
    - David Skok's 12-month payback rule (Matrix Partners, ~2011) — folklore, not a study; Skok himself: "I guessed at that number." Named because you raised it, weighted accordingly.

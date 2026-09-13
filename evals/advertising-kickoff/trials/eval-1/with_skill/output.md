@@ -9,11 +9,13 @@ A few things before the actual kickoff content — worth flagging up front, then
 **Cold start confirmed** — no `advertising-context.md` anywhere in the accessible repo.
 
 **Detected from what you already told me** (skipping these, not asking again):
+
 - Business model → B2B, mixed: self-serve ($49/mo) + sales-assisted enterprise tier
 - ICP → bookkeepers, 5–50 person firms
 - Channels + spend band → Google Search + LinkedIn, ~$8k/month on Google (that's the "$5k–50k" band)
 
 **Still open** (this is the capped, one-at-a-time interview — 5 questions left, max):
+
 1. Session goal
 2. Conversion event + source of truth
 3. Hard constraints / landing date
@@ -24,7 +26,7 @@ A few things before the actual kickoff content — worth flagging up front, then
 
 Answer this one:
 
-**What's the goal of *this* session** — is it the same as the project's overall goal of "take paid ads seriously," or something narrower (e.g. just get LinkedIn live, or get a measurement baseline before spending more)?
+**What's the goal of _this_ session** — is it the same as the project's overall goal of "take paid ads seriously," or something narrower (e.g. just get LinkedIn live, or get a measurement baseline before spending more)?
 
 I'm asking this one alone, not the whole list — that's deliberate, so you're tapping through one decision at a time rather than filling a form.
 
@@ -48,6 +50,7 @@ I'm asking this one alone, not the whole list — that's deliberate, so you're t
 - **Stakeholders**: growth lead (you) — decides; others not yet named
 
 ## Session log
+
 - 2026-09-12 - kickoff started, cold start - mbfinotti/advertising-skills@advertising-kickoff - detection from stated facts; interview in progress
 ```
 

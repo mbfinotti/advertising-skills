@@ -22,7 +22,7 @@ You said confidence in Meta's true contribution is low. Meta is also 61% of your
 - **MDE:** set before you run it — ask the agency (or whoever designs it) what lift is detectable at this spend and geography count; don't run it without one.
 - **Decision date:** end of week 6.
 - **Stop condition:** if the holdout shows no significant revenue gap, cut Meta's marginal allocation at the next resplit rather than defending its average ROAS.
-- **Cost:** design + read effort, not incremental media spend — this uses budget you're already spending, just held out geographically. Materially cheaper than $65K. If you want outside help, get a quote for *this* specifically, not a full MMM.
+- **Cost:** design + read effort, not incremental media spend — this uses budget you're already spending, just held out geographically. Materially cheaper than $65K. If you want outside help, get a quote for _this_ specifically, not a full MMM.
 
 This is the one test that directly answers your actual question ("is Meta's contribution real") — an MMM would answer it too, eventually, but only after buying 15+ more months of data and an analyst you don't have.
 
@@ -30,12 +30,12 @@ This is the one test that directly answers your actual question ("is Meta's cont
 
 **Gates first — two are unresolved, name them rather than guess:**
 
-| Gate | Status |
-|---|---|
-| Data-basis | **Fails as-is.** None of the three lines' platform-reported ROAS is a safe input. This is the whole reason confidence in Meta is low — you're likely seeing average, platform-attributed numbers. |
-| Measurement-maturity | **Unknown — needed before any move.** Score 1–3 each on blended dashboard, per-channel dashboard, conversion tracking, web analytics, attribution process. If it's under ~6/15, fix tracking before reallocating anything. |
-| Funding floor | **Check Pinterest.** $10K/month ≈ $333/day. Floor ≈ target CPA × 50 ÷ 7. If your target CPA is above roughly $47, Pinterest is already under its learning floor and can't be optimized meaningfully at this spend — that's a "cheaper channel or kill it," never "thin the spread" further, question. Run this with your real target CPA. |
-| Payback/affordability | **Unknown — need CAC, contribution margin, retention.** Can't confirm any line clears ~12-month payback without these. |
+| Gate                  | Status                                                                                                                                                                                                                                                                                                                                    |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Data-basis            | **Fails as-is.** None of the three lines' platform-reported ROAS is a safe input. This is the whole reason confidence in Meta is low — you're likely seeing average, platform-attributed numbers.                                                                                                                                         |
+| Measurement-maturity  | **Unknown — needed before any move.** Score 1–3 each on blended dashboard, per-channel dashboard, conversion tracking, web analytics, attribution process. If it's under ~6/15, fix tracking before reallocating anything.                                                                                                                |
+| Funding floor         | **Check Pinterest.** $10K/month ≈ $333/day. Floor ≈ target CPA × 50 ÷ 7. If your target CPA is above roughly $47, Pinterest is already under its learning floor and can't be optimized meaningfully at this spend — that's a "cheaper channel or kill it," never "thin the spread" further, question. Run this with your real target CPA. |
+| Payback/affordability | **Unknown — need CAC, contribution margin, retention.** Can't confirm any line clears ~12-month payback without these.                                                                                                                                                                                                                    |
 
 **Decision for this cycle: hold the current split ($58K / $27K / $10K), don't reallocate on the numbers you have.** Platform ROAS is exactly the input this skill bans as a reallocation basis, and it's the only number you currently trust or distrust Meta by. Moving money now would be reallocating on the same noise that's causing the low confidence in the first place — and flat spend under uncertainty has consistently beaten reactive moves.
 

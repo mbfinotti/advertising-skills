@@ -16,8 +16,9 @@
 - Bulk, unvalidated changes destroy your ability to diagnose cause and effect. If conversions dip next week, you won't know which of 2,300 new negatives did it.
 
 **Do this instead:**
+
 1. Export the account's actual Search Terms report (last 90 days).
-2. Cross-reference the mega-list against it — keep only terms with zero/near-zero conversions in *this* account's real data.
+2. Cross-reference the mega-list against it — keep only terms with zero/near-zero conversions in _this_ account's real data.
 3. Manually screen for partial-match collateral damage (a broad negative like "free" or "cheap" can silently block converting queries containing those words).
 4. Split survivors into two tiers: safe generic negatives (adult content, job search, unrelated verticals) → add account-level; anything home-goods-adjacent → add at campaign/ad group level with judgment, not in bulk.
 5. Add in batches over 1–2 weeks, watching impression share and conversion volume after each batch — not all 2,300 at once.

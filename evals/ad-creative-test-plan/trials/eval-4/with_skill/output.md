@@ -11,17 +11,17 @@ Meta paid social · conversions objective · $6,000/mo, no separate protected te
 
 - **Stable-delivery floor** on the purchase event = CPA × 50 ÷ 7 = 70 × 50 ÷ 7 ≈ **$500/day per cell**. A minimal 2-cell test (control + 1 challenger) needs **~$30,000/month** just to stop being delivery-limited — 5× your entire current spend.
 - **True significance** on any of these six elements, measured on CPA/CVR itself at a generous 20% relative MDE, needs ~24,000 clicks/cell ≈ **$30,000 spend/cell (~$60,000 total for one test)**. That's the $100k-1M/month spend tier in the skill's own guidance — not this account.
-- Six items — CTA copy, a dash, beige vs off-white, model orientation, serif vs sans, price display — are all **copy/layout/typography micro-variables**. The skill's explicit instruction: *"Refuse to burn spend isolating micro-variables (button color, font, minor copy) at normal budgets — fold them into a concept or drop them."* Its own spend-tier table puts "normal" starting around $20k/month. You're at 30% of that.
+- Six items — CTA copy, a dash, beige vs off-white, model orientation, serif vs sans, price display — are all **copy/layout/typography micro-variables**. The skill's explicit instruction: _"Refuse to burn spend isolating micro-variables (button color, font, minor copy) at normal budgets — fold them into a concept or drop them."_ Its own spend-tier table puts "normal" starting around $20k/month. You're at 30% of that.
 
 **Verdict, stated plainly: every one of the six items, run as its own isolated single-variable cell, is `Not testable as designed` at $6,000/month.** This isn't a production or design problem — no test structure fixes a budget/effect-size mismatch. Isolating a beige-vs-off-white background or a headline dash would need six-figure sample sizes (the reference's own anchor: 5% baseline, 5% relative lift ≈ 122,000/cell) regardless of how long you run it, because the true effect of those two is almost certainly inside your day-to-day performance noise, permanently.
 
 ## The restructure
 
-1. **Fold all six backlog items into one bundled "refresh" cell** vs. your current champion. Bundling is the only posture that buys a *detectable* effect at this budget (the skill ranks bundled #1 on efficiency for exactly this reason). Labeled honestly: `bundled — unlearnable at element level`. This uses month 1.
+1. **Fold all six backlog items into one bundled "refresh" cell** vs. your current champion. Bundling is the only posture that buys a _detectable_ effect at this budget (the skill ranks bundled #1 on efficiency for exactly this reason). Labeled honestly: `bundled — unlearnable at element level`. This uses month 1.
 2. **Reserve months 2–6 for real high-leverage levers** — concept, angle, hook, format, talent. These are the only lever classes the skill sanctions for isolation, and they're the ones that can actually move a number this account can see. This is also what compounds into transferable learning — six months of noise on a font doesn't.
 3. **Revisit the original six items once the account can dedicate ~$15,000/mo to one test cell** (stable-delivery floor) — and ~$60,000 total for one test if you want them significance-tested rather than directional. Until then they ride inside concept bundles; they never get their own slot.
 
-This keeps your two real constraints: one lever changes at a time *within each slot*, and the program is built to accumulate reusable learning rather than chase a single winner.
+This keeps your two real constraints: one lever changes at a time _within each slot_, and the program is built to accumulate reusable learning rather than chase a single winner.
 
 ---
 
@@ -101,13 +101,13 @@ schedule    : 28-day window each, launch Monday, earliest eval day 5,
 naming      : C##_ANG-<angle>_HOOK-<hook>_FMT-<format>_TAL-<talent>_V##
 ```
 
-| Test | Lever (sanctioned: concept/angle/hook/format/talent) | Launch | Hard stop | Illustrative fill (replace with real assets) |
-|---|---|---|---|---|
-| 2 | Angle | Mon 2026-10-19 | 2026-11-16 | Craftsmanship/durability story vs. speed-and-customization story |
-| 3 | Hook | Mon 2026-11-16 | 2026-12-14 | Problem-led opener ("tired of off-the-shelf sizing?") vs. benefit-led opener |
-| 4 | Format | Mon 2026-12-14 | 2027-01-11 | Static product photography vs. short-form UGC/process video |
-| 5 | Talent/creator | Mon 2027-01-11 | 2027-02-08 | In-house model vs. real customer testimonial creative |
-| 6 | Consolidation | Mon 2027-02-08 | 2027-03-08 | Scale the strongest cumulative winner as its own read (regression-to-mean check); or re-test the closest call from tests 2-5 per the iterate path |
+| Test | Lever (sanctioned: concept/angle/hook/format/talent) | Launch         | Hard stop  | Illustrative fill (replace with real assets)                                                                                                      |
+| ---- | ---------------------------------------------------- | -------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2    | Angle                                                | Mon 2026-10-19 | 2026-11-16 | Craftsmanship/durability story vs. speed-and-customization story                                                                                  |
+| 3    | Hook                                                 | Mon 2026-11-16 | 2026-12-14 | Problem-led opener ("tired of off-the-shelf sizing?") vs. benefit-led opener                                                                      |
+| 4    | Format                                               | Mon 2026-12-14 | 2027-01-11 | Static product photography vs. short-form UGC/process video                                                                                       |
+| 5    | Talent/creator                                       | Mon 2027-01-11 | 2027-02-08 | In-house model vs. real customer testimonial creative                                                                                             |
+| 6    | Consolidation                                        | Mon 2027-02-08 | 2027-03-08 | Scale the strongest cumulative winner as its own read (regression-to-mean check); or re-test the closest call from tests 2-5 per the iterate path |
 
 Total: $6,000/mo × 6 = $36,000 test-period spend, none of it incremental — this is your existing budget, restructured.
 

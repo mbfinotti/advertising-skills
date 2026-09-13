@@ -8,12 +8,12 @@
 
 Reading your metrics top-down through the Stop → Stay → Click → Convert funnel:
 
-| Stage | Metric | Reading | What it implicates |
-|---|---|---|---|
-| Stop | 3-sec view rate: 31% | Not itself the problem | The hook is getting *some* people to stop |
-| Stay | Hold to 15s: 4% | **Collapse** — an ~87% relative drop from the Stop number | The on-ramp: seconds 3–15 of the creative, not the format |
-| Click | CTR: 0.3% | Weak, but largely a downstream consequence of the Stay collapse | Desire/offer clarity mid-ad |
-| Convert | Purchases ≈ 0 | Unmeasurable in isolation | Sample past the click is too thin to say anything about the landing page yet |
+| Stage   | Metric               | Reading                                                         | What it implicates                                                           |
+| ------- | -------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Stop    | 3-sec view rate: 31% | Not itself the problem                                          | The hook is getting _some_ people to stop                                    |
+| Stay    | Hold to 15s: 4%      | **Collapse** — an ~87% relative drop from the Stop number       | The on-ramp: seconds 3–15 of the creative, not the format                    |
+| Click   | CTR: 0.3%            | Weak, but largely a downstream consequence of the Stay collapse | Desire/offer clarity mid-ad                                                  |
+| Convert | Purchases ≈ 0        | Unmeasurable in isolation                                       | Sample past the click is too thin to say anything about the landing page yet |
 
 The diagnostic rule this skill uses is: **raise a format verdict only when a signal specifically implicates the format** — and none of the format-implicating signals have fired here:
 
@@ -38,7 +38,7 @@ This is fatigue arriving exactly on schedule, not evidence against the format. T
 
 ## 3. Why "move everything to carousels" is itself the wrong prescription
 
-If either campaign is cold prospecting (the hero video explicitly is; the vertical test likely is, given the metric set you're tracking), carousel is structurally the wrong landing spot: carousel's structural fit is **consideration, multi-product, warm audiences**, and it's explicitly flagged as wrong for **cold first touch** — it demands sequential swipe attention nobody gives on a first, cold exposure. Short vertical video, by contrast, is one of the few formats that structurally spans awareness through conversion, and it's the *top* efficiency row for demand creation (ahead of single image, in-stream, display, and carousel, in that order). Swapping your best cold-prospecting format for a warm-audience format because two data points looked bad would trade a creative problem for a structural one.
+If either campaign is cold prospecting (the hero video explicitly is; the vertical test likely is, given the metric set you're tracking), carousel is structurally the wrong landing spot: carousel's structural fit is **consideration, multi-product, warm audiences**, and it's explicitly flagged as wrong for **cold first touch** — it demands sequential swipe attention nobody gives on a first, cold exposure. Short vertical video, by contrast, is one of the few formats that structurally spans awareness through conversion, and it's the _top_ efficiency row for demand creation (ahead of single image, in-stream, display, and carousel, in that order). Swapping your best cold-prospecting format for a warm-audience format because two data points looked bad would trade a creative problem for a structural one.
 
 ## 4. What I don't have, and what it would change
 

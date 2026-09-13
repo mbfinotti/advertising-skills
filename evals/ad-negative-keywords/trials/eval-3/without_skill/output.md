@@ -2,7 +2,7 @@ No, Google isn't ignoring your negatives — this is expected behavior based on 
 
 ## 1. "tent repair kit" not blocking "tent repair kits"
 
-**Match type is the cause.** When you add a negative straight from the Search Terms report, Google Ads defaults it to **exact match** unless you explicitly choose otherwise. An exact-match negative only blocks that literal string (plus very close variants — but plural/singular is *not* guaranteed to be treated as a close variant for negatives the way it is for positive keywords).
+**Match type is the cause.** When you add a negative straight from the Search Terms report, Google Ads defaults it to **exact match** unless you explicitly choose otherwise. An exact-match negative only blocks that literal string (plus very close variants — but plural/singular is _not_ guaranteed to be treated as a close variant for negatives the way it is for positive keywords).
 
 - Negative exact `[tent repair kit]` → blocks searches for "tent repair kit" only
 - Search "tent repair kits" → different string → **not blocked**
@@ -28,10 +28,10 @@ These two mechanics explain the "junk keeps coming back" pattern almost entirely
 
 ## What I'd actually do instead of adding 45 more negatives
 
-1. **Switch match type, don't just add more exact negatives.** Go back through last month's ~45 negatives. For any of them meant to block a *concept* rather than one literal query, convert to phrase match `"..."`. Exact match `[...]` should be reserved for cases where you deliberately want to block only that one specific string (rare).
+1. **Switch match type, don't just add more exact negatives.** Go back through last month's ~45 negatives. For any of them meant to block a _concept_ rather than one literal query, convert to phrase match `"..."`. Exact match `[...]` should be reserved for cases where you deliberately want to block only that one specific string (rare).
 2. **Build broad negatives word-by-word for "kill everything containing X" intent.** If you want to nuke all DIY/free-related traffic, add single broad-match terms like `free`, `repair kit`, `how to`, `diy` individually rather than bundling them into one multi-word broad negative.
 3. **Skip typo variants entirely for now.** Typos are a long tail — you'll spend forever chasing them one by one. Instead, at the ad group or campaign level, review Search Terms weekly and add negatives in batches; or consider a **negative keyword list** shared across campaigns so match-type fixes propagate everywhere at once instead of being fixed per-campaign.
-4. **Check where the negatives were added.** If any were added at the *ad group* level, they won't block that query in other ad groups/campaigns. Since you're managing this across "the store," confirm your negatives that are meant to be account-wide are in a shared negative list applied to all relevant campaigns, not stuck in one ad group.
+4. **Check where the negatives were added.** If any were added at the _ad group_ level, they won't block that query in other ad groups/campaigns. Since you're managing this across "the store," confirm your negatives that are meant to be account-wide are in a shared negative list applied to all relevant campaigns, not stuck in one ad group.
 5. **Re-audit last month's 45 after switching match types**, rather than layering 45+ new ones on top — you'll likely find 15-20 of them were exact-match when they should've been phrase, and that alone will silently fix most of the "it's back" reports you're seeing this month.
 
 **Bottom line:** the negatives aren't broken or ignored — exact match negatives are literal-string-only, and broad match negatives require every word to be present (not "any word"), which is the opposite of what most people assume "broad" means when applied to negatives. Fix the match types on your existing list before expanding it.

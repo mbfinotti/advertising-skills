@@ -8,17 +8,17 @@ Here's the reasoning, the verdict, and what to do instead.
 
 ## What your own numbers already show
 
-Decomposing CPL = CPM / (1000 × CTR × CVR-to-form) tells you *where* the 28% CPL improvement came from: some mix of cheaper impressions, higher click-through, or a higher form-fill rate. I don't have your platform-level CPM/CTR breakdown, so I can't localize which lever moved — that's the first export I'd want. But I don't need it to see the actual problem, because you've already supplied the metric that matters more: **cost per SQL**, reconstructed from what you gave me.
+Decomposing CPL = CPM / (1000 × CTR × CVR-to-form) tells you _where_ the 28% CPL improvement came from: some mix of cheaper impressions, higher click-through, or a higher form-fill rate. I don't have your platform-level CPM/CTR breakdown, so I can't localize which lever moved — that's the first export I'd want. But I don't need it to see the actual problem, because you've already supplied the metric that matters more: **cost per SQL**, reconstructed from what you gave me.
 
 Assuming spend was roughly flat at ~$30K/month in both quarters:
 
-| | Last quarter | This quarter |
-|---|---|---|
-| CPL | ~$86 (62 / 0.72) | $62 |
-| Leads (≈ spend/CPL) | ~1,047 | ~1,452 |
-| Lead→SQL rate | 12% | 4% |
-| SQLs | ~126 | ~58 |
-| **Cost per SQL** | **~$714** | **~$1,552** |
+|                     | Last quarter     | This quarter |
+| ------------------- | ---------------- | ------------ |
+| CPL                 | ~$86 (62 / 0.72) | $62          |
+| Leads (≈ spend/CPL) | ~1,047           | ~1,452       |
+| Lead→SQL rate       | 12%              | 4%           |
+| SQLs                | ~126             | ~58          |
+| **Cost per SQL**    | **~$714**        | **~$1,552**  |
 
 CPL fell 28%. Cost per SQL more than **doubled**. The platforms did exactly what you told them to do — find the cheapest people who'll fill out the whitepaper form — and they found them. Those people just aren't buyers. This is the same shape as the classic "leads look great in the dashboard, sales says trash" pattern: cheap-to-acquire, high-volume, low-intent.
 
@@ -26,15 +26,15 @@ Critically, this collapse is **concentrated in exactly the campaigns you shifted
 
 ## Layer screen
 
-| Layer | Verdict | Evidence |
-|---|---|---|
-| **Measurement/tracking** | pass (with a caveat) | Form-fill event reconciles against CRM within a few percent — the *tracked* event is accurate. But nothing downstream of that (SQL, closed-won) is ever fed back to the platforms — that's not a tracking bug, it's the actual gap (see Structure). |
-| **Structure** | **FAIL — this is the root cause** | Campaigns optimize to raw whitepaper form fills, an event chosen for trackability, not business value. CPL down + cost-per-SQL up, concentrated in the budget-shifted campaigns, is the signature of a platform rewarded for junk volume. |
-| **Targeting** | pass, with a note | The "broad audience pulling junk" story is the *symptom* of the event choice, not an independent cause. If those campaigns broadened, that's the auction finding the cheapest path to the same wrong goal — not evidence the audience definition itself is broken. |
-| **Creative** | unknown | No creative-level data supplied; nothing here implicates it. Not ruled in, not ruled out. |
-| **Bidding/budget** | unknown | No impression-share split or edit log supplied. Worth checking once the event is fixed, not before. |
-| **Offer & downstream** | pass, tentatively | The click-to-form funnel reconciles fine. Worth separately asking whether a free gated whitepaper is simply a low-friction magnet for tire-kickers — that's a related but secondary question, not today's root cause. |
-| **External** | pass | No market signal claimed or evident, and can't be invoked anyway while Structure is unresolved — external is a diagnosis of exclusion. |
+| Layer                    | Verdict                           | Evidence                                                                                                                                                                                                                                                           |
+| ------------------------ | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Measurement/tracking** | pass (with a caveat)              | Form-fill event reconciles against CRM within a few percent — the _tracked_ event is accurate. But nothing downstream of that (SQL, closed-won) is ever fed back to the platforms — that's not a tracking bug, it's the actual gap (see Structure).                |
+| **Structure**            | **FAIL — this is the root cause** | Campaigns optimize to raw whitepaper form fills, an event chosen for trackability, not business value. CPL down + cost-per-SQL up, concentrated in the budget-shifted campaigns, is the signature of a platform rewarded for junk volume.                          |
+| **Targeting**            | pass, with a note                 | The "broad audience pulling junk" story is the _symptom_ of the event choice, not an independent cause. If those campaigns broadened, that's the auction finding the cheapest path to the same wrong goal — not evidence the audience definition itself is broken. |
+| **Creative**             | unknown                           | No creative-level data supplied; nothing here implicates it. Not ruled in, not ruled out.                                                                                                                                                                          |
+| **Bidding/budget**       | unknown                           | No impression-share split or edit log supplied. Worth checking once the event is fixed, not before.                                                                                                                                                                |
+| **Offer & downstream**   | pass, tentatively                 | The click-to-form funnel reconciles fine. Worth separately asking whether a free gated whitepaper is simply a low-friction magnet for tire-kickers — that's a related but secondary question, not today's root cause.                                              |
+| **External**             | pass                              | No market signal claimed or evident, and can't be invoked anyway while Structure is unresolved — external is a diagnosis of exclusion.                                                                                                                             |
 
 ## Evidence gate — read this before acting
 
@@ -45,14 +45,14 @@ Volume is fine (hundreds of leads and dozens of SQLs per quarter clears any reas
 
 Confidence: **medium-high**. The mechanism (cheap CPL + collapsing SQL rate, localized to budget-shifted campaigns, clean top-funnel reconciliation) is a textbook match for a wrong-optimization-event failure. It's not "high" only because I don't have per-campaign/per-platform breakdowns or confirmation on lag maturity.
 
-## Why *not* to tighten targeting first
+## Why _not_ to tighten targeting first
 
 The mechanism, spelled out: the algorithm has no way to know a $62 lead is worthless unless something tells it. Narrowing the audience doesn't change what it's being asked to optimize for — it will keep hunting for the cheapest form-fillers inside a smaller pool. Two likely outcomes, both bad:
 
 - CPL rises (smaller pool, same bidding target) while SQL rate stays broken — it'll look like the fix "didn't work," inviting the next reflex ("okay, then increase budget").
 - Or the algorithm just finds a different cheap-but-low-intent segment inside the narrower audience, and you've spent a rebuild cycle for nothing.
 
-Targeting only becomes the right lever *after* the platform is optimizing toward something correlated with quality. Right now it's aimed at the wrong target with excellent precision.
+Targeting only becomes the right lever _after_ the platform is optimizing toward something correlated with quality. Right now it's aimed at the wrong target with excellent precision.
 
 ## What to do instead, in order
 

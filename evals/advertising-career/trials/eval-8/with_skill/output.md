@@ -2,16 +2,16 @@ Read the skill and its promotion-case reference. Your draft is a near word-for-w
 
 ## Why the draft won't land
 
-The skill's rule: *"Tie every promotion ask to an owned revenue or P&L number, never to tenure or activity. Cases citing years served, hours, campaign counts, or effort fail."*
+The skill's rule: _"Tie every promotion ask to an owned revenue or P&L number, never to tenure or activity. Cases citing years served, hours, campaign counts, or effort fail."_
 
 Checking each claim against that:
 
-| Your line | Why it fails |
-|---|---|
-| "Four and a half years" | Tenure, not evidence. |
-| "Over 240 campaigns" | Activity count, not an owned number. |
-| "Never missed a launch" | Operational reliability — table stakes, screened for at *junior*, not senior. |
-| "Everyone hired the same year has been promoted" | Peer comparison. Reads as a recognition request, not accountability. |
+| Your line                                        | Why it fails                                                                                                                                                                                                          |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| "Four and a half years"                          | Tenure, not evidence.                                                                                                                                                                                                 |
+| "Over 240 campaigns"                             | Activity count, not an owned number.                                                                                                                                                                                  |
+| "Never missed a launch"                          | Operational reliability — table stakes, screened for at _junior_, not senior.                                                                                                                                         |
+| "Everyone hired the same year has been promoted" | Peer comparison. Reads as a recognition request, not accountability.                                                                                                                                                  |
 | "Covered two colleagues' accounts, no extra pay" | This is the one real asset — but only once you convert it into a number. Right now it's still framed as effort ("I did extra work"), not ownership ("I now hold X in budget that used to sit with two other people"). |
 
 None of these map to what a Senior Paid Media Manager screen actually tests: multi-account portfolio economics, forecast/budget ownership, C-level narrative, QA of juniors. Drop the first four claims entirely — don't soften them, cut them. Rebuild around the fifth.

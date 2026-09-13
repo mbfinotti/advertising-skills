@@ -2,10 +2,10 @@
 
 ### First, a correction on the "broad match negatives" plan
 
-Broad match negatives are the right *type* in principle, but "one broad match negative covering the whole theme" is ambiguous and likely to do one of two wrong things:
+Broad match negatives are the right _type_ in principle, but "one broad match negative covering the whole theme" is ambiguous and likely to do one of two wrong things:
 
 - **One negative keyword with all the junk words together** (e.g. `-webinar course certification`) only blocks queries containing **all three words at once**. That's nearly nothing — this plan would barely fire and give a false sense of coverage.
-- **A single broad negative per word** (`-webinar`, `-course`, `-certification`) *would* work, but broad and phrase behave almost identically for single-word negatives — there's no real advantage to broad here, and a lone generic word blocks that word in **every context**, including any legitimate query where it might co-occur with something relevant to Corvale.
+- **A single broad negative per word** (`-webinar`, `-course`, `-certification`) _would_ work, but broad and phrase behave almost identically for single-word negatives — there's no real advantage to broad here, and a lone generic word blocks that word in **every context**, including any legitimate query where it might co-occur with something relevant to Corvale.
 
 So: reject the "one broad negative for the theme" framing. Build a **list of individual phrase-match negatives**, reserving single-word broad negatives only for terms with zero legitimate use case for Corvale.
 
@@ -21,7 +21,7 @@ Pull query (search term) reports from all 6 campaigns, filter for the recurring 
 
 ### Step 3 — Structure around the account-level lock
 
-You can't rely on one account-wide shared negative keyword list if the client has locked account settings — but first clarify with the client whether that lock actually includes **Shared Library → Negative keyword lists**. In many Microsoft Ads client setups, shared-library negative lists are a separate permission from account settings (billing, UET tags, etc.) and might be grantable with a narrow, easy-to-approve ask: *"we need edit access to negative keyword lists in the shared library for cross-campaign query hygiene."* That single unlock solves the whole duplication problem — worth pursuing before building a workaround.
+You can't rely on one account-wide shared negative keyword list if the client has locked account settings — but first clarify with the client whether that lock actually includes **Shared Library → Negative keyword lists**. In many Microsoft Ads client setups, shared-library negative lists are a separate permission from account settings (billing, UET tags, etc.) and might be grantable with a narrow, easy-to-approve ask: _"we need edit access to negative keyword lists in the shared library for cross-campaign query hygiene."_ That single unlock solves the whole duplication problem — worth pursuing before building a workaround.
 
 If it's genuinely locked out:
 
@@ -33,7 +33,7 @@ If it's genuinely locked out:
 
 Apply the negatives at the **campaign level** in each of the 6 campaigns — the theme cuts across ad groups, so ad-group-level application would multiply your maintenance burden on top of the account lock you're already working around.
 
-Exception: if one ad group in a campaign legitimately targets course/certification/webinar terms (Corvale's own training offering, say), Microsoft Ads has no "allow override" for a campaign-level negative. So instead: don't add the negative at that campaign's level at all — apply it individually to every *other* ad group in that campaign, and leave the legitimate ad group untouched.
+Exception: if one ad group in a campaign legitimately targets course/certification/webinar terms (Corvale's own training offering, say), Microsoft Ads has no "allow override" for a campaign-level negative. So instead: don't add the negative at that campaign's level at all — apply it individually to every _other_ ad group in that campaign, and leave the legitimate ad group untouched.
 
 ### Step 5 — Verify and govern
 
