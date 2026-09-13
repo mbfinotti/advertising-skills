@@ -35,8 +35,8 @@ npx skills add mbfinotti/advertising-skills
 **Claude Code**: install the plugin:
 
 ```bash
-/plugin marketplace add mbfinotti/mbfinotti
-/plugin install advertising-skills@mbfinotti
+/plugin marketplace add mbfinotti/advertising-skills
+/plugin install advertising-skills@advertising-skills
 ```
 
 **Codex (OpenAI)**: install via the Codex CLI:
