@@ -4,7 +4,7 @@ description: "Before starting any paid advertising work, before each recurring a
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.3.8"
+  version: "1.3.9"
 ---
 
 # Advertising Kickoff
@@ -32,6 +32,8 @@ On a cold start:
 - Offer multiple-choice options whenever possible.
 - Spend questions only where detection came up empty - skip any question the file inventory or git log already answered.
 
+ **Use an interactive question mechanism (e.g. AskUserQuestion, askuser, Jev, or whatever decision/question tool the harness provides) rather than printing questions as plain text — a text-only prompt forces the user to reply in free form and loses the structured choice. Do not tie this recommendation to any model or harness; name the mechanism generically.**
+**Memory: Store a few info about the current task or project context. When memory lives in a file, use `advertising-context.md`; if a different memory system is in use, rely on that instead. Separate task info in different sections. Remove finished tasks. Add a date to a task; no date for general project context. Some interview responses may differ between 2 tasks.**
 1. "What are we selling, and to whom?" - (a) B2B sales-led, (b) B2B self-serve, (c) B2C, (d) both/mixed. B2B and B2C answers steer different siblings later, so this comes first.
 2. "What is the goal of this session - and is it the same as the project's goal?" Ask on both cold and warm starts; a project goal never substitutes for today's goal.
 3. "Which channels are you buying today, and what's the monthly spend band?" - (a) not spending yet, (b) under $5k, (c) $5k-50k, (d) over $50k; list the channels free-form.
