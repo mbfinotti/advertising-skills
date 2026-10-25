@@ -4,7 +4,7 @@ description: "Build and maintain negative keyword lists from search term reports
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.1.8"
+  version: "1.1.9"
 ---
 
 # Negative Keywords
@@ -120,7 +120,7 @@ Axes disagree:
 
 Get the top rung running before adding either other one. The sweep is the cheapest commitment on the page and still outranks the audit on value.
 
-- Recurring search-term pass - budget 30-45 minutes.
+- Recurring search-term pass - budget 15-20 minutes, most of it the overblocking review and approval.
   - Weekly, 7-14 day lookback: higher-spend accounts (~$10k+/month), or anything new or in a learning phase.
   - Bi-weekly to monthly: stable lower-spend accounts.
   - Several near-empty passes in a row → lengthen the interval.

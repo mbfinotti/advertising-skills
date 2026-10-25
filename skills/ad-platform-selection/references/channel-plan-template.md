@@ -57,7 +57,7 @@ Workflow-automation SaaS. ACV $18,000, 80% gross margin, LTV ~$45,000, ~90-day s
    All four are out of the candidate set for this account - they do not appear in the ranking below, and adding one back means re-running the gate that removed it.
 
 3. **Ranked by efficiency**:
-   - Paid search: value 17 / effort 5 → 3.4 (buyers search the category; CPL benchmark ~$67 average, category-checked; a week of setup then near-zero ongoing, pausable in minutes).
+   - Paid search: value 17 / effort 5 → 3.4 (buyers search the category; CPL benchmark ~$67 average, category-checked; a day or two of setup then near-zero ongoing, pausable in minutes).
    - B2B professional networks: value 16 / effort 9 → 1.8 (LTV $45K clears the ~$10-15K floor; budget clears the ~$5K/month floor; CPL ~$110 → at a 10% lead-to-customer rate, CAC ~$1,100 ≪ $6,000, but a quarter of committed spend before a verdict, against a deadline this quarter).
 
    No departure from the default ordering: nothing in this business's assets or skills moves a row, and the Q15 deadline reinforces the capture-first order rather than changing it. Paid review listings sit in the unranked price-discovery bucket (high intent, no cost benchmark).
@@ -110,7 +110,7 @@ Every gate fails:
 - **Gates ignored**: professional networks fail twice ($2K < ~$5K/month floor; no LTV near $10-15K on a $199/month plan without proven multi-year retention). Two statics/month cannot feed paid social's 8-15-variant burn. Tracking is unverified, so every learning phase is wasted by design.
 - **Funding floors**: $2,000/month ≈ $66/day per channel - the textbook anti-pattern ($10K split five ways lands at $60-80/day, below every family's learning threshold). Podcast at $2K is 13% of its ~$15K measurability floor. Five experiments, all below minimum sample size; total spend $10K/month, total learning zero.
 - **No test design**: no price discovery, no pass/fail, no kill criteria, no duration tied to the sales cycle - "see what sticks" is unfalsifiable.
-- **No ranking at all**: an equal split is what a menu with no ordering produces. Even the instinct behind it is backwards - it treats the five families as interchangeable when their effort loads span a week of setup to a standing creative job, and the team is two people producing two statics a month.
+- **No ranking at all**: an equal split is what a menu with no ordering produces. Even the instinct behind it is backwards - it treats the five families as interchangeable when their effort loads span a day or two of setup to a standing creative job, and the team is two people producing two statics a month.
 
 The correct rewrite:
 

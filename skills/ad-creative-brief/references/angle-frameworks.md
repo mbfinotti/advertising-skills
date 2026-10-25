@@ -110,31 +110,21 @@ The convergent practical fix: tag creative on multiple independent dimensions (f
 
 Run before brainstorming. Every brief claim cites one of these sources.
 
-Five methods compete for the same hours, listed below in efficiency order - the cheap ones confirm what you already ran, the expensive ones generate what you have not:
+Five methods compete for the same hours, listed below in efficiency order - one scoring pass fills the matrix, the cheap reads confirm what you already ran, the expensive ones generate what you have not:
 
-- effort: broad voice-of-customer > scored review mining > competitor-ad boarding > negative-review objections == past winners
+- effort: broad voice-of-customer > competitor-ad boarding > scored review mining > negative-review objections == past winners
 - value (new angles the method can produce): scored review mining > broad voice-of-customer > competitor-ad boarding > negative-review objections > past winners
 - compliance cost: broad voice-of-customer (consent and data-handling review before call recordings or CRM notes leave the system) > scored review mining == negative-review objections (verbatims are the reviewer's words - check the platform's terms before quoting one in an ad) > competitor-ad boarding == past winners
 
 Negative-review objections and past winners tie on effort at one hour each, for unrelated reasons that happen to cost the same: one is a read of the category's 1-2 star reviews, the other a pull from the ad account. Competitor-ad boarding ties with past winners on compliance because both read material you are entitled to see and quote nothing into an ad.
 
-**What the efficiency order starves: scored review mining.** It tops the value axis - the only method that fills the whole pain x persona matrix - and costs a day, so a ratio defers it to a week that never arrives. Promote it when the cheap sources only confirm what you already ran (the tell is an angle bank whose entries are all one angle wearing different hooks), or when the mandate is compounding: the matrix it produces feeds every brief for the rest of the quarter, not just this one.
+Scored review mining leads despite costing more than the two one-hour reads: it tops the value axis, the only method that fills the whole pain x persona matrix, for an hour or two of scoring and checking. The matrix it produces feeds every brief for the rest of the quarter, not just this one.
+
+**What the efficiency order starves: broad voice-of-customer.** Second on value - it reaches beliefs and objections no reviewer writes down - and first on effort, so a ratio defers it to a week that never arrives. Promote it when review mining and the cheap reads only confirm what you already ran (the tell is an angle bank whose entries are all one angle wearing different hooks), or when the mandate is compounding.
 
 Default: work down from the top until the brief's fields are full. Re-rank against what this account already owns: a B2B product with no public reviews inverts the top of the list and makes voice-of-customer first by default; a sales team that already tags lost-deal reasons in the CRM turns the most expensive method into an afternoon. A method the account cannot run at all - no reviews to mine, no consent path to call recordings - is deleted from the list and named as deleted, never carried at the bottom where the next brief cites it as a source it never used.
 
-**Past winners with their metrics.** An hour in the ad account, and it fills two brief fields at once: the recommended-first-test rationale and the test block's benchmark, which the template already prefers over published bands.
-
-Pull top performers over the last 30 days and 6 months, top hook rates, top hold rates with average watch time, and prior A/B results (Dara Denney's four-pronged research pattern: reputation, review mining, competitor analysis, past performance). A "past winner" cited without its numbers is nostalgia, not evidence. A new account has none, so this method drops out of the ranking rather than down it.
-
-**Negative reviews as the objection source.** One hour of reading fills the core-objection field that gates revision acceptance.
-
-1. Pull the most common 1-2 star reviews for the product _and_ the category.
-2. Identify the top 2 recurring objections.
-3. Put them in the brief.
-
-Creative that addresses neither goes back for revision.
-
-**Scored review mining** (Motion's published method). A day's work, and the only method that fills the whole pain × persona matrix.
+**Scored review mining** (Motion's published method). An hour or two, most of it checking the scores and the verbatims, and the only method that fills the whole pain × persona matrix.
 
 Score each review 1-5 (1 = gibberish or bare "great product"; 5 = long, emotional, vivid). Discard the 1s. Extract the rest into five buckets:
 
@@ -149,6 +139,18 @@ Each bucket feeds a different part of the brief:
 - Pains feed the matrix.
 - Triggers and transformations feed hooks.
 - Objections feed the objection field and objection-handling mechanics.
+
+**Past winners with their metrics.** An hour in the ad account, and it fills two brief fields at once: the recommended-first-test rationale and the test block's benchmark, which the template already prefers over published bands.
+
+Pull top performers over the last 30 days and 6 months, top hook rates, top hold rates with average watch time, and prior A/B results (Dara Denney's four-pronged research pattern: reputation, review mining, competitor analysis, past performance). A "past winner" cited without its numbers is nostalgia, not evidence. A new account has none, so this method drops out of the ranking rather than down it.
+
+**Negative reviews as the objection source.** One hour of reading fills the core-objection field that gates revision acceptance.
+
+1. Pull the most common 1-2 star reviews for the product _and_ the category.
+2. Identify the top 2 recurring objections.
+3. Put them in the brief.
+
+Creative that addresses neither goes back for revision.
 
 **Competitor ads, filtered by longevity.** A few hours of boarding.
 

@@ -4,7 +4,7 @@ description: "Turn a campaign goal and an audience insight into a structured cre
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # Creative Brief
@@ -201,10 +201,10 @@ Proof is a quantifiable outcome plus a badge or product screenshot, not a before
 Full field lists in [references/brief-template.md](references/brief-template.md). Pick the container by learning bought per production hour, then let the placement veto the pick. The three, in efficiency order:
 
 1. **Static** - one designer for an hour or two, and it reads the angle directly. The cheapest honest at-bat, and the default first concept.
-2. **Search** - an afternoon of writing an asset pool, but the read is diluted because the system assembles the ad. Enters the ranking only where keyword demand already exists; where it does not, it drops out rather than ranking last.
+2. **Search** - about an hour of writing and checking an asset pool, but the read is diluted because the system assembles the ad. Enters the ranking only where keyword demand already exists; where it does not, it drops out rather than ranking last.
 3. **Video/UGC** - the strongest learning, since the three hook layers are isolated separately, and the largest bill: creator search, shoot, rights, revision rounds. A week of coordination, not hours.
 
-- effort: video/UGC > search > static
+- effort: video/UGC > static > search
 - learning value per concept: video/UGC > static > search
 - compliance cost: video/UGC (creator usage rights, paid-partnership and testimonial disclosure, AI-likeness disclosure where the face is synthetic) > static == search (whatever claim substantiation the category already demands)
 

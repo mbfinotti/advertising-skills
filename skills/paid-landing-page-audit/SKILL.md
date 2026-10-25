@@ -4,7 +4,7 @@ description: "Audit a landing page receiving paid traffic against post-click con
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.2.8"
+  version: "1.2.9"
 ---
 
 # Landing Page Audit
@@ -125,7 +125,7 @@ Ask of each fix:
 - Backed by an observation from this page's data, or only by opinion?
 - Backed by established research, or only practitioner consensus?
 
-Bracket effort as time and coordination: an hour of copy work, days of build, a week or more across other people's calendars. Never as a budget figure.
+Bracket effort as time and coordination: an hour of copy work, a day or two of build and regression checks, a week or more across other people's calendars. Never as a budget figure.
 
 The value side is the leak, not its price: name the funnel step each fix unblocks and how much of the CPA/ROAS gap from the Interview sits on that step, so a fix on the leaking step outranks a prettier fix elsewhere.
 
@@ -143,7 +143,7 @@ The axes disagree in two places worth saying out loud:
 
 Accessibility polish is ordered above speed rather than tied with it, because its long pole is the sign-off, not the code. The remaining ties are genuine equalities:
 
-- Form friction == post-click path: both are days of build inside a system the page owner only half controls (a form or checkout stack, an email and routing stack), and both need a regression check on a live money path before they ship.
+- Form friction == post-click path: both are a day or two of build inside a system the page owner only half controls (a form or checkout stack, an email and routing stack), and both need a regression check on a live money path before they ship.
 - Message match == trust placement: both are an hour spent by whoever already owns the page, reusing assets that already exist (the ad's own words, proof already on the page).
 - Compliance cost, every family below accessibility == none: they restate, reorder or speed up material already published, so nothing new is claimed, collected or disclosed and there is no review to book.
 

@@ -4,7 +4,7 @@ description: "Compute a business's CAC and ROAS family metrics from real spend a
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.4.1"
+  version: "1.4.2"
 ---
 
 # CAC & ROAS Spend Health Check
@@ -41,7 +41,7 @@ Then three scoping questions, because Step 1's metrics differ by orders of magni
 Re-rank Step 1's menus against the answers, and say out loud which answer moved which metric:
 
 - A hard near-term date keeps the run on the near-zero-effort variants (blended CAC, blended ROAS, MER) and deletes fully-loaded CAC, marginal CAC and any margin rebuild from this run - a narrower verdict, on time. Say which variants you deleted and why. A variant left ranked last reappears halfway through as a week of work nobody scheduled.
-- A standing check promotes the slow ones: contribution margin, a consistent-definition history, and cohort grouping each cost a week once and near-zero every period after.
+- A standing check promotes the slow ones: contribution margin costs a few days once, a consistent-definition history and cohort grouping a day or two each, and all three cost near-zero every period after.
 - Finance data that cannot produce a variant deletes it outright rather than demoting it: no salary-allocation rule means no fully-loaded CAC, and no contribution margin means no rung 1 either. Name both deletions at intake, and say then that the verdict will be withheld - never at the end of the run.
 
 If you can read the user's exports (CSV, spreadsheet, warehouse extract), work from those. Otherwise ask for the totals per period. Record every answer in the report's definitions section - CAC is not a GAAP or IFRS term, no standards body defines what enters the numerator, so the definition agreed here is the only definition that exists.
@@ -55,7 +55,7 @@ Both menus below are ordered by what each variant returns per unit of work to pr
 | CAC variant      | Formula                                                       | Decision it serves                       | What it costs to produce                                                            |
 | ---------------- | ------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
 | Blended CAC      | total marketing spend ÷ all new customers (organic included)  | whole-engine economics; feeds break-even | near-zero - both totals are already reported                                        |
-| New-customer CAC | any variant with renewals and reactivations excluded          | subscription and repeat-purchase         | an hour where billing already flags customer status; a week where it doesn't        |
+| New-customer CAC | any variant with renewals and reactivations excluded          | subscription and repeat-purchase         | an hour where billing already flags customer status; a day or two where it doesn't  |
 | Paid CAC         | paid media spend ÷ paid-attributed new customers              | channel efficiency                       | an hour to split the attribution - and worth no more than that attribution is worth |
 | Fully-loaded CAC | S&M incl. salaries, tooling, agency, creative ÷ new customers | finance, boards, investors               | a week: finance's ledger, a salary-allocation rule, and agreement on what counts    |
 | Marginal CAC     | cost of the next increment of spend                           | scaling decisions, not health            | a quarter, and deliberate test spend that cannot be recovered                       |
@@ -70,12 +70,12 @@ Marginal CAC's own decision rule (Demand Curve): a rising CAC is not automatical
 The ties are conditional, and the condition is what to check - not a way of leaving two variants undecided.
 
 - **Value tie (blended == new-customer):** holds only where the business has no renewals, repeat purchases, or reactivations to miscount. The moment it has any, new-customer CAC sits strictly above blended, because it is the same read with a denominator error removed.
-- **Effort tie (new-customer == blended):** holds only where billing already flags customer status, which makes both of them totals you already hold. Where it does not, new-customer costs a week and drops below paid on the effort line.
+- **Effort tie (new-customer == blended):** holds only where billing already flags customer status, which makes both of them totals you already hold. Where it does not, new-customer costs a day or two and drops below paid on the effort line.
 - **Compliance-cost tie (every variant == none, except fully-loaded):** every variant but fully-loaded ties at literally zero, because none of them ever leaves the marketing team's own report.
 
 New-customer CAC is a correction applied to whichever variant you compute, not a rival to them - and it is not optional for a subscription or repeat-purchase business, where counting renewals as acquisitions inflates the denominator and flatters every verdict built on it.
 
-**What this order starves:** fully-loaded CAC, and cohort CAC with it. Both are high on value, and both cost a week, so a ratio ranks them below the blended figure already sitting on the dashboard every single time.
+**What this order starves:** fully-loaded CAC, and cohort CAC with it. Both are high on value, and both cost real work (a week for fully-loaded, a day or two for cohort), so a ratio ranks them below the blended figure already sitting on the dashboard every single time.
 
 - **Fully-loaded CAC** is the only variant finance and a board will recognise. Promote it whenever the verdict is going anywhere near a board deck, an investor update, or a fundraise.
 - **Cohort CAC** is the only honest read of a lagging B2B business. Promote it whenever the sales cycle is longer than the window - Step 4's evidence gate withholds the verdict without it anyway.
@@ -91,7 +91,7 @@ A worked example in circulation (Eightx): $84K spend, 2,000 new customers of whi
 | ------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Blended ROAS                    | total revenue ÷ total paid spend                  | near-zero - two totals the business already has                                                                                          | hides per-channel and per-SKU variance                             |
 | MER                             | total revenue ÷ total _marketing_ spend           | an hour the first time, to assemble agency, tooling and creative into the denominator                                                    | denominator is the only difference from blended ROAS               |
-| Contribution-margin ROAS / POAS | contribution margin (or gross profit) ÷ spend     | a week the first time - COGS, shipping, payment fees, fulfillment, agreed with finance - then a standing job to keep those costs current | closest to actual profit per ad dollar                             |
+| Contribution-margin ROAS / POAS | contribution margin (or gross profit) ÷ spend     | a few days at first - COGS, shipping, payment fees, fulfillment, agreed with finance - then a standing job to keep those costs current   | closest to actual profit per ad dollar                             |
 | Platform-reported ROAS          | platform-attributed value ÷ that platform's spend | near-zero - it is already on the dashboard                                                                                               | claimed revenue, not caused revenue; non-additive across platforms |
 
 - efficiency: blended == MER > POAS > platform-reported
@@ -101,7 +101,7 @@ A worked example in circulation (Eightx): $84K spend, 2,000 new customers of whi
 - **Efficiency/value tie (blended == MER):** they are one metric with two denominators, and the tie holds only while agency, tooling and creative spend are small next to media. Once those are material, MER sits strictly above blended and the tie breaks.
 - **Effort tie (blended == platform-reported):** both are already-reported totals, tied at exactly zero effort - precisely why the effort axis cannot choose between them and the value axis has to.
 
-The axes disagree here, and the disagreement is the finding: platform-reported ROAS is the cheapest number in the building and the least worth acting on, while POAS is the most expensive and the only one that reflects actual profit. Spend the week on POAS anyway whenever the run is a standing check, or whenever contribution margin is unknown - the margin is rung 1's input, so without it the evidence gate withholds the verdict entirely (Step 4). That week buys the verdict itself, not a nicer number.
+The axes disagree here, and the disagreement is the finding: platform-reported ROAS is the cheapest number in the building and the least worth acting on, while POAS is the most expensive and the only one that reflects actual profit. Spend the days on POAS anyway whenever the run is a standing check, or whenever contribution margin is unknown - the margin is rung 1's input, so without it the evidence gate withholds the verdict entirely (Step 4). Those days buy the verdict itself, not a nicer number.
 
 **Every ordering in this skill is a default, not a law.** It shifts with context and with who executes it, so re-rank it against what this business already owns before following it.
 
@@ -149,8 +149,8 @@ Three references, in strict priority order. Each rung is weaker than the one abo
 One line covers every axis here, because cost runs exactly inverse to value: rung 1 is both the cheapest and the strongest, rung 3 both the most work to source properly and the weakest evidence. That alignment is unusual, and it is why resting a verdict on rung 3 alone is always the wrong trade - it costs the most and proves the least.
 
 1. **The business's own break-even**, from its contribution margin (Step 2). An hour once the margin is known, and nothing after. Always computable from data the business owns, needs nothing external, and is non-negotiable: below it the spend loses money by arithmetic, whatever any benchmark says.
-2. **The business's own trailing history** - 4-8 prior periods, same variant, same definition, same window. An hour when those periods already sit on one definition. A week to re-baseline when the definition moved. Direction and volatility matter more than the level: a vertical median cannot know this business's price point, margin, or sales motion, but its own last four quarters do.
-3. **An external published benchmark, with provenance attached** - publisher, year, sample, and the metric variant it measured, every time (see [./references/benchmark-sources.md](./references/benchmark-sources.md)). A day of sourcing, and most searches end in a variant mismatch rather than a usable match. Use it to size the gap and set context, never to set the verdict alone. Match variants before comparing: a blended CAC judged against an agency's organic-weighted client figure, or a platform ROAS judged against a measured blended median, is a definitional mismatch, not a finding.
+2. **The business's own trailing history** - 4-8 prior periods, same variant, same definition, same window. An hour when those periods already sit on one definition. A day or two to re-baseline when the definition moved. Direction and volatility matter more than the level: a vertical median cannot know this business's price point, margin, or sales motion, but its own last four quarters do.
+3. **An external published benchmark, with provenance attached** - publisher, year, sample, and the metric variant it measured, every time (see [./references/benchmark-sources.md](./references/benchmark-sources.md)). A couple of hours of sourcing, and most searches end in a variant mismatch rather than a usable match. Use it to size the gap and set context, never to set the verdict alone. Match variants before comparing: a blended CAC judged against an agency's organic-weighted client figure, or a platform ROAS judged against a measured blended median, is a definitional mismatch, not a finding.
 
 Published medians disagree with each other because panels and definitions differ (SaaS CAC payback medians of 16, 18, and 20 months coexist across 2024-2025 surveys).
 

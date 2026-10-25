@@ -4,7 +4,7 @@ description: "Before starting any paid advertising work, before each recurring a
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.3.7"
+  version: "1.3.8"
 ---
 
 # Advertising Kickoff
@@ -120,7 +120,7 @@ Deliver the routing result in this shape, every time:
 
 The user's question at that moment is never "which of these exists" but "which one do I run first, and is it worth the session". Only a ratio answers that. Default class order, highest value/effort ratio first:
 
-1. **Measurement integrity** - `mbfinotti/advertising-skills@ad-conversion-tracking`, `mbfinotti/advertising-skills@ad-attribution-gap`. Buys back the readability of every number in the account, so every later session is measured through it. Costs hours to a day, mostly one engineer's, and it is done.
+1. **Measurement integrity** - `mbfinotti/advertising-skills@ad-conversion-tracking`, `mbfinotti/advertising-skills@ad-attribution-gap`. Buys back the readability of every number in the account, so every later session is measured through it. Costs a few hours, mostly one engineer's testing that events fire and reconcile, and it is done.
 2. **Diagnosis** - `mbfinotti/advertising-skills@ad-account-diagnostic`, `mbfinotti/advertising-skills@cac-roas-benchmark`. Buys a named failing layer instead of a guess. Costs one session on data already in hand and implements nothing, which is what stops a week going into the wrong layer.
 3. **Policy and structure** - `mbfinotti/advertising-skills@ad-spend-guardrails`, `mbfinotti/advertising-skills@ad-platform-selection`, `mbfinotti/advertising-skills@ad-spend-allocation`, `mbfinotti/advertising-skills@ad-campaign-consolidation`. Buys a ceiling on how wrong a month can go, and volume for starved units. Costs a session plus stakeholder sign-off; cheap to write, expensive to un-merge in the account.
 4. **Creative, audience and post-click** - `mbfinotti/advertising-skills@ad-creative-brief`, `mbfinotti/advertising-skills@ugc-ad-scripts`, `mbfinotti/advertising-skills@ad-copy-variants`, `mbfinotti/advertising-skills@ad-hook-analyzer`, `mbfinotti/advertising-skills@ad-swipe-file`, `mbfinotti/advertising-skills@ad-creative-test-plan`, `mbfinotti/advertising-skills@ad-audience-targeting`, `mbfinotti/advertising-skills@lookalike-audience-seeds`, `mbfinotti/advertising-skills@retargeting-funnel`, `mbfinotti/advertising-skills@ad-buyer-group-mapper`, `mbfinotti/advertising-skills@thought-leadership-ads`, `mbfinotti/advertising-skills@conversational-ad-copy`, `mbfinotti/advertising-skills@ad-format-fit`, `mbfinotti/advertising-skills@paid-landing-page-audit`. Buys the largest outcome in the collection, and never finishes: a production cycle every time, a standing job rather than a fix. `mbfinotti/advertising-skills@paid-landing-page-audit` is the one entry whose effort sits outside the account - whoever owns the page sets its pace, not you.

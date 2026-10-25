@@ -13,7 +13,7 @@ check                          result       impact     fix effort        evidenc
 3 test conversion              pass         -          -                 order #QA-1042, click ID present end to end
 4 payload inspection           pass         -          -                 value 4.90, currency EUR, event ID = order ID
 5 platform UI + status         pass         -          -                 event visible; status: recording
-6 deduplication                fail         critical   a week (dev)      server event ID differs; 2 conversions counted
+6 deduplication                fail         critical   a few days (dev)  server event ID differs; 2 conversions counted
 7 test-data exclusion          pass         -          -                 filter ACTIVE; QA order refunded, conv. retracted
 8 soak                         unknown      -          -                 starts after fix
 9 sign-off                     -            -          -                 blocked by check 6

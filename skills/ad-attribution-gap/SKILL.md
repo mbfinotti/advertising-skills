@@ -4,7 +4,7 @@ description: "Quantify and explain the discrepancy between ad platform reporting
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.1.10"
+  version: "1.1.11"
 ---
 
 # Attribution Gap Reconciliation
@@ -143,7 +143,7 @@ Every line in every bucket gets: amount (units and revenue), direction check pas
 
    The two orderings invert, which is the point of splitting them.
 
-   - Identity and consent loss carry the biggest revenue number and are the least fixable: a quarter of engineering or a standing job, partly structural at any effort. Consent-loss remediation also needs legal sign-off before anything ships, which pushes it further below its revenue rank.
+   - Identity and consent loss carry the biggest revenue number and are the least fixable: weeks of engineering or a standing job, partly structural at any effort. Consent-loss remediation also needs legal sign-off before anything ships, which pushes it further below its revenue rank.
    - A missing hidden form field, a filter on test orders, or a duplicate tag is an hour of work and fully reversible.
 
    The four hour-scale classes are not interchangeable despite costing the same hour:
@@ -159,7 +159,7 @@ Every line in every bucket gets: amount (units and revenue), direction check pas
 
    A stable structural loss can wait. A growing one compounds against every future period.
 
-   Re-rank against this account before reporting: a defect class the team already fixes in-house moves up, and a hard deadline from the interview promotes every hour-scale class over every quarter-scale one. Delete rather than demote a class this account cannot act on at all. If no team will ever own server-side identity work here, strike it from the ranked fix list by name and carry it in the known-deltas section as an unowned, quantified delta.
+   Re-rank against this account before reporting: a defect class the team already fixes in-house moves up, and a hard deadline from the interview promotes every hour-scale class over every weeks-scale one. Delete rather than demote a class this account cannot act on at all. If no team will ever own server-side identity work here, strike it from the ranked fix list by name and carry it in the known-deltas section as an unowned, quantified delta.
 
    A class parked at the bottom of the ranking reappears as scope next period. Assign an owner per defect and hand tracking defects to `mbfinotti/advertising-skills@ad-conversion-tracking`.
 
@@ -178,20 +178,20 @@ Rank by what each buys per unit of effort, not by how definitive it sounds. The 
 
 - efficiency: self-reported attribution > holdout or geo test > server-side collection with shared event IDs > consent-signal configuration and modeled conversions > media mix modeling
 - value: holdout or geo test > media mix modeling > server-side collection with shared event IDs > self-reported attribution > consent-signal configuration and modeled conversions
-- effort: media mix modeling > holdout or geo test == server-side collection with shared event IDs > consent-signal configuration and modeled conversions > self-reported attribution
+- effort: media mix modeling > holdout or geo test > server-side collection with shared event IDs > consent-signal configuration and modeled conversions > self-reported attribution
 - compliance cost: consent-signal configuration and modeled conversions > server-side collection with shared event IDs > self-reported attribution > holdout or geo test == media mix modeling
 
-Both ties are real equalities, not deferred decisions. On effort, a holdout and a server-side build each cost a second team's commitment for weeks to a quarter: one paid in withheld spend, the other in engineering time. Neither is an hour nor a standing job.
+On effort, the holdout sits above server-side collection. The build costs about a week of engineering across two teams. The holdout withholds spend for a full test period, weeks to a quarter, and spends political capital the whole time.
 
-On compliance cost, both sit at the floor of the axis: neither collects any new personal data. There is nothing to disclose, nothing to review, and reversing it re-collects nothing.
+The compliance tie is a real equality, not a deferred decision. Both sit at the floor of the axis: neither collects any new personal data. There is nothing to disclose, nothing to review, and reversing it re-collects nothing.
 
-| Rung                                                 | You spend                                                                                                                       | You get                                                                                                                     | You owe                                                                                                  |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Self-reported attribution                            | an hour of form work plus one reporting field, then a period before it reads                                                    | an independent channel signal that survives consent loss entirely - coarse and self-report-biased, but unblockable          | a privacy-notice line for the new field                                                                  |
-| Holdout or geo test                                  | a week to design, then a full test period (weeks in B2C, a quarter on B2B cycles), plus the political capital to withhold spend | the only causal answer, and the one that settles a two-platform ownership fight outright                                    | nothing regulatory; fully reversible by turning the spend back on                                        |
-| Server-side collection with shared event IDs         | engineering weeks across two teams                                                                                              | observed conversions recovered instead of estimated, and double-counting closed at the source                               | consent signal carried server-side, plus data-residency and contract review before the first event ships |
-| Consent-signal configuration and modeled conversions | setup days, then vendor-owned output with no audit access                                                                       | platform-side volume restored as an estimate - it recreates the modeled-vs-observed line from Step 1 rather than closing it | legal sign-off per jurisdiction; reversing a wrong configuration means re-collecting consent             |
-| Media mix modeling                                   | a standing job: pipeline, modeling, and a refresh cadence someone owns                                                          | portfolio allocation across channels no conversion record covers at all, including offline and brand                        | nothing regulatory - it runs on aggregate spend and outcome data                                         |
+| Rung                                                 | You spend                                                                                                                             | You get                                                                                                                     | You owe                                                                                                  |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Self-reported attribution                            | an hour of form work plus one reporting field, then a period before it reads                                                          | an independent channel signal that survives consent loss entirely - coarse and self-report-biased, but unblockable          | a privacy-notice line for the new field                                                                  |
+| Holdout or geo test                                  | a day or two to design, then a full test period (weeks in B2C, a quarter on B2B cycles), plus the political capital to withhold spend | the only causal answer, and the one that settles a two-platform ownership fight outright                                    | nothing regulatory; fully reversible by turning the spend back on                                        |
+| Server-side collection with shared event IDs         | about a week of engineering across two teams                                                                                          | observed conversions recovered instead of estimated, and double-counting closed at the source                               | consent signal carried server-side, plus data-residency and contract review before the first event ships |
+| Consent-signal configuration and modeled conversions | a day of setup, then vendor-owned output with no audit access                                                                         | platform-side volume restored as an estimate - it recreates the modeled-vs-observed line from Step 1 rather than closing it | legal sign-off per jurisdiction; reversing a wrong configuration means re-collecting consent             |
+| Media mix modeling                                   | a standing job: pipeline, modeling, and a refresh cadence someone owns                                                                | portfolio allocation across channels no conversion record covers at all, including offline and brand                        | nothing regulatory - it runs on aggregate spend and outcome data                                         |
 
 Default rung: self-reported attribution, running alongside the existing reconciliation.
 

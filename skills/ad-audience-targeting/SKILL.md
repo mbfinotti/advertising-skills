@@ -4,7 +4,7 @@ description: "Turn a business's ICP and buying signals into a layered ad audienc
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.1.4"
+  version: "1.1.5"
 ---
 
 # Audience Targeting
@@ -108,11 +108,11 @@ The most contested decision in this domain - present it as a conditional, never 
 
 Default rung: explicit layers. The one condition that moves the plan up a rung is a campaign comfortably clearing its learning threshold - then run the parallel test, and adopt broad only if the duplicate wins.
 
-| Posture                                                                    | You spend                                                                               | You get                                                                            | You give up                                                                   |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Explicit layers                                                            | A week to define tiers, then a standing job maintaining exclusions and refreshing lists | Attribution - reveals which segment actually responds                              | Reach the algorithm would have found on its own, plus the over-narrowing risk |
-| Parallel test (duplicate one campaign, switch only the duplicate to broad) | An hour of setup plus one test cycle of budget on the duplicate                         | An account-specific answer instead of someone else's general one, fully reversible | One cycle of delay before committing either way                               |
-| Broad / algorithmic                                                        | Near-zero to set up, but sustained budget density across a full learning cycle          | Efficient scale wherever the universe is genuinely large                           | Any knowledge of who the buyer is; wasted reach when the real market is small |
+| Posture                                                                    | You spend                                                                                     | You get                                                                            | You give up                                                                   |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Explicit layers                                                            | A day or two to define tiers, then a standing job maintaining exclusions and refreshing lists | Attribution - reveals which segment actually responds                              | Reach the algorithm would have found on its own, plus the over-narrowing risk |
+| Parallel test (duplicate one campaign, switch only the duplicate to broad) | An hour of setup plus one test cycle of budget on the duplicate                               | An account-specific answer instead of someone else's general one, fully reversible | One cycle of delay before committing either way                               |
+| Broad / algorithmic                                                        | Near-zero to set up, but sustained budget density across a full learning cycle                | Efficient scale wherever the universe is genuinely large                           | Any knowledge of who the buyer is; wasted reach when the real market is small |
 
 Where the evidence sits:
 

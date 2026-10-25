@@ -4,7 +4,7 @@ description: "Decide which paid channel families fit a business's economics, aud
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.2.6"
+  version: "1.2.7"
 ---
 
 # Platform Selection

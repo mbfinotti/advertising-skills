@@ -72,6 +72,6 @@ Inside those constraints, three ways to arrive at the number, ranked by value re
 
 1. **Account history - the default.** How did efficiency respond to the last three budget changes of known size? About an hour in the change log, and the only rung whose number cannot be folklore.
 2. **The 15-20% concrete default.** Near-zero effort, and a defensible opening guess only. Ship it exclusively alongside the explicit instruction to recalibrate. Use when the account has no change history to read yet.
-3. **Validate-then-push.** No percentage at all: serious practitioners refuse any universal number, and the strongest scaling operators replace the ladder entirely with validate-then-push against a causally measured target. A week to instrument plus a hold spent waiting, and it presupposes causal measurement the account already trusts - which is exactly when it should lead instead of trail.
+3. **Validate-then-push.** No percentage at all: serious practitioners refuse any universal number, and the strongest scaling operators replace the ladder entirely with validate-then-push against a causally measured target. A day or two to instrument plus a hold spent waiting, and it presupposes causal measurement the account already trusts - which is exactly when it should lead instead of trail.
 
 The order is a default, not a law. Re-rank it against what the account already owns: a live incrementality program makes rung 3 nearly free, and an empty change log leaves only rung 2 until the account has stepped a few times.
