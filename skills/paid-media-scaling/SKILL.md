@@ -4,7 +4,7 @@ description: "Decide when a proven paid campaign has earned a budget increase, h
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.3.7"
+  version: "1.3.8"
 ---
 
 # Media Scaling
@@ -80,7 +80,7 @@ Three ways to arrive at a step size, ranked by value returned per unit of effort
    - Tier 11 gates each push on re-checking contribution margin (validate-then-push, no cadence).
    - Common Thread Collective front-loads measurement rigor, then pushes hard toward a trusted incrementality-derived target, explicitly against slow laddering.
 
-   Effort: a week to instrument plus a hold spent waiting, and it presupposes causal measurement the account trusts. Promote it to first when that measurement already exists, or when the deadline is close enough that laddering never arrives in time.
+   Effort: a day or two to instrument plus a hold spent waiting, and it presupposes causal measurement the account trusts. Promote it to first when that measurement already exists, or when the deadline is close enough that laddering never arrives in time.
 
 That order is a default, not a law: it moves with the account and with who executes it.
 
@@ -103,7 +103,7 @@ Default order, by value returned per unit of effort - the axes disagree, so read
 - speed to first readable result: `vertical ladder > horizontal expansion > measure-first`
 
 1. **Vertical ladder - the default rung.** Sized steps on the proven campaign, each held through learning plus lag, judged on the marginal band; effort: an hour to plan, then a standing weekly decision, with one stable learner and no new setup. Buys the next increment on a line that already works, readable within days - but capped by audience headroom, and on purely attributed evidence it patiently scales a mirage. Best ratio when headroom is large (penetration under ~25%), creative is fresh, and the target is under roughly 2x current spend.
-2. **Measure-first.** Buy causal evidence - a geo holdout or incrementality test, typically 2-4+ weeks - to set a defensible target, then step hard toward it instead of laddering (Common Thread Collective's stated sequence); effort is about a week to design and instrument, then a hold spent waiting, plus test budget that buys evidence rather than volume. Buys the most durable payoff on the menu: a target every later step reuses, and permission to move fast once. Promote it to first when the target is aggressive (2x+ current spend), spend is large enough to fund a clean test, or all current evidence is platform-attributed.
+2. **Measure-first.** Buy causal evidence - a geo holdout or incrementality test, typically 2-4+ weeks - to set a defensible target, then step hard toward it instead of laddering (Common Thread Collective's stated sequence); effort is a day or two to design and instrument, then a hold spent waiting, plus test budget that buys evidence rather than volume. Buys the most durable payoff on the menu: a target every later step reuses, and permission to move fast once. Promote it to first when the target is aggressive (2x+ current spend), spend is large enough to fund a clean test, or all current evidence is platform-attributed.
 3. **Horizontal expansion.** Take the increase to new audiences, geos, placements, or channels at proven per-unit budgets instead of raising one line - research-supported, since growth comes overwhelmingly from penetration and light buyers (Byron Sharp, Ehrenberg-Bass - research). Effort: closest to a standing job - every new unit runs its own learning phase, creative demand multiplies permanently, and audience overlap can cannibalize signal - but it buys durable new headroom. Its low ratio stops mattering when saturation binds: at penetration ~35%+, rising frequency and CPM at flat CTR and declining unique reach, or a demand-capture ceiling, vertical is off the board and horizontal leads whatever its effort.
 
 What this efficiency order starves is measure-first. It tops the value axis and costs weeks of spend held flat while a test reads, so the ratio never selects it and the account ladders on attributed numbers forever. Promote it on the conditions in rung 2 rather than on its ratio, and say in the plan which condition you tested and what the answer was - so the starved option is refused on evidence, not by default.
@@ -177,7 +177,7 @@ Every ramp plan names its exit condition; a ramp without an end is not a plan. D
   Doubling budget grows penetration ~50-70%, not 100%. Declining unique reach flags the wall before frequency (danger bands ~3.0 prospecting, ~4-6 retargeting - folklore) or CPM spikes do.
 
 - **Marginal stop signal** - needs the marginal band computed, so it costs more than the two checks above. When marginal contribution margin on the newest spend band crosses $0, the profit peak is behind you (Common Thread Collective) - stop, even if blended numbers still look healthy.
-- **The demand-capture ceiling** - the most expensive verdict, a week of strategic work, so reach for it last. Ralph Burns's "zone of indifference": roughly 80% of a market is unaware, ~10% actively searching, ~10% uninterested (his framing, not measured data). Search-type channels only reach the searching slice - "no amount of optimization is going to be able to expand a market size" - so past that ceiling the next increment goes to a demand-creation channel, not a bigger number on the same line.
+- **The demand-capture ceiling** - the most expensive verdict, a couple of days of strategic work, so reach for it last. Ralph Burns's "zone of indifference": roughly 80% of a market is unaware, ~10% actively searching, ~10% uninterested (his framing, not measured data). Search-type channels only reach the searching slice - "no amount of optimization is going to be able to expand a market size" - so past that ceiling the next increment goes to a demand-creation channel, not a bigger number on the same line.
 
 ## Workflow
 

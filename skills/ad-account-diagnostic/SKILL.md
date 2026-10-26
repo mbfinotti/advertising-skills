@@ -4,7 +4,7 @@ description: "Diagnose the root cause of an underperforming paid ad account - wh
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.4.5"
+  version: "1.4.6"
 ---
 
 # Account Diagnostic
@@ -132,10 +132,10 @@ Rank findings before handing off - a flat list of twenty observations is a pitch
 
 Default fix-class order, highest value/effort ratio first:
 
-1. **Tracking repair** - buys back the readability of every other number in the account and puts delivery on a real signal again; costs hours to a day of one developer. Always ships first: every later fix is measured through it.
-2. **Optimization-event / offline-outcome fix** - buys a platform that chases qualified outcomes instead of cheap volume (Koda: the offline feedback loop "consistently improves lead quality more than any targeting adjustment"); costs about a week of marketing-ops and CRM wiring, then keeps paying without further work.
-3. **Structural consolidation** - buys starved units the conversion volume they need to exit learning; costs a week of rebuild plus one learning window of volatility, and un-merging later is expensive.
-4. **Targeting redesign** - buys reach on audiences that are not yet saturated; costs about a week, and reverses cleanly.
+1. **Tracking repair** - buys back the readability of every other number in the account and puts delivery on a real signal again; costs an hour to half a day of one developer, most of it end-to-end testing. Always ships first: every later fix is measured through it.
+2. **Optimization-event / offline-outcome fix** - buys a platform that chases qualified outcomes instead of cheap volume (Koda: the offline feedback loop "consistently improves lead quality more than any targeting adjustment"); costs a couple of days of marketing-ops and CRM wiring, most of it field mapping and testing, then keeps paying without further work.
+3. **Structural consolidation** - buys starved units the conversion volume they need to exit learning; costs a couple of days of rebuild plus one learning window of volatility, and un-merging later is expensive.
+4. **Targeting redesign** - buys reach on audiences that are not yet saturated; costs about a day, and reverses cleanly.
 5. **Offer & downstream fixes** - the outcome can beat everything above it, but the work sits outside the account: costs coordination with whoever owns the page, the price or the checkout, so their calendar sets the pace instead of the auditor's.
 6. **Creative replacement** - buys the click back where decay is confirmed; costs a production cycle and never ends - a standing job, not a fix.
 7. **Budget and bid moves** - buy nothing until every rung above passes, and each significant edit spends a learning window (see "Why 'Increase the Budget' Is the Wrong Default").

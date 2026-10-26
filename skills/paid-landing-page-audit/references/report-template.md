@@ -102,7 +102,7 @@ RE-CHECK
 ```
 
 Note the order: fix 2 is only "major" and fix 3 is "critical", yet 2 ships first - an hour
-of asset swap against days of video work on the same funnel step. Efficiency ordering, not
+of asset swap against a day or two of video work on the same funnel step. Efficiency ordering, not
 severity ordering. Severity is one input to it, never the sort key.
 
 ## Negative example - what a finding must never look like

@@ -4,7 +4,7 @@ description: "Select and size the seed customer list behind a lookalike, similar
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.3.6"
+  version: "1.3.7"
 ---
 
 # Lookalike Seeds
@@ -135,7 +135,7 @@ Then re-rank against what this user actually owns - any of these collapses a run
 
    **Refresh.** Set the refresh cadence with a named owner. Static CSV uploads do not auto-refresh (LinkedIn lists, manual Meta customer lists), so schedule weekly-to-monthly refreshes or move to an automated warehouse sync.
 
-   Between those two, `automated sync > manual CSV` on efficiency and on compliance cost, despite losing on effort. A week of engineering once retires the whole decay failure mode and propagates opt-outs and deletions continuously. The CSV is near-zero to start but becomes a standing job forever, re-uploading yesterday's opt-outs every cycle.
+   Between those two, `automated sync > manual CSV` on efficiency and on compliance cost, despite losing on effort. A day or two of engineering once, most of it testing the sync and its opt-out propagation, retires the whole decay failure mode and propagates opt-outs and deletions continuously. The CSV is near-zero to start but becomes a standing job forever, re-uploading yesterday's opt-outs every cycle.
 
    Recommend the CSV only as a bridge, with a named owner and a date the sync lands. Google Customer Match drops members not refreshed within 540 days.
 

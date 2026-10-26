@@ -4,7 +4,7 @@ description: "Design a multi-stage retargeting sequence from a site's own funnel
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.4.9"
+  version: "1.4.10"
 ---
 
 # Retargeting Funnel
@@ -77,7 +77,7 @@ cart, checkout or trial start > pricing page viewer > product or feature page vi
 
 Past customer and churned customer sit outside the conversion ladder, as win-back tiers. Assign windows inversely to depth: deep actions get short windows (intent decays fast), shallow actions get long windows (they were never hot, so staleness costs less). Not every grid cell becomes a stage - take the 3-5 deepest cells where the client has volume and a distinct message.
 
-That order is value, not effort: every tier costs the same to build - one audience definition, minutes - so nothing separates them but the intent they capture. Effort splits them only where the event is not tracked yet (question 4): an untracked depth signal costs an engineering ticket and a wait, which can drop it below a shallower tier for this quarter. Re-rank on what the account already owns - a CRM deal stage already synced outranks a pricing-view pixel that needs a sprint.
+That order is value, not effort: every tier costs the same to build - one audience definition, minutes - so nothing separates them but the intent they capture. Effort splits them only where the event is not tracked yet (question 4): an untracked depth signal costs an engineering ticket and a wait, which can drop it below a shallower tier for this quarter. Re-rank on what the account already owns - a CRM deal stage already synced outranks a pricing-view pixel still waiting in the engineering queue.
 
 ### 4. Size-check every stage after exclusions
 
@@ -107,7 +107,7 @@ Slot is separate information: where a built rung sits in the funnel sequence, no
 | Objection handling - shipping, returns, guarantee; security, integrations, comparison | B2C 3rd / B2B 2nd         | Removes the stated blocker; the only rung that answers a known "no" | An hour - the policy facts already exist in writing                                   | A claims check against the published policy; fully reversible                          |
 | Reminder / dynamic item ad                                                            | B2C 1st                   | Re-presents the exact item; converts the almost-decided             | Near-zero - the catalogue writes it                                                   | Catalogue accuracy, on the consent basis the pixel already needs                       |
 | Direct ask - demo, trial, assessment, audit                                           | B2B 4th                   | Converts intent already present; buys no new belief                 | Near-zero                                                                             | None beyond standard ad review                                                         |
-| ROI or comparison content                                                             | B2B 3rd                   | Arms the internal champion for a committee decision                 | A week - data pull, sometimes customer interviews                                     | Claim substantiation, and legal review where naming a competitor is restricted         |
+| ROI or comparison content                                                             | B2B 3rd                   | Arms the internal champion for a committee decision                 | A couple of days - data pull and draft; a week with customer interviews               | Claim substantiation, and legal review where naming a competitor is restricted         |
 | Social proof - reviews, UGC                                                           | B2C 2nd                   | Borrowed credibility at scale; strongest on unfamiliar brands       | A week - sourcing reviews or creators                                                 | Creator usage rights, testimonial and paid-partnership disclosure                      |
 | Named-customer proof - case study, named results                                      | B2B 1st                   | The strongest evidence available; unlocks committee trust           | A quarter - customer consent, legal sign-off, political capital with the account team | Written approval per use and logo rights, revocable by the customer                    |
 | Discount + urgency                                                                    | B2C 4th, final stage only | Buys the last conversion, and only the last                         | Near-zero to make; spends margin every time it runs                                   | Promotion terms, price-display rules in some markets, urgency claims that must be true |

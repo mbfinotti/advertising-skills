@@ -36,7 +36,7 @@ confidence     : high - backend reconciliation is direct evidence; single break 
 verdict        : measurement/tracking - conversion event lost in checkout migration
 evidence       : reconciliation ratio broke on deploy date; drop uniform across unrelated audiences; upstream metrics flat
 findings       : 1) restore + dedupe purchase event
-                    [critical, high, restores every downstream number and the delivery signal, ~a day of dev, web dev]
+                    [critical, high, restores every downstream number and the delivery signal, ~half a day of dev, web dev]
                  2) re-screen bidding after 7 lag-mature days
                     [medium, low, unquantified, an hour once the window matures, media buyer]
 prediction     : reported CVR recovers to ~baseline within one lag-mature week of the event firing; ROAS follows
@@ -78,7 +78,7 @@ confidence     : high - CRM join is direct evidence; pattern tracks spend shift;
 verdict        : structure - optimising to a conversion event the business does not value
 evidence       : cost per SQL up while CPL down; SQL-rate collapse concentrated where the cheap-lead spend went
 findings       : 1) feed CRM outcomes (SQL/closed-won) back to platforms; optimise to a qualified event
-                    [high, high, recovers most of the SQL-cost delta and keeps paying, ~a week of CRM wiring,
+                    [high, high, recovers most of the SQL-cost delta and keeps paying, ~a couple of days of CRM wiring,
                      marketing ops]  - Koda: the offline feedback loop "consistently improves lead quality
                      more than any targeting adjustment"
                  2) judge campaigns on cost per SQL at 4-6 week maturity, not CPL

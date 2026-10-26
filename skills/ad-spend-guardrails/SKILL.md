@@ -4,7 +4,7 @@ description: "Set the organisation's top-level paid-media spend guardrails as wr
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.1.3"
+  version: "1.1.4"
 ---
 
 # Profitability Guardrails
@@ -91,7 +91,7 @@ Enter an explicit brainstorming mode before drafting any number. Put all three a
    - Move down to this when: nobody can chair a review, spend is small, or margin is certain and the calendar is short.
 3. **Portfolio model with a ring-fenced exploration budget** - guardrail the blended number, and exempt a named slice from the main floor.
    - What: a declared share of spend with its own separate kill rules, carved out of the main floor.
-   - Cost: a week to design and then a standing job to police, since the carve-out is where waste hides.
+   - Cost: a day or two to design and then a standing job to police, since the carve-out is where waste hides.
    - Buys: the learning capacity the other two quietly destroy.
    - Move up to this when: an efficiency bar has already strangled testing, or the channel mix is changing.
 
@@ -235,7 +235,7 @@ When several apply at once, fix in the table's order, highest value per hour fir
 
 naming owners, approvers and consequences > replacing folklore with the business's own break-even > moving the ceiling from the blended number to the marginal one > counter-metrics, minimum windows and noise width > ring-fenced testing and per-segment thresholds > re-baselining cadence and rebuilding the measurement underneath
 
-The first band costs near-zero plus some political capital; the last costs a quarter. Re-order against the account's own history - a team whose last three pauses were all tracking outages fixes measurement first, whatever the default says.
+The first band costs near-zero plus some political capital; the last costs a few weeks of build, then a standing cadence. Re-order against the account's own history - a team whose last three pauses were all tracking outages fixes measurement first, whatever the default says.
 
 | Failure                                   | Fix                                                                                                                                                                                                                                |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

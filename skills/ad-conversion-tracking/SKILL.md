@@ -4,7 +4,7 @@ description: "Verify that conversion events are correctly configured, firing onc
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.3.6"
+  version: "1.3.7"
 ---
 
 # Conversion Tracking
@@ -131,12 +131,12 @@ Fix effort says what clearing it costs the reader in hours, coordination and rev
 | Tag fires on page load / all-pages trigger, not the completed action             | In debug mode, load the page without converting                                  | Critical                         | An hour - retrigger in the tag manager, no dev                                         |
 | Fires on button click, not confirmed success                                     | Abandon a submit mid-way; check nothing fired                                    | High                             | An hour - same, plus a success signal to bind to                                       |
 | Bot/spam form fills counted - and taught to the algorithm                        | Spam protection on forms; inspect lead quality in the soak                       | Medium                           | An hour - form-level protection, self-service                                          |
-| Confirmation page refires on refresh/back (no unique transaction ID)             | Refresh the confirmation page after the test conversion; look for a second event | Critical                         | An hour if the order ID already reaches the tag; a week of dev if it does not          |
-| Single-page-app route change refires the tag                                     | Navigate between virtual pages in debug mode                                     | High                             | An hour if a tag-manager rule fixes it; a week if the app must emit its own event      |
-| Missing/hard-coded value, wrong or missing currency                              | Payload inspection (step 4)                                                      | Critical for value-based bidding | An hour if the value sits in the data layer; a week of dev if it must be exposed first |
-| Browser + server both counted (no shared event ID)                               | Deduplication check                                                              | Critical                         | A week - dev coordination across both senders, and a redeploy to reverse               |
-| Consent banner blocks the tag entirely, or consent state never reaches it        | Run the test conversion on both the accept and the reject path                   | High                             | A week, plus a legal sign-off - see compliance cost below                              |
-| Click identifier stripped by redirect chain, or truncated by browser cookie caps | Inspect the landing URL and the persisted identifier at conversion time          | High                             | A week to a quarter - touches redirects, storage and every funnel step                 |
+| Confirmation page refires on refresh/back (no unique transaction ID)             | Refresh the confirmation page after the test conversion; look for a second event | Critical                         | An hour if the order ID already reaches the tag; a day or two of dev if it does not    |
+| Single-page-app route change refires the tag                                     | Navigate between virtual pages in debug mode                                     | High                             | An hour if a tag-manager rule fixes it; a day or two if the app must emit an event     |
+| Missing/hard-coded value, wrong or missing currency                              | Payload inspection (step 4)                                                      | Critical for value-based bidding | An hour if the value sits in the data layer; a day or two of dev to expose it first    |
+| Browser + server both counted (no shared event ID)                               | Deduplication check                                                              | Critical                         | A few days - dev coordination across both senders, and a redeploy to reverse           |
+| Consent banner blocks the tag entirely, or consent state never reaches it        | Run the test conversion on both the accept and the reject path                   | High                             | A few days, plus a legal sign-off - see compliance cost below                          |
+| Click identifier stripped by redirect chain, or truncated by browser cookie caps | Inspect the landing URL and the persisted identifier at conversion time          | High                             | Days to weeks - touches redirects, storage and every funnel step                       |
 | Cross-domain checkout drops identity mid-journey                                 | Walk the full cross-domain journey in debug mode                                 | High                             | A week to a quarter - coordination across two domain owners                            |
 
 Two axes disagree with that order, so state them separately:
@@ -149,7 +149,7 @@ compliance cost        : consent path > click-identifier persistence
                          > server-side sender (shared event ID) > every other row: none
 ```
 
-Impact alone would put the shared event ID near the top; it lands sixth because a week of dev coordination buys the same critical fix that a designation toggle buys in a click. The internal-traffic filter is only Medium and still ranks near the top for the same reason, inverted.
+Impact alone would put the shared event ID near the top; it lands sixth because a few days of dev coordination buys the same critical fix that a designation toggle buys in a click. The internal-traffic filter is only Medium and still ranks near the top for the same reason, inverted.
 
 The refire guard, the value-and-currency fix and bot protection are not tied: all three cost the same hour of tag-manager work when the data they need already reaches the tag, so impact alone separates them.
 
@@ -180,7 +180,7 @@ Traffic that touches no consent-regulated region deletes the consent-path row ou
 
 This ordering is a default, not a law. It shifts with context and with who executes it, so re-rank it against what you already know about the user before presenting it:
 
-- An in-house engineer on the team collapses every "a week of dev" row toward an hour and promotes the shared event ID.
+- An in-house engineer on the team collapses every dev-dependent row toward an hour and promotes the shared event ID.
 - A tag manager already deployed with a built data layer collapses the value-and-currency and refire-guard rows.
 
 Answers 7-9 in the Interview move it too: a hard launch date demotes the click-identifier chain, and a compounding mandate promotes it and the shared event ID above rows that only clear this one launch.

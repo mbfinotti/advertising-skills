@@ -4,7 +4,7 @@ description: "Split a fixed total paid-media budget across campaigns, platforms,
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.2.2"
+  version: "1.2.3"
 ---
 
 # Spend Allocation
@@ -98,9 +98,9 @@ Three approaches, ranked by optimality bought per unit of analyst effort. The ax
 
 Default: **incremental reweighting**. Move up to a rebuild when the current split is inherited and untrusted, when measurement maturity is high enough to re-derive every line, or at the annual zero-based review. Drop to a heuristic posture only when there is no history to reweight at all.
 
-What this order starves is the marginal-evidence rebuild. It is the most defensible approach on the page and the only one that reliably kills a legacy line, and it loses every cycle to a reweight costing a week instead of a quarter - which is exactly how "last year plus a percentage" survives in the failure-mode table below. Those three triggers are what promote it against the ratio; a low effort ceiling instead deletes it from this cycle's menu, and the plan names it as deleted rather than carrying it as an option for later.
+What this order starves is the marginal-evidence rebuild. It is the most defensible approach on the page and the only one that reliably kills a legacy line, and it loses every cycle to a reweight costing a day or two instead of a few weeks - which is exactly how "last year plus a percentage" survives in the failure-mode table below. Those three triggers are what promote it against the ratio; a low effort ceiling instead deletes it from this cycle's menu, and the plan names it as deleted rather than carrying it as an option for later.
 
-1. **Incremental reweighting.** Effort a week: normalize the lines, rank them by marginal return, move bounded increments from weakest-marginal to strongest-marginal. Buys most of a rebuild's gain in a fraction of the analysis, and compounds cycle over cycle as the marginal estimates sharpen.
+1. **Incremental reweighting.** Effort a day or two: normalize the lines, rank them by marginal return, move bounded increments from weakest-marginal to strongest-marginal. Buys most of a rebuild's gain in a fraction of the analysis, and compounds cycle over cycle as the marginal estimates sharpen.
 
    Costs you the legacy mistakes it preserves - a line nobody questions keeps its budget. Right for most accounts with a working mix and moderate evidence.
 
@@ -110,7 +110,7 @@ What this order starves is the marginal-evidence rebuild. It is the most defensi
 
    Full catalog with each split's source and evidence grade: [references/heuristics-and-figure-grading.md](references/heuristics-and-figure-grading.md).
 
-3. **Marginal-evidence rebuild from zero.** Effort a quarter: ignore the current split and re-derive every line from gates plus marginal evidence. Buys the most defensible answer and the only one that reliably kills legacy lines - a compounding asset, since the re-derived baseline feeds every later cycle. Demands the best data, so it usually waits on the measurement work rather than substituting for it.
+3. **Marginal-evidence rebuild from zero.** Effort a few weeks: ignore the current split and re-derive every line from gates plus marginal evidence. The analysis is the fast part; getting every line owner to re-justify a budget is not. Buys the most defensible answer and the only one that reliably kills legacy lines - a compounding asset, since the re-derived baseline feeds every later cycle. Demands the best data, so it usually waits on the measurement work rather than substituting for it.
 
 Whatever the user picks, name the assumptions out loud before computing - which number is measured, which is platform-reported, which is a guess - and argue the strongest case against the biggest proposed move before presenting it.
 

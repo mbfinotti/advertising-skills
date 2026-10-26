@@ -90,7 +90,7 @@
         "Flips the internal-traffic filter from testing to active, stating that tagged traffic is not excluded traffic",
         "Notes exclusion filters are not retroactive, so the filter must be active before launch, not after",
         "Places the trigger correction (tag firing on page load instead of the completed action) in the hour-of-tag-manager-work class, ahead of every dev-dependent row",
-        "Acknowledges the missing shared event ID as critical impact yet does not rank it first, because it costs a week of dev coordination",
+        "Acknowledges the missing shared event ID as critical impact yet does not rank it first, because it costs a few days of dev coordination",
         "With no developer available before launch, removes the shared-event-ID row from this launch's fix list entirely rather than parking it at the bottom",
         "Every deleted row is named in the report with the measurement it costs and who accepted the loss - never silently dropped",
         "Deletes the consent-path row as not applicable given US-only traffic touching no consent-regulated region",

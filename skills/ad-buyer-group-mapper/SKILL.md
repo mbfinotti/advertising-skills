@@ -4,7 +4,7 @@ description: "Map the likely buying committee for an offer, deal size, and indus
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.3.3"
+  version: "1.3.4"
 ---
 
 # Buyer Group Mapper
@@ -48,8 +48,8 @@ Every ranking in this skill is a default for a median team, not a law: it shifts
 - Effort in orders of magnitude:
   - Buyer interviews: a week of scheduling across roles.
   - Intent data: a standing job to configure and re-tune topics.
-  - Closed-won/lost diff: a day per deal-size segment.
-  - Review mining: a few hours.
+  - Closed-won/lost diff: a few hours per deal-size segment, most of it checking stage history.
+  - Review mining: an hour or two.
   - Call notes or published research: an hour to read what already exists.
   - Title inference: near-zero.
 - Call notes and published research tie on effort because both are an hour of reading a document someone else already produced; neither buys any new collection. They do not tie on value - notes are about your buyers, the bands are about somebody else's.
@@ -123,14 +123,14 @@ Offer types are a menu, and its axes disagree sharply - the cheapest asset to pr
 
 - efficiency: compliance/security pack > ROI or savings calculator > ungated guide or checklist > demo or trial request > sandbox access > benchmark report
 - value: demo or trial request > sandbox access > ROI or savings calculator > compliance/security pack > benchmark report > ungated guide or checklist
-- effort: benchmark report > sandbox access > ROI or savings calculator > demo or trial request > compliance/security pack > ungated guide or checklist
+- effort: benchmark report > sandbox access > demo or trial request > ROI or savings calculator > compliance/security pack > ungated guide or checklist
 - compliance cost: compliance/security pack > sandbox access > all others == none
 
 - Effort in orders of magnitude:
   - Benchmark report: a quarter to collect data nobody else holds.
-  - Sandbox access: a quarter of engineering.
-  - ROI or savings calculator: a week to build.
+  - Sandbox access: weeks of engineering, held up by security and data-isolation review.
   - Demo or trial request: a standing job, since each one spends sales capacity again.
+  - ROI or savings calculator: a day or two to build and check the math.
   - Compliance/security pack: an hour to assemble from certifications already held, a quarter if none exist.
   - Ungated guide or checklist: near-zero.
 - The pack leads because it is nearly free when the certifications exist and it is the only asset that removes a validation-stage veto - the highest-value outcome any single offer buys in this map.
@@ -138,7 +138,7 @@ Offer types are a menu, and its axes disagree sharply - the cheapest asset to pr
 - Compliance cost, where it applies: publishing a pen-test report or audit letter ungated needs security and legal sign-off, and a document published ungated cannot be recalled; a sandbox touching real data pulls in a data-processing review.
 - Default rung per role: the ungated low-friction offer. Move up one rung once a role's proxy audience engages twice, never on the first touch.
 - Re-rank against what the user owns: an existing SOC 2 pack promotes the compliance rung, and a proprietary data set already in hand promotes the benchmark report from last to first.
-- Delete, don't demote: with no sales capacity to staff them, demos and trials leave the menu entirely - say "deleted: no sales capacity" rather than ranking them last, where they read as a stretch goal and quietly become one. Same for the sandbox with no engineering quarter to spend, and for the benchmark report when no proprietary data exists.
+- Delete, don't demote: with no sales capacity to staff them, demos and trials leave the menu entirely - say "deleted: no sales capacity" rather than ranking them last, where they read as a stretch goal and quietly become one. Same for the sandbox with no weeks of engineering to spend, and for the benchmark report when no proprietary data exists.
 - Write angles in verbatim customer language wherever review mining or call notes supply it - exact phrases beat polished descriptions because they are how the buyer actually thinks.
 - Every angle must be distinct. Run the swap test: if a role's angle could run unchanged against another role, rewrite one or merge the roles.
 
@@ -153,8 +153,8 @@ A role list is worthless if no targeting attribute reaches it. Choose the proxy 
 
 - Effort in orders of magnitude:
   - Intent-ranked account list: a standing job to configure and re-tune topics.
-  - Account list: a week to build, then continuous maintenance.
-  - Exact job title: a day enumerating variants, and you still miss the ones the platform never learned.
+  - Account list: a day or two to build, then continuous maintenance.
+  - Exact job title: a couple of hours enumerating variants, and you still miss the ones the platform never learned.
   - Function + seniority: an hour.
 - Compliance cost, where it applies: uploading a matched audience triggers a data-processing review and the platform's own matched-audience policy, and a list does not unwind from the platform once matched; a licensed intent feed layers its own re-use restrictions on top.
 - Default rung: account list + function + seniority whenever the addressable market is small enough to enumerate; fall back to function + seniority alone when it is not. Move up to intent ranking only when the list is larger than the budget can cover.
@@ -177,9 +177,9 @@ Three postures buy committee coverage. Rank them, state which one the map takes 
 - effort: full per-role campaigns > merged map > one strong broad message
 
 - Effort in orders of magnitude:
-  - Per-role campaigns: a quarter, one creative set and one campaign per role, plus coordination across every role's reviewer.
-  - Merged map: a week, one campaign and a handful of proof variants.
-  - Single broad message: a week, then near-zero for each further role it happens to reach.
+  - Per-role campaigns: several weeks, one creative set and one campaign per role, plus coordination across every role's reviewer.
+  - Merged map: a few days, one campaign and a handful of proof variants.
+  - Single broad message: a day or two, then near-zero for each further role it happens to reach.
 - What the efficiency order starves: per-role creative. It leads on value and leads on effort, so a ratio never selects it, and a skill that only computes efficiency will ship one generic asset against a six-role committee every single time. The two thresholds below exist to promote it anyway - say explicitly in the output which of them you tested and what the answer was, so the starved option gets refused on evidence rather than by default.
 - **Against narrow role targeting:** the Ehrenberg-Bass 95-5 rule - roughly 95% of B2B buyers are out-market at any time - implies hyper-narrow targeting wastes exactly the reach that builds future mental availability. The proposed alternative is linking the brand to category entry points broadly.
 - **For it, steelmanned:**

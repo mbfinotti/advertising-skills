@@ -78,7 +78,7 @@ What a threshold miss actually means: not ineligibility, but variance - at low v
 
 - efficiency (start here): **consolidation > upstream event > accept slower diagnosis**
 - effort: **upstream event > consolidation > accept slower diagnosis**
-  - The upstream event needs tracking work plus an import path for the downstream outcomes (about a week where that loop exists, a quarter where it has to be built).
+  - The upstream event needs tracking work plus an import path for the downstream outcomes (a day or two where that loop exists, a few weeks where it has to be built).
   - Consolidation is one restructure plus one learning reset.
   - Accepting costs near-zero: one paragraph in the policy.
 - value: **upstream event == consolidation > accept slower diagnosis**

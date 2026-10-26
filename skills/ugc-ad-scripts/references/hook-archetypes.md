@@ -74,7 +74,7 @@ Example lines are illustrative - replace every noun and number with language sou
 
 10. **Proof-first** - lead with the receipt: a result screenshot, a number, the demo money-shot. Needs a real result the account owns and is cleared to show; without one, budget a quarter of measurement work before this archetype is available at all. Strongest when the proof brags by itself.
 11. **Silent review** - no spoken line; the product does something on camera while text carries the claim. Needs an hour of product footage or a screen recording. Strong on muted feeds.
-12. **Bold claim** - specific and falsifiable. "This replaced my entire reporting day." Needs a fact the advertiser can defend, which can mean a week of digging or a legal read, and it must be substantiated again in the body.
+12. **Bold claim** - specific and falsifiable. "This replaced my entire reporting day." Needs a fact the advertiser can defend, which can mean a day of digging or a legal read, and it must be substantiated again in the body.
 13. **Before/after contrast** - two states in the first beat. The most expensive row here:
     - Two setups.
     - A before state that may no longer exist.

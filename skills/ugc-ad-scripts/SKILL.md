@@ -4,7 +4,7 @@ description: "Turn a product brief and target audience into UGC-style short-form
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.2.3"
+  version: "1.2.4"
 ---
 
 # UGC Scripts

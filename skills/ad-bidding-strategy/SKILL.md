@@ -4,7 +4,7 @@ description: "Choose the bidding policy per platform and goal - manual vs automa
 license: MIT
 metadata:
   author: Maya-Beth Finotti
-  version: "1.2.6"
+  version: "1.2.7"
 ---
 
 # Bidding Strategy
